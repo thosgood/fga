@@ -215,7 +215,83 @@ Then <eq env="math">\underline{\operatorname{Ext}}_{\mathscr{O}}({\mathscr{A}},{
 <div id="FGA-1-section-2" class="section level2">
 <h2><strong>2.</strong> The composition law in <eq env="math">\operatorname{Ext}</eq></h2>
 <p>The results of this section are due, independently, to Cartier and Yoneda;
-see a talk by Cartier <span class="citation">[<a href="#ref-1-1" role="doc-biblioref">2</a>]</span> for more details.</p>
+see a talk by Cartier <span class="citation">[<a href="#ref-1-1" role="doc-biblioref">2</a>]</span> for more details.
+Let <eq env="math">{\mathcal{C}}</eq> be an abelian category, and let <eq env="math">K</eq> and <eq env="math">L</eq> be two graded objects of <eq env="math">{\mathcal{C}}</eq>.
+We denote by <eq env="math">\operatorname{Hom}(K,L)</eq> the graded abelian group whose degree-<eq env="math">n</eq> component consists of homogeneous homomorphisms of degree <eq env="math">n</eq> from <eq env="math">K</eq> to <eq env="math">L</eq> (i.e. systems <eq env="math">(u_i)</eq> of homomorphisms <eq env="math">K^i\to L^{i+n}</eq>).
+If <eq env="math">K</eq> and <eq env="math">L</eq> are complexes (with differentials of degree <eq env="math">+1</eq>, to fix conventions), then we endow <eq env="math">\operatorname{Hom}(K,L)</eq> with the differential operator given by
+<eq env="displaymath">
+  \delta(u) = \mathrm{d}u + (-1)^{n+1}u\mathrm{d}
+  \quad\text{where }n=\deg(u)
+\tag{2.1}
+</eq>
+which makes it a complex with a differential of degree <eq env="math">+1</eq>.
+The cycles of degree <eq env="math">n</eq> are the maps of degree <eq env="math">n</eq> that anticommute with <eq env="math">u</eq> (as homogeneous maps).
+We can then consider <eq env="math">\operatorname{H}^\bullet(\operatorname{Hom}(K,L))</eq>, which is an invariant of the homotopy types of <eq env="math">K</eq> and <eq env="math">L</eq>, and which we sometimes denote by <eq env="math">\operatorname{H}^\bullet(K,L)</eq>.
+If we have a third complex <eq env="math">M</eq>, then the composition of homomorphisms defines a pairing <eq env="math">\operatorname{Hom}(K,L)\times\operatorname{Hom}(L,M)\to\operatorname{Hom}(K,M)</eq> which is compatible with the differential maps, whence, by passing to the cohomology of pairings,</p>
+<div id="FGA-1-equation-2.2" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{H}^\bullet(K,L)\times\operatorname{H}^\bullet(L,M) \to \operatorname{H}^\bullet(K,M)
+\tag{2.2}
+</eq></p>
+</div>
+<p>which we write as <eq env="math">(u,v)\mapsto vu</eq>.
+These pairings satisfy an evident associativity property;
+in particular, <eq env="math">\operatorname{H}^\bullet(K,K)</eq> is an associative graded unital ring, and <eq env="math">\operatorname{H}^\bullet(K,L)</eq> (resp. <eq env="math">\operatorname{H}^\bullet(L,K)</eq>) is a graded right (resp. left) module over this ring, etc.
+In dimension <eq env="math">0</eq>, <a href="FGA-1.html#FGA-1-equation-2.2">(2.2)</a> reduces to the composition of permissible homomorphisms of complexes.
+Finally, an exact sequence of complexes <eq env="math">0\to K'\to K\to K''\to0</eq> such that, for all <eq env="math">i</eq>, <eq env="math">K'^i</eq> can be identified with a direct factor of <eq env="math">K^i</eq>, gives rise to an exact sequence of complexes of groups <eq env="math">\operatorname{Hom}(K'',L)</eq>, etc., whence a coboundary map <eq env="math">\operatorname{H}^i(K',L)\to\operatorname{H}^{i+1}(K'',L)</eq>.
+We similarly define the boundary maps relative to an exact sequence in <eq env="math">L</eq>.
+The pairings in <a href="FGA-1.html#FGA-1-equation-2.2">(2.2)</a> are compatible, in the usual sense, with these coboundary maps.</p>
+
+<p>Now suppose that <eq env="math">{\mathcal{C}}</eq> is a category such that every element <eq env="math">A</eq> of <eq env="math">{\mathcal{C}}</eq> admits an injective resolution <eq env="math">C(A)</eq>.
+We then note that, using one of the many variants of the theorem of bicomplexes,
+<eq env="displaymath">
+  \operatorname{H}^\bullet(C(A),C(B)) = \operatorname{H}^\bullet(\operatorname{Hom}(C(A),C(B)))
+</eq>
+is canonically isomorphic to
+<eq env="displaymath">
+  \operatorname{H}^\bullet(\operatorname{Hom}(A,C(B))) = \operatorname{Ext}^\bullet(A,B).
+</eq>
+The coboundary maps described above give coboundary maps of the <eq env="math">\operatorname{Ext}</eq>.
+Furthermore, the pairings in <a href="FGA-1.html#FGA-1-equation-2.2">(2.2)</a> give associative pairings here:
+<eq env="displaymath">
+  \operatorname{Ext}^\bullet(A,B)\times\operatorname{Ext}^\bullet(B,C) \to \operatorname{Ext}^\bullet(A,C)
+\tag{2.3}
+</eq>
+and these are compatible with the coboundary maps.
+In particular, <eq env="math">\operatorname{Ext}^\bullet(A,A)</eq> is an associative graded unital ring, etc.
+(We can show in an analogous manner that the <eq env="math">\operatorname{Ext}</eq> functors work in the derived functors of an arbitrary functor;
+we do not make use of this fact here).</p>
+<p>In the case where the category in question is the category <eq env="math">{\mathcal{C}}^{\mathscr{O}}</eq> of <eq env="math">{\mathscr{O}}</eq>-modules on <eq env="math">X</eq>, we then obtain pairings
+<eq env="displaymath">
+\label{2.4}
+  \operatorname{Ext}_{\mathscr{O}}^p(X;{\mathscr{A}},{\mathscr{B}})\times\operatorname{Ext}_{\mathscr{O}}^q(X;{\mathscr{B}},{\mathscr{C}}) \to \operatorname{Ext}_{\mathscr{O}}^{p+q}(X;{\mathscr{A}},{\mathscr{C}})
+\tag{2.4}
+</eq>
+that can be calculated as has already been said.
+The same method, but replacing the category of abelian groups with the category of abelian sheaves on <eq env="math">X</eq>, and the <eq env="math">\operatorname{Hom}</eq> functors by the <eq env="math">\underline{\operatorname{Hom}}</eq> functors, again defines pairings, having the same formal properties, and of a ``local nature’’ this time:
+<eq env="displaymath">
+\label{2.5}
+  \underline{\operatorname{Ext}}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}})\times\underline{\operatorname{Ext}}_{\mathscr{O}}^q({\mathscr{B}},{\mathscr{C}}) \to \underline{\operatorname{Ext}}_{\mathscr{O}}^{p+q}({\mathscr{A}},{\mathscr{C}}).
+\tag{2.5}
+</eq>
+These can be understood by noting that the homomorphisms in  are compatible with the pairings between the <eq env="math">\operatorname{Ext}</eq>.</p>
+
+<p>Finally, recall that we also have a multiplicative structure between functors <eq env="math">\operatorname{H}^p(X,A)</eq> (the cup product).
+We note then that the spectral sequences of  are compatible with the multiplicative structures;
+more precisely, we have a pairing from the spectral sequence <eq env="math">E(A,B)</eq> with the spectral sequence <eq env="math">E(B,C)</eq> to the spectral sequence <eq env="math">E(A,C)</eq> that abuts to the pairing between the global <eq env="math">\operatorname{Ext}</eq>, and whose initial page comes from the cup product and the local <eq env="math">\operatorname{Ext}</eq> pairings in the right-hand side of .
+It then follows, in particular, that the ``boundary homomorphisms’’
+<eq env="displaymath">
+\label{2.6}
+  \operatorname{Ext}_{\mathscr{O}}^n(X;{\mathscr{A}},{\mathscr{B}}) \to \operatorname{H}^0(X;\underline{\operatorname{Ext}}_{\mathscr{O}}^n({\mathscr{A}},{\mathscr{B}}))
+\tag{2.6}
+</eq>
+<eq env="displaymath">
+\label{2.7}
+  \operatorname{H}^n(X,\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}})) \to \operatorname{Ext}_{\mathscr{O}}^n(X;{\mathscr{A}},{\mathscr{B}})
+\tag{2.7}
+</eq>
+are compatible with the multiplicative structures.
+So if we restrict to sheaves that are locally isomorphic to some <eq env="math">{\mathscr{O}}^m</eq>, then this completely explains the composition of the global <eq env="math">\operatorname{Ext}</eq> by means of the cup product, taking into account the isomorphism of .</p>
 
 </div>
 </div>
@@ -231,7 +307,7 @@ see a talk by Cartier <span class="citation">[<a href="#ref-1-1" role="doc-bibli
 <p>[21] J.-P. Serre. “Faisceaux algébriques cohérents.” <em>Annals of Math.</em> <strong>61</strong> (1955), 197–278.</p>
 </div>
 </div>
-<script type="text/javascript" src="../katex.min.js"></script>
+<script type="text/javascript" src="./katex.min.js"></script>
 
 <script type="text/javascript">
   var $document = $(document);
