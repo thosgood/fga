@@ -1,0 +1,34 @@
+name: Bookdown
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  blogdown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+
+      - name: Setup Pandoc
+        uses: r-lib/actions/setup-pandoc@v1
+
+      - name: Install Bookdown packages
+        run: |
+          R -e "remotes::install_github('rstudio/bookdown')"
+
+      - name: Build site
+        run: |
+          ./build_html.R
+
+      - name: Deploy to build branch
+        uses: JamesIves/github-pages-deploy-action@3.6.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          branch: build
+          folder: book
