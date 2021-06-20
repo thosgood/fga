@@ -200,34 +200,36 @@ In particular, $\Ext^\bullet(A,A)$ is an associative graded unital ring, etc.
 we do not make use of this fact here).
 
 In the case where the category in question is the category $\cal{C}^\scr{O}$ of $\scr{O}$-modules on $X$, we then obtain pairings
-\[
-\label{2.4}
+$$
   \Ext_\scr{O}^p(X;\scr{A},\scr{B})\times\Ext_\scr{O}^q(X;\scr{B},\scr{C}) \to \Ext_\scr{O}^{p+q}(X;\scr{A},\scr{C})
 \tag{2.4}
-\]
-that can be calculated as has already been said.
-The same method, but replacing the category of abelian groups with the category of abelian sheaves on $X$, and the $\Hom$ functors by the $\shHom$ functors, again defines pairings, having the same formal properties, and of a ``local nature'' this time:
-\[
-\label{2.5}
+$$
+that can be calculated as already described.
+The same method, but replacing the category of abelian groups with the category of abelian sheaves on $X$, and the $\Hom$ functors by the $\shHom$ functors, again defines pairings, having the same formal properties, and of a "local nature" this time:
+$$
   \shExt_\scr{O}^p(\scr{A},\scr{B})\times\shExt_\scr{O}^q(\scr{B},\scr{C}) \to \shExt_\scr{O}^{p+q}(\scr{A},\scr{C}).
 \tag{2.5}
-\]
-These can be understood by noting that the homomorphisms in \hyperref[1.8]{(1.8)} are compatible with the pairings between the $\Ext$.
+$$
+These can be understood by noting that the homomorphisms in [(1.8)](#FGA-1-equation-1.8) are compatible with the pairings between the $\Ext$.
 
 \oldpage{149-05}
-Finally, recall that we also have a multiplicative structure between functors $\HH^p(X,A)$ (the cup product).
-We note then that the spectral sequences of \hyperref[proposition1]{Proposition 1} are compatible with the multiplicative structures;
-more precisely, we have a pairing from the spectral sequence $E(A,B)$ with the spectral sequence $E(B,C)$ to the spectral sequence $E(A,C)$ that abuts to the pairing between the global $\Ext$, and whose initial page comes from the cup product and the local $\Ext$ pairings in the right-hand side of \hyperref[1.4]{(1.4)}.
-It then follows, in particular, that the ``boundary homomorphisms''
-\[
-\label{2.6}
+
+Finally, recall that we also have a multiplicative structure between functors $\HH^p(X,A)$, namely the cup product.
+We note then that the spectral sequences of [Proposition 1](#FGA-1-proposition-1) are compatible with the multiplicative structures;
+more precisely, we have a pairing from the spectral sequence $E(A,B)$ with the spectral sequence $E(B,C)$ to the spectral sequence $E(A,C)$ that abuts to the pairing between the global $\Ext$, and whose initial page comes from the cup product and the local $\Ext$ pairings in the right-hand side of [(1.4)](#FGA-1-equation-1.4).
+It then follows, in particular, that the "boundary homomorphisms"
+$$
   \Ext_\scr{O}^n(X;\scr{A},\scr{B}) \to \HH^0(X;\shExt_\scr{O}^n(\scr{A},\scr{B}))
 \tag{2.6}
-\]
-\[
-\label{2.7}
+$$
+$$
   \HH^n(X,\shHom_\scr{O}(\scr{A},\scr{B})) \to \Ext_\scr{O}^n(X;\scr{A},\scr{B})
 \tag{2.7}
-\]
+$$
 are compatible with the multiplicative structures.
-So if we restrict to sheaves that are locally isomorphic to some $\scr{O}^m$, then this completely explains the composition of the global $\Ext$ by means of the cup product, taking into account the isomorphism of \hyperref[1.5]{(1.5)}.
+So, if we restrict to sheaves that are locally isomorphic to some $\scr{O}^m$, then this completely explains the composition of the global $\Ext$ by means of the cup product, taking into account the isomorphisms of [(1.5)](#FGA-1-equation-1.5).
+
+
+## **3.** Results concerning local cohomology {#FGA-1-section-3}
+
+Let $A$ be a unital commutative ring endowed with an ideal $\frak{J}$.
