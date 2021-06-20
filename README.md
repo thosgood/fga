@@ -10,6 +10,8 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 - bibliography numbering...
 - remove global bibliography
 
+## [Preface](book)
+
 ## [1. Duality theorems for coherent algebraic sheaves](book/FGA-1)
 
 _Séminaire Bourbaki_ **9** (1956--57), Talk no. 149.
