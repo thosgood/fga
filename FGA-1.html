@@ -76,6 +76,7 @@
 <li><a href="FGA-1.html#FGA-1"><strong>1</strong> — Duality theorems for coherent algebraic sheaves</a><ul>
 <li><a href="FGA-1.html#FGA-1-section-1"><strong>1.</strong> Ext of sheaves of modules</a></li>
 <li><a href="FGA-1.html#FGA-1-section-2"><strong>2.</strong> The composition law in <eq env="math">\operatorname{Ext}</eq></a></li>
+<li><a href="FGA-1.html#FGA-1-section-3"><strong>3.</strong> Results concerning local cohomology</a></li>
 </ul></li>
 <li><a href="FGA-2.html#formal-geometry-and-algebraic-geometry"><strong>2</strong> — Formal geometry and algebraic geometry</a><ul>
 <li><a href="FGA-2.html#schemes"><strong>1.</strong> Schemes</a></li>
@@ -263,35 +264,35 @@ In particular, <eq env="math">\operatorname{Ext}^\bullet(A,A)</eq> is an associa
 we do not make use of this fact here).</p>
 <p>In the case where the category in question is the category <eq env="math">{\mathcal{C}}^{\mathscr{O}}</eq> of <eq env="math">{\mathscr{O}}</eq>-modules on <eq env="math">X</eq>, we then obtain pairings
 <eq env="displaymath">
-\label{2.4}
   \operatorname{Ext}_{\mathscr{O}}^p(X;{\mathscr{A}},{\mathscr{B}})\times\operatorname{Ext}_{\mathscr{O}}^q(X;{\mathscr{B}},{\mathscr{C}}) \to \operatorname{Ext}_{\mathscr{O}}^{p+q}(X;{\mathscr{A}},{\mathscr{C}})
 \tag{2.4}
 </eq>
-that can be calculated as has already been said.
-The same method, but replacing the category of abelian groups with the category of abelian sheaves on <eq env="math">X</eq>, and the <eq env="math">\operatorname{Hom}</eq> functors by the <eq env="math">\underline{\operatorname{Hom}}</eq> functors, again defines pairings, having the same formal properties, and of a ``local nature’’ this time:
+that can be calculated as already described.
+The same method, but replacing the category of abelian groups with the category of abelian sheaves on <eq env="math">X</eq>, and the <eq env="math">\operatorname{Hom}</eq> functors by the <eq env="math">\underline{\operatorname{Hom}}</eq> functors, again defines pairings, having the same formal properties, and of a “local nature” this time:
 <eq env="displaymath">
-\label{2.5}
   \underline{\operatorname{Ext}}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}})\times\underline{\operatorname{Ext}}_{\mathscr{O}}^q({\mathscr{B}},{\mathscr{C}}) \to \underline{\operatorname{Ext}}_{\mathscr{O}}^{p+q}({\mathscr{A}},{\mathscr{C}}).
 \tag{2.5}
 </eq>
-These can be understood by noting that the homomorphisms in  are compatible with the pairings between the <eq env="math">\operatorname{Ext}</eq>.</p>
+These can be understood by noting that the homomorphisms in <a href="FGA-1.html#FGA-1-equation-1.8">(1.8)</a> are compatible with the pairings between the <eq env="math">\operatorname{Ext}</eq>.</p>
 
-<p>Finally, recall that we also have a multiplicative structure between functors <eq env="math">\operatorname{H}^p(X,A)</eq> (the cup product).
-We note then that the spectral sequences of  are compatible with the multiplicative structures;
-more precisely, we have a pairing from the spectral sequence <eq env="math">E(A,B)</eq> with the spectral sequence <eq env="math">E(B,C)</eq> to the spectral sequence <eq env="math">E(A,C)</eq> that abuts to the pairing between the global <eq env="math">\operatorname{Ext}</eq>, and whose initial page comes from the cup product and the local <eq env="math">\operatorname{Ext}</eq> pairings in the right-hand side of .
-It then follows, in particular, that the ``boundary homomorphisms’’
+<p>Finally, recall that we also have a multiplicative structure between functors <eq env="math">\operatorname{H}^p(X,A)</eq>, namely the cup product.
+We note then that the spectral sequences of <a href="FGA-1.html#FGA-1-proposition-1">Proposition 1</a> are compatible with the multiplicative structures;
+more precisely, we have a pairing from the spectral sequence <eq env="math">E(A,B)</eq> with the spectral sequence <eq env="math">E(B,C)</eq> to the spectral sequence <eq env="math">E(A,C)</eq> that abuts to the pairing between the global <eq env="math">\operatorname{Ext}</eq>, and whose initial page comes from the cup product and the local <eq env="math">\operatorname{Ext}</eq> pairings in the right-hand side of <a href="FGA-1.html#FGA-1-equation-1.4">(1.4)</a>.
+It then follows, in particular, that the “boundary homomorphisms”
 <eq env="displaymath">
-\label{2.6}
   \operatorname{Ext}_{\mathscr{O}}^n(X;{\mathscr{A}},{\mathscr{B}}) \to \operatorname{H}^0(X;\underline{\operatorname{Ext}}_{\mathscr{O}}^n({\mathscr{A}},{\mathscr{B}}))
 \tag{2.6}
 </eq>
 <eq env="displaymath">
-\label{2.7}
   \operatorname{H}^n(X,\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}})) \to \operatorname{Ext}_{\mathscr{O}}^n(X;{\mathscr{A}},{\mathscr{B}})
 \tag{2.7}
 </eq>
 are compatible with the multiplicative structures.
-So if we restrict to sheaves that are locally isomorphic to some <eq env="math">{\mathscr{O}}^m</eq>, then this completely explains the composition of the global <eq env="math">\operatorname{Ext}</eq> by means of the cup product, taking into account the isomorphism of .</p>
+So, if we restrict to sheaves that are locally isomorphic to some <eq env="math">{\mathscr{O}}^m</eq>, then this completely explains the composition of the global <eq env="math">\operatorname{Ext}</eq> by means of the cup product, taking into account the isomorphisms of <a href="FGA-1.html#FGA-1-equation-1.5">(1.5)</a>.</p>
+</div>
+<div id="FGA-1-section-3" class="section level2">
+<h2><strong>3.</strong> Results concerning local cohomology</h2>
+<p>Let <eq env="math">A</eq> be a unital commutative ring endowed with an ideal <eq env="math">{\mathfrak{J}}</eq>.</p>
 
 </div>
 </div>
