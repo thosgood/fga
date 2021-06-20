@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  blogdown:
+  bookdown:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,7 +20,14 @@ jobs:
 
       - name: Install Bookdown packages
         run: |
+          R -e "install.packages('remotes')"
           R -e "remotes::install_github('rstudio/bookdown')"
+          
+      - name: Cache R packages
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-${{ hashFiles('DESCRIPTION') }}
 
       - name: Build site
         run: |
