@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3:VI — Picard schemes: General properties | Foundations of Algebraic Geometry</title>
+  <meta name="description" content="3:VI — Picard schemes: General properties | Foundations of Algebraic Geometry" />
+  <meta name="generator" content="bookdown 0.22.3 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3:VI — Picard schemes: General properties | Foundations of Algebraic Geometry" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="thosgood/fga" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3:VI — Picard schemes: General properties | Foundations of Algebraic Geometry" />
+  
+  
+  
+
+<meta name="author" content="A. Grothendieck" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="prev" href="FGA-3-V.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="katex.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><h4>Table of contents</h4></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Foreword</a></li>
+<li><a href="FGA-1.html#FGA-1"><strong>1</strong> — Duality theorems for coherent algebraic sheaves</a><ul>
+<li><a href="FGA-1.html#FGA-1-section-1"><strong>1.</strong> Ext of sheaves of modules</a></li>
+<li><a href="FGA-1.html#FGA-1-section-2"><strong>2.</strong> The composition law in <eq env="math">\operatorname{Ext}</eq></a></li>
+</ul></li>
+<li><a href="FGA-2.html#formal-geometry-and-algebraic-geometry"><strong>2</strong> — Formal geometry and algebraic geometry</a><ul>
+<li><a href="FGA-2.html#schemes"><strong>1.</strong> Schemes</a></li>
+</ul></li>
+<li><a href="FGA-3-I.html#i-generalities-and-descent-by-faithfully-flat-morphisms"><strong>3:I</strong> — Generalities, and descent by faithfully flat morphisms</a></li>
+<li><a href="FGA-3-II.html#ii-the-existence-theorem-and-the-formal-theory-of-modules"><strong>3:II</strong> — The existence theorem and the formal theory of modules</a></li>
+<li><a href="FGA-3-III.html#iii-quotient-preschemes"><strong>3:III</strong> — Quotient preschemes</a></li>
+<li><a href="FGA-3-IV.html#iv-hilbert-schemes"><strong>3:IV</strong> — Hilbert schemes</a><ul>
+<li class="chapter" data-level="" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html"><i class="fa fa-check"></i>Introduction</a></li>
+</ul></li>
+<li><a href="FGA-3-V.html#v-picard-schemes-existence-theorems"><strong>3:V</strong> — Picard schemes: Existence theorems</a></li>
+<li><a href="FGA-3-VI.html#vi-picard-schemes-general-properties"><strong>3:VI</strong> — Picard schemes: General properties</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Foundations of Algebraic Geometry</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="vi-picard-schemes-general-properties" class="section level1">
+<h1><strong>3:VI</strong> — Picard schemes: General properties</h1>
+
+<!-- Shortcuts -->
+<!-- Content -->
+
+<p>…</p>
+
+<div id="refs" class="references">
+<div>
+<p>[1] A. Borel, J.-P. Serre. “Le théorème de Riemann–Roch.” <em>Bull. Soc. Math. France</em>. <strong>86</strong> (1958), 97–136.</p>
+</div>
+<div>
+<p>[2] P. Cartier. “Des groups <eq env="math">\operatorname{Ext}^s(A,B)</eq>.” <em>Séminaire A. Grothendieck: Algèbre homologique</em>. <strong>1</strong> (1957), Talk no. 3.</p>
+</div>
+<div>
+<p>[3] J. Dieudonné, A. Grothendieck. “Eléments de géométrie algébrique.” <em>Publications Mathématiques de L’Institut Des Hautes Etudes Scientifiques</em>. (n.d.).</p>
+</div>
+<div>
+<p>[4] J. Dieudonné, A. Grothendieck. <em>Eléments de géométrie algébrique</em>. Publications mathématiques de l’Institut des Hautes Etudes Scientifiques, n.d. (n.d.).</p>
+</div>
+<div>
+<p>[5] J. Dieudonné, A. Grothendieck. “Eléments de géométrie algébrique, I: Le langage de schémas.” <em>Publications Mathématiques de L’Institut Des Hautes Etudes Scientifiques</em>. <strong>4</strong> (1960).</p>
+</div>
+<div>
+<p>[6] H. Grauert, R. Remmert. “Komplexe Räume.” <em>Math. Annalen</em>. <strong>136</strong> (1958), 245–318.</p>
+</div>
+<div>
+<p>[7] A. Grothendieck. “Sur quelques points d’algèbre homologique.” <em>Tohoku Math. J.</em> <strong>9</strong> (1957), 119–221.</p>
+</div>
+<div>
+<p>[8] A. Grothendieck. “The cohomology theory of abstract algebraic varieties,” in: <em>International Congress of Mathematicians, 1958, Edinburgh</em>, n.d.</p>
+</div>
+<div>
+<p>[9] A. Grothendieck. “Géométrie formelle et géométrie algébrique.” <em>Séminaire Bourbaki</em>. <strong>11</strong> (n.d.), Talk no. 182.</p>
+</div>
+<div>
+<p>[10] A. Grothendieck. “Sur quelques points d’algèbre homologique.” <em>Tohoku Math. J.</em> <strong>9</strong> (1957), 119–221.</p>
+</div>
+<div>
+<p>[11] A. Grothendieck. “Géométrie formelle et géométrie algébrique.” <em>Séminaire Bourbaki</em>. <strong>11</strong> (n.d.), Talk no. 182.</p>
+</div>
+<div>
+<p>[12] A. Grothendieck. “Technique de descente et théorèmes d’existence en géométrie algébrique, I: Généralités, descente pas morphismes fidèlement plats.” <em>Séminaire Bourbaki</em>. <strong>12</strong> (n.d.), Talk no. 190.</p>
+</div>
+<div>
+<p>[13] A. Grothendieck. “Technique de descente et théorèmes d’existence en géométrie algébrique, I: Généralités, descente pas morphismes fidèlement plats.” <em>Séminaire Bourbaki</em>. <strong>12</strong> (n.d.), Talk no. 190.</p>
+</div>
+<div>
+<p>[14] A. Grothendieck. “Technique de descente et théorèmes d’existence en géométrie algébrique, II: Le théorème d’existence et théorie formelle des modules.” <em>Séminaire Bourbaki</em>. <strong>12</strong> (n.d.), Talk no. 195.</p>
+</div>
+<div>
+<p>[15] A. Grothendieck. “Technique de descente et théorèmes d’existence en géométrie algébrique, I, II, III.” <em>Séminaire Bourbaki</em>. <strong>12, 13</strong> (n.d.), Talks no. 190, 195, and 212.</p>
+</div>
+<div>
+<p>[16] A. Grothendieck. <em>Séminaire de géométrie algébrique, I, II, III, IV</em>. Paris, Institut des Hautes Études Scientifiques, n.d. (n.d.).</p>
+</div>
+<div>
+<p>[17] A. Grothendieck. “Technique de construction en géométrie analytique, IV, V.” <em>Séminaire Cartan</em>. <strong>13</strong> (n.d.), Talks no. 11 and 12.</p>
+</div>
+<div>
+<p>[18] A. Grothendieck, J. Dieudonné. “Eléments de géométrie algébrique, I, II, III, IV.” <em>Publications Mathématiques de L’Institut Des Hautes Études Scientifiques</em>. (n.d.).</p>
+</div>
+<div>
+<p>[19] K. Kodaira. “Characteristic linear systems of complete continuous systems.” <em>Amer. J. Of Math.</em> <strong>78</strong> (1956), 716–744.</p>
+</div>
+<div>
+<p>[20] J.P. Murre. “On a connectedness theorem for a birational transformation at a simple point.” <em>Amer. J. Math.</em> <strong>80</strong> (1958), 3–15.</p>
+</div>
+<div>
+<p>[21] J.-P. Serre. “Faisceaux algébriques cohérents.” <em>Annals of Math.</em> <strong>61</strong> (1955), 197–278.</p>
+</div>
+<div>
+<p>[22] J.-P. Serre. “Sur la dimension homologique des anneaux et des modules noethériens,” in: <em>Proc. Intern. Symp. On Alg. Number Theory [1955, Tokyo et Nikko]</em>, Science Council of Japan, Tokyo, 1956: pp. 175–189.</p>
+</div>
+<div>
+<p>[23] J.-P. Serre. “Faisceaux algébriques cohérents.” <em>Annals of Math.</em> <strong>61</strong> (1955), 197–278.</p>
+</div>
+<div>
+<p>[24] J.-P. Serre. “Géométrie algébrique et géométrie analytique,” in: <em>Ann. Institut Fourier Grenoble</em>, 1956: pp. 1–42.</p>
+</div>
+<div>
+<p>[25] J.-P. Serre. “Géométrie algébrique et géométrie analytique,” in: <em>Ann. Institut Fourier Grenoble</em>, 1956: pp. 1–42.</p>
+</div>
+<div>
+<p>[26] J.-P. Serre. “Espaces fibrés algébriques.” <em>Séminaire Chevalley</em>. <strong>3</strong> (1958), Talk no. 1.</p>
+</div>
+<div>
+<p>[27] J.-P. Serre. “Corps locaux et isogénies.” <em>Séminaire Bourbaki</em>. <strong>11</strong> (n.d.), Talk no. 185.</p>
+</div>
+<div>
+<p>[28] J.-P. Serre. “Exemples de variétés projectives en caractéristique <eq env="math">p</eq> non relevables en caractéristique <eq env="math">0</eq>.” <em>Proc. Nat. Acad. Sc. U.S.A.</em> <strong>47</strong> (1961), 108–109.</p>
+</div>
+<div>
+<p>[29] G. Zappa. “Sull’esistenza, sopra la superficie algebriche, di sistemi continui completi infiniti, la cui curva e a serie caratteristica incompleta.” <em>Pont. Acad. Sc. Acta</em>. <strong>9</strong> (1945), 91–93.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="../katex.min.js"></script>
+
+<script type="text/javascript">
+  var $document = $(document);
+  $document.ready(function() {
+    //render maths with KaTeX
+    $('eq').map(function() {
+      var display = (this.getAttribute('env') == "displaymath");
+      katex.render(this.textContent, this, {displayMode: display, fleqn: true, throwOnError: false});
+    });
+    
+    //add anchor links to headers and itenv/rmenv
+    $('.section h1, .section h2, .section h3, .section h4, .section h5').each(function() {
+      anchor = '#' + $(this).parent().attr('id');
+      $(this).addClass("hasAnchor").prepend('<a href="' + anchor + '" class="anchor"></a>');
+    });
+    $('.itenv, .rmenv').each(function() {
+      if ($(this).attr('id') !== undefined) {
+        anchor = '#' + $(this).attr('id');
+        $(this).addClass("hasAnchor").prepend('<a href="' + anchor + '" class="anchor"></a>');
+      };
+    });
+    
+    //customise the header
+    $('div.font-settings button.size-3').map(function() {
+      this.setAttribute("class", "button size-2")
+      if (this.innerText == "Sepia") {
+        this.setAttribute("style", "display: none;");
+      }
+      if (this.innerText == "White") {
+        this.innerText = "Light";
+      }
+      if (this.innerText == "Night") {
+        this.innerText = "Dark";
+      }
+    });
+    // (remove the <a> tag from the title)
+    $('.book .book-header h1')[0].innerHTML = $('.book .book-header h1')[0].innerText
+  });
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="FGA-3-V.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 1
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"search": true,
+"info": false
+});
+});
+</script>
+
+</body>
+
+</html>

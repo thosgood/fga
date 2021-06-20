@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 — Duality theorems for coherent algebraic sheaves | Foundations of Algebraic Geometry</title>
+  <meta name="description" content="1 — Duality theorems for coherent algebraic sheaves | Foundations of Algebraic Geometry" />
+  <meta name="generator" content="bookdown 0.22.3 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 — Duality theorems for coherent algebraic sheaves | Foundations of Algebraic Geometry" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="thosgood/fga" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 — Duality theorems for coherent algebraic sheaves | Foundations of Algebraic Geometry" />
+  
+  
+  
+
+<meta name="author" content="A. Grothendieck" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="prev" href="index.html"/>
+<link rel="next" href="FGA-2.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="katex.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><h4>Table of contents</h4></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Foreword</a></li>
+<li><a href="FGA-1.html#FGA-1"><strong>1</strong> — Duality theorems for coherent algebraic sheaves</a><ul>
+<li><a href="FGA-1.html#FGA-1-section-1"><strong>1.</strong> Ext of sheaves of modules</a></li>
+<li><a href="FGA-1.html#FGA-1-section-2"><strong>2.</strong> The composition law in <eq env="math">\operatorname{Ext}</eq></a></li>
+</ul></li>
+<li><a href="FGA-2.html#formal-geometry-and-algebraic-geometry"><strong>2</strong> — Formal geometry and algebraic geometry</a><ul>
+<li><a href="FGA-2.html#schemes"><strong>1.</strong> Schemes</a></li>
+</ul></li>
+<li><a href="FGA-3-I.html#i-generalities-and-descent-by-faithfully-flat-morphisms"><strong>3:I</strong> — Generalities, and descent by faithfully flat morphisms</a></li>
+<li><a href="FGA-3-II.html#ii-the-existence-theorem-and-the-formal-theory-of-modules"><strong>3:II</strong> — The existence theorem and the formal theory of modules</a></li>
+<li><a href="FGA-3-III.html#iii-quotient-preschemes"><strong>3:III</strong> — Quotient preschemes</a></li>
+<li><a href="FGA-3-IV.html#iv-hilbert-schemes"><strong>3:IV</strong> — Hilbert schemes</a><ul>
+<li class="chapter" data-level="" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html"><i class="fa fa-check"></i>Introduction</a></li>
+</ul></li>
+<li><a href="FGA-3-V.html#v-picard-schemes-existence-theorems"><strong>3:V</strong> — Picard schemes: Existence theorems</a></li>
+<li><a href="FGA-3-VI.html#vi-picard-schemes-general-properties"><strong>3:VI</strong> — Picard schemes: General properties</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Foundations of Algebraic Geometry</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="FGA-1" class="section level1">
+<h1><strong>1</strong> — Duality theorems for coherent algebraic sheaves</h1>
+
+<!-- Shortcuts -->
+
+
+<!-- Content -->
+
+<p>The results that follow, inspired by Serre’s “theorem of algebraic duality”, were discovered in the winter of 1955 and the winter of 1956.
+They can be established very simply, thanks to reasonably elementary results on the cohomology of projective spaces <span class="citation">[<a href="#ref-1-3" role="doc-biblioref">21</a>]</span> and an intensive use of Cartan–Eilenberg’s homological algebra, in the form given in <span class="citation">[<a href="#ref-1-2" role="doc-biblioref">7</a>]</span>.</p>
+<div id="FGA-1-section-1" class="section level2">
+<h2><strong>1.</strong> Ext of sheaves of modules</h2>
+<p><em>(cf. <span class="citation">[<a href="#ref-1-2" role="doc-biblioref">7</a>]</span>, chap. 3 and 4)</em></p>
+<p>Let <eq env="math">X</eq> be a topological space endowed with a sheaf <eq env="math">{\mathscr{O}}</eq> of unital (but not necessarily commutative) rings.
+We consider the abelian category <eq env="math">{\mathcal{C}}^{\mathscr{O}}</eq> of sheaves of <eq env="math">{\mathscr{O}}</eq>-modules, which are also referred to as <eq env="math">{\mathscr{O}}</eq>-modules.
+We know that every object of this category admits an injective resolution, which allows us to define the <eq env="math">\operatorname{Ext}</eq> functors that have the well-known formal properties.
+More precisely, to avoid confusion, we denote by <eq env="math">\operatorname{Hom}_{\mathscr{O}}(X;{\mathscr{A}},{\mathscr{B}})</eq>, or simply <eq env="math">\operatorname{Hom}(X;{\mathscr{A}},{\mathscr{B}})</eq>, the abelian <em>groups</em> of <eq env="math">{\mathscr{O}}</eq>-homomorphisms from <eq env="math">{\mathscr{A}}</eq> to <eq env="math">{\mathscr{B}}</eq>, whereas <eq env="math">\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}})</eq> denotes the <em>sheaf</em> of germs of homomorphisms from <eq env="math">{\mathscr{A}}</eq> to <eq env="math">{\mathscr{B}}</eq> (where <eq env="math">{\mathscr{A}},{\mathscr{B}}\in {\mathcal{C}}^{\mathscr{O}}</eq>).
+We define, for fixed <eq env="math">{\mathscr{A}}\in {\mathcal{C}}^{\mathscr{O}}</eq>, functors <eq env="math">h_{\mathscr{A}}</eq> and <eq env="math">\underline{h}_{\mathscr{A}}</eq>, with values in the category <eq env="math">{\mathcal{C}}</eq> of abelian groups and the category <eq env="math">{\mathcal{C}}^Z</eq> of abelian sheaves on <eq env="math">X</eq> (respectively), by the formulas:
+<eq env="displaymath">
+  \begin{aligned}
+    h_{\mathscr{A}}({\mathscr{B}}) &amp;= \operatorname{Hom}_{\mathscr{O}}(X;{\mathscr{A}},{\mathscr{B}})
+  \\\underline{h}_{\mathscr{A}}({\mathscr{B}}) &amp;= \underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}}).
+  \end{aligned}
+\tag{1.1}
+</eq>
+The functors <eq env="math">h_{\mathscr{A}}</eq> and <eq env="math">\underline{h}_{\mathscr{A}}</eq> are left exact and covariant, and so we consider their right-derived functors, denoted by <eq env="math">\operatorname{Ext}_{\mathscr{O}}^p(X;{\mathscr{A}},{\mathscr{B}})</eq> and <eq env="math">\underline{\operatorname{Ext}}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}})</eq> (respectively).
+We then have, by definition,</p>
+<div id="FGA-1-equation-1.2" class="eqref" title="">
+<p><eq env="displaymath">
+  \begin{gathered}
+    \operatorname{Ext}_{\mathscr{O}}^p(X;{\mathscr{A}},{\mathscr{B}}) = (\operatorname{R}^p h_{\mathscr{A}})({\mathscr{B}}) = \operatorname{H}^p(\operatorname{Hom}_{\mathscr{O}}(X;{\mathscr{A}},C({\mathscr{B}})))
+  \\\underline{\operatorname{Ext}}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}}) = (\operatorname{R}^p \underline{h}_{\mathscr{A}})({\mathscr{B}}) = \operatorname{H}^p(\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},C({\mathscr{B}})))
+  \end{gathered}
+\tag{1.2}
+</eq></p>
+</div>
+<p>where <eq env="math">\operatorname{R}^p</eq> denotes the passage to right-derived functors, and where <eq env="math">C({\mathscr{B}})</eq> denotes an arbitrary injective resolution of <eq env="math">{\mathscr{B}}</eq> in <eq env="math">{\mathcal{C}}^{\mathscr{O}}</eq>.
+We denote by <eq env="math">\Gamma\colon{\mathcal{C}}^Z\to{\mathcal{C}}</eq> the “sections” functor;
+recall that its right-derived functors are denoted by <eq env="math">B\mapsto\operatorname{H}^p(X,{\mathscr{B}})</eq>:
+<eq env="displaymath">
+  \operatorname{H}^p(X,{\mathscr{B}}) = (\operatorname{R}^p\Gamma)({\mathscr{B}}) = \operatorname{H}^p(\Gamma(C({\mathscr{B}}))).
+\tag{1.3}
+</eq></p>
+
+<p>We evidently have <eq env="math">h_{\mathscr{A}}=\Gamma\underline{h}_{\mathscr{A}}</eq>;
+we can also show that <eq env="math">\underline{h}_{\mathscr{A}}</eq> sends injective objects to <eq env="math">\Gamma</eq>-acyclic objects.
+From this, it is a well-known result that:</p>
+<div id="FGA-1-proposition-1" class="itenv" title="Proposition 1">
+<p>For every <eq env="math">{\mathscr{O}}</eq>-module <eq env="math">{\mathscr{A}}</eq>, there exists a cohomological spectral functor on <eq env="math">{\mathcal{C}}^{\mathscr{O}}</eq> that abuts to the graded functor <eq env="math">(\operatorname{Ext}_{\mathscr{O}}^\bullet(X;{\mathscr{A}},{\mathscr{B}}))</eq>, and whose initial page is</p>
+<div id="FGA-1-equation-1.4" class="eqref" title="">
+<p><eq env="displaymath">
+  E_2^{p,q}({\mathscr{A}},{\mathscr{B}}) = \operatorname{H}^p(X,\underline{\operatorname{Ext}}_{\mathscr{O}}^q({\mathscr{A}},{\mathscr{B}})).
+\tag{1.4}
+</eq></p>
+</div>
+</div>
+<p>From this, we obtain “<em>boundary homomorphisms</em>”, as well as a short exact sequence, which we will not write.</p>
+<div id="FGA-1-proposition-1-corollary-1" class="itenv" title="Corollary 1">
+<p>If <eq env="math">{\mathscr{A}}</eq> is locally isomorphic to <eq env="math">{\mathscr{O}}^n</eq>, then we have canonical isomorphisms</p>
+<div id="FGA-1-equation-1.5" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{Ext}_{\mathscr{O}}^p(X;{\mathscr{A}},{\mathscr{B}}) \xleftarrow{\sim} \operatorname{H}^p(x,\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}}))
+\tag{1.5}
+</eq></p>
+</div>
+<p>(given by the boundary homomorphisms of the spectral sequence).
+In particular, we have a canonical isomorphism
+<eq env="displaymath">
+  \operatorname{Ext}_{\mathscr{O}}^p(X;{\mathscr{O}},{\mathscr{B}}) = \operatorname{H}^p(X,{\mathscr{B}}).
+\tag{1.6}
+</eq></p>
+</div>
+<p>To use these results, we need to know how to explicitly describe the <eq env="math">\operatorname{Ext}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}})</eq>.
+They are functors that we calculate locally, i.e. if <eq env="math">V</eq> is an open subset of <eq env="math">X</eq>, then
+<eq env="displaymath">
+  \underline{\operatorname{Ext}}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}})|U = \underline{\operatorname{Ext}}_{{\mathscr{O}}|U}^p({\mathscr{A}}|U,{\mathscr{B}}|U),
+</eq>
+as follows from the fact that the restriction to <eq env="math">U</eq> of an injective <eq env="math">{\mathscr{O}}</eq>-module is an injective <eq env="math">({\mathscr{O}}|U)</eq>-module.
+Furthermore, for fixed <eq env="math">x\in X</eq>, we have functorial homomorphisms</p>
+<div id="FGA-1-equation-1.7" class="eqref" title="">
+<p><eq env="displaymath">
+  \underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}})_x \to \operatorname{Hom}_{{\mathscr{O}}_x}({\mathscr{A}}_x,{\mathscr{B}}_x)
+\tag{1.7}
+</eq></p>
+</div>
+<p>that uniquely extend to homomorphisms of cohomological functors (in <eq env="math">{\mathscr{B}}</eq>):</p>
+<div id="FGA-1-equation-1.8" class="eqref" title="">
+<p><eq env="displaymath">
+  \underline{\operatorname{Ext}}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}})_x \to \operatorname{Ext}_{{\mathscr{O}}_x}^p({\mathscr{A}}_x,{\mathscr{B}}_x).
+\tag{1.8}
+</eq></p>
+</div>
+<div id="FGA-1-proposition-2" class="itenv" title="Proposition 2">
+<p>If <eq env="math">{\mathscr{A}}</eq> is isomorphic, in a neighbourhood of <eq env="math">x</eq>, to the cokernel of some homomorphism <eq env="math">{\mathscr{O}}^m\to{\mathscr{O}}^n</eq>, then <a href="FGA-1.html#FGA-1-equation-1.7">(1.7)</a> is an isomorphism for all <eq env="math">p</eq>.
+This is the case, in particular, if <eq env="math">{\mathscr{A}}</eq> is a coherent <eq env="math">{\mathscr{O}}</eq>-module <span class="citation">[<a href="#ref-1-3" role="doc-biblioref">21</a>]</span>.</p>
+</div>
+
+<div id="FGA-1-proposition-3" class="itenv" title="Proposition 3">
+<p>Let <eq env="math">{\mathscr{L}}_\bullet=({\mathscr{L}}_i)</eq> be a left resolution of the <eq env="math">{\mathscr{O}}</eq>-module <eq env="math">{\mathscr{A}}</eq> by <eq env="math">{\mathscr{O}}</eq>-modules that are all locally isomorphic to some <eq env="math">{\mathscr{O}}^n</eq>.
+Then <eq env="math">\underline{\operatorname{Ext}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}})</eq> can be identified with <eq env="math">\operatorname{H}^\bullet(\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{L}}_\bullet,{\mathscr{B}}))</eq>, and <eq env="math">\operatorname{Ext}_{\mathscr{O}}(X;{\mathscr{A}},{\mathscr{B}})</eq> can be identified with the hypercohomology of <eq env="math">X</eq> with respect to the complex <eq env="math">\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{L}}_\bullet,{\mathscr{B}})</eq>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-1" class="proof"><em>Proof</em>. </span>The proof is standard: we consider the bicomplex <eq env="math">\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{L}}_\bullet,C({\mathscr{B}}))</eq>, where <eq env="math">C({\mathscr{B}})</eq> is an injective resolution of <eq env="math">{\mathscr{B}}</eq>, as well as the natural homomorphisms into this bicomplex from <eq env="math">\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{L}}_\bullet,{\mathscr{B}})</eq> and <eq env="math">\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},C({\mathscr{B}}))</eq>.
+}</p>
+</div>
+<p>To finish, we note that the two <eq env="math">\operatorname{Ext}</eq> functors introduced in <a href="FGA-1.html#FGA-1-equation-1.2">(1.2)</a> are not only cohomological functors in <eq env="math">{\mathscr{B}}</eq>, but in fact <em>cohomological bifunctors</em>, covariant in <eq env="math">{\mathscr{B}}</eq>, and contravariant in <eq env="math">{\mathscr{A}}</eq>.</p>
+</div>
+<div id="FGA-1-section-2" class="section level2">
+<h2><strong>2.</strong> The composition law in <eq env="math">\operatorname{Ext}</eq></h2>
+<p>The results of this section are due, independently, to Cartier and Yoneda;
+see a talk by Cartier <span class="citation">[<a href="#ref-1-1" role="doc-biblioref">2</a>]</span> for more details.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-1-1">
+<p>[2] P. Cartier. “Des groups <eq env="math">\operatorname{Ext}^s(A,B)</eq>.” <em>Séminaire A. Grothendieck: Algèbre homologique</em>. <strong>1</strong> (1957), Talk no. 3.</p>
+</div>
+<div id="ref-1-2">
+<p>[7] A. Grothendieck. “Sur quelques points d’algèbre homologique.” <em>Tohoku Math. J.</em> <strong>9</strong> (1957), 119–221.</p>
+</div>
+<div id="ref-1-3">
+<p>[21] J.-P. Serre. “Faisceaux algébriques cohérents.” <em>Annals of Math.</em> <strong>61</strong> (1955), 197–278.</p>
+</div>
+</div>
+<script type="text/javascript" src="../katex.min.js"></script>
+
+<script type="text/javascript">
+  var $document = $(document);
+  $document.ready(function() {
+    //render maths with KaTeX
+    $('eq').map(function() {
+      var display = (this.getAttribute('env') == "displaymath");
+      katex.render(this.textContent, this, {displayMode: display, fleqn: true, throwOnError: false});
+    });
+    
+    //add anchor links to headers and itenv/rmenv
+    $('.section h1, .section h2, .section h3, .section h4, .section h5').each(function() {
+      anchor = '#' + $(this).parent().attr('id');
+      $(this).addClass("hasAnchor").prepend('<a href="' + anchor + '" class="anchor"></a>');
+    });
+    $('.itenv, .rmenv').each(function() {
+      if ($(this).attr('id') !== undefined) {
+        anchor = '#' + $(this).attr('id');
+        $(this).addClass("hasAnchor").prepend('<a href="' + anchor + '" class="anchor"></a>');
+      };
+    });
+    
+    //customise the header
+    $('div.font-settings button.size-3').map(function() {
+      this.setAttribute("class", "button size-2")
+      if (this.innerText == "Sepia") {
+        this.setAttribute("style", "display: none;");
+      }
+      if (this.innerText == "White") {
+        this.innerText = "Light";
+      }
+      if (this.innerText == "Night") {
+        this.innerText = "Dark";
+      }
+    });
+    // (remove the <a> tag from the title)
+    $('.book .book-header h1')[0].innerHTML = $('.book .book-header h1')[0].innerText
+  });
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="FGA-2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 1
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"search": true,
+"info": false
+});
+});
+</script>
+
+</body>
+
+</html>
