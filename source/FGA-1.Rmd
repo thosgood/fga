@@ -149,3 +149,85 @@ To finish, we note that the two $\Ext$ functors introduced in [(1.2)](#FGA-1-equ
 
 The results of this section are due, independently, to Cartier and Yoneda;
 see a talk by Cartier [@1-1] for more details.
+Let $\cal{C}$ be an abelian category, and let $K$ and $L$ be two graded objects of $\cal{C}$.
+We denote by $\Hom(K,L)$ the graded abelian group whose degree-$n$ component consists of homogeneous homomorphisms of degree $n$ from $K$ to $L$ (i.e. systems $(u_i)$ of homomorphisms $K^i\to L^{i+n}$).
+If $K$ and $L$ are complexes (with differentials of degree $+1$, to fix conventions), then we endow $\Hom(K,L)$ with the differential operator given by
+$$
+  \delta(u) = \mathrm{d}u + (-1)^{n+1}u\mathrm{d}
+  \quad\text{where }n=\deg(u)
+\tag{2.1}
+$$
+which makes it a complex with a differential of degree $+1$.
+The cycles of degree $n$ are the maps of degree $n$ that anticommute with $u$ (as homogeneous maps).
+We can then consider $\HH^\bullet(\Hom(K,L))$, which is an invariant of the homotopy types of $K$ and $L$, and which we sometimes denote by $\HH^\bullet(K,L)$.
+If we have a third complex $M$, then the composition of homomorphisms defines a pairing $\Hom(K,L)\times\Hom(L,M)\to\Hom(K,M)$ which is compatible with the differential maps, whence, by passing to the cohomology of pairings,
+
+::: {.eqref #FGA-1-equation-2.2 title="" data-latex=""}
+$$
+  \HH^\bullet(K,L)\times\HH^\bullet(L,M) \to \HH^\bullet(K,M)
+\tag{2.2}
+$$
+:::
+
+which we write as $(u,v)\mapsto vu$.
+These pairings satisfy an evident associativity property;
+in particular, $\HH^\bullet(K,K)$ is an associative graded unital ring, and $\HH^\bullet(K,L)$ (resp. $\HH^\bullet(L,K)$) is a graded right (resp. left) module over this ring, etc.
+In dimension $0$, [(2.2)](#FGA-1-equation-2.2) reduces to the composition of permissible homomorphisms of complexes.
+Finally, an exact sequence of complexes $0\to K'\to K\to K''\to0$ such that, for all $i$, $K'^i$ can be identified with a direct factor of $K^i$, gives rise to an exact sequence of complexes of groups $\Hom(K'',L)$, etc., whence a coboundary map $\HH^i(K',L)\to\HH^{i+1}(K'',L)$.
+We similarly define the boundary maps relative to an exact sequence in $L$.
+The pairings in [(2.2)](#FGA-1-equation-2.2) are compatible, in the usual sense, with these coboundary maps.
+
+\oldpage{149-04}
+
+Now suppose that $\cal{C}$ is a category such that every element $A$ of $\cal{C}$ admits an injective resolution $C(A)$.
+We then note that, using one of the many variants of the theorem of bicomplexes,
+$$
+  \HH^\bullet(C(A),C(B)) = \HH^\bullet(\Hom(C(A),C(B)))
+$$
+is canonically isomorphic to
+$$
+  \HH^\bullet(\Hom(A,C(B))) = \Ext^\bullet(A,B).
+$$
+The coboundary maps described above give coboundary maps of the $\Ext$.
+Furthermore, the pairings in [(2.2)](#FGA-1-equation-2.2) give associative pairings here:
+$$
+  \Ext^\bullet(A,B)\times\Ext^\bullet(B,C) \to \Ext^\bullet(A,C)
+\tag{2.3}
+$$
+and these are compatible with the coboundary maps.
+In particular, $\Ext^\bullet(A,A)$ is an associative graded unital ring, etc.
+(We can show in an analogous manner that the $\Ext$ functors work in the derived functors of an arbitrary functor;
+we do not make use of this fact here).
+
+In the case where the category in question is the category $\cal{C}^\scr{O}$ of $\scr{O}$-modules on $X$, we then obtain pairings
+\[
+\label{2.4}
+  \Ext_\scr{O}^p(X;\scr{A},\scr{B})\times\Ext_\scr{O}^q(X;\scr{B},\scr{C}) \to \Ext_\scr{O}^{p+q}(X;\scr{A},\scr{C})
+\tag{2.4}
+\]
+that can be calculated as has already been said.
+The same method, but replacing the category of abelian groups with the category of abelian sheaves on $X$, and the $\Hom$ functors by the $\shHom$ functors, again defines pairings, having the same formal properties, and of a ``local nature'' this time:
+\[
+\label{2.5}
+  \shExt_\scr{O}^p(\scr{A},\scr{B})\times\shExt_\scr{O}^q(\scr{B},\scr{C}) \to \shExt_\scr{O}^{p+q}(\scr{A},\scr{C}).
+\tag{2.5}
+\]
+These can be understood by noting that the homomorphisms in \hyperref[1.8]{(1.8)} are compatible with the pairings between the $\Ext$.
+
+\oldpage{149-05}
+Finally, recall that we also have a multiplicative structure between functors $\HH^p(X,A)$ (the cup product).
+We note then that the spectral sequences of \hyperref[proposition1]{Proposition 1} are compatible with the multiplicative structures;
+more precisely, we have a pairing from the spectral sequence $E(A,B)$ with the spectral sequence $E(B,C)$ to the spectral sequence $E(A,C)$ that abuts to the pairing between the global $\Ext$, and whose initial page comes from the cup product and the local $\Ext$ pairings in the right-hand side of \hyperref[1.4]{(1.4)}.
+It then follows, in particular, that the ``boundary homomorphisms''
+\[
+\label{2.6}
+  \Ext_\scr{O}^n(X;\scr{A},\scr{B}) \to \HH^0(X;\shExt_\scr{O}^n(\scr{A},\scr{B}))
+\tag{2.6}
+\]
+\[
+\label{2.7}
+  \HH^n(X,\shHom_\scr{O}(\scr{A},\scr{B})) \to \Ext_\scr{O}^n(X;\scr{A},\scr{B})
+\tag{2.7}
+\]
+are compatible with the multiplicative structures.
+So if we restrict to sheaves that are locally isomorphic to some $\scr{O}^m$, then this completely explains the composition of the global $\Ext$ by means of the cup product, taking into account the isomorphism of \hyperref[1.5]{(1.5)}.
