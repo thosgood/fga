@@ -1,0 +1,34 @@
+# **1** --- Duality theorems for coherent algebraic sheaves
+
+\providecommand{\scr}[1]{{\mathscr{#1}}}
+\renewcommand{\cal}[1]{{\mathcal{#1}}}
+\renewcommand{\frak}[1]{{\mathfrak{#1}}}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+
+<!-- Shortcuts -->
+
+\providecommand{\from}{\leftarrow}
+\providecommand{\bb}{\mathbf}
+
+\providecommand{\Ext}{\operatorname{Ext}}
+\providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\Tor}{\operatorname{Tor}}
+\providecommand{\shExt}{\underline{\Ext}}
+\providecommand{\shHom}{\underline{\Hom}}
+\providecommand{\RR}{\operatorname{R}}
+\providecommand{\HH}{\operatorname{H}}
+
+<!-- Content -->
+
+\oldpage{149-01}
+
+The results that follow, inspired by Serre's "theorem of algebraic duality", were discovered in the winter of 1955 and the winter of 1956.
+They can be established very simply, thanks to reasonably elementary results on the cohomology of projective spaces [@1-3] and an intensive use of Cartan--Eilenberg's homological algebra, in the form given in [@1-2].
+
+
+## **1.** Ext of sheaves of modules
+
+_(cf. @1-2, chap. 3 and 4)_
+
+Let $X$ be a topological space endowed with a sheaf $\scr{O}$ of unital (but not necessarily commutative) rings.

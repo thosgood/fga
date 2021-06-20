@@ -1,0 +1,22 @@
+bookdown::gitbook:
+  number_sections: no
+  anchor_sections: no
+  mathjax: null
+  pandoc_args: ["--gladtex"]
+  css: ["style.css", "katex.css"]
+  includes:
+    after_body: ["scripts.html"]
+  split_by: rmd
+  split_bib: yes
+  config:
+    toc:
+      scroll_highlight: yes
+      before: |
+        <li><h4>Table of contents</h4></li>
+    fontsettings:
+      theme: white
+      family: serif
+      size: 1
+    search: yes
+    sharing: no
+    info: no
