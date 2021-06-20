@@ -32,3 +32,120 @@ They can be established very simply, thanks to reasonably elementary results on 
 _(cf. @1-2, chap. 3 and 4)_
 
 Let $X$ be a topological space endowed with a sheaf $\scr{O}$ of unital (but not necessarily commutative) rings.
+We consider the abelian category $\cal{C}^\scr{O}$ of sheaves of $\scr{O}$-modules, which are also referred to as $\scr{O}$-modules.
+We know that every object of this category admits an injective resolution, which allows us to define the $\Ext$ functors that have the well-known formal properties.
+More precisely, to avoid confusion, we denote by $\Hom_\scr{O}(X;\scr{A},\scr{B})$, or simply $\Hom(X;\scr{A},\scr{B})$, the abelian _groups_ of $\scr{O}$-homomorphisms from $\scr{A}$ to $\scr{B}$, whereas $\shHom_\scr{O}(\scr{A},\scr{B})$ denotes the _sheaf_ of germs of homomorphisms from $\scr{A}$ to $\scr{B}$ (where $\scr{A},\scr{B}\in \cal{C}^\scr{O}$).
+We define, for fixed $\scr{A}\in \cal{C}^\scr{O}$, functors $h_\scr{A}$ and $\underline{h}_\scr{A}$, with values in the category $\cal{C}$ of abelian groups and the category $\cal{C}^Z$ of abelian sheaves on $X$ (respectively), by the formulas:
+$$
+  \begin{aligned}
+    h_\scr{A}(\scr{B}) &= \Hom_\scr{O}(X;\scr{A},\scr{B})
+  \\\underline{h}_\scr{A}(\scr{B}) &= \shHom_\scr{O}(\scr{A},\scr{B}).
+  \end{aligned}
+\tag{1.1}
+$$
+The functors $h_\scr{A}$ and $\underline{h}_\scr{A}$ are left exact and covariant, and so we consider their right-derived functors, denoted by $\Ext_\scr{O}^p(X;\scr{A},\scr{B})$ and $\shExt_\scr{O}^p(\scr{A},\scr{B})$ (respectively).
+We then have, by definition,
+
+::: {.eqref #FGA-1-equation-1.2 title="" data-latex=""}
+$$
+  \begin{gathered}
+    \Ext_\scr{O}^p(X;\scr{A},\scr{B}) = (\RR^p h_\scr{A})(\scr{B}) = \HH^p(\Hom_\scr{O}(X;\scr{A},C(\scr{B})))
+  \\\shExt_\scr{O}^p(\scr{A},\scr{B}) = (\RR^p \underline{h}_\scr{A})(\scr{B}) = \HH^p(\shHom_\scr{O}(\scr{A},C(\scr{B})))
+  \end{gathered}
+\tag{1.2}
+$$
+:::
+
+where $\RR^p$ denotes the passage to right-derived functors, and where $C(\scr{B})$ denotes an arbitrary injective resolution of $\scr{B}$ in $\cal{C}^\scr{O}$.
+We denote by $\Gamma\colon\cal{C}^Z\to\cal{C}$ the "sections" functor;
+recall that its right-derived functors are denoted by $B\mapsto\HH^p(X,\scr{B})$:
+$$
+  \HH^p(X,\scr{B}) = (\RR^p\Gamma)(\scr{B}) = \HH^p(\Gamma(C(\scr{B}))).
+\tag{1.3}
+$$
+
+\oldpage{149-02}
+
+We evidently have $h_\scr{A}=\Gamma\underline{h}_\scr{A}$;
+we can also show that $\underline{h}_\scr{A}$ sends injective objects to $\Gamma$-acyclic objects.
+From this, it is a well-known result that:
+
+:::: {.itenv #FGA-1-proposition-1 title="Proposition 1" data-latex="{Proposition 1}"}
+For every $\scr{O}$-module $\scr{A}$, there exists a cohomological spectral functor on $\cal{C}^\scr{O}$ that abuts to the graded functor $(\Ext_\scr{O}^\bullet(X;\scr{A},\scr{B}))$, and whose initial page is
+
+::: {.eqref #FGA-1-equation-1.4 title="" data-latex=""}
+$$
+  E_2^{p,q}(\scr{A},\scr{B}) = \HH^p(X,\shExt_\scr{O}^q(\scr{A},\scr{B})).
+\tag{1.4}
+$$
+:::
+::::
+
+From this, we obtain "_boundary homomorphisms_", as well as a short exact sequence, which we will not write.
+
+:::: {.itenv #FGA-1-proposition-1-corollary-1 title="Corollary 1" data-latex="{Corollary 1}"}
+If $\scr{A}$ is locally isomorphic to $\scr{O}^n$, then we have canonical isomorphisms
+
+::: {.eqref #FGA-1-equation-1.5 title="" data-latex=""}
+$$
+  \Ext_\scr{O}^p(X;\scr{A},\scr{B}) \xleftarrow{\sim} \HH^p(x,\shHom_\scr{O}(\scr{A},\scr{B}))
+\tag{1.5}
+$$
+:::
+
+(given by the boundary homomorphisms of the spectral sequence).
+In particular, we have a canonical isomorphism
+$$
+  \Ext_\scr{O}^p(X;\scr{O},\scr{B}) = \HH^p(X,\scr{B}).
+\tag{1.6}
+$$
+::::
+
+To use these results, we need to know how to explicitly describe the $\Ext_\scr{O}^p(\scr{A},\scr{B})$.
+They are functors that we calculate locally, i.e. if $V$ is an open subset of $X$, then
+$$
+  \shExt_\scr{O}^p(\scr{A},\scr{B})|U = \shExt_{\scr{O}|U}^p(\scr{A}|U,\scr{B}|U),
+$$
+as follows from the fact that the restriction to $U$ of an injective $\scr{O}$-module is an injective $(\scr{O}|U)$-module.
+Furthermore, for fixed $x\in X$, we have functorial homomorphisms
+
+::: {.eqref #FGA-1-equation-1.7 title="" data-latex=""}
+$$
+  \shHom_\scr{O}(\scr{A},\scr{B})_x \to \Hom_{\scr{O}_x}(\scr{A}_x,\scr{B}_x)
+\tag{1.7}
+$$
+:::
+
+that uniquely extend to homomorphisms of cohomological functors (in $\scr{B}$):
+
+::: {.eqref #FGA-1-equation-1.8 title="" data-latex=""}
+$$
+  \shExt_\scr{O}^p(\scr{A},\scr{B})_x \to \Ext_{\scr{O}_x}^p(\scr{A}_x,\scr{B}_x).
+\tag{1.8}
+$$
+:::
+
+::: {.itenv #FGA-1-proposition-2 title="Proposition 2" data-latex="{Proposition 2}"}
+If $\scr{A}$ is isomorphic, in a neighbourhood of $x$, to the cokernel of some homomorphism $\scr{O}^m\to\scr{O}^n$, then [(1.7)](#FGA-1-equation-1.7) is an isomorphism for all $p$.
+This is the case, in particular, if $\scr{A}$ is a coherent $\scr{O}$-module [@1-3].
+:::
+
+\oldpage{149-03}
+
+::: {.itenv #FGA-1-proposition-3 title="Proposition 3" data-latex="{Proposition 3}"}
+Let $\scr{L}_\bullet=(\scr{L}_i)$ be a left resolution of the $\scr{O}$-module $\scr{A}$ by $\scr{O}$-modules that are all locally isomorphic to some $\scr{O}^n$.
+Then $\shExt_\scr{O}(\scr{A},\scr{B})$ can be identified with $\HH^\bullet(\shHom_\scr{O}(\scr{L}_\bullet,\scr{B}))$, and $\Ext_\scr{O}(X;\scr{A},\scr{B})$ can be identified with the hypercohomology of $X$ with respect to the complex $\shHom_\scr{O}(\scr{L}_\bullet,\scr{B})$.
+:::
+
+::: {.proof}
+The proof is standard: we consider the bicomplex $\shHom_\scr{O}(\scr{L}_\bullet,C(\scr{B}))$, where $C(\scr{B})$ is an injective resolution of $\scr{B}$, as well as the natural homomorphisms into this bicomplex from $\shHom_\scr{O}(\scr{L}_\bullet,\scr{B})$ and $\shHom_\scr{O}(\scr{A},C(\scr{B}))$.
+}
+:::
+
+To finish, we note that the two $\Ext$ functors introduced in [(1.2)](#FGA-1-equation-1.2) are not only cohomological functors in $\scr{B}$, but in fact _cohomological bifunctors_, covariant in $\scr{B}$, and contravariant in $\scr{A}$.
+
+
+## **2.** The composition law in $\Ext$
+
+The results of this section are due, independently, to Cartier and Yoneda;
+see a talk by Cartier [@1-1] for more details.

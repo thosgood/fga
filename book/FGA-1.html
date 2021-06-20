@@ -98,6 +98,7 @@ div.csl-indent {
 <li><a href="FGA-1.html#duality-theorems-for-coherent-algebraic-sheaves"><strong>1</strong> — Duality theorems for coherent algebraic sheaves</a>
 <ul>
 <li><a href="FGA-1.html#ext-of-sheaves-of-modules"><strong>1.</strong> Ext of sheaves of modules</a></li>
+<li><a href="FGA-1.html#the-composition-law-in-operatornameext"><strong>2.</strong> The composition law in <eq env="math">\operatorname{Ext}</eq></a></li>
 </ul></li>
 <li><a href="FGA-2.html#formal-geometry-and-algebraic-geometry"><strong>2</strong> — Formal geometry and algebraic geometry</a>
 <ul>
@@ -138,12 +139,110 @@ They can be established very simply, thanks to reasonably elementary results on 
 <div id="ext-of-sheaves-of-modules" class="section level2">
 <h2><strong>1.</strong> Ext of sheaves of modules</h2>
 <p><em>(cf. <span class="citation">[<a href="#ref-1-2" role="doc-biblioref">7</a>]</span>, chap. 3 and 4)</em></p>
-<p>Let <eq env="math">X</eq> be a topological space endowed with a sheaf <eq env="math">{\mathscr{O}}</eq> of unital (but not necessarily commutative) rings.</p>
+<p>Let <eq env="math">X</eq> be a topological space endowed with a sheaf <eq env="math">{\mathscr{O}}</eq> of unital (but not necessarily commutative) rings.
+We consider the abelian category <eq env="math">{\mathcal{C}}^{\mathscr{O}}</eq> of sheaves of <eq env="math">{\mathscr{O}}</eq>-modules, which are also referred to as <eq env="math">{\mathscr{O}}</eq>-modules.
+We know that every object of this category admits an injective resolution, which allows us to define the <eq env="math">\operatorname{Ext}</eq> functors that have the well-known formal properties.
+More precisely, to avoid confusion, we denote by <eq env="math">\operatorname{Hom}_{\mathscr{O}}(X;{\mathscr{A}},{\mathscr{B}})</eq>, or simply <eq env="math">\operatorname{Hom}(X;{\mathscr{A}},{\mathscr{B}})</eq>, the abelian <em>groups</em> of <eq env="math">{\mathscr{O}}</eq>-homomorphisms from <eq env="math">{\mathscr{A}}</eq> to <eq env="math">{\mathscr{B}}</eq>, whereas <eq env="math">\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}})</eq> denotes the <em>sheaf</em> of germs of homomorphisms from <eq env="math">{\mathscr{A}}</eq> to <eq env="math">{\mathscr{B}}</eq> (where <eq env="math">{\mathscr{A}},{\mathscr{B}}\in {\mathcal{C}}^{\mathscr{O}}</eq>).
+We define, for fixed <eq env="math">{\mathscr{A}}\in {\mathcal{C}}^{\mathscr{O}}</eq>, functors <eq env="math">h_{\mathscr{A}}</eq> and <eq env="math">\underline{h}_{\mathscr{A}}</eq>, with values in the category <eq env="math">{\mathcal{C}}</eq> of abelian groups and the category <eq env="math">{\mathcal{C}}^Z</eq> of abelian sheaves on <eq env="math">X</eq> (respectively), by the formulas:
+<eq env="displaymath">
+  \begin{aligned}
+    h_{\mathscr{A}}({\mathscr{B}}) &amp;= \operatorname{Hom}_{\mathscr{O}}(X;{\mathscr{A}},{\mathscr{B}})
+  \\\underline{h}_{\mathscr{A}}({\mathscr{B}}) &amp;= \underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}}).
+  \end{aligned}
+\tag{1.1}
+</eq>
+The functors <eq env="math">h_{\mathscr{A}}</eq> and <eq env="math">\underline{h}_{\mathscr{A}}</eq> are left exact and covariant, and so we consider their right-derived functors, denoted by <eq env="math">\operatorname{Ext}_{\mathscr{O}}^p(X;{\mathscr{A}},{\mathscr{B}})</eq> and <eq env="math">\underline{\operatorname{Ext}}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}})</eq> (respectively).
+We then have, by definition,</p>
+<div id="FGA-1-equation-1.2" class="eqref" title="">
+<p><eq env="displaymath">
+  \begin{gathered}
+    \operatorname{Ext}_{\mathscr{O}}^p(X;{\mathscr{A}},{\mathscr{B}}) = (\operatorname{R}^p h_{\mathscr{A}})({\mathscr{B}}) = \operatorname{H}^p(\operatorname{Hom}_{\mathscr{O}}(X;{\mathscr{A}},C({\mathscr{B}})))
+  \\\underline{\operatorname{Ext}}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}}) = (\operatorname{R}^p \underline{h}_{\mathscr{A}})({\mathscr{B}}) = \operatorname{H}^p(\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},C({\mathscr{B}})))
+  \end{gathered}
+\tag{1.2}
+</eq></p>
+</div>
+<p>where <eq env="math">\operatorname{R}^p</eq> denotes the passage to right-derived functors, and where <eq env="math">C({\mathscr{B}})</eq> denotes an arbitrary injective resolution of <eq env="math">{\mathscr{B}}</eq> in <eq env="math">{\mathcal{C}}^{\mathscr{O}}</eq>.
+We denote by <eq env="math">\Gamma\colon{\mathcal{C}}^Z\to{\mathcal{C}}</eq> the “sections” functor;
+recall that its right-derived functors are denoted by <eq env="math">B\mapsto\operatorname{H}^p(X,{\mathscr{B}})</eq>:
+<eq env="displaymath">
+  \operatorname{H}^p(X,{\mathscr{B}}) = (\operatorname{R}^p\Gamma)({\mathscr{B}}) = \operatorname{H}^p(\Gamma(C({\mathscr{B}}))).
+\tag{1.3}
+</eq></p>
+<p>We evidently have <eq env="math">h_{\mathscr{A}}=\Gamma\underline{h}_{\mathscr{A}}</eq>;
+we can also show that <eq env="math">\underline{h}_{\mathscr{A}}</eq> sends injective objects to <eq env="math">\Gamma</eq>-acyclic objects.
+From this, it is a well-known result that:</p>
+<div id="FGA-1-proposition-1" class="itenv" title="Proposition 1">
+<p>For every <eq env="math">{\mathscr{O}}</eq>-module <eq env="math">{\mathscr{A}}</eq>, there exists a cohomological spectral functor on <eq env="math">{\mathcal{C}}^{\mathscr{O}}</eq> that abuts to the graded functor <eq env="math">(\operatorname{Ext}_{\mathscr{O}}^\bullet(X;{\mathscr{A}},{\mathscr{B}}))</eq>, and whose initial page is</p>
+<div id="FGA-1-equation-1.4" class="eqref" title="">
+<p><eq env="displaymath">
+  E_2^{p,q}({\mathscr{A}},{\mathscr{B}}) = \operatorname{H}^p(X,\underline{\operatorname{Ext}}_{\mathscr{O}}^q({\mathscr{A}},{\mathscr{B}})).
+\tag{1.4}
+</eq></p>
+</div>
+</div>
+<p>From this, we obtain “<em>boundary homomorphisms</em>,” as well as a short exact sequence, which we will not write.</p>
+<div id="FGA-1-proposition-1-corollary-1" class="itenv" title="Corollary 1">
+<p>If <eq env="math">{\mathscr{A}}</eq> is locally isomorphic to <eq env="math">{\mathscr{O}}^n</eq>, then we have canonical isomorphisms</p>
+<div id="FGA-1-equation-1.5" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{Ext}_{\mathscr{O}}^p(X;{\mathscr{A}},{\mathscr{B}}) \xleftarrow{\sim} \operatorname{H}^p(x,\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}}))
+\tag{1.5}
+</eq></p>
+</div>
+<p>(given by the boundary homomorphisms of the spectral sequence).
+In particular, we have a canonical isomorphism
+<eq env="displaymath">
+  \operatorname{Ext}_{\mathscr{O}}^p(X;{\mathscr{O}},{\mathscr{B}}) = \operatorname{H}^p(X,{\mathscr{B}}).
+\tag{1.6}
+</eq></p>
+</div>
+<p>To use these results, we need to know how to explicitly describe the <eq env="math">\operatorname{Ext}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}})</eq>.
+They are functors that we calculate locally, i.e. if <eq env="math">V</eq> is an open subset of <eq env="math">X</eq>, then
+<eq env="displaymath">
+  \underline{\operatorname{Ext}}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}})|U = \underline{\operatorname{Ext}}_{{\mathscr{O}}|U}^p({\mathscr{A}}|U,{\mathscr{B}}|U),
+</eq>
+as follows from the fact that the restriction to <eq env="math">U</eq> of an injective <eq env="math">{\mathscr{O}}</eq>-module is an injective <eq env="math">({\mathscr{O}}|U)</eq>-module.
+Furthermore, for fixed <eq env="math">x\in X</eq>, we have functorial homomorphisms</p>
+<div id="FGA-1-equation-1.7" class="eqref" title="">
+<p><eq env="displaymath">
+  \underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}})_x \to \operatorname{Hom}_{{\mathscr{O}}_x}({\mathscr{A}}_x,{\mathscr{B}}_x)
+\tag{1.7}
+</eq></p>
+</div>
+<p>that uniquely extend to homomorphisms of cohomological functors (in <eq env="math">{\mathscr{B}}</eq>):</p>
+<div id="FGA-1-equation-1.8" class="eqref" title="">
+<p><eq env="displaymath">
+  \underline{\operatorname{Ext}}_{\mathscr{O}}^p({\mathscr{A}},{\mathscr{B}})_x \to \operatorname{Ext}_{{\mathscr{O}}_x}^p({\mathscr{A}}_x,{\mathscr{B}}_x).
+\tag{1.8}
+</eq></p>
+</div>
+<div id="FGA-1-proposition-2" class="itenv" title="Proposition 2">
+<p>If <eq env="math">{\mathscr{A}}</eq> is isomorphic, in a neighbourhood of <eq env="math">x</eq>, to the cokernel of some homomorphism <eq env="math">{\mathscr{O}}^m\to{\mathscr{O}}^n</eq>, then <a href="FGA-1.html#FGA-1-equation-1.7">(1.7)</a> is an isomorphism for all <eq env="math">p</eq>.
+This is the case, in particular, if <eq env="math">{\mathscr{A}}</eq> is a coherent <eq env="math">{\mathscr{O}}</eq>-module <span class="citation">[<a href="#ref-1-3" role="doc-biblioref">21</a>]</span>.</p>
+</div>
+<div id="FGA-1-proposition-3" class="itenv" title="Proposition 3">
+<p>Let <eq env="math">{\mathscr{L}}_\bullet=({\mathscr{L}}_i)</eq> be a left resolution of the <eq env="math">{\mathscr{O}}</eq>-module <eq env="math">{\mathscr{A}}</eq> by <eq env="math">{\mathscr{O}}</eq>-modules that are all locally isomorphic to some <eq env="math">{\mathscr{O}}^n</eq>.
+Then <eq env="math">\underline{\operatorname{Ext}}_{\mathscr{O}}({\mathscr{A}},{\mathscr{B}})</eq> can be identified with <eq env="math">\operatorname{H}^\bullet(\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{L}}_\bullet,{\mathscr{B}}))</eq>, and <eq env="math">\operatorname{Ext}_{\mathscr{O}}(X;{\mathscr{A}},{\mathscr{B}})</eq> can be identified with the hypercohomology of <eq env="math">X</eq> with respect to the complex <eq env="math">\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{L}}_\bullet,{\mathscr{B}})</eq>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-1" class="proof"><em>Proof</em>. </span>The proof is standard: we consider the bicomplex <eq env="math">\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{L}}_\bullet,C({\mathscr{B}}))</eq>, where <eq env="math">C({\mathscr{B}})</eq> is an injective resolution of <eq env="math">{\mathscr{B}}</eq>, as well as the natural homomorphisms into this bicomplex from <eq env="math">\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{L}}_\bullet,{\mathscr{B}})</eq> and <eq env="math">\underline{\operatorname{Hom}}_{\mathscr{O}}({\mathscr{A}},C({\mathscr{B}}))</eq>.
+}</p>
+</div>
+<p>To finish, we note that the two <eq env="math">\operatorname{Ext}</eq> functors introduced in <a href="FGA-1.html#FGA-1-equation-1.2">(1.2)</a> are not only cohomological functors in <eq env="math">{\mathscr{B}}</eq>, but in fact <em>cohomological bifunctors</em>, covariant in <eq env="math">{\mathscr{B}}</eq>, and contravariant in <eq env="math">{\mathscr{A}}</eq>.</p>
+</div>
+<div id="the-composition-law-in-operatornameext" class="section level2">
+<h2><strong>2.</strong> The composition law in <eq env="math">\operatorname{Ext}</eq></h2>
+<p>The results of this section are due, independently, to Cartier and Yoneda;
+see a talk by Cartier <span class="citation">[<a href="#ref-1-1" role="doc-biblioref">2</a>]</span> for more details.</p>
 
 </div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body">
+<div id="ref-1-1" class="csl-entry">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">P. Cartier. <span>“Des groups <eq env="math">\operatorname{Ext}^s(A,B)</eq>.”</span> <em><span>Séminaire A. Grothendieck: Algèbre Homologique</span></em>. <strong>1</strong> (1957), Talk no. 3.</div>
+</div>
 <div id="ref-1-2" class="csl-entry">
 <div class="csl-left-margin">[7] </div><div class="csl-right-inline">A. Grothendieck. <span>“Sur quelques points d’algèbre homologique.”</span> <em>Tohoku Math. J.</em> <strong>9</strong> (1957), 119–221.</div>
 </div>
