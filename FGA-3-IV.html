@@ -79,17 +79,18 @@
 <li><a href="FGA-1.html#FGA-1-section-3"><strong>3.</strong> Results concerning local cohomology</a></li>
 <li><a href="FGA-1.html#FGA-1-section-4"><strong>4.</strong> Cohomology class associated to a subvariety</a></li>
 </ul></li>
-<li><a href="FGA-2.html#formal-geometry-and-algebraic-geometry"><strong>2</strong> — Formal geometry and algebraic geometry</a><ul>
+<li><a href="FGA-2.html#FGA-2"><strong>2</strong> — Formal geometry and algebraic geometry</a><ul>
 <li><a href="FGA-2.html#schemes"><strong>1.</strong> Schemes</a></li>
 </ul></li>
-<li><a href="FGA-3-I.html#i-generalities-and-descent-by-faithfully-flat-morphisms"><strong>3:I</strong> — Generalities, and descent by faithfully flat morphisms</a></li>
-<li><a href="FGA-3-II.html#ii-the-existence-theorem-and-the-formal-theory-of-modules"><strong>3:II</strong> — The existence theorem and the formal theory of modules</a></li>
-<li><a href="FGA-3-III.html#iii-quotient-preschemes"><strong>3:III</strong> — Quotient preschemes</a></li>
-<li><a href="FGA-3-IV.html#iv-hilbert-schemes"><strong>3:IV</strong> — Hilbert schemes</a><ul>
+<li><a href="FGA-3-I.html#FGA-3.I"><strong>3:I</strong> — Generalities, and descent by faithfully flat morphisms</a></li>
+<li><a href="FGA-3-II.html#FGA-3.II"><strong>3:II</strong> — The existence theorem and the formal theory of modules</a></li>
+<li><a href="FGA-3-III.html#FGA-3.III"><strong>3:III</strong> — Quotient preschemes</a></li>
+<li><a href="FGA-3-IV.html#FGA-3.IV"><strong>3:IV</strong> — Hilbert schemes</a><ul>
 <li class="chapter" data-level="" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li><a href="FGA-3-IV.html#FGA-3-IV-section-1"><strong>1.</strong> Bounded sets of sheaves: invariance properties</a></li>
 </ul></li>
-<li><a href="FGA-3-V.html#v-picard-schemes-existence-theorems"><strong>3:V</strong> — Picard schemes: Existence theorems</a></li>
-<li><a href="FGA-3-VI.html#vi-picard-schemes-general-properties"><strong>3:VI</strong> — Picard schemes: General properties</a></li>
+<li><a href="FGA-3-V.html#FGA-3.V"><strong>3:V</strong> — Picard schemes: Existence theorems</a></li>
+<li><a href="FGA-3-VI.html#FGA-3.VI"><strong>3:VI</strong> — Picard schemes: General properties</a></li>
 </ul>
 
       </nav>
@@ -107,7 +108,7 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="iv-hilbert-schemes" class="section level1">
+<div id="FGA-3.IV" class="section level1">
 <h1><strong>3:IV</strong> — Hilbert schemes</h1>
 
 <!-- Shortcuts -->
@@ -126,9 +127,47 @@
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
 
-<p>The techniques described in</p>
+<p>The techniques described in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span> were, for the most part, independent of any projective hypotheses on the schemes in question.
+Unfortunately, they have not as of yet allowed us to solve the existence problems posed in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>.
+In the current exposé, and the following, we will solve these problems by imposing projective hypotheses.
+The techniques used are typically projective, and practically make no use of any results from <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>.
+Here we will construct “Hilbert schemes”, which are meant to replace the use of Chow coordinates, as was mentioned in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>.
+In the next exposé, the theory of passing to the quotient in schemes, developed in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>, combined with the theory of Hilbert schemes, will allow us, for example, to construct Picard schemes (defined in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>) under rather general conditions.</p>
+<p>In summary, we can say that we now have a more or less satisfying technique of projective constructions, apart from the fact that we are still missing<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> a theory of passing to the quotient by groups such as the projective group, acting “without fixed points” (cf. <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>).
+The situation even seems slightly better in analytic geometry (if we restrict to the study of “projective” analytic spaces over a given analytic space), since, for analytic spaces, the difficulty of passing to the quotient by a group that acts nicely disappears.
+Either way, in algebraic geometry, as well as in analytic geometry, it remains to develop a construction technique that works without any projective hypotheses.</p>
+</div>
+<div id="FGA-3-IV-section-1" class="section level2">
+<h2><strong>1.</strong> Bounded sets of sheaves: invariance properties</h2>
+<p>Let <eq env="math">k</eq> be a field, and <eq env="math">X</eq> a <eq env="math">k</eq>-prescheme (which we take to be of finite type, for simplicity).
+For every extension <eq env="math">K/k</eq>, we obtain a <eq env="math">K</eq>-prescheme <eq env="math">X_K=X\otimes_k K</eq>.
+If <eq env="math">{\mathscr{F}}</eq> is a coherent sheaf on <eq env="math">X_K</eq>, and if <eq env="math">K'</eq> is an extension of <eq env="math">K</eq>, then <eq env="math">{\mathscr{F}}\otimes_K K'={\mathscr{F}}_{K'}</eq> is a quasi-coherent sheaf on <eq env="math">X_K\otimes_KK'=X_{K'}</eq>.
+So, if <eq env="math">K</eq> and <eq env="math">K'</eq> are arbitrary extensions of <eq env="math">k</eq>, and <eq env="math">{\mathscr{F}}</eq> a quasi-coherent sheaf on <eq env="math">X_K</eq> and <eq env="math">{\mathscr{F}}'</eq>
+
+a quasi-coherent sheaf on <eq env="math">X_{K'}</eq>, then we say that <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq> are <em>equivalent</em> if there exists an extension <eq env="math">K"/k</eq> as well as <eq env="math">k</eq>-homomorphisms <eq env="math">K\to K"</eq> and <eq env="math">K'\to K"</eq> such that <eq env="math">{\mathscr{F}}_{K"}</eq> and <eq env="math">{\mathscr{F}}'_{K"}</eq> are isomorphic on <eq env="math">X_{K"}</eq> <strong>(TO-DO: ? is this right?)</strong>.
+This defines an equivalence relation, and we are interested in the equivalence classes of sheaves under this relation, and of sets of such equivalence classes.
+Note that, if <eq env="math">X_0</eq> is of finite type over <eq env="math">k</eq>, then every class of coherent sheaves can be defined by a coherent sheaf on <eq env="math">X_K</eq>, where <eq env="math">K</eq> is some extension of <eq env="math">k</eq> <em>of finite type</em>.
+We can thus, in the definition of classes of coherent sheaves, restrict ourselves to <em>algebraically closed</em> extensions of <eq env="math">k</eq>, and we can also restrict ourselves to a fixed algebraically closed extension <eq env="math">\Omega</eq> of <eq env="math">k</eq>, of infinite transcendence degree;
+two coherent sheaves <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq> on <eq env="math">X_\Omega</eq> are then equivalent if and only if there exists a <eq env="math">K</eq>-automorphism <eq env="math">\sigma</eq> of <eq env="math">\Omega</eq> such that <eq env="math">{\mathscr{F}}\otimes_K(\Omega,\sigma)</eq> is isomorphic to <eq env="math">{\mathscr{F}}'</eq>.
+Note that there is a bijective correspondence between classes of coherent sheaves under the first definition and under the second.</p>
+<p>Let <eq env="math">E</eq> and <eq env="math">E'</eq> be two sets of classes of coherent sheaves on <eq env="math">X</eq>.
+Consider the classes of all sheaves of the form <eq env="math">{\mathscr{F}}\otimes{\mathscr{F}}'</eq>, where <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq> are coherent sheaves on the <em>same</em> <eq env="math">X_K</eq>, with the class of <eq env="math">{\mathscr{F}}</eq> being in <eq env="math">E</eq> and the class of <eq env="math">{\mathscr{F}}'</eq> being in <eq env="math">E'</eq>.
+We thus define a set of classes of coherent sheaves that we denote by <eq env="math">E\otimes E'</eq>.
+We can similarly define <eq env="math">\underline{\operatorname{Tor}}_i(E,E')</eq>, etc.</p>
 
 </div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-3-IV-2">
+<p>[8] A. Grothendieck. “Technique de descente et théorèmes d’existence en géométrie algébrique, I, II, III.” <em>Séminaire Bourbaki</em>. <strong>12, 13</strong> (n.d.), Talks no. 190, 195, and 212.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="3">
+<li id="fn3"><p>See the addendum at the end of this exposé.<a href="FGA-3-IV.html#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 <script type="text/javascript" src="./katex.min.js"></script>
 
