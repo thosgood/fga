@@ -11,6 +11,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+          
+      - name: Cache R packages
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-${{ hashFiles('DESCRIPTION') }}
         
       - name: Setup R
         uses: r-lib/actions/setup-r@master
@@ -22,12 +28,6 @@ jobs:
         run: |
           R -e "install.packages('remotes')"
           R -e "remotes::install_github('rstudio/bookdown')"
-          
-      - name: Cache R packages
-        uses: actions/cache@v2
-        with:
-          path: ${{ env.R_LIBS_USER }}
-          key: r-${{ hashFiles('DESCRIPTION') }}
 
       - name: Build site
         run: |
