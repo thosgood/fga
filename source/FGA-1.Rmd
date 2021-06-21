@@ -429,3 +429,42 @@ Except for in [§6](#FGA-1-section-6), we assume that $X$ is non-singular.
 We denote by $\scr{O}_X$ the structure sheaf of $X$, and by $\Omega_X^\bullet=\bigcup_p\Omega_X^p$ the sheaf of germs of differential forms on $X$.
 If $Y$ is a closed subset of $X$, then we identify coherent algebraic sheaves on $Y$ with coherent algebraic sheaves on $X$ that are zero outside of $Y$;
 we do this, in particular, with $\scr{O}_Y$ and $\Omega_Y$.
+
+:::: {.itenv #FGA-1-lemma-1 title="Lemma 1" data-latex="{Lemma 1}"}
+Let $\scr{F}$ be a coherent algebraic sheaf on $X$ whose support is of dimension $\leq n-p$, and let $\scr{L}$ be a coherent algebraic sheaf on $X$ that is locally free.
+Then $\shExt_{\scr{O}_X}^i(X;\scr{F},\scr{L})$ is zero for $i<p$, and there is a canonical isomorphism
+  
+::: {.eqref #FGA-1-equation-4.1 title="" data-latex=""}
+$$
+  \Ext_\scr{O}^p(X;\scr{F},\scr{L}) = \HH^0(X,\shExt_\scr{O}^p(\scr{F},\scr{L})).
+\tag{4.1}
+$$
+:::
+
+If $\scr{F}$ is a coherent algebraic sheaf on a closed subset $W$ of $X$ of dimension $\leq n-p$, then we have a canonical isomorphism
+
+::: {.eqref #FGA-1-equation-4.1bis title="" data-latex=""}
+$$
+  \shExt_{\scr{O}_X}^p(\scr{F},\scr{L}) = \shHom_{\scr{O}_X}(\scr{F}\otimes\scr{L}'\otimes\Omega_X^n,\omega_Y^{n-p})
+\tag{4.1 \emph{bis}}
+$$
+:::
+
+where $\omega_Y^{n-p}$ is the sheaf on $Y$ defined in [the corollary to Proposition 5](#FGA-1-proposition-5-corollary) (which can be identified with $\Omega_Y^{n-p}$ if $Y$ is non-singular).
+::::
+
+::: {.proof}
+The formula in [(4.1)](#FGA-1-equation-4.1) is an immediate consequence of the spectral sequence from [Proposition 1](#FGA-1-proposition-1), as well as [Proposition 5](#FGA-1-proposition-5);
+by the formula in [(3.8)](#FGA-1-equation-3.8), we can write
+$$
+  \begin{gathered}
+    \shExt_{\scr{O}_X}^p(\scr{F},\scr{L})
+    = \scr{L}\otimes(\Omega_X^n)'\otimes\shExt_{\scr{O}_X}(\scr{F},\Omega_X^n)
+  \\= \scr{L}\otimes(\Omega_X^n)'\otimes\shHom_{\scr{O}_X}(\scr{F},\omega_Y^q)
+  \\= \shHom_{\scr{O}_X}(\scr{F}\otimes\scr{L}'\otimes\Omega_X^n,\omega_Y^q)
+  \end{gathered}
+$$
+where $q=n-p$, whence the formula in [(4.1 bis)](#FGA-1-equation-4.1bis).
+:::
+
+\oldpage{149-10}
