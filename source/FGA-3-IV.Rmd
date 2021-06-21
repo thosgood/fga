@@ -1,4 +1,4 @@
-# **3:IV** --- Hilbert schemes
+# **3:IV** --- Hilbert schemes {#FGA-3.IV}
 
 \providecommand{\scr}[1]{{\mathscr{#1}}}
 \renewcommand{\cal}[1]{{\mathcal{#1}}}
@@ -8,9 +8,6 @@
 
 <!-- Shortcuts -->
 
-\providecommand{\id}{\operatorname{id}}
-\providecommand{\Hom}{\operatorname{Hom}}
-\providecommand{\shHom}{\underline{\Hom}}
 \providecommand{\Tor}{\operatorname{Tor}}
 \providecommand{\shTor}{\underline{\Tor}}
 
@@ -31,4 +28,33 @@ _Séminaire Bourbaki_ **13** (1960--61), Talk no. 221.
 
 \oldpage{221-01}
 
-The techniques described in
+The techniques described in [@3-IV-2, I and II] were, for the most part, independent of any projective hypotheses on the schemes in question.
+Unfortunately, they have not as of yet allowed us to solve the existence problems posed in [@3-IV-2, II].
+In the current exposé, and the following, we will solve these problems by imposing projective hypotheses.
+The techniques used are typically projective, and practically make no use of any results from [@3-IV-2, I and II].
+Here we will construct "Hilbert schemes", which are meant to replace the use of Chow coordinates, as was mentioned in [@3-IV-2, II, §2].
+In the next exposé, the theory of passing to the quotient in schemes, developed in [@3-IV-2, III], combined with the theory of Hilbert schemes, will allow us, for example, to construct Picard schemes (defined in [@3-IV-2, II, §3]) under rather general conditions.
+
+In summary, we can say that we now have a more or less satisfying technique of projective constructions, apart from the fact that we are still missing^[See the addendum at the end of this exposé.] a theory of passing to the quotient by groups such as the projective group, acting "without fixed points" (cf. [@3-IV-2, III, §8]).
+The situation even seems slightly better in analytic geometry (if we restrict to the study of "projective" analytic spaces over a given analytic space), since, for analytic spaces, the difficulty of passing to the quotient by a group that acts nicely disappears.
+Either way, in algebraic geometry, as well as in analytic geometry, it remains to develop a construction technique that works without any projective hypotheses.
+
+
+## **1.** Bounded sets of sheaves: invariance properties {#FGA-3-IV-section-1}
+
+Let $k$ be a field, and $X$ a $k$-prescheme (which we take to be of finite type, for simplicity).
+For every extension $K/k$, we obtain a $K$-prescheme $X_K=X\otimes_k K$.
+If $\scr{F}$ is a coherent sheaf on $X_K$, and if $K'$ is an extension of $K$, then $\scr{F}\otimes_K K'=\scr{F}_{K'}$ is a quasi-coherent sheaf on $X_K\otimes_KK'=X_{K'}$.
+So, if $K$ and $K'$ are arbitrary extensions of $k$, and $\scr{F}$ a quasi-coherent sheaf on $X_K$ and $\scr{F}'$
+\oldpage{221-02}
+a quasi-coherent sheaf on $X_{K'}$, then we say that $\scr{F}$ and $\scr{F}'$ are _equivalent_ if there exists an extension $K"/k$ as well as $k$-homomorphisms $K\to K"$ and $K'\to K"$ such that $\scr{F}_{K"}$ and $\scr{F}'_{K"}$ are isomorphic on $X_{K"}$ **(TO-DO: ? is this right?)**.
+This defines an equivalence relation, and we are interested in the equivalence classes of sheaves under this relation, and of sets of such equivalence classes.
+Note that, if $X_0$ is of finite type over $k$, then every class of coherent sheaves can be defined by a coherent sheaf on $X_K$, where $K$ is some extension of $k$ _of finite type_.
+We can thus, in the definition of classes of coherent sheaves, restrict ourselves to _algebraically closed_ extensions of $k$, and we can also restrict ourselves to a fixed algebraically closed extension $\Omega$ of $k$, of infinite transcendence degree;
+two coherent sheaves $\scr{F}$ and $\scr{F}'$ on $X_\Omega$ are then equivalent if and only if there exists a $K$-automorphism $\sigma$ of $\Omega$ such that $\scr{F}\otimes_K(\Omega,\sigma)$ is isomorphic to $\scr{F}'$.
+Note that there is a bijective correspondence between classes of coherent sheaves under the first definition and under the second.
+
+Let $E$ and $E'$ be two sets of classes of coherent sheaves on $X$.
+Consider the classes of all sheaves of the form $\scr{F}\otimes\scr{F}'$, where $\scr{F}$ and $\scr{F}'$ are coherent sheaves on the _same_ $X_K$, with the class of $\scr{F}$ being in $E$ and the class of $\scr{F}'$ being in $E'$.
+We thus define a set of classes of coherent sheaves that we denote by $E\otimes E'$.
+We can similarly define $\shTor_i(E,E')$, etc.
