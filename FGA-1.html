@@ -461,6 +461,38 @@ Except for in <a href="#FGA-1-section-6">§6</a>, we assume that <eq env="math">
 We denote by <eq env="math">{\mathscr{O}}_X</eq> the structure sheaf of <eq env="math">X</eq>, and by <eq env="math">\Omega_X^\bullet=\bigcup_p\Omega_X^p</eq> the sheaf of germs of differential forms on <eq env="math">X</eq>.
 If <eq env="math">Y</eq> is a closed subset of <eq env="math">X</eq>, then we identify coherent algebraic sheaves on <eq env="math">Y</eq> with coherent algebraic sheaves on <eq env="math">X</eq> that are zero outside of <eq env="math">Y</eq>;
 we do this, in particular, with <eq env="math">{\mathscr{O}}_Y</eq> and <eq env="math">\Omega_Y</eq>.</p>
+<div id="FGA-1-lemma-1" class="itenv" title="Lemma 1">
+<p>Let <eq env="math">{\mathscr{F}}</eq> be a coherent algebraic sheaf on <eq env="math">X</eq> whose support is of dimension <eq env="math">\leqslant n-p</eq>, and let <eq env="math">{\mathscr{L}}</eq> be a coherent algebraic sheaf on <eq env="math">X</eq> that is locally free.
+Then <eq env="math">\underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^i(X;{\mathscr{F}},{\mathscr{L}})</eq> is zero for <eq env="math">i&lt;p</eq>, and there is a canonical isomorphism</p>
+<div id="FGA-1-equation-4.1" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{Ext}_{\mathscr{O}}^p(X;{\mathscr{F}},{\mathscr{L}}) = \operatorname{H}^0(X,\underline{\operatorname{Ext}}_{\mathscr{O}}^p({\mathscr{F}},{\mathscr{L}})).
+\tag{4.1}
+</eq></p>
+</div>
+<p>If <eq env="math">{\mathscr{F}}</eq> is a coherent algebraic sheaf on a closed subset <eq env="math">W</eq> of <eq env="math">X</eq> of dimension <eq env="math">\leqslant n-p</eq>, then we have a canonical isomorphism</p>
+<div id="FGA-1-equation-4.1bis" class="eqref" title="">
+<p><eq env="displaymath">
+  \underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^p({\mathscr{F}},{\mathscr{L}}) = \underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{F}}\otimes{\mathscr{L}}'\otimes\Omega_X^n,\omega_Y^{n-p})
+\tag{4.1 \emph{bis}}
+</eq></p>
+</div>
+<p>where <eq env="math">\omega_Y^{n-p}</eq> is the sheaf on <eq env="math">Y</eq> defined in <a href="FGA-1.html#FGA-1-proposition-5-corollary">the corollary to Proposition 5</a> (which can be identified with <eq env="math">\Omega_Y^{n-p}</eq> if <eq env="math">Y</eq> is non-singular).</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-4" class="proof"><em>Proof</em>. </span>The formula in <a href="FGA-1.html#FGA-1-equation-4.1">(4.1)</a> is an immediate consequence of the spectral sequence from <a href="FGA-1.html#FGA-1-proposition-1">Proposition 1</a>, as well as <a href="FGA-1.html#FGA-1-proposition-5">Proposition 5</a>;
+by the formula in <a href="FGA-1.html#FGA-1-equation-3.8">(3.8)</a>, we can write
+<eq env="displaymath">
+  \begin{gathered}
+    \underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^p({\mathscr{F}},{\mathscr{L}})
+    = {\mathscr{L}}\otimes(\Omega_X^n)'\otimes\underline{\operatorname{Ext}}_{{\mathscr{O}}_X}({\mathscr{F}},\Omega_X^n)
+  \\= {\mathscr{L}}\otimes(\Omega_X^n)'\otimes\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{F}},\omega_Y^q)
+  \\= \underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{F}}\otimes{\mathscr{L}}'\otimes\Omega_X^n,\omega_Y^q)
+  \end{gathered}
+</eq>
+where <eq env="math">q=n-p</eq>, whence the formula in <a href="FGA-1.html#FGA-1-equation-4.1bis">(4.1 bis)</a>.</p>
+</div>
+
 
 </div>
 </div>
