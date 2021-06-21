@@ -5,7 +5,6 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 
 ## To-do
 
-- view source (on github)
 - pdf output
 - bibliography numbering...
 - remove global bibliography
