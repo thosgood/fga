@@ -77,6 +77,7 @@
 <li><a href="FGA-1.html#FGA-1-section-1"><strong>1.</strong> Ext of sheaves of modules</a></li>
 <li><a href="FGA-1.html#FGA-1-section-2"><strong>2.</strong> The composition law in <eq env="math">\operatorname{Ext}</eq></a></li>
 <li><a href="FGA-1.html#FGA-1-section-3"><strong>3.</strong> Results concerning local cohomology</a></li>
+<li><a href="FGA-1.html#FGA-1-section-4"><strong>4.</strong> Cohomology class associated to a subvariety</a></li>
 </ul></li>
 <li><a href="FGA-2.html#formal-geometry-and-algebraic-geometry"><strong>2</strong> — Formal geometry and algebraic geometry</a><ul>
 <li><a href="FGA-2.html#schemes"><strong>1.</strong> Schemes</a></li>
@@ -260,7 +261,7 @@ Furthermore, the pairings in <a href="FGA-1.html#FGA-1-equation-2.2">(2.2)</a> g
 </eq>
 and these are compatible with the coboundary maps.
 In particular, <eq env="math">\operatorname{Ext}^\bullet(A,A)</eq> is an associative graded unital ring, etc.
-(We can show in an analogous manner that the <eq env="math">\operatorname{Ext}</eq> functors work in the derived functors of an arbitrary functor;
+(We can show in an analogous manner that the <eq env="math">\operatorname{Ext}</eq> functors behave like derived functors of an arbitrary functor;
 we do not make use of this fact here).</p>
 <p>In the case where the category in question is the category <eq env="math">{\mathcal{C}}^{\mathscr{O}}</eq> of <eq env="math">{\mathscr{O}}</eq>-modules on <eq env="math">X</eq>, we then obtain pairings
 <eq env="displaymath">
@@ -292,7 +293,165 @@ So, if we restrict to sheaves that are locally isomorphic to some <eq env="math"
 </div>
 <div id="FGA-1-section-3" class="section level2">
 <h2><strong>3.</strong> Results concerning local cohomology</h2>
-<p>Let <eq env="math">A</eq> be a unital commutative ring endowed with an ideal <eq env="math">{\mathfrak{J}}</eq>.</p>
+<p>Let <eq env="math">A</eq> be a unital commutative ring endowed with an ideal <eq env="math">{\mathfrak{J}}</eq>.
+We will define, for any <eq env="math">A</eq>-module <eq env="math">M</eq>, functorial homomorphisms</p>
+<div id="FGA-1-equation-3.1" class="eqref" title="">
+<p><eq env="displaymath">
+  \begin{aligned}
+    \operatorname{Ext}_A^p(A/{\mathfrak{J}},M) &amp;\to \operatorname{Hom}_A(\wedge^p{\mathfrak{J}}/{\mathfrak{J}}^2,M\otimes A/{\mathfrak{J}})
+  \\\operatorname{Tor}_p^A(A/{\mathfrak{J}},M) &amp;\leftarrow(\wedge^p{\mathfrak{J}}/{\mathfrak{J}}^2)\otimes\operatorname{Hom}_A(A/{\mathfrak{J}},M)
+  \end{aligned}
+\tag{3.1}
+</eq></p>
+</div>
+<p>where the tensor and exterior products are taken over the ring <eq env="math">A</eq>;
+note also that <eq env="math">{\mathfrak{J}}/{\mathfrak{J}}^2</eq> is in fact an <eq env="math">A/{\mathfrak{J}}</eq>-module, and that its exterior powers as an <eq env="math">A</eq>-module agree with its exterior powers as an <eq env="math">A/{\mathfrak{J}}</eq>-module.
+The definition of the homomorphisms in <a href="FGA-1.html#FGA-1-equation-3.1">(3.1)</a> come from the definition, for every system <eq env="math">x=(x_1,\ldots,x_p)</eq> of points of <eq env="math">{\mathfrak{J}}</eq>, of homomorphisms <eq env="math">\varphi_x</eq> given by</p>
+<div id="FGA-1-equation-3.2" class="eqref" title="">
+<p><eq env="displaymath">
+  \begin{aligned}
+    \varphi_x\colon \operatorname{Ext}_A^p(A/{\mathfrak{J}},M) &amp;\to M\otimes A/{\mathfrak{J}}
+  \\\varphi_x\colon \operatorname{Hom}_A(A/{\mathfrak{J}},M) &amp;\to \operatorname{Tor}_p^A(A/{\mathfrak{J}},M)
+  \end{aligned}
+\tag{3.2}
+</eq></p>
+</div>
+
+<p>such that the following conditions are satisfied:</p>
+<ol style="list-style-type: lower-roman">
+<li><p><eq env="math">\varphi_{x_1,\ldots,x_p}</eq> depends on the system of the <eq env="math">x_i\in{\mathfrak{J}}</eq> in an alternating <eq env="math">A</eq>-multilinear way;</p></li>
+<li><p><eq env="math">\varphi_{x_1,\ldots,x_p}</eq> is zero when any of the <eq env="math">x_i</eq> is in <eq env="math">{\mathfrak{J}}^2</eq>.</p></li>
+</ol>
+<p>In fact, ii. follows from i., since <eq env="math">a\varphi_x=0</eq> for <eq env="math">a\in{\mathfrak{J}}</eq>, as we see by noting that all the modules in <a href="FGA-1.html#FGA-1-equation-3.2">(3.2)</a> are annihilated by <eq env="math">{\mathfrak{J}}</eq>.</p>
+<p>To define the <eq env="math">\varphi_x</eq>, we consider the complex <eq env="math">K_x</eq> whose underlying <eq env="math">A</eq>-modules are the <eq env="math">\wedge A^p</eq>, and whose differential is the interior product <eq env="math">i_x</eq> by <eq env="math">x</eq>, considered as a linear form on <eq env="math">A^p</eq> with components <eq env="math">x_1,\ldots,x_p</eq>.
+The differential is of degree <eq env="math">-1</eq>, the degrees of the complex are positive, and the cohomology of this complex in dimension <eq env="math">0</eq> is <eq env="math">A/(x_1A+\ldots+x_pA)</eq>.
+Since the <eq env="math">x_i</eq> are in <eq env="math">{\mathfrak{J}}</eq>, we obtain an augmentation <eq env="math">K_{x,0}\to A/{\mathfrak{J}}</eq>.
+Thus <eq env="math">K_x</eq> is a <em>free</em> augmented complex, with augmentation module <eq env="math">A/{\mathfrak{J}}</eq>.
+We thus obtain known homomorphisms
+<eq env="displaymath">
+  \begin{aligned}
+    \operatorname{Ext}_A^\bullet(\operatorname{H}_0(K_x),M) &amp;\to \operatorname{H}^\bullet(\operatorname{Hom}_A(K_x,M))
+  \\\operatorname{Tor}_\bullet^A(\operatorname{H}_0(K_x),M) &amp;\leftarrow\operatorname{H}_\bullet(K_x\otimes M)
+  \end{aligned}
+</eq>
+whence, by composing with the homomorphisms to the <eq env="math">\operatorname{Ext}</eq> and the <eq env="math">\operatorname{Tor}</eq> induced by the augmentation homomorphism <eq env="math">\operatorname{H}_0(K_x)\to A/{\mathfrak{J}}</eq>, we obtain homomorphisms</p>
+<div id="FGA-1-equation-3.3" class="eqref" title="">
+<p><eq env="displaymath">
+  \begin{aligned}
+    \psi_x\colon \operatorname{Ext}_A^\bullet(A/{\mathfrak{J}},M) &amp;\to \operatorname{H}^\bullet(\operatorname{Hom}_A(K_x,M))
+  \\\psi_x\colon \operatorname{Tor}_\bullet^A(A/{\mathfrak{J}},M) &amp;\leftarrow\operatorname{H}_\bullet(K_x\otimes M).
+  \end{aligned}
+\tag{3.3}
+</eq></p>
+</div>
+<p>But we immediately note that, in the maximal dimension <eq env="math">p</eq>, the cohomology of the right-hand side is <eq env="math">M(x_1M+\ldots+x_pM)</eq> (resp. the set of elements of <eq env="math">M</eq> that are annihilated by each of the <eq env="math">x_i</eq>).
+Since the <eq env="math">x_i</eq> are in <eq env="math">{\mathfrak{J}}</eq>, we thus obtain homomorphisms</p>
+<div id="FGA-1-equation-3.4" class="eqref" title="">
+<p><eq env="displaymath">
+  \begin{aligned}
+    \operatorname{H}^p(\operatorname{Hom}_A(K_x,M)) &amp;\to M\otimes A/{\mathfrak{J}}
+  \\\operatorname{H}_p(K_x\otimes M) &amp;\leftarrow\operatorname{Hom}_A(A/{\mathfrak{J}},M).
+  \end{aligned}
+\tag{3.4}
+</eq></p>
+</div>
+<p>By composing the homomorphisms in <a href="FGA-1.html#FGA-1-equation-3.3">(3.3)</a> and <a href="FGA-1.html#FGA-1-equation-3.4">(3.4)</a> we obtain the homomorphisms in <a href="FGA-1.html#FGA-1-equation-3.2">(3.2)</a> that we wanted to define.
+The verification of i. is tedious, but does not present any difficulties.</p>
+
+<div id="FGA-1-proposition-4" class="itenv" title="Proposition 4">
+<p>Let <eq env="math">A</eq> be a commutative unital ring, and let <eq env="math">(x_1,\ldots,x_p)</eq> be a sequence of elements of <eq env="math">A</eq> such that, for <eq env="math">1\leqslant i\leqslant p</eq>, the image of <eq env="math">x_i</eq> in the quotient of <eq env="math">A</eq> by the ideal generated by <eq env="math">(x_1,\ldots,x_{i-1})</eq> is not a zero divisor.
+Let <eq env="math">{\mathfrak{J}}</eq> be the ideal generated by the <eq env="math">x_i</eq>.
+Then <eq env="math">{\mathfrak{J}}/{\mathfrak{J}}^2</eq> is a free <eq env="math">(A/{\mathfrak{J}})</eq>-module, with basis given by the canonical images of the <eq env="math">x_i</eq>;
+the complex <eq env="math">K_x</eq> is a free resolution of <eq env="math">A/{\mathfrak{J}}</eq>;
+and, for every <eq env="math">A</eq>-modules <eq env="math">M</eq>, the homomorphisms in <a href="FGA-1.html#FGA-1-equation-3.1">(3.1)</a> in dimension <eq env="math">p</eq> are bijective.
+The same is true for the analogous homomorphisms defined for arbitrary degree <eq env="math">i</eq> as long as <eq env="math">{\mathfrak{J}}\cdot M=0</eq>.</p>
+</div>
+<p>(The essential point, from which all others follow, is the acyclicity of <eq env="math">K_x</eq>, which is a well-known fact, under the conditions given).</p>
+<div id="FGA-1-proposition-4-corollary-1" class="itenv" title="Corollary 1">
+<p>With <eq env="math">A</eq> and <eq env="math">{\mathfrak{J}}</eq> as above, suppose further that <eq env="math">A</eq> is a regular affine algebra of <eq env="math">\dim n</eq> over a perfect field <eq env="math">k</eq>, and that <eq env="math">A/{\mathfrak{J}}</eq> is a regular affine algebra.
+Denote by <eq env="math">\Omega^i(A)</eq> and <eq env="math">\Omega^i(A/{\mathfrak{J}})</eq> the modules of Kähler differentials.
+Then we have a canonical isomorphism
+<eq env="displaymath">
+  \operatorname{Ext}_A^p(\Omega^{n-p}(A/{\mathfrak{J}}),\Omega^n(A)) = A/{\mathfrak{J}}.
+\tag{3.5}
+</eq>
+which is compatible with localisation.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-2" class="proof"><em>Proof</em>. </span>Indeed, <eq env="math">\Omega^{n-p}(A/{\mathfrak{J}})</eq> is a free <eq env="math">(A/{\mathfrak{J}})</eq>-module of rank <eq env="math">1</eq>, and, similarly, <eq env="math">\Omega^n(A)</eq> is a free <eq env="math">A</eq>-module of rank <eq env="math">n</eq>, and so the left-hand side is equal to
+<eq env="displaymath">
+  \operatorname{Ext}_A^p(A/{\mathfrak{J}},A) \otimes \Omega^{n-p}(A/{\mathfrak{J}})' \otimes \Omega^n(A)
+</eq>
+(where the “<eq env="math">'</eq>” notation denotes the dual <eq env="math">(A/{\mathfrak{J}})</eq>-module).
+The tensor product of these last two factors can be identified with <eq env="math">\wedge^p({\mathfrak{J}}/{\mathfrak{J}}^2)</eq>, and so the whole thing can be identified with <eq env="math">\operatorname{Ext}_A^p(A/{\mathfrak{J}},\wedge^p({\mathfrak{J}}/{\mathfrak{J}}^2))</eq>, and thus, by <a href="FGA-1.html#FGA-1-proposition-4">the proposition</a>, with
+<eq env="displaymath">
+  \operatorname{Hom}_A(\wedge^p {\mathfrak{J}}/{\mathfrak{J}}^2,\wedge^p {\mathfrak{J}}/{\mathfrak{J}}^2)
+</eq>
+i.e. to <eq env="math">A/{\mathfrak{J}}</eq>.</p>
+</div>
+<p>In particular, there is a distinguished element in <eq env="math">\operatorname{Ext}_A^p(\Omega^{n-p}(A/{\mathfrak{J}}),\Omega^n(A))</eq>, corresponding to the unit of <eq env="math">A/{\mathfrak{J}}</eq>, called the <em>fundamental class</em> of the ideal <eq env="math">{\mathfrak{J}}</eq> in <eq env="math">A</eq>.
+(In fact, it can be defined under rather more general conditions).
+We can write <a href="FGA-1.html#FGA-1-proposition-4-corollary-1">Corollary 1</a> in a more geometric and global form:</p>
+<div id="FGA-1-proposition-4-corollary-2" class="itenv" title="Corollary 2">
+<p>Let <eq env="math">X</eq> be a non-singular variety over an algebraically-closed field <eq env="math">k</eq>, <eq env="math">Y</eq> a closed non-singular subvariety of <eq env="math">X</eq>, <eq env="math">{\mathscr{O}}_X</eq> the structure sheaf of <eq env="math">X</eq>, and <eq env="math">{\mathscr{O}}_Y</eq> the structure sheaf of <eq env="math">Y</eq>, considered as a quotient sheaf of <eq env="math">{\mathscr{O}}_X</eq>.
+Let <eq env="math">n</eq> be the dimension of <eq env="math">X</eq>, and <eq env="math">n-p</eq> the dimension of <eq env="math">Y</eq>.
+Let <eq env="math">\Omega_X</eq> (resp. <eq env="math">\Omega_Y</eq>) be the sheaf of germs of regular differential forms on <eq env="math">X</eq> (resp. <eq env="math">Y</eq>).
+Then we have canonical isomorphisms
+<eq env="displaymath">
+  \underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^p(\Omega_Y^{n-p},\Omega_X^n) = {\mathscr{O}}_Y
+\tag{3.6}
+</eq>
+as well as</p>
+<div id="FGA-1-equation-3.6bis" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{Ext}_{{\mathscr{O}}_X}^p({\mathscr{O}}_Y,\Omega_X^n) = \Omega_Y^{n-p}.
+\tag{3.6 bis}
+</eq></p>
+</div>
+</div>
+<p>Equation <a href="FGA-1.html#FGA-1-equation-3.6bis">(3.6 bis)</a> can serve as the <em>definition</em> of <eq env="math">\Omega_Y^{n-p}</eq> when <eq env="math">Y</eq> is a singular variety.
+More precisely:</p>
+<div id="FGA-1-proposition-5" class="itenv" title="Proposition 5">
+<p>Let <eq env="math">X</eq> be a non-singular algebraic variety of dimension <eq env="math">n</eq>, and let <eq env="math">Y</eq> be an algebraic subset of dimension <eq env="math">q=n-p</eq> of <eq env="math">X</eq>.
+Let <eq env="math">{\mathscr{F}}</eq> be a coherent algebraic sheaf on <eq env="math">X</eq> with support contained in <eq env="math">Y</eq>, and let <eq env="math">{\mathscr{L}}</eq> be a locally-free algebraic sheaf on <eq env="math">X</eq>.
+Then the sheaves <eq env="math">\underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^i({\mathscr{F}},{\mathscr{L}})</eq> are zero for <eq env="math">i&lt;p</eq>, and, when <eq env="math">i=p</eq>, there is a canonical isomorphism
+<eq env="displaymath">
+  \underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^p({\mathscr{F}},{\mathscr{L}}) = \underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{F}},\underline{\operatorname{Ext}}^p({\mathscr{O}}_X/{\mathfrak{J}},{\mathscr{L}}))
+\tag{3.7}
+</eq>
+where <eq env="math">{\mathfrak{J}}</eq> denotes an arbitrary sheaf of ideals on <eq env="math">X</eq> that annihilates <eq env="math">{\mathscr{F}}</eq> and has <eq env="math">Y</eq> as its set of zeros.
+In particular, if <eq env="math">{\mathscr{F}}</eq> is a coherent algebraic sheaf on <eq env="math">Y</eq>, then
+<eq env="displaymath">
+  \underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^p({\mathscr{F}},{\mathscr{L}}) = \underline{\operatorname{Hom}}_{{\mathscr{O}}_Y}({\mathscr{F}},\underline{\operatorname{Ext}}^p({\mathscr{O}}_Y,{\mathscr{L}})).
+\tag{3.7 bis}
+</eq>
+Finally, with <eq env="math">{\mathscr{F}}</eq> still a coherent algebraic sheaf on <eq env="math">Y</eq>, the sheaves <eq env="math">{\mathscr{E}}^i=\underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^{p+i}({\mathscr{F}},\Omega_X^n)</eq> do not depend on the choice of immersion of the algebraic space <eq env="math">Y</eq> into the non-singular algebraic variety <eq env="math">X</eq>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-3" class="proof"><em>Proof</em>. </span>Since the question is local, we can assume that <eq env="math">X</eq> is affine and that <eq env="math">{\mathscr{L}}={\mathscr{O}}_X</eq>.
+This then reduces to a problem of commutative algebra, and, more specifically, of local algebra:
+if <eq env="math">A</eq> is a regular locality, and <eq env="math">M</eq> an <eq env="math">A</eq>-module whose support is of dimension <eq env="math">\leqslant q=n-p</eq>, then we have to prove that <eq env="math">\operatorname{Ext}_A^i(M,A)=0</eq> for <eq env="math">i&lt;p</eq> and that <eq env="math">\operatorname{Ext}_A^p(M,A)=\operatorname{Hom}_A(M,\operatorname{Ext}^p(A/{\mathfrak{J}},A))</eq>, where <eq env="math">{\mathfrak{J}}</eq> is an arbitrary ideal of “dimension” <eq env="math">\leqslant q</eq> that annihilates <eq env="math">M</eq>.
+For the first claim, we proceed by induction on <eq env="math">q</eq>:
+an immediate <em>dévissage</em> leads to the case where <eq env="math">M</eq> is of the form <eq env="math">A/{\mathfrak{J}}</eq>, and thus leads, by replacing <eq env="math">{\mathfrak{J}}</eq> with a smaller ideal and using the induction hypothesis, as well as the exact sequence of the <eq env="math">\operatorname{Ext}</eq>, to the case where <eq env="math">{\mathfrak{J}}</eq> is generated by a “system of parameters”, as in <a href="FGA-1.html#FGA-1-proposition-4">Proposition 4</a>, where the result is immediate.
+The previous result implies that, if <eq env="math">{\mathfrak{J}}</eq> is a fixed ideal of “dimension” <eq env="math">\leqslant q</eq>, then the contravariant functor <eq env="math">E(M)=\operatorname{Ext}_A^p(M,A)</eq> to the category of <eq env="math">(A/{\mathfrak{J}})</eq>-modules is left exact;
+furthermore, it sends direct sums to direct products, from which it easily follows that <eq env="math">E(M)=\operatorname{Hom}_A(M,E(A))</eq>.
+Finally, the last claim of <a href="FGA-1.html#FGA-1-proposition-5">Proposition 5</a> is more subtle, and follows from an intrinsic characterisation of the <eq env="math">E^i(F)</eq> via a local duality theorem which cannot be stated here.</p>
+</div>
+
+<div id="FGA-1-proposition-5-corollary" class="itenv" title="Corollary">
+<p>Denote by <eq env="math">\omega_Y^q</eq> the sheaf <eq env="math">\operatorname{Ext}_{{\mathscr{O}}_X}^p({\mathscr{O}}_Y,\Omega_X^n)</eq>.
+Then there is a functorial isomorphism for coherent algebraic sheaves <eq env="math">{\mathscr{F}}</eq> on <eq env="math">Y</eq>:</p>
+<div id="FGA-1-equation-3.8" class="eqref" title="">
+<p><eq env="displaymath">
+  \underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^p({\mathscr{F}},\Omega_X^n) = \underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{F}},\omega_Y^q).
+\tag{3.8}
+</eq></p>
+</div>
+</div>
+</div>
+<div id="FGA-1-section-4" class="section level2">
+<h2><strong>4.</strong> Cohomology class associated to a subvariety</h2>
+<p>In</p>
 
 </div>
 </div>
