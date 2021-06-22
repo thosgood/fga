@@ -1010,3 +1010,108 @@ It is also the case, for example, if $X$ is locally a "complete intersection" in
 ## **7.** Poincaré duality {#FGA-1-section-7}
 
 Let $X$ be a non-singular projective variety of dimension $n$.
+Then $\HH^\bullet(X)=\HH^\bullet(X,\Omega_X^\bullet)$ is a finite-dimensional bigraded anticommutative algebra, that we grade by the total degree, so that $\HH^{p,q}(X)=\HH^p(X,\Omega_X^q)$ is of degree $p+q$.
+The degrees of $\HH^\bullet(X)$ are concentrated between $0$ and $2n$.
+By \hyperref[theorem2]{Theorem~2} and \hyperref[theorem3corollary]{the corollary} to \hyperref[theorem3]{Theorem~3}, $\HH^\bullet(X)$ is a ``Poincar\'{e} algebra'' of dimension~$2n$, i.e. $\HH^{2n}(X)$ is endowed with an isomorphism to the base field $k$, and the product $\HH^m(X)\times\HH^{2n-m}(X)\to\HH^{2n}(X)=k$ is a duality between $\HH^m(X)$ and $\HH^{2n-m}(X)$.
+Furthermore, if $Y$ is another non-singular projective variety, then the K\"{u}nneth formula for coherent algebraic sheaves gives
+\[
+\label{7.1}
+  \HH^\bullet(X\times Y) = \HH^\bullet(X)\otimes\HH^\bullet(Y)
+\tag{7.1}
+\]
+which is an isomorphism that is compatible with the Poincar\'{e} algebra structures.
+Furthermore, $\HH^\bullet(X)$ is, as a commutative algebra, a covariant functor in $X$, since a morphism $f\colon Y\to X$ defines, in an evident way, a homomorphism of graded algebras
+\oldpage{149-20}
+\[
+\label{7.2}
+  f^*\colon \HH^\bullet(X)\to\HH^\bullet(Y).
+\tag{7.2}
+\]
+Since we are working with Poincar\'{e} algebras, we obtain, by transposition, a homomorphism of vector spaces
+\[
+\label{7.3}
+  f_*\colon \HH^\bullet(Y)\to\HH^\bullet(X).
+\tag{7.3}
+\]
+We have seen in \hyperref[section4]{\S4} that the effect of $f^*$ on cohomology classes that correspond to non-singular cycles can be geometrically interpreted by taking the cohomology classes that correspond to their inverse images.
+It is important, in the current case, to show that \hyperref[7.3]{(7.3)} corresponds similarly to the ``direct image'' operation on cycles.
+This follows, under suitable non-singularity conditions at least, from the following particular case:
+
+\begin{itenv}{Theorem 4}
+\label{theorem4}
+  If $f$ is the identity map from a non-singular subvariety $Y^m$ of $X^n$ to $X^n$, then, denoting by $1_Y$ the unit element of $\HH(Y)$, we have
+  \[
+  \label{7.4}
+    f_*(1_Y) = P_X(Y)
+  \tag{7.4}
+  \]
+  where the right-hand side is the cohomology class in $X$ associated to $Y$.
+\end{itenv}
+
+This formula is equivalent to
+\[
+\label{7.4bis}
+  \langle \xi^{m,m}, P_X(Y) \rangle \varepsilon_Y
+  = f_*(\xi^{m,m})
+  \quad\mbox{where $\xi^{m,m}\in\HH^m(X,\Omega_X^m)$}
+\tag{7.4~\emph{bis}}
+\]
+where $\varepsilon_Y$ is the fundamental element of $\HH^m(Y,\Omega_Y^m)$, and this, in the case of non-singular projective varieties, gives a new definition of the cohomology class associated to $Y$.
+
+\begin{proof}
+  To prove \hyperref[theorem4]{Theorem~4}, we consider, by \hyperref[theorem3]{Theorem~3}, the transpose of the homomorphism
+  \[
+    \HH^m(X,\Omega_X^m) \to \HH^m(Y,\Omega_Y^m) = \HH^m(X,\Omega_Y^m)
+  \]
+  as the homomorphism
+  \[
+  \label{7.5}
+    \begin{tikzcd}
+      &\Ext_{\scr{O}_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
+        \rar["\sim"] \dar
+      &\Hom_{\scr{O}_X}(X;\Omega_Y^m,\Omega_Y^m)
+    \\
+      \HH^{n-m}(X,\Omega_X^{n-m})
+        \rar["\sim"]
+      &\Ext_{\scr{O}_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
+      &
+    \end{tikzcd}
+  \tag{7.5}
+  \]
+  We can verify that the element $1_Y$ of the dual of $\HH^m(Y,\Omega_Y^m)$ is identified with the element of the right-hand side corresponding to the identity endomorphism of $\Omega_Y^m$, and also that the image of this element in $\HH^{n-m}(X,\Omega_X^{n-m})$ is indeed $P_X(Y)$.
+\end{proof}
+
+These compatibilities, which could have been given in \hyperref[section4]{\S4}, can be stated, and are indeed true, for arbitrary non-singular varieties, with the second,
+\oldpage{149-21}
+for example, following from the commutativity of the following diagram of canonical endomorphisms:
+\[
+\label{7.6}
+  \begin{tikzcd}[column sep=tiny]
+    & \Ext_{\scr{O}_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
+      \ar[ld] \ar[dr,"\sim"]
+    &
+  \\\Ext_{\scr{O}_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
+      \ar[dd]
+    && \Hom_{\scr{O}_X}(X;\Omega_Y^m,\Omega_Y^m)
+      \ar[dd]
+  \\& \Ext_{\scr{O}_X}^{n-m}(X;\scr{O}_Y,\Omega_X^{n-m})
+      \ar[ld] \ar[dr,"\sim"]
+    &
+  \\\Ext_{\scr{O}_X}^{n-m}(X;\scr{O}_X,\Omega_X^{n-m})
+    && \Hom_{\scr{O}_X}(X;\Omega_X^m,\Omega_Y^m)
+  \end{tikzcd}
+\tag{7.6}
+\]
+
+We thus obtain an exact equivalent of the formalism of Poincar\'{e} duality for compact oriented varieties.
+In particular, \hyperref[theorem4]{Theorem~4} allows us to determine the cohomology class associated to the diagonal of $X\times X$.
+By a well-known argument, we thus deduce, for example, a \emph{Lefschetz formula}:
+
+\begin{itenv}{Theorem 5}
+\label{theorem5}
+  Let $f$ be an endomorphism of a non-singular projective variety $X$, such that the fixed points of $f$ are of multiplicity~$1$.
+  Then the number of these fixed points is congruent, modulo the characteristic of $k$, to the alternating sum of the traces of the endomorphisms of the $\HH^i(X)$ defined by $f$.
+\end{itenv}
+
+The restriction on $f$ that we have to make is related to the difficulties mentioned in \hyperref[section4remark]{the remark} of \hyperref[section4]{\S4}.
+We note, however, that the Lefschetz formula still holds true if $f$ is ``homotopic'' to an endomorphism whose fixed points are all of multiplicity~$1$.
