@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>6 Hilbert schemes [FGA 3.IV] | Foundations of Algebraic Geometry</title>
   <meta name="description" content="6 Hilbert schemes [FGA 3.IV] | Foundations of Algebraic Geometry" />
-  <meta name="generator" content="bookdown 0.22.3 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="6 Hilbert schemes [FGA 3.IV] | Foundations of Algebraic Geometry" />
   <meta property="og:type" content="book" />
@@ -83,7 +83,14 @@
 <li class="chapter" data-level="1.8" data-path="FGA-1.html"><a href="FGA-1.html#FGA-1-section-8"><i class="fa fa-check"></i><b>1.8</b> Generalisation of the duality theorem</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="FGA-2.html"><a href="FGA-2.html"><i class="fa fa-check"></i><b>2</b> Formal geometry and algebraic geometry [FGA 2]</a><ul>
-<li class="chapter" data-level="2.1" data-path="FGA-2.html"><a href="FGA-2.html#schemes"><i class="fa fa-check"></i><b>2.1</b> Schemes</a></li>
+<li class="chapter" data-level="2.1" data-path="FGA-2.html"><a href="FGA-2.html#FGA-2-section-1"><i class="fa fa-check"></i><b>2.1</b> Schemes</a></li>
+<li class="chapter" data-level="2.2" data-path="FGA-2.html"><a href="FGA-2.html#FGA-2-section-2"><i class="fa fa-check"></i><b>2.2</b> Formal schemes</a></li>
+<li class="chapter" data-level="2.3" data-path="FGA-2.html"><a href="FGA-2.html#FGA-2-section-3"><i class="fa fa-check"></i><b>2.3</b> The three fundamental theorems</a></li>
+<li class="chapter" data-level="2.4" data-path="FGA-2.html"><a href="FGA-2.html#FGA-2-section-4"><i class="fa fa-check"></i><b>2.4</b> Applications to Zariski’s connection theorem and “main theorem”</a></li>
+<li class="chapter" data-level="2.5" data-path="FGA-2.html"><a href="FGA-2.html#FGA-2-section-5"><i class="fa fa-check"></i><b>2.5</b> Application to the cohomological study of proper and flat morphisms</a></li>
+<li class="chapter" data-level="2.6" data-path="FGA-2.html"><a href="FGA-2.html#FGA-2-section-6"><i class="fa fa-check"></i><b>2.6</b> Application to existence and uniqueness theorems for sheaves and schemes over a complete <eq env="math">\mathscr{J}</eq>-adic ring</a></li>
+<li class="chapter" data-level="2.7" data-path="FGA-2.html"><a href="FGA-2.html#FGA-2-section-7"><i class="fa fa-check"></i><b>2.7</b> Application to the “theory of modules”</a></li>
+<li class="chapter" data-level="2.8" data-path="FGA-2.html"><a href="FGA-2.html#FGA-2-section-8"><i class="fa fa-check"></i><b>2.8</b> Application to the fundamental group</a></li>
 </ul></li>
 <li class="part"><span><b>Descent, and existence theorems in algebraic geometry [FGA 3]</b></span></li>
 <li class="chapter" data-level="3" data-path="FGA-3-I.html"><a href="FGA-3-I.html"><i class="fa fa-check"></i><b>3</b> Generalities, and descent by faithfully flat morphisms [FGA 3.I]</a></li>
@@ -132,13 +139,13 @@
 <div id="introduction" class="section level2 unnumbered">
 <h2>Introduction</h2>
 
-<p>The techniques described in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span> were, for the most part, independent of any projective hypotheses on the schemes in question.
-Unfortunately, they have not as of yet allowed us to solve the existence problems posed in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>.
+<p>The techniques described in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">9</a>]</span> were, for the most part, independent of any projective hypotheses on the schemes in question.
+Unfortunately, they have not as of yet allowed us to solve the existence problems posed in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">9</a>]</span>.
 In the current exposé, and the following, we will solve these problems by imposing projective hypotheses.
-The techniques used are typically projective, and practically make no use of any results from <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>.
-Here we will construct “Hilbert schemes”, which are meant to replace the use of Chow coordinates, as was mentioned in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>.
-In the next exposé, the theory of passing to the quotient in schemes, developed in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>, combined with the theory of Hilbert schemes, will allow us, for example, to construct Picard schemes (defined in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>) under rather general conditions.</p>
-<p>In summary, we can say that we now have a more or less satisfying technique of projective constructions, apart from the fact that we are still missing<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> a theory of passing to the quotient by groups such as the projective group, acting “without fixed points” (cf. <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">8</a>]</span>).
+The techniques used are typically projective, and practically make no use of any results from <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">9</a>]</span>.
+Here we will construct “Hilbert schemes”, which are meant to replace the use of Chow coordinates, as was mentioned in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">9</a>]</span>.
+In the next exposé, the theory of passing to the quotient in schemes, developed in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">9</a>]</span>, combined with the theory of Hilbert schemes, will allow us, for example, to construct Picard schemes (defined in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">9</a>]</span>) under rather general conditions.</p>
+<p>In summary, we can say that we now have a more or less satisfying technique of projective constructions, apart from the fact that we are still missing<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> a theory of passing to the quotient by groups such as the projective group, acting “without fixed points” (cf. <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">9</a>]</span>).
 The situation even seems slightly better in analytic geometry (if we restrict to the study of “projective” analytic spaces over a given analytic space), since, for analytic spaces, the difficulty of passing to the quotient by a group that acts nicely disappears.
 Either way, in algebraic geometry, as well as in analytic geometry, it remains to develop a construction technique that works without any projective hypotheses.</p>
 </div>
@@ -165,13 +172,13 @@ We can similarly define <eq env="math">\underline{\operatorname{Tor}}_i(E,E')</e
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-3-IV-2">
-<p>[8] A. Grothendieck. “Technique de descente et théorèmes d’existence en géométrie algébrique, I, II, III.” <em>Séminaire Bourbaki</em>. <strong>12, 13</strong> (n.d.), Talks no. 190, 195, and 212.</p>
+<p>[9] A. Grothendieck. “Technique de descente et théorèmes d’existence en géométrie algébrique, I, II, III.” <em>Séminaire Bourbaki</em>. <strong>12, 13</strong> (n.d.), Talks no. 190, 195, and 212.</p>
 </div>
 </div>
 <div class="footnotes">
 <hr />
-<ol start="5">
-<li id="fn5"><p>See the addendum at the end of this exposé.<a href="FGA-3-IV.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<ol start="6">
+<li id="fn6"><p>See the addendum at the end of this exposé.<a href="FGA-3-IV.html#fnref6" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 <script type="text/javascript" src="./katex.min.js"></script>
