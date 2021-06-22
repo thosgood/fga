@@ -71,7 +71,6 @@
 <li><h4>Table of contents</h4></li>
 
 <li class="divider"></li>
-<li><a href="index.html#section"></a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Foreword</a></li>
 <li class="chapter" data-level="1" data-path="FGA-1.html"><a href="FGA-1.html"><i class="fa fa-check"></i><b>1</b> Duality theorems for coherent algebraic sheaves [FGA 1]</a><ul>
 <li class="chapter" data-level="1.1" data-path="FGA-1.html"><a href="FGA-1.html#FGA-1-section-1"><i class="fa fa-check"></i><b>1.1</b> <eq env="math">\operatorname{Ext}</eq> of sheaves of modules</a></li>
@@ -255,10 +254,10 @@
     
     //customise the header
     $('div.font-settings button.size-3').map(function() {
-      this.setAttribute("class", "button size-2")
-      if (this.innerText == "Sepia") {
-        this.setAttribute("style", "display: none;");
-      }
+      // this.setAttribute("class", "button size-2")
+      // if (this.innerText == "Sepia") {
+        // this.setAttribute("style", "display: none;");
+      // }
       if (this.innerText == "White") {
         this.innerText = "Light";
       }
@@ -267,7 +266,7 @@
       }
     });
     // (remove the <a> tag from the title)
-    $('.book .book-header h1')[0].innerHTML = $('.book .book-header h1')[0].innerText
+    // $('.book .book-header h1')[0].innerHTML = $('.book .book-header h1')[0].innerText
   });
 </script>
             </section>
