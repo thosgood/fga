@@ -26,8 +26,7 @@ jobs:
 
       - name: Install Bookdown packages
         run: |
-          R -e "install.packages('remotes')"
-          R -e "remotes::install_github('rstudio/bookdown')"
+          R -e "install.packages('bookdown')"
 
       - name: Build site
         run: |
