@@ -78,6 +78,9 @@
 <li><a href="FGA-1.html#FGA-1-section-2"><strong>2.</strong> The composition law in <eq env="math">\operatorname{Ext}</eq></a></li>
 <li><a href="FGA-1.html#FGA-1-section-3"><strong>3.</strong> Results concerning local cohomology</a></li>
 <li><a href="FGA-1.html#FGA-1-section-4"><strong>4.</strong> Cohomology class associated to a subvariety</a></li>
+<li><a href="FGA-1.html#FGA-1-section-5"><strong>5.</strong> The duality theorem</a></li>
+<li><a href="FGA-1.html#FGA-1-section-6"><strong>6.</strong> The duality theorem for singular varieties</a></li>
+<li><a href="FGA-1.html#FGA-1-section-7"><strong>7.</strong> Poincaré duality</a></li>
 </ul></li>
 <li><a href="FGA-2.html#FGA-2"><strong>2</strong> — Formal geometry and algebraic geometry</a><ul>
 <li><a href="FGA-2.html#schemes"><strong>1.</strong> Schemes</a></li>
@@ -458,7 +461,7 @@ Then there is a functorial isomorphism for coherent algebraic sheaves <eq env="m
 <div id="FGA-1-section-4" class="section level2">
 <h2><strong>4.</strong> Cohomology class associated to a subvariety</h2>
 <p>In all that follows, <eq env="math">X</eq> denotes an algebraic set of dimension <eq env="math">n</eq>, defined over a field <eq env="math">k</eq> that we assume, for simplicity, to be algebraically closed.
-Except for in <a href="#FGA-1-section-6">§6</a>, we assume that <eq env="math">X</eq> is non-singular.
+Except for in <a href="FGA-1.html#FGA-1-section-6">§6</a>, we assume that <eq env="math">X</eq> is non-singular.
 We denote by <eq env="math">{\mathscr{O}}_X</eq> the structure sheaf of <eq env="math">X</eq>, and by <eq env="math">\Omega_X^\bullet=\bigcup_p\Omega_X^p</eq> the sheaf of germs of differential forms on <eq env="math">X</eq>.
 If <eq env="math">Y</eq> is a closed subset of <eq env="math">X</eq>, then we identify coherent algebraic sheaves on <eq env="math">Y</eq> with coherent algebraic sheaves on <eq env="math">X</eq> that are zero outside of <eq env="math">Y</eq>;
 we do this, in particular, with <eq env="math">{\mathscr{O}}_Y</eq> and <eq env="math">\Omega_Y</eq>.</p>
@@ -551,7 +554,7 @@ Let <eq env="math">{\mathscr{L}}_\bullet</eq> be a left resolution of <eq env="m
 then, by <a href="FGA-1.html#FGA-1-proposition-3">Proposition 3</a>, the diagram of homomorphisms in <a href="FGA-1.html#FGA-1-equation-4.3">(4.3)</a> can be identified with the diagram
 <eq env="displaymath">
   \begin{CD}
-    (\underline{\operatorname{R}}^p\Gamma)\big(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet,\Omega_X^p)\big) @&gt;\beta&gt;&gt; \Gamma\Big(\operatorname{H}^p\big(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet,\Omega_X^p)\big)\Big)
+    (\underline{\operatorname{R}}^p\Gamma)\big(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet,\Omega_X^p)\big) @&gt;\beta&gt;&gt; \Gamma\big(\operatorname{H}^p\big(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet,\Omega_X^p)\big)\big)
   \\@V\alpha VV .
   \\(\operatorname{R}^p\Gamma)(\Omega_X^p)
   \end{CD}
@@ -563,26 +566,28 @@ The homomorphism <eq env="math">\beta</eq> is a well-known “boundary map”.
 Consider an analogous diagram, relative to a locally-free resolution <eq env="math">{\mathscr{L}}'_\bullet</eq> of <eq env="math">{\mathscr{O}}_Y</eq>, and consider the commutative diagram of pairings:</p>
 <div id="FGA-1-equation-4.5" class="eqref" title="">
 <p><eq env="displaymath">
-  \footnotesize
-  \begin{tikzcd}
+  \scriptsize
+  \begin{CD}
     \operatorname{R}^p\Gamma(\Omega_X^p)
-      \dar[phantom,"\times"]
-    &amp; \underline{\operatorname{R}}^p\Gamma(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet,\Omega_X^p))
-      \lar \rar["\sim"] \dar[phantom,"\times"]
-    &amp; \Gamma(\operatorname{H}^p(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet,\Omega_X^p)))
-      \dar[phantom,"\times"]
+    @&lt;&lt;&lt;
+    \underline{\operatorname{R}}^p\Gamma\big(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet,\Omega_X^p)\big)
+    @&gt;\sim&gt;&gt;
+    \Gamma\big(\operatorname{H}^p\big(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet,\Omega_X^p)\big)\big)
+  \\@. @. @.
+  \\\times @. \times @. \times
+  \\@. @. @.
   \\\operatorname{R}^{p'}\Gamma(\Omega_X^{p'})
-      \dar
-    &amp; \underline{\operatorname{R}}^{p'}\Gamma(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}'_\bullet,\Omega_X^{p'}))
-      \lar \rar["\sim"] \dar
-    &amp; \Gamma(\operatorname{H}^{p'}(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}'_\bullet,\Omega_X^{p'})))
-      \dar
+    @&lt;&lt;&lt;
+    \underline{\operatorname{R}}^{p'}\Gamma\big(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}'_\bullet,\Omega_X^{p'})\big)
+    @&gt;\sim&gt;&gt;
+    \Gamma\big(\operatorname{H}^{p'}\big(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}'_\bullet,\Omega_X^{p'})\big)\big)
+  \\@VVV @VVV @VVV
   \\\operatorname{R}^{p+p'}\Gamma(\Omega_X^{p+p'})
-    &amp; \underline{\operatorname{R}}^{p+p'}\Gamma(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet\otimes{\mathscr{L}}'_\bullet,\Omega_X^{p+p'}))
-      \lar \rar["\sim"]
-    &amp; \Gamma(\operatorname{H}^{p+p'}(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet\otimes{\mathscr{L}}'_\bullet,\Omega_X^{p+p'})))
-  \end{tikzcd}
-  \normalsize
+    @&lt;&lt;&lt;
+    \underline{\operatorname{R}}^{p+p'}\Gamma\big(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet\otimes{\mathscr{L}}'_\bullet,\Omega_X^{p+p'})\big)
+    @&gt;\sim&gt;&gt;
+    \Gamma\big(\operatorname{H}^{p+p'}\big(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{L}}_\bullet\otimes{\mathscr{L}}'_\bullet,\Omega_X^{p+p'})\big)\big)
+  \end{CD}
 \tag{4.5}
 </eq></p>
 </div>
@@ -664,6 +669,289 @@ Assuming that we have done this, the above <a href="FGA-1.html#FGA-1-theorem-1-c
 <p>The reader will find more information on the duality of coherent sheaves in <em>loco citato</em>, p. 112–115, as well as in EGA III.2, and in SGA (1962).
 A more systematic treatment can be found in a later chapter of EGA (chapter IX in the provisional plan).</p>
 </div>
+</div>
+<div id="FGA-1-section-5" class="section level2">
+<h2><strong>5.</strong> The duality theorem</h2>
+<p>In this section, <eq env="math">X</eq> denotes a non-singular projective variety of dimension <eq env="math">n</eq>.</p>
+<div id="FGA-1-theorem-2" class="itenv" title="Theorem 2">
+<p>The fundamental class <eq env="math">\varepsilon_X</eq> of <eq env="math">\operatorname{H}^n(X,\Omega_X^n)</eq> is a basis of this vector space.</p>
+</div>
+<p>(The proof of this will be given later on).
+With the above theorem, we can thus identify <eq env="math">\operatorname{H}^n(X,\Omega_X^n)</eq> with the field <eq env="math">k</eq>.
+We now consider the pairings described in <a href="FGA-1.html#FGA-1-section-2">§2</a>, which give, in particular, a pairing
+
+<eq env="displaymath">
+  \operatorname{Ext}_{{\mathscr{O}}_X}^p(X;{\mathscr{O}}_X,{\mathscr{F}})\times\operatorname{Ext}_{{\mathscr{O}}_X}^{n-p}(X;{\mathscr{F}},\Omega_X^n) \to \operatorname{Ext}_{{\mathscr{O}}_X}^n(X;{\mathscr{O}}_X,\Omega_X^n)
+</eq>
+i.e.</p>
+<div id="FGA-1-equation-5.1" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{H}^p(X,{\mathscr{F}})\times\operatorname{Ext}_{{\mathscr{O}}_X}^{n-p}(X;{\mathscr{F}},\Omega_X^n) \to \operatorname{H}^n(X,\Omega_X^n).
+\tag{5.1}
+</eq></p>
+</div>
+<p>Taking <a href="FGA-1.html#FGA-1-theorem-2">Theorem 2</a> into account, this pairing defines a homomorphism</p>
+<div id="FGA-1-equation-5.2" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{Ext}_{{\mathscr{O}}_X}^{n-p}(X;{\mathscr{F}},\Omega_X^n) \to (\operatorname{H}^p(X,{\mathscr{F}}))'.
+\tag{5.2}
+</eq></p>
+</div>
+<p>This homomorphism is functorial in <eq env="math">{\mathscr{F}}</eq>, and commutes with the coboundary maps relative to the exact sequences <eq env="math">0\to{\mathscr{F}}'\to{\mathscr{F}}\to{\mathscr{F}}''\to0</eq>.</p>
+<div id="FGA-1-theorem-3" class="itenv" title="Theorem 3">
+<p>The homomorphism in <a href="FGA-1.html#FGA-1-equation-5.2">(5.2)</a> is an isomorphism.</p>
+</div>
+<p>In particular, we recover the following result of Serre:</p>
+<div id="FGA-1-theorem-3-corollary" class="itenv" title="Corollary">
+<p>Let <eq env="math">E</eq> be an algebraic vector bundle on <eq env="math">X</eq>, and <eq env="math">{\mathscr{O}}_X(E)</eq> the sheaf of germs of regular sections of <eq env="math">X</eq>.
+Then we have canonical isomorphisms<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>
+<eq env="displaymath">
+  (\operatorname{H}^p(X,{\mathscr{O}}_X(E)))' = \operatorname{H}^{n-p}(X,\Omega_X^n\otimes{\mathscr{O}}_X(E')).
+</eq></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-7" class="proof"><em>Proof</em>. </span>It suffices to apply <a href="FGA-1.html#FGA-1-theorem-3">Theorem 3</a> and <a href="FGA-1.html#FGA-1-proposition-1-corollary-1">Corollary 1 of Proposition 1</a>.</p>
+</div>
+<p><a href="FGA-1.html#FGA-1-theorem-2">Theorem 2</a> and <a href="FGA-1.html#FGA-1-theorem-3">Theorem 3</a> will follow from the following claim:</p>
+<div id="FGA-1-D" class="itenv" title="(D)">
+<p>The homomorphism</p>
+<div id="FGA-1-equation-5.2bis" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{Ext}_{{\mathscr{O}}_X}^{n-p}(X;{\mathscr{F}},\Omega_X^n) \to (\operatorname{H}^p(X,{\mathscr{F}}))'\otimes{\mathscr{L}}
+\tag{5.2 bis}
+</eq></p>
+</div>
+<p>(where <eq env="math">{\mathscr{L}}=\operatorname{H}^n(X,\Omega_X^n)</eq>) induced by the pairing in <a href="FGA-1.html#FGA-1-equation-5.1">(5.1)</a> is an isomorphism.</p>
+</div>
+<p>We will show that <a href="FGA-1.html#FGA-1-D">(D)</a> implies <a href="FGA-1.html#FGA-1-theorem-2">Theorem 2</a>.
+Let <eq env="math">k_x={\mathscr{O}}_{(x)}</eq> be the structure sheaf of the variety consisting of a single point <eq env="math">x\in X</eq>, and consider the canonical homomorphism <eq env="math">{\mathscr{O}}_X\to k_x</eq>, and the associated homomorphism</p>
+<div id="FGA-1-equation-5.3" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{H}^0(X,{\mathscr{O}}_X) \to \operatorname{H}^0(X,k_x).
+\tag{5.3}
+</eq></p>
+</div>
+<p>Its transpose can be identified with the homomorphism</p>
+<div id="FGA-1-equation-5.4" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{Ext}_{{\mathscr{O}}_X}^n(X;k_x,\Omega_X^n)\otimes{\mathscr{L}}' \to \operatorname{Ext}_{{\mathscr{O}}_X}^n(X;{\mathscr{O}}_X,\Omega_X^n)\otimes{\mathscr{L}}'
+\tag{5.4}
+</eq></p>
+</div>
+<p>induced by the homomorphism between the <eq env="math">\operatorname{Ext}^n</eq> associated to <eq env="math">{\mathscr{O}}_X\to k_x</eq>, i.e.</p>
+<div id="FGA-1-equation-5.5" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{Ext}_{{\mathscr{O}}_X}^n(X;k_x,\Omega_X^n) \to \operatorname{Ext}_{{\mathscr{O}}_X}^n(X;{\mathscr{O}}_X,\Omega_X^n)
+\tag{5.5}
+</eq></p>
+</div>
+
+<p>Since <a href="FGA-1.html#FGA-1-equation-5.3">(5.3)</a> is an isomorphism, so too is <a href="FGA-1.html#FGA-1-equation-5.4">(5.4)</a>, and thus so too is <a href="FGA-1.html#FGA-1-equation-5.5">(5.5)</a>.
+Since <eq env="math">s_{(x)}</eq> is a basis of <eq env="math">\operatorname{Ext}_{{\mathscr{O}}_X}^n(X;k_x,\Omega_X^n)</eq> by <a href="FGA-1.html#FGA-1-equation-4.2">(4.2)</a>, it indeed follows that its image <eq env="math">\varepsilon_X</eq> is a basis of <eq env="math">\operatorname{H}^n(X,\Omega_X^n)</eq>.</p>
+<p>It remains only to prove the statement of <a href="FGA-1.html#FGA-1-D">(D)</a>, which will follow in a purely formal way from some elementary facts summarised in the following lemmas.
+Here we suppose that <eq env="math">X</eq> is a closed subset (singular or not) of the projective space <eq env="math">\mathbf{P}</eq> of dimension <eq env="math">r</eq>.
+We use the notation <eq env="math">{\mathscr{O}}_\mathbf{P}(m)</eq> to denote the sheaf on <eq env="math">\mathbf{P}</eq> denoted by <eq env="math">{\mathscr{O}}(m)</eq> in <span class="citation">[<a href="#ref-1-3" role="doc-biblioref">21</a>]</span>, and the notation <eq env="math">{\mathscr{O}}_X(m)</eq> for the analogous sheaf on <eq env="math">X</eq>.</p>
+<div id="FGA-1-lemma-2" class="itenv" title="Lemma 2">
+<p>The statement of <a href="FGA-1.html#FGA-1-D">(D)</a> is true if <eq env="math">X=\mathbf{P}</eq> and <eq env="math">{\mathscr{F}}={\mathscr{O}}_\mathbf{P}(m)</eq>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-8" class="proof"><em>Proof</em>. </span>This lemma can be proved by a direct calculation.
+The explicit calculation of the <eq env="math">\operatorname{H}^i(\mathbf{P},{\mathscr{O}}_\mathbf{P}(m))</eq> can be found in <span class="citation">[<a href="#ref-1-3" role="doc-biblioref">21</a>]</span>, but it also can be done in a simpler way.
+Computing the cup product <eq env="math">\operatorname{H}^i(\mathbf{P},{\mathscr{O}}_\mathbf{P}(m))\times\operatorname{H}^j(\mathbf{P},{\mathscr{O}}_\mathbf{P}(m)') \to \operatorname{H}^{i+j}(\mathbf{P},{\mathscr{O}}_\mathbf{P}(m+m'))</eq> (which is necessary to calculate the pairing in <a href="FGA-1.html#FGA-1-equation-5.1">(5.1)</a>) does not present any difficulty.</p>
+</div>
+<div id="FGA-1-lemma-3" class="itenv" title="Lemma 3">
+<p>Every coherent algebraic sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq> is isomorphic to a sheaf that is some quotient of <eq env="math">{\mathscr{O}}_X(-m)^k</eq>, and we can take <eq env="math">m</eq> to be as large as we wish.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-9" class="proof"><em>Proof</em>. </span>This follows from the fact that <eq env="math">{\mathscr{F}}\otimes{\mathscr{O}}_X(m)</eq> is “generated by its sections” for large enough <eq env="math">m</eq>;
+see <span class="citation">[<a href="#ref-1-3" role="doc-biblioref">21</a>]</span>.</p>
+</div>
+<div id="FGA-1-lemma-4" class="itenv" title="Lemma 4">
+<p>Let <eq env="math">i&gt;0</eq>.
+Then <eq env="math">\operatorname{H}^{r-i}(\mathbf{P},{\mathscr{O}}_\mathbf{P}(-m))=0</eq> for large enough <eq env="math">m</eq>;
+and, for every coherent algebra sheaf <eq env="math">{\mathscr{B}}</eq> on <eq env="math">X</eq>, we have that <eq env="math">\operatorname{Ext}_{{\mathscr{O}}_X}^i(X;{\mathscr{O}}_X(-m),{\mathscr{B}})=0</eq> for large enough <eq env="math">m</eq>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-10" class="proof"><em>Proof</em>. </span>The first claim follows from the explicit calculations mentioned above;
+for the second, we note that we have an isomorphism
+<eq env="displaymath">
+  \operatorname{Ext}_{{\mathscr{O}}_X}^i(X;{\mathscr{O}}_X(-m),{\mathscr{B}}) = \operatorname{H}^i(X,{\mathscr{B}}\otimes{\mathscr{O}}(m))
+</eq>
+(<a href="FGA-1.html#FGA-1-proposition-1-corollary-1">Corollary 1 of Proposition 1</a>), whence the conclusion, by a well-known result of <span class="citation">[<a href="#ref-1-3" role="doc-biblioref">21</a>]</span>.</p>
+</div>
+<p>Combining the previous two lemmas, we find:</p>
+<div id="FGA-1-lemma-3-and-lemma-4-corollary" class="itenv" title="Corollary">
+<p>Let <eq env="math">i&gt;0</eq>.
+Then the functor <eq env="math">{\mathscr{F}}\mapsto\operatorname{H}^{r-i}(\mathbf{P},{\mathscr{F}})</eq> on the category of coherent algebraic sheaves on <eq env="math">\mathbf{P}</eq> is coeffaceable, and so too is the functor <eq env="math">\operatorname{Ext}_{{\mathscr{O}}_X}^i(X;{\mathscr{F}},{\mathscr{B}})</eq> on the category of coherent algebraic sheaves on <eq env="math">X</eq>.</p>
+</div>
+
+<div id="FGA-1-lemma-5" class="itenv" title="Lemma 5">
+<p>Let <eq env="math">{\mathscr{A}}</eq> and <eq env="math">{\mathscr{B}}</eq> be coherent algebraic sheaves on <eq env="math">X</eq>, and let <eq env="math">{\mathscr{A}}(m)={\mathscr{A}}\otimes{\mathscr{O}}_X(m)</eq>.
+Then, for large enough <eq env="math">m</eq>, the canonical homomorphism
+<eq env="displaymath">
+  \operatorname{Ext}_{{\mathscr{O}}_X}^i(X;{\mathscr{A}}(-m),{\mathscr{B}})
+  \to \operatorname{H}^0(X,\underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^i({\mathscr{A}}(-m),{\mathscr{B}}))
+  = \operatorname{H}^0(X,\underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^i({\mathscr{A}},{\mathscr{B}})(m))
+</eq>
+is an isomorphism.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-11" class="proof"><em>Proof</em>. </span>This follows immediately from the spectral sequence in  applied to <eq env="math">{\mathscr{A}}(-m)</eq> and <eq env="math">{\mathscr{B}}</eq>, since we then have that
+<eq env="displaymath">
+  E_2^{p,q}({\mathscr{A}}(-m),{\mathscr{B}})
+  = \operatorname{H}^p(X,\underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^q({\mathscr{A}}(-m),{\mathscr{B}}))
+  = \operatorname{H}^p(X,\underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^q({\mathscr{A}},{\mathscr{B}})(m))
+</eq>
+which is zero for <eq env="math">p&gt;0</eq> and large enough <eq env="math">m</eq>.</p>
+</div>
+<p>We now prove <a href="FGA-1.html#FGA-1-D">(D)</a> in the case where <eq env="math">X=\mathbf{P}</eq>.
+We will first prove that <a href="FGA-1.html#FGA-1-equation-5.2bis">(5.2 bis)</a> is an isomorphism for <eq env="math">p=n</eq>;
+since both sides are then left-exact functors (since <eq env="math">\operatorname{H}^{r+i}(\mathbf{P},{\mathscr{F}})=0</eq>), it follows from <a href="FGA-1.html#FGA-1-lemma-3">Lemma 3</a> that it suffices to prove the claim for <eq env="math">{\mathscr{F}}={\mathscr{O}}_\mathbf{P}(-m)</eq>, but this is covered by <a href="FGA-1.html#FGA-1-lemma-2">Lemma 2</a>.
+Since the homomorphisms in <a href="FGA-1.html#FGA-1-equation-5.2bis">(5.2 bis)</a> are functorial and compatible with the coboundary maps, and since, for <eq env="math">p&lt;n</eq>, both sides of <a href="FGA-1.html#FGA-1-equation-5.2bis">(5.2 bis)</a> are coeffaceable functors in <eq env="math">{\mathscr{F}}</eq> (the <a href="FGA-1.html#FGA-1-lemma-3-and-lemma-4-corollary">corollary to Lemmas 3 and 4</a>), it follows, by a standard argument, that <a href="FGA-1.html#FGA-1-equation-5.2bis">(5.2 bis)</a> is an isomorphism for all <eq env="math">p</eq>.
+This proves the duality theorem for the projective space.</p>
+<p>Now suppose that <eq env="math">X</eq> is arbitrary, but non-singular.
+By the duality theorem for <eq env="math">\mathbf{P}</eq>, we have an isomorphism
+<eq env="displaymath">
+  \operatorname{H}^n(X,{\mathscr{F}})
+  = \operatorname{H}^n(\mathbf{P},{\mathscr{F}})'
+  = \operatorname{Ext}_{{\mathscr{O}}_\mathbf{P}}^{r-n}(\mathbf{P};{\mathscr{F}},\Omega_\mathbf{P}^r).
+</eq>
+By <a href="FGA-1.html#FGA-1-lemma-1">Lemma 1</a>, the far-right-hand side can be identified with
+<eq env="displaymath">
+  \operatorname{Hom}_{{\mathscr{O}}_\mathbf{P}}(\mathbf{P};{\mathscr{F}},\omega_X^n)
+  = \operatorname{Hom}_{{\mathscr{O}}_X}(X;{\mathscr{F}},\Omega_X^n)
+  = \operatorname{Ext}_{{\mathscr{O}}_X}^0(X;{\mathscr{F}},\Omega_X^n)
+</eq>
+whence we have an isomorphism</p>
+<div id="FGA-1-equation-5.6" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{H}^n(X,{\mathscr{F}})'
+  = \operatorname{Hom}_{{\mathscr{O}}_X}(X;{\mathscr{F}},\Omega_X^n)
+  = \operatorname{Ext}_{{\mathscr{O}}_X}^0(X;{\mathscr{F}},\Omega_X^n).
+\tag{5.6}
+</eq></p>
+</div>
+<p>Taking <eq env="math">{\mathscr{F}}=\Omega_X^n</eq>, we obtain an isomorphism</p>
+<div id="FGA-1-equation-5.7" class="eqref" title="">
+<p><eq env="displaymath">
+  \eta\colon \operatorname{H}^n(X,\Omega_X^n) \xrightarrow{\sim} k.
+\tag{5.7}
+</eq></p>
+</div>
+
+<p>We can prove that the isomorphism in <a href="FGA-1.html#FGA-1-equation-5.6">(5.6)</a> is exactly <a href="FGA-1.html#FGA-1-equation-5.2bis">(5.2 bis)</a> with <eq env="math">p=n</eq> and <eq env="math">{\mathscr{L}}=k</eq>, by <a href="FGA-1.html#FGA-1-equation-5.7">(5.7)</a>.
+Subsequently, <a href="FGA-1.html#FGA-1-equation-5.2bis">(5.2 bis)</a> is an isomorphism for <eq env="math">p=n</eq>.
+To prove that it is an isomorphism for all <eq env="math">p</eq>, it again suffices to prove that, for <eq env="math">p&lt;n</eq>, the two sides of <a href="FGA-1.html#FGA-1-equation-5.2bis">(5.2 bis)</a> are coeffaceable functors in <eq env="math">{\mathscr{F}}</eq>, and, a fortiori (taking <a href="FGA-1.html#FGA-1-lemma-3">Lemma 3</a> into account), that the two sides are zero when we take <eq env="math">{\mathscr{F}}={\mathscr{O}}_X(-m)</eq> with large enough <eq env="math">m</eq>.
+But, for the left-hand side, this is true by <a href="FGA-1.html#FGA-1-lemma-4">Lemma 4</a>, and for the right-hand side we can write, using the duality theorem for <eq env="math">\mathbf{P}</eq>,
+<eq env="displaymath">
+  \operatorname{H}^p(X,{\mathscr{O}}_X(-m))'
+  = \operatorname{Ext}_{{\mathscr{O}}_\mathbf{P}}^{r-p}(\mathbf{P};{\mathscr{O}}_X(-m),\Omega_\mathbf{P}^r).
+</eq>
+The right-hand side is zero for <eq env="math">p&lt;n</eq> and large enough <eq env="math">m</eq>, as follows from <a href="FGA-1.html#FGA-1-lemma-5">Lemma 5</a> (where in fact <eq env="math">X=\mathbf{P}</eq>) and from the fact that <eq env="math">{\mathscr{O}}_X</eq> is of cohomological dimension <eq env="math">\leqslant r-n</eq> when thought of as a coherent algebraic sheaf on <eq env="math">\mathbf{P}</eq> (since <eq env="math">X</eq> is non-singular), whence
+<eq env="displaymath">
+  \underline{\operatorname{Ext}}_{{\mathscr{O}}_\mathbf{P}}^{r-p}({\mathscr{O}}_X,\Omega_\mathbf{P}^r) = 0
+  \quad\text{for }p&lt;n.
+</eq></p>
+</div>
+<div id="FGA-1-section-6" class="section level2">
+<h2><strong>6.</strong> The duality theorem for singular varieties</h2>
+<p>Let <eq env="math">X</eq> be a closed subset of dimension <eq env="math">n</eq> of the projective space <eq env="math">\mathbf{P}</eq> of dimension <eq env="math">r</eq>.
+Equation <a href="FGA-1.html#FGA-1-equation-5.6">(5.6)</a> can then be written as</p>
+<div id="FGA-1-equation-6.1" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{H}^n(X,{\mathscr{F}})'
+  \simeq \operatorname{Hom}_{{\mathscr{O}}_X}(X;{\mathscr{F}},\omega_X^n)
+  = \operatorname{Ext}_{{\mathscr{O}}_X}^0(X;{\mathscr{F}},\omega_X^n)
+\tag{6.1}
+</eq></p>
+</div>
+<p>where we set<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>
+<eq env="displaymath">
+  \omega_X^n = E^0({\mathscr{O}}_X) = \underline{\operatorname{Ext}}_{{\mathscr{O}}_\mathbf{P}}^{r-n}({\mathscr{O}}_X,\Omega_\mathbf{P}^r).
+</eq>
+As mentioned in <a href="FGA-1.html#FGA-1-proposition-5">Proposition 5</a>, the sheaf thus defined does not depend on the chosen immersion of <eq env="math">X</eq> into the non-singular variety <eq env="math">\mathbf{P}</eq>.
+Taking <eq env="math">{\mathscr{F}}=\omega_X^n</eq> in <a href="FGA-1.html#FGA-1-equation-6.1">(6.1)</a>, we find that
+<eq env="displaymath">
+  \operatorname{H}^n(X,\omega_X^n)' \simeq \operatorname{Hom}_{{\mathscr{O}}_X}(X;\omega_X^n,\omega_X^n)
+\tag{6.2}
+</eq>
+whence the existence of a distinguished element in <eq env="math">\operatorname{H}^n(X,\omega_X^n)</eq>, corresponding to the identity morphism from <eq env="math">\omega_X^n</eq> to itself:</p>
+<div id="FGA-1-equation-6.3" class="eqref" title="">
+<p><eq env="displaymath">
+  \eta\colon \operatorname{H}^n(X,\Omega_X^n) \to k.
+\tag{6.3}
+</eq></p>
+</div>
+
+<p>Then consider the pairings defined by the composition of the <eq env="math">\operatorname{Ext}</eq>:
+<eq env="displaymath">
+  \operatorname{H}^p(X,{\mathscr{F}}) \times \operatorname{Ext}_{{\mathscr{O}}_X}^{n-p}(X;{\mathscr{F}},\omega_X^n)
+  \to \operatorname{H}^n(X,\omega_X^n)
+\tag{6.4}
+</eq>
+and compose them with the homomorphism <eq env="math">\eta</eq> in <a href="FGA-1.html#FGA-1-equation-6.3">(6.3)</a>; we thus obtain functorial homomorphisms</p>
+<div id="FGA-1-equation-6.5" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{Ext}_{{\mathscr{O}}_X}^{n-p}(X;{\mathscr{F}},\omega_X^n) \to \operatorname{H}^p(X,{\mathscr{F}})'
+\tag{6.5}
+</eq></p>
+</div>
+<p>which are compatible with the boundary maps (generalising <a href="FGA-1.html#FGA-1-equation-5.2">(5.2)</a>).
+We can prove that, for <eq env="math">p=n</eq>, we thus obtain the isomorphism in <a href="FGA-1.html#FGA-1-equation-6.1">(6.1)</a>.
+With this, we have:</p>
+<div id="FGA-1-theorem-3bis" class="itenv" title="Theorem 3 bis">
+<p>For any given integer <eq env="math">k\geqslant 0</eq>, the four following conditions on <eq env="math">X</eq> are equivalent:</p>
+<ol style="list-style-type: lower-roman">
+<li><p>The functorial homomorphism in <a href="FGA-1.html#FGA-1-equation-6.5">(6.5)</a> is an isomorphism for <eq env="math">n-k\leqslant p\leqslant n</eq>.</p></li>
+<li><p><eq env="math">\operatorname{H}^p(X,{\mathscr{O}}_X(-m)) = 0</eq> for <eq env="math">n-k\leqslant p&lt;n</eq> and large enough <eq env="math">m</eq>.</p></li>
+<li><p>The functor <eq env="math">\operatorname{H}^p(X,{\mathscr{F}})</eq> on the category of coherent algebraic sheaves on <eq env="math">X</eq> is coeffaceable for <eq env="math">n-k\leqslant p&lt;n</eq>.</p></li>
+<li><p><eq env="math">E^i({\mathscr{O}}_X) = \underline{\operatorname{Ext}}_{{\mathscr{O}}_\mathbf{P}}^{r-n+i}({\mathscr{O}}_X,\omega_\mathbf{P}^r) = 0</eq> for <eq env="math">0&lt;i\leqslant k</eq>.</p></li>
+</ol>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-12" class="proof"><em>Proof</em>. </span>i.<eq env="math">\implies</eq>ii. by <a href="FGA-1.html#FGA-1-lemma-4">Lemma 4</a>;
+ii.<eq env="math">\implies</eq>iii. by <a href="FGA-1.html#FGA-1-lemma-3">Lemma 3</a>;
+iii.<eq env="math">\implies</eq>i. by a well-known standard argument, taking into account the fact that the two sides of <a href="FGA-1.html#FGA-1-equation-6.5">(6.5)</a> are then coeffaceable functors for <eq env="math">n-k\leqslant p&lt; n</eq> (the first being so by <a href="FGA-1.html#FGA-1-lemma-4">Lemma 4</a>);
+finally, ii.<eq env="math">\iff</eq>iv. follows from <a href="FGA-1.html#FGA-1-proposition-6-corollary">the corollary to the following proposition</a>.</p>
+</div>
+<div id="FGA-1-proposition-6" class="itenv" title="Proposition 6">
+<p>Let <eq env="math">{\mathscr{F}}</eq> be a coherent algebraic sheaf on <eq env="math">X</eq>, and let <eq env="math">i</eq> be an integer.
+Then, for large enough <eq env="math">m</eq>, we have an isomorphism</p>
+<div id="FGA-1-equation-6.6" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{H}^i(X,{\mathscr{F}}(-m))' \simeq \operatorname{H}^0(X,E^{n-i}({\mathscr{F}})(m))
+\tag{6.6}
+</eq></p>
+</div>
+<p>where we set
+<eq env="displaymath">
+  E^j({\mathscr{F}}) = \underline{\operatorname{Ext}}_{{\mathscr{O}}_\mathbf{P}}^{r-n+j}({\mathscr{F}},\Omega_\mathbf{P}^r)
+\tag{6.7}
+</eq>
+(compare with <a href="FGA-1.html#FGA-1-proposition-5">Proposition 5</a> in <a href="FGA-1.html#FGA-1-section-3">§3</a>).</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-13" class="proof"><em>Proof</em>. </span>Indeed, by the duality theorem for <eq env="math">\mathbf{P}</eq>, the left-hand side of <a href="FGA-1.html#FGA-1-equation-6.6">(6.6)</a> is isomorphic to <eq env="math">\operatorname{Ext}_{{\mathscr{O}}_\mathbf{P}}^{r-i}(\mathbf{P};{\mathscr{F}}(-m),\Omega_\mathbf{P}^r)</eq>, and so <a href="FGA-1.html#FGA-1-equation-6.6">(6.6)</a> follows from <a href="FGA-1.html#FGA-1-lemma-5">Lemma 5</a>.</p>
+</div>
+
+<div id="FGA-1-proposition-6-corollary" class="itenv" title="Corollary">
+<p>For <eq env="math">\operatorname{H}^i(X,{\mathscr{F}}(-m))</eq> to be zero for large enough <eq env="math">m</eq>, it is necessary and sufficient for <eq env="math">E^{n-i}({\mathscr{F}})</eq> to be zero.</p>
+</div>
+<p>Recall that the <eq env="math">E^j({\mathscr{F}})</eq> do not depend on the projective immersion in question.
+The condition of the corollary is purely local, and so, if it is satisfied for <eq env="math">{\mathscr{F}}</eq>, then it is also satisfied for every sheaf that is locally isomorphic to some <eq env="math">{\mathscr{F}}^n</eq>.
+In particular, if this condition is satisfied for <eq env="math">{\mathscr{O}}_X</eq>, then it is satisfied for every locally-free coherent algebraic sheaf.
+This is the case, for example, for all <eq env="math">i&lt;n</eq> if <eq env="math">X</eq> is non-singular;
+and for <eq env="math">i=0</eq> if no component of <eq env="math">X</eq> consists of a single point;
+and for <eq env="math">i=0,1</eq> if <eq env="math">S</eq> is normal and all its components are of dimension <eq env="math">&gt;1</eq> (see <span class="citation">[<a href="#ref-1-3" role="doc-biblioref">21</a>]</span>).
+For it to be satisfied for <eq env="math">i&lt;k</eq>, it is necessary and sufficient, by definition, for the local rings <eq env="math">{\mathscr{O}}_x</eq> (<eq env="math">x\in X</eq>) to be of “homological codimension <eq env="math">\geqslant k</eq>” (see <span class="citation">[<a href="#ref-1-4" role="doc-biblioref">22</a>]</span> for details on this notion).
+If <eq env="math">k=n</eq>, then this implies, by <a href="FGA-1.html#FGA-1-theorem-3bis">Theorem 3 bis</a>, that the duality theorem is true for <eq env="math">X</eq>, i.e. that <a href="FGA-1.html#FGA-1-equation-6.5">(6.5)</a> is an isomorphism for all <eq env="math">p</eq> and for all <eq env="math">{\mathscr{F}}</eq>.
+We can give many equivalent conditions on the local rings <eq env="math">{\mathscr{O}}_x</eq> for this to be the case (Nagata);
+for example, those that satisfy the Cohen-Macaulay equidimensionality theorem.
+It is also the case, for example, if <eq env="math">X</eq> is locally a “complete intersection” in a non-singular ambient variety.</p>
+</div>
+<div id="FGA-1-section-7" class="section level2">
+<h2><strong>7.</strong> Poincaré duality</h2>
+<p>Let <eq env="math">X</eq> be a non-singular projective variety of dimension <eq env="math">n</eq>.</p>
 
 </div>
 </div>
@@ -678,11 +966,16 @@ A more systematic treatment can be found in a later chapter of EGA (chapter IX i
 <div id="ref-1-3">
 <p>[21] J.-P. Serre. “Faisceaux algébriques cohérents.” <em>Annals of Math.</em> <strong>61</strong> (1955), 197–278.</p>
 </div>
+<div id="ref-1-4">
+<p>[22] J.-P. Serre. “Sur la dimension homologique des anneaux et des modules noethériens,” in: <em>Proc. Intern. Symp. On Alg. Number Theory [1955, Tokyo et Nikko]</em>, Science Council of Japan, Tokyo, 1956: pp. 175–189.</p>
+</div>
 </div>
 <div class="footnotes">
 <hr />
 <ol start="2">
 <li id="fn2"><p>Grothendieck, A. “The cohomology theory of abstract algebraic varieties”, in <em>Proceedings of the international Congress of Mathematicians [1958, Edinburgh]</em>, Cambridge University Press (1960), 103–118.<a href="FGA-1.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>[Trans.] This equation is labelled (5.3) in the original copy of the notes, but this seems to be a typo, since a later equation shares the same number, and any references to (5.3) seem to indeed point to the later equation instead of this one.<a href="FGA-1.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>[Trans.] This equation is labelled (6.2) in the original, but this seems to be a typo, since a later equation shares the same number, and any references to (6.2) seem to indeed point to the later equation instead of this one.<a href="FGA-1.html#fnref4" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 <script type="text/javascript" src="./katex.min.js"></script>
