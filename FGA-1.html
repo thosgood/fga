@@ -951,7 +951,49 @@ It is also the case, for example, if <eq env="math">X</eq> is locally a “compl
 </div>
 <div id="FGA-1-section-7" class="section level2">
 <h2><strong>7.</strong> Poincaré duality</h2>
-<p>Let <eq env="math">X</eq> be a non-singular projective variety of dimension <eq env="math">n</eq>.</p>
+<p>Let <eq env="math">X</eq> be a non-singular projective variety of dimension <eq env="math">n</eq>.
+Then <eq env="math">\operatorname{H}^\bullet(X)=\operatorname{H}^\bullet(X,\Omega_X^\bullet)</eq> is a finite-dimensional bigraded anticommutative algebra, that we grade by the total degree, so that <eq env="math">\operatorname{H}^{p,q}(X)=\operatorname{H}^p(X,\Omega_X^q)</eq> is of degree <eq env="math">p+q</eq>.
+The degrees of <eq env="math">\operatorname{H}^\bullet(X)</eq> are concentrated between <eq env="math">0</eq> and <eq env="math">2n</eq>.
+By  and  to , <eq env="math">\operatorname{H}^\bullet(X)</eq> is a <code>Poincar\'{e} algebra'' of dimension~$2n$, i.e. $\HH^{2n}(X)$ is endowed with an isomorphism to the base field $k$, and the product $\HH^m(X)\times\HH^{2n-m}(X)\to\HH^{2n}(X)=k$ is a duality between $\HH^m(X)$ and $\HH^{2n-m}(X)$. Furthermore, if $Y$ is another non-singular projective variety, then the K\"{u}nneth formula for coherent algebraic sheaves gives \[ \label{7.1}   \HH^\bullet(X\times Y) = \HH^\bullet(X)\otimes\HH^\bullet(Y) \tag{7.1} \] which is an isomorphism that is compatible with the Poincar\'{e} algebra structures. Furthermore, $\HH^\bullet(X)$ is, as a commutative algebra, a covariant functor in $X$, since a morphism $f\colon Y\to X$ defines, in an evident way, a homomorphism of graded algebras \oldpage{149-20} \[ \label{7.2}   f^*\colon \HH^\bullet(X)\to\HH^\bullet(Y). \tag{7.2} \] Since we are working with Poincar\'{e} algebras, we obtain, by transposition, a homomorphism of vector spaces \[ \label{7.3}   f_*\colon \HH^\bullet(Y)\to\HH^\bullet(X). \tag{7.3} \] We have seen in \hyperref[section4]{\S4} that the effect of $f^*$ on cohomology classes that correspond to non-singular cycles can be geometrically interpreted by taking the cohomology classes that correspond to their inverse images. It is important, in the current case, to show that \hyperref[7.3]{(7.3)} corresponds similarly to the</code>direct image’’ operation on cycles.
+This follows, under suitable non-singularity conditions at least, from the following particular case:</p>
+
+<p>This formula is equivalent to
+<eq env="displaymath">
+\label{7.4bis}
+  \langle \xi^{m,m}, P_X(Y) \rangle \varepsilon_Y
+  = f_*(\xi^{m,m})
+  \quad\mbox{where $\xi^{m,m}\in\operatorname{H}^m(X,\Omega_X^m)$}
+\tag{7.4~\emph{bis}}
+</eq>
+where <eq env="math">\varepsilon_Y</eq> is the fundamental element of <eq env="math">\operatorname{H}^m(Y,\Omega_Y^m)</eq>, and this, in the case of non-singular projective varieties, gives a new definition of the cohomology class associated to <eq env="math">Y</eq>.</p>
+
+<p>These compatibilities, which could have been given in , can be stated, and are indeed true, for arbitrary non-singular varieties, with the second,
+
+for example, following from the commutativity of the following diagram of canonical endomorphisms:
+<eq env="displaymath">
+\label{7.6}
+  \begin{tikzcd}[column sep=tiny]
+    &amp; \operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
+      \ar[ld] \ar[dr,"\sim"]
+    &amp;
+  \\\operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
+      \ar[dd]
+    &amp;&amp; \operatorname{Hom}_{{\mathscr{O}}_X}(X;\Omega_Y^m,\Omega_Y^m)
+      \ar[dd]
+  \\&amp; \operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;{\mathscr{O}}_Y,\Omega_X^{n-m})
+      \ar[ld] \ar[dr,"\sim"]
+    &amp;
+  \\\operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;{\mathscr{O}}_X,\Omega_X^{n-m})
+    &amp;&amp; \operatorname{Hom}_{{\mathscr{O}}_X}(X;\Omega_X^m,\Omega_Y^m)
+  \end{tikzcd}
+\tag{7.6}
+</eq></p>
+<p>We thus obtain an exact equivalent of the formalism of Poincar'{e} duality for compact oriented varieties.
+In particular,  allows us to determine the cohomology class associated to the diagonal of <eq env="math">X\times X</eq>.
+By a well-known argument, we thus deduce, for example, a :</p>
+
+<p>The restriction on <eq env="math">f</eq> that we have to make is related to the difficulties mentioned in  of .
+We note, however, that the Lefschetz formula still holds true if <eq env="math">f</eq> is ``homotopic’’ to an endomorphism whose fixed points are all of multiplicity~<eq env="math">1</eq>.</p>
 
 </div>
 </div>
@@ -1060,7 +1102,7 @@ gitbook.start({
 "download": null,
 "toc": {
 "collapse": "section",
-"scroll_highlight": true
+"scroll_highlight": false
 },
 "search": true,
 "info": false
