@@ -1,5 +1,5 @@
 bookdown::gitbook:
-  number_sections: no
+  number_sections: yes
   anchor_sections: no
   mathjax: null
   pandoc_args: ["--gladtex"]
@@ -11,7 +11,7 @@ bookdown::gitbook:
   config:
     toc:
       collapse: section
-      scroll_highlight: no
+      scroll_highlight: yes
       before: |
         <li><h4>Table of contents</h4></li>
     fontsettings:

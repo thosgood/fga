@@ -1,4 +1,4 @@
-# **(FGA 1)** Duality theorems for coherent algebraic sheaves {#FGA-1}
+# Duality theorems for coherent algebraic sheaves [FGA 1] {#FGA-1}
 
 \providecommand{\scr}[1]{{\mathscr{#1}}}
 \renewcommand{\cal}[1]{{\mathcal{#1}}}
@@ -33,7 +33,7 @@ The results that follow, inspired by Serre's "theorem of algebraic duality", wer
 They can be established very simply, thanks to reasonably elementary results on the cohomology of projective spaces [@1-3] and an intensive use of Cartan--Eilenberg's homological algebra, in the form given in [@1-2].
 
 
-## **1.** $\Ext$ of sheaves of modules {#FGA-1-section-1}
+## $\Ext$ of sheaves of modules {#FGA-1-section-1}
 
 _(cf. @1-2, chap. 3 and 4)_
 
@@ -151,7 +151,7 @@ The proof is standard: we consider the bicomplex $\shHom_\scr{O}(\scr{L}_\bullet
 To finish, we note that the two $\Ext$ functors introduced in [(1.2)](#FGA-1-equation-1.2) are not only cohomological functors in $\scr{B}$, but in fact _cohomological bifunctors_, covariant in $\scr{B}$, and contravariant in $\scr{A}$.
 
 
-## **2.** The composition law in $\Ext$ {#FGA-1-section-2}
+## The composition law in $\Ext$ {#FGA-1-section-2}
 
 The results of this section are due, independently, to Cartier and Yoneda;
 see a talk by Cartier [@1-1] for more details.
@@ -236,7 +236,7 @@ are compatible with the multiplicative structures.
 So, if we restrict to sheaves that are locally isomorphic to some $\scr{O}^m$, then this completely explains the composition of the global $\Ext$ by means of the cup product, taking into account the isomorphisms of [(1.5)](#FGA-1-equation-1.5).
 
 
-## **3.** Results concerning local cohomology {#FGA-1-section-3}
+## Results concerning local cohomology {#FGA-1-section-3}
 
 Let $A$ be a unital commutative ring endowed with an ideal $\frak{J}$.
 We will define, for any $A$-module $M$, functorial homomorphisms
@@ -422,7 +422,7 @@ $$
 ::::
 
 
-## **4.** Cohomology class associated to a subvariety {#FGA-1-section-4}
+## Cohomology class associated to a subvariety {#FGA-1-section-4}
 
 In all that follows, $X$ denotes an algebraic set of dimension $n$, defined over a field $k$ that we assume, for simplicity, to be algebraically closed.
 Except for in [§6](#FGA-1-section-6), we assume that $X$ is non-singular.
@@ -670,7 +670,7 @@ A more systematic treatment can be found in a later chapter of EGA (chapter IX i
 :::
 
 
-## **5.** The duality theorem {#FGA-1-section-5}
+## The duality theorem {#FGA-1-section-5}
 
 In this section, $X$ denotes a non-singular projective variety of dimension $n$.
 
@@ -893,7 +893,7 @@ $$
 $$
 
 
-## **6.** The duality theorem for singular varieties {#FGA-1-section-6}
+## The duality theorem for singular varieties {#FGA-1-section-6}
 
 Let $X$ be a closed subset of dimension $n$ of the projective space $\bb{P}$ of dimension $r$.
 Equation [(5.6)](#FGA-1-equation-5.6) can then be written as
@@ -1007,7 +1007,7 @@ for example, those that satisfy the Cohen-Macaulay equidimensionality theorem.
 It is also the case, for example, if $X$ is locally a "complete intersection" in a non-singular ambient variety.
 
 
-## **7.** Poincaré duality {#FGA-1-section-7}
+## Poincaré duality {#FGA-1-section-7}
 
 Let $X$ be a non-singular projective variety of dimension $n$.
 Then $\HH^\bullet(X)=\HH^\bullet(X,\Omega_X^\bullet)$ is a finite-dimensional bigraded anticommutative algebra, that we grade by the total degree, so that $\HH^{p,q}(X)=\HH^p(X,\Omega_X^q)$ is of degree $p+q$.
