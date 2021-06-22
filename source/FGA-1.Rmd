@@ -829,7 +829,7 @@ is an isomorphism.
 :::
 
 ::: {.proof}
-This follows immediately from the spectral sequence in \hyperref[proposition1]{Proposition 1} applied to $\scr{A}(-m)$ and $\scr{B}$, since we then have that
+This follows immediately from the spectral sequence in [Proposition 1](#FGA-1-proposition-1) applied to $\scr{A}(-m)$ and $\scr{B}$, since we then have that
 $$
   E_2^{p,q}(\scr{A}(-m),\scr{B})
   = \HH^p(X,\shExt_{\scr{O}_X}^q(\scr{A}(-m),\scr{B}))
@@ -1113,4 +1113,145 @@ We note, however, that the Lefschetz formula still holds true if $f$ is "homotop
 
 ## Generalisation of the duality theorem {#FGA-1-section-8}
 
-Let $X$ be a non-singular algebraic variety such that every coherent algebraic sheaf $\scr{F}$ on $X$ is isomorphic to a locally-free coherent algebraic sheaf (which is the case if $X$ is locally closed in a projective space).
+Let $X$ be a non-singular algebraic variety such that every coherent algebraic sheaf $\scr{F}$ on $X$ is isomorphic to a locally-free coherent algebraic sheaf (which is the case if $X$ is locally closed in some projective space).
+Then every coherent algebraic sheaf $\scr{F}$ on $X$ admits a finite resolution $\scr{L}$ by locally-free sheaves, and, for any two such resolutions, we can always find a third, along with homomorphisms, from it to the first two, that are compatible with the augmentations.
+Similarly, if $\scr{L}$ is a finite locally-free resolution of $\scr{F}$, and if we have a homomorphism $\scr{F}'\to\scr{F}$, then there exists a finite locally-free resolution $\scr{L}'$ of $\scr{F}'$ along with a homomorphism $\scr{L}'\to\scr{L}$ that is compatible with $\scr{F}'\to\scr{F}$, that we can even assume to be surjective if $\scr{F}'\to\scr{F}$ is surjective.
+This allows us to define, given integers $r,s\geq0$, two cohomological multifunctors, with arguments $\scr{A}_1,\ldots,\scr{A}_r;\scr{B}_1,\ldots,\scr{B}_s$ in the category of coherent algebraic sheaves on $X$;
+one takes values in the category of coherent algebraic sheaves on $X$, and the other in the category of modules over $\HH^0(X,\scr{O}_X)$.
+We define them by the formulas
+\oldpage{149-22}
+
+::: {.eqref #FGA-1-equation-8.1 title="" data-latex=""}
+$$
+  \begin{aligned}
+    &\underline{T}_r^{s\bullet}(\scr{A}_1,\ldots,\scr{A}_r;\scr{B}_1,\ldots,\scr{B}_s)
+  \\&= \HH^\bullet(\shHom_{\scr{O}_X}(\underline{L}(\scr{A}_1)\otimes\ldots\otimes\underline{L}(\scr{A}_r), \underline{L}(\scr{B}_1)\otimes\ldots\otimes\underline{L}(\scr{B}_s))),
+  \\&T_r^{s\bullet}(\scr{A}_1,\ldots,\scr{A}_r;\scr{B}_1,\ldots,\scr{B}_s)
+  \\&= \underline{\RR}^\bullet\Gamma(\shHom_{\scr{O}_X}(\underline{L}(\scr{A}_1)\otimes\ldots\otimes\underline{L}(\scr{A}_r), \underline{L}(\scr{B}_1)\otimes\ldots\otimes\underline{L}(\scr{B}_s)))
+  \end{aligned}
+\tag{8.1}
+$$
+:::
+
+where $\underline{L}(\scr{F})$ denotes a finite locally-free resolution of the coherent algebraic sheaf $\scr{F}$, and $\underline{\RR}^\bullet\Gamma(\scr{K})$ denotes the hypercohomology of the space $X$ with respect to the complex of sheaves $\scr{K}$.
+If $r$ (resp. $s$) is zero, then we replace the tensor product of the $\underline{L}(\scr{A}_i)$ (resp. of the $\underline{L}(\scr{B}_j)$) by $\scr{O}_X$.
+In particular, $\underline{T}_0^0$ and $T_0^0$ are graded functors with no arguments:
+$\underline{T}_0^0$ is concentrated in degree $0$, where it is the sheaf $\scr{O}_X$;
+and $T_0^0$ is equal to $\HH^\bullet(X,\scr{O}_X)$.
+The fact that the right-hand sides of [(8.1)](#FGA-1-equation-8.1) do not depend on the chosen resolutions is evident for $\underline{T}$ (since the question is then local), and for $T$ it follows from preceding general remarks, taking into account the spectral sequence for the hypercohomology of the complex of sheaves $\scr{K}=\shHom_{\scr{O}_X}(\underline{L}(\scr{A}_1)\otimes\ldots,\underline{L}(\scr{B}_1)\otimes\ldots$ that abuts to the hypercohomology of $X$ with respect to $\scr{K}$, and whose initial page is $\HH^p(X,\HH^q(\scr{K}))$, i.e.
+
+::: {.eqref #FGA-1-equation-8.2 title="" data-latex=""}
+$$
+  E_2^{p,q} = \HH^p(X,(\underline{T}_r^s)^{(q)}(\scr{A}_1,\ldots,\scr{A}_r;\scr{B}_1,\ldots,\scr{B}_s)).
+\tag{8.2}
+$$
+:::
+
+We then see that this spectral sequence itself does not depend on the chosen resolutions, and its abutment is the left-hand side of [(8.1)](#FGA-1-equation-8.1).
+We can easily define the coboundary maps relative to miscellaneous arguments $\scr{A}_i,\scr{B}_j$ by noting that every exact sequence $0\to\scr{F}'\to\scr{F}\to\scr{F}''\to0$ can be resolved by an exact sequence of finite locally-free complexes.
+
+We define, on the system of functors $\underline{T}_r^{s\bullet}$ (resp. $T_r^{s\bullet}$), operations that are analogous to those of tensor calculus, and whose definitions are immediate from the defining formulas in [(8.1)](#FGA-1-equation-8.1).
+We thus have a _composition_ (generalising that which was described in [§2](#FGA-1-section-2)):
+
+::: {.eqref #FGA-1-equation-8.3 title="" data-latex=""}
+$$
+  \begin{gathered}
+    T_r^{s\bullet}(\scr{A}_1,\ldots,\scr{A}_r;\scr{B}_1,\ldots,\scr{B}_s)
+    \times T_{r'}^{s'\bullet}(\scr{A}'_1,\ldots,\scr{A}'_{r'};\scr{B}'_1,\ldots,\scr{B}'_{s'})
+  \\\to T_{r+r'}^{(s+s')\bullet}(\scr{A}_1,\ldots,\scr{A}_r,\scr{A}'_1,\ldots,\scr{A}'_{r'};\scr{B}_1,\ldots,\scr{B}_s,\scr{B}'_1,\ldots,\scr{B}'_{s'})
+  \end{gathered}
+\tag{8.3}
+$$
+:::
+
+that satisfies the evident properties of associativity, compatibility with the functorial homomorphisms and the coboundary homomorphisms, and spectral sequences.
+Similarly, we have symmetry operations, whose explicit descriptions we leave to the reader.
+We further have a _contraction_ operation every time one of the arguments $\scr{A}_i$ is equal to one of the arguments $\scr{B}_j$:
+
+\oldpage{149-23}
+
+::: {.eqref #FGA-1-equation-8.4 title="" data-latex=""}
+$$
+  \begin{gathered}
+    T_r^{s\bullet}(\scr{A}_1,\ldots,\scr{A}_{i-1},\scr{C},\scr{A}_{i+1},\ldots,\scr{A}_r;\scr{B}_1,\ldots,\scr{B}_{j-1},\scr{C},\scr{B}_{j+1},\ldots,\scr{B}_s)
+  \\\to -T_{r-1}^{(s-1)\bullet}(\scr{A}_1,\ldots,\widehat{\scr{A}_i},\ldots,\scr{A}_r;\scr{B}_1,\ldots,\widehat{\scr{B}_j},\ldots,\scr{B}_s).
+  \end{gathered}
+\tag{8.4}
+$$
+:::
+
+Furthermore, if some argument $\scr{A}_i$ is a locally-free sheaf, then we can suppress it by replacing one of the $\scr{A}_j$ (for $j\neq i$) by $\scr{A}_j\otimes\scr{A}_i$, or one of the $\scr{B}_k$ by $\scr{B}_k\otimes\scr{A}'_i$ (where $\scr{A}'_i=\shHom_{\scr{O}_X}(\scr{A}_i,\scr{O}_X$);
+we have an analogous rule for the case where one of the arguments $\scr{B}_j$ is locally free.
+In particular, we can always suppress any argument that is equal to $\scr{O}_X$.
+If all the arguments are locally free, except for at most one of the arguments $\scr{B}_i$, then the rule that we have just stated gives a functorial isomorphism
+$$
+  T_r^{s\bullet}(\scr{A}_1,\ldots,\scr{A}_r;\scr{B}_1,\ldots,\scr{B}_s)
+  = \HH^\bullet(X,\scr{A}'_1\otimes\ldots\otimes\scr{A}'_{r}\otimes\scr{B}_1\otimes\scr{B}_s)
+\tag{8.5}
+$$
+(since we can restrict to the case where $r=0$ and $s=1$, and there it is immediate;
+we can also directly use the spectral sequence whose initial term is [(8.2)](#FGA-1-equation-8.2)).
+The corresponding operations of all the above can also be defined for the $\underline{T}_r^s$.
+The relations between the various operations thus introduced are the same as for the analogous relations in tensor calculus.
+
+Now let $n$ be the dimension of $X$.
+By successively applying a tensor composition [(8.3)](#FGA-1-equation-8.3) and contractions [(8.4)](#FGA-1-equation-8.4) on repeated arguments, we obtain a pairing
+
+::: {.eqref #FGA-1-equation-8.6 title="" data-latex=""}
+$$
+  \begin{gathered}
+    (T_r^s)^p(\scr{A}_1,\ldots;\scr{B}_1,\ldots)
+    \times (T_r^s)^{n-p}(\scr{B}_1,\ldots;\scr{A}_1,\ldots,\scr{A}_r\otimes\Omega_X^n)
+  \\\longrightarrow\HH^n(X,\Omega_X^n).
+  \end{gathered}
+\tag{8.6}
+$$
+:::
+
+::: {.itenv #FGA-1-theorem-6 title="Theorem 6" data-latex="{Theorem 6}"}
+If $X$ is a non-singular projective variety, then the pairings in [(8.6)](#FGA-1-equation-8.6) are dualities.
+:::
+
+::: {.proof}
+This follows in a purely formal way from the [corollary of Theorem 3](#FGA-1-theorem-3-corollary).
+In fact, it easily follows from this corollary that, if $\scr{K}$ is a complex of _locally-free_ coherent algebraic sheaves, then the hypercohomology of $X$ with respect to $\scr{K}$ is in duality with the hypercohomology of $X$ with respect to $\scr{K}'\otimes\Omega_X^n$ via the natural pairings
+$$
+  \underline{\RR}^p\Gamma(\scr{K})
+  \times \underline{\RR}^{n-p}\Gamma(\scr{K}'\otimes\Omega_X^n)
+  \to \underline{\RR}^n\Gamma(\Omega_X^n)
+  = \HH^n(X,\Omega_X^n).
+\tag{8.7}
+$$
+We can see this by using the spectral sequence with initial page $\HH^p(\HH^q(X,\scr{K}))$ and the analogous spectral sequence for $\scr{K}'\otimes\Omega_X^n$.
+From the above result, [Theorem 6](#FGA-1-theorem-6) can be deduced from the definition [(8.1)](#FGA-1-equation-8.1).
+:::
+
+\oldpage{149-24}
+
+::: {.rmenv title="Remarks" data-latex="{Remarks}"}
+—
+
+1. For the definitions preceding [Theorem 6](#FGA-1-theorem-6), it was not necessary for $X$ to be non-singular, since it was not necessary to work with only _finite_ resolutions.
+    But, if $X$ is singular, then we can no long be sure, a priori, that the $(\underline{T}_r^s)^p(\scr{A}_1,\ldots;\scr{B}_1,\ldots)$ are _coherent_ sheaves, since, in the complex of sheaves
+    $$
+      \shHom_{\scr{O}_X}(\underline{L}(\scr{A}_1)\otimes\ldots,\underline{L}(\scr{B}_1)\otimes\ldots)
+    $$
+    there will be an infinite number of components of any given total degree.
+
+2. We can easily verify that, in the formulas in [(8.1)](#FGA-1-equation-8.1), we can replace _one_ of the $\underline{L}(\scr{B}_i)$ with $\scr{B}_i$.
+    Taking [Proposition 3](#FGA-1-proposition-3) into account, this shows that we have
+    $$
+      \begin{aligned}
+        \underline{T}_1^{1\bullet}(\scr{A};\scr{B})
+        &= \shExt_{\scr{O}_X}^\bullet(\scr{A},\scr{B})
+      \\T_1^{1\bullet}(\scr{A};\scr{B})
+        &= \Ext_{\scr{O}_X}^\bullet(X;\scr{A},\scr{B}).
+      \end{aligned}
+    \tag{8.8}
+    $$
+    In particular, taking $r=s=1$ and $\scr{A}_1=\scr{O}_X$ in [(8.6)](#FGA-1-equation-8.6), we recover [Theorem 3](#FGA-1-theorem-3).
+    Equation (8.8) also implies that $T_0^{1\bullet}(\scr{B})=\HH^\bullet(X,\scr{B})$, and that $T_1^{0\bullet}(\scr{A})=\Ext_{\scr{O}_X}^\bullet(X;\scr{A},\scr{O}_X)$.
+
+3. We see, in [(8.1)](#FGA-1-equation-8.1), that the functors $\underline{T}_r^{s\bullet}$ and $T_r^{s\bullet}$ have, in general, components in positive _and_ negative degrees.
+    Using the above remark, we see that, if the dimension of $X$ is $n$, then the non-zero components of $\underline{T}_r^{s\bullet}$ are concentrated between degrees $-(s-1)n$ and $rn$ if $s>0$, and between degrees $0$ and $rn$ if $s=0$; the non-zero components of $T_r^{s\bullet}$ are concentrated between degrees $-(s-1)n$ and $(r+1)n$ if $s>0$, and between degrees $0$ and $(r+1)n$ if $s=0$ (and, unless I am mistaken, if $r>0$, between degrees $-(s-1)n$ and $rn$, resp. $0$ and $rn$).
+:::

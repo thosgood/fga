@@ -6,14 +6,12 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 ## To-do
 
 - pdf output
-- bibliography numbering...
-- remove global bibliography
 
-- [ ] 1
+- [x] 1
 - [ ] 2
-- [ ] 3:I
-- [ ] 3:II
-- [ ] 3:III
-- [ ] 3:IV
-- [ ] 3:V
-- [ ] 3:VI
+- [ ] 3.I
+- [ ] 3.II
+- [ ] 3.III
+- [ ] 3.IV
+- [ ] 3.V
+- [ ] 3.VI
