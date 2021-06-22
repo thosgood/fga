@@ -223,7 +223,7 @@ We note, however, an interesting case where a formal scheme is algebraisable:
 Let $A$ be a complete local Noetherian ring, with residue field $k$, and let $\frak{X}$ be a proper formal scheme over $A$ (endowed with its $\frak{r}(A)$-adic topology).
 We suppose that
 
-i. the local rings of $\scr{O}_{\frak{X}}$ are \emph{flat} $A$-modules, or, equivalently, that, if we endow $\scr{O}_{\frak{X}}$ and $A$ with the filtration given by powers of the maximal ideal of $A$, then the associated graded algebras satisfy
+i. the local rings of $\scr{O}_{\frak{X}}$ are _flat_ $A$-modules, or, equivalently, that, if we endow $\scr{O}_{\frak{X}}$ and $A$ with the filtration given by powers of the maximal ideal of $A$, then the associated graded algebras satisfy
     $$
       \gr(\scr{O}_{\frak{X}}) \simeq \gr^0(\scr{O}_{\frak{X}})\otimes_k\gr(A);
     $$
@@ -295,101 +295,93 @@ Since a morphism of finite type is locally affine, and _a fortiori_ locally quas
 
 ## Application to the cohomological study of proper and flat morphisms {#FGA-2-section-5}
 
-<!-- Let $f\colon X\to Y$ be a proper morphism, and $\scr{F}$ a coherent sheaf on $X$,
+Let $f\colon X\to Y$ be a proper morphism, and $\scr{F}$ a coherent sheaf on $X$, with $\scr{F}$ assumed to be $Y$-flat, i.e. the $\scr{F}_x$ are flat modules over the rings $\scr{O}_y$ (where $y=f(x)$).
 \oldpage{182-09}
-with $\scr{F}$ assumed to be $Y$-flat, i.e. the $\scr{F}_x$ are flat modules over the rings $\scr{O}_y$ (where $y=f(x)$).
-This also implies that, for every $y\in Y$, if we filter $\scr{F}$ along the fibre $f^{-1}(y)$ by the $\fk{m}_y^n\scr{F}$ (where $\fk{m}_y$ is the maximal ideal of $\scr{O}_y$), then the associated graded algebra is isomorphic to $(\scr{F}/\fk{m}_y\scr{F})\otimes_{\kres(y)}\gr(\scr{O}_y)$;
+This also implies that, for every $y\in Y$, if we filter $\scr{F}$ along the fibre $f^{-1}(y)$ by the $\frak{m}_y^n\scr{F}$ (where $\frak{m}_y$ is the maximal ideal of $\scr{O}_y$), then the associated graded algebra is isomorphic to $(\scr{F}/\frak{m}_y\scr{F})\otimes_{\kres(y)}\gr(\scr{O}_y)$;
 in other words, we have that
-\[
-  \fk{m}_y^n\scr{F}/\fk{m}_y^{n+1}
-  = \scr{F}_y\otimes_{\kres(y)}(\fk{m}_y^n/\fk{m}_y^{n+1})
-\]
-for every integer $n$, where $\scr{F}_y$ denotes the sheaf $\scr{F}/\fk{m}_y\scr{F}$ induced by $\scr{F}$ on $X_y$ (with $X_y$ denoting the fibre $f^{-1}(y)$ considered as a proper scheme over the residue field $\kres(y)$ of $y$).
+$$
+  \frak{m}_y^n\scr{F}/\frak{m}_y^{n+1}
+  = \scr{F}_y\otimes_{\kres(y)}(\frak{m}_y^n/\frak{m}_y^{n+1})
+$$
+for every integer $n$, where $\scr{F}_y$ denotes the sheaf $\scr{F}/\frak{m}_y\scr{F}$ induced by $\scr{F}$ on $X_y$ (with $X_y$ denoting the fibre $f^{-1}(y)$ considered as a proper scheme over the residue field $\kres(y)$ of $y$).
 Taking this isomorphism, as well as  [Theorem 2](#FGA-2-theorem-2), into account, we obtain augmentations, and sometimes computations, of the $\RR^q f_*(\scr{F})$ in a neighbourhood of $y$, knowing the cohomology of $X_y$ with coefficients in $\scr{F}_y$.
 Here  [Theorem 2](#FGA-2-theorem-2) takes the form
-\[
-  \overline{\RR^q f_*(\scr{F})} = \varprojlim_n H^q(\scr{F}_y,\scr{F}/\fk{m}_y^n\scr{F}).
-\]
+$$
+  \overline{\RR^q f_*(\scr{F})} = \varprojlim_n H^q(\scr{F}_y,\scr{F}/\frak{m}_y^n\scr{F}).
+$$
 We will mention here only the following consequence:
 
-\begin{itenv}{Proposition 1}
-\label{proposition1}
-  Let $f\colon X\to Y$ be a proper morphism, and $\scr{F}$ a coherent $Y$-flat sheaf on $X$.
-  Let $y\in Y$, let $q$ be an integer, and suppose that $H^q(X_y,\scr{F}_y)=0$.
-  Then $\RR^q f_*(\scr{F})$ is zero on a a neighbourhood of $y$, and, for every $n$, the natural homomorphism
-  \[
-    \RR^{q-1}f_*(\scr{F})_y \to H^{q-1}(X_y,\scr{F}_y/\fk{m}_y^n\scr{F}_y)
-  \]
-  is surjective.
-\end{itenv}
+::: {.itenv #FGA-2-proposition-1 title="Proposition 1" latex="{Proposition 1}"}
+Let $f\colon X\to Y$ be a proper morphism, and $\scr{F}$ a coherent $Y$-flat sheaf on $X$.
+Let $y\in Y$, let $q$ be an integer, and suppose that $H^q(X_y,\scr{F}_y)=0$.
+Then $\RR^q f_*(\scr{F})$ is zero on a a neighbourhood of $y$, and, for every $n$, the natural homomorphism
+$$
+  \RR^{q-1}f_*(\scr{F})_y \to H^{q-1}(X_y,\scr{F}_y/\frak{m}_y^n\scr{F}_y)
+$$
+is surjective.
+:::
 
 In particular, if $f$ is a flat morphism (i.e. if $\scr{O}_X$ is $Y$-flat), then every locally free coherent sheaf $\scr{F}$ on $X$ is $Y$-flat.
-Let $\scr{F}$ and $\scr{G}$ be two such sheaves, and apply \hyperref[proposition1]{Proposition 1} to $\shHom_{\scr{O}_X}(\scr{F},\scr{G})$ and $q=1$ to obtain:
+Let $\scr{F}$ and $\scr{G}$ be two such sheaves, and apply [Proposition 1](#FGA-2-proposition-1) to $\shHom_{\scr{O}_X}(\scr{F},\scr{G})$ and $q=1$ to obtain:
 
-\begin{itenv}{Theorem 7}
-\label{theorem7}
-  Let $f$ be a flat proper morphism, $\scr{F}$ and $\scr{G}$ locally free coherent sheaves on $X$, and $y\in Y$;
-  suppose that $H^1(X_y,\shHom_{\scr{O}_X}(\scr{F}_y,\scr{G}))=0$.
-  Then every homomorphism $u_0\colon\scr{F}_y\to\scr{G}_y$ is induced by a homomorphism $u\colon\scr{F}|V\to\scr{G}|V$, where $V=f^{-1}(U)$ is the inverse image of a neighbourhood $U$ of $y$.
-\end{itenv}
+::: {.itenv #FGA-2-theorem-7 title="Theorem 7" latex="{Theorem 7}"}
+Let $f$ be a flat proper morphism, $\scr{F}$ and $\scr{G}$ locally free coherent sheaves on $X$, and $y\in Y$;
+suppose that $H^1(X_y,\shHom_{\scr{O}_X}(\scr{F}_y,\scr{G}))=0$.
+Then every homomorphism $u_0\colon\scr{F}_y\to\scr{G}_y$ is induced by a homomorphism $u\colon\scr{F}|V\to\scr{G}|V$, where $V=f^{-1}(U)$ is the inverse image of a neighbourhood $U$ of $y$.
+:::
 
-\begin{itenv}{Corollary 1}
-\label{theorem7corollary1}
-  If $u_0$ is an isomorphism (resp. a monomorphism, resp. an epimorphism), then so too is $u$, for small enough $U$.
-\end{itenv}
+::: {.itenv #FGA-2-theorem-7-corollary-1 title="Corollary 1" latex="{Corollary 1}"}
+If $u_0$ is an isomorphism (resp. a monomorphism, resp. an epimorphism), then so too is $u$, for small enough $U$.
+:::
 
 In particular:
 
 \oldpage{182-10}
-\begin{itenv}{Corollary 2}
-\label{theorem7corollary2}
-  Let $E_0$ be a locally free coherent sheaf on $X_y$ such that $H^1(X_y;\shHom_{\scr{O}_X}(E_0,E_0))=0$.
-  Then any two locally free sheaves whose restrictions to $X_y$ are isomorphic to $E_0$ are themselves isomorphic to one another in a neighbourhood of $X_y$.
-\end{itenv}
+::: {.itenv #FGA-2-theorem-7-corollary-2 title="Corollary 2" latex="{Corollary 2}"}
+Let $E_0$ be a locally free coherent sheaf on $X_y$ such that $H^1(X_y;\shHom_{\scr{O}_X}(E_0,E_0))=0$.
+Then any two locally free sheaves whose restrictions to $X_y$ are isomorphic to $E_0$ are themselves isomorphic to one another in a neighbourhood of $X_y$.
+:::
 
 Thus:
 
-\begin{itenv}{Corollary 3}
-\label{theorem7corollary3}
-  Suppose that $H^1(X_y,\scr{O}_{X_y})=0$.
-  Then any two invertible sheaves on $X$ (i.e. locally isomorphic to $\scr{O}_X$) whose restrictions to $X_y$ are isomorphic are themselves isomorphic to one another.
-\end{itenv}
+::: {.itenv #FGA-2-theorem-7-corollary-3 title="Corollary 3" latex="{Corollary 3}"}
+Suppose that $H^1(X_y,\scr{O}_{X_y})=0$.
+Then any two invertible sheaves on $X$ (i.e. locally isomorphic to $\scr{O}_X$) whose restrictions to $X_y$ are isomorphic are themselves isomorphic to one another.
+:::
 
 It thus follows that:
 
-\begin{itenv}{Proposition 2}
-\label{proposition2}
-  Let $Y$ be a connected scheme, and $E$ a locally free coherent sheaf on $Y$.
-  Consider the bundle of projective spaces $X=\PP(E)$ associated to $E$, endowed with its well-known invertible sheaf $\scr{O}_X(1)$.
-  Then every invertible sheaf $\scr{L}$ on $X$ is isomorphic to a sheaf of the form $f^*(\scr{L}')\otimes\scr{O}_X(n)$, where $\scr{L}'$ is an invertible sheaf on $Y$, and $n$ is an integer.
-  Further, $n$ is uniquely determined, and $\scr{L}'$ is determined up to isomorphism.
-\end{itenv}
+::: {.itenv #FGA-2-proposition-2 title="Proposition 2" latex="{Proposition 2}"}
+Let $Y$ be a connected scheme, and $E$ a locally free coherent sheaf on $Y$.
+Consider the bundle of projective spaces $X=\PP(E)$ associated to $E$, endowed with its well-known invertible sheaf $\scr{O}_X(1)$.
+Then every invertible sheaf $\scr{L}$ on $X$ is isomorphic to a sheaf of the form $f^*(\scr{L}')\otimes\scr{O}_X(n)$, where $\scr{L}'$ is an invertible sheaf on $Y$, and $n$ is an integer.
+Further, $n$ is uniquely determined, and $\scr{L}'$ is determined up to isomorphism.
+:::
 
-The above \hyperref[theorem7corollary3]{Corollary 3} proves that $\scr{L}$ is isomorphic to an $\scr{O}_X(n)$-module on a neighbourhood of each fibre.
+[Corollary 3](#FGA-2-theorem-7-corollary-3) above proves that $\scr{L}$ is isomorphic to an $\scr{O}_X(n)$-module on a neighbourhood of each fibre.
 The rest is more or less formal.
 
-\hyperref[proposition2]{Proposition 2} allows us to determine the $Y$-morphisms from $X=\PP(E)$ to another projective bundle.
+[Proposition 2](#FGA-2-proposition-2) allows us to determine the $Y$-morphisms from $X=\PP(E)$ to another projective bundle.
 We see, in particular:
 
-\begin{itenv}{Corollary 1}
-\label{proposition2corollary1}
-  Let $u$ be an automorphism of $X=\PP(E)$.
-  Then there exists an invertible sheaf $\scr{L}'$ on $Y$, and an isomorphism $v$ from $E$ to $E\otimes\scr{L}'$ such that $u$ is the isomorphism corresponding to $\PP(E)\xrightarrow{\sim}\PP(E\otimes\scr{L}')=\PP(E)$;
-  the pair $(v,\scr{L}')$ is determined up to isomorphism.
-\end{itenv}
+::: {.itenv #FGA-2-proposition-2-corollary-1 title="Corollary 1" latex="{Corollary 1}"}
+Let $u$ be an automorphism of $X=\PP(E)$.
+Then there exists an invertible sheaf $\scr{L}'$ on $Y$, and an isomorphism $v$ from $E$ to $E\otimes\scr{L}'$ such that $u$ is the isomorphism corresponding to $\PP(E)\xrightarrow{\sim}\PP(E\otimes\scr{L}')=\PP(E)$;
+the pair $(v,\scr{L}')$ is determined up to isomorphism.
+:::
 
 Let $\Gamma$ be the set of classes of invertible bundles $\scr{L}'$ on $Y$ such that $E\otimes\scr{L}'$ is isomorphic to $E$.
 Its elements are torsion, since, if $n$ is the rank of $E$, then (by taking $n$-th exterior powers) we must have that $(\scr{L}')^{\otimes n}\xrightarrow{\sim}\scr{O}_Y$.
 The above corollary can then be expressed by saying that we have an exact sequence of groups:
-\[
+$$
   e \to \Aut(E)/\Gamma(Y,\scr{O}_Y^*) \to \Aut_Y(X) \to \Gamma \to e
-\]
-(which can also be deduced from the exact sequence in cohomology induced by the exact sequence of \emph{sheaves} of groups
+$$
+(which can also be deduced from the exact sequence in cohomology induced by the exact sequence of _sheaves_ of groups
 \oldpage{182-11}
-\[
+$$
   e \to \scr{O}_X^* \to \shAut \to \shAut_Y(X) \to e,
-\]
-where $\scr{O}_X^*$ is the sheaf of "units" of $\scr{O}_X$, identified with the centre of $\shAut(E)$.) -->
+$$
+where $\scr{O}_X^*$ is the sheaf of "units" of $\scr{O}_X$, identified with the centre of $\shAut(E)$.)
 
 
 ## Application to existence and uniqueness theorems for sheaves and schemes over a complete $\mathscr{J}$-adic ring {#FGA-2-section-6}
@@ -401,8 +393,8 @@ The general method still consists of making \emph{formal} construction, which co
 
 \begin{itenv}{Proposition 3}
 \label{proposition3}
-  Let $\fk{X}$ be a proper formal scheme that is flat over $A$, and let $\scr{F}_0$ be a locally free sheaf on $X_0$ such that $H^2(X_0,\shHom_{\scr{O}_{X_0}}(\scr{F}_0,\scr{F}_0))=0$.
-  Then there exists a locally free sheaf $\scr{F}$ on $\fk{X}$ that induces, on $X_0$, a sheaf isomorphic to $\scr{F}_0$.
+  Let $\frak{X}$ be a proper formal scheme that is flat over $A$, and let $\scr{F}_0$ be a locally free sheaf on $X_0$ such that $H^2(X_0,\shHom_{\scr{O}_{X_0}}(\scr{F}_0,\scr{F}_0))=0$.
+  Then there exists a locally free sheaf $\scr{F}$ on $\frak{X}$ that induces, on $X_0$, a sheaf isomorphic to $\scr{F}_0$.
   (This $\scr{F}$ is also unique up to isomorphism if $H^1(X_0,\shHom_{\scr{O}_{X_0}}(\scr{F}_0,\scr{F}_0))=0$).
 \end{itenv}
 
@@ -428,7 +420,7 @@ It is equivalent to give either such an $X$ or, on the topological space $X_0$, 
   \item $\scr{O}_X$ is endowed with an augmentation homomorphism $\scr{O}_X\to\scr{O}_{X_0}$ (that is compatible with the $A$-algebra structures);
 \end{enumerate}
 and with the above data being subject to the following conditions: the augmentation induces an isomorphism $\scr{O}_X\otimes_A k\xrightarrow{\sim}\scr{O}_{X_0}$;
-$\scr{O}_X$ is flat over $A$, i.e. the graded algebra associated to $\scr{O}_X$ filtered by the powers of the maximal ideal $\fk{m}$ of $A$ is isomorphic to $\gr^0(\scr{O}_X)\otimes_k\gr(A)$, i.e. we have isomorphisms $\fk{m}^n\scr{O}_X/\fk{m}^{n+1}\scr{O}_X = \scr{O}_{X_0}\otimes_k(\fk{m}^n/\fk{m}^{n+1})$.
+$\scr{O}_X$ is flat over $A$, i.e. the graded algebra associated to $\scr{O}_X$ filtered by the powers of the maximal ideal $\frak{m}$ of $A$ is isomorphic to $\gr^0(\scr{O}_X)\otimes_k\gr(A)$, i.e. we have isomorphisms $\frak{m}^n\scr{O}_X/\frak{m}^{n+1}\scr{O}_X = \scr{O}_{X_0}\otimes_k(\frak{m}^n/\frak{m}^{n+1})$.
 The fundamental fact is the following:
 
 \begin{itenv}{Theorem 8}
@@ -442,41 +434,41 @@ The fundamental fact is the following:
 Note that the isomorphic in question is not canonical, since $X$ will have, in general, non-trivial $A$-automorphisms that induce the identity on $X_0$.
 Furthermore, there is not, in general, a "canonical" choice of $X$ satisfying the given conditions, except in the case where $A$ is a $k$-algebra (the case of \emph{equal characteristics}), where we can take $X=X_0\otimes_k A$, i.e. $\scr{O}_X=\scr{O}_{X_0}\otimes_k A$ (whether or not $X_0$ is affine, in fact).
 In the case of unequal characteristics, I do not know in general, when $X_0$ is not affine, if we can "lift" $X_0$ to an $X$ defined over $A$.
-However, for any integer $n>0$, let $A_{n-1}=A/\fk{m}^n$, and suppose that we have lifted $X_0$ to a flat $A_{n-1}$-scheme $X_{n-1}$;
+However, for any integer $n>0$, let $A_{n-1}=A/\frak{m}^n$, and suppose that we have lifted $X_0$ to a flat $A_{n-1}$-scheme $X_{n-1}$;
 we intend to lift $X_{n-1}$ to a flat $A_n$-scheme $X_n$.
 We already know, by  [Theorem 8](#FGA-2-theorem-8), that this is possible locally;
-we can also easily verify that, if $U_n$ lifts an open subset $U_{n-1}$ of $X_{n-1}$, then the sheaf of groups of automorphisms of $U_n$ (that induce the identity on $U_{n-1}$) is canonically isomorphic to $\fk{G}_{X_0/k}\otimes_k\fk{m}^n/\fk{m}^{n+1}$ restricted to $U_{n-1}$, and thus, in particular, commutative (where $\fk{G}_{X_0/k}$ denotes the sheaf of germs of $k$-derivations on $X_0$).
-It follows easily that we have an \emph{obstruction of constructing $X_n$ lifting $X_{n-1}$}, which lives in $H^2(X_0,\fk{G}_{X_0/k})\otimes\fk{m}^n/\fk{m}^{n+1}$.
+we can also easily verify that, if $U_n$ lifts an open subset $U_{n-1}$ of $X_{n-1}$, then the sheaf of groups of automorphisms of $U_n$ (that induce the identity on $U_{n-1}$) is canonically isomorphic to $\frak{G}_{X_0/k}\otimes_k\frak{m}^n/\frak{m}^{n+1}$ restricted to $U_{n-1}$, and thus, in particular, commutative (where $\frak{G}_{X_0/k}$ denotes the sheaf of germs of $k$-derivations on $X_0$).
+It follows easily that we have an \emph{obstruction of constructing $X_n$ lifting $X_{n-1}$}, which lives in $H^2(X_0,\frak{G}_{X_0/k})\otimes\frak{m}^n/\frak{m}^{n+1}$.
 Then:
 
 \begin{itenv}{Corollary 1}
 \label{theorem8corollary1}
   Let $X_0$ be a simple scheme of finite type over $k$, and suppose that
 \oldpage{182-13}
-  \[H^2(X_0,\fk{G}_{X_0/k})=0.\]
+  $$H^2(X_0,\frak{G}_{X_0/k})=0.$$
   Then, for every local Artinian ring $A$ with residue field $k$, there exists a flat $A$-scheme $X$ such that $X\otimes_A k=X_0$.
 \end{itenv}
 
 Also, if we can find \emph{one} $X$ that is flat over $A$ and that lifts $X_0$, then, by  [Theorem 8](#FGA-2-theorem-8), the set of classes (up to isomorphism) of flat $A$-schemes that lift $X_0$ can be identified with $H^1(X_0,\shAut(X))$, where $\shAut(X)$ denotes the sheaf of germs of automorphisms of the sheaf $\scr{O_X}$ of $A$-algebras \emph{that are compatible with the augmentation}.
 The filtration of $\scr{O}_X$ defines a filtration of $\shAut(X)$, with the quotient of this sheaf by the $n$-th subgroup of the filtration being $\shAut(X_n)$;
-the graded algebra associated to this filtration is commutative, and can be identified with $\fk{G}_{X_0/k}\otimes_k\gr(A)$.
-In particular, if $\fk{m}^{n+1}$ is the first power of $\fk{m}$ that is not zero, then $F^n(\shAut(X))$ (the last stage of the filtration) is in the centre of $\shAut(X)$, and is isomorphic to $\fk{G}_{X_0/k}\otimes_k\fk{m}^n$;
-it is also the sheaf of germs of automorphisms of $X$ that induce the identity on $X_{n-1}=X\otimes_A A/\fk{m}^n$.
+the graded algebra associated to this filtration is commutative, and can be identified with $\frak{G}_{X_0/k}\otimes_k\gr(A)$.
+In particular, if $\frak{m}^{n+1}$ is the first power of $\frak{m}$ that is not zero, then $F^n(\shAut(X))$ (the last stage of the filtration) is in the centre of $\shAut(X)$, and is isomorphic to $\frak{G}_{X_0/k}\otimes_k\frak{m}^n$;
+it is also the sheaf of germs of automorphisms of $X$ that induce the identity on $X_{n-1}=X\otimes_A A/\frak{m}^n$.
 Using these results, we immediately obtain the following statements:
 
 \begin{itenv}{Corollary 2}
 \label{theorem8corollary2}
-  Let $X_0$ be a simple scheme of finite type over $k$, and let $A$ be a local Artinian ring with residue field $k$ and maximal ideal $\fk{m}$.
-  Suppose that $\fk{m}^{n+1}=0$.
-  Let $A_{n-1}=A/\fk{m}^n$, and let $X_{n-1}$ be a flat $A_{n-1}$-scheme such that $X_{n-1}\otimes_Ak=X_0$.
-  Then the set of classes (up to an isomorphism that induces the identity on $X_{n-1}$) of flat $A$-schemes $X_n$ such that $X\otimes_AA_{n-1}=X_{n-1}$ is either empty, or a homogeneous principal space under $H^1(X_0,\fk{G}_{X_0/k})\otimes_k\fk{m}^n$.
+  Let $X_0$ be a simple scheme of finite type over $k$, and let $A$ be a local Artinian ring with residue field $k$ and maximal ideal $\frak{m}$.
+  Suppose that $\frak{m}^{n+1}=0$.
+  Let $A_{n-1}=A/\frak{m}^n$, and let $X_{n-1}$ be a flat $A_{n-1}$-scheme such that $X_{n-1}\otimes_Ak=X_0$.
+  Then the set of classes (up to an isomorphism that induces the identity on $X_{n-1}$) of flat $A$-schemes $X_n$ such that $X\otimes_AA_{n-1}=X_{n-1}$ is either empty, or a homogeneous principal space under $H^1(X_0,\frak{G}_{X_0/k})\otimes_k\frak{m}^n$.
 \end{itenv}
 
 (Note that, in general, there is no privileged choice of origin in the latter homogeneous principal space, since there is no privileged way of lifting $X_{n-1}$ to $X_n$).
 
 \begin{itenv}{Corollary 3}
 \label{theorem8corollary3}
-  Let $X_0$ be a simple scheme of finite type over $k$, and suppose that $H^1(X_0,\fk{G}_{X_0/k})=0$.
+  Let $X_0$ be a simple scheme of finite type over $k$, and suppose that $H^1(X_0,\frak{G}_{X_0/k})=0$.
   Then, for every local Artinian ring $A$ with residue field $k$, \emph{there exists at most one flat $A$-scheme $X$} (up to isomorphism) such that $X\otimes_Ak=X_0$.
 \end{itenv}
 
@@ -487,11 +479,11 @@ Using these results, we immediately obtain the following statements:
   Let $k$ be a field, and $X_0$ a \emph{simple} scheme of finite type over $k$.
   For every complete locally Noetherian ring $A$ with residue field $k$, let $F(A)$ be the set of classes (up to an isomorphism that induces the identity on $X_0$)
 \oldpage{182-14}
-  of formal schemes $\fk{X}$ over $A$, of finite type, and flat over $A$, such that $X\otimes_Ak=X_0$.
+  of formal schemes $\frak{X}$ over $A$, of finite type, and flat over $A$, such that $X\otimes_Ak=X_0$.
   With this notation:
   \begin{enumerate}[i.]
-    \item if $H^1(X_0,\fk{G}_{X_0/k})=0$, then, for all $A$, $F(A)$ has at most one element;
-    \item if $H^2(X_0,\fk{G}_{X_0/k})=0$, then, for all $A$, $F(A)$ has at least one element.
+    \item if $H^1(X_0,\frak{G}_{X_0/k})=0$, then, for all $A$, $F(A)$ has at most one element;
+    \item if $H^2(X_0,\frak{G}_{X_0/k})=0$, then, for all $A$, $F(A)$ has at least one element.
   \end{enumerate}
 \end{itenv}
 
@@ -505,7 +497,7 @@ We can use \hyperref[theorem3corollary2]{Corollary 2} of  [Theorem 3](#FGA-2-the
 For example:
 \begin{itenv}{Corollary 2}
 \label{theorem9corollary2}
-  If $X$ is a proper flat $A$-scheme such that $X\otimes_Ak$ is isomorphic to the projective-type scheme $\fk{P}_k^r$ of dimension $r$ over $k$, then $X$ is isomorphic to $\fk{P}_k^r$.
+  If $X$ is a proper flat $A$-scheme such that $X\otimes_Ak$ is isomorphic to the projective-type scheme $\frak{P}_k^r$ of dimension $r$ over $k$, then $X$ is isomorphic to $\frak{P}_k^r$.
 \end{itenv}
 
 (We can also deduce this result from \hyperref[proposition3corollary1]{Corollary 1} of \hyperref[proposition3]{Proposition 3}).
@@ -513,9 +505,9 @@ For example:
 \begin{itenv}{Corollary 3}
 \label{theorem9corollary3}
   Let $X_0$ be a simple projective scheme over $k$, and suppose that
-  \[
-    H^2(X_0,\scr{O}_{X_0}) = H^2(X_0,\fk{G}_{X_0/k}) = 0.
-  \]
+  $$
+    H^2(X_0,\scr{O}_{X_0}) = H^2(X_0,\frak{G}_{X_0/k}) = 0.
+  $$
   Then, for all $A$, there exists a flat projective $A$-scheme such that $X\otimes_Ak=X_0$.
 \end{itenv}
 
@@ -537,18 +529,18 @@ In particular:
       At the least, the results of this section give a way of systematically investigating this question.
       We must start
 \oldpage{182-15}
-      by seeing if the first obstruction that we have, in $H^2(X_0,\fk{G}_{X_0/k})$, is necessarily zero.
+      by seeing if the first obstruction that we have, in $H^2(X_0,\frak{G}_{X_0/k})$, is necessarily zero.
     \item We note that  [Theorem 3](#FGA-2-theorem-3), and the corresponding technique, only works for a \emph{complete} (local, for simplicity) base ring.
 
       In order to go from known results concerning the completion of a local ring to the corresponding results for the local ring itself, we would need a fourth "fundamental theorem", whose precise statement still needs to be found.
     \item We will compare the results from this section (mainly the above \hyperref[theorem9corollary1]{Corollary 1} and \hyperref[theorem9corollary2]{Corollary 2}), as well as those from the following, with the results of Kodaira--Spencer on the variation of complex structures.
       Using the conjectural theorem to which we have just alluded, we should be able to conclude, under the conditions of \hyperref[theorem9corollary1]{Corollary 1}, but where $A$ is no longer assumed to be complete, that there exists a ring $A'$ that contains $A$, and that is finite and unramified over $A$, such that $X\otimes_AA'$ and $X'\otimes_AA'$ are $A'$-isomorphic (where $X$ and $X'$ are given, and are proper flat $A$-schemes such that $X\otimes_Ak=X'\otimes_Ak=X_0$).
-      This is what we can prove, at least, when $X_0=\fk{P}_k^r$, by using \hyperref[proposition2corollary1]{Corollary 1} of \hyperref[proposition2]{Proposition 2}.
-      In any case, if $H^1(X_0,\fk{G}_{X_0/k})=0$, then we can prove that the fibres of $X$ and $X'$ over any point $y$ of $Y=\Spec(A)$ are isomorphic, or at least when we pass to the algebraic closure of the residue field $\kres(y)$.
+      This is what we can prove, at least, when $X_0=\frak{P}_k^r$, by using \hyperref[proposition2corollary1]{Corollary 1} of \hyperref[proposition2]{Proposition 2}.
+      In any case, if $H^1(X_0,\frak{G}_{X_0/k})=0$, then we can prove that the fibres of $X$ and $X'$ over any point $y$ of $Y=\Spec(A)$ are isomorphic, or at least when we pass to the algebraic closure of the residue field $\kres(y)$.
       (We have a local result, seemingly stronger, when we don't suppose that $A$ is necessarily local).
       As for "structure variations" of the projective space, we again point out the following question, suggested by a corresponding problem of Kodaira--Spencer.
-      Let $X$ be a proper flat scheme, over a local integral ring $A$ with field of fractions $K$ and residue field $k$, and suppose that $X\otimes_AK$ is isomorphic to $\fk{P}_K^r$.
-      Is it then true that $X\otimes_Ak=X_0$ is isomorphic to $\fk{P}_k^R$ (or at least, over the algebraic closure of $k$)?
+      Let $X$ be a proper flat scheme, over a local integral ring $A$ with field of fractions $K$ and residue field $k$, and suppose that $X\otimes_AK$ is isomorphic to $\frak{P}_K^r$.
+      Is it then true that $X\otimes_Ak=X_0$ is isomorphic to $\frak{P}_k^R$ (or at least, over the algebraic closure of $k$)?
       In this question, we can assume that $A$ is a complete discrete valuation ring.
       There is an analogous question when $X_0$ is an abelian variety.
   \end{enumerate}
@@ -569,61 +561,59 @@ In particular:
 
 ## Application to the "theory of modules" {#FGA-2-section-7}
 
-<!-- Since the speaker has only recently encountered this theory himself, we will be obliged to limit ourselves to just cursory remarks.
-For simplicity, we work over a \emph{field} $k$, i.e. we work in \emph{equal characteristic}, even though  [Theorem 8](#FGA-2-theorem-8) allows us to also discuss the more general case, without any fundamental changes, so it seems.
-We have not yet gotten past the "formal" stage, but the speaker still hopes to be able to construct true schemes of modules
-\oldpage{182-16}
-in certain cases from this, and, in particular, construct, for every integer $g$, a scheme over the integers that plays the role of universal scheme of modules for the simple curves of genus $g$.
+Since the speaker has only recently encountered this theory himself, we will be obliged to limit ourselves to just cursory remarks.
+For simplicity, we work over a _field_ $k$, i.e. we work in _equal characteristic_, even though  [Theorem 8](#FGA-2-theorem-8) allows us to also discuss the more general case, without any fundamental changes, so it seems.
+We have not yet gotten past the "formal" stage, but the speaker still hopes to be able to construct true schemes of modules in certain cases from this, and, in particular, construct, for every integer $g$, a scheme over the integers that plays the role of universal scheme of modules for the simple curves of genus $g$.
 
-\begin{rmenv}{Remark}
-  \emph{[Comp.]}
-  We note that Mumford has recently constructed schemes of modules for the curves of genus $g$ (cf. \emph{Mumford--Tate seminar}, Harvard University, 1961--62).
-   [Theorem 10](#FGA-2-theorem-10) also proves that the "level $n$ Jacobi schemes" from the theory of modules are non-singular (and even simple over $\underline{\ZZ}$).
-\end{rmenv}
+\oldpage{182-16}
+
+::: {.rmenv title="Remark" latex="{Remark}"}
+[Comp.]
+We note that Mumford has recently constructed schemes of modules for the curves of genus $g$ (cf. _Mumford--Tate seminar_, Harvard University, 1961--62).
+[Theorem 10](#FGA-2-theorem-10) also proves that the "level $n$ Jacobi schemes" from the theory of modules are non-singular (and even simple over $\underline{\ZZ}$).
+:::
 
 We continue to use the setting and notation of  [Theorem 9](#FGA-2-theorem-9), and now suppose that $A$ is a local algebra of finite rank over $k$, which is assumed to be algebraically closed, for simplicity.
 Then $F(A)$ can be thought of as a covariant functor in $A$, with values in the category of sets, with a homomorphism $A\to B$ of $k$-algebras defining a map $F(A)\to F(B)$, since every flat $A$-scheme $X$ with $X\otimes_Ak=X_0$ gives rise to a $B$-scheme $X\otimes_AB$ with the same properties.
-\emph{Suppose} that we can find a complete local Noetherian $k$-algebra $\cal{O}$, as well as a functorial isomorphism
-\[
-  \label{isomorphism*}
+_Suppose_ that we can find a complete local Noetherian $k$-algebra $\cal{O}$, as well as a functorial isomorphism
+$$
   \Hom(\cal{O},A) \xrightarrow{\sim} F(A)
   \tag{$*$}
-\]
+$$
 (where the left-hand side denotes homomorphisms of $k$-algebras).
-We can easily see that such an $\cal{O}$ is determined up to canonical isomorphism, and so we call the formal spectrum $\fk{Y}$ of $\cal{O}$ (i.e. the topological space consisting of a single point, endowed with a sheaf of topological rings consisting of just $\cal{O}$) the \emph{formal scheme of modules for $X_0$}.
+We can easily see that such an $\cal{O}$ is determined up to canonical isomorphism, and so we call the formal spectrum $\frak{Y}$ of $\cal{O}$ (i.e. the topological space consisting of a single point, endowed with a sheaf of topological rings consisting of just $\cal{O}$) the _formal scheme of modules for $X_0$_.
 (Note that it does not necessarily exist).
-Let $\fk{r}$ be the maximal ideal of $\cal{O}$, and, for all $n$, let $\scr{O}_n=\cal{O}/\fk{r}^{n+1}$ (so that $\scr{O}_0=k$).
-Then the canonical homomorphism $\cal{O}\to\scr{O}_n$ is an element of $\Hom(\cal{O},\scr{O}_n)$, and thus defines an element of $F(\scr{O}_n)$, i.e. a flat $\scr{O}_n$-scheme $X_n$ whose restriction $\mod\fk{r}$ is $X_0$.
-These $X_n$ are induced from one another by extension of scalars (i.e. here by reductions), whence it follows that they come from a formal scheme $\fk{X}$ that is well determined by the formal scheme of modules $\fk{Y}$;
-further, $\fk{X}$ is flat over $\fk{Y}$, and $\fk{X}_0=X_0$.
-The \hyperref[isomorphism*]{isomorphism ($*$)} is then given, as we can immediately see, by associating to each homomorphism $\cal{O}\to A$ of $k$-algebras the class of the $A$-scheme $\fk{X}\otimes_{\cal{O}} A$ (i.e. to every morphism $\fk{Y}'=\Spec(A)\to\fk{Y}$ of $k$-schemes, we associate the $\fk{Y}'$-scheme $\fk{X}\otimes_{\fk{Y}}\fk{Y}'$ given by base change).
-Furthermore, we see that the \hyperref[isomorphism*]{isomorphism ($*$)} and its above description still hold even if we only suppose that $A$ is a complete local Noetherian $k$-algebra (not necessarily Artinian).
-Of course, as always, $\cal{O}$ can indeed \emph{a priori} have nilpotent elements, and it seems likely that there should exist cases where $\cal{O}$ is itself Artinian, without being identical to $k$.
-This tells us at which point the point of view of Kodaira--Spencer (restricting to considering the $A$ that are \emph{regular} rings) is \emph{a priori} inadequate in the general case.
+Let $\frak{r}$ be the maximal ideal of $\cal{O}$, and, for all $n$, let $\scr{O}_n=\cal{O}/\frak{r}^{n+1}$ (so that $\scr{O}_0=k$).
+Then the canonical homomorphism $\cal{O}\to\scr{O}_n$ is an element of $\Hom(\cal{O},\scr{O}_n)$, and thus defines an element of $F(\scr{O}_n)$, i.e. a flat $\scr{O}_n$-scheme $X_n$ whose restriction $\mod\frak{r}$ is $X_0$.
+These $X_n$ are induced from one another by extension of scalars (i.e. here by reductions), whence it follows that they come from a formal scheme $\frak{X}$ that is well determined by the formal scheme of modules $\frak{Y}$;
+further, $\frak{X}$ is flat over $\frak{Y}$, and $\frak{X}_0=X_0$.
+The isomorphism ($*$) is then given, as we can immediately see, by associating to each homomorphism $\cal{O}\to A$ of $k$-algebras the class of the $A$-scheme $\frak{X}\otimes_{\cal{O}} A$ (i.e. to every morphism $\frak{Y}'=\Spec(A)\to\frak{Y}$ of $k$-schemes, we associate the $\frak{Y}'$-scheme $\frak{X}\otimes_{\frak{Y}}\frak{Y}'$ given by base change).
+Furthermore, we see that the isomorphism ($*$) and its above description still hold even if we only suppose that $A$ is a complete local Noetherian $k$-algebra (not necessarily Artinian).
+Of course, as always, $\cal{O}$ can indeed _a priori_ have nilpotent elements, and it seems likely that there should exist cases where $\cal{O}$ is itself Artinian, without being identical to $k$.
+This tells us at which point the point of view of Kodaira--Spencer (restricting to considering the $A$ that are _regular_ rings) is _a priori_ inadequate in the general case.
 
 \oldpage{182-17}
 It remains to give sufficient conditions for there to exist a formal scheme of modules for $X_0$, assumed to be proper over $k$.
 Generally, it is easy to give simple necessary and sufficient conditions on a functor $A\to F(A)$ (from local $k$-algebras of finite rank to sets) in order for it to be of the form $\Hom(\cal{O},A)$ for some suitable $\cal{O}$.
 We do not give the details here.
 We point out only that, in the case which we are studying, these conditions impose non-trivial conditions of a cohomological nature on $X_0$, and it seems unlikely that they will always be satisfied, even though the speaker has not constructed any counterexamples.
-It seems plausible, however, that the condition $H^0(X,\fk{G}_{X_0/k})=0$ is \emph{sufficient} (even if not at all necessary) in order to guarantee the existence of a formal scheme of modules.
+It seems plausible, however, that the condition $H^0(X,\frak{G}_{X_0/k})=0$ is _sufficient_ (even if not at all necessary) in order to guarantee the existence of a formal scheme of modules.
 We restrict ourselves to stating here a theorem that deals with a particularly simple case (whose analogue in the theory of analytic spaces is well known, cf. Kodaira--Spencer), which can easily be proven using the results from the previous section:
 
-\begin{itenv}{Theorem 10}
-\label{theorem10}
-  Let $X_0$ be a simple proper scheme over the field $k$ such that
-  \[
-    H^0(X_0,\fk{G}_{X_0/k}) = H^2(X_0,\fk{G}_{X_0/k}) = 0.
-  \]
-  Then there exists a formal scheme of modules for $X_0$, corresponding to a local regular ring $\cal{O}$ (i.e. an algebra of formal series over $k$).
-\end{itenv}
+::: {.itenv #FGA-2-theorem-10 title="Theorem 10" latex="{Theorem 10}"}
+Let $X_0$ be a simple proper scheme over the field $k$ such that
+$$
+  H^0(X_0,\frak{G}_{X_0/k}) = H^2(X_0,\frak{G}_{X_0/k}) = 0.
+$$
+Then there exists a formal scheme of modules for $X_0$, corresponding to a local regular ring $\cal{O}$ (i.e. an algebra of formal series over $k$).
+:::
 
-As we have already pointed out, it is not true in general that the formal scheme $\fk{X}$ over $\cal{O}$ is algebraisable;
-but we know that this is true, however, when $X_0$ is projective and $H^2(X_0,\scr{O}_{X_0})=0$ ( [Theorem 4](#FGA-2-theorem-4)), such as when $X_0$ is of dimension $1$.
-This is what gives some hope of constructing a scheme of modules over the integers for curves of a given genus \ldots.
+As we have already pointed out, it is not true in general that the formal scheme $\frak{X}$ over $\cal{O}$ is algebraisable;
+but we know that this is true, however, when $X_0$ is projective and $H^2(X_0,\scr{O}_{X_0})=0$ ([Theorem 4](#FGA-2-theorem-4)), such as when $X_0$ is of dimension $1$.
+This is what gives some hope of constructing a scheme of modules over the integers for curves of a given genus...
 
 Note also that methods such as those described in this section can be applied in the construction and study of Picard varieties, as well as in many other constructions.
-We will return to this soon. -->
+We will return to this soon.
 
 
 ## Application to the fundamental group {#FGA-2-section-8}
@@ -638,7 +628,7 @@ if
 \begin{enumerate}[i.]
   \item $X'$ is finite over $X$, i.e. it is defined by a coherent sheaf of algebras $\scr{A}=\scr{A}(X')$ on $X$;
   \item $\scr{A}$ is a locally free sheaf on $X$;
-  \item for all $x\in X$, the quotient $\scr{A}_x/\fk{m}_x\scr{A}_x = \scr{A}_x\otimes_{\scr{O}_X}\pi(x)$ is a separable algebra over $\kres(x)$.
+  \item for all $x\in X$, the quotient $\scr{A}_x/\frak{m}_x\scr{A}_x = \scr{A}_x\otimes_{\scr{O}_X}\pi(x)$ is a separable algebra over $\kres(x)$.
 \end{enumerate}
 
 This notion of unramified covering (due to Serre and the speaker) posses all the elementary properties for which we can reasonably hope, and which we will not list.
@@ -679,7 +669,7 @@ It follows, in particular, from these two lemmas that, for \emph{every} algebrai
   Let $X$ be a complete scheme over a local Artinian ring $A$, such that $H^0(X,\scr{O}_X)=A$.
   Let $X'$ be an unramified covering of $X$, and let $A'=H^0(X',\scr{O}_{X'})$, which is thus a ring that is finite over $A$ (and which may a priori be ramified over $A$).
   Let $X_0$ and $X'_0$ be the reduced subschemes associated to $X$ and $X'$, respectively (obtained by splitting by the sheaves of nilpotent elements in $\scr{O}_X$ and $\scr{O}_{X'}$, respectively).
-  Let $k$ be a subfield of $A/\fk{r}(A)$ over which $A/\fk{r}(A)$ is finite (so $X_0$ is a complete algebraic scheme over $k$, and $X'_0$ is an unramified covering).
+  Let $k$ be a subfield of $A/\frak{r}(A)$ over which $A/\frak{r}(A)$ is finite (so $X_0$ is a complete algebraic scheme over $k$, and $X'_0$ is an unramified covering).
   Finally, let $\Omega$ be an algebraically closed extension of $k$, and consider the unramified covering $X'_0\otimes_k\Omega$ of $X_0\otimes_k\Omega$.
   Then the following two conditions are equivalent:
 \oldpage{182-20}
@@ -709,23 +699,23 @@ In fact, $\scr{A}$ is then the direct sum of two non-zero sheaves of rings, and 
 
 \begin{itenv}{Lemma 5}
 \label{lemma5}
-  Let $X$ be a complete scheme over a field $k$, and suppose that $H^0(X,\scr{O}_X)$ is a local ring $A$, and that $A/\fk{r}(A)$ is radicial over $k$.
+  Let $X$ be a complete scheme over a field $k$, and suppose that $H^0(X,\scr{O}_X)$ is a local ring $A$, and that $A/\frak{r}(A)$ is radicial over $k$.
   Let $\Omega$ be an algebraic closure of $k$, and let $\overline{X}=X\otimes_k\Omega$ (which is connected).
   Pick a geometric point $\overline{a}$ of $\overline{X}$ that projects to the geometric point $a$ of $X$.
   Then we have an exact sequence
-  \[
+  $$
     e
     \to \pi_1(\overline{X},\overline{e})
     \to \pi_1(X,a)
     \to \pi_1(k,b)
     \to e
-  \]
+  $$
   (where $\pi_1(k,b)$ is the Galois group of $\Omega$ over $k$).
 \end{itenv}
 
 The fact that the first homomorphism is injective has already been shown with \hyperref[lemma1]{Lemma 1} and \hyperref[lemma2]{Lemma 2};
 the exactness in the middle follows from \hyperref[lemma3]{Lemma 3};
-finally, the surjectivity of the last homomorphism (which is the only thing to rely on the fact that $A/\fk{r}(A)$ is radicial) follows from \hyperref[lemma4]{Lemma 4}.
+finally, the surjectivity of the last homomorphism (which is the only thing to rely on the fact that $A/\frak{r}(A)$ is radicial) follows from \hyperref[lemma4]{Lemma 4}.
 
 \begin{itenv}{Proposition 4}
 \label{proposition4}
@@ -746,20 +736,20 @@ This proposition, combined with \hyperref[lemma1]{Lemma 1}, practically reduces 
 \end{rmenv}
 
 Let $f\colon X\to Y$ be a proper morphism such that
-\[
+$$
 \label{equationi}
   f_*(\scr{O}_X) = \scr{O}_Y
 \tag{i}
-\]
+$$
 and let $X'$ be a finite scheme over $X$.
 Let $Y'$ be the covering of $Y$ corresponding to the Stein factorisation of $X'\to Y$ (cf.  [Theorem 5](#FGA-2-theorem-5)).
 Let $y\in Y$, so that the set of connected components of the fibre $F'$ of $X'$ over $y$ can be identified with the set of points $y'\in Y'$ over $y$ ( [Theorem 5](#FGA-2-theorem-5)).
 Consider the evident morphism
-\[
+$$
 \label{equation*}
   X'\to X\times_Y Y'
 \tag{$*$}
-\]
+$$
 induced by the natural morphisms $X'\to X$ and $X\to Y'$;
 this will be an isomorphism whenever $X'$ is of the form $X\times_Y Y''$, where $Y''$ is an unramified covering of $Y$, and then $Y'$ will be exactly $Y''$, and \hyperref[equation*]{equation ($*$)} will be the identity.
 We wish to precisely give the conditions for which $X'$ is of the form that we have just indicated, i.e. such that $Y'$ is unramified and \hyperref[equation*]{equation ($*$)} is an isomorphism.
@@ -825,9 +815,9 @@ In, \hyperref{theorem11corollary3}[Corollary 3] is equivalent to the following s
   Let $f\colon X\to Y$ be a proper and separable morphism such that $f_*(\scr{O}_X)=\scr{O}_Y$.
   Let $\overline{F}$ be the geometric fibre of a point $y\in Y$, and pick a geometric point in $\overline{F}$, which, by the morphisms $\overline{F}\to X\to Y$, gives geometric points in $X$ and $Y$; we take these three points as base points for the fundamental groups of $\overline{F}$, $X$, and $Y$, respectively.
   Under these conditions, we have the exact sequence
-  \[
+  $$
     \boxed{\pi_1(\overline{F}) \to \pi_1(X) \to \pi_1(Y) \to 0.}
-  \]
+  $$
 \end{itenv}
 
 From this, we easily deduce the two following statements of Serre--Lang, with all normality hypotheses removed:
@@ -836,9 +826,9 @@ From this, we easily deduce the two following statements of Serre--Lang, with al
 \label{theorem11corollary5}
   Let $X$ and $Y$ be connected schemes over a field $k$, with $X$ or $Y$ proper over $k$, and suppose that the reduced scheme $X_\red$ is separable over $k$ (which is automatically true if $k$ is perfect) and complete.
   Pick a geometric point $a$ (resp. $b$) in $X$ (resp. $Y$); this gives a geometric point $c=(a,b)$ in $X\times_kY$, and a natural morphism
-  \[
+  $$
     \pi_1(X\times_kY,c) \to \pi_1(X,a)\times\pi_1(Y,b)
-  \]
+  $$
   (induced by the functorial morphisms from $\pi_1(X\times Y,c)$ to $\pi_1(X,a)$ and $\pi_1(Y,b)$).
   This morphism is injective, and further bijective if $k$ is algebraically closed.
 \end{itenv}
@@ -892,9 +882,9 @@ In other words:
 
 Applying \hyperref[lemma5]{Lemma 5} to $X_0$ (supposing that $H^0(X_0,\scr{O}_{X_0})=k$, for simplicity), and noting that, since $A$ is complete, the unramified extensions of $A$ correspond to unramified extensions of its residue field, i.e. $\pi_1(Y)=\pi_1(k)$ (where $Y=\Spec(A)$).
 We obtain the exact sequence:
-\[
+$$
   e \to \pi_1(\overline{X_0}) \to \pi_1(X) \to \pi_1(Y) \to e.
-\]
+$$
 
 \begin{itenv}{Corollary 2}
 \label{theorem12corollary2}
@@ -933,9 +923,9 @@ A priori, the given covering comes, by extension of scalars, from an unramified 
 if $X'_1$ were Galois, of group $G$, then we could choose $X'_1$ to also be Galois of group $G$.
 Thus: \emph{for $X'_1\otimes_{K'}\overline{K}=\overline{X'_1}$ to come from an unramified covering of $X_0$, it is necessary and sufficient for there to exists a finite extension $K''$ of $K'$ in $\overline{K}$ such that $X''_1=X'_1\otimes_{K'}K''$ is of the form $X''\otimes_{V''}K''$, where $V''$ is the normal closure of $V$ in $K''$, and where $X''$ is an unramified covering of $X\otimes_V V''$.}
 Suppose, for example, that $X_0$ is absolutely normal, whence $X\otimes_V V''$ is normal (since it is flat over $V''$ and has normal special fibre), and its field of functions is identical to $K''(X_1)$, which is the field of functions of
-\[
+$$
   X_1\otimes_K K'' = (X\otimes_VK)\otimes_KK'' = X\otimes_VK'' = (X\otimes_VV'')\otimes_{V''}K''.
-\]
+$$
 \oldpage{182-26}
 Let $L''=K''(X'_1)$ be the field of functions of $X'_1\otimes_{K'}K''$, which is a separable finite extension of $K''(X_1)$, and the above condition also implies that \emph{$L''$ is an unramified extension of the field of functions of $X\otimes_VV''$} (i.e. the normalisation of $X\otimes_V V''$ in $L''$ is unramified over $X\otimes_VV''$).
 It suffices to show that $L''$ is unramified at the points of the special fibre of $X\otimes_VV''$ (since it is unramified over the generic fibre $X_1\otimes_KK''$).
@@ -990,9 +980,9 @@ Similarly, using \hyperref[theorem9corollary3]{Corollary 3} of  [Theorem 9](#FGA
 \label{theorem14corollary1}
   Let $X_0$ be the scheme of a complete simple curve over an algebraically closed field of arbitrary characteristic, and let $S=(s_i)_{1\leq i\leq n}$ be a finite subset of $X_0$ with $n$ elements.
   Then $\pi_1^\mathrm{t}(X_0\setminus S)$ admits $2g+n$ topological generators, $x_i,y_i,\sigma_j$ (for $1\leq i\leq g$ and $1\leq j\leq n$), satisfying the relation
-  \[
+  $$
     \left(\prod_i x_iy_ix_i^{-1}y_i^{-1}\right)\sigma_1\ldots\sigma_n = 1,
-  \]
+  $$
   where the $\sigma_j$ are generators of the inertia groups corresponding to the $s_j$.
   For every finite group $G$ \emph{of order coprime to the characteristic} that is generated by elements $\overline{x_i},\overline{y_i},\overline{\sigma_j}$ satisfying the above relation, there exists an unramified Galois covering of $X_0\setminus S$, of group $G$, with inertia groups at the points $s_j$ generated by the $\overline{\sigma_j}$.
 \end{itenv}
