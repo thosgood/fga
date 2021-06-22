@@ -31,7 +31,7 @@ jobs:
 
       - name: Build site
         run: |
-          ./build_html.R
+          R -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook', config_file = '_bookdown.yml')"
 
       - name: Deploy to build branch
         uses: JamesIves/github-pages-deploy-action@3.6.2
