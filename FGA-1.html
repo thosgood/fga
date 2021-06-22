@@ -81,6 +81,7 @@
 <li class="chapter" data-level="1.5" data-path="FGA-1.html"><a href="FGA-1.html#FGA-1-section-5"><i class="fa fa-check"></i><b>1.5</b> The duality theorem</a></li>
 <li class="chapter" data-level="1.6" data-path="FGA-1.html"><a href="FGA-1.html#FGA-1-section-6"><i class="fa fa-check"></i><b>1.6</b> The duality theorem for singular varieties</a></li>
 <li class="chapter" data-level="1.7" data-path="FGA-1.html"><a href="FGA-1.html#FGA-1-section-7"><i class="fa fa-check"></i><b>1.7</b> Poincaré duality</a></li>
+<li class="chapter" data-level="1.8" data-path="FGA-1.html"><a href="FGA-1.html#FGA-1-section-8"><i class="fa fa-check"></i><b>1.8</b> Generalisation of the duality theorem</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="FGA-2.html"><a href="FGA-2.html"><i class="fa fa-check"></i><b>2</b> Formal geometry and algebraic geometry [FGA 2]</a><ul>
 <li class="chapter" data-level="2.1" data-path="FGA-2.html"><a href="FGA-2.html#schemes"><i class="fa fa-check"></i><b>2.1</b> Schemes</a></li>
@@ -953,48 +954,100 @@ It is also the case, for example, if <eq env="math">X</eq> is locally a “compl
 <div id="FGA-1-section-7" class="section level2">
 <h2><span class="header-section-number">1.7</span> Poincaré duality</h2>
 <p>Let <eq env="math">X</eq> be a non-singular projective variety of dimension <eq env="math">n</eq>.
-Then <eq env="math">\operatorname{H}^\bullet(X)=\operatorname{H}^\bullet(X,\Omega_X^\bullet)</eq> is a finite-dimensional bigraded anticommutative algebra, that we grade by the total degree, so that <eq env="math">\operatorname{H}^{p,q}(X)=\operatorname{H}^p(X,\Omega_X^q)</eq> is of degree <eq env="math">p+q</eq>.
-The degrees of <eq env="math">\operatorname{H}^\bullet(X)</eq> are concentrated between <eq env="math">0</eq> and <eq env="math">2n</eq>.
-By  and  to , <eq env="math">\operatorname{H}^\bullet(X)</eq> is a <code>Poincar\'{e} algebra'' of dimension~$2n$, i.e. $\HH^{2n}(X)$ is endowed with an isomorphism to the base field $k$, and the product $\HH^m(X)\times\HH^{2n-m}(X)\to\HH^{2n}(X)=k$ is a duality between $\HH^m(X)$ and $\HH^{2n-m}(X)$. Furthermore, if $Y$ is another non-singular projective variety, then the K\"{u}nneth formula for coherent algebraic sheaves gives \[ \label{7.1}   \HH^\bullet(X\times Y) = \HH^\bullet(X)\otimes\HH^\bullet(Y) \tag{7.1} \] which is an isomorphism that is compatible with the Poincar\'{e} algebra structures. Furthermore, $\HH^\bullet(X)$ is, as a commutative algebra, a covariant functor in $X$, since a morphism $f\colon Y\to X$ defines, in an evident way, a homomorphism of graded algebras \oldpage{149-20} \[ \label{7.2}   f^*\colon \HH^\bullet(X)\to\HH^\bullet(Y). \tag{7.2} \] Since we are working with Poincar\'{e} algebras, we obtain, by transposition, a homomorphism of vector spaces \[ \label{7.3}   f_*\colon \HH^\bullet(Y)\to\HH^\bullet(X). \tag{7.3} \] We have seen in \hyperref[section4]{\S4} that the effect of $f^*$ on cohomology classes that correspond to non-singular cycles can be geometrically interpreted by taking the cohomology classes that correspond to their inverse images. It is important, in the current case, to show that \hyperref[7.3]{(7.3)} corresponds similarly to the</code>direct image’’ operation on cycles.
-This follows, under suitable non-singularity conditions at least, from the following particular case:</p>
+Then <eq env="math">\operatorname{H}^\bullet(X)=\operatorname{H}^\bullet(X,\Omega_X^\bullet)</eq> is a finite-dimensional bigraded anticommutative algebra, that we grade by the total degree, so that <eq env="math">\operatorname{H}^{p,q}(X)=\operatorname{H}^p(X,\Omega_X^q)</eq> is of degree <eq env="math">p+q</eq>;
+the degrees of <eq env="math">\operatorname{H}^\bullet(X)</eq> are concentrated between <eq env="math">0</eq> and <eq env="math">2n</eq>.
+By <a href="FGA-1.html#FGA-1-theorem-2">Theorem 2</a> and <a href="FGA-1.html#FGA-1-theorem-3-corollary">the corollary to Theorem 3</a>, <eq env="math">\operatorname{H}^\bullet(X)</eq> is a “Poincaré algebra” of dimension <eq env="math">2n</eq>, i.e. <eq env="math">\operatorname{H}^{2n}(X)</eq> is endowed with an isomorphism to the base field <eq env="math">k</eq>, and the product <eq env="math">\operatorname{H}^m(X)\times\operatorname{H}^{2n-m}(X)\to\operatorname{H}^{2n}(X)=k</eq> is a duality between <eq env="math">\operatorname{H}^m(X)</eq> and <eq env="math">\operatorname{H}^{2n-m}(X)</eq>.
+Furthermore, if <eq env="math">Y</eq> is another non-singular projective variety, then the Künneth formula for coherent algebraic sheaves gives
+<eq env="displaymath">
+  \operatorname{H}^\bullet(X\times Y) = \operatorname{H}^\bullet(X)\otimes\operatorname{H}^\bullet(Y)
+\tag{7.1}
+</eq>
+which is an isomorphism that is compatible with the Poincaré algebra structures.
+Furthermore, <eq env="math">\operatorname{H}^\bullet(X)</eq> is, as a commutative algebra, a covariant functor in <eq env="math">X</eq>, since a morphism <eq env="math">f\colon Y\to X</eq> defines, in an evident way, a homomorphism of graded algebras
 
+<eq env="displaymath">
+  f^*\colon \operatorname{H}^\bullet(X)\to\operatorname{H}^\bullet(Y).
+\tag{7.2}
+</eq>
+Since we are working with Poincaré algebras, we obtain, by transposition, a homomorphism of vector spaces</p>
+<div id="FGA-1-equation-7.3" class="eqref" title="">
+<p><eq env="displaymath">
+  f_*\colon \operatorname{H}^\bullet(Y)\to\operatorname{H}^\bullet(X).
+\tag{7.3}
+</eq></p>
+</div>
+<p>We have seen in <a href="FGA-1.html#FGA-1-section-4">§4</a> that the effect of <eq env="math">f^*</eq> on cohomology classes that correspond to non-singular cycles can be interpreted geometrically by taking the cohomology classes that correspond to their inverse images.
+It is important, in our current study, to show that <a href="FGA-1.html#FGA-1-equation-7.3">(7.3)</a> corresponds similarly to the “direct image” operation on cycles.
+This follows (under suitable non-singularity conditions, at least) from the following particular case:</p>
+<div id="FGA-1-theorem-4" class="itenv" title="Theorem 4">
+<p>If <eq env="math">f</eq> is the identity map from a non-singular subvariety <eq env="math">Y^m</eq> of <eq env="math">X^n</eq> to <eq env="math">X^n</eq>, then, denoting by <eq env="math">1_Y</eq> the unit element of <eq env="math">\operatorname{H}(Y)</eq>, we have
+<eq env="displaymath">
+  f_*(1_Y) = P_X(Y)
+\tag{7.4}
+</eq>
+where the right-hand side is the cohomology class in <eq env="math">X</eq> associated to <eq env="math">Y</eq>.</p>
+</div>
 <p>This formula is equivalent to
 <eq env="displaymath">
-\label{7.4bis}
   \langle \xi^{m,m}, P_X(Y) \rangle \varepsilon_Y
   = f_*(\xi^{m,m})
-  \quad\mbox{where $\xi^{m,m}\in\operatorname{H}^m(X,\Omega_X^m)$}
-\tag{7.4~\emph{bis}}
+  \quad\text{where }\xi^{m,m}\in\operatorname{H}^m(X,\Omega_X^m)
+\tag{7.4 bis}
 </eq>
 where <eq env="math">\varepsilon_Y</eq> is the fundamental element of <eq env="math">\operatorname{H}^m(Y,\Omega_Y^m)</eq>, and this, in the case of non-singular projective varieties, gives a new definition of the cohomology class associated to <eq env="math">Y</eq>.</p>
-
-<p>These compatibilities, which could have been given in , can be stated, and are indeed true, for arbitrary non-singular varieties, with the second,
-
-for example, following from the commutativity of the following diagram of canonical endomorphisms:
+<div class="proof">
+<p><span id="unlabeled-div-14" class="proof"><em>Proof</em>. </span>To prove <a href="FGA-1.html#FGA-1-theorem-4">Theorem 4</a>, we consider, by <a href="FGA-1.html#FGA-1-theorem-3">Theorem 3</a>, the transpose of the homomorphism
 <eq env="displaymath">
-\label{7.6}
-  \begin{tikzcd}[column sep=tiny]
-    &amp; \operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
-      \ar[ld] \ar[dr,"\sim"]
-    &amp;
-  \\\operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
-      \ar[dd]
-    &amp;&amp; \operatorname{Hom}_{{\mathscr{O}}_X}(X;\Omega_Y^m,\Omega_Y^m)
-      \ar[dd]
-  \\&amp; \operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;{\mathscr{O}}_Y,\Omega_X^{n-m})
-      \ar[ld] \ar[dr,"\sim"]
-    &amp;
+  \operatorname{H}^m(X,\Omega_X^m) \to \operatorname{H}^m(Y,\Omega_Y^m) = \operatorname{H}^m(X,\Omega_Y^m)
+</eq>
+as the homomorphism
+<eq env="displaymath">
+  \begin{CD}
+    @.
+    \operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
+    @&gt;\sim&gt;&gt;
+    \operatorname{Hom}_{{\mathscr{O}}_X}(X;\Omega_Y^m,\Omega_Y^m)
+  \\@. @VVV @.
+  \\\operatorname{H}^{n-m}(X,\Omega_X^{n-m})
+    @&gt;\sim&gt;&gt;
+    \operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
+  \end{CD}
+\tag{7.5}
+</eq>
+We can verify that the element <eq env="math">1_Y</eq> of the dual of <eq env="math">\operatorname{H}^m(Y,\Omega_Y^m)</eq> is identified with the element of the right-hand side corresponding to the identity endomorphism of <eq env="math">\Omega_Y^m</eq>, and also that the image of this element in <eq env="math">\operatorname{H}^{n-m}(X,\Omega_X^{n-m})</eq> is indeed <eq env="math">P_X(Y)</eq>.</p>
+</div>
+<p>These relations (which could have been given in <a href="FGA-1.html#FGA-1-section-4">§4</a>) can be stated, and are indeed true, for arbitrary non-singular varieties, with the second, for example, following from the commutativity of the following diagram of canonical endomorphisms:
+
+<eq env="displaymath">
+  \footnotesize
+  \begin{CD}
+    \operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
+    @&lt;&lt;&lt;
+    \operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
+    @&gt;\sim&gt;&gt;
+    \operatorname{Hom}_{{\mathscr{O}}_X}(X;\Omega_Y^m,\Omega_Y^m)
+  \\@VVV @. @VVV
   \\\operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;{\mathscr{O}}_X,\Omega_X^{n-m})
-    &amp;&amp; \operatorname{Hom}_{{\mathscr{O}}_X}(X;\Omega_X^m,\Omega_Y^m)
-  \end{tikzcd}
+    @&lt;&lt;&lt;
+    \operatorname{Ext}_{{\mathscr{O}}_X}^{n-m}(X;{\mathscr{O}}_Y,\Omega_X^{n-m})
+    @&gt;\sim&gt;&gt;
+    \operatorname{Hom}_{{\mathscr{O}}_X}(X;\Omega_X^m,\Omega_Y^m)
+  \end{CD}
 \tag{7.6}
 </eq></p>
-<p>We thus obtain an exact equivalent of the formalism of Poincar'{e} duality for compact oriented varieties.
-In particular,  allows us to determine the cohomology class associated to the diagonal of <eq env="math">X\times X</eq>.
-By a well-known argument, we thus deduce, for example, a :</p>
-
-<p>The restriction on <eq env="math">f</eq> that we have to make is related to the difficulties mentioned in  of .
-We note, however, that the Lefschetz formula still holds true if <eq env="math">f</eq> is ``homotopic’’ to an endomorphism whose fixed points are all of multiplicity~<eq env="math">1</eq>.</p>
+<p>We thus obtain an exact equivalent of the formalism of Poincaré duality for compact oriented varieties.
+In particular, <a href="FGA-1.html#FGA-1-theorem-4">Theorem 4</a> allows us to determine the cohomology class associated to the diagonal of <eq env="math">X\times X</eq>.
+By a well-known argument, we thus deduce, for example, a <em>Lefschetz formula</em>:</p>
+<div id="FGA-1-theorem-5" class="itenv" title="Theorem 5">
+<p>Let <eq env="math">f</eq> be an endomorphism of a non-singular projective variety <eq env="math">X</eq> such that the fixed points of <eq env="math">f</eq> are of multiplicity <eq env="math">1</eq>.
+Then the number of these fixed points is congruent, modulo the characteristic of <eq env="math">k</eq>, to the alternating sum of the traces of the endomorphisms of the <eq env="math">\operatorname{H}^i(X)</eq> defined by <eq env="math">f</eq>.</p>
+</div>
+<p>The restriction on <eq env="math">f</eq> that we have to make is related to the difficulties mentioned in <a href="FGA-1.html#FGA-1-section-4-remark">the remark in §4</a>.
+We note, however, that the Lefschetz formula still holds true if <eq env="math">f</eq> is “homotopic” to an endomorphism whose fixed points are all of multiplicity <eq env="math">1</eq>.</p>
+</div>
+<div id="FGA-1-section-8" class="section level2">
+<h2><span class="header-section-number">1.8</span> Generalisation of the duality theorem</h2>
+<p>Let <eq env="math">X</eq> be a non-singular algebraic variety such that every coherent algebraic sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq> is isomorphic to a locally-free coherent algebraic sheaf (which is the case if <eq env="math">X</eq> is locally closed in a projective space).</p>
 
 </div>
 </div>
