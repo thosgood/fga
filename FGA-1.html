@@ -96,6 +96,7 @@
 </ul></li>
 <li class="chapter" data-level="7" data-path="FGA-3-V.html"><a href="FGA-3-V.html"><i class="fa fa-check"></i><b>7</b> Picard schemes: Existence theorems [FGA 3.V]</a></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties [FGA 3.VI]</a></li>
+<li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
 </ul>
 
       </nav>
@@ -798,7 +799,7 @@ Then, for large enough <eq env="math">m</eq>, the canonical homomorphism
 is an isomorphism.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-11" class="proof"><em>Proof</em>. </span>This follows immediately from the spectral sequence in  applied to <eq env="math">{\mathscr{A}}(-m)</eq> and <eq env="math">{\mathscr{B}}</eq>, since we then have that
+<p><span id="unlabeled-div-11" class="proof"><em>Proof</em>. </span>This follows immediately from the spectral sequence in <a href="FGA-1.html#FGA-1-proposition-1">Proposition 1</a> applied to <eq env="math">{\mathscr{A}}(-m)</eq> and <eq env="math">{\mathscr{B}}</eq>, since we then have that
 <eq env="displaymath">
   E_2^{p,q}({\mathscr{A}}(-m),{\mathscr{B}})
   = \operatorname{H}^p(X,\underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^q({\mathscr{A}}(-m),{\mathscr{B}}))
@@ -1047,7 +1048,131 @@ We note, however, that the Lefschetz formula still holds true if <eq env="math">
 </div>
 <div id="FGA-1-section-8" class="section level2">
 <h2><span class="header-section-number">1.8</span> Generalisation of the duality theorem</h2>
-<p>Let <eq env="math">X</eq> be a non-singular algebraic variety such that every coherent algebraic sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq> is isomorphic to a locally-free coherent algebraic sheaf (which is the case if <eq env="math">X</eq> is locally closed in a projective space).</p>
+<p>Let <eq env="math">X</eq> be a non-singular algebraic variety such that every coherent algebraic sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq> is isomorphic to a locally-free coherent algebraic sheaf (which is the case if <eq env="math">X</eq> is locally closed in some projective space).
+Then every coherent algebraic sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq> admits a finite resolution <eq env="math">{\mathscr{L}}</eq> by locally-free sheaves, and, for any two such resolutions, we can always find a third, along with homomorphisms, from it to the first two, that are compatible with the augmentations.
+Similarly, if <eq env="math">{\mathscr{L}}</eq> is a finite locally-free resolution of <eq env="math">{\mathscr{F}}</eq>, and if we have a homomorphism <eq env="math">{\mathscr{F}}'\to{\mathscr{F}}</eq>, then there exists a finite locally-free resolution <eq env="math">{\mathscr{L}}'</eq> of <eq env="math">{\mathscr{F}}'</eq> along with a homomorphism <eq env="math">{\mathscr{L}}'\to{\mathscr{L}}</eq> that is compatible with <eq env="math">{\mathscr{F}}'\to{\mathscr{F}}</eq>, that we can even assume to be surjective if <eq env="math">{\mathscr{F}}'\to{\mathscr{F}}</eq> is surjective.
+This allows us to define, given integers <eq env="math">r,s\geqslant 0</eq>, two cohomological multifunctors, with arguments <eq env="math">{\mathscr{A}}_1,\ldots,{\mathscr{A}}_r;{\mathscr{B}}_1,\ldots,{\mathscr{B}}_s</eq> in the category of coherent algebraic sheaves on <eq env="math">X</eq>;
+one takes values in the category of coherent algebraic sheaves on <eq env="math">X</eq>, and the other in the category of modules over <eq env="math">\operatorname{H}^0(X,{\mathscr{O}}_X)</eq>.
+We define them by the formulas
+</p>
+<div id="FGA-1-equation-8.1" class="eqref" title="">
+<p><eq env="displaymath">
+  \begin{aligned}
+    &amp;\underline{T}_r^{s\bullet}({\mathscr{A}}_1,\ldots,{\mathscr{A}}_r;{\mathscr{B}}_1,\ldots,{\mathscr{B}}_s)
+  \\&amp;= \operatorname{H}^\bullet(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}(\underline{L}({\mathscr{A}}_1)\otimes\ldots\otimes\underline{L}({\mathscr{A}}_r), \underline{L}({\mathscr{B}}_1)\otimes\ldots\otimes\underline{L}({\mathscr{B}}_s))),
+  \\&amp;T_r^{s\bullet}({\mathscr{A}}_1,\ldots,{\mathscr{A}}_r;{\mathscr{B}}_1,\ldots,{\mathscr{B}}_s)
+  \\&amp;= \underline{\operatorname{R}}^\bullet\Gamma(\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}(\underline{L}({\mathscr{A}}_1)\otimes\ldots\otimes\underline{L}({\mathscr{A}}_r), \underline{L}({\mathscr{B}}_1)\otimes\ldots\otimes\underline{L}({\mathscr{B}}_s)))
+  \end{aligned}
+\tag{8.1}
+</eq></p>
+</div>
+<p>where <eq env="math">\underline{L}({\mathscr{F}})</eq> denotes a finite locally-free resolution of the coherent algebraic sheaf <eq env="math">{\mathscr{F}}</eq>, and <eq env="math">\underline{\operatorname{R}}^\bullet\Gamma({\mathscr{K}})</eq> denotes the hypercohomology of the space <eq env="math">X</eq> with respect to the complex of sheaves <eq env="math">{\mathscr{K}}</eq>.
+If <eq env="math">r</eq> (resp. <eq env="math">s</eq>) is zero, then we replace the tensor product of the <eq env="math">\underline{L}({\mathscr{A}}_i)</eq> (resp. of the <eq env="math">\underline{L}({\mathscr{B}}_j)</eq>) by <eq env="math">{\mathscr{O}}_X</eq>.
+In particular, <eq env="math">\underline{T}_0^0</eq> and <eq env="math">T_0^0</eq> are graded functors with no arguments:
+<eq env="math">\underline{T}_0^0</eq> is concentrated in degree <eq env="math">0</eq>, where it is the sheaf <eq env="math">{\mathscr{O}}_X</eq>;
+and <eq env="math">T_0^0</eq> is equal to <eq env="math">\operatorname{H}^\bullet(X,{\mathscr{O}}_X)</eq>.
+The fact that the right-hand sides of <a href="FGA-1.html#FGA-1-equation-8.1">(8.1)</a> do not depend on the chosen resolutions is evident for <eq env="math">\underline{T}</eq> (since the question is then local), and for <eq env="math">T</eq> it follows from preceding general remarks, taking into account the spectral sequence for the hypercohomology of the complex of sheaves <eq env="math">{\mathscr{K}}=\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}(\underline{L}({\mathscr{A}}_1)\otimes\ldots,\underline{L}({\mathscr{B}}_1)\otimes\ldots</eq> that abuts to the hypercohomology of <eq env="math">X</eq> with respect to <eq env="math">{\mathscr{K}}</eq>, and whose initial page is <eq env="math">\operatorname{H}^p(X,\operatorname{H}^q({\mathscr{K}}))</eq>, i.e.</p>
+<div id="FGA-1-equation-8.2" class="eqref" title="">
+<p><eq env="displaymath">
+  E_2^{p,q} = \operatorname{H}^p(X,(\underline{T}_r^s)^{(q)}({\mathscr{A}}_1,\ldots,{\mathscr{A}}_r;{\mathscr{B}}_1,\ldots,{\mathscr{B}}_s)).
+\tag{8.2}
+</eq></p>
+</div>
+<p>We then see that this spectral sequence itself does not depend on the chosen resolutions, and its abutment is the left-hand side of <a href="FGA-1.html#FGA-1-equation-8.1">(8.1)</a>.
+We can easily define the coboundary maps relative to miscellaneous arguments <eq env="math">{\mathscr{A}}_i,{\mathscr{B}}_j</eq> by noting that every exact sequence <eq env="math">0\to{\mathscr{F}}'\to{\mathscr{F}}\to{\mathscr{F}}''\to0</eq> can be resolved by an exact sequence of finite locally-free complexes.</p>
+<p>We define, on the system of functors <eq env="math">\underline{T}_r^{s\bullet}</eq> (resp. <eq env="math">T_r^{s\bullet}</eq>), operations that are analogous to those of tensor calculus, and whose definitions are immediate from the defining formulas in <a href="FGA-1.html#FGA-1-equation-8.1">(8.1)</a>.
+We thus have a <em>composition</em> (generalising that which was described in <a href="FGA-1.html#FGA-1-section-2">§2</a>):</p>
+<div id="FGA-1-equation-8.3" class="eqref" title="">
+<p><eq env="displaymath">
+  \begin{gathered}
+    T_r^{s\bullet}({\mathscr{A}}_1,\ldots,{\mathscr{A}}_r;{\mathscr{B}}_1,\ldots,{\mathscr{B}}_s)
+    \times T_{r'}^{s'\bullet}({\mathscr{A}}'_1,\ldots,{\mathscr{A}}'_{r'};{\mathscr{B}}'_1,\ldots,{\mathscr{B}}'_{s'})
+  \\\to T_{r+r'}^{(s+s')\bullet}({\mathscr{A}}_1,\ldots,{\mathscr{A}}_r,{\mathscr{A}}'_1,\ldots,{\mathscr{A}}'_{r'};{\mathscr{B}}_1,\ldots,{\mathscr{B}}_s,{\mathscr{B}}'_1,\ldots,{\mathscr{B}}'_{s'})
+  \end{gathered}
+\tag{8.3}
+</eq></p>
+</div>
+<p>that satisfies the evident properties of associativity, compatibility with the functorial homomorphisms and the coboundary homomorphisms, and spectral sequences.
+Similarly, we have symmetry operations, whose explicit descriptions we leave to the reader.
+We further have a <em>contraction</em> operation every time one of the arguments <eq env="math">{\mathscr{A}}_i</eq> is equal to one of the arguments <eq env="math">{\mathscr{B}}_j</eq>:</p>
+
+<div id="FGA-1-equation-8.4" class="eqref" title="">
+<p><eq env="displaymath">
+  \begin{gathered}
+    T_r^{s\bullet}({\mathscr{A}}_1,\ldots,{\mathscr{A}}_{i-1},{\mathscr{C}},{\mathscr{A}}_{i+1},\ldots,{\mathscr{A}}_r;{\mathscr{B}}_1,\ldots,{\mathscr{B}}_{j-1},{\mathscr{C}},{\mathscr{B}}_{j+1},\ldots,{\mathscr{B}}_s)
+  \\\to -T_{r-1}^{(s-1)\bullet}({\mathscr{A}}_1,\ldots,\widehat{{\mathscr{A}}_i},\ldots,{\mathscr{A}}_r;{\mathscr{B}}_1,\ldots,\widehat{{\mathscr{B}}_j},\ldots,{\mathscr{B}}_s).
+  \end{gathered}
+\tag{8.4}
+</eq></p>
+</div>
+<p>Furthermore, if some argument <eq env="math">{\mathscr{A}}_i</eq> is a locally-free sheaf, then we can suppress it by replacing one of the <eq env="math">{\mathscr{A}}_j</eq> (for <eq env="math">j\neq i</eq>) by <eq env="math">{\mathscr{A}}_j\otimes{\mathscr{A}}_i</eq>, or one of the <eq env="math">{\mathscr{B}}_k</eq> by <eq env="math">{\mathscr{B}}_k\otimes{\mathscr{A}}'_i</eq> (where <eq env="math">{\mathscr{A}}'_i=\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{A}}_i,{\mathscr{O}}_X</eq>);
+we have an analogous rule for the case where one of the arguments <eq env="math">{\mathscr{B}}_j</eq> is locally free.
+In particular, we can always suppress any argument that is equal to <eq env="math">{\mathscr{O}}_X</eq>.
+If all the arguments are locally free, except for at most one of the arguments <eq env="math">{\mathscr{B}}_i</eq>, then the rule that we have just stated gives a functorial isomorphism
+<eq env="displaymath">
+  T_r^{s\bullet}({\mathscr{A}}_1,\ldots,{\mathscr{A}}_r;{\mathscr{B}}_1,\ldots,{\mathscr{B}}_s)
+  = \operatorname{H}^\bullet(X,{\mathscr{A}}'_1\otimes\ldots\otimes{\mathscr{A}}'_{r}\otimes{\mathscr{B}}_1\otimes{\mathscr{B}}_s)
+\tag{8.5}
+</eq>
+(since we can restrict to the case where <eq env="math">r=0</eq> and <eq env="math">s=1</eq>, and there it is immediate;
+we can also directly use the spectral sequence whose initial term is <a href="FGA-1.html#FGA-1-equation-8.2">(8.2)</a>).
+The corresponding operations of all the above can also be defined for the <eq env="math">\underline{T}_r^s</eq>.
+The relations between the various operations thus introduced are the same as for the analogous relations in tensor calculus.</p>
+<p>Now let <eq env="math">n</eq> be the dimension of <eq env="math">X</eq>.
+By successively applying a tensor composition <a href="FGA-1.html#FGA-1-equation-8.3">(8.3)</a> and contractions <a href="FGA-1.html#FGA-1-equation-8.4">(8.4)</a> on repeated arguments, we obtain a pairing</p>
+<div id="FGA-1-equation-8.6" class="eqref" title="">
+<p><eq env="displaymath">
+  \begin{gathered}
+    (T_r^s)^p({\mathscr{A}}_1,\ldots;{\mathscr{B}}_1,\ldots)
+    \times (T_r^s)^{n-p}({\mathscr{B}}_1,\ldots;{\mathscr{A}}_1,\ldots,{\mathscr{A}}_r\otimes\Omega_X^n)
+  \\\longrightarrow\operatorname{H}^n(X,\Omega_X^n).
+  \end{gathered}
+\tag{8.6}
+</eq></p>
+</div>
+<div id="FGA-1-theorem-6" class="itenv" title="Theorem 6">
+<p>If <eq env="math">X</eq> is a non-singular projective variety, then the pairings in <a href="FGA-1.html#FGA-1-equation-8.6">(8.6)</a> are dualities.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-15" class="proof"><em>Proof</em>. </span>This follows in a purely formal way from the <a href="FGA-1.html#FGA-1-theorem-3-corollary">corollary of Theorem 3</a>.
+In fact, it easily follows from this corollary that, if <eq env="math">{\mathscr{K}}</eq> is a complex of <em>locally-free</em> coherent algebraic sheaves, then the hypercohomology of <eq env="math">X</eq> with respect to <eq env="math">{\mathscr{K}}</eq> is in duality with the hypercohomology of <eq env="math">X</eq> with respect to <eq env="math">{\mathscr{K}}'\otimes\Omega_X^n</eq> via the natural pairings
+<eq env="displaymath">
+  \underline{\operatorname{R}}^p\Gamma({\mathscr{K}})
+  \times \underline{\operatorname{R}}^{n-p}\Gamma({\mathscr{K}}'\otimes\Omega_X^n)
+  \to \underline{\operatorname{R}}^n\Gamma(\Omega_X^n)
+  = \operatorname{H}^n(X,\Omega_X^n).
+\tag{8.7}
+</eq>
+We can see this by using the spectral sequence with initial page <eq env="math">\operatorname{H}^p(\operatorname{H}^q(X,{\mathscr{K}}))</eq> and the analogous spectral sequence for <eq env="math">{\mathscr{K}}'\otimes\Omega_X^n</eq>.
+From the above result, <a href="FGA-1.html#FGA-1-theorem-6">Theorem 6</a> can be deduced from the definition <a href="FGA-1.html#FGA-1-equation-8.1">(8.1)</a>.</p>
+</div>
+
+<div class="rmenv" title="Remarks">
+<p>—</p>
+<ol style="list-style-type: decimal">
+<li><p>For the definitions preceding <a href="FGA-1.html#FGA-1-theorem-6">Theorem 6</a>, it was not necessary for <eq env="math">X</eq> to be non-singular, since it was not necessary to work with only <em>finite</em> resolutions.
+But, if <eq env="math">X</eq> is singular, then we can no long be sure, a priori, that the <eq env="math">(\underline{T}_r^s)^p({\mathscr{A}}_1,\ldots;{\mathscr{B}}_1,\ldots)</eq> are <em>coherent</em> sheaves, since, in the complex of sheaves
+<eq env="displaymath">
+   \underline{\operatorname{Hom}}_{{\mathscr{O}}_X}(\underline{L}({\mathscr{A}}_1)\otimes\ldots,\underline{L}({\mathscr{B}}_1)\otimes\ldots)
+ </eq>
+there will be an infinite number of components of any given total degree.</p></li>
+<li><p>We can easily verify that, in the formulas in <a href="FGA-1.html#FGA-1-equation-8.1">(8.1)</a>, we can replace <em>one</em> of the <eq env="math">\underline{L}({\mathscr{B}}_i)</eq> with <eq env="math">{\mathscr{B}}_i</eq>.
+Taking <a href="FGA-1.html#FGA-1-proposition-3">Proposition 3</a> into account, this shows that we have
+<eq env="displaymath">
+   \begin{aligned}
+     \underline{T}_1^{1\bullet}({\mathscr{A}};{\mathscr{B}})
+     &amp;= \underline{\operatorname{Ext}}_{{\mathscr{O}}_X}^\bullet({\mathscr{A}},{\mathscr{B}})
+   \\T_1^{1\bullet}({\mathscr{A}};{\mathscr{B}})
+     &amp;= \operatorname{Ext}_{{\mathscr{O}}_X}^\bullet(X;{\mathscr{A}},{\mathscr{B}}).
+   \end{aligned}
+ \tag{8.8}
+ </eq>
+In particular, taking <eq env="math">r=s=1</eq> and <eq env="math">{\mathscr{A}}_1={\mathscr{O}}_X</eq> in <a href="FGA-1.html#FGA-1-equation-8.6">(8.6)</a>, we recover <a href="FGA-1.html#FGA-1-theorem-3">Theorem 3</a>.
+Equation (8.8) also implies that <eq env="math">T_0^{1\bullet}({\mathscr{B}})=\operatorname{H}^\bullet(X,{\mathscr{B}})</eq>, and that <eq env="math">T_1^{0\bullet}({\mathscr{A}})=\operatorname{Ext}_{{\mathscr{O}}_X}^\bullet(X;{\mathscr{A}},{\mathscr{O}}_X)</eq>.</p></li>
+<li><p>We see, in <a href="FGA-1.html#FGA-1-equation-8.1">(8.1)</a>, that the functors <eq env="math">\underline{T}_r^{s\bullet}</eq> and <eq env="math">T_r^{s\bullet}</eq> have, in general, components in positive <em>and</em> negative degrees.
+Using the above remark, we see that, if the dimension of <eq env="math">X</eq> is <eq env="math">n</eq>, then the non-zero components of <eq env="math">\underline{T}_r^{s\bullet}</eq> are concentrated between degrees <eq env="math">-(s-1)n</eq> and <eq env="math">rn</eq> if <eq env="math">s&gt;0</eq>, and between degrees <eq env="math">0</eq> and <eq env="math">rn</eq> if <eq env="math">s=0</eq>; the non-zero components of <eq env="math">T_r^{s\bullet}</eq> are concentrated between degrees <eq env="math">-(s-1)n</eq> and <eq env="math">(r+1)n</eq> if <eq env="math">s&gt;0</eq>, and between degrees <eq env="math">0</eq> and <eq env="math">(r+1)n</eq> if <eq env="math">s=0</eq> (and, unless I am mistaken, if <eq env="math">r&gt;0</eq>, between degrees <eq env="math">-(s-1)n</eq> and <eq env="math">rn</eq>, resp. <eq env="math">0</eq> and <eq env="math">rn</eq>).</p></li>
+</ol>
+</div>
 
 </div>
 </div>
