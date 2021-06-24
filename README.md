@@ -7,12 +7,13 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 
 - pdf output
 - why is there no date for so many things in the bib?
+- margin/padding -top of lists in `.itenv` (seems like there's none?)
 - make sepia colour scheme not look so gross
     + TOC and Font Settings
     + links
 
 - [x] 1
-- [ ] 2
+- [x] 2
 - [ ] 3.I
 - [ ] 3.II
 - [ ] 3.III
