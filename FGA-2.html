@@ -135,7 +135,7 @@
 
 <p>The substance of <a href="FGA-2.html#FGA-2-section-1">§1</a> to <a href="FGA-2.html#FGA-2-section-5">§5</a> is contained in the published part of EGA III; that of <a href="FGA-2.html#FGA-2-section-6">§6</a> and <a href="FGA-2.html#FGA-2-section-7">§7</a> is contained in SGA III.
 For the study of the fundamental group, see SGA V, IX, X, and XI, as well as SGA 1962 (talks X, XII, and XIII) for the Lefschetz-type theorems and numerous open questions.
-Only the theory of moderately ramified coverings (cf. <a href="#FGA-2-theorem-14">Theorem 14</a>) has not yet been the subject of a dedicated talk.
+Only the theory of moderately ramified coverings (cf. <a href="FGA-2.html#FGA-2-theorem-14">Theorem 14</a>) has not yet been the subject of a dedicated talk.
 The <a href="#FGA-2-theorem-14-corollary">corollary to Theorem 14</a>, which completely determines Galois coverings of order coprime to the characteristic of an algebraic curve over an algebraically closed field, has been used in an essential manner on three separate occasions:</p>
 <ol style="list-style-type: decimal">
 <li><p>in the proof by Igusa of the Picard inequality for non-singular projective surfaces in arbitrary characteristic;</p></li>
@@ -607,387 +607,299 @@ We will return to this soon.</p>
 </div>
 <div id="FGA-2-section-8" class="section level2">
 <h2><span class="header-section-number">2.8</span> Application to the fundamental group</h2>
-<!-- The techniques described allows us to tackle the system study of the fundamental group, using the example of topological theory.
-The first two theorems stated in this section are generalisations of results in a recent work by Lang--Serre.
+<p>The techniques described allows us to tackle the system study of the fundamental group, using the example of topological theory.
+The first two theorems stated in this section are generalisations of results in a recent work by Lang–Serre.</p>
+<p>Let <eq env="math">X</eq> be a scheme.
+Then an <eq env="math">X</eq>-scheme <eq env="math">X'</eq> is said to be an <em>unramified covering of <eq env="math">X</eq></em> if
+</p>
+<ol style="list-style-type: lower-roman">
+<li><p><eq env="math">X'</eq> is finite over <eq env="math">X</eq>, i.e. it is defined by a coherent sheaf of algebras <eq env="math">{\mathscr{A}}={\mathscr{A}}(X')</eq> on <eq env="math">X</eq>;</p></li>
+<li><p><eq env="math">{\mathscr{A}}</eq> is a locally free sheaf on <eq env="math">X</eq>;</p></li>
+<li><p>for all <eq env="math">x\in X</eq>, the quotient <eq env="math">{\mathscr{A}}_x/{\mathfrak{m}}_x{\mathscr{A}}_x = {\mathscr{A}}_x\otimes_{{\mathscr{O}}_X}\pi(x)</eq> is a separable algebra over <eq env="math">\mathfrak{K}(x)</eq>.</p></li>
+</ol>
+<p>This notion of unramified covering (due to Serre and the speaker) posses all the elementary properties for which we can reasonably hope, and which we will not list.
+We restrict ourselves to saying that it gives rise to a <em>Galois theory</em> modelled on classical Galois theory (and containing it; the proofs being overall simpler than the proofs generally seen for the latter) and the Galois theory of topological coverings.
+More precisely, we define a <em>geometric point</em> of a scheme <eq env="math">X</eq> to be a morphism <eq env="math">a</eq> from the spectrum <eq env="math">\xi</eq> of an algebraically closed field <eq env="math">\Omega</eq> to <eq env="math">X</eq>, i.e. the data of an algebraically closed extension of the residue field <eq env="math">\mathfrak{K}(x)</eq> of a point <eq env="math">x=|a|</eq> of <eq env="math">X</eq> (called the <em>locality</em> of the geometric point <eq env="math">a</eq>).
+If <eq env="math">X'</eq> is an unramified covering of <eq env="math">X</eq>, then we can associate to it the set <eq env="math">E_a(X')</eq> of “geometric points of <eq env="math">X'</eq> over <eq env="math">a</eq>”, i.e. the set of pairs consisting of an <eq env="math">x'\in X'</eq> over <eq env="math">x</eq> and a <eq env="math">\mathfrak{K}(x)</eq>-homomorphism to <eq env="math">\Omega</eq>.
+We thus obtain (for fixed <eq env="math">(X,a)</eq>) a functor <eq env="math">F(X,a)</eq> from the category <eq env="math">R(X)</eq> of unramified coverings <eq env="math">X'</eq> of <eq env="math">X</eq> to the category of finite sets.
+If <eq env="math">X</eq> is connected, then the pair given by <eq env="math">R(X)</eq> and <eq env="math">F(X,a)</eq> has all the formal properties necessary in order to be isomorphic to the analogous pair defined by a suitable totally disconnected compact topological group <eq env="math">\pi</eq> (i.e. a projective limit of finite groups): we take the category <eq env="math">{\mathcal{C}}(\pi)</eq> of finite sets on which <eq env="math">\pi</eq> acts continuously, and the identity functor <eq env="math">F(\pi)(E)=E</eq> from this category to the category of finite sets.
+The group <eq env="math">\pi</eq> is also determined up to canonical isomorphic by the condition that <eq env="math">({\mathcal{C}}(\pi),F(\pi))</eq> is isomorphic to a given pair.
+To be precise, <eq env="math">\pi</eq> is called the <em>fundamental group of the connected scheme <eq env="math">X</eq> at the geometric point <eq env="math">a</eq></em>, and we denote it by <eq env="math">\pi_1(X,a)</eq>.
+If <eq env="math">X</eq> is not connected, then we can replace it by the connected component containing <eq env="math">x=|a|</eq>.
+If, however, <eq env="math">X</eq> is connected, then the groups <eq env="math">\pi_1(X,a')</eq> and <eq env="math">\pi_1(X,a')</eq> are isomorphic for any two geometric points <eq env="math">a'</eq> and <eq env="math">a''</eq> of <eq env="math">X</eq> (with the isomorphism being determined up to inner automorphism), and thus we can, as per usual, choose the most suitable <eq env="math">a</eq> for our purposes, such as the generic point of <eq env="math">X</eq> that is assumed to be irreducible.
 
-Let $X$ be a scheme.
-Then an $X$-scheme $X'$ is said to be an _unramified covering of $X$_
-\oldpage{182-18}
-if
-\begin{enumerate}[i.]
-  \item $X'$ is finite over $X$, i.e. it is defined by a coherent sheaf of algebras $\scr{A}=\scr{A}(X')$ on $X$;
-  \item $\scr{A}$ is a locally free sheaf on $X$;
-  \item for all $x\in X$, the quotient $\scr{A}_x/\frak{m}_x\scr{A}_x = \scr{A}_x\otimes_{\scr{O}_X}\pi(x)$ is a separable algebra over $\kres(x)$.
-\end{enumerate}
+Of course, <eq env="math">\pi_1(X,a)</eq> is a <em>covariant functor in the pointed scheme <eq env="math">(X,a)</eq></em>.
+Every statement concerning the classification of inseparable coverings can then be translated into the language of group theory, following the well-known dictionary (except that we must take into account the fact that here we have <em>topological groups</em>).</p>
+<p>Our goal is to develop an analogue of the homotopy exact sequence of fibre bundles, relative to a proper morphism <eq env="math">f\colon X\to Y</eq>.
+Clearly, since we don’t know what the higher homotopy groups are, we will only have necessarily incomplete results.
+In order to be able to apply the fundamental theorems from <a href="FGA-2.html#FGA-2-section-3">§3</a>, we must first explain certain elementary lemmas concerning schemes over Artinian rings or fields (following the general procedure!).</p>
+<div id="FGA-2-lemma-1" class="itenv" title="Lemma 1">
+<p>Let <eq env="math">(X',a')</eq> be a pointed unramified covering associated to a pointed representation of <eq env="math">\pi_1(X,a)</eq> in a finite set <eq env="math">E</eq> (endowed with a marked point <eq env="math">e</eq>),
+Then the canonical morphism <eq env="math">\pi_1(X',a')\to\pi_1(X,a)</eq> identifies the domain with the stabiliser of <eq env="math">e</eq> in <eq env="math">\pi_1(X,a)</eq> (and is thus injective).</p>
+</div>
+<div id="FGA-2-lemma-2" class="itenv" title="Lemma 2">
+<p>Let <eq env="math">X</eq> be an algebraic scheme over the field <eq env="math">k</eq>, and let <eq env="math">k'</eq> be a radicial extension of <eq env="math">k</eq>.
+Then every unramified covering of <eq env="math">X\otimes_kk'</eq> is given by the inverse image (i.e. extension of scalars) of an unramified covering of <eq env="math">X</eq>, determined up to isomorphism.</p>
+</div>
+<p>It follows, in particular, from these two lemmas that, for <em>every</em> algebraic extension <eq env="math">K</eq> of <eq env="math">k</eq>, and every geometric point <eq env="math">a'</eq> of <eq env="math">X'=X\otimes_kK</eq> that projects to the geometric point <eq env="math">a</eq> of <eq env="math">X</eq>, that the functorial homomorphism <eq env="math">\pi_1(X',a')\to\pi_1(X,a)</eq> is injective.</p>
+<div id="FGA-2-lemma-3" class="itenv" title="Lemma 3">
+<p>Let <eq env="math">X</eq> be a complete scheme over a local Artinian ring <eq env="math">A</eq>, such that <eq env="math">H^0(X,{\mathscr{O}}_X)=A</eq>.
+Let <eq env="math">X'</eq> be an unramified covering of <eq env="math">X</eq>, and let <eq env="math">A'=H^0(X',{\mathscr{O}}_{X'})</eq>, which is thus a ring that is finite over <eq env="math">A</eq> (and which may a priori be ramified over <eq env="math">A</eq>).
+Let <eq env="math">X_0</eq> and <eq env="math">X'_0</eq> be the reduced subschemes associated to <eq env="math">X</eq> and <eq env="math">X'</eq>, respectively (obtained by splitting by the sheaves of nilpotent elements in <eq env="math">{\mathscr{O}}_X</eq> and <eq env="math">{\mathscr{O}}_{X'}</eq>, respectively).
+Let <eq env="math">k</eq> be a subfield of <eq env="math">A/{\mathfrak{r}}(A)</eq> over which <eq env="math">A/{\mathfrak{r}}(A)</eq> is finite (so <eq env="math">X_0</eq> is a complete algebraic scheme over <eq env="math">k</eq>, and <eq env="math">X'_0</eq> is an unramified covering).
+Finally, let <eq env="math">\Omega</eq> be an algebraically closed extension of <eq env="math">k</eq>, and consider the unramified covering <eq env="math">X'_0\otimes_k\Omega</eq> of <eq env="math">X_0\otimes_k\Omega</eq>.
+Then the following two conditions are equivalent:
+</p>
+<ol style="list-style-type: lower-roman">
+<li><eq env="math">X'_0\otimes_k\Omega</eq> is completely decomposed over <eq env="math">X_0\otimes_k\Omega</eq>;</li>
+<li>the natural morphism <eq env="math">X'\to X\otimes_AA'</eq> is an isomorphism.</li>
+</ol>
+<p>Under these conditions, <eq env="math">A'</eq> is an <em>unramified</em> extension of <eq env="math">A</eq>.
+Finally, if <eq env="math">X'</eq> is connected, then condition (i) is equivalent to the following, seemingly weaker, condition:</p>
+<p>i bis. <eq env="math">X'_0\otimes_k\Omega</eq> admits a regular section over <eq env="math">X_0\otimes_k\Omega</eq>.</p>
+</div>
+<p>When condition (ii) is satisfied, we say that the unramified covering <eq env="math">X'</eq> of <eq env="math">X</eq> is <em>geometrically trivial</em>.</p>
+<div id="FGA-2-lemma-4" class="itenv" title="Lemma 4">
+<p>Let <eq env="math">f\colon X\to Y</eq> be a proper morphism such that <eq env="math">f_*({\mathscr{O}}_X)={\mathscr{O}}_Y</eq>.
+Let <eq env="math">a</eq> be a geometric point of <eq env="math">X</eq>, and <eq env="math">b</eq> its projection over <eq env="math">Y</eq>.
+Then <eq env="math">\pi_1(X,a)\to\pi_1(Y,b)</eq> is <em>surjective</em>.</p>
+</div>
+<p>What we need to show is effectively the following: if an unramified covering <eq env="math">Y'</eq> of <eq env="math">Y</eq> (corresponding to a locally free sheaf of algebras <eq env="math">{\mathscr{A}}</eq>) is such that <eq env="math">X\otimes_YY'</eq> is disconnected, then <eq env="math">Y'</eq> is also disconnected.
+In fact, <eq env="math">{\mathscr{A}}</eq> is then the direct sum of two non-zero sheaves of rings, and thus so too is its direct image, which is exactly <eq env="math">{\mathscr{A}}\otimes f_*({\mathscr{O}}_X)={\mathscr{A}}</eq>.</p>
+<div id="FGA-2-lemma-5" class="itenv" title="Lemma 5">
+<p>Let <eq env="math">X</eq> be a complete scheme over a field <eq env="math">k</eq>, and suppose that <eq env="math">H^0(X,{\mathscr{O}}_X)</eq> is a local ring <eq env="math">A</eq>, and that <eq env="math">A/{\mathfrak{r}}(A)</eq> is radicial over <eq env="math">k</eq>.
+Let <eq env="math">\Omega</eq> be an algebraic closure of <eq env="math">k</eq>, and let <eq env="math">\overline{X}=X\otimes_k\Omega</eq> (which is connected).
+Pick a geometric point <eq env="math">\overline{a}</eq> of <eq env="math">\overline{X}</eq> that projects to the geometric point <eq env="math">a</eq> of <eq env="math">X</eq>.
+Then we have an exact sequence
+<eq env="displaymath">
+  e
+  \to \pi_1(\overline{X},\overline{e})
+  \to \pi_1(X,a)
+  \to \pi_1(k,b)
+  \to e
+</eq>
+(where <eq env="math">\pi_1(k,b)</eq> is the Galois group of <eq env="math">\Omega</eq> over <eq env="math">k</eq>).</p>
+</div>
+<p>The fact that the first homomorphism is injective has already been shown with <a href="FGA-2.html#FGA-2-lemma-1">Lemma 1</a> and <a href="FGA-2.html#FGA-2-lemma-2">Lemma 2</a>;
+the exactness in the middle follows from <a href="FGA-2.html#FGA-2-lemma-3">Lemma 3</a>;
+finally, the surjectivity of the last homomorphism (which is the only thing to rely on the fact that <eq env="math">A/{\mathfrak{r}}(A)</eq> is radicial) follows from <a href="FGA-2.html#FGA-2-lemma-4">Lemma 4</a>.</p>
+<div id="FGA-2-proposition-4" class="itenv" title="Proposition 4">
+<p>Let <eq env="math">f\colon X\to Y</eq> be a proper flat morphism such that, for all <eq env="math">y\in Y</eq>, the algebra <eq env="math">H^0(f^{-1}(y),{\mathscr{O}}_{f^{-1}(y)})</eq> is separable over the residue field <eq env="math">\mathfrak{K}(y)</eq> (which is the case, for example, if <eq env="math">f^{-1}(y)</eq> is a <em>separable scheme</em> over <eq env="math">\mathfrak{K}(y)</eq>, i.e. reduced and such that the fields corresponding to its irreducible components are separable extensions of <eq env="math">\mathfrak{K}(y)</eq>).
 
-This notion of unramified covering (due to Serre and the speaker) posses all the elementary properties for which we can reasonably hope, and which we will not list.
-We restrict ourselves to saying that it gives rise to a _Galois theory_ modelled on classical Galois theory (and containing it; the proofs being overall simpler than the proofs generally seen for the latter) and the Galois theory of topological coverings.
-More precisely, we define a _geometric point_ of a scheme $X$ to be a morphism $a$ from the spectrum $\xi$ of an algebraically closed field $\Omega$ to $X$, i.e. the data of an algebraically closed extension of the residue field $\kres(x)$ of a point $x=|a|$ of $X$ (called the _locality_ of the geometric point $a$).
-If $X'$ is an unramified covering of $X$, then we can associate to it the set $E_a(X')$ of "geometric points of $X'$ over $a$", i.e. the set of pairs consisting of an $x'\in X'$ over $x$ and a $\kres(x)$-homomorphism to $\Omega$.
-We thus obtain (for fixed $(X,a)$) a functor $F(X,a)$ from the category $R(X)$ of unramified coverings $X'$ of $X$ to the category of finite sets.
-If $X$ is connected, then the pair given by $R(X)$ and $F(X,a)$ has all the formal properties necessary in order to be isomorphic to the analogous pair defined by a suitable totally disconnected compact topological group $\pi$ (i.e. a projective limit of finite groups): we take the category $\cal{C}(\pi)$ of finite sets on which $\pi$ acts continuously, and the identity functor $F(\pi)(E)=E$ from this category to the category of finite sets.
-The group $\pi$ is also determined up to canonical isomorphic by the condition that $(\cal{C}(\pi),F(\pi))$ is isomorphic to a given pair.
-To be precise, $\pi$ is called the _fundamental group of the connected scheme $X$ at the geometric point $a$_, and we denote it by $\pi_1(X,a)$.
-If $X$ is not connected, then we can replace it by the connected component containing $x=|a|$.
-If, however, $X$ is connected, then the groups $\pi_1(X,a')$ and $\pi_1(X,a')$ are isomorphic for any two geometric points $a'$ and $a''$ of $X$ (with the isomorphism being determined up to inner automorphism), and thus we can, as per usual, choose the most suitable $a$ for our purposes, such as the generic point of
-\oldpage{182-19}
-$X$ that is assumed to be irreducible.
-Of course, $\pi_1(X,a)$ is a _covariant functor in the pointed scheme $(X,a)$_.
-Every statement concerning the classification of inseparable coverings can then be translated into the language of group theory, following the well-known dictionary (except that we must take into account the fact that here we have _topological groups_).
-
-Our goal is to develop an analogue of the homotopy exact sequence of fibre bundles, relative to a proper morphism $f\colon X\to Y$.
-Clearly, since we don't know what the higher homotopy groups are, we will only have necessarily incomplete results.
-In order to be able to apply the fundamental theorems from \hyperref[section3]{\S3}, we must first explain certain elementary lemmas concerning schemes over Artinian rings or fields (following the general procedure!).
-
-\begin{itenv}{Lemma 1}
-\label{lemma1}
-  Let $(X',a')$ be a pointed unramified covering associated to a pointed representation of $\pi_1(X,a)$ in a finite set $E$ (endowed with a marked point $e$),
-  Then the canonical morphism $\pi_1(X',a')\to\pi_1(X,a)$ identifies the domain with the stabiliser of $e$ in $\pi_1(X,a)$ (and is thus injective).
-\end{itenv}
-
-\begin{itenv}{Lemma 2}
-\label{lemma2}
-  Let $X$ be an algebraic scheme over the field $k$, and let $k'$ be a radicial extension of $k$.
-  Then every unramified covering of $X\otimes_kk'$ is given by the inverse image (i.e. extension of scalars) of an unramified covering of $X$, determined up to isomorphism.
-\end{itenv}
-
-It follows, in particular, from these two lemmas that, for _every_ algebraic extension $K$ of $k$, and every geometric point $a'$ of $X'=X\otimes_kK$ that projects to the geometric point $a$ of $X$, that the functorial homomorphism $\pi_1(X',a')\to\pi_1(X,a)$ is injective.
-
-\begin{itenv}{Lemma 3}
-\label{lemma3}
-  Let $X$ be a complete scheme over a local Artinian ring $A$, such that $H^0(X,\scr{O}_X)=A$.
-  Let $X'$ be an unramified covering of $X$, and let $A'=H^0(X',\scr{O}_{X'})$, which is thus a ring that is finite over $A$ (and which may a priori be ramified over $A$).
-  Let $X_0$ and $X'_0$ be the reduced subschemes associated to $X$ and $X'$, respectively (obtained by splitting by the sheaves of nilpotent elements in $\scr{O}_X$ and $\scr{O}_{X'}$, respectively).
-  Let $k$ be a subfield of $A/\frak{r}(A)$ over which $A/\frak{r}(A)$ is finite (so $X_0$ is a complete algebraic scheme over $k$, and $X'_0$ is an unramified covering).
-  Finally, let $\Omega$ be an algebraically closed extension of $k$, and consider the unramified covering $X'_0\otimes_k\Omega$ of $X_0\otimes_k\Omega$.
-  Then the following two conditions are equivalent:
-\oldpage{182-20}
-  \begin{enumerate}[i.]
-    \item $X'_0\otimes_k\Omega$ is completely decomposed over $X_0\otimes_k\Omega$;
-    \item the natural morphism $X'\to X\otimes_AA'$ is an isomorphism.
-  \end{enumerate}
-
-  Under these conditions, $A'$ is an _unramified_ extension of $A$.
-  Finally, if $X'$ is connected, then condition (i) is equivalent to the following, seemingly weaker, condition:
-  \begin{enumerate}[i bis.]
-    \item $X'_0\otimes_k\Omega$ admits a regular section over $X_0\otimes_k\Omega$.
-  \end{enumerate}
-\end{itenv}
-
-When condition (ii) is satisfied, we say that the unramified covering $X'$ of $X$ is _geometrically trivial_.
-
-\begin{itenv}{Lemma 4}
-\label{lemma4}
-  Let $f\colon X\to Y$ be a proper morphism such that $f_*(\scr{O}_X)=\scr{O}_Y$.
-  Let $a$ be a geometric point of $X$, and $b$ its projection over $Y$.
-  Then $\pi_1(X,a)\to\pi_1(Y,b)$ is _surjective_.
-\end{itenv}
-
-What we need to show is effectively the following: if an unramified covering $Y'$ of $Y$ (corresponding to a locally free sheaf of algebras $\scr{A}$) is such that $X\otimes_YY'$ is disconnected, then $Y'$ is also disconnected.
-In fact, $\scr{A}$ is then the direct sum of two non-zero sheaves of rings, and thus so too is its direct image, which is exactly $\scr{A}\otimes f_*(\scr{O}_X)=\scr{A}$.
-
-\begin{itenv}{Lemma 5}
-\label{lemma5}
-  Let $X$ be a complete scheme over a field $k$, and suppose that $H^0(X,\scr{O}_X)$ is a local ring $A$, and that $A/\frak{r}(A)$ is radicial over $k$.
-  Let $\Omega$ be an algebraic closure of $k$, and let $\overline{X}=X\otimes_k\Omega$ (which is connected).
-  Pick a geometric point $\overline{a}$ of $\overline{X}$ that projects to the geometric point $a$ of $X$.
-  Then we have an exact sequence
-  $$
-    e
-    \to \pi_1(\overline{X},\overline{e})
-    \to \pi_1(X,a)
-    \to \pi_1(k,b)
-    \to e
-  $$
-  (where $\pi_1(k,b)$ is the Galois group of $\Omega$ over $k$).
-\end{itenv}
-
-The fact that the first homomorphism is injective has already been shown with \hyperref[lemma1]{Lemma 1} and \hyperref[lemma2]{Lemma 2};
-the exactness in the middle follows from \hyperref[lemma3]{Lemma 3};
-finally, the surjectivity of the last homomorphism (which is the only thing to rely on the fact that $A/\frak{r}(A)$ is radicial) follows from \hyperref[lemma4]{Lemma 4}.
-
-\begin{itenv}{Proposition 4}
-\label{proposition4}
-  Let $f\colon X\to Y$ be a proper flat morphism such that, for all $y\in Y$, the algebra $H^0(f^{-1}(y),\scr{O}_{f^{-1}(y)})$ is separable over the residue field $\kres(y)$ (which is the case, for example, if $f^{-1}(y)$ is a _separable scheme_ over $\kres(y)$, i.e. reduced and such that the fields corresponding to its irreducible components are separable extensions of $\kres(y)$).
-  Then the covering
-\oldpage{182-21}
-  $Y'$ of $Y$ associated to $f_*(\scr{O}_X)$ is unramified.
-\end{itenv}
-
-The proof is easy, thanks to [Theorem 2](#FGA-2-theorem-2).
-
-This proposition, combined with \hyperref[lemma1]{Lemma 1}, practically reduces the homotopical study of proper and flat morphisms (with separable fibres) to the case where $f_*(\scr{O}_X)=\scr{O}_Y$ (since, using Stein factorisation, we can replace $Y$ by $Y'$).
-
-\begin{rmenv}{Remark}
-  A flat morphism of finite type whose fibres are separable (resp. simple) schemes is said to be _separable_ (resp. _simple_).
-  We show that, if $f$ is flat and if $f^{-1}(y)$ is separable (resp. simple) then there exists a neighbourhood of $f^{-1}(y)$ on which $f$ is separable (resp. simple).
-  The same result holds true for "absolutely normal" (this is _Bertini's theorem_).
-\end{rmenv}
-
-Let $f\colon X\to Y$ be a proper morphism such that
-$$
-\label{equationi}
-  f_*(\scr{O}_X) = \scr{O}_Y
+Then the covering <eq env="math">Y'</eq> of <eq env="math">Y</eq> associated to <eq env="math">f_*({\mathscr{O}}_X)</eq> is unramified.</p>
+</div>
+<p>The proof is easy, thanks to <a href="FGA-2.html#FGA-2-theorem-2">Theorem 2</a>.</p>
+<p>This proposition, combined with <a href="FGA-2.html#FGA-2-lemma-1">Lemma 1</a>, practically reduces the homotopical study of proper and flat morphisms (with separable fibres) to the case where <eq env="math">f_*({\mathscr{O}}_X)={\mathscr{O}}_Y</eq> (since, using Stein factorisation, we can replace <eq env="math">Y</eq> by <eq env="math">Y'</eq>).</p>
+<div class="rmenv" title="Remark">
+<p>A flat morphism of finite type whose fibres are separable (resp. simple) schemes is said to be <em>separable</em> (resp. <em>simple</em>).
+We show that, if <eq env="math">f</eq> is flat and if <eq env="math">f^{-1}(y)</eq> is separable (resp. simple) then there exists a neighbourhood of <eq env="math">f^{-1}(y)</eq> on which <eq env="math">f</eq> is separable (resp. simple).
+The same result holds true for “absolutely normal” (this is <em>Bertini’s theorem</em>).</p>
+</div>
+<p>Let <eq env="math">f\colon X\to Y</eq> be a proper morphism such that</p>
+<div id="FGA-2-equation-i" class="eqref">
+<p><eq env="displaymath">
+  f_*({\mathscr{O}}_X) = {\mathscr{O}}_Y
 \tag{i}
-$$
-and let $X'$ be a finite scheme over $X$.
-Let $Y'$ be the covering of $Y$ corresponding to the Stein factorisation of $X'\to Y$ (cf. [Theorem 5](#FGA-2-theorem-5)).
-Let $y\in Y$, so that the set of connected components of the fibre $F'$ of $X'$ over $y$ can be identified with the set of points $y'\in Y'$ over $y$ ( [Theorem 5](#FGA-2-theorem-5)).
-Consider the evident morphism
-$$
-\label{equation*}
+</eq></p>
+</div>
+<p>and let <eq env="math">X'</eq> be a finite scheme over <eq env="math">X</eq>.
+Let <eq env="math">Y'</eq> be the covering of <eq env="math">Y</eq> corresponding to the Stein factorisation of <eq env="math">X'\to Y</eq> (cf. <a href="FGA-2.html#FGA-2-theorem-5">Theorem 5</a>).
+Let <eq env="math">y\in Y</eq>, so that the set of connected components of the fibre <eq env="math">F'</eq> of <eq env="math">X'</eq> over <eq env="math">y</eq> can be identified with the set of points <eq env="math">y'\in Y'</eq> over <eq env="math">y</eq> (<a href="FGA-2.html#FGA-2-theorem-5">Theorem 5</a>).
+Consider the evident morphism</p>
+<div id="FGA-2-equation-asterisk" class="eqref">
+<p><eq env="displaymath">
   X'\to X\times_Y Y'
 \tag{$*$}
-$$
-induced by the natural morphisms $X'\to X$ and $X\to Y'$;
-this will be an isomorphism whenever $X'$ is of the form $X\times_Y Y''$, where $Y''$ is an unramified covering of $Y$, and then $Y'$ will be exactly $Y''$, and \hyperref[equation*]{equation ($*$)} will be the identity.
-We wish to precisely give the conditions for which $X'$ is of the form that we have just indicated, i.e. such that $Y'$ is unramified and \hyperref[equation*]{equation ($*$)} is an isomorphism.
-For this, we introduce the fibre $F$ of $X$ at $y$, which is a proper scheme over $\kres(y)$, for which $F'$ is a cover (an unramified one if $X$ is).
-Let $F'_1$ be a connected component of $F'$ corresponding to a point $y'_1$ of $Y'$ over $y$.
-Suppose further that
-\begin{enumerate}[(i)]
-\setcounter{enumi}{1}
-  \item $X'$ is unramified over $X$ at the points of $F'_1$ (and thus $F'_1$ is an unramified cover of $F$), and
-  \item $F'_1$ is a geometrically trivial covering of $F$ (cf. \hyperref[lemma3]{Lemma 3}).
-\end{enumerate}
+</eq></p>
+</div>
+<p>induced by the natural morphisms <eq env="math">X'\to X</eq> and <eq env="math">X\to Y'</eq>;
+this will be an isomorphism whenever <eq env="math">X'</eq> is of the form <eq env="math">X\times_Y Y''</eq>, where <eq env="math">Y''</eq> is an unramified covering of <eq env="math">Y</eq>, and then <eq env="math">Y'</eq> will be exactly <eq env="math">Y''</eq>, and <a href="FGA-2.html#FGA-2-equation-asterisk">Equation (<eq env="math">*</eq>)</a> will be the identity.
+We wish to precisely give the conditions for which <eq env="math">X'</eq> is of the form that we have just indicated, i.e. such that <eq env="math">Y'</eq> is unramified and <a href="FGA-2.html#FGA-2-equation-asterisk">Equation (<eq env="math">*</eq>)</a> is an isomorphism.
+For this, we introduce the fibre <eq env="math">F</eq> of <eq env="math">X</eq> at <eq env="math">y</eq>, which is a proper scheme over <eq env="math">\mathfrak{K}(y)</eq>, for which <eq env="math">F'</eq> is a cover (an unramified one if <eq env="math">X</eq> is).
+Let <eq env="math">F'_1</eq> be a connected component of <eq env="math">F'</eq> corresponding to a point <eq env="math">y'_1</eq> of <eq env="math">Y'</eq> over <eq env="math">y</eq>.
+Suppose further that</p>
+<ol start="2" style="list-style-type: lower-roman">
+<li><eq env="math">X'</eq> is unramified over <eq env="math">X</eq> at the points of <eq env="math">F'_1</eq> (and thus <eq env="math">F'_1</eq> is an unramified cover of <eq env="math">F</eq>), and</li>
+<li><eq env="math">F'_1</eq> is a geometrically trivial covering of <eq env="math">F</eq> (cf. <a href="FGA-2.html#FGA-2-lemma-3">Lemma 3</a>).</li>
+</ol>
+<div id="FGA-2-theorem-11" class="itenv" title="Theorem 11">
+<p>Under these conditions, there exists an open neighbourhood <eq env="math">U'</eq> of <eq env="math">y'_1</eq> in <eq env="math">Y'</eq> such that <a href="FGA-2.html#FGA-2-equation-asterisk">Equation (<eq env="math">*</eq>)</a> is an isomorphism over <eq env="math">U'</eq>.
 
-\begin{itenv}{Theorem 11}
-\label{theorem11}
-  Under these conditions, there exists an open neighbourhood $U'$ of $y'_1$
-\oldpage{182-22}
-  in $Y'$ such that \hyperref[equation*]{equation ($*$)} is an isomorphism over $U'$.
-  Furthermore, $Y'$ is unramified at $y'_1$ over $Y$ (but can be ramified at other points $y'$ of $Y'$ over $y$).
-\end{itenv}
+Furthermore, <eq env="math">Y'</eq> is unramified at <eq env="math">y'_1</eq> over <eq env="math">Y</eq> (but can be ramified at other points <eq env="math">y'</eq> of <eq env="math">Y'</eq> over <eq env="math">y</eq>).</p>
+</div>
+<p>Of course, conditions (ii) and (iii) are also necessary for the conclusion of the theorem.
+The proof of the theorem is easy, thanks to <a href="FGA-2.html#FGA-2-lemma-3">Lemma 3</a> and <a href="FGA-2.html#FGA-2-theorem-2">Theorem 2</a>.</p>
+<div id="FGA-2-theorem-11-corollary-1" class="itenv" title="Corollary 1">
+<p>Suppose that (i) is still satisfied.
+For an unramified covering over <eq env="math">X</eq> to be isomorphic to the inverse image of an unramified covering <eq env="math">Y'</eq> of <eq env="math">Y</eq>, it is necessary and sufficient for <eq env="math">X'</eq> to induce, on each fibre <eq env="math">f^{-1}(y)</eq>, a geometrically trivial covering.</p>
+</div>
+<p>By <a href="FGA-2.html#FGA-2-theorem-11">Theorem 11</a>, the set of points of <eq env="math">Y</eq> for which this condition is satisfied is open, and so it suffices to verify it at the points <eq env="math">y</eq> which are closed…
+Note that the following statement is equivalent to <a href="FGA-2.html#FGA-2-theorem-11-corollary-1">Corollary 1</a>:</p>
+<p><em>The kernel of the homomorphism <eq env="math">\pi_1(X)\to\pi_1(Y)</eq> (which is surjective, by <a href="FGA-2.html#FGA-2-lemma-4">Lemma 4</a>) is the closed invariant subgroup generated by the images in <eq env="math">\pi_1(X)</eq> of <eq env="math">\pi_1(f^{-1}(y))</eq>, where <eq env="math">f^{-1}(y)</eq> denotes the scheme <eq env="math">f^{-1}(y)\otimes_{k(y)}\overline{\mathfrak{K}(y)}</eq> (where <eq env="math">\overline{\mathfrak{K}(y)}</eq> denotes an algebraic closure of <eq env="math">\mathfrak{K}(y)</eq>).</em></p>
+<p>We note that, since we cannot <em>choose</em> the same base point for all the fibres, the homomorphisms <eq env="math">\pi_1(f^{-1}(y))\to\pi_1(X)</eq> are determined (after having picked a base point for <eq env="math">X</eq>, and then for <eq env="math">Y</eq>) only up to composition with an inner automorphism of <eq env="math">\pi_1(X)</eq>.</p>
+<div id="FGA-2-theorem-11-corollary-2" class="itenv" title="Corollary 2">
+<p>Under the general conditions of <a href="FGA-2.html#FGA-2-theorem-11">Theorem 11</a>, suppose further that <eq env="math">Y</eq>, <eq env="math">X</eq>, and <eq env="math">X'</eq> are integral, and let <eq env="math">K</eq>, <eq env="math">L</eq>, and <eq env="math">L'</eq> be their fields (respectively).
+Then there exists a separable sub-extension <eq env="math">K'</eq> of <eq env="math">K</eq> in <eq env="math">L'</eq>, linearly disjoint from <eq env="math">L</eq>, such that <eq env="math">L'=LK'</eq> (whence <eq env="math">L'=L\otimes_KK'</eq>).</p>
+</div>
+<p>(We apply the last part of <a href="FGA-2.html#FGA-2-lemma-3">Lemma 3</a> to the generic fibre of <eq env="math">X</eq>).
+The most interesting case in which we can apply <a href="FGA-2.html#FGA-2-theorem-11">Theorem 11</a> is when <eq env="math">f</eq> is a <em>separable</em> morphism.
+Then <eq env="math">X'</eq> is also separable over <eq env="math">Y</eq>, and so, by <a href="FGA-2.html#FGA-2-proposition-4">Proposition 4</a>, <eq env="math">Y'</eq> is unramified over <eq env="math">Y</eq>, and so the right-hand side <eq env="math">X\times_YY'</eq> in <a href="FGA-2.html#FGA-2-equation-asterisk">Equation (<eq env="math">*</eq>)</a> is unramified over <eq env="math">X</eq>.
+From this, we easily conclude:</p>
+<div id="FGA-2-theorem-11-corollary-3" class="itenv" title="Corollary 3">
+<p>Suppose, in addition to (i), that <eq env="math">f</eq> is separable.
+Let <eq env="math">X'</eq> be a connected unramified covering of <eq env="math">X</eq>.
+For <eq env="math">X</eq> to be the inverse image of an unramified covering <eq env="math">Y'</eq> of <eq env="math">Y</eq>, it is necessary and sufficient for the induced covering <eq env="math">\overline{F}'</eq> of a geometric fibre <eq env="math">\overline{F}=\overline{f^{-1}(y)}</eq> to admit a regular section.</p>
+</div>
+<p>Note that it was not necessary to suppose that <eq env="math">\overline{F}'</eq> be <em>geometrically</em> trivial over <eq env="math">\overline{F}</eq> (which will be true <em>a posteriori</em>, even though <em>a priori</em> this condition is a lot stronger).
 
-Of course, conditions (ii) and (iii) are also necessary for the conclusion of the theorem.
-The proof of the theorem is easy, thanks to \hyperref[lemma3]{Lemma 3} and [Theorem 2](#FGA-2-theorem-2).
-
-\begin{itenv}{Corollary 1}
-\label{theorem11corollary1}
-  Suppose that (i) is still satisfied.
-  For an unramified covering over $X$ to be isomorphic to the inverse image of an unramified covering $Y'$ of $Y$, it is necessary and sufficient for $X'$ to induce, on each fibre $f^{-1}(y)$, a geometrically trivial covering.
-\end{itenv}
-
-By [Theorem 11](#FGA-2-theorem-11), the set of points of $Y$ for which this condition is satisfied is open, and so it suffices to verify it at the points $y$ which are closed \ldots.
-Note that the following statement is equivalent to \hyperref[theorem11corollary1]{Corollary 1}:
-\begin{quote}
-  \itshape
-  The kernel of the homomorphism $\pi_1(X)\to\pi_1(Y)$ (which is surjective, by \hyperref[lemma4]{Lemma 4}) is the closed invariant subgroup generated by the images in $\pi_1(X)$ of $\pi_1(f^{-1}(y))$, where $f^{-1}(y)$ denotes the scheme $f^{-1}(y)\otimes_{k(y)}\overline{\kres(y)}$ (where $\overline{\kres(y)}$ denotes an algebraic closure of $\kres(y)$).
-\end{quote}
-We note that, since we cannot _choose_ the same base point for all the fibres, the homomorphisms $\pi_1(f^{-1}(y))\to\pi_1(X)$ are determined (after having picked a base point for $X$, and then for $Y$) only up to composition with an inner automorphism of $\pi_1(X)$.
-
-\begin{itenv}{Corollary 2}
-\label{theorem11corollary2}
-  Under the general conditions of [Theorem 11](#FGA-2-theorem-11), suppose further that $Y$, $X$, and $X'$ are integral, and let $K$, $L$, and $L'$ be their fields (respectively).
-  Then there exists a separable sub-extension $K'$ of $K$ in $L'$, linearly disjoint from $L$, such that $L'=LK'$ (whence $L'=L\otimes_KK'$).
-\end{itenv}
-
-(We apply the last part of \hyperref[lemma3]{Lemma 3} to the generic fibre of $X$).
-The most interesting case in which we can apply [Theorem 11](#FGA-2-theorem-11) is when $f$ is a _separable_ morphism.
-Then $X'$ is also separable over $Y$, and so, by \hyperref[proposition4]{Proposition 4}, $Y'$ is unramified over $Y$, and so the right-hand side $X\times_YY'$ in \hyperref[equation*]{equation ($*$)} is unramified over $X$.
-From this, we easily conclude:
-
-\begin{itenv}{Corollary 3}
-\label{theorem11corollary3}
-  Suppose, in addition to (i), that $f$ is separable.
-  Let $X'$ be a connected unramified covering of $X$.
-  For $X$ to be the inverse image of an unramified covering $Y'$ of $Y$, it is necessary and sufficient for the induced covering $\overline{F}'$ of a geometric fibre $\overline{F}=\overline{f^{-1}(y)}$ to admit a regular section.
-\end{itenv}
-
-Note that it was not necessary to suppose that $\overline{F}'$ be _geometrically_
-\oldpage{182-23}
-trivial over $\overline{F}$ (which will be true _a posteriori_, even though _a priori_ this condition is a lot stronger).
-In, \hyperref{theorem11corollary3}[Corollary 3] is equivalent to the following statement:
-
-\begin{itenv}{Corollary 4}
-\label{theorem11corollary4}
-  Let $f\colon X\to Y$ be a proper and separable morphism such that $f_*(\scr{O}_X)=\scr{O}_Y$.
-  Let $\overline{F}$ be the geometric fibre of a point $y\in Y$, and pick a geometric point in $\overline{F}$, which, by the morphisms $\overline{F}\to X\to Y$, gives geometric points in $X$ and $Y$; we take these three points as base points for the fundamental groups of $\overline{F}$, $X$, and $Y$, respectively.
-  Under these conditions, we have the exact sequence
-  $$
-    \boxed{\pi_1(\overline{F}) \to \pi_1(X) \to \pi_1(Y) \to 0.}
-  $$
-\end{itenv}
-
-From this, we easily deduce the two following statements of Serre--Lang, with all normality hypotheses removed:
-
-\begin{itenv}{Corollary 5}
-\label{theorem11corollary5}
-  Let $X$ and $Y$ be connected schemes over a field $k$, with $X$ or $Y$ proper over $k$, and suppose that the reduced scheme $X_\red$ is separable over $k$ (which is automatically true if $k$ is perfect) and complete.
-  Pick a geometric point $a$ (resp. $b$) in $X$ (resp. $Y$); this gives a geometric point $c=(a,b)$ in $X\times_kY$, and a natural morphism
-  $$
-    \pi_1(X\times_kY,c) \to \pi_1(X,a)\times\pi_1(Y,b)
-  $$
-  (induced by the functorial morphisms from $\pi_1(X\times Y,c)$ to $\pi_1(X,a)$ and $\pi_1(Y,b)$).
-  This morphism is injective, and further bijective if $k$ is algebraically closed.
-\end{itenv}
-
-(The surjectivity in the above claim is almost trivial).
-We thus deduce, with Serre--Lang:
-
-\begin{itenv}{Corollary 6}
-\label{theorem11corollary6}
-  Let $X$ be a connected algebraic scheme over an algebraically closed field $k$, and let $K$ be an algebraically closed extension of $k$.
-  Then the fundamental groups of $X$ and $X\times_kK$ are the same, i.e. every unramified covering of the latter scheme is given by extension of scalars of an unramified covering (which is unique up to isomorphism) of $X$.
-\end{itenv}
-
-\begin{rmenv}{Remarks}
-  \begin{enumerate}[1)]
-    \item Using \hyperref[proposition4]{Proposition 4}, we see that the hypothesis that $f_*(\scr{O}_X)=\scr{O}_Y$ in \hyperref[theorem11corollary4]{Corollary 4} is not essential.
-      In the general case, instead of putting the trivial group $e$ after $\pi_1(Y)$, one must continue by $\pi_0(\overline{F})\to\pi_0(X)\to\pi_0(Y)\to e$,
-\oldpage{182-24}
-      as in algebraic topology.
-    \item In general, we cannot say anything at the moment about the kernel of $\pi_1(\overline{F})\to\pi_1(X)$, although it should involve a $\pi_2(Y)$.
-      It seems, however, that we should be able to prove that $\pi_1(\overline{F})\to\pi_1(X)$ is _injective_ if $Y$ is the spectrum of a local ring $A$, by appealing to [Theorem 12](#FGA-2-theorem-12) below (which shows that this is the case if $A$ is _complete_).
-  \end{enumerate}
-\end{rmenv}
-
- [Theorem 11](#FGA-2-theorem-11) used only [Theorem 1](#FGA-2-theorem-1) and [Theorem 2](#FGA-2-theorem-2).
-We will now use [Theorem 3](#FGA-2-theorem-3), along with the following elementary lemma:
-
-\begin{itenv}{Lemma 6}
-\label{lemma6}
-  Let $X$ be a scheme, and $X_0$ the corresponding reduced scheme (i.e. where we have killed all the nilpotent elements).
-  Then every unramified covering $X'_0$ of $X_0$ is induced by an unramified covering $X'$ of $X$, determined up to isomorphism.
-\end{itenv}
-
-This lemma, which is of a purely local nature, plays a role analogous to that of [Theorem 8](#FGA-2-theorem-8) here, in the theory of modules.
-Combining it with the existence theorem ( [Theorem 3](#FGA-2-theorem-3)), we obtain:
-
-\begin{itenv}{Theorem 12}
-\label{theorem12}
-  Let $A$ be a complete local Noetherian ring with residue field $k$.
-  Let $X$ be a proper scheme over $A$.
-  Then every unramified covering $X'_0$ of $X_0=X\otimes_Ak$ is induced by an unramified covering $X'$ of $X$, unique up to isomorphism.
-\end{itenv}
-
-In other words:
-
-\begin{itenv}{Corollary 1}
-\label{theorem12corollary1}
-  Pick a geometric point in $X_0$ as the base point for the fundamental groups of $X_0$ and $X$.
-  Then the canonical homomorphism $\pi_1(X_0)\to\pi_1(X)$ is an _isomorphism_.
-\end{itenv}
-
-Applying \hyperref[lemma5]{Lemma 5} to $X_0$ (supposing that $H^0(X_0,\scr{O}_{X_0})=k$, for simplicity), and noting that, since $A$ is complete, the unramified extensions of $A$ correspond to unramified extensions of its residue field, i.e. $\pi_1(Y)=\pi_1(k)$ (where $Y=\Spec(A)$).
+<a href="FGA-2.html#FGA-2-theorem-11-corollary-3">Corollary 3</a> is equivalent to the following statement:</p>
+<div id="FGA-2-theorem-11-corollary-4" class="itenv" title="Corollary 4">
+<p>Let <eq env="math">f\colon X\to Y</eq> be a proper and separable morphism such that <eq env="math">f_*({\mathscr{O}}_X)={\mathscr{O}}_Y</eq>.
+Let <eq env="math">\overline{F}</eq> be the geometric fibre of a point <eq env="math">y\in Y</eq>, and pick a geometric point in <eq env="math">\overline{F}</eq>, which, by the morphisms <eq env="math">\overline{F}\to X\to Y</eq>, gives geometric points in <eq env="math">X</eq> and <eq env="math">Y</eq>; we take these three points as base points for the fundamental groups of <eq env="math">\overline{F}</eq>, <eq env="math">X</eq>, and <eq env="math">Y</eq>, respectively.
+Under these conditions, we have the exact sequence
+<eq env="displaymath">
+  \boxed{\pi_1(\overline{F}) \to \pi_1(X) \to \pi_1(Y) \to 0.}
+</eq></p>
+</div>
+<p>From this, we easily deduce the two following statements of Serre–Lang, with all normality hypotheses removed:</p>
+<div id="FGA-2-theorem-11-corollary-5" class="itenv" title="Corollary 5">
+<p>Let <eq env="math">X</eq> and <eq env="math">Y</eq> be connected schemes over a field <eq env="math">k</eq>, with <eq env="math">X</eq> or <eq env="math">Y</eq> proper over <eq env="math">k</eq>, and suppose that the reduced scheme <eq env="math">X_\mathrm{red}</eq> is separable over <eq env="math">k</eq> (which is automatically true if <eq env="math">k</eq> is perfect) and complete.
+Pick a geometric point <eq env="math">a</eq> (resp. <eq env="math">b</eq>) in <eq env="math">X</eq> (resp. <eq env="math">Y</eq>); this gives a geometric point <eq env="math">c=(a,b)</eq> in <eq env="math">X\times_kY</eq>, and a natural morphism
+<eq env="displaymath">
+  \pi_1(X\times_kY,c) \to \pi_1(X,a)\times\pi_1(Y,b)
+</eq>
+(induced by the functorial morphisms from <eq env="math">\pi_1(X\times Y,c)</eq> to <eq env="math">\pi_1(X,a)</eq> and <eq env="math">\pi_1(Y,b)</eq>).
+This morphism is injective, and further bijective if <eq env="math">k</eq> is algebraically closed.</p>
+</div>
+<p>(The surjectivity in the above claim is almost trivial).
+We thus deduce, with Serre–Lang:</p>
+<div id="FGA-2-theorem-11-corollary-6" class="itenv" title="Corollary 6">
+<p>Let <eq env="math">X</eq> be a connected algebraic scheme over an algebraically closed field <eq env="math">k</eq>, and let <eq env="math">K</eq> be an algebraically closed extension of <eq env="math">k</eq>.
+Then the fundamental groups of <eq env="math">X</eq> and <eq env="math">X\times_kK</eq> are the same, i.e. every unramified covering of the latter scheme is given by extension of scalars of an unramified covering (which is unique up to isomorphism) of <eq env="math">X</eq>.</p>
+</div>
+<div class="rmenv" title="Remarks">
+<p>—</p>
+<ol style="list-style-type: decimal">
+<li>Using <a href="FGA-2.html#FGA-2-proposition-4">Proposition 4</a>, we see that the hypothesis that <eq env="math">f_*({\mathscr{O}}_X)={\mathscr{O}}_Y</eq> in <a href="FGA-2.html#FGA-2-theorem-11-corollary-4">Corollary 4</a> is not essential.
+In the general case, instead of putting the trivial group <eq env="math">e</eq> after <eq env="math">\pi_1(Y)</eq>, one must continue by <eq env="math">\pi_0(\overline{F})\to\pi_0(X)\to\pi_0(Y)\to e</eq>,
+as in algebraic topology.</li>
+</ol>
+<ol start="2" style="list-style-type: decimal">
+<li>In general, we cannot say anything at the moment about the kernel of <eq env="math">\pi_1(\overline{F})\to\pi_1(X)</eq>, although it should involve a <eq env="math">\pi_2(Y)</eq>.
+It seems, however, that we should be able to prove that <eq env="math">\pi_1(\overline{F})\to\pi_1(X)</eq> is <em>injective</em> if <eq env="math">Y</eq> is the spectrum of a local ring <eq env="math">A</eq>, by appealing to <a href="FGA-2.html#FGA-2-theorem-12">Theorem 12</a> below (which shows that this is the case if <eq env="math">A</eq> is <em>complete</em>).</li>
+</ol>
+</div>
+<p><a href="FGA-2.html#FGA-2-theorem-11">Theorem 11</a> used only <a href="FGA-2.html#FGA-2-theorem-1">Theorem 1</a> and <a href="FGA-2.html#FGA-2-theorem-2">Theorem 2</a>;
+we will now use <a href="FGA-2.html#FGA-2-theorem-3">Theorem 3</a>, along with the following elementary lemma:</p>
+<div id="FGA-2-lemma-6" class="itenv" title="Lemma 6">
+<p>Let <eq env="math">X</eq> be a scheme, and <eq env="math">X_0</eq> the corresponding reduced scheme (i.e. where we have killed all the nilpotent elements).
+Then every unramified covering <eq env="math">X'_0</eq> of <eq env="math">X_0</eq> is induced by an unramified covering <eq env="math">X'</eq> of <eq env="math">X</eq>, determined up to isomorphism.</p>
+</div>
+<p>This lemma, which is of a purely local nature, plays a role analogous to that of <a href="FGA-2.html#FGA-2-theorem-8">Theorem 8</a> here, in the theory of modules.
+Combining it with the existence theorem (<a href="FGA-2.html#FGA-2-theorem-3">Theorem 3</a>), we obtain:</p>
+<div id="FGA-2-theorem-12" class="itenv" title="Theorem 12">
+<p>Let <eq env="math">A</eq> be a complete local Noetherian ring with residue field <eq env="math">k</eq>.
+Let <eq env="math">X</eq> be a proper scheme over <eq env="math">A</eq>.
+Then every unramified covering <eq env="math">X'_0</eq> of <eq env="math">X_0=X\otimes_Ak</eq> is induced by an unramified covering <eq env="math">X'</eq> of <eq env="math">X</eq>, unique up to isomorphism.</p>
+</div>
+<p>In other words:</p>
+<div id="FGA-2-theorem-12-corollary-1" class="itenv" title="Corollary 1">
+<p>Pick a geometric point in <eq env="math">X_0</eq> as the base point for the fundamental groups of <eq env="math">X_0</eq> and <eq env="math">X</eq>.
+Then the canonical homomorphism <eq env="math">\pi_1(X_0)\to\pi_1(X)</eq> is an <em>isomorphism</em>.</p>
+</div>
+<p>Applying <a href="FGA-2.html#FGA-2-lemma-5">Lemma 5</a> to <eq env="math">X_0</eq> (supposing that <eq env="math">H^0(X_0,{\mathscr{O}}_{X_0})=k</eq>, for simplicity), and noting that, since <eq env="math">A</eq> is complete, the unramified extensions of <eq env="math">A</eq> correspond to unramified extensions of its residue field, i.e. <eq env="math">\pi_1(Y)=\pi_1(k)</eq> (where <eq env="math">Y=\operatorname{Spec}(A)</eq>).
 We obtain the exact sequence:
-$$
+<eq env="displaymath">
   e \to \pi_1(\overline{X_0}) \to \pi_1(X) \to \pi_1(Y) \to e.
-$$
+</eq></p>
+<div id="FGA-2-theorem-12-corollary-2" class="itenv" title="Corollary 2">
+<p>Let <eq env="math">f\colon X\to Y</eq> be a proper flat morphism, and let <eq env="math">y_1</eq> be a point of <eq env="math">Y</eq>, and <eq env="math">y_0</eq> a specialisation of <eq env="math">y_1</eq>.
+Consider the corresponding “geometric” fibres <eq env="math">\overline{X_1}</eq> and <eq env="math">\overline{X_0}</eq>, and suppose that <eq env="math">\overline{X_0}</eq> is separable and connected (which implies that <eq env="math">\overline{X_1}</eq> satisfies the same conditions).
+Then we can find a group homomorphism <eq env="math">\pi_1(X_1)\to\pi_1(X_0)</eq>, defined up to inner automorphism.
+Further, this homomorphism is <em>surjective</em>.</p>
+</div>
 
-\begin{itenv}{Corollary 2}
-\label{theorem12corollary2}
-  Let $f\colon X\to Y$ be a proper flat morphism, and let $y_1$ be a point of $Y$, and $y_0$ a specialisation of $y_1$.
-  Consider the corresponding "geometric" fibres $\overline{X_1}$ and $\overline{X_0}$, and suppose that $\overline{X_0}$ is separable and connected (which implies that $\overline{X_1}$ satisfies the same conditions).
-  Then we can find a group homomorphism $\pi_1(X_1)\to\pi_1(X_0)$, defined up to inner automorphism.
-  Further, this homomorphism is _surjective_.
-\end{itenv}
-
-\oldpage{182-25}
-We might hope that this homomorphism is always _bijective_.
-Unfortunately, this is not the case in general if $\kres(y_0)$ is of characteristic $>0$.
-We will, however, obtain below a group containing the kernel of this homomorphism (at least in the case where $\overline{X_0}$ is simple), implying that, if $\kres(y_0)$ is of characteristic $0$, then the above homomorphism is bijective (which is a result that we can also prove by transcendentality).
-At the very least, we already have, in any case, a group containing $\pi_1$, given by a special fibre, using the one given by a generic fibre.
-Using, for example, the fact that an algebraic curve in characteristic $p$ lifts to a curve in characteristic $0$ (\hyperref[theorem9corollary4]{Corollary 4} of [Theorem 9](#FGA-2-theorem-9)), we obtain, by transcendentality:
-
-\begin{itenv}{Corollary 3}
-\label{theorem12corollary3}
-  Let $X_0$ be the scheme of complete simple curve over an algebraically closed field of arbitrary characteristic, and let $g$ be the genus of $X_0$.
-  Then $\pi_1(X_0)$ admits $2g$ topological generators, related by the well-known relation.
-\end{itenv}
-
-We thus deduce, by a well-known technique using hyperplane sections:
-
-\begin{itenv}{Corollary 4}
-\label{theorem12corollary4}
-  Let $X$ be a simple projective scheme over an algebraically closed field of arbitrary characteristic.
-  Then $\pi_1(X)$ admits a finite number of topological generators.
-\end{itenv}
-
-We wish to describe the kernel of the homomorphism $\pi_1(\overline{X_1})\to\pi_1(\overline{X_0})$.
-For this, we can suppose that $Y$ is the spectrum of a discrete complete valuation ring $V=\scr{O}_y$ (where $y=y_0$).
+<p>We might hope that this homomorphism is always <em>bijective</em>.
+Unfortunately, this is not the case in general if <eq env="math">\mathfrak{K}(y_0)</eq> is of characteristic <eq env="math">&gt;0</eq>.
+We will, however, obtain below a group containing the kernel of this homomorphism (at least in the case where <eq env="math">\overline{X_0}</eq> is simple), implying that, if <eq env="math">\mathfrak{K}(y_0)</eq> is of characteristic <eq env="math">0</eq>, then the above homomorphism is bijective (which is a result that we can also prove by transcendentality).
+At the very least, we already have, in any case, a group containing <eq env="math">\pi_1</eq>, given by a special fibre, using the one given by a generic fibre.
+Using, for example, the fact that an algebraic curve in characteristic <eq env="math">p</eq> lifts to a curve in characteristic <eq env="math">0</eq> (<a href="FGA-2.html#FGA-2-theorem-9-corollary-4">Corollary 4 of Theorem 9</a>), we obtain, by transcendentality:</p>
+<div id="FGA-2-theorem-12-corollary-3" class="itenv" title="Corollary 3">
+<p>Let <eq env="math">X_0</eq> be the scheme of complete simple curve over an algebraically closed field of arbitrary characteristic, and let <eq env="math">g</eq> be the genus of <eq env="math">X_0</eq>.
+Then <eq env="math">\pi_1(X_0)</eq> admits <eq env="math">2g</eq> topological generators, related by the well-known relation.</p>
+</div>
+<p>We thus deduce, by a well-known technique using hyperplane sections:</p>
+<div id="FGA-2-theorem-12-corollary-4" class="itenv" title="Corollary 4">
+<p>Let <eq env="math">X</eq> be a simple projective scheme over an algebraically closed field of arbitrary characteristic.
+Then <eq env="math">\pi_1(X)</eq> admits a finite number of topological generators.</p>
+</div>
+<p>We wish to describe the kernel of the homomorphism <eq env="math">\pi_1(\overline{X_1})\to\pi_1(\overline{X_0})</eq>.
+For this, we can suppose that <eq env="math">Y</eq> is the spectrum of a discrete complete valuation ring <eq env="math">V={\mathscr{O}}_y</eq> (where <eq env="math">y=y_0</eq>).
 The question is the equivalent to the following:
-given an unramified covering $\overline{X'_1}$ of $\overline{X_1}$ (which as can suppose to be Galois, if we wish), under which conditions must it come from an unramified covering of $X_0$?
-A priori, the given covering comes, by extension of scalars, from an unramified covering $X'_1$ of $X_1\otimes_KK'$, where $K'$ is a finite extension of the algebraic closure $\overline{K}$ of the field of fractions $K$ of $V$;
-if $X'_1$ were Galois, of group $G$, then we could choose $X'_1$ to also be Galois of group $G$.
-Thus: _for $X'_1\otimes_{K'}\overline{K}=\overline{X'_1}$ to come from an unramified covering of $X_0$, it is necessary and sufficient for there to exists a finite extension $K''$ of $K'$ in $\overline{K}$ such that $X''_1=X'_1\otimes_{K'}K''$ is of the form $X''\otimes_{V''}K''$, where $V''$ is the normal closure of $V$ in $K''$, and where $X''$ is an unramified covering of $X\otimes_V V''$._
-Suppose, for example, that $X_0$ is absolutely normal, whence $X\otimes_V V''$ is normal (since it is flat over $V''$ and has normal special fibre), and its field of functions is identical to $K''(X_1)$, which is the field of functions of
-$$
+given an unramified covering <eq env="math">\overline{X'_1}</eq> of <eq env="math">\overline{X_1}</eq> (which as can suppose to be Galois, if we wish), under which conditions must it come from an unramified covering of <eq env="math">X_0</eq>?
+A priori, the given covering comes, by extension of scalars, from an unramified covering <eq env="math">X'_1</eq> of <eq env="math">X_1\otimes_KK'</eq>, where <eq env="math">K'</eq> is a finite extension of the algebraic closure <eq env="math">\overline{K}</eq> of the field of fractions <eq env="math">K</eq> of <eq env="math">V</eq>;
+if <eq env="math">X'_1</eq> were Galois, of group <eq env="math">G</eq>, then we could choose <eq env="math">X'_1</eq> to also be Galois of group <eq env="math">G</eq>.
+Thus: <em>for <eq env="math">X'_1\otimes_{K'}\overline{K}=\overline{X'_1}</eq> to come from an unramified covering of <eq env="math">X_0</eq>, it is necessary and sufficient for there to exists a finite extension <eq env="math">K''</eq> of <eq env="math">K'</eq> in <eq env="math">\overline{K}</eq> such that <eq env="math">X''_1=X'_1\otimes_{K'}K''</eq> is of the form <eq env="math">X''\otimes_{V''}K''</eq>, where <eq env="math">V''</eq> is the normal closure of <eq env="math">V</eq> in <eq env="math">K''</eq>, and where <eq env="math">X''</eq> is an unramified covering of <eq env="math">X\otimes_V V''</eq>.</em>
+Suppose, for example, that <eq env="math">X_0</eq> is absolutely normal, whence <eq env="math">X\otimes_V V''</eq> is normal (since it is flat over <eq env="math">V''</eq> and has normal special fibre), and its field of functions is identical to <eq env="math">K''(X_1)</eq>, which is the field of functions of
+<eq env="displaymath">
   X_1\otimes_K K'' = (X\otimes_VK)\otimes_KK'' = X\otimes_VK'' = (X\otimes_VV'')\otimes_{V''}K''.
-$$
-\oldpage{182-26}
-Let $L''=K''(X'_1)$ be the field of functions of $X'_1\otimes_{K'}K''$, which is a separable finite extension of $K''(X_1)$, and the above condition also implies that _$L''$ is an unramified extension of the field of functions of $X\otimes_VV''$_ (i.e. the normalisation of $X\otimes_V V''$ in $L''$ is unramified over $X\otimes_VV''$).
-It suffices to show that $L''$ is unramified at the points of the special fibre of $X\otimes_VV''$ (since it is unramified over the generic fibre $X_1\otimes_KK''$).
-If $X_0$ is now _simple_, then it follows from the "_purity theorem_" of Nagata--Zariski that it even suffices to show that $L''$ is unramified over the local ring $\scr{O}''$ of the generic point of the normalisation of $X\otimes_VV''$, which is a discrete valuation ring, equal to the normalisation in $K''(X_1)$ of the local ring $\scr{O}\subset K(X_1)$ of the generic point of the special fibre of $X$.
-We thus obtain:
+</eq>
 
-\begin{itenv}{Corollary 5}
-\label{theorem12corollary5}
-  Under the above conditions, and with the above notation, for the unramified covering $X'_1\otimes_{K'}\overline{K}$ of $\overline{X_1}=X_1\otimes_K\overline{K}$ to come from an unramified covering of $\overline{X_0}$, it is necessary and sufficient for there to exist a finite sub-extension $K''$ of $\overline{K}/K'$ such that $K''(X'_1)$ is unramified over the discrete valuation ring $\scr{O}''\subset K''(X_1)$.
-\end{itenv}
+Let <eq env="math">L''=K''(X'_1)</eq> be the field of functions of <eq env="math">X'_1\otimes_{K'}K''</eq>, which is a separable finite extension of <eq env="math">K''(X_1)</eq>, and the above condition also implies that <em><eq env="math">L''</eq> is an unramified extension of the field of functions of <eq env="math">X\otimes_VV''</eq></em> (i.e. the normalisation of <eq env="math">X\otimes_V V''</eq> in <eq env="math">L''</eq> is unramified over <eq env="math">X\otimes_VV''</eq>).
+It suffices to show that <eq env="math">L''</eq> is unramified at the points of the special fibre of <eq env="math">X\otimes_VV''</eq> (since it is unramified over the generic fibre <eq env="math">X_1\otimes_KK''</eq>).
+If <eq env="math">X_0</eq> is now <em>simple</em>, then it follows from the “<em>purity theorem</em>” of Nagata–Zariski that it even suffices to show that <eq env="math">L''</eq> is unramified over the local ring <eq env="math">{\mathscr{O}}''</eq> of the generic point of the normalisation of <eq env="math">X\otimes_VV''</eq>, which is a discrete valuation ring, equal to the normalisation in <eq env="math">K''(X_1)</eq> of the local ring <eq env="math">{\mathscr{O}}\subset K(X_1)</eq> of the generic point of the special fibre of <eq env="math">X</eq>.
+We thus obtain:</p>
+<div id="FGA-2-theorem-12-corollary-5" class="itenv" title="Corollary 5">
+<p>Under the above conditions, and with the above notation, for the unramified covering <eq env="math">X'_1\otimes_{K'}\overline{K}</eq> of <eq env="math">\overline{X_1}=X_1\otimes_K\overline{K}</eq> to come from an unramified covering of <eq env="math">\overline{X_0}</eq>, it is necessary and sufficient for there to exist a finite sub-extension <eq env="math">K''</eq> of <eq env="math">\overline{K}/K'</eq> such that <eq env="math">K''(X'_1)</eq> is unramified over the discrete valuation ring <eq env="math">{\mathscr{O}}''\subset K''(X_1)</eq>.</p>
+</div>
+<p>Now note that <eq env="math">{\mathscr{O}}''</eq> is the normalisation in <eq env="math">K''(X_1)</eq> of the discrete valuation ring <eq env="math">{\mathscr{O}}'\subset K'(X_1)</eq> (which is the normalisation of <eq env="math">{\mathscr{O}}</eq> in <eq env="math">K'(X_1)</eq>), and that <eq env="math">{\mathscr{O}}'</eq> contains the normalisation <eq env="math">V'</eq> of <eq env="math">V</eq> in <eq env="math">K'</eq>, with a uniformiser <eq env="math">u</eq> of <eq env="math">V'</eq> being also a uniformiser of <eq env="math">{\mathscr{O}}'</eq>.
+Suppose now that <eq env="math">X'_1</eq> is Galois, with Galois group <eq env="math">G</eq> <em>of order <eq env="math">n</eq>, coprime to the characteristic <eq env="math">p</eq> of <eq env="math">\mathfrak{K}(y_0)</eq></em> (which is also the characteristic of the residue field of <eq env="math">{\mathscr{O}}'</eq>).
+Then <eq env="math">K'(X_1')</eq> is “tamely ramified” over <eq env="math">{\mathscr{O}}'</eq>, from which it easily follows (via “<em>Abhyankar’s lemma</em>”) that, if we adjoin an <eq env="math">n</eq>-th root <eq env="math">v</eq> of a uniformiser of <eq env="math">{\mathscr{O}}'</eq>, then it becomes unramified over the normalisation of <eq env="math">{\mathscr{O}}'</eq> in <eq env="math">K'(X_1)(v)</eq>.
+But we can take <eq env="math">v</eq> to be an <eq env="math">n</eq>-th root of a uniformiser of <eq env="math">V'</eq>, which shows that the condition of <a href="FGA-2.html#FGA-2-theorem-12-corollary-5">Corollary 5</a> is satisfied.
+(This idea of using Abhyankar’s lemma and the purity theorem was given to me by Serre).
+To express the result we thus obtain, we introduce, for every totally disconnected compact group <eq env="math">\pi</eq>, the quotient <eq env="math">\overline{\pi}</eq> of <eq env="math">\pi</eq> by the closed subgroup generated by its Sylow <eq env="math">p</eq>-sub-groups, i.e. the projective limit of the discrete quotient groups of <eq env="math">\pi</eq> that are of order coprime to <eq env="math">p</eq>.
+With this notation, we obtain:</p>
+<div id="FGA-2-theorem-13" class="itenv" title="Theorem 13">
+<p>Let <eq env="math">f\colon X\to Y</eq> be a proper flat morphism, <eq env="math">y_1</eq> a point of <eq env="math">Y</eq>, and <eq env="math">y_0</eq> a specialisation of <eq env="math">y_1</eq>.
+Suppose that <eq env="math">\overline{X_0}</eq> is connected and simple.
 
-Now note that $\scr{O}''$ is the normalisation in $K''(X_1)$ of the discrete valuation ring $\scr{O}'\subset K'(X_1)$ (which is the normalisation of $\scr{O}$ in $K'(X_1)$), and that $\scr{O}'$ contains the normalisation $V'$ of $V$ in $K'$, with a uniformiser $u$ of $V'$ being also a uniformiser of $\scr{O}'$.
-Suppose now that $X'_1$ is Galois, with Galois group $G$ _of order $n$, coprime to the characteristic $p$ of $\kres(y_0)$_ (which is also the characteristic of the residue field of $\scr{O}'$).
-Then $K'(X_1')$ is "tamely ramified" over $\scr{O}'$, from which it easily follows (via "_Abhyankar's lemma_") that, if we adjoin an $n$-th root $v$ of a uniformiser of $\scr{O}'$, then it becomes unramified over the normalisation of $\scr{O}'$ in $K'(X_1)(v)$.
-But we can take $v$ to be an $n$-th root of a uniformiser of $V'$, which shows that the condition of \hyperref[theorem12corollary5]{Corollary 5} is satisfied.
-(This idea of using Abhyankar's lemma and the purity theorem was given to me by Serre).
-To express the result we thus obtain, we introduce, for every totally disconnected compact group $\pi$, the quotient $\overline{\pi}$ of $\pi$ by the closed subgroup generated by its Sylow $p$-sub-groups, i.e. the projective limit of the discrete quotient groups of $\pi$ that are of order coprime to $p$.
-With this notation, we obtain:
+Then the homomorphism <eq env="math">\overline{\pi_1}(\overline{X_1})\to\overline{\pi_1}(\overline{X_0})</eq> induced by the
+surjective homomorphism from <a href="FGA-2.html#FGA-2-theorem-12-corollary-2">Corollary 2 of Theorem 12</a> is an <em>isomorphism</em>.</p>
+</div>
+<p>In other words:</p>
+<div id="FGA-2-theorem-13-corollary-1" class="itenv" title="Corollary 1">
+<p>The classification of unramified Galois coverings, of Galois group of order coprime to the characteristic <eq env="math">p</eq> of <eq env="math">\mathfrak{K}(y_0)</eq>, is the same for <eq env="math">\overline{X_0}</eq> and for <eq env="math">\overline{X_1}</eq>.</p>
+</div>
+<p>In particular, if <eq env="math">\mathfrak{K}(y_0)</eq> is of characteristic <eq env="math">0</eq>, then we see, algebraically, that <eq env="math">\pi_1(\overline{X_1})\to\pi_1(\overline{X_0})</eq> is bijective.</p>
+<p>We finally point out that the techniques utilised also give the following result, which is more general than <a href="FGA-2.html#FGA-2-theorem-13">Theorem 13</a>:</p>
+<div id="FGA-2-theorem-14" class="itenv" title="Theorem 14">
+<p>Let <eq env="math">f\colon X\to Y</eq> be a proper simple morphism, and let <eq env="math">D</eq> be a closed subscheme of <eq env="math">X</eq> that is simple over <eq env="math">Y</eq>, and of codimension <eq env="math">1</eq> at all points.
+Given a fibre <eq env="math">Z=f^{-1}(z)</eq> of <eq env="math">f</eq>, let <eq env="math">Z'=Z\setminus Z\cap D</eq>, and let <eq env="math">\pi_1^\mathrm{t}(\overline{Z'})</eq> be the quotient of the fundamental group <eq env="math">\pi_1(Z')</eq> that classifies the unramified coverings of <eq env="math">\overline{Z'}</eq> that are “tamely ramified” over <eq env="math">\overline{Z\cap D}</eq>.
+Let <eq env="math">y_0</eq> and <eq env="math">y_1</eq> be as in <a href="FGA-2.html#FGA-2-theorem-13">Theorem 13</a>.
+Then there exists a <em>surjective</em> homomorphism (defined up to inner automorphism) <eq env="math">\pi_1^\mathrm{t}(\overline{X'_1})\to\pi_1^\mathrm{t}(\overline{X'_0})</eq>, and the corresponding homomorphism <eq env="math">\overline{\pi_1^\mathrm{t}}(\overline{X'_1})\to\overline{\pi_1^\mathrm{t}}(\overline{X'_0})</eq> is an isomorphism.</p>
+</div>
+<p>From this we obtain corresponding variants of the corollaries of <a href="FGA-2.html#FGA-2-theorem-13">Theorem 13</a>, and of <a href="FGA-2.html#FGA-2-theorem-12-corollary-4">Corollary 4 of Theorem 12</a>.
+Similarly, using <a href="FGA-2.html#FGA-2-theorem-9-corollary-3">Corollary 3 of Theorem 9</a>, we obtain, transcendentally:</p>
+<div id="FGA-2-theorem-14-corollary-1" class="itenv" title="Corollary 1">
+<p>Let <eq env="math">X_0</eq> be the scheme of a complete simple curve over an algebraically closed field of arbitrary characteristic, and let <eq env="math">S=(s_i)_{1\leqslant i\leqslant n}</eq> be a finite subset of <eq env="math">X_0</eq> with <eq env="math">n</eq> elements.
+Then <eq env="math">\pi_1^\mathrm{t}(X_0\setminus S)</eq> admits <eq env="math">2g+n</eq> topological generators, <eq env="math">x_i,y_i,\sigma_j</eq> (for <eq env="math">1\leqslant i\leqslant g</eq> and <eq env="math">1\leqslant j\leqslant n</eq>), satisfying the relation
+<eq env="displaymath">
+  \left(\prod_i x_iy_ix_i^{-1}y_i^{-1}\right)\sigma_1\ldots\sigma_n = 1,
+</eq>
+where the <eq env="math">\sigma_j</eq> are generators of the inertia groups corresponding to the <eq env="math">s_j</eq>.
+For every finite group <eq env="math">G</eq> <em>of order coprime to the characteristic</em> that is generated by elements <eq env="math">\overline{x_i},\overline{y_i},\overline{\sigma_j}</eq> satisfying the above relation, there exists an unramified Galois covering of <eq env="math">X_0\setminus S</eq>, of group <eq env="math">G</eq>, with inertia groups at the points <eq env="math">s_j</eq> generated by the <eq env="math">\overline{\sigma_j}</eq>.</p>
+</div>
+<p>If <eq env="math">X_0</eq> is of genus <eq env="math">0</eq>, and <eq env="math">n=3</eq>, then we have a solution to the “<em>three point problem</em>”, at least for Galois coverings of order coprime to the characteristic.
 
-\begin{itenv}{Theorem 13}
-\label{theorem13}
-  Let $f\colon X\to Y$ be a proper flat morphism, $y_1$ a point of $Y$, and $y_0$ a specialisation of $y_1$.
-  Suppose that $\overline{X_0}$ is connected and simple.
-  Then the homomorphism $\overline{\pi_1}(\overline{X_1})\to\overline{\pi_1}(\overline{X_0})$ induced by the
-\oldpage{182-27}
-  surjective homomorphism from \hyperref[theorem12corollary2]{Corollary 2} of [Theorem 12](#FGA-2-theorem-12) is an _isomorphism_.
-\end{itenv}
-
-In other words:
-
-\begin{itenv}{Corollary 1}
-\label{theorem13corollary1}
-  The classification of unramified Galois coverings, of Galois group of order coprime to the characteristic $p$ of $\kres(y_0)$, is the same for $\overline{X_0}$ and for $\overline{X_1}$.
-\end{itenv}
-
-In particular, if $\kres(y_0)$ is of characteristic $0$, then we see, algebraically, that $\pi_1(\overline{X_1})\to\pi_1(\overline{X_0})$ is bijective.
-
-We finally point out that the techniques utilised also give the following result, which is more general than [Theorem 13](#FGA-2-theorem-13):
-
-\begin{itenv}{Theorem 14}
-\label{theorem14}
-  Let $f\colon X\to Y$ be a proper simple morphism, and let $D$ be a closed subscheme of $X$ that is simple over $Y$, and of codimension $1$ at all points.
-  Given a fibre $Z=f^{-1}(z)$ of $f$, let $Z'=Z\setminus Z\cap D$, and let $\pi_1^\mathrm{t}(\overline{Z'})$ be the quotient of the fundamental group $\pi_1(Z')$ that classifies the unramified coverings of $\overline{Z'}$ that are "tamely ramified" over $\overline{Z\cap D}$.
-  Let $y_0$ and $y_1$ be as in [Theorem 13](#FGA-2-theorem-13).
-  Then there exists a _surjective_ homomorphism (defined up to inner automorphism) $\pi_1^\mathrm{t}(\overline{X'_1})\to\pi_1^\mathrm{t}(\overline{X'_0})$, and the corresponding homomorphism $\overline{\pi_1^\mathrm{t}}(\overline{X'_1})\to\overline{\pi_1^\mathrm{t}}(\overline{X'_0})$ is an isomorphism.
-\end{itenv}
-
-From this we obtain corresponding variants of the corollaries of [Theorem 13](#FGA-2-theorem-13), and of \hyperref[theorem12corollary4]{Corollary 4} of [Theorem 12](#FGA-2-theorem-12).
-Similarly, using \hyperref[theorem9corollary3]{Corollary 3} of [Theorem 9](#FGA-2-theorem-9), we obtain, transcendentally:
-
-\begin{itenv}{Corollary 1}
-\label{theorem14corollary1}
-  Let $X_0$ be the scheme of a complete simple curve over an algebraically closed field of arbitrary characteristic, and let $S=(s_i)_{1\leq i\leq n}$ be a finite subset of $X_0$ with $n$ elements.
-  Then $\pi_1^\mathrm{t}(X_0\setminus S)$ admits $2g+n$ topological generators, $x_i,y_i,\sigma_j$ (for $1\leq i\leq g$ and $1\leq j\leq n$), satisfying the relation
-  $$
-    \left(\prod_i x_iy_ix_i^{-1}y_i^{-1}\right)\sigma_1\ldots\sigma_n = 1,
-  $$
-  where the $\sigma_j$ are generators of the inertia groups corresponding to the $s_j$.
-  For every finite group $G$ _of order coprime to the characteristic_ that is generated by elements $\overline{x_i},\overline{y_i},\overline{\sigma_j}$ satisfying the above relation, there exists an unramified Galois covering of $X_0\setminus S$, of group $G$, with inertia groups at the points $s_j$ generated by the $\overline{\sigma_j}$.
-\end{itenv}
-
-If $X_0$ is of genus $0$, and $n=3$, then we have a solution to the
-\oldpage{182-28}
-"_three point problem_", at least for Galois coverings of order coprime to the characteristic.
-(Here, [Theorem 9](#FGA-2-theorem-9) is actually useless, and it seems that we can deduce the above corollary from the particular case in question in the three point problem).
-
-\begin{rmenv}{Remarks}
-  \begin{enumerate}[1)]
-    \item A more complete study, probably involving generalised Galois coverings of $X$, $X_0$, and $X_1$ (of eventually infinitesimal Galois group), should allow one to recover the kernel in \hyperref[theorem12corollary2]{Corollary 2} of [Theorem 12](#FGA-2-theorem-12).
-      However, a study of coverings admitting ramifications that are not "tame" seems much more difficult.
-    \item \hyperref[lemma6]{Lemma 6}, combined with a result of Grauert concerning the formal completion of a non-singular projective scheme along a hyperplane section (or with the theorem, as yet unproven, mentioned in Remark 2 after [Theorem 11](#FGA-2-theorem-11)), would also allow us to prove, in "abstract" algebraic geometry, the classical _Lefschetz theorem_ on the fundamental group.
-  \end{enumerate}
-\end{rmenv} -->
+(Here, <a href="FGA-2.html#FGA-2-theorem-9">Theorem 9</a> is actually useless, and it seems that we can deduce the above corollary from the particular case in question in the three point problem).</p>
+<div class="rmenv" title="Remarks">
+<p>—</p>
+<ol style="list-style-type: decimal">
+<li><p>A more complete study, probably involving generalised Galois coverings of <eq env="math">X</eq>, <eq env="math">X_0</eq>, and <eq env="math">X_1</eq> (of eventually infinitesimal Galois group), should allow one to recover the kernel in <a href="FGA-2.html#FGA-2-theorem-12-corollary-2">Corollary 2 of Theorem 12</a>.
+However, a study of coverings admitting ramifications that are not “tame” seems much more difficult.</p></li>
+<li><p><a href="FGA-2.html#FGA-2-lemma-6">Lemma 6</a>, combined with a result of Grauert concerning the formal completion of a non-singular projective scheme along a hyperplane section (or with the theorem, as yet unproven, mentioned in Remark 2 after <a href="FGA-2.html#FGA-2-theorem-11">Theorem 11</a>), would also allow us to prove, in “abstract” algebraic geometry, the classical <em>Lefschetz theorem</em> on the fundamental group.</p></li>
+</ol>
+</div>
 
 </div>
 </div>
