@@ -10,6 +10,8 @@
 
 <!-- Shortcuts -->
 
+\providecommand{\ourrar}[2]{\overset{#1}{\underset{#2}{\rightrightarrows}}}
+\providecommand{\oullar}[2]{\overset{#1}{\underset{#2}{\leftleftarrows}}}
 \providecommand{\id}{\operatorname{id}}
 \providecommand{\Hom}{\operatorname{Hom}}
 \providecommand{\shHom}{\underline{\Hom}}
@@ -48,13 +50,12 @@ It is worth noting as well that this aforementioned technique of descent can cer
 In any case, the recent work of Kodaira--Spencer, whose methods seem unfit for defining and studying "varieties of modules" in the neighbourhood of their singular points, show reasonably clearly the necessity of methods that are closer to the theory of schemes (which should naturally complement transcendental techniques).
 
 In the present exposé (namely exposé I) we will discuss the most elementary case of descent (the one indicated in the title).
-The applications of [Theorem 1](#FGA-3-I-theorem-1), [Theorem 2](#FGA-3-I-theorem-2), and [Theorem 3](#FGA-3-I-theorem-3) below (in \hyperref[B.1]{(B.1)}) are, however, already vast in number. 
+The applications of [Theorem 1](#FGA-3-I-theorem-1), [Theorem 2](#FGA-3-I-theorem-2), and [Theorem 3](#FGA-3-I-theorem-3) below (in [§B.1](#FGA-3-I-section-B.1)) are, however, already vast in number. 
 We will restrict ourselves to giving only some of them as examples, without aiming for the maximum generality possible.
 
 We will freely use the language of schemes, for which we refer to the already cited exposé, as well as [@3-I-2].
-We make clear to point out, however, that the preschemes considered in this current exposé are not necessarily Noetherian, and that the
+We make clear to point out, however, that the preschemes considered in this current exposé are not necessarily Noetherian, and that the morphisms are not necessarily of finite type.
 \oldpage{190-02}
-morphisms are not necessarily of finite type.
 So, if $A$ is a local Noetherian ring, with completion $\overline{A}$, then we will need to consider the non-Noetherian ring $\overline{\overline{A}}\otimes_A\overline{A}$, as well as the morphisms of affine schemes that correspond to the inclusions between the rings in question.
 
 ## **A.** Preliminaries on categories {-}
@@ -65,7 +66,7 @@ So, if $A$ is a local Noetherian ring, with completion $\overline{A}$, then we w
 
 ### (a) {#FGA-3-I-section-A.1.a}
 
-::: {.rmenv #FGA-3-I-section-A.1-definition-1 title="Definition 1.1" latex="{Definition 1.1}"}
+::: {.rmenv #FGA-3-I-section-A.1-definition-1.1 title="Definition 1.1" latex="{Definition 1.1}"}
 A _fibred category $\cal{F}$ with base $\cal{C}$_ (or _over $\cal{C}$_) consists of
 
 - a category $\cal{C}$
@@ -116,64 +117,57 @@ We thus obtain a category fibred over $\cal{C}$.
 
 ### (b) {#FGA-3-I-section-A.1.b}
 
-<!-- \begin{rmenv}{Definition 1.2}
-\label{definition:A.1.2}
-  A diagram
-  $$
-    \begin{tikzcd}
-      E \rar["u"]
-      & E' \rar[shift left=1,"v_1"] \rar[shift right=1,swap,"v_2"]
-      & E''
-    \end{tikzcd}
-  $$
-  of maps of sets is said to be _exact_ if $u$ is a bijection from $E$ to the subset of $E'$ consisting of the $x'\in E'$ such that $v_1(x')=v_2(x')$.
-\end{rmenv}
+::: {.rmenv #FGA-3-I-section-A.1-definition-1.2 title="Definition 1.2" latex="{Definition 1.2}"}
+A diagram of maps of sets
+$$
+  E \xrightarrow{u}
+  E' \ourrar{v_1}{v_2}
+  E''
+$$
+is said to be _exact_ if $u$ is a bijection from $E$ to the subset of $E'$ consisting of the $x'\in E'$ such that $v_1(x')=v_2(x')$.
+:::
 
-\begin{rmenv}{Definition 1.3}
-\label{definition:A.1.3}
-  Let $\cal{F}$ be a fibred category with base $\cal{C}$, and consider a diagram
-  $$
-    \begin{tikzcd}
-      S
-      & S' \lar[swap,"\alpha"]
-      & S'' \lar[shift right=1,swap,"\beta_1"] \lar[shift left=1,"\beta_2"]
-    \end{tikzcd}
-  $$
-  of morphisms in $\cal{C}$ such that $\alpha\beta_1=\alpha\beta_2$;
-  this diagram is said to be _$\cal{F}$-exact_ if, for every pair $(\xi,\eta)$ of elements of $\cal{F}_S$, the diagram
-  $$
-  \label{equation-definition:A.1.3}
-    \begin{tikzcd}
-      \Hom(\xi,\eta) \rar["\alpha^*"]
-      & \Hom(\alpha^*(\xi),\alpha^*(\eta)) \rar[shift left=1,"\beta_1^*"] \rar[shift right=1,swap,"\beta_2^*"]
-      & \Hom(\gamma^*(\xi),\gamma^*(\eta))
-    \end{tikzcd}
-  \tag{+}
-  $$
-  (where $\gamma=\alpha\beta_1=\alpha\beta_2$) of sets is exact.
+:::: {.rmenv #FGA-3-I-section-A.1-definition-1.3 title="Definition 1.3" latex="{Definition 1.3}"}
+Let $\cal{F}$ be a fibred category with base $\cal{C}$, and consider a diagram of morphisms in $\cal{C}$
+$$
+  S \xleftarrow{\alpha}
+  S' \oullar{\beta_1}{\beta_2}
+  S''
+$$
+such that $\alpha\beta_1=\alpha\beta_2$;
+this diagram is said to be _$\cal{F}$-exact_ if, for every pair $(\xi,\eta)$ of elements of $\cal{F}_S$, the diagram of sets
 
-  In this latter diagram, for simplicity, we have identified $\beta_i^*\alpha^*$ with $(\alpha\beta_i)^*=\gamma^*$, using $c_{\beta_i,\alpha}$.
-\end{rmenv}
+::: {.eqref #FGA-3-I-section-A.1-definition-1.3-equation}
+$$
+  \Hom(\xi,\eta) \xrightarrow{\alpha^*}
+  \Hom(\alpha^*(\xi),\alpha^*(\eta)) \ourrar{\beta_1^*}{\beta_2^*}
+  \Hom(\gamma^*(\xi),\gamma^*(\eta))
+\tag{+}
+$$
+:::
 
-\begin{rmenv}{Definition 1.4}
-  Let $\cal{F}$ be a fibred category with base $\cal{C}$, and consider morphisms $\beta_1,\beta_2\colon S''\to S'$ in $\cal{C}$.
-  Let $\xi'\in\cal{F}_{S'}$.
-  We define a _gluing data_ on $\xi'$ (with respect to the pair $(\beta_1,\beta_2)$) to be an isomorphism from $\beta_1^*(\xi')$ to $\beta_2^*(\xi')$.
-  If $\xi',\eta'\in\cal{F}_{S'}$ are both endowed with gluing data, then a morphism $u\colon\xi'\to\eta'$ in $\cal{F}_{S'}$ is said to be _compatible with the gluing data_ if the following diagram commutes:
-  $$
-    \begin{tikzcd}
-      \beta_1^*(\xi') \rar \dar
-      &\beta_2^*(\xi') \dar
-    \\\beta_1^*(\eta') \rar
-      &\beta_2^*(\eta').
-    \end{tikzcd}
-  $$
-\end{rmenv}
+(where $\gamma=\alpha\beta_1=\alpha\beta_2$) is exact.
+
+In this above diagram, for simplicity, we have identified $\beta_i^*\alpha^*$ with $(\alpha\beta_i)^*=\gamma^*$, using $c_{\beta_i,\alpha}$.
+::::
+
+::: {.rmenv #FGA-3-I-section-A.1-definition-1.4 title="Definition 1.4" latex="{Definition 1.4}"}
+Let $\cal{F}$ be a fibred category with base $\cal{C}$, and consider morphisms $\beta_1,\beta_2\colon S''\to S'$ in $\cal{C}$.
+Let $\xi'\in\cal{F}_{S'}$.
+We define a _gluing data_ on $\xi'$ (with respect to the pair $(\beta_1,\beta_2)$) to be an isomorphism from $\beta_1^*(\xi')$ to $\beta_2^*(\xi')$.
+If $\xi',\eta'\in\cal{F}_{S'}$ are both endowed with gluing data, then a morphism $u\colon\xi'\to\eta'$ in $\cal{F}_{S'}$ is said to be _compatible with the gluing data_ if the following diagram commutes:
+$$
+  \begin{CD}
+    \beta_1^*(\xi') @>>> \beta_2^*(\xi')
+  \\@VVV @VVV
+  \\\beta_1^*(\eta') @>>> \beta_2^*(\eta').
+  \end{CD}
+$$
+:::
 
 With this definition, the objects of $\cal{F}_{S'}$ that are endowed with gluing data (with respect to $\beta_1$ and $\beta_2$) then form a _category_.
-If $\alpha\colon S'\to S$ is a morphism such that $\alpha\beta_1=\alpha\beta_2$, then, for every $\xi\in\cal{F}_{S'}$, the object $\xi'=\alpha^*(\xi)$
+If $\alpha\colon S'\to S$ is a morphism such that $\alpha\beta_1=\alpha\beta_2$, then, for every $\xi\in\cal{F}_{S'}$, the object $\xi'=\alpha^*(\xi)$ of $\cal{F}_{S'}$ is endowed with a canonical gluing data, since
 \oldpage{190-04}
-of $\cal{F}_{S'}$ is endowed with a canonical gluing data, since
 $$
   \beta_i^*\alpha^*(\xi)
   \simeq (\alpha\beta_i)^*(\xi)
@@ -186,60 +180,55 @@ $$
 $$
 is a morphism in $\cal{F}_{S'}$ that is compatible with the canonical gluing data.
 We thus obtain a _canonical functor_ from the category $\cal{F}_S$ to the category of objects of $\cal{F}_{S'}$ endowed with gluing data with respect to the pair $(\beta_1,\beta_2)$.
-With this, we can also rephrase \hyperref[definition:A.1.3]{Definition 1.3} by saying that the diagram \hyperref[equation-definition:A.1.3]{(+)} is _$\cal{F}$-exact_ if the above functor is _fully faithful_, i.e. if the above functor defines an equivalence between the category $\cal{F}_S$ and a subcategory of the category of objects of $\cal{F}_S$ endowed with gluing data with respect to $(\beta_1,\beta_2)$.
+With this, we can also rephrase [Definition 1.3](#FGA-3-I-section-A.1-definition-1.3) by saying that the diagram [(+)](#FGA-3-I-section-A.1-definition-1.3-equation) is _$\cal{F}$-exact_ if the above functor is _fully faithful_, i.e. if the above functor defines an equivalence between the category $\cal{F}_S$ and a subcategory of the category of objects of $\cal{F}_S$ endowed with gluing data with respect to $(\beta_1,\beta_2)$.
 
-\begin{rmenv}{Definition 1.5}
-\label{definition:A.1.5}
-  We say that a gluing data on $\xi'\in\cal{F}_{S'}$ is _effective_ (with respect to $\alpha$) if $\xi'$, endowed with this data, is isomorphic to $\alpha^*(\xi)$ for some $\xi\in\cal{F}_S$.
-\end{rmenv}
+::: {.rmenv #FGA-3-I-section-A.1-definition-1.5 title="Definition 1.5" latex="{Definition 1.5}"}
+We say that a gluing data on $\xi'\in\cal{F}_{S'}$ is _effective_ (with respect to $\alpha$) if $\xi'$, endowed with this data, is isomorphic to $\alpha^*(\xi)$ for some $\xi\in\cal{F}_S$.
+:::
 
-In the case where the diagram \hyperref[equation-definition:A.1.3]{(+)} is $\cal{F}$-exact, the object $\xi$ in \hyperref[definition:A.1.5]{Definition 1.5} is then determined up to unique isomorphism, and _the category $\cal{F}_S$ is equivalent to the category of objects of $\cal{F}_{S'}$ endowed with effective gluing data_. -->
+In the case where the diagram [(+)](#FGA-3-I-section-A.1-definition-1.3-equation) is $\cal{F}$-exact, the object $\xi$ in [Definition 1.5](#FGA-3-I-section-A.1-definition-1.5) is then determined up to unique isomorphism, and _the category $\cal{F}_S$ is equivalent to the category of objects of $\cal{F}_{S'}$ endowed with effective gluing data_.
 
 
 ### (c) {#FGA-3-I-section-A.1.c}
 
-<!-- The most important case is that where
+The most important case is that where
 $$
   S'' = S' \times_S S',
 $$
 with the $\beta_i$ being the two projections $p_1$ and $p_2$ from $S'\times_S S'$ to its two factors (where we now suppose that $\cal{C}$ has all fibre products).
 We then have two immediate necessary conditions for a gluing data $\varphi\colon p_1^*(\xi')\to p_2^*(\xi')$ on some $\xi'\in\cal{F}_S$ to be effective:
-\begin{enumerate}[(i)]
-  \item $\Delta^*(\varphi) = \id_\xi$, where $\Delta\colon S'\to S'\times_S S'$ denotes the diagonal morphism, and where we identify $\Delta^* p_i^*(\xi')$ with $(p_i\Delta)^*(\xi')=\xi'$.
-  \item $p_{31}^*(\varphi) = p_{32}^*(\varphi)p_{21}^*(\varphi)$,
+
+i. $\Delta^*(\varphi) = \id_\xi$, where $\Delta\colon S'\to S'\times_S S'$ denotes the diagonal morphism, and where we identify $\Delta^* p_i^*(\xi')$ with $(p_i\Delta)^*(\xi')=\xi'$.
+
+ii. $p_{31}^*(\varphi) = p_{32}^*(\varphi)p_{21}^*(\varphi)$, where $p_{ij}$ denotes the canonical projection from $S'\times_S S'\times_S S'$ to the partial product of its $i$th and $j$th factors.
+
 \oldpage{190-05}
-  where $p_{ij}$ denotes the canonical projection from $S'\times_S S'\times_S S'$ to the partial product of its $i$th and $j$th factors.
-\end{enumerate}
 
-\begin{rmenv}{Definition 1.6}
-\label{definition:A.1.6}
-  We define _descent data_ on $\xi'\in\cal{F}_{S'}$, with respect to the morphism $\alpha\colon S'\to S$, to be a gluing data on $\xi'$ with respect to the pair $(p_1,p_2)$ of canonical projections $S'\times_S S'\to S'$ that satisfies conditions (i) and (ii) above.
-\end{rmenv}
+::: {.rmenv #FGA-3-I-section-A.1-definition-1.6 title="Definition 1.6" latex="{Definition 1.6}"}
+We define _descent data_ on $\xi'\in\cal{F}_{S'}$, with respect to the morphism $\alpha\colon S'\to S$, to be a gluing data on $\xi'$ with respect to the pair $(p_1,p_2)$ of canonical projections $S'\times_S S'\to S'$ that satisfies conditions (i) and (ii) above.
+:::
 
-\begin{rmenv}{Definition 1.7}
-\label{definition:A.1.7}
-  A morphism $\alpha\colon S'\to S$ is said to be an _$\cal{F}$-descent morphism_ if the diagram
-  $$
-    \begin{tikzcd}
-      S
-      & S' \lar[swap,"\alpha"]
-      & S'\times_S S' \lar[shift left=1,"p_2"] \lar[shift right=1,swap,"p_1"]
-    \end{tikzcd}
-  $$
-  of morphisms is $\cal{F}$-exact (\hyperref[definition:A.1.3]{Definition 1.3});
-  we say that $\alpha$ is a _strict $\cal{F}$-descent morphism_ if, further, every descent data (\hyperref[definition:A.1.6]{Definition 1.6}) on any object of $\cal{F}_{S'}$ is effective.
+::: {.rmenv #FGA-3-I-section-A.1-definition-1.7 title="Definition 1.7" latex="{Definition 1.7}"}
+A morphism $\alpha\colon S'\to S$ is said to be an _$\cal{F}$-descent morphism_ if the diagram of morphisms
+$$
+  S \xleftarrow{\alpha}
+  S' \oullar{p_1}{p_2}
+  S'\times_S S'
+$$
+is $\cal{F}$-exact ([Definition 1.3](#FGA-3-I-section-A.1-definition-1.3));
+we say that $\alpha$ is a _strict $\cal{F}$-descent morphism_ if, further, every descent data ([Definition 1.6](#FGA-3-I-section-A.1-definition-1.6)) on any object of $\cal{F}_{S'}$ is effective.
 
-  This latter condition (of strictness) can also be stated in a more evocative way:
-  "giving an object of $\cal{F}_S$ is equivalent to giving an object of $\cal{F}_{S'}$ endowed with a descent data".
-\end{rmenv}
+This latter condition (of strictness) can also be stated in a more evocative way:
+"giving an object of $\cal{F}_S$ is equivalent to giving an object of $\cal{F}_{S'}$ endowed with a descent data".
+:::
 
 Note that, if an $\cal{F}$-descent morphism^[_[Comp.]_ It is useless to assume here that $\alpha$ is an $\cal{F}$-descent morphism.] $\alpha\colon S'\to S$ admits a _section_ $s\colon S\to S'$ (i.e. a morphism $s$ such that $\alpha s=\id_S$), then it is a strict $\cal{F}$-descent morphism:
-if $\xi'\in\cal{F}_{S'}$ is endowed with descent data with respect to $\alpha$, then "it comes from" $\xi=s^*(\xi')$. -->
+if $\xi'\in\cal{F}_{S'}$ is endowed with descent data with respect to $\alpha$, then "it comes from" $\xi=s^*(\xi')$.
 
 
 ### (d) {#FGA-3-I-section-A.1.d}
 
-<!-- We can present the above notions in a more intuitive manner, by introducing, for an object $T$ of $\cal{C}$ over $S$, the set
+We can present the above notions in a more intuitive manner, by introducing, for an object $T$ of $\cal{C}$ over $S$, the set
 $$
   \Hom_S(T,S') = S'(T),
 $$
@@ -250,16 +239,16 @@ $$
   \varphi_{t',t}\colon \xi'_t \to \xi'_{t'}
 $$
 (satisfying the evident conditions of functoriality in $T$).
-Conditions (i) and (ii) of \hyperref[A.1.c]{A.1.c} can then be written as
-\begin{enumerate}[(i {bis})]
-  \item $\varphi_{t,t}=\id_{\xi'_t}$, for all $T$ and all $t\in S'(T)$.
+Conditions (i) and (ii) of [A.1.c](#FGA-3-I-section-A.1.c) can then be written as
+
+i bis. $\varphi_{t,t}=\id_{\xi'_t}$, for all $T$ and all $t\in S'(T)$.
 \oldpage{190-06}
-  \item $\varphi_{t,t''}=\varphi_{t,t'}\varphi_{t',t''}$, for all $T$ and all $t,t',t''\in S'(T)$.
-\end{enumerate}
+
+ii bis. $\varphi_{t,t''}=\varphi_{t,t'}\varphi_{t',t''}$, for all $T$ and all $t,t',t''\in S'(T)$.
 
 We can show that (ii bis) implies that $\varphi_{t,t}^2=\varphi_{t,t}$, by taking $t=t'=t''$, and thus, since $\varphi_{t,t}$ is an isomorphism by hypothesis, implies (i bis), which is thus a consequence of (ii bis) (and so (i) is also a consequence of (ii)).
 But if we no longer suppose a priori that the $\varphi_{t,t}$ are isomorphisms (i.e. that $\varphi\colon p_1^*(\xi')\to p_2^*(\xi')$ is an isomorphism), then (ii bis) no longer necessarily implies (i bis);
-the combination of (ii bis) and (i bis), however, does imply that the $\varphi_{t,t'}$ are isomorphisms (since we then have $\varphi_{t,t'}\varphi_{t',t}=\varphi_{t,t}=\id_{\xi'_t}$). -->
+the combination of (ii bis) and (i bis), however, does imply that the $\varphi_{t,t'}$ are isomorphisms (since we then have $\varphi_{t,t'}\varphi_{t',t}=\varphi_{t,t}=\id_{\xi'_t}$).
 
 
 
@@ -291,12 +280,12 @@ the combination of (ii bis) and (i bis), however, does imply that the $\varphi_{
       & \Hom(Z,T'')
     \end{tikzcd}
   $$
-  of sets is exact (\hyperref[definition:A.1.2]{Definition 1.2}).
+  of sets is exact ([Definition 1.2](#FGA-3-I-section-A.1-definition-1.2)).
   We then say that $(T,\alpha)$ (or, by an abuse of language, $T$) is a _kernel_ of the pair $(\beta_1,\beta_2)$ of morphisms.
 \end{rmenv}
 
 This kernel is evidently determined up to unique isomorphism.
-If $\cal{C}$ is the category of sets, then the above definition is compatible with \hyperref[definition:A.1.2]{Definition 1.2}.
+If $\cal{C}$ is the category of sets, then the above definition is compatible with [Definition 1.2](#FGA-3-I-section-A.1-definition-1.2).
 Dually, we define the exactness of a diagram
 $$
   \begin{tikzcd}
@@ -339,7 +328,7 @@ they are, however, all distinct in a category such as the category of preschemes
 
 \begin{rmenv}{Definition 2.4}
 \label{definition:A.2.4}
-  A morphism $\alpha\colon S'\to S$ is said to be a _descent morphism_ (resp. a _strict descent morphism_) if it is an $\cal{F}$-descent morphism (resp. a strict $\cal{F}$-descent morphism) (cf. \hyperref[definition:A.1.7]{Definition 1.7}), where $\cal{F}$ denotes the fibred category over $\cal{C}$ of objects of $\cal{C}$ over objects of $\cal{C}$ (\hyperref[example:A.1.1(1)]{Example 1}).
+  A morphism $\alpha\colon S'\to S$ is said to be a _descent morphism_ (resp. a _strict descent morphism_) if it is an $\cal{F}$-descent morphism (resp. a strict $\cal{F}$-descent morphism) (cf. [Definition 1.7](#FGA-3-I-section-A.1-definition-1.7)), where $\cal{F}$ denotes the fibred category over $\cal{C}$ of objects of $\cal{C}$ over objects of $\cal{C}$ (\hyperref[example:A.1.1(1)]{Example 1}).
 \end{rmenv}
 
 \begin{itenv}{Proposition 2.1}
@@ -354,7 +343,7 @@ they are, however, all distinct in a category such as the category of preschemes
   Let $\cal{C}$ be the category of preschemes.
   Let $S\in\cal{C}$, and let $S'$ and $S''$ be preschemes that are _finite_ over $S$, i.e. that correspond to sheaves of algebras $\scr{A}'$ and $\scr{A}''$ over $S$ that are quasi-coherent (as sheaves of modules) and of finite type (i.e. coherent if $S$ is locally Noetherian).
   Let $\alpha\colon S'\to S$ be the structure morphism of $S'$, and let $\beta_1$ and $\beta_2$ be $S$-morphisms from $S''$ to $S'$, defined by algebra homomorphisms $\scr{A}'\to\scr{A}''$, which we also denote by $\beta_1$ and $\beta_2$.
-  Using the fact that a finite morphism is closed (the first Cohen--Seidenberg theorem), we can easily prove that the diagram
+  Using the fact that a finite morphism is closed (the first Cohen--Seidenberg theorem), we can easily prove that the diagram in $\cal{C}$
   $$
   \label{equation-example:A.2.b}
     \begin{tikzcd}
@@ -364,7 +353,7 @@ they are, however, all distinct in a category such as the category of preschemes
     \end{tikzcd}
   \tag{+}
   $$
-  in $\cal{C}$ is exact if and only if the diagram
+  is exact if and only if the diagram of sheaves on $S$
 \oldpage{190-08}
   $$
     \begin{tikzcd}
@@ -373,8 +362,8 @@ they are, however, all distinct in a category such as the category of preschemes
       & \scr{A}''
     \end{tikzcd}
   $$
-  of sheaves on $S$ is exact.
-  In particular, if $\alpha\colon S'\to S$ is a finite morphism corresponding to a sheaf $\scr{A}'$ of algebras on $S$, then $\alpha$ is a strict epimorphism if and only if the diagram
+  is exact.
+  In particular, if $\alpha\colon S'\to S$ is a finite morphism corresponding to a sheaf $\scr{A}'$ of algebras on $S$, then $\alpha$ is a strict epimorphism if and only if the diagram of sheaves
   $$
     \begin{tikzcd}
       \scr{O}_S = \scr{A} \rar
@@ -382,7 +371,7 @@ they are, however, all distinct in a category such as the category of preschemes
       & \scr{A}'\otimes_{\scr{A}}\scr{A}'
     \end{tikzcd}
   $$
-  of sheaves is exact (it is an epimorphism if and only if $\scr{A}\to\scr{A}'$ is injective).
+  is exact (it is an epimorphism if and only if $\scr{A}\to\scr{A}'$ is injective).
   If $S$ is affine of ring $A$, then $S'$ is affine of ring $A'$, with $A'$ finite over $A$, and so $S'\to S$ is a strict epimorphism if and only if $A\to A'$ is an isomorphism from $A$ to the subring of $A'$ consisting of the $x'\in A'$ such that
   $$
     1_{A'}\otimes_A x' - x'\otimes_A 1_{A'} = 0
@@ -426,7 +415,7 @@ Let $M'$ be a flat $A'$-module endowed with a descent data to $A$, i.e. with an 
 $$
   \varphi\colon M'\otimes_A A' \xrightarrow{\sim} A'\otimes_A M'
 $$
-of $(A'\otimes_A A')$-modules that satisfies conditions (i) and (ii) of \hyperref[A.1.c]{A.1.c} (which we leave to the reader to write out in terms of modules).
+of $(A'\otimes_A A')$-modules that satisfies conditions (i) and (ii) of [A.1.c](#FGA-3-I-section-A.1.c) (which we leave to the reader to write out in terms of modules).
 Is this data effective (relative to the fibred category of flat quasi-coherent sheaves)?
 Let $M$ be the subset of $M'$ consisting of the $x'\in M'$ such that
 $$
@@ -567,7 +556,7 @@ With this setup, _saying that the augmentation morphism_
 $$
   F_{\xi,\eta}(S) \to \HH^0(S'/S,F_{\xi,\eta})
 $$
-_is an isomorphism for every pair of elements $\xi,\eta\in\cal{F}_S$ implies that $\alpha\colon S'\to S$ is an $\cal{F}$-descent morphism_ (\hyperref[definition:A.1.7]{Definition 1.7}).
+_is an isomorphism for every pair of elements $\xi,\eta\in\cal{F}_S$ implies that $\alpha\colon S'\to S$ is an $\cal{F}$-descent morphism_ ([Definition 1.7](#FGA-3-I-section-A.1-definition-1.7)).
 
 
 \subsection{}
@@ -580,7 +569,7 @@ $$
 we thus define a contravariant functor $G_\xi$ from $\cal{C}_S$ to the category of
 \oldpage{190-14}
 groups.
-With this setup, we claim that _$Z^1(S'/S,G)$ is canonically identified with the set of descent data on $\xi'=\xi\times_S S'$ with respect to $S'\to S$_ (\hyperref[definition:A.1.6]{Definition 1.6}), and that _$\HH^1(S'/S,G)$ can be identified with the set of isomorphism classes of objects of $\cal{F}_{S'}$ endowed with a descent data relative to $\alpha\colon S'\to S$ that are isomorphic, as objects of $\cal{F}_{S'}$, to $\xi'=\xi\times_S S'$_.
+With this setup, we claim that _$Z^1(S'/S,G)$ is canonically identified with the set of descent data on $\xi'=\xi\times_S S'$ with respect to $S'\to S$_ ([Definition 1.6](#FGA-3-I-section-A.1-definition-1.6)), and that _$\HH^1(S'/S,G)$ can be identified with the set of isomorphism classes of objects of $\cal{F}_{S'}$ endowed with a descent data relative to $\alpha\colon S'\to S$ that are isomorphic, as objects of $\cal{F}_{S'}$, to $\xi'=\xi\times_S S'$_.
 Then, _if $\alpha\colon S'\to S$ is an $\cal{F}$-descent morphism_ (cf. \hyperref[A.4.b]{A.4.b}), _then $\HH^1(S'/S,G)$ contains as a subset the set of isomorphism classes of objects $\eta$ of $\cal{F}_S$ such that $\eta\times_S S'$ is isomorphic (in $\cal{F}_{S'}$) to $\xi\times_S S'$_;
 further, _this inclusion is the identity if and only if every descent data on $\xi'=\xi\times_S S'$ with respect to $\alpha\colon S'\to S$ is effective_.
 (This will be the case, in particular, if $\alpha\colon S'\to S$ is a strict $S$-descent morphism).
@@ -705,7 +694,7 @@ The class of flat (resp. faithfully flat, resp. quasi-compact) morphisms is stab
 \begin{itenv}{Theorem 1}
 \label{theorem:B.1(1)}
   Let $\alpha\colon S'\to S$ be a morphism of preschemes that is _faithfully flat_ and _quasi-compact_.
-  Then $\alpha$ is a _strict descent morphism_ (cf. \hyperref[definition:A.1.7]{A, Definition 1.7}) for the fibred category $\cal{F}$ of quasi-coherent sheaves (cf. \hyperref[example:A.1.1(2)]{A, Example 2}).
+  Then $\alpha$ is a _strict descent morphism_ (cf. [Definition 1.7](#FGA-3-I-section-A.1-d, Definit-on ).7}) for the fibred category $\cal{F}$ of quasi-coherent sheaves (cf. \hyperref[example:A.1.1(2)]{A, Example 2}).
 \end{itenv}
 
 This statement implies two things:
@@ -715,7 +704,7 @@ This statement implies two things:
       \Hom(\cal{F},\scr{G}) \to \Hom(\cal{F}',\scr{G}')
     $$
     is a bijection from the left-hand side to the subgroup of the right-hand side consisting of homomorphisms $\cal{F}'\to\scr{G}'$ that are compatible with the canonical descent data on these sheaves, i.e. whose inverse images under the two projections of $S''=S'\times_S S'$ to $S'$ give the same homomorphism $\cal{F}''\to\scr{G}''$.
-  \item Every quasi-coherent sheaf $\cal{F}'$ on $S'$ endowed with a descent data with respect to the morphism $\alpha\colon S'\to S$ (cf. \hyperref[definition:A.1.6]{A, Definition 1.6}) is isomorphic (endowed with this data) to the inverse image of a quasi-coherent sheaf $\cal{F}$ on $S$.
+  \item Every quasi-coherent sheaf $\cal{F}'$ on $S'$ endowed with a descent data with respect to the morphism $\alpha\colon S'\to S$ (cf. [Definition 1.6](#FGA-3-I-section-A.1-d, Definit-on ).6}) is isomorphic (endowed with this data) to the inverse image of a quasi-coherent sheaf $\cal{F}$ on $S$.
 \end{enumerate}
 
 Setting $\cal{F}=\scr{O}_S$ in (i), we obtain:
@@ -723,7 +712,7 @@ Setting $\cal{F}=\scr{O}_S$ in (i), we obtain:
 \begin{itenv}{Corollary 1}
 \label{corollary:B.1(1)}
   Let $\scr{G}$ be a quasi-coherent sheaf on $S$, with $\scr{G}'$ and $\scr{G}''$ denoting its inverse images on $S'$ and $S''=S'\times_S S'$ (respectively), and let $p_1$ and $p_2$ be the two projections from $S''$ to $S$.
-  Then the diagram
+  Then the diagram of maps of sets
 \oldpage{190-18}
   $$
     \begin{tikzcd}
@@ -732,10 +721,10 @@ Setting $\cal{F}=\scr{O}_S$ in (i), we obtain:
       & \Gamma(\scr{G}'')
     \end{tikzcd}
   $$
-  of maps of sets is _exact_ (cf. \hyperref[definition:A.1.1]{A, Definition 1.1}).
+  is _exact_ (cf. [Definition 1.1](#FGA-3-I-section-A.1-d, Definit-on ).1}).
 \end{itenv}
 
-Also, the combination of (i) and (ii) with \hyperref[definition:A.1.1]{A, Definition 1.1} gives:
+Also, the combination of (i) and (ii) with [Definition 1.1](#FGA-3-I-section-A.1-d, Definit-on ).1} gives:
 
 \begin{itenv}{Corollary 2}
 \label{corollary:B.1(2)}
@@ -784,12 +773,12 @@ Taking into account the functorial correspondence between such quasi-coherent sh
 \begin{itenv}{Theorem 2}
 \label{theorem:B.1(2)}
   Let $\alpha\colon S'\to S$ be as in [Theorem 1](#FGA-3-I-theorem-1).
-  Then $\alpha$ is a (non-strict, in general) _descent morphism_ (cf. \hyperref[definition:A.2.4]{A, Definition 2.4}), and it is a _strict descent morphism_ for the fibred category of affine schemes over preschemes (cf. \hyperref[definition:A.1.7]{A, Definition 1.7}).
+  Then $\alpha$ is a (non-strict, in general) _descent morphism_ (cf. \hyperref[definition:A.2.4]{A, Definition 2.4}), and it is a _strict descent morphism_ for the fibred category of affine schemes over preschemes (cf. [Definition 1.7](#FGA-3-I-section-A.1-d, Definit-on ).7}).
 \end{itenv}
 
 The first claim of the theorem implies this:
 let $X$ and $Y$ be preschemes over $S$, with $X'$ and $Y'$ their inverse images over $S$, and $X''$ and $Y''$ their inverse images over $S''=S'\times_S S'$;
-then the diagram
+then the diagram of natural maps
 $$
   \begin{tikzcd}
     \Hom_S(X,Y) \rar["\alpha^*"]
@@ -797,7 +786,7 @@ $$
     & \Hom_{S''}(X'',Y'')
   \end{tikzcd}
 $$
-of natural maps is _exact_, i.e. $\alpha^*$ is a bijection from $\Hom_S(X,Y)$ to the subset of $\Hom_{S'}(X',Y')$ consisting of homomorphisms that are compatible with the canonical descent data on $X'$ and $Y'$ (i.e. whose inverse images under the two projections from $S''$ to $S'$ are equal).
+is _exact_, i.e. $\alpha^*$ is a bijection from $\Hom_S(X,Y)$ to the subset of $\Hom_{S'}(X',Y')$ consisting of homomorphisms that are compatible with the canonical descent data on $X'$ and $Y'$ (i.e. whose inverse images under the two projections from $S''$ to $S'$ are equal).
 This follows easily from [Theorem 1](#FGA-3-I-theorem-1) and \hyperref[corollary:B.1(1)]{Corollary 1}, if we restrict to $Y$ being affine over $S$;
 in the general case, we need to combine [Theorem 1](#FGA-3-I-theorem-1) with the following result:
 
