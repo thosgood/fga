@@ -239,7 +239,7 @@ $$
   \varphi_{t',t}\colon \xi'_t \to \xi'_{t'}
 $$
 (satisfying the evident conditions of functoriality in $T$).
-Conditions (i) and (ii) of [A.1.c](#FGA-3-I-section-A.1.c) can then be written as
+Conditions (i) and (ii) of [§A.1.c](#FGA-3-I-section-A.1.c) can then be written as
 
 i bis. $\varphi_{t,t}=\id_{\xi'_t}$, for all $T$ and all $t\in S'(T)$.
 \oldpage{190-06}
@@ -251,65 +251,49 @@ But if we no longer suppose a priori that the $\varphi_{t,t}$ are isomorphisms (
 the combination of (ii bis) and (i bis), however, does imply that the $\varphi_{t,t'}$ are isomorphisms (since we then have $\varphi_{t,t'}\varphi_{t',t}=\varphi_{t,t}=\id_{\xi'_t}$).
 
 
+## Exact diagrams and strict epimorphisms, descent morphisms, and examples {#FGA-3-I-section-A.2}
 
-<!--
 
+### (a) {#FGA-3-I-section-A.2.a}
 
-\section{Exact diagrams and strict epimorphisms, descent morphisms, and examples.}
-\label{A.2}
-
-\subsection{}
-\label{A.2.a}
-
-\begin{rmenv}{Definition 2.1}
-\label{definition:A.2.1}
-  Let $\cal{C}$ be a category.
-  A diagram
-  $$
-    \begin{tikzcd}
-      T \rar["\alpha"]
-      & T' \rar[shift left=1,"\beta_1"] \rar[shift right=1,swap,"\beta_2"]
-      & T''
-    \end{tikzcd}
-  $$
-  of morphisms is said to be _exact_ if, for all $Z\in\cal{C}$, the corresponding diagram
-  $$
-    \begin{tikzcd}
-      \Hom(Z,T) \rar
-      & \Hom(Z,T') \rar[shift left=1] \rar[shift right=1]
-      & \Hom(Z,T'')
-    \end{tikzcd}
-  $$
-  of sets is exact ([Definition 1.2](#FGA-3-I-section-A.1-definition-1.2)).
-  We then say that $(T,\alpha)$ (or, by an abuse of language, $T$) is a _kernel_ of the pair $(\beta_1,\beta_2)$ of morphisms.
-\end{rmenv}
+::: {.rmenv #FGA-3-I-section-A.2-definition-2.1 title="Definition 2.1" latex="{Definition 2.1}"}
+Let $\cal{C}$ be a category.
+A diagram of morphisms
+$$
+  T \xrightarrow{\alpha}
+  T' \ourrar{\beta_1}{\beta_2}
+  T''
+$$
+is said to be _exact_ if, for all $Z\in\cal{C}$, the corresponding diagram of sets
+$$
+  \Hom(Z,T) \to
+  \Hom(Z,T') \rightrightarrows
+  \Hom(Z,T'')
+$$
+is exact ([Definition 1.2](#FGA-3-I-section-A.1-definition-1.2)).
+We then say that $(T,\alpha)$ (or, by an abuse of language, $T$) is a _kernel_ of the pair $(\beta_1,\beta_2)$ of morphisms.
+:::
 
 This kernel is evidently determined up to unique isomorphism.
 If $\cal{C}$ is the category of sets, then the above definition is compatible with [Definition 1.2](#FGA-3-I-section-A.1-definition-1.2).
-Dually, we define the exactness of a diagram
+Dually, we define the exactness of a diagram of morphisms in $\cal{C}$
 $$
-  \begin{tikzcd}
-    S
-    & S' \lar[swap,"\alpha"]
-    & S''\lar[shift left=1,"\beta_1"] \lar[shift right=1,swap,"\beta_2"]
-  \end{tikzcd}
+  S \xleftarrow{\alpha}
+  S' \oullar{\beta_1}{\beta_2}
+  S''
 $$
-of morphisms in $\cal{C}$;
-we then say that $(S,\alpha)$ is a _cokernel_ of the pair $(\beta_1,\beta_2)$ morphisms.
+and then say that $(S,\alpha)$ is a _cokernel_ of the pair $(\beta_1,\beta_2)$ morphisms.
 
-\begin{rmenv}{Definition 2.2}
-\label{definition:A.2.2}
-  A morphism $\alpha\colon S'\to S$ is said to be a _strict epimorphism_ if it is an epimorphism and, for every morphism $u\colon S'\to Z$, the following necessary condition is also sufficient for $u$ to factor as $S'\to S\to Z$:
-  for every $S''\in\cal{C}$ and every pair $\beta_1,\beta_2\colon S''\to S$ of morphisms such that $\alpha\beta_1=\alpha\beta_2$, we also have that $u\beta_1=u\beta_2$.
-\end{rmenv}
+::: {.rmenv #FGA-3-I-section-A.2-definition-2.2 title="Definition 2.2" latex="{Definition 2.2}"}
+A morphism $\alpha\colon S'\to S$ is said to be a _strict epimorphism_ if it is an epimorphism and, for every morphism $u\colon S'\to Z$, the following necessary condition is also sufficient for $u$ to factor as $S'\to S\to Z$:
+for every $S''\in\cal{C}$ and every pair $\beta_1,\beta_2\colon S''\to S$ of morphisms such that $\alpha\beta_1=\alpha\beta_2$, we also have that $u\beta_1=u\beta_2$.
+:::
 
 If the fibre product $S'\times_S S'$ exists, then it is equivalent to say that the diagram
 $$
-  \begin{tikzcd}
-    S
-    & S' \lar[swap,"\alpha"]
-    & S'\times_S S'\lar[shift left=1,"p_1"] \lar[shift right=1,swap,"p_2"]
-  \end{tikzcd}
+  S \xleftarrow{\alpha}
+  S' \oullar{p_1}{p_2}
+  S'\times_S S'
 $$
 \oldpage{190-07}
 is exact, i.e. that $S$ is a cokernel of the pair $(p_1,p_2)$.
@@ -319,103 +303,92 @@ We leave to the reader the task of developing the dual notion of a _strict monom
 
 To make the relation between the ideas of $\cal{F}$-descent morphisms and strict epimorphisms more precise, we introduce the following definitions:
 
-\begin{rmenv}{Definition 2.3}
-  A morphism $\alpha\colon S'\to S$ is said to be a _universal epimorphism_ (resp. a _strict universal epimorphism_) if, for every $T$ over $S$, the fibre product $T'=S'\times_S T$ exists, and the projection $T'\to T$ is an epimorphism (resp. a strict epimorphism).
-\end{rmenv}
+::: {.rmenv #FGA-3-I-section-A.2-definition-2.3 title="Definition 2.3" latex="{Definition 2.3}"}
+A morphism $\alpha\colon S'\to S$ is said to be a _universal epimorphism_ (resp. a _strict universal epimorphism_) if, for every $T$ over $S$, the fibre product $T'=S'\times_S T$ exists, and the projection $T'\to T$ is an epimorphism (resp. a strict epimorphism).
+:::
 
 In very nice categories (such as the category of sets, the category of sets over a topological space, abelian categories, etc.), the four notions of "epijectivity" introduced above all coincide;
 they are, however, all distinct in a category such as the category of preschemes, or the category of preschemes over a given non-empty prescheme $S$, even if we restrict to $S$-schemes that are finite over $S$.
 
-\begin{rmenv}{Definition 2.4}
-\label{definition:A.2.4}
-  A morphism $\alpha\colon S'\to S$ is said to be a _descent morphism_ (resp. a _strict descent morphism_) if it is an $\cal{F}$-descent morphism (resp. a strict $\cal{F}$-descent morphism) (cf. [Definition 1.7](#FGA-3-I-section-A.1-definition-1.7)), where $\cal{F}$ denotes the fibred category over $\cal{C}$ of objects of $\cal{C}$ over objects of $\cal{C}$ (\hyperref[example:A.1.1(1)]{Example 1}).
-\end{rmenv}
+::: {.rmenv #FGA-3-I-section-A.2-definition-2.4 title="Definition 2.4" latex="{Definition 2.4}"}
+A morphism $\alpha\colon S'\to S$ is said to be a _descent morphism_ (resp. a _strict descent morphism_) if it is an $\cal{F}$-descent morphism (resp. a strict $\cal{F}$-descent morphism) (cf. [Definition 1.7](#FGA-3-I-section-A.1-definition-1.7)), where $\cal{F}$ denotes the fibred category over $\cal{C}$ of objects of $\cal{C}$ over objects of $\cal{C}$ (cf. [Example 1](#FGA-3-I-section-A.1-example-1)).
+:::
 
-\begin{itenv}{Proposition 2.1}
-  If $\cal{C}$ has all finite products and (finite) fibre products, then there is an identity between descent morphisms in $\cal{C}$ and strict universal epimorphisms in $\cal{C}$.
-\end{itenv}
+::: {.rmenv #FGA-3-I-section-A.2-proposition-2.1 title="Proposition 2.1" latex="{Proposition 2.1}"}
+If $\cal{C}$ has all finite products and (finite) fibre products, then there is an identity between descent morphisms in $\cal{C}$ and strict universal epimorphisms in $\cal{C}$.
+:::
 
 
-\subsection{}
-\label{A.2.b}
+### (b) {#FGA-3-I-section-A.2.b}
 
-\begin{rmenv}{Example}
-  Let $\cal{C}$ be the category of preschemes.
-  Let $S\in\cal{C}$, and let $S'$ and $S''$ be preschemes that are _finite_ over $S$, i.e. that correspond to sheaves of algebras $\scr{A}'$ and $\scr{A}''$ over $S$ that are quasi-coherent (as sheaves of modules) and of finite type (i.e. coherent if $S$ is locally Noetherian).
-  Let $\alpha\colon S'\to S$ be the structure morphism of $S'$, and let $\beta_1$ and $\beta_2$ be $S$-morphisms from $S''$ to $S'$, defined by algebra homomorphisms $\scr{A}'\to\scr{A}''$, which we also denote by $\beta_1$ and $\beta_2$.
-  Using the fact that a finite morphism is closed (the first Cohen--Seidenberg theorem), we can easily prove that the diagram in $\cal{C}$
-  $$
-  \label{equation-example:A.2.b}
-    \begin{tikzcd}
-      S
-      & S' \lar[swap,"\alpha"]
-      & S'' \lar[shift left=1,"\beta_2"] \lar[shift right=1,swap,"\beta_1"]
-    \end{tikzcd}
-  \tag{+}
-  $$
-  is exact if and only if the diagram of sheaves on $S$
+:::: {.rmenv title="Example" latex="{Example}"}
+Let $\cal{C}$ be the category of preschemes.
+Let $S\in\cal{C}$, and let $S'$ and $S''$ be preschemes that are _finite_ over $S$, i.e. that correspond to sheaves of algebras $\scr{A}'$ and $\scr{A}''$ over $S$ that are quasi-coherent (as sheaves of modules) and of finite type (i.e. coherent if $S$ is locally Noetherian).
+Let $\alpha\colon S'\to S$ be the structure morphism of $S'$, and let $\beta_1$ and $\beta_2$ be $S$-morphisms from $S''$ to $S'$, defined by algebra homomorphisms $\scr{A}'\to\scr{A}''$, which we also denote by $\beta_1$ and $\beta_2$.
+Using the fact that a finite morphism is closed (the first Cohen--Seidenberg theorem), we can easily prove that the diagram in $\cal{C}$
+
+::: {.eqref #FGA-3-I-section-A.2.b-equation}
+$$
+  S \xleftarrow{\alpha}
+  S' \oullar{\beta_1}{\beta_2}
+  S''
+\tag{+}
+$$
+:::
+
+is exact if and only if the diagram of sheaves on $S$
 \oldpage{190-08}
-  $$
-    \begin{tikzcd}
-      \scr{O}_S = \scr{A} \rar["\alpha"]
-      & \scr{A}' \rar[shift left=1,"\beta_1"] \rar[shift right=1,swap,"\beta_2"]
-      & \scr{A}''
-    \end{tikzcd}
-  $$
-  is exact.
-  In particular, if $\alpha\colon S'\to S$ is a finite morphism corresponding to a sheaf $\scr{A}'$ of algebras on $S$, then $\alpha$ is a strict epimorphism if and only if the diagram of sheaves
-  $$
-    \begin{tikzcd}
-      \scr{O}_S = \scr{A} \rar
-      & \scr{A}' \rar[shift left=1,"p_1"] \rar[shift right=1,swap,"p_2"]
-      & \scr{A}'\otimes_{\scr{A}}\scr{A}'
-    \end{tikzcd}
-  $$
-  is exact (it is an epimorphism if and only if $\scr{A}\to\scr{A}'$ is injective).
-  If $S$ is affine of ring $A$, then $S'$ is affine of ring $A'$, with $A'$ finite over $A$, and so $S'\to S$ is a strict epimorphism if and only if $A\to A'$ is an isomorphism from $A$ to the subring of $A'$ consisting of the $x'\in A'$ such that
-  $$
-    1_{A'}\otimes_A x' - x'\otimes_A 1_{A'} = 0
-  $$
-  (it is an epimorphism if and only if $A\to A'$ is injective).
-  As we have already mentioned, even if $S$ is the scheme of a local Artinian ring, then a finite morphism $S'\to S$ that is an epimorphism is not necessarily a strict epimorphism.
-  However, we can prove that, _if $S$ is a Noetherian prescheme, then every finite morphism $S'\to S$ that is an epimorphism is the composition of a finite sequence of strict epimorphisms_ (also finite).
-  This also shows that the composition of two strict epimorphisms is not necessarily a strict epimorphism.
-\end{rmenv}
+$$
+  \scr{O}_S = \scr{A} \xrightarrow{\alpha}
+  \scr{A}' \ourrar{\beta_1}{\beta_2}
+  \scr{A}''
+$$
+is exact.
+In particular, if $\alpha\colon S'\to S$ is a finite morphism corresponding to a sheaf $\scr{A}'$ of algebras on $S$, then $\alpha$ is a strict epimorphism if and only if the diagram of sheaves
+$$
+  \scr{O}_S = \scr{A} \to
+  \scr{A}' \ourrar{p_1}{p_2}
+  \scr{A}'\otimes_{\scr{A}}\scr{A}'
+$$
+is exact (it is an epimorphism if and only if $\scr{A}\to\scr{A}'$ is injective).
+If $S$ is affine of ring $A$, then $S'$ is affine of ring $A'$, with $A'$ finite over $A$, and so $S'\to S$ is a strict epimorphism if and only if $A\to A'$ is an isomorphism from $A$ to the subring of $A'$ consisting of the $x'\in A'$ such that
+$$
+  1_{A'}\otimes_A x' - x'\otimes_A 1_{A'} = 0
+$$
+(it is an epimorphism if and only if $A\to A'$ is injective).
+As we have already mentioned, even if $S$ is the scheme of a local Artinian ring, then a finite morphism $S'\to S$ that is an epimorphism is not necessarily a strict epimorphism.
+However, we can prove that, _if $S$ is a Noetherian prescheme, then every finite morphism $S'\to S$ that is an epimorphism is the composition of a finite sequence of strict epimorphisms_ (also finite).
+This also shows that the composition of two strict epimorphisms is not necessarily a strict epimorphism.
+::::
 
 
-\subsection{}
-\label{A.2.c}
+### (c) {#FGA-3-I-section-A.2.c}
 
-If \hyperref[equation-example:A.2.b]{(+)} is an exact diagram of finite morphisms, then, for every _flat_ morphism $T\to S$ of prescheme, the diagram induced from \hyperref[equation-example:A.2.b]{(+)} by a change of base $T\to S$ is again exact.
+If [(+)](#FGA-3-I-section-A.2.b-equation) is an exact diagram of finite morphisms, then, for every _flat_ morphism $T\to S$ of prescheme, the diagram induced from [(+)](#FGA-3-I-section-A.2.b-equation) by a change of base $T\to S$ is again exact.
 It thus follows that, if $X$ and $Y$ are $S$-preschemes, with $X$ _flat_ over $S$, then the following diagram of maps (where $X'$ and $Y'$ are the inverse images of $X$ and $Y$ over $S'$, and $X''$ and $Y''$ are their inverse images over $S''$) is exact:
 $$
-  \begin{tikzcd}
-    \Hom_S(X,Y) \rar
-    & \Hom_{S'}(X',Y') \rar[shift left=1] \rar[shift right=1]
-    & \Hom_{S''}(X'',Y'').
-  \end{tikzcd}
+  \Hom_S(X,Y) \to
+  \Hom_{S'}(X',Y') \rightrightarrows
+  \Hom_{S''}(X'',Y'').
 $$
-In particular, if $\cal{F}$ denotes the fibred category (over the category $\cal{C}$ of preschemes) such that, for $X\in\cal{C}$, $\cal{F}_X$ is the category of _flat_ $X$-preschemes, then the diagram \hyperref[equation-example:A.2.b]{(+)} is $\cal{F}$-exact.
+In particular, if $\cal{F}$ denotes the fibred category (over the category $\cal{C}$ of preschemes) such that, for $X\in\cal{C}$, $\cal{F}_X$ is the category of _flat_ $X$-preschemes, then the diagram [(+)](#FGA-3-I-section-A.2.b-equation) is $\cal{F}$-exact.
 (This result becomes false if we do not impose the flatness hypothesis; in particular, a finite strict epimorphism is not necessarily a descent morphism).
-We similarly see that \hyperref[equation-example:A.2.b]{(+)} is $\cal{F}$-exact if $\cal{F}$ denotes the fibred category for which $\cal{F}_X$ is the category of _flat_ quasi-coherent sheaves on the prescheme $X$ (here, again, the
+We similarly see that [(+)](#FGA-3-I-section-A.2.b-equation) is $\cal{F}$-exact if $\cal{F}$ denotes the fibred category for which $\cal{F}_X$ is the category of _flat_ quasi-coherent sheaves on the prescheme $X$ (here, again, the flatness hypothesis is essential).
 \oldpage{190-09}
-flatness hypothesis is essential).
 In either case, the question of _effectiveness_ of a gluing data (and, more specifically, of a descent data, when $S''=S'\times_S S'$) on a flat object over $S'$ is delicate (and its answer in many particular cases in one of the principal objects of these current exposés).
 The speaker does not know if, for every finite strict epimorphism $S'\to S$, every descent data on a flat quasi-coherent sheaf on $S'$ is effective (even if we suppose that $S$ is the spectrum of a local Artinian ring, and we restrict to locally free sheaves of rank $1$).
 More generally, let $A$ be a ring, and $A'$ an $A$-algebra (where everything is commutative) such that the diagram
 $$
-  \begin{tikzcd}
-    A \rar
-    & A' \rar[shift left=1] \rar[shift right=1]
-    & A'\otimes_A A'
-  \end{tikzcd}
+  A \to
+  A' \rightrightarrows
+  A'\otimes_A A'
 $$
 is exact, which is equivalent to saying that the corresponding morphism $S'\to S$ between the spectra of $A'$ and $A$ is an $\cal{F}$-descent morphism, where $\cal{F}$ is the fibred category of flat quasi-coherent sheaves.
 Let $M'$ be a flat $A'$-module endowed with a descent data to $A$, i.e. with an isomorphism
 $$
   \varphi\colon M'\otimes_A A' \xrightarrow{\sim} A'\otimes_A M'
 $$
-of $(A'\otimes_A A')$-modules that satisfies conditions (i) and (ii) of [A.1.c](#FGA-3-I-section-A.1.c) (which we leave to the reader to write out in terms of modules).
+of $(A'\otimes_A A')$-modules that satisfies conditions (i) and (ii) of [§A.1.c](#FGA-3-I-section-A.1.c) (which we leave to the reader to write out in terms of modules).
 Is this data effective (relative to the fibred category of flat quasi-coherent sheaves)?
 Let $M$ be the subset of $M'$ consisting of the $x'\in M'$ such that
 $$
@@ -423,26 +396,25 @@ $$
 $$
 which is a sub-$A$-module of $M'$.
 The canonical injection $M\to M'$ defines a homomorphism of $A'$-modules $M\otimes_A A'\to M'$.
-_{The effectiveness of $\varphi$ then implies the following: $M$ is a flat $A$-module, and the above homomorphism is an isomorphism._
+_The effectiveness of $\varphi$ then implies the following: $M$ is a flat $A$-module, and the above homomorphism is an isomorphism._
 
-\begin{rmenv}{Remark}
-  In the above, we have imposed no flatness hypotheses on the morphisms of the diagram \hyperref[equation-example:A.2.b]{(+)}, and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over $S$ and $S'$ that we consider.
-  In \hyperref[B.2]{B.2}, we will impose a flatness hypothesis on $\alpha\colon S'\to S$, which will allow us to have a technique of descent for objects over $S$ and $S'$ that are no longer under any flatness hypotheses.
-  In any case, there is a flatness hypothesis involved somewhere.
-  This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base _fields_, over which everything, in fact, is flat!).
-\end{rmenv}
+::: {.rmenv title="Remark" latex="{Remark}"}
+In the above, we have imposed no flatness hypotheses on the morphisms of the diagram [(+)](#FGA-3-I-section-A.2.b-equation), and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over $S$ and $S'$ that we consider.
+In [§B.2](#FGA-3-I-section-B.2), we will impose a flatness hypothesis on $\alpha\colon S'\to S$, which will allow us to have a technique of descent for objects over $S$ and $S'$ that are no longer under any flatness hypotheses.
+In any case, there is a flatness hypothesis involved somewhere.
+This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base _fields_, over which everything, in fact, is flat!).
+:::
 
 
-\oldpage{190-10}
-\section{Application to étalements}
-\label{A.3}
+## Application to étalements {#FGA-3-I-section-A.3}
 
 Let $A$ be a local ring, and $B$ a local algebra over $A$ whose maximal ideal induces that of $A$.
+\oldpage{190-10}
 We say that $B$ is _étalé_ over $A$ (instead of "unramified", as used elsewhere) if it satisfies the following conditions:
-\begin{enumerate}[(i)]
-  \item $B$ is flat over $A$; and
-  \item $B/\fk{m}B$ is a separable finite extension of $A/\fk{m}=k$ (where $\fk{m}$ denotes the maximal ideal of $A$).
-\end{enumerate}
+
+i. $B$ is flat over $A$; and
+ii. $B/\frak{m}B$ is a separable finite extension of $A/\frak{m}=k$ (where $\frak{m}$ denotes the maximal ideal of $A$).
+
 If $A$ and $B$ are Noetherian, and $k$ is algebraically closed, then this implies that the homomorphism $\overline{A}\to\overline{B}$ between the completions that extends $A\to B$ is an isomorphism.
 A morphism $f\colon T\to S$ of finite type is said to be _étale at $x\in T$_, or $T$ is said to be _étalé over $S$ at $x$_, if $\scr{O}_x$ is étalé over $\scr{O}_{f(x)}$;
 $f$ is said to be _étale_, or an _étalement_, or $T$ is said to be _étalé over $S$_, if $f$ is étale at all $x\in T$.
@@ -458,15 +430,14 @@ $$
 is bijective, i.e. the functor $T\mapsto\overline{T}$ from the category of étale schemes over $S$ to the category of analytic spaces over $S$ is "fully faithful", and thus defines an equivalence between the first category and a subcategory of the second.
 A theorem of Grauert--Remmert [@3-I-2] implies that, if $S$ is normal, then we thus obtain an equivalence between the category of _étale coverings_ of $S$ and the category of (_finite_) étale coverings of $S$, i.e. every étale covering $\scr{C}$ of $\overline{S}$ is $\overline{S}$-isomorphic to some $\overline{T}$, where $T$ is an étale covering of $S$.
 We will show that _the Grauert--Remmert theorem remains true without any normality hypotheses on $S$_.
-First let $S'\to S$ be a finite strict epimorphism, and suppose that
 \oldpage{190-11}
-the theorem has been proven for $S'$; we will show that it holds for $S$.
-Let $\scr{C}$ be an étale covering of $\overline{S}$, and consider its inverse image $\scr{C}'$ over $S'$, which corresponds to a coherent analytic sheaf $\fk{A}'$ of algebras on $S'$ that is the inverse image of a sheaf of algebras $\fk{A}$ on $\overline{S}$ defining $\scr{C}$.
-By hypothesis, on $S'$, $\scr{C}'$ comes from an étale covering $T'$ of $S'$, i.e. $\fk{A}'$ comes from a coherent sheaf of algebras $\scr{A}'$ on $S'$.
-Also, $\fk{A}'$ is endowed with a canonical descent data with respect to $\overline{S}'\to\overline{S}$, i.e. with an isomorphism between its two inverse images on $\overline{S}'\times_{\overline{S}}\overline{S}'=\overline{S'\times_SS'}$ (satisfying conditions (i) and (ii)), and this isomorphism comes from, by what has already been said, an isomorphism between the corresponding algebraic sheaves, i.e. from a descent data on $\scr{A}'$ with respect to $S'\to S$.
-We can easily show that the latter is effective (since it is effective on $\fk{A}'$, and the effectiveness of a descent data, as described explicitly in the previous section, is something that can be checked locally on the _completions_ of the modules that are involved).
+First let $S'\to S$ be a finite strict epimorphism, and suppose that the theorem has been proven for $S'$; we will show that it holds for $S$.
+Let $\scr{C}$ be an étale covering of $\overline{S}$, and consider its inverse image $\scr{C}'$ over $S'$, which corresponds to a coherent analytic sheaf $\frak{A}'$ of algebras on $S'$ that is the inverse image of a sheaf of algebras $\frak{A}$ on $\overline{S}$ defining $\scr{C}$.
+By hypothesis, on $S'$, $\scr{C}'$ comes from an étale covering $T'$ of $S'$, i.e. $\frak{A}'$ comes from a coherent sheaf of algebras $\scr{A}'$ on $S'$.
+Also, $\frak{A}'$ is endowed with a canonical descent data with respect to $\overline{S}'\to\overline{S}$, i.e. with an isomorphism between its two inverse images on $\overline{S}'\times_{\overline{S}}\overline{S}'=\overline{S'\times_SS'}$ (satisfying conditions (i) and (ii)), and this isomorphism comes from, by what has already been said, an isomorphism between the corresponding algebraic sheaves, i.e. from a descent data on $\scr{A}'$ with respect to $S'\to S$.
+We can easily show that the latter is effective (since it is effective on $\frak{A}'$, and the effectiveness of a descent data, as described explicitly in the previous section, is something that can be checked locally on the _completions_ of the modules that are involved).
 From this, we obtain a coherent sheaf of algebras $\scr{A}$ on $S$ that defines a covering $T$ of $S$, and this is the desired covering.
-The above result then obviously holds true if $S'\to S$ is just a composition of a finite number of finite strict epimorphisms, i.e. is just an arbitrary finite epimorphism (by the factorisation result stated in \hyperref[A.2]{A.2}).
+The above result then obviously holds true if $S'\to S$ is just a composition of a finite number of finite strict epimorphisms, i.e. is just an arbitrary finite epimorphism (by the factorisation result stated in [§A.2](#FGA-3-I-section-A.2).
 It thus follows that the Grauert--Remmert theorem holds true if $S$ is a _reduced_ scheme, i.e. such that $\scr{O}_S$ has no nilpotent elements, as we can see by introducing its normalisation $S'$.
 We can easily pass to the general case.
 
@@ -478,16 +449,30 @@ _Then the functor $T\mapsto T'$ is an equivalence between the category of presch
 $$
   \Hom_S(T_1,T_2) \to \Hom_{S'}(T'_1,T'_2)
 $$
-for preschemes $T_1$ and $T_2$ that are étalé over $S$, which can be proven directly without difficulty. We also use the fact that the stated theorem is true if $S'=(S,\scr{O}_S/\scr{J})$,
+for preschemes $T_1$ and $T_2$ that are étalé over $S$, which can be proven directly without difficulty. We also use the fact that the stated theorem is true if $S'=(S,\scr{O}_S/\scr{J})$, where $\scr{J}$ is a nilpotent coherent sheaf of ideals of $\scr{O}_S$, cf. [@3-I-4, Lemma 6]).
 \oldpage{190-12}
-where $\scr{J}$ is a nilpotent coherent sheaf of ideals of $\scr{O}_S$, cf. [@3-I-4, Lemma 6]).
 Note also that we do not suppose here that the $T$ in question are finite over $S$.
 This result implies, in particular, that the morphism $S'\to S$ induces an isomorphism between the fundamental group of $S'$ and the fundamental group of $S$ ("_topological invariance of the fundamental group of a prescheme_").
 
 
-\section{Relations to \texorpdfstring{$1$}{1}-cohomology}
-\label{A.4}
+## Relations to $1$-cohomology {#FGA-3-I-section-A.4}
 
+
+### (a) {#FGA-3-I-section-A.4.a}
+
+
+### (b) {#FGA-3-I-section-A.4.b}
+
+
+### (c) {#FGA-3-I-section-A.4.c}
+
+
+### (d) {#FGA-3-I-section-A.4.d}
+
+
+### (e) {#FGA-3-I-section-A.4.e}
+
+<!--
 \subsection{}
 \label{A.4.a}
 
@@ -646,7 +631,7 @@ further, _this inclusion is the identity if and only if every descent data on $\
   _$\HH^1(S'/S,\Gm)=0$ if $A$ is a field and $A'$ is a finite Galois extension of $A$_ (cf. \hyperref[example:A.4.d]{Example 1}), _and we can also express it by saying that, in the case in question, $S'\to S$ is a strict descent morphisms for the fibred category of locally free sheaves of rank $1$._
   This latter statement is the one that is most suitable to generalise Hilbert's theorem, by varying the hypotheses both on the morphism $S'\to S$ and on the quasi-coherent sheaves in question.
 
-  Finally, we note that, for a local _Artinian_ $A$ with maximal ideal $\fk{m}$, and an $A$-algebra $A'$ (where we denote, for any integer $k>0$, the ring $A/\fk{m}^{k+1}$ (resp. $A'/\fk{m}^{k+1}A'$) by $A_k$ (resp. $A'_k$)), the following properties are equivalent:
+  Finally, we note that, for a local _Artinian_ $A$ with maximal ideal $\frak{m}$, and an $A$-algebra $A'$ (where we denote, for any integer $k>0$, the ring $A/\frak{m}^{k+1}$ (resp. $A'/\frak{m}^{k+1}A'$) by $A_k$ (resp. $A'_k$)), the following properties are equivalent:
   \begin{enumerate}[(i)]
     \item $\HH^1(A'_k/A_k,\Ga)=0$ for all $k$.
     \item $\HH^1(A'_k/A_k,\Gm)=0$ for all $k$.
@@ -761,7 +746,7 @@ We note, in passing, the following corollary, which generalises a well-known sta
 \end{itenv}
 
 \begin{proof}[Part (ii)]
-To prove part (ii) of [Theorem 1](#FGA-3-I-theorem-1), we proceed, as for (i), by restricting to the case where $S'$ over $S$ admits a section, where the result then follows from (i) (cf. \hyperref[A.1.c]{(A.1.c)}).
+To prove part (ii) of [Theorem 1](#FGA-3-I-theorem-1), we proceed, as for (i), by restricting to the case where $S'$ over $S$ admits a section, where the result then follows from (i) (cf. \hyperref[§A.1.c]{(A.1.c)}).
 \end{proof}
 
 We can evidently vary [Theorem 1](#FGA-3-I-theorem-1) and its corollaries _ad libitum_ by introducing various additional structures on the quasi-coherent sheaves (or systems of sheaves) in question.
@@ -870,7 +855,7 @@ $$
 \tag{3.1}
 $$
 where $f$ and $x$ are (respectively) sections of $\scr{A}'$ and $\cal{F}'$ over an open subset of $S$ that is contained inside $V$.
-Conditions (i) and (ii) of a descent data (cf. \hyperref[A.1.c]{(A.1.c)}) can then be written (respectively) as
+Conditions (i) and (ii) of a descent data (cf. \hyperref[§A.1.c]{(A.1.c)}) can then be written (respectively) as
 $$
 \label{equation:B.3.2}
   T_{1_U}(x) = x,
@@ -933,7 +918,7 @@ that is compatible with the morphism $h\colon X'\to S'$ and that satisfies the c
   (_"Cartier"_).
   Let $p$ be a prime number, and suppose that $p\scr{O}_S=0$ (i.e. that $\scr{O}_S$ is of _characteristic $p$_), that $(\scr{A}')^p\subset\scr{O}_S=\scr{A}$ (i.e. that $S'/S$ is _radicial of height $1$_), and that the sheaf of algebras $\scr{A}'$ over $\scr{A}$ _locally admits a $p$-basis_ (i.e. a family $(x_i)$ of sections such that $\scr{A}'$ is generated as an algebra by the $x_i$ under the sole condition that $x_i^p=0$).
   We suppose that the set of the $i$ is finite, of cardinality $n$.
-  Let $\fk{C}$ be the sheaf of $A$-derivations of $A'$, which is a locally free sheaf of rank $n$ of $A'$-modules, and, furthermore, a sheaf of Lie $p$-algebras over $\scr{A}$ (but not over $\scr{A}'$) that satisfies the following condition:
+  Let $\frak{C}$ be the sheaf of $A$-derivations of $A'$, which is a locally free sheaf of rank $n$ of $A'$-modules, and, furthermore, a sheaf of Lie $p$-algebras over $\scr{A}$ (but not over $\scr{A}'$) that satisfies the following condition:
   $$
   \label{equation:B.3.5}
     [X,fY] = X(f)Y + f[X,Y].
@@ -942,7 +927,7 @@ that is compatible with the morphism $h\colon X'\to S'$ and that satisfies the c
 \end{rmenv}
 
 \begin{itenv}{Lemma}
-  $\scr{U}=\shHom_{\scr{O}_S}(\scr{A}',\scr{A}')$ is generated, as an $\scr{O}_S$-algebra endowed with an algebra homomorphism $\scr{A}'\to\scr{U}$, by the sub-left-$A'$-module $\fk{C}$, with the following additional relations:
+  $\scr{U}=\shHom_{\scr{O}_S}(\scr{A}',\scr{A}')$ is generated, as an $\scr{O}_S$-algebra endowed with an algebra homomorphism $\scr{A}'\to\scr{U}$, by the sub-left-$A'$-module $\frak{C}$, with the following additional relations:
   $$
   \label{equation:B.3.6}
     \begin{cases}
@@ -954,7 +939,7 @@ that is compatible with the morphism $h\colon X'\to S'$ and that satisfies the c
   $$
 \end{itenv}
 
-It follows from the above lemma that a descent data on the quasi-coherent sheaf $\cal{F}'$ on $S'$ is equivalent to the data, for all $X\in\fk{C}$, of an $\scr{O}_S$-endomorphism $\overline{X}$ of $\cal{F}'$ that satisfies the following conditions:
+It follows from the above lemma that a descent data on the quasi-coherent sheaf $\cal{F}'$ on $S'$ is equivalent to the data, for all $X\in\frak{C}$, of an $\scr{O}_S$-endomorphism $\overline{X}$ of $\cal{F}'$ that satisfies the following conditions:
 $$
 \label{equation:B.3.7}
   \overline{fX} = f\overline{X}
@@ -1076,7 +1061,7 @@ In particular, we say that $P$ is _isotrivial_ (resp. _strictly isotrivial_) if,
 (We stray from the terminology of Serre [@3-I-1], which uses "locally isotrivial" for what we call "strictly isotrivial").
 Strict isotriviality is mainly useful if $G$ is simple over $S$, but is, however, an inadequate notion in other cases.
 
-If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ under $G$ is affine, by \hyperref[B.2]{B.2}, whence the possibility, thanks to [Theorem 2](#FGA-3-I-theorem-2), to "descend"
+If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ under $G$ is affine, by [§B.2](#FGA-3-I-section-B.2), whence the possibility, thanks to [Theorem 2](#FGA-3-I-theorem-2), to "descend"
 \oldpage{190-28}
 from such bundles by faithfully flat and quasi-compact morphisms.
 Taking, in particular, $G=\GL(n)_S$, defined by the condition that the functor $S'\mapsto\Hom(S',G)$ of $S$-preschemes (with values in the category of groups) can be identified with the functor $\GL(n)(S')=\GL(n,\HH^0(S',\scr{O}_{S'}))$ described in \hyperref[A.4.e]{A.4.e}.
