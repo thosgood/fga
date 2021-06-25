@@ -37,9 +37,9 @@ Grothendieck, A.
 _Séminaire Bourbaki_ **12** (1959--60), Talk no. 195.
 :::
 
-_[Trans.]_
+(_[Trans.]_
 Sections 4.1 to 4.5 were numbered A.1 to A.5 in the original;
-sections 4.6 to 4.10 were numbered C.1 to C.5.
+sections 4.6 to 4.10 were numbered C.1 to C.5.)
 
 
 ## **A.** Representable and pro-representable functors {-}
@@ -128,7 +128,7 @@ Then we can easily show that we have a canonical bijection
 $$
   \Hom(h_{\cal{X}'},h_{\cal{X}}) = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j)
 $$
-(generalising [A, Proposition 1](#FGA-3-II-section-A.1-proposition-1)).
+(generalising [§A, Proposition 1](#FGA-3-II-section-A.1-proposition-1)).
 This leads to introducing the _category $\Pro(\cal{C})$ of pro-objects of $\cal{C}$_, whose objects are projective systems of objects of $\cal{C}$ (indexed by arbitrary filtered pre-ordered sets of indices), and whose morphisms between objects $\cal{X}=(X_i)_{i\in I}$ and $\cal{X}'=(X_j)_{j\in J}$ are given by
 $$
   \Pro\Hom(\cal{X},\cal{X}') = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j),
@@ -571,13 +571,16 @@ Recall also that the schemes of modules for curves of genus $g$ or for polarised
 
 ## Formal modules of a variety {#FGA-3-II-section-C.4}
 
-<!-- Let $\Lambda$ be a _local_ Noetherian ring of residue field $k$ (more often than not, $\Lambda$ will be equal to $k$, or to a Cohen $p$-ring), and let $X_0$ be a prescheme over $k$.
+Let $\Lambda$ be a _local_ Noetherian ring of residue field $k$ (more often than not, $\Lambda$ will be equal to $k$, or to a Cohen $p$-ring), and let $X_0$ be a prescheme over $k$.
 For every local Artinian $\Lambda$-algebra $A$, consider the set $F(A)$ of isomorphism classes of $A$-preschemes $X$ that are _flat_ over $A$, endowed with an isomorphism
+
+::: {.eqref #FGA-3-II-section-C.4-equation-asterisk}
 $$
-\label{*}
   X\otimes_A\kres(A) \simfrom X_0\otimes_k\kres(A)
 \tag{$*$}
 $$
+:::
+
 where $\kres(A)$ is the residue field of $A$;
 of course, the isomorphisms between such flat $A$-preschemes should respect the above isomorphism given in the structure.
 If $A$ is a (not necessary local) Artinian $\Lambda$-algebra, with local components $A_i$, then we take $F(A)$ to be the product of the $F(A_i)$.
@@ -596,45 +599,44 @@ $$
 $$
 We thus conclude, as per usual:
 
+::: {.itenv #FGA-3-II-section-C.4-proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
+Suppose that $\HH^0(X_0,\frak{G}_{X_0/k})=0$.
 \oldpage{195-18}
-\begin{itenv}{Proposition 4.1}
-\label{C.4-proposition1}
-  Suppose that $\HH^0(X_0,\frak{G}_{X_0/k})=0$.
-  Then the formal scheme of modules for $X_0$ exists.
-  If, furthermore, $X_0$ is proper over $k$, then the formal scheme of modules is Noetherian.
-\end{itenv}
+Then the formal scheme of modules for $X_0$ exists.
+If, furthermore, $X_0$ is proper over $k$, then the formal scheme of modules is Noetherian.
+:::
 
-\begin{rmenv}{Remarks}
-  \begin{enumerate}
-    \item If $X_0$ is not assumed to be simple over $k$, then $F(I_A,\xi)$ can be identified with a sub-$A$-module of
-      $$
-        \Ext_{\scr{O}_{P_A}}^1(P_A;\scr{I}_{X_A},\scr{O}_{X_A})
-      $$
-      where we set $P_A=X_A\times_A X_A$, where $\scr{O}_{X_A}$ is considered as a coherent sheaf on $P_A$ via the diagonal morphism $X_A\to P_A$, and where $\scr{I}_{X_A}$ denotes the coherent sheaf of ideals on $P_A$ defined by the diagonal morphism.
-      More precisely, an easy globalisation of Hochschild theory shows that the $\Ext^1$ above can be identified with the set of classes, up to isomorphism, of sheaves of $I_A$-algebras $\scr{O}$ that are flat over $X_A$, and endowed with an augmentation isomorphism $\scr{O}\otimes_{I_A}A\to\scr{O}_{X_A}$ (recall that we set $I_A=At/(t^2)$).
-      The submodule $F(I_A,\xi)$ is that which corresponds to the sheaves of _commutative_ algebras.
-      The simplicity hypotheses are thus not essential in the theory of modules, as [@3-II-2] implies.
-    \item Recall (loc. cit.) that, in particular, every _simple_ and _proper algebraic curve_ $X_0$ over $k$ admits a formal scheme of modules that is simple over $\Lambda$, and of relative dimension equal to $3g-3$ if the genus $g$ is $\geq2$, and to $g$ if $g=0,1$.
-      These two latter cases no longer figure directly in \hyperref[C.4-proposition1]{Proposition 4.1}.
-      We can, however, recover them in the case of elliptic curves ($g=1$) thanks to the remarks that will follow.
-  \end{enumerate}
-\end{rmenv}
+::: {.rmenv title="Remarks" latex="{Remarks}"}
+—
 
-We an, of course, vary _ad libitum_ \hyperref[C.4-proposition1]{Proposition 4.1} by considering systems of schemes over $k$ endowed with various structures.
-Suppose, for example, that $X_0$ is an _abelian scheme_ over $k$, with a marked origin (i.e. $X_0$ is considered as a scheme in _groups_ over $k$), and let $F(A)$ be the set of isomorphism classes of _abelian_ schemes over $A$ (i.e. of schemes in groups that are proper and simple over $A$) endowed with an isomorphism \hyperref[*]{($*$)} of abelian schemes.
+1. If $X_0$ is not assumed to be simple over $k$, then $F(I_A,\xi)$ can be identified with a sub-$A$-module of
+    $$
+      \Ext_{\scr{O}_{P_A}}^1(P_A;\scr{I}_{X_A},\scr{O}_{X_A})
+    $$
+    where we set $P_A=X_A\times_A X_A$, where $\scr{O}_{X_A}$ is considered as a coherent sheaf on $P_A$ via the diagonal morphism $X_A\to P_A$, and where $\scr{I}_{X_A}$ denotes the coherent sheaf of ideals on $P_A$ defined by the diagonal morphism.
+    More precisely, an easy globalisation of Hochschild theory shows that the $\Ext^1$ above can be identified with the set of classes, up to isomorphism, of sheaves of $I_A$-algebras $\scr{O}$ that are flat over $X_A$, and endowed with an augmentation isomorphism $\scr{O}\otimes_{I_A}A\to\scr{O}_{X_A}$ (recall that we set $I_A=At/(t^2)$).
+    The submodule $F(I_A,\xi)$ is that which corresponds to the sheaves of _commutative_ algebras.
+    The simplicity hypotheses are thus not essential in the theory of modules, as [@3-II-2] implies.
+
+2. Recall (loc. cit.) that, in particular, every _simple_ and _proper algebraic curve_ $X_0$ over $k$ admits a formal scheme of modules that is simple over $\Lambda$, and of relative dimension equal to $3g-3$ if the genus $g$ is $\geq2$, and to $g$ if $g=0,1$.
+    These two latter cases no longer figure directly in [Proposition 4.1](#FGA-3-II-section-C.4-proposition-4).
+    We can, however, recover them in the case of elliptic curves ($g=1$) thanks to the remarks that will follow.
+:::
+
+We can, of course, vary [Proposition 4.1](#FGA-3-II-section-C.4-proposition-4) _ad libitum_ by considering systems of schemes over $k$ endowed with various structures.
+Suppose, for example, that $X_0$ is an _abelian scheme_ over $k$, with a marked origin (i.e. $X_0$ is considered as a scheme in _groups_ over $k$), and let $F(A)$ be the set of isomorphism classes of _abelian_ schemes over $A$ (i.e. of schemes in groups that are proper and simple over $A$) endowed with an isomorphism [($*$)](#FGA-3-II-section-C.4-equation-asterisk) of abelian schemes.
 We can show that imposing a multiplicative structure (or even only a "unit section") eliminates the infinitesimal automorphisms, and that there thus exists a formal scheme of modules that corresponds to a complete local Noetherian ring $O$.
-We can also show that, if $X$ is a proper and simple scheme with "absolutely connected" fibres over a locally Noetherian prescheme $S$, then every multiplicative structure on $X$ that admits a unit section is necessarily associative and commutative (provided that it is associative and commutative on _one_ fibre, and provided that $S$ is connected), and is furthermore uniquely determined by the knowledge
+We can also show that, if $X$ is a proper and simple scheme with "absolutely connected" fibres over a locally Noetherian prescheme $S$, then every multiplicative structure on $X$ that admits a unit section is necessarily associative and commutative (provided that it is associative and commutative on _one_ fibre, and provided that $S$ is connected), and is furthermore uniquely determined by the knowledge of the unit section.
 \oldpage{195-19}
-of the unit section.
 Further, supposing that $S$ is the spectrum of a local Artinian ring $A$ of residue field $k$, that $X$ is proper over $A$ and endowed with a section $s$, and finally that $X\otimes_A k$ is endowed with the structure of an abelian scheme over $k$, admitting the point of $X\otimes_A k$ corresponding to $s$ as the zero element, an easy calculation of obstructions, combined with an argument due to Serre, allows us to prove that there exists on $X$ a multiplicative structure admitting the section $s$ as the unit section.
 (From here, using the "existence theorem" of [@3-II-2] to pass to the case where $A$ is complete local Noetherian, and then the technique of descent from [@3-II-3] for the general case, we can prove the analogous claim for all locally Noetherian connected $S$).
 This proves that the functor $F(A)$ considered here is isomorphic to the analogous functor defined at the start of this section by abstracting the multiplicative structure on $X_0$.
 It then follows that, in particular, if $\frak{m}$ is the maximal ideal of $O$, then $\frak{m}/\frak{m}^2$ is canonically isomorphic to the dual of $\HH^1(X_0,\frak{G}_{X_0/k})$, and is thus of dimension $n^2$, where $n=\dim X_0$.
 It would be very interesting to determine if $O$ is indeed _simple_ over $\Lambda$, i.e. isomorphic to an algebra of formal series in $n^2$ variables over $\Lambda$.
-Now \hyperref[A.5-proposition2]{Proposition 5.2 in Part A} allows us to give an equivalent formulation of this problem as an _existence problem of abelian schemes that are reducible along a given abelian scheme_.
+Now [§A, Proposition 5.2](#FGA-3-II-section-A.5-proposition-5.2) allows us to give an equivalent formulation of this problem as an _existence problem of abelian schemes that are reducible along a given abelian scheme_.
 In any case, we see, by a transcendental way, that the answer is affirmative if $k$ is of characteristic $0$.
 In characteristic $p\neq0$, it evidently suffices to restrict to the case where $\Lambda$ is the ring of Witt vectors constructed over an algebraically closed field $k$.
-This could be the moment for the "_Greenberg functor_" to prove its worth \ldots -->
+This could be the moment for the "_Greenberg functor_" to prove its worth...
 
 
 ## Extension of coverings {#FGA-3-II-section-C.5}
