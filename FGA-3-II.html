@@ -597,79 +597,69 @@ Of course, even after having proven the existence of the “Chow scheme” of <e
 </div>
 <div class="rmenv" title="Remark">
 <p><em>[Comp.]</em>
-The problems described here are completely resolved in the projective case by “Hilbert schemes” (cf. <a href="#FGA-3-IV">FGA 3.IV</a>).
+The problems described here are completely resolved in the projective case by “Hilbert schemes” (cf. <a href="FGA-3-IV.html">FGA 3.IV</a>).
 Examples by Nagata and Hironaka show, however, that the functors described are not necessarily representable if we do not make the projective hypothesis, even if we restrict to the classification of subvarieties of dimension <eq env="math">0</eq> of a complete non-singular variety of dimension <eq env="math">3</eq>;
 this is linked to the fact that the symmetric square of such a variety does not necessarily exist.</p>
 </div>
 </div>
 <div id="FGA-3-II-section-C.3" class="section level2">
 <h2><span class="header-section-number">4.8</span> Picard schemes</h2>
-<!-- _[Comp.]_ For a more complete study, see [FGA 3.V](#FGA-3-V).
-
-Let $f\colon X\to S$ be an $S$-prescheme, and consider the multiplicative sheaf $\scr{O}_X^*$ of units of the structure sheaf of $X$, along with the group
-$$
-  P(X/S) = \HH^0(S,\RR^1f_*(\scr{O}_X^*)),
-$$
-called the _relative Picard group_ of $X/S$.
-An element of this group is thus defined by giving an open cover $(U_i)$ of $S$, along with an invertible sheaf $\scr{L}_i$ on each $f^{-1}(U_i)$, such that $\scr{L}_i|f^{-1}(U_i\cap U_j)$ is isomorphic to $\scr{L}_j|f^{-1}(U_i\cap U_j)$ for all $i,j$, or, at least locally over $U_i\cap U_j$ (i.e. these two sheaves are "equivalent" in the sense of [@3-II-3, B.4]).
-If $X/S$ admits a section, then $P(X/S)$ is exactly the set of classes of invertible sheaves on $X/S$ up to "equivalence" (loc. cit.).
-We now set, for all $T$ over $S$,
-$$
+<p><em>[Comp.]</em> For a more complete study, see <a href="FGA-3-V.html">FGA 3.V</a>.</p>
+<p>Let <eq env="math">f\colon X\to S</eq> be an <eq env="math">S</eq>-prescheme, and consider the multiplicative sheaf <eq env="math">{\mathscr{O}}_X^*</eq> of units of the structure sheaf of <eq env="math">X</eq>, along with the group
+<eq env="displaymath">
+  P(X/S) = \operatorname{H}^0(S,\operatorname{R}^1f_*({\mathscr{O}}_X^*)),
+</eq>
+called the <em>relative Picard group</em> of <eq env="math">X/S</eq>.
+An element of this group is thus defined by giving an open cover <eq env="math">(U_i)</eq> of <eq env="math">S</eq>, along with an invertible sheaf <eq env="math">{\mathscr{L}}_i</eq> on each <eq env="math">f^{-1}(U_i)</eq>, such that <eq env="math">{\mathscr{L}}_i|f^{-1}(U_i\cap U_j)</eq> is isomorphic to <eq env="math">{\mathscr{L}}_j|f^{-1}(U_i\cap U_j)</eq> for all <eq env="math">i,j</eq>, or, at least locally over <eq env="math">U_i\cap U_j</eq> (i.e. these two sheaves are “equivalent” in the sense of <span class="citation">[<a href="#ref-3-II-3" role="doc-biblioref">12</a>]</span>).
+If <eq env="math">X/S</eq> admits a section, then <eq env="math">P(X/S)</eq> is exactly the set of classes of invertible sheaves on <eq env="math">X/S</eq> up to “equivalence” (loc. cit.).
+We now set, for all <eq env="math">T</eq> over <eq env="math">S</eq>,
+<eq env="displaymath">
   F(T) = P(X_T/T)
-$$
-which gives a covariant functor in $T$, that we call the _Picard functor_ of $X/S$;
-if this functor is representable, then the prescheme over $S$ that represents it is called the _Picard prescheme_ of $X/S$, and denoted by $\scr{P}(X/S)$.
+</eq>
+which gives a covariant functor in <eq env="math">T</eq>, that we call the <em>Picard functor</em> of <eq env="math">X/S</eq>;
+if this functor is representable, then the prescheme over <eq env="math">S</eq> that represents it is called the <em>Picard prescheme</em> of <eq env="math">X/S</eq>, and denoted by <eq env="math">{\mathscr{P}}(X/S)</eq>.
 In this case, we then have an isomorphism of functors:
-$$
-  \Hom_S(T,\scr{P}(X/S)) \simto P(X_T/T).
-$$
-Taking the Picard prescheme is compatible with extension of the base, and, in particular, the Picard preschemes of the fibres of $X$ over $S$ (which are preschemes over the residue fields $K(s)$ of the $s\in S$) are the fibres
-\oldpage{195-16}
-of $\scr{P}(X/S)$.
-Of course, since $P(X_T/T)=F(T)$ is a commutative group, the Picard preschemes are preschemes in groups.
-Note as well that the _generalised Jacobians_ of Rosenlicht are exactly the connected components of the identity in the Picard schemes of complete curves (possibly with singularities), which should make most of their properties clear (once their existence has been proven).
+<eq env="displaymath">
+  \operatorname{Hom}_S(T,{\mathscr{P}}(X/S)) \xrightarrow{\sim}P(X_T/T).
+</eq>
+Taking the Picard prescheme is compatible with extension of the base, and, in particular, the Picard preschemes of the fibres of <eq env="math">X</eq> over <eq env="math">S</eq> (which are preschemes over the residue fields <eq env="math">K(s)</eq> of the <eq env="math">s\in S</eq>) are the fibres of <eq env="math">{\mathscr{P}}(X/S)</eq>.
 
-\begin{rmenv}{Remark}
-  The definition adopted here is only reasonable when every point of $Y$ admits an open neighbourhood $U$ over which $X$ admits a section.
-  In the general case, it is necessary to slightly modify the definition of the Picard functor in order to still obtain an existence theorem.
+Of course, since <eq env="math">P(X_T/T)=F(T)</eq> is a commutative group, the Picard preschemes are preschemes in groups.
+Note as well that the <em>generalised Jacobians</em> of Rosenlicht are exactly the connected components of the identity in the Picard schemes of complete curves (possibly with singularities), which should make most of their properties clear (once their existence has been proven).</p>
+<div class="rmenv" title="Remark">
+<p>The definition adopted here is only reasonable when every point of <eq env="math">Y</eq> admits an open neighbourhood <eq env="math">U</eq> over which <eq env="math">X</eq> admits a section.
+In the general case, it is necessary to slightly modify the definition of the Picard functor in order to still obtain an existence theorem.</p>
+<p>Here, the plausible existence conditions for a Picard prescheme are the following: <eq env="math">X</eq> is <em>proper</em> and <em>flat</em> over <eq env="math">S</eq>; <eq env="math">f_*({\mathscr{O}}_X)={\mathscr{O}}_S</eq>; and <eq env="math">X</eq> locally admits a section over <eq env="math">S</eq>.
+This condition naturally arises in the application of the technique of descent, <em>in eliminating the automorphisms of an invertible sheaf <eq env="math">{\mathscr{L}}</eq> on <eq env="math">X</eq> by endowing them with a marked section over the section <eq env="math">s</eq></em> (<span class="citation">[<a href="#ref-3-II-3" role="doc-biblioref">12</a>]</span>).
+Notably, we find the following:</p>
+</div>
+<div id="FGA-3-II-section-C.3-proposition-3.1" class="itenv" title="Proposition 3.1">
+<p>Suppose that <eq env="math">X</eq> is flat over <eq env="math">S=\operatorname{Spec}(\Lambda)</eq>, where <eq env="math">\Lambda</eq> is Noetherian, and suppose that, for all <eq env="math">T</eq> of finite type over <eq env="math">S</eq>, we have <eq env="math">{f_T}_*({\mathscr{O}}_{X_T})={\mathscr{O}}_T</eq> (if <eq env="math">f</eq> is proper and separable and has separable fibres, or if <eq env="math">S</eq> is the spectrum of a field, then it follows from K"{u}nneth that the latter condition is equivalent to <eq env="math">f_*({\mathscr{O}}_X)={\mathscr{O}}_S</eq>).
+Then the Picard functor of <eq env="math">X/S</eq> on the category of Artinian <eq env="math">\Lambda</eq>-algebras is pro-representable.</p>
+<p>Furthermore, we then have
+<eq env="displaymath">
+  F(I_A,\xi) = \operatorname{H}^1(X_A,{\mathscr{O}}_{X_A}),
+</eq>
+and, in particular:</p>
+</div>
+<div class="itenv" title="Corollary">
+<p>If <eq env="math">X</eq> is proper over <eq env="math">S</eq>, then the local components of the topological <eq env="math">\Lambda</eq>-algebra corresponding to the Picard functor are Noetherian.</p>
+</div>
+<div class="rmenv" title="Remarks">
+<p>We can generalise the definitions and results from this section to the classification of principal bundles on <eq env="math">X</eq>, with structure group <eq env="math">G</eq> being a scheme in groups over <eq env="math">S</eq> that is <em>affine</em> and <em>flat over <eq env="math">S</eq></em>, and also <em>commutative</em>.
+In the case where <eq env="math">G</eq> would not be commutative, and thus where the adjoint bundle in groups of a principal bundle (whose sections of the automorphisms of the principal bundle) would no longer be trivial, <a href="FGA-3-II.html#FGA-3-II-section-C.3-proposition-3.1">Proposition 3.1</a> no longer holds true as it is stated.
+We can, however, modify the universal problem in such a way that we again obtain a solution (at least, for now, in formal geometry).
 
-  Here, the plausible existence conditions for a Picard prescheme are the following: $X$ is _proper_ and _flat_ over $S$; $f_*(\scr{O}_X)=\scr{O}_S$; and $X$ locally admits a section over $S$.
-  This condition naturally arises in the application of the technique of descent, _in eliminating the automorphisms of an invertible sheaf $\scr{L}$ on $X$ by endowing them with a marked section over the section $s$_ ([@3-II-3, B.4]).
-  Notably, we find the following:
-\end{rmenv}
-
-\begin{itenv}{Proposition 3.1}
-\label{C.3-proposition1}
-  Suppose that $X$ is flat over $S=\Spec(\Lambda)$, where $\Lambda$ is Noetherian, and suppose that, for all $T$ of finite type over $S$, we have ${f_T}_*(\scr{O}_{X_T})=\scr{O}_T$ (if $f$ is proper and separable and has separable fibres, or if $S$ is the spectrum of a field, then it follows from K\"{u}nneth that the latter condition is equivalent to $f_*(\scr{O}_X)=\scr{O}_S$).
-  Then the Picard functor of $X/S$ on the category of Artinian $\Lambda$-algebras is pro-representable.
-
-  Furthermore, we then have
-  $$
-    F(I_A,\xi) = \HH^1(X_A,\scr{O}_{X_A}),
-  $$
-  and, in particular:
-\end{itenv}
-
-\begin{itenv}{Corollary}
-  If $X$ is proper over $S$, then the local components of the topological $\Lambda$-algebra corresponding to the Picard functor are Noetherian.
-\end{itenv}
-
-\begin{rmenv}{Remarks}
-  We can generalise the definitions and results from this section to the classification of principal bundles on $X$, with structure group $G$ being a scheme in groups over $S$ that is _affine_ and _flat over $S$_, and also _commutative_.
-  In the case where $G$ would not be commutative, and thus where the adjoint bundle in groups of a principal bundle (whose sections of the automorphisms of the principal bundle) would no longer be trivial, \hyperref[C.3-proposition1]{Proposition 3.1} no longer holds true as it is stated.
-  We can, however, modify the universal problem in such a way that we again obtain a solution (at least, for now, in formal geometry).
-  _The golden rule to remember, in the context of the current_
-\oldpage{195-17}
-  _section and in the following, and every time we are looking for "schemes of modules" for classes of objects that are only defined up to isomorphism, is always the following:_
-  _eliminate the possible automorphisms of the objects that we want to classify, by introducing, if necessary, auxiliary structures_ (points or elements of marked sections, fixing differential forms, etc.) that we take to be insignificant enough that we do not substantially modify the initial problem.
-\end{rmenv}
-
-\begin{rmenv}{Remarks}
-  _[Comp.]_
-  I have recently shown that the formal scheme of modules for an abelian variety over a field is indeed simple over the Witt ring, or, in other words, that every abelian scheme $X$ over a local Artinian ring that is the quotient of another such scheme $Y$ comes, by reduction, from an abelian scheme over $Y$.
-  The proof simply uses the variance properties of the obstruction class of the covering, introduced in [FGA II, p. 12](#FGA-2-section-6).
-  Recall also that the schemes of modules for curves of genus $g$ or for polarised abelian schemes have been constructed by Mumford (cf. _Séminaire Mumford--Tate_, Harvard University (1961--62)).
-\end{rmenv} -->
+<em>The golden rule to remember, in the context of the current</em>
+<em>section and in the following, and every time we are looking for “schemes of modules” for classes of objects that are only defined up to isomorphism, is always the following:</em>
+<em>eliminate the possible automorphisms of the objects that we want to classify, by introducing, if necessary, auxiliary structures</em> (points or elements of marked sections, fixing differential forms, etc.) that we take to be insignificant enough that we do not substantially modify the initial problem.</p>
+</div>
+<div class="rmenv" title="Remarks">
+<p><em>[Comp.]</em>
+I have recently shown that the formal scheme of modules for an abelian variety over a field is indeed simple over the Witt ring, or, in other words, that every abelian scheme <eq env="math">X</eq> over a local Artinian ring that is the quotient of another such scheme <eq env="math">Y</eq> comes, by reduction, from an abelian scheme over <eq env="math">Y</eq>.
+The proof simply uses the variance properties of the obstruction class of the covering, introduced in <a href="FGA-2.html#FGA-2-section-6">FGA II, p. 12</a>.
+Recall also that the schemes of modules for curves of genus <eq env="math">g</eq> or for polarised abelian schemes have been constructed by Mumford (cf. <em>Séminaire Mumford–Tate</em>, Harvard University (1961–62)).</p>
+</div>
 </div>
 <div id="FGA-3-II-section-C.4" class="section level2">
 <h2><span class="header-section-number">4.9</span> Formal modules of a variety</h2>
