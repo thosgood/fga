@@ -641,7 +641,7 @@ This could be the moment for the "_Greenberg functor_" to prove its worth...
 
 ## Extension of coverings {#FGA-3-II-section-C.5}
 
-<!-- Let $\frak{X}$ be a _formal_ Noetherian prescheme [@3-II-2], $U$ an open subset of $\frak{X}$ defined locally by the "non-vanishing" of a section of $\scr{O}_\frak{X}$ that is not a zero divisor (and thus large enough that every section of $\scr{O}_\frak{X}$ over an open subset $V$ that is zero on $U\cap V$ is zero).
+Let $\frak{X}$ be a _formal_ Noetherian prescheme [@3-II-2], $U$ an open subset of $\frak{X}$ defined locally by the "non-vanishing" of a section of $\scr{O}_\frak{X}$ that is not a zero divisor (and thus large enough that every section of $\scr{O}_\frak{X}$ over an open subset $V$ that is zero on $U\cap V$ is zero).
 (_[Comp.]_ It is also necessary to assume that the section defining $U$ is not a zero divisor not only on $\frak{X}$, but also on every $X_n$.)
 Let $\frak{J}$ be an "ideal of definition" for $\frak{X}$, and let $X_n=(\frak{X},\scr{O}_\frak{X}/\frak{J}^{n+1})$, which is thus a ordinary Noetherian prescheme.
 Then, if $\frak{X}'$ and $\frak{X}''$ are _flat coverings_ of $\frak{X}$ (i.e. preschemes over $\frak{X}$ defined by sheaves of algebras that are coherent and locally free as sheaves of modules) that are _unramified over $U$_, the evident map
@@ -651,25 +651,26 @@ $$
 is _injective_;
 in particular, _an automorphism of $\frak{X}'$ that induces the identity on $X'_0$ is the identity_.
 This allows us to apply the technique of descent to the situation.
-We start, in particular, with a flat covering $X'_0$ of $X_0$, unramified
 \oldpage{195-20}
-over $U_0$, and let $G(\frak{X})$ be the set of classes, up to isomorphism (inducing the identity on $X'_0$), of flat coverings $\frak{X}'$ of $\frak{X}$ that induce $X'_0$ on $X_0$ (and that are thus necessarily unramified over $U$).
+We start, in particular, with a flat covering $X'_0$ of $X_0$, unramified over $U_0$, and let $G(\frak{X})$ be the set of classes, up to isomorphism (inducing the identity on $X'_0$), of flat coverings $\frak{X}'$ of $\frak{X}$ that induce $X'_0$ on $X_0$ (and that are thus necessarily unramified over $U$).
 We similarly define $G(V)$ for every open subset $V$ of $\frak{X}$, and, more generally, $G(\frak{Y})$ for every formal prescheme $\frak{Y}$ over $\frak{X}$.
 With this, the results of [@3-II-2] and [@3-II-3] imply, first of all, the following results:
-\begin{enumerate}[(a)]
-  \item If $V$ varies amongst open subset of $\frak{X}$, then the $G(V)$ form a _sheaf_ on $\frak{X}$, say $\scr{G}_\frak{X}=\scr{G}$.
+
+a. If $V$ varies amongst open subset of $\frak{X}$, then the $G(V)$ form a _sheaf_ on $\frak{X}$, say $\scr{G}_\frak{X}=\scr{G}$.
     The restriction of this sheaf to $U$ is the _constant_ sheaf whose fibres consist of a single element.
 
     More generally, describing the fibres of $\scr{G}_\frak{X}$ is a question of complete local rings, in a precise way:
-  \item For all $x\in\frak{X}$, we have
+
+b. For all $x\in\frak{X}$, we have
     $$
       \scr{G}_x = G(\Spec(\scr{O}_{\frak{X},x})) \subset G(\Spec(\widehat{\scr{O}}_{\frak{X},x}))
     $$
     (i.e. isomorphism classes of finite free algebras $B$ over $\widehat{\scr{O}}_{\frak{X},x}$ endowed with an isomorphism from $B\otimes_{\widehat{\scr{O}}_{\frak{X},x}}\scr{O}_{X_0,x}$ to $(\widehat{\scr{O}}'_0)_x$, where $\scr{O}'_0$ is the sheaf of algebras on $X_0$ that defines $X'_0$).
-  \item We have a canonical isomorphism $\scr{G}_\frak{X}=\varprojlim\scr{G}_{\frak{X}_n}$; in other words, for every open subset $V$ of $\frak{X}$, we have $G(V)=\varprojlim G(V_n)$.
-  \item Suppose that $\frak{X}$ comes from an ordinary _proper_ scheme $X$ over a complete local Noetherian ring $\Lambda$ that has ideal of definition $\frak{m}$ by taking the $\scr{J}$-adic completion of $\scr{O}_X$, where $\scr{J}=\frak{m}\cdot\scr{O}_X$.
+
+c. We have a canonical isomorphism $\scr{G}_\frak{X}=\varprojlim\scr{G}_{\frak{X}_n}$; in other words, for every open subset $V$ of $\frak{X}$, we have $G(V)=\varprojlim G(V_n)$.
+
+d. Suppose that $\frak{X}$ comes from an ordinary _proper_ scheme $X$ over a complete local Noetherian ring $\Lambda$ that has ideal of definition $\frak{m}$ by taking the $\scr{J}$-adic completion of $\scr{O}_X$, where $\scr{J}=\frak{m}\cdot\scr{O}_X$.
     Then $G(\frak{X})$ is canonically isomorphic to the set of classes of flat coverings of the _ordinary_ scheme $X$ that are "reducible along $X'_0$".
-\end{enumerate}
 
 Figuratively speaking, we can say that (a) and (b) establish the fundamental relations between the local and global aspects of the problem; (c) gives the relations between the "finite" and "infinitesimal" aspects; and finally (d) remembers (under precise conditions) the identity between the "formal" and "algebraic" aspects.
 
@@ -681,16 +682,15 @@ $$
 This is a covariant functor in $A$, with values in the category of sets, and, by (c), this functor is completely determined by how it acts on Artinian algebras $A$;
 it is equivalent to say either that this functor is pro-representable, i.e. of the form
 $$
-  F(A) = \Hom_{\mbox{top. $\Lambda$-algebras}}(\scr{O},A)
+  F(A) = \Hom_{\text{top. }\Lambda\text{-algebras}}(\scr{O},A)
 $$
 \oldpage{195-21}
 where $\scr{O}$ is a topological $\Lambda$ algebra of the type described in [§A.5](#FGA-3-II-section-A.5), or that this is true when we restrict to only Artinian algebras $A$.
 The combination of [Theorem 1](#FGA-3-II-section-B-theorem-1) and [Theorem 2](#FGA-3-II-section-B-theorem-2) then effectively implies:
 
-\begin{itenv}{Proposition 5.1}
-\label{C.5-proposition1}
-  The above functor is pro-representable.
-\end{itenv}
+::: {.itenv #FGA-3-II-section-C.5-proposition-5.1 title="Proposition 5.1" latex="{Proposition 5.1}"}
+The above functor is pro-representable.
+:::
 
 Of course, by (a), if $U=\frak{X}$, then $G(\frak{Y})$ consists of a single element for all $\frak{Y}$ over $\frak{X}$, and the functor $F$ is then not very interesting (we will have $\scr{O}=\Lambda$).
 It seems that, in practically every other case, the topological local ring $\scr{O}$ _is not Noetherian_.
@@ -699,9 +699,9 @@ We will compare this result with the point of view of J.-P. Serre [@3-II-4] via 
 here as well, the classification of extensions is given by infinite-dimensional "varieties".
 We can also take, in the above, $\frak{X}$ to be the formal spectrum of a complete local ring (of which $\Lambda$ will be, for example, a Cohen subring), and we might hope that the results of this section can be used in the study of extensions of a local complete ring of dimension $>1$.
 Just as much in the local case as in the global case, they might allow us to formulate precise relations between the phenomena of higher ramification and phenomena in characteristic $0$ (approachable via a transcendental way).
-In any case, it is the preliminary analysis of \hyperref[C.5-proposition1]{Proposition 5.1} that allows us to extend the methods described in [@3-II-2] for the study of the fundamental group to the "tamely ramified" case, and to resolve, by a transcendental way, the "problem of three points".
+In any case, it is the preliminary analysis of [Proposition 5.1](#FGA-3-II-section-C.5-proposition-5.1) that allows us to extend the methods described in [@3-II-2] for the study of the fundamental group to the "tamely ramified" case, and to resolve, by a transcendental way, the "problem of three points".
 
 To finish, we note that the situation simplifies if $X_0$ is of dimension $1$;
 then, by (a) and (b), $G(\frak{X})$ can be identified with $\prod_i G(\Spec(\scr{O}_{\frak{X},x_i}))$, where the $x_i$ are the points of $X_0\setminus U$:
 _we can take arbitrary "local" extensions at the ramification points_.
-Further, if $X_0$ is normal, then we note that the formal scheme of modules guaranteed by \hyperref[C.5-proposition1]{Proposition 5.1} is _simple_ over $\Spec(\Lambda)$. -->
+Further, if $X_0$ is normal, then we note that the formal scheme of modules guaranteed by [Proposition 5.1](#FGA-3-II-section-C.5-proposition-5.1) is _simple_ over $\Spec(\Lambda)$.
