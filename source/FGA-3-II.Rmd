@@ -9,8 +9,8 @@
 <!-- Shortcuts -->
 
 \providecommand{\kres}{\mathfrak{K}}
-\providecommand{\simto}{\xrightarrow{\raisebox{-0.7ex}[0ex][0ex]{$\sim$}}}
-\providecommand{\simfrom}{\xleftarrow{\raisebox{-0.7ex}[0ex][0ex]{$\sim$}}}
+\providecommand{\simto}{\xrightarrow{\sim}}
+\providecommand{\simfrom}{\xleftarrow{\sim}}
 \providecommand{\Set}{\mathtt{Set}}
 
 \providecommand{\id}{\operatorname{id}}
@@ -41,12 +41,13 @@ _[Trans.]_
 Sections 4.1 to 4.5 were numbered A.1 to A.5 in the original;
 sections 4.6 to 4.10 were numbered C.1 to C.5.
 
+
 ## **A.** Representable and pro-representable functors {-}
 
 
 ## Representable functors {#FGA-3-II-section-A.1}
 
-<!-- Let $\cal{C}$ be a category.
+Let $\cal{C}$ be a category.
 \oldpage{195-01}
 For all $X\in\cal{C}$, let $h_X$ be the contravariant functor from $\cal{C}$ to the category $\Set$ of sets given by
 $$
@@ -63,15 +64,14 @@ $$
 from $\cal{C}$ to the category of covariant functors from the dual $\cal{C}^o$ of $\cal{C}$ to the category of sets.
 We then recall:
 
-\begin{itenv}{Proposition 1}
-\label{A.1-proposition1}
-  This functor $h$ is _faithfully flat_;
-  in other words, for every pair $X,X'$ of objects of $\cal{C}$, the natural map
-  $$
-    \Hom(X,X') \to \Hom(h_X,h_{X'})
-  $$
-  is _bijective_.
-\end{itenv}
+::: {.itenv #FGA-3-II-section-A.1-proposition-1.1 title="Proposition 1.1" latex="{Proposition 1.1}"}
+This functor $h$ is _faithfully flat_;
+in other words, for every pair $X,X'$ of objects of $\cal{C}$, the natural map
+$$
+\Hom(X,X') \to \Hom(h_X,h_{X'})
+$$
+is _bijective_.
+:::
 
 In particular, if a functor $F\in\Hom(\cal{C}^o,\Set)$ is isomorphic to a functor of the form $h_X$, then _$X$ is determined up to unique isomorphism_.
 We then say that the functor $F$ is _representable_.
@@ -97,7 +97,7 @@ $$
 such that, for every morphism $Y\to Y'$ in $\cal{C}$, the system of set maps
 $$
   h_{X^{(i)}}(Y) \to h_{X^{(i)}}(Y')
-  \qquad\mbox{(for $i=0,1,2$)}
+  \qquad\text{(for }i=0,1,2\text{)}
 $$
 is a morphism for the two composition laws, with respect to $Y$ and $Y'$.
 In this way, we see that the idea of a "$\cal{C}-group$" structure, or a "$\cal{C}$-ring" structure, etc. on an object $X$ of $\cal{C}$ can be expressed in the most manageable way (in theory as much as in practice) by saying that, for every $Y\in\cal{C}$, we have a group law (resp. ring law, etc.) in the usual sense on the set $h_X(Y)$, with the maps $h_X(Y)\to h_X(Y')$ corresponding to morphisms $Y\to Y'$ that should be group homomorphisms (resp. ring homomorphisms, etc.).
@@ -106,12 +106,12 @@ _the general yoga is purely and simply identifying, using the canonical functor 
 
 \oldpage{195-03}
 
-The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce _covariant representable functors $\cal{C}\to\Set$_, i.e. those of the form $Y\mapsto\Hom(X,Y)=h'_X(Y)$. -->
+The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce _covariant representable functors $\cal{C}\to\Set$_, i.e. those of the form $Y\mapsto\Hom(X,Y)=h'_X(Y)$.
 
 
 ## Pro-representable functors, pro-objects {#FGA-3-II-section-A.2}
 
-<!-- Let $\cal{X}=(X_i)_{i\in I}$ be a projective system of objects of $\cal{C}$;
+Let $\cal{X}=(X_i)_{i\in I}$ be a projective system of objects of $\cal{C}$;
 there is a corresponding covariant functor
 $$
   h'_{\cal{X}} = \varinjlim_i h'_{X_i}
@@ -122,13 +122,13 @@ $$
 $$
 which is a functor from $\cal{C}$ to $\Set$.
 A functor from $\cal{C}$ to $\Set$ that is isomorphic to a functor of this type _with $I$ filtered_ is said to be _pro-representable_.
-By \hyperref[A.1]{the previous section}, these are exactly the functors that are isomorphic to _filtered inductive limits of representable functors_.
+By the previous section, these are exactly the functors that are isomorphic to _filtered inductive limits of representable functors_.
 Let $\cal{X}'=(X_j)_{j\in J}$ be another filtered projective system in $\cal{C}$ (indexed by another filtered pre-ordered set of indices $J$).
 Then we can easily show that we have a canonical bijection
 $$
   \Hom(h_{\cal{X}'},h_{\cal{X}}) = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j)
 $$
-(generalising \hyperref[A.1-proposition1]{Proposition 1, (A.1)}).
+(generalising [A, Proposition 1](#FGA-3-II-section-A.1-proposition-1)).
 This leads to introducing the _category $\Pro(\cal{C})$ of pro-objects of $\cal{C}$_, whose objects are projective systems of objects of $\cal{C}$ (indexed by arbitrary filtered pre-ordered sets of indices), and whose morphisms between objects $\cal{X}=(X_i)_{i\in I}$ and $\cal{X}'=(X_j)_{j\in J}$ are given by
 $$
   \Pro\Hom(\cal{X},\cal{X}') = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j),
@@ -168,26 +168,25 @@ sending $\cal{X}=(X_i)_{i\in I}$ to $\varprojlim{}_{\cal{C}'}F(X_i)$.
 
 A pro-object $\cal{X}$ is said to be a _strict pro-object_ if it is isomorphic to a pro-object $(X_i)_{i\in I}$, where the transition morphisms $X_i\to X_j$ are _epimorphisms_;
 a functor defined by such an object is said to be _strictly pro-representable_.
-We can thus further demand that $I$ be a filtered _ordered_ set, and that every epimorphism
+We can thus further demand that $I$ be a filtered _ordered_ set, and that every epimorphism $X_i\to X'$ be equivalent to an epimorphism $X_i\to X_j$ for some suitable $j\in I$ (uniquely determined by this condition).
 \oldpage{195-05}
-$X_i\to X'$ be equivalent to an epimorphism $X_i\to X_j$ for some suitable $j\in I$ (uniquely determined by this condition).
 Under these conditions, the projective system $(X_i)_{i\in I}$ is determined _up to unique isomorphism_ (in the usual sense of isomorphisms of projective systems).
 It thus follows that _the projective limit of a projective system $\cal{X}^{(\alpha)}$ of strict pro-objects always exists in $\Pro(\cal{C})$_, and that, with the above notation of $F$ and $\overline{F}$, we have that
 $$
   \overline{F}\varprojlim_\alpha\cal{X}^{(\alpha)} = \varprojlim_\alpha{}_{\cal{C}'}F(X^{(\alpha)}).
 $$
-In particular, if every pro-object of $\cal{C}$ is strict (cf. the \hyperref[A.1]{previous section}), then the extended functor $\overline{F}$ commutes with projective limits. -->
+In particular, if every pro-object of $\cal{C}$ is strict (cf. the previous section), then the extended functor $\overline{F}$ commutes with projective limits.
 
 
 ## Characterisation of pro-representable functors {#FGA-3-II-section-A.3}
 
-<!-- Let $\cal{C}$ and $\cal{C}'$ be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, pre-ordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" $e$ such that $\Hom(X,e)$ consists of only on element for all $X$).
+Let $\cal{C}$ and $\cal{C}'$ be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, pre-ordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" $e$ such that $\Hom(X,e)$ consists of only on element for all $X$).
 Let $F$ be a covariant functor from $\cal{C}$ to $\cal{C}'$.
 Then the following conditions are equivalent:
-\begin{enumerate}[(i)]
-  \item $F$ commutes with finite projective limits;
-  \item $F$ commutes with finite products and with finite fibred products;
-  \item $F$ commutes with finite products, and, for every exact diagram
+
+i. $F$ commutes with finite projective limits;
+ii. $F$ commutes with finite products and with finite fibred products;
+iii. $F$ commutes with finite products, and, for every exact diagram
     $$
       X\to X'\rightrightarrows X''
     $$
@@ -196,7 +195,7 @@ Then the following conditions are equivalent:
       F(X)\to F(X')\rightrightarrows F(X'')
     $$
     is exact.
-\end{enumerate}
+
 We then say that $F$ is _left exact_.
 
 In what follows, we assume that finite projective limits always exist in $\cal{C}$.
@@ -207,40 +206,37 @@ $$
   F\colon \cal{C} \to \Set
 $$
 be a covariant functor, and let $X\in\cal{C}$ and $\xi\in F(X)$.
-We say that $\xi$ (or the pair
 \oldpage{195-06}
-$(X,\xi)$) is _minimal_ if, for all $X'\in\cal{C}$ and all $\xi'\in F(X')$, and for every strict monomorphism (cf. [@3-II-3, A, §2]) $u\colon X'\to X$ such that $\xi=F(u)(\xi')$, $u$ is an isomorphism.
+We say that $\xi$ (or the pair $(X,\xi)$) is _minimal_ if, for all $X'\in\cal{C}$ and all $\xi'\in F(X')$, and for every strict monomorphism (cf. [@3-II-3, A, §2]) $u\colon X'\to X$ such that $\xi=F(u)(\xi')$, $u$ is an isomorphism.
 We also say that a pair $(X,\xi)$ _dominates_ $(X'',\xi'')$ (where $xi\in F(X)$ and $\xi''\in F(X'')$) if there exists a morphism $v\colon X\to X''$ such that $\xi''=F(v)(\xi)$;
 _if $\xi$ is minimal, and if $F$ is left exact, then this morphism $v$ is unique_;
 _if $\xi''$ is minimal, then $v$ is surjective_.
 From this we easily deduce the following proposition:
 
-\begin{itenv}{Proposition 3.1}
-\label{A.3-proposition1}
-  For $F$ to be strictly pro-representable, it is necessary and sufficient for it to satisfy the following two conditions:
-  \begin{enumerate}[(i)]
-    \item $F$ is left exact; and
-    \item every pair $(X,\xi)$, with $\xi\in F(X)$, is dominated by some _minimal_ pair.
-  \end{enumerate}
-\end{itenv}
+::: {.itenv #FGA-3-II-section-A.3-proposition-3.1 title="Proposition 3.1" latex="{Proposition 3.1}"}
+For $F$ to be strictly pro-representable, it is necessary and sufficient for it to satisfy the following two conditions:
+
+i. $F$ is left exact; and
+ii. every pair $(X,\xi)$, with $\xi\in F(X)$, is dominated by some _minimal_ pair.
+:::
 
 This second condition is trivial if every object of $\cal{C}$ is Artinian (by taking a sub-object $X'$ of $X$ that is minimal amongst those for which there exists some $\xi'\in F(X')$ such that $\xi$ is the image of $\xi'$).
 Whence:
 
-\begin{itenv}{Corollary}
-  Let $\cal{C}$ be a category whose objects are all Artinian and in which all finite projective limits exist.
-  Then the pro-representable functors from $\cal{C}$ to $\Set$ are exactly the left exact functors, and they are in fact strictly pro-representable.
-\end{itenv}
+::: {.itenv title="Corollary" latex="{Corollary}"}
+Let $\cal{C}$ be a category whose objects are all Artinian and in which all finite projective limits exist.
+Then the pro-representable functors from $\cal{C}$ to $\Set$ are exactly the left exact functors, and they are in fact strictly pro-representable.
+:::
 
-This last fact also implies that _every pro-object of $\cal{C}$ is then strict_. -->
+This last fact also implies that _every pro-object of $\cal{C}$ is then strict_.
 
 
 ## Example: groups of Galois type, pro-algebraic groups {#FGA-3-II-section-A.4}
 
-<!-- If $\cal{C}$ is the category of ordinary finite groups, then $\Pro(\cal{C})$ is equivalent to the category of totally disconnected compact topological^[_[Trans.]_ Here the word "Hausdorff" is implicit.] groups.
+If $\cal{C}$ is the category of ordinary finite groups, then $\Pro(\cal{C})$ is equivalent to the category of totally disconnected compact topological^[_[Trans.]_ Here the word "Hausdorff" is implicit.] groups.
 It is groups of this type, and their generalisations, obtained by replacing ordinary finite groups with schemes of finite groups over a given base prescheme (for example, finite algebraic groups over a field $k$), that serve as fundamental groups, homotopy groups, and absolute and relative homology groups for preschemes.
-In all these examples, the corollary to \hyperref[A.3-proposition1]{Proposition 3.1} applies, and it is indeed by the associated functor that the $\pi_1$ should be defined [@3-II-2].
-It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the "_pro-algebraic groups_" of Serre [@3-II-4]. -->
+In all these examples, the corollary to [Proposition 3.1](#FGA-3-II-section-A.3-proposition-3.1) applies, and it is indeed by the associated functor that the $\pi_1$ should be defined [@3-II-2].
+It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the "_pro-algebraic groups_" of Serre [@3-II-4].
 
 
 ## Example: "formal varieties" {#FGA-3-II-section-A.5}
