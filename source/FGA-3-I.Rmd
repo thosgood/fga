@@ -874,7 +874,7 @@ $$
 that is compatible with the morphism $h\colon X'\to S'$ and that satisfies the conditions analogous to equations [(3.1)](#FGA-3-I-section-B.3-equation-3.1) to [(3.4)](#FGA-3-I-section-B.3-equation-3.4) above.
 
 ::: {.rmenv #FGA-3-I-section-B.3-example-1 title="Example 1" latex="{Example 1}"}
-(_"Weil"_).
+(_Weil_).
 Suppose that $S'/S$ is a _Galois étale covering_ with Galois group $\Gamma$ (cf. \hyperref[A.3]{(A.3)} and \hyperref[A.4.d]{(A.4.d)}).
 Then a descent data on a quasi-coherent sheaf $\cal{F}'$ on $S'$ (resp. on an $S'$-prescheme $X'$) is equivalent to the data of a representation of $\Gamma$ by automorphisms of $(S',\cal{F}')$ (resp. of $(S',X')$) that is compatible with the action of $\Gamma$ on $S'$.
 \oldpage{190-23}
@@ -883,7 +883,7 @@ _$\scr{U}$ admits, as a left $A'$-module, a basis given by the sections of $\scr
 :::
 
 :::: {.rmenv #FGA-3-I-section-B.3-example-2 title="Example 2" latex="{Example 2}"}
-(_"Cartier"_).
+(_Cartier_).
 Let $p$ be a prime number, and suppose that $p\scr{O}_S=0$ (i.e. that $\scr{O}_S$ is of _characteristic $p$_), that $(\scr{A}')^p\subset\scr{O}_S=\scr{A}$ (i.e. that $S'/S$ is _radicial of height $1$_), and that the sheaf of algebras $\scr{A}'$ over $\scr{A}$ _locally admits a $p$-basis_ (i.e. a family $(x_i)$ of sections such that $\scr{A}'$ is generated as an algebra by the $x_i$ under the sole condition that $x_i^p=0$).
 We suppose that the set of the $i$ is finite, of cardinality $n$.
 Let $\frak{C}$ be the sheaf of $A$-derivations of $A'$, which is a locally free sheaf of rank $n$ of $A'$-modules, and, furthermore, a sheaf of Lie $p$-algebras over $\scr{A}$ (but not over $\scr{A}'$) that satisfies the following condition:
@@ -908,6 +908,7 @@ $$
   \end{cases}
 \tag{3.6}
 $$
+:::
 ::::
 
 It follows from the above lemma that a descent data on the quasi-coherent sheaf $\cal{F}'$ on $S'$ is equivalent to the data, for all $X\in\frak{C}$, of an $\scr{O}_S$-endomorphism $\overline{X}$ of $\cal{F}'$ that satisfies the following conditions:
@@ -940,7 +941,7 @@ $$
 $$
 :::
 
-(This is what we may call a _linear connection on $\cal{F}$_, _flat_, and _compatible with the $p$-th powers_).
+(This is what we may call a _linear connection on $\cal{F}$_, which is further _flat_ and _compatible with the $p$-th powers_).
 We can similarly write down the notion of a descent data on an $S'$-prescheme $X'$, with equation [(3.4)](#FGA-3-I-section-B.3-equation-3.4) being replaced by the condition that the $\overline{X}$ are _derivations_ of $\scr{O}_{X'}$.
 Since the morphism $S'\to S$ is radicial, [Theorem 3](#FGA-3-I-theorem-3) ensures that every such descent data is effective, and thus defines an $S$-prescheme $X$.
 \oldpage{190-24}
@@ -951,17 +952,6 @@ Note that we have not needed to impose any flatness, non-singular, or finiteness
 
 
 ## Application to rationality criteria {#FGA-3-I-section-B.4}
-
-
-## Application to the restriction of the base scheme to an abelian scheme {#FGA-3-I-section-B.5}
-
-
-## Application to local triviality and isotriviality criteria {#FGA-3-I-section-B.6}
-
-<!---
-
-\section{Application to rationality criteria}
-\label{B.4}
 
 Let $X$ be an $S$-prescheme such that the direct image of $\scr{O}_X$ on $S$ is $\scr{O}_S$;
 this property remains true for any flat base extension $S'\to S$.
@@ -980,10 +970,9 @@ _For $\cal{F}'$ to be equivalent to the inverse image on $X'$ of an invertible s
 _If this is the case, then $\cal{F}$ is determined up to equivalence._
 (We then say that $\cal{F}'$ is _rational_ on $S$).
 
-Considering this principle in the case where $\alpha\colon S'\to S$ is as in \hyperref[example:B.3(1)]{Example 1} and \hyperref[example:B.3(2)]{Example 2} in the previous section, we recover the _rationality criteria of Weil and of Cartier_.
-(We note that the authors restrict to the case where $S$ and $S'$
+Considering this principle in the case where $\alpha\colon S'\to S$ is as in [Example 1](#FGA-3-I-section-B.3-example-1) and [Example 2](#FGA-3-I-section-B.3-example-2) in the previous section, we recover the _rationality criteria of Weil and of Cartier_.
 \oldpage{190-25}
-are spectra of fields;
+(We note that the authors restrict to the case where $S$ and $S'$ are spectra of fields;
 a fortiori, $S$ is then the spectrum of a local ring, and the equivalence relation introduced above is exactly the relation of being isomorphic).
 The the first case, $\cal{F}'$ is rational on $S$ if and only if its images under $\Gamma$ are all equivalent to $\cal{F}'$.
 To express the rationality criterion in the second case, we consider, more generally, the diagonal morphism $X'\to X''=X'\times_X X'$ of $X'/X$, with the corresponding sheaf of ideals $\scr{I}$ on $X'\times_X X'$, and the sheaf $\scr{I}/\scr{I}^2$, which can be identified with its inverse image $\Omega_{X'/X}^1$ on $X$ (the _sheaf of $1$-differentials of $X'$ with respect to $X$_).
@@ -998,17 +987,16 @@ $$
 _to $X'$ to be equivalent_ (where $\scr{J}$ is the sheaf of ideals on $S''=S'\times_S S'$ defined by the diagonal morphism $S'\to S'\times_S S'$).
 This vanishing is thus trivially _necessary_ for the inverse images of $\cal{F}'$ on $X''=X\times_S S''$ itself to be equivalent, and thus also for $\cal{F}$ to be equivalent to the inverse image of an invertible sheaf $\cal{F}$ on $X$.
 The Atiyah--Cartier class can also be understood as the obstruction to the existence, locally over $S'$, of a _connection_ of $\cal{F}'$ relative to the derivations of $X'/X$, with such a connection further being determined when we know the derivations of $\cal{F}'$ corresponding to the natural extensions of derivations of $S'/S$ to $X'$.
-From this, and the results of the previous section, we easily conclude that, in the case of the aforementioned \hyperref[example:B.3(2)]{Example 2}, and when $X/S$ admits a section, the vanishing of the Atiyah--Cartier class is also sufficient for $\cal{F}'$ to be rational on $S$.
+From this, and the results of the previous section, we easily conclude that, in the case of the aforementioned [Example 2](#FGA-3-I-section-B.3-example-1), and when $X/S$ admits a section, the vanishing of the Atiyah--Cartier class is also sufficient for $\cal{F}'$ to be rational on $S$.
 
 
-\section{Application to the restriction of the base scheme to an abelian scheme}
-\label{B.5}
+## Application to the restriction of the base scheme to an abelian scheme {#FGA-3-I-section-B.5}
 
 Let $S$ be a prescheme.
-Well define an _abelian scheme_ over $S$ to be a simple proper scheme $X$
 \oldpage{190-26}
-over $S$ whose fibres at the points $x\in S$ are schemes of abelian varieties over the $\kres(x)$.
-Suppose that $S$ is Noetherian and _regular_ (i.e. that its local rings are regular), then we can show, using the _connection theorem_ of Murre [@3-I-4] (at least in the case "of equal characteristics", where the cited theorem is currently proven) that _every rational section of $X$ over $S$ is everywhere defined_ (i.e. is a section) (which generalises a classical theorem of Weil).
+Well define an _abelian scheme_ over $S$ to be a simple proper scheme $X$ over $S$ whose fibres at the points $x\in S$ are schemes of abelian varieties over the $\kres(x)$.
+Suppose that $S$ is Noetherian and _regular_ (i.e. that its local rings are regular), then we can show, using the _connection theorem_ of Murre [@3-I-4]
+(at least in the case "of equal characteristics", where the cited theorem is currently proven) that _every rational section of $X$ over $S$ is everywhere defined_ (i.e. is a section) (which generalises a classical theorem of Weil).
 It then follows, more generally, that, if $X'$ is a simple scheme over $S$, then every rational $S$-map from $X'$ to $X$ is everywhere defined.
 From this, we obtain the following, which generalises a result of Chow--Lang:
 _with $S$ Noetherian and regular, and $K$ denoting its ring of rational functions_ (a direct sum of fields), _let $X$ be an abelian scheme over $K$; if $X$ is isomorphic to a $K$-scheme of the form $X_0\times_S\Spec(K)$, where $X_0$ is an abelian scheme over $S$, then $X_0$ is determined up to unique isomorphism._
@@ -1017,18 +1005,17 @@ Using the above uniqueness result, we see that the question of restriction of th
 In the same way, we see that, if $S'\to S$ is a _simple_ morphism of finite type, if $Y'$ is the ring of rational functions of $S'$, and if $X\otimes_K K'$ is of the form $X'_0\times_{S'}\Spec(K')$, _then $X'_0$ is endowed with a canonical descent data with respect to $\alpha$_.
 Taking [Theorem 3](#FGA-3-I-theorem-3) into account, we thus conclude:
 
-\begin{itenv}{Proposition 5.1}
-  Let $S$ be an irreducible regular Noetherian prescheme, with field of rational functions $Y$, let $K'$ be a finite extension of $K$ that is _unramified over $S$_, let $S'$ be the normalisation of $S$ in $K'$ (which is thus an étale cover of $S$), and let $X$ be an abelian scheme over $K$ such that $X\otimes_K K'$ is of the form $X'_0\times_{S'}\Spec(K')$, where $X'_0$ is a projective abelian scheme over $S'$.
-  Then $X$ is of the form $X_0\times_S\Spec(K)$, where $X_0$ is a projective abelian scheme over $S$.
-\end{itenv}
+::: {.itenv #FGA-3-I-section-B.5-proposition-5.1 title="Proposition 5.1" latex="{Proposition 5.1}"}
+Let $S$ be an irreducible regular Noetherian prescheme, with field of rational functions $Y$, let $K'$ be a finite extension of $K$ that is _unramified over $S$_, let $S'$ be the normalisation of $S$ in $K'$ (which is thus an étale cover of $S$), and let $X$ be an abelian scheme over $K$ such that $X\otimes_K K'$ is of the form $X'_0\times_{S'}\Spec(K')$, where $X'_0$ is a projective abelian scheme over $S'$.
+Then $X$ is of the form $X_0\times_S\Spec(K)$, where $X_0$ is a projective abelian scheme over $S$.
+:::
 
-\begin{rmenv}{Remarks}
-  The speaker does not know if we can replace the hypothesis that $S'\to S$ be a surjective étale cover (which allows us to apply [Theorem 3](#FGA-3-I-theorem-3)) with the hypothesis that it is instead a _simple_ and _surjective_ morphism of finite type (not even if we suppose that it is an étalement), or if the proposition still holds true without supposing that $X'_0$ is projective over $S'$ (a condition which could be automatically satisfied).
-\end{rmenv}
+::: {.rmenv title="Remark" latex="{Remark}"}
+The speaker does not know if we can replace the hypothesis that $S'\to S$ be a surjective étale cover (which allows us to apply [Theorem 3](#FGA-3-I-theorem-3)) with the hypothesis that it is instead a _simple_ and _surjective_ morphism of finite type (not even if we suppose that it is an étalement), or if the proposition still holds true without supposing that $X'_0$ is projective over $S'$ (a condition which could be automatically satisfied).
+:::
 
 
-\section{Application to local triviality and isotriviality criteria}
-\label{B.6}
+## Application to local triviality and isotriviality criteria {#FGA-3-I-section-B.6}
 
 Let $S$ be a prescheme, $G$ a "_prescheme of groups_" over $S$, $P$ a prescheme over $S$ on which "_$G$ acts_" (on the right).
 We say that $P$ is _formally principal homogeneous_ under $G$ if the well-known morphism
@@ -1052,31 +1039,32 @@ In particular, we say that $P$ is _isotrivial_ (resp. _strictly isotrivial_) if,
 (We stray from the terminology of Serre [@3-I-1], which uses "locally isotrivial" for what we call "strictly isotrivial").
 Strict isotriviality is mainly useful if $G$ is simple over $S$, but is, however, an inadequate notion in other cases.
 
-If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ under $G$ is affine, by [§B.2](#FGA-3-I-section-B.2), whence the possibility, thanks to [Theorem 2](#FGA-3-I-theorem-2), to "descend"
+If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ under $G$ is affine, by [§B.2](#FGA-3-I-section-B.2), whence the possibility, thanks to [Theorem 2](#FGA-3-I-theorem-2), to "descend" from such bundles by faithfully flat and quasi-compact morphisms.
 \oldpage{190-28}
-from such bundles by faithfully flat and quasi-compact morphisms.
 Taking, in particular, $G=\GL(n)_S$, defined by the condition that the functor $S'\mapsto\Hom(S',G)$ of $S$-preschemes (with values in the category of groups) can be identified with the functor $\GL(n)(S')=\GL(n,\HH^0(S',\scr{O}_{S'}))$ described in \hyperref[§A.4.e]{A.4.e}.
 Using the facts
-\begin{enumerate}[(i)]
-  \item that every principal homogeneous bundle under $G$ (resp. every locally free sheaf of rank $n$ on $S$) becomes isomorphic to the "trivial" object $G$ (resp. $\scr{O}_S^n$) under a suitable faithfully flat and quasi-compact extension of $S$;
-  \item that we can descend the type of objects in question (principal homogeneous bundles under $G$, resp. locally free sheaves of rank $n$) by such morphisms; and, finally
-  \item that the automorphism group of the trivial bundle on any $S'/S$ is functorially isomorphic to the automorphism group of the trivial locally free sheaf of rank $n$ on $S'$,
-\end{enumerate}
+
+i. that every principal homogeneous bundle under $G$ (resp. every locally free sheaf of rank $n$ on $S$) becomes isomorphic to the "trivial" object $G$ (resp. $\scr{O}_S^n$) under a suitable faithfully flat and quasi-compact extension of $S$;
+
+ii. that we can descend the type of objects in question (principal homogeneous bundles under $G$, resp. locally free sheaves of rank $n$) by such morphisms; and, finally
+
+iii. that the automorphism group of the trivial bundle on any $S'/S$ is functorially isomorphic to the automorphism group of the trivial locally free sheaf of rank $n$ on $S'$,
+
 we "formally" conclude that it is "equivalent" to give, on $S$ (or on some $S'/S$) a principal homogeneous bundle of group $G$, or to give a locally free sheaf of rank $n$.
 (More precisely, we have an _equivalence of fibred categories_).
 We thus conclude, in particular:
 
-\begin{itenv}{Proposition 6.1}
-  Every principal homogeneous bundle under the group $\GL(n)_S$ is locally trivial.
-\end{itenv}
+::: {.itenv #FGA-3-I-section-B.6-proposition-6.1 title="Proposition 6.1" latex="{Proposition 6.1}"}
+Every principal homogeneous bundle under the group $\GL(n)_S$ is locally trivial.
+:::
 
 By known arguments, we thus conclude the same result for others structure groups such as $\SL(n)_S$, $\Sp(n)_S$, and products of such groups.
 We thus also conclude that, if $F$ is a closed subgroup of $G=\GL(n)_S$ that is flat over $S$, and such that the quotient $G/F$ exists, and such that $G$ is an isotrivial (resp. strictly isotrivial) principal homogeneous bundle on $G/F$, of structure group $F\times_S(G/F)$, then _every_ principal homogeneous bundle of structure group $F$ is isotrivial (resp. strictly isotrivial).
 This applies to all the "linear groups" on $S$ that have been used up until now, and, in particular, to the case where $G=S\times_k\Gamma$, with $S$ a prescheme over the field $k$, and $\Gamma$ a linear group (in the classical sense) over $k$ (and thus in particular simple).
 This thus answers, for such groups, a question of Serre (loc. cit.).
 
-We also point out that, for most groups (linear or not) that are simple over $S$ that we know of, and certainly for all those of the form $S\times_k\Gamma$ as above, we can show that every isotrivial principal homogeneous bundle is strictly isotrivial, which answers, in particular, another question of Serre (loc. cit. 1--14), taking into account the fact that a homogeneous principal bundle obtained by a descent _à la_ Cartier (cf. \hyperref[example:B.3(2)]{Example 2}) is obviously isotrivial.
+We also point out that, for most groups (linear or not) that are simple over $S$ that we know of, and certainly for all those of the form $S\times_k\Gamma$ as above, we can show that every isotrivial principal homogeneous bundle is strictly isotrivial, which answers, in particular, another question of Serre (loc. cit. 1--14), taking into account the fact that a homogeneous principal bundle obtained by a descent _à la_ Cartier (cf.[Example 2](#FGA-3-I-section-B.3-example-2)) is obviously isotrivial.
 
-\begin{rmenv}{Remark}
-  One of the essential difficulties in these questions (setting aside the question of the existence of quotient schemes) is the lack of effectiveness criteria for a descent data along a faithfully flat _non-finite_ morphism.
-\end{rmenv} -->
+::: {.rmenv title="Remark" latex="{Remark}"}
+One of the essential difficulties in these questions (setting aside the question of the existence of quotient schemes) is the lack of effectiveness criteria for a descent data along a faithfully flat _non-finite_ morphism.
+:::
