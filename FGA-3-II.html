@@ -194,17 +194,17 @@ sections 4.6 to 4.10 were numbered C.1 to C.5.</p>
 <!-- Let $\cal{C}$ be a category.
 \oldpage{195-01}
 For all $X\in\cal{C}$, let $h_X$ be the contravariant functor from $\cal{C}$ to the category $\Set$ of sets given by
-\[
+$$
   \begin{aligned}
     h_X\colon \cal{C} &\to \Set
   \\Y&\mapsto \Hom(Y,X).
   \end{aligned}
-\]
+$$
 If we have a morphism $X\to X'$ in $\cal{C}$, then this evidently induces a morphism $h_X\to h_{X'}$ of functors;
 $h_X$ is a covariant functor in $X$, i.e. we have defined a _canonical covariant functor_
-\[
+$$
   h\colon \cal{C} \to \Hom(\cal{C}^o,\Set)
-\]
+$$
 from $\cal{C}$ to the category of covariant functors from the dual $\cal{C}^o$ of $\cal{C}$ to the category of sets.
 We then recall:
 
@@ -212,9 +212,9 @@ We then recall:
 \label{A.1-proposition1}
   This functor $h$ is _faithfully flat_;
   in other words, for every pair $X,X'$ of objects of $\cal{C}$, the natural map
-  \[
+  $$
     \Hom(X,X') \to \Hom(h_X,h_{X'})
-  \]
+  $$
   is _bijective_.
 \end{itenv}
 
@@ -224,91 +224,90 @@ The above proposition then implies that the canonical functor $h$ defines an _eq
 This fact is the basis of _the idea of a "solution of a universal problem"_, with such a problem always consisting of examining if a given (contravariant, as here, or covariant, in the dual case) functor from $\cal{C}$ to $\Set$ is representable.
 \oldpage{195-02}
 Note further that, even by the definition of products in a category [@3-II-1], the functor $h\colon X\mapsto h_X$ commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking "kernels" [@3-II-2], etc., whenever such things exist): we have an isomorphism of functors
-\[
+$$
   h_{X\times X'} \simto h_X\times h_{X'}
-\]
+$$
 whenever $X\times X'$ exists, i.e. we have functorial (in $Y$) bijections
-\[
+$$
   h_{X\times X'} \simto h_X(Y)\times h_{X'}(Y).
-\]
+$$
 In particular, the data of a morphism
-\[
+$$
   X\times X' \to X''
-\]
+$$
 in $\cal{C}$ (i.e. of a "_composition law_" in $\cal{C}$ between $X$, $X'$, and $X''$) is equivalent to the data of a morphism $h_{X\times X'}=h_X\times h_{X'}\to h_{X''}$, i.e. to the data, for all $Y\in\cal{C}$, of a composition law of _sets_
-\[
+$$
   h_X(Y)\times h_{X'}(Y) \to h_{X''}(Y)
-\]
+$$
 such that, for every morphism $Y\to Y'$ in $\cal{C}$, the system of set maps
-\[
+$$
   h_{X^{(i)}}(Y) \to h_{X^{(i)}}(Y')
   \qquad\mbox{(for $i=0,1,2$)}
-\]
+$$
 is a morphism for the two composition laws, with respect to $Y$ and $Y'$.
 In this way, we see that the idea of a "$\cal{C}-group$" structure, or a "$\cal{C}$-ring" structure, etc. on an object $X$ of $\cal{C}$ can be expressed in the most manageable way (in theory as much as in practice) by saying that, for every $Y\in\cal{C}$, we have a group law (resp. ring law, etc.) in the usual sense on the set $h_X(Y)$, with the maps $h_X(Y)\to h_X(Y')$ corresponding to morphisms $Y\to Y'$ that should be group homomorphisms (resp. ring homomorphisms, etc.).
 This is the most intuitive and manageable way of defining, for example, the various classical groups $\Ga$, $\Gm$, $\GL(n)$, etc. on a prescheme $S$ over an arbitrary base, and of writing the classical relations between these groups, or of placing a "vector bundle" structure on the affine scheme $V(\scr{F})$ over $S$ defined by a quasi-coherent sheaf $\scr{F}$, and of defining and studying the many associated flag varieties (Grassmannians, projective bundles), etc.;
-\emph{the general yoga is purely and simply identifying, using the canonical functor $h$, the objects of $\cal{C}$ with particular contravariant functors (namely, representable functors)}
-\oldpage{195-03}
-\emph{from $\cal{C}$ to the category of sets.}
+_the general yoga is purely and simply identifying, using the canonical functor $h$, the objects of $\cal{C}$ with particular contravariant functors (namely, representable functors) from $\cal{C}$ to the category of sets_.
 
-The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce \emph{covariant representable functors $\cal{C}\to\Set$}, i.e. those of the form $Y\mapsto\Hom(X,Y)=h'_X(Y)$. -->
+\oldpage{195-03}
+
+The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce _covariant representable functors $\cal{C}\to\Set$_, i.e. those of the form $Y\mapsto\Hom(X,Y)=h'_X(Y)$. -->
 </div>
 <div id="FGA-3-II-section-A.2" class="section level2">
 <h2><span class="header-section-number">4.2</span> Pro-representable functors, pro-objects</h2>
 <!-- Let $\cal{X}=(X_i)_{i\in I}$ be a projective system of objects of $\cal{C}$;
 there is a corresponding covariant functor
-\[
+$$
   h'_{\cal{X}} = \varinjlim_i h'_{X_i}
-\]
+$$
 which can be written more explicitly as
-\[
+$$
   h'_{\cal{X}}(Y) = \varinjlim_i h'_{X_i}(Y) = \varinjlim_i\Hom(X_i,Y)
-\]
+$$
 which is a functor from $\cal{C}$ to $\Set$.
 A functor from $\cal{C}$ to $\Set$ that is isomorphic to a functor of this type _with $I$ filtered_ is said to be _pro-representable_.
 By \hyperref[A.1]{the previous section}, these are exactly the functors that are isomorphic to _filtered inductive limits of representable functors_.
 Let $\cal{X}'=(X_j)_{j\in J}$ be another filtered projective system in $\cal{C}$ (indexed by another filtered pre-ordered set of indices $J$).
 Then we can easily show that we have a canonical bijection
-\[
+$$
   \Hom(h_{\cal{X}'},h_{\cal{X}}) = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j)
-\]
+$$
 (generalising \hyperref[A.1-proposition1]{Proposition 1, (A.1)}).
-This leads to introducing the \emph{category $\Pro(\cal{C})$ of pro-objects of $\cal{C}$}, whose objects are projective systems of objects of $\cal{C}$ (indexed by arbitrary filtered pre-ordered sets of indices), and whose morphisms between objects $\cal{X}=(X_i)_{i\in I}$ and $\cal{X}'=(X_j)_{j\in J}$ are given by
-\[
+This leads to introducing the _category $\Pro(\cal{C})$ of pro-objects of $\cal{C}$_, whose objects are projective systems of objects of $\cal{C}$ (indexed by arbitrary filtered pre-ordered sets of indices), and whose morphisms between objects $\cal{X}=(X_i)_{i\in I}$ and $\cal{X}'=(X_j)_{j\in J}$ are given by
+$$
   \Pro\Hom(\cal{X},\cal{X}') = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j),
-\]
+$$
 with the composition of pro-homomorphisms being evident.
-By the very construction itself, $\cal{X}\mapsto h'_{\cal{X}}$ can be considered as a contravariant functor in $\cal{X}$, establishing an \emph{equivalence between the dual category of the category $\Pro(\cal{C})$ of pro-objects of $\cal{C}$ and the category of pro-representable covariant functors from $\cal{C}$ to $\Set$}.
-Of course, an object $X$ of $\cal{C}$ canonically defines a pro-object, denoted
+By the very construction itself, $\cal{X}\mapsto h'_{\cal{X}}$ can be considered as a contravariant functor in $\cal{X}$, establishing an _equivalence between the dual category of the category $\Pro(\cal{C})$ of pro-objects of $\cal{C}$ and the category of pro-representable covariant functors from $\cal{C}$ to $\Set$_.
 \oldpage{195-04}
-again by $X$, so that \emph{$\cal{C}$ is equivalent to a full subcategory of $\Pro(\cal{C})$}.
+Of course, an object $X$ of $\cal{C}$ canonically defines a pro-object, denoted again by $X$, so that _$\cal{C}$ is equivalent to a full subcategory of $\Pro(\cal{C})$_.
 Then, if $\cal{X}=(X_i)_{i\in I}$ is an arbitrary pro-object of $\cal{C}$, then (with the above identification) we have that
-\[
+$$
   \cal{X} = \varprojlim_i X_i
-\]
-with the projective limit being \emph{taken in $\Pro(\cal{C})$} (since $h_{\cal{X}}=\varinjlim_i h_{X_i}$).
+$$
+with the projective limit being _taken in $\Pro(\cal{C})$_ (since $h_{\cal{X}}=\varinjlim_i h_{X_i}$).
 
-We draw attention to the fact that, even if the projective limit of the $X_i$ \emph{exists in $\cal{C}$}, it will generally _not_ be isomorphic to the projective limit $\cal{X}$ in $\Pro(\cal{C})$, as is already evident in the case where $\cal{C}$ is the category of sets.
+We draw attention to the fact that, even if the projective limit of the $X_i$ _exists in $\cal{C}$_, it will generally _not_ be isomorphic to the projective limit $\cal{X}$ in $\Pro(\cal{C})$, as is already evident in the case where $\cal{C}$ is the category of sets.
 We note that, by the definition itself, $\varprojlim{}_{\cal{C}}X_i=L$ is defined by the condition that the functor
-\[
+$$
   \varprojlim_i\Hom_{\cal{C}}(Y,X_i)=\Hom_{\Pro(\cal{C})}(Y,\cal{X})
-\]
+$$
 in $Y\in\cal{C}$ and with values in $\Set$ be representable via $\cal{L}$, i.e. that it be isomorphic to $\Hom_{\cal{C}}(Y,\cal{L})$;
-then \emph{$\lim{}_{\cal{C}}X_i$ is already defined in terms of the \emph{pro-object} $\cal{X}$}, and, in a precise way, depends functorially on the pro-object $\cal{X}$ whenever it is defined;
+then _$\lim{}_{\cal{C}}X_i$ is already defined in terms of the *pro-object* $\cal{X}$_, and, in a precise way, depends functorially on the pro-object $\cal{X}$ whenever it is defined;
 there is therefore no problem with denoting it by $\lim{}_{\cal{C}}(\cal{X})$.
 If projective limits in $\cal{C}$ always exist, then $\lim{}_{\cal{C}}(\cal{X})$ is a functor from $\Pro(\cal{C})$ to $\cal{C}$, and there is a canonical homomorphism of functors $\lim_\cal{C}(\cal{X})\to\cal{X}$.
 Since every (covariant, say, for simplicity) functor
-\[
+$$
   F\colon \cal{C} \to \cal{C}'
-\]
+$$
 can be extended in an obvious way to a functor
-\[
+$$
   \Pro(F)\colon \Pro(\cal{C}) \to \Pro(\cal{C}'),
-\]
+$$
 it follows that, if projective limits always exist in $\cal{C}'$, then $F$ also canonically defines a composite functor
-\[
+$$
   \overline{F} = \varprojlim{}_{\cal{C}'}\colon \Pro(\cal{C}) \to \cal{C}'
-\]
+$$
 sending $\cal{X}=(X_i)_{i\in I}$ to $\varprojlim{}_{\cal{C}'}F(X_i)$.
 
 A pro-object $\cal{X}$ is said to be a _strict pro-object_ if it is isomorphic to a pro-object $(X_i)_{i\in I}$, where the transition morphisms $X_i\to X_j$ are _epimorphisms_;
@@ -317,10 +316,10 @@ We can thus further demand that $I$ be a filtered _ordered_ set, and that every 
 \oldpage{195-05}
 $X_i\to X'$ be equivalent to an epimorphism $X_i\to X_j$ for some suitable $j\in I$ (uniquely determined by this condition).
 Under these conditions, the projective system $(X_i)_{i\in I}$ is determined _up to unique isomorphism_ (in the usual sense of isomorphisms of projective systems).
-It thus follows that \emph{the projective limit of a projective system $\cal{X}^{(\alpha)}$ of strict pro-objects always exists in $\Pro(\cal{C})$}, and that, with the above notation of $F$ and $\overline{F}$, we have that
-\[
+It thus follows that _the projective limit of a projective system $\cal{X}^{(\alpha)}$ of strict pro-objects always exists in $\Pro(\cal{C})$_, and that, with the above notation of $F$ and $\overline{F}$, we have that
+$$
   \overline{F}\varprojlim_\alpha\cal{X}^{(\alpha)} = \varprojlim_\alpha{}_{\cal{C}'}F(X^{(\alpha)}).
-\]
+$$
 In particular, if every pro-object of $\cal{C}$ is strict (cf. the \hyperref[A.1]{previous section}), then the extended functor $\overline{F}$ commutes with projective limits. -->
 </div>
 <div id="FGA-3-II-section-A.3" class="section level2">
@@ -332,13 +331,13 @@ Then the following conditions are equivalent:
   \item $F$ commutes with finite projective limits;
   \item $F$ commutes with finite products and with finite fibred products;
   \item $F$ commutes with finite products, and, for every exact diagram
-    \[
+    $$
       X\to X'\rightrightarrows X''
-    \]
+    $$
     in $\cal{C}$ (cf. [@3-II-3, A, Definition 2.1]), the image of the diagram under $F$
-    \[
+    $$
       F(X)\to F(X')\rightrightarrows F(X'')
-    \]
+    $$
     is exact.
 \end{enumerate}
 We then say that $F$ is _left exact_.
@@ -347,9 +346,9 @@ In what follows, we assume that finite projective limits always exist in $\cal{C
 It is then immediate from the definitions that a representable functor is left exact, and, by taking the limit, that _a pro-representable functor is left exact_.
 
 To obtain a converse, let
-\[
+$$
   F\colon \cal{C} \to \Set
-\]
+$$
 be a covariant functor, and let $X\in\cal{C}$ and $\xi\in F(X)$.
 We say that $\xi$ (or the pair
 \oldpage{195-06}
@@ -376,7 +375,7 @@ Whence:
   Then the pro-representable functors from $\cal{C}$ to $\Set$ are exactly the left exact functors, and they are in fact strictly pro-representable.
 \end{itenv}
 
-This last fact also implies that \emph{every pro-object of $\cal{C}$ is then strict}. -->
+This last fact also implies that _every pro-object of $\cal{C}$ is then strict_. -->
 </div>
 <div id="FGA-3-II-section-A.4" class="section level2">
 <h2><span class="header-section-number">4.4</span> Example: groups of Galois type, pro-algebraic groups</h2>
@@ -392,19 +391,19 @@ It is the same if we start with the category of algebraic or quasi-algebraic gro
 _Artinian $\Lambda$-algebras_).
 The conditions of the corollary to \hyperref[A.3-proposition1]{Proposition 3.1} are then satisfied.
 Here, the category $\Pro(\cal{C})$ is equivalent to the category of _topological algebras_ $O$ over $\Lambda$ that are isomorphic to topological projective limits
-\[
+$$
   O = \varprojlim O_i
-\]
+$$
 of algebras $O_i\in\cal{C}$, i.e. those whose topology is _linear_, _separated_, and _complete_, and such that, for every open ideal $\frak{J}_i$ of $O$, the algebra $O/\frak{J}_i$ is an _Artinian_ algebra over $\Lambda$.
 The functor $\cal{C}\to\Set$ associated to such an algebra is exactly
-\[
+$$
   \begin{aligned}
     F(A)
     &= h'_{O}(A)
   \\&= \{\mbox{_continuous_ homomorphisms of topological $\Lambda$-algebras $O\to A$}\}
   \\&= \varinjlim_i \Hom_{\mbox{$\Lambda$-algebras}}(O_i,A).
   \end{aligned}
-\]
+$$
 Note also that the category $\cal{C}$ is essentially the product of analogous categories, corresponding to the local rings that are the completions of the $\Lambda_{\frak{m}}$ for the maximal ideals $\frak{m}$ of $\Lambda$;
 we can thus, if so desired, restrict to the case where $A$ is such a complete local ring.
 In any case, $O$ decomposes canonically as the topological product of its _local components_, which correspond to the "points" of the _formal scheme_ [@3-II-2] defined by $O$.
@@ -414,18 +413,18 @@ Such a point is defined by an object $\xi$ of some $F(K)$, where $K\in\cal{C}$ i
 It is important to give conditions that ensure that the local component $O_\xi$ of $O$ corresponding to some $\xi\in F(K)$ be a _Noetherian_ ring.
 If $\Lambda$ is a complete local ring (Noetherian, we recall), then it is equivalent to say that $O_\xi$ is isomorphic to a _quotient ring of a formal series ring $\Lambda[[t_1,\ldots,t_n]]$_.
 To give such a criteria, we introduce (for every ring $A$) the $A$-algebra $I_A$ of "dual numbers" of $A$, defined by
-\[
+$$
   I_A = A[t]/t^2A[t].
-\]
+$$
 Let $\varepsilon\colon I_A\to A$ be the augmentation homomorphism, which defines (if $A\in\cal{C}$) a map
-\[
+$$
   F(\varepsilon)\colon F(I_A) \to F(A).
-\]
+$$
 \oldpage{195-08}
 Using the fact that $F$ is left exact, we intrinsically define the structure of an $A$-module on the subset
-\[
+$$
   F(I_A,\xi) = F(\xi)^{-1}(\xi) \subset F(I_A)
-\]
+$$
 consisting of the $\xi'\in F(I_A)$ that are "reducible along $\xi$";
 using the explicit form of $F$ in terms of $O$, we find that this $K$-module can be identified with $\Hom_\Lambda(\frak{m}_\xi/\frak{m}_\xi^2,A$, where $m_\xi$ is the kernel of the homomorphism $\xi\colon O\to A$, i.e. if $A$ is a field, then the maximal ideal of the local component $O_\xi$ of $O$.
 From this, we immediately deduce the following proposition:
@@ -435,12 +434,12 @@ From this, we immediately deduce the following proposition:
   Let $\xi\in F(K)$, where $K\in\cal{C}$ is a field.
   For the corresponding local component $O_\xi$ of $O$ to be a _Noetherian_ ring, it is necessary and sufficient for the set $F(I_K,\xi)$ of elements of $F(I_K)$ that are reducible along $\xi$ to be a vector space of _finite dimension_ over $K$.
   Under these conditions, we have a canonical isomorphism
-  \[
+  $$
     F(I_K,\xi) = \Hom(\frak{m}_\xi/\frak{m}_\xi^2+\frak{n}_\xi\scr{O}_\xi, K)
-  \]
+  $$
   (where $\frak{n}_\xi$ is the maximal ideal of $\Lambda$ given by the kernel of the homomorphism $\Lambda\to K$), and so, in particular, the dimension of the $K$-vector space $F(I_K,\xi)$ is equal to the dimension of the vector space $\frak{m}_\xi/\frak{m}_\xi^2$ over the field $O_\xi/\frak{m}_\xi=K(\xi)$.
 
-  \emph{_[Comp.]_ The formula given above is only correct when $\Lambda$ is a field; in the general case, we must replace $\frak{m}_\xi/\frak{m}_\xi^2$ with the quotient of this space by the image of $\frak{n}_\xi/\frak{n}_\xi^2$, where $\frak{n}$ is the maximal ideal of $\Lambda$.}
+  _[Comp.]_ The formula given above is only correct when $\Lambda$ is a field; in the general case, we must replace $\frak{m}_\xi/\frak{m}_\xi^2$ with the quotient of this space by the image of $\frak{n}_\xi/\frak{n}_\xi^2$, where $\frak{n}$ is the maximal ideal of $\Lambda$.
 \end{itenv}
 
 Suppose that $O_\xi$ is Noetherian, and suppose, for notational simplicity, that $\Lambda$ is complete and local, and that $O=O_\xi$.
@@ -475,9 +474,9 @@ that is, they are usually far from being trivial. -->
 <div id="b.-the-two-existence-theorems" class="section level2 unnumbered">
 <h2><strong>B.</strong> The two existence theorems</h2>
 <!-- Keeping the notation of \hyperref[A.5]{A.5}, and, given a covariant functor
-\[
+$$
   F\colon \cal{C} \to \Set,
-\]
+$$
 we wish to find manageable criteria for $F$ to be pro-representable, i.e. expressible via a $\Lambda$-algebra $O$ as above.
 By the corollary of \hyperref[A.3-proposition1]{Proposition 3.1}, to ensure this, it is necessary and sufficient for $F$ to be _left exact_.
 In the current state of the technique of descent (cf. the questions asked in [@3-II-3, p. 9]), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.
@@ -488,13 +487,13 @@ In the current state of the technique of descent (cf. the questions asked in [@3
   \begin{enumerate}[(i)]
     \item $F$ commutes with finite products;
     \item for every algebra $A\in\cal{C}$ and every homomorphism $A\to A'$ in $\cal{C}$ such that the diagram
-      \[
+      $$
         A \to A' \rightrightarrows A'\otimes_A A'
-      \]
+      $$
       is exact (cf. [@3-II-3, A, Definition 1.2]), the diagram
-      \[
+      $$
         F(A) \to F(A') \rightrightarrows F(A'\otimes_A A')
-      \]
+      $$
 \oldpage{195-10}
       is also exact.
   \end{enumerate}
@@ -517,16 +516,16 @@ to deal with case (b), we will use the following result:
   \label{B-theorem2}
   Let $A$ be a local Artinian ring with maximal ideal $\frak{m}$, and let $A'$ be an $A$-algebra containing $A$, and such that $\frak{m}A'\subset A$, and $A\to A'\rightrightarrows A'\otimes_A A'$ is _exact_ (which is the case, in particular, if $A'/A$ is an $A$-module of length $1$).
   Let $\cal{F}$ be the fibred category (cf. [@3-II-3, A, Definition 1.1]) of quasi-coherent sheaves that are flat over varying preschemes.
-  Then the morphism $\Spec(A')\to\Spec(A)$ is a \emph{strict $\cal{F}$-descent morphism} (cf. [@3-II-3, A, Definition 1.7]).
+  Then the morphism $\Spec(A')\to\Spec(A)$ is a _strict $\cal{F}$-descent morphism_ (cf. [@3-II-3, A, Definition 1.7]).
 \end{itenv}
 
 In other words, the data of a flat $A$-module $M$ is completely equivalent to the data of a flat $A'$-module $M'$ endowed with an $(A'\otimes_A A')$-isomorphism from $M'\otimes_A A'$ to $A'\otimes_A M'$ satisfying the usual transitivity condition for a descent data (loc. cit.).
 
 We prove \hyperref[B-theorem2]{Theorem 2} by first proving that
-\[
+$$
   \HH^i(A'/A,\Ga) = 0
   \qquad\mbox{(for $i\geq1$)}
-\]
+$$
 (cf. [@3-II-3, A.4.e]), with the hypothesis that $\frak{m}A'\subset A$ allowing us to easily reduce to the case where $A$ is a field (namely $A/\frak{m}$).
 We can then apply the equivalences described in [@3-II-3, p. 16]. -->
 </div>
@@ -547,15 +546,15 @@ We note in passing that, in this study, we find non-pathological examples of pre
 we must thus refrain from banishing preschemes that are not schemes from algebraic geometry.
 
 Let $X$ be a prescheme locally of finite type over $S$, and let
-\[
+$$
   F\colon Y \mapsto \Hom_S(Y,X)
-\]
+$$
 be the associated contravariant functor.
 We can consider the restriction $F_0$ of $F$ to the subcategory $\cal{C}_0$ of $\cal{C}$ consisting of preschemes $Y$ over $S$ that are Artinian and finite over $S$:
 if $S=\Spec(\Lambda)$, then $\cal{C}_0$ is the category dual to the category of Artinian $\Gamma$-algebras considered in \hyperref[B]{B}.
 If $Y=\Spec(A)$, where $A$ is a _local_ Artinian ring, then $Y$ consists of a single point $y$ living above a closed point $s$ of $S$, and an $S$-homomorphism from $Y$ to $X$ (i.e. an element of $F(Y)$) is defined by the data of a point $x\in X$ over $s$, along with an $\scr{O}_s$-homomorphism from $\scr{O}_x$ to $A$.
 If there exists such a homomorphism, then $x$ is necessarily a closed point of $X$ (since its residue field is algebraic over the residue field of $s$).
-This thus shows that \emph{the restriction $F_0$ of $F$ to "Artinian $Y$-algebras" is pro-representable, and is represented by the topological $Y$-algebra whose local components are the completions $\widehat{\scr{O}_x}$ of the local rings of $X$ at the points $x$ of $X$ that are closed and live above closed points of $Y$}.
+This thus shows that _the restriction $F_0$ of $F$ to "Artinian $Y$-algebras" is pro-representable, and is represented by the topological $Y$-algebra whose local components are the completions $\widehat{\scr{O}_x}$ of the local rings of $X$ at the points $x$ of $X$ that are closed and live above closed points of $Y$_.
 This shows that only knowing $F_0$ gives precise information about the structure of $X$ (that is, the structure of the completions of its local rings at the aforementioned points).
 We note that, even in the case where $S$
 \oldpage{195-12}
@@ -578,27 +577,27 @@ It is only when the Picard group is an algebraic group in the classical sense (i
 for every prescheme $T$ over $S$,
 \oldpage{195-13}
 let $X_T=X\times_S T$ and $Y_T=Y\times_S T$, and consider the set
-\[
+$$
   F(T)
   = \Hom_T(X_T,Y_T)
   = \Hom_S(X_T,Y)
   = \Hom_S(X\times_S T,Y)
-\]
+$$
 as a contravariant functor in $T$.
 If it is representable, then we denote by $\shHom_S(X,Y)$ the prescheme over $S$ that represents it, and we then have a functorial isomorphism
-\[
+$$
   \Hom_S(T,\shHom_S(X,Y)) \simto \Hom_S(T\times_S X,Y).
-\]
+$$
 There are variants of this universal problem, the solutions to which can be summarised as follows: a prescheme of _$S$-automorphisms of_ an $S$-prescheme $X$ (which will be a prescheme in _groups_), a prescheme of _$S$-homomorphisms_ from an $S$-prescheme in _groups_ to another (which will be a prescheme in commutative groups if the latter scheme in groups is commutative), etc.
 We can also generalise the definition of $\shHom_S(X,Y)$ by considering a prescheme $Z$ over the prescheme $X$ over $S$, and the functor
-\[
+$$
   F(T) = \Hom_{X_T}(X_T,Z_T)
-\]
+$$
 (the set of "sections" of $Z_T$ over $X_T$);
 if this functor is representable, then the $S$-prescheme that represents it will be denoted by $\Pi_{X/S}Z$, and we will thus have, by definition, a functorial isomorphism
-\[
+$$
   \Hom_S(T,\Pi_{X/S}Z) = \Hom_{X_T}(X_T,Z_T).
-\]
+$$
 Setting $Z=Y\times_S X$, we recover $\shHom_S(X,Y)$.
 From these definitions follows a formula for the new preschemes thus introduced that is as trivial as it is useful, that we will not give here (given that it holds in every category where products and fibred products exist).
 More serious is the question of _existence_ of schemes of the type $\shHom_S(X,Y)$.
@@ -613,17 +612,17 @@ Here is what \hyperref[B-theorem1]{Theorem 1} and \hyperref[B-theorem2]{Theorem 
 \label{C.2-proposition1}
   Let $\Lambda$ be a Noetherian ring, and $X$ and $Y$ arbitrary preschemes over $\Lambda$.
   Consider the functor
-  \[
+  $$
     F(A) = \Hom_A(X_A,Y_A)
-  \]
+  $$
   on the category $\cal{C}_0$ of Artinian $\Lambda$-algebras.
   If $X$ is flat over $\Lambda$, then this functor is pro-representable.
 \end{itenv}
 
 Furthermore, we can show that, for all $A\in\cal{C}_0$ and all $\xi\in F(A)$, we have a canonical isomorphism
-\[
+$$
   F(I_A,\xi) = \HH^1\Big(X_A,\shHom_{\scr{O}_{X_A}}\big(\xi^*(\Omega_{Y_A/A}^1),\scr{O}_{X_A}\big)\Big)
-\]
+$$
 where $\Omega_{Y_A/A}^1$ is the sheaf of K\"{a}hler $1$-differentials of $Y_A$ with respect to $A$.
 Taking $A$ to be a field, we find, using \hyperref[A.5-proposition1]{Proposition 5.1} and the finiteness theorem from [@3-II-2], the following corollary:
 
@@ -658,22 +657,22 @@ Taking $A$ to be a field, we find, using \hyperref[A.5-proposition1]{Proposition
 <!-- _[Comp.]_ For a more complete study, see FGA 3.V.
 
 Let $f\colon X\to S$ be an $S$-prescheme, and consider the multiplicative sheaf $\scr{O}_X^*$ of units of the structure sheaf of $X$, along with the group
-\[
+$$
   P(X/S) = \HH^0(S,\RR^1f_*(\scr{O}_X^*)),
-\]
+$$
 called the _relative Picard group_ of $X/S$.
 An element of this group is thus defined by giving an open cover $(U_i)$ of $S$, along with an invertible sheaf $\scr{L}_i$ on each $f^{-1}(U_i)$, such that $\scr{L}_i|f^{-1}(U_i\cap U_j)$ is isomorphic to $\scr{L}_j|f^{-1}(U_i\cap U_j)$ for all $i,j$, or, at least locally over $U_i\cap U_j$ (i.e. these two sheaves are "equivalent" in the sense of [@3-II-3, B.4]).
 If $X/S$ admits a section, then $P(X/S)$ is exactly the set of classes of invertible sheaves on $X/S$ up to "equivalence" (loc. cit.).
 We now set, for all $T$ over $S$,
-\[
+$$
   F(T) = P(X_T/T)
-\]
+$$
 which gives a covariant functor in $T$, that we call the _Picard functor_ of $X/S$;
 if this functor is representable, then the prescheme over $S$ that represents it is called the _Picard prescheme_ of $X/S$, and denoted by $\scr{P}(X/S)$.
 In this case, we then have an isomorphism of functors:
-\[
+$$
   \Hom_S(T,\scr{P}(X/S)) \simto P(X_T/T).
-\]
+$$
 Taking the Picard prescheme is compatible with extension of the base, and, in particular, the Picard preschemes of the fibres of $X$ over $S$ (which are preschemes over the residue fields $K(s)$ of the $s\in S$) are the fibres
 \oldpage{195-16}
 of $\scr{P}(X/S)$.
@@ -685,7 +684,7 @@ Note as well that the _generalised Jacobians_ of Rosenlicht are exactly the conn
   In the general case, it is necessary to slightly modify the definition of the Picard functor in order to still obtain an existence theorem.
 
   Here, the plausible existence conditions for a Picard prescheme are the following: $X$ is _proper_ and _flat_ over $S$; $f_*(\scr{O}_X)=\scr{O}_S$; and $X$ locally admits a section over $S$.
-  This condition naturally arises in the application of the technique of descent, \emph{in eliminating the automorphisms of an invertible sheaf $\scr{L}$ on $X$ by endowing them with a marked section over the section $s$} ([@3-II-3, B.4]).
+  This condition naturally arises in the application of the technique of descent, _in eliminating the automorphisms of an invertible sheaf $\scr{L}$ on $X$ by endowing them with a marked section over the section $s$_ ([@3-II-3, B.4]).
   Notably, we find the following:
 \end{rmenv}
 
@@ -695,9 +694,9 @@ Note as well that the _generalised Jacobians_ of Rosenlicht are exactly the conn
   Then the Picard functor of $X/S$ on the category of Artinian $\Lambda$-algebras is pro-representable.
 
   Furthermore, we then have
-  \[
+  $$
     F(I_A,\xi) = \HH^1(X_A,\scr{O}_{X_A}),
-  \]
+  $$
   and, in particular:
 \end{itenv}
 
@@ -726,11 +725,11 @@ Note as well that the _generalised Jacobians_ of Rosenlicht are exactly the conn
 <h2><span class="header-section-number">4.9</span> Formal modules of a variety</h2>
 <!-- Let $\Lambda$ be a _local_ Noetherian ring of residue field $k$ (more often than not, $\Lambda$ will be equal to $k$, or to a Cohen $p$-ring), and let $X_0$ be a prescheme over $k$.
 For every local Artinian $\Lambda$-algebra $A$, consider the set $F(A)$ of isomorphism classes of $A$-preschemes $X$ that are _flat_ over $A$, endowed with an isomorphism
-\[
+$$
 \label{*}
   X\otimes_A\kres(A) \simfrom X_0\otimes_k\kres(A)
 \tag{$*$}
-\]
+$$
 where $\kres(A)$ is the residue field of $A$;
 of course, the isomorphisms between such flat $A$-preschemes should respect the above isomorphism given in the structure.
 If $A$ is a (not necessary local) Artinian $\Lambda$-algebra, with local components $A_i$, then we take $F(A)$ to be the product of the $F(A_i)$.
@@ -739,14 +738,14 @@ If this functor is representable, then it has a corresponding local topological 
 
 Here, if we wish to apply the technique of descent, the "finite" automorphisms of $X_0$ are inoffensive, since they have no influence on the existence of automorphisms (in the precise sense above) of $A$-preschemes $X$;
 the necessary and sufficient condition, if $A$ is not simply a field, for $X$ to not have any non-trivial $A$-automorphisms is that
-\[
+$$
   \HH^0(X_0,\frak{G}_{X_0/k}) = 0
-\]
+$$
 where $\frak{G}_{X_0/k}$ denotes the sheaf of $k$-derivations (i.e. the tangent sheaf) of $X_0$.
 We can easily show (at least, if $X_0$ is simple over $k$) that
-\[
+$$
   F(I_A,\xi) = \HH^1(X_A,\frak{G}_{X_A/A}).
-\]
+$$
 We thus conclude, as per usual:
 
 \oldpage{195-18}
@@ -760,9 +759,9 @@ We thus conclude, as per usual:
 \begin{rmenv}{Remarks}
   \begin{enumerate}
     \item If $X_0$ is not assumed to be simple over $k$, then $F(I_A,\xi)$ can be identified with a sub-$A$-module of
-      \[
+      $$
         \Ext_{\scr{O}_{P_A}}^1(P_A;\scr{I}_{X_A},\scr{O}_{X_A})
-      \]
+      $$
       where we set $P_A=X_A\times_A X_A$, where $\scr{O}_{X_A}$ is considered as a coherent sheaf on $P_A$ via the diagonal morphism $X_A\to P_A$, and where $\scr{I}_{X_A}$ denotes the coherent sheaf of ideals on $P_A$ defined by the diagonal morphism.
       More precisely, an easy globalisation of Hochschild theory shows that the $\Ext^1$ above can be identified with the set of classes, up to isomorphism, of sheaves of $I_A$-algebras $\scr{O}$ that are flat over $X_A$, and endowed with an augmentation isomorphism $\scr{O}\otimes_{I_A}A\to\scr{O}_{X_A}$ (recall that we set $I_A=At/(t^2)$).
       The submodule $F(I_A,\xi)$ is that which corresponds to the sheaves of _commutative_ algebras.
@@ -792,14 +791,14 @@ This could be the moment for the "_Greenberg functor_" to prove its worth \ldots
 <div id="FGA-3-II-section-C.5" class="section level2">
 <h2><span class="header-section-number">4.10</span> Extension of coverings</h2>
 <!-- Let $\frak{X}$ be a _formal_ Noetherian prescheme [@3-II-2], $U$ an open subset of $\frak{X}$ defined locally by the "non-vanishing" of a section of $\scr{O}_\frak{X}$ that is not a zero divisor (and thus large enough that every section of $\scr{O}_\frak{X}$ over an open subset $V$ that is zero on $U\cap V$ is zero).
-\emph{_[Comp.]_ It is also necessary to assume that the section defining $U$ is not a zero divisor not only on $\frak{X}$, but also on every $X_n$.}
+(_[Comp.]_ It is also necessary to assume that the section defining $U$ is not a zero divisor not only on $\frak{X}$, but also on every $X_n$.)
 Let $\frak{J}$ be an "ideal of definition" for $\frak{X}$, and let $X_n=(\frak{X},\scr{O}_\frak{X}/\frak{J}^{n+1})$, which is thus a ordinary Noetherian prescheme.
 Then, if $\frak{X}'$ and $\frak{X}''$ are _flat coverings_ of $\frak{X}$ (i.e. preschemes over $\frak{X}$ defined by sheaves of algebras that are coherent and locally free as sheaves of modules) that are _unramified over $U$_, the evident map
-\[
+$$
   \Hom_\frak{X}(\frak{X}',\frak{X}'') \to \Hom_{X_0}(X'_0,X''_0)
-\]
+$$
 is _injective_;
-in particular, \emph{an automorphism of $\frak{X}'$ that induces the identity on $X'_0$ is the identity}.
+in particular, _an automorphism of $\frak{X}'$ that induces the identity on $X'_0$ is the identity_.
 This allows us to apply the technique of descent to the situation.
 We start, in particular, with a flat covering $X'_0$ of $X_0$, unramified
 \oldpage{195-20}
@@ -812,9 +811,9 @@ With this, the results of [@3-II-2] and [@3-II-3] imply, first of all, the follo
 
     More generally, describing the fibres of $\scr{G}_\frak{X}$ is a question of complete local rings, in a precise way:
   \item For all $x\in\frak{X}$, we have
-    \[
+    $$
       \scr{G}_x = G(\Spec(\scr{O}_{\frak{X},x})) \subset G(\Spec(\widehat{\scr{O}}_{\frak{X},x}))
-    \]
+    $$
     (i.e. isomorphism classes of finite free algebras $B$ over $\widehat{\scr{O}}_{\frak{X},x}$ endowed with an isomorphism from $B\otimes_{\widehat{\scr{O}}_{\frak{X},x}}\scr{O}_{X_0,x}$ to $(\widehat{\scr{O}}'_0)_x$, where $\scr{O}'_0$ is the sheaf of algebras on $X_0$ that defines $X'_0$).
   \item We have a canonical isomorphism $\scr{G}_\frak{X}=\varprojlim\scr{G}_{\frak{X}_n}$; in other words, for every open subset $V$ of $\frak{X}$, we have $G(V)=\varprojlim G(V_n)$.
   \item Suppose that $\frak{X}$ comes from an ordinary _proper_ scheme $X$ over a complete local Noetherian ring $\Lambda$ that has ideal of definition $\frak{m}$ by taking the $\scr{J}$-adic completion of $\scr{O}_X$, where $\scr{J}=\frak{m}\cdot\scr{O}_X$.
@@ -825,14 +824,14 @@ Figuratively speaking, we can say that (a) and (b) establish the fundamental rel
 
 Now suppose that $\frak{X}$ is defined by a local complete Noetherian ring $\Lambda$, with $\scr{J}=\frak{m}\cdot\scr{O}_X$ (and so $X_0$ is a prescheme over $\Lambda/\frak{m}$).
 For every algebra $A$ that is finite over $\Lambda$, we set
-\[
+$$
   F(A) = G(\frak{X}\times_\Lambda A).
-\]
+$$
 This is a covariant functor in $A$, with values in the category of sets, and, by (c), this functor is completely determined by how it acts on Artinian algebras $A$;
 it is equivalent to say either that this functor is pro-representable, i.e. of the form
-\[
+$$
   F(A) = \Hom_{\mbox{top. $\Lambda$-algebras}}(\scr{O},A)
-\]
+$$
 \oldpage{195-21}
 where $\scr{O}$ is a topological $\Lambda$ algebra of the type described in \hyperref[A.5]{A.5}, or that this is true when we restrict to only Artinian algebras $A$.
 The combination of \hyperref[B-theorem1]{Theorem 1} and \hyperref[B-theorem2]{Theorem 2} then effectively implies:
@@ -942,7 +941,7 @@ gitbook.start({
 "collapse": "section",
 "scroll_highlight": true
 },
-"search": true,
+"search": false,
 "info": false
 });
 });
