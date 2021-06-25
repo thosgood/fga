@@ -19,8 +19,8 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 - [x] 1
 - [x] 2
 - [x] 3.I
-- [ ] 3.II
-- [ ] 3.III
+- [x] 3.II
+- [x] 3.III
 - [ ] 3.IV
 - [ ] 3.V
 - [ ] 3.VI
