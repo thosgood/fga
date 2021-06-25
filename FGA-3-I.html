@@ -120,6 +120,7 @@
 <li class="chapter" data-level="3.7" data-path="FGA-3-I.html"><a href="FGA-3-I.html#FGA-3-I-section-B.3"><i class="fa fa-check"></i><b>3.7</b> Decent by finite faithfully flat morphisms</a></li>
 <li class="chapter" data-level="3.8" data-path="FGA-3-I.html"><a href="FGA-3-I.html#FGA-3-I-section-B.4"><i class="fa fa-check"></i><b>3.8</b> Application to rationality criteria</a></li>
 <li class="chapter" data-level="3.9" data-path="FGA-3-I.html"><a href="FGA-3-I.html#FGA-3-I-section-B.5"><i class="fa fa-check"></i><b>3.9</b> Application to the restriction of the base scheme to an abelian scheme</a></li>
+<li class="chapter" data-level="3.10" data-path="FGA-3-I.html"><a href="FGA-3-I.html#FGA-3-I-section-B.6"><i class="fa fa-check"></i><b>3.10</b> Application to local triviality and isotriviality criteria</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="FGA-3-II.html"><a href="FGA-3-II.html"><i class="fa fa-check"></i><b>4</b> The existence theorem and the formal theory of modules [FGA 3.II]</a></li>
 <li class="chapter" data-level="5" data-path="FGA-3-III.html"><a href="FGA-3-III.html"><i class="fa fa-check"></i><b>5</b> Quotient preschemes [FGA 3.III]</a></li>
@@ -695,9 +696,140 @@ The group <eq env="math">\operatorname{H}^2(S'/S,\operatorname{G_m})</eq> is par
 </div>
 <div id="FGA-3-I-section-B.1" class="section level2">
 <h2><span class="header-section-number">3.5</span> Statement of the descent theorems</h2>
+<div id="FGA-3-I-section-B.1-definition-1.1" class="rmenv" title="Definition 1.1">
+<p>A morphism <eq env="math">\alpha\colon S'\to S</eq> of prescheme is said to be <em>flat</em> if <eq env="math">{\mathscr{O}}_{x'}</eq> is a flat module over the ring <eq env="math">{\mathscr{O}}_{\alpha(x')}</eq> for all <eq env="math">x'\in S'</eq> (i.e. if <eq env="math">{\mathscr{O}}_{x'}\otimes_{{\mathscr{O}}_{\alpha(x')}}M</eq> is an exact functor in the <eq env="math">{\mathscr{O}}_{\alpha(x')}</eq>-module <eq env="math">M</eq>).
+A morphism is said to be <em>faithfully flat</em> if it is flat and surjective.</p>
+</div>
+<p>For example, if <eq env="math">S=\operatorname{Spec}(A)</eq> and <eq env="math">S'=\operatorname{Spec}(A')</eq>, then <eq env="math">S'</eq> is flat over <eq env="math">S</eq> if and only if <eq env="math">A'</eq> is a flat <eq env="math">A</eq>-module, and <eq env="math">S'</eq> is faithfully flat over <eq env="math">S</eq> if and only if <eq env="math">A'</eq> is a faithfully flat <eq env="math">A</eq>-module (i.e. if and only if <eq env="math">A'\otimes_A M</eq> is an <em>exact</em> and <em>faithful</em> functor in the <eq env="math">A</eq>-module <eq env="math">M</eq>);
+this also implies, in the terminology of Serre <span class="citation">[<a href="#ref-3-I-5" role="doc-biblioref">24</a>]</span>, that the pair <eq env="math">(A,A')</eq> is flat.
+If <eq env="math">S'</eq> is faithfully flat over <eq env="math">S</eq>, then the inverse image functor of quasi-coherent sheaves on <eq env="math">S</eq> is exact and faithful;
+
+in other words, for a sequence of homomorphisms of quasi-coherent sheaves on <eq env="math">S</eq> to be exact, it is necessary and sufficient that its inverse image on <eq env="math">S'</eq> be exact (in particular, for a homomorphism of quasi-coherent sheaves on <eq env="math">S</eq> to be a monomorphism (resp. an epimorphism, resp. an isomorphism), it is necessary and sufficient that its inverse image on <eq env="math">S'</eq> be a monomorphism (resp. an epimorphism, resp. an isomorphism)).
+This property holds true if we restrict to an arbitrary open subset of <eq env="math">S'</eq>, and then characterise faithfully flat morphisms in this form.</p>
+<div id="FGA-3-I-section-B.1-definition-1.2" class="rmenv" title="Definition 1.2">
+<p>A morphism <eq env="math">\alpha\colon S'\to S</eq> is said to be <em>quasi-compact</em> if the inverse image of every quasi-compact open subset <eq env="math">U</eq> of <eq env="math">S</eq> is quasi-compact (i.e. a <em>finite</em> union of affine open subsets).</p>
+</div>
+<p>It evidently suffices to verify this property for the <em>affine</em> open subsets of <eq env="math">S</eq>.
+For example, an affine morphism (i.e. a morphism such that the inverse image of an affine open subset is affine) is quasi-compact.</p>
+<p>The class of flat (resp. faithfully flat, resp. quasi-compact) morphisms is stable under composition and by “base extension”, and of course contains all isomorphisms.</p>
+<div id="FGA-3-I-section-B.1-theorem-1" class="itenv" title="Theorem 1">
+<p>Let <eq env="math">\alpha\colon S'\to S</eq> be a morphism of preschemes that is <em>faithfully flat</em> and <em>quasi-compact</em>.
+Then <eq env="math">\alpha</eq> is a <em>strict descent morphism</em> (cf. <a href="FGA-3-I.html#FGA-3-I-section-A.1-definition-1.7">Definition 1.7</a> for the fibred category <eq env="math">{\mathcal{F}}</eq> of quasi-coherent sheaves (cf. <a href="FGA-3-I.html#FGA-3-I-section-A.1-example-2">§A, Example 2</a>).</p>
+</div>
+<p>This statement implies two things:</p>
+<ol style="list-style-type: lower-roman">
+<li><p>If <eq env="math">{\mathcal{F}}</eq> and <eq env="math">{\mathscr{G}}</eq> are quasi-coherent sheaves on <eq env="math">S</eq>, and <eq env="math">{\mathcal{F}}'</eq> and <eq env="math">{\mathscr{G}}'</eq> their inverse images on <eq env="math">S'</eq>, then the natural homomorphism
+<eq env="displaymath">
+   \operatorname{Hom}({\mathcal{F}},{\mathscr{G}}) \to \operatorname{Hom}({\mathcal{F}}',{\mathscr{G}}')
+ </eq>
+is a bijection from the left-hand side to the subgroup of the right-hand side consisting of homomorphisms <eq env="math">{\mathcal{F}}'\to{\mathscr{G}}'</eq> that are compatible with the canonical descent data on these sheaves, i.e. whose inverse images under the two projections of <eq env="math">S''=S'\times_S S'</eq> to <eq env="math">S'</eq> give the same homomorphism <eq env="math">{\mathcal{F}}''\to{\mathscr{G}}''</eq>.</p></li>
+<li><p>Every quasi-coherent sheaf <eq env="math">{\mathcal{F}}'</eq> on <eq env="math">S'</eq> endowed with a descent data with respect to the morphism <eq env="math">\alpha\colon S'\to S</eq> (cf. <a href="FGA-3-I.html#FGA-3-I-section-A.1-definition-1.6">Definition 1.6</a> is isomorphic (endowed with this data) to the inverse image of a quasi-coherent sheaf <eq env="math">{\mathcal{F}}</eq> on <eq env="math">S</eq>.</p></li>
+</ol>
+<p>Setting <eq env="math">{\mathcal{F}}={\mathscr{O}}_S</eq> in (i), we obtain:</p>
+<div id="FGA-3-I-section-B.1-corollary-1" class="rmenv" title="Corollary 1">
+<p>Let <eq env="math">{\mathscr{G}}</eq> be a quasi-coherent sheaf on <eq env="math">S</eq>, with <eq env="math">{\mathscr{G}}'</eq> and <eq env="math">{\mathscr{G}}''</eq> denoting its inverse images on <eq env="math">S'</eq> and <eq env="math">S''=S'\times_S S'</eq> (respectively), and let <eq env="math">p_1</eq> and <eq env="math">p_2</eq> be the two projections from <eq env="math">S''</eq> to <eq env="math">S</eq>.
+Then the diagram of maps of sets
+
+<eq env="displaymath">
+  \Gamma({\mathscr{G}}) \xrightarrow{\alpha^*}
+  \Gamma({\mathscr{G}}') \overset{p_1^*}{\underset{p_2^*}{\rightrightarrows}}
+  \Gamma({\mathscr{G}}'')
+</eq>
+is <em>exact</em> (cf. <a href="FGA-3-I.html#FGA-3-I-section-A.1-definition-1.1">Definition 1.1</a>.</p>
+</div>
+<p>Also, the combination of (i) and (ii) with <a href="FGA-3-I.html#FGA-3-I-section-A.1-definition-1.1">Definition 1.1</a> gives:</p>
+<div id="FGA-3-I-section-B.1-corollary-2" class="rmenv" title="Corollary 2">
+<p>Let <eq env="math">{\mathscr{G}}</eq> be as in <a href="FGA-3-I.html#FGA-3-I-section-B.1-corollary-1">Corollary 1</a>.
+Then there is a bijective correspondence between quasi-coherent subsheaves of <eq env="math">{\mathscr{G}}</eq> and quasi-coherent subsheaves of <eq env="math">{\mathscr{G}}'</eq> whose inverse images on <eq env="math">S''</eq> under the two projections <eq env="math">p_1</eq> and <eq env="math">p_2</eq> give the same subsheaf of <eq env="math">{\mathscr{G}}</eq>.</p>
+</div>
+<p>Of course, we have an equivalent statement in terms of quotient sheaves.
+As we have already seen in <a href="FGA-3-I.html#FGA-3-I-section-A.4.e">§A.4.e</a>, <a href="#FGA-3-I-theorem-1">Theorem 1</a> should be thought of as a generalisation of Hilbert’s “Theorem 90”, and implies, as particular cases, various formulations in terms of <eq env="math">1</eq>-cohomology.
+For the proof, we can easily reduce to the case where <eq env="math">S=\operatorname{Spec}(A)</eq> and <eq env="math">S'=\operatorname{Spec}(A')</eq>, and, for (i), we can easily restrict to proving <a href="FGA-3-I.html#FGA-3-I-section-B.1-corollary-1">Corollary 1</a>, i.e. the exactness of the diagram
+<eq env="displaymath">
+  M = A\otimes_A M \to
+  A'\otimes_A M \rightrightarrows
+  A'\otimes_A A'\otimes_A M
+</eq>
+for every <eq env="math">A</eq>-module <eq env="math">M</eq>, which follows from the more general lemma:</p>
+<div id="FGA-3-I-section-B.1-lemma-1.1" class="itenv" title="Lemma 1.1">
+<p>Let <eq env="math">A'</eq> be a faithfully flat <eq env="math">A</eq>-algebra.
+Then, for every <eq env="math">A</eq>-module <eq env="math">M</eq>, the <eq env="math">M</eq>-augmented complex <eq env="math">C^\bullet(A'/A,\operatorname{G_a})\otimes_A M</eq> (cf. <a href="FGA-3-I.html#FGA-3-I-section-A.4.e">§A.4.e</a>) is a <em>resolution</em> of <eq env="math">M</eq>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-16" class="proof"><em>Proof</em>. </span>It suffices to prove that the augmented complex induced from the above by extension of the base <eq env="math">A</eq> to <eq env="math">A'</eq> satisfies the same conclusions.
+This leads to proving the statement when we replace <eq env="math">A</eq> by <eq env="math">A'</eq>, and <eq env="math">A'</eq> by <eq env="math">A'\otimes_A A'</eq>, and so we can restrict to the case where there exists an <eq env="math">A</eq>-algebra homomorphism <eq env="math">A'\to A</eq> (or, in geometric terms, the case where <eq env="math">S'</eq> over <eq env="math">S</eq> admits a section).
+In this case, the claim follows from the generalities of <a href="FGA-3-I.html#FGA-3-I-section-A.4.a">§A.4.a</a>.</p>
+</div>
+<p>We note, in passing, the following corollary, which generalises a well-known statement in Galois cohomology (compare with <a href="FGA-3-I.html#FGA-3-I-section-A.4.e">§A.4.e</a>):</p>
+<div class="itenv" title="Corollary">
+<p>If <eq env="math">A'</eq> is faithfully flat over <eq env="math">A</eq>, then <eq env="math">\operatorname{H}^0(A'/A,\operatorname{G_a})=A</eq>, and <eq env="math">\operatorname{H}^i(A'/A,\operatorname{G_a})=0</eq> for <eq env="math">i\geqslant 1</eq>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-17" class="proof"><em>Proof</em>. </span><em>Part (ii).</em>
+To prove part (ii) of <a href="#FGA-3-I-theorem-1">Theorem 1</a>, we proceed, as for (i), by restricting to the case where <eq env="math">S'</eq> over <eq env="math">S</eq> admits a section, where the result then follows from (i) (cf. <a href="FGA-3-I.html#FGA-3-I-section-A.1.c">§A.1.c</a>).</p>
+</div>
+<p>We can evidently vary <a href="#FGA-3-I-theorem-1">Theorem 1</a> and its corollaries <em>ad libitum</em> by introducing various additional structures on the quasi-coherent sheaves (or systems of sheaves) in question.
+
+For example, the data on <eq env="math">S</eq> of a quasi-coherent sheaf of commutative algebras “is equivalent to” the data on <eq env="math">S'</eq> of such a sheaf endowed with a descent data relative to <eq env="math">\alpha\colon S'\to S</eq>.
+Taking into account the functorial correspondence between such quasi-coherent sheaves on <eq env="math">S</eq> and affine preschemes over <eq env="math">S</eq>, we obtain the second claim of the following theorem:</p>
+<div id="FGA-3-I-section-B.1-theorem-2" class="itenv" title="Theorem 2">
+<p>Let <eq env="math">\alpha\colon S'\to S</eq> be as in <a href="#FGA-3-I-theorem-1">Theorem 1</a>.
+Then <eq env="math">\alpha</eq> is a (non-strict, in general) <em>descent morphism</em> (cf. <a href="#FGA-3-I-section-A-definition-2.4">§A, Definition 2.4</a>), and it is a <em>strict descent morphism</em> for the fibred category of affine schemes over preschemes (cf. <a href="FGA-3-I.html#FGA-3-I-section-A.1-definition-1.7">§A, Definition 1.7</a>.</p>
+</div>
+<p>The first claim of the theorem implies this:
+let <eq env="math">X</eq> and <eq env="math">Y</eq> be preschemes over <eq env="math">S</eq>, with <eq env="math">X'</eq> and <eq env="math">Y'</eq> their inverse images over <eq env="math">S</eq>, and <eq env="math">X''</eq> and <eq env="math">Y''</eq> their inverse images over <eq env="math">S''=S'\times_S S'</eq>;
+then the diagram of natural maps
+<eq env="displaymath">
+  \operatorname{Hom}_S(X,Y) \xrightarrow{\alpha^*}
+  \operatorname{Hom}_{S'}(X',Y') \overset{p_1^*}{\underset{p_2^*}{\rightrightarrows}}
+  \operatorname{Hom}_{S''}(X'',Y'')
+</eq>
+is <em>exact</em>, i.e. <eq env="math">\alpha^*</eq> is a bijection from <eq env="math">\operatorname{Hom}_S(X,Y)</eq> to the subset of <eq env="math">\operatorname{Hom}_{S'}(X',Y')</eq> consisting of homomorphisms that are compatible with the canonical descent data on <eq env="math">X'</eq> and <eq env="math">Y'</eq> (i.e. whose inverse images under the two projections from <eq env="math">S''</eq> to <eq env="math">S'</eq> are equal).
+This follows easily from <a href="#FGA-3-I-theorem-1">Theorem 1</a> and <a href="FGA-3-I.html#FGA-3-I-section-B.1-corollary-1">Corollary 1</a>, if we restrict to <eq env="math">Y</eq> being affine over <eq env="math">S</eq>;
+in the general case, we need to combine <a href="#FGA-3-I-theorem-1">Theorem 1</a> with the following result:</p>
+<div id="FGA-3-I-section-B.1-lemma-1.2" class="itenv" title="Lemma 1.2">
+<p>Let <eq env="math">\alpha\colon S'\to S</eq> be a faithfully flat and quasi-compact morphism.
+Then <eq env="math">S</eq> can be identified with a <em>topological quotient space of <eq env="math">S'</eq></em>, i.e. every subset <eq env="math">U</eq> of <eq env="math">S</eq> such that <eq env="math">\alpha^{-1}(U)</eq> is open, is open.</p>
+</div>
+<p>To complete <a href="#FGA-3-I-theorem-2">Theorem 2</a>, we must give effectiveness criteria for a descent data on an <eq env="math">S'</eq>-prescheme <eq env="math">X'</eq> (in the case where <eq env="math">X'</eq> is not assumed to be affine over <eq env="math">S'</eq>).
+Note first of all that <em>such a descent data is not necessarily effective</em>, even if <eq env="math">S</eq> is the spectrum of a field <eq env="math">k</eq>, <eq env="math">S'</eq> the spectrum of a quadratic extension <eq env="math">k'</eq> of <eq env="math">k</eq>, and <eq env="math">S''</eq> a proper algebraic scheme of dimension <eq env="math">2</eq> over <eq env="math">S'</eq> (as we can see, due to Serre, by using the non-projective surface of Nagata).
+<em>For a descent data on <eq env="math">X'/S'</eq> with respect to <eq env="math">\alpha\colon S'\to S</eq> (assumed to be faithfully flat and quasi-compact) to be effective, it is necessary and sufficient that <eq env="math">X'</eq> be a union of open subsets <eq env="math">X'_i</eq> that are affine over <eq env="math">S'</eq> and “stable” under the descent data on <eq env="math">X'</eq>.</em>
+This is certainly the case (for any <eq env="math">X'/S'</eq> and any descent data on <eq env="math">X'</eq>) if the morphism <eq env="math">\alpha\colon S'\to S</eq> is <em>radicial</em> (i.e. injective, and with radicial residual extensions).
+
+We can also show that this is the case if <eq env="math">\alpha\colon S'\to S</eq> is <em>finite</em>, and every finite subset of <eq env="math">X'</eq> that is contained in a fibre of <eq env="math">X'</eq> over <eq env="math">S</eq> is also contained in an open subset of <eq env="math">X'</eq> that is affine over <eq env="math">S</eq> (this is the <em>Weil criterion</em>).
+It is, in particular, the case if <eq env="math">X'/S'</eq> is quasi-projective, and, in this case, we can show that the “descended” prescheme <eq env="math">X/S</eq> is also quasi-projective (and projective if <eq env="math">X'/S'</eq> is projective).
+In summary:</p>
+<div id="FGA-3-I-section-B.1-theorem-3" class="itenv" title="Theorem 3">
+<p>Let <eq env="math">\alpha\colon S'\to S</eq> be faithfully flat and quasi-compact morphism of preschemes.
+If <eq env="math">\alpha</eq> is <em>radicial</em>, then it is a <em>strict descent morphism</em>.
+If <eq env="math">\alpha</eq> is finite, then it is a strict descent morphism with respect to the fibred category of quasi-projective (or projective) preschemes over preschemes.</p>
+</div>
+<div class="rmenv" title="Remark">
+<p>I do not know if, in the second claim above, the hypothesis that <eq env="math">\alpha</eq> be <em>finite</em> is indeed necessary;
+we can prove that, in any case, we can “formally” replace it by the following, seemingly weaker, hypothesis:
+<em>for every point of <eq env="math">S</eq> there exists an open neighbourhood <eq env="math">U</eq>, a finite and faithfully flat <eq env="math">U'</eq> over <eq env="math">U</eq>, and an <eq env="math">S</eq>-morphism from <eq env="math">U'</eq> to <eq env="math">S'</eq></em>.
+A type of case that is not covered by the above is that where <eq env="math">S=\operatorname{Spec}(A)</eq> and <eq env="math">S'=\operatorname{Spec}(\overline{A})</eq>, with <eq env="math">A</eq> a local Noetherian ring and <eq env="math">\overline{A}</eq> its completion;
+or even that where <eq env="math">S'</eq> is quasi-finite over <eq env="math">S</eq> (i.e. locally isomorphic to an open subset of a finite <eq env="math">S</eq>-scheme) but not finite.
+In these two cases, the speaker also does not know the answer to the following question:
+let <eq env="math">X</eq> be an <eq env="math">S</eq>-scheme such that <eq env="math">X'=X\times_S S'</eq> is projective over <eq env="math">S'</eq>;
+is it then true that <eq env="math">X</eq> is projective over <eq env="math">S</eq>?</p>
+<p><em>[Comp.]</em>
+A morphism <eq env="math">S'\to S</eq> that is quasi-finite, étale, surjective, or a morphism of the form <eq env="math">\operatorname{Spec}(\overline{A})\to\operatorname{Spec}(A)</eq>, is not always a strict descent morphism, even if <eq env="math">A</eq> is the local ring of an algebraic curve over an algebraically closed field <eq env="math">k</eq> and <eq env="math">S=\operatorname{Spec}(A)</eq>.
+We can thus find a proper simple morphism <eq env="math">f\colon X\to S</eq> that makes <eq env="math">X</eq> into a principal <eq env="math">E</eq>-bundle over <eq env="math">S</eq>, with <eq env="math">E</eq> an elliptic curve, such that <eq env="math">f'\colon X'\to S'</eq> is projective, but <eq env="math">f</eq> is not projective.
+So this is also an example of a homogeneous principal bundle that is <em>non-isotrivial</em> under an abelian scheme.</p>
+</div>
 </div>
 <div id="FGA-3-I-section-B.2" class="section level2">
 <h2><span class="header-section-number">3.6</span> Application to the descent of certain properties of morphisms</h2>
+<p>Let <eq env="math">P</eq> be a class of morphisms of preschemes.
+Let <eq env="math">\alpha\colon S\to S'</eq> be a morphism of preschemes, and let <eq env="math">f\colon X\to Y</eq> be a morphism of <eq env="math">S</eq>-preschemes, with <eq env="math">f'\colon X'\to Y'</eq> the inverse image of <eq env="math">f</eq> under <eq env="math">\alpha</eq>.
+We can then ask if the relation “<eq env="math">f'\in P</eq>” implies that “<eq env="math">f\in P</eq>”.
+It appears that the answer is affirmative in many important cases, if we suppose that <eq env="math">\alpha</eq> is <em>faithfully flat</em> and <em>quasi-compact</em> (this latter hypothesis being sometimes overly strong).
+We can see this directly without difficulty if <eq env="math">P</eq> is the class of surjective (resp. radicial) morphisms (with these two cases following from the surjectivity of <eq env="math">\alpha</eq>), or flat (resp. faithfully flat, resp. simple) morphisms (with these three cases following from the faithful flatness of <eq env="math">\alpha</eq>), or morphisms of finite type.
+Using <a href="#FGA-3-I-theorem-1">Theorem 1</a>, <a href="#FGA-3-I-theorem-2">Theorem 2</a>, and <a href="FGA-3-I.html#FGA-3-I-section-B.1-lemma-1.2">Lemma 1.2</a>, we see that it is also true if <eq env="math">P</eq> is one of the following classes:
+isomorphisms, open immersions, closed immersions, immersions (if <eq env="math">f</eq> is of finite type, and <eq env="math">Y</eq> is locally Noetherian), affine morphisms, finite morphisms, quasi-finite morphisms, open morphisms, closed morphisms, homeomorphisms, separated morphisms, or proper morphisms.
+
+The only important case not covered here is that of projective or quasi-projective morphisms, which has already been discussed in the remark in <a href="FGA-3-I.html#FGA-3-I-section-B.1">§B.1</a>.</p>
 </div>
 <div id="FGA-3-I-section-B.3" class="section level2">
 <h2><span class="header-section-number">3.7</span> Decent by finite faithfully flat morphisms</h2>
@@ -707,182 +839,10 @@ The group <eq env="math">\operatorname{H}^2(S'/S,\operatorname{G_m})</eq> is par
 </div>
 <div id="FGA-3-I-section-B.5" class="section level2">
 <h2><span class="header-section-number">3.9</span> Application to the restriction of the base scheme to an abelian scheme</h2>
-<!--
-\begin{rmenv}{Definition 1.1}
-  A morphism $\alpha\colon S'\to S$ of prescheme is said to be _flat_ if $\scr{O}_{x'}$ is a flat module over the ring $\scr{O}_{\alpha(x')}$ for all $x'\in S'$ (i.e. if $\scr{O}_{x'}\otimes_{\scr{O}_{\alpha(x')}}M$ is an exact functor in the $\scr{O}_{\alpha(x')}$-module $M$).
-  A morphism is said to be _faithfully flat_ if it is flat and surjective.
-\end{rmenv}
-
-For example, if $S=\Spec(A)$ and $S'=\Spec(A')$, then $S'$ is flat over $S$ if and only if $A'$ is a flat $A$-module, and $S'$ is faithfully flat over $S$ if and only if $A'$ is a faithfully flat $A$-module (i.e. if and only if $A'\otimes_A M$ is an _exact_ and _faithful_ functor in the $A$-module $M$);
-this also implies, in the terminology of Serre [@3-I-5], that the pair $(A,A')$ is flat.
-If $S'$ is faithfully flat over $S$, then the inverse image functor of quasi-coherent sheaves on $S$ is exact and faithful;
-in other words, for a sequence of homomorphisms of
-\oldpage{190-17}
-quasi-coherent sheaves on $S$ to be exact, it is necessary and sufficient that its inverse image on $S'$ be exact (in particular, for a homomorphism of quasi-coherent sheaves on $S$ to be a monomorphism (resp. an epimorphism, resp. an isomorphism), it is necessary and sufficient that its inverse image on $S'$ be a monomorphism (resp. an epimorphism, resp. an isomorphism)).
-This property holds true if we restrict to an arbitrary open subset of $S'$, and then characterise faithfully flat morphisms in this form.
-
-\begin{rmenv}{Definition 1.2}
-  A morphism $\alpha\colon S'\to S$ is said to be _quasi-compact_ if the inverse image of every quasi-compact open subset $U$ of $S$ is quasi-compact (i.e. a _finite_ union of affine open subsets).
-\end{rmenv}
-
-It evidently suffices to verify this property for the _affine_ open subsets of $S$.
-For example, an affine morphism (i.e. a morphism such that the inverse image of an affine open subset is affine) is quasi-compact.
-
-The class of flat (resp. faithfully flat, resp. quasi-compact) morphisms is stable under composition and by "base extension", and of course contains all isomorphisms.
-
-\begin{itenv}{Theorem 1}
-\label{theorem:B.1(1)}
-  Let $\alpha\colon S'\to S$ be a morphism of preschemes that is _faithfully flat_ and _quasi-compact_.
-  Then $\alpha$ is a _strict descent morphism_ (cf. [Definition 1.7](#FGA-3-I-section-A.1-d, Definit-on ).7}) for the fibred category $\cal{F}$ of quasi-coherent sheaves (cf. \hyperref[example:A.1.1(2)]{A, Example 2}).
-\end{itenv}
-
-This statement implies two things:
-\begin{enumerate}[(i)]
-  \item If $\cal{F}$ and $\scr{G}$ are quasi-coherent sheaves on $S$, and $\cal{F}'$ and $\scr{G}'$ their inverse images on $S'$, then the natural homomorphism
-    $$
-      \Hom(\cal{F},\scr{G}) \to \Hom(\cal{F}',\scr{G}')
-    $$
-    is a bijection from the left-hand side to the subgroup of the right-hand side consisting of homomorphisms $\cal{F}'\to\scr{G}'$ that are compatible with the canonical descent data on these sheaves, i.e. whose inverse images under the two projections of $S''=S'\times_S S'$ to $S'$ give the same homomorphism $\cal{F}''\to\scr{G}''$.
-  \item Every quasi-coherent sheaf $\cal{F}'$ on $S'$ endowed with a descent data with respect to the morphism $\alpha\colon S'\to S$ (cf. [Definition 1.6](#FGA-3-I-section-A.1-d, Definit-on ).6}) is isomorphic (endowed with this data) to the inverse image of a quasi-coherent sheaf $\cal{F}$ on $S$.
-\end{enumerate}
-
-Setting $\cal{F}=\scr{O}_S$ in (i), we obtain:
-
-\begin{itenv}{Corollary 1}
-\label{corollary:B.1(1)}
-  Let $\scr{G}$ be a quasi-coherent sheaf on $S$, with $\scr{G}'$ and $\scr{G}''$ denoting its inverse images on $S'$ and $S''=S'\times_S S'$ (respectively), and let $p_1$ and $p_2$ be the two projections from $S''$ to $S$.
-  Then the diagram of maps of sets
-\oldpage{190-18}
-  $$
-    \begin{tikzcd}
-      \Gamma(\scr{G}) \rar["\alpha^*"]
-      & \Gamma(\scr{G}') \rar[shift left=1,"p_1^*"] \rar[shift right=1,swap,"p_2^*"]
-      & \Gamma(\scr{G}'')
-    \end{tikzcd}
-  $$
-  is _exact_ (cf. [Definition 1.1](#FGA-3-I-section-A.1-d, Definit-on ).1}).
-\end{itenv}
-
-Also, the combination of (i) and (ii) with [Definition 1.1](#FGA-3-I-section-A.1-d, Definit-on ).1} gives:
-
-\begin{itenv}{Corollary 2}
-\label{corollary:B.1(2)}
-  Let $\scr{G}$ be as in \hyperref[corollary:B.1(1)]{Corollary 1}.
-  Then there is a bijective correspondence between quasi-coherent subsheaves of $\scr{G}$ and quasi-coherent subsheaves of $\scr{G}'$ whose inverse images on $S''$ under the two projections $p_1$ and $p_2$ give the same subsheaf of $\scr{G}$.
-\end{itenv}
-
-Of course, we have an equivalent statement in terms of quotient sheaves.
-As we have already seen in \hyperref[A.4.e]{(A.4.e)}, [Theorem 1](#FGA-3-I-theorem-1) should be thought of as a generalisation of Hilbert's "Theorem 90", and implies, as particular cases, various formulations in terms of $1$-cohomology.
-For the proof, we can easily reduce to the case where $S=\Spec(A)$ and $S'=\Spec(A')$, and, for (i), we can easily restrict to proving \hyperref[corollary:B.1(1)]{Corollary 1}, i.e. the exactness of the diagram
-$$
-  M
-  = A\otimes_A M
-  \to A'\otimes_A M
-  \rightrightarrows A'\otimes_A A'\otimes_A M
-$$
-for every $A$-module $M$, which follows from the more general lemma:
-
-\begin{itenv}{Lemma 1.1}
-  Let $A'$ be a faithfully flat $A$-algebra.
-  Then, for every $A$-module $M$, the $M$-augmented complex $C^\bullet(A'/A,\Ga)\otimes_A M$ (cf. \hyperref[A.4.e]{(A.4.e)}) is a _resolution_ of $M$.
-\end{itenv}
-
-\begin{proof}
-  It suffices to prove that the augmented complex induced from the above by extension of the base $A$ to $A'$ satisfies the same conclusions.
-  This leads to proving the statement when we replace $A$ by $A'$, and $A'$ by $A'\otimes_A A'$, and so we can restrict to the case where there exists an $A$-algebra homomorphism $A'\to A$ (or, in geometric terms, the case where $S'$ over $S$ admits a section).
-  In this case, the claim follows from the generalities of \hyperref[A.4.a]{(A.4.a)}.
-\end{proof}
-
-We note, in passing, the following corollary, which generalises a well-known statement in Galois cohomology (compare with \hyperref[A.4.e]{(A.4.e)}):
-
-\begin{itenv}{Corollary}
-  If $A'$ is faithfully flat over $A$, then $\HH^0(A'/A,\Ga)=A$, and $\HH^i(A'/A,\Ga)=0$ for $i\geq1$.
-\end{itenv}
-
-\begin{proof}[Part (ii)]
-To prove part (ii) of [Theorem 1](#FGA-3-I-theorem-1), we proceed, as for (i), by restricting to the case where $S'$ over $S$ admits a section, where the result then follows from (i) (cf. \hyperref[§A.1.c]{(A.1.c)}).
-\end{proof}
-
-We can evidently vary [Theorem 1](#FGA-3-I-theorem-1) and its corollaries _ad libitum_ by introducing various additional structures on the quasi-coherent sheaves (or systems of sheaves) in question.
-For example, the data on $S$ of a
-\oldpage{190-19}
-quasi-coherent sheaf of commutative algebras "is equivalent to" the data on $S'$ of such a sheaf endowed with a descent data relative to $\alpha\colon S'\to S$.
-Taking into account the functorial correspondence between such quasi-coherent sheaves on $S$ and affine preschemes over $S$, we obtain the second claim of the following theorem:
-
-\begin{itenv}{Theorem 2}
-\label{theorem:B.1(2)}
-  Let $\alpha\colon S'\to S$ be as in [Theorem 1](#FGA-3-I-theorem-1).
-  Then $\alpha$ is a (non-strict, in general) _descent morphism_ (cf. \hyperref[definition:A.2.4]{A, Definition 2.4}), and it is a _strict descent morphism_ for the fibred category of affine schemes over preschemes (cf. [Definition 1.7](#FGA-3-I-section-A.1-d, Definit-on ).7}).
-\end{itenv}
-
-The first claim of the theorem implies this:
-let $X$ and $Y$ be preschemes over $S$, with $X'$ and $Y'$ their inverse images over $S$, and $X''$ and $Y''$ their inverse images over $S''=S'\times_S S'$;
-then the diagram of natural maps
-$$
-  \begin{tikzcd}
-    \Hom_S(X,Y) \rar["\alpha^*"]
-    & \Hom_{S'}(X',Y') \rar[shift left=1,"p_1^*"] \rar[shift right=1,swap,"p_2^*"]
-    & \Hom_{S''}(X'',Y'')
-  \end{tikzcd}
-$$
-is _exact_, i.e. $\alpha^*$ is a bijection from $\Hom_S(X,Y)$ to the subset of $\Hom_{S'}(X',Y')$ consisting of homomorphisms that are compatible with the canonical descent data on $X'$ and $Y'$ (i.e. whose inverse images under the two projections from $S''$ to $S'$ are equal).
-This follows easily from [Theorem 1](#FGA-3-I-theorem-1) and \hyperref[corollary:B.1(1)]{Corollary 1}, if we restrict to $Y$ being affine over $S$;
-in the general case, we need to combine [Theorem 1](#FGA-3-I-theorem-1) with the following result:
-
-\begin{itenv}{Lemma 1.2}
-\label{lemma:B.1.2}
-  Let $\alpha\colon S'\to S$ be a faithfully flat and quasi-compact morphism.
-  Then $S$ can be identified with a _topological quotient space of $S'$_, i.e. every subset $U$ of $S$ such that $\alpha^{-1}(U)$ is open, is open.
-\end{itenv}
-
-To complete [Theorem 2](#FGA-3-I-theorem-2), we must give effectiveness criteria for a descent data on an $S'$-prescheme $X'$ (in the case where $X'$ is not assumed to be affine over $S'$).
-Note first of all that _such a descent data is not necessarily effective_, even if $S$ is the spectrum of a field $k$, $S'$ the spectrum of a quadratic extension $k'$ of $k$, and $S''$ a proper algebraic scheme of dimension $2$ over $S'$ (as we can see, due to Serre, by using the non-projective surface of Nagata).
-_For a descent data on $X'/S'$ with respect to $\alpha\colon S'\to S$ (assumed to be faithfully flat and quasi-compact) to be effective, it is necessary and sufficient that $X'$ be a union of open subsets $X'_i$ that are affine over $S'$ and "stable" under the descent data on $X'$._
-This is certainly the case (for any $X'/S'$ and any descent data on $X'$) if the morphism $\alpha\colon S'\to S$ is _radicial_ (i.e. injective, and with
-\oldpage{190-20}
-radicial residual extensions).
-We can also show that this is the case if $\alpha\colon S'\to S$ is _finite_, and every finite subset of $X'$ that is contained in a fibre of $X'$ over $S$ is also contained in an open subset of $X'$ that is affine over $S$ (this is the _Weil criterion_).
-It is, in particular, the case if $X'/S'$ is quasi-projective, and, in this case, we can show that the "descended" prescheme $X/S$ is also quasi-projective (and projective if $X'/S'$ is projective).
-In summary:
-
-\begin{itenv}{Theorem 3}
-\label{theorem:B.1(3)}
-  Let $\alpha\colon S'\to S$ be faithfully flat and quasi-compact morphism of preschemes.
-  If $\alpha$ is _radicial_, then it is a _strict descent morphism_.
-  If $\alpha$ is finite, then it is a strict descent morphism with respect to the fibred category of quasi-projective (or projective) preschemes over preschemes.
-\end{itenv}
-
-\begin{rmenv}{Remark}
-  I do not know if, in the second claim above, the hypothesis that $\alpha$ be _finite_ is indeed necessary;
-  we can prove that, in any case, we can "formally" replace it by the following, seemingly weaker, hypothesis:
-  _for every point of $S$ there exists an open neighbourhood $U$, a finite and faithfully flat $U'$ over $U$, and an $S$-morphism from $U'$ to $S'$_.
-  A type of case that is not covered by the above is that where $S=\Spec(A)$ and $S'=\Spec(\overline{A})$, with $A$ a local Noetherian ring and $\overline{A}$ its completion;
-  or even that where $S'$ is quasi-finite over $S$ (i.e. locally isomorphic to an open subset of a finite $S$-scheme) but not finite.
-  In these two cases, the speaker also does not know the answer to the following question:
-  let $X$ be an $S$-scheme such that $X'=X\times_S S'$ is projective over $S'$;
-  is it then true that $X$ is projective over $S$?
-
-  _[Comp.]_
-  A morphism $S'\to S$ that is quasi-finite, étale, surjective, or a morphism of the form $\Spec(\overline{A})\to\Spec(A)$, is not always a strict descent morphism, even if $A$ is the local ring of an algebraic curve over an algebraically closed field $k$ and $S=\Spec(A)$.
-  We can thus find a proper simple morphism $f\colon X\to S$ that makes $X$ into a principal $E$-bundle over $S$, with $E$ an elliptic curve, such that $f'\colon X'\to S'$ is projective, but $f$ is not projective.
-  So this is also an example of a homogeneous principal bundle that is _non-isotrivial_ under an abelian scheme.
-\end{rmenv}
-
-
-\section{Application to the descent of certain properties of morphisms}
-\label{B.2}
-
-Let $P$ be a class of morphisms of preschemes.
-Let $\alpha\colon S\to S'$ be a morphism of preschemes, and let $f\colon X\to Y$ be a morphism of $S$-preschemes, with $f'\colon X'\to Y'$ the inverse image of $f$ under $\alpha$.
-We can then ask if the relation "$f'\in P$" implies that "$f\in P$".
-It appears that the answer is affirmative in many important cases, if we suppose that $\alpha$ is _faithfully flat_ and _quasi-compact_ (this latter hypothesis being sometimes overly strong).
-We can see this directly without difficulty if $P$ is the class of surjective (resp. radicial) morphisms (with these two cases following from the surjectivity of $\alpha$), or flat (resp. faithfully flat, resp. simple) morphisms (with these three cases following from the faithful flatness of $\alpha$), or morphisms of finite type.
-Using [Theorem 1](#FGA-3-I-theorem-1), [Theorem 2](#FGA-3-I-theorem-2), and \hyperref[lemma:B.1.2]{Lemma 1.2}, we see that it is also true if $P$ is one of the following classes:
-isomorphisms, open immersions, closed immersions, immersions (if $f$ is of finite type, and $Y$ is locally Noetherian), affine morphisms, finite morphisms, quasi-finite morphisms, open morphisms, closed morphisms, homeomorphisms, separated morphisms,
-\oldpage{190-21}
-or proper morphisms.
-The only important case not covered here is that of projective or quasi-projective morphisms, which has already been discussed in the remark in \hyperref[B.1]{(B.1)}.
-
+</div>
+<div id="FGA-3-I-section-B.6" class="section level2">
+<h2><span class="header-section-number">3.10</span> Application to local triviality and isotriviality criteria</h2>
+<!---
 
 \section{Decent by finite faithfully flat morphisms}
 \label{B.3}
@@ -909,7 +869,7 @@ $$
 \tag{3.1}
 $$
 where $f$ and $x$ are (respectively) sections of $\scr{A}'$ and $\cal{F}'$ over an open subset of $S$ that is contained inside $V$.
-Conditions (i) and (ii) of a descent data (cf. \hyperref[§A.1.c]{(A.1.c)}) can then be written (respectively) as
+Conditions (i) and (ii) of a descent data (cf. [§A.1.c](#FGA-3-I-section-A.1.c)) can then be written (respectively) as
 $$
 \label{equation:B.3.2}
   T_{1_U}(x) = x,
@@ -1118,7 +1078,7 @@ Strict isotriviality is mainly useful if $G$ is simple over $S$, but is, however
 If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ under $G$ is affine, by [§B.2](#FGA-3-I-section-B.2), whence the possibility, thanks to [Theorem 2](#FGA-3-I-theorem-2), to "descend"
 \oldpage{190-28}
 from such bundles by faithfully flat and quasi-compact morphisms.
-Taking, in particular, $G=\GL(n)_S$, defined by the condition that the functor $S'\mapsto\Hom(S',G)$ of $S$-preschemes (with values in the category of groups) can be identified with the functor $\GL(n)(S')=\GL(n,\HH^0(S',\scr{O}_{S'}))$ described in \hyperref[A.4.e]{A.4.e}.
+Taking, in particular, $G=\GL(n)_S$, defined by the condition that the functor $S'\mapsto\Hom(S',G)$ of $S$-preschemes (with values in the category of groups) can be identified with the functor $\GL(n)(S')=\GL(n,\HH^0(S',\scr{O}_{S'}))$ described in \hyperref[§A.4.e]{A.4.e}.
 Using the facts
 \begin{enumerate}[(i)]
   \item that every principal homogeneous bundle under $G$ (resp. every locally free sheaf of rank $n$ on $S$) becomes isomorphic to the "trivial" object $G$ (resp. $\scr{O}_S^n$) under a suitable faithfully flat and quasi-compact extension of $S$;
