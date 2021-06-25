@@ -794,20 +794,6 @@ The only important case not covered here is that of projective or quasi-projecti
 
 ## Decent by finite faithfully flat morphisms {#FGA-3-I-section-B.3}
 
-
-## Application to rationality criteria {#FGA-3-I-section-B.4}
-
-
-## Application to the restriction of the base scheme to an abelian scheme {#FGA-3-I-section-B.5}
-
-
-## Application to local triviality and isotriviality criteria {#FGA-3-I-section-B.6}
-
-<!---
-
-\section{Decent by finite faithfully flat morphisms}
-\label{B.3}
-
 Let $\alpha\colon S'\to S$ be a _finite_ morphism, corresponding to a sheaf of algebras $\scr{A}'$ on $S$ that is _locally free_ and of finite type as a sheaf of modules, and everywhere non-zero.
 Then $\alpha$ is a faithfully flat and quasi-compact morphism, to which we can thus apply the above results.
 The data of a quasi-coherent sheaf $\cal{F}'$ on $S'$ is equivalent to the data of the quasi-coherent sheaf $\alpha_*(\cal{F}')$ on $S$ endowed with its $\scr{A}'$-modules structure (noting that $\scr{A}'=\alpha_*(\scr{O}_{S'})$).
@@ -821,49 +807,59 @@ $$
   \to \shHom_{\scr{O}_S}(\cal{F}',\cal{F}')
 $$
 i.e. to the data, for every section $\xi$ of $\scr{U}$ over an open subset $V$, of a homomorphism of $\scr{O}_S$-modules $T_\xi\colon\cal{F}'|V\to\cal{F}'|V$ that satisfies the conditions
+
+::: {.eqref #FGA-3-I-section-B.3-equation-3.1}
 $$
-\label{equation:B.3.1}
   \begin{aligned}
     T_{f\xi}(x) &= fT_\xi(x),
   \\T_{\xi f}(x) &= T_\xi(fx),
   \end{aligned}
 \tag{3.1}
 $$
+:::
+
 where $f$ and $x$ are (respectively) sections of $\scr{A}'$ and $\cal{F}'$ over an open subset of $S$ that is contained inside $V$.
 Conditions (i) and (ii) of a descent data (cf. [§A.1.c](#FGA-3-I-section-A.1.c)) can then be written (respectively) as
+
+::: {.eqref #FGA-3-I-section-B.3-equation-3.2}
 $$
-\label{equation:B.3.2}
   T_{1_U}(x) = x,
   \qquad\text{i.e. }T_{1_U}=\id_{\cal{F}'}
 \tag{3.2}
 $$
+:::
+
+::: {.eqref #FGA-3-I-section-B.3-equation-3.3}
 $$
-\label{equation:B.3.3}
   T_{\xi\eta} = T_\xi T_\eta.
 \tag{3.3}
 $$
-In other words, _a descent data on $\cal{F}'$ is equivalent to a representation of the sheaf $\scr{U}=\shHom_{\scr{O}_S}(\scr{A}',\scr{A}')$ of $\scr{O}_S$-algebras in the sheaf $\shHom_{\scr{O}_S}(\cal{F}',\cal{F}')$ of $\scr{O}_S$-algebras that satisfies the two linearity conditions \hyperref[equation:B.3.1]{(3.1)}_.
+:::
+
+In other words, _a descent data on $\cal{F}'$ is equivalent to a representation of the sheaf $\scr{U}=\shHom_{\scr{O}_S}(\scr{A}',\scr{A}')$ of $\scr{O}_S$-algebras in the sheaf $\shHom_{\scr{O}_S}(\cal{F}',\cal{F}')$ of $\scr{O}_S$-algebras that satisfies the two linearity conditions [(3.1)](#FGA-3-I-section-B.3-equation-3.1)_.
 If we have a pairing of quasi-coherent sheaves on $S'$:
 $$
   \cal{F}'_1\times\cal{F}'_2 \to \cal{F}'_3
 $$
-(that we can think of as a pairing of sheaves of $\scr{A}'$-modules on $S$),
 \oldpage{190-22}
-and gluing data on the $\cal{F}'_i$ defined by homomorphisms $T_i\colon\scr{U}\to\shHom_{\scr{O}_S}(\cal{F}'_i,\cal{F}'_i)$ (for $i=1,2,3$), then these data are _equivalent to the given pairing_, in the evident meaning of the phrase, if and only if the following condition is satisfied:
+(that we can think of as a pairing of sheaves of $\scr{A}'$-modules on $S$), and gluing data on the $\cal{F}'_i$ defined by homomorphisms $T_i\colon\scr{U}\to\shHom_{\scr{O}_S}(\cal{F}'_i,\cal{F}'_i)$ (for $i=1,2,3$), then these data are _equivalent to the given pairing_, in the evident meaning of the phrase, if and only if the following condition is satisfied:
 
 For every section $\xi$ of $\scr{U}$ over an open subset, and denoting by $\Delta\xi=\sum\xi'_i\otimes_{\scr{A}'}\xi''_i$ the section of $\scr{U}\otimes_{\scr{A}'}\scr{U}$ (where $\scr{U}$ is considered as an $\scr{A}'$-module with its left structure) defined by the formula
 $$
   \xi\cdot(fg) = \sum_i\xi'_i(f)\xi''_i(g)
 $$
 (where $f$ and $g$ are sections of $\scr{A}'$ over a smaller open subset), we have the formula
+
+::: {.eqref #FGA-3-I-section-B.3-equation-3.4}
 $$
-\label{equation:B.3.4}
   T_\xi^{(3)}(x\cdot y) = \sum_i T_{\xi'_i}^{(1)}x\cdot T_{\xi''_i}^{(2)}y
 \tag{3.4}
 $$
+:::
+
 for every pair $(x,y)$ of sections of $\scr{A}'$ over a smaller subset.
 (We can express this property by saying that the homomorphisms $T^{(i)}$ are _compatible with the diagonal map of $\scr{U}$_, with respect to the given pair).
-In particular, equations \hyperref[equation:B.3.1]{(3.1)} to \hyperref[equation:B.3.4]{(3.4)} allow us to understand, in terms of representations of algebras via diagonal maps, the descent data on a quasi-coherent sheaf of _algebras_ on $S'$, and thus also (by restricting to commutative algebras) the descent data on an affine $S'$-scheme.
+In particular, equations [(3.1)](#FGA-3-I-section-B.3-equation-3.1) to [(3.4)](#FGA-3-I-section-B.3-equation-3.4) allow us to understand, in terms of representations of algebras via diagonal maps, the descent data on a quasi-coherent sheaf of _algebras_ on $S'$, and thus also (by restricting to commutative algebras) the descent data on an affine $S'$-scheme.
 
 From here, we obtain an analogous interpretation of descent data on an arbitrary $S'$-prescheme $X'$:
 the data of such an $X'$ is equivalent to the data of a prescheme $X'$ _over $S$_ endowed with a homomorphism of $\scr{O}_S$-algebras
@@ -875,74 +871,94 @@ $$
   \scr{U}
   \to \shHom_{h^{-1}(\scr{O}_S)}(\scr{O}_{X'},\scr{O}_{X'})
 $$
-that is compatible with the morphism $h\colon X'\to S'$ and that satisfies the conditions analogous to equations \hyperref[equation:B.3.1]{(3.1)} to \hyperref[equation:B.3.4]{(3.4)} above.
+that is compatible with the morphism $h\colon X'\to S'$ and that satisfies the conditions analogous to equations [(3.1)](#FGA-3-I-section-B.3-equation-3.1) to [(3.4)](#FGA-3-I-section-B.3-equation-3.4) above.
 
-\begin{rmenv}{Example 1}
-\label{example:B.3(1)}
-  (_"Weil"_).
-  Suppose that $S'/S$ is a _Galois étale covering_ with Galois group $\Gamma$ (cf. \hyperref[A.3]{(A.3)} and \hyperref[A.4.d]{(A.4.d)}).
-  Then a descent data on a quasi-coherent sheaf $\cal{F}'$ on $S'$ (resp. on an $S'$-prescheme $X'$) is equivalent to the data of a representation of $\Gamma$ by automorphisms of $(S',\cal{F}')$ (resp. of $(S',X')$) that is compatible with the action of $\Gamma$ on $S'$.
-  This result
+::: {.rmenv #FGA-3-I-section-B.3-example-1 title="Example 1" latex="{Example 1}"}
+(_"Weil"_).
+Suppose that $S'/S$ is a _Galois étale covering_ with Galois group $\Gamma$ (cf. \hyperref[A.3]{(A.3)} and \hyperref[A.4.d]{(A.4.d)}).
+Then a descent data on a quasi-coherent sheaf $\cal{F}'$ on $S'$ (resp. on an $S'$-prescheme $X'$) is equivalent to the data of a representation of $\Gamma$ by automorphisms of $(S',\cal{F}')$ (resp. of $(S',X')$) that is compatible with the action of $\Gamma$ on $S'$.
 \oldpage{190-23}
-  is "formal", i.e. it can be proven in terms of categories, but, from the point of view of this section, we also obtain the explicit structure of $\scr{U}$ (endowed with its ring structure, the ring homomorphism $\scr{A}'\to\scr{U}$, and the diagonal map), which is completely known thanks to the following result:
-  _$\scr{U}$ admits, as a left $A'$-module, a basis given by the sections of $\scr{U}$ that correspond to elements of $\Gamma$_.
-\end{rmenv}
+This result is "formal", i.e. it can be proven in terms of categories, but, from the point of view of this section, we also obtain the explicit structure of $\scr{U}$ (endowed with its ring structure, the ring homomorphism $\scr{A}'\to\scr{U}$, and the diagonal map), which is completely known thanks to the following result:
+_$\scr{U}$ admits, as a left $A'$-module, a basis given by the sections of $\scr{U}$ that correspond to elements of $\Gamma$_.
+:::
 
-\begin{rmenv}{Example 2}
-\label{example:B.3(2)}
-  (_"Cartier"_).
-  Let $p$ be a prime number, and suppose that $p\scr{O}_S=0$ (i.e. that $\scr{O}_S$ is of _characteristic $p$_), that $(\scr{A}')^p\subset\scr{O}_S=\scr{A}$ (i.e. that $S'/S$ is _radicial of height $1$_), and that the sheaf of algebras $\scr{A}'$ over $\scr{A}$ _locally admits a $p$-basis_ (i.e. a family $(x_i)$ of sections such that $\scr{A}'$ is generated as an algebra by the $x_i$ under the sole condition that $x_i^p=0$).
-  We suppose that the set of the $i$ is finite, of cardinality $n$.
-  Let $\frak{C}$ be the sheaf of $A$-derivations of $A'$, which is a locally free sheaf of rank $n$ of $A'$-modules, and, furthermore, a sheaf of Lie $p$-algebras over $\scr{A}$ (but not over $\scr{A}'$) that satisfies the following condition:
-  $$
-  \label{equation:B.3.5}
-    [X,fY] = X(f)Y + f[X,Y].
-  \tag{3.5}
-  $$
-\end{rmenv}
+:::: {.rmenv #FGA-3-I-section-B.3-example-2 title="Example 2" latex="{Example 2}"}
+(_"Cartier"_).
+Let $p$ be a prime number, and suppose that $p\scr{O}_S=0$ (i.e. that $\scr{O}_S$ is of _characteristic $p$_), that $(\scr{A}')^p\subset\scr{O}_S=\scr{A}$ (i.e. that $S'/S$ is _radicial of height $1$_), and that the sheaf of algebras $\scr{A}'$ over $\scr{A}$ _locally admits a $p$-basis_ (i.e. a family $(x_i)$ of sections such that $\scr{A}'$ is generated as an algebra by the $x_i$ under the sole condition that $x_i^p=0$).
+We suppose that the set of the $i$ is finite, of cardinality $n$.
+Let $\frak{C}$ be the sheaf of $A$-derivations of $A'$, which is a locally free sheaf of rank $n$ of $A'$-modules, and, furthermore, a sheaf of Lie $p$-algebras over $\scr{A}$ (but not over $\scr{A}'$) that satisfies the following condition:
 
-\begin{itenv}{Lemma}
-  $\scr{U}=\shHom_{\scr{O}_S}(\scr{A}',\scr{A}')$ is generated, as an $\scr{O}_S$-algebra endowed with an algebra homomorphism $\scr{A}'\to\scr{U}$, by the sub-left-$A'$-module $\frak{C}$, with the following additional relations:
-  $$
-  \label{equation:B.3.6}
-    \begin{cases}
-      Xf-fX &= X(f)
-    \\XY-YX &= [X,Y]
-    \\X^p &= X^{(p)}.
-    \end{cases}
-  \tag{3.6}
-  $$
-\end{itenv}
+::: {.eqref #FGA-3-I-section-B.3-equation-3.5}
+$$
+  [X,fY] = X(f)Y + f[X,Y].
+\tag{3.5}
+$$
+:::
+::::
+
+:::: {.itenv title="Lemma" latex="{Lemma}"}
+$\scr{U}=\shHom_{\scr{O}_S}(\scr{A}',\scr{A}')$ is generated, as an $\scr{O}_S$-algebra endowed with an algebra homomorphism $\scr{A}'\to\scr{U}$, by the sub-left-$A'$-module $\frak{C}$, with the following additional relations:
+
+::: {.eqref #FGA-3-I-section-B.3-equation-3.6}
+$$
+  \begin{cases}
+    Xf-fX &= X(f)
+  \\XY-YX &= [X,Y]
+  \\X^p &= X^{(p)}.
+  \end{cases}
+\tag{3.6}
+$$
+::::
 
 It follows from the above lemma that a descent data on the quasi-coherent sheaf $\cal{F}'$ on $S'$ is equivalent to the data, for all $X\in\frak{C}$, of an $\scr{O}_S$-endomorphism $\overline{X}$ of $\cal{F}'$ that satisfies the following conditions:
+
+::: {.eqref #FGA-3-I-section-B.3-equation-3.7}
 $$
-\label{equation:B.3.7}
   \overline{fX} = f\overline{X}
 \tag{3.7}
 $$
+:::
+
+::: {.eqref #FGA-3-I-section-B.3-equation-3.8}
 $$
-\label{equation:B.3.8}
   \overline{X}(fx) = X(f)x + f\overline{X}(x)
 \tag{3.8}
 $$
+:::
+
+::: {.eqref #FGA-3-I-section-B.3-equation-3.9}
 $$
-\label{equation:B.3.9}
   \overline{[X,Y]} = [\overline{X},\overline{Y}]
 \tag{3.9}
 $$
+:::
+
+::: {.eqref #FGA-3-I-section-B.3-equation-3.10}
 $$
-\label{equation:B.3.10}
   \overline{X^{(p)}} = \overline{X}^p.
 \tag{3.10}
 $$
+:::
+
 (This is what we may call a _linear connection on $\cal{F}$_, _flat_, and _compatible with the $p$-th powers_).
-We can similarly write down the notion of a descent data on an $S'$-prescheme $X'$, with equation \hyperref[equation:B.3.4]{(3.4)} being replaced by the condition that the $\overline{X}$ are _derivations_ of $\scr{O}_{X'}$.
-Since the morphism $S'\to S$ is radicial, [Theorem 3](#FGA-3-I-theorem-3) ensures that every such descent data is
+We can similarly write down the notion of a descent data on an $S'$-prescheme $X'$, with equation [(3.4)](#FGA-3-I-section-B.3-equation-3.4) being replaced by the condition that the $\overline{X}$ are _derivations_ of $\scr{O}_{X'}$.
+Since the morphism $S'\to S$ is radicial, [Theorem 3](#FGA-3-I-theorem-3) ensures that every such descent data is effective, and thus defines an $S$-prescheme $X$.
 \oldpage{190-24}
-effective, and thus defines an $S$-prescheme $X$.
 
 Note that we have not needed to impose any flatness, non-singular, or finiteness hypotheses on $\cal{F}'$ or $X'$.
 
+
+
+
+## Application to rationality criteria {#FGA-3-I-section-B.4}
+
+
+## Application to the restriction of the base scheme to an abelian scheme {#FGA-3-I-section-B.5}
+
+
+## Application to local triviality and isotriviality criteria {#FGA-3-I-section-B.6}
+
+<!---
 
 \section{Application to rationality criteria}
 \label{B.4}
