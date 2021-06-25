@@ -460,22 +460,6 @@ This result implies, in particular, that the morphism $S'\to S$ induces an isomo
 
 ### (a) {#FGA-3-I-section-A.4.a}
 
-
-### (b) {#FGA-3-I-section-A.4.b}
-
-
-### (c) {#FGA-3-I-section-A.4.c}
-
-
-### (d) {#FGA-3-I-section-A.4.d}
-
-
-### (e) {#FGA-3-I-section-A.4.e}
-
-<!--
-\subsection{}
-\label{A.4.a}
-
 Let $\cal{C}$ be a category such that the product of any two objects always exists, and let $T\in\cal{C}$.
 For every finite set $I\neq\varnothing$, we can consider $T^I$, and so we obtain a covariant functor from the category of non-empty finite sets to the category $\cal{C}$, i.e. what we can call a _simplicial object_ of $\cal{C}$, denoted by $K_T$.
 This object depends covariantly on $T$;
@@ -502,12 +486,11 @@ in particular, if $T$ and $T'$ are such that each one dominates the other, then 
 Suppose that $\cal{C}$ has all fibre products.
 Then we can, for fixed $S\in\cal{C}$, apply the above to the category $\cal{C}_S$ of objects of $\cal{C}$ over $S$;
 we then write $C^\bullet(T/S,F)$ and $\HH^\bullet(T/S,F)$ instead of $C^\bullet(T,F)$ and $\HH^\bullet(T,F)$ if we wish to make clear that we are working in the category $\cal{C}_S$;
-then
 \oldpage{190-13}
-$C^\bullet(T/S,F)$ is a cochain complex in $\cal{C}'$ that, in degree $n$, is equal to $F(T\times_S T\times_S\ldots\times_S T)$ (where there are $n+1$ factors $T$).
+then $C^\bullet(T/S,F)$ is a cochain complex in $\cal{C}'$ that, in degree $n$, is equal to $F(T\times_S T\times_S\ldots\times_S T)$ (where there are $n+1$ factors $T$).
 
 Note that, as per usual, we can define $\HH^0(T/S,F)$ without assuming the category $\cal{C}'$ to be abelian:
-it is the kernel (\hyperref[definition:A.2.1]{Definition 2.1}), if it exists, of the pair $(F(p_1),F(p_2))$ of morphisms
+it is the kernel ([Definition 2.1](#FGA-3-I-section-A.2-definition-2.1)), if it exists, of the pair $(F(p_1),F(p_2))$ of morphisms
 $$
   F(T) \to F(T\times_S T)
 $$
@@ -528,8 +511,7 @@ $$
 $$
 
 
-\subsection{}
-\label{A.4.b}
+### (b) {#FGA-3-I-section-A.4.b}
 
 For example, let $\cal{F}$ be a fibred category with base $\cal{C}$.
 Let $\xi,\eta\in\cal{F}_S$, and, for all $S'$ over $S$, let
@@ -544,116 +526,119 @@ $$
 _is an isomorphism for every pair of elements $\xi,\eta\in\cal{F}_S$ implies that $\alpha\colon S'\to S$ is an $\cal{F}$-descent morphism_ ([Definition 1.7](#FGA-3-I-section-A.1-definition-1.7)).
 
 
-\subsection{}
-\label{A.4.c}
+### (c) {#FGA-3-I-section-A.4.c}
 
 Similarly, for $\xi\in\cal{F}_S$ and any object $S'$ of $\cal{C}$ over
 $$
   G_\xi(S') = \Aut(\xi\times_S S'),
 $$
-we thus define a contravariant functor $G_\xi$ from $\cal{C}_S$ to the category of
+we thus define a contravariant functor $G_\xi$ from $\cal{C}_S$ to the category of groups.
 \oldpage{190-14}
-groups.
 With this setup, we claim that _$Z^1(S'/S,G)$ is canonically identified with the set of descent data on $\xi'=\xi\times_S S'$ with respect to $S'\to S$_ ([Definition 1.6](#FGA-3-I-section-A.1-definition-1.6)), and that _$\HH^1(S'/S,G)$ can be identified with the set of isomorphism classes of objects of $\cal{F}_{S'}$ endowed with a descent data relative to $\alpha\colon S'\to S$ that are isomorphic, as objects of $\cal{F}_{S'}$, to $\xi'=\xi\times_S S'$_.
-Then, _if $\alpha\colon S'\to S$ is an $\cal{F}$-descent morphism_ (cf. \hyperref[A.4.b]{A.4.b}), _then $\HH^1(S'/S,G)$ contains as a subset the set of isomorphism classes of objects $\eta$ of $\cal{F}_S$ such that $\eta\times_S S'$ is isomorphic (in $\cal{F}_{S'}$) to $\xi\times_S S'$_;
+Then, _if $\alpha\colon S'\to S$ is an $\cal{F}$-descent morphism_ (cf. [§A.4.b](#FGA-3-I-section-A.4.b)), _then $\HH^1(S'/S,G)$ contains as a subset the set of isomorphism classes of objects $\eta$ of $\cal{F}_S$ such that $\eta\times_S S'$ is isomorphic (in $\cal{F}_{S'}$) to $\xi\times_S S'$_;
 further, _this inclusion is the identity if and only if every descent data on $\xi'=\xi\times_S S'$ with respect to $\alpha\colon S'\to S$ is effective_.
 (This will be the case, in particular, if $\alpha\colon S'\to S$ is a strict $S$-descent morphism).
 
-\begin{rmenv}{Remark}
-  The cochain complexes of the form $C^\bullet(T/S,F)$ contain, as particular cases, the majority of standard known complexes (that of \v{C}ech cohomology, of group cohomology, etc.), and play an important role in algebraic geometry (notably in the "Weil cohomology" of preschemes).
-\end{rmenv}
+::: {.rmenv title="Remark" latex="{Remark}"}
+The cochain complexes of the form $C^\bullet(T/S,F)$ contain, as particular cases, the majority of standard known complexes (that of Čech cohomology, of group cohomology, etc.), and play an important role in algebraic geometry (notably in the "Weil cohomology" of preschemes).
+:::
 
 
-\subsection{}
-\label{A.4.d}
+### (d) {#FGA-3-I-section-A.4.d}
 
-\begin{rmenv}{Example 1}
-\label{example:A.4.d}
-  Let $S'$ be an object over $S\in\cal{C}$, and let $\Gamma$ be a group of automorphisms of $S'$ such that $S'$ is "formally $\Gamma$-principal over $S$", i.e. such that the natural morphism
-  $$
-    \Gamma\times S' \to S'\times_S S'
-  $$
-  (where $\Gamma\times S'$ denotes the direct sum of $\Gamma$ copies of $S'$) is an isomorphism.
-  (We suppose that all the necessary direct sums exist in $\cal{C}$).
-  Let $F$ be a contravariant functor from $\cal{C}$ to the category of abelian groups.
-  Then _$C^\bullet(S'/S,F)$ is canonically isomorphic to the simplicial group $C^\bullet(\Gamma,F(S'))$ of standard homogeneous cochains, and so $\HH^\bullet(S'/S,F)$ is canonically isomorphic to $\HH^\bullet(\Gamma,F(S')$_.
-\end{rmenv}
+::: {.rmenv #FGA-3-I-section-A.4-example-1 title="Example 1" latex="{Example 1}"}
+Let $S'$ be an object over $S\in\cal{C}$, and let $\Gamma$ be a group of automorphisms of $S'$ such that $S'$ is "formally $\Gamma$-principal over $S$", i.e. such that the natural morphism
+$$
+  \Gamma\times S' \to S'\times_S S'
+$$
+(where $\Gamma\times S'$ denotes the direct sum of $\Gamma$ copies of $S'$) is an isomorphism.
+(We suppose that all the necessary direct sums exist in $\cal{C}$).
+Let $F$ be a contravariant functor from $\cal{C}$ to the category of abelian groups.
+Then _$C^\bullet(S'/S,F)$ is canonically isomorphic to the simplicial group $C^\bullet(\Gamma,F(S'))$ of standard homogeneous cochains, and so $\HH^\bullet(S'/S,F)$ is canonically isomorphic to $\HH^\bullet(\Gamma,F(S')$_.
+:::
 
 
-\subsection{}
-\label{A.4.e}
+### (e) {#FGA-3-I-section-A.4.e}
 
-\begin{rmenv}{Example 2}
-  Let $\cal{C}$ be the category of preschemes.
-  We denote by $\Ga$ (for "additive group") the contravariant functor from $\cal{C}$ to the category of abelian groups, defined by
-  $$
-    \Ga(X) = \HH^0(X,\scr{O}_X).
-  $$
-  We similarly define the functor $\Gm$ (for "multiplicative group") by
-  $$
-    \Gm(X) = \HH^0(X,\scr{O}_X)^\times
-  $$
-  (i.e. the group of invertible elements of the ring $\HH^0(X,\scr{O}_X)$), and, more generally, the functor $\GL(n)$ (for "linear group of order $n$") by
+::: {.rmenv #FGA-3-I-section-A.4-example-2 title="Example 2" latex="{Example 2}"}
+Let $\cal{C}$ be the category of preschemes.
+We denote by $\Ga$ (for "additive group") the contravariant functor from $\cal{C}$ to the category of abelian groups, defined by
+$$
+  \Ga(X) = \HH^0(X,\scr{O}_X).
+$$
+We similarly define the functor $\Gm$ (for "multiplicative group") by
+$$
+  \Gm(X) = \HH^0(X,\scr{O}_X)^\times
+$$
+(i.e. the group of invertible elements of the ring $\HH^0(X,\scr{O}_X)$), and, more generally, the functor $\GL(n)$ (for "linear group of order $n$") by
 \oldpage{190-15}
-  $$
-    \GL(n)(X) = \GL(n,\HH^0(X,\scr{O}_X)),
-  $$
-  which is a functor from $\cal{C}$ to the category of (not-necessary-commutative, if $n>1$) groups;
-  for $n=1$ we recover $\Gm$.
-  We can also think of $\GL(n)$ as an automorphism functor (cf. \hyperref[A.4.c]{A.4.c}) by considering the fibred category $\cal{F}$ with base $\cal{C}$ such that $\cal{F}_X$ is the category of locally free sheaves on $X$, for $X\in\cal{C}$, since then $\GL(n)(X)=\Aut_{\cal{F}_X}(\scr{O}_X^n)$.
-  By \hyperref[A.4.b]{A.4.b}, it follows that, if $\alpha\colon S'\to S$ is an $\cal{F}$-descent morphism (cf. \hyperref[A.2.c]{A.2.c}), then $\HH^1(S'/S,\GL(n))$ contains the set of isomorphism classes of locally free sheaves on $S$ whose inverse image on $S'$ is isomorphic to $\scr{O}_{S'}^n$, and this inclusion is an equality if and only if every descent data on $\scr{O}_{S'}^n$ (with respect to $\alpha\colon S'\to S$) is effective.
-  If $S$ is the spectrum of a local ring, then this implies that $\HH^1(S'/S,\GL(n))=(e)$, since every locally free sheaf on $S$ is then trivial.
+$$
+  \GL(n)(X) = \GL(n,\HH^0(X,\scr{O}_X)),
+$$
+which is a functor from $\cal{C}$ to the category of (not-necessary-commutative, if $n>1$) groups;
+for $n=1$ we recover $\Gm$.
+We can also think of $\GL(n)$ as an automorphism functor (cf. [§A.4.c](#FGA-3-I-section-A.4.c)) by considering the fibred category $\cal{F}$ with base $\cal{C}$ such that $\cal{F}_X$ is the category of locally free sheaves on $X$, for $X\in\cal{C}$, since then $\GL(n)(X)=\Aut_{\cal{F}_X}(\scr{O}_X^n)$.
+By [§A.4.b](#FGA-3-I-section-A.4.b), it follows that, if $\alpha\colon S'\to S$ is an $\cal{F}$-descent morphism (cf. [§A.2.c](#FGA-3-I-section-A.2.c)), then $\HH^1(S'/S,\GL(n))$ contains the set of isomorphism classes of locally free sheaves on $S$ whose inverse image on $S'$ is isomorphic to $\scr{O}_{S'}^n$, and this inclusion is an equality if and only if every descent data on $\scr{O}_{S'}^n$ (with respect to $\alpha\colon S'\to S$) is effective.
+If $S$ is the spectrum of a local ring, then this implies that $\HH^1(S'/S,\GL(n))=(e)$, since every locally free sheaf on $S$ is then trivial.
 
-  We note that the following conditions concerning a morphism $\alpha\colon S'\to S$ are equivalent:
-  \begin{enumerate}[(i)]
-    \item The augmentation homomorphism $\HH^0(S,\scr{O}_S) = \Ga(S)\to\HH^0(S'/S,\Ga)$ is an isomorphism.
-    \item $\alpha\colon S'\to S$ is an $\cal{F}$-descent morphism (where $\cal{F}$ is the fibred category over $\cal{C}$ described above).
-    \item $\alpha\colon S'\to S$ is a strict epimorphism (cf. \hyperref[A.2.c]{A.2.c}).
-  \end{enumerate}
+We note that the following conditions concerning a morphism $\alpha\colon S'\to S$ are equivalent:
+  
+i. The augmentation homomorphism $\HH^0(S,\scr{O}_S) = \Ga(S)\to\HH^0(S'/S,\Ga)$ is an isomorphism.
+ii. $\alpha\colon S'\to S$ is an $\cal{F}$-descent morphism (where $\cal{F}$ is the fibred category over $\cal{C}$ described above).
+iii. $\alpha\colon S'\to S$ is a strict epimorphism (cf. [§A.2.c](#FGA-3-I-section-A.2.c)).
 
-  Now suppose that $S=\Spec(A)$ and $S'=\Spec(A')$;
-  then
-  $$
-    C^n(S'/S,\Ga)
-    = C^n(A'/A,\Ga)
-    = \underbrace{A'\otimes_A A'\otimes_A\ldots\otimes_A A'}_{\mbox{$n+1$ copies of $A'$}}
-  $$
-  with the coboundary operator $C^n(A'/A,\Ga)\to C^{n+1}(A'/A,\Ga)$ being the alternating sum of the face operators
-  $$
-    \partial_i(x_0\otimes x_1\otimes\ldots\otimes x_n)
-    = x_0\otimes\ldots\otimes x_{i-1}\otimes1_{A'}\otimes x_i\otimes\ldots\otimes x_n.
-  $$
-  Similarly, $C^n(S'/S,\Gm)=C^n(A'/A,\Gm)$ can be identified with $(\bigotimes_A^{n+1}A')^\times$, with the simplicial operations for $C^\bullet(A'/A,\Gm)$ being induced by those in $C^\bullet(S'/S,\Ga)$.
-  We can write down the simplicial operations for $C^\bullet(A'/A,\GL(n))$ in the same explicit manner.
-  _In all the cases known to the speaker, $\HH^i(A'/A,\Ga)=0$ for $i>0$, and, if $A$ is local, then $\HH^1(A'/A,\Gm)=0$, and, more generally, $\HH^1(A'/A,\GL(n))=(e)$_ (if $S'\to S$ is an $\cal{F}$-descent morphisms, i.e. if the diagram $A\to A'\rightrightarrows A'\otimes_A A'$ is exact, then compare this with \hyperref[A.2.c]{A.2.c}).
-  We note that _Hilbert's "Theorem 90" is exactly the fact that_
+Now suppose that $S=\Spec(A)$ and $S'=\Spec(A')$;
+then
+$$
+  C^n(S'/S,\Ga)
+  = C^n(A'/A,\Ga)
+  = \underbrace{A'\otimes_A A'\otimes_A\ldots\otimes_A A'}_{n+1\text{ copies of }A'}
+$$
+with the coboundary operator $C^n(A'/A,\Ga)\to C^{n+1}(A'/A,\Ga)$ being the alternating sum of the face operators
+$$
+  \partial_i(x_0\otimes x_1\otimes\ldots\otimes x_n)
+  = x_0\otimes\ldots\otimes x_{i-1}\otimes1_{A'}\otimes x_i\otimes\ldots\otimes x_n.
+$$
+Similarly, $C^n(S'/S,\Gm)=C^n(A'/A,\Gm)$ can be identified with $(\bigotimes_A^{n+1}A')^\times$, with the simplicial operations for $C^\bullet(A'/A,\Gm)$ being induced by those in $C^\bullet(S'/S,\Ga)$.
+We can write down the simplicial operations for $C^\bullet(A'/A,\GL(n))$ in the same explicit manner.
+_In all the cases known to the speaker, $\HH^i(A'/A,\Ga)=0$ for $i>0$, and, if $A$ is local, then $\HH^1(A'/A,\Gm)=0$, and, more generally, $\HH^1(A'/A,\GL(n))=(e)$_ (if $S'\to S$ is an $\cal{F}$-descent morphisms, i.e. if the diagram $A\to A'\rightrightarrows A'\otimes_A A'$ is exact, then compare this with [§A.2.c](#FGA-3-I-section-A.2.c)).
 \oldpage{190-16}
-  _$\HH^1(S'/S,\Gm)=0$ if $A$ is a field and $A'$ is a finite Galois extension of $A$_ (cf. \hyperref[example:A.4.d]{Example 1}), _and we can also express it by saying that, in the case in question, $S'\to S$ is a strict descent morphisms for the fibred category of locally free sheaves of rank $1$._
-  This latter statement is the one that is most suitable to generalise Hilbert's theorem, by varying the hypotheses both on the morphism $S'\to S$ and on the quasi-coherent sheaves in question.
+We note that _Hilbert's "Theorem 90" is exactly the fact that $\HH^1(S'/S,\Gm)=0$ if $A$ is a field and $A'$ is a finite Galois extension of $A$_ (cf. [Example 1](#FGA-3-I-section-A.4-example-1)), _and we can also express it by saying that, in the case in question, $S'\to S$ is a strict descent morphisms for the fibred category of locally free sheaves of rank $1$._
+This latter statement is the one that is most suitable to generalise Hilbert's theorem, by varying the hypotheses both on the morphism $S'\to S$ and on the quasi-coherent sheaves in question.
 
-  Finally, we note that, for a local _Artinian_ $A$ with maximal ideal $\frak{m}$, and an $A$-algebra $A'$ (where we denote, for any integer $k>0$, the ring $A/\frak{m}^{k+1}$ (resp. $A'/\frak{m}^{k+1}A'$) by $A_k$ (resp. $A'_k$)), the following properties are equivalent:
-  \begin{enumerate}[(i)]
-    \item $\HH^1(A'_k/A_k,\Ga)=0$ for all $k$.
-    \item $\HH^1(A'_k/A_k,\Gm)=0$ for all $k$.
-    \item $\HH^1(A'_k/A_k,\GL(n))=(e)$ for all $k$ and all $n$.
-  \end{enumerate}
+Finally, we note that, for a local _Artinian_ $A$ with maximal ideal $\frak{m}$, and an $A$-algebra $A'$ (where we denote, for any integer $k>0$, the ring $A/\frak{m}^{k+1}$ (resp. $A'/\frak{m}^{k+1}A'$) by $A_k$ (resp. $A'_k$)), the following properties are equivalent:
 
-  If $S'\to S$ is a strict epimorphism, then the above conditions imply that it is a _strict_ descent morphism for free modules (not necessarily of finite type) over $A'$.
-\end{rmenv}
+i. $\HH^1(A'_k/A_k,\Ga)=0$ for all $k$.
+ii. $\HH^1(A'_k/A_k,\Gm)=0$ for all $k$.
+iii. $\HH^1(A'_k/A_k,\GL(n))=(e)$ for all $k$ and all $n$.
 
-\begin{rmenv}{Remark}
-  The definition of the groups $\HH^i(S'/S,\Gm)$ in the case where $S$ (resp. $S'$) is a scheme over the field $A$ (resp. $A'$) is due to Amitsur.
-  The group $\HH^2(S'/S,\Gm)$ is particularly interesting as a "global" variant of the Brauer group, for which we can refer to [@3-I-1, chap. VII].
-\end{rmenv}
+If $S'\to S$ is a strict epimorphism, then the above conditions imply that it is a _strict_ descent morphism for free modules (not necessarily of finite type) over $A'$.
+:::
 
+::: {.rmenv title="Remark" latex="{Remark}"}
+The definition of the groups $\HH^i(S'/S,\Gm)$ in the case where $S$ (resp. $S'$) is a scheme over the field $A$ (resp. $A'$) is due to Amitsur.
+The group $\HH^2(S'/S,\Gm)$ is particularly interesting as a "global" variant of the Brauer group, for which we can refer to [@3-I-1, chap. VII].
+:::
 
 
-\part{Descent by faithfully flat morphisms}
-\label{B}
+## **B.** Descent by faithfully flat morphisms {-}
 
-\section{Statement of the descent theorems}
-\label{B.1}
 
+## Statement of the descent theorems {#FGA-3-I-section-B.1}
+
+
+## Application to the descent of certain properties of morphisms {#FGA-3-I-section-B.2}
+
+
+## Decent by finite faithfully flat morphisms {#FGA-3-I-section-B.3}
+
+
+## Application to rationality criteria {#FGA-3-I-section-B.4}
+
+
+## Application to the restriction of the base scheme to an abelian scheme {#FGA-3-I-section-B.5}
+
+<!--
 \begin{rmenv}{Definition 1.1}
   A morphism $\alpha\colon S'\to S$ of prescheme is said to be _flat_ if $\scr{O}_{x'}$ is a flat module over the ring $\scr{O}_{\alpha(x')}$ for all $x'\in S'$ (i.e. if $\scr{O}_{x'}\otimes_{\scr{O}_{\alpha(x')}}M$ is an exact functor in the $\scr{O}_{\alpha(x')}$-module $M$).
   A morphism is said to be _faithfully flat_ if it is flat and surjective.
@@ -859,7 +844,7 @@ Conditions (i) and (ii) of a descent data (cf. \hyperref[§A.1.c]{(A.1.c)}) can 
 $$
 \label{equation:B.3.2}
   T_{1_U}(x) = x,
-  \qquad\mbox{i.e. $T_{1_U}=\id_{\cal{F}'}$}
+  \qquad\text{i.e. }T_{1_U}=\id_{\cal{F}'}
 \tag{3.2}
 $$
 $$
