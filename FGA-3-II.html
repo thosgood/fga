@@ -191,198 +191,182 @@ sections 4.6 to 4.10 were numbered C.1 to C.5.</p>
 </div>
 <div id="FGA-3-II-section-A.1" class="section level2">
 <h2><span class="header-section-number">4.1</span> Representable functors</h2>
-<!-- Let $\cal{C}$ be a category.
-\oldpage{195-01}
-For all $X\in\cal{C}$, let $h_X$ be the contravariant functor from $\cal{C}$ to the category $\Set$ of sets given by
-$$
+<p>Let <eq env="math">{\mathcal{C}}</eq> be a category.
+
+For all <eq env="math">X\in{\mathcal{C}}</eq>, let <eq env="math">h_X</eq> be the contravariant functor from <eq env="math">{\mathcal{C}}</eq> to the category <eq env="math">\mathtt{Set}</eq> of sets given by
+<eq env="displaymath">
   \begin{aligned}
-    h_X\colon \cal{C} &\to \Set
-  \\Y&\mapsto \Hom(Y,X).
+    h_X\colon {\mathcal{C}} &amp;\to \mathtt{Set}
+  \\Y&amp;\mapsto \operatorname{Hom}(Y,X).
   \end{aligned}
-$$
-If we have a morphism $X\to X'$ in $\cal{C}$, then this evidently induces a morphism $h_X\to h_{X'}$ of functors;
-$h_X$ is a covariant functor in $X$, i.e. we have defined a _canonical covariant functor_
-$$
-  h\colon \cal{C} \to \Hom(\cal{C}^o,\Set)
-$$
-from $\cal{C}$ to the category of covariant functors from the dual $\cal{C}^o$ of $\cal{C}$ to the category of sets.
-We then recall:
+</eq>
+If we have a morphism <eq env="math">X\to X'</eq> in <eq env="math">{\mathcal{C}}</eq>, then this evidently induces a morphism <eq env="math">h_X\to h_{X'}</eq> of functors;
+<eq env="math">h_X</eq> is a covariant functor in <eq env="math">X</eq>, i.e. we have defined a <em>canonical covariant functor</em>
+<eq env="displaymath">
+  h\colon {\mathcal{C}} \to \operatorname{Hom}({\mathcal{C}}^o,\mathtt{Set})
+</eq>
+from <eq env="math">{\mathcal{C}}</eq> to the category of covariant functors from the dual <eq env="math">{\mathcal{C}}^o</eq> of <eq env="math">{\mathcal{C}}</eq> to the category of sets.
+We then recall:</p>
+<div id="FGA-3-II-section-A.1-proposition-1.1" class="itenv" title="Proposition 1.1">
+<p>This functor <eq env="math">h</eq> is <em>faithfully flat</em>;
+in other words, for every pair <eq env="math">X,X'</eq> of objects of <eq env="math">{\mathcal{C}}</eq>, the natural map
+<eq env="displaymath">
+\operatorname{Hom}(X,X') \to \operatorname{Hom}(h_X,h_{X'})
+</eq>
+is <em>bijective</em>.</p>
+</div>
+<p>In particular, if a functor <eq env="math">F\in\operatorname{Hom}({\mathcal{C}}^o,\mathtt{Set})</eq> is isomorphic to a functor of the form <eq env="math">h_X</eq>, then <em><eq env="math">X</eq> is determined up to unique isomorphism</em>.
+We then say that the functor <eq env="math">F</eq> is <em>representable</em>.
+The above proposition then implies that the canonical functor <eq env="math">h</eq> defines an <em>equivalence</em> between the category <eq env="math">{\mathcal{C}}</eq> and the full subcategory of <eq env="math">\operatorname{Hom}({\mathcal{C}}^o,\mathtt{Set})</eq> consisting of representable functors.
+This fact is the basis of <em>the idea of a “solution of a universal problem”</em>, with such a problem always consisting of examining if a given (contravariant, as here, or covariant, in the dual case) functor from <eq env="math">{\mathcal{C}}</eq> to <eq env="math">\mathtt{Set}</eq> is representable.
 
-\begin{itenv}{Proposition 1}
-\label{A.1-proposition1}
-  This functor $h$ is _faithfully flat_;
-  in other words, for every pair $X,X'$ of objects of $\cal{C}$, the natural map
-  $$
-    \Hom(X,X') \to \Hom(h_X,h_{X'})
-  $$
-  is _bijective_.
-\end{itenv}
-
-In particular, if a functor $F\in\Hom(\cal{C}^o,\Set)$ is isomorphic to a functor of the form $h_X$, then _$X$ is determined up to unique isomorphism_.
-We then say that the functor $F$ is _representable_.
-The above proposition then implies that the canonical functor $h$ defines an _equivalence_ between the category $\cal{C}$ and the full subcategory of $\Hom(\cal{C}^o,\Set)$ consisting of representable functors.
-This fact is the basis of _the idea of a "solution of a universal problem"_, with such a problem always consisting of examining if a given (contravariant, as here, or covariant, in the dual case) functor from $\cal{C}$ to $\Set$ is representable.
-\oldpage{195-02}
-Note further that, even by the definition of products in a category [@3-II-1], the functor $h\colon X\mapsto h_X$ commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking "kernels" [@3-II-2], etc., whenever such things exist): we have an isomorphism of functors
-$$
-  h_{X\times X'} \simto h_X\times h_{X'}
-$$
-whenever $X\times X'$ exists, i.e. we have functorial (in $Y$) bijections
-$$
-  h_{X\times X'} \simto h_X(Y)\times h_{X'}(Y).
-$$
+Note further that, even by the definition of products in a category <span class="citation">[<a href="#ref-3-II-1" role="doc-biblioref">10</a>]</span>, the functor <eq env="math">h\colon X\mapsto h_X</eq> commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking “kernels” <span class="citation">[<a href="#ref-3-II-2" role="doc-biblioref">11</a>]</span>, etc., whenever such things exist): we have an isomorphism of functors
+<eq env="displaymath">
+  h_{X\times X'} \xrightarrow{\sim}h_X\times h_{X'}
+</eq>
+whenever <eq env="math">X\times X'</eq> exists, i.e. we have functorial (in <eq env="math">Y</eq>) bijections
+<eq env="displaymath">
+  h_{X\times X'} \xrightarrow{\sim}h_X(Y)\times h_{X'}(Y).
+</eq>
 In particular, the data of a morphism
-$$
+<eq env="displaymath">
   X\times X' \to X''
-$$
-in $\cal{C}$ (i.e. of a "_composition law_" in $\cal{C}$ between $X$, $X'$, and $X''$) is equivalent to the data of a morphism $h_{X\times X'}=h_X\times h_{X'}\to h_{X''}$, i.e. to the data, for all $Y\in\cal{C}$, of a composition law of _sets_
-$$
+</eq>
+in <eq env="math">{\mathcal{C}}</eq> (i.e. of a “<em>composition law</em>” in <eq env="math">{\mathcal{C}}</eq> between <eq env="math">X</eq>, <eq env="math">X'</eq>, and <eq env="math">X''</eq>) is equivalent to the data of a morphism <eq env="math">h_{X\times X'}=h_X\times h_{X'}\to h_{X''}</eq>, i.e. to the data, for all <eq env="math">Y\in{\mathcal{C}}</eq>, of a composition law of <em>sets</em>
+<eq env="displaymath">
   h_X(Y)\times h_{X'}(Y) \to h_{X''}(Y)
-$$
-such that, for every morphism $Y\to Y'$ in $\cal{C}$, the system of set maps
-$$
+</eq>
+such that, for every morphism <eq env="math">Y\to Y'</eq> in <eq env="math">{\mathcal{C}}</eq>, the system of set maps
+<eq env="displaymath">
   h_{X^{(i)}}(Y) \to h_{X^{(i)}}(Y')
-  \qquad\mbox{(for $i=0,1,2$)}
-$$
-is a morphism for the two composition laws, with respect to $Y$ and $Y'$.
-In this way, we see that the idea of a "$\cal{C}-group$" structure, or a "$\cal{C}$-ring" structure, etc. on an object $X$ of $\cal{C}$ can be expressed in the most manageable way (in theory as much as in practice) by saying that, for every $Y\in\cal{C}$, we have a group law (resp. ring law, etc.) in the usual sense on the set $h_X(Y)$, with the maps $h_X(Y)\to h_X(Y')$ corresponding to morphisms $Y\to Y'$ that should be group homomorphisms (resp. ring homomorphisms, etc.).
-This is the most intuitive and manageable way of defining, for example, the various classical groups $\Ga$, $\Gm$, $\GL(n)$, etc. on a prescheme $S$ over an arbitrary base, and of writing the classical relations between these groups, or of placing a "vector bundle" structure on the affine scheme $V(\scr{F})$ over $S$ defined by a quasi-coherent sheaf $\scr{F}$, and of defining and studying the many associated flag varieties (Grassmannians, projective bundles), etc.;
-_the general yoga is purely and simply identifying, using the canonical functor $h$, the objects of $\cal{C}$ with particular contravariant functors (namely, representable functors) from $\cal{C}$ to the category of sets_.
+  \qquad\text{(for }i=0,1,2\text{)}
+</eq>
+is a morphism for the two composition laws, with respect to <eq env="math">Y</eq> and <eq env="math">Y'</eq>.
+In this way, we see that the idea of a “<eq env="math">{\mathcal{C}}-group</eq>” structure, or a “<eq env="math">{\mathcal{C}}</eq>-ring” structure, etc. on an object <eq env="math">X</eq> of <eq env="math">{\mathcal{C}}</eq> can be expressed in the most manageable way (in theory as much as in practice) by saying that, for every <eq env="math">Y\in{\mathcal{C}}</eq>, we have a group law (resp. ring law, etc.) in the usual sense on the set <eq env="math">h_X(Y)</eq>, with the maps <eq env="math">h_X(Y)\to h_X(Y')</eq> corresponding to morphisms <eq env="math">Y\to Y'</eq> that should be group homomorphisms (resp. ring homomorphisms, etc.).
+This is the most intuitive and manageable way of defining, for example, the various classical groups <eq env="math">\operatorname{G_a}</eq>, <eq env="math">\operatorname{G_m}</eq>, <eq env="math">\operatorname{GL}(n)</eq>, etc. on a prescheme <eq env="math">S</eq> over an arbitrary base, and of writing the classical relations between these groups, or of placing a “vector bundle” structure on the affine scheme <eq env="math">V({\mathscr{F}})</eq> over <eq env="math">S</eq> defined by a quasi-coherent sheaf <eq env="math">{\mathscr{F}}</eq>, and of defining and studying the many associated flag varieties (Grassmannians, projective bundles), etc.;
+<em>the general yoga is purely and simply identifying, using the canonical functor <eq env="math">h</eq>, the objects of <eq env="math">{\mathcal{C}}</eq> with particular contravariant functors (namely, representable functors) from <eq env="math">{\mathcal{C}}</eq> to the category of sets</em>.</p>
 
-\oldpage{195-03}
-
-The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce _covariant representable functors $\cal{C}\to\Set$_, i.e. those of the form $Y\mapsto\Hom(X,Y)=h'_X(Y)$. -->
+<p>The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce <em>covariant representable functors <eq env="math">{\mathcal{C}}\to\mathtt{Set}</eq></em>, i.e. those of the form <eq env="math">Y\mapsto\operatorname{Hom}(X,Y)=h'_X(Y)</eq>.</p>
 </div>
 <div id="FGA-3-II-section-A.2" class="section level2">
 <h2><span class="header-section-number">4.2</span> Pro-representable functors, pro-objects</h2>
-<!-- Let $\cal{X}=(X_i)_{i\in I}$ be a projective system of objects of $\cal{C}$;
+<p>Let <eq env="math">{\mathcal{X}}=(X_i)_{i\in I}</eq> be a projective system of objects of <eq env="math">{\mathcal{C}}</eq>;
 there is a corresponding covariant functor
-$$
-  h'_{\cal{X}} = \varinjlim_i h'_{X_i}
-$$
+<eq env="displaymath">
+  h'_{{\mathcal{X}}} = \varinjlim_i h'_{X_i}
+</eq>
 which can be written more explicitly as
-$$
-  h'_{\cal{X}}(Y) = \varinjlim_i h'_{X_i}(Y) = \varinjlim_i\Hom(X_i,Y)
-$$
-which is a functor from $\cal{C}$ to $\Set$.
-A functor from $\cal{C}$ to $\Set$ that is isomorphic to a functor of this type _with $I$ filtered_ is said to be _pro-representable_.
-By \hyperref[A.1]{the previous section}, these are exactly the functors that are isomorphic to _filtered inductive limits of representable functors_.
-Let $\cal{X}'=(X_j)_{j\in J}$ be another filtered projective system in $\cal{C}$ (indexed by another filtered pre-ordered set of indices $J$).
+<eq env="displaymath">
+  h'_{{\mathcal{X}}}(Y) = \varinjlim_i h'_{X_i}(Y) = \varinjlim_i\operatorname{Hom}(X_i,Y)
+</eq>
+which is a functor from <eq env="math">{\mathcal{C}}</eq> to <eq env="math">\mathtt{Set}</eq>.
+A functor from <eq env="math">{\mathcal{C}}</eq> to <eq env="math">\mathtt{Set}</eq> that is isomorphic to a functor of this type <em>with <eq env="math">I</eq> filtered</em> is said to be <em>pro-representable</em>.
+By the previous section, these are exactly the functors that are isomorphic to <em>filtered inductive limits of representable functors</em>.
+Let <eq env="math">{\mathcal{X}}'=(X_j)_{j\in J}</eq> be another filtered projective system in <eq env="math">{\mathcal{C}}</eq> (indexed by another filtered pre-ordered set of indices <eq env="math">J</eq>).
 Then we can easily show that we have a canonical bijection
-$$
-  \Hom(h_{\cal{X}'},h_{\cal{X}}) = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j)
-$$
-(generalising \hyperref[A.1-proposition1]{Proposition 1, (A.1)}).
-This leads to introducing the _category $\Pro(\cal{C})$ of pro-objects of $\cal{C}$_, whose objects are projective systems of objects of $\cal{C}$ (indexed by arbitrary filtered pre-ordered sets of indices), and whose morphisms between objects $\cal{X}=(X_i)_{i\in I}$ and $\cal{X}'=(X_j)_{j\in J}$ are given by
-$$
-  \Pro\Hom(\cal{X},\cal{X}') = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j),
-$$
+<eq env="displaymath">
+  \operatorname{Hom}(h_{{\mathcal{X}}'},h_{{\mathcal{X}}}) = \varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j)
+</eq>
+(generalising <a href="#FGA-3-II-section-A.1-proposition-1">A, Proposition 1</a>).
+This leads to introducing the <em>category <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq> of pro-objects of <eq env="math">{\mathcal{C}}</eq></em>, whose objects are projective systems of objects of <eq env="math">{\mathcal{C}}</eq> (indexed by arbitrary filtered pre-ordered sets of indices), and whose morphisms between objects <eq env="math">{\mathcal{X}}=(X_i)_{i\in I}</eq> and <eq env="math">{\mathcal{X}}'=(X_j)_{j\in J}</eq> are given by
+<eq env="displaymath">
+  \operatorname{Pro}\operatorname{Hom}({\mathcal{X}},{\mathcal{X}}') = \varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j),
+</eq>
 with the composition of pro-homomorphisms being evident.
-By the very construction itself, $\cal{X}\mapsto h'_{\cal{X}}$ can be considered as a contravariant functor in $\cal{X}$, establishing an _equivalence between the dual category of the category $\Pro(\cal{C})$ of pro-objects of $\cal{C}$ and the category of pro-representable covariant functors from $\cal{C}$ to $\Set$_.
-\oldpage{195-04}
-Of course, an object $X$ of $\cal{C}$ canonically defines a pro-object, denoted again by $X$, so that _$\cal{C}$ is equivalent to a full subcategory of $\Pro(\cal{C})$_.
-Then, if $\cal{X}=(X_i)_{i\in I}$ is an arbitrary pro-object of $\cal{C}$, then (with the above identification) we have that
-$$
-  \cal{X} = \varprojlim_i X_i
-$$
-with the projective limit being _taken in $\Pro(\cal{C})$_ (since $h_{\cal{X}}=\varinjlim_i h_{X_i}$).
+By the very construction itself, <eq env="math">{\mathcal{X}}\mapsto h'_{{\mathcal{X}}}</eq> can be considered as a contravariant functor in <eq env="math">{\mathcal{X}}</eq>, establishing an <em>equivalence between the dual category of the category <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq> of pro-objects of <eq env="math">{\mathcal{C}}</eq> and the category of pro-representable covariant functors from <eq env="math">{\mathcal{C}}</eq> to <eq env="math">\mathtt{Set}</eq></em>.
 
-We draw attention to the fact that, even if the projective limit of the $X_i$ _exists in $\cal{C}$_, it will generally _not_ be isomorphic to the projective limit $\cal{X}$ in $\Pro(\cal{C})$, as is already evident in the case where $\cal{C}$ is the category of sets.
-We note that, by the definition itself, $\varprojlim{}_{\cal{C}}X_i=L$ is defined by the condition that the functor
-$$
-  \varprojlim_i\Hom_{\cal{C}}(Y,X_i)=\Hom_{\Pro(\cal{C})}(Y,\cal{X})
-$$
-in $Y\in\cal{C}$ and with values in $\Set$ be representable via $\cal{L}$, i.e. that it be isomorphic to $\Hom_{\cal{C}}(Y,\cal{L})$;
-then _$\lim{}_{\cal{C}}X_i$ is already defined in terms of the *pro-object* $\cal{X}$_, and, in a precise way, depends functorially on the pro-object $\cal{X}$ whenever it is defined;
-there is therefore no problem with denoting it by $\lim{}_{\cal{C}}(\cal{X})$.
-If projective limits in $\cal{C}$ always exist, then $\lim{}_{\cal{C}}(\cal{X})$ is a functor from $\Pro(\cal{C})$ to $\cal{C}$, and there is a canonical homomorphism of functors $\lim_\cal{C}(\cal{X})\to\cal{X}$.
+Of course, an object <eq env="math">X</eq> of <eq env="math">{\mathcal{C}}</eq> canonically defines a pro-object, denoted again by <eq env="math">X</eq>, so that <em><eq env="math">{\mathcal{C}}</eq> is equivalent to a full subcategory of <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq></em>.
+Then, if <eq env="math">{\mathcal{X}}=(X_i)_{i\in I}</eq> is an arbitrary pro-object of <eq env="math">{\mathcal{C}}</eq>, then (with the above identification) we have that
+<eq env="displaymath">
+  {\mathcal{X}} = \varprojlim_i X_i
+</eq>
+with the projective limit being <em>taken in <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq></em> (since <eq env="math">h_{{\mathcal{X}}}=\varinjlim_i h_{X_i}</eq>).</p>
+<p>We draw attention to the fact that, even if the projective limit of the <eq env="math">X_i</eq> <em>exists in <eq env="math">{\mathcal{C}}</eq></em>, it will generally <em>not</em> be isomorphic to the projective limit <eq env="math">{\mathcal{X}}</eq> in <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq>, as is already evident in the case where <eq env="math">{\mathcal{C}}</eq> is the category of sets.
+We note that, by the definition itself, <eq env="math">\varprojlim{}_{{\mathcal{C}}}X_i=L</eq> is defined by the condition that the functor
+<eq env="displaymath">
+  \varprojlim_i\operatorname{Hom}_{{\mathcal{C}}}(Y,X_i)=\operatorname{Hom}_{\operatorname{Pro}({\mathcal{C}})}(Y,{\mathcal{X}})
+</eq>
+in <eq env="math">Y\in{\mathcal{C}}</eq> and with values in <eq env="math">\mathtt{Set}</eq> be representable via <eq env="math">{\mathcal{L}}</eq>, i.e. that it be isomorphic to <eq env="math">\operatorname{Hom}_{{\mathcal{C}}}(Y,{\mathcal{L}})</eq>;
+then <em><eq env="math">\lim{}_{{\mathcal{C}}}X_i</eq> is already defined in terms of the <em>pro-object</em> <eq env="math">{\mathcal{X}}</eq></em>, and, in a precise way, depends functorially on the pro-object <eq env="math">{\mathcal{X}}</eq> whenever it is defined;
+there is therefore no problem with denoting it by <eq env="math">\lim{}_{{\mathcal{C}}}({\mathcal{X}})</eq>.
+If projective limits in <eq env="math">{\mathcal{C}}</eq> always exist, then <eq env="math">\lim{}_{{\mathcal{C}}}({\mathcal{X}})</eq> is a functor from <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq> to <eq env="math">{\mathcal{C}}</eq>, and there is a canonical homomorphism of functors <eq env="math">\lim_{\mathcal{C}}({\mathcal{X}})\to{\mathcal{X}}</eq>.
 Since every (covariant, say, for simplicity) functor
-$$
-  F\colon \cal{C} \to \cal{C}'
-$$
+<eq env="displaymath">
+  F\colon {\mathcal{C}} \to {\mathcal{C}}'
+</eq>
 can be extended in an obvious way to a functor
-$$
-  \Pro(F)\colon \Pro(\cal{C}) \to \Pro(\cal{C}'),
-$$
-it follows that, if projective limits always exist in $\cal{C}'$, then $F$ also canonically defines a composite functor
-$$
-  \overline{F} = \varprojlim{}_{\cal{C}'}\colon \Pro(\cal{C}) \to \cal{C}'
-$$
-sending $\cal{X}=(X_i)_{i\in I}$ to $\varprojlim{}_{\cal{C}'}F(X_i)$.
+<eq env="displaymath">
+  \operatorname{Pro}(F)\colon \operatorname{Pro}({\mathcal{C}}) \to \operatorname{Pro}({\mathcal{C}}'),
+</eq>
+it follows that, if projective limits always exist in <eq env="math">{\mathcal{C}}'</eq>, then <eq env="math">F</eq> also canonically defines a composite functor
+<eq env="displaymath">
+  \overline{F} = \varprojlim{}_{{\mathcal{C}}'}\colon \operatorname{Pro}({\mathcal{C}}) \to {\mathcal{C}}'
+</eq>
+sending <eq env="math">{\mathcal{X}}=(X_i)_{i\in I}</eq> to <eq env="math">\varprojlim{}_{{\mathcal{C}}'}F(X_i)</eq>.</p>
+<p>A pro-object <eq env="math">{\mathcal{X}}</eq> is said to be a <em>strict pro-object</em> if it is isomorphic to a pro-object <eq env="math">(X_i)_{i\in I}</eq>, where the transition morphisms <eq env="math">X_i\to X_j</eq> are <em>epimorphisms</em>;
+a functor defined by such an object is said to be <em>strictly pro-representable</em>.
+We can thus further demand that <eq env="math">I</eq> be a filtered <em>ordered</em> set, and that every epimorphism <eq env="math">X_i\to X'</eq> be equivalent to an epimorphism <eq env="math">X_i\to X_j</eq> for some suitable <eq env="math">j\in I</eq> (uniquely determined by this condition).
 
-A pro-object $\cal{X}$ is said to be a _strict pro-object_ if it is isomorphic to a pro-object $(X_i)_{i\in I}$, where the transition morphisms $X_i\to X_j$ are _epimorphisms_;
-a functor defined by such an object is said to be _strictly pro-representable_.
-We can thus further demand that $I$ be a filtered _ordered_ set, and that every epimorphism
-\oldpage{195-05}
-$X_i\to X'$ be equivalent to an epimorphism $X_i\to X_j$ for some suitable $j\in I$ (uniquely determined by this condition).
-Under these conditions, the projective system $(X_i)_{i\in I}$ is determined _up to unique isomorphism_ (in the usual sense of isomorphisms of projective systems).
-It thus follows that _the projective limit of a projective system $\cal{X}^{(\alpha)}$ of strict pro-objects always exists in $\Pro(\cal{C})$_, and that, with the above notation of $F$ and $\overline{F}$, we have that
-$$
-  \overline{F}\varprojlim_\alpha\cal{X}^{(\alpha)} = \varprojlim_\alpha{}_{\cal{C}'}F(X^{(\alpha)}).
-$$
-In particular, if every pro-object of $\cal{C}$ is strict (cf. the \hyperref[A.1]{previous section}), then the extended functor $\overline{F}$ commutes with projective limits. -->
+Under these conditions, the projective system <eq env="math">(X_i)_{i\in I}</eq> is determined <em>up to unique isomorphism</em> (in the usual sense of isomorphisms of projective systems).
+It thus follows that <em>the projective limit of a projective system <eq env="math">{\mathcal{X}}^{(\alpha)}</eq> of strict pro-objects always exists in <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq></em>, and that, with the above notation of <eq env="math">F</eq> and <eq env="math">\overline{F}</eq>, we have that
+<eq env="displaymath">
+  \overline{F}\varprojlim_\alpha{\mathcal{X}}^{(\alpha)} = \varprojlim_\alpha{}_{{\mathcal{C}}'}F(X^{(\alpha)}).
+</eq>
+In particular, if every pro-object of <eq env="math">{\mathcal{C}}</eq> is strict (cf. the previous section), then the extended functor <eq env="math">\overline{F}</eq> commutes with projective limits.</p>
 </div>
 <div id="FGA-3-II-section-A.3" class="section level2">
 <h2><span class="header-section-number">4.3</span> Characterisation of pro-representable functors</h2>
-<!-- Let $\cal{C}$ and $\cal{C}'$ be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, pre-ordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" $e$ such that $\Hom(X,e)$ consists of only on element for all $X$).
-Let $F$ be a covariant functor from $\cal{C}$ to $\cal{C}'$.
-Then the following conditions are equivalent:
-\begin{enumerate}[(i)]
-  \item $F$ commutes with finite projective limits;
-  \item $F$ commutes with finite products and with finite fibred products;
-  \item $F$ commutes with finite products, and, for every exact diagram
-    $$
-      X\to X'\rightrightarrows X''
-    $$
-    in $\cal{C}$ (cf. [@3-II-3, A, Definition 2.1]), the image of the diagram under $F$
-    $$
-      F(X)\to F(X')\rightrightarrows F(X'')
-    $$
-    is exact.
-\end{enumerate}
-We then say that $F$ is _left exact_.
+<p>Let <eq env="math">{\mathcal{C}}</eq> and <eq env="math">{\mathcal{C}}'</eq> be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, pre-ordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a “right-unit object” <eq env="math">e</eq> such that <eq env="math">\operatorname{Hom}(X,e)</eq> consists of only on element for all <eq env="math">X</eq>).
+Let <eq env="math">F</eq> be a covariant functor from <eq env="math">{\mathcal{C}}</eq> to <eq env="math">{\mathcal{C}}'</eq>.
+Then the following conditions are equivalent:</p>
+<ol style="list-style-type: lower-roman">
+<li><eq env="math">F</eq> commutes with finite projective limits;</li>
+<li><eq env="math">F</eq> commutes with finite products and with finite fibred products;</li>
+<li><eq env="math">F</eq> commutes with finite products, and, for every exact diagram
+<eq env="displaymath">
+ X\to X'\rightrightarrows X''
+    </eq>
+in <eq env="math">{\mathcal{C}}</eq> (cf. <span class="citation">[<a href="#ref-3-II-3" role="doc-biblioref">12</a>]</span>), the image of the diagram under <eq env="math">F</eq>
+<eq env="displaymath">
+ F(X)\to F(X')\rightrightarrows F(X'')
+    </eq>
+is exact.</li>
+</ol>
+<p>We then say that <eq env="math">F</eq> is <em>left exact</em>.</p>
+<p>In what follows, we assume that finite projective limits always exist in <eq env="math">{\mathcal{C}}</eq>.
+It is then immediate from the definitions that a representable functor is left exact, and, by taking the limit, that <em>a pro-representable functor is left exact</em>.</p>
+<p>To obtain a converse, let
+<eq env="displaymath">
+  F\colon {\mathcal{C}} \to \mathtt{Set}
+</eq>
+be a covariant functor, and let <eq env="math">X\in{\mathcal{C}}</eq> and <eq env="math">\xi\in F(X)</eq>.
 
-In what follows, we assume that finite projective limits always exist in $\cal{C}$.
-It is then immediate from the definitions that a representable functor is left exact, and, by taking the limit, that _a pro-representable functor is left exact_.
-
-To obtain a converse, let
-$$
-  F\colon \cal{C} \to \Set
-$$
-be a covariant functor, and let $X\in\cal{C}$ and $\xi\in F(X)$.
-We say that $\xi$ (or the pair
-\oldpage{195-06}
-$(X,\xi)$) is _minimal_ if, for all $X'\in\cal{C}$ and all $\xi'\in F(X')$, and for every strict monomorphism (cf. [@3-II-3, A, §2]) $u\colon X'\to X$ such that $\xi=F(u)(\xi')$, $u$ is an isomorphism.
-We also say that a pair $(X,\xi)$ _dominates_ $(X'',\xi'')$ (where $xi\in F(X)$ and $\xi''\in F(X'')$) if there exists a morphism $v\colon X\to X''$ such that $\xi''=F(v)(\xi)$;
-_if $\xi$ is minimal, and if $F$ is left exact, then this morphism $v$ is unique_;
-_if $\xi''$ is minimal, then $v$ is surjective_.
-From this we easily deduce the following proposition:
-
-\begin{itenv}{Proposition 3.1}
-\label{A.3-proposition1}
-  For $F$ to be strictly pro-representable, it is necessary and sufficient for it to satisfy the following two conditions:
-  \begin{enumerate}[(i)]
-    \item $F$ is left exact; and
-    \item every pair $(X,\xi)$, with $\xi\in F(X)$, is dominated by some _minimal_ pair.
-  \end{enumerate}
-\end{itenv}
-
-This second condition is trivial if every object of $\cal{C}$ is Artinian (by taking a sub-object $X'$ of $X$ that is minimal amongst those for which there exists some $\xi'\in F(X')$ such that $\xi$ is the image of $\xi'$).
-Whence:
-
-\begin{itenv}{Corollary}
-  Let $\cal{C}$ be a category whose objects are all Artinian and in which all finite projective limits exist.
-  Then the pro-representable functors from $\cal{C}$ to $\Set$ are exactly the left exact functors, and they are in fact strictly pro-representable.
-\end{itenv}
-
-This last fact also implies that _every pro-object of $\cal{C}$ is then strict_. -->
+We say that <eq env="math">\xi</eq> (or the pair <eq env="math">(X,\xi)</eq>) is <em>minimal</em> if, for all <eq env="math">X'\in{\mathcal{C}}</eq> and all <eq env="math">\xi'\in F(X')</eq>, and for every strict monomorphism (cf. <span class="citation">[<a href="#ref-3-II-3" role="doc-biblioref">12</a>]</span>) <eq env="math">u\colon X'\to X</eq> such that <eq env="math">\xi=F(u)(\xi')</eq>, <eq env="math">u</eq> is an isomorphism.
+We also say that a pair <eq env="math">(X,\xi)</eq> <em>dominates</em> <eq env="math">(X'',\xi'')</eq> (where <eq env="math">xi\in F(X)</eq> and <eq env="math">\xi''\in F(X'')</eq>) if there exists a morphism <eq env="math">v\colon X\to X''</eq> such that <eq env="math">\xi''=F(v)(\xi)</eq>;
+<em>if <eq env="math">\xi</eq> is minimal, and if <eq env="math">F</eq> is left exact, then this morphism <eq env="math">v</eq> is unique</em>;
+<em>if <eq env="math">\xi''</eq> is minimal, then <eq env="math">v</eq> is surjective</em>.
+From this we easily deduce the following proposition:</p>
+<div id="FGA-3-II-section-A.3-proposition-3.1" class="itenv" title="Proposition 3.1">
+<p>For <eq env="math">F</eq> to be strictly pro-representable, it is necessary and sufficient for it to satisfy the following two conditions:</p>
+<ol style="list-style-type: lower-roman">
+<li><eq env="math">F</eq> is left exact; and</li>
+<li>every pair <eq env="math">(X,\xi)</eq>, with <eq env="math">\xi\in F(X)</eq>, is dominated by some <em>minimal</em> pair.</li>
+</ol>
+</div>
+<p>This second condition is trivial if every object of <eq env="math">{\mathcal{C}}</eq> is Artinian (by taking a sub-object <eq env="math">X'</eq> of <eq env="math">X</eq> that is minimal amongst those for which there exists some <eq env="math">\xi'\in F(X')</eq> such that <eq env="math">\xi</eq> is the image of <eq env="math">\xi'</eq>).
+Whence:</p>
+<div class="itenv" title="Corollary">
+<p>Let <eq env="math">{\mathcal{C}}</eq> be a category whose objects are all Artinian and in which all finite projective limits exist.
+Then the pro-representable functors from <eq env="math">{\mathcal{C}}</eq> to <eq env="math">\mathtt{Set}</eq> are exactly the left exact functors, and they are in fact strictly pro-representable.</p>
+</div>
+<p>This last fact also implies that <em>every pro-object of <eq env="math">{\mathcal{C}}</eq> is then strict</em>.</p>
 </div>
 <div id="FGA-3-II-section-A.4" class="section level2">
 <h2><span class="header-section-number">4.4</span> Example: groups of Galois type, pro-algebraic groups</h2>
-<!-- If $\cal{C}$ is the category of ordinary finite groups, then $\Pro(\cal{C})$ is equivalent to the category of totally disconnected compact topological^[_[Trans.]_ Here the word "Hausdorff" is implicit.] groups.
-It is groups of this type, and their generalisations, obtained by replacing ordinary finite groups with schemes of finite groups over a given base prescheme (for example, finite algebraic groups over a field $k$), that serve as fundamental groups, homotopy groups, and absolute and relative homology groups for preschemes.
-In all these examples, the corollary to \hyperref[A.3-proposition1]{Proposition 3.1} applies, and it is indeed by the associated functor that the $\pi_1$ should be defined [@3-II-2].
-It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the "_pro-algebraic groups_" of Serre [@3-II-4]. -->
+<p>If <eq env="math">{\mathcal{C}}</eq> is the category of ordinary finite groups, then <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq> is equivalent to the category of totally disconnected compact topological<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> groups.
+It is groups of this type, and their generalisations, obtained by replacing ordinary finite groups with schemes of finite groups over a given base prescheme (for example, finite algebraic groups over a field <eq env="math">k</eq>), that serve as fundamental groups, homotopy groups, and absolute and relative homology groups for preschemes.
+In all these examples, the corollary to <a href="FGA-3-II.html#FGA-3-II-section-A.3-proposition-3.1">Proposition 3.1</a> applies, and it is indeed by the associated functor that the <eq env="math">\pi_1</eq> should be defined <span class="citation">[<a href="#ref-3-II-2" role="doc-biblioref">11</a>]</span>.
+It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the “<em>pro-algebraic groups</em>” of Serre <span class="citation">[<a href="#ref-3-II-4" role="doc-biblioref">26</a>]</span>.</p>
 </div>
 <div id="FGA-3-II-section-A.5" class="section level2">
 <h2><span class="header-section-number">4.5</span> Example: “formal varieties”</h2>
@@ -856,6 +840,27 @@ _we can take arbitrary "local" extensions at the ramification points_.
 Further, if $X_0$ is normal, then we note that the formal scheme of modules guaranteed by \hyperref[C.5-proposition1]{Proposition 5.1} is _simple_ over $\Spec(\Lambda)$. -->
 
 </div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-3-II-1">
+<p>[10] A. Grothendieck. “Sur quelques points d’algèbre homologique.” <em>Tohoku Math. J.</em> <strong>9</strong> (1957), 119–221.</p>
+</div>
+<div id="ref-3-II-2">
+<p>[11] A. Grothendieck. “Géométrie formelle et géométrie algébrique.” <em>Séminaire Bourbaki</em>. <strong>11</strong> (n.d.), Talk no. 182.</p>
+</div>
+<div id="ref-3-II-3">
+<p>[12] A. Grothendieck. “Technique de descente et théorèmes d’existence en géométrie algébrique, I: Généralités, descente pas morphismes fidèlement plats.” <em>Séminaire Bourbaki</em>. <strong>12</strong> (n.d.), Talk no. 190.</p>
+</div>
+<div id="ref-3-II-4">
+<p>[26] J.-P. Serre. “Corps locaux et isogénies.” <em>Séminaire Bourbaki</em>. <strong>11</strong> (n.d.), Talk no. 185.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="9">
+<li id="fn9"><p><em>[Trans.]</em> Here the word “Hausdorff” is implicit.<a href="FGA-3-II.html#fnref9" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 <script type="text/javascript" src="./katex.min.js"></script>
 
