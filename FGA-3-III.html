@@ -539,193 +539,151 @@ If <eq env="math">X</eq> and <eq env="math">R_1</eq> are <eq env="math">Z</eq>-p
 We note that this result can also be easily expressed without any regularity hypothesis on the local rings, and without supposing that <eq env="math">X</eq> is an algebraic scheme over a field.
 The theory of Jacobson–Bourbaki is obtained by taking <eq env="math">X</eq> to be the spectrum of a field of characteristic <eq env="math">p</eq>.</p></li>
 <li><p>Gabriel had already obtained a particular case of <a href="FGA-3-III.html#FGA-3-III-theorem-5.3">Theorem 5.3</a> in the theory of passing to the quotient for finite commutative groups over a field <eq env="math">k</eq>.
-(Compare with <a href="#FGA-3-III-corollary-7.4">Corollary 7.4</a>).</p></li>
+(Compare with <a href="FGA-3-III.html#FGA-3-III-corollary-7.4">Corollary 7.4</a>).</p></li>
 </ol>
 </div>
 </div>
 <div id="FGA-3-III-section-6" class="section level2">
 <h2><span class="header-section-number">5.6</span> Quotient by a proper and flat equivalence relation</h2>
+<div id="FGA-3-III-theorem-6.1" class="itenv" title="Theorem 6.1">
+<p>Let <eq env="math">S</eq> be a <em>locally Noetherian</em> prescheme, <eq env="math">X</eq> a <em>quasi-projective</em> <eq env="math">S</eq>-scheme, and <eq env="math">{\mathcal{R}}</eq> an equivalence pre-relation on <eq env="math">X</eq>, such that:
+</p>
+<ol style="list-style-type: lower-alpha">
+<li><eq env="math">p_1\colon R_1\to X</eq> is proper and flat; and</li>
+<li><eq env="math">R_1\to X\times_S X</eq> is a finite morphism (or, equivalently, by (a), a morphism with finite fibres, which is a condition that is automatically satisfied if <eq env="math">{\mathcal{R}}</eq> comes from an equivalence relation).</li>
+</ol>
+<p>Under these conditions:</p>
+<ol style="list-style-type: lower-roman">
+<li><p><eq env="math">Y=X/{\mathcal{R}}</eq> exists, and (if <eq env="math">S</eq> is Noetherian) is quasi-projective<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a> over <eq env="math">S</eq>.</p></li>
+<li><p>The canonical morphism <eq env="math">f\colon X\to Y</eq> is surjective, proper, and open, and its fibres are the equivalence classes <eq env="math">p_2(p_1^{-1}(x))</eq> in <eq env="math">X</eq> modulo <eq env="math">{\mathcal{R}}</eq>, and so <eq env="math">Y</eq> can be identified with the topological quotient space of <eq env="math">X</eq> by the set-theoretic equivalence relation defined by <eq env="math">{\mathcal{R}}</eq>.
+Finally, <eq env="math">R_1\to X\times_Y X</eq> is surjective.</p></li>
+<li><p>If <eq env="math">{\mathcal{R}}</eq> comes from an equivalence relation, then the equivalence relation in question is effective, i.e. <eq env="math">R_1\to X\times_Y X</eq> is an isomorphism, and, further, <eq env="math">f\colon X\to Y</eq> is flat (and thus faithfully flat).</p></li>
+</ol>
+</div>
+<p>For the proof, we can reduce to <a href="FGA-3-III.html#FGA-3-III-theorem-5.1">Theorem 5.1</a> by considering suitable quasi-sections of <eq env="math">X</eq> for <eq env="math">{\mathcal{R}}</eq>, with the proof being analogous to the construction of algebraic quotient groups in the Séminaire Chevalley.</p>
+<p>In summary:</p>
+<div class="itenv" title="Scholium">
+<p>Let <eq env="math">X</eq> be quasi-projective over <eq env="math">S</eq>, with <eq env="math">S</eq> locally Noetherian.
+Then the data of a proper, faithfully flat, and surjective morphism <eq env="math">f\colon X\to Y</eq> from <eq env="math">X</eq> to an <eq env="math">S</eq>-prescheme <eq env="math">Y</eq> is equivalent to the data of an equivalence relation <eq env="math">R</eq> on <eq env="math">X</eq> such that <eq env="math">p_1\colon R\to X</eq> is proper and flat.</p>
+</div>
+<p>The same method gives the following result:</p>
+<div id="FGA-3-III-theorem-6.2" class="itenv" title="Theorem 6.2">
+<p>Let <eq env="math">S</eq> be a Noetherian prescheme, <eq env="math">X</eq> a prescheme of finite type over <eq env="math">S</eq>, and <eq env="math">{\mathcal{R}}</eq> an equivalence pre-relation on the <eq env="math">S</eq>-prescheme <eq env="math">X</eq>.
+Suppose that</p>
+<ol style="list-style-type: lower-alpha">
+<li><eq env="math">p_1\colon R_1\to X</eq> is flat and of finite type; and</li>
+<li>the morphism <eq env="math">R_1\to X\times_S X</eq> is quasi-finite (i.e. has finite fibres).</li>
+</ol>
+<p>Then there exists a <em>dense</em> open subset <eq env="math">U</eq> of <eq env="math">X</eq> that is <em>saturated</em> for <eq env="math">{\mathcal{R}}</eq>, such that:</p>
+<ol style="list-style-type: lower-roman">
+<li><p>If <eq env="math">{\mathcal{R}}_U</eq> is the equivalence pre-relation induced by <eq env="math">{\mathcal{R}}</eq> on <eq env="math">U</eq>, then <eq env="math">U/{\mathcal{R}}_U</eq> exists, and is of finite type over <eq env="math">S</eq>.</p></li>
+<li><p>The canonical morphism <eq env="math">U\to U/{\mathcal{R}}_U</eq> is surjective and open, and its fibres are the set-theoretic equivalence classes for <eq env="math">{\mathcal{R}}_U</eq> (and thus <eq env="math">U/{\mathcal{R}}_U</eq> is a topological quotient space of <eq env="math">U</eq> by the set-theoretic equivalence relation defined by <eq env="math">{\mathcal{R}}_U</eq>).
+Finally, the morphism <eq env="math">({\mathcal{R}}_U)_1\to U\times_{U/{\mathcal{R}}_U}U</eq> is surjective.</p></li>
+<li><p>If <eq env="math">{\mathcal{R}}</eq> comes from an equivalence relation, then we can suppose that <eq env="math">U\to U/{\mathcal{R}}_U</eq> is faithfully flat and that <eq env="math">{\mathcal{R}}_U</eq> is effective.</p></li>
+</ol>
+</div>
+
+<p>This is a result of an essentially “birational” nature.</p>
+<div id="FGA-3-III-remarks-6.3" class="rmenv" title="Remarks 6.3">
+<p>—</p>
+<ol style="list-style-type: decimal">
+<li><p>I do not know if, in <a href="FGA-3-III.html#FGA-3-III-theorem-6.1">Theorem 6.1</a> and <a href="FGA-3-III.html#FGA-3-III-theorem-6.2">Theorem 6.2</a>, hypothesis (b) is useless.
+In practice, it obliges us, in the passage to the quotient by groups, to restrict to he case where the stabilisers are all finite groups.</p></li>
+<li><p>We can ask if there are results analogous to <a href="FGA-3-III.html#FGA-3-III-theorem-6.1">Theorem 6.1</a> and <a href="FGA-3-III.html#FGA-3-III-theorem-6.2">Theorem 6.2</a> without any flatness hypothesis.
+I have no counter example in this direction.
+However, even keeping the flatness hypothesis, and restricting to equivalence relations such that <eq env="math">p_1\colon R\to X</eq> is flat and quasi-finite (but not finite), and with <eq env="math">X</eq> affine, it can still be the case that <eq env="math">R</eq> is not effective: take the equivalence relations induced on the affine open subsets covering the Nagata variety (or a group with two elements acting in a “non-admissible” way).</p></li>
+</ol>
+</div>
 </div>
 <div id="FGA-3-III-section-7" class="section level2">
 <h2><span class="header-section-number">5.7</span> Applications</h2>
+<p>As we said in the introduction, the most important application of <a href="FGA-3-III.html#FGA-3-III-theorem-6.1">Theorem 6.1</a> is the construction of Picard schemes, as well as solutions to various other problems of “modules”, to which we will later return.</p>
+<p>We obtain a simple proof of the following result of Shimura:</p>
+<div id="FGA-3-III-proposition-7.1" class="itenv" title="Proposition 7.1">
+<p>Let <eq env="math">A</eq> be an abelian scheme defined over a discrete valuation ring <eq env="math">V</eq> with field of fractions <eq env="math">K</eq>.
+Then every abelian scheme <eq env="math">B'</eq> over <eq env="math">K</eq> that is isogenous to a quotient of <eq env="math">A\otimes_V K</eq> “simplifies well for <eq env="math">V</eq>”, i.e. is isomorphic to some <eq env="math">B\otimes_V A</eq>, where <eq env="math">B</eq> is an abelian scheme over <eq env="math">V</eq> (essentially unique, we recall).</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-18" class="proof"><em>Proof</em>. </span>We can suppose that <eq env="math">B'</eq> is the quotient of <eq env="math">A_K</eq> by a subscheme in groups <eq env="math">C'</eq>.
+(N.B. <eq env="math">C'</eq> will not, in general, be “reduced”, i.e. its local rings will have nilpotent elements).
+Consider the closed subscheme <eq env="math">C</eq> of <eq env="math">A</eq> given by “the closure” of <eq env="math">C'</eq>, i.e. the smallest closed subscheme of <eq env="math">A</eq> such that <eq env="math">C_K</eq> contains <eq env="math">C'</eq>.
+Then <eq env="math">C_K=C'</eq>, and, since <eq env="math">V</eq> is a discrete valuation ring, we easily deduce that <eq env="math">C</eq> is a subscheme in groups of <eq env="math">A</eq> over <eq env="math">V</eq>.
+Since <eq env="math">A</eq> is proper over <eq env="math">\operatorname{Spec}(V)=S</eq>, so too is <eq env="math">C</eq>.
+Further, <eq env="math">A</eq> is projective over <eq env="math">S</eq>.
+
+We can thus apply <a href="FGA-3-III.html#FGA-3-III-theorem-6.1">Theorem 6.1</a> in order to construct <eq env="math">A/C=B</eq>, which is the desired <eq env="math">B</eq>.</p>
+</div>
+<p>Finally, essentially known arguments allow us to extract from <a href="FGA-3-III.html#FGA-3-III-theorem-6.2">Theorem 6.2</a> the following result:</p>
+<div id="FGA-3-III-theorem-7.2" class="itenv" title="Theorem 7.2">
+<p>Let <eq env="math">S</eq> be the spectrum of an Artinian ring, <eq env="math">F</eq> and <eq env="math">G</eq> group schemes of finite type over <eq env="math">S</eq>, and <eq env="math">u\colon F\to G</eq> a homomorphism of group schemes over <eq env="math">S</eq>.
+Suppose that</p>
+<ol style="list-style-type: lower-roman">
+<li><eq env="math">F</eq> is flat over <eq env="math">S</eq>; and</li>
+<li>the kernel of <eq env="math">u</eq> is finite.</li>
+</ol>
+<p>Under these conditions, the quotient scheme <eq env="math">G/F</eq> exists, and the canonical morphism <eq env="math">G\to G/F</eq> is surjective and open, and its fibres are the set-theoretic equivalence classes defined by the right action of <eq env="math">F</eq> on <eq env="math">G</eq>.
+Finally, if <eq env="math">u</eq> is a monomorphism, then the morphism <eq env="math">G\to G/F</eq> is flat, and the morphism <eq env="math">G\times F\to G\times_{(G/F)}G</eq> is an isomorphism, or, in other words, <eq env="math">G</eq> is a principal homogeneous space over <eq env="math">G/F</eq>, with structure group <eq env="math">F</eq> (acting on the right), or rather <eq env="math">F\times_S(G/F)</eq> considered as a group scheme over <eq env="math">G/F</eq> (cf. <span class="citation">[<a href="#ref-3-II-1" role="doc-biblioref">10</a>]</span>).</p>
+</div>
+<div id="FGA-3-III-corollary-7.3" class="itenv" title="Corollary 7.3">
+<p>Under these conditions, for <eq env="math">G</eq> to be flat over <eq env="math">S</eq>, it is necessary and sufficient for <eq env="math">G/F</eq> to be flat over <eq env="math">S</eq>.
+If this condition is satisfied, then the passage to the quotient by <eq env="math">F</eq> commutes with every extension of the base <eq env="math">S</eq>, and if <eq env="math">F</eq> is an invariant subgroup of <eq env="math">G</eq>, then <eq env="math">G/F</eq> can be endowed with the structure of a <em>quotient group</em> of <eq env="math">G</eq> by <eq env="math">F</eq>.</p>
+</div>
+<p>The situation is particularly simple if <eq env="math">S</eq> is the spectrum of a field, since then every <eq env="math">S</eq>-prescheme is automatically flat over <eq env="math">S</eq>.
+We find:</p>
+<div id="FGA-3-III-corollary-7.4" class="itenv" title="Corollary 7.4">
+<p>Let <eq env="math">F</eq> and <eq env="math">G</eq> be group schemes of finite type over a field <eq env="math">k</eq>, and let <eq env="math">u\colon F\to G</eq> be a homomorphism of <eq env="math">k</eq>-groups.
+Then <eq env="math">u</eq> factors as <eq env="math">F\to F'\to G</eq>, where <eq env="math">F\to F'</eq> is a homomorphism given by passing to the quotient by the closed subgroup <eq env="math">\operatorname{Ker}u</eq> of <eq env="math">F</eq>, and where <eq env="math">F'\to G</eq> is a group homomorphism that is a closed immersion.
+The quotient <eq env="math">G/F=G/F'</eq> exists.
+The usual formalism (as in the Noether theorems) holds amongst algebraic groups over <eq env="math">k</eq>.</p>
+</div>
+<p>This result allows us to treat the passage to the quotient in a uniform way for algebraic (in the classical sense, i.e. irreducible over <eq env="math">k</eq> and simple over <eq env="math">k</eq>) groups, and the passage to the quotient by “infinitesimal” subgroups considered by Cartier.
+
+It is advantageous to consider the “hyperalgebras” introduced by Cartier, following from the work of Dieudonné on formal groups, as groups in the category of formal schemes over <eq env="math">k</eq>, and, if necessary (if they correspond to hyperalgebras of finite rank over <eq env="math">k</eq>), as algebraic groups that are finite over <eq env="math">k</eq>.</p>
 </div>
 <div id="FGA-3-III-section-8" class="section level2">
 <h2><span class="header-section-number">5.8</span> A conjecture</h2>
-<!--
-\section{Quotient by a proper and flat equivalence relation}
-\label{6}
+<p>The conjecture in question concerns the need of knowing how to pass to the quotient by the projective group acting on certain subschemes of “Hilbert schemes” (with these “Hilbert schemes” replacing, in the theory of schemes, Chow varieties).</p>
+<p>Let <eq env="math">S</eq> be a prescheme, and <eq env="math">n</eq> an integer.
+To every prescheme <eq env="math">S'</eq> over <eq env="math">S</eq>, we associate the group <eq env="math">\operatorname{GL}(n,\Gamma(S',{\mathcal{O}}_{S'}))</eq> of invertible <eq env="math">(n\times n)</eq> matrices with values in the ring of sections of <eq env="math">{\mathcal{O}}_{S'}</eq>.
+We thus obtain a contravariant functor in <eq env="math">S'</eq>, which can can easily show to be representable, and so the functor corresponds to a group scheme over <eq env="math">S</eq> (which is further affine over <eq env="math">S</eq>) which we denote by <eq env="math">\operatorname{GL}(n)_s</eq>.
+Its construction is compatible with change of base, so that, in reality, everything comes from a group scheme over <eq env="math">\mathbb{Z}</eq>, denoted by <eq env="math">\operatorname{GL}(n)</eq>.
+The group <eq env="math">\operatorname{GL}(1)</eq>, called the <em>multiplicative group</em>, and often denoted by <eq env="math">\mathrm{G}_\mathrm{m}</eq>, corresponds to the functor <eq env="math">S\mapsto\Gamma(S,{\mathcal{O}}_S)^*</eq>, with the latter being the group of “units” over <eq env="math">S</eq>.
+We have an evident homomorphism <eq env="math">\operatorname{GL}(1)\to\operatorname{GL}(n)</eq>, and we can easily construct the quotient group, denoted by <eq env="math">\operatorname{GP}(n-1)</eq>, and called the .
+It represents the functor that sends <eq env="math">S</eq> to the group of sections of the sheaf <eq env="math">\operatorname{\mathscr{G}\!\!\mathscr{L}}(n)_S/\operatorname{\mathscr{G}\!\!\mathscr{L}}(1)_S</eq>, where <eq env="math">\operatorname{\mathscr{G}\!\!\mathscr{L}}(n)_S</eq> denotes the sheaf of germs of sections of <eq env="math">\operatorname{GL}(n)_S</eq> over <eq env="math">S</eq>.
+(Note that sections of <eq env="math">\operatorname{GP}(n-1)_S</eq> over <eq env="math">S</eq> do not, in general, come from sections of <eq env="math">\operatorname{GL}(n)_S</eq> over <eq env="math">S</eq>!)
+Note that we can prove that <eq env="math">\operatorname{GL}(n-1)</eq> equally represents the functor <eq env="math">S\mapsto\operatorname{Aut}_S(\mathbb{P}_S^{n-1})</eq> (where <eq env="math">\mathbb{P}_S^{n-1}</eq> is the projective-type scheme of relative dimension <eq env="math">(n-1)</eq> over <eq env="math">S</eq>), at least when <eq env="math">S</eq> is Noetherian.
+It is in this way that it appears in the theory of modules.</p>
+<p>Let <eq env="math">S</eq> be a Noetherian scheme, which we can, if we want, suppose to be affine, and let <eq env="math">X</eq> be a quasi-projective <eq env="math">S</eq>-prescheme endowed with an invertible sheaf <eq env="math">{\mathscr{L}}</eq> that is very ample with respect to <eq env="math">S</eq>.
+Suppose that the group <eq env="math">G=\operatorname{GP}(n)_S</eq> acts on <eq env="math">X</eq> and <eq env="math">{\mathscr{L}}</eq> simultaneously (in a way that is compatible with its action on <eq env="math">X</eq>), and that it acts <em>freely</em> on <eq env="math">S</eq>.
+</p>
+<div id="FGA-3-III-conjecture-8.1" class="itenv" title="Conjecture 8.1">
+<p>Under the above conditions:</p>
+<ol style="list-style-type: decimal">
+<li><p>The equivalence relation defined by <eq env="math">G</eq> is effective, the quotient <eq env="math">Y=X/G</eq> is of finite type over <eq env="math">S</eq>, and the canonical morphism <eq env="math">f\colon X\to Y</eq> is flat and surjective (and thus <eq env="math">X</eq> becomes a homogeneous principal bundle on <eq env="math">Y</eq>, with group <eq env="math">G\times_S Y=\operatorname{GP}(n)_Y</eq>).</p></li>
+<li><p>Let <eq env="math">{\mathscr{L}}'</eq> be the invertible sheaf on <eq env="math">Y</eq> induced from <eq env="math">{\mathscr{L}}</eq> by “faithfully flat descent” under <eq env="math">f</eq> (cf. <span class="citation">[<a href="#ref-3-II-1" role="doc-biblioref">10</a>]</span>).
+Then <eq env="math">{\mathscr{L}}'</eq> is “pre-ample” on <eq env="math">Y</eq> with respect to <eq env="math">S</eq>, i.e. there exists an integer <eq env="math">m</eq> and a quasi-finite morphism from <eq env="math">Y</eq> to some suitable projective-type scheme <eq env="math">\mathbb{P}_S^N</eq> such that <eq env="math">({\mathscr{L}}')^{\otimes m}</eq> is isomorphic to the inverse image of <eq env="math">{\mathcal{O}}_{\mathbb{P}_S^N}(1)</eq>.</p></li>
+</ol>
+</div>
+<p>We note that, even if <eq env="math">X</eq> is separated over <eq env="math">S</eq>, then it can be the case that <eq env="math">Y</eq> is not separated over <eq env="math">S</eq> (a situation that arises in not-at-all-pathological “module problems”).
+If (1) is satisfied, then <eq env="math">Y</eq> is separated if and only if the equivalence relation defined by <eq env="math">G</eq> has a closed graph, i.e. if <eq env="math">G\times X\to X\times X</eq> has a closed image (and is thus a closed immersion).
+If <eq env="math">Y</eq> is separated, then <eq env="math">{\mathscr{L}}'</eq> is pre-ample on <eq env="math">Y</eq> with respect to <eq env="math">S</eq> if and only if it is ample, i.e. if a suitable tensor power defines a projective immersion.
+In the module problems mentioned in the introduction, we can show that the equivalence relation to which we arrive does indeed have a closed graph.</p>
+<p>::: {.rmenv #FGA-3-III-remarks-8.2 title=“Remarks 8.2” latex=“{Remarks 8.2}”}f
+We have assumed that <eq env="math">G=\operatorname{GP}(n)_S</eq> to give a concrete example, and because it is currently the most important case in practice.
+The reasonable hypothesis to make on <eq env="math">G</eq> seems rather to be that <eq env="math">G</eq> be one of the “forms” on <eq env="math">S</eq> of a Tohokû group (whose construction over the integers has also been made by Chevalley).
+The only positive fact that is known to me concerning the above conjecture is the following:
+<em>Let <eq env="math">X</eq> be an affine scheme over a field <eq env="math">k</eq> of characteristic <eq env="math">0</eq>, on which the group <eq env="math">\operatorname{GL}(n)_k</eq> or <eq env="math">\operatorname{GP}(n-1)_k</eq> acts freely. Then the equivalence relation defined by <eq env="math">G</eq> is effective, the quotient <eq env="math">X/G</eq> is affine, and the morphism <eq env="math">X\to X/G</eq> is flat and surjective.</em>
+The proof uses the following fact (that, for now, has only been proven in characteristic <eq env="math">0</eq>):
+if we let <eq env="math">G</eq> act on the affine ring <eq env="math">A</eq> of <eq env="math">G</eq>, considered as a vector space over <eq env="math">k</eq>, then the trivial representation of <eq env="math">G</eq> only appears once (in a composition series of a vector subspace of finite dimension over <eq env="math">k</eq> that is stable under <eq env="math">G</eq>).
 
-\begin{itenv}{Theorem 6.1}
-\label{theorem6.1}
-  Let $S$ be a _locally Noetherian_ prescheme, $X$ a _quasi-projective_ $S$-scheme, and $\cal{R}$ an equivalence pre-relation on $X$, such that:
-\oldpage{212-15}
-  \begin{enumerate}[(a)]
-    \item $p_1\colon R_1\to X$ is proper and flat; and
-    \item $R_1\to X\times_S X$ is a finite morphism (or, equivalently, by (a), a morphism with finite fibres, which is a condition that is automatically satisfied if $\cal{R}$ comes from an equivalence relation).
-  \end{enumerate}
-  Under these conditions:
-  \begin{enumerate}[(i)]
-    \item $Y=X/\cal{R}$ exists, and (if $S$ is Noetherian) is quasi-projective\footnote{_[Comp.]_ \emph{The fact that $Y=X/\cal{R}$ is quasi-projective over $S$ has only been proven, for now, in the case where $\cal{R}$ comes from an equivalence relation.}} over $S$.
-    \item The canonical morphism $f\colon X\to Y$ is surjective, proper, and open, and its fibres are the equivalence classes $p_2(p_1^{-1}(x))$ in $X$ modulo $\cal{R}$, and so $Y$ can be identified with the topological quotient space of $X$ by the set-theoretic equivalence relation defined by $\cal{R}$.
-      Finally, $R_1\to X\times_Y X$ is surjective.
-    \item If $\cal{R}$ comes from an equivalence relation, then the equivalence relation in question is effective, i.e. $R_1\to X\times_Y X$ is an isomorphism, and, further, $f\colon X\to Y$ is flat (and thus faithfully flat).
-  \end{enumerate}
-\end{itenv}
-
-For the proof, we can reduce to [Theorem 5.1](#FGA-3-III-theorem-5.1) by considering suitable quasi-sections of $X$ for $\cal{R}$, with the proof being analogous to the construction of algebraic quotient groups in the Séminaire Chevalley.
-
-In summary:
-
-\begin{itenv}{Scholium}
-  Let $X$ be quasi-projective over $S$, with $S$ locally Noetherian.
-  Then the data of a proper, faithfully flat, and surjective morphism $f\colon X\to Y$ from $X$ to an $S$-prescheme $Y$ is equivalent to the data of an equivalence relation $R$ on $X$ such that $p_1\colon R\to X$ is proper and flat.
-\end{itenv}
-
-The same method gives the following result:
-
-\begin{itenv}{Theorem 6.2}
-\label{theorem6.2}
-  Let $S$ be a Noetherian prescheme, $X$ a prescheme of finite type over $S$, and $\cal{R}$ an equivalence pre-relation on the $S$-prescheme $X$.
-  Suppose that
-  \begin{enumerate}[(a)]
-    \item $p_1\colon R_1\to X$ is flat and of finite type; and
-    \item the morphism $R_1\to X\times_S X$ is quasi-finite (i.e. has finite fibres).
-  \end{enumerate}
-  Then there exists a _dense_ open subset $U$ of $X$ that is _saturated_ for $\cal{R}$, such that:
-  \begin{enumerate}[(i)]
-    \item If $\cal{R}_U$ is the equivalence pre-relation induced by $\cal{R}$ on $U$, then $U/\cal{R}_U$ exists, and is of finite type over $S$.
-    \item The canonical morphism $U\to U/\cal{R}_U$ is surjective and open, and its fibres are the set-theoretic equivalence classes for $\cal{R}_U$ (and thus $U/\cal{R}_U$ is a topological quotient space of $U$ by the set-theoretic equivalence relation defined by $\cal{R}_U$).
-      Finally, the morphism $(\cal{R}_U)_1\to U\times_{U/\cal{R}_U}U$ is surjective.
-\oldpage{212-16}
-    \item If $\cal{R}$ comes from an equivalence relation, then we can suppose that $U\to U/\cal{R}_U$ is faithfully flat and that $\cal{R}_U$ is effective.
-  \end{enumerate}
-\end{itenv}
-
-This is a result of an essentially "birational" nature.
-
-\begin{rmenv}{Remarks 6.3}
-  \begin{enumerate}
-    \item I do not know if, in \hyperref[theorem6.1]{Theorem 6.1} and \hyperref[theorem6.2]{Theorem 6.2}, hypothesis (b) is useless.
-      In practice, it obliges us, in the passage to the quotient by groups, to restrict to he case where the stabilisers are all finite groups.
-    \item We can ask if there are results analogous to \hyperref[theorem6.1]{Theorem 6.1} and \hyperref[theorem6.2]{Theorem 6.2} without any flatness hypothesis.
-      I have no counter example in this direction.
-      However, even keeping the flatness hypothesis, and restricting to equivalence relations such that $p_1\colon R\to X$ is flat and quasi-finite (but not finite), and with $X$ affine, it can still be the case that $R$ is not effective: take the equivalence relations induced on the affine open subsets covering the Nagata variety (or a group with two elements acting in a "non-admissible" way).
-  \end{enumerate}
-\end{rmenv}
-
-
-\section{Applications}
-\label{7}
-
-As we said in the introduction, the most important application of \hyperref[theorem6.1]{Theorem 6.1} is the construction of Picard schemes, as well as solutions to various other problems of "modules", to which we will later return.
-
-We obtain a simple proof of the following result of Shimura:
-
-\begin{itenv}{Proposition 7.1}
-  Let $A$ be an abelian scheme defined over a discrete valuation ring $V$ with field of fractions $K$.
-  Then every abelian scheme $B'$ over $K$ that is isogenous to a quotient of $A\otimes_V K$ "simplifies well for $V$", i.e. is isomorphic to some $B\otimes_V A$, where $B$ is an abelian scheme over $V$ (essentially unique, we recall).
-\end{itenv}
-
-\begin{proof}
-  We can suppose that $B'$ is the quotient of $A_K$ by a subscheme in groups $C'$.
-  (N.B. $C'$ will not, in general, be "reduced", i.e. its local rings will have nilpotent elements).
-  Consider the closed subscheme $C$ of $A$ given by "the closure" of $C'$, i.e. the smallest closed subscheme of $A$ such that $C_K$ contains $C'$.
-  Then $C_K=C'$, and, since $V$ is a discrete valuation ring, we easily deduce that $C$ is a subscheme in groups of $A$ over $V$.
-  Since $A$ is proper over $\Spec(V)=S$, so too is $C$.
-  Further, $A$ is projective over $S$.
-  We can thus apply \hyperref[theorem6.1]{Theorem 6.1} in order to construct $A/C=B$,
-\oldpage{212-17}
-  which is the desired $B$.
-\end{proof}
-
-Finally, essentially known arguments allow us to extract from \hyperref[theorem6.2]{Theorem 6.2} the following result:
-
-\begin{itenv}{Theorem 7.2}
-  Let $S$ be the spectrum of an Artinian ring, $F$ and $G$ group schemes of finite type over $S$, and $u\colon F\to G$ a homomorphism of group schemes over $S$.
-  Suppose that
-  \begin{enumerate}[(i)]
-    \item $F$ is flat over $S$; and
-    \item the kernel of $u$ is finite.
-  \end{enumerate}
-
-  Under these conditions, the quotient scheme $G/F$ exists, and the canonical morphism $G\to G/F$ is surjective and open, and its fibres are the set-theoretic equivalence classes defined by the right action of $F$ on $G$.
-  Finally, if $u$ is a monomorphism, then the morphism $G\to G/F$ is flat, and the morphism $G\times F\to G\times_{(G/F)}G$ is an isomorphism, or, in other words, $G$ is a principal homogeneous space over $G/F$, with structure group $F$ (acting on the right), or rather $F\times_S(G/F)$ considered as a group scheme over $G/F$ (cf. [@3-II-1, B.6]).
-\end{itenv}
-
-\begin{itenv}{Corollary 7.3}
-  Under these conditions, for $G$ to be flat over $S$, it is necessary and sufficient for $G/F$ to be flat over $S$.
-  If this condition is satisfied, then the passage to the quotient by $F$ commutes with every extension of the base $S$, and if $F$ is an invariant subgroup of $G$, then $G/F$ can be endowed with the structure of a _quotient group_ of $G$ by $F$.
-\end{itenv}
-
-The situation is particularly simple if $S$ is the spectrum of a field, since then every $S$-prescheme is automatically flat over $S$.
-We find:
-
-\begin{itenv}{Corollary 7.4}
-\label{corollary7.4}
-  Let $F$ and $G$ be group schemes of finite type over a field $k$, and let $u\colon F\to G$ be a homomorphism of $k$-groups.
-  Then $u$ factors as $F\to F'\to G$, where $F\to F'$ is a homomorphism given by passing to the quotient by the closed subgroup $\Ker u$ of $F$, and where $F'\to G$ is a group homomorphism that is a closed immersion.
-  The quotient $G/F=G/F'$ exists.
-  The usual formalism (as in the Noether theorems) holds amongst algebraic groups over $k$.
-\end{itenv}
-
-This result allows us to treat the passage to the quotient in a uniform way for algebraic (in the classical sense, i.e. irreducible over $k$ and simple over $k$) groups, and the passage to the quotient by "infinitesimal" subgroups
-\oldpage{212-18}
-considered by Cartier.
-It is advantageous to consider the "hyperalgebras" introduced by Cartier, following from the work of Dieudonné on formal groups, as groups in the category of formal schemes over $k$, and, if necessary (if they correspond to hyperalgebras of finite rank over $k$), as algebraic groups that are finite over $k$.
-
-
-\section{A conjecture}
-\label{8}
-
-The conjecture in question concerns the need of knowing how to pass to the quotient by the projective group acting on certain subschemes of "Hilbert schemes" (with these "Hilbert schemes" replacing, in the theory of schemes, Chow varieties).
-
-Let $S$ be a prescheme, and $n$ an integer.
-To every prescheme $S'$ over $S$, we associate the group $\GL(n,\Gamma(S',\cal{O}_{S'}))$ of invertible $(n\times n)$ matrices with values in the ring of sections of $\cal{O}_{S'}$.
-We thus obtain a contravariant functor in $S'$, which can can easily show to be representable, and so the functor corresponds to a group scheme over $S$ (which is further affine over $S$) which we denote by $\GL(n)_s$.
-Its construction is compatible with change of base, so that, in reality, everything comes from a group scheme over $\mathbb{Z}$, denoted by $\GL(n)$.
-The group $\GL(1)$, called the _multiplicative group_, and often denoted by $\Gm$, corresponds to the functor $S\mapsto\Gamma(S,\cal{O}_S)^*$, with the latter being the group of "units" over $S$.
-We have an evident homomorphism $\GL(1)\to\GL(n)$, and we can easily construct the quotient group, denoted by $\GP(n-1)$, and called the \emph{projective group of degree $(n-1)$ over $\mathbb{Z}$}.
-It represents the functor that sends $S$ to the group of sections of the sheaf $\sGL(n)_S/\sGL(1)_S$, where $\sGL(n)_S$ denotes the sheaf of germs of sections of $\GL(n)_S$ over $S$.
-(Note that sections of $\GP(n-1)_S$ over $S$ do not, in general, come from sections of $\GL(n)_S$ over $S$!)
-Note that we can prove that $\GL(n-1)$ equally represents the functor $S\mapsto\Aut_S(\mathbb{P}_S^{n-1})$ (where $\mathbb{P}_S^{n-1}$ is the projective-type scheme of relative dimension $(n-1)$ over $S$), at least when $S$ is Noetherian.
-It is in this way that it appears in the theory of modules.
-
-Let $S$ be a Noetherian scheme, which we can, if we want, suppose to be affine, and let $X$ be a quasi-projective $S$-prescheme endowed with an invertible sheaf $\scr{L}$ that is very ample with respect to $S$.
-Suppose that the group $G=\GP(n)_S$ acts on $X$ and $\scr{L}$ simultaneously (in a way that is compatible with its action on $X$), and that it acts _freely_ on $S$.
-
-\oldpage{212-19}
-\begin{itenv}{Conjecture 8.1}
-  Under the above conditions:
-  \begin{enumerate}
-    \item The equivalence relation defined by $G$ is effective, the quotient $Y=X/G$ is of finite type over $S$, and the canonical morphism $f\colon X\to Y$ is flat and surjective (and thus $X$ becomes a homogeneous principal bundle on $Y$, with group $G\times_S Y=\GP(n)_Y$).
-    \item Let $\scr{L}'$ be the invertible sheaf on $Y$ induced from $\scr{L}$ by "faithfully flat descent" under $f$ (cf. [@3-II-1, B, Theorem 1]).
-      Then $\scr{L}'$ is "pre-ample" on $Y$ with respect to $S$, i.e. there exists an integer $m$ and a quasi-finite morphism from $Y$ to some suitable projective-type scheme $\mathbb{P}_S^N$ such that $(\scr{L}')^{\otimes m}$ is isomorphic to the inverse image of $\cal{O}_{\mathbb{P}_S^N}(1)$.
-  \end{enumerate}
-\end{itenv}
-
-We note that, even if $X$ is separated over $S$, then it can be the case that $Y$ is not separated over $S$ (a situation that arises in not-at-all-pathological "module problems").
-If 1. is satisfied, then $Y$ is separated if and only if the equivalence relation defined by $G$ has a closed graph, i.e. if $G\times X\to X\times X$ has a closed image (and is thus a closed immersion).
-If $Y$ is separated, then $\scr{L}'$ is pre-ample on $Y$ with respect to $S$ if and only if it is ample, i.e. if a suitable tensor power defines a projective immersion.
-In the module problems mentioned in the introduction, we can show that the equivalence relation to which we arrive does indeed have a closed graph.
-
-\begin{rmenv}{Remarks 8.2}
-  We have assumed that $G=\GP(n)_S$ to give a concrete example, and because it is currently the most important case in practice.
-  The reasonable hypothesis to make on $G$ seems rather to be that $G$ be one of the "forms" on $S$ of a Tohok\^{u} group (whose construction over the integers has also been made by Chevalley).
-  The only positive fact that is known to me concerning the above conjecture is the following:
-  _Let $X$ be an affine scheme over a field $k$ of characteristic $0$, on which the group $\GL(n)_k$ or $\GP(n-1)_k$ acts freely. Then the equivalence relation defined by $G$ is effective, the quotient $X/G$ is affine, and the morphism $X\to X/G$ is flat and surjective._
-  The proof uses the following fact (that, for now, has only been proven in characteristic $0$):
-  if we let $G$ act on the affine ring $A$ of $G$, considered as a vector space over $k$, then the trivial representation of $G$ only appears once (in a composition series of a vector subspace of finite dimension over $k$ that is stable under $G$).
-  It seems possible that a systematic use of the
-\oldpage{212-20}
-  theory of linear representations of $G$ would give a proof of the conjecture, or at least when we work over a base field.
-  When we are no longer working over a base field, the author knows nothing.
-\end{rmenv}
-
-\begin{rmenv}{Remark}
-  _[Comp.]_
-  As we note at the end of the next talk, the above conjecture is decidedly false.
-  The "positive fact" mentioned in the above remark seems to have been proven simultaneously by various authors (Nagata, Rosenlicht, Grothendieck, ...).
-\end{rmenv} -->
+It seems possible that a systematic use of the theory of linear representations of <eq env="math">G</eq> would give a proof of the conjecture, or at least when we work over a base field.
+When we are no longer working over a base field, the author knows nothing.
+:::</p>
+<div class="rmenv" title="Remark">
+<p><em>[Comp.]</em>
+As we note at the end of the next talk, the above conjecture is decidedly false.
+The “positive fact” mentioned in the above remark seems to have been proven simultaneously by various authors (Nagata, Rosenlicht, Grothendieck, …).</p>
+</div>
 
 </div>
 </div>
@@ -743,6 +701,12 @@ In the module problems mentioned in the introduction, we can show that the equiv
 <div id="ref-3-III-2">
 <p>[14] A. Grothendieck. “Technique de descente et théorèmes d’existence en géométrie algébrique, II: Le théorème d’existence et théorie formelle des modules.” <em>Séminaire Bourbaki</em>. <strong>12</strong> (n.d.), Talk no. 195.</p>
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="10">
+<li id="fn10"><p><em>[Comp.]</em> The fact that <eq env="math">Y=X/{\mathcal{R}}</eq> is quasi-projective over <eq env="math">S</eq> has only been proven, for now, in the case where <eq env="math">{\mathcal{R}}</eq> comes from an equivalence relation.<a href="FGA-3-III.html#fnref10" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 <script type="text/javascript" src="./katex.min.js"></script>
 
