@@ -833,276 +833,240 @@ The only important case not covered here is that of projective or quasi-projecti
 </div>
 <div id="FGA-3-I-section-B.3" class="section level2">
 <h2><span class="header-section-number">3.7</span> Decent by finite faithfully flat morphisms</h2>
+<p>Let <eq env="math">\alpha\colon S'\to S</eq> be a <em>finite</em> morphism, corresponding to a sheaf of algebras <eq env="math">{\mathscr{A}}'</eq> on <eq env="math">S</eq> that is <em>locally free</em> and of finite type as a sheaf of modules, and everywhere non-zero.
+Then <eq env="math">\alpha</eq> is a faithfully flat and quasi-compact morphism, to which we can thus apply the above results.
+The data of a quasi-coherent sheaf <eq env="math">{\mathcal{F}}'</eq> on <eq env="math">S'</eq> is equivalent to the data of the quasi-coherent sheaf <eq env="math">\alpha_*({\mathcal{F}}')</eq> on <eq env="math">S</eq> endowed with its <eq env="math">{\mathscr{A}}'</eq>-modules structure (noting that <eq env="math">{\mathscr{A}}'=\alpha_*({\mathscr{O}}_{S'})</eq>).
+For simplicity, we also denote this sheaf on <eq env="math">S</eq> by <eq env="math">{\mathcal{F}}'</eq>.
+The two inverse images <eq env="math">p_i^*({\mathcal{F}}')</eq> of <eq env="math">{\mathcal{F}}'</eq> on <eq env="math">S'\times_S S'</eq> similarly correspond to the quasi-coherent sheaves of <eq env="math">({\mathscr{A}}'\otimes_{{\mathscr{O}}_S}{\mathscr{A}}')</eq>-modules <eq env="math">{\mathcal{F}}'\otimes_{{\mathscr{O}}_S}{\mathscr{A}}'</eq> and <eq env="math">{\mathscr{A}}'\otimes_{{\mathscr{O}}_S}{\mathcal{F}}'</eq>.
+The data of an <eq env="math">(S'\times_S S')</eq>-homomorphism from the former to the latter is equivalent to the data of a homomorphism of <eq env="math">({\mathscr{A}}'\otimes{\mathscr{A}}')</eq>-modules, and, taking into account the fact that <eq env="math">{\mathscr{A}}'</eq> is locally free, this is equivalent to the data of a homomorphism of <eq env="math">({\mathscr{A}}'\otimes{\mathscr{A}}')</eq>-modules:
+<eq env="displaymath">
+  {\mathscr{U}}
+  = \underline{\operatorname{Hom}}_{{\mathscr{O}}_S}({\mathscr{A}}',{\mathscr{A}}')
+  = {\mathscr{A}}'\otimes\check{{\mathscr{A}}}'
+  \to \underline{\operatorname{Hom}}_{{\mathscr{O}}_S}({\mathcal{F}}',{\mathcal{F}}')
+</eq>
+i.e. to the data, for every section <eq env="math">\xi</eq> of <eq env="math">{\mathscr{U}}</eq> over an open subset <eq env="math">V</eq>, of a homomorphism of <eq env="math">{\mathscr{O}}_S</eq>-modules <eq env="math">T_\xi\colon{\mathcal{F}}'|V\to{\mathcal{F}}'|V</eq> that satisfies the conditions</p>
+<div id="FGA-3-I-section-B.3-equation-3.1" class="eqref">
+<p><eq env="displaymath">
+  \begin{aligned}
+    T_{f\xi}(x) &amp;= fT_\xi(x),
+  \\T_{\xi f}(x) &amp;= T_\xi(fx),
+  \end{aligned}
+\tag{3.1}
+</eq></p>
+</div>
+<p>where <eq env="math">f</eq> and <eq env="math">x</eq> are (respectively) sections of <eq env="math">{\mathscr{A}}'</eq> and <eq env="math">{\mathcal{F}}'</eq> over an open subset of <eq env="math">S</eq> that is contained inside <eq env="math">V</eq>.
+Conditions (i) and (ii) of a descent data (cf. <a href="FGA-3-I.html#FGA-3-I-section-A.1.c">§A.1.c</a>) can then be written (respectively) as</p>
+<div id="FGA-3-I-section-B.3-equation-3.2" class="eqref">
+<p><eq env="displaymath">
+  T_{1_U}(x) = x,
+  \qquad\text{i.e. }T_{1_U}=\operatorname{id}_{{\mathcal{F}}'}
+\tag{3.2}
+</eq></p>
+</div>
+<div id="FGA-3-I-section-B.3-equation-3.3" class="eqref">
+<p><eq env="displaymath">
+  T_{\xi\eta} = T_\xi T_\eta.
+\tag{3.3}
+</eq></p>
+</div>
+<p>In other words, <em>a descent data on <eq env="math">{\mathcal{F}}'</eq> is equivalent to a representation of the sheaf <eq env="math">{\mathscr{U}}=\underline{\operatorname{Hom}}_{{\mathscr{O}}_S}({\mathscr{A}}',{\mathscr{A}}')</eq> of <eq env="math">{\mathscr{O}}_S</eq>-algebras in the sheaf <eq env="math">\underline{\operatorname{Hom}}_{{\mathscr{O}}_S}({\mathcal{F}}',{\mathcal{F}}')</eq> of <eq env="math">{\mathscr{O}}_S</eq>-algebras that satisfies the two linearity conditions <a href="FGA-3-I.html#FGA-3-I-section-B.3-equation-3.1">(3.1)</a></em>.
+If we have a pairing of quasi-coherent sheaves on <eq env="math">S'</eq>:
+<eq env="displaymath">
+  {\mathcal{F}}'_1\times{\mathcal{F}}'_2 \to {\mathcal{F}}'_3
+</eq>
+
+(that we can think of as a pairing of sheaves of <eq env="math">{\mathscr{A}}'</eq>-modules on <eq env="math">S</eq>), and gluing data on the <eq env="math">{\mathcal{F}}'_i</eq> defined by homomorphisms <eq env="math">T_i\colon{\mathscr{U}}\to\underline{\operatorname{Hom}}_{{\mathscr{O}}_S}({\mathcal{F}}'_i,{\mathcal{F}}'_i)</eq> (for <eq env="math">i=1,2,3</eq>), then these data are <em>equivalent to the given pairing</em>, in the evident meaning of the phrase, if and only if the following condition is satisfied:</p>
+<p>For every section <eq env="math">\xi</eq> of <eq env="math">{\mathscr{U}}</eq> over an open subset, and denoting by <eq env="math">\Delta\xi=\sum\xi'_i\otimes_{{\mathscr{A}}'}\xi''_i</eq> the section of <eq env="math">{\mathscr{U}}\otimes_{{\mathscr{A}}'}{\mathscr{U}}</eq> (where <eq env="math">{\mathscr{U}}</eq> is considered as an <eq env="math">{\mathscr{A}}'</eq>-module with its left structure) defined by the formula
+<eq env="displaymath">
+  \xi\cdot(fg) = \sum_i\xi'_i(f)\xi''_i(g)
+</eq>
+(where <eq env="math">f</eq> and <eq env="math">g</eq> are sections of <eq env="math">{\mathscr{A}}'</eq> over a smaller open subset), we have the formula</p>
+<div id="FGA-3-I-section-B.3-equation-3.4" class="eqref">
+<p><eq env="displaymath">
+  T_\xi^{(3)}(x\cdot y) = \sum_i T_{\xi'_i}^{(1)}x\cdot T_{\xi''_i}^{(2)}y
+\tag{3.4}
+</eq></p>
+</div>
+<p>for every pair <eq env="math">(x,y)</eq> of sections of <eq env="math">{\mathscr{A}}'</eq> over a smaller subset.
+(We can express this property by saying that the homomorphisms <eq env="math">T^{(i)}</eq> are <em>compatible with the diagonal map of <eq env="math">{\mathscr{U}}</eq></em>, with respect to the given pair).
+In particular, equations <a href="FGA-3-I.html#FGA-3-I-section-B.3-equation-3.1">(3.1)</a> to <a href="FGA-3-I.html#FGA-3-I-section-B.3-equation-3.4">(3.4)</a> allow us to understand, in terms of representations of algebras via diagonal maps, the descent data on a quasi-coherent sheaf of <em>algebras</em> on <eq env="math">S'</eq>, and thus also (by restricting to commutative algebras) the descent data on an affine <eq env="math">S'</eq>-scheme.</p>
+<p>From here, we obtain an analogous interpretation of descent data on an arbitrary <eq env="math">S'</eq>-prescheme <eq env="math">X'</eq>:
+the data of such an <eq env="math">X'</eq> is equivalent to the data of a prescheme <eq env="math">X'</eq> <em>over <eq env="math">S</eq></em> endowed with a homomorphism of <eq env="math">{\mathscr{O}}_S</eq>-algebras
+<eq env="displaymath">
+  {\mathscr{A}}'\to{\mathscr{O}}_{X'},
+</eq>
+and a descent data on <eq env="math">X'</eq> is equivalent to the data of a sheaf homomorphism
+<eq env="displaymath">
+  {\mathscr{U}}
+  \to \underline{\operatorname{Hom}}_{h^{-1}({\mathscr{O}}_S)}({\mathscr{O}}_{X'},{\mathscr{O}}_{X'})
+</eq>
+that is compatible with the morphism <eq env="math">h\colon X'\to S'</eq> and that satisfies the conditions analogous to equations <a href="FGA-3-I.html#FGA-3-I-section-B.3-equation-3.1">(3.1)</a> to <a href="FGA-3-I.html#FGA-3-I-section-B.3-equation-3.4">(3.4)</a> above.</p>
+<div id="FGA-3-I-section-B.3-example-1" class="rmenv" title="Example 1">
+<p>(<em>Weil</em>).
+Suppose that <eq env="math">S'/S</eq> is a <em>Galois étale covering</em> with Galois group <eq env="math">\Gamma</eq> (cf.  and ).
+Then a descent data on a quasi-coherent sheaf <eq env="math">{\mathcal{F}}'</eq> on <eq env="math">S'</eq> (resp. on an <eq env="math">S'</eq>-prescheme <eq env="math">X'</eq>) is equivalent to the data of a representation of <eq env="math">\Gamma</eq> by automorphisms of <eq env="math">(S',{\mathcal{F}}')</eq> (resp. of <eq env="math">(S',X')</eq>) that is compatible with the action of <eq env="math">\Gamma</eq> on <eq env="math">S'</eq>.
+
+This result is “formal”, i.e. it can be proven in terms of categories, but, from the point of view of this section, we also obtain the explicit structure of <eq env="math">{\mathscr{U}}</eq> (endowed with its ring structure, the ring homomorphism <eq env="math">{\mathscr{A}}'\to{\mathscr{U}}</eq>, and the diagonal map), which is completely known thanks to the following result:
+<em><eq env="math">{\mathscr{U}}</eq> admits, as a left <eq env="math">A'</eq>-module, a basis given by the sections of <eq env="math">{\mathscr{U}}</eq> that correspond to elements of <eq env="math">\Gamma</eq></em>.</p>
+</div>
+<div id="FGA-3-I-section-B.3-example-2" class="rmenv" title="Example 2">
+<p>(<em>Cartier</em>).
+Let <eq env="math">p</eq> be a prime number, and suppose that <eq env="math">p{\mathscr{O}}_S=0</eq> (i.e. that <eq env="math">{\mathscr{O}}_S</eq> is of <em>characteristic <eq env="math">p</eq></em>), that <eq env="math">({\mathscr{A}}')^p\subset{\mathscr{O}}_S={\mathscr{A}}</eq> (i.e. that <eq env="math">S'/S</eq> is <em>radicial of height <eq env="math">1</eq></em>), and that the sheaf of algebras <eq env="math">{\mathscr{A}}'</eq> over <eq env="math">{\mathscr{A}}</eq> <em>locally admits a <eq env="math">p</eq>-basis</em> (i.e. a family <eq env="math">(x_i)</eq> of sections such that <eq env="math">{\mathscr{A}}'</eq> is generated as an algebra by the <eq env="math">x_i</eq> under the sole condition that <eq env="math">x_i^p=0</eq>).
+We suppose that the set of the <eq env="math">i</eq> is finite, of cardinality <eq env="math">n</eq>.
+Let <eq env="math">{\mathfrak{C}}</eq> be the sheaf of <eq env="math">A</eq>-derivations of <eq env="math">A'</eq>, which is a locally free sheaf of rank <eq env="math">n</eq> of <eq env="math">A'</eq>-modules, and, furthermore, a sheaf of Lie <eq env="math">p</eq>-algebras over <eq env="math">{\mathscr{A}}</eq> (but not over <eq env="math">{\mathscr{A}}'</eq>) that satisfies the following condition:</p>
+<div id="FGA-3-I-section-B.3-equation-3.5" class="eqref">
+<p><eq env="displaymath">
+  [X,fY] = X(f)Y + f[X,Y].
+\tag{3.5}
+</eq></p>
+</div>
+</div>
+<div class="itenv" title="Lemma">
+<p><eq env="math">{\mathscr{U}}=\underline{\operatorname{Hom}}_{{\mathscr{O}}_S}({\mathscr{A}}',{\mathscr{A}}')</eq> is generated, as an <eq env="math">{\mathscr{O}}_S</eq>-algebra endowed with an algebra homomorphism <eq env="math">{\mathscr{A}}'\to{\mathscr{U}}</eq>, by the sub-left-<eq env="math">A'</eq>-module <eq env="math">{\mathfrak{C}}</eq>, with the following additional relations:</p>
+<div id="FGA-3-I-section-B.3-equation-3.6" class="eqref">
+<p><eq env="displaymath">
+  \begin{cases}
+    Xf-fX &amp;= X(f)
+  \\XY-YX &amp;= [X,Y]
+  \\X^p &amp;= X^{(p)}.
+  \end{cases}
+\tag{3.6}
+</eq></p>
+</div>
+</div>
+<p>It follows from the above lemma that a descent data on the quasi-coherent sheaf <eq env="math">{\mathcal{F}}'</eq> on <eq env="math">S'</eq> is equivalent to the data, for all <eq env="math">X\in{\mathfrak{C}}</eq>, of an <eq env="math">{\mathscr{O}}_S</eq>-endomorphism <eq env="math">\overline{X}</eq> of <eq env="math">{\mathcal{F}}'</eq> that satisfies the following conditions:</p>
+<div id="FGA-3-I-section-B.3-equation-3.7" class="eqref">
+<p><eq env="displaymath">
+  \overline{fX} = f\overline{X}
+\tag{3.7}
+</eq></p>
+</div>
+<div id="FGA-3-I-section-B.3-equation-3.8" class="eqref">
+<p><eq env="displaymath">
+  \overline{X}(fx) = X(f)x + f\overline{X}(x)
+\tag{3.8}
+</eq></p>
+</div>
+<div id="FGA-3-I-section-B.3-equation-3.9" class="eqref">
+<p><eq env="displaymath">
+  \overline{[X,Y]} = [\overline{X},\overline{Y}]
+\tag{3.9}
+</eq></p>
+</div>
+<div id="FGA-3-I-section-B.3-equation-3.10" class="eqref">
+<p><eq env="displaymath">
+  \overline{X^{(p)}} = \overline{X}^p.
+\tag{3.10}
+</eq></p>
+</div>
+<p>(This is what we may call a <em>linear connection on <eq env="math">{\mathcal{F}}</eq></em>, which is further <em>flat</em> and <em>compatible with the <eq env="math">p</eq>-th powers</em>).
+We can similarly write down the notion of a descent data on an <eq env="math">S'</eq>-prescheme <eq env="math">X'</eq>, with equation <a href="FGA-3-I.html#FGA-3-I-section-B.3-equation-3.4">(3.4)</a> being replaced by the condition that the <eq env="math">\overline{X}</eq> are <em>derivations</em> of <eq env="math">{\mathscr{O}}_{X'}</eq>.
+Since the morphism <eq env="math">S'\to S</eq> is radicial, <a href="#FGA-3-I-theorem-3">Theorem 3</a> ensures that every such descent data is effective, and thus defines an <eq env="math">S</eq>-prescheme <eq env="math">X</eq>.
+</p>
+<p>Note that we have not needed to impose any flatness, non-singular, or finiteness hypotheses on <eq env="math">{\mathcal{F}}'</eq> or <eq env="math">X'</eq>.</p>
 </div>
 <div id="FGA-3-I-section-B.4" class="section level2">
 <h2><span class="header-section-number">3.8</span> Application to rationality criteria</h2>
+<p>Let <eq env="math">X</eq> be an <eq env="math">S</eq>-prescheme such that the direct image of <eq env="math">{\mathscr{O}}_X</eq> on <eq env="math">S</eq> is <eq env="math">{\mathscr{O}}_S</eq>;
+this property remains true for any flat base extension <eq env="math">S'\to S</eq>.
+If <eq env="math">{\mathcal{F}}</eq> is an <em>invertible sheaf</em> (i.e. locally free of rank <eq env="math">1</eq>) on <eq env="math">X</eq>, then there is a bijective correspondence between automorphisms of <eq env="math">{\mathcal{F}}</eq> (identified with the invertible sections of <eq env="math">{\mathscr{O}}_X</eq>) and invertible sections of <eq env="math">{\mathscr{O}}_S</eq>.
+So let <eq env="math">s</eq> be a section of <eq env="math">X</eq> over <eq env="math">S</eq>;
+we define a <em>section of <eq env="math">{\mathcal{F}}</eq> over <eq env="math">s</eq></em> to be a section of the invertible sheaf <eq env="math">s^*({\mathcal{F}})</eq> on <eq env="math">S</eq>.
+It follows from the above that, if <eq env="math">{\mathcal{F}}_i</eq> (for <eq env="math">i=1,2</eq>) are invertible sheaves on <eq env="math">X</eq>, each endowed with a section over <eq env="math">s</eq>, and <em>if <eq env="math">{\mathcal{F}}_1</eq> and <eq env="math">{\mathcal{F}}_2</eq> are isomorphic, then there exists exactly one isomorphism from <eq env="math">{\mathcal{F}}_1</eq> to <eq env="math">{\mathcal{F}}_2</eq> that is compatible with the sections in question</em> (i.e. sending the first to the second).
+We also, independently of the section <eq env="math">s</eq>, regard two invertible sheaves <eq env="math">{\mathcal{F}}_1</eq> and <eq env="math">{\mathcal{F}}_2</eq> on <eq env="math">X</eq> as <em>equivalent</em> if every point of <eq env="math">S</eq> has an open neighbourhood <eq env="math">U</eq> such that the restrictions of <eq env="math">{\mathcal{F}}_1</eq> and <eq env="math">{\mathcal{F}}_2</eq> to <eq env="math">X|U</eq> are isomorphic.
+Then <em>every invertible sheaf <eq env="math">{\mathcal{F}}</eq> on <eq env="math">X</eq> is equivalent to an invertible sheaf <eq env="math">{\mathcal{F}}_1</eq> endowed with a marked section over <eq env="math">s</eq></em> (we take <eq env="math">{\mathcal{F}}_1=Fs^*({\mathcal{F}})^{-1}</eq>), <em>and <eq env="math">{\mathcal{F}}_1</eq> is determined up to isomorphism</em>.
+In other words, the classification <em>up to equivalence</em> of invertible sheaves on <eq env="math">X</eq> is the same as the classification <em>up to isomorphism</em> of invertible sheaves endowed with a marked section.</p>
+<p>Since these properties remain true under flat extensions <eq env="math">\alpha\colon S'\to S</eq> of the base (by replacing the section <eq env="math">s</eq> with its inverse image <eq env="math">s'</eq> under <eq env="math">\alpha</eq>), we thus conclude, taking <a href="#FGA-3-I-theorem-1">Theorem 1</a> into account:</p>
+<p><em>With the prescheme <eq env="math">X/S</eq> being as above, and admitting a section <eq env="math">s</eq>, let <eq env="math">\alpha\colon S'\to S</eq> be a faithfully flat and quasi-compact morphism; let <eq env="math">{\mathcal{F}}'</eq> be an invertible sheaf on <eq env="math">X'=X\times_S S'</eq>.</em>
+<em>For <eq env="math">{\mathcal{F}}'</eq> to be equivalent to the inverse image on <eq env="math">X'</eq> of an invertible sheaf <eq env="math">{\mathcal{F}}'</eq> on <eq env="math">X</eq>, it is necessary and sufficient for its inverse images <eq env="math">p_1^*({\mathcal{F}}')</eq> and <eq env="math">p_2^*({\mathcal{F}}')</eq> on <eq env="math">X'\times_X X'=X\times_S(S'\times_S S')</eq> to be equivalent.</em>
+<em>If this is the case, then <eq env="math">{\mathcal{F}}</eq> is determined up to equivalence.</em>
+(We then say that <eq env="math">{\mathcal{F}}'</eq> is <em>rational</em> on <eq env="math">S</eq>).</p>
+<p>Considering this principle in the case where <eq env="math">\alpha\colon S'\to S</eq> is as in <a href="FGA-3-I.html#FGA-3-I-section-B.3-example-1">Example 1</a> and <a href="FGA-3-I.html#FGA-3-I-section-B.3-example-2">Example 2</a> in the previous section, we recover the <em>rationality criteria of Weil and of Cartier</em>.
+
+(We note that the authors restrict to the case where <eq env="math">S</eq> and <eq env="math">S'</eq> are spectra of fields;
+a fortiori, <eq env="math">S</eq> is then the spectrum of a local ring, and the equivalence relation introduced above is exactly the relation of being isomorphic).
+The the first case, <eq env="math">{\mathcal{F}}'</eq> is rational on <eq env="math">S</eq> if and only if its images under <eq env="math">\Gamma</eq> are all equivalent to <eq env="math">{\mathcal{F}}'</eq>.
+To express the rationality criterion in the second case, we consider, more generally, the diagonal morphism <eq env="math">X'\to X''=X'\times_X X'</eq> of <eq env="math">X'/X</eq>, with the corresponding sheaf of ideals <eq env="math">{\mathscr{I}}</eq> on <eq env="math">X'\times_X X'</eq>, and the sheaf <eq env="math">{\mathscr{I}}/{\mathscr{I}}^2</eq>, which can be identified with its inverse image <eq env="math">\Omega_{X'/X}^1</eq> on <eq env="math">X</eq> (the <em>sheaf of <eq env="math">1</eq>-differentials of <eq env="math">X'</eq> with respect to <eq env="math">X</eq></em>).
+Since the restrictions of the <eq env="math">{\mathcal{F}}''_i=p_i({\mathcal{F}}')</eq> (for <eq env="math">i=1,2</eq>) to the diagonal are isomorphic (since they are both isomorphic to <eq env="math">{\mathcal{F}}'</eq>), i.e. <eq env="math">{\mathcal{F}}''_1({\mathcal{F}}''_2)^{-1}={\mathcal{F}}''</eq> has a restriction to the diagonal which is trivial, it follows that the restriction of <eq env="math">{\mathcal{F}}''</eq> to <eq env="math">(X'',{\mathscr{O}}_{X''}/{\mathscr{I}}^2)</eq> is given, up to isomorphism, by a well-defined element <eq env="math">\xi</eq> of
+<eq env="displaymath">
+  \operatorname{H}^1(X'',{\mathscr{I}}/{\mathscr{I}}^2) = \operatorname{H}^1(X',\Omega_{X'/X}^1).
+</eq>
+Also, being precise, we have <eq env="math">\Omega_{X'/X}^1=\Omega_{S'/S}^1\otimes_{{\mathscr{O}}_S}{\mathscr{O}}_X</eq>, and thus, <em>if <eq env="math">\Omega_{S'/S}^1</eq> is locally free on <eq env="math">S</eq></em> (as in the Cartier case), <em>then <eq env="math">\xi</eq> defines a section of <eq env="math">\operatorname{R}^1f'({\mathscr{O}}_{X'})\otimes\Omega_{S'/S}^1</eq> on <eq env="math">S'</eq></em> (called the <em>Atiyah–Cartier class of the invertible sheaf <eq env="math">{\mathcal{F}}</eq> on <eq env="math">X'/S</eq></em>) <em>whose vanishing is necessary and sufficient for the inverse images of <eq env="math">{\mathcal{F}}'</eq> under the two projections of</em>
+<eq env="displaymath">
+  (X'',{\mathscr{O}}_{X''}/{\mathscr{I}}^2) = X\times_S(S'',{\mathscr{O}}_{S''}/{\mathscr{J}}^2)
+</eq>
+<em>to <eq env="math">X'</eq> to be equivalent</em> (where <eq env="math">{\mathscr{J}}</eq> is the sheaf of ideals on <eq env="math">S''=S'\times_S S'</eq> defined by the diagonal morphism <eq env="math">S'\to S'\times_S S'</eq>).
+This vanishing is thus trivially <em>necessary</em> for the inverse images of <eq env="math">{\mathcal{F}}'</eq> on <eq env="math">X''=X\times_S S''</eq> itself to be equivalent, and thus also for <eq env="math">{\mathcal{F}}</eq> to be equivalent to the inverse image of an invertible sheaf <eq env="math">{\mathcal{F}}</eq> on <eq env="math">X</eq>.
+The Atiyah–Cartier class can also be understood as the obstruction to the existence, locally over <eq env="math">S'</eq>, of a <em>connection</em> of <eq env="math">{\mathcal{F}}'</eq> relative to the derivations of <eq env="math">X'/X</eq>, with such a connection further being determined when we know the derivations of <eq env="math">{\mathcal{F}}'</eq> corresponding to the natural extensions of derivations of <eq env="math">S'/S</eq> to <eq env="math">X'</eq>.
+From this, and the results of the previous section, we easily conclude that, in the case of the aforementioned <a href="FGA-3-I.html#FGA-3-I-section-B.3-example-1">Example 2</a>, and when <eq env="math">X/S</eq> admits a section, the vanishing of the Atiyah–Cartier class is also sufficient for <eq env="math">{\mathcal{F}}'</eq> to be rational on <eq env="math">S</eq>.</p>
 </div>
 <div id="FGA-3-I-section-B.5" class="section level2">
 <h2><span class="header-section-number">3.9</span> Application to the restriction of the base scheme to an abelian scheme</h2>
+<p>Let <eq env="math">S</eq> be a prescheme.
+
+Well define an <em>abelian scheme</em> over <eq env="math">S</eq> to be a simple proper scheme <eq env="math">X</eq> over <eq env="math">S</eq> whose fibres at the points <eq env="math">x\in S</eq> are schemes of abelian varieties over the <eq env="math">\mathfrak{K}(x)</eq>.
+Suppose that <eq env="math">S</eq> is Noetherian and <em>regular</em> (i.e. that its local rings are regular), then we can show, using the <em>connection theorem</em> of Murre <span class="citation">[<a href="#ref-3-I-4" role="doc-biblioref">20</a>]</span>
+(at least in the case “of equal characteristics”, where the cited theorem is currently proven) that <em>every rational section of <eq env="math">X</eq> over <eq env="math">S</eq> is everywhere defined</em> (i.e. is a section) (which generalises a classical theorem of Weil).
+It then follows, more generally, that, if <eq env="math">X'</eq> is a simple scheme over <eq env="math">S</eq>, then every rational <eq env="math">S</eq>-map from <eq env="math">X'</eq> to <eq env="math">X</eq> is everywhere defined.
+From this, we obtain the following, which generalises a result of Chow–Lang:
+<em>with <eq env="math">S</eq> Noetherian and regular, and <eq env="math">K</eq> denoting its ring of rational functions</em> (a direct sum of fields), <em>let <eq env="math">X</eq> be an abelian scheme over <eq env="math">K</eq>; if <eq env="math">X</eq> is isomorphic to a <eq env="math">K</eq>-scheme of the form <eq env="math">X_0\times_S\operatorname{Spec}(K)</eq>, where <eq env="math">X_0</eq> is an abelian scheme over <eq env="math">S</eq>, then <eq env="math">X_0</eq> is determined up to unique isomorphism.</em></p>
+<p>Using the above uniqueness result, we see that the question of restriction of the base to <eq env="math">X</eq> is local on <eq env="math">S</eq> (and thus that it suffices to know how to do the restriction to <eq env="math">\operatorname{Spec}({\mathscr{O}}_x)</eq>, where <eq env="math">x\in S</eq>).
+In the same way, we see that, if <eq env="math">S'\to S</eq> is a <em>simple</em> morphism of finite type, if <eq env="math">Y'</eq> is the ring of rational functions of <eq env="math">S'</eq>, and if <eq env="math">X\otimes_K K'</eq> is of the form <eq env="math">X'_0\times_{S'}\operatorname{Spec}(K')</eq>, <em>then <eq env="math">X'_0</eq> is endowed with a canonical descent data with respect to <eq env="math">\alpha</eq></em>.
+Taking <a href="#FGA-3-I-theorem-3">Theorem 3</a> into account, we thus conclude:</p>
+<div id="FGA-3-I-section-B.5-proposition-5.1" class="itenv" title="Proposition 5.1">
+<p>Let <eq env="math">S</eq> be an irreducible regular Noetherian prescheme, with field of rational functions <eq env="math">Y</eq>, let <eq env="math">K'</eq> be a finite extension of <eq env="math">K</eq> that is <em>unramified over <eq env="math">S</eq></em>, let <eq env="math">S'</eq> be the normalisation of <eq env="math">S</eq> in <eq env="math">K'</eq> (which is thus an étale cover of <eq env="math">S</eq>), and let <eq env="math">X</eq> be an abelian scheme over <eq env="math">K</eq> such that <eq env="math">X\otimes_K K'</eq> is of the form <eq env="math">X'_0\times_{S'}\operatorname{Spec}(K')</eq>, where <eq env="math">X'_0</eq> is a projective abelian scheme over <eq env="math">S'</eq>.
+Then <eq env="math">X</eq> is of the form <eq env="math">X_0\times_S\operatorname{Spec}(K)</eq>, where <eq env="math">X_0</eq> is a projective abelian scheme over <eq env="math">S</eq>.</p>
+</div>
+<div class="rmenv" title="Remark">
+<p>The speaker does not know if we can replace the hypothesis that <eq env="math">S'\to S</eq> be a surjective étale cover (which allows us to apply <a href="#FGA-3-I-theorem-3">Theorem 3</a>) with the hypothesis that it is instead a <em>simple</em> and <em>surjective</em> morphism of finite type (not even if we suppose that it is an étalement), or if the proposition still holds true without supposing that <eq env="math">X'_0</eq> is projective over <eq env="math">S'</eq> (a condition which could be automatically satisfied).</p>
+</div>
 </div>
 <div id="FGA-3-I-section-B.6" class="section level2">
 <h2><span class="header-section-number">3.10</span> Application to local triviality and isotriviality criteria</h2>
-<!---
-
-\section{Decent by finite faithfully flat morphisms}
-\label{B.3}
-
-Let $\alpha\colon S'\to S$ be a _finite_ morphism, corresponding to a sheaf of algebras $\scr{A}'$ on $S$ that is _locally free_ and of finite type as a sheaf of modules, and everywhere non-zero.
-Then $\alpha$ is a faithfully flat and quasi-compact morphism, to which we can thus apply the above results.
-The data of a quasi-coherent sheaf $\cal{F}'$ on $S'$ is equivalent to the data of the quasi-coherent sheaf $\alpha_*(\cal{F}')$ on $S$ endowed with its $\scr{A}'$-modules structure (noting that $\scr{A}'=\alpha_*(\scr{O}_{S'})$).
-For simplicity, we also denote this sheaf on $S$ by $\cal{F}'$.
-The two inverse images $p_i^*(\cal{F}')$ of $\cal{F}'$ on $S'\times_S S'$ similarly correspond to the quasi-coherent sheaves of $(\scr{A}'\otimes_{\scr{O}_S}\scr{A}')$-modules $\cal{F}'\otimes_{\scr{O}_S}\scr{A}'$ and $\scr{A}'\otimes_{\scr{O}_S}\cal{F}'$.
-The data of an $(S'\times_S S')$-homomorphism from the former to the latter is equivalent to the data of a homomorphism of $(\scr{A}'\otimes\scr{A}')$-modules, and, taking into account the fact that $\scr{A}'$ is locally free, this is equivalent to the data of a homomorphism of $(\scr{A}'\otimes\scr{A}')$-modules:
-$$
-  \scr{U}
-  = \shHom_{\scr{O}_S}(\scr{A}',\scr{A}')
-  = \scr{A}'\otimes\check{\scr{A}}'
-  \to \shHom_{\scr{O}_S}(\cal{F}',\cal{F}')
-$$
-i.e. to the data, for every section $\xi$ of $\scr{U}$ over an open subset $V$, of a homomorphism of $\scr{O}_S$-modules $T_\xi\colon\cal{F}'|V\to\cal{F}'|V$ that satisfies the conditions
-$$
-\label{equation:B.3.1}
-  \begin{aligned}
-    T_{f\xi}(x) &= fT_\xi(x),
-  \\T_{\xi f}(x) &= T_\xi(fx),
-  \end{aligned}
-\tag{3.1}
-$$
-where $f$ and $x$ are (respectively) sections of $\scr{A}'$ and $\cal{F}'$ over an open subset of $S$ that is contained inside $V$.
-Conditions (i) and (ii) of a descent data (cf. [§A.1.c](#FGA-3-I-section-A.1.c)) can then be written (respectively) as
-$$
-\label{equation:B.3.2}
-  T_{1_U}(x) = x,
-  \qquad\text{i.e. }T_{1_U}=\id_{\cal{F}'}
-\tag{3.2}
-$$
-$$
-\label{equation:B.3.3}
-  T_{\xi\eta} = T_\xi T_\eta.
-\tag{3.3}
-$$
-In other words, _a descent data on $\cal{F}'$ is equivalent to a representation of the sheaf $\scr{U}=\shHom_{\scr{O}_S}(\scr{A}',\scr{A}')$ of $\scr{O}_S$-algebras in the sheaf $\shHom_{\scr{O}_S}(\cal{F}',\cal{F}')$ of $\scr{O}_S$-algebras that satisfies the two linearity conditions \hyperref[equation:B.3.1]{(3.1)}_.
-If we have a pairing of quasi-coherent sheaves on $S'$:
-$$
-  \cal{F}'_1\times\cal{F}'_2 \to \cal{F}'_3
-$$
-(that we can think of as a pairing of sheaves of $\scr{A}'$-modules on $S$),
-\oldpage{190-22}
-and gluing data on the $\cal{F}'_i$ defined by homomorphisms $T_i\colon\scr{U}\to\shHom_{\scr{O}_S}(\cal{F}'_i,\cal{F}'_i)$ (for $i=1,2,3$), then these data are _equivalent to the given pairing_, in the evident meaning of the phrase, if and only if the following condition is satisfied:
-
-For every section $\xi$ of $\scr{U}$ over an open subset, and denoting by $\Delta\xi=\sum\xi'_i\otimes_{\scr{A}'}\xi''_i$ the section of $\scr{U}\otimes_{\scr{A}'}\scr{U}$ (where $\scr{U}$ is considered as an $\scr{A}'$-module with its left structure) defined by the formula
-$$
-  \xi\cdot(fg) = \sum_i\xi'_i(f)\xi''_i(g)
-$$
-(where $f$ and $g$ are sections of $\scr{A}'$ over a smaller open subset), we have the formula
-$$
-\label{equation:B.3.4}
-  T_\xi^{(3)}(x\cdot y) = \sum_i T_{\xi'_i}^{(1)}x\cdot T_{\xi''_i}^{(2)}y
-\tag{3.4}
-$$
-for every pair $(x,y)$ of sections of $\scr{A}'$ over a smaller subset.
-(We can express this property by saying that the homomorphisms $T^{(i)}$ are _compatible with the diagonal map of $\scr{U}$_, with respect to the given pair).
-In particular, equations \hyperref[equation:B.3.1]{(3.1)} to \hyperref[equation:B.3.4]{(3.4)} allow us to understand, in terms of representations of algebras via diagonal maps, the descent data on a quasi-coherent sheaf of _algebras_ on $S'$, and thus also (by restricting to commutative algebras) the descent data on an affine $S'$-scheme.
-
-From here, we obtain an analogous interpretation of descent data on an arbitrary $S'$-prescheme $X'$:
-the data of such an $X'$ is equivalent to the data of a prescheme $X'$ _over $S$_ endowed with a homomorphism of $\scr{O}_S$-algebras
-$$
-  \scr{A}'\to\scr{O}_{X'},
-$$
-and a descent data on $X'$ is equivalent to the data of a sheaf homomorphism
-$$
-  \scr{U}
-  \to \shHom_{h^{-1}(\scr{O}_S)}(\scr{O}_{X'},\scr{O}_{X'})
-$$
-that is compatible with the morphism $h\colon X'\to S'$ and that satisfies the conditions analogous to equations \hyperref[equation:B.3.1]{(3.1)} to \hyperref[equation:B.3.4]{(3.4)} above.
-
-\begin{rmenv}{Example 1}
-\label{example:B.3(1)}
-  (_"Weil"_).
-  Suppose that $S'/S$ is a _Galois étale covering_ with Galois group $\Gamma$ (cf. \hyperref[A.3]{(A.3)} and \hyperref[A.4.d]{(A.4.d)}).
-  Then a descent data on a quasi-coherent sheaf $\cal{F}'$ on $S'$ (resp. on an $S'$-prescheme $X'$) is equivalent to the data of a representation of $\Gamma$ by automorphisms of $(S',\cal{F}')$ (resp. of $(S',X')$) that is compatible with the action of $\Gamma$ on $S'$.
-  This result
-\oldpage{190-23}
-  is "formal", i.e. it can be proven in terms of categories, but, from the point of view of this section, we also obtain the explicit structure of $\scr{U}$ (endowed with its ring structure, the ring homomorphism $\scr{A}'\to\scr{U}$, and the diagonal map), which is completely known thanks to the following result:
-  _$\scr{U}$ admits, as a left $A'$-module, a basis given by the sections of $\scr{U}$ that correspond to elements of $\Gamma$_.
-\end{rmenv}
-
-\begin{rmenv}{Example 2}
-\label{example:B.3(2)}
-  (_"Cartier"_).
-  Let $p$ be a prime number, and suppose that $p\scr{O}_S=0$ (i.e. that $\scr{O}_S$ is of _characteristic $p$_), that $(\scr{A}')^p\subset\scr{O}_S=\scr{A}$ (i.e. that $S'/S$ is _radicial of height $1$_), and that the sheaf of algebras $\scr{A}'$ over $\scr{A}$ _locally admits a $p$-basis_ (i.e. a family $(x_i)$ of sections such that $\scr{A}'$ is generated as an algebra by the $x_i$ under the sole condition that $x_i^p=0$).
-  We suppose that the set of the $i$ is finite, of cardinality $n$.
-  Let $\frak{C}$ be the sheaf of $A$-derivations of $A'$, which is a locally free sheaf of rank $n$ of $A'$-modules, and, furthermore, a sheaf of Lie $p$-algebras over $\scr{A}$ (but not over $\scr{A}'$) that satisfies the following condition:
-  $$
-  \label{equation:B.3.5}
-    [X,fY] = X(f)Y + f[X,Y].
-  \tag{3.5}
-  $$
-\end{rmenv}
-
-\begin{itenv}{Lemma}
-  $\scr{U}=\shHom_{\scr{O}_S}(\scr{A}',\scr{A}')$ is generated, as an $\scr{O}_S$-algebra endowed with an algebra homomorphism $\scr{A}'\to\scr{U}$, by the sub-left-$A'$-module $\frak{C}$, with the following additional relations:
-  $$
-  \label{equation:B.3.6}
-    \begin{cases}
-      Xf-fX &= X(f)
-    \\XY-YX &= [X,Y]
-    \\X^p &= X^{(p)}.
-    \end{cases}
-  \tag{3.6}
-  $$
-\end{itenv}
-
-It follows from the above lemma that a descent data on the quasi-coherent sheaf $\cal{F}'$ on $S'$ is equivalent to the data, for all $X\in\frak{C}$, of an $\scr{O}_S$-endomorphism $\overline{X}$ of $\cal{F}'$ that satisfies the following conditions:
-$$
-\label{equation:B.3.7}
-  \overline{fX} = f\overline{X}
-\tag{3.7}
-$$
-$$
-\label{equation:B.3.8}
-  \overline{X}(fx) = X(f)x + f\overline{X}(x)
-\tag{3.8}
-$$
-$$
-\label{equation:B.3.9}
-  \overline{[X,Y]} = [\overline{X},\overline{Y}]
-\tag{3.9}
-$$
-$$
-\label{equation:B.3.10}
-  \overline{X^{(p)}} = \overline{X}^p.
-\tag{3.10}
-$$
-(This is what we may call a _linear connection on $\cal{F}$_, _flat_, and _compatible with the $p$-th powers_).
-We can similarly write down the notion of a descent data on an $S'$-prescheme $X'$, with equation \hyperref[equation:B.3.4]{(3.4)} being replaced by the condition that the $\overline{X}$ are _derivations_ of $\scr{O}_{X'}$.
-Since the morphism $S'\to S$ is radicial, [Theorem 3](#FGA-3-I-theorem-3) ensures that every such descent data is
-\oldpage{190-24}
-effective, and thus defines an $S$-prescheme $X$.
-
-Note that we have not needed to impose any flatness, non-singular, or finiteness hypotheses on $\cal{F}'$ or $X'$.
-
-
-\section{Application to rationality criteria}
-\label{B.4}
-
-Let $X$ be an $S$-prescheme such that the direct image of $\scr{O}_X$ on $S$ is $\scr{O}_S$;
-this property remains true for any flat base extension $S'\to S$.
-If $\cal{F}$ is an _invertible sheaf_ (i.e. locally free of rank $1$) on $X$, then there is a bijective correspondence between automorphisms of $\cal{F}$ (identified with the invertible sections of $\scr{O}_X$) and invertible sections of $\scr{O}_S$.
-So let $s$ be a section of $X$ over $S$;
-we define a _section of $\cal{F}$ over $s$_ to be a section of the invertible sheaf $s^*(\cal{F})$ on $S$.
-It follows from the above that, if $\cal{F}_i$ (for $i=1,2$) are invertible sheaves on $X$, each endowed with a section over $s$, and _if $\cal{F}_1$ and $\cal{F}_2$ are isomorphic, then there exists exactly one isomorphism from $\cal{F}_1$ to $\cal{F}_2$ that is compatible with the sections in question_ (i.e. sending the first to the second).
-We also, independently of the section $s$, regard two invertible sheaves $\cal{F}_1$ and $\cal{F}_2$ on $X$ as _equivalent_ if every point of $S$ has an open neighbourhood $U$ such that the restrictions of $\cal{F}_1$ and $\cal{F}_2$ to $X|U$ are isomorphic.
-Then _every invertible sheaf $\cal{F}$ on $X$ is equivalent to an invertible sheaf $\cal{F}_1$ endowed with a marked section over $s$_ (we take $\cal{F}_1=Fs^*(\cal{F})^{-1}$), _and $\cal{F}_1$ is determined up to isomorphism_.
-In other words, the classification _up to equivalence_ of invertible sheaves on $X$ is the same as the classification _up to isomorphism_ of invertible sheaves endowed with a marked section.
-
-Since these properties remain true under flat extensions $\alpha\colon S'\to S$ of the base (by replacing the section $s$ with its inverse image $s'$ under $\alpha$), we thus conclude, taking [Theorem 1](#FGA-3-I-theorem-1) into account:
-
-_With the prescheme $X/S$ being as above, and admitting a section $s$, let $\alpha\colon S'\to S$ be a faithfully flat and quasi-compact morphism; let $\cal{F}'$ be an invertible sheaf on $X'=X\times_S S'$._
-_For $\cal{F}'$ to be equivalent to the inverse image on $X'$ of an invertible sheaf $\cal{F}'$ on $X$, it is necessary and sufficient for its inverse images $p_1^*(\cal{F}')$ and $p_2^*(\cal{F}')$ on $X'\times_X X'=X\times_S(S'\times_S S')$ to be equivalent._
-_If this is the case, then $\cal{F}$ is determined up to equivalence._
-(We then say that $\cal{F}'$ is _rational_ on $S$).
-
-Considering this principle in the case where $\alpha\colon S'\to S$ is as in \hyperref[example:B.3(1)]{Example 1} and \hyperref[example:B.3(2)]{Example 2} in the previous section, we recover the _rationality criteria of Weil and of Cartier_.
-(We note that the authors restrict to the case where $S$ and $S'$
-\oldpage{190-25}
-are spectra of fields;
-a fortiori, $S$ is then the spectrum of a local ring, and the equivalence relation introduced above is exactly the relation of being isomorphic).
-The the first case, $\cal{F}'$ is rational on $S$ if and only if its images under $\Gamma$ are all equivalent to $\cal{F}'$.
-To express the rationality criterion in the second case, we consider, more generally, the diagonal morphism $X'\to X''=X'\times_X X'$ of $X'/X$, with the corresponding sheaf of ideals $\scr{I}$ on $X'\times_X X'$, and the sheaf $\scr{I}/\scr{I}^2$, which can be identified with its inverse image $\Omega_{X'/X}^1$ on $X$ (the _sheaf of $1$-differentials of $X'$ with respect to $X$_).
-Since the restrictions of the $\cal{F}''_i=p_i(\cal{F}')$ (for $i=1,2$) to the diagonal are isomorphic (since they are both isomorphic to $\cal{F}'$), i.e. $\cal{F}''_1(\cal{F}''_2)^{-1}=\cal{F}''$ has a restriction to the diagonal which is trivial, it follows that the restriction of $\cal{F}''$ to $(X'',\scr{O}_{X''}/\scr{I}^2)$ is given, up to isomorphism, by a well-defined element $\xi$ of
-$$
-  \HH^1(X'',\scr{I}/\scr{I}^2) = \HH^1(X',\Omega_{X'/X}^1).
-$$
-Also, being precise, we have $\Omega_{X'/X}^1=\Omega_{S'/S}^1\otimes_{\scr{O}_S}\scr{O}_X$, and thus, _if $\Omega_{S'/S}^1$ is locally free on $S$_ (as in the Cartier case), _then $\xi$ defines a section of $\RR^1f'(\scr{O}_{X'})\otimes\Omega_{S'/S}^1$ on $S'$_ (called the _Atiyah--Cartier class of the invertible sheaf $\cal{F}$ on $X'/S$_) _whose vanishing is necessary and sufficient for the inverse images of $\cal{F}'$ under the two projections of_
-$$
-  (X'',\scr{O}_{X''}/\scr{I}^2) = X\times_S(S'',\scr{O}_{S''}/\scr{J}^2)
-$$
-_to $X'$ to be equivalent_ (where $\scr{J}$ is the sheaf of ideals on $S''=S'\times_S S'$ defined by the diagonal morphism $S'\to S'\times_S S'$).
-This vanishing is thus trivially _necessary_ for the inverse images of $\cal{F}'$ on $X''=X\times_S S''$ itself to be equivalent, and thus also for $\cal{F}$ to be equivalent to the inverse image of an invertible sheaf $\cal{F}$ on $X$.
-The Atiyah--Cartier class can also be understood as the obstruction to the existence, locally over $S'$, of a _connection_ of $\cal{F}'$ relative to the derivations of $X'/X$, with such a connection further being determined when we know the derivations of $\cal{F}'$ corresponding to the natural extensions of derivations of $S'/S$ to $X'$.
-From this, and the results of the previous section, we easily conclude that, in the case of the aforementioned \hyperref[example:B.3(2)]{Example 2}, and when $X/S$ admits a section, the vanishing of the Atiyah--Cartier class is also sufficient for $\cal{F}'$ to be rational on $S$.
-
-
-\section{Application to the restriction of the base scheme to an abelian scheme}
-\label{B.5}
-
-Let $S$ be a prescheme.
-Well define an _abelian scheme_ over $S$ to be a simple proper scheme $X$
-\oldpage{190-26}
-over $S$ whose fibres at the points $x\in S$ are schemes of abelian varieties over the $\kres(x)$.
-Suppose that $S$ is Noetherian and _regular_ (i.e. that its local rings are regular), then we can show, using the _connection theorem_ of Murre [@3-I-4] (at least in the case "of equal characteristics", where the cited theorem is currently proven) that _every rational section of $X$ over $S$ is everywhere defined_ (i.e. is a section) (which generalises a classical theorem of Weil).
-It then follows, more generally, that, if $X'$ is a simple scheme over $S$, then every rational $S$-map from $X'$ to $X$ is everywhere defined.
-From this, we obtain the following, which generalises a result of Chow--Lang:
-_with $S$ Noetherian and regular, and $K$ denoting its ring of rational functions_ (a direct sum of fields), _let $X$ be an abelian scheme over $K$; if $X$ is isomorphic to a $K$-scheme of the form $X_0\times_S\Spec(K)$, where $X_0$ is an abelian scheme over $S$, then $X_0$ is determined up to unique isomorphism._
-
-Using the above uniqueness result, we see that the question of restriction of the base to $X$ is local on $S$ (and thus that it suffices to know how to do the restriction to $\Spec(\scr{O}_x)$, where $x\in S$).
-In the same way, we see that, if $S'\to S$ is a _simple_ morphism of finite type, if $Y'$ is the ring of rational functions of $S'$, and if $X\otimes_K K'$ is of the form $X'_0\times_{S'}\Spec(K')$, _then $X'_0$ is endowed with a canonical descent data with respect to $\alpha$_.
-Taking [Theorem 3](#FGA-3-I-theorem-3) into account, we thus conclude:
-
-\begin{itenv}{Proposition 5.1}
-  Let $S$ be an irreducible regular Noetherian prescheme, with field of rational functions $Y$, let $K'$ be a finite extension of $K$ that is _unramified over $S$_, let $S'$ be the normalisation of $S$ in $K'$ (which is thus an étale cover of $S$), and let $X$ be an abelian scheme over $K$ such that $X\otimes_K K'$ is of the form $X'_0\times_{S'}\Spec(K')$, where $X'_0$ is a projective abelian scheme over $S'$.
-  Then $X$ is of the form $X_0\times_S\Spec(K)$, where $X_0$ is a projective abelian scheme over $S$.
-\end{itenv}
-
-\begin{rmenv}{Remarks}
-  The speaker does not know if we can replace the hypothesis that $S'\to S$ be a surjective étale cover (which allows us to apply [Theorem 3](#FGA-3-I-theorem-3)) with the hypothesis that it is instead a _simple_ and _surjective_ morphism of finite type (not even if we suppose that it is an étalement), or if the proposition still holds true without supposing that $X'_0$ is projective over $S'$ (a condition which could be automatically satisfied).
-\end{rmenv}
-
-
-\section{Application to local triviality and isotriviality criteria}
-\label{B.6}
-
-Let $S$ be a prescheme, $G$ a "_prescheme of groups_" over $S$, $P$ a prescheme over $S$ on which "_$G$ acts_" (on the right).
-We say that $P$ is _formally principal homogeneous_ under $G$ if the well-known morphism
-$$
+<p>Let <eq env="math">S</eq> be a prescheme, <eq env="math">G</eq> a “<em>prescheme of groups</em>” over <eq env="math">S</eq>, <eq env="math">P</eq> a prescheme over <eq env="math">S</eq> on which “<em><eq env="math">G</eq> acts</em>” (on the right).
+We say that <eq env="math">P</eq> is <em>formally principal homogeneous</em> under <eq env="math">G</eq> if the well-known morphism
+<eq env="displaymath">
   G\times_S P \to P\times_S P
-$$
-\oldpage{190-27}
-(induced from the actions of $G$ on $P$) is an _isomorphism_.
-From now on, we assume $G$ to be _flat_ over $S$ (and thus faithfully flat over $S$), and we reserve the name of _principal homogeneous bundle_ under $G$ for a formally principal homogeneous bundle $P$ that is _faithfully flat_ and _quasi-compact_ over $S$.
-It is immediate that this is equivalent to being able to find a _faithfully flat_ and _quasi-compact extension_ $S'\to S$ of the base $S$ such that the formally principal homogeneous bundle $P'=P\times_S S'$ under $G'=G\times_S S'$ is _trivial_, i.e. isomorphic to $G'$ (i.e. admitting a section);
-we can take, in particular, $S'=P$.
-Note also that, if $S$ is locally Noetherian, then the faithfully-flat hypothesis on $P$ is equivalent to the hypothesis that $\overline{P}_S=P\times_S\Spec(\overline{\scr{O}}_s)$ be faithfully flat over $\overline{\scr{O}}_s$ for all $s\in S$ (where $\overline{\scr{O}}_s$ denotes the completion of the local ring $\scr{O}_s$), as follows from the fact that $\overline{\scr{O}}_s$ is faithfully flat over $\scr{O}_s$.
-Also, if $P$ is of finite type over $S$, and $S$ is locally Noetherian, then the set of points $s$ satisfying the above condition is constructible, and so, if $S$ is a "Jacobson prescheme" (for example, a scheme of finite type over a field, or, more generally, over a Jacobson ring), then it suffices to verify the condition in question for the _closed_ points of $S$.
-This leads us to the case where the base is the spectrum of a complete local ring $A$.
-If $S=\Spec(A)$ (with $A$ a complete Noetherian local ring), and if $P$ is of finite type over $S$, then the faithful flatness of $P/S$ is also equivalent to the existence of an $S'$ that is _finite and flat_ over $S$ such that $P'$ is trivial, and, if, further, $G$ is _simple_ over $S$, then we can suppose $S'$ to be _étale_ over $S$.
-Then, if, further, the residue field of $A$ is algebraically closed (the "_geometric case_"), then $P$ is faithfully flat over $A$ if and only if it is trivial.
-Thus, if $S$ is an algebraic prescheme over an algebraically closed field, and if $G$ is simple and of finite type over $S$, then we see that the faithfully-flat condition on $S$ is equivalent to the condition of being analytically trivial (SLF) of Serre [@3-I-6, pp. 1--12].
+</eq>
 
-We can consider other, stronger, types of conditions on $P$, that have a "local triviality" nature.
-In particular, we say that $P$ is _isotrivial_ (resp. _strictly isotrivial_) if, for all $s\in S$, there exists an open neighbourhood $U$ of $S$, and a _finite and faithfully flat_ morphism (resp. a _surjective étale covering_) $U'\to U$ such that $P'=P\times_S U'$ is trivial.
-(We stray from the terminology of Serre [@3-I-1], which uses "locally isotrivial" for what we call "strictly isotrivial").
-Strict isotriviality is mainly useful if $G$ is simple over $S$, but is, however, an inadequate notion in other cases.
+(induced from the actions of <eq env="math">G</eq> on <eq env="math">P</eq>) is an <em>isomorphism</em>.
+From now on, we assume <eq env="math">G</eq> to be <em>flat</em> over <eq env="math">S</eq> (and thus faithfully flat over <eq env="math">S</eq>), and we reserve the name of <em>principal homogeneous bundle</em> under <eq env="math">G</eq> for a formally principal homogeneous bundle <eq env="math">P</eq> that is <em>faithfully flat</em> and <em>quasi-compact</em> over <eq env="math">S</eq>.
+It is immediate that this is equivalent to being able to find a <em>faithfully flat</em> and <em>quasi-compact extension</em> <eq env="math">S'\to S</eq> of the base <eq env="math">S</eq> such that the formally principal homogeneous bundle <eq env="math">P'=P\times_S S'</eq> under <eq env="math">G'=G\times_S S'</eq> is <em>trivial</em>, i.e. isomorphic to <eq env="math">G'</eq> (i.e. admitting a section);
+we can take, in particular, <eq env="math">S'=P</eq>.
+Note also that, if <eq env="math">S</eq> is locally Noetherian, then the faithfully-flat hypothesis on <eq env="math">P</eq> is equivalent to the hypothesis that <eq env="math">\overline{P}_S=P\times_S\operatorname{Spec}(\overline{{\mathscr{O}}}_s)</eq> be faithfully flat over <eq env="math">\overline{{\mathscr{O}}}_s</eq> for all <eq env="math">s\in S</eq> (where <eq env="math">\overline{{\mathscr{O}}}_s</eq> denotes the completion of the local ring <eq env="math">{\mathscr{O}}_s</eq>), as follows from the fact that <eq env="math">\overline{{\mathscr{O}}}_s</eq> is faithfully flat over <eq env="math">{\mathscr{O}}_s</eq>.
+Also, if <eq env="math">P</eq> is of finite type over <eq env="math">S</eq>, and <eq env="math">S</eq> is locally Noetherian, then the set of points <eq env="math">s</eq> satisfying the above condition is constructible, and so, if <eq env="math">S</eq> is a “Jacobson prescheme” (for example, a scheme of finite type over a field, or, more generally, over a Jacobson ring), then it suffices to verify the condition in question for the <em>closed</em> points of <eq env="math">S</eq>.
+This leads us to the case where the base is the spectrum of a complete local ring <eq env="math">A</eq>.
+If <eq env="math">S=\operatorname{Spec}(A)</eq> (with <eq env="math">A</eq> a complete Noetherian local ring), and if <eq env="math">P</eq> is of finite type over <eq env="math">S</eq>, then the faithful flatness of <eq env="math">P/S</eq> is also equivalent to the existence of an <eq env="math">S'</eq> that is <em>finite and flat</em> over <eq env="math">S</eq> such that <eq env="math">P'</eq> is trivial, and, if, further, <eq env="math">G</eq> is <em>simple</em> over <eq env="math">S</eq>, then we can suppose <eq env="math">S'</eq> to be <em>étale</em> over <eq env="math">S</eq>.
+Then, if, further, the residue field of <eq env="math">A</eq> is algebraically closed (the “<em>geometric case</em>”), then <eq env="math">P</eq> is faithfully flat over <eq env="math">A</eq> if and only if it is trivial.
+Thus, if <eq env="math">S</eq> is an algebraic prescheme over an algebraically closed field, and if <eq env="math">G</eq> is simple and of finite type over <eq env="math">S</eq>, then we see that the faithfully-flat condition on <eq env="math">S</eq> is equivalent to the condition of being analytically trivial (SLF) of Serre <span class="citation">[<a href="#ref-3-I-6" role="doc-biblioref">25</a>]</span>.</p>
+<p>We can consider other, stronger, types of conditions on <eq env="math">P</eq>, that have a “local triviality” nature.
+In particular, we say that <eq env="math">P</eq> is <em>isotrivial</em> (resp. <em>strictly isotrivial</em>) if, for all <eq env="math">s\in S</eq>, there exists an open neighbourhood <eq env="math">U</eq> of <eq env="math">S</eq>, and a <em>finite and faithfully flat</em> morphism (resp. a <em>surjective étale covering</em>) <eq env="math">U'\to U</eq> such that <eq env="math">P'=P\times_S U'</eq> is trivial.
+(We stray from the terminology of Serre <span class="citation">[<a href="#ref-3-I-1" role="doc-biblioref">4</a>]</span>, which uses “locally isotrivial” for what we call “strictly isotrivial”).
+Strict isotriviality is mainly useful if <eq env="math">G</eq> is simple over <eq env="math">S</eq>, but is, however, an inadequate notion in other cases.</p>
+<p>If <eq env="math">G</eq> is <em>affine</em> over <eq env="math">S</eq>, then every principal homogeneous bundle <eq env="math">P</eq> under <eq env="math">G</eq> is affine, by <a href="FGA-3-I.html#FGA-3-I-section-B.2">§B.2</a>, whence the possibility, thanks to <a href="#FGA-3-I-theorem-2">Theorem 2</a>, to “descend” from such bundles by faithfully flat and quasi-compact morphisms.
 
-If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ under $G$ is affine, by [§B.2](#FGA-3-I-section-B.2), whence the possibility, thanks to [Theorem 2](#FGA-3-I-theorem-2), to "descend"
-\oldpage{190-28}
-from such bundles by faithfully flat and quasi-compact morphisms.
-Taking, in particular, $G=\GL(n)_S$, defined by the condition that the functor $S'\mapsto\Hom(S',G)$ of $S$-preschemes (with values in the category of groups) can be identified with the functor $\GL(n)(S')=\GL(n,\HH^0(S',\scr{O}_{S'}))$ described in \hyperref[§A.4.e]{A.4.e}.
-Using the facts
-\begin{enumerate}[(i)]
-  \item that every principal homogeneous bundle under $G$ (resp. every locally free sheaf of rank $n$ on $S$) becomes isomorphic to the "trivial" object $G$ (resp. $\scr{O}_S^n$) under a suitable faithfully flat and quasi-compact extension of $S$;
-  \item that we can descend the type of objects in question (principal homogeneous bundles under $G$, resp. locally free sheaves of rank $n$) by such morphisms; and, finally
-  \item that the automorphism group of the trivial bundle on any $S'/S$ is functorially isomorphic to the automorphism group of the trivial locally free sheaf of rank $n$ on $S'$,
-\end{enumerate}
-we "formally" conclude that it is "equivalent" to give, on $S$ (or on some $S'/S$) a principal homogeneous bundle of group $G$, or to give a locally free sheaf of rank $n$.
-(More precisely, we have an _equivalence of fibred categories_).
-We thus conclude, in particular:
-
-\begin{itenv}{Proposition 6.1}
-  Every principal homogeneous bundle under the group $\GL(n)_S$ is locally trivial.
-\end{itenv}
-
-By known arguments, we thus conclude the same result for others structure groups such as $\SL(n)_S$, $\Sp(n)_S$, and products of such groups.
-We thus also conclude that, if $F$ is a closed subgroup of $G=\GL(n)_S$ that is flat over $S$, and such that the quotient $G/F$ exists, and such that $G$ is an isotrivial (resp. strictly isotrivial) principal homogeneous bundle on $G/F$, of structure group $F\times_S(G/F)$, then _every_ principal homogeneous bundle of structure group $F$ is isotrivial (resp. strictly isotrivial).
-This applies to all the "linear groups" on $S$ that have been used up until now, and, in particular, to the case where $G=S\times_k\Gamma$, with $S$ a prescheme over the field $k$, and $\Gamma$ a linear group (in the classical sense) over $k$ (and thus in particular simple).
-This thus answers, for such groups, a question of Serre (loc. cit.).
-
-We also point out that, for most groups (linear or not) that are simple over $S$ that we know of, and certainly for all those of the form $S\times_k\Gamma$ as above, we can show that every isotrivial principal homogeneous bundle is strictly isotrivial, which answers, in particular, another question of Serre (loc. cit. 1--14), taking into account the fact that a homogeneous principal bundle obtained by a descent _à la_ Cartier (cf. \hyperref[example:B.3(2)]{Example 2}) is obviously isotrivial.
-
-\begin{rmenv}{Remark}
-  One of the essential difficulties in these questions (setting aside the question of the existence of quotient schemes) is the lack of effectiveness criteria for a descent data along a faithfully flat _non-finite_ morphism.
-\end{rmenv} -->
+Taking, in particular, <eq env="math">G=\operatorname{GL}(n)_S</eq>, defined by the condition that the functor <eq env="math">S'\mapsto\operatorname{Hom}(S',G)</eq> of <eq env="math">S</eq>-preschemes (with values in the category of groups) can be identified with the functor <eq env="math">\operatorname{GL}(n)(S')=\operatorname{GL}(n,\operatorname{H}^0(S',{\mathscr{O}}_{S'}))</eq> described in .
+Using the facts</p>
+<ol style="list-style-type: lower-roman">
+<li><p>that every principal homogeneous bundle under <eq env="math">G</eq> (resp. every locally free sheaf of rank <eq env="math">n</eq> on <eq env="math">S</eq>) becomes isomorphic to the “trivial” object <eq env="math">G</eq> (resp. <eq env="math">{\mathscr{O}}_S^n</eq>) under a suitable faithfully flat and quasi-compact extension of <eq env="math">S</eq>;</p></li>
+<li><p>that we can descend the type of objects in question (principal homogeneous bundles under <eq env="math">G</eq>, resp. locally free sheaves of rank <eq env="math">n</eq>) by such morphisms; and, finally</p></li>
+<li><p>that the automorphism group of the trivial bundle on any <eq env="math">S'/S</eq> is functorially isomorphic to the automorphism group of the trivial locally free sheaf of rank <eq env="math">n</eq> on <eq env="math">S'</eq>,</p></li>
+</ol>
+<p>we “formally” conclude that it is “equivalent” to give, on <eq env="math">S</eq> (or on some <eq env="math">S'/S</eq>) a principal homogeneous bundle of group <eq env="math">G</eq>, or to give a locally free sheaf of rank <eq env="math">n</eq>.
+(More precisely, we have an <em>equivalence of fibred categories</em>).
+We thus conclude, in particular:</p>
+<div id="FGA-3-I-section-B.6-proposition-6.1" class="itenv" title="Proposition 6.1">
+<p>Every principal homogeneous bundle under the group <eq env="math">\operatorname{GL}(n)_S</eq> is locally trivial.</p>
+</div>
+<p>By known arguments, we thus conclude the same result for others structure groups such as <eq env="math">\operatorname{SL}(n)_S</eq>, <eq env="math">\operatorname{Sp}(n)_S</eq>, and products of such groups.
+We thus also conclude that, if <eq env="math">F</eq> is a closed subgroup of <eq env="math">G=\operatorname{GL}(n)_S</eq> that is flat over <eq env="math">S</eq>, and such that the quotient <eq env="math">G/F</eq> exists, and such that <eq env="math">G</eq> is an isotrivial (resp. strictly isotrivial) principal homogeneous bundle on <eq env="math">G/F</eq>, of structure group <eq env="math">F\times_S(G/F)</eq>, then <em>every</em> principal homogeneous bundle of structure group <eq env="math">F</eq> is isotrivial (resp. strictly isotrivial).
+This applies to all the “linear groups” on <eq env="math">S</eq> that have been used up until now, and, in particular, to the case where <eq env="math">G=S\times_k\Gamma</eq>, with <eq env="math">S</eq> a prescheme over the field <eq env="math">k</eq>, and <eq env="math">\Gamma</eq> a linear group (in the classical sense) over <eq env="math">k</eq> (and thus in particular simple).
+This thus answers, for such groups, a question of Serre (loc. cit.).</p>
+<p>We also point out that, for most groups (linear or not) that are simple over <eq env="math">S</eq> that we know of, and certainly for all those of the form <eq env="math">S\times_k\Gamma</eq> as above, we can show that every isotrivial principal homogeneous bundle is strictly isotrivial, which answers, in particular, another question of Serre (loc. cit. 1–14), taking into account the fact that a homogeneous principal bundle obtained by a descent <em>à la</em> Cartier (cf.<a href="FGA-3-I.html#FGA-3-I-section-B.3-example-2">Example 2</a>) is obviously isotrivial.</p>
+<div class="rmenv" title="Remark">
+<p>One of the essential difficulties in these questions (setting aside the question of the existence of quotient schemes) is the lack of effectiveness criteria for a descent data along a faithfully flat <em>non-finite</em> morphism.</p>
+</div>
 
 </div>
 </div>
@@ -1122,6 +1086,9 @@ We also point out that, for most groups (linear or not) that are simple over $S$
 </div>
 <div id="ref-3-I-5">
 <p>[24] J.-P. Serre. “Géométrie algébrique et géométrie analytique,” in: <em>Ann. Institut Fourier Grenoble</em>, 1956: pp. 1–42.</p>
+</div>
+<div id="ref-3-I-6">
+<p>[25] J.-P. Serre. “Espaces fibrés algébriques.” <em>Séminaire Chevalley</em>. <strong>3</strong> (1958), Talk no. 1.</p>
 </div>
 </div>
 <div class="footnotes">
