@@ -727,70 +727,62 @@ This could be the moment for the “<em>Greenberg functor</em>” to prove its w
 </div>
 <div id="FGA-3-II-section-C.5" class="section level2">
 <h2><span class="header-section-number">4.10</span> Extension of coverings</h2>
-<!-- Let $\frak{X}$ be a _formal_ Noetherian prescheme [@3-II-2], $U$ an open subset of $\frak{X}$ defined locally by the "non-vanishing" of a section of $\scr{O}_\frak{X}$ that is not a zero divisor (and thus large enough that every section of $\scr{O}_\frak{X}$ over an open subset $V$ that is zero on $U\cap V$ is zero).
-(_[Comp.]_ It is also necessary to assume that the section defining $U$ is not a zero divisor not only on $\frak{X}$, but also on every $X_n$.)
-Let $\frak{J}$ be an "ideal of definition" for $\frak{X}$, and let $X_n=(\frak{X},\scr{O}_\frak{X}/\frak{J}^{n+1})$, which is thus a ordinary Noetherian prescheme.
-Then, if $\frak{X}'$ and $\frak{X}''$ are _flat coverings_ of $\frak{X}$ (i.e. preschemes over $\frak{X}$ defined by sheaves of algebras that are coherent and locally free as sheaves of modules) that are _unramified over $U$_, the evident map
-$$
-  \Hom_\frak{X}(\frak{X}',\frak{X}'') \to \Hom_{X_0}(X'_0,X''_0)
-$$
-is _injective_;
-in particular, _an automorphism of $\frak{X}'$ that induces the identity on $X'_0$ is the identity_.
+<p>Let <eq env="math">{\mathfrak{X}}</eq> be a <em>formal</em> Noetherian prescheme <span class="citation">[<a href="#ref-3-II-2" role="doc-biblioref">11</a>]</span>, <eq env="math">U</eq> an open subset of <eq env="math">{\mathfrak{X}}</eq> defined locally by the “non-vanishing” of a section of <eq env="math">{\mathscr{O}}_{\mathfrak{X}}</eq> that is not a zero divisor (and thus large enough that every section of <eq env="math">{\mathscr{O}}_{\mathfrak{X}}</eq> over an open subset <eq env="math">V</eq> that is zero on <eq env="math">U\cap V</eq> is zero).
+(<em>[Comp.]</em> It is also necessary to assume that the section defining <eq env="math">U</eq> is not a zero divisor not only on <eq env="math">{\mathfrak{X}}</eq>, but also on every <eq env="math">X_n</eq>.)
+Let <eq env="math">{\mathfrak{J}}</eq> be an “ideal of definition” for <eq env="math">{\mathfrak{X}}</eq>, and let <eq env="math">X_n=({\mathfrak{X}},{\mathscr{O}}_{\mathfrak{X}}/{\mathfrak{J}}^{n+1})</eq>, which is thus a ordinary Noetherian prescheme.
+Then, if <eq env="math">{\mathfrak{X}}'</eq> and <eq env="math">{\mathfrak{X}}''</eq> are <em>flat coverings</em> of <eq env="math">{\mathfrak{X}}</eq> (i.e. preschemes over <eq env="math">{\mathfrak{X}}</eq> defined by sheaves of algebras that are coherent and locally free as sheaves of modules) that are <em>unramified over <eq env="math">U</eq></em>, the evident map
+<eq env="displaymath">
+  \operatorname{Hom}_{\mathfrak{X}}({\mathfrak{X}}',{\mathfrak{X}}'') \to \operatorname{Hom}_{X_0}(X'_0,X''_0)
+</eq>
+is <em>injective</em>;
+in particular, <em>an automorphism of <eq env="math">{\mathfrak{X}}'</eq> that induces the identity on <eq env="math">X'_0</eq> is the identity</em>.
 This allows us to apply the technique of descent to the situation.
-We start, in particular, with a flat covering $X'_0$ of $X_0$, unramified
-\oldpage{195-20}
-over $U_0$, and let $G(\frak{X})$ be the set of classes, up to isomorphism (inducing the identity on $X'_0$), of flat coverings $\frak{X}'$ of $\frak{X}$ that induce $X'_0$ on $X_0$ (and that are thus necessarily unramified over $U$).
-We similarly define $G(V)$ for every open subset $V$ of $\frak{X}$, and, more generally, $G(\frak{Y})$ for every formal prescheme $\frak{Y}$ over $\frak{X}$.
-With this, the results of [@3-II-2] and [@3-II-3] imply, first of all, the following results:
-\begin{enumerate}[(a)]
-  \item If $V$ varies amongst open subset of $\frak{X}$, then the $G(V)$ form a _sheaf_ on $\frak{X}$, say $\scr{G}_\frak{X}=\scr{G}$.
-    The restriction of this sheaf to $U$ is the _constant_ sheaf whose fibres consist of a single element.
 
-    More generally, describing the fibres of $\scr{G}_\frak{X}$ is a question of complete local rings, in a precise way:
-  \item For all $x\in\frak{X}$, we have
-    $$
-      \scr{G}_x = G(\Spec(\scr{O}_{\frak{X},x})) \subset G(\Spec(\widehat{\scr{O}}_{\frak{X},x}))
-    $$
-    (i.e. isomorphism classes of finite free algebras $B$ over $\widehat{\scr{O}}_{\frak{X},x}$ endowed with an isomorphism from $B\otimes_{\widehat{\scr{O}}_{\frak{X},x}}\scr{O}_{X_0,x}$ to $(\widehat{\scr{O}}'_0)_x$, where $\scr{O}'_0$ is the sheaf of algebras on $X_0$ that defines $X'_0$).
-  \item We have a canonical isomorphism $\scr{G}_\frak{X}=\varprojlim\scr{G}_{\frak{X}_n}$; in other words, for every open subset $V$ of $\frak{X}$, we have $G(V)=\varprojlim G(V_n)$.
-  \item Suppose that $\frak{X}$ comes from an ordinary _proper_ scheme $X$ over a complete local Noetherian ring $\Lambda$ that has ideal of definition $\frak{m}$ by taking the $\scr{J}$-adic completion of $\scr{O}_X$, where $\scr{J}=\frak{m}\cdot\scr{O}_X$.
-    Then $G(\frak{X})$ is canonically isomorphic to the set of classes of flat coverings of the _ordinary_ scheme $X$ that are "reducible along $X'_0$".
-\end{enumerate}
+We start, in particular, with a flat covering <eq env="math">X'_0</eq> of <eq env="math">X_0</eq>, unramified over <eq env="math">U_0</eq>, and let <eq env="math">G({\mathfrak{X}})</eq> be the set of classes, up to isomorphism (inducing the identity on <eq env="math">X'_0</eq>), of flat coverings <eq env="math">{\mathfrak{X}}'</eq> of <eq env="math">{\mathfrak{X}}</eq> that induce <eq env="math">X'_0</eq> on <eq env="math">X_0</eq> (and that are thus necessarily unramified over <eq env="math">U</eq>).
+We similarly define <eq env="math">G(V)</eq> for every open subset <eq env="math">V</eq> of <eq env="math">{\mathfrak{X}}</eq>, and, more generally, <eq env="math">G({\mathfrak{Y}})</eq> for every formal prescheme <eq env="math">{\mathfrak{Y}}</eq> over <eq env="math">{\mathfrak{X}}</eq>.
+With this, the results of <span class="citation">[<a href="#ref-3-II-2" role="doc-biblioref">11</a>]</span> and <span class="citation">[<a href="#ref-3-II-3" role="doc-biblioref">12</a>]</span> imply, first of all, the following results:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>If <eq env="math">V</eq> varies amongst open subset of <eq env="math">{\mathfrak{X}}</eq>, then the <eq env="math">G(V)</eq> form a <em>sheaf</em> on <eq env="math">{\mathfrak{X}}</eq>, say <eq env="math">{\mathscr{G}}_{\mathfrak{X}}={\mathscr{G}}</eq>.
+The restriction of this sheaf to <eq env="math">U</eq> is the <em>constant</em> sheaf whose fibres consist of a single element.</p>
+<p>More generally, describing the fibres of <eq env="math">{\mathscr{G}}_{\mathfrak{X}}</eq> is a question of complete local rings, in a precise way:</p></li>
+<li><p>For all <eq env="math">x\in{\mathfrak{X}}</eq>, we have
+<eq env="displaymath">
+   {\mathscr{G}}_x = G(\operatorname{Spec}({\mathscr{O}}_{{\mathfrak{X}},x})) \subset G(\operatorname{Spec}(\widehat{{\mathscr{O}}}_{{\mathfrak{X}},x}))
+ </eq>
+(i.e. isomorphism classes of finite free algebras <eq env="math">B</eq> over <eq env="math">\widehat{{\mathscr{O}}}_{{\mathfrak{X}},x}</eq> endowed with an isomorphism from <eq env="math">B\otimes_{\widehat{{\mathscr{O}}}_{{\mathfrak{X}},x}}{\mathscr{O}}_{X_0,x}</eq> to <eq env="math">(\widehat{{\mathscr{O}}}'_0)_x</eq>, where <eq env="math">{\mathscr{O}}'_0</eq> is the sheaf of algebras on <eq env="math">X_0</eq> that defines <eq env="math">X'_0</eq>).</p></li>
+<li><p>We have a canonical isomorphism <eq env="math">{\mathscr{G}}_{\mathfrak{X}}=\varprojlim{\mathscr{G}}_{{\mathfrak{X}}_n}</eq>; in other words, for every open subset <eq env="math">V</eq> of <eq env="math">{\mathfrak{X}}</eq>, we have <eq env="math">G(V)=\varprojlim G(V_n)</eq>.</p></li>
+<li><p>Suppose that <eq env="math">{\mathfrak{X}}</eq> comes from an ordinary <em>proper</em> scheme <eq env="math">X</eq> over a complete local Noetherian ring <eq env="math">\Lambda</eq> that has ideal of definition <eq env="math">{\mathfrak{m}}</eq> by taking the <eq env="math">{\mathscr{J}}</eq>-adic completion of <eq env="math">{\mathscr{O}}_X</eq>, where <eq env="math">{\mathscr{J}}={\mathfrak{m}}\cdot{\mathscr{O}}_X</eq>.
+Then <eq env="math">G({\mathfrak{X}})</eq> is canonically isomorphic to the set of classes of flat coverings of the <em>ordinary</em> scheme <eq env="math">X</eq> that are “reducible along <eq env="math">X'_0</eq>”.</p></li>
+</ol>
+<p>Figuratively speaking, we can say that (a) and (b) establish the fundamental relations between the local and global aspects of the problem; (c) gives the relations between the “finite” and “infinitesimal” aspects; and finally (d) remembers (under precise conditions) the identity between the “formal” and “algebraic” aspects.</p>
+<p>Now suppose that <eq env="math">{\mathfrak{X}}</eq> is defined by a local complete Noetherian ring <eq env="math">\Lambda</eq>, with <eq env="math">{\mathscr{J}}={\mathfrak{m}}\cdot{\mathscr{O}}_X</eq> (and so <eq env="math">X_0</eq> is a prescheme over <eq env="math">\Lambda/{\mathfrak{m}}</eq>).
+For every algebra <eq env="math">A</eq> that is finite over <eq env="math">\Lambda</eq>, we set
+<eq env="displaymath">
+  F(A) = G({\mathfrak{X}}\times_\Lambda A).
+</eq>
+This is a covariant functor in <eq env="math">A</eq>, with values in the category of sets, and, by (c), this functor is completely determined by how it acts on Artinian algebras <eq env="math">A</eq>;
+it is equivalent to say either that this functor is pro-representable, i.e. of the form
+<eq env="displaymath">
+  F(A) = \operatorname{Hom}_{\text{top. }\Lambda\text{-algebras}}({\mathscr{O}},A)
+</eq>
 
-Figuratively speaking, we can say that (a) and (b) establish the fundamental relations between the local and global aspects of the problem; (c) gives the relations between the "finite" and "infinitesimal" aspects; and finally (d) remembers (under precise conditions) the identity between the "formal" and "algebraic" aspects.
-
-Now suppose that $\frak{X}$ is defined by a local complete Noetherian ring $\Lambda$, with $\scr{J}=\frak{m}\cdot\scr{O}_X$ (and so $X_0$ is a prescheme over $\Lambda/\frak{m}$).
-For every algebra $A$ that is finite over $\Lambda$, we set
-$$
-  F(A) = G(\frak{X}\times_\Lambda A).
-$$
-This is a covariant functor in $A$, with values in the category of sets, and, by (c), this functor is completely determined by how it acts on Artinian algebras $A$;
-it is equivalent to say either that this functor is pro-representable, i.e. of the form
-$$
-  F(A) = \Hom_{\mbox{top. $\Lambda$-algebras}}(\scr{O},A)
-$$
-\oldpage{195-21}
-where $\scr{O}$ is a topological $\Lambda$ algebra of the type described in [§A.5](#FGA-3-II-section-A.5), or that this is true when we restrict to only Artinian algebras $A$.
-The combination of [Theorem 1](#FGA-3-II-section-B-theorem-1) and [Theorem 2](#FGA-3-II-section-B-theorem-2) then effectively implies:
-
-\begin{itenv}{Proposition 5.1}
-\label{C.5-proposition1}
-  The above functor is pro-representable.
-\end{itenv}
-
-Of course, by (a), if $U=\frak{X}$, then $G(\frak{Y})$ consists of a single element for all $\frak{Y}$ over $\frak{X}$, and the functor $F$ is then not very interesting (we will have $\scr{O}=\Lambda$).
-It seems that, in practically every other case, the topological local ring $\scr{O}$ _is not Noetherian_.
-Its existence, however, shows, in a striking manner, the _"continuous" nature_ of the set $G(\frak{X})$ of solutions (corresponding intuitively to the fact that there is a "continuous" choice in the way in which the ramification spreads when we take an extension of $X'_0$).
-We will compare this result with the point of view of J.-P. Serre [@3-II-4] via local class field theory, drawing attention as well to the _continuous_ character of the topological Galois group of the maximal abelian extension of a "geometric" local field, with the dual group (in the sense of Pontrjagin) appearing as an inductive limit of algebraic (or at least quasi-algebraic) groups;
-here as well, the classification of extensions is given by infinite-dimensional "varieties".
-We can also take, in the above, $\frak{X}$ to be the formal spectrum of a complete local ring (of which $\Lambda$ will be, for example, a Cohen subring), and we might hope that the results of this section can be used in the study of extensions of a local complete ring of dimension $>1$.
-Just as much in the local case as in the global case, they might allow us to formulate precise relations between the phenomena of higher ramification and phenomena in characteristic $0$ (approachable via a transcendental way).
-In any case, it is the preliminary analysis of \hyperref[C.5-proposition1]{Proposition 5.1} that allows us to extend the methods described in [@3-II-2] for the study of the fundamental group to the "tamely ramified" case, and to resolve, by a transcendental way, the "problem of three points".
-
-To finish, we note that the situation simplifies if $X_0$ is of dimension $1$;
-then, by (a) and (b), $G(\frak{X})$ can be identified with $\prod_i G(\Spec(\scr{O}_{\frak{X},x_i}))$, where the $x_i$ are the points of $X_0\setminus U$:
-_we can take arbitrary "local" extensions at the ramification points_.
-Further, if $X_0$ is normal, then we note that the formal scheme of modules guaranteed by \hyperref[C.5-proposition1]{Proposition 5.1} is _simple_ over $\Spec(\Lambda)$. -->
+where <eq env="math">{\mathscr{O}}</eq> is a topological <eq env="math">\Lambda</eq> algebra of the type described in <a href="FGA-3-II.html#FGA-3-II-section-A.5">§A.5</a>, or that this is true when we restrict to only Artinian algebras <eq env="math">A</eq>.
+The combination of <a href="FGA-3-II.html#FGA-3-II-section-B-theorem-1">Theorem 1</a> and <a href="FGA-3-II.html#FGA-3-II-section-B-theorem-2">Theorem 2</a> then effectively implies:</p>
+<div id="FGA-3-II-section-C.5-proposition-5.1" class="itenv" title="Proposition 5.1">
+<p>The above functor is pro-representable.</p>
+</div>
+<p>Of course, by (a), if <eq env="math">U={\mathfrak{X}}</eq>, then <eq env="math">G({\mathfrak{Y}})</eq> consists of a single element for all <eq env="math">{\mathfrak{Y}}</eq> over <eq env="math">{\mathfrak{X}}</eq>, and the functor <eq env="math">F</eq> is then not very interesting (we will have <eq env="math">{\mathscr{O}}=\Lambda</eq>).
+It seems that, in practically every other case, the topological local ring <eq env="math">{\mathscr{O}}</eq> <em>is not Noetherian</em>.
+Its existence, however, shows, in a striking manner, the <em>“continuous” nature</em> of the set <eq env="math">G({\mathfrak{X}})</eq> of solutions (corresponding intuitively to the fact that there is a “continuous” choice in the way in which the ramification spreads when we take an extension of <eq env="math">X'_0</eq>).
+We will compare this result with the point of view of J.-P. Serre <span class="citation">[<a href="#ref-3-II-4" role="doc-biblioref">26</a>]</span> via local class field theory, drawing attention as well to the <em>continuous</em> character of the topological Galois group of the maximal abelian extension of a “geometric” local field, with the dual group (in the sense of Pontrjagin) appearing as an inductive limit of algebraic (or at least quasi-algebraic) groups;
+here as well, the classification of extensions is given by infinite-dimensional “varieties”.
+We can also take, in the above, <eq env="math">{\mathfrak{X}}</eq> to be the formal spectrum of a complete local ring (of which <eq env="math">\Lambda</eq> will be, for example, a Cohen subring), and we might hope that the results of this section can be used in the study of extensions of a local complete ring of dimension <eq env="math">&gt;1</eq>.
+Just as much in the local case as in the global case, they might allow us to formulate precise relations between the phenomena of higher ramification and phenomena in characteristic <eq env="math">0</eq> (approachable via a transcendental way).
+In any case, it is the preliminary analysis of <a href="FGA-3-II.html#FGA-3-II-section-C.5-proposition-5.1">Proposition 5.1</a> that allows us to extend the methods described in <span class="citation">[<a href="#ref-3-II-2" role="doc-biblioref">11</a>]</span> for the study of the fundamental group to the “tamely ramified” case, and to resolve, by a transcendental way, the “problem of three points”.</p>
+<p>To finish, we note that the situation simplifies if <eq env="math">X_0</eq> is of dimension <eq env="math">1</eq>;
+then, by (a) and (b), <eq env="math">G({\mathfrak{X}})</eq> can be identified with <eq env="math">\prod_i G(\operatorname{Spec}({\mathscr{O}}_{{\mathfrak{X}},x_i}))</eq>, where the <eq env="math">x_i</eq> are the points of <eq env="math">X_0\setminus U</eq>:
+<em>we can take arbitrary “local” extensions at the ramification points</em>.
+Further, if <eq env="math">X_0</eq> is normal, then we note that the formal scheme of modules guaranteed by <a href="FGA-3-II.html#FGA-3-II-section-C.5-proposition-5.1">Proposition 5.1</a> is <em>simple</em> over <eq env="math">\operatorname{Spec}(\Lambda)</eq>.</p>
 
 </div>
 </div>
