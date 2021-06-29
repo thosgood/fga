@@ -206,9 +206,8 @@ Either way, in algebraic geometry, as well as in analytic geometry, it remains t
 <p>Let <eq env="math">k</eq> be a field, and <eq env="math">X</eq> a <eq env="math">k</eq>-prescheme (which we take to be of finite type, for simplicity).
 For every extension <eq env="math">K/k</eq>, we obtain a <eq env="math">K</eq>-prescheme <eq env="math">X_K=X\otimes_k K</eq>.
 If <eq env="math">{\mathscr{F}}</eq> is a coherent sheaf on <eq env="math">X_K</eq>, and if <eq env="math">K'</eq> is an extension of <eq env="math">K</eq>, then <eq env="math">{\mathscr{F}}\otimes_K K'={\mathscr{F}}_{K'}</eq> is a quasi-coherent sheaf on <eq env="math">X_K\otimes_KK'=X_{K'}</eq>.
-So, if <eq env="math">K</eq> and <eq env="math">K'</eq> are arbitrary extensions of <eq env="math">k</eq>, and <eq env="math">{\mathscr{F}}</eq> a quasi-coherent sheaf on <eq env="math">X_K</eq> and <eq env="math">{\mathscr{F}}'</eq>
 
-a quasi-coherent sheaf on <eq env="math">X_{K'}</eq>, then we say that <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq> are <em>equivalent</em> if there exists an extension <eq env="math">K''/k</eq> as well as <eq env="math">k</eq>-homomorphisms <eq env="math">K\to K''</eq> and <eq env="math">K'\to K''</eq> such that <eq env="math">{\mathscr{F}}_{K''}</eq> and <eq env="math">{\mathscr{F}}'_{K''}</eq> are isomorphic on <eq env="math">X_{K''}</eq> <strong>(TO-DO: ? is this right?)</strong>.
+So, if <eq env="math">K</eq> and <eq env="math">K'</eq> are arbitrary extensions of <eq env="math">k</eq>, and <eq env="math">{\mathscr{F}}</eq> a quasi-coherent sheaf on <eq env="math">X_K</eq> and <eq env="math">{\mathscr{F}}'</eq> a quasi-coherent sheaf on <eq env="math">X_{K'}</eq>, then we say that <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq> are <em>equivalent</em> if there exists an extension <eq env="math">K''/k</eq> as well as <eq env="math">k</eq>-homomorphisms <eq env="math">K\to K''</eq> and <eq env="math">K'\to K''</eq> such that <eq env="math">{\mathscr{F}}_{K''}</eq> and <eq env="math">{\mathscr{F}}'_{K''}</eq> are isomorphic on <eq env="math">X_{K''}</eq> <strong>(TO-DO: ? is this right?)</strong>.
 This defines an equivalence relation, and we are interested in the equivalence classes of sheaves under this relation, and of sets of such equivalence classes.
 Note that, if <eq env="math">X_0</eq> is of finite type over <eq env="math">k</eq>, then every class of coherent sheaves can be defined by a coherent sheaf on <eq env="math">X_K</eq>, where <eq env="math">K</eq> is some extension of <eq env="math">k</eq> <em>of finite type</em>.
 We can thus, in the definition of classes of coherent sheaves, restrict ourselves to <em>algebraically closed</em> extensions of <eq env="math">k</eq>, and we can also restrict ourselves to a fixed algebraically closed extension <eq env="math">\Omega</eq> of <eq env="math">k</eq>, of infinite transcendence degree;
@@ -217,7 +216,45 @@ Note that there is a bijective correspondence between classes of coherent sheave
 <p>Let <eq env="math">E</eq> and <eq env="math">E'</eq> be two sets of classes of coherent sheaves on <eq env="math">X</eq>.
 Consider the classes of all sheaves of the form <eq env="math">{\mathscr{F}}\otimes{\mathscr{F}}'</eq>, where <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq> are coherent sheaves on the <em>same</em> <eq env="math">X_K</eq>, with the class of <eq env="math">{\mathscr{F}}</eq> being in <eq env="math">E</eq> and the class of <eq env="math">{\mathscr{F}}'</eq> being in <eq env="math">E'</eq>.
 We thus define a set of classes of coherent sheaves that we denote by <eq env="math">E\otimes E'</eq>.
-We can similarly define <eq env="math">\underline{\operatorname{Tor}}_i(E,E')</eq>, etc.</p>
+We can similarly define <eq env="math">\underline{\operatorname{Tor}}_i(E,E')</eq>, etc.
+Generally, to every function <eq env="math">{\mathscr{U}}</eq> that sends each sequence <eq env="math">{\mathscr{F}}_1,\ldots,scr{F}_n</eq> of <eq env="math">n</eq> coherent sheaves on one single <eq env="math">X_K</eq> to a set <eq env="math">{\mathscr{U}}({\mathscr{F}}_1,\ldots,{\mathscr{F}}_n)</eq> of coherent sheaves on <eq env="math">X_K</eq>, and that has the evident property of compatibility with isomorphisms of sheaves and inverse images under change of base, we associate a function, denoted by the same notation <eq env="math">{\mathscr{U}}</eq>, that sends each sequence <eq env="math">E_1,\ldots,E_n</eq> of <eq env="math">n</eq> sets of classes of coherent sheaves to a set <eq env="math">{\mathscr{U}}(E_1,\ldots,E_n)</eq> of classes of coherent sheaves.</p>
+<p>Our aim in this section is to give a definition of certain sets of classes of sheaves, said to be <em>bounded</em>, and to show that the most standard operations <eq env="math">{\mathscr{U}}</eq>, applied to bounded sets, give sets that are again bounded.</p>
+<p>Let <eq env="math">X</eq> be a prescheme of finite type over <eq env="math">S</eq>, with <eq env="math">S</eq> <em>Noetherian</em>.
+For all <eq env="math">s\in S</eq>, the fibre <eq env="math">X_s</eq> is a prescheme of finite type over <eq env="math">k(s)</eq>, and we will consider the classes of coherent sheaves on <eq env="math">X_s</eq>, in the above sense.
+This gives meaning to the phrase “class of coherent sheaves on a fibre of <eq env="math">X/S</eq>”, as well as to analogous phrases.
+Similarly, proceeding separately on each fibre, we can again consider operations such as <eq env="math">E\otimes E'</eq> etc. that send systems of sets of classes of coherent sheaves on the fibres of <eq env="math">X/S</eq> to sets of classes of coherent sheaves on the fibres of <eq env="math">X/S</eq>.
+</p>
+<div id="definition-1.1" class="rmenv" title="Definition 1.1">
+<p>Let <eq env="math">E</eq> be a set of classes of coherent sheaves on the fibres of <eq env="math">X/S</eq>.
+We say that <eq env="math">E</eq> is <em>bounded</em> if there exists a prescheme <eq env="math">S'</eq> of finite type over <eq env="math">S</eq>, along with a coherent sheaf <eq env="math">{\mathscr{F}}'</eq> on <eq env="math">X'=X\times_S S'</eq>, such that <eq env="math">E</eq> is contained in the set of classes of sheaves on the fibres of <eq env="math">X/S</eq> defined by <eq env="math">{\mathscr{F}}'</eq>.</p>
+</div>
+<p>This construction, by definition, sends <eq env="math">s\in S</eq> to the classes of sheaves <eq env="math">{\mathscr{F}}'\otimes_{S'}k(s')</eq>, where <eq env="math">s'</eq> runs over the points of <eq env="math">S'</eq> over <eq env="math">s</eq> (so that <eq env="math">k(s')</eq> is an extension of <eq env="math">k(s)</eq>, and <eq env="math">X\otimes (X_s)_{k(s')}</eq> can be identified with the fibre <eq env="math">X'\otimes_{S'}k(s')=X'_{s'}</eq> of <eq env="math">X'</eq> at <eq env="math">s'</eq>).
+We can say that the bounded sets are those that are contained in an <em>algebraic family</em> of coherent sheaves, parametrised by some <eq env="math">S'</eq> of finite type over <eq env="math">S</eq>.</p>
+<p>A finite union of bounded sets is bounded (take the prescheme given by the sum of the parametrising preschemes <eq env="math">S_i</eq> defining the bounding algebraic families).
+A base change <eq env="math">T\to S</eq> sends a family which is bounded with respect to <eq env="math">X/S</eq> to a family which is bounded with respect to <eq env="math">X_T/T</eq>, and the converse is true if <eq env="math">T\to S</eq> is surjective (or, more generally, if its image contains the <eq env="math">s</eq> which appear in the given family <eq env="math">E</eq> for <eq env="math">X/S</eq>).
+This theoretically leads us to determine the bounded families only in the case where <eq env="math">S</eq> is the spectrum of an algebra of finite type over the ring of integers <eq env="math">\mathbb{Z}</eq>.</p>
+<p>If <eq env="math">E</eq> and <eq env="math">E'</eq> are bounded families of classes of sheaves with respect to <eq env="math">X/S</eq>, then <eq env="math">E\otimes E'</eq> is also bounded:
+indeed, if <eq env="math">E</eq> (resp. <eq env="math">E'</eq>) is bounded by the algebraic families defined by <eq env="math">T\to S</eq> and <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X_T</eq> (resp. <eq env="math">T'\to S</eq> and <eq env="math">{\mathscr{F}}'</eq> on <eq env="math">X_{T'}</eq>), then <eq env="math">E\otimes E'</eq> is bounded by the algebraic family defined by <eq env="math">T''=T\times_S T'\to S</eq> and the sheaf <eq env="math">{\mathscr{F}}''</eq> on <eq env="math">X_{T''}</eq> given by the tensor product of the inverse images of <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq> on <eq env="math">X_{T''}</eq>.
+This argument is correct only because the functor <eq env="math">{\mathscr{F}}\otimes{\mathscr{F}}'</eq> is right exact in both <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq>, and thus commutates with base extension (and, in particular, with passing to the fibres).
+It is not applicable as-is to local operations, such as <eq env="math">\underline{\operatorname{Tor}}_i(E,E')</eq>, <eq env="math">\underline{\operatorname{Hom}}(E,E')</eq>, <eq env="math">\underline{\operatorname{Ext}}^i(E,E')</eq>.
+We can, however, show that these operations also send bounded sets to bounded sets, by proceeding as for <eq env="math">E\otimes E'</eq>, but by also using results of the following type (all contained in <span class="citation">[<a href="#ref-3-IV-3" role="doc-biblioref">16</a>]</span>):
+a bounded family <eq env="math">E</eq> is always bounded by an algebraic family defined by a coherent sheaf <eq env="math">{\mathscr{F}}</eq> on some <eq env="math">X_T</eq> (with <eq env="math">T</eq> of finite type over <eq env="math">S</eq>) that is <em>flat</em> with respect to <eq env="math">T</eq>.
+(We “cut into bits” the initial space of parameters).
+
+Such flatness properties on suitable sheaves indeed ensure the commutativity of operations such as <eq env="math">\underline{\operatorname{Tor}}_i({\mathscr{F}},{\mathscr{F}}')</eq> with arbitrary base change.
+The same method applies to operations of a global nature:
+direct images and derived direct images of coherent sheaves under proper morphisms, global <eq env="math">\operatorname{Ext}</eq> with respect to proper morphisms (cf. <span class="citation">[<a href="#ref-3-IV-5" role="doc-biblioref">18</a>]</span>), etc.;
+all these operations send bounded families of sheaves to bounded families of sheaves (N.B. here the preschemes over which we are taking the various sheaves can change under the operations in question).</p>
+<p>The two claims that follow can be proven by <em>essentially</em> the same flatness technique;
+for the primary decomposition on the fibres of a morphisms of finite type, see, in particular, <span class="citation">[<a href="#ref-3-IV-5" role="doc-biblioref">18</a>]</span>.</p>
+<div id="proposition-1.2" class="itenv" title="Proposition 1.2">
+<p>Let <eq env="math">E</eq> and <eq env="math">E'</eq> be bounded sets of classes of sheaves on the fibres of <eq env="math">X/S</eq>, with <eq env="math">X</eq> assumed to be proper over <eq env="math">S</eq>.
+Then</p>
+<ol style="list-style-type: lower-roman">
+<li><p>the family of kernels, cokernels, and images of homomorphisms <eq env="math">{\mathscr{F}}\to{\mathscr{F}}'</eq> (where the class of <eq env="math">{\mathscr{F}}</eq> is in <eq env="math">E</eq> and the class of <eq env="math">{\mathscr{F}}'</eq> is in <eq env="math">E'</eq>) is bounded;</p></li>
+<li><p>the family of extensions <eq env="math">{\mathscr{F}}''</eq> of <eq env="math">{\mathscr{F}}</eq> by <eq env="math">{\mathscr{F}}'</eq> (where the class of <eq env="math">{\mathscr{F}}</eq> is in <eq env="math">E</eq> and the class of <eq env="math">{\mathscr{F}}'</eq> is in <eq env="math">E'</eq>) is bounded.</p></li>
+</ol>
+</div>
 
 </div>
 </div>
@@ -225,6 +262,12 @@ We can similarly define <eq env="math">\underline{\operatorname{Tor}}_i(E,E')</e
 <div id="refs" class="references">
 <div id="ref-3-IV-2">
 <p>[15] A. Grothendieck. “Technique de descente et théorèmes d’existence en géométrie algébrique, I, II, III.” <em>Séminaire Bourbaki</em>. <strong>12, 13</strong> (n.d.), Talks no. 190, 195, and 212.</p>
+</div>
+<div id="ref-3-IV-3">
+<p>[16] A. Grothendieck. <em>Séminaire de géométrie algébrique, I, II, III, IV</em>. Paris, Institut des Hautes Études Scientifiques, n.d. (n.d.).</p>
+</div>
+<div id="ref-3-IV-5">
+<p>[18] A. Grothendieck, J. Dieudonné. “Eléments de géométrie algébrique, I, II, III, IV.” <em>Publications Mathématiques de L’Institut Des Hautes Études Scientifiques</em>. (n.d.).</p>
 </div>
 </div>
 <div class="footnotes">
