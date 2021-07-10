@@ -152,6 +152,7 @@
 <li class="chapter" data-level="6" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html"><i class="fa fa-check"></i><b>6</b> Hilbert schemes</a><ul>
 <li class="chapter" data-level="" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#introduction-1"><i class="fa fa-check"></i>Introduction</a></li>
 <li class="chapter" data-level="6.1" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#FGA-3-IV-section-1"><i class="fa fa-check"></i><b>6.1</b> Bounded sets of sheaves: invariance properties</a></li>
+<li class="chapter" data-level="6.2" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#FGA-3-IV-section-2"><i class="fa fa-check"></i><b>6.2</b> Bounded families and the Hilbert polynomial</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="FGA-3-V.html"><a href="FGA-3-V.html"><i class="fa fa-check"></i><b>7</b> Picard schemes: Existence theorems</a></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
@@ -225,7 +226,7 @@ For all <eq env="math">s\in S</eq>, the fibre <eq env="math">X_s</eq> is a presc
 This gives meaning to the phrase “class of coherent sheaves on a fibre of <eq env="math">X/S</eq>”, as well as to analogous phrases.
 Similarly, proceeding separately on each fibre, we can again consider operations such as <eq env="math">E\otimes E'</eq> etc. that send systems of sets of classes of coherent sheaves on the fibres of <eq env="math">X/S</eq> to sets of classes of coherent sheaves on the fibres of <eq env="math">X/S</eq>.
 </p>
-<div id="definition-1.1" class="rmenv" title="Definition 1.1">
+<div id="FGA-3-IV-definition-1.1" class="rmenv" title="Definition 1.1">
 <p>Let <eq env="math">E</eq> be a set of classes of coherent sheaves on the fibres of <eq env="math">X/S</eq>.
 We say that <eq env="math">E</eq> is <em>bounded</em> if there exists a prescheme <eq env="math">S'</eq> of finite type over <eq env="math">S</eq>, along with a coherent sheaf <eq env="math">{\mathscr{F}}'</eq> on <eq env="math">X'=X\times_S S'</eq>, such that <eq env="math">E</eq> is contained in the set of classes of sheaves on the fibres of <eq env="math">X/S</eq> defined by <eq env="math">{\mathscr{F}}'</eq>.</p>
 </div>
@@ -248,7 +249,7 @@ direct images and derived direct images of coherent sheaves under proper morphis
 all these operations send bounded families of sheaves to bounded families of sheaves (N.B. here the preschemes over which we are taking the various sheaves can change under the operations in question).</p>
 <p>The two claims that follow can be proven by <em>essentially</em> the same flatness technique;
 for the primary decomposition on the fibres of a morphisms of finite type, see, in particular, <span class="citation">[<a href="#ref-3-IV-5" role="doc-biblioref">18</a>]</span>.</p>
-<div id="proposition-1.2" class="itenv" title="Proposition 1.2">
+<div id="FGA-3-IV-proposition-1.2" class="itenv" title="Proposition 1.2">
 <p>Let <eq env="math">E</eq> and <eq env="math">E'</eq> be bounded sets of classes of sheaves on the fibres of <eq env="math">X/S</eq>, with <eq env="math">X</eq> assumed to be proper over <eq env="math">S</eq>.
 Then</p>
 <ol style="list-style-type: lower-roman">
@@ -259,8 +260,30 @@ Then</p>
 <div class="proof">
 <p><span id="unlabeled-div-19" class="proof"><em>Proof</em>. </span>After potentially applying a suitable base change, we can suppose that <eq env="math">E</eq> and <eq env="math">E'</eq> are defined by coherent sheaves <eq env="math">{\mathscr{G}}</eq> and <eq env="math">{\mathscr{G}}'</eq> (respectively) on some <eq env="math">X_T/T</eq>, with <eq env="math">T</eq> of finite type over <eq env="math">S</eq>.
 Further, we can suppose that certain flatness hypotheses are satisfied, implying that constructing the sheaves <eq env="math">f_T(\underline{\operatorname{Hom}}_{{\mathcal{O}}_{X_T}}({\mathscr{G}},{\mathscr{G}}'))</eq> and <eq env="math">\underline{\operatorname{Ext}}_{f_T}^1({\mathscr{G}},{\mathscr{G}}')</eq> commutes with base change by an arbitrary morphism <eq env="math">T'\to T</eq>.
-Further,</p>
+Further, we can suppose that the coherent sheaves above are locally free on <eq env="math">T</eq>.
+So let <eq env="math">T_0</eq> and <eq env="math">T_1</eq> be the vector bundles on <eq env="math">T</eq> whose sheaves of germs of sections are (respectively) the above sheaves.
+We can then canonically define a homomorphism <eq env="math">{\mathscr{G}}_{T_0}\to{\mathscr{G}}'_{T_0}</eq> of coherent sheaves on <eq env="math">X_{T_0}</eq>, along with an extension
+<eq env="displaymath">
+  0 \to {\mathscr{G}}_{T_1} \to {\mathscr{G}}'' \to {\mathscr{G}}'_{T_1} \to 0
+</eq>
+of coherent sheaves on <eq env="math">X_{T_1}</eq> that has the evident universal property.
+This second sheaf defines an algebraic family that bounds the family in question in (ii).
+
+This is also true for the kernel, cokernel, and image of the above homomorphism, and the consideration of this proves (i) (provided that we assume the cokernel to be flat with respect to <eq env="math">T_0</eq>, in which case we can again reduce to cutting <eq env="math">T_0</eq> into pieces…).</p>
 </div>
+<div id="FGA-3-IV-proposition-1.3" class="itenv" title="Proposition 1.3">
+<p>Let <eq env="math">E</eq> be a bounded family of classes of sheaves on the fibres of <eq env="math">X/S</eq>.
+Then the classes of the structure sheaves of the <eq env="math">(\operatorname{supp}{\mathscr{F}})_{\mathrm{red}}</eq>, where <eq env="math">{\mathscr{F}}</eq> is a coherent sheaf on some <eq env="math">X_K</eq>, with <eq env="math">K</eq> algebraically closed, and whose class is in <eq env="math">E</eq>, form a bounded family.</p>
+</div>
+<p>Here, <eq env="math">(\operatorname{supp}{\mathscr{F}})_{\mathrm{red}}</eq> denotes the support of <eq env="math">{\mathscr{F}}</eq>, endowed with the induced reduced structure, i.e. its structure sheaf is the quotient of <eq env="math">{\mathcal{O}}_{X_K}</eq> by the largest sheaf of ideals that defines <eq env="math">\operatorname{supp}{\mathscr{F}}</eq>.
+We can prove the analogous result to <a href="FGA-3-IV.html#FGA-3-IV-proposition-1.3">(1.3)</a> for the sheaves canonically induced from <eq env="math">{\mathscr{F}}</eq> by the theory of primary decomposition;
+for example, the <eq env="math">{\mathscr{F}}/{\mathscr{F}}_i</eq>, where the <eq env="math">{\mathscr{F}}_i</eq> are the primary subsheaves of <eq env="math">{\mathscr{F}}</eq> tfor the components of the support of <eq env="math">{\mathscr{F}}</eq>, and minimal with respect to this property;
+or the <eq env="math">{\mathcal{O}}_{X_K}/{\mathfrak{p}}</eq>, where <eq env="math">{\mathfrak{p}}</eq> is a prime sheaf of ideals associated to <eq env="math">\src{F}</eq>, or the <eq env="math">{\mathcal{O}}_{X_K}/{\mathfrak{q}}</eq>, where the <eq env="math">\src{q}</eq> is a primary sheaf of ideals associated to a component of the support of <eq env="math">{\mathscr{F}}</eq> (the reference field being algebraically closed).</p>
+</div>
+<div id="FGA-3-IV-section-2" class="section level2">
+<h2><span class="header-section-number">6.2</span> Bounded families and the Hilbert polynomial</h2>
+<p>In the following, we assume that <eq env="math">X</eq> is projective over <eq env="math">S</eq>, and endowed with a very ample sheaf, denoted by <eq env="math">{\mathcal{O}}_X(1)</eq>.
+For every extension <eq env="math">K</eq> of a residue extension <eq env="math">k(s)</eq> of a point <eq env="math">s</eq> of <eq env="math">S</eq>, we consider the corresponding sheaf <eq env="math">{\mathcal{O}}_{X_K}(1)</eq> on <eq env="math">X_K</eq>, which will again be very ample.</p>
 
 </div>
 </div>
