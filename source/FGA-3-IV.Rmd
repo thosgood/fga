@@ -14,6 +14,8 @@
 \providecommand{\shExt}{\underline{\Ext}}
 \providecommand{\Hom}{\operatorname{Hom}}
 \providecommand{\shHom}{\underline{\Hom}}
+\providecommand{\supp}{\operatorname{supp}}
+\providecommand{\red}{{\mathrm{red}}}
 
 <!-- Content -->
 
@@ -71,7 +73,7 @@ This gives meaning to the phrase "class of coherent sheaves on a fibre of $X/S$"
 Similarly, proceeding separately on each fibre, we can again consider operations such as $E\otimes E'$ etc. that send systems of sets of classes of coherent sheaves on the fibres of $X/S$ to sets of classes of coherent sheaves on the fibres of $X/S$.
 \oldpage{221-03}
 
-::: {.rmenv #definition-1.1 title="Definition 1.1" latex="{Definition 1.1}"}
+::: {.rmenv #FGA-3-IV-definition-1.1 title="Definition 1.1" latex="{Definition 1.1}"}
 Let $E$ be a set of classes of coherent sheaves on the fibres of $X/S$.
 We say that $E$ is _bounded_ if there exists a prescheme $S'$ of finite type over $S$, along with a coherent sheaf $\scr{F}'$ on $X'=X\times_S S'$, such that $E$ is contained in the set of classes of sheaves on the fibres of $X/S$ defined by $\scr{F}'$.
 :::
@@ -99,7 +101,7 @@ all these operations send bounded families of sheaves to bounded families of she
 The two claims that follow can be proven by _essentially_ the same flatness technique;
 for the primary decomposition on the fibres of a morphisms of finite type, see, in particular, [@3-IV-5, IV].
 
-::: {.itenv #proposition-1.2 title="Proposition 1.2" latex="{Proposition 1.2}"}
+::: {.itenv #FGA-3-IV-proposition-1.2 title="Proposition 1.2" latex="{Proposition 1.2}"}
 Let $E$ and $E'$ be bounded sets of classes of sheaves on the fibres of $X/S$, with $X$ assumed to be proper over $S$.
 Then
 
@@ -111,9 +113,29 @@ ii. the family of extensions $\scr{F}''$ of $\scr{F}$ by $\scr{F}'$ (where the c
 ::: {.proof}
 After potentially applying a suitable base change, we can suppose that $E$ and $E'$ are defined by coherent sheaves $\scr{G}$ and $\scr{G}'$ (respectively) on some $X_T/T$, with $T$ of finite type over $S$.
 Further, we can suppose that certain flatness hypotheses are satisfied, implying that constructing the sheaves $f_T(\shHom_{\cal{O}_{X_T}}(\scr{G},\scr{G}'))$ and $\shExt_{f_T}^1(\scr{G},\scr{G}')$ commutes with base change by an arbitrary morphism $T'\to T$.
-Further, 
-
-
-
-
+Further, we can suppose that the coherent sheaves above are locally free on $T$.
+So let $T_0$ and $T_1$ be the vector bundles on $T$ whose sheaves of germs of sections are (respectively) the above sheaves.
+We can then canonically define a homomorphism $\scr{G}_{T_0}\to\scr{G}'_{T_0}$ of coherent sheaves on $X_{T_0}$, along with an extension
+$$
+  0 \to \scr{G}_{T_1} \to \scr{G}'' \to \scr{G}'_{T_1} \to 0
+$$
+of coherent sheaves on $X_{T_1}$ that has the evident universal property.
+This second sheaf defines an algebraic family that bounds the family in question in (ii).
+\oldpage{221-05}
+This is also true for the kernel, cokernel, and image of the above homomorphism, and the consideration of this proves (i) (provided that we assume the cokernel to be flat with respect to $T_0$, in which case we can again reduce to cutting $T_0$ into pieces...).
 :::
+
+::: {.itenv #FGA-3-IV-proposition-1.3 title="Proposition 1.3" latex="{Proposition 1.3}"}
+Let $E$ be a bounded family of classes of sheaves on the fibres of $X/S$.
+Then the classes of the structure sheaves of the $(\supp\scr{F})_\red$, where $\scr{F}$ is a coherent sheaf on some $X_K$, with $K$ algebraically closed, and whose class is in $E$, form a bounded family.
+:::
+
+Here, $(\supp\scr{F})_\red$ denotes the support of $\scr{F}$, endowed with the induced reduced structure, i.e. its structure sheaf is the quotient of $\cal{O}_{X_K}$ by the largest sheaf of ideals that defines $\supp\scr{F}$.
+We can prove the analogous result to [(1.3)](#FGA-3-IV-proposition-1.3) for the sheaves canonically induced from $\scr{F}$ by the theory of primary decomposition;
+for example, the $\scr{F}/\scr{F}_i$, where the $\scr{F}_i$ are the primary subsheaves of $\scr{F}$ tfor the components of the support of $\scr{F}$, and minimal with respect to this property;
+or the $\cal{O}_{X_K}/\frak{p}$, where $\frak{p}$ is a prime sheaf of ideals associated to $\src{F}$, or the $\cal{O}_{X_K}/\frak{q}$, where the $\src{q}$ is a primary sheaf of ideals associated to a component of the support of $\scr{F}$ (the reference field being algebraically closed).
+
+## Bounded families and the Hilbert polynomial {#FGA-3-IV-section-2}
+
+In the following, we assume that $X$ is projective over $S$, and endowed with a very ample sheaf, denoted by $\cal{O}_X(1)$.
+For every extension $K$ of a residue extension $k(s)$ of a point $s$ of $S$, we consider the corresponding sheaf $\cal{O}_{X_K}(1)$ on $X_K$, which will again be very ample.
