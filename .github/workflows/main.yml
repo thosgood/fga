@@ -14,6 +14,14 @@ jobs:
       - name: ⬇️ Checkout
         uses: actions/checkout@v2
 
+      - name: Cache Yarn packages
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
       - name: 💿 Install R
         uses: r-lib/actions/setup-r@master
 
