@@ -5,6 +5,7 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 
 ## To-do
 
+- **fix github CI**
 - `GIT_COMMIT_HASH_VARIABLE`
 - pdf output
 - pdf specific definitions (e.g. `\ourrar`, `\oullar`, `\simto`, `\simfrom`)
