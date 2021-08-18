@@ -1,29 +1,23 @@
-name: Bookdown
+name: 📖 Bookdown
 
 on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'README.md'
 
 jobs:
   bookdown:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: ⬇️ Checkout
         uses: actions/checkout@v2
 
-      - name: Cache Yarn packages
-        uses: actions/cache@v2
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-
-      - name: Setup R
+      - name: 💿 Install R
         uses: r-lib/actions/setup-r@master
 
-      - name: Cache R packages
+      - name: 📦 Cache R packages
         uses: actions/cache@v2
         with:
           path: ${{ env.R_LIBS_USER }}
@@ -31,20 +25,20 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-renv-
 
-      - name: Setup Pandoc
+      - name: 💿 Install Pandoc
         uses: r-lib/actions/setup-pandoc@v1
 
-      - name: Install R packages
+      - name: 💿 Install R packages
         run: |
           R -e "install.packages('bookdown')"
 
-      - name: Build site
+      - name: 🛠 Build site
         run: |
           ./build_html.R
 
-      - name: Deploy to build branch
+      - name: 🚀 Deploy to build branch
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          branch: build
-          folder: book
+          BRANCH: build
+          FOLDER: book
