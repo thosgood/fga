@@ -1,5 +1,7 @@
 # Foundations of Algebraic Geometry
 
+[![Bookdown](https://github.com/thosgood/fga/actions/workflows/main.yml/badge.svg)](https://github.com/thosgood/fga/actions/workflows/main.yml)
+
 An English translation of Grothendieck's Fondements de la Géometrie Algébrique.
 The original notes have been scanned and uploaded by the Grothendieck Circle [here](https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/FGA.pdf)
 
