@@ -276,13 +276,35 @@ Then the classes of the structure sheaves of the <eq env="math">(\operatorname{s
 </div>
 <p>Here, <eq env="math">(\operatorname{supp}{\mathscr{F}})_{\mathrm{red}}</eq> denotes the support of <eq env="math">{\mathscr{F}}</eq>, endowed with the induced reduced structure, i.e. its structure sheaf is the quotient of <eq env="math">{\mathcal{O}}_{X_K}</eq> by the largest sheaf of ideals that defines <eq env="math">\operatorname{supp}{\mathscr{F}}</eq>.
 We can prove the analogous result to <a href="FGA-3-IV.html#FGA-3-IV-proposition-1.3">(1.3)</a> for the sheaves canonically induced from <eq env="math">{\mathscr{F}}</eq> by the theory of primary decomposition;
-for example, the <eq env="math">{\mathscr{F}}/{\mathscr{F}}_i</eq>, where the <eq env="math">{\mathscr{F}}_i</eq> are the primary subsheaves of <eq env="math">{\mathscr{F}}</eq> tfor the components of the support of <eq env="math">{\mathscr{F}}</eq>, and minimal with respect to this property;
+for example, the <eq env="math">{\mathscr{F}}/{\mathscr{F}}_i</eq>, where the <eq env="math">{\mathscr{F}}_i</eq> are the primary subsheaves of <eq env="math">{\mathscr{F}}</eq> for the components of the support of <eq env="math">{\mathscr{F}}</eq>, and minimal with respect to this property;
 or the <eq env="math">{\mathcal{O}}_{X_K}/{\mathfrak{p}}</eq>, where <eq env="math">{\mathfrak{p}}</eq> is a prime sheaf of ideals associated to <eq env="math">{\mathscr{F}}</eq>, or the <eq env="math">{\mathcal{O}}_{X_K}/{\mathfrak{q}}</eq>, where the <eq env="math">{\mathscr{q}}</eq> is a primary sheaf of ideals associated to a component of the support of <eq env="math">{\mathscr{F}}</eq> (the reference field being algebraically closed).</p>
 </div>
 <div id="FGA-3-IV-section-2" class="section level2">
 <h2><span class="header-section-number">6.2</span> Bounded families and the Hilbert polynomial</h2>
 <p>In the following, we assume that <eq env="math">X</eq> is projective over <eq env="math">S</eq>, and endowed with a very ample sheaf, denoted by <eq env="math">{\mathcal{O}}_X(1)</eq>.
 For every extension <eq env="math">K</eq> of a residue extension <eq env="math">k(s)</eq> of a point <eq env="math">s</eq> of <eq env="math">S</eq>, we consider the corresponding sheaf <eq env="math">{\mathcal{O}}_{X_K}(1)</eq> on <eq env="math">X_K</eq>, which will again be very ample.</p>
+<p>To each coherent sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X_K</eq>, we associate the function
+<eq env="displaymath">
+  P_{\mathscr{F}}(n) = \text{the Euler--Poincaré characteristic of }{\mathscr{F}}(n)\text{ on }X_k
+</eq>
+which is a polynomial in the integer <eq env="math">n</eq>, and called the <em>Hilbert polynomial</em> of <eq env="math">{\mathscr{F}}</eq>.
+For large values of <eq env="math">n</eq>, <eq env="math">P(n)</eq> is exactly the dimension of <eq env="math">\operatorname{H}^0(X_k,{\mathscr{F}}(n))</eq> over <eq env="math">K</eq>, since the <eq env="math">\operatorname{H}^i(X_k,{\mathscr{F}}(n))</eq> are zero for <eq env="math">i&gt;0</eq> and large enough <eq env="math">n</eq>.</p>
+<p>Now, if <eq env="math">{\mathscr{F}}</eq> is a coherent sheaf on <eq env="math">X</eq> which is <em>flat</em> with respect to <eq env="math">S</eq>, then the Hilbert polynomials of the sheaves <eq env="math">{\mathscr{F}}_S</eq> induced on the fibres <eq env="math">X_S</eq> (with respect to one single connected component of <eq env="math">S</eq>) are all equal <span class="citation">[<span class="citeproc-not-found" data-reference-id="5"><strong>???</strong></span>, III, §7]</span>.
+It thus follows (without any flatness hypothesis) that the set of Hilbert polynomials of the sheaves <eq env="math">{\mathscr{F}}_s</eq>, for <eq env="math">s\in S</eq>, is finite for every coherent sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq>.</p>
+
+<p>Recall also that, if <eq env="math">{\mathscr{F}}</eq> is a coherent sheaf on <eq env="math">X</eq>, then it is isomorphic to a quotient sheaf of a sheaf of the form <eq env="math">{\mathscr{O}}_X(-n)^N</eq>, for some large enough <eq env="math">n,N</eq>.
+So the sheaves <eq env="math">{\mathscr{F}}_s</eq> induced on the fibres are also quotients of the sheaf <eq env="math">{\mathscr{O}}(-n)</eq> on the fibre.</p>
+<p>From these two remarks, we reduce the “necessary” part of the following theorem:</p>
+<div id="FGA-3-IV-theorem-2.1" class="itenv" title="Theorem 2.1">
+<p>Let <eq env="math">X</eq> be projective over <eq env="math">S</eq>, with <eq env="math">S</eq> Noetherian, and <eq env="math">{\mathscr{O}}_X(1)</eq> very ample over <eq env="math">X</eq> with respect to <eq env="math">S</eq>.
+Let <eq env="math">E</eq> be a set of classes of sheaves on the fibres of <eq env="math">X/S</eq>.
+For <eq env="math">E</eq> to be bounded, it is necessary and sufficient for it to satisfy the following conditions:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>There exists a coherent sheaf <eq env="math">{\mathscr{L}}</eq> on <eq env="math">X</eq> (which we can suppose to be of the form <eq env="math">{\mathscr{O}}_X(-n)^N</eq>) such that <eq env="math">E</eq> is contained in the family of classes of coherent sheaves given by quotients of sheaves of the form <eq env="math">{\mathscr{L}}_K</eq>;</p></li>
+<li><p>The Hilbert polynomials <eq env="math">P_{\mathscr{F}}</eq> of the sheaves <eq env="math">{\mathscr{F}}</eq> whose class is in <eq env="math">E</eq> are elements of a single <em>finite</em> set of polynomials.</p></li>
+</ol>
+</div>
+<p>It remains</p>
 
 </div>
 </div>
