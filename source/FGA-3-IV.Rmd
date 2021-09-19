@@ -168,4 +168,37 @@ a. There exists a coherent sheaf $\scr{L}$ on $X$ (which we can suppose to be of
 b. The Hilbert polynomials $P_\scr{F}$ of the sheaves $\scr{F}$ whose class is in $E$ are elements of a single _finite_ set of polynomials.
 :::
 
-It remains
+It remains to prove the "sufficient" part, which will be a particular case of a more precise result.
+For every coherent module $\scr{F}$ on a prescheme of finite type over a field $K$, and for every integer $r$, let $N_r$ be the submodule of $\scr{F}$ whose sections over an open subset are the sections of $\scr{F}$ over the same subset whose support is of dimension $<r$.
+We thus have that $N_r=\scr{F}$ for $r>\dim\supp\scr{F}$, and $N_r=0$ for $r\leq0$, and we thus obtain a finite increasing filtration of $\scr{F}$ whose factors $N_r/N_{r+1}$ are such that their associated prime cycles are exactly the associated prime cycles of $\scr{F}$ that are of dimension $r$.
+We set
+$$
+  \scr{F}_{(r)} = \scr{F}/N_r
+$$
+so that the associated prime cycles of $\src{F}_{(r)}$ are exactly the associated prime cycles of $\scr{F}$ that are of dimension $\geq r$, and, in particular, $\scr{F}_{(r)}$ is equal to $\scr{F}$ if and only if the associated prime cycles of $\scr{F}$ are of dimension $\geq r$.
+With this, we have:
+
+::: {.itenv #FGA-3-IV-theorem-2.2 title="Theorem 2.2" latex="{Theorem 2.2}"}
+Under the conditions of [Theorem 2.1](#FGA-3-IV-theorem-2.1), let $s$ be an integer, and suppose that $E$ satisfies condition (a), as well as the following weakened form of (b):
+
+- The Poincaré **(TO-DO: should this be Hilbert?)** polynomials $P_\scr{F}$ of the sheaves $\scr{F}$ whose class is in $E$ have coefficients _in degrees $\leq (s-1)$_ that are bounded.
+
+Under these conditions, the sheaves $\scr{F}_{(s)}$ (for the $\scr{F}$ whose class is in $E$) form a bounded family.
+Furthermore, the coefficients in degree $(s-2)$ of the $P_\scr{F}$ are **TO-DO: minorés**.
+:::
+
+\oldpage{221-07}
+
+Thus:
+
+::: {.itenv #FGA-3-IV-corollary-2.3 title="Corollary 2.3" latex="{Corollary 2.3}"}
+Suppose that the sheaves $\scr{F}$ whose class is in $E$ are such that all their associated prime cycles are of dimension $d$, with $s\leq d\leq r$.
+Then, in condition (b) of [Theorem 2.1](#FGA-3-IV-theorem-2.1), we can restrict to the coefficients of $P_\scr{F}$ between degree $(s-1)$ and $r$, inclusive.
+:::
+
+The end of this section is dedicated to a sketch proof of [Theorem 2.2](#FGA-3-IV-theorem-2.2).
+The key lemmas are the two following lemmas, of which the first is well known (and summarises the useful mathematical content of Chow coordinates):
+
+::: {.itenv #FGA-3-IV-lemma-2.4 title="Lemma 2.4 (Chow)" latex="{Lemma 2.4 (Chow)}"}
+Consider the structure sheaves of the subschemes $Y$
+:::
