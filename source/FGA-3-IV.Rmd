@@ -16,6 +16,7 @@
 \providecommand{\shHom}{\underline{\Hom}}
 \providecommand{\supp}{\operatorname{supp}}
 \providecommand{\red}{{\mathrm{red}}}
+\providecommand{\OO}{\scr{O}}
 
 <!-- Content -->
 
@@ -132,10 +133,39 @@ Then the classes of the structure sheaves of the $(\supp\scr{F})_\red$, where $\
 
 Here, $(\supp\scr{F})_\red$ denotes the support of $\scr{F}$, endowed with the induced reduced structure, i.e. its structure sheaf is the quotient of $\cal{O}_{X_K}$ by the largest sheaf of ideals that defines $\supp\scr{F}$.
 We can prove the analogous result to [(1.3)](#FGA-3-IV-proposition-1.3) for the sheaves canonically induced from $\scr{F}$ by the theory of primary decomposition;
-for example, the $\scr{F}/\scr{F}_i$, where the $\scr{F}_i$ are the primary subsheaves of $\scr{F}$ tfor the components of the support of $\scr{F}$, and minimal with respect to this property;
+for example, the $\scr{F}/\scr{F}_i$, where the $\scr{F}_i$ are the primary subsheaves of $\scr{F}$ for the components of the support of $\scr{F}$, and minimal with respect to this property;
 or the $\cal{O}_{X_K}/\frak{p}$, where $\frak{p}$ is a prime sheaf of ideals associated to $\scr{F}$, or the $\cal{O}_{X_K}/\frak{q}$, where the $\scr{q}$ is a primary sheaf of ideals associated to a component of the support of $\scr{F}$ (the reference field being algebraically closed).
 
 ## Bounded families and the Hilbert polynomial {#FGA-3-IV-section-2}
 
 In the following, we assume that $X$ is projective over $S$, and endowed with a very ample sheaf, denoted by $\cal{O}_X(1)$.
 For every extension $K$ of a residue extension $k(s)$ of a point $s$ of $S$, we consider the corresponding sheaf $\cal{O}_{X_K}(1)$ on $X_K$, which will again be very ample.
+
+To each coherent sheaf $\scr{F}$ on $X_K$, we associate the function
+$$
+  P_\scr{F}(n) = \text{the Euler--Poincaré characteristic of }\scr{F}(n)\text{ on }X_k
+$$
+which is a polynomial in the integer $n$, and called the _Hilbert polynomial_ of $\scr{F}$.
+For large values of $n$, $P(n)$ is exactly the dimension of $\HH^0(X_k,\scr{F}(n))$ over $K$, since the $\HH^i(X_k,\scr{F}(n))$ are zero for $i>0$ and large enough $n$.
+
+Now, if $\scr{F}$ is a coherent sheaf on $X$ which is _flat_ with respect to $S$, then the Hilbert polynomials of the sheaves $\scr{F}_S$ induced on the fibres $X_S$ (with respect to one single connected component of $S$) are all equal [@5, III, §7].
+It thus follows (without any flatness hypothesis) that the set of Hilbert polynomials of the sheaves $\scr{F}_s$, for $s\in S$, is finite for every coherent sheaf $\scr{F}$ on $X$.
+
+\oldpage{221-06}
+
+Recall also that, if $\scr{F}$ is a coherent sheaf on $X$, then it is isomorphic to a quotient sheaf of a sheaf of the form $\OO_X(-n)^N$, for some large enough $n,N$.
+So the sheaves $\scr{F}_s$ induced on the fibres are also quotients of the sheaf $\OO(-n)$ on the fibre.
+
+From these two remarks, we reduce the "necessary" part of the following theorem:
+
+::: {.itenv #FGA-3-IV-theorem-2.1 title="Theorem 2.1" latex="{Theorem 2.1}"}
+Let $X$ be projective over $S$, with $S$ Noetherian, and $\OO_X(1)$ very ample over $X$ with respect to $S$.
+Let $E$ be a set of classes of sheaves on the fibres of $X/S$.
+For $E$ to be bounded, it is necessary and sufficient for it to satisfy the following conditions:
+
+a. There exists a coherent sheaf $\scr{L}$ on $X$ (which we can suppose to be of the form $\OO_X(-n)^N$) such that $E$ is contained in the family of classes of coherent sheaves given by quotients of sheaves of the form $\scr{L}_K$;
+
+b. The Hilbert polynomials $P_\scr{F}$ of the sheaves $\scr{F}$ whose class is in $E$ are elements of a single _finite_ set of polynomials.
+:::
+
+It remains
