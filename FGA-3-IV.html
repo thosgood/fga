@@ -304,7 +304,34 @@ For <eq env="math">E</eq> to be bounded, it is necessary and sufficient for it t
 <li><p>The Hilbert polynomials <eq env="math">P_{\mathscr{F}}</eq> of the sheaves <eq env="math">{\mathscr{F}}</eq> whose class is in <eq env="math">E</eq> are elements of a single <em>finite</em> set of polynomials.</p></li>
 </ol>
 </div>
-<p>It remains</p>
+<p>It remains to prove the “sufficient” part, which will be a particular case of a more precise result.
+For every coherent module <eq env="math">{\mathscr{F}}</eq> on a prescheme of finite type over a field <eq env="math">K</eq>, and for every integer <eq env="math">r</eq>, let <eq env="math">N_r</eq> be the submodule of <eq env="math">{\mathscr{F}}</eq> whose sections over an open subset are the sections of <eq env="math">{\mathscr{F}}</eq> over the same subset whose support is of dimension <eq env="math">&lt;r</eq>.
+We thus have that <eq env="math">N_r={\mathscr{F}}</eq> for <eq env="math">r&gt;\dim\operatorname{supp}{\mathscr{F}}</eq>, and <eq env="math">N_r=0</eq> for <eq env="math">r\leqslant 0</eq>, and we thus obtain a finite increasing filtration of <eq env="math">{\mathscr{F}}</eq> whose factors <eq env="math">N_r/N_{r+1}</eq> are such that their associated prime cycles are exactly the associated prime cycles of <eq env="math">{\mathscr{F}}</eq> that are of dimension <eq env="math">r</eq>.
+We set
+<eq env="displaymath">
+  {\mathscr{F}}_{(r)} = {\mathscr{F}}/N_r
+</eq>
+so that the associated prime cycles of <eq env="math">\src{F}_{(r)}</eq> are exactly the associated prime cycles of <eq env="math">{\mathscr{F}}</eq> that are of dimension <eq env="math">\geqslant r</eq>, and, in particular, <eq env="math">{\mathscr{F}}_{(r)}</eq> is equal to <eq env="math">{\mathscr{F}}</eq> if and only if the associated prime cycles of <eq env="math">{\mathscr{F}}</eq> are of dimension <eq env="math">\geqslant r</eq>.
+With this, we have:</p>
+<div id="FGA-3-IV-theorem-2.2" class="itenv" title="Theorem 2.2">
+<p>Under the conditions of <a href="FGA-3-IV.html#FGA-3-IV-theorem-2.1">Theorem 2.1</a>, let <eq env="math">s</eq> be an integer, and suppose that <eq env="math">E</eq> satisfies condition (a), as well as the following weakened form of (b):</p>
+<ul>
+<li>The Poincaré <strong>(TO-DO: should this be Hilbert?)</strong> polynomials <eq env="math">P_{\mathscr{F}}</eq> of the sheaves <eq env="math">{\mathscr{F}}</eq> whose class is in <eq env="math">E</eq> have coefficients <em>in degrees <eq env="math">\leqslant(s-1)</eq></em> that are bounded.</li>
+</ul>
+<p>Under these conditions, the sheaves <eq env="math">{\mathscr{F}}_{(s)}</eq> (for the <eq env="math">{\mathscr{F}}</eq> whose class is in <eq env="math">E</eq>) form a bounded family.
+Furthermore, the coefficients in degree <eq env="math">(s-2)</eq> of the <eq env="math">P_{\mathscr{F}}</eq> are <strong>TO-DO: minorés</strong>.</p>
+</div>
+
+<p>Thus:</p>
+<div id="FGA-3-IV-corollary-2.3" class="itenv" title="Corollary 2.3">
+<p>Suppose that the sheaves <eq env="math">{\mathscr{F}}</eq> whose class is in <eq env="math">E</eq> are such that all their associated prime cycles are of dimension <eq env="math">d</eq>, with <eq env="math">s\leqslant d\leqslant r</eq>.
+Then, in condition (b) of <a href="FGA-3-IV.html#FGA-3-IV-theorem-2.1">Theorem 2.1</a>, we can restrict to the coefficients of <eq env="math">P_{\mathscr{F}}</eq> between degree <eq env="math">(s-1)</eq> and <eq env="math">r</eq>, inclusive.</p>
+</div>
+<p>The end of this section is dedicated to a sketch proof of <a href="FGA-3-IV.html#FGA-3-IV-theorem-2.2">Theorem 2.2</a>.
+The key lemmas are the two following lemmas, of which the first is well known (and summarises the useful mathematical content of Chow coordinates):</p>
+<div id="FGA-3-IV-lemma-2.4" class="itenv" title="Lemma 2.4 (Chow)">
+<p>Consider the structure sheaves of the subschemes <eq env="math">Y</eq></p>
+</div>
 
 </div>
 </div>
