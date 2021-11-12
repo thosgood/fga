@@ -17,6 +17,7 @@
 \providecommand{\supp}{\operatorname{supp}}
 \providecommand{\red}{{\mathrm{red}}}
 \providecommand{\OO}{\scr{O}}
+\providecommand{\PP}{\mathbb{P}}
 
 <!-- Content -->
 
@@ -175,7 +176,7 @@ We set
 $$
   \scr{F}_{(r)} = \scr{F}/N_r
 $$
-so that the associated prime cycles of $\src{F}_{(r)}$ are exactly the associated prime cycles of $\scr{F}$ that are of dimension $\geq r$, and, in particular, $\scr{F}_{(r)}$ is equal to $\scr{F}$ if and only if the associated prime cycles of $\scr{F}$ are of dimension $\geq r$.
+so that the associated prime cycles of $\scr{F}_{(r)}$ are exactly the associated prime cycles of $\scr{F}$ that are of dimension $\geq r$, and, in particular, $\scr{F}_{(r)}$ is equal to $\scr{F}$ if and only if the associated prime cycles of $\scr{F}$ are of dimension $\geq r$.
 With this, we have:
 
 ::: {.itenv #FGA-3-IV-theorem-2.2 title="Theorem 2.2" latex="{Theorem 2.2}"}
@@ -184,7 +185,7 @@ Under the conditions of [Theorem 2.1](#FGA-3-IV-theorem-2.1), let $s$ be an inte
 - The Poincaré **(TO-DO: should this be Hilbert?)** polynomials $P_\scr{F}$ of the sheaves $\scr{F}$ whose class is in $E$ have coefficients _in degrees $\leq (s-1)$_ that are bounded.
 
 Under these conditions, the sheaves $\scr{F}_{(s)}$ (for the $\scr{F}$ whose class is in $E$) form a bounded family.
-Furthermore, the coefficients in degree $(s-2)$ of the $P_\scr{F}$ are **TO-DO: minorés**.
+Furthermore, the coefficients in degree $(s-2)$ of the $P_\scr{F}$ are bounded below.
 :::
 
 \oldpage{221-07}
@@ -200,5 +201,83 @@ The end of this section is dedicated to a sketch proof of [Theorem 2.2](#FGA-3-I
 The key lemmas are the two following lemmas, of which the first is well known (and summarises the useful mathematical content of Chow coordinates):
 
 ::: {.itenv #FGA-3-IV-lemma-2.4 title="Lemma 2.4 (Chow)" latex="{Lemma 2.4 (Chow)}"}
-Consider the structure sheaves of the subschemes $Y$
+Consider the structure sheaves of the subschemes $Y$ with fibre $X_K$ (where $K$ is an algebraically closed extension of the residue field of $S$), where $Y$ is reduced, and all its components are of the same dimension $r$ (and with $\OO_Y$ being thought of as a quotient sheaf of $\OO_X$).
+If the degrees of $Y$ are bounded, then the $Y$ form a bounded family.
+:::
+
+Here, the degree $a$ of $Y$ can be most conveniently defined as the coefficient of the dominant term of $P_{\OO_Y}=an^r/r!+\ldots$.
+
+::: {.itenv #FGA-3-IV-lemma-2.5 title="Lemma 2.5" latex="{Lemma 2.5}"}
+Let $\scr{L}$ be a coherent sheaf on $X$, and $E$ a set of classes of the quotient sheaves $\scr{F}$ of the sheaf $\scr{L}_K$ (where $K$ is a residue extension of $S$).
+Suppose that the fibres of $X$ over $S$ are of dimension $\leq r$, and set
+$$
+  P_\scr{F}(n) = a_\scr{F}n^r/r! + b_\scr{F}n^{r-1}/(r-1)! + \text{terms of degree }<r-1.
+$$
+Then the coefficient $a_\scr{F}$ is bounded (above), and $b_\scr{F}$ is bounded below.
+If $b_\scr{F}$ is bounded, then the family $\scr{F}_{(r)}$ is bounded.
+:::
+
+::: {.proof}
+By replacing $S$ by a union of subschemes of $S$ that cover $S$, we can suppose that there exists a *finite* morphism $f\colon X\to\PP_S^r$ such that $\OO_X(1)$ is isomorphic to the inverse image of $\OO_{\PP_S^r}(1)$, and thus, for every coherent sheaf $\scr{F}$ on $X$, we have that $P_\scr{F}=P_{f_*(\scr{F})}$.
+We can also easily show (by the technique of the previous section) that a set of sheaves $\scr{F}$ on $X$ is bounded if and only if the set of $f_*(\scr{F})$ is bounded.
+Finally, we have that
+$$
+  f_*(\scr{F})_{(r)} = f_*(\scr{F}_{(r)}).
+$$
+\oldpage{221-08}
+This thus allows us to reduce to the case where $X=\PP_S^r$.
+Furthermore, we can suppose that $\scr{L}=\OO_{\PP_S^r}(k)^s$, for some suitable $k$ and $s$.
+The coefficient $a_\scr{F}$ satisfies
+$$
+  0\leq a_\scr{F} \leq s
+$$
+and is thus bounded.
+With this in mind, saying that the $n^{r-1}$ coefficient $P_\scr{F}(n)$ is bounded below (resp. bounded above) is equivalent to saying the same thing for the $P_\scr{F}(n-k)=P_{\scr{F}(-k)}(n)$.
+This leads us to the case where
+$$
+  \scr{L} = \OO_{\PP_S^r}^s.
+$$
+
+Consider the exact sequence
+$$
+  0 \to N_r \to \scr{F} \to \scr{F}_{(r)} \to 0
+$$
+whence
+$$
+  P_\scr{F} = P_{\scr{F}_{(r)}} + P_{N_r}
+$$
+and, since the $n^{r-1}$ coefficient of $P_{N_r}$ is positive (since $\dim\supp N_r\leq r-1$), we have that
+$$
+  b_{\scr{F}_{(r)}} \leq b_\scr{F}.
+$$
+This allows us, in proving the lemma, to replace $\scr{F}$ by $\scr{F}_{(r)}$, i.e. to suppose that the quotients $\scr{F}$ of $\scr{L}$ in question are torsion free.
+
+Since $\PP_K^r$ is normal, it follows that $\scr{F}$ is locally free of rank $a=a_\scr{F}$ on an open $U=\PP_K^r\setminus Y$, where $Y$ is of codimension $\geq2$.
+Thus $\bigwedge^a\scr{F}$ is a sheaf on $\PP_K^r$ whose restriction to $U$ is invertible, and thus (since $\PP_K^r$ is regular, and $Y$ is of codimension $\geq2$) isomorphism to the restriction of an invertible sheaf on $\PP_K^r$, defined up to isomorphism.
+This latter sheaf is of the form $\OO_{\PP_K^r}(d)$ for some well defined integer $d$.
+Since $\bigwedge^a\scr{F}$ is a quotient of $\bigwedge^a\OO_{\PP_K^r}^n\simeq\OO_{\PP_K^r}^N$ with $N=\binom{n}{a}$, it admits $N$ canonical sections, which thus define sections of $\OO_{\PP_K^r}(d)$ over $U$, which are restrictions of sections $s_i$ (for $1\leq i\leq N$) of $\OO_{\PP_K^r}(d)$ (since $\PP_K^r$ is normal, and $Y$ is of codimension $\geq2$).
+\oldpage{221-09}
+These $s_i$ generate $\OO_{\PP_K^r}(d)$ at the points of $U$, and are thus not all zero, which implies that $d\geq0$.
+An easy calculation also shows that
+$$
+  b_\scr{F} = a_\scr{F}(r+1)/2 + d.
+$$
+This shows, in particular, that $b_\scr{F}\geq0$, and so $b_\scr{F}$ is bounded below.
+It is bounded above if and only if $d$ is bounded above;
+we will show that $\scr{F}$ then remains in a bounded family.
+We can fix $a_\scr{F}$ and $b_\scr{F}$, as well as $a$ and $b$ (and thus $d$).
+The data of the $N$ sections $s_i$ of $\OO_{\PP_K^r}(d)$, i.e. of a homomorphism $s\colon\bigwedge^a\scr{L}_K\to\OO_{\PP_K^r}(d)$, allows us to recover $\scr{F}$ as the co-image of the corresponding composite homomorphism:
+$$
+  \scr{L}_K
+  \to \shHom\left( \bigwedge^{a-1}\scr{L}_{K'}, \bigwedge^a\scr{L}_K \right)
+  \to \shHom\left( \bigwedge^{a-1}\scr{L}_{K'}, \OO_{\PP_K^r}(d) \right)
+$$
+where the first arrow is the canonical homomorphism coming from the exterior product, and the second comes from $s$.
+We then conclude by part (i) of [(1.2)](#FGA-3-IV-proposition-1.2).
+:::
+
+The combination of the two lemmas above allows us to prove the following:
+
+::: {.itenv #FGA-3-IV-lemma-2.6 title="Lemma 2.6" latex="{Lemma 2.6}"}
+Suppose
 :::
