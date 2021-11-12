@@ -311,7 +311,7 @@ We set
 <eq env="displaymath">
   {\mathscr{F}}_{(r)} = {\mathscr{F}}/N_r
 </eq>
-so that the associated prime cycles of <eq env="math">\src{F}_{(r)}</eq> are exactly the associated prime cycles of <eq env="math">{\mathscr{F}}</eq> that are of dimension <eq env="math">\geqslant r</eq>, and, in particular, <eq env="math">{\mathscr{F}}_{(r)}</eq> is equal to <eq env="math">{\mathscr{F}}</eq> if and only if the associated prime cycles of <eq env="math">{\mathscr{F}}</eq> are of dimension <eq env="math">\geqslant r</eq>.
+so that the associated prime cycles of <eq env="math">{\mathscr{F}}_{(r)}</eq> are exactly the associated prime cycles of <eq env="math">{\mathscr{F}}</eq> that are of dimension <eq env="math">\geqslant r</eq>, and, in particular, <eq env="math">{\mathscr{F}}_{(r)}</eq> is equal to <eq env="math">{\mathscr{F}}</eq> if and only if the associated prime cycles of <eq env="math">{\mathscr{F}}</eq> are of dimension <eq env="math">\geqslant r</eq>.
 With this, we have:</p>
 <div id="FGA-3-IV-theorem-2.2" class="itenv" title="Theorem 2.2">
 <p>Under the conditions of <a href="FGA-3-IV.html#FGA-3-IV-theorem-2.1">Theorem 2.1</a>, let <eq env="math">s</eq> be an integer, and suppose that <eq env="math">E</eq> satisfies condition (a), as well as the following weakened form of (b):</p>
@@ -319,7 +319,7 @@ With this, we have:</p>
 <li>The Poincaré <strong>(TO-DO: should this be Hilbert?)</strong> polynomials <eq env="math">P_{\mathscr{F}}</eq> of the sheaves <eq env="math">{\mathscr{F}}</eq> whose class is in <eq env="math">E</eq> have coefficients <em>in degrees <eq env="math">\leqslant(s-1)</eq></em> that are bounded.</li>
 </ul>
 <p>Under these conditions, the sheaves <eq env="math">{\mathscr{F}}_{(s)}</eq> (for the <eq env="math">{\mathscr{F}}</eq> whose class is in <eq env="math">E</eq>) form a bounded family.
-Furthermore, the coefficients in degree <eq env="math">(s-2)</eq> of the <eq env="math">P_{\mathscr{F}}</eq> are <strong>TO-DO: minorés</strong>.</p>
+Furthermore, the coefficients in degree <eq env="math">(s-2)</eq> of the <eq env="math">P_{\mathscr{F}}</eq> are bounded below.</p>
 </div>
 
 <p>Thus:</p>
@@ -330,7 +330,78 @@ Then, in condition (b) of <a href="FGA-3-IV.html#FGA-3-IV-theorem-2.1">Theorem 2
 <p>The end of this section is dedicated to a sketch proof of <a href="FGA-3-IV.html#FGA-3-IV-theorem-2.2">Theorem 2.2</a>.
 The key lemmas are the two following lemmas, of which the first is well known (and summarises the useful mathematical content of Chow coordinates):</p>
 <div id="FGA-3-IV-lemma-2.4" class="itenv" title="Lemma 2.4 (Chow)">
-<p>Consider the structure sheaves of the subschemes <eq env="math">Y</eq></p>
+<p>Consider the structure sheaves of the subschemes <eq env="math">Y</eq> with fibre <eq env="math">X_K</eq> (where <eq env="math">K</eq> is an algebraically closed extension of the residue field of <eq env="math">S</eq>), where <eq env="math">Y</eq> is reduced, and all its components are of the same dimension <eq env="math">r</eq> (and with <eq env="math">{\mathscr{O}}_Y</eq> being thought of as a quotient sheaf of <eq env="math">{\mathscr{O}}_X</eq>).
+If the degrees of <eq env="math">Y</eq> are bounded, then the <eq env="math">Y</eq> form a bounded family.</p>
+</div>
+<p>Here, the degree <eq env="math">a</eq> of <eq env="math">Y</eq> can be most conveniently defined as the coefficient of the dominant term of <eq env="math">P_{{\mathscr{O}}_Y}=an^r/r!+\ldots</eq>.</p>
+<div id="FGA-3-IV-lemma-2.5" class="itenv" title="Lemma 2.5">
+<p>Let <eq env="math">{\mathscr{L}}</eq> be a coherent sheaf on <eq env="math">X</eq>, and <eq env="math">E</eq> a set of classes of the quotient sheaves <eq env="math">{\mathscr{F}}</eq> of the sheaf <eq env="math">{\mathscr{L}}_K</eq> (where <eq env="math">K</eq> is a residue extension of <eq env="math">S</eq>).
+Suppose that the fibres of <eq env="math">X</eq> over <eq env="math">S</eq> are of dimension <eq env="math">\leqslant r</eq>, and set
+<eq env="displaymath">
+  P_{\mathscr{F}}(n) = a_{\mathscr{F}}n^r/r! + b_{\mathscr{F}}n^{r-1}/(r-1)! + \text{terms of degree }&lt;r-1.
+</eq>
+Then the coefficient <eq env="math">a_{\mathscr{F}}</eq> is bounded (above), and <eq env="math">b_{\mathscr{F}}</eq> is bounded below.
+If <eq env="math">b_{\mathscr{F}}</eq> is bounded, then the family <eq env="math">{\mathscr{F}}_{(r)}</eq> is bounded.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-20" class="proof"><em>Proof</em>. </span>By replacing <eq env="math">S</eq> by a union of subschemes of <eq env="math">S</eq> that cover <eq env="math">S</eq>, we can suppose that there exists a <em>finite</em> morphism <eq env="math">f\colon X\to\mathbb{P}_S^r</eq> such that <eq env="math">{\mathscr{O}}_X(1)</eq> is isomorphic to the inverse image of <eq env="math">{\mathscr{O}}_{\mathbb{P}_S^r}(1)</eq>, and thus, for every coherent sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq>, we have that <eq env="math">P_{\mathscr{F}}=P_{f_*({\mathscr{F}})}</eq>.
+We can also easily show (by the technique of the previous section) that a set of sheaves <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq> is bounded if and only if the set of <eq env="math">f_*({\mathscr{F}})</eq> is bounded.
+Finally, we have that
+<eq env="displaymath">
+  f_*({\mathscr{F}})_{(r)} = f_*({\mathscr{F}}_{(r)}).
+</eq>
+
+This thus allows us to reduce to the case where <eq env="math">X=\mathbb{P}_S^r</eq>.
+Furthermore, we can suppose that <eq env="math">{\mathscr{L}}={\mathscr{O}}_{\mathbb{P}_S^r}(k)^s</eq>, for some suitable <eq env="math">k</eq> and <eq env="math">s</eq>.
+The coefficient <eq env="math">a_{\mathscr{F}}</eq> satisfies
+<eq env="displaymath">
+  0\leqslant a_{\mathscr{F}} \leqslant s
+</eq>
+and is thus bounded.
+With this in mind, saying that the <eq env="math">n^{r-1}</eq> coefficient <eq env="math">P_{\mathscr{F}}(n)</eq> is bounded below (resp. bounded above) is equivalent to saying the same thing for the <eq env="math">P_{\mathscr{F}}(n-k)=P_{{\mathscr{F}}(-k)}(n)</eq>.
+This leads us to the case where
+<eq env="displaymath">
+  {\mathscr{L}} = {\mathscr{O}}_{\mathbb{P}_S^r}^s.
+</eq></p>
+<p>Consider the exact sequence
+<eq env="displaymath">
+  0 \to N_r \to {\mathscr{F}} \to {\mathscr{F}}_{(r)} \to 0
+</eq>
+whence
+<eq env="displaymath">
+  P_{\mathscr{F}} = P_{{\mathscr{F}}_{(r)}} + P_{N_r}
+</eq>
+and, since the <eq env="math">n^{r-1}</eq> coefficient of <eq env="math">P_{N_r}</eq> is positive (since <eq env="math">\dim\operatorname{supp}N_r\leqslant r-1</eq>), we have that
+<eq env="displaymath">
+  b_{{\mathscr{F}}_{(r)}} \leqslant b_{\mathscr{F}}.
+</eq>
+This allows us, in proving the lemma, to replace <eq env="math">{\mathscr{F}}</eq> by <eq env="math">{\mathscr{F}}_{(r)}</eq>, i.e. to suppose that the quotients <eq env="math">{\mathscr{F}}</eq> of <eq env="math">{\mathscr{L}}</eq> in question are torsion free.</p>
+<p>Since <eq env="math">\mathbb{P}_K^r</eq> is normal, it follows that <eq env="math">{\mathscr{F}}</eq> is locally free of rank <eq env="math">a=a_{\mathscr{F}}</eq> on an open <eq env="math">U=\mathbb{P}_K^r\setminus Y</eq>, where <eq env="math">Y</eq> is of codimension <eq env="math">\geqslant 2</eq>.
+Thus <eq env="math">\bigwedge^a{\mathscr{F}}</eq> is a sheaf on <eq env="math">\mathbb{P}_K^r</eq> whose restriction to <eq env="math">U</eq> is invertible, and thus (since <eq env="math">\mathbb{P}_K^r</eq> is regular, and <eq env="math">Y</eq> is of codimension <eq env="math">\geqslant 2</eq>) isomorphism to the restriction of an invertible sheaf on <eq env="math">\mathbb{P}_K^r</eq>, defined up to isomorphism.
+This latter sheaf is of the form <eq env="math">{\mathscr{O}}_{\mathbb{P}_K^r}(d)</eq> for some well defined integer <eq env="math">d</eq>.
+Since <eq env="math">\bigwedge^a{\mathscr{F}}</eq> is a quotient of <eq env="math">\bigwedge^a{\mathscr{O}}_{\mathbb{P}_K^r}^n\simeq{\mathscr{O}}_{\mathbb{P}_K^r}^N</eq> with <eq env="math">N=\binom{n}{a}</eq>, it admits <eq env="math">N</eq> canonical sections, which thus define sections of <eq env="math">{\mathscr{O}}_{\mathbb{P}_K^r}(d)</eq> over <eq env="math">U</eq>, which are restrictions of sections <eq env="math">s_i</eq> (for <eq env="math">1\leqslant i\leqslant N</eq>) of <eq env="math">{\mathscr{O}}_{\mathbb{P}_K^r}(d)</eq> (since <eq env="math">\mathbb{P}_K^r</eq> is normal, and <eq env="math">Y</eq> is of codimension <eq env="math">\geqslant 2</eq>).
+
+These <eq env="math">s_i</eq> generate <eq env="math">{\mathscr{O}}_{\mathbb{P}_K^r}(d)</eq> at the points of <eq env="math">U</eq>, and are thus not all zero, which implies that <eq env="math">d\geqslant 0</eq>.
+An easy calculation also shows that
+<eq env="displaymath">
+  b_{\mathscr{F}} = a_{\mathscr{F}}(r+1)/2 + d.
+</eq>
+This shows, in particular, that <eq env="math">b_{\mathscr{F}}\geqslant 0</eq>, and so <eq env="math">b_{\mathscr{F}}</eq> is bounded below.
+It is bounded above if and only if <eq env="math">d</eq> is bounded above;
+we will show that <eq env="math">{\mathscr{F}}</eq> then remains in a bounded family.
+We can fix <eq env="math">a_{\mathscr{F}}</eq> and <eq env="math">b_{\mathscr{F}}</eq>, as well as <eq env="math">a</eq> and <eq env="math">b</eq> (and thus <eq env="math">d</eq>).
+The data of the <eq env="math">N</eq> sections <eq env="math">s_i</eq> of <eq env="math">{\mathscr{O}}_{\mathbb{P}_K^r}(d)</eq>, i.e. of a homomorphism <eq env="math">s\colon\bigwedge^a{\mathscr{L}}_K\to{\mathscr{O}}_{\mathbb{P}_K^r}(d)</eq>, allows us to recover <eq env="math">{\mathscr{F}}</eq> as the co-image of the corresponding composite homomorphism:
+<eq env="displaymath">
+  {\mathscr{L}}_K
+  \to \underline{\operatorname{Hom}}\left( \bigwedge^{a-1}{\mathscr{L}}_{K'}, \bigwedge^a{\mathscr{L}}_K \right)
+  \to \underline{\operatorname{Hom}}\left( \bigwedge^{a-1}{\mathscr{L}}_{K'}, {\mathscr{O}}_{\mathbb{P}_K^r}(d) \right)
+</eq>
+where the first arrow is the canonical homomorphism coming from the exterior product, and the second comes from <eq env="math">s</eq>.
+We then conclude by part (i) of <a href="FGA-3-IV.html#FGA-3-IV-proposition-1.2">(1.2)</a>.</p>
+</div>
+<p>The combination of the two lemmas above allows us to prove the following:</p>
+<div id="FGA-3-IV-lemma-2.6" class="itenv" title="Lemma 2.6">
+<p>Suppose</p>
 </div>
 
 </div>
