@@ -18,6 +18,8 @@
 \providecommand{\red}{{\mathrm{red}}}
 \providecommand{\OO}{\scr{O}}
 \providecommand{\PP}{\mathbb{P}}
+\providecommand{\Quot}{\operatorname{Quot}}
+\providecommand{\shQuot}{\underline{\Quot}}
 
 <!-- Content -->
 
@@ -293,6 +295,7 @@ We can suppose that the base field $K$ of the sheaves $\scr{F}$ is algebraically
 We endow each $\supp\scr{F}_{(r)}$(the union of the components of degree $r$) with the induced reduced structure.
 Then the degrees of the $\supp\scr{F}_{(r)}$ are bounded above by $a$, and so, by [(2.4)](#FGA-3-IV-lemma-2.4), the $\supp\scr{F}_{(r)}$ form a bounded set.
 Furthermore, for each component of $\supp\scr{F}_{(r)}$, the length of $\scr{F}_{(r)}$ for this component is $\leq a$, and so, if $\scr{I}_\scr{F}$ is the ideal that defines $\supp\scr{F}_{(r)}$, then $\scr{F}_{(r)}$ can be considered as a module on the subscheme $Y_\scr{F}$ of $X$ defined by $\scr{I}_\scr{F}^a$.
+\oldpage{221-10}
 As in the previous lemma, we can also reduce to the case where $\scr{F}=\scr{F}_{(r)}$, so that $\scr{F}$ comes from a module on $Y_\scr{F}$.
 The $Y_\scr{F}$ correspond to a bounded family of quotient modules of the $\OO_{X_K}$, and thus come from a closed subscheme $Y$ of some scheme $X\times_S T$.
 We can then apply [(2.5)](#FGA-3-IV-lemma-2.5) to $Y/T$ and $\scr{L}\otimes_X Y$, whence the conclusion.
@@ -309,4 +312,33 @@ $$
 $$
 then shows that the $P_{N_r}$ satisfy the same condition (b<sub>s</sub>) as the $P_\scr{F}$.
 Thus the $N_r$ satisfy conditions (a) and (b<sub>s</sub>), and so, by the induction hypothesis, the $(N_r)_{(s)}$ are bounded.
+But $\scr{F}_{(s)}$ is an extension of $\scr{F}_{(r)}$ by $(N_r)_{(s)}$, and so, by part (ii) of [(1.2)](#FGA-3-IV-proposition-1.2), the $\scr{F}_{(s)}$ are bounded.
+For the last claim of [(2.2)](#FGA-3-IV-theorem-2.2), we note that the kernels $N_s$ of $\scr{F}\to\scr{F}_{(s)}$ are bounded, by part (i) of [(1.2)](#FGA-3-IV-proposition-1.2), and that the coefficient of the $n^{s-1}$ term in $P_{N_s}$ is bounded;
+then [(2.6)](#FGA-3-IV-lemma-2.6) proves that the coefficient of the following term is bounded below.
+This finishes the proof
 :::
+
+
+## Hilbert schemes: definition, existence theorem {#FGA-3-IV-section-3}
+
+Let $X$ be a prescheme over another prescheme $S$, and $\scr{F}$ a quasi-coherent module on $X$.
+We denote by
+$$
+  \Quot(\scr{F}/X/S)
+$$
+the set of quasi-coherent modules given by quotients of $\scr{F}$ that are flat over $S$.
+Now let $S'\to S$ be a base change morphisms, and set $X'=X\times_S S'$, and $\scr{F}'=\scr{F}\otimes_{\OO_S}\OO_{S'}$, so that $X'$ is a prescheme over $S'$ endowed with a quasi coherent module $\scr{F}'$, and we can consider $\Quot(\scr{F}'/X'/S')$.
+\oldpage{221-11}
+We set
+$$
+  \shQuot_{\scr{F}/X/S}(S') = \Quot(\scr{F}'/X'/S')
+$$
+(where $X'=X\times_S S'$, as above).
+
+Now, if $S''\to S'$ is an $S$-morphism, then $X''=X\times_S S''$ is isomorphic to $X'\times_{S'}S''$, and $\scr{F}''$ is isomorphic to $\scr{F}'\otimes_{\OO_{S'}}\OO_{S''}$, and, since the inverse image functor $\scr{G}'\mapsto\scr{G}'\otimes_{\OO_{S'}}\OO_{S''}$ from the category of quasi-coherent modules on $X''$ is right exact, and sends $S'$-flat modules to $S''$-flat modules, we obtain a natural map
+$$
+  \Quot(\scr{F}'/X'/S') \to \Quot(\scr{F}''/X''/S'')
+$$
+and so $\shQuot_{\scr{F}/X/S}(S')$ is a *contravariant functor in $S'$* (where $S'$ is a prescheme over $S$), with values in the categories of sets.
+In what follows, we suppose that $X$ is *projective* over a *Noetherian* $S$, with $\scr{F}$ *coherent*;
+for simplicity, we will limit ourselves to considering those $S'$ which are *locally Noetherian* over $S$.
