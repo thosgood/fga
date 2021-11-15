@@ -316,7 +316,7 @@ With this, we have:</p>
 <div id="FGA-3-IV-theorem-2.2" class="itenv" title="Theorem 2.2">
 <p>Under the conditions of <a href="FGA-3-IV.html#FGA-3-IV-theorem-2.1">Theorem 2.1</a>, let <eq env="math">s</eq> be an integer, and suppose that <eq env="math">E</eq> satisfies condition (a), as well as the following weakened form of (b):</p>
 <ul>
-<li>The Poincaré <strong>(TO-DO: should this be Hilbert?)</strong> polynomials <eq env="math">P_{\mathscr{F}}</eq> of the sheaves <eq env="math">{\mathscr{F}}</eq> whose class is in <eq env="math">E</eq> have coefficients <em>in degrees <eq env="math">\leqslant(s-1)</eq></em> that are bounded.</li>
+<li>(b) The Poincaré polynomials <eq env="math">P_{\mathscr{F}}</eq> of the sheaves <eq env="math">{\mathscr{F}}</eq> whose class is in <eq env="math">E</eq> have coefficients <em>in degrees <eq env="math">\leqslant(s-1)</eq></em> that are bounded.</li>
 </ul>
 <p>Under these conditions, the sheaves <eq env="math">{\mathscr{F}}_{(s)}</eq> (for the <eq env="math">{\mathscr{F}}</eq> whose class is in <eq env="math">E</eq>) form a bounded family.
 Furthermore, the coefficients in degree <eq env="math">(s-2)</eq> of the <eq env="math">P_{\mathscr{F}}</eq> are bounded below.</p>
@@ -358,7 +358,7 @@ The coefficient <eq env="math">a_{\mathscr{F}}</eq> satisfies
   0\leqslant a_{\mathscr{F}} \leqslant s
 </eq>
 and is thus bounded.
-With this in mind, saying that the <eq env="math">n^{r-1}</eq> coefficient <eq env="math">P_{\mathscr{F}}(n)</eq> is bounded below (resp. bounded above) is equivalent to saying the same thing for the <eq env="math">P_{\mathscr{F}}(n-k)=P_{{\mathscr{F}}(-k)}(n)</eq>.
+With this in mind, saying that the <eq env="math">n^{r-1}</eq> coefficient <eq env="math">P_{\mathscr{F}}(n)</eq> is bounded below (resp. bounded) is equivalent to saying the same thing for the <eq env="math">P_{\mathscr{F}}(n-k)=P_{{\mathscr{F}}(-k)}(n)</eq>.
 This leads us to the case where
 <eq env="displaymath">
   {\mathscr{L}} = {\mathscr{O}}_{\mathbb{P}_S^r}^s.
@@ -387,7 +387,7 @@ An easy calculation also shows that
   b_{\mathscr{F}} = a_{\mathscr{F}}(r+1)/2 + d.
 </eq>
 This shows, in particular, that <eq env="math">b_{\mathscr{F}}\geqslant 0</eq>, and so <eq env="math">b_{\mathscr{F}}</eq> is bounded below.
-It is bounded above if and only if <eq env="math">d</eq> is bounded above;
+It is bounded if and only if <eq env="math">d</eq> is bounded;
 we will show that <eq env="math">{\mathscr{F}}</eq> then remains in a bounded family.
 We can fix <eq env="math">a_{\mathscr{F}}</eq> and <eq env="math">b_{\mathscr{F}}</eq>, as well as <eq env="math">a</eq> and <eq env="math">b</eq> (and thus <eq env="math">d</eq>).
 The data of the <eq env="math">N</eq> sections <eq env="math">s_i</eq> of <eq env="math">{\mathscr{O}}_{\mathbb{P}_K^r}(d)</eq>, i.e. of a homomorphism <eq env="math">s\colon\bigwedge^a{\mathscr{L}}_K\to{\mathscr{O}}_{\mathbb{P}_K^r}(d)</eq>, allows us to recover <eq env="math">{\mathscr{F}}</eq> as the co-image of the corresponding composite homomorphism:
@@ -401,7 +401,33 @@ We then conclude by part (i) of <a href="FGA-3-IV.html#FGA-3-IV-proposition-1.2"
 </div>
 <p>The combination of the two lemmas above allows us to prove the following:</p>
 <div id="FGA-3-IV-lemma-2.6" class="itenv" title="Lemma 2.6">
-<p>Suppose</p>
+<p>Suppose, under the preliminary conditions of <a href="FGA-3-IV.html#FGA-3-IV-theorem-2.1">(2.1)</a>, that, for all <eq env="math">{\mathscr{F}}</eq>, we have
+<eq env="displaymath">
+  P_{\mathscr{F}}(n) = a_{\mathscr{F}} n^r/r! + b_{\mathscr{F}} n^{r-1}/(r-1)! + \text{terms of degree }&lt;r-1
+</eq>
+and that the coefficients <eq env="math">a_{\mathscr{F}}</eq> are bounded.
+Then the coefficients <eq env="math">b_{\mathscr{F}}</eq> are bounded below..
+Furthermore, if the <eq env="math">b_{\mathscr{F}}</eq> are bounded, then the <eq env="math">{\mathscr{F}}_{(r)}</eq> are bounded.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-21" class="proof"><em>Proof</em>. </span>We can suppose that the base field <eq env="math">K</eq> of the sheaves <eq env="math">{\mathscr{F}}</eq> is algebraically closed.
+We endow each <eq env="math">\operatorname{supp}{\mathscr{F}}_{(r)}</eq>(the union of the components of degree <eq env="math">r</eq>) with the induced reduced structure.
+Then the degrees of the <eq env="math">\operatorname{supp}{\mathscr{F}}_{(r)}</eq> are bounded above by <eq env="math">a</eq>, and so, by <a href="FGA-3-IV.html#FGA-3-IV-lemma-2.4">(2.4)</a>, the <eq env="math">\operatorname{supp}{\mathscr{F}}_{(r)}</eq> form a bounded set.
+Furthermore, for each component of <eq env="math">\operatorname{supp}{\mathscr{F}}_{(r)}</eq>, the length of <eq env="math">{\mathscr{F}}_{(r)}</eq> for this component is <eq env="math">\leqslant a</eq>, and so, if <eq env="math">{\mathscr{I}}_{\mathscr{F}}</eq> is the ideal that defines <eq env="math">\operatorname{supp}{\mathscr{F}}_{(r)}</eq>, then <eq env="math">{\mathscr{F}}_{(r)}</eq> can be considered as a module on the subscheme <eq env="math">Y_{\mathscr{F}}</eq> of <eq env="math">X</eq> defined by <eq env="math">{\mathscr{I}}_{\mathscr{F}}^a</eq>.
+As in the previous lemma, we can also reduce to the case where <eq env="math">{\mathscr{F}}={\mathscr{F}}_{(r)}</eq>, so that <eq env="math">{\mathscr{F}}</eq> comes from a module on <eq env="math">Y_{\mathscr{F}}</eq>.
+The <eq env="math">Y_{\mathscr{F}}</eq> correspond to a bounded family of quotient modules of the <eq env="math">{\mathscr{O}}_{X_K}</eq>, and thus come from a closed subscheme <eq env="math">Y</eq> of some scheme <eq env="math">X\times_S T</eq>.
+We can then apply <a href="FGA-3-IV.html#FGA-3-IV-lemma-2.5">(2.5)</a> to <eq env="math">Y/T</eq> and <eq env="math">{\mathscr{L}}\otimes_X Y</eq>, whence the conclusion.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-22" class="proof"><em>Proof</em>. </span>We can now prove <a href="FGA-3-IV-theorem-2.2">(2.2)</a> by induction on the upper bound <eq env="math">r</eq> of the <eq env="math">\dim\operatorname{supp}{\mathscr{F}}</eq>.
+The statement is trivial for <eq env="math">r&lt;0</eq>, so suppose that <eq env="math">r\geqslant 0</eq> and that the statement has been proven for <eq env="math">r'&lt;r</eq>.
+By <a href="FGA-3-IV.html#FGA-3-IV-lemma-2.6">(2.6)</a>, the <eq env="math">{\mathscr{F}}_{(r)}</eq> form a bounded family, and so too, by part (i) of [(1.2)], do the kernels of the homomorphisms <eq env="math">{\mathscr{L}}_K\to{\mathscr{F}}_{(r)}</eq>;
+there thus exists a coherent module <eq env="math">{\mathscr{L}}'</eq> on <eq env="math">X</eq> such that kernels in question, and thus also the <eq env="math">N_r({\mathscr{F}})=\operatorname{Ker}({\mathscr{F}}\to{\mathscr{F}}_{(r)})</eq>, are quotients of modules <eq env="math">{\mathscr{L}}'_K</eq>.
+Since the <eq env="math">{\mathscr{F}}_{(r)}</eq> are bounded, the <eq env="math">P_{{\mathscr{F}}_{(r)}}</eq> are bounded, and the formula
+<eq env="displaymath">
+  P_{\mathscr{F}} = P_{{\mathscr{F}}_{(r)}} + P_{N_r}
+</eq>
+then shows that the <eq env="math">P_{N_r}</eq> satisfy the same condition (b) as the <eq env="math">P_{\mathscr{F}}</eq>.</p>
 </div>
 
 </div>
