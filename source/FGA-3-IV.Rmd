@@ -182,7 +182,7 @@ With this, we have:
 ::: {.itenv #FGA-3-IV-theorem-2.2 title="Theorem 2.2" latex="{Theorem 2.2}"}
 Under the conditions of [Theorem 2.1](#FGA-3-IV-theorem-2.1), let $s$ be an integer, and suppose that $E$ satisfies condition (a), as well as the following weakened form of (b):
 
-- The Poincaré **(TO-DO: should this be Hilbert?)** polynomials $P_\scr{F}$ of the sheaves $\scr{F}$ whose class is in $E$ have coefficients _in degrees $\leq (s-1)$_ that are bounded.
+- (b\textsubscript{s}) The Poincaré polynomials $P_\scr{F}$ of the sheaves $\scr{F}$ whose class is in $E$ have coefficients _in degrees $\leq (s-1)$_ that are bounded.
 
 Under these conditions, the sheaves $\scr{F}_{(s)}$ (for the $\scr{F}$ whose class is in $E$) form a bounded family.
 Furthermore, the coefficients in degree $(s-2)$ of the $P_\scr{F}$ are bounded below.
@@ -232,7 +232,7 @@ $$
   0\leq a_\scr{F} \leq s
 $$
 and is thus bounded.
-With this in mind, saying that the $n^{r-1}$ coefficient $P_\scr{F}(n)$ is bounded below (resp. bounded above) is equivalent to saying the same thing for the $P_\scr{F}(n-k)=P_{\scr{F}(-k)}(n)$.
+With this in mind, saying that the $n^{r-1}$ coefficient $P_\scr{F}(n)$ is bounded below (resp. bounded) is equivalent to saying the same thing for the $P_\scr{F}(n-k)=P_{\scr{F}(-k)}(n)$.
 This leads us to the case where
 $$
   \scr{L} = \OO_{\PP_S^r}^s.
@@ -263,7 +263,7 @@ $$
   b_\scr{F} = a_\scr{F}(r+1)/2 + d.
 $$
 This shows, in particular, that $b_\scr{F}\geq0$, and so $b_\scr{F}$ is bounded below.
-It is bounded above if and only if $d$ is bounded above;
+It is bounded if and only if $d$ is bounded;
 we will show that $\scr{F}$ then remains in a bounded family.
 We can fix $a_\scr{F}$ and $b_\scr{F}$, as well as $a$ and $b$ (and thus $d$).
 The data of the $N$ sections $s_i$ of $\OO_{\PP_K^r}(d)$, i.e. of a homomorphism $s\colon\bigwedge^a\scr{L}_K\to\OO_{\PP_K^r}(d)$, allows us to recover $\scr{F}$ as the co-image of the corresponding composite homomorphism:
@@ -279,5 +279,33 @@ We then conclude by part (i) of [(1.2)](#FGA-3-IV-proposition-1.2).
 The combination of the two lemmas above allows us to prove the following:
 
 ::: {.itenv #FGA-3-IV-lemma-2.6 title="Lemma 2.6" latex="{Lemma 2.6}"}
-Suppose
+Suppose, under the preliminary conditions of [(2.1)](#FGA-3-IV-theorem-2.1), that, for all $\scr{F}$, we have
+$$
+  P_\scr{F}(n) = a_\scr{F} n^r/r! + b_\scr{F} n^{r-1}/(r-1)! + \text{terms of degree }<r-1
+$$
+and that the coefficients $a_\scr{F}$ are bounded.
+Then the coefficients $b_\scr{F}$ are bounded below..
+Furthermore, if the $b_\scr{F}$ are bounded, then the $\scr{F}_{(r)}$ are bounded.
+:::
+
+::: {.proof}
+We can suppose that the base field $K$ of the sheaves $\scr{F}$ is algebraically closed.
+We endow each $\supp\scr{F}_{(r)}$(the union of the components of degree $r$) with the induced reduced structure.
+Then the degrees of the $\supp\scr{F}_{(r)}$ are bounded above by $a$, and so, by [(2.4)](#FGA-3-IV-lemma-2.4), the $\supp\scr{F}_{(r)}$ form a bounded set.
+Furthermore, for each component of $\supp\scr{F}_{(r)}$, the length of $\scr{F}_{(r)}$ for this component is $\leq a$, and so, if $\scr{I}_\scr{F}$ is the ideal that defines $\supp\scr{F}_{(r)}$, then $\scr{F}_{(r)}$ can be considered as a module on the subscheme $Y_\scr{F}$ of $X$ defined by $\scr{I}_\scr{F}^a$.
+As in the previous lemma, we can also reduce to the case where $\scr{F}=\scr{F}_{(r)}$, so that $\scr{F}$ comes from a module on $Y_\scr{F}$.
+The $Y_\scr{F}$ correspond to a bounded family of quotient modules of the $\OO_{X_K}$, and thus come from a closed subscheme $Y$ of some scheme $X\times_S T$.
+We can then apply [(2.5)](#FGA-3-IV-lemma-2.5) to $Y/T$ and $\scr{L}\otimes_X Y$, whence the conclusion.
+:::
+
+::: {.proof}
+We can now prove [(2.2)](FGA-3-IV-theorem-2.2) by induction on the upper bound $r$ of the $\dim\supp\scr{F}$.
+The statement is trivial for $r<0$, so suppose that $r\geq0$ and that the statement has been proven for $r'<r$.
+By [(2.6)](#FGA-3-IV-lemma-2.6), the $\scr{F}_{(r)}$ form a bounded family, and so too, by part (i) of [(1.2)], do the kernels of the homomorphisms $\scr{L}_K\to\scr{F}_{(r)}$;
+there thus exists a coherent module $\scr{L}'$ on $X$ such that kernels in question, and thus also the $N_r(\scr{F})=\Ker(\scr{F}\to\scr{F}_{(r)})$, are quotients of modules $\scr{L}'_K$.
+Since the $\scr{F}_{(r)}$ are bounded, the $P_{\scr{F}_{(r)}}$ are bounded, and the formula
+$$
+  P_\scr{F} = P_{\scr{F}_{(r)}} + P_{N_r}
+$$
+then shows that the $P_{N_r}$ satisfy the same condition (b\textsubscript{s}) as the $P_\scr{F}$.
 :::
