@@ -182,7 +182,7 @@ With this, we have:
 ::: {.itenv #FGA-3-IV-theorem-2.2 title="Theorem 2.2" latex="{Theorem 2.2}"}
 Under the conditions of [Theorem 2.1](#FGA-3-IV-theorem-2.1), let $s$ be an integer, and suppose that $E$ satisfies condition (a), as well as the following weakened form of (b):
 
-- (b\textsubscript{s}) The Poincaré polynomials $P_\scr{F}$ of the sheaves $\scr{F}$ whose class is in $E$ have coefficients _in degrees $\leq (s-1)$_ that are bounded.
+- (b<sub>s</sub>) The Poincaré polynomials $P_\scr{F}$ of the sheaves $\scr{F}$ whose class is in $E$ have coefficients _in degrees $\leq (s-1)$_ that are bounded.
 
 Under these conditions, the sheaves $\scr{F}_{(s)}$ (for the $\scr{F}$ whose class is in $E$) form a bounded family.
 Furthermore, the coefficients in degree $(s-2)$ of the $P_\scr{F}$ are bounded below.
@@ -307,5 +307,6 @@ Since the $\scr{F}_{(r)}$ are bounded, the $P_{\scr{F}_{(r)}}$ are bounded, and 
 $$
   P_\scr{F} = P_{\scr{F}_{(r)}} + P_{N_r}
 $$
-then shows that the $P_{N_r}$ satisfy the same condition (b\textsubscript{s}) as the $P_\scr{F}$.
+then shows that the $P_{N_r}$ satisfy the same condition (b<sub>s</sub>) as the $P_\scr{F}$.
+Thus the $N_r$ satisfy conditions (a) and (b<sub>s</sub>), and so, by the induction hypothesis, the $(N_r)_{(s)}$ are bounded.
 :::
