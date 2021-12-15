@@ -442,23 +442,43 @@ This finishes the proof</p>
 <p>Let <eq env="math">X</eq> be a prescheme over another prescheme <eq env="math">S</eq>, and <eq env="math">{\mathscr{F}}</eq> a quasi-coherent module on <eq env="math">X</eq>.
 We denote by
 <eq env="displaymath">
-  \operatorname{Quot}({\mathscr{F}}/X/S)
+  \operatorname{Quot}({{\mathscr{F}}'/X'/S'})
 </eq>
 the set of quasi-coherent modules given by quotients of <eq env="math">{\mathscr{F}}</eq> that are flat over <eq env="math">S</eq>.
-Now let <eq env="math">S'\to S</eq> be a base change morphisms, and set <eq env="math">X'=X\times_S S'</eq>, and <eq env="math">{\mathscr{F}}'={\mathscr{F}}\otimes_{{\mathscr{O}}_S}{\mathscr{O}}_{S'}</eq>, so that <eq env="math">X'</eq> is a prescheme over <eq env="math">S'</eq> endowed with a quasi coherent module <eq env="math">{\mathscr{F}}'</eq>, and we can consider <eq env="math">\operatorname{Quot}({\mathscr{F}}'/X'/S')</eq>.
+Now let <eq env="math">S'\to S</eq> be a base change morphisms, and set <eq env="math">X'=X\times_S S'</eq>, and <eq env="math">{\mathscr{F}}'={\mathscr{F}}\otimes_{{\mathscr{O}}_S}{\mathscr{O}}_{S'}</eq>, so that <eq env="math">X'</eq> is a prescheme over <eq env="math">S'</eq> endowed with a quasi coherent module <eq env="math">{\mathscr{F}}'</eq>, and we can consider <eq env="math">\operatorname{Quot}(\FXSp)</eq>.
 
 We set
 <eq env="displaymath">
-  \underline{\operatorname{Quot}}_{{\mathscr{F}}/X/S}(S') = \operatorname{Quot}({\mathscr{F}}'/X'/S')
+  \underline{\operatorname{Quot}}_{{{\mathscr{F}}'/X'/S'}}(S') = \operatorname{Quot}(\FXSp)
 </eq>
 (where <eq env="math">X'=X\times_S S'</eq>, as above).</p>
 <p>Now, if <eq env="math">S''\to S'</eq> is an <eq env="math">S</eq>-morphism, then <eq env="math">X''=X\times_S S''</eq> is isomorphic to <eq env="math">X'\times_{S'}S''</eq>, and <eq env="math">{\mathscr{F}}''</eq> is isomorphic to <eq env="math">{\mathscr{F}}'\otimes_{{\mathscr{O}}_{S'}}{\mathscr{O}}_{S''}</eq>, and, since the inverse image functor <eq env="math">{\mathscr{G}}'\mapsto{\mathscr{G}}'\otimes_{{\mathscr{O}}_{S'}}{\mathscr{O}}_{S''}</eq> from the category of quasi-coherent modules on <eq env="math">X''</eq> is right exact, and sends <eq env="math">S'</eq>-flat modules to <eq env="math">S''</eq>-flat modules, we obtain a natural map
 <eq env="displaymath">
-  \operatorname{Quot}({\mathscr{F}}'/X'/S') \to \operatorname{Quot}({\mathscr{F}}''/X''/S'')
+  \operatorname{Quot}(\FXSp) \to \operatorname{Quot}({\mathscr{F}}''/X''/S'')
 </eq>
-and so <eq env="math">\underline{\operatorname{Quot}}_{{\mathscr{F}}/X/S}(S')</eq> is a <em>contravariant functor in <eq env="math">S'</eq></em> (where <eq env="math">S'</eq> is a prescheme over <eq env="math">S</eq>), with values in the categories of sets.
+and so <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}'/X'/S'}}(S')</eq> is a <em>contravariant functor in <eq env="math">S'</eq></em> (where <eq env="math">S'</eq> is a prescheme over <eq env="math">S</eq>), with values in the categories of sets.
 In what follows, we suppose that <eq env="math">X</eq> is <em>projective</em> over a <em>Noetherian</em> <eq env="math">S</eq>, with <eq env="math">{\mathscr{F}}</eq> <em>coherent</em>;
 for simplicity, we will limit ourselves to considering those <eq env="math">S'</eq> which are <em>locally Noetherian</em> over <eq env="math">S</eq>.</p>
+<div id="FGA-3-IV-theorem-3.1" class="itenv" title="Theorem 3.1">
+<p>Under these conditions, the contravariant functor <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}'/X'/S'}}</eq> on the category of locally Noetherian <eq env="math">S</eq>-preschemes is <em>representable</em> by an <eq env="math">S</eq>-prescheme <eq env="math">\operatorname{Quot}_{{{\mathscr{F}}'/X'/S'}}</eq>, given by the sum of a sequence of projective <eq env="math">S</eq>-schemes (and a fortiori <eq env="math">\operatorname{Quot}_{{{\mathscr{F}}'/X'/S'}}</eq> is locally of finite type over <eq env="math">S</eq>).</p>
+</div>
+<p>We will obtain such a decomposition in the following way.
+Let <eq env="math">{\mathscr{O}}_X(1)</eq> be an invertible sheaf on <eq env="math">X</eq> that is very ample with respect to <eq env="math">S</eq>.
+For every polynomial <eq env="math">P(n)</eq> with rational coefficients, let <eq env="math">\operatorname{Quot}^P({{\mathscr{F}}'/X'/S'})</eq> be the subset of <eq env="math">\operatorname{Quot}({{\mathscr{F}}'/X'/S'})</eq> consisting of coherent quotients <eq env="math">{\mathscr{G}}</eq> of <eq env="math">{\mathscr{F}}</eq> that are flat over <eq env="math">S</eq> and whose Hilbert polynomial at each <eq env="math">s\in S</eq> is equal to <eq env="math">P</eq>.
+We then set
+<eq env="displaymath">
+  \underline{\operatorname{Quot}}_{{\mathscr{F}}'/X'/S'}^P(S') = \operatorname{Quot}^P(\FXSp)
+</eq>
+and thus obtain a sub-functor of <eq env="math">\underline{\operatorname{Quot}}_{{\mathscr{F}}'/X'/S'}</eq>.
+The invariance property of Hilbert polynomials (recalled in <a href="FGA-3-IV.html#FGA-3-IV-section-2">§2</a>) implies the following:
+<em>For <eq env="math">\underline{\operatorname{Quot}}_{{\mathscr{F}}'/X'/S'}</eq> to be representable, it is necessary and sufficient for the <eq env="math">\underline{\operatorname{Quot}}_{{\mathscr{F}}'/X'/S'}^p</eq> to be representable, and then the <eq env="math">S</eq>-prescheme <eq env="math">\operatorname{Quot}_{{\mathscr{F}}'/X'/S'}</eq> which represents it is isomorphic to the prescheme given by the sum of the <eq env="math">\operatorname{Quot}_{{\mathscr{F}}'/X'/S'}^P</eq> that represent the functors <eq env="math">\underline{\operatorname{Quot}}_{{\mathscr{F}}'/X'/S'}^P</eq></em>.
+With this, <a href="FGA-3-IV.html#FGA-3-IV-theorem-3.1">Theorem 3.1</a> will be a consequence of the following theorem:</p>
+
+<div id="FGA-3-IV-theorem-3.2" class="itenv" title="Theorem 3.2">
+<p>With the above notation, the functor <eq env="math">\underline{\operatorname{Quot}}_{{\mathscr{F}}'/X'/S'}^P</eq> is representable by a projective <eq env="math">S</eq>-prescheme <eq env="math">\operatorname{Quot}_{{\mathscr{F}}'/X'/S'}^P</eq>.</p>
+</div>
+<p>The rest of this section is dedicated to the proof of <a href="FGA-3-IV.html#FGA-3-IV-theorem-3.2">Theorem 3.2</a>.</p>
+<p>Let <eq env="math">\nu</eq> be an integer.</p>
 
 </div>
 </div>
