@@ -20,6 +20,8 @@
 \providecommand{\PP}{\mathbb{P}}
 \providecommand{\Quot}{\operatorname{Quot}}
 \providecommand{\shQuot}{\underline{\Quot}}
+\providecommand{\FXS}{{\scr{F}/X/S}}
+\providecommand{\FXS}{{\scr{F}'/X'/S'}}
 
 <!-- Content -->
 
@@ -322,21 +324,47 @@ This finishes the proof
 Let $X$ be a prescheme over another prescheme $S$, and $\scr{F}$ a quasi-coherent module on $X$.
 We denote by
 $$
-  \Quot(\scr{F}/X/S)
+  \Quot(\FXS)
 $$
 the set of quasi-coherent modules given by quotients of $\scr{F}$ that are flat over $S$.
-Now let $S'\to S$ be a base change morphisms, and set $X'=X\times_S S'$, and $\scr{F}'=\scr{F}\otimes_{\OO_S}\OO_{S'}$, so that $X'$ is a prescheme over $S'$ endowed with a quasi coherent module $\scr{F}'$, and we can consider $\Quot(\scr{F}'/X'/S')$.
+Now let $S'\to S$ be a base change morphisms, and set $X'=X\times_S S'$, and $\scr{F}'=\scr{F}\otimes_{\OO_S}\OO_{S'}$, so that $X'$ is a prescheme over $S'$ endowed with a quasi coherent module $\scr{F}'$, and we can consider $\Quot(\FXSp)$.
 \oldpage{221-11}
 We set
 $$
-  \shQuot_{\scr{F}/X/S}(S') = \Quot(\scr{F}'/X'/S')
+  \shQuot_{\FXS}(S') = \Quot(\FXSp)
 $$
 (where $X'=X\times_S S'$, as above).
 
 Now, if $S''\to S'$ is an $S$-morphism, then $X''=X\times_S S''$ is isomorphic to $X'\times_{S'}S''$, and $\scr{F}''$ is isomorphic to $\scr{F}'\otimes_{\OO_{S'}}\OO_{S''}$, and, since the inverse image functor $\scr{G}'\mapsto\scr{G}'\otimes_{\OO_{S'}}\OO_{S''}$ from the category of quasi-coherent modules on $X''$ is right exact, and sends $S'$-flat modules to $S''$-flat modules, we obtain a natural map
 $$
-  \Quot(\scr{F}'/X'/S') \to \Quot(\scr{F}''/X''/S'')
+  \Quot(\FXSp) \to \Quot(\scr{F}''/X''/S'')
 $$
-and so $\shQuot_{\scr{F}/X/S}(S')$ is a *contravariant functor in $S'$* (where $S'$ is a prescheme over $S$), with values in the categories of sets.
+and so $\shQuot_{\FXS}(S')$ is a *contravariant functor in $S'$* (where $S'$ is a prescheme over $S$), with values in the categories of sets.
 In what follows, we suppose that $X$ is *projective* over a *Noetherian* $S$, with $\scr{F}$ *coherent*;
 for simplicity, we will limit ourselves to considering those $S'$ which are *locally Noetherian* over $S$.
+
+::: {.itenv #FGA-3-IV-theorem-3.1 title="Theorem 3.1" latex="{Theorem 3.1}"}
+Under these conditions, the contravariant functor $\shQuot_{\FXS}$ on the category of locally Noetherian $S$-preschemes is *representable* by an $S$-prescheme $\Quot_{\FXS}$, given by the sum of a sequence of projective $S$-schemes (and a fortiori $\Quot_{\FXS}$ is locally of finite type over $S$).
+:::
+
+We will obtain such a decomposition in the following way.
+Let $\OO_X(1)$ be an invertible sheaf on $X$ that is very ample with respect to $S$.
+For every polynomial $P(n)$ with rational coefficients, let $\Quot^P(\FXS)$ be the subset of $\Quot(\FXS)$ consisting of coherent quotients $\scr{G}$ of $\scr{F}$ that are flat over $S$ and whose Hilbert polynomial at each $s\in S$ is equal to $P$.
+We then set
+$$
+  \shQuot_\FXS^P(S') = \Quot^P(\FXSp)
+$$
+and thus obtain a sub-functor of $\shQuot_\FXS$.
+The invariance property of Hilbert polynomials (recalled in [§2](#FGA-3-IV-section-2)) implies the following:
+*For $\shQuot_\FXS$ to be representable, it is necessary and sufficient for the $\shQuot_\FXS^p$ to be representable, and then the $S$-prescheme $\Quot_\FXS$ which represents it is isomorphic to the prescheme given by the sum of the $\Quot_\FXS^P$ that represent the functors $\shQuot_\FXS^P$*.
+With this, [Theorem 3.1](#FGA-3-IV-theorem-3.1) will be a consequence of the following theorem:
+
+\oldpage{221-12}
+
+::: {.itenv #FGA-3-IV-theorem-3.2 title="Theorem 3.2" latex="{Theorem 3.2}"}
+With the above notation, the functor $\shQuot_\FXS^P$ is representable by a projective $S$-prescheme $\Quot_\FXS^P$.
+:::
+
+The rest of this section is dedicated to the proof of [Theorem 3.2](#FGA-3-IV-theorem-3.2).
+
+Let $\nu$ be an integer.
