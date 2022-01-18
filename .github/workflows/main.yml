@@ -14,7 +14,7 @@ jobs:
       - name: ⬇️ Checkout
         uses: actions/checkout@v2
 
-      - name: Cache Yarn packages
+      - name: 📦 Cache Yarn packages
         uses: actions/cache@v2
         with:
           path: '**/node_modules'
@@ -26,6 +26,7 @@ jobs:
         uses: r-lib/actions/setup-r@master
 
       - name: 📦 Cache R packages
+        id: cache-r-packages
         uses: actions/cache@v2
         with:
           path: ${{ env.R_LIBS_USER }}
@@ -37,6 +38,7 @@ jobs:
         uses: r-lib/actions/setup-pandoc@v1
 
       - name: 💿 Install R packages
+        if: steps.cache-r-packages.outputs.cache-hit != 'true'
         run: |
           R -e "install.packages('bookdown')"
 
