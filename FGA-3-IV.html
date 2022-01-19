@@ -525,10 +525,10 @@ With this, <a href="FGA-3-IV.html#FGA-3-IV-theorem-3.1">Theorem 3.1</a> will be 
     
     //customise the header
     $('div.font-settings button.size-3').map(function() {
-      // this.setAttribute("class", "button size-2")
-      // if (this.innerText == "Sepia") {
-        // this.setAttribute("style", "display: none;");
-      // }
+      this.setAttribute("class", "button size-2")
+      if (this.innerText == "Sepia") {
+        this.setAttribute("style", "display: none;");
+      }
       if (this.innerText == "White") {
         this.innerText = "Light";
       }

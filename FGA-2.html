@@ -1004,10 +1004,10 @@ However, a study of coverings admitting ramifications that are not “tame” se
     
     //customise the header
     $('div.font-settings button.size-3').map(function() {
-      // this.setAttribute("class", "button size-2")
-      // if (this.innerText == "Sepia") {
-        // this.setAttribute("style", "display: none;");
-      // }
+      this.setAttribute("class", "button size-2")
+      if (this.innerText == "Sepia") {
+        this.setAttribute("style", "display: none;");
+      }
       if (this.innerText == "White") {
         this.innerText = "Light";
       }
