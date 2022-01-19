@@ -18,6 +18,7 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 - make sepia colour scheme not look so gross
     + TOC and Font Settings
     + links
+    + (actually, just use the modified files from other translations?)
 
 - [x] 1
 - [x] 2
