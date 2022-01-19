@@ -1,4 +1,4 @@
-# Quotient preschemes {#FGA-3.III}
+# Quotient preschemes {#fga-3.iii}
 
 \providecommand{\scr}[1]{{\mathscr{#1}}}
 \renewcommand{\cal}[1]{{\mathcal{#1}}}
@@ -14,7 +14,6 @@
 \providecommand{\Set}{\mathtt{Set}}
 \providecommand{\pr}{\mathrm{pr}}
 \providecommand{\Gm}{\mathrm{G}_\mathrm{m}}
-
 \providecommand{\id}{\operatorname{id}}
 \providecommand{\Hom}{\operatorname{Hom}}
 \providecommand{\Spec}{\operatorname{Spec}}
@@ -23,7 +22,6 @@
 \providecommand{\sGL}{\operatorname{\mathscr{G}\!\!\mathscr{L}}}
 \providecommand{\GP}{\operatorname{GP}}
 \providecommand{\Aut}{\operatorname{Aut}}
-
 <!-- Content -->
 
 ::: {.original-citation}
@@ -38,7 +36,7 @@ _Séminaire Bourbaki_ **13** (1960--61), Talk no. 212.
 ::: {.rmenv title="Remark" latex="{Remark}"}
 _[Comp.]_
 We note that the application (of the theory developed here) in talk 3.V ("Picard schemes: existence theorems") can equally be replaced by a suitable use of Hilbert schemes (cf. _Séminaire Mumford--Tate_, Harvard University (1961--62)).
-As mentioned in [§8](#FGA-3-III-section-8), the most important gap in the theory presented here is the lack of existence criteria for quotients by a non-proper equivalence relation, such as the equivalence relations coming from certain actions of the projective group.
+As mentioned in [§8](#fga-3-iii-section-8), the most important gap in the theory presented here is the lack of existence criteria for quotients by a non-proper equivalence relation, such as the equivalence relations coming from certain actions of the projective group.
 An important theorem in this direction has been obtained by Mumford ("An elementary theorem in geometric invariant theory". _Bull. Amer. math. Soc._ **67** (1961), 483--486).
 For a refinement of his result, and various applications the the theory, see _Séminaire Mumford--Tate_, Harvard University (1961--62).
 :::
@@ -46,17 +44,17 @@ For a refinement of his result, and various applications the the theory, see _S�
 The problems discussed in the current talk differ from those discussed in the two previous ones, in that we try to represent certain covariant, no longer contravariant, functors of varying schemes.
 The procedure of passing to the quotient is, however, essential in many questions of construction in algebraic geometry, including those from talks I and II ([@3-III-1], [@3-III-2]).
 Indeed, the question of _effectiveness of a descent data_ on a $T$-prescheme $X$, with respect to a faithfully flat and quasi-compact morphism $T\to S$, is equivalent to the question of existence of a quotient of $X$ (satisfying reasonable properties that we examine below) by the flat equivalence relation on $X$ defined by the descent data;
-the questions raised in [@3-III-1, A.2.c] can probably be answered at the same time as the questions posed in [§2](#FGA-3-III-section-2) of this current talk.
+the questions raised in [@3-III-1, A.2.c] can probably be answered at the same time as the questions posed in [§2](#fga-3-iii-section-2) of this current talk.
 Similarly, the _Picard scheme_ (for the definition, see [@3-III-2, C.3]) of an $S$-scheme $X$ can be defined in many ways, such as as a quotient of certain other schemes (with positive divisors, or immersions into a projective) by flat equivalence relations, with the definition and construction of these auxiliary schemes being also more simple: they are basically schemes of the type $\Hom_S(X,Y)$, and variants defined in [@3-III-2, C.2], and their construction will be the subject of the following talk (under suitable hypotheses of projectivity).
 Thus, combining the results of the current talk with those of the following, we will obtain the construction of Picard schemes, under suitable hypotheses.
 
 The problem of passing to the quotient in preschemes again offers unresolved questions.
-The most important is mentioned in [§8](#FGA-3-III-section-8).
+The most important is mentioned in [§8](#fga-3-iii-section-8).
 It currently remains as the only obstacle to the construction of _schemes of modules over the integers for curves of arbitrary degree_, _polarised abelian varieties_, etc.
 That is to say, its solution deserves the efforts of specialists of algebraic groups.
 
 
-## Equivalence relations, effective equivalence relations {#FGA-3-III-section-1}
+## Equivalence relations, effective equivalence relations {#fga-3-iii-section-1}
 
 Let $\cal{C}$ be a category, and $X$ an object of $\cal{C}$.
 \oldpage{212-01}
@@ -125,7 +123,7 @@ The above definitions imply the following "_Galois correspondence_":
 
 \oldpage{212-04}
 
-::: {.itenv #FGA-3-III-proposition-1.1 title="Proposition 1.1" latex="{Proposition 1.1}"}
+::: {.itenv #fga-3-iii-proposition-1.1 title="Proposition 1.1" latex="{Proposition 1.1}"}
 There is a bijective correspondence, respecting the natural orders, between the set of effective equivalence relations $R$ on $X$ and the set of effective quotients $Y$ of $X$, with such an $R$ corresponding to the effective quotient $X/R$, and such a $Y$ corresponding to the effective equivalence relation defined by the canonical projection $X\to Y$ (which is defined by the fibre product $X\times_Y X$ endowed with its two projections).
 :::
 
@@ -134,7 +132,7 @@ This is no longer true in categories such as the category of preschemes over a g
 The question of effectiveness, and even (in the case of non-finite preschemes over $S$) the question of existence of quotients, more often than not turn out to be delicate.
 
 
-## Example: finite preschemes over $S$ {#FGA-3-III-section-2}
+## Example: finite preschemes over $S$ {#fga-3-iii-section-2}
 
 Let $\cal{C}$ be the category of finite preschemes over $S$, which is assumed to be locally Noetherian.
 Then $\cal{C}$ is equivalent to the opposite category of the category of coherent sheaves of commutative algebras on $S$, or, if $S$ is affine of ring $A$, then it is equivalent to the opposite category of the category of finite $A$-algebras over $A$ (i.e. those that are modules of finite type over $A$).
@@ -156,7 +154,7 @@ We then say that $R$ is a _finite equivalence relation_.
 Supposing, for simplicity, that $S$ and $X$ are affine (which implies that $R$ is affine, so that the situation is reduced to one of pure commutative algebra), _we do not know, even in this case, if there exists a quotient $X/R=Y$, and if the canonical morphism $X\to Y$ is finite_.
 (The most simple case is that where we suppose that $S$ is the spectrum of a field $k$, and where $X$ is the spectrum of $k[t]$, i.e. the affine line).
 Of course, if the two problems above turn out to be true, then we can conclude that, in the situation described, $R$ is effective.
-Note that the problem of _existence_ of a quotient $Y$ and of the _finiteness_ of $f\colon X\to Y$ are stated in exactly the same terms if, instead of an equivalence graph in $X$, we only have an equivalence pregraph in $X$, in the sense of [§4](#FGA-3-III-section-4).
+Note that the problem of _existence_ of a quotient $Y$ and of the _finiteness_ of $f\colon X\to Y$ are stated in exactly the same terms if, instead of an equivalence graph in $X$, we only have an equivalence pregraph in $X$, in the sense of [§4](#fga-3-iii-section-4).
 
 The question of passing to the quotient by a more or less arbitrary finite equivalence relation arises in the construction of preschemes by "gluing" given preschemes $X_i$ along certain closed sub-preschemes;
 the gluing law is expressed precisely by a finite equivalence relation on the prescheme $X$ given by the sum of the $X_i$.
@@ -164,7 +162,7 @@ We also expect that the solutions of the problems stated here, as well as of the
 
 The only general positive fact known to the author is the following:
 
-::: {.itenv #FGA-3-III-proposition-2.1 title="Proposition 2.1" latex="{Proposition 2.1}"}
+::: {.itenv #fga-3-iii-proposition-2.1 title="Proposition 2.1" latex="{Proposition 2.1}"}
 Let $S$ be a locally Noetherian prescheme, $s$ a point of $S$, and $\Omega$ an algebraically closed extension of $k(s)$.
 \oldpage{212-06}
 Consider the corresponding "fibre functor" $F$, that associates, to any $S$-scheme $X$ that is finite over $S$, the set of points of $X/S$ with values in $\Omega$.
@@ -176,7 +174,7 @@ In particular, every equivalence relation is effective.
 This implies that, if $R$ is an equivalence relation on $X$, where $X$ is finite over $S$, then the canonical morphism $R\to X\times_Y X$ (where $Y=X/R$) is _radicial and surjective_ (and, in fact, a surjective closed immersion, since it is a monomorphism).
 
 
-## The case of a group with operators {#FGA-3-III-section-3}
+## The case of a group with operators {#fga-3-iii-section-3}
 
 We now suppose that $\cal{C}$ is an arbitrary category.
 Let $G$ and $X$ be objects of $\cal{C}$, and suppose that $G$ is a $\cal{C}$-group with operators on the object $X$.
@@ -224,7 +222,7 @@ If we then try to pass directly to the quotient under $R$ (or, more precisely, u
 It is thus important to find a generalisation of the notion of equivalence relations, appealing directly to the pair defined by a $\cal{C}$-group with operators.
 
 
-## Equivalence pre-relations {#FGA-3-III-section-4}
+## Equivalence pre-relations {#fga-3-iii-section-4}
 
 Recall that a _groupoid_ is defined to be a category where all the morphisms are isomorphisms.
 A category should be defined as consisting of two base sets, $X$ and $R$, with the former being the set of _objects_ and the latter the set of _arrows_, endowed with the following structures:
@@ -318,7 +316,7 @@ So if $Z$ is a category, then $\Hom(\Delta'_n,Z)$ (resp. $\Hom(\Delta''_n,Z)$) i
 We also have an obvious natural homomorphism from the semi-simplicial set associated to $Z'$ to $Z''$, and this is an isomorphism if and only if $Z$ is a groupoid.
 Then:
 
-::: {.itenv #FGA-3-III-proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
+::: {.itenv #fga-3-iii-proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
 The functor $Z\mapsto Z''$ from the category of categories to the category of semi-simplicial sets is fully faithful, and defines an equivalence between the category of _categories_ and the category of semi-simplicial sets, i.e. contravariant functors $K$ from $\cal{S}'$ to $\Set$ _that send amalgamated sums $A\coprod_C B$ (of the type described above) to fibre products of sets_.
 
 \oldpage{212-11}
@@ -329,7 +327,7 @@ Similarly, the functor $Z\mapsto Z'$ from the category of groupoids to the categ
 We can thus consider categories as specific examples of semi-simplicial sets, and groupoids as specific examples of simplicial sets, with, of course, the condition that we argue "up to isomorphism", as is rigorous when we interpret certain structures in terms of others.
 The usual procedure of reduction to the set-theoretic case then implies:
 
-::: {.itenv #FGA-3-III-corollary-4.2 title="Corollary 4.2" latex="{Corollary 4.2}"}
+::: {.itenv #fga-3-iii-corollary-4.2 title="Corollary 4.2" latex="{Corollary 4.2}"}
 The above claim remains true when we replace categories, groupoids, and simplicial sets with $\cal{C}$-categories, $\cal{C}$-groupoids, and $\cal{C}$-simplicial objects (respectively), _provided that_ fibre products exist in $\cal{C}$.
 :::
 
@@ -366,13 +364,13 @@ $$
 i.e. if $a,b\in X$ then $\Hom(a,b)$ is, by definition, the transporter of $a$ to $b$, and morphisms compose thanks to the composition of elements of $G$.
 
 ::: {.rmenv title="Remark" latex="{Remark}"}
-We can avoid the logical difficulties that arise in a statement such as [Proposition 4.1](#FGA-3-III-proposition-4.1) by implicitly assuming that all the objects in question can be found in a fixed "universe" (that is itself a set).
+We can avoid the logical difficulties that arise in a statement such as [Proposition 4.1](#fga-3-iii-proposition-4.1) by implicitly assuming that all the objects in question can be found in a fixed "universe" (that is itself a set).
 :::
 
 
-## Quotient by a finite and flat equivalence relation {#FGA-3-III-section-5}
+## Quotient by a finite and flat equivalence relation {#fga-3-iii-section-5}
 
-::: {.itenv #FGA-3-III-theorem-5.1 title="Theorem 5.1" latex="{Theorem 5.1}"}
+::: {.itenv #fga-3-iii-theorem-5.1 title="Theorem 5.1" latex="{Theorem 5.1}"}
 Let $X=\Spec(B)$ be an affine scheme, $\cal{R}$ an equivalence pre-relation on $X$, whose component $R_1$ is affine: say, $R_1=\Spec(C)$.
 We suppose that the first projection $p_1\colon R_1\to X$ is a finite and locally free morphism, i.e. that the corresponding homomorphism of rings $p'_1\colon B\to C$ makes $C$ a projective $B$-module of finite type.
 Let $A$ be the subring of $B$ given by the kernel of the pair of homomorphisms $p'_1,p'_2\colon B\rightrightarrows C$ (i.e. the set of elements $b$ such that $p'_1(b)=p'_2(b)$).
@@ -390,7 +388,7 @@ iv. If $\cal{R}$ comes from an equivalence _relation_, then the morphism $f\colo
 This theorem generalises the well-known theorem concerning the case of a finite group $G$ acting by automorphisms on the ring $B$, and with ring $A$ of invariants, and the proof is analogous to the known proof.
 We can make (iii) more precise as follows:
 
-::: {.itenv #FGA-3-III-corollary-5.2 title="Corollary 5.2" latex="{Corollary 5.2}"}
+::: {.itenv #fga-3-iii-corollary-5.2 title="Corollary 5.2" latex="{Corollary 5.2}"}
 The canonical morphism $R_1\to X\times_Y X$ is _surjective_.
 :::
 
@@ -404,23 +402,23 @@ It then follows from the theorem that we have conclusions (i) to (iv) analogous 
 Under these conditions, we say that the equivalence pre-relation $\cal{R}$ on $X$ is _admissible_.
 With this definition:
 
-::: {.itenv #FGA-3-III-theorem-5.3 title="Theorem 5.3" latex="{Theorem 5.3}"}
+::: {.itenv #fga-3-iii-theorem-5.3 title="Theorem 5.3" latex="{Theorem 5.3}"}
 Let $X$ be a prescheme, and $\cal{R}$ an equivalence pre-relation on $X$ such that $p_1\colon R_1\to X$ is a finite and locally free morphism.
 For $\cal{R}$ to be admissible, it is necessary and sufficient for every set-theoretic equivalence class $p_2(p_1^{-1}(x))$ in $X$ modulo $\cal{R}$ to be contained in an affine open subset (a condition that is always satisfied if every finite subset of $X$ is contained in an affine open subset, for example if $X$ is quasi-projective over an affine scheme).
 :::
 
-We can in fact easily show that every equivalence class modulo $\cal{R}$ in $X$ is then contained in an affine open subset that is _stable_ under $\cal{R}$, and we construct the quotient $Y$ by gluing the pieces obtained by applying [Theorem 5.1](#FGA-3-III-theorem-5.1).
+We can in fact easily show that every equivalence class modulo $\cal{R}$ in $X$ is then contained in an affine open subset that is _stable_ under $\cal{R}$, and we construct the quotient $Y$ by gluing the pieces obtained by applying [Theorem 5.1](#fga-3-iii-theorem-5.1).
 \oldpage{212-14}
 
-::: {.itenv #FGA-3-III-corollary-5.4 title="Corollary 5.4" latex="{Corollary 5.4}"}
+::: {.itenv #fga-3-iii-corollary-5.4 title="Corollary 5.4" latex="{Corollary 5.4}"}
 Suppose that this condition is satisfied, and, further, that $\cal{R}$ comes from an equivalence relation.
 Then the equivalence relation is question is effective, i.e. $R_1\to X\times_Y X$ is an isomorphism, and $f\colon X\to Y$ is a finite and locally free morphism.
 :::
 
 We then immediately conclude, by descent, the following:
 
-::: {.itenv #FGA-3-III-corollary-5.5 title="Corollary 5.5" latex="{Corollary 5.5}"}
-Under the conditions of [Corollary 5.4](#FGA-3-III-corollary-5.4), for $X$ to be everywhere of rank $n$ over $Y$, it is necessary and sufficient for $(R_1,p_1)$ to be everywhere of rank $n$ over $X$.
+::: {.itenv #fga-3-iii-corollary-5.5 title="Corollary 5.5" latex="{Corollary 5.5}"}
+Under the conditions of [Corollary 5.4](#fga-3-iii-corollary-5.4), for $X$ to be everywhere of rank $n$ over $Y$, it is necessary and sufficient for $(R_1,p_1)$ to be everywhere of rank $n$ over $X$.
 If $X$ and $R_1$ are $Z$-preschemes, and $p_1$ and $p_2$ are $Z$-morphisms (and thus $Y$ a $Z$-prescheme), then $X$ is flat over $Z$ if and only if $Y$ is flat over $Z$.
 :::
 
@@ -430,7 +428,7 @@ In summary:
 The data of a finite, locally free, and surjective morphism $f\colon X\to Y$ of preschemes is equivalent to the data of a prescheme $X$ endowed with an equivalence relation $R$ such that $p_1\colon R\to X$ is finite and locally free, and such that every class $p_2(p_1^{-1}(x))$ is contained in an affine open subset.
 :::
 
-::: {.rmenv #FGA-3-III-remarks-5.6 title="Remarks 5.6" latex="{Remarks 5.6}"}
+::: {.rmenv #fga-3-iii-remarks-5.6 title="Remarks 5.6" latex="{Remarks 5.6}"}
 —
 
 1. We have not needed to make any Noetherian hypothesis.
@@ -439,14 +437,14 @@ The data of a finite, locally free, and surjective morphism $f\colon X\to Y$ of 
     We note that this result can also be easily expressed without any regularity hypothesis on the local rings, and without supposing that $X$ is an algebraic scheme over a field.
     The theory of Jacobson--Bourbaki is obtained by taking $X$ to be the spectrum of a field of characteristic $p$.
 
-3. Gabriel had already obtained a particular case of [Theorem 5.3](#FGA-3-III-theorem-5.3) in the theory of passing to the quotient for finite commutative groups over a field $k$.
-    (Compare with [Corollary 7.4](#FGA-3-III-corollary-7.4)).
+3. Gabriel had already obtained a particular case of [Theorem 5.3](#fga-3-iii-theorem-5.3) in the theory of passing to the quotient for finite commutative groups over a field $k$.
+    (Compare with [Corollary 7.4](#fga-3-iii-corollary-7.4)).
 :::
 
 
-## Quotient by a proper and flat equivalence relation {#FGA-3-III-section-6}
+## Quotient by a proper and flat equivalence relation {#fga-3-iii-section-6}
 
-::: {.itenv #FGA-3-III-theorem-6.1 title="Theorem 6.1" latex="{Theorem 6.1}"}
+::: {.itenv #fga-3-iii-theorem-6.1 title="Theorem 6.1" latex="{Theorem 6.1}"}
 Let $S$ be a _locally Noetherian_ prescheme, $X$ a _quasi-projective_ $S$-scheme, and $\cal{R}$ an equivalence pre-relation on $X$, such that:
 \oldpage{212-15}
 
@@ -463,7 +461,7 @@ ii. The canonical morphism $f\colon X\to Y$ is surjective, proper, and open, and
 iii. If $\cal{R}$ comes from an equivalence relation, then the equivalence relation in question is effective, i.e. $R_1\to X\times_Y X$ is an isomorphism, and, further, $f\colon X\to Y$ is flat (and thus faithfully flat).
 :::
 
-For the proof, we can reduce to [Theorem 5.1](#FGA-3-III-theorem-5.1) by considering suitable quasi-sections of $X$ for $\cal{R}$, with the proof being analogous to the construction of algebraic quotient groups in the Séminaire Chevalley.
+For the proof, we can reduce to [Theorem 5.1](#fga-3-iii-theorem-5.1) by considering suitable quasi-sections of $X$ for $\cal{R}$, with the proof being analogous to the construction of algebraic quotient groups in the Séminaire Chevalley.
 
 In summary:
 
@@ -474,7 +472,7 @@ Then the data of a proper, faithfully flat, and surjective morphism $f\colon X\t
 
 The same method gives the following result:
 
-::: {.itenv #FGA-3-III-theorem-6.2 title="Theorem 6.2" latex="{Theorem 6.2}"}
+::: {.itenv #fga-3-iii-theorem-6.2 title="Theorem 6.2" latex="{Theorem 6.2}"}
 Let $S$ be a Noetherian prescheme, $X$ a prescheme of finite type over $S$, and $\cal{R}$ an equivalence pre-relation on the $S$-prescheme $X$.
 Suppose that
 
@@ -494,25 +492,25 @@ iii. If $\cal{R}$ comes from an equivalence relation, then we can suppose that $
 \oldpage{212-16}
 This is a result of an essentially "birational" nature.
 
-::: {.rmenv #FGA-3-III-remarks-6.3 title="Remarks 6.3" latex="{Remarks 6.3}"}
+::: {.rmenv #fga-3-iii-remarks-6.3 title="Remarks 6.3" latex="{Remarks 6.3}"}
 —
 
-1. I do not know if, in [Theorem 6.1](#FGA-3-III-theorem-6.1) and [Theorem 6.2](#FGA-3-III-theorem-6.2), hypothesis (b) is useless.
+1. I do not know if, in [Theorem 6.1](#fga-3-iii-theorem-6.1) and [Theorem 6.2](#fga-3-iii-theorem-6.2), hypothesis (b) is useless.
     In practice, it obliges us, in the passage to the quotient by groups, to restrict to he case where the stabilisers are all finite groups.
 
-2. We can ask if there are results analogous to [Theorem 6.1](#FGA-3-III-theorem-6.1) and [Theorem 6.2](#FGA-3-III-theorem-6.2) without any flatness hypothesis.
+2. We can ask if there are results analogous to [Theorem 6.1](#fga-3-iii-theorem-6.1) and [Theorem 6.2](#fga-3-iii-theorem-6.2) without any flatness hypothesis.
       I have no counter example in this direction.
       However, even keeping the flatness hypothesis, and restricting to equivalence relations such that $p_1\colon R\to X$ is flat and quasi-finite (but not finite), and with $X$ affine, it can still be the case that $R$ is not effective: take the equivalence relations induced on the affine open subsets covering the Nagata variety (or a group with two elements acting in a "non-admissible" way).
 :::
 
 
-## Applications {#FGA-3-III-section-7}
+## Applications {#fga-3-iii-section-7}
 
-As we said in the introduction, the most important application of [Theorem 6.1](#FGA-3-III-theorem-6.1) is the construction of Picard schemes, as well as solutions to various other problems of "modules", to which we will later return.
+As we said in the introduction, the most important application of [Theorem 6.1](#fga-3-iii-theorem-6.1) is the construction of Picard schemes, as well as solutions to various other problems of "modules", to which we will later return.
 
 We obtain a simple proof of the following result of Shimura:
 
-::: {.itenv #FGA-3-III-proposition-7.1 title="Proposition 7.1" latex="{Proposition 7.1}"}
+::: {.itenv #fga-3-iii-proposition-7.1 title="Proposition 7.1" latex="{Proposition 7.1}"}
 Let $A$ be an abelian scheme defined over a discrete valuation ring $V$ with field of fractions $K$.
 Then every abelian scheme $B'$ over $K$ that is isogenous to a quotient of $A\otimes_V K$ "simplifies well for $V$", i.e. is isomorphic to some $B\otimes_V A$, where $B$ is an abelian scheme over $V$ (essentially unique, we recall).
 :::
@@ -525,12 +523,12 @@ Then $C_K=C'$, and, since $V$ is a discrete valuation ring, we easily deduce tha
 Since $A$ is proper over $\Spec(V)=S$, so too is $C$.
 Further, $A$ is projective over $S$.
 \oldpage{212-17}
-We can thus apply [Theorem 6.1](#FGA-3-III-theorem-6.1) in order to construct $A/C=B$, which is the desired $B$.
+We can thus apply [Theorem 6.1](#fga-3-iii-theorem-6.1) in order to construct $A/C=B$, which is the desired $B$.
 :::
 
-Finally, essentially known arguments allow us to extract from [Theorem 6.2](#FGA-3-III-theorem-6.2) the following result:
+Finally, essentially known arguments allow us to extract from [Theorem 6.2](#fga-3-iii-theorem-6.2) the following result:
 
-::: {.itenv #FGA-3-III-theorem-7.2 title="Theorem 7.2" latex="{Theorem 7.2}"}
+::: {.itenv #fga-3-iii-theorem-7.2 title="Theorem 7.2" latex="{Theorem 7.2}"}
 Let $S$ be the spectrum of an Artinian ring, $F$ and $G$ group schemes of finite type over $S$, and $u\colon F\to G$ a homomorphism of group schemes over $S$.
 Suppose that
 
@@ -541,7 +539,7 @@ Under these conditions, the quotient scheme $G/F$ exists, and the canonical morp
 Finally, if $u$ is a monomorphism, then the morphism $G\to G/F$ is flat, and the morphism $G\times F\to G\times_{(G/F)}G$ is an isomorphism, or, in other words, $G$ is a principal homogeneous space over $G/F$, with structure group $F$ (acting on the right), or rather $F\times_S(G/F)$ considered as a group scheme over $G/F$ (cf. [@3-II-1, B.6]).
 :::
 
-::: {.itenv #FGA-3-III-corollary-7.3 title="Corollary 7.3" latex="{Corollary 7.3}"}
+::: {.itenv #fga-3-iii-corollary-7.3 title="Corollary 7.3" latex="{Corollary 7.3}"}
 Under these conditions, for $G$ to be flat over $S$, it is necessary and sufficient for $G/F$ to be flat over $S$.
 If this condition is satisfied, then the passage to the quotient by $F$ commutes with every extension of the base $S$, and if $F$ is an invariant subgroup of $G$, then $G/F$ can be endowed with the structure of a _quotient group_ of $G$ by $F$.
 :::
@@ -549,7 +547,7 @@ If this condition is satisfied, then the passage to the quotient by $F$ commutes
 The situation is particularly simple if $S$ is the spectrum of a field, since then every $S$-prescheme is automatically flat over $S$.
 We find:
 
-::: {.itenv #FGA-3-III-corollary-7.4 title="Corollary 7.4" latex="{Corollary 7.4}"}
+::: {.itenv #fga-3-iii-corollary-7.4 title="Corollary 7.4" latex="{Corollary 7.4}"}
 Let $F$ and $G$ be group schemes of finite type over a field $k$, and let $u\colon F\to G$ be a homomorphism of $k$-groups.
 Then $u$ factors as $F\to F'\to G$, where $F\to F'$ is a homomorphism given by passing to the quotient by the closed subgroup $\Ker u$ of $F$, and where $F'\to G$ is a group homomorphism that is a closed immersion.
 The quotient $G/F=G/F'$ exists.
@@ -561,7 +559,7 @@ This result allows us to treat the passage to the quotient in a uniform way for 
 It is advantageous to consider the "hyperalgebras" introduced by Cartier, following from the work of Dieudonné on formal groups, as groups in the category of formal schemes over $k$, and, if necessary (if they correspond to hyperalgebras of finite rank over $k$), as algebraic groups that are finite over $k$.
 
 
-## A conjecture {#FGA-3-III-section-8}
+## A conjecture {#fga-3-iii-section-8}
 
 The conjecture in question concerns the need of knowing how to pass to the quotient by the projective group acting on certain subschemes of "Hilbert schemes" (with these "Hilbert schemes" replacing, in the theory of schemes, Chow varieties).
 
@@ -580,7 +578,7 @@ Let $S$ be a Noetherian scheme, which we can, if we want, suppose to be affine, 
 Suppose that the group $G=\GP(n)_S$ acts on $X$ and $\scr{L}$ simultaneously (in a way that is compatible with its action on $X$), and that it acts _freely_ on $S$.
 \oldpage{212-19}
 
-::: {.itenv #FGA-3-III-conjecture-8.1 title="Conjecture 8.1" latex="{Conjecture 8.1}"}
+::: {.itenv #fga-3-iii-conjecture-8.1 title="Conjecture 8.1" latex="{Conjecture 8.1}"}
 Under the above conditions:
 
 1. The equivalence relation defined by $G$ is effective, the quotient $Y=X/G$ is of finite type over $S$, and the canonical morphism $f\colon X\to Y$ is flat and surjective (and thus $X$ becomes a homogeneous principal bundle on $Y$, with group $G\times_S Y=\GP(n)_Y$).
@@ -594,7 +592,7 @@ If (1) is satisfied, then $Y$ is separated if and only if the equivalence relati
 If $Y$ is separated, then $\scr{L}'$ is pre-ample on $Y$ with respect to $S$ if and only if it is ample, i.e. if a suitable tensor power defines a projective immersion.
 In the module problems mentioned in the introduction, we can show that the equivalence relation to which we arrive does indeed have a closed graph.
 
-::: {.rmenv #FGA-3-III-remarks-8.2 title="Remarks 8.2" latex="{Remarks 8.2}"}f
+::: {.rmenv #fga-3-iii-remarks-8.2 title="Remarks 8.2" latex="{Remarks 8.2}"}f
 We have assumed that $G=\GP(n)_S$ to give a concrete example, and because it is currently the most important case in practice.
 The reasonable hypothesis to make on $G$ seems rather to be that $G$ be one of the "forms" on $S$ of a Tohokû group (whose construction over the integers has also been made by Chevalley).
 The only positive fact that is known to me concerning the above conjecture is the following:

@@ -1,4 +1,4 @@
-# The existence theorem and the formal theory of modules {#FGA-3.II}
+# The existence theorem and the formal theory of modules {#fga-3.ii}
 
 \providecommand{\scr}[1]{{\mathscr{#1}}}
 \renewcommand{\cal}[1]{{\mathcal{#1}}}
@@ -45,7 +45,7 @@ sections 4.6 to 4.10 were numbered C.1 to C.5.)
 ## **A.** Representable and pro-representable functors {-}
 
 
-## Representable functors {#FGA-3-II-section-A.1}
+## Representable functors {#fga-3-ii-section-A.1}
 
 Let $\cal{C}$ be a category.
 \oldpage{195-01}
@@ -64,7 +64,7 @@ $$
 from $\cal{C}$ to the category of covariant functors from the dual $\cal{C}^o$ of $\cal{C}$ to the category of sets.
 We then recall:
 
-::: {.itenv #FGA-3-II-section-A.1-proposition-1.1 title="Proposition 1.1" latex="{Proposition 1.1}"}
+::: {.itenv #fga-3-ii-section-A.1-proposition-1.1 title="Proposition 1.1" latex="{Proposition 1.1}"}
 This functor $h$ is _faithfully flat_;
 in other words, for every pair $X,X'$ of objects of $\cal{C}$, the natural map
 $$
@@ -109,7 +109,7 @@ _the general yoga is purely and simply identifying, using the canonical functor 
 The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce _covariant representable functors $\cal{C}\to\Set$_, i.e. those of the form $Y\mapsto\Hom(X,Y)=h'_X(Y)$.
 
 
-## Pro-representable functors, pro-objects {#FGA-3-II-section-A.2}
+## Pro-representable functors, pro-objects {#fga-3-ii-section-A.2}
 
 Let $\cal{X}=(X_i)_{i\in I}$ be a projective system of objects of $\cal{C}$;
 there is a corresponding covariant functor
@@ -128,7 +128,7 @@ Then we can easily show that we have a canonical bijection
 $$
   \Hom(h_{\cal{X}'},h_{\cal{X}}) = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j)
 $$
-(generalising [§A, Proposition 1](#FGA-3-II-section-A.1-proposition-1)).
+(generalising [§A, Proposition 1](#fga-3-ii-section-A.1-proposition-1)).
 This leads to introducing the _category $\Pro(\cal{C})$ of pro-objects of $\cal{C}$_, whose objects are projective systems of objects of $\cal{C}$ (indexed by arbitrary filtered pre-ordered sets of indices), and whose morphisms between objects $\cal{X}=(X_i)_{i\in I}$ and $\cal{X}'=(X_j)_{j\in J}$ are given by
 $$
   \Pro\Hom(\cal{X},\cal{X}') = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j),
@@ -178,7 +178,7 @@ $$
 In particular, if every pro-object of $\cal{C}$ is strict (cf. the previous section), then the extended functor $\overline{F}$ commutes with projective limits.
 
 
-## Characterisation of pro-representable functors {#FGA-3-II-section-A.3}
+## Characterisation of pro-representable functors {#fga-3-ii-section-A.3}
 
 Let $\cal{C}$ and $\cal{C}'$ be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, pre-ordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" $e$ such that $\Hom(X,e)$ consists of only on element for all $X$).
 Let $F$ be a covariant functor from $\cal{C}$ to $\cal{C}'$.
@@ -213,7 +213,7 @@ _if $\xi$ is minimal, and if $F$ is left exact, then this morphism $v$ is unique
 _if $\xi''$ is minimal, then $v$ is surjective_.
 From this we easily deduce the following proposition:
 
-::: {.itenv #FGA-3-II-section-A.3-proposition-3.1 title="Proposition 3.1" latex="{Proposition 3.1}"}
+::: {.itenv #fga-3-ii-section-A.3-proposition-3.1 title="Proposition 3.1" latex="{Proposition 3.1}"}
 For $F$ to be strictly pro-representable, it is necessary and sufficient for it to satisfy the following two conditions:
 
 i. $F$ is left exact; and
@@ -231,19 +231,19 @@ Then the pro-representable functors from $\cal{C}$ to $\Set$ are exactly the lef
 This last fact also implies that _every pro-object of $\cal{C}$ is then strict_.
 
 
-## Example: groups of Galois type, pro-algebraic groups {#FGA-3-II-section-A.4}
+## Example: groups of Galois type, pro-algebraic groups {#fga-3-ii-section-A.4}
 
 If $\cal{C}$ is the category of ordinary finite groups, then $\Pro(\cal{C})$ is equivalent to the category of totally disconnected compact topological^[_[Trans.]_ Here the word "Hausdorff" is implicit.] groups.
 It is groups of this type, and their generalisations, obtained by replacing ordinary finite groups with schemes of finite groups over a given base prescheme (for example, finite algebraic groups over a field $k$), that serve as fundamental groups, homotopy groups, and absolute and relative homology groups for preschemes.
-In all these examples, the corollary to [Proposition 3.1](#FGA-3-II-section-A.3-proposition-3.1) applies, and it is indeed by the associated functor that the $\pi_1$ should be defined [@3-II-2].
+In all these examples, the corollary to [Proposition 3.1](#fga-3-ii-section-A.3-proposition-3.1) applies, and it is indeed by the associated functor that the $\pi_1$ should be defined [@3-II-2].
 It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the "_pro-algebraic groups_" of Serre [@3-II-4].
 
 
-## Example: "formal varieties" {#FGA-3-II-section-A.5}
+## Example: "formal varieties" {#fga-3-ii-section-A.5}
 
 Let $\Lambda$ be a Noetherian ring, $\cal{C}$ the category of $\Lambda$-algebras that are Artinian modules of finite type over $\Lambda$ (or, more concisely, _Artinian $\Lambda$-algebras_).
 \oldpage{195-07}
-The conditions of the corollary to [Proposition 3.1](#FGA-3-II-section-A.3-proposition-3.1) are then satisfied.
+The conditions of the corollary to [Proposition 3.1](#fga-3-ii-section-A.3-proposition-3.1) are then satisfied.
 Here, the category $\Pro(\cal{C})$ is equivalent to the category of _topological algebras_ $O$ over $\Lambda$ that are isomorphic to topological projective limits
 $$
   O = \varprojlim O_i
@@ -283,7 +283,7 @@ consisting of the $\xi'\in F(I_A)$ that are "reducible along $\xi$";
 using the explicit form of $F$ in terms of $O$, we find that this $K$-module can be identified with $\Hom_\Lambda(\frak{m}_\xi/\frak{m}_\xi^2,A$, where $m_\xi$ is the kernel of the homomorphism $\xi\colon O\to A$, i.e. if $A$ is a field, then the maximal ideal of the local component $O_\xi$ of $O$.
 From this, we immediately deduce the following proposition:
 
-::: {.itenv #FGA-3-II-section-A.5-proposition-5.1 title="Proposition 5.1" latex="{Proposition 5.1}"}
+::: {.itenv #fga-3-ii-section-A.5-proposition-5.1 title="Proposition 5.1" latex="{Proposition 5.1}"}
 Let $\xi\in F(K)$, where $K\in\cal{C}$ is a field.
 For the corresponding local component $O_\xi$ of $O$ to be a _Noetherian_ ring, it is necessary and sufficient for the set $F(I_K,\xi)$ of elements of $F(I_K)$ that are reducible along $\xi$ to be a vector space of _finite dimension_ over $K$.
 Under these conditions, we have a canonical isomorphism
@@ -303,7 +303,7 @@ Finally, if we no longer necessarily suppose that $O$ is Noetherian, then we aga
 We can immediately generalise to the case where $\Lambda$ and $O$ are no longer assumed to be local.
 With this, we have the following proposition:
 
-::: {.itenv #FGA-3-II-section-A.5-proposition-5.2 title="Proposition 5.2" latex="{Proposition 5.2}"}
+::: {.itenv #fga-3-ii-section-A.5-proposition-5.2 title="Proposition 5.2" latex="{Proposition 5.2}"}
 For $O$ to be simple over $\Lambda$, it is necessary and sufficient for the associated functor $F$ to send epimorphisms to epimorphisms.
 :::
 
@@ -324,17 +324,17 @@ If we start with a functor $F$ from $\cal{C}$ to $\Set$, then the existence of r
 that is, they are usually far from being trivial.
 
 
-## **B.** The two existence theorems {.unnumbered #FGA-3-II-section-B}
+## **B.** The two existence theorems {.unnumbered #fga-3-ii-section-B}
 
-Keeping the notation of [§A.5](#FGA-3-II-section-A.5), and, given a covariant functor
+Keeping the notation of [§A.5](#fga-3-ii-section-A.5), and, given a covariant functor
 $$
   F\colon \cal{C} \to \Set,
 $$
 we wish to find manageable criteria for $F$ to be pro-representable, i.e. expressible via a $\Lambda$-algebra $O$ as above.
-By the corollary of [Proposition 3.1](#FGA-3-II-section-A.3-proposition-3.1), to ensure this, it is necessary and sufficient for $F$ to be _left exact_.
+By the corollary of [Proposition 3.1](#fga-3-ii-section-A.3-proposition-3.1), to ensure this, it is necessary and sufficient for $F$ to be _left exact_.
 In the current state of the technique of descent (cf. the questions asked in [@3-II-3, p. 9]), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.
 
-::: {.itenv #FGA-3-II-section-B-theorem-1 title="Theorem 1" latex="{Theorem 1}"}
+::: {.itenv #fga-3-ii-section-B-theorem-1 title="Theorem 1" latex="{Theorem 1}"}
 For the functor $F$ to be pro-representable, it is necessary and sufficient for it to satisfy the two followings conditions:
 
 i. $F$ commutes with finite products;
@@ -363,7 +363,7 @@ In applications, the verification of condition (i) is always trivial.
 The verification of condition (ii) splits into two cases: case (a), where $A'$ is a free $A$-module, can be dealt with using the _technique of descent by flat morphisms_ (cf. [@3-II-3, Theorems 1, 2, and 3]), which offers no difficulty;
 to deal with case (b), we will use the following result:
 
-::: {.itenv #FGA-3-II-section-B-theorem-2 title="Theorem 2" latex="{Theorem 2}"}
+::: {.itenv #fga-3-ii-section-B-theorem-2 title="Theorem 2" latex="{Theorem 2}"}
 Let $A$ be a local Artinian ring with maximal ideal $\frak{m}$, and let $A'$ be an $A$-algebra containing $A$, and such that $\frak{m}A'\subset A$, and $A\to A'\rightrightarrows A'\otimes_A A'$ is _exact_ (which is the case, in particular, if $A'/A$ is an $A$-module of length $1$).
 Let $\cal{F}$ be the fibred category (cf. [@3-II-3, A, Definition 1.1]) of quasi-coherent sheaves that are flat over varying preschemes.
 Then the morphism $\Spec(A')\to\Spec(A)$ is a _strict $\cal{F}$-descent morphism_ (cf. [@3-II-3, A, Definition 1.7]).
@@ -371,7 +371,7 @@ Then the morphism $\Spec(A')\to\Spec(A)$ is a _strict $\cal{F}$-descent morphism
 
 In other words, the data of a flat $A$-module $M$ is completely equivalent to the data of a flat $A'$-module $M'$ endowed with an $(A'\otimes_A A')$-isomorphism from $M'\otimes_A A'$ to $A'\otimes_A M'$ satisfying the usual transitivity condition for a descent data (loc. cit.).
 
-We prove [Theorem 2](#FGA-3-II-section-B-theorem-2) by first proving that
+We prove [Theorem 2](#fga-3-ii-section-B-theorem-2) by first proving that
 $$
   \HH^i(A'/A,\Ga) = 0
   \qquad\text{(for }i\geq1\text{)}
@@ -383,7 +383,7 @@ We can then apply the equivalences described in [@3-II-3, p. 16].
 ## **C.** Applications to some particular cases {-}
 
 
-## General remarks on functors represented by preschemes {#FGA-3-II-section-C.1}
+## General remarks on functors represented by preschemes {#fga-3-ii-section-C.1}
 
 Let $S$ be a locally Noetherian prescheme.
 \oldpage{195-11}
@@ -401,7 +401,7 @@ $$
 $$
 be the associated contravariant functor.
 We can consider the restriction $F_0$ of $F$ to the subcategory $\cal{C}_0$ of $\cal{C}$ consisting of preschemes $Y$ over $S$ that are Artinian and finite over $S$:
-if $S=\Spec(\Lambda)$, then $\cal{C}_0$ is the category dual to the category of Artinian $\Gamma$-algebras considered in [§B](#FGA-3-II-section-B).
+if $S=\Spec(\Lambda)$, then $\cal{C}_0$ is the category dual to the category of Artinian $\Gamma$-algebras considered in [§B](#fga-3-ii-section-B).
 If $Y=\Spec(A)$, where $A$ is a _local_ Artinian ring, then $Y$ consists of a single point $y$ living above a closed point $s$ of $S$, and an $S$-homomorphism from $Y$ to $X$ (i.e. an element of $F(Y)$) is defined by the data of a point $x\in X$ over $s$, along with an $\scr{O}_s$-homomorphism from $\scr{O}_x$ to $A$.
 If there exists such a homomorphism, then $x$ is necessarily a closed point of $X$ (since its residue field is algebraic over the residue field of $s$).
 This thus shows that _the restriction $F_0$ of $F$ to "Artinian $Y$-algebras" is pro-representable, and is represented by the topological $Y$-algebra whose local components are the completions $\widehat{\scr{O}_x}$ of the local rings of $X$ at the points $x$ of $X$ that are closed and live above closed points of $Y$_.
@@ -409,19 +409,19 @@ This shows that only knowing $F_0$ gives precise information about the structure
 \oldpage{195-12}
 We note that, even in the case where $S$ is the spectrum of an algebraically closed field, it is only thanks to the systematic consideration of "varieties" $Y$ such that $\scr{O}_Y$ may admit nilpotent elements (and, in particular, working with the spectra of local Artinian rings) that we can arrive at the "good formulation" of classical universal problems, and understand the "infinitesimal" aspect.
 
-If we start with a given functor $F$, and we want to know whether or not it is representable, then studying the functor $F_0$ (using [Theorem 1](#FGA-3-II-section-B-theorem-1) and [Theorem 2](#FGA-3-II-section-B-theorem-2)) will give quasi-complete hints;
-either, as is often the case (by simply testing, for example, the nature of the sets $F(I_K,\xi)$ and their functorial behaviour, cf. [§A](#FGA-3-II-section-A)), $F_0$ is already not pro-representable (which explains the failure of attempts made up until now to define varieties of modules in a reasonably natural way for the classification of vector bundles of rank $>1$);
+If we start with a given functor $F$, and we want to know whether or not it is representable, then studying the functor $F_0$ (using [Theorem 1](#fga-3-ii-section-B-theorem-1) and [Theorem 2](#fga-3-ii-section-B-theorem-2)) will give quasi-complete hints;
+either, as is often the case (by simply testing, for example, the nature of the sets $F(I_K,\xi)$ and their functorial behaviour, cf. [§A](#fga-3-ii-section-A)), $F_0$ is already not pro-representable (which explains the failure of attempts made up until now to define varieties of modules in a reasonably natural way for the classification of vector bundles of rank $>1$);
 or we might be able to show that $F_0$ is indeed representable, but that that vector spaces $F(I_K,\xi)$ are not of finite dimension, in which case we must be content with the "formal" solution;
 or it could be the case that $F_0$ is indeed representable by a product of complete Noetherian local rings, which gives very strong assumptions for $F$ itself to be representable, and, combined with the analogous properties (but of a more global nature) that we will later develop, will in all likelihood suffice to imply that it is indeed so.
-Finally, we come across interesting geometric problems (see sections [§C.4](#FGA-3-II-section-C.4) and [§C.5](#FGA-3-II-section-C.5) below) where we have only the functor $F_0$ (not coming from any "global" functor $F$), and where we will consider ourselves content if we can associate to it a "formal scheme of modules".
+Finally, we come across interesting geometric problems (see sections [§C.4](#fga-3-ii-section-C.4) and [§C.5](#fga-3-ii-section-C.5) below) where we have only the functor $F_0$ (not coming from any "global" functor $F$), and where we will consider ourselves content if we can associate to it a "formal scheme of modules".
 
 To finish these generalities, we note how the theory of schemes explains some apparent anomalies, such as the Igusa surface $V$ whose "Picard variety" $P$ consists of a single point, and for which, however, $\HH^1(V,\scr{O}_V)\neq0$;
 in this case, $P$ is a non-trivial "purely infinitesimal" group, i.e. defined by a local algebra $\scr{O}$ of finite rank over the base field $k$ and endowed with a diagonal map corresponding to the multiplicative structure of $P$;
-if $\frak{m}$ is the maximal ideal of $\scr{O}$, then the dual of $\frak{m}/\frak{m}^2$ is canonically isomorphic to $\HH^1(V,\scr{O}_V)$ (cf. section [§C.3](#FGA-3-II-section-C.3) below).
+if $\frak{m}$ is the maximal ideal of $\scr{O}$, then the dual of $\frak{m}/\frak{m}^2$ is canonically isomorphic to $\HH^1(V,\scr{O}_V)$ (cf. section [§C.3](#fga-3-ii-section-C.3) below).
 It is only when the Picard group is an algebraic group in the classical sense (i.e. simple over the base field $k$) that the dimension of $\HH^1(V,\scr{O}_V)$ (which is always equal to that of $\frak{m}/\frak{m}^2$) is equal to that of the Picard group.
 
 
-## The schemes $\Hom_S(X,Y)$, $\prod_{X/S}Z$, $\shAut(X)$, etc. {#FGA-3-II-section-C.2}
+## The schemes $\Hom_S(X,Y)$, $\prod_{X/S}Z$, $\shAut(X)$, etc. {#fga-3-ii-section-C.2}
 
 Let $X$ and $Y$ be preschemes over $S$;
 \oldpage{195-13}
@@ -454,11 +454,11 @@ We note first of all that, for fixed $X$, $\shHom_S(X,Y)$ (resp. $\Pi_{X/S}Z$) c
 Furthermore, we can convince ourselves that it is not reasonable to expect the existence of a solution, for general enough $Y$, except in the case where $X$ is further _proper_ over $S$.
 It seems, however, that these conditions are sufficient for the existence of $\shHom_S(X,Y)$ and $\Pi_{X/S}Z$, with the condition that, if necessary, we make some sort of "quasi-projective" hypothesis on $Y/S$ (resp. $Z/X$);
 this is what we can verify anyway in numerous cases (for example, when $Y$ is _affine_ over $S$, or, by direct elementary constructions, when $X$ is _finite_ over $S$).
-Here is what [Theorem 1](#FGA-3-II-section-B-theorem-1) and [Theorem 2](#FGA-3-II-section-B-theorem-2) give:
+Here is what [Theorem 1](#fga-3-ii-section-B-theorem-1) and [Theorem 2](#fga-3-ii-section-B-theorem-2) give:
 
 \oldpage{195-14}
 
-::: {.itenv #FGA-3-II-section-C.2-proposition-2.1 title="Proposition 2.1" latex="{Proposition 2.1}"}
+::: {.itenv #fga-3-ii-section-C.2-proposition-2.1 title="Proposition 2.1" latex="{Proposition 2.1}"}
 Let $\Lambda$ be a Noetherian ring, and $X$ and $Y$ arbitrary preschemes over $\Lambda$.
 Consider the functor
 $$
@@ -473,7 +473,7 @@ $$
   F(I_A,\xi) = \HH^1\Big(X_A,\shHom_{\scr{O}_{X_A}}\big(\xi^*(\Omega_{Y_A/A}^1),\scr{O}_{X_A}\big)\Big)
 $$
 where $\Omega_{Y_A/A}^1$ is the sheaf of K\"{a}hler $1$-differentials of $Y_A$ with respect to $A$.
-Taking $A$ to be a field, we find, using [§A, Proposition 5.1](#FGA-3-II-section-A.5-proposition-5.1) and the finiteness theorem from [@3-II-2], the following corollary:
+Taking $A$ to be a field, we find, using [§A, Proposition 5.1](#fga-3-ii-section-A.5-proposition-5.1) and the finiteness theorem from [@3-II-2], the following corollary:
 
 ::: {.itenv title="Corollary" latex="{Corollary}"}
 Suppose that $X$ is flat and proper over $S$, and that $Y$ is of finite type over $S$.
@@ -501,7 +501,7 @@ this is linked to the fact that the symmetric square of such a variety does not 
 :::
 
 
-## Picard schemes {#FGA-3-II-section-C.3}
+## Picard schemes {#fga-3-ii-section-C.3}
 
 _[Comp.]_ For a more complete study, see [FGA 3.V](FGA-3-V.html).
 
@@ -536,7 +536,7 @@ This condition naturally arises in the application of the technique of descent, 
 Notably, we find the following:
 :::
 
-::: {.itenv #FGA-3-II-section-C.3-proposition-3.1 title="Proposition 3.1" latex="{Proposition 3.1}"}
+::: {.itenv #fga-3-ii-section-C.3-proposition-3.1 title="Proposition 3.1" latex="{Proposition 3.1}"}
 Suppose that $X$ is flat over $S=\Spec(\Lambda)$, where $\Lambda$ is Noetherian, and suppose that, for all $T$ of finite type over $S$, we have ${f_T}_*(\scr{O}_{X_T})=\scr{O}_T$ (if $f$ is proper and separable and has separable fibres, or if $S$ is the spectrum of a field, then it follows from K\"{u}nneth that the latter condition is equivalent to $f_*(\scr{O}_X)=\scr{O}_S$).
 Then the Picard functor of $X/S$ on the category of Artinian $\Lambda$-algebras is pro-representable.
 
@@ -553,7 +553,7 @@ If $X$ is proper over $S$, then the local components of the topological $\Lambda
 
 ::: {.rmenv title="Remarks" latex="{Remarks}"}
 We can generalise the definitions and results from this section to the classification of principal bundles on $X$, with structure group $G$ being a scheme in groups over $S$ that is _affine_ and _flat over $S$_, and also _commutative_.
-In the case where $G$ would not be commutative, and thus where the adjoint bundle in groups of a principal bundle (whose sections of the automorphisms of the principal bundle) would no longer be trivial, [Proposition 3.1](#FGA-3-II-section-C.3-proposition-3.1) no longer holds true as it is stated.
+In the case where $G$ would not be commutative, and thus where the adjoint bundle in groups of a principal bundle (whose sections of the automorphisms of the principal bundle) would no longer be trivial, [Proposition 3.1](#fga-3-ii-section-C.3-proposition-3.1) no longer holds true as it is stated.
 We can, however, modify the universal problem in such a way that we again obtain a solution (at least, for now, in formal geometry).
 \oldpage{195-17}
 _The golden rule to remember, in the context of the current_
@@ -564,17 +564,17 @@ _eliminate the possible automorphisms of the objects that we want to classify, b
 ::: {.rmenv title="Remarks" latex="{Remarks}"}
 _[Comp.]_
 I have recently shown that the formal scheme of modules for an abelian variety over a field is indeed simple over the Witt ring, or, in other words, that every abelian scheme $X$ over a local Artinian ring that is the quotient of another such scheme $Y$ comes, by reduction, from an abelian scheme over $Y$.
-The proof simply uses the variance properties of the obstruction class of the covering, introduced in [FGA II, p. 12](FGA-2.html#FGA-2-section-6).
+The proof simply uses the variance properties of the obstruction class of the covering, introduced in [FGA II, p. 12](FGA-2.html#fga-2-section-6).
 Recall also that the schemes of modules for curves of genus $g$ or for polarised abelian schemes have been constructed by Mumford (cf. _Séminaire Mumford--Tate_, Harvard University (1961--62)).
 :::
 
 
-## Formal modules of a variety {#FGA-3-II-section-C.4}
+## Formal modules of a variety {#fga-3-ii-section-C.4}
 
 Let $\Lambda$ be a _local_ Noetherian ring of residue field $k$ (more often than not, $\Lambda$ will be equal to $k$, or to a Cohen $p$-ring), and let $X_0$ be a prescheme over $k$.
 For every local Artinian $\Lambda$-algebra $A$, consider the set $F(A)$ of isomorphism classes of $A$-preschemes $X$ that are _flat_ over $A$, endowed with an isomorphism
 
-::: {.eqref #FGA-3-II-section-C.4-equation-asterisk}
+::: {.eqref #fga-3-ii-section-C.4-equation-asterisk}
 $$
   X\otimes_A\kres(A) \simfrom X_0\otimes_k\kres(A)
 \tag{$*$}
@@ -599,7 +599,7 @@ $$
 $$
 We thus conclude, as per usual:
 
-::: {.itenv #FGA-3-II-section-C.4-proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
+::: {.itenv #fga-3-ii-section-C.4-proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
 Suppose that $\HH^0(X_0,\frak{G}_{X_0/k})=0$.
 \oldpage{195-18}
 Then the formal scheme of modules for $X_0$ exists.
@@ -619,12 +619,12 @@ If, furthermore, $X_0$ is proper over $k$, then the formal scheme of modules is 
     The simplicity hypotheses are thus not essential in the theory of modules, as [@3-II-2] implies.
 
 2. Recall (loc. cit.) that, in particular, every _simple_ and _proper algebraic curve_ $X_0$ over $k$ admits a formal scheme of modules that is simple over $\Lambda$, and of relative dimension equal to $3g-3$ if the genus $g$ is $\geq2$, and to $g$ if $g=0,1$.
-    These two latter cases no longer figure directly in [Proposition 4.1](#FGA-3-II-section-C.4-proposition-4).
+    These two latter cases no longer figure directly in [Proposition 4.1](#fga-3-ii-section-C.4-proposition-4).
     We can, however, recover them in the case of elliptic curves ($g=1$) thanks to the remarks that will follow.
 :::
 
-We can, of course, vary [Proposition 4.1](#FGA-3-II-section-C.4-proposition-4) _ad libitum_ by considering systems of schemes over $k$ endowed with various structures.
-Suppose, for example, that $X_0$ is an _abelian scheme_ over $k$, with a marked origin (i.e. $X_0$ is considered as a scheme in _groups_ over $k$), and let $F(A)$ be the set of isomorphism classes of _abelian_ schemes over $A$ (i.e. of schemes in groups that are proper and simple over $A$) endowed with an isomorphism [($*$)](#FGA-3-II-section-C.4-equation-asterisk) of abelian schemes.
+We can, of course, vary [Proposition 4.1](#fga-3-ii-section-C.4-proposition-4) _ad libitum_ by considering systems of schemes over $k$ endowed with various structures.
+Suppose, for example, that $X_0$ is an _abelian scheme_ over $k$, with a marked origin (i.e. $X_0$ is considered as a scheme in _groups_ over $k$), and let $F(A)$ be the set of isomorphism classes of _abelian_ schemes over $A$ (i.e. of schemes in groups that are proper and simple over $A$) endowed with an isomorphism [($*$)](#fga-3-ii-section-C.4-equation-asterisk) of abelian schemes.
 We can show that imposing a multiplicative structure (or even only a "unit section") eliminates the infinitesimal automorphisms, and that there thus exists a formal scheme of modules that corresponds to a complete local Noetherian ring $O$.
 We can also show that, if $X$ is a proper and simple scheme with "absolutely connected" fibres over a locally Noetherian prescheme $S$, then every multiplicative structure on $X$ that admits a unit section is necessarily associative and commutative (provided that it is associative and commutative on _one_ fibre, and provided that $S$ is connected), and is furthermore uniquely determined by the knowledge of the unit section.
 \oldpage{195-19}
@@ -633,13 +633,13 @@ Further, supposing that $S$ is the spectrum of a local Artinian ring $A$ of resi
 This proves that the functor $F(A)$ considered here is isomorphic to the analogous functor defined at the start of this section by abstracting the multiplicative structure on $X_0$.
 It then follows that, in particular, if $\frak{m}$ is the maximal ideal of $O$, then $\frak{m}/\frak{m}^2$ is canonically isomorphic to the dual of $\HH^1(X_0,\frak{G}_{X_0/k})$, and is thus of dimension $n^2$, where $n=\dim X_0$.
 It would be very interesting to determine if $O$ is indeed _simple_ over $\Lambda$, i.e. isomorphic to an algebra of formal series in $n^2$ variables over $\Lambda$.
-Now [§A, Proposition 5.2](#FGA-3-II-section-A.5-proposition-5.2) allows us to give an equivalent formulation of this problem as an _existence problem of abelian schemes that are reducible along a given abelian scheme_.
+Now [§A, Proposition 5.2](#fga-3-ii-section-A.5-proposition-5.2) allows us to give an equivalent formulation of this problem as an _existence problem of abelian schemes that are reducible along a given abelian scheme_.
 In any case, we see, by a transcendental way, that the answer is affirmative if $k$ is of characteristic $0$.
 In characteristic $p\neq0$, it evidently suffices to restrict to the case where $\Lambda$ is the ring of Witt vectors constructed over an algebraically closed field $k$.
 This could be the moment for the "_Greenberg functor_" to prove its worth...
 
 
-## Extension of coverings {#FGA-3-II-section-C.5}
+## Extension of coverings {#fga-3-ii-section-C.5}
 
 Let $\frak{X}$ be a _formal_ Noetherian prescheme [@3-II-2], $U$ an open subset of $\frak{X}$ defined locally by the "non-vanishing" of a section of $\scr{O}_\frak{X}$ that is not a zero divisor (and thus large enough that every section of $\scr{O}_\frak{X}$ over an open subset $V$ that is zero on $U\cap V$ is zero).
 (_[Comp.]_ It is also necessary to assume that the section defining $U$ is not a zero divisor not only on $\frak{X}$, but also on every $X_n$.)
@@ -685,10 +685,10 @@ $$
   F(A) = \Hom_{\text{top. }\Lambda\text{-algebras}}(\scr{O},A)
 $$
 \oldpage{195-21}
-where $\scr{O}$ is a topological $\Lambda$ algebra of the type described in [§A.5](#FGA-3-II-section-A.5), or that this is true when we restrict to only Artinian algebras $A$.
-The combination of [Theorem 1](#FGA-3-II-section-B-theorem-1) and [Theorem 2](#FGA-3-II-section-B-theorem-2) then effectively implies:
+where $\scr{O}$ is a topological $\Lambda$ algebra of the type described in [§A.5](#fga-3-ii-section-A.5), or that this is true when we restrict to only Artinian algebras $A$.
+The combination of [Theorem 1](#fga-3-ii-section-B-theorem-1) and [Theorem 2](#fga-3-ii-section-B-theorem-2) then effectively implies:
 
-::: {.itenv #FGA-3-II-section-C.5-proposition-5.1 title="Proposition 5.1" latex="{Proposition 5.1}"}
+::: {.itenv #fga-3-ii-section-C.5-proposition-5.1 title="Proposition 5.1" latex="{Proposition 5.1}"}
 The above functor is pro-representable.
 :::
 
@@ -699,9 +699,9 @@ We will compare this result with the point of view of J.-P. Serre [@3-II-4] via 
 here as well, the classification of extensions is given by infinite-dimensional "varieties".
 We can also take, in the above, $\frak{X}$ to be the formal spectrum of a complete local ring (of which $\Lambda$ will be, for example, a Cohen subring), and we might hope that the results of this section can be used in the study of extensions of a local complete ring of dimension $>1$.
 Just as much in the local case as in the global case, they might allow us to formulate precise relations between the phenomena of higher ramification and phenomena in characteristic $0$ (approachable via a transcendental way).
-In any case, it is the preliminary analysis of [Proposition 5.1](#FGA-3-II-section-C.5-proposition-5.1) that allows us to extend the methods described in [@3-II-2] for the study of the fundamental group to the "tamely ramified" case, and to resolve, by a transcendental way, the "problem of three points".
+In any case, it is the preliminary analysis of [Proposition 5.1](#fga-3-ii-section-C.5-proposition-5.1) that allows us to extend the methods described in [@3-II-2] for the study of the fundamental group to the "tamely ramified" case, and to resolve, by a transcendental way, the "problem of three points".
 
 To finish, we note that the situation simplifies if $X_0$ is of dimension $1$;
 then, by (a) and (b), $G(\frak{X})$ can be identified with $\prod_i G(\Spec(\scr{O}_{\frak{X},x_i}))$, where the $x_i$ are the points of $X_0\setminus U$:
 _we can take arbitrary "local" extensions at the ramification points_.
-Further, if $X_0$ is normal, then we note that the formal scheme of modules guaranteed by [Proposition 5.1](#FGA-3-II-section-C.5-proposition-5.1) is _simple_ over $\Spec(\Lambda)$.
+Further, if $X_0$ is normal, then we note that the formal scheme of modules guaranteed by [Proposition 5.1](#fga-3-ii-section-C.5-proposition-5.1) is _simple_ over $\Spec(\Lambda)$.

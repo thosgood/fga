@@ -1,4 +1,4 @@
-# Hilbert schemes {#FGA-3.IV}
+# Hilbert schemes {#fga-3.iv}
 
 \providecommand{\scr}[1]{{\mathscr{#1}}}
 \renewcommand{\cal}[1]{{\mathcal{#1}}}
@@ -52,7 +52,7 @@ The situation even seems slightly better in analytic geometry (if we restrict to
 Either way, in algebraic geometry, as well as in analytic geometry, it remains to develop a construction technique that works without any projective hypotheses.
 
 
-## Bounded sets of sheaves: invariance properties {#FGA-3-IV-section-1}
+## Bounded sets of sheaves: invariance properties {#fga-3-iv-section-1}
 
 Let $k$ be a field, and $X$ a $k$-prescheme (which we take to be of finite type, for simplicity).
 For every extension $K/k$, we obtain a $K$-prescheme $X_K=X\otimes_k K$.
@@ -79,7 +79,7 @@ This gives meaning to the phrase "class of coherent sheaves on a fibre of $X/S$"
 Similarly, proceeding separately on each fibre, we can again consider operations such as $E\otimes E'$ etc. that send systems of sets of classes of coherent sheaves on the fibres of $X/S$ to sets of classes of coherent sheaves on the fibres of $X/S$.
 \oldpage{221-03}
 
-::: {.rmenv #FGA-3-IV-definition-1.1 title="Definition 1.1" latex="{Definition 1.1}"}
+::: {.rmenv #fga-3-iv-definition-1.1 title="Definition 1.1" latex="{Definition 1.1}"}
 Let $E$ be a set of classes of coherent sheaves on the fibres of $X/S$.
 We say that $E$ is _bounded_ if there exists a prescheme $S'$ of finite type over $S$, along with a coherent sheaf $\scr{F}'$ on $X'=X\times_S S'$, such that $E$ is contained in the set of classes of sheaves on the fibres of $X/S$ defined by $\scr{F}'$.
 :::
@@ -107,7 +107,7 @@ all these operations send bounded families of sheaves to bounded families of she
 The two claims that follow can be proven by _essentially_ the same flatness technique;
 for the primary decomposition on the fibres of a morphisms of finite type, see, in particular, [@3-IV-5, IV].
 
-::: {.itenv #FGA-3-IV-proposition-1.2 title="Proposition 1.2" latex="{Proposition 1.2}"}
+::: {.itenv #fga-3-iv-proposition-1.2 title="Proposition 1.2" latex="{Proposition 1.2}"}
 Let $E$ and $E'$ be bounded sets of classes of sheaves on the fibres of $X/S$, with $X$ assumed to be proper over $S$.
 Then
 
@@ -130,17 +130,17 @@ This second sheaf defines an algebraic family that bounds the family in question
 This is also true for the kernel, cokernel, and image of the above homomorphism, and the consideration of this proves (i) (provided that we assume the cokernel to be flat with respect to $T_0$, in which case we can again reduce to cutting $T_0$ into pieces...).
 :::
 
-::: {.itenv #FGA-3-IV-proposition-1.3 title="Proposition 1.3" latex="{Proposition 1.3}"}
+::: {.itenv #fga-3-iv-proposition-1.3 title="Proposition 1.3" latex="{Proposition 1.3}"}
 Let $E$ be a bounded family of classes of sheaves on the fibres of $X/S$.
 Then the classes of the structure sheaves of the $(\supp\scr{F})_\red$, where $\scr{F}$ is a coherent sheaf on some $X_K$, with $K$ algebraically closed, and whose class is in $E$, form a bounded family.
 :::
 
 Here, $(\supp\scr{F})_\red$ denotes the support of $\scr{F}$, endowed with the induced reduced structure, i.e. its structure sheaf is the quotient of $\cal{O}_{X_K}$ by the largest sheaf of ideals that defines $\supp\scr{F}$.
-We can prove the analogous result to [(1.3)](#FGA-3-IV-proposition-1.3) for the sheaves canonically induced from $\scr{F}$ by the theory of primary decomposition;
+We can prove the analogous result to [(1.3)](#fga-3-iv-proposition-1.3) for the sheaves canonically induced from $\scr{F}$ by the theory of primary decomposition;
 for example, the $\scr{F}/\scr{F}_i$, where the $\scr{F}_i$ are the primary subsheaves of $\scr{F}$ for the components of the support of $\scr{F}$, and minimal with respect to this property;
 or the $\cal{O}_{X_K}/\frak{p}$, where $\frak{p}$ is a prime sheaf of ideals associated to $\scr{F}$, or the $\cal{O}_{X_K}/\frak{q}$, where the $\scr{q}$ is a primary sheaf of ideals associated to a component of the support of $\scr{F}$ (the reference field being algebraically closed).
 
-## Bounded families and the Hilbert polynomial {#FGA-3-IV-section-2}
+## Bounded families and the Hilbert polynomial {#fga-3-iv-section-2}
 
 In the following, we assume that $X$ is projective over $S$, and endowed with a very ample sheaf, denoted by $\cal{O}_X(1)$.
 For every extension $K$ of a residue extension $k(s)$ of a point $s$ of $S$, we consider the corresponding sheaf $\cal{O}_{X_K}(1)$ on $X_K$, which will again be very ample.
@@ -162,7 +162,7 @@ So the sheaves $\scr{F}_s$ induced on the fibres are also quotients of the sheaf
 
 From these two remarks, we reduce the "necessary" part of the following theorem:
 
-::: {.itenv #FGA-3-IV-theorem-2.1 title="Theorem 2.1" latex="{Theorem 2.1}"}
+::: {.itenv #fga-3-iv-theorem-2.1 title="Theorem 2.1" latex="{Theorem 2.1}"}
 Let $X$ be projective over $S$, with $S$ Noetherian, and $\OO_X(1)$ very ample over $X$ with respect to $S$.
 Let $E$ be a set of classes of sheaves on the fibres of $X/S$.
 For $E$ to be bounded, it is necessary and sufficient for it to satisfy the following conditions:
@@ -181,8 +181,8 @@ $$
 so that the associated prime cycles of $\scr{F}_{(r)}$ are exactly the associated prime cycles of $\scr{F}$ that are of dimension $\geq r$, and, in particular, $\scr{F}_{(r)}$ is equal to $\scr{F}$ if and only if the associated prime cycles of $\scr{F}$ are of dimension $\geq r$.
 With this, we have:
 
-::: {.itenv #FGA-3-IV-theorem-2.2 title="Theorem 2.2" latex="{Theorem 2.2}"}
-Under the conditions of [Theorem 2.1](#FGA-3-IV-theorem-2.1), let $s$ be an integer, and suppose that $E$ satisfies condition (a), as well as the following weakened form of (b):
+::: {.itenv #fga-3-iv-theorem-2.2 title="Theorem 2.2" latex="{Theorem 2.2}"}
+Under the conditions of [Theorem 2.1](#fga-3-iv-theorem-2.1), let $s$ be an integer, and suppose that $E$ satisfies condition (a), as well as the following weakened form of (b):
 
 - (b<sub>s</sub>) The Poincaré polynomials $P_\scr{F}$ of the sheaves $\scr{F}$ whose class is in $E$ have coefficients _in degrees $\leq (s-1)$_ that are bounded.
 
@@ -194,22 +194,22 @@ Furthermore, the coefficients in degree $(s-2)$ of the $P_\scr{F}$ are bounded b
 
 Thus:
 
-::: {.itenv #FGA-3-IV-corollary-2.3 title="Corollary 2.3" latex="{Corollary 2.3}"}
+::: {.itenv #fga-3-iv-corollary-2.3 title="Corollary 2.3" latex="{Corollary 2.3}"}
 Suppose that the sheaves $\scr{F}$ whose class is in $E$ are such that all their associated prime cycles are of dimension $d$, with $s\leq d\leq r$.
-Then, in condition (b) of [Theorem 2.1](#FGA-3-IV-theorem-2.1), we can restrict to the coefficients of $P_\scr{F}$ between degree $(s-1)$ and $r$, inclusive.
+Then, in condition (b) of [Theorem 2.1](#fga-3-iv-theorem-2.1), we can restrict to the coefficients of $P_\scr{F}$ between degree $(s-1)$ and $r$, inclusive.
 :::
 
-The end of this section is dedicated to a sketch proof of [Theorem 2.2](#FGA-3-IV-theorem-2.2).
+The end of this section is dedicated to a sketch proof of [Theorem 2.2](#fga-3-iv-theorem-2.2).
 The key lemmas are the two following lemmas, of which the first is well known (and summarises the useful mathematical content of Chow coordinates):
 
-::: {.itenv #FGA-3-IV-lemma-2.4 title="Lemma 2.4 (Chow)" latex="{Lemma 2.4 (Chow)}"}
+::: {.itenv #fga-3-iv-lemma-2.4 title="Lemma 2.4 (Chow)" latex="{Lemma 2.4 (Chow)}"}
 Consider the structure sheaves of the subschemes $Y$ with fibre $X_K$ (where $K$ is an algebraically closed extension of the residue field of $S$), where $Y$ is reduced, and all its components are of the same dimension $r$ (and with $\OO_Y$ being thought of as a quotient sheaf of $\OO_X$).
 If the degrees of $Y$ are bounded, then the $Y$ form a bounded family.
 :::
 
 Here, the degree $a$ of $Y$ can be most conveniently defined as the coefficient of the dominant term of $P_{\OO_Y}=an^r/r!+\ldots$.
 
-::: {.itenv #FGA-3-IV-lemma-2.5 title="Lemma 2.5" latex="{Lemma 2.5}"}
+::: {.itenv #fga-3-iv-lemma-2.5 title="Lemma 2.5" latex="{Lemma 2.5}"}
 Let $\scr{L}$ be a coherent sheaf on $X$, and $E$ a set of classes of the quotient sheaves $\scr{F}$ of the sheaf $\scr{L}_K$ (where $K$ is a residue extension of $S$).
 Suppose that the fibres of $X$ over $S$ are of dimension $\leq r$, and set
 $$
@@ -275,13 +275,13 @@ $$
   \to \shHom\left( \bigwedge^{a-1}\scr{L}_{K'}, \OO_{\PP_K^r}(d) \right)
 $$
 where the first arrow is the canonical homomorphism coming from the exterior product, and the second comes from $s$.
-We then conclude by part (i) of [(1.2)](#FGA-3-IV-proposition-1.2).
+We then conclude by part (i) of [(1.2)](#fga-3-iv-proposition-1.2).
 :::
 
 The combination of the two lemmas above allows us to prove the following:
 
-::: {.itenv #FGA-3-IV-lemma-2.6 title="Lemma 2.6" latex="{Lemma 2.6}"}
-Suppose, under the preliminary conditions of [(2.1)](#FGA-3-IV-theorem-2.1), that, for all $\scr{F}$, we have
+::: {.itenv #fga-3-iv-lemma-2.6 title="Lemma 2.6" latex="{Lemma 2.6}"}
+Suppose, under the preliminary conditions of [(2.1)](#fga-3-iv-theorem-2.1), that, for all $\scr{F}$, we have
 $$
   P_\scr{F}(n) = a_\scr{F} n^r/r! + b_\scr{F} n^{r-1}/(r-1)! + \text{terms of degree }<r-1
 $$
@@ -293,18 +293,18 @@ Furthermore, if the $b_\scr{F}$ are bounded, then the $\scr{F}_{(r)}$ are bounde
 ::: {.proof}
 We can suppose that the base field $K$ of the sheaves $\scr{F}$ is algebraically closed.
 We endow each $\supp\scr{F}_{(r)}$(the union of the components of degree $r$) with the induced reduced structure.
-Then the degrees of the $\supp\scr{F}_{(r)}$ are bounded above by $a$, and so, by [(2.4)](#FGA-3-IV-lemma-2.4), the $\supp\scr{F}_{(r)}$ form a bounded set.
+Then the degrees of the $\supp\scr{F}_{(r)}$ are bounded above by $a$, and so, by [(2.4)](#fga-3-iv-lemma-2.4), the $\supp\scr{F}_{(r)}$ form a bounded set.
 Furthermore, for each component of $\supp\scr{F}_{(r)}$, the length of $\scr{F}_{(r)}$ for this component is $\leq a$, and so, if $\scr{I}_\scr{F}$ is the ideal that defines $\supp\scr{F}_{(r)}$, then $\scr{F}_{(r)}$ can be considered as a module on the subscheme $Y_\scr{F}$ of $X$ defined by $\scr{I}_\scr{F}^a$.
 \oldpage{221-10}
 As in the previous lemma, we can also reduce to the case where $\scr{F}=\scr{F}_{(r)}$, so that $\scr{F}$ comes from a module on $Y_\scr{F}$.
 The $Y_\scr{F}$ correspond to a bounded family of quotient modules of the $\OO_{X_K}$, and thus come from a closed subscheme $Y$ of some scheme $X\times_S T$.
-We can then apply [(2.5)](#FGA-3-IV-lemma-2.5) to $Y/T$ and $\scr{L}\otimes_X Y$, whence the conclusion.
+We can then apply [(2.5)](#fga-3-iv-lemma-2.5) to $Y/T$ and $\scr{L}\otimes_X Y$, whence the conclusion.
 :::
 
 ::: {.proof}
 We can now prove [(2.2)](FGA-3-IV-theorem-2.2) by induction on the upper bound $r$ of the $\dim\supp\scr{F}$.
 The statement is trivial for $r<0$, so suppose that $r\geq0$ and that the statement has been proven for $r'<r$.
-By [(2.6)](#FGA-3-IV-lemma-2.6), the $\scr{F}_{(r)}$ form a bounded family, and so too, by part (i) of [(1.2)], do the kernels of the homomorphisms $\scr{L}_K\to\scr{F}_{(r)}$;
+By [(2.6)](#fga-3-iv-lemma-2.6), the $\scr{F}_{(r)}$ form a bounded family, and so too, by part (i) of [(1.2)], do the kernels of the homomorphisms $\scr{L}_K\to\scr{F}_{(r)}$;
 there thus exists a coherent module $\scr{L}'$ on $X$ such that kernels in question, and thus also the $N_r(\scr{F})=\Ker(\scr{F}\to\scr{F}_{(r)})$, are quotients of modules $\scr{L}'_K$.
 Since the $\scr{F}_{(r)}$ are bounded, the $P_{\scr{F}_{(r)}}$ are bounded, and the formula
 $$
@@ -312,14 +312,14 @@ $$
 $$
 then shows that the $P_{N_r}$ satisfy the same condition (b<sub>s</sub>) as the $P_\scr{F}$.
 Thus the $N_r$ satisfy conditions (a) and (b<sub>s</sub>), and so, by the induction hypothesis, the $(N_r)_{(s)}$ are bounded.
-But $\scr{F}_{(s)}$ is an extension of $\scr{F}_{(r)}$ by $(N_r)_{(s)}$, and so, by part (ii) of [(1.2)](#FGA-3-IV-proposition-1.2), the $\scr{F}_{(s)}$ are bounded.
-For the last claim of [(2.2)](#FGA-3-IV-theorem-2.2), we note that the kernels $N_s$ of $\scr{F}\to\scr{F}_{(s)}$ are bounded, by part (i) of [(1.2)](#FGA-3-IV-proposition-1.2), and that the coefficient of the $n^{s-1}$ term in $P_{N_s}$ is bounded;
-then [(2.6)](#FGA-3-IV-lemma-2.6) proves that the coefficient of the following term is bounded below.
+But $\scr{F}_{(s)}$ is an extension of $\scr{F}_{(r)}$ by $(N_r)_{(s)}$, and so, by part (ii) of [(1.2)](#fga-3-iv-proposition-1.2), the $\scr{F}_{(s)}$ are bounded.
+For the last claim of [(2.2)](#fga-3-iv-theorem-2.2), we note that the kernels $N_s$ of $\scr{F}\to\scr{F}_{(s)}$ are bounded, by part (i) of [(1.2)](#fga-3-iv-proposition-1.2), and that the coefficient of the $n^{s-1}$ term in $P_{N_s}$ is bounded;
+then [(2.6)](#fga-3-iv-lemma-2.6) proves that the coefficient of the following term is bounded below.
 This finishes the proof
 :::
 
 
-## Hilbert schemes: definition, existence theorem {#FGA-3-IV-section-3}
+## Hilbert schemes: definition, existence theorem {#fga-3-iv-section-3}
 
 Let $X$ be a prescheme over another prescheme $S$, and $\scr{F}$ a quasi-coherent module on $X$.
 We denote by
@@ -343,7 +343,7 @@ and so $\shQuot_{\FXS}(S')$ is a *contravariant functor in $S'$* (where $S'$ is 
 In what follows, we suppose that $X$ is *projective* over a *Noetherian* $S$, with $\scr{F}$ *coherent*;
 for simplicity, we will limit ourselves to considering those $S'$ which are *locally Noetherian* over $S$.
 
-::: {.itenv #FGA-3-IV-theorem-3.1 title="Theorem 3.1" latex="{Theorem 3.1}"}
+::: {.itenv #fga-3-iv-theorem-3.1 title="Theorem 3.1" latex="{Theorem 3.1}"}
 Under these conditions, the contravariant functor $\shQuot_{\FXS}$ on the category of locally Noetherian $S$-preschemes is *representable* by an $S$-prescheme $\Quot_{\FXS}$, given by the sum of a sequence of projective $S$-schemes (and a fortiori $\Quot_{\FXS}$ is locally of finite type over $S$).
 :::
 
@@ -355,16 +355,16 @@ $$
   \shQuot_\FXS^P(S') = \Quot^P(\FXSp)
 $$
 and thus obtain a sub-functor of $\shQuot_\FXS$.
-The invariance property of Hilbert polynomials (recalled in [§2](#FGA-3-IV-section-2)) implies the following:
+The invariance property of Hilbert polynomials (recalled in [§2](#fga-3-iv-section-2)) implies the following:
 *For $\shQuot_\FXS$ to be representable, it is necessary and sufficient for the $\shQuot_\FXS^p$ to be representable, and then the $S$-prescheme $\Quot_\FXS$ which represents it is isomorphic to the prescheme given by the sum of the $\Quot_\FXS^P$ that represent the functors $\shQuot_\FXS^P$*.
-With this, [Theorem 3.1](#FGA-3-IV-theorem-3.1) will be a consequence of the following theorem:
+With this, [Theorem 3.1](#fga-3-iv-theorem-3.1) will be a consequence of the following theorem:
 
 \oldpage{221-12}
 
-::: {.itenv #FGA-3-IV-theorem-3.2 title="Theorem 3.2" latex="{Theorem 3.2}"}
+::: {.itenv #fga-3-iv-theorem-3.2 title="Theorem 3.2" latex="{Theorem 3.2}"}
 With the above notation, the functor $\shQuot_\FXS^P$ is representable by a projective $S$-prescheme $\Quot_\FXS^P$.
 :::
 
-The rest of this section is dedicated to the proof of [Theorem 3.2](#FGA-3-IV-theorem-3.2).
+The rest of this section is dedicated to the proof of [Theorem 3.2](#fga-3-iv-theorem-3.2).
 
 Let $\nu$ be an integer.
