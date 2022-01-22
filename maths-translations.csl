@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
-  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
+  <!-- This style was edited with https://editor.citationstyles.org/visualEditor/ -->
   <info>
     <title>Elsevier (numeric, with titles)</title>
     <id>http://www.zotero.org/styles/elsevier</id>
@@ -100,26 +100,22 @@
             <text variable="title" font-style="italic"/>
             <text macro="edition"/>
             <text macro="publisher"/>
+            <text variable="collection-title" form="short" text-case="title" font-style="italic"/>
+            <text variable="volume" font-weight="bold"/>
           </group>
         </if>
-        <else-if type="chapter paper-conference" match="any">
+        <else-if type="incollection chapter paper-conference" match="any">
           <text variable="title" quotes="true" suffix=", "/>
           <text term="in" suffix=": "/>
-          <text macro="editor" suffix=", "/>
-          <text variable="container-title" form="short" text-case="title" font-style="italic" suffix=", "/>
-          <text macro="edition" suffix=", "/>
+          <group delimiter=". " suffix=". ">
+            <text macro="editor" suffix=", "/>
+            <text variable="container-title" form="short" text-case="title" font-style="italic"/>
+            <text variable="volume" font-weight="bold"/>
+          </group>
           <text macro="publisher"/>
           <group delimiter=" ">
             <label variable="page" form="short" prefix=": "/>
             <text variable="page"/>
-          </group>
-        </else-if>
-        <else-if type="thesis">
-          <group delimiter=". ">
-            <text variable="title" font-style="italic"/>
-            <text variable="genre"/>
-            <text variable="publisher"/>
-            <text macro="year-date" prefix="(" suffix=")"/>
           </group>
         </else-if>
         <else>
