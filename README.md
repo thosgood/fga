@@ -15,10 +15,8 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
     + (including those that are citations to the FGAs in the bibliography?)
 - consistent choice between empty lines between i. and ii. or not
 - margin/padding -top of lists in `.itenv` (seems like there's none?)
-- make sepia colour scheme not look so gross
-    + TOC and Font Settings
-    + links
-    + (actually, just use the modified files from other translations?)
+- no big bib at the very end?
+    + generally just... ugh bib mess
 
 - [x] 1
 - [x] 2
