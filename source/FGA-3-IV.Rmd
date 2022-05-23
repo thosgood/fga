@@ -20,6 +20,8 @@
 \providecommand{\PP}{\mathbb{P}}
 \providecommand{\Quot}{\operatorname{Quot}}
 \providecommand{\shQuot}{\underline{\Quot}}
+\providecommand{\Grass}{\operatorname{Quot}}
+\providecommand{\shGrass}{\underline{\Grass}}
 \providecommand{\FXS}{{\scr{F}/X/S}}
 \providecommand{\FXSp}{{\scr{F}'/X'/S'}}
 \providecommand{\RR}{\operatorname{R}}
@@ -357,7 +359,7 @@ $$
 $$
 and thus obtain a sub-functor of $\shQuot_\FXS$.
 The invariance property of Hilbert polynomials (recalled in [§2](#fga-3-iv-section-2)) implies the following:
-*For $\shQuot_\FXS$ to be representable, it is necessary and sufficient for the $\shQuot_\FXS^p$ to be representable, and then the $S$-prescheme $\Quot_\FXS$ which represents it is isomorphic to the prescheme given by the sum of the $\Quot_\FXS^P$ that represent the functors $\shQuot_\FXS^P$*.
+*For $\shQuot_\FXS$ to be representable, it is necessary and sufficient for the $\shQuot_\FXS^P$ to be representable, and then the $S$-prescheme $\Quot_\FXS$ which represents it is isomorphic to the prescheme given by the sum of the $\Quot_\FXS^P$ that represent the functors $\shQuot_\FXS^P$*.
 With this, [Theorem 3.1](#fga-3-iv-theorem-3.1) will be a consequence of the following theorem:
 
 \oldpage{221-12}
@@ -379,10 +381,48 @@ For this last condition, we suppose that $X$ is written as the homogeneous prime
 To prove [Theorem 3.2](#fga-3-iv-theorem-3.2), we can easily reduce to the case where $X=\PP_S^r$ (since $S$ is a union of open subsets $U$ such that $X|U$ is a closed subscheme of $\PP_U^r$, and $\OO_X(1)$ is induced by $\OO_{\PP_U^r}(1)$), and where $\scr{F}$ is of the form $(\OO_{\PP_S^r})^N$, and thus flat over $S$.
 Then, in the above, the sheaves $\scr{H}$ are also flat over $S'$.
 It then follows from the Künneth relations [@3-IV-5, III, §7] and from (b) that the conditions (a) and (b) are stable under base change, and imply that, for $n\geq\nu$, forming $f'_*(\scr{G}(n))$ and $F'_*(\scr{H}(n))$ commutes with extension of the base (loc. cit.).
-In other words, *$A_\nu(S')$ is a contravariant functor in $S'$, and in a precise sense a subfunctor of $A(S')=\shQuot_{\FXS}^p(S')$*.
+In other words, *$A_\nu(S')$ is a contravariant functor in $S'$, and in a precise sense a subfunctor of $A(S')=\shQuot_{\FXS}^P(S')$*.
 For varying $\nu$, we thus obtain an increasing sequence of subsets $A_\nu(S')$ of $A(S')$, whose union is $A(S')$ by a well known theorem of Serre [@3-IV-5, III, §2].
 Note now that, if $\scr{G}$ is a coherent quotient of $\scr{F}'$ which is flat over $S$, and $s$ an element of $S$ such that the base change $\Spec(k(s))\to S$ gives rise to a quotient $\scr{G}_s$ of $\scr{F}_s$ satisfying conditions (a), (b), and (c), i.e. is in $A_\nu\Spec(k(s))$, then there exists an open neighbourhood $U$ of $s$ such that these same conditions are satisfied by $\scr{G}|(f')^{-1}(U)$, i.e. this quotient is in $A_\nu(U)$;
 for (a) and (b), this follows in fact from the "Theorem of holomorphic functions" [@3-IV-5, III, §7], and (c) follows from the Nakayama lemma and the fact that we know that $f'_*(\scr{H}(n+k))=S'_kf'_*(\src{H}(n))$ anyway for $n$ large enough and $k\geq0$ [@3-IV-5, III,§2].
 \oldpage{221-13}
 From these remarks, we conclude the following (compare with [@3-IV-4, IV]).
 *For the functor $A$ to be representable, it is necessary and sufficient for the functors $A_\nu$ to be representable, and then the $S$-prescheme $Q$ that represents $A$ is the increasing union of the opens $Q_\nu$ that represent the $A_\nu$.*
+
+Let
+$$
+  M_\bullet
+  = \sum_{n\geq0} f_*(\scr{F}(n))
+  = \cal{S}_\bullet^N
+$$
+so that we have
+$$
+  M'_\bullet
+  = M_\bullet\otimes_{\OO_S}\OO_{S'}
+  = \sum_{n\geq0} f'_*(\scr{F}(n))
+  = {\cal{S}'_\bullet}^N.
+$$
+
+It follows from (a) that we have
+
+a'. $f'_*(\scr{G}(n))$ is locally free of rank $P(n)$ for $n\geq\nu$ [@3-IV-5, III, §7]
+
+and it follows from (b),for $i=1$, that we have
+
+a''. $f'_*(\scr{G}(n))$ is a quotient module of $M'_n$.
+
+Also, the knowledge of this quotient module, for $n=\nu$, implies, by (c), that the knowledge of the submodules $f'_*(\scr{H}(n))$ of $M_n$ for $n\geq\nu$, and thus the knowledge of $\scr{H}$ and consequently of $\scr{G}$.
+We thus obtain an *injective map*
+$$
+  A_\nu(S') \to \shGrass_{P(\nu)}(M'_\nu)
+$$
+from $A_\nu(S')$ to the set of locally free quotient modules of $M'$ of rank $P(\nu)$, whence a *functorial* homomorphism
+$$
+  i_\nu\colon A_\nu(S') \to \shGrass_{P(\nu)}(M_\nu)(S')
+$$
+where the functor on the right hand side is representable by the Grassmannian scheme $\Grass_{P(\nu)}(M_\nu)$ (compare with [@4, V]), which is projective over $S$.
+Then
+
+::: {.itenv #fga-3-iv-lemma-3.3 title="Lemma 3.3" latex="{Lemma 3.3}"}
+  $A_\nu(S')$ is
+:::
