@@ -524,7 +524,34 @@ from <eq env="math">A_\nu(S')</eq> to the set of locally free quotient modules o
 where the functor on the right hand side is representable by the Grassmannian scheme <eq env="math">\operatorname{Quot}_{P(\nu)}(M_\nu)</eq> (compare with <span class="citation">[<span class="citeproc-not-found" data-reference-id="4"><strong>???</strong></span>, V]</span>), which is projective over <eq env="math">S</eq>.
 Then</p>
 <div id="fga-3-iv-lemma-3.3" class="itenv" title="Lemma 3.3">
-<p><eq env="math">A_\nu(S')</eq> is</p>
+<p><eq env="math">A_\nu(S')</eq> is a representable functor, and the morphism <eq env="math">Q_\nu\to\operatorname{Quot}_{P(\nu)}(M_\nu)</eq> that represents the homomorphism <eq env="math">i_\nu</eq> is an immersion (which implies that <eq env="math">Q_\nu</eq> is quasi-projective over <eq env="math">S</eq>).</p>
+</div>
+<p>This claim is equivalent to the following (compare with <span class="citation">[<a href="#ref-3-IV-4" role="doc-biblioref">17</a>]</span>):
+If we have a quotient module <eq env="math">N</eq> of <eq env="math">M'_\nu</eq> that is locally free of rank <eq env="math">P(\nu)</eq>, then there exists a sub-prescheme <eq env="math">Z</eq> of <eq env="math">S'</eq> such that, for every locally Noetherian prescheme <eq env="math">T'</eq> over <eq env="math">S'</eq>, the inverse image of <eq env="math">N</eq> over <eq env="math">T'</eq> is in <eq env="math">\Im A_\nu(T')</eq> if and only if <eq env="math">T'\to S'</eq> is bounded by the sub-prescheme <eq env="math">Z</eq>.
+
+Changing notation, we can suppose that <eq env="math">S'=S</eq>, i.e. we have a quotient <eq env="math">N_\nu</eq> of <eq env="math">M_\nu</eq> by a submodule <eq env="math">R_\nu</eq>.
+For it to come from an element of <eq env="math">A(s)</eq>, it is necessary and sufficient for it to satisfy the following two conditions:</p>
+<ol style="list-style-type: lower-roman">
+<li><eq env="math">M_{\nu+k}/{\mathcal{S}}_k R_\nu</eq> is locally free of rank <eq env="math">P(\nu+k)</eq> for <eq env="math">k\geqslant 0</eq>.</li>
+<li>Both the subsheaf <eq env="math">{\mathscr{H}}</eq> of <eq env="math">{\mathscr{F}}</eq> defined by the graded submodule <eq env="math">R_\bullet=\sum_{k\geqslant 0}{\mathscr{S}}_kR_\nu</eq> of <eq env="math">M_\bullet</eq> (cf. <span class="citation">[<a href="#ref-3-IV-5" role="doc-biblioref">18</a>]</span>) and the quotient <eq env="math">{\mathscr{G}}={\mathscr{F}}/{\mathscr{H}}</eq> satisfy conditions (a) and (b) above.</li>
+</ol>
+<p>These conditions are clearly necessary, and if they are satisfied then the sheaf <eq env="math">{\mathscr{G}}</eq> defined in (ii) above, being isomorphic to the sheaf associated to the graded <eq env="math">{\mathscr{S}}_\bullet</eq>-module <eq env="math">N_\bullet</eq> given by the sum of the <eq env="math">M_{n+k}/{\mathscr{S}}_kR</eq> is <em>flat</em> over <eq env="math">S</eq> (since its fibres are direct factors of localisations of <eq env="math">N</eq> for homogeneous prime ideals of <eq env="math">{\mathcal{S}}_\bullet</eq>), and correspond to the Hilbert polynomial <eq env="math">P</eq> by virtue of (i).
+Taking (ii) into account, we then see that (a’) and (a’’) are satisfied, and thus, for <eq env="math">n\geqslant\nu</eq>, the natural homomorphism <eq env="math">N_n\to f_*({\mathscr{G}}(n))</eq> is a <em>surjective</em> homomorphism of locally free modules of equal rank, and thus an isomorphism, and thus <eq env="math">f_*({\mathscr{H}}(\nu+k))={\mathcal{S}}_kR_\nu</eq> for all <eq env="math">k\geqslant 0</eq>, which proves that <eq env="math">{\mathscr{G}}\in A_\nu(S)</eq> and that <eq env="math">R_\nu</eq> is the element of <eq env="math">\operatorname{Quot}_{P(\nu)}(M_\nu)</eq> defined by <eq env="math">{\mathscr{G}}</eq>.</p>
+<p>Criteria (i) and (ii) above apply equally to the situation obtained after a change of base <eq env="math">S'\to S</eq>.
+We will prove first of all the fact that condition (i) is satisfied after the change of base <eq env="math">S'\to S</eq> can be expressed by saying that <eq env="math">S'\to S</eq> is bounded by a certain sub-prescheme <eq env="math">Z</eq> of <eq env="math">S</eq>;
+once we have shown this result, we are led (replacing <eq env="math">S</eq> with <eq env="math">Z</eq>) to the case where condition (i) is already satisfied on <eq env="math">S</eq>, and since it is stable under change of base, it remains to express condition (ii).
+But then, if <eq env="math">U</eq> denotes the set of <eq env="math">s\in S</eq> such that the cohomology of the sheaves induced on the fibre <eq env="math">X_s</eq> by <eq env="math">{\mathscr{G}}(n)</eq> and <eq env="math">{\mathscr{H}}(n)</eq> is zero in dimension <eq env="math">&gt;0</eq> for <eq env="math">n\geqslant\nu</eq>, then we have already shown that <eq env="math">U</eq> is open, and condition (ii) will be satisfied after a change of base <eq env="math">S'\to S</eq> if and only if <eq env="math">S'\to S</eq> is bounded by <eq env="math">U</eq>, which proves <a href="FGA-3-IV.html#fga-3-iv-lemma-3.3">Lemma 3.3</a>.
+It thus remains to prove the following lemma:</p>
+<div id="fga-3-iv-lemma-3.4" class="itenv" title="Lemma 3.4">
+<p>Let <eq env="math">S</eq> be a locally Noetherian prescheme, endowed with a quasi-coherent positively-graded algebra <eq env="math">{\mathcal{S}}_\bullet</eq> generated by <eq env="math">{\mathcal{S}}_1</eq>, and let <eq env="math">M_\bullet</eq> be a quasi-coherent graded <eq env="math">{\mathcal{S}}</eq>-module of finite type, <eq env="math">P</eq> a polynomial with rational coefficients, and <eq env="math">\nu</eq> and integer.
+Then there exists a (clearly uniquet) sub-prescheme <eq env="math">Z</eq> of <eq env="math">S</eq> that has the following property:
+for every prescheme <eq env="math">S'</eq> over <eq env="math">S</eq>, for <eq env="math">M_n\otimes_{{\mathscr{O}}_S}{\mathscr{O}}_{S'}</eq> to be locally free of rank <eq env="math">P(n)</eq> for all <eq env="math">n\geqslant\nu</eq>, it is necessary and sufficient for <eq env="math">S'\to S</eq> to be bounded by <eq env="math">Z</eq>.</p>
+</div>
+
+<p>We can evidently suppose that <eq env="math">S</eq> is affine, and thus Noetherian.
+Then:</p>
+<div id="fga-3-iv-lemma-3.5" class="itenv" title="Lemma 3.5">
+<p>For</p>
 </div>
 
 </div>
