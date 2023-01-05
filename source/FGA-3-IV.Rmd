@@ -9,20 +9,20 @@
 <!-- Shortcuts -->
 
 \providecommand{\Tor}{\operatorname{Tor}}
-\providecommand{\shTor}{\underset{\widetilde{\phantom{\Tor}}}{\Tor}}
+\providecommand{\shTor}{\underline{\underline{\Tor}}}
 \providecommand{\Ext}{\operatorname{Ext}}
-\providecommand{\shExt}{\underset{\widetilde{\phantom{\Ext}}}{\Ext}}
+\providecommand{\shExt}{\underline{\underline{\Ext}}}
 \providecommand{\Hom}{\operatorname{Hom}}
-\providecommand{\shHom}{\underset{\widetilde{\phantom{\Hom}}}{\Hom}}
+\providecommand{\shHom}{\underline{\underline{\Hom}}}
 \providecommand{\supp}{\operatorname{supp}}
 \providecommand{\red}{{\mathrm{red}}}
 \providecommand{\OO}{\scr{O}}
 \providecommand{\PP}{\mathbb{P}}
 \providecommand{\Quot}{\operatorname{Quot}}
-\providecommand{\shQuot}{\underset{\widetilde{\phantom{\Quot}}}{\Quot}}
+\providecommand{\shQuot}{\underline{\underline{\Quot}}}
 \providecommand{\repQuot}{\underline{\Quot}}
 \providecommand{\Grass}{\operatorname{Quot}}
-\providecommand{\shGrass}{\underset{\widetilde{\phantom{\Grass}}}{\Grass}}
+\providecommand{\shGrass}{\underline{\underline{\Grass}}}
 \providecommand{\repGrass}{\underline{\Grass}}
 \providecommand{\FXS}{{\scr{F}/X/S}}
 \providecommand{\FXSp}{{\scr{F}'/X'/S'}}
@@ -41,6 +41,7 @@ _Séminaire Bourbaki_ **13** (1960--61), Talk no. 221.
 
 - **additif**
 - **errata**
+- **fix $\shHom$ etc. to use mathscr?**
 
 ## Introduction {-}
 
@@ -350,7 +351,7 @@ In what follows, we suppose that $X$ is *projective* over a *Noetherian* $S$, wi
 for simplicity, we will limit ourselves to considering those $S'$ which are *locally Noetherian* over $S$.
 
 ::: {.itenv #fga-3-iv-theorem-3.1 title="Theorem 3.1" latex="{Theorem 3.1}"}
-Under these conditions, the contravariant functor $\shQuot_{\FXS}$ on the category of locally Noetherian $S$-preschemes is *representable* by an $S$-prescheme $\repQuot}_{\FXS}$, given by the sum of a sequence of projective $S$-schemes (and a fortiori $\repQuot_{\FXS}$ is locally of finite type over $S$).
+Under these conditions, the contravariant functor $\shQuot_{\FXS}$ on the category of locally Noetherian $S$-preschemes is *representable* by an $S$-prescheme $\repQuot_{\FXS}$, given by the sum of a sequence of projective $S$-schemes (and a fortiori $\repQuot_{\FXS}$ is locally of finite type over $S$).
 :::
 
 We will obtain such a decomposition in the following way.
@@ -540,5 +541,5 @@ The proof also shows, at the same time, the following:
 
 ::: {.itenv #fga-3-iv-proposition-3.8 title="Proposition 3.8" latex="{Proposition 3.8}"}
 Under the conditions of [(3.2)](#fga-3-iv-theorem-3.2), let $Q=\repQuot_{\FXS}^P$, $X_Q=X\times_s Q$, $\scr{F}_Q=\scr{F}\otimes_{\OO_S}\OO_Q$, and let $\scr{G}$ be the coherent quotient of $\scr{F}_Q$, which is flat over $Q$, that has $P$ as its relative Hilbert polynomial, so that $(Q,\scr{G})$ represents the functor $\shQuot_{\FXS}^P$.
-!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 :::
