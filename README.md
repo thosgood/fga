@@ -17,6 +17,7 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 - margin/padding -top of lists in `.itenv` (seems like there's none?)
 - no big bib at the very end?
     + generally just... ugh bib mess
+- bring over menu bar from qubit.guide? new github source icon etc.
 
 - [x] 1
 - [x] 2
