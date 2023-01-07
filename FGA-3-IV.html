@@ -216,7 +216,6 @@ div.csl-indent {
 <ul>
 <li><strong>additif</strong></li>
 <li><strong>errata</strong></li>
-<li><strong>fix <eq env="math">\underline{\operatorname{Hom}}</eq> etc. to use mathscr?</strong></li>
 </ul>
 <div id="introduction-1" class="section level2 unnumbered">
 <h2>Introduction</h2>
@@ -244,7 +243,7 @@ Note that there is a bijective correspondence between classes of coherent sheave
 <p>Let <eq env="math">E</eq> and <eq env="math">E'</eq> be two sets of classes of coherent sheaves on <eq env="math">X</eq>.
 Consider the classes of all sheaves of the form <eq env="math">{\mathscr{F}}\otimes{\mathscr{F}}'</eq>, where <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq> are coherent sheaves on the <em>same</em> <eq env="math">X_K</eq>, with the class of <eq env="math">{\mathscr{F}}</eq> being in <eq env="math">E</eq> and the class of <eq env="math">{\mathscr{F}}'</eq> being in <eq env="math">E'</eq>.
 We thus define a set of classes of coherent sheaves that we denote by <eq env="math">E\otimes E'</eq>.
-We can similarly define <eq env="math">\underline{\underline{\operatorname{Tor}}}_i(E,E')</eq>, etc.
+We can similarly define <eq env="math">\mathscr{T}\kern -.5pt or_i(E,E')</eq>, etc.
 Generally, to every function <eq env="math">{\mathscr{U}}</eq> that sends each sequence <eq env="math">{\mathscr{F}}_1,\ldots,scr{F}_n</eq> of <eq env="math">n</eq> coherent sheaves on one single <eq env="math">X_K</eq> to a set <eq env="math">{\mathscr{U}}({\mathscr{F}}_1,\ldots,{\mathscr{F}}_n)</eq> of coherent sheaves on <eq env="math">X_K</eq>, and that has the evident property of compatibility with isomorphisms of sheaves and inverse images under change of base, we associate a function, denoted by the same notation <eq env="math">{\mathscr{U}}</eq>, that sends each sequence <eq env="math">E_1,\ldots,E_n</eq> of <eq env="math">n</eq> sets of classes of coherent sheaves to a set <eq env="math">{\mathscr{U}}(E_1,\ldots,E_n)</eq> of classes of coherent sheaves.</p>
 <p>Our aim in this section is to give a definition of certain sets of classes of sheaves, said to be <em>bounded</em>, and to show that the most standard operations <eq env="math">{\mathscr{U}}</eq>, applied to bounded sets, give sets that are again bounded.</p>
 <p>Let <eq env="math">X</eq> be a prescheme of finite type over <eq env="math">S</eq>, with <eq env="math">S</eq> <em>Noetherian</em>.
@@ -264,11 +263,11 @@ This theoretically leads us to determine the bounded families only in the case w
 <p>If <eq env="math">E</eq> and <eq env="math">E'</eq> are bounded families of classes of sheaves with respect to <eq env="math">X/S</eq>, then <eq env="math">E\otimes E'</eq> is also bounded:
 indeed, if <eq env="math">E</eq> (resp. <eq env="math">E'</eq>) is bounded by the algebraic families defined by <eq env="math">T\to S</eq> and <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X_T</eq> (resp. <eq env="math">T'\to S</eq> and <eq env="math">{\mathscr{F}}'</eq> on <eq env="math">X_{T'}</eq>), then <eq env="math">E\otimes E'</eq> is bounded by the algebraic family defined by <eq env="math">T''=T\times_S T'\to S</eq> and the sheaf <eq env="math">{\mathscr{F}}''</eq> on <eq env="math">X_{T''}</eq> given by the tensor product of the inverse images of <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq> on <eq env="math">X_{T''}</eq>.
 This argument is correct only because the functor <eq env="math">{\mathscr{F}}\otimes{\mathscr{F}}'</eq> is right exact in both <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq>, and thus commutates with base extension (and, in particular, with passing to the fibres).
-It is not applicable as-is to local operations, such as <eq env="math">\underline{\underline{\operatorname{Tor}}}_i(E,E')</eq>, <eq env="math">\underline{\operatorname{Hom}}(E,E')</eq>, <eq env="math">\underline{\operatorname{Ext}}^i(E,E')</eq>.
+It is not applicable as-is to local operations, such as <eq env="math">\mathscr{T}\kern -.5pt or_i(E,E')</eq>, <eq env="math">\underline{\operatorname{Hom}}(E,E')</eq>, <eq env="math">\underline{\operatorname{Ext}}^i(E,E')</eq>.
 We can, however, show that these operations also send bounded sets to bounded sets, by proceeding as for <eq env="math">E\otimes E'</eq>, but by also using results of the following type (all contained in <span class="citation">[<a href="#ref-3-IV-3" role="doc-biblioref">16</a>, IV 6.11]</span>):
 a bounded family <eq env="math">E</eq> is always bounded by an algebraic family defined by a coherent sheaf <eq env="math">{\mathscr{F}}</eq> on some <eq env="math">X_T</eq> (with <eq env="math">T</eq> of finite type over <eq env="math">S</eq>) that is <em>flat</em> with respect to <eq env="math">T</eq>.
 (We “cut into bits” the initial space of parameters).
-Such flatness properties on suitable sheaves indeed ensure the commutativity of operations such as <eq env="math">\underline{\underline{\operatorname{Tor}}}_i({\mathscr{F}},{\mathscr{F}}')</eq> with arbitrary base change.
+Such flatness properties on suitable sheaves indeed ensure the commutativity of operations such as <eq env="math">\mathscr{T}\kern -.5pt or_i({\mathscr{F}},{\mathscr{F}}')</eq> with arbitrary base change.
 The same method applies to operations of a global nature:
 direct images and derived direct images of coherent sheaves under proper morphisms, global <eq env="math">\operatorname{Ext}</eq> with respect to proper morphisms (cf. <span class="citation">[<a href="#ref-3-IV-5" role="doc-biblioref">18</a>, III §6]</span>), etc.;
 all these operations send bounded families of sheaves to bounded families of sheaves (N.B. here the preschemes over which we are taking the various sheaves can change under the operations in question).</p>
@@ -532,11 +531,11 @@ so that we have
 <p>Also, the knowledge of this quotient module, for <eq env="math">n=\nu</eq>, implies, by (c), that the knowledge of the submodules <eq env="math">f'_*({\mathscr{H}}(n))</eq> of <eq env="math">M_n</eq> for <eq env="math">n\geqslant\nu</eq>, and thus the knowledge of <eq env="math">{\mathscr{H}}</eq> and consequently of <eq env="math">{\mathscr{G}}</eq>.
 We thus obtain an <em>injective map</em>
 <eq env="displaymath">
-  A_\nu(S') \to \underline{\underline{\operatorname{Quot}}}_{P(\nu)}(M'_\nu)
+  A_\nu(S') \to \mathscr{G}\kern -.5pt rass_{P(\nu)}(M'_\nu)
 </eq>
 from <eq env="math">A_\nu(S')</eq> to the set of locally free quotient modules of <eq env="math">M'</eq> of rank <eq env="math">P(\nu)</eq>, whence a <em>functorial</em> homomorphism
 <eq env="displaymath">
-  i_\nu\colon A_\nu(S') \to \underline{\underline{\operatorname{Quot}}}_{P(\nu)}(M_\nu)(S')
+  i_\nu\colon A_\nu(S') \to \mathscr{G}\kern -.5pt rass_{P(\nu)}(M_\nu)(S')
 </eq>
 where the functor on the right hand side is representable by the Grassmannian scheme <eq env="math">\operatorname{Quot}_{P(\nu)}(M_\nu)</eq> (compare with <span class="citation">[<a href="#ref-3-IV-4" role="doc-biblioref">17</a>, V]</span>), which is projective over <eq env="math">S</eq>.
 Then</p>
