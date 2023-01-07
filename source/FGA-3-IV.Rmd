@@ -158,7 +158,7 @@ $$
 which is a polynomial in the integer $n$, and called the _Hilbert polynomial_ of $\scr{F}$.
 For large values of $n$, $P(n)$ is exactly the dimension of $\HH^0(X_k,\scr{F}(n))$ over $K$, since the $\HH^i(X_k,\scr{F}(n))$ are zero for $i>0$ and large enough $n$.
 
-Now, if $\scr{F}$ is a coherent sheaf on $X$ which is _flat_ with respect to $S$, then the Hilbert polynomials of the sheaves $\scr{F}_S$ induced on the fibres $X_S$ (with respect to one single connected component of $S$) are all equal [@5, III, §7].
+Now, if $\scr{F}$ is a coherent sheaf on $X$ which is _flat_ with respect to $S$, then the Hilbert polynomials of the sheaves $\scr{F}_S$ induced on the fibres $X_S$ (with respect to one single connected component of $S$) are all equal [@3-IV-5, III, §7].
 It thus follows (without any flatness hypothesis) that the set of Hilbert polynomials of the sheaves $\scr{F}_s$, for $s\in S$, is finite for every coherent sheaf $\scr{F}$ on $X$.
 
 \oldpage{221-06}
@@ -519,7 +519,7 @@ This finishes the proof of [(3.4)](#fga-3-iv-lemma-3.4), and thus also of [(3.3)
 We have thus proven that _$\shQuot_{\FXS}^P$ is representable by an $S$-prescheme $Q$ that is an increasing union of open quasi-projective subpreschemes $Q_\nu$ over $S$._
 To go further, we need to invoke [Theorem 2.1](#fga-3-iv-theorem-2.1), whence we easily conclude that $Q$ is _quasi-compact_ (since it is the image of a prescheme $S'$ of finite type over $S$ that parametrises the family of quotient sheaves of the $\scr{F}_K$ whose Hilbert polynomial is $P$).
 Thus $Q$ is equal to one of the $Q_\nu$, and thus quasi-projective over $S$.
-To prove that it is projective over $S$, it thus remains to prove that it is _proper_ over $S$, and for this it suffices to invoke the valuative criteria of properness in the form given in [@5, II, 7.3.8].
+To prove that it is projective over $S$, it thus remains to prove that it is _proper_ over $S$, and for this it suffices to invoke the valuative criteria of properness in the form given in [@3-IV-5, II, 7.3.8].
 It suffices to verify the following:
 
 ::: {.itenv #fga-3-iv-lemma-3.7 title="Lemma 3.7" latex="{Lemma 3.7}"}
@@ -530,7 +530,7 @@ Then there exists a unique quasi-coherent quotient module $\scr{G}$ of $\scr{F}$
 \oldpage{221-17}
 
 ::: {.proof}
-Indeed, if $\scr{G}_s=\scr{F}_s/\scr{H}_s$, it suffices to consider the largest subsheaf $\scr{H}$ of $\scr{F}$ that induces $\scr{H}_s$ ([@5, I, 9.4.2]) and to take $\scr{G}=\scr{F}/\src{H}$.
+Indeed, if $\scr{G}_s=\scr{F}_s/\scr{H}_s$, it suffices to consider the largest subsheaf $\scr{H}$ of $\scr{F}$ that induces $\scr{H}_s$ ([@3-IV-5, I, 9.4.2]) and to take $\scr{G}=\scr{F}/\scr{H}$.
 We easily verify that this sheaf works.
 :::
 
