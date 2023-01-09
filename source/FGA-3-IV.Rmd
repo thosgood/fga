@@ -21,9 +21,12 @@
 \providecommand{\Quot}{\operatorname{Quot}}
 \providecommand{\shQuot}{\mathscr{Q}\kern -.5pt out}
 \providecommand{\repQuot}{\underline{\Quot}}
-\providecommand{\Grass}{\operatorname{Quot}}
+\providecommand{\Grass}{\operatorname{Grass}}
 \providecommand{\shGrass}{\mathscr{G}\kern -.5pt rass}
 \providecommand{\repGrass}{\underline{\Grass}}
+\providecommand{\Hilb}{\operatorname{Hilb}}
+\providecommand{\shHilb}{\mathscr{H}\kern -.5pt ilb}
+\providecommand{\repHilb}{\underline{\Hilb}}
 \providecommand{\FXS}{{\scr{F}/X/S}}
 \providecommand{\FXSp}{{\scr{F}'/X'/S'}}
 \providecommand{\RR}{\operatorname{R}}
@@ -540,5 +543,26 @@ The proof also shows, at the same time, the following:
 
 ::: {.itenv #fga-3-iv-proposition-3.8 title="Proposition 3.8" latex="{Proposition 3.8}"}
 Under the conditions of [(3.2)](#fga-3-iv-theorem-3.2), let $Q=\repQuot_{\FXS}^P$, $X_Q=X\times_s Q$, $\scr{F}_Q=\scr{F}\otimes_{\OO_S}\OO_Q$, and let $\scr{G}$ be the coherent quotient of $\scr{F}_Q$, which is flat over $Q$, that has $P$ as its relative Hilbert polynomial, so that $(Q,\scr{G})$ represents the functor $\shQuot_{\FXS}^P$.
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Then there exists an integer $\nu$ such that, for $n\geq\nu$, $(f_Q)_*(\scr{G}(n))$ is a locally free module over $Q$ of rank $P(n)$, and is very ample with respect to $S$, i.e. it defines an immersion of $Q$ into a Grassmannian scheme $\repGrass_{P(n)}(M)$ over $S$.
+A fortiori, for $n\geq\nu$, the sheaf $\bigwedge^{P(n)}(f_Q)_*(\scr{G}(n))$ over $Q$ is invertible and very ample with respect to $S$.
 :::
+
+::: {.proof}
+Indeed, we can reduce, as in [(3.2)](#fga-3-iv-theorem-3.2), to the case where $\scr{F}$ is flat over $S$, and then it suffices to take an integer $\nu$ such that $A_\nu=A$ (with the notation above).
+:::
+
+The most important application of [(3.2)](#fga-3-iv-theorem-3.2) is in the case where $\scr{F}=\OO_X$.
+We then write
+$$
+  \begin{aligned}
+    \repQuot_{\OO_X/X/S}
+    &= \repHilb_{X/S}
+  \\\repQuot_{\OO_X/X/S}^P
+    &= \repHilb_{X/S}^P
+  \end{aligned}
+$$
+and so we have a decomposition
+$$
+  \repHilb_{X/S} = \coprod_P \repHilb_{X/S}^P.
+$$
+By definition,
