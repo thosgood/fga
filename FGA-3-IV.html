@@ -182,6 +182,7 @@ div.csl-indent {
 <li class="chapter" data-level="6.1" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-1"><i class="fa fa-check"></i><b>6.1</b> Bounded sets of sheaves: invariance properties</a></li>
 <li class="chapter" data-level="6.2" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-2"><i class="fa fa-check"></i><b>6.2</b> Bounded families and the Hilbert polynomial</a></li>
 <li class="chapter" data-level="6.3" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-3"><i class="fa fa-check"></i><b>6.3</b> Hilbert schemes: definition, existence theorem</a></li>
+<li class="chapter" data-level="6.4" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-4"><i class="fa fa-check"></i><b>6.4</b> Variants</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="FGA-3-V.html"><a href="FGA-3-V.html"><i class="fa fa-check"></i><b>7</b> Picard schemes: Existence theorems</a></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
@@ -486,9 +487,9 @@ We then set
 <eq env="displaymath">
   \mathscr{Q}\kern -.5pt out_{{\mathscr{F}}/X/S}^P(S') = \operatorname{Quot}^P({{\mathscr{F}}'/X'/S'})
 </eq>
-and thus obtain a sub-functor of <eq env="math">\mathscr{Q}\kern -.5pt out_{{\mathscr{F}}/X/S}</eq>.
+and thus obtain a subfunctor of <eq env="math">\mathscr{Q}\kern -.5pt out_{{\mathscr{F}}/X/S}</eq>.
 The invariance property of Hilbert polynomials (recalled in <a href="FGA-3-IV.html#fga-3-iv-section-2">§2</a>) implies the following:
-<em>For <eq env="math">\mathscr{Q}\kern -.5pt out_{{\mathscr{F}}/X/S}</eq> to be representable, it is necessary and sufficient for the <eq env="math">\mathscr{Q}\kern -.5pt out_{{\mathscr{F}}/X/S}^P</eq> to be representable, and then the <eq env="math">S</eq>-prescheme <eq env="math">\underline{\operatorname{Quot}}_{{\mathscr{F}}/X/S}</eq> which represents it is isomorphic to the prescheme given by the sum of the <eq env="math">\underline{\operatorname{Quot}}_{{\mathscr{F}}/X/S}^P</eq> that represent the functors <eq env="math">\mathscr{Q}\kern -.5pt out_{{\mathscr{F}}/X/S}^P</eq></em>.
+<em>For <eq env="math">\mathscr{Q}\kern -.5pt out_{{\mathscr{F}}/X/S}</eq> to be representable, it is necessary and sufficient for the <eq env="math">\mathscr{Q}\kern -.5pt out_{{\mathscr{F}}/X/S}^P</eq> to be representable, and then the <eq env="math">S</eq>-prescheme <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}</eq> which represents it is isomorphic to the prescheme given by the sum of the <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}^P</eq> that represent the functors <eq env="math">\mathscr{Q}\kern -.5pt out_{{\mathscr{F}}/X/S}^P</eq></em>.
 With this, <a href="FGA-3-IV.html#fga-3-iv-theorem-3.1">Theorem 3.1</a> will be a consequence of the following theorem:</p>
 <div id="fga-3-iv-theorem-3.2" class="itenv" title="Theorem 3.2">
 <p>With the above notation, the functor <eq env="math">\mathscr{Q}\kern -.5pt out_{{\mathscr{F}}/X/S}^P</eq> is representable by a projective <eq env="math">S</eq>-prescheme <eq env="math">\operatorname{Quot}_{{\mathscr{F}}/X/S}^P</eq>.</p>
@@ -650,12 +651,44 @@ and so we have a decomposition
 <eq env="displaymath">
   \underline{\operatorname{Hilb}}_{X/S} = \coprod_P \underline{\operatorname{Hilb}}_{X/S}^P.
 </eq>
-By definition,</p>
+By definition, <eq env="math">\underline{\operatorname{Hilb}}_{X/S}</eq> represents the functor <eq env="math">\mathscr{H}\kern -.5pt ilb_{X/S}(S')</eq> which is given by the set of closed subpreschemes of <eq env="math">X'=X\times_S S'</eq> that are flat over <eq env="math">S</eq>;
+and <eq env="math">\underline{\operatorname{Hilb}}_{X/S}^P</eq> represents the subfunctor corresponding to the closed subpreschemes that admit a given Hilbert polynomial <eq env="math">P</eq>.
+These preschemes are also called the <em>Hilbert prescheme</em> of <eq env="math">X</eq> over <eq env="math">S</eq> and the <em>Hilbert prescheme of index <eq env="math">P</eq></em>, respectively.
+The terminology is justified by the role played in the theory by the Hilbert polynomials.
+Their difference in nature with the classical Chow varieties (meant to parametrise cycles, not varieties) is analogous to that between <em>the Chow ring</em> of classes of cycles of a variety and <em>the ring of classes of sheaves</em> of the variety (as is introduced in the Riemann–Roch theorem <span class="citation">[<a href="#ref-3-IV-1" role="doc-biblioref">1</a>]</span>);
+we note that, when <eq env="math">X=\mathbb{P}_S^r</eq>, with <eq env="math">S</eq> the spectrum of a field, the knowledge of the Hilbert polynomial of a coherent module <eq env="math">{\mathscr{F}}</eq> over <eq env="math">X</eq> is equivalent to that of the Chern classes of <eq env="math">{\mathscr{F}}</eq>, or even of the class of <eq env="math">{\mathscr{F}}</eq> in the ring of classes of coherent sheaves on <eq env="math">X</eq>.</p>
+<div id="fga-3-iv-remarks-3.9" class="rmenv" title="Remarks 3.9">
+<p>We also note that the construction of <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}</eq> and <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}^P</eq> was reduced to the case where <eq env="math">X=\mathbb{P}_S^r</eq> and <eq env="math">{\mathscr{F}}={\mathscr{O}}_X^N</eq>, with <eq env="math">{\mathscr{O}}_X(1)</eq> being the usual very ample sheaf;
+more precisely, the general <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}</eq> arise as closed subpreschemes of the above.
+Since forming the <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}^P</eq> is evidently compatible with base change <eq env="math">S'\to S</eq>, we see that we can reduce to the case where further <eq env="math">S=\operatorname{Spec}(\mathbb{Z})</eq>:
+<eq env="displaymath">
+  {\mathscr{Q}}_{r,N}^P = \underline{\operatorname{Quot}}_{({\mathscr{O}}_{\mathbb{P}_{\mathbb{Z}}^r})^N/\mathbb{P}_{\mathbb{Z}}^r/\operatorname{Spec}(\mathbb{Z})}
+</eq>
+and, more particularly, the absolute Hilbert schemes:
+<eq env="displaymath">
+  \underline{\operatorname{Hilb}}_r^P = {\mathscr{Q}}_{r,1}^P.
+</eq>
+A more detailed study of these schemes, starting with determining their connected components (are they connected?), and their irreducible components (by Serre <span class="citation">[<a href="#ref-3-IV-7" role="doc-biblioref">28</a>]</span>, there can exist irreducible components that exist entirely over a prime number <eq env="math">p\neq0</eq>), would be very interesting.
+Recall the question of Weil, asking if the irreducible components of the fibres of <eq env="math">\underline{\operatorname{Hilb}}_r^P</eq> over the <eq env="math">s\in\operatorname{Spec}(\mathbb{Z})</eq> correspond to “regular” extensions of the prime field, i.e. if they are “relatively connected”.
+It could be the case that these questions are more accessible for Hilbert schemes than for “Chow varieties”.</p>
+</div>
+</div>
+<div id="fga-3-iv-section-4" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Variants</h2>
+<ol style="list-style-type: lower-alpha">
+<li><p>Under the conditions of <a href="FGA-3-IV.html#fga-3-iv-theorem-3.1">(3.1)</a>, let <eq env="math">U</eq> be open in <eq env="math">X</eq>, and denote by <eq env="math">A'</eq> the subfunctor of <eq env="math">A=\mathscr{Q}\kern -.5pt out_{{{\mathscr{F}}/X/S}}</eq> such that <eq env="math">A'(S')</eq> is the set of quotient modules <eq env="math">{\mathscr{G}}</eq> of <eq env="math">{\mathscr{F}}'</eq> that are flat over <eq env="math">S'</eq> and whose support is contained inside <eq env="math">U'</eq>.
+We immediately see that <eq env="math">A'</eq> is representable by an open subset of the prescheme <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}</eq> that represents <eq env="math">A</eq>.
+It follows that Theorems <a href="FGA-3-IV.html#fga-3-iv-theorem-3.1">(3.1)</a> and <a href="FGA-3-IV.html#fga-3-iv-theorem-3.2">(3.2)</a> remain true if we suppose that <eq env="math">X</eq> is <em>quasi-projective</em> over <eq env="math">S</eq> instead of projective over <eq env="math">S</eq>, as long as we also replace in the conclusions the word “projective” by “quasi-projective”, and use <eq env="math">\mathscr{Q}\kern -.5pt out_{{{\mathscr{F}}/X/S}}(S')</eq> to mean the set of coherent quotients <eq env="math">{\mathscr{G}}</eq> of <eq env="math">{\mathscr{F}}'</eq> that are flat over <eq env="math">S'</eq> and <em>whose support is proper over <eq env="math">S'</eq>.</em></p></li>
+<li><p>Generally,</p></li>
+</ol>
 
 </div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body">
+<div id="ref-3-IV-1" class="csl-entry">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">A. Borel, J.-P. Serre. <span>“Le théorème de <span>Riemann–Roch</span>.”</span> <em>Bull. Soc. Math. France</em>. <strong>86</strong> (1958), 97–136.</div>
+</div>
 <div id="ref-3-IV-2" class="csl-entry">
 <div class="csl-left-margin">[15] </div><div class="csl-right-inline">A. Grothendieck. <span>“Technique de descente et théorèmes d’existence en géométrie algébrique, <span>I</span>, <span>II</span>, <span>III</span>.”</span> <em><span>Séminaire Bourbaki</span></em>. <strong>12,13</strong> (1959-61), Talks no. 190, 195, and 212.</div>
 </div>
@@ -667,6 +700,9 @@ By definition,</p>
 </div>
 <div id="ref-3-IV-5" class="csl-entry">
 <div class="csl-left-margin">[18] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“Eléments de géométrie algébrique, <span>I</span>, <span>II</span>, <span>III</span>, <span>IV</span>.”</span> <em>Publications Mathématiques de l’Institut Des Hautes Études Scientifiques</em>. (n.d.).</div>
+</div>
+<div id="ref-3-IV-7" class="csl-entry">
+<div class="csl-left-margin">[28] </div><div class="csl-right-inline">J.-P. Serre. <span>“Exemples de variétés projectives en caractéristique <eq env="math">p</eq> non relevables en caractéristique <eq env="math">0</eq>.”</span> <em>Proc. Nat. Acad. Sc. U.S.A.</em> <strong>47</strong> (1961), 108–109.</div>
 </div>
 </div>
 <div class="footnotes">
