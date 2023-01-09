@@ -537,10 +537,10 @@ from <eq env="math">A_\nu(S')</eq> to the set of locally free quotient modules o
 <eq env="displaymath">
   i_\nu\colon A_\nu(S') \to \mathscr{G}\kern -.5pt rass_{P(\nu)}(M_\nu)(S')
 </eq>
-where the functor on the right hand side is representable by the Grassmannian scheme <eq env="math">\operatorname{Quot}_{P(\nu)}(M_\nu)</eq> (compare with <span class="citation">[<a href="#ref-3-IV-4" role="doc-biblioref">17</a>, V]</span>), which is projective over <eq env="math">S</eq>.
+where the functor on the right hand side is representable by the Grassmannian scheme <eq env="math">\operatorname{Grass}_{P(\nu)}(M_\nu)</eq> (compare with <span class="citation">[<a href="#ref-3-IV-4" role="doc-biblioref">17</a>, V]</span>), which is projective over <eq env="math">S</eq>.
 Then</p>
 <div id="fga-3-iv-lemma-3.3" class="itenv" title="Lemma 3.3">
-<p><eq env="math">A_\nu(S')</eq> is a representable functor, and the morphism <eq env="math">Q_\nu\to\operatorname{Quot}_{P(\nu)}(M_\nu)</eq> that represents the homomorphism <eq env="math">i_\nu</eq> is an immersion (which implies that <eq env="math">Q_\nu</eq> is quasi-projective over <eq env="math">S</eq>).</p>
+<p><eq env="math">A_\nu(S')</eq> is a representable functor, and the morphism <eq env="math">Q_\nu\to\operatorname{Grass}_{P(\nu)}(M_\nu)</eq> that represents the homomorphism <eq env="math">i_\nu</eq> is an immersion (which implies that <eq env="math">Q_\nu</eq> is quasi-projective over <eq env="math">S</eq>).</p>
 </div>
 <p>This claim is equivalent to the following (compare with <span class="citation">[<a href="#ref-3-IV-4" role="doc-biblioref">17</a>, IV]</span>):
 If we have a quotient module <eq env="math">N</eq> of <eq env="math">M'_\nu</eq> that is locally free of rank <eq env="math">P(\nu)</eq>, then there exists a subprescheme <eq env="math">Z</eq> of <eq env="math">S'</eq> such that, for every locally Noetherian prescheme <eq env="math">T'</eq> over <eq env="math">S'</eq>, the inverse image of <eq env="math">N</eq> over <eq env="math">T'</eq> is in <eq env="math">\Im A_\nu(T')</eq> if and only if <eq env="math">T'\to S'</eq> is bounded by the subprescheme <eq env="math">Z</eq>.
@@ -551,7 +551,7 @@ For it to come from an element of <eq env="math">A(s)</eq>, it is necessary and 
 <li>Both the subsheaf <eq env="math">{\mathscr{H}}</eq> of <eq env="math">{\mathscr{F}}</eq> defined by the graded submodule <eq env="math">R_\bullet=\sum_{k\geqslant 0}{\mathscr{S}}_kR_\nu</eq> of <eq env="math">M_\bullet</eq> (cf. <span class="citation">[<a href="#ref-3-IV-5" role="doc-biblioref">18</a>, II, §3]</span>) and the quotient <eq env="math">{\mathscr{G}}={\mathscr{F}}/{\mathscr{H}}</eq> satisfy conditions (a) and (b) above.</li>
 </ol>
 <p>These conditions are clearly necessary, and if they are satisfied then the sheaf <eq env="math">{\mathscr{G}}</eq> defined in (ii) above, being isomorphic to the sheaf associated to the graded <eq env="math">{\mathscr{S}}_\bullet</eq>-module <eq env="math">N_\bullet</eq> given by the sum of the <eq env="math">M_{n+k}/{\mathscr{S}}_kR</eq> is <em>flat</em> over <eq env="math">S</eq> (since its fibres are direct factors of localisations of <eq env="math">N</eq> for homogeneous prime ideals of <eq env="math">{\mathcal{S}}_\bullet</eq>), and correspond to the Hilbert polynomial <eq env="math">P</eq> by virtue of (i).
-Taking (ii) into account, we then see that (a’) and (a’’) are satisfied, and thus, for <eq env="math">n\geqslant\nu</eq>, the natural homomorphism <eq env="math">N_n\to f_*({\mathscr{G}}(n))</eq> is a <em>surjective</em> homomorphism of locally free modules of equal rank, and thus an isomorphism, and thus <eq env="math">f_*({\mathscr{H}}(\nu+k))={\mathcal{S}}_kR_\nu</eq> for all <eq env="math">k\geqslant 0</eq>, which proves that <eq env="math">{\mathscr{G}}\in A_\nu(S)</eq> and that <eq env="math">R_\nu</eq> is the element of <eq env="math">\operatorname{Quot}_{P(\nu)}(M_\nu)</eq> defined by <eq env="math">{\mathscr{G}}</eq>.</p>
+Taking (ii) into account, we then see that (a’) and (a’’) are satisfied, and thus, for <eq env="math">n\geqslant\nu</eq>, the natural homomorphism <eq env="math">N_n\to f_*({\mathscr{G}}(n))</eq> is a <em>surjective</em> homomorphism of locally free modules of equal rank, and thus an isomorphism, and thus <eq env="math">f_*({\mathscr{H}}(\nu+k))={\mathcal{S}}_kR_\nu</eq> for all <eq env="math">k\geqslant 0</eq>, which proves that <eq env="math">{\mathscr{G}}\in A_\nu(S)</eq> and that <eq env="math">R_\nu</eq> is the element of <eq env="math">\operatorname{Grass}_{P(\nu)}(M_\nu)</eq> defined by <eq env="math">{\mathscr{G}}</eq>.</p>
 <p>Criteria (i) and (ii) above apply equally to the situation obtained after a change of base <eq env="math">S'\to S</eq>.
 We will prove first of all the fact that condition (i) is satisfied after the change of base <eq env="math">S'\to S</eq> can be expressed by saying that <eq env="math">S'\to S</eq> is bounded by a certain subprescheme <eq env="math">Z</eq> of <eq env="math">S</eq>;
 once we have shown this result, we are led (replacing <eq env="math">S</eq> with <eq env="math">Z</eq>) to the case where condition (i) is already satisfied on <eq env="math">S</eq>, and since it is stable under change of base, it remains to express condition (ii).
@@ -630,8 +630,27 @@ We easily verify that this sheaf works.</p>
 <p>The proof also shows, at the same time, the following:</p>
 <div id="fga-3-iv-proposition-3.8" class="itenv" title="Proposition 3.8">
 <p>Under the conditions of <a href="FGA-3-IV.html#fga-3-iv-theorem-3.2">(3.2)</a>, let <eq env="math">Q=\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}^P</eq>, <eq env="math">X_Q=X\times_s Q</eq>, <eq env="math">{\mathscr{F}}_Q={\mathscr{F}}\otimes_{{\mathscr{O}}_S}{\mathscr{O}}_Q</eq>, and let <eq env="math">{\mathscr{G}}</eq> be the coherent quotient of <eq env="math">{\mathscr{F}}_Q</eq>, which is flat over <eq env="math">Q</eq>, that has <eq env="math">P</eq> as its relative Hilbert polynomial, so that <eq env="math">(Q,{\mathscr{G}})</eq> represents the functor <eq env="math">\mathscr{Q}\kern -.5pt out_{{{\mathscr{F}}/X/S}}^P</eq>.
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+Then there exists an integer <eq env="math">\nu</eq> such that, for <eq env="math">n\geqslant\nu</eq>, <eq env="math">(f_Q)_*({\mathscr{G}}(n))</eq> is a locally free module over <eq env="math">Q</eq> of rank <eq env="math">P(n)</eq>, and is very ample with respect to <eq env="math">S</eq>, i.e. it defines an immersion of <eq env="math">Q</eq> into a Grassmannian scheme <eq env="math">\underline{\operatorname{Grass}}_{P(n)}(M)</eq> over <eq env="math">S</eq>.
+A fortiori, for <eq env="math">n\geqslant\nu</eq>, the sheaf <eq env="math">\bigwedge^{P(n)}(f_Q)_*({\mathscr{G}}(n))</eq> over <eq env="math">Q</eq> is invertible and very ample with respect to <eq env="math">S</eq>.</p>
 </div>
+<div class="proof">
+<p><span id="unlabeled-div-27" class="proof"><em>Proof</em>. </span>Indeed, we can reduce, as in <a href="FGA-3-IV.html#fga-3-iv-theorem-3.2">(3.2)</a>, to the case where <eq env="math">{\mathscr{F}}</eq> is flat over <eq env="math">S</eq>, and then it suffices to take an integer <eq env="math">\nu</eq> such that <eq env="math">A_\nu=A</eq> (with the notation above).</p>
+</div>
+<p>The most important application of <a href="FGA-3-IV.html#fga-3-iv-theorem-3.2">(3.2)</a> is in the case where <eq env="math">{\mathscr{F}}={\mathscr{O}}_X</eq>.
+We then write
+<eq env="displaymath">
+  \begin{aligned}
+    \underline{\operatorname{Quot}}_{{\mathscr{O}}_X/X/S}
+    &amp;= \underline{\operatorname{Hilb}}_{X/S}
+  \\\underline{\operatorname{Quot}}_{{\mathscr{O}}_X/X/S}^P
+    &amp;= \underline{\operatorname{Hilb}}_{X/S}^P
+  \end{aligned}
+</eq>
+and so we have a decomposition
+<eq env="displaymath">
+  \underline{\operatorname{Hilb}}_{X/S} = \coprod_P \underline{\operatorname{Hilb}}_{X/S}^P.
+</eq>
+By definition,</p>
 
 </div>
 </div>
