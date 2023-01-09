@@ -31,6 +31,7 @@
 \providecommand{\FXSp}{{\scr{F}'/X'/S'}}
 \providecommand{\RR}{\operatorname{R}}
 \providecommand{\rank}{\operatorname{rank}}
+\providecommand{\Spec}{\operatorname{Spec}}
 
 <!-- Content -->
 
@@ -363,9 +364,9 @@ We then set
 $$
   \shQuot_\FXS^P(S') = \Quot^P(\FXSp)
 $$
-and thus obtain a sub-functor of $\shQuot_\FXS$.
+and thus obtain a subfunctor of $\shQuot_\FXS$.
 The invariance property of Hilbert polynomials (recalled in [§2](#fga-3-iv-section-2)) implies the following:
-*For $\shQuot_\FXS$ to be representable, it is necessary and sufficient for the $\shQuot_\FXS^P$ to be representable, and then the $S$-prescheme $\repQuot_\FXS$ which represents it is isomorphic to the prescheme given by the sum of the $\repQuot_\FXS^P$ that represent the functors $\shQuot_\FXS^P$*.
+*For $\shQuot_\FXS$ to be representable, it is necessary and sufficient for the $\shQuot_\FXS^P$ to be representable, and then the $S$-prescheme $\repQuot_{\FXS}$ which represents it is isomorphic to the prescheme given by the sum of the $\repQuot_{\FXS}^P$ that represent the functors $\shQuot_\FXS^P$*.
 With this, [Theorem 3.1](#fga-3-iv-theorem-3.1) will be a consequence of the following theorem:
 
 \oldpage{221-12}
@@ -565,4 +566,36 @@ and so we have a decomposition
 $$
   \repHilb_{X/S} = \coprod_P \repHilb_{X/S}^P.
 $$
-By definition,
+By definition, $\repHilb_{X/S}$ represents the functor $\shHilb_{X/S}(S')$ which is given by the set of closed subpreschemes of $X'=X\times_S S'$ that are flat over $S$;
+and $\repHilb_{X/S}^P$ represents the subfunctor corresponding to the closed subpreschemes that admit a given Hilbert polynomial $P$.
+These preschemes are also called the _Hilbert prescheme_ of $X$ over $S$ and the _Hilbert prescheme of index $P$_, respectively.
+The terminology is justified by the role played in the theory by the Hilbert polynomials.
+Their difference in nature with the classical Chow varieties (meant to parametrise cycles, not varieties) is analogous to that between _the Chow ring_ of classes of cycles of a variety and _the ring of classes of sheaves_ of the variety (as is introduced in the Riemann--Roch theorem [@3-IV-1]);
+\oldpage{221-18}
+we note that, when $X=\PP_S^r$, with $S$ the spectrum of a field, the knowledge of the Hilbert polynomial of a coherent module $\scr{F}$ over $X$ is equivalent to that of the Chern classes of $\scr{F}$, or even of the class of $\scr{F}$ in the ring of classes of coherent sheaves on $X$.
+
+::: {.rmenv #fga-3-iv-remarks-3.9 title="Remarks 3.9" latex="{Remarks 3.9}"}
+We also note that the construction of $\repQuot_{\FXS}$ and $\repQuot_{\FXS}^P$ was reduced to the case where $X=\PP_S^r$ and $\scr{F}=\OO_X^N$, with $\OO_X(1)$ being the usual very ample sheaf;
+more precisely, the general $\repQuot_{\FXS}$ arise as closed subpreschemes of the above.
+Since forming the $\repQuot_{\FXS}^P$ is evidently compatible with base change $S'\to S$, we see that we can reduce to the case where further $S=\Spec(\mathbb{Z})$:
+$$
+  \scr{Q}_{r,N}^P = \repQuot_{(\OO_{\PP_{\mathbb{Z}}^r})^N/\PP_{\mathbb{Z}}^r/\Spec(\mathbb{Z})}
+$$
+and, more particularly, the absolute Hilbert schemes:
+$$
+  \repHilb_r^P = \scr{Q}_{r,1}^P.
+$$
+A more detailed study of these schemes, starting with determining their connected components (are they connected?), and their irreducible components (by Serre [@3-IV-7], there can exist irreducible components that exist entirely over a prime number $p\neq0$), would be very interesting.
+Recall the question of Weil, asking if the irreducible components of the fibres of $\repHilb_r^P$ over the $s\in\Spec(\mathbb{Z})$ correspond to "regular" extensions of the prime field, i.e. if they are "relatively connected".
+It could be the case that these questions are more accessible for Hilbert schemes than for "Chow varieties".
+:::
+
+
+## Variants {#fga-3-iv-section-4}
+
+a. Under the conditions of [(3.1)](#fga-3-iv-theorem-3.1), let $U$ be open in $X$, and denote by $A'$ the subfunctor of $A=\shQuot_{\FXS}$ such that $A'(S')$ is the set of quotient modules $\scr{G}$ of $\scr{F}'$ that are flat over $S'$ and whose support is contained inside $U'$.
+    We immediately see that $A'$ is representable by an open subset of the prescheme $\repQuot_{\FXS}$ that represents $A$.
+    \oldpage{221-19}
+    It follows that Theorems [(3.1)](#fga-3-iv-theorem-3.1) and [(3.2)](#fga-3-iv-theorem-3.2) remain true if we suppose that $X$ is _quasi-projective_ over $S$ instead of projective over $S$, as long as we also replace in the conclusions the word "projective" by "quasi-projective", and use $\shQuot_{\FXS}(S')$ to mean the set of coherent quotients $\scr{G}$ of $\scr{F}'$ that are flat over $S'$ and _whose support is proper over $S'$._
+
+b. Generally,
