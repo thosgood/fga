@@ -264,7 +264,7 @@ This theoretically leads us to determine the bounded families only in the case w
 <p>If <eq env="math">E</eq> and <eq env="math">E'</eq> are bounded families of classes of sheaves with respect to <eq env="math">X/S</eq>, then <eq env="math">E\otimes E'</eq> is also bounded:
 indeed, if <eq env="math">E</eq> (resp. <eq env="math">E'</eq>) is bounded by the algebraic families defined by <eq env="math">T\to S</eq> and <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X_T</eq> (resp. <eq env="math">T'\to S</eq> and <eq env="math">{\mathscr{F}}'</eq> on <eq env="math">X_{T'}</eq>), then <eq env="math">E\otimes E'</eq> is bounded by the algebraic family defined by <eq env="math">T''=T\times_S T'\to S</eq> and the sheaf <eq env="math">{\mathscr{F}}''</eq> on <eq env="math">X_{T''}</eq> given by the tensor product of the inverse images of <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq> on <eq env="math">X_{T''}</eq>.
 This argument is correct only because the functor <eq env="math">{\mathscr{F}}\otimes{\mathscr{F}}'</eq> is right exact in both <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{F}}'</eq>, and thus commutates with base extension (and, in particular, with passing to the fibres).
-It is not applicable as-is to local operations, such as <eq env="math">\mathscr{T}\kern -.5pt or_i(E,E')</eq>, <eq env="math">\underline{\operatorname{Hom}}(E,E')</eq>, <eq env="math">\underline{\operatorname{Ext}}^i(E,E')</eq>.
+It is not applicable as-is to local operations, such as <eq env="math">\mathscr{T}\kern -.5pt or_i(E,E')</eq>, <eq env="math">\mathscr{H}\kern -.5pt om(E,E')</eq>, <eq env="math">\mathscr{E}\kern -.5pt xt^i(E,E')</eq>.
 We can, however, show that these operations also send bounded sets to bounded sets, by proceeding as for <eq env="math">E\otimes E'</eq>, but by also using results of the following type (all contained in <span class="citation">[<a href="#ref-3-IV-3" role="doc-biblioref">16</a>, IV 6.11]</span>):
 a bounded family <eq env="math">E</eq> is always bounded by an algebraic family defined by a coherent sheaf <eq env="math">{\mathscr{F}}</eq> on some <eq env="math">X_T</eq> (with <eq env="math">T</eq> of finite type over <eq env="math">S</eq>) that is <em>flat</em> with respect to <eq env="math">T</eq>.
 (We “cut into bits” the initial space of parameters).
@@ -284,7 +284,7 @@ Then</p>
 </div>
 <div class="proof">
 <p><span id="unlabeled-div-19" class="proof"><em>Proof</em>. </span>After potentially applying a suitable base change, we can suppose that <eq env="math">E</eq> and <eq env="math">E'</eq> are defined by coherent sheaves <eq env="math">{\mathscr{G}}</eq> and <eq env="math">{\mathscr{G}}'</eq> (respectively) on some <eq env="math">X_T/T</eq>, with <eq env="math">T</eq> of finite type over <eq env="math">S</eq>.
-Further, we can suppose that certain flatness hypotheses are satisfied, implying that constructing the sheaves <eq env="math">f_T(\underline{\operatorname{Hom}}_{{\mathcal{O}}_{X_T}}({\mathscr{G}},{\mathscr{G}}'))</eq> and <eq env="math">\underline{\operatorname{Ext}}_{f_T}^1({\mathscr{G}},{\mathscr{G}}')</eq> commutes with base change by an arbitrary morphism <eq env="math">T'\to T</eq>.
+Further, we can suppose that certain flatness hypotheses are satisfied, implying that constructing the sheaves <eq env="math">f_T(\mathscr{H}\kern -.5pt om_{{\mathcal{O}}_{X_T}}({\mathscr{G}},{\mathscr{G}}'))</eq> and <eq env="math">\mathscr{E}\kern -.5pt xt_{f_T}^1({\mathscr{G}},{\mathscr{G}}')</eq> commutes with base change by an arbitrary morphism <eq env="math">T'\to T</eq>.
 Further, we can suppose that the coherent sheaves above are locally free on <eq env="math">T</eq>.
 So let <eq env="math">T_0</eq> and <eq env="math">T_1</eq> be the vector bundles on <eq env="math">T</eq> whose sheaves of germs of sections are (respectively) the above sheaves.
 We can then canonically define a homomorphism <eq env="math">{\mathscr{G}}_{T_0}\to{\mathscr{G}}'_{T_0}</eq> of coherent sheaves on <eq env="math">X_{T_0}</eq>, along with an extension
@@ -414,8 +414,8 @@ We can fix <eq env="math">a_{\mathscr{F}}</eq> and <eq env="math">b_{\mathscr{F}
 The data of the <eq env="math">N</eq> sections <eq env="math">s_i</eq> of <eq env="math">{\mathscr{O}}_{\mathbb{P}_K^r}(d)</eq>, i.e. of a homomorphism <eq env="math">s\colon\bigwedge^a{\mathscr{L}}_K\to{\mathscr{O}}_{\mathbb{P}_K^r}(d)</eq>, allows us to recover <eq env="math">{\mathscr{F}}</eq> as the co-image of the corresponding composite homomorphism:
 <eq env="displaymath">
   {\mathscr{L}}_K
-  \to \underline{\operatorname{Hom}}\left( \bigwedge^{a-1}{\mathscr{L}}_{K'}, \bigwedge^a{\mathscr{L}}_K \right)
-  \to \underline{\operatorname{Hom}}\left( \bigwedge^{a-1}{\mathscr{L}}_{K'}, {\mathscr{O}}_{\mathbb{P}_K^r}(d) \right)
+  \to \mathscr{H}\kern -.5pt om\left( \bigwedge^{a-1}{\mathscr{L}}_{K'}, \bigwedge^a{\mathscr{L}}_K \right)
+  \to \mathscr{H}\kern -.5pt om\left( \bigwedge^{a-1}{\mathscr{L}}_{K'}, {\mathscr{O}}_{\mathbb{P}_K^r}(d) \right)
 </eq>
 where the first arrow is the canonical homomorphism coming from the exterior product, and the second comes from <eq env="math">s</eq>.
 We then conclude by part (i) of <a href="FGA-3-IV.html#fga-3-iv-proposition-1.2">(1.2)</a>.</p>
@@ -679,7 +679,19 @@ It could be the case that these questions are more accessible for Hilbert scheme
 <li><p>Under the conditions of <a href="FGA-3-IV.html#fga-3-iv-theorem-3.1">(3.1)</a>, let <eq env="math">U</eq> be open in <eq env="math">X</eq>, and denote by <eq env="math">A'</eq> the subfunctor of <eq env="math">A=\mathscr{Q}\kern -.5pt out_{{{\mathscr{F}}/X/S}}</eq> such that <eq env="math">A'(S')</eq> is the set of quotient modules <eq env="math">{\mathscr{G}}</eq> of <eq env="math">{\mathscr{F}}'</eq> that are flat over <eq env="math">S'</eq> and whose support is contained inside <eq env="math">U'</eq>.
 We immediately see that <eq env="math">A'</eq> is representable by an open subset of the prescheme <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}</eq> that represents <eq env="math">A</eq>.
 It follows that Theorems <a href="FGA-3-IV.html#fga-3-iv-theorem-3.1">(3.1)</a> and <a href="FGA-3-IV.html#fga-3-iv-theorem-3.2">(3.2)</a> remain true if we suppose that <eq env="math">X</eq> is <em>quasi-projective</em> over <eq env="math">S</eq> instead of projective over <eq env="math">S</eq>, as long as we also replace in the conclusions the word “projective” by “quasi-projective”, and use <eq env="math">\mathscr{Q}\kern -.5pt out_{{{\mathscr{F}}/X/S}}(S')</eq> to mean the set of coherent quotients <eq env="math">{\mathscr{G}}</eq> of <eq env="math">{\mathscr{F}}'</eq> that are flat over <eq env="math">S'</eq> and <em>whose support is proper over <eq env="math">S'</eq>.</em></p></li>
-<li><p>Generally,</p></li>
+<li><p>Generally we can impose all sorts of supplementary natural conditions on the quotients <eq env="math">{\mathscr{G}}</eq> of <eq env="math">{\mathscr{F}}'={\mathscr{F}}\otimes_{{\mathscr{O}}_S}{\mathscr{O}}_{S'}</eq> that are flat over <eq env="math">S'</eq> and stable under base change, thus obtaining as many subfunctors of <eq env="math">\mathscr{Q}\kern -.5pt out_{{{\mathscr{F}}/X/S}}</eq> as we want to represent.
+The usual criteria allow us, in many cases, to prove that we again obtain functors that are representable by open subsets of <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}</eq>.
+This is, in particular, the case if we impose one of the following additional properties:</p></li>
+</ol>
+<ol style="list-style-type: decimal">
+<li>The dimensions of the prime cycles associated to the modules <eq env="math">{\mathscr{G}}_{s'}</eq> (for <eq env="math">s'\in S'</eq>) that are induced on the fibres <eq env="math">X'_{s'}</eq> belong to a given set of integers.</li>
+<li>(In the case where <eq env="math">{\mathscr{F}}={\mathscr{O}}_X</eq>, and thus <eq env="math">{\mathscr{G}}</eq> corresponds to a closed subprescheme <eq env="math">Y</eq> of <eq env="math">X'</eq>); <eq env="math">Y</eq> is a <em>simple</em> prescheme <span class="citation">[<a href="#ref-3-IV-3" role="doc-biblioref">16</a>, IV]</span> over <eq env="math">S</eq>, resp. <em>normal</em> over <eq env="math">S</eq> (i.e. the fibres <eq env="math">Y_{s'}</eq> are normal “over <eq env="math">k(s)</eq>”, i.e. are normal under any extension of base field), resp. (if <eq env="math">X</eq> is flat over <eq env="math">S</eq>) are local complete <eq env="math">k</eq>-intersections in <eq env="math">X</eq> with respect to <eq env="math">S</eq> (i.e. the fibres <eq env="math">Y_{s'}</eq> are local complete intersections in the <eq env="math">X_{s'}</eq>)</li>
+</ol>
+<pre><code>Other conditions would involve properties of a cohomological nature on the modules $\scr{G}_{s&#39;}$ induced on the $X&#39;_{s&#39;}$, etc.
+Of course, the conjunction of conditions where each is represented by an open $U_i$ of $\repQuot_{\FXS}$ is represented by the open intersection.
+For example, considering, for all $S&#39;$ over $S$, the set of closed subpreschemes $Y$ of $X&#39;=X\times_S S&#39;$ that are étale covers [@3-IV-3, I] of a given rank $r$ over $S&#39;$, we obtain a representable contravariant functor in $S&#39;$.</code></pre>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>The preschemes <eq env="math">\underline{\operatorname{Hom}}_S(X,Y)</eq>, <eq env="math">\prod_{X/S}Z/S</eq>, and <eq env="math">\underline{\operatorname{Isom}}_S(X,Y)</eq>, defined in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">15</a>, II, C, §2]</span> exist thanks to suitable projective hypotheses, and can be realised as opens in suitable Hilbert preschemes.</li>
 </ol>
 
 </div>

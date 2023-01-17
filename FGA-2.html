@@ -322,7 +322,7 @@ In fact, the proof proceeds by decreasing induction on <eq env="math">q</eq> (be
 <p>Let <eq env="math">Y=\operatorname{Spec}(A)</eq>, and let <eq env="math">Y'</eq> be defined by an ideal <eq env="math">{\mathscr{J}}</eq> of <eq env="math">A</eq>.
 Then, for every coherent sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq>, the <eq env="math">H^q(X,{\mathscr{F}})</eq> are <eq env="math">A</eq>-modules of finite type, whose <eq env="math">{\mathscr{J}}</eq>-adic completions are the <eq env="math">H^q(\overline{X},\overline{{\mathscr{F}}})</eq>.</p>
 </div>
-<p>Finally, applying this corollary to <eq env="math">H=\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{F}},{\mathscr{G}})</eq>, we obtain:</p>
+<p>Finally, applying this corollary to <eq env="math">H=\mathscr{H}\kern -.5pt om_{{\mathscr{O}}_X}({\mathscr{F}},{\mathscr{G}})</eq>, we obtain:</p>
 <div id="fga-2-theorem-2-corollary-3" class="itenv" title="Corollary 3">
 <p>Let <eq env="math">Y=\operatorname{Spec}(A)</eq>, and let <eq env="math">Y'</eq> be defined by an ideal <eq env="math">{\mathscr{J}}</eq> of <eq env="math">A</eq>.
 Let <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{G}}</eq> be coherent sheaves on <eq env="math">X</eq>.
@@ -437,10 +437,10 @@ Then <eq env="math">\operatorname{R}^q f_*({\mathscr{F}})</eq> is zero on a a ne
 is surjective.</p>
 </div>
 <p>In particular, if <eq env="math">f</eq> is a flat morphism (i.e. if <eq env="math">{\mathscr{O}}_X</eq> is <eq env="math">Y</eq>-flat), then every locally free coherent sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq> is <eq env="math">Y</eq>-flat.
-Let <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{G}}</eq> be two such sheaves, and apply <a href="FGA-2.html#fga-2-proposition-1">Proposition 1</a> to <eq env="math">\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{F}},{\mathscr{G}})</eq> and <eq env="math">q=1</eq> to obtain:</p>
+Let <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{G}}</eq> be two such sheaves, and apply <a href="FGA-2.html#fga-2-proposition-1">Proposition 1</a> to <eq env="math">\mathscr{H}\kern -.5pt om_{{\mathscr{O}}_X}({\mathscr{F}},{\mathscr{G}})</eq> and <eq env="math">q=1</eq> to obtain:</p>
 <div id="fga-2-theorem-7" class="itenv" title="Theorem 7">
 <p>Let <eq env="math">f</eq> be a flat proper morphism, <eq env="math">{\mathscr{F}}</eq> and <eq env="math">{\mathscr{G}}</eq> locally free coherent sheaves on <eq env="math">X</eq>, and <eq env="math">y\in Y</eq>;
-suppose that <eq env="math">H^1(X_y,\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}({\mathscr{F}}_y,{\mathscr{G}}))=0</eq>.
+suppose that <eq env="math">H^1(X_y,\mathscr{H}\kern -.5pt om_{{\mathscr{O}}_X}({\mathscr{F}}_y,{\mathscr{G}}))=0</eq>.
 Then every homomorphism <eq env="math">u_0\colon{\mathscr{F}}_y\to{\mathscr{G}}_y</eq> is induced by a homomorphism <eq env="math">u\colon{\mathscr{F}}|V\to{\mathscr{G}}|V</eq>, where <eq env="math">V=f^{-1}(U)</eq> is the inverse image of a neighbourhood <eq env="math">U</eq> of <eq env="math">y</eq>.</p>
 </div>
 <div id="fga-2-theorem-7-corollary-1" class="itenv" title="Corollary 1">
@@ -448,7 +448,7 @@ Then every homomorphism <eq env="math">u_0\colon{\mathscr{F}}_y\to{\mathscr{G}}_
 </div>
 <p>In particular:</p>
 <div id="fga-2-theorem-7-corollary-2" class="itenv" title="Corollary 2">
-<p>Let <eq env="math">E_0</eq> be a locally free coherent sheaf on <eq env="math">X_y</eq> such that <eq env="math">H^1(X_y;\underline{\operatorname{Hom}}_{{\mathscr{O}}_X}(E_0,E_0))=0</eq>.
+<p>Let <eq env="math">E_0</eq> be a locally free coherent sheaf on <eq env="math">X_y</eq> such that <eq env="math">H^1(X_y;\mathscr{H}\kern -.5pt om_{{\mathscr{O}}_X}(E_0,E_0))=0</eq>.
 Then any two locally free sheaves whose restrictions to <eq env="math">X_y</eq> are isomorphic to <eq env="math">E_0</eq> are themselves isomorphic to one another in a neighbourhood of <eq env="math">X_y</eq>.</p>
 </div>
 <p>Thus:</p>
@@ -480,9 +480,9 @@ The above corollary can then be expressed by saying that we have an exact sequen
 </eq>
 (which can also be deduced from the exact sequence in cohomology induced by the exact sequence of <em>sheaves</em> of groups
 <eq env="displaymath">
-  e \to {\mathscr{O}}_X^* \to \underline{\operatorname{Aut}}\to \underline{\operatorname{Aut}}_Y(X) \to e,
+  e \to {\mathscr{O}}_X^* \to \mathscr{A}\kern -.5pt ut\to \mathscr{A}\kern -.5pt ut_Y(X) \to e,
 </eq>
-where <eq env="math">{\mathscr{O}}_X^*</eq> is the sheaf of “units” of <eq env="math">{\mathscr{O}}_X</eq>, identified with the centre of <eq env="math">\underline{\operatorname{Aut}}(E)</eq>.)</p>
+where <eq env="math">{\mathscr{O}}_X^*</eq> is the sheaf of “units” of <eq env="math">{\mathscr{O}}_X</eq>, identified with the centre of <eq env="math">\mathscr{A}\kern -.5pt ut(E)</eq>.)</p>
 </div>
 <div id="fga-2-section-6" class="section level2" number="2.6">
 <h2><span class="header-section-number">2.6</span> Application to existence and uniqueness theorems for sheaves and schemes over a complete <eq env="math">\mathscr{J}</eq>-adic ring</h2>
@@ -491,17 +491,17 @@ Using <a href="FGA-2.html#fga-2-theorem-3">Theorem 3</a>, we now obtain <em>exis
 In the following, <eq env="math">A</eq> denotes a local Noetherian ring, assumed to be separated and <em>complete</em>.
 The general method still consists of making <em>formal</em> construction, which consists essentially of doing <em>algebraic geometry over an Artinian ring</em>, and deducing conclusions from this that are “algebraic” in nature, by using the three fundamental theorems.</p>
 <div id="fga-2-proposition-3" class="itenv" title="Proposition 3">
-<p>Let <eq env="math">{\mathfrak{X}}</eq> be a proper formal scheme that is flat over <eq env="math">A</eq>, and let <eq env="math">{\mathscr{F}}_0</eq> be a locally free sheaf on <eq env="math">X_0</eq> such that <eq env="math">H^2(X_0,\underline{\operatorname{Hom}}_{{\mathscr{O}}_{X_0}}({\mathscr{F}}_0,{\mathscr{F}}_0))=0</eq>.
+<p>Let <eq env="math">{\mathfrak{X}}</eq> be a proper formal scheme that is flat over <eq env="math">A</eq>, and let <eq env="math">{\mathscr{F}}_0</eq> be a locally free sheaf on <eq env="math">X_0</eq> such that <eq env="math">H^2(X_0,\mathscr{H}\kern -.5pt om_{{\mathscr{O}}_{X_0}}({\mathscr{F}}_0,{\mathscr{F}}_0))=0</eq>.
 Then there exists a locally free sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">{\mathfrak{X}}</eq> that induces, on <eq env="math">X_0</eq>, a sheaf isomorphic to <eq env="math">{\mathscr{F}}_0</eq>.
-(This <eq env="math">{\mathscr{F}}</eq> is also unique up to isomorphism if <eq env="math">H^1(X_0,\underline{\operatorname{Hom}}_{{\mathscr{O}}_{X_0}}({\mathscr{F}}_0,{\mathscr{F}}_0))=0</eq>).</p>
+(This <eq env="math">{\mathscr{F}}</eq> is also unique up to isomorphism if <eq env="math">H^1(X_0,\mathscr{H}\kern -.5pt om_{{\mathscr{O}}_{X_0}}({\mathscr{F}}_0,{\mathscr{F}}_0))=0</eq>).</p>
 </div>
 <p>We construct, step by step, locally free sheaves <eq env="math">{\mathscr{F}}_n</eq> on the <eq env="math">X_n</eq> that induce one another.
-The construction of <eq env="math">{\mathscr{F}}_0</eq> is met with an obstruction living in <eq env="math">H^2(X_0,\underline{\operatorname{Hom}}_{{\mathscr{O}}_{X_0}}({\mathscr{F}}_0,{\mathscr{F}}_0))\otimes_{A/{\mathscr{J}}}({\mathscr{J}}^n/{\mathscr{J}}^{n+1})</eq>, but this is zero, by hypothesis.
+The construction of <eq env="math">{\mathscr{F}}_0</eq> is met with an obstruction living in <eq env="math">H^2(X_0,\mathscr{H}\kern -.5pt om_{{\mathscr{O}}_{X_0}}({\mathscr{F}}_0,{\mathscr{F}}_0))\otimes_{A/{\mathscr{J}}}({\mathscr{J}}^n/{\mathscr{J}}^{n+1})</eq>, but this is zero, by hypothesis.
 Now, using <a href="FGA-2.html#fga-2-theorem-3">Theorem 3</a>, we obtain:</p>
 <div id="fga-2-proposition-3-corollary-1" class="itenv" title="Corollary 1">
 <p>Let <eq env="math">X</eq> be a proper scheme that is flat over <eq env="math">A</eq>, and let <eq env="math">{\mathscr{F}}_0</eq> be as above.
 Then there exists a locally free sheaf <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq> that induces, on <eq env="math">X_0</eq>, a sheaf that is isomorphic to <eq env="math">{\mathscr{F}}_0</eq>.
-This <eq env="math">{\mathscr{F}}</eq> is also unique up to isomorphism if <eq env="math">H^1(X_0,\underline{\operatorname{Hom}}_{{\mathscr{O}}_{X_0}}({\mathscr{F}}_0,{\mathscr{F}}_0))=0</eq>.</p>
+This <eq env="math">{\mathscr{F}}</eq> is also unique up to isomorphism if <eq env="math">H^1(X_0,\mathscr{H}\kern -.5pt om_{{\mathscr{O}}_{X_0}}({\mathscr{F}}_0,{\mathscr{F}}_0))=0</eq>.</p>
 </div>
 <p>Let <eq env="math">X_0</eq> be a scheme of finite type over the field <eq env="math">k</eq>, and suppose that <eq env="math">X_0</eq> is <em>simple</em> (by which we mean <em>absolutely</em> simple) over <eq env="math">k</eq>, but not necessarily proper over <eq env="math">k</eq>.
 Let <eq env="math">A</eq> be a local Artinian ring with residue field <eq env="math">k</eq>.
@@ -534,10 +534,10 @@ Then:</p>
 <eq env="displaymath">H^2(X_0,{\mathfrak{G}}_{X_0/k})=0.</eq>
 Then, for every local Artinian ring <eq env="math">A</eq> with residue field <eq env="math">k</eq>, there exists a flat <eq env="math">A</eq>-scheme <eq env="math">X</eq> such that <eq env="math">X\otimes_A k=X_0</eq>.</p>
 </div>
-<p>Also, if we can find <em>one</em> <eq env="math">X</eq> that is flat over <eq env="math">A</eq> and that lifts <eq env="math">X_0</eq>, then, by <a href="FGA-2.html#fga-2-theorem-8">Theorem 8</a>, the set of classes (up to isomorphism) of flat <eq env="math">A</eq>-schemes that lift <eq env="math">X_0</eq> can be identified with <eq env="math">H^1(X_0,\underline{\operatorname{Aut}}(X))</eq>, where <eq env="math">\underline{\operatorname{Aut}}(X)</eq> denotes the sheaf of germs of automorphisms of the sheaf <eq env="math">{\mathscr{O_X}}</eq> of <eq env="math">A</eq>-algebras <em>that are compatible with the augmentation</em>.
-The filtration of <eq env="math">{\mathscr{O}}_X</eq> defines a filtration of <eq env="math">\underline{\operatorname{Aut}}(X)</eq>, with the quotient of this sheaf by the <eq env="math">n</eq>-th subgroup of the filtration being <eq env="math">\underline{\operatorname{Aut}}(X_n)</eq>;
+<p>Also, if we can find <em>one</em> <eq env="math">X</eq> that is flat over <eq env="math">A</eq> and that lifts <eq env="math">X_0</eq>, then, by <a href="FGA-2.html#fga-2-theorem-8">Theorem 8</a>, the set of classes (up to isomorphism) of flat <eq env="math">A</eq>-schemes that lift <eq env="math">X_0</eq> can be identified with <eq env="math">H^1(X_0,\mathscr{A}\kern -.5pt ut(X))</eq>, where <eq env="math">\mathscr{A}\kern -.5pt ut(X)</eq> denotes the sheaf of germs of automorphisms of the sheaf <eq env="math">{\mathscr{O_X}}</eq> of <eq env="math">A</eq>-algebras <em>that are compatible with the augmentation</em>.
+The filtration of <eq env="math">{\mathscr{O}}_X</eq> defines a filtration of <eq env="math">\mathscr{A}\kern -.5pt ut(X)</eq>, with the quotient of this sheaf by the <eq env="math">n</eq>-th subgroup of the filtration being <eq env="math">\mathscr{A}\kern -.5pt ut(X_n)</eq>;
 the graded algebra associated to this filtration is commutative, and can be identified with <eq env="math">{\mathfrak{G}}_{X_0/k}\otimes_k\operatorname{gr}(A)</eq>.
-In particular, if <eq env="math">{\mathfrak{m}}^{n+1}</eq> is the first power of <eq env="math">{\mathfrak{m}}</eq> that is not zero, then <eq env="math">F^n(\underline{\operatorname{Aut}}(X))</eq> (the last stage of the filtration) is in the centre of <eq env="math">\underline{\operatorname{Aut}}(X)</eq>, and is isomorphic to <eq env="math">{\mathfrak{G}}_{X_0/k}\otimes_k{\mathfrak{m}}^n</eq>;
+In particular, if <eq env="math">{\mathfrak{m}}^{n+1}</eq> is the first power of <eq env="math">{\mathfrak{m}}</eq> that is not zero, then <eq env="math">F^n(\mathscr{A}\kern -.5pt ut(X))</eq> (the last stage of the filtration) is in the centre of <eq env="math">\mathscr{A}\kern -.5pt ut(X)</eq>, and is isomorphic to <eq env="math">{\mathfrak{G}}_{X_0/k}\otimes_k{\mathfrak{m}}^n</eq>;
 it is also the sheaf of germs of automorphisms of <eq env="math">X</eq> that induce the identity on <eq env="math">X_{n-1}=X\otimes_A A/{\mathfrak{m}}^n</eq>.
 Using these results, we immediately obtain the following statements:</p>
 <div id="fga-2-theorem-8-corollary-2" class="itenv" title="Corollary 2">
