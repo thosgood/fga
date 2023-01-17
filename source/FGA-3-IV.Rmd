@@ -14,6 +14,7 @@
 \providecommand{\shExt}{\mathscr{E}\kern -.5pt xt}
 \providecommand{\Hom}{\operatorname{Hom}}
 \providecommand{\shHom}{\mathscr{H}\kern -.5pt om}
+\providecommand{\repHom}{\underline{\Hom}}
 \providecommand{\supp}{\operatorname{supp}}
 \providecommand{\red}{{\mathrm{red}}}
 \providecommand{\OO}{\scr{O}}
@@ -27,6 +28,7 @@
 \providecommand{\Hilb}{\operatorname{Hilb}}
 \providecommand{\shHilb}{\mathscr{H}\kern -.5pt ilb}
 \providecommand{\repHilb}{\underline{\Hilb}}
+\providecommand{\repIsom}{\underline{\operatorname{Isom}}}
 \providecommand{\FXS}{{\scr{F}/X/S}}
 \providecommand{\FXSp}{{\scr{F}'/X'/S'}}
 \providecommand{\RR}{\operatorname{R}}
@@ -598,4 +600,15 @@ a. Under the conditions of [(3.1)](#fga-3-iv-theorem-3.1), let $U$ be open in $X
     \oldpage{221-19}
     It follows that Theorems [(3.1)](#fga-3-iv-theorem-3.1) and [(3.2)](#fga-3-iv-theorem-3.2) remain true if we suppose that $X$ is _quasi-projective_ over $S$ instead of projective over $S$, as long as we also replace in the conclusions the word "projective" by "quasi-projective", and use $\shQuot_{\FXS}(S')$ to mean the set of coherent quotients $\scr{G}$ of $\scr{F}'$ that are flat over $S'$ and _whose support is proper over $S'$._
 
-b. Generally,
+b. Generally we can impose all sorts of supplementary natural conditions on the quotients $\scr{G}$ of $\scr{F}'=\scr{F}\otimes_{\OO_S}\OO_{S'}$ that are flat over $S'$ and stable under base change, thus obtaining as many subfunctors of $\shQuot_{\FXS}$ as we want to represent.
+    The usual criteria allow us, in many cases, to prove that we again obtain functors that are representable by open subsets of $\repQuot_{\FXS}$.
+    This is, in particular, the case if we impose one of the following additional properties:
+
+  1. The dimensions of the prime cycles associated to the modules $\scr{G}_{s'}$ (for $s'\in S'$) that are induced on the fibres $X'_{s'}$ belong to a given set of integers.
+  2. (In the case where $\scr{F}=\OO_X$, and thus $\scr{G}$ corresponds to a closed subprescheme $Y$ of $X'$); $Y$ is a _simple_ prescheme [@3-IV-3, IV] over $S$, resp. _normal_ over $S$ (i.e. the fibres $Y_{s'}$ are normal "over $k(s)$", i.e. are normal under any extension of base field), resp. (if $X$ is flat over $S$) are local complete $k$-intersections in $X$ with respect to $S$ (i.e. the fibres $Y_{s'}$ are local complete intersections in the $X_{s'}$)
+
+    Other conditions would involve properties of a cohomological nature on the modules $\scr{G}_{s'}$ induced on the $X'_{s'}$, etc.
+    Of course, the conjunction of conditions where each is represented by an open $U_i$ of $\repQuot_{\FXS}$ is represented by the open intersection.
+    For example, considering, for all $S'$ over $S$, the set of closed subpreschemes $Y$ of $X'=X\times_S S'$ that are étale covers [@3-IV-3, I] of a given rank $r$ over $S'$, we obtain a representable contravariant functor in $S'$.
+
+c. The preschemes $\repHom_S(X,Y)$, $\prod_{X/S}Z/S$, and $\repIsom_S(X,Y)$, defined in [@3-IV-2, II, C, §2] exist thanks to suitable projective hypotheses, and can be realised as opens in suitable Hilbert preschemes.

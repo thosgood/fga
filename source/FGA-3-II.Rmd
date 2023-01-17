@@ -15,9 +15,9 @@
 
 \providecommand{\id}{\operatorname{id}}
 \providecommand{\Hom}{\operatorname{Hom}}
-\providecommand{\shHom}{\underline{\Hom}}
+\providecommand{\repHom}{\underline{\Hom}}
 \providecommand{\Aut}{\operatorname{Aut}}
-\providecommand{\shAut}{\underline{\Aut}}
+\providecommand{\repAut}{\underline{\Aut}}
 \providecommand{\HH}{\operatorname{H}}
 \providecommand{\RR}{\operatorname{R}}
 \providecommand{\GL}{\operatorname{GL}}
@@ -421,7 +421,7 @@ if $\frak{m}$ is the maximal ideal of $\scr{O}$, then the dual of $\frak{m}/\fra
 It is only when the Picard group is an algebraic group in the classical sense (i.e. simple over the base field $k$) that the dimension of $\HH^1(V,\scr{O}_V)$ (which is always equal to that of $\frak{m}/\frak{m}^2$) is equal to that of the Picard group.
 
 
-## The schemes $\Hom_S(X,Y)$, $\prod_{X/S}Z$, $\shAut(X)$, etc. {#fga-3-ii-section-C.2}
+## The schemes $\Hom_S(X,Y)$, $\prod_{X/S}Z$, $\repAut(X)$, etc. {#fga-3-ii-section-C.2}
 
 Let $X$ and $Y$ be preschemes over $S$;
 \oldpage{195-13}
@@ -433,12 +433,12 @@ $$
   = \Hom_S(X\times_S T,Y)
 $$
 as a contravariant functor in $T$.
-If it is representable, then we denote by $\shHom_S(X,Y)$ the prescheme over $S$ that represents it, and we then have a functorial isomorphism
+If it is representable, then we denote by $\repHom_S(X,Y)$ the prescheme over $S$ that represents it, and we then have a functorial isomorphism
 $$
-  \Hom_S(T,\shHom_S(X,Y)) \simto \Hom_S(T\times_S X,Y).
+  \Hom_S(T,\repHom_S(X,Y)) \simto \Hom_S(T\times_S X,Y).
 $$
 There are variants of this universal problem, the solutions to which can be summarised as follows: a prescheme of _$S$-automorphisms of_ an $S$-prescheme $X$ (which will be a prescheme in _groups_), a prescheme of _$S$-homomorphisms_ from an $S$-prescheme in _groups_ to another (which will be a prescheme in commutative groups if the latter scheme in groups is commutative), etc.
-We can also generalise the definition of $\shHom_S(X,Y)$ by considering a prescheme $Z$ over the prescheme $X$ over $S$, and the functor
+We can also generalise the definition of $\repHom_S(X,Y)$ by considering a prescheme $Z$ over the prescheme $X$ over $S$, and the functor
 $$
   F(T) = \Hom_{X_T}(X_T,Z_T)
 $$
@@ -447,12 +447,12 @@ if this functor is representable, then the $S$-prescheme that represents it will
 $$
   \Hom_S(T,\Pi_{X/S}Z) = \Hom_{X_T}(X_T,Z_T).
 $$
-Setting $Z=Y\times_S X$, we recover $\shHom_S(X,Y)$.
+Setting $Z=Y\times_S X$, we recover $\repHom_S(X,Y)$.
 From these definitions follows a formula for the new preschemes thus introduced that is as trivial as it is useful, that we will not give here (given that it holds in every category where products and fibred products exist).
-More serious is the question of _existence_ of schemes of the type $\shHom_S(X,Y)$.
-We note first of all that, for fixed $X$, $\shHom_S(X,Y)$ (resp. $\Pi_{X/S}Z$) can only exist for all $Y$ over $S$ (resp. for all $Z$ over $X$) if $X$ is _flat_ over $S$.
+More serious is the question of _existence_ of schemes of the type $\repHom_S(X,Y)$.
+We note first of all that, for fixed $X$, $\repHom_S(X,Y)$ (resp. $\Pi_{X/S}Z$) can only exist for all $Y$ over $S$ (resp. for all $Z$ over $X$) if $X$ is _flat_ over $S$.
 Furthermore, we can convince ourselves that it is not reasonable to expect the existence of a solution, for general enough $Y$, except in the case where $X$ is further _proper_ over $S$.
-It seems, however, that these conditions are sufficient for the existence of $\shHom_S(X,Y)$ and $\Pi_{X/S}Z$, with the condition that, if necessary, we make some sort of "quasi-projective" hypothesis on $Y/S$ (resp. $Z/X$);
+It seems, however, that these conditions are sufficient for the existence of $\repHom_S(X,Y)$ and $\Pi_{X/S}Z$, with the condition that, if necessary, we make some sort of "quasi-projective" hypothesis on $Y/S$ (resp. $Z/X$);
 this is what we can verify anyway in numerous cases (for example, when $Y$ is _affine_ over $S$, or, by direct elementary constructions, when $X$ is _finite_ over $S$).
 Here is what [Theorem 1](#fga-3-ii-section-B-theorem-1) and [Theorem 2](#fga-3-ii-section-B-theorem-2) give:
 
@@ -470,7 +470,7 @@ If $X$ is flat over $\Lambda$, then this functor is pro-representable.
 
 Furthermore, we can show that, for all $A\in\cal{C}_0$ and all $\xi\in F(A)$, we have a canonical isomorphism
 $$
-  F(I_A,\xi) = \HH^1\Big(X_A,\shHom_{\scr{O}_{X_A}}\big(\xi^*(\Omega_{Y_A/A}^1),\scr{O}_{X_A}\big)\Big)
+  F(I_A,\xi) = \HH^1\Big(X_A,\repHom_{\scr{O}_{X_A}}\big(\xi^*(\Omega_{Y_A/A}^1),\scr{O}_{X_A}\big)\Big)
 $$
 where $\Omega_{Y_A/A}^1$ is the sheaf of K\"{a}hler $1$-differentials of $Y_A$ with respect to $A$.
 Taking $A$ to be a field, we find, using [§A, Proposition 5.1](#fga-3-ii-section-A.5-proposition-5.1) and the finiteness theorem from [@3-II-2], the following corollary:
