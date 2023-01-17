@@ -13,7 +13,7 @@
 \providecommand{\Ext}{\operatorname{Ext}}
 \providecommand{\shExt}{\mathscr{E}\kern -.5pt xt}
 \providecommand{\Hom}{\operatorname{Hom}}
-\providecommand{\shHom}{\mathscr{H}\kern -.5pt om}
+\providecommand{\shHom}{\mathscr{H}\kern -.75pt om}
 \providecommand{\repHom}{\underline{\Hom}}
 \providecommand{\supp}{\operatorname{supp}}
 \providecommand{\red}{{\mathrm{red}}}
@@ -29,6 +29,7 @@
 \providecommand{\shHilb}{\mathscr{H}\kern -.5pt ilb}
 \providecommand{\repHilb}{\underline{\Hilb}}
 \providecommand{\repIsom}{\underline{\operatorname{Isom}}}
+\providecommand{\repImm}{\underline{\operatorname{Imm}}}
 \providecommand{\FXS}{{\scr{F}/X/S}}
 \providecommand{\FXSp}{{\scr{F}'/X'/S'}}
 \providecommand{\RR}{\operatorname{R}}
@@ -612,3 +613,20 @@ b. Generally we can impose all sorts of supplementary natural conditions on the 
     For example, considering, for all $S'$ over $S$, the set of closed subpreschemes $Y$ of $X'=X\times_S S'$ that are étale covers [@3-IV-3, I] of a given rank $r$ over $S'$, we obtain a representable contravariant functor in $S'$.
 
 c. The preschemes $\repHom_S(X,Y)$, $\prod_{X/S}Z/S$, and $\repIsom_S(X,Y)$, defined in [@3-IV-2, II, C, §2] exist thanks to suitable projective hypotheses, and can be realised as opens in suitable Hilbert preschemes.
+    Since we have $\repHom_S(X,Y)=\prod_{X/S}((X\times Y)/X)$, the case of $\Hom_S(X,Y)$ reduces to that of $\prod_{X/S}(Z/X)$.
+    We then note that, for all $S'$ over $S$, the set of sections of $Z'=Z\times_S S'$ over $X'=X\times_S S'$ is in bijective correspondence with the set of subpreschemes $\Gamma$ of $Z$ (necessarily closed if $Z$ is separated over $X$) such that the morphism $\Gamma\to X'$ induced by $Z'\to X'$ is an isomorphism.
+\oldpage{221-20}
+    In this way, _if $X$ is flat and proper over $S$, and $Z$ quasi-projective over $S$, then $\prod_{X/S}(Z/X)$ exists and is realised as an open subprescheme of $\repHilb_{Z/S}$._
+    Thus _if $X$ is projective and flat over $S$, and $Y$ quasi-projective over $S$, then $\repHom_S(X,Y)$ exists and is realised as an open subprescheme of $\repHilb_{(X\times_S Y)/S}$._
+    If $X$ and $Y$ are both projective over $S$, then it immediately follows that $\repIsom_S(X,Y)$ also exists, and is represented by an open subset of $\repHom_S(X,Y)$.
+    Similarly, if $X$ is flat and projective over $S$, and $Y$ quasi-projective over $S$, then the $S$-prescheme $\repImm_S(X/Y)$ that corresponds to the subfunctor of the functor represented by $\repHom_S(X,Y)$ that corresponds to $S'$-homomorphisms $X'\to Y'$ that are immersions is also representable by an open subset of $\repHom_S(X,Y)$.
+
+  Let $\scr{L}$ (resp. $\scr{M}$) be an invertible sheaf on $X$ (resp. $Y$) that is very ample with respect to $S$, whence we obtain a sheaf $\scr{L}\otimes_{\OO_S}\scr{M}$ on $X\times_S Y$ that is very ample with respect to $S$.
+  Then, for any polynomial $P$ with rational coefficients, $\repHilb_{(X\times_S Y)/S}^P$ is defined and is a quasi-projective prescheme over $S$.
+  It thus induces, on $\repHom_S(X,Y)$, a subset that is both open and closed, and quasi-projective over $S$, which we denote by $\Hom_S(X,Y)^P$.
+  Thus the sections of $\repHom_S(X,Y)^P$ over $S$ are the $S$-morphisms $g\colon X\to Y$ such that, for any integer $n$, we have
+  $$
+    \chi\Big((\scr{L}\otimes_{\OO_X}g^*(\scr{M}))^{\otimes n}\Big)
+    = P(n).
+  $$
+  In this way we obtain generalisations of Matsusaka's theorem
