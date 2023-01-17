@@ -608,9 +608,9 @@ b. Generally we can impose all sorts of supplementary natural conditions on the 
   1. The dimensions of the prime cycles associated to the modules $\scr{G}_{s'}$ (for $s'\in S'$) that are induced on the fibres $X'_{s'}$ belong to a given set of integers.
   2. (In the case where $\scr{F}=\OO_X$, and thus $\scr{G}$ corresponds to a closed subprescheme $Y$ of $X'$); $Y$ is a _simple_ prescheme [@3-IV-3, IV] over $S$, resp. _normal_ over $S$ (i.e. the fibres $Y_{s'}$ are normal "over $k(s)$", i.e. are normal under any extension of base field), resp. (if $X$ is flat over $S$) are local complete $k$-intersections in $X$ with respect to $S$ (i.e. the fibres $Y_{s'}$ are local complete intersections in the $X_{s'}$)
 
-    Other conditions would involve properties of a cohomological nature on the modules $\scr{G}_{s'}$ induced on the $X'_{s'}$, etc.
-    Of course, the conjunction of conditions where each is represented by an open $U_i$ of $\repQuot_{\FXS}$ is represented by the open intersection.
-    For example, considering, for all $S'$ over $S$, the set of closed subpreschemes $Y$ of $X'=X\times_S S'$ that are étale covers [@3-IV-3, I] of a given rank $r$ over $S'$, we obtain a representable contravariant functor in $S'$.
+  Other conditions would involve properties of a cohomological nature on the modules $\scr{G}_{s'}$ induced on the $X'_{s'}$, etc.
+  Of course, the conjunction of conditions where each is represented by an open $U_i$ of $\repQuot_{\FXS}$ is represented by the open intersection.
+  For example, considering, for all $S'$ over $S$, the set of closed subpreschemes $Y$ of $X'=X\times_S S'$ that are étale covers [@3-IV-3, I] of a given rank $r$ over $S'$, we obtain a representable contravariant functor in $S'$.
 
 c. The preschemes $\repHom_S(X,Y)$, $\prod_{X/S}Z/S$, and $\repIsom_S(X,Y)$, defined in [@3-IV-2, II, C, §2] exist thanks to suitable projective hypotheses, and can be realised as opens in suitable Hilbert preschemes.
     Since we have $\repHom_S(X,Y)=\prod_{X/S}((X\times Y)/X)$, the case of $\Hom_S(X,Y)$ reduces to that of $\prod_{X/S}(Z/X)$.
@@ -621,18 +621,18 @@ c. The preschemes $\repHom_S(X,Y)$, $\prod_{X/S}Z/S$, and $\repIsom_S(X,Y)$, def
     If $X$ and $Y$ are both projective over $S$, then it immediately follows that $\repIsom_S(X,Y)$ also exists, and is represented by an open subset of $\repHom_S(X,Y)$.
     Similarly, if $X$ is flat and projective over $S$, and $Y$ quasi-projective over $S$, then the $S$-prescheme $\repImm_S(X/Y)$ that corresponds to the subfunctor of the functor represented by $\repHom_S(X,Y)$ that corresponds to $S'$-homomorphisms $X'\to Y'$ that are immersions is also representable by an open subset of $\repHom_S(X,Y)$.
 
-  Let $\scr{L}$ (resp. $\scr{M}$) be an invertible sheaf on $X$ (resp. $Y$) that is very ample with respect to $S$, whence we obtain a sheaf $\scr{L}\otimes_{\OO_S}\scr{M}$ on $X\times_S Y$ that is very ample with respect to $S$.
-  Then, for any polynomial $P$ with rational coefficients, $\repHilb_{(X\times_S Y)/S}^P$ is defined and is a quasi-projective prescheme over $S$.
-  It thus induces, on $\repHom_S(X,Y)$, a subset that is both open and closed, and quasi-projective over $S$, which we denote by $\Hom_S(X,Y)^P$.
-  Thus the sections of $\repHom_S(X,Y)^P$ over $S$ are the $S$-morphisms $g\colon X\to Y$ such that, for any integer $n$, we have
-  $$
-    \chi\Big((\scr{L}\otimes_{\OO_X}g^*(\scr{M}))^{\otimes n}\Big)
-    = P(n).
-  $$
-  In this way we obtain generalisations of Matsusaka's theorem, affirming that the automorphisms of a "polarised" projective variety form an algebraic group, a claim that here has an evidently more precise meaning, since we have a definition of this group as the solution to a universal problem.
-  We note also that, over an algebraically closed field, the group of automorphisms considered in the past is that which is induced by the "true" one defined here, by dividing by the nilpotent elements;
-  this explains why there is little chance that the historical constructions could be done over a non-perfect base field, since the ideal of nilpotent elements that appears after an extension of the base field is not necessarily "defined over $k$".
-  This same remark applies equally to the majority of historical constructions.
+    Let $\scr{L}$ (resp. $\scr{M}$) be an invertible sheaf on $X$ (resp. $Y$) that is very ample with respect to $S$, whence we obtain a sheaf $\scr{L}\otimes_{\OO_S}\scr{M}$ on $X\times_S Y$ that is very ample with respect to $S$.
+    Then, for any polynomial $P$ with rational coefficients, $\repHilb_{(X\times_S Y)/S}^P$ is defined and is a quasi-projective prescheme over $S$.
+    It thus induces, on $\repHom_S(X,Y)$, a subset that is both open and closed, and quasi-projective over $S$, which we denote by $\Hom_S(X,Y)^P$.
+    Thus the sections of $\repHom_S(X,Y)^P$ over $S$ are the $S$-morphisms $g\colon X\to Y$ such that, for any integer $n$, we have
+    $$
+      \chi\Big((\scr{L}\otimes_{\OO_X}g^*(\scr{M}))^{\otimes n}\Big)
+      = P(n).
+    $$
+    In this way we obtain generalisations of Matsusaka's theorem, affirming that the automorphisms of a "polarised" projective variety form an algebraic group, a claim that here has an evidently more precise meaning, since we have a definition of this group as the solution to a universal problem.
+    We note also that, over an algebraically closed field, the group of automorphisms considered in the past is that which is induced by the "true" one defined here, by dividing by the nilpotent elements;
+    this explains why there is little chance that the historical constructions could be done over a non-perfect base field, since the ideal of nilpotent elements that appears after an extension of the base field is not necessarily "defined over $k$".
+    This same remark applies equally to the majority of historical constructions.
 
 
 ## Differential study of Hilbert schemes {#fga-3-iv-section-5}
