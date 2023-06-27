@@ -684,7 +684,7 @@ The result giving the Zariski tangent space can be generalised, and gives a char
 $$
   \Omega
   = g^*(\Omega_{Q/S}^1)
-  = {g'}^*(\scr{J}/\src{J}^2)
+  = {g'}^*(\scr{J}/\scr{J}^2)
 $$
 (where $\scr{J}$ is the ideal on $Q'$ defined by the section $g'$ of $Q'$ over $S'$) by the formula
 $$
@@ -713,5 +713,11 @@ where the first factor on the right-hand side is the normal cone of $Y_0$ inside
 Using the fundamental criterion of simplicity [@3-IV-3, III, 3.1], we find, for example:
 
 ::: {.itenv #fga-3-iv-corollary-5.4 title="Corollary 5.4"}
-Under
+Under the conditions of [(5.3)](#fga-3-iv-corollary-5.3), suppose that $\scr{F}=\OO_X$, with $X$ flat over $S$, and that the closed subprescheme $Y_0$ of $X_0$ that corresponds to $\scr{G}_0$ is locally a complete intersection.
+Then the Zariski tangent space of $Q_s$ at $x$ is canonically isomorphic to $\HH^0(Y_0,\check{\scr{N}}_{X_0/Y_0})$.
+If $\HH^1(Y_0,\check{\scr{N}_{X_0/Y_0}})=0$, then the Hilbert prescheme $X$ is simple over $S$ at the point $x$ (where $\check{\scr{N}}_{X_0/Y_0}$ is the normal sheaf of $Y_0$ inside $X_0$).
+:::
+
+::: {.rmenv #fga-3-iv-remark-5.5 title="Remark 5.5"}
+This
 :::
