@@ -615,7 +615,7 @@ b. Generally we can impose all sorts of supplementary natural conditions on the 
 c. The preschemes $\repHom_S(X,Y)$, $\prod_{X/S}Z/S$, and $\repIsom_S(X,Y)$, defined in [@3-IV-2, II, C, §2] exist thanks to suitable projective hypotheses, and can be realised as opens in suitable Hilbert preschemes.
     Since we have $\repHom_S(X,Y)=\prod_{X/S}((X\times Y)/X)$, the case of $\Hom_S(X,Y)$ reduces to that of $\prod_{X/S}(Z/X)$.
     We then note that, for all $S'$ over $S$, the set of sections of $Z'=Z\times_S S'$ over $X'=X\times_S S'$ is in bijective correspondence with the set of subpreschemes $\Gamma$ of $Z$ (necessarily closed if $Z$ is separated over $X$) such that the morphism $\Gamma\to X'$ induced by $Z'\to X'$ is an isomorphism.
-\oldpage{221-20}
+  \oldpage{221-20}
     In this way, _if $X$ is flat and proper over $S$, and $Z$ quasi-projective over $S$, then $\prod_{X/S}(Z/X)$ exists and is realised as an open subprescheme of $\repHilb_{Z/S}$._
     Thus _if $X$ is projective and flat over $S$, and $Y$ quasi-projective over $S$, then $\repHom_S(X,Y)$ exists and is realised as an open subprescheme of $\repHilb_{(X\times_S Y)/S}$._
     If $X$ and $Y$ are both projective over $S$, then it immediately follows that $\repIsom_S(X,Y)$ also exists, and is represented by an open subset of $\repHom_S(X,Y)$.
@@ -641,6 +641,21 @@ c. The preschemes $\repHom_S(X,Y)$, $\prod_{X/S}Z/S$, and $\repIsom_S(X,Y)$, def
 
 We have the following result:
 
-::: {.rmenv #fga-3-iv-proposition-5.1 title="Proposition 5.1" latex="{Proposition 5.1}"}
-Let
+::: {.itenv #fga-3-iv-proposition-5.1 title="Proposition 5.1" latex="{Proposition 5.1}"}
+Let $S$ be a prescheme, $S_0$ a subprescheme defined by a square-zero quasi-coherent ideal $\scr{I}$, $X$ an $S$-prescheme, and $\scr{F}$ a quasi-coherent module on $X$.
+Let $X_0=\scr{F}\times_S S_0$ and $\scr{F}_0=\scr{F}\otimes_{\OO_S}\OO_{S_0}$.
+Finally, let $\scr{G}_0=\scr{F}_0/\scr{H}_0$ be a quasi-coherent quotient module of $\scr{F}_0$ that is flat over $S_0$.
+For every open $U$ of $X$, let $\scr{E}(U)$ be the set of quasi-coherent quotient modules $\scr{G}$ of $\scr{F}|U$ that are flat over $S$ and are such that $\scr{G}\otimes_{\OO_S}\OO_{S_0}=\scr{G}_0$;
+as $U$ varies, the $\scr{E}(U)$ are the sections of a sheaf $\scr{E}$ on $U$.
+With this, the sheaf of groups
+$$
+  \scr{A} = \shHom_{\OO_{X_0}}(\scr{H}_0,\scr{G}_0\otimes_{\OO_{S_0}}\scr{I})
+$$
+acts naturally on $\scr{E}$, which thus becomes a "formally $\mathscr{A}$-principal homogeneous" sheaf (i.e. for every open $U$ in $X$, $\scr{E}(U)$ is either empty or an $\scr{A}(U)$-principal homogeneous set).
+:::
+
+We thus conclude:
+
+::: {.itenv #fga-3-iv-corollary-5.2 title="Corollary 5.2"}
+Suppose
 :::
