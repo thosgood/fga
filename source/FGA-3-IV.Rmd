@@ -649,7 +649,7 @@ For every open $U$ of $X$, let $\scr{E}(U)$ be the set of quasi-coherent quotien
 as $U$ varies, the $\scr{E}(U)$ are the sections of a sheaf $\scr{E}$ on $U$.
 With this, the sheaf of groups
 $$
-  \scr{A} = \shHom_{\OO_{X_0}}(\scr{H}_0,\scr{G}_0\otimes_{\OO_{S_0}}\scr{I})
+  \scr{A} = \repHom_{\OO_{X_0}}(\scr{H}_0,\scr{G}_0\otimes_{\OO_{S_0}}\scr{I})
 $$
 acts naturally on $\scr{E}$, which thus becomes a "formally $\mathscr{A}$-principal homogeneous" sheaf (i.e. for every open $U$ in $X$, $\scr{E}(U)$ is either empty or an $\scr{A}(U)$-principal homogeneous set).
 :::
@@ -657,5 +657,61 @@ acts naturally on $\scr{E}$, which thus becomes a "formally $\mathscr{A}$-princi
 We thus conclude:
 
 ::: {.itenv #fga-3-iv-corollary-5.2 title="Corollary 5.2"}
-Suppose
+Suppose that there exists locally on $X$ an extension $\scr{G}$ of $\scr{G}_0$ to a quotient of $\scr{F}$ that is flat over $S$ (i.e. that the fibres of the sheaf $\scr{E}$ are non-empty).
+Then there exists a canonical obstruction class
+$$
+  c(\scr{G}_0) \in \HH^1(X,\scr{A})
+$$
+whose vanishing is necessary and sufficient for the existence of a global extension $\scr{G}$ of $\scr{G}_0$ to a quotient of $\scr{F}$ that is flat over $S$.
+If this class is zero, then the set $\scr{E}(X)$ of all possible extensions is a principal homogenous set for $\scr{A}(X)=\Hom_{\OO_X}(\scr{H}_0,\scr{G}_0\otimes_{\OO_{S_0}}\scr{I})$.
+:::
+
+The existence of a global extension is thus guaranteed, in particular, if $\HH^1(X,\scr{A})=0$.
+
+::: {.itenv #fga-3-iv-corollary-5.3 title="Corollary 5.3"}
+Suppose that $Q=\repQuot_\FXS$ exists (cf. [§4.a](#fga-3-iv-section-4)) --- for example, suppose that $X$ is quasi-projective over some locally Noetherian $S$, and $\scr{F}$ is coherent.
+Let $x\in Q$, corresponding to a residue extension $K=k(x)$ of some $k(s)$ (where $s\in S$).
+Then $x$ is defined by a coherent quotient module $\scr{G}_0=\scr{F}_0/\scr{H}_0$ of the module $\scr{F}_0=F_K$ on the $K$-prescheme $X_K$.
+Let $\scr{A}$ be the coherent sheaf on $X_K$ defined by
+$$
+  \scr{A} = \repHom_{\OO_{X_0}}(\scr{H}_0,\scr{G}_0).
+$$
+
+Then the Zariski tangent space of the fibre $Q_s$ at the point $x$ (given by the dual over $K$ of $\frak{m}/\frak{m}^2$, where $\frak{m}$ is the maximal ideal of $\OO_{Q_k,x}$) is canonically isomorphic to $\HH^0(X_k,\scr{A})$.
+:::
+
+The result giving the Zariski tangent space can be generalised, and gives a characterisation, for a given $S$-morphism $g\colon S'\to Q$, i.e. a section $g'$ of $Q'=Q\times_S S'$ over $S'$, of the module
+$$
+  \Omega
+  = g^*(\Omega_{Q/S}^1)
+  = {g'}^*(\scr{J}/\src{J}^2)
+$$
+(where $\scr{J}$ is the ideal on $Q'$ defined by the section $g'$ of $Q'$ over $S'$) by the formula
+$$
+  \Hom_{\OO_{S'}}(\Omega,\scr{M})
+  \simeq \HH^0(X',\scr{A})
+$$
+which is functorial in the coherent module $\scr{M}$ over $S'$, and where $\scr{A}$ is again the module on $X'=X\times_S S'$ defined by
+$$
+  \scr{A} = \repHom_{\OO_{X'}}(\scr{H},\scr{G}\otimes_{\OO_S}\scr{M})
+$$
+($\scr{G}=\scr{F}'/\scr{H}$ being the quotient module of $\scr{F}'=\scr{F}\otimes_{\OO_S}\OO_{S'}$ that corresponds to $g$).
+It suffices to apply [(5.1)](#fga-3-iv-proposition-5.1) by replacing $S_0$ with $S'$, and $S$ with the prescheme $D(\scr{M})=(S',\OO_{S'}+\scr{M})$, where $\scr{M}$ is considered as a square-zero ideal.
+
+If, in [(5.1)](#fga-3-iv-proposition-5.1), we have $\scr{F}=\OO_X$, then the data of $\scr{G}_0$ corresponds to the data of a closed subprescheme $Y_0$ of $X_0$ that is flat over $S_0$, defined by the ideal $\scr{J}_0=\scr{M}_0$, and then [($*$)](#fga-3-iv-equation-asterisk) gives
+$$
+  \scr{A} = \repHom_{\OO_{X_0}}(\scr{J}_0/\scr{J}_0^2,\OO_{Y_0}\otimes_{\OO_{S_0}}\scr{J})
+$$
+where $\scr{J}/\scr{J}^2$ is thought of as the *conormal sheaf* of $Y_0$ in $X_0$, which we also denote by $\scr{N}_{Y_0/X_0}$;
+\oldpage{221-23}
+it is then interesting to consider $\scr{A}$ as a module over $Y_0$, and to calculate $\HH^0$ and $\HH^1$ on $Y$.
+If $Y_0$ is locally a complete intersection in $X_0$, with $X$ flat over $S$, then, in [(5.1)](#fga-3-iv-proposition-5.1), the possibility of a local extension is guaranteed, and $\scr{J}/\scr{J}^2$ is locally free over $Y_0$ and we can write
+$$
+  \scr{A} = \check{\scr{N}}_{X_0/Y_0}\otimes_{\OO_{S_0}}\scr{J}
+$$
+where the first factor on the right-hand side is the normal cone of $Y_0$ inside $X_0$.
+Using the fundamental criterion of simplicity [@3-IV-3, III, 3.1], we find, for example:
+
+::: {.itenv #fga-3-iv-corollary-5.4 title="Corollary 5.4"}
+Under
 :::
