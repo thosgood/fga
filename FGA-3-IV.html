@@ -726,13 +726,62 @@ For every open <eq env="math">U</eq> of <eq env="math">X</eq>, let <eq env="math
 as <eq env="math">U</eq> varies, the <eq env="math">{\mathscr{E}}(U)</eq> are the sections of a sheaf <eq env="math">{\mathscr{E}}</eq> on <eq env="math">U</eq>.
 With this, the sheaf of groups
 <eq env="displaymath">
-  {\mathscr{A}} = \mathscr{H}\kern -.5pt om_{{\mathscr{O}}_{X_0}}({\mathscr{H}}_0,{\mathscr{G}}_0\otimes_{{\mathscr{O}}_{S_0}}{\mathscr{I}})
+  {\mathscr{A}} = \underline{\operatorname{Hom}}_{{\mathscr{O}}_{X_0}}({\mathscr{H}}_0,{\mathscr{G}}_0\otimes_{{\mathscr{O}}_{S_0}}{\mathscr{I}})
 </eq>
 acts naturally on <eq env="math">{\mathscr{E}}</eq>, which thus becomes a “formally <eq env="math">\mathscr{A}</eq>-principal homogeneous” sheaf (i.e. for every open <eq env="math">U</eq> in <eq env="math">X</eq>, <eq env="math">{\mathscr{E}}(U)</eq> is either empty or an <eq env="math">{\mathscr{A}}(U)</eq>-principal homogeneous set).</p>
 </div>
 <p>We thus conclude:</p>
 <div id="fga-3-iv-corollary-5.2" class="itenv" title="Corollary 5.2">
-<p>Suppose</p>
+<p>Suppose that there exists locally on <eq env="math">X</eq> an extension <eq env="math">{\mathscr{G}}</eq> of <eq env="math">{\mathscr{G}}_0</eq> to a quotient of <eq env="math">{\mathscr{F}}</eq> that is flat over <eq env="math">S</eq> (i.e. that the fibres of the sheaf <eq env="math">{\mathscr{E}}</eq> are non-empty).
+Then there exists a canonical obstruction class
+<eq env="displaymath">
+  c({\mathscr{G}}_0) \in \operatorname{H}^1(X,{\mathscr{A}})
+</eq>
+whose vanishing is necessary and sufficient for the existence of a global extension <eq env="math">{\mathscr{G}}</eq> of <eq env="math">{\mathscr{G}}_0</eq> to a quotient of <eq env="math">{\mathscr{F}}</eq> that is flat over <eq env="math">S</eq>.
+If this class is zero, then the set <eq env="math">{\mathscr{E}}(X)</eq> of all possible extensions is a principal homogenous set for <eq env="math">{\mathscr{A}}(X)=\operatorname{Hom}_{{\mathscr{O}}_X}({\mathscr{H}}_0,{\mathscr{G}}_0\otimes_{{\mathscr{O}}_{S_0}}{\mathscr{I}})</eq>.</p>
+</div>
+<p>The existence of a global extension is thus guaranteed, in particular, if <eq env="math">\operatorname{H}^1(X,{\mathscr{A}})=0</eq>.</p>
+<div id="fga-3-iv-corollary-5.3" class="itenv" title="Corollary 5.3">
+<p>Suppose that <eq env="math">Q=\underline{\operatorname{Quot}}_{{\mathscr{F}}/X/S}</eq> exists (cf. <a href="FGA-3-IV.html#fga-3-iv-section-4">§4.a</a>) — for example, suppose that <eq env="math">X</eq> is quasi-projective over some locally Noetherian <eq env="math">S</eq>, and <eq env="math">{\mathscr{F}}</eq> is coherent.
+Let <eq env="math">x\in Q</eq>, corresponding to a residue extension <eq env="math">K=k(x)</eq> of some <eq env="math">k(s)</eq> (where <eq env="math">s\in S</eq>).
+Then <eq env="math">x</eq> is defined by a coherent quotient module <eq env="math">{\mathscr{G}}_0={\mathscr{F}}_0/{\mathscr{H}}_0</eq> of the module <eq env="math">{\mathscr{F}}_0=F_K</eq> on the <eq env="math">K</eq>-prescheme <eq env="math">X_K</eq>.
+Let <eq env="math">{\mathscr{A}}</eq> be the coherent sheaf on <eq env="math">X_K</eq> defined by
+<eq env="displaymath">
+  {\mathscr{A}} = \underline{\operatorname{Hom}}_{{\mathscr{O}}_{X_0}}({\mathscr{H}}_0,{\mathscr{G}}_0).
+</eq></p>
+<p>Then the Zariski tangent space of the fibre <eq env="math">Q_s</eq> at the point <eq env="math">x</eq> (given by the dual over <eq env="math">K</eq> of <eq env="math">{\mathfrak{m}}/{\mathfrak{m}}^2</eq>, where <eq env="math">{\mathfrak{m}}</eq> is the maximal ideal of <eq env="math">{\mathscr{O}}_{Q_k,x}</eq>) is canonically isomorphic to <eq env="math">\operatorname{H}^0(X_k,{\mathscr{A}})</eq>.</p>
+</div>
+<p>The result giving the Zariski tangent space can be generalised, and gives a characterisation, for a given <eq env="math">S</eq>-morphism <eq env="math">g\colon S'\to Q</eq>, i.e. a section <eq env="math">g'</eq> of <eq env="math">Q'=Q\times_S S'</eq> over <eq env="math">S'</eq>, of the module
+<eq env="displaymath">
+  \Omega
+  = g^*(\Omega_{Q/S}^1)
+  = {g'}^*({\mathscr{J}}/\src{J}^2)
+</eq>
+(where <eq env="math">{\mathscr{J}}</eq> is the ideal on <eq env="math">Q'</eq> defined by the section <eq env="math">g'</eq> of <eq env="math">Q'</eq> over <eq env="math">S'</eq>) by the formula
+<eq env="displaymath">
+  \operatorname{Hom}_{{\mathscr{O}}_{S'}}(\Omega,{\mathscr{M}})
+  \simeq \operatorname{H}^0(X',{\mathscr{A}})
+</eq>
+which is functorial in the coherent module <eq env="math">{\mathscr{M}}</eq> over <eq env="math">S'</eq>, and where <eq env="math">{\mathscr{A}}</eq> is again the module on <eq env="math">X'=X\times_S S'</eq> defined by
+<eq env="displaymath">
+  {\mathscr{A}} = \underline{\operatorname{Hom}}_{{\mathscr{O}}_{X'}}({\mathscr{H}},{\mathscr{G}}\otimes_{{\mathscr{O}}_S}{\mathscr{M}})
+</eq>
+(<eq env="math">{\mathscr{G}}={\mathscr{F}}'/{\mathscr{H}}</eq> being the quotient module of <eq env="math">{\mathscr{F}}'={\mathscr{F}}\otimes_{{\mathscr{O}}_S}{\mathscr{O}}_{S'}</eq> that corresponds to <eq env="math">g</eq>).
+It suffices to apply <a href="FGA-3-IV.html#fga-3-iv-proposition-5.1">(5.1)</a> by replacing <eq env="math">S_0</eq> with <eq env="math">S'</eq>, and <eq env="math">S</eq> with the prescheme <eq env="math">D({\mathscr{M}})=(S',{\mathscr{O}}_{S'}+{\mathscr{M}})</eq>, where <eq env="math">{\mathscr{M}}</eq> is considered as a square-zero ideal.</p>
+<p>If, in <a href="FGA-3-IV.html#fga-3-iv-proposition-5.1">(5.1)</a>, we have <eq env="math">{\mathscr{F}}={\mathscr{O}}_X</eq>, then the data of <eq env="math">{\mathscr{G}}_0</eq> corresponds to the data of a closed subprescheme <eq env="math">Y_0</eq> of <eq env="math">X_0</eq> that is flat over <eq env="math">S_0</eq>, defined by the ideal <eq env="math">{\mathscr{J}}_0={\mathscr{M}}_0</eq>, and then <a href="FGA-3-IV.html#fga-3-iv-equation-asterisk">(<eq env="math">*</eq>)</a> gives
+<eq env="displaymath">
+  {\mathscr{A}} = \underline{\operatorname{Hom}}_{{\mathscr{O}}_{X_0}}({\mathscr{J}}_0/{\mathscr{J}}_0^2,{\mathscr{O}}_{Y_0}\otimes_{{\mathscr{O}}_{S_0}}{\mathscr{J}})
+</eq>
+where <eq env="math">{\mathscr{J}}/{\mathscr{J}}^2</eq> is thought of as the <em>conormal sheaf</em> of <eq env="math">Y_0</eq> in <eq env="math">X_0</eq>, which we also denote by <eq env="math">{\mathscr{N}}_{Y_0/X_0}</eq>;
+it is then interesting to consider <eq env="math">{\mathscr{A}}</eq> as a module over <eq env="math">Y_0</eq>, and to calculate <eq env="math">\operatorname{H}^0</eq> and <eq env="math">\operatorname{H}^1</eq> on <eq env="math">Y</eq>.
+If <eq env="math">Y_0</eq> is locally a complete intersection in <eq env="math">X_0</eq>, with <eq env="math">X</eq> flat over <eq env="math">S</eq>, then, in <a href="FGA-3-IV.html#fga-3-iv-proposition-5.1">(5.1)</a>, the possibility of a local extension is guaranteed, and <eq env="math">{\mathscr{J}}/{\mathscr{J}}^2</eq> is locally free over <eq env="math">Y_0</eq> and we can write
+<eq env="displaymath">
+  {\mathscr{A}} = \check{{\mathscr{N}}}_{X_0/Y_0}\otimes_{{\mathscr{O}}_{S_0}}{\mathscr{J}}
+</eq>
+where the first factor on the right-hand side is the normal cone of <eq env="math">Y_0</eq> inside <eq env="math">X_0</eq>.
+Using the fundamental criterion of simplicity <span class="citation">[<a href="#ref-3-IV-3" role="doc-biblioref">16</a>, III, 3.1]</span>, we find, for example:</p>
+<div id="fga-3-iv-corollary-5.4" class="itenv" title="Corollary 5.4">
+<p>Under</p>
 </div>
 
 </div>
