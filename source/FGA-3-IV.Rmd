@@ -46,11 +46,6 @@ Grothendieck, A.
 _Séminaire Bourbaki_ **13** (1960--61), Talk no. 221.
 :::
 
-**TO-DO:**
-
-- **additif**
-- **errata**
-
 ## Introduction {-}
 
 \oldpage{221-01}
@@ -817,3 +812,19 @@ The same remark also applies more generally to Cartier divisors that are positiv
 
 
 ## Supplements and questions {#fga-3-iv-section-7}
+
+As remarked by J.-P. Serre, it follows from a well-known example of Nagata that we can find a scheme $S$ that is the spectrum of a field $k$, an $S$-scheme $S'$ that is the spectrum of a quadratic extension $k'$ of $k$, and finally a simple and proper (but non-projective) $S'$-scheme $X$ of dimension $3$ such that $\prod_{S'/S}(X/S)$ does not exist.
+This implies a fortiori that the Hilbert scheme $\repHilb_{X/S}^2$ does not exist (nor even the $k$-scheme that would represent the étale covers of rank $2$ of $S$ contained inside $X$, nor a fortiori the symmetric square of $X$, cf. [§6](#fga-3-iv-section-6)).
+This thus imposes serious limitations on the possibilities of non-projective constructions in algebraic geometry.
+(It is, however, plausible that such limitations do not present themselves in analytic geometry, just as they do not present themselves in formal geometry (cf. [@3-IV-2, II])).
+However, if $X$ is a proper scheme over the spectrum $S$ of a field $k$, and if $Z$ is quasi-projective over $X$, then $\prod_{X/S}(Z/X)$ exists, and is a scheme, given by the sum of a sequence of quasi-projective schemes over $S$ (as in the projective case [(3.1)](#fga-3-iv-theorem-3.1)).
+To see this, we can reduce to the case where $X$ is itself projective, by dominating $X$ by a projective $S$-scheme $X'$;
+we will not give here the details of the proof, which also uses the result of factorisation of a finite morphism given in [@3-IV-2, I, A, 2.b].
+The success of the method is all in the fact that, with $S$ the spectrum of a field, the $X'$ that appears in Chow's lemma will automatically be flat over $S$.
+I do not know if the result remains true without any hypotheses on $S$, supposing only that $X$ is proper and flat over $S$, and that $Z$ is quasi-projective over $X$.
+An important case in the applications is that where $Z$ is a closed subscheme of $X$;
+if then $\prod_{X/S}(Z/X)$ exists, it is necessarily a closed subscheme of $S$.
+\oldpage{221-28}
+We can construct it directly in a relatively simple manner whenever $X$ is projective over $S$, without using the theory of Hilbert schemes, and the method used shows more generally that, if $Z$ is affine over $X$, then $\prod_{X/S}(Z/X)$ exists and is affine over $S$.
+It equally shows that, if $X$ is proper and flat over $S$ (but not necessarily projective over $S$), then, for every vector bundle $Z$ that is locally trivial on $X$, $\prod_{X/S}(Z/X)$ exists and is a vector bundle on $S$.
+It would be desirable for these results to be studied again and unified.

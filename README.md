@@ -11,6 +11,7 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 - pdf output
 - pdf specific definitions (e.g. `\ourrar`, `\oullar`, `\simto`, `\simfrom`)
 - why is there no date for so many things in the bib?
+    + update all references with "to appear"?
 - turn any FGA citations into links
     + (including those that are citations to the FGAs in the bibliography?)
 - consistent choice between empty lines between i. and ii. or not
@@ -24,6 +25,6 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 - [x] 3.I
 - [x] 3.II
 - [x] 3.III
-- [ ] 3.IV
+- [x] 3.IV
 - [ ] 3.V
 - [ ] 3.VI
