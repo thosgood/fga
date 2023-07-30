@@ -188,6 +188,7 @@ div.csl-indent {
 <li class="chapter" data-level="6.3" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-3"><i class="fa fa-check"></i><b>6.3</b> Hilbert schemes: definition, existence theorem</a></li>
 <li class="chapter" data-level="6.4" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-4"><i class="fa fa-check"></i><b>6.4</b> Variants</a></li>
 <li class="chapter" data-level="6.5" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-5"><i class="fa fa-check"></i><b>6.5</b> Differential study of Hilbert schemes</a></li>
+<li class="chapter" data-level="6.6" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-6"><i class="fa fa-check"></i><b>6.6</b> Relation to the notion of norm and symmetric products</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="FGA-3-V.html"><a href="FGA-3-V.html"><i class="fa fa-check"></i><b>7</b> Picard schemes: Existence theorems</a></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
@@ -786,8 +787,57 @@ Then the Zariski tangent space of <eq env="math">Q_s</eq> at <eq env="math">x</e
 If <eq env="math">\operatorname{H}^1(Y_0,\check{{\mathscr{N}}_{X_0/Y_0}})=0</eq>, then the Hilbert prescheme <eq env="math">X</eq> is simple over <eq env="math">S</eq> at the point <eq env="math">x</eq> (where <eq env="math">\check{{\mathscr{N}}}_{X_0/Y_0}</eq> is the normal sheaf of <eq env="math">Y_0</eq> inside <eq env="math">X_0</eq>).</p>
 </div>
 <div id="fga-3-iv-remark-5.5" class="rmenv" title="Remark 5.5">
-<p>This</p>
+<p>This statement applies in particular when <eq env="math">Y_0</eq> is a complete intersection in <eq env="math">X_0</eq> defined by <em>one</em> single equation, i.e. is a positive “Cartier divisor”.
+Then <eq env="math">\check{{\mathscr{N}}}_{X_0/Y_0}</eq> is isomorphic to the sheaf on <eq env="math">Y_0</eq> induced by the invertible sheaf <eq env="math">{\mathscr{J}}^{-1}</eq> on <eq env="math">X_0</eq> defined by the divisor <eq env="math">Y_0</eq>.
+This is the situation that we find in particular in the study of families of positive divisors on a non-singular projective variety <eq env="math">X_0</eq>.
+The isomorphism between the Zariski tangent space at the point <eq env="math">x</eq> of <eq env="math">Q</eq> (or, if one prefers, of the open <eq env="math">D</eq> of <eq env="math">Q</eq> that corresponds to the divisors) and <eq env="math">{\mathscr{H}}^0(Y_0,\check{{\mathscr{N}}}_{X_0/Y_0})</eq> was known in classical algebraic geometry under the name of “<em>characteristic homomorphism</em>” (from the former to the latter).
+It was not defined when <eq env="math">x</eq> was a simple point of the variety of parameters <eq env="math">T</eq> of a “complete continuous family” of divisors, i.e. from our point of view, an irreducible component of the scheme <eq env="math">D</eq>, endowed with the induced <em>reduced</em> structure.
+The tangent space of <eq env="math">T</eq> at <eq env="math">x</eq> is then a <em>subspace</em> of the tangent space of <eq env="math">D</eq> at <eq env="math">x</eq>, and so the characteristic homomorphic of yore is indeed injective, but it is not surjective except for under supplementary conditions, for example if <eq env="math">D</eq> is integral at <eq env="math">x</eq>.
+In fact, Zappa <span class="citation">[<a href="#ref-3-IV-8" role="doc-biblioref">29</a>]</span> constructed an example (with <eq env="math">X</eq> a non-singular projective surface over the <em>field of complex numbers</em>) where even at the generic point of <eq env="math">T</eq> the characteristic homomorphism is not surjective.
+<em>This thus implies that <eq env="math">D</eq> is not integral even at the generic point of the irreducible component in question.</em>
+This shows in a particularly striking manner how varieties with nilpotent elements are necessary for understanding the most classical phenomena of the theory of surfaces.</p>
 </div>
+<div id="fga-3-iv-remark-5.6" class="rmenv" title="Remark 5.6">
+<p>We have given, in <a href="#fga-3-iv-remark-5.4">(5.4)</a>, a criterion for simplicity, which applies in particular to schemes of divisors.
+Kodaira gave a different criterion in <span class="citation">[<a href="#ref-3-IV-6" role="doc-biblioref">19</a>]</span>, given by the vanishing of <eq env="math">\operatorname{H}^1(X_0,{\mathscr{L}})</eq>, where <eq env="math">{\mathscr{L}}={\mathscr{J}}_0^{-1}</eq> is the invertible sheaf on <eq env="math">X_0</eq> defined by the divisor <eq env="math">Y_0</eq>;
+this criterion holds whenever <eq env="math">S</eq> is the spectrum of a field of characteristic <eq env="math">0</eq>, and is proved in <span class="citation">[<a href="#ref-3-IV-6" role="doc-biblioref">19</a>]</span> by transcendental methods in the case where the base field is <eq env="math">\mathbb{C}</eq>.
+We note here that, in general, <eq env="math">S</eq> now arbitrary, Kodaira’s condition is a sufficient condition for the canonical morphism <eq env="math">D\to\underline{\Pic}_{X/S}</eq> from the prescheme of divisors to the Picard prescheme of <eq env="math">X/S</eq> to be simple at the point <eq env="math">x</eq> in question (as we easily verify by the usual criterion for simplicity, once we have the existence of <eq env="math">\underline{\Pic}_{X/S}</eq>).
+Then if, further, <eq env="math">\underline{\Pic}_{X/S}</eq> is simple over <eq env="math">S</eq> at the point given by the image of <eq env="math">x</eq> (for example if <eq env="math">\underline{\Pic}_{X/S}</eq> is simple over <eq env="math">S</eq>), then <eq env="math">D</eq> is simple over <eq env="math">S</eq> at <eq env="math">x</eq>.
+On the other hand, Cartier has shown that every group prescheme locally of finite type over <em>a field <eq env="math">k</eq> of characteristic <eq env="math">0</eq></em> is simple over <eq env="math">k</eq>&gt;
+By combining these two results, we recover the result of Kodaira.
+Note that it follows from these remarks that, over a field <eq env="math">K</eq> of characteristic <eq env="math">p&gt;0</eq>, if <eq env="math">\underline{\Pic}_{X/S}</eq> is not simple over <eq env="math">k</eq> (which is the case whenever <eq env="math">X</eq> is the Igusa surface), then the condition <eq env="math">\operatorname{H}^1(X_0,{\mathscr{L}})=0</eq> implies to the contrary that <eq env="math">D</eq> is not simple at <eq env="math">x</eq>, and even not reduced at <eq env="math">x</eq> if <eq env="math">K</eq> is algebraically closed.</p>
+</div>
+<p>To finish, we give the following result, which plays an important role in the differential study of fibred spaces:</p>
+<div id="fga-3-iv-proposition-5.7" class="itenv" title="Proposition 5.7">
+<p>Let <eq env="math">X</eq> be a finite prescheme that is flat over <eq env="math">S</eq> and locally Noetherian, and let <eq env="math">Z</eq> be a prescheme over <eq env="math">S</eq> such that <eq env="math">\prod_{X/S}(Z/X)</eq> exists (which is the case if <eq env="math">Z</eq> is quasi-projective over <eq env="math">X</eq>).
+If <eq env="math">Z</eq> is simple over <eq env="math">X</eq>, then <eq env="math">\prod_{X/S}(Z/X)</eq> is simple over <eq env="math">S</eq>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-28" class="proof"><em>Proof</em>. </span>This is an immediate consequence of the definition, and of the usual criterion of simplicity <span class="citation">[<a href="#ref-3-IV-3" role="doc-biblioref">16</a>, III, §3.1]</span>.</p>
+</div>
+<p>Note that if <eq env="math">X</eq> is finite and flat over <eq env="math">S</eq>, then the question of the existence of <eq env="math">\prod_{X/S}(Z/X)</eq> can be dealt with in a very elementary manner, without using the theory of Hilbert schemes.
+We find, for example, that if <eq env="math">X</eq> is radicial over <eq env="math">S</eq>, then <eq env="math">\prod_{X/S}(Z/X)</eq> exists without any restrictions on <eq env="math">Z</eq>.
+For example, let <eq env="math">T</eq> be an <eq env="math">S</eq>-prescheme, and let <eq env="math">T_n</eq> be “the infinitesimal neighbourhood of order <eq env="math">n</eq>” of the diagonal of <eq env="math">T\times_S T</eq> in <eq env="math">T\times_S T</eq>, endowed with the morphisms <eq env="math">p_1,p_2\colon T_n\to T</eq> induced by the two projections.
+We can consider <eq env="math">T_n</eq> as a finite prescheme over <eq env="math">T</eq> thanks to <eq env="math">p_1</eq>, and we suppose further that <eq env="math">T_n</eq> is flat over <eq env="math">T</eq> (which is the case if <eq env="math">T</eq> is simple over <eq env="math">S</eq>).
+For every prescheme <eq env="math">X</eq> over <eq env="math">T</eq>, set
+<eq env="displaymath">
+  (X/T/S)^{(n)} = \prod_{T_n/S}(p_2^*(X/T)/T_n)
+</eq>
+which is a prescheme over <eq env="math">T</eq> called the <em>bundle of germs of sections of order <eq env="math">n</eq> of <eq env="math">X</eq> over <eq env="math">T</eq></em> (with respect to <eq env="math">S</eq>).
+This depends functorially on <eq env="math">X</eq>, and is simple over <eq env="math">T</eq> if <eq env="math">X</eq> is.</p>
+</div>
+<div id="fga-3-iv-section-6" class="section level2" number="6.6">
+<h2><span class="header-section-number">6.6</span> Relation to the notion of norm and symmetric products</h2>
+<p>Let <eq env="math">S</eq> be a preshcheme, let <eq env="math">X</eq> and <eq env="math">Y</eq> be <eq env="math">S</eq>-preschemes, and let
+<eq env="displaymath">
+  u\colon(X/S)^n\to Y
+</eq>
+be a <em>symmetric</em> <eq env="math">S</eq>-morphism from the <eq env="math">n</eq>-th cartesian power of <eq env="math">X/S</eq> to <eq env="math">Y</eq>.
+Suppose, for simplicity, that <eq env="math">S</eq> is locally Noetherian, and that <eq env="math">X</eq> and <eq env="math">Y</eq> are of finite type over <eq env="math">S</eq>.
+We can then associate, to every coherent module <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq> with finite support on <eq env="math">S</eq> that is furthermore flat over <eq env="math">S</eq> and of rank equal to <eq env="math">n</eq> with respect to <eq env="math">S</eq> (i.e. such that <eq env="math">f_*({\mathscr{F}})</eq> is a locally free module of rank <eq env="math">n</eq> on <eq env="math">S</eq>), in a natural way a section of <eq env="math">Y</eq> over <eq env="math">S</eq>:
+<eq env="displaymath">
+  {\mathscr{N}}_{X/S}^u({\mathscr{F}}) \in \Gamma(Y/S).
+</eq></p>
 
 </div>
 </div>
@@ -808,8 +858,14 @@ If <eq env="math">\operatorname{H}^1(Y_0,\check{{\mathscr{N}}_{X_0/Y_0}})=0</eq>
 <div id="ref-3-IV-5" class="csl-entry">
 <div class="csl-left-margin">[18] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“Eléments de géométrie algébrique, <span>I</span>, <span>II</span>, <span>III</span>, <span>IV</span>.”</span> <em>Publications Mathématiques de l’Institut Des Hautes Études Scientifiques</em>. (n.d.).</div>
 </div>
+<div id="ref-3-IV-6" class="csl-entry">
+<div class="csl-left-margin">[19] </div><div class="csl-right-inline">K. Kodaira. <span>“Characteristic linear systems of complete continuous systems.”</span> <em>Amer. J. Of Math.</em> <strong>78</strong> (1956), 716–744.</div>
+</div>
 <div id="ref-3-IV-7" class="csl-entry">
 <div class="csl-left-margin">[28] </div><div class="csl-right-inline">J.-P. Serre. <span>“Exemples de variétés projectives en caractéristique <eq env="math">p</eq> non relevables en caractéristique <eq env="math">0</eq>.”</span> <em>Proc. Nat. Acad. Sc. U.S.A.</em> <strong>47</strong> (1961), 108–109.</div>
+</div>
+<div id="ref-3-IV-8" class="csl-entry">
+<div class="csl-left-margin">[29] </div><div class="csl-right-inline">G. Zappa. <span>“Sull’esistenza, sopra la superficie algebriche, di sistemi continui completi infiniti, la cui curva e a serie caratteristica incompleta.”</span> <em>Pont. Acad. Sc. Acta</em>. <strong>9</strong> (1945), 91–93.</div>
 </div>
 </div>
 <div class="footnotes">
