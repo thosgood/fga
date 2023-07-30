@@ -189,6 +189,7 @@ div.csl-indent {
 <li class="chapter" data-level="6.4" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-4"><i class="fa fa-check"></i><b>6.4</b> Variants</a></li>
 <li class="chapter" data-level="6.5" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-5"><i class="fa fa-check"></i><b>6.5</b> Differential study of Hilbert schemes</a></li>
 <li class="chapter" data-level="6.6" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-6"><i class="fa fa-check"></i><b>6.6</b> Relation to the notion of norm and symmetric products</a></li>
+<li class="chapter" data-level="6.7" data-path="FGA-3-IV.html"><a href="FGA-3-IV.html#fga-3-iv-section-7"><i class="fa fa-check"></i><b>6.7</b> Supplements and questions</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="FGA-3-V.html"><a href="FGA-3-V.html"><i class="fa fa-check"></i><b>7</b> Picard schemes: Existence theorems</a></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
@@ -828,7 +829,7 @@ This depends functorially on <eq env="math">X</eq>, and is simple over <eq env="
 </div>
 <div id="fga-3-iv-section-6" class="section level2" number="6.6">
 <h2><span class="header-section-number">6.6</span> Relation to the notion of norm and symmetric products</h2>
-<p>Let <eq env="math">S</eq> be a preshcheme, let <eq env="math">X</eq> and <eq env="math">Y</eq> be <eq env="math">S</eq>-preschemes, and let
+<p>Let <eq env="math">S</eq> be a prescheme, let <eq env="math">X</eq> and <eq env="math">Y</eq> be <eq env="math">S</eq>-preschemes, and let
 <eq env="displaymath">
   u\colon(X/S)^n\to Y
 </eq>
@@ -837,7 +838,41 @@ Suppose, for simplicity, that <eq env="math">S</eq> is locally Noetherian, and t
 We can then associate, to every coherent module <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq> with finite support on <eq env="math">S</eq> that is furthermore flat over <eq env="math">S</eq> and of rank equal to <eq env="math">n</eq> with respect to <eq env="math">S</eq> (i.e. such that <eq env="math">f_*({\mathscr{F}})</eq> is a locally free module of rank <eq env="math">n</eq> on <eq env="math">S</eq>), in a natural way a section of <eq env="math">Y</eq> over <eq env="math">S</eq>:
 <eq env="displaymath">
   {\mathscr{N}}_{X/S}^u({\mathscr{F}}) \in \Gamma(Y/S).
-</eq></p>
+</eq>
+We will not give here the details of the definition, but instead content ourselves with noting that the formalism to which one arrives is a natural generalisation of the usual formalism of norms and traces.
+When the symmetric <eq env="math">n</eq>-th power of <eq env="math">X</eq> over <eq env="math">S</eq> exists (for example, if the orbits of the symmetric group <eq env="math">\sigma_n</eq> acting on <eq env="math">(X/S)^n</eq> are contained inside open affines), we can take <eq env="math">Y</eq> to be this symmetric power <eq env="math">\operatorname{Symm}_S^n(X)</eq>, and we obtain a canonical element
+<eq env="displaymath">
+  {\mathscr{N}}_{X/S}({\mathscr{F}}) \in \Gamma(\operatorname{Symm}_S^n(X)/S)
+</eq>
+which allows us to recover the <eq env="math">{\mathscr{N}}_{X/S}^u({\mathscr{F}})</eq>.
+Another important case is that where <eq env="math">X</eq> is a commutative monoid over <eq env="math">S</eq>, and <eq env="math">X=Y</eq>, and the morphism <eq env="math">u</eq> comes from the composition law of <eq env="math">X</eq>.
+We then simply write <eq env="math">{\mathscr{N}}({\mathscr{F}})</eq> for the section of <eq env="math">X</eq> over <eq env="math">S</eq> associated to the module <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq>.</p>
+<p>Now suppose that we have a coherent module <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X</eq> such that <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}</eq> exists, or at least such that the functor <eq env="math">\mathscr{Q}\kern -.5pt out_{{{\mathscr{F}}/X/S}}^n</eq>, which associates to each <eq env="math">S'</eq> over <eq env="math">S</eq> the set of coherent quotient sheaves <eq env="math">{\mathscr{M}}</eq> of <eq env="math">{\mathscr{F}}'={\mathscr{F}}\otimes_{{\mathscr{O}}_S}{\mathscr{O}}_{S'}</eq> that are flat over <eq env="math">S</eq> and of relative rank <eq env="math">n</eq>, is representable by an <eq env="math">S</eq>-prescheme <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}^n</eq>.
+(If <eq env="math">X</eq> is quasi-projective over <eq env="math">S</eq>, then <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}^n</eq> indeed exists, and is exactly, with the notation of <a href="FGA-3-IV.html#fga-3-iv-section-3">§3</a>, <eq env="math">\underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}^P</eq>, where <eq env="math">P</eq> is the polynomial consisting of the constant term <eq env="math">n</eq>).
+Since the formation of the <eq env="math">{\mathscr{N}}_{X/S}^u({\mathscr{M}})</eq> is compatible with base change, we thus obtain a canonical morphism
+<eq env="displaymath">
+  {\mathscr{N}}_{X/S}^u\colon \underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}^n \to Y
+</eq>
+and, in particular, if the <eq env="math">n</eq>-th symmetric power of <eq env="math">X</eq> over <eq env="math">S</eq> exists,
+<eq env="displaymath">
+  {\mathscr{N}}_{X/S}\colon \underline{\operatorname{Quot}}_{{{\mathscr{F}}/X/S}}^n \to \operatorname{Symm}_S^n(X).
+</eq>
+The most important case is that where <eq env="math">{\mathscr{F}}={\mathscr{O}}_X</eq>, which gives a morphism
+<eq env="displaymath">
+  {\mathscr{N}}_{X/S}\colon \underline{\operatorname{Hilb}}_{X/S}^n \to \operatorname{Symm}_S^n(X).
+</eq>
+This is evidently an isomorphism for <eq env="math">n=0</eq> and <eq env="math">n=1</eq>.
+But for <eq env="math">n\geqslant 1</eq>, even if <eq env="math">S</eq> is the spectrum of a field <eq env="math">k</eq>, and <eq env="math">X</eq> is simple over <eq env="math">S</eq>, it is not in general an isomorphism nor even an injective morphism, since a sub-scheme of dimension <eq env="math">0</eq> of <eq env="math">X</eq> (corresponding, for example, to a primary ideal <eq env="math">{\mathscr{I}}</eq> for the maximal ideal in a local ring <eq env="math">{\mathscr{O}}_{X,x}</eq>, for a closed point <eq env="math">x</eq> of <eq env="math">X</eq>) is not known when we know only the cycle that it defines (to be precise, when we know the codimension over <eq env="math">k</eq> of <eq env="math">{\mathscr{I}}</eq> in <eq env="math">{\mathscr{O}}_{X,x}</eq>).
+We can only say the following (where <eq env="math">S</eq> is once more arbitrary):</p>
+<ol style="list-style-type: lower-alpha">
+<li>If <eq env="math">X</eq> is simple over <eq env="math">S</eq>, then the norm morphism defines an isomorphism from the open of <eq env="math">\underline{\operatorname{Hilb}}_{X/S}^n</eq> that corresponds to the classification of étale covers of rank <eq env="math">n</eq> contained inside <eq env="math">X</eq> (cf. <a href="FGA-3-IV.html#fga-3-iv-section-4">§4.b</a>) to the open of <eq env="math">\operatorname{Symm}_S^n(X)</eq> that corresponds to the <eq env="math">n</eq>-cycles without multiple components.</li>
+<li>If furthermore <eq env="math">X</eq> is of relative dimension <eq env="math">1</eq> over <eq env="math">S</eq>, then the norm morphism even defines an isomorphism from <eq env="math">\underline{\operatorname{Hilb}}_{X/S}^n</eq> to <eq env="math">\operatorname{Symm}_{X/S}^n</eq>.</li>
+</ol>
+<p>This second fact is due to the fact that a subscheme of dimension <eq env="math">0</eq> of a non-singular algebraic curve is known whenever we know the corresponding cycle.
+The same remark also applies more generally to Cartier divisors that are positive over a non-singular algebraic scheme (and it is not excluded that, in this very particular case, the Chow variety gives the same thing as the Hilbert variety).</p>
+</div>
+<div id="fga-3-iv-section-7" class="section level2" number="6.7">
+<h2><span class="header-section-number">6.7</span> Supplements and questions</h2>
 
 </div>
 </div>
@@ -938,7 +973,7 @@ gitbook.start({
 "fontsettings": {
 "theme": "white",
 "family": "serif",
-"size": 1
+"size": 2
 },
 "edit": {
 "link": null,
