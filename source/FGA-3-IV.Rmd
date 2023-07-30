@@ -28,6 +28,7 @@
 \providecommand{\Hilb}{\operatorname{Hilb}}
 \providecommand{\shHilb}{\mathscr{H}\kern -.5pt ilb}
 \providecommand{\repHilb}{\underline{\Hilb}}
+\providecommand{\repPic}{\underline{\Pic}}
 \providecommand{\repIsom}{\underline{\operatorname{Isom}}}
 \providecommand{\repImm}{\underline{\operatorname{Imm}}}
 \providecommand{\FXS}{{\scr{F}/X/S}}
@@ -719,5 +720,62 @@ If $\HH^1(Y_0,\check{\scr{N}_{X_0/Y_0}})=0$, then the Hilbert prescheme $X$ is s
 :::
 
 ::: {.rmenv #fga-3-iv-remark-5.5 title="Remark 5.5"}
-This
+This statement applies in particular when $Y_0$ is a complete intersection in $X_0$ defined by *one* single equation, i.e. is a positive "Cartier divisor".
+Then $\check{\scr{N}}_{X_0/Y_0}$ is isomorphic to the sheaf on $Y_0$ induced by the invertible sheaf $\scr{J}^{-1}$ on $X_0$ defined by the divisor $Y_0$.
+This is the situation that we find in particular in the study of families of positive divisors on a non-singular projective variety $X_0$.
+The isomorphism between the Zariski tangent space at the point $x$ of $Q$ (or, if one prefers, of the open $D$ of $Q$ that corresponds to the divisors) and $\scr{H}^0(Y_0,\check{\scr{N}}_{X_0/Y_0})$ was known in classical algebraic geometry under the name of "*characteristic homomorphism*" (from the former to the latter).
+It was not defined when $x$ was a simple point of the variety of parameters $T$ of a "complete continuous family" of divisors, i.e. from our point of view, an irreducible component of the scheme $D$, endowed with the induced *reduced* structure.
+The tangent space of $T$ at $x$ is then a *subspace* of the tangent space of $D$ at $x$, and so the characteristic homomorphic of yore is indeed injective, but it is not surjective except for under supplementary conditions, for example if $D$ is integral at $x$.
+\oldpage{221-24}
+In fact, Zappa [@3-IV-8] constructed an example (with $X$ a non-singular projective surface over the *field of complex numbers*) where even at the generic point of $T$ the characteristic homomorphism is not surjective.
+*This thus implies that $D$ is not integral even at the generic point of the irreducible component in question.*
+This shows in a particularly striking manner how varieties with nilpotent elements are necessary for understanding the most classical phenomena of the theory of surfaces.
 :::
+
+::: {.rmenv #fga-3-iv-remark-5.6 title="Remark 5.6"}
+We have given, in [(5.4)](#fga-3-iv-remark-5.4), a criterion for simplicity, which applies in particular to schemes of divisors.
+Kodaira gave a different criterion in [@3-IV-6], given by the vanishing of $\HH^1(X_0,\scr{L})$, where $\scr{L}=\scr{J}_0^{-1}$ is the invertible sheaf on $X_0$ defined by the divisor $Y_0$;
+this criterion holds whenever $S$ is the spectrum of a field of characteristic $0$, and is proved in [@3-IV-6] by transcendental methods in the case where the base field is $\mathbb{C}$.
+We note here that, in general, $S$ now arbitrary, Kodaira's condition is a sufficient condition for the canonical morphism $D\to\repPic_{X/S}$ from the prescheme of divisors to the Picard prescheme of $X/S$ to be simple at the point $x$ in question (as we easily verify by the usual criterion for simplicity, once we have the existence of $\repPic_{X/S}$).
+Then if, further, $\repPic_{X/S}$ is simple over $S$ at the point given by the image of $x$ (for example if $\repPic_{X/S}$ is simple over $S$), then $D$ is simple over $S$ at $x$.
+On the other hand, Cartier has shown that every group prescheme locally of finite type over *a field $k$ of characteristic $0$* is simple over $k$>
+By combining these two results, we recover the result of Kodaira.
+Note that it follows from these remarks that, over a field $K$ of characteristic $p>0$, if $\repPic_{X/S}$ is not simple over $k$ (which is the case whenever $X$ is the Igusa surface), then the condition $\HH^1(X_0,\scr{L})=0$ implies to the contrary that $D$ is not simple at $x$, and even not reduced at $x$ if $K$ is algebraically closed.
+:::
+
+To finish, we give the following result, which plays an important role in the differential study of fibred spaces:
+
+::: {.itenv #fga-3-iv-proposition-5.7 title="Proposition 5.7"}
+Let $X$ be a finite prescheme that is flat over $S$ and locally Noetherian, and let $Z$ be a prescheme over $S$ such that $\prod_{X/S}(Z/X)$ exists (which is the case if $Z$ is quasi-projective over $X$).
+If $Z$ is simple over $X$, then $\prod_{X/S}(Z/X)$ is simple over $S$.
+:::
+
+::: {.proof}
+This is an immediate consequence of the definition, and of the usual criterion of simplicity [@3-IV-3, III, §3.1].
+:::
+
+Note that if $X$ is finite and flat over $S$, then the question of the existence of $\prod_{X/S}(Z/X)$ can be dealt with in a very elementary manner, without using the theory of Hilbert schemes.
+\oldpage{221-25}
+We find, for example, that if $X$ is radicial over $S$, then $\prod_{X/S}(Z/X)$ exists without any restrictions on $Z$.
+For example, let $T$ be an $S$-prescheme, and let $T_n$ be "the infinitesimal neighbourhood of order $n$" of the diagonal of $T\times_S T$ in $T\times_S T$, endowed with the morphisms $p_1,p_2\colon T_n\to T$ induced by the two projections.
+We can consider $T_n$ as a finite prescheme over $T$ thanks to $p_1$, and we suppose further that $T_n$ is flat over $T$ (which is the case if $T$ is simple over $S$).
+For every prescheme $X$ over $T$, set
+$$
+  (X/T/S)^{(n)} = \prod_{T_n/S}(p_2^*(X/T)/T_n)
+$$
+which is a prescheme over $T$ called the *bundle of germs of sections of order $n$ of $X$ over $T$* (with respect to $S$).
+This depends functorially on $X$, and is simple over $T$ if $X$ is.
+
+
+## Relation to the notion of norm and symmetric products {#fga-3-iv-section-6}
+
+Let $S$ be a preshcheme, let $X$ and $Y$ be $S$-preschemes, and let
+$$
+  u\colon(X/S)^n\to Y
+$$
+be a *symmetric* $S$-morphism from the $n$-th cartesian power of $X/S$ to $Y$.
+Suppose, for simplicity, that $S$ is locally Noetherian, and that $X$ and $Y$ are of finite type over $S$.
+We can then associate, to every coherent module $\scr{F}$ on $X$ with finite support on $S$ that is furthermore flat over $S$ and of rank equal to $n$ with respect to $S$ (i.e. such that $f_*(\scr{F})$ is a locally free module of rank $n$ on $S$), in a natural way a section of $Y$ over $S$:
+$$
+  \scr{N}_{X/S}^u(\scr{F}) \in \Gamma(Y/S).
+$$
