@@ -220,11 +220,6 @@ div.csl-indent {
 “Technique de descente et théorèmes d’existence en géométrie algébrique, IV: Les schémas de Hilbert”.
 <em>Séminaire Bourbaki</em> <strong>13</strong> (1960–61), Talk no. 221.</p>
 </div>
-<p><strong>TO-DO:</strong></p>
-<ul>
-<li><strong>additif</strong></li>
-<li><strong>errata</strong></li>
-</ul>
 <div id="introduction-1" class="section level2 unnumbered">
 <h2>Introduction</h2>
 <p>The techniques described in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">15</a>, I and II]</span> were, for the most part, independent of any projective hypotheses on the schemes in question.
@@ -873,6 +868,20 @@ The same remark also applies more generally to Cartier divisors that are positiv
 </div>
 <div id="fga-3-iv-section-7" class="section level2" number="6.7">
 <h2><span class="header-section-number">6.7</span> Supplements and questions</h2>
+<p>As remarked by J.-P. Serre, it follows from a well-known example of Nagata that we can find a scheme <eq env="math">S</eq> that is the spectrum of a field <eq env="math">k</eq>, an <eq env="math">S</eq>-scheme <eq env="math">S'</eq> that is the spectrum of a quadratic extension <eq env="math">k'</eq> of <eq env="math">k</eq>, and finally a simple and proper (but non-projective) <eq env="math">S'</eq>-scheme <eq env="math">X</eq> of dimension <eq env="math">3</eq> such that <eq env="math">\prod_{S'/S}(X/S)</eq> does not exist.
+This implies a fortiori that the Hilbert scheme <eq env="math">\underline{\operatorname{Hilb}}_{X/S}^2</eq> does not exist (nor even the <eq env="math">k</eq>-scheme that would represent the étale covers of rank <eq env="math">2</eq> of <eq env="math">S</eq> contained inside <eq env="math">X</eq>, nor a fortiori the symmetric square of <eq env="math">X</eq>, cf. <a href="FGA-3-IV.html#fga-3-iv-section-6">§6</a>).
+This thus imposes serious limitations on the possibilities of non-projective constructions in algebraic geometry.
+(It is, however, plausible that such limitations do not present themselves in analytic geometry, just as they do not present themselves in formal geometry (cf. <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">15</a>, II]</span>)).
+However, if <eq env="math">X</eq> is a proper scheme over the spectrum <eq env="math">S</eq> of a field <eq env="math">k</eq>, and if <eq env="math">Z</eq> is quasi-projective over <eq env="math">X</eq>, then <eq env="math">\prod_{X/S}(Z/X)</eq> exists, and is a scheme, given by the sum of a sequence of quasi-projective schemes over <eq env="math">S</eq> (as in the projective case <a href="FGA-3-IV.html#fga-3-iv-theorem-3.1">(3.1)</a>).
+To see this, we can reduce to the case where <eq env="math">X</eq> is itself projective, by dominating <eq env="math">X</eq> by a projective <eq env="math">S</eq>-scheme <eq env="math">X'</eq>;
+we will not give here the details of the proof, which also uses the result of factorisation of a finite morphism given in <span class="citation">[<a href="#ref-3-IV-2" role="doc-biblioref">15</a>, I, A, 2.b]</span>.
+The success of the method is all in the fact that, with <eq env="math">S</eq> the spectrum of a field, the <eq env="math">X'</eq> that appears in Chow’s lemma will automatically be flat over <eq env="math">S</eq>.
+I do not know if the result remains true without any hypotheses on <eq env="math">S</eq>, supposing only that <eq env="math">X</eq> is proper and flat over <eq env="math">S</eq>, and that <eq env="math">Z</eq> is quasi-projective over <eq env="math">X</eq>.
+An important case in the applications is that where <eq env="math">Z</eq> is a closed subscheme of <eq env="math">X</eq>;
+if then <eq env="math">\prod_{X/S}(Z/X)</eq> exists, it is necessarily a closed subscheme of <eq env="math">S</eq>.
+We can construct it directly in a relatively simple manner whenever <eq env="math">X</eq> is projective over <eq env="math">S</eq>, without using the theory of Hilbert schemes, and the method used shows more generally that, if <eq env="math">Z</eq> is affine over <eq env="math">X</eq>, then <eq env="math">\prod_{X/S}(Z/X)</eq> exists and is affine over <eq env="math">S</eq>.
+It equally shows that, if <eq env="math">X</eq> is proper and flat over <eq env="math">S</eq> (but not necessarily projective over <eq env="math">S</eq>), then, for every vector bundle <eq env="math">Z</eq> that is locally trivial on <eq env="math">X</eq>, <eq env="math">\prod_{X/S}(Z/X)</eq> exists and is a vector bundle on <eq env="math">S</eq>.
+It would be desirable for these results to be studied again and unified.</p>
 
 </div>
 </div>
