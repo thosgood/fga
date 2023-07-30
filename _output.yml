@@ -6,7 +6,7 @@ bookdown::gitbook:
   css: ["style.css", "https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"]
   includes:
     after_body: ["scripts.html"]
-  split_by: rmd
+  split_by: section
   split_bib: yes
   config:
     toc:
@@ -17,6 +17,6 @@ bookdown::gitbook:
     fontsettings:
       theme: white
       family: serif
-      size: 1
+      size: 2
     sharing: no
     info: no
