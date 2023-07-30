@@ -36,6 +36,7 @@
 \providecommand{\RR}{\operatorname{R}}
 \providecommand{\rank}{\operatorname{rank}}
 \providecommand{\Spec}{\operatorname{Spec}}
+\providecommand{\Symm}{\operatorname{Symm}}
 
 <!-- Content -->
 
@@ -769,7 +770,7 @@ This depends functorially on $X$, and is simple over $T$ if $X$ is.
 
 ## Relation to the notion of norm and symmetric products {#fga-3-iv-section-6}
 
-Let $S$ be a preshcheme, let $X$ and $Y$ be $S$-preschemes, and let
+Let $S$ be a prescheme, let $X$ and $Y$ be $S$-preschemes, and let
 $$
   u\colon(X/S)^n\to Y
 $$
@@ -779,3 +780,40 @@ We can then associate, to every coherent module $\scr{F}$ on $X$ with finite sup
 $$
   \scr{N}_{X/S}^u(\scr{F}) \in \Gamma(Y/S).
 $$
+We will not give here the details of the definition, but instead content ourselves with noting that the formalism to which one arrives is a natural generalisation of the usual formalism of norms and traces.
+When the symmetric $n$-th power of $X$ over $S$ exists (for example, if the orbits of the symmetric group $\sigma_n$ acting on $(X/S)^n$ are contained inside open affines), we can take $Y$ to be this symmetric power $\Symm_S^n(X)$, and we obtain a canonical element
+$$
+  \scr{N}_{X/S}(\scr{F}) \in \Gamma(\Symm_S^n(X)/S)
+$$
+\oldpage{221-26}
+which allows us to recover the $\scr{N}_{X/S}^u(\scr{F})$.
+Another important case is that where $X$ is a commutative monoid over $S$, and $X=Y$, and the morphism $u$ comes from the composition law of $X$.
+We then simply write $\scr{N}(\scr{F})$ for the section of $X$ over $S$ associated to the module $\scr{F}$ on $X$.
+
+Now suppose that we have a coherent module $\scr{F}$ on $X$ such that $\repQuot_{\FXS}$ exists, or at least such that the functor $\shQuot_{\FXS}^n$, which associates to each $S'$ over $S$ the set of coherent quotient sheaves $\scr{M}$ of $\scr{F}'=\scr{F}\otimes_{\OO_S}\OO_{S'}$ that are flat over $S$ and of relative rank $n$, is representable by an $S$-prescheme $\repQuot_{\FXS}^n$.
+(If $X$ is quasi-projective over $S$, then $\repQuot_{\FXS}^n$ indeed exists, and is exactly, with the notation of [§3](#fga-3-iv-section-3), $\repQuot_{\FXS}^P$, where $P$ is the polynomial consisting of the constant term $n$).
+Since the formation of the $\scr{N}_{X/S}^u(\scr{M})$ is compatible with base change, we thus obtain a canonical morphism
+$$
+  \scr{N}_{X/S}^u\colon \repQuot_{\FXS}^n \to Y
+$$
+and, in particular, if the $n$-th symmetric power of $X$ over $S$ exists,
+$$
+  \scr{N}_{X/S}\colon \repQuot_{\FXS}^n \to \Symm_S^n(X).
+$$
+The most important case is that where $\scr{F}=\OO_X$, which gives a morphism
+$$
+  \scr{N}_{X/S}\colon \repHilb_{X/S}^n \to \Symm_S^n(X).
+$$
+This is evidently an isomorphism for $n=0$ and $n=1$.
+But for $n\geq1$, even if $S$ is the spectrum of a field $k$, and $X$ is simple over $S$, it is not in general an isomorphism nor even an injective morphism, since a sub-scheme of dimension $0$ of $X$ (corresponding, for example, to a primary ideal $\scr{I}$ for the maximal ideal in a local ring $\OO_{X,x}$, for a closed point $x$ of $X$) is not known when we know only the cycle that it defines (to be precise, when we know the codimension over $k$ of $\scr{I}$ in $\OO_{X,x}$).
+We can only say the following (where $S$ is once more arbitrary):
+
+a. If $X$ is simple over $S$, then the norm morphism defines an isomorphism from the open of $\repHilb_{X/S}^n$ that corresponds to the classification of étale covers of rank $n$ contained inside $X$ (cf. [§4.b](#fga-3-iv-section-4)) to the open of $\Symm_S^n(X)$ that corresponds to the $n$-cycles without multiple components.
+b. If furthermore $X$ is of relative dimension $1$ over $S$, then the norm morphism even defines an isomorphism from $\repHilb_{X/S}^n$ to $\Symm_{X/S}^n$.
+
+\oldpage{221-27}
+This second fact is due to the fact that a subscheme of dimension $0$ of a non-singular algebraic curve is known whenever we know the corresponding cycle.
+The same remark also applies more generally to Cartier divisors that are positive over a non-singular algebraic scheme (and it is not excluded that, in this very particular case, the Chow variety gives the same thing as the Hilbert variety).
+
+
+## Supplements and questions {#fga-3-iv-section-7}
