@@ -42,10 +42,15 @@ jobs:
         if: steps.cache-r-packages.outputs.cache-hit != 'true'
         run: |
           R -e "install.packages('bookdown')"
-
-      - name: 🛠 Set version hash
+     
+      - name: 🛠 Get commit hash
+        id: hash
         run: |
-          sed -i "s/GIT_COMMIT_HASH_VARIABLE/${{ github.sha }}/g" ./index.Rmd
+          echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+      
+      - name: 🛠 Replace commit hash
+        run: |
+          sed -i "s/GIT_COMMIT_HASH/${{ steps.hash.outputs.sha_short }}/g" ./index.Rmd
 
       - name: 🛠 Build site
         run: |
