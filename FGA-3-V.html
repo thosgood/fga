@@ -195,6 +195,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="7.1" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-1"><i class="fa fa-check"></i><b>7.1</b> Relative Picard groups and functors</a></li>
 <li class="chapter" data-level="7.2" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-2"><i class="fa fa-check"></i><b>7.2</b> Relations between the various relative and absolute Picard groups</a></li>
+<li class="chapter" data-level="7.3" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-3"><i class="fa fa-check"></i><b>7.3</b> The principal existence theorem: statement</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
@@ -322,8 +323,8 @@ We then have an evident bijection</p>
 \tag{1.7}
 </eq></p>
 </div>
-<p>An element of <eq env="math">\operatorname{Pic}(X/S)</eq> is thus defined by means of an element <eq env="math">\xi'</eq> of a group <eq env="math">\operatorname{Pic}(X\times_S S')</eq> (where <eq env="math">S'\to S</eq> is faithfully flat and quasi-compact) such that we can find a faithfully flat and quasi-compact morphism <eq env="math">S''\to S'\times_S S'</eq> such that the two inverse images of <eq env="math">\xi'</eq> in <eq env="math">\operatorname{Pic}(X\times_S S'')</eq> are the same.
-An element <eq env="math">\xi'</eq> of <eq env="math">\operatorname{Pic}(X\times_S S')</eq> and an element <eq env="math">\xi_1</eq> of <eq env="math">\operatorname{Pic}(X\times_S S_1)</eq> (satisfying the conditions that we have just stated) define the same element of <eq env="math">\operatorname{Pic}(X/S)</eq> if and only if there exists a faithfully flat and quasi-compact morphism <eq env="math">S'_1\to S'\times_S S_1</eq> such that the images of the two elements in question in <eq env="math">\operatorname{Pic}(X\times_S S'_1)</eq> are equal.
+<p>An element of <eq env="math">\operatorname{Pic}(X/S)</eq> is thus defined by means of an element <eq env="math">\xi'</eq> of a group <eq env="math">\operatorname{Pic}(X\times_S S')</eq> (where <eq env="math">S'\to S</eq> is faithfully flat and quasi-compact) such that we can find a faithfully flat quasi-compact morphism <eq env="math">S''\to S'\times_S S'</eq> such that the two inverse images of <eq env="math">\xi'</eq> in <eq env="math">\operatorname{Pic}(X\times_S S'')</eq> are the same.
+An element <eq env="math">\xi'</eq> of <eq env="math">\operatorname{Pic}(X\times_S S')</eq> and an element <eq env="math">\xi_1</eq> of <eq env="math">\operatorname{Pic}(X\times_S S_1)</eq> (satisfying the conditions that we have just stated) define the same element of <eq env="math">\operatorname{Pic}(X/S)</eq> if and only if there exists a faithfully flat quasi-compact morphism <eq env="math">S'_1\to S'\times_S S_1</eq> such that the images of the two elements in question in <eq env="math">\operatorname{Pic}(X\times_S S'_1)</eq> are equal.
 It is often convenient to work instead with the functor <eq env="math">P'=\mathscr{P}\kern -.5pt ic'_{X/S}</eq> introduced above, and we immediately note that the canonical morphism <eq env="math">P\to P'</eq> defines an <em>isomorphism</em></p>
 <div id="fga-3-v-equation-1.8" class="eqref" title="">
 <p><eq env="displaymath">
@@ -333,7 +334,7 @@ It is often convenient to work instead with the functor <eq env="math">P'=\maths
 </eq></p>
 </div>
 <p>which gives a description of <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}</eq> in terms of <eq env="math">\mathscr{P}\kern -.5pt ic'_{X/S}=P'</eq> that is usually more convenient.
-By <a href="#fga-3-v-corollary-2.3">(2.3)</a> below, if we replace <eq env="math">P</eq> by <eq env="math">P'</eq> in the description of <eq env="math">\operatorname{Pic}(X/S)</eq> that we have just given then we can take <eq env="math">S''=S'\times_S S'</eq> and <eq env="math">S'_1=S'\times_S S_1</eq>, at least under the conditions given in <em>loco citato</em>.</p>
+By <a href="FGA-3-V.html#fga-3-v-corollary-2.3">(2.3)</a> below, if we replace <eq env="math">P</eq> by <eq env="math">P'</eq> in the description of <eq env="math">\operatorname{Pic}(X/S)</eq> that we have just given then we can take <eq env="math">S''=S'\times_S S'</eq> and <eq env="math">S'_1=S'\times_S S_1</eq>, at least under the conditions given in <em>loco citato</em>.</p>
 <p>If the functor <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}</eq> is representable, we say that <eq env="math">X/S</eq> admits a Picard prescheme, and the prescheme over <eq env="math">S</eq> that represents the functor is called the <em>Picard prescheme</em> of <eq env="math">X</eq> over <eq env="math">S</eq>, and denoted by <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>.
 For this, it evidently suffices that <eq env="math">P'=\mathscr{P}\kern -.5pt ic_{X/S}</eq> be representable, since then <eq env="math">P'</eq> is already a “sheaf”, and equation <a href="FGA-3-V.html#fga-3-v-equation-1.8">(1.8)</a> proves that the morphism <eq env="math">P'\to{\mathscr{P}}'</eq> can be identified with the canonical morphism</p>
 <div id="fga-3-v-equation-1.9" class="eqref" title="">
@@ -356,9 +357,102 @@ In general, when <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists
 </div>
 <div id="fga-3-v-section-2" class="section level2" number="7.2">
 <h2><span class="header-section-number">7.2</span> Relations between the various relative and absolute Picard groups</h2>
-<div id="proposition-2.1" class="itenv" title="Proposition 2.1">
-<p>Let</p>
+<div id="fga-3-v-proposition-2.1" class="itenv" title="Proposition 2.1">
+<p>Let <eq env="math">f\colon X\to S</eq> be a morphism such that <eq env="math">{\mathscr{O}}_S\xrightarrow{\sim}f_*({\mathscr{O}}_X)</eq>.
+Then we have an exact sequence
+<eq env="displaymath">
+  0
+  \to \operatorname{Pic}(S)
+  \to \operatorname{Pic}(X)
+  \to \operatorname{Pic}'(X/S).
+</eq>
+If <eq env="math">X</eq> admits a section over <eq env="math">S</eq>, then the last morphism is surjective, i.e. we have an isomorphism
+<eq env="displaymath">
+  \operatorname{Pic}'(X/S)
+  \xrightarrow{\sim}\operatorname{Pic}(X)/\operatorname{Pic}(S).
+</eq></p>
 </div>
+<div class="proof">
+<p><span id="unlabeled-div-29" class="proof"><em>Proof</em>. </span>The exact sequence can be considered as the low degrees of the exact sequence that corresponds to the Leray spectral sequence for <eq env="math">f</eq> and <eq env="math">{\mathscr{O}}_X</eq>.
+The second claim is equally formal.</p>
+</div>
+<div id="fga-3-v-proposition-2.2" class="itenv" title="Proposition 2.2">
+<p>Let <eq env="math">f\colon X\to S</eq> be a quasi-compact separated morphism such that <eq env="math">{\mathscr{O}}_S\xrightarrow{\sim}f_*({\mathscr{O}}_X)</eq>, and let <eq env="math">S'\to S</eq> be a faithfully flat quasi-compact morphism.
+Then</p>
+<ol style="list-style-type: lower-roman">
+<li><eq env="math">\operatorname{Pic}'(X/S)\to\operatorname{Pic}'(X\times_S S'/S')</eq> is injective;</li>
+<li>If <eq env="math">X</eq> locally admits a section over <eq env="math">S</eq> (i.e. every <eq env="math">s\in S</eq> has an open neighbourhood <eq env="math">U</eq> such that <eq env="math">X|U</eq> has a section over <eq env="math">U</eq>), then the diagram
+<eq env="displaymath">
+\operatorname{Pic}'(X/S)
+\to \operatorname{Pic}'(X\times_S S'/S')
+\rightrightarrows \operatorname{Pic}'(X\times_S S''/S'')
+  </eq>
+(where <eq env="math">S''=S'\times_S S'</eq>) is exact.</li>
+</ol>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-30" class="proof"><em>Proof</em>. </span></p>
+<p>The first claim follows, thanks to the elementary properties of faithfully flat descent, from the following general remark.
+If <eq env="math">f\colon X\to S</eq> is a morphism such that <eq env="math">{\mathscr{O}}_S\xrightarrow{\sim}f_*({\mathscr{O}}_X)</eq>, then the functor <eq env="math">{\mathscr{F}}\mapsto f^*({\mathscr{F}})</eq>, from the category of locally free modules of finite type on <eq env="math">S</eq> to the category of locally free modules of finite type on <eq env="math">X</eq>, is fully faithful, and its essential image is given by the modules <eq env="math">{\mathscr{G}}</eq> on <eq env="math">X</eq> such that <eq env="math">f_*({\mathscr{G}})</eq> is locally free and such that the canonical homomorphism
+<eq env="displaymath">
+  f^*f_*({\mathscr{G}})
+  \to {\mathscr{G}}
+</eq>
+is an isomorphism.
+The second statement was proven by the theory of descent in <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, B.4]</span>.</p>
+</div>
+<p>The results of <a href="FGA-3-V.html#fga-3-v-proposition-2.2">(2.2)</a> can also be stated as follows:</p>
+<div id="fga-3-v-corollary-2.3" class="itenv" title="Corollary 2.3">
+<p>Under the conditions of <a href="FGA-3-V.html#fga-3-v-proposition-2.2">(2.2)</a>, the canonical homomorphism <a href="FGA-3-V.html#fga-3-v-equation-1.9">(1.9)</a> <eq env="math">\mathscr{P}\kern -.5pt ic'_{X/S}\to\mathscr{P}\kern -.5pt ic_{X/S}</eq> is injective, and even bijective if <eq env="math">X</eq> locally admits a section over <eq env="math">S</eq>.
+(In the latter case, the relative Picard group <eq env="math">\operatorname{Pic}(X/S)</eq> is identified with the restricted relative Picard group <eq env="math">\operatorname{Pic}'(X/S)</eq>.)</p>
+</div>
+<p>Combining this with <a href="FGA-3-V.html#fga-3-v-proposition-2.1">(2.1)</a>, we thus obtain:</p>
+<div id="fga-3-v-corollary-2.4" class="itenv" title="Corollary 2.4">
+<p>Under the conditions of <a href="FGA-3-V.html#fga-3-v-proposition-2.2">(2.2)</a>, we have an exact sequence
+<eq env="displaymath">
+  0
+  \to \operatorname{Pic}(S)
+  \to \operatorname{Pic}(X)
+  \to \operatorname{Pic}(X/S).
+</eq>
+If <eq env="math">X</eq> admits a section over <eq env="math">S</eq>, then the last homomorphism is surjective, i.e. we have an isomorphism
+<eq env="displaymath">
+  \operatorname{Pic}(X/S)
+  \xrightarrow{\sim}\operatorname{Pic}(X)/\operatorname{Pic}(S).
+</eq></p>
+</div>
+<div id="fga-3-v-remark-2.5" class="rmenv" title="Remark 2.5">
+<p>Let <eq env="math">f\colon X\to S</eq> be a morphism such that <eq env="math">{\mathscr{O}}_S\xrightarrow{\sim}f_*({\mathscr{O}}_X)</eq>, and let <eq env="math">g</eq> be a section of <eq env="math">X</eq> over <eq env="math">S</eq>.
+Let <eq env="math">{\mathscr{L}}</eq> be an invertible module on <eq env="math">X</eq>.
+We define the <em><eq env="math">g</eq>-rigidification</em> of <eq env="math">{\mathscr{L}}</eq> to be an isomorphism <eq env="math">{\mathscr{O}}_S\xrightarrow{\sim}g^*({\mathscr{L}})</eq>, and a <em><eq env="math">g</eq>-rigidified invertible module</em> to be an invertible module <eq env="math">{\mathscr{L}}</eq> on <eq env="math">X</eq> endowed with a <eq env="math">g</eq>-rigidification.
+Every automorphism of such a structure is trivial, and <eq env="math">\operatorname{Pic}'(X/S)</eq> can be identified with the set of isomorphism classes of <eq env="math">g</eq>-rigidified invertible modules on <eq env="math">S</eq>.
+(It is this fact that allows us to use the theory of descent to prove <a href="FGA-3-V.html#fga-3-v-proposition-2.2">(2.2), (ii)</a>.)
+This gives a new interpretation of <eq env="math">\operatorname{Pic}(X/S)</eq>, at least when <eq env="math">f</eq> is further quasi-compact and separated, so that <eq env="math">\operatorname{Pic}(X/S)\xrightarrow{\sim}\operatorname{Pic}'(X/S)</eq> by <a href="FGA-3-V.html#fga-3-v-corollary-2.3">(2.3)</a>.</p>
+</div>
+<div id="fga-3-v-remark-2.6" class="rmenv" title="Remark 2.6">
+<p>Let <eq env="math">f\colon X\to S</eq> be a morphism as in <a href="FGA-3-V.html#fga-3-v-proposition-2.2">(2.2)</a>, and let <eq env="math">S'\to S</eq> be a faithfully flat quasi-compact morphism such that there exists an <eq env="math">S</eq>-morphism <eq env="math">S'\to X</eq>, i.e. such that there exists a section of <eq env="math">X'=X\times_S S'</eq> over <eq env="math">S'</eq>.
+Let <eq env="math">S''=S'\times_S S'</eq>, and <eq env="math">X''=X\times_S S''</eq>, and consider the exact sequence
+<eq env="displaymath">
+  \operatorname{Pic}(X/S)
+  \to \operatorname{Pic}(X'/S')
+  \rightrightarrows \operatorname{Pic}(X''/S'').
+</eq>
+Applying <a href="FGA-3-V.html#fga-3-v-corollary-2.4">(2.4)</a>, we obtain the exact sequence
+<eq env="displaymath">
+  \operatorname{Pic}(X/S)
+  \to \operatorname{Pic}(X')/\operatorname{Pic}(S')
+  \rightrightarrows \operatorname{Pic}(X'')/\operatorname{Pic}(S'').
+</eq>
+In particular, every element of the relative Picard group already “comes from” an element of <eq env="math">\operatorname{Pic}(X')</eq>.
+This gives a substantial simplification of the description of the relative Picard group given in the previous section, and even of the Picard functor of <eq env="math">X</eq> over <eq env="math">S</eq>, since, for all <eq env="math">T</eq> over <eq env="math">S</eq>, we can apply the above to <eq env="math">X\times_S T/T</eq> and to the morphism <eq env="math">T'=S'\times_S T\to T</eq>.
+If, for example, <eq env="math">f</eq> itself is faithfully flat, then we can take <eq env="math">S'=X</eq>, which allows us, whenever <eq env="math">f</eq> is further of finite type (resp. simple, etc.), to restrict, in the description of the relative Picard functor <eq env="math">T\mapsto\operatorname{Pic}(X\times_S T/T)</eq>, to the base changes <eq env="math">T'\to T</eq> that are of finite type (resp. simple, etc.).
+If <eq env="math">f</eq> is projective and flat, and <eq env="math">S</eq> locally Noetherian, then we can prove that we can take in the above a <eq env="math">S'\to S</eq> such that <eq env="math">S'</eq> is the direct sum of <em>flat covers</em> <eq env="math">S'_i</eq> of opens <eq env="math">S_i</eq> of <eq env="math">S</eq> that cover <eq env="math">S</eq>;
+if <eq env="math">f</eq> is further separable, then we can take <eq env="math">S'_i</eq> to be étale over <eq env="math">S_i</eq>.</p>
+</div>
+</div>
+<div id="fga-3-v-section-3" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> The principal existence theorem: statement</h2>
+<p>We</p>
 
 </div>
 </div>
