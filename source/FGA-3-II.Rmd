@@ -78,7 +78,7 @@ We then say that the functor $F$ is _representable_.
 The above proposition then implies that the canonical functor $h$ defines an _equivalence_ between the category $\cal{C}$ and the full subcategory of $\Hom(\cal{C}^o,\Set)$ consisting of representable functors.
 This fact is the basis of _the idea of a "solution of a universal problem"_, with such a problem always consisting of examining if a given (contravariant, as here, or covariant, in the dual case) functor from $\cal{C}$ to $\Set$ is representable.
 \oldpage{195-02}
-Note further that, even by the definition of products in a category [@3-II-1], the functor $h\colon X\mapsto h_X$ commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking "kernels" [@3-II-2], etc., whenever such things exist): we have an isomorphism of functors
+Note further that, even by the definition of products in a category [@Gro1957], the functor $h\colon X\mapsto h_X$ commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking "kernels" [@Gro1958a], etc., whenever such things exist): we have an isomorphism of functors
 $$
   h_{X\times X'} \simto h_X\times h_{X'}
 $$
@@ -190,7 +190,7 @@ iii. $F$ commutes with finite products, and, for every exact diagram
     $$
       X\to X'\rightrightarrows X''
     $$
-    in $\cal{C}$ (cf. [@3-II-3, A, Definition 2.1]), the image of the diagram under $F$
+    in $\cal{C}$ (cf. [@Gro1959, I, A, Definition 2.1]), the image of the diagram under $F$
     $$
       F(X)\to F(X')\rightrightarrows F(X'')
     $$
@@ -207,7 +207,7 @@ $$
 $$
 be a covariant functor, and let $X\in\cal{C}$ and $\xi\in F(X)$.
 \oldpage{195-06}
-We say that $\xi$ (or the pair $(X,\xi)$) is _minimal_ if, for all $X'\in\cal{C}$ and all $\xi'\in F(X')$, and for every strict monomorphism (cf. [@3-II-3, A, §2]) $u\colon X'\to X$ such that $\xi=F(u)(\xi')$, $u$ is an isomorphism.
+We say that $\xi$ (or the pair $(X,\xi)$) is _minimal_ if, for all $X'\in\cal{C}$ and all $\xi'\in F(X')$, and for every strict monomorphism (cf. [@Gro1959, I, A, §2]) $u\colon X'\to X$ such that $\xi=F(u)(\xi')$, $u$ is an isomorphism.
 We also say that a pair $(X,\xi)$ _dominates_ $(X'',\xi'')$ (where $xi\in F(X)$ and $\xi''\in F(X'')$) if there exists a morphism $v\colon X\to X''$ such that $\xi''=F(v)(\xi)$;
 _if $\xi$ is minimal, and if $F$ is left exact, then this morphism $v$ is unique_;
 _if $\xi''$ is minimal, then $v$ is surjective_.
@@ -235,8 +235,8 @@ This last fact also implies that _every pro-object of $\cal{C}$ is then strict_.
 
 If $\cal{C}$ is the category of ordinary finite groups, then $\Pro(\cal{C})$ is equivalent to the category of totally disconnected compact topological^[_[Trans.]_ Here the word "Hausdorff" is implicit.] groups.
 It is groups of this type, and their generalisations, obtained by replacing ordinary finite groups with schemes of finite groups over a given base prescheme (for example, finite algebraic groups over a field $k$), that serve as fundamental groups, homotopy groups, and absolute and relative homology groups for preschemes.
-In all these examples, the corollary to [Proposition 3.1](#fga-3-ii-section-A.3-proposition-3.1) applies, and it is indeed by the associated functor that the $\pi_1$ should be defined [@3-II-2].
-It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the "_pro-algebraic groups_" of Serre [@3-II-4].
+In all these examples, the corollary to [Proposition 3.1](#fga-3-ii-section-A.3-proposition-3.1) applies, and it is indeed by the associated functor that the $\pi_1$ should be defined [@Gro1958a].
+It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the "_pro-algebraic groups_" of Serre [@Ser1958].
 
 
 ## Example: "formal varieties" {#fga-3-ii-section-A.5}
@@ -260,7 +260,7 @@ $$
 $$
 Note also that the category $\cal{C}$ is essentially the product of analogous categories, corresponding to the local rings that are the completions of the $\Lambda_{\frak{m}}$ for the maximal ideals $\frak{m}$ of $\Lambda$;
 we can thus, if so desired, restrict to the case where $A$ is such a complete local ring.
-In any case, $O$ decomposes canonically as the topological product of its _local components_, which correspond to the "points" of the _formal scheme_ [@3-II-2] defined by $O$.
+In any case, $O$ decomposes canonically as the topological product of its _local components_, which correspond to the "points" of the _formal scheme_ [@Gro1958a] defined by $O$.
 Such a point is defined by an object $\xi$ of some $F(K)$, where $K\in\cal{C}$ is a _field_ (for example, the residue field of the local component in question), and where two pairs $(\xi,K)$ and $(\xi',K')$ define the same point if and only if they are both dominated by the same $(\xi'',K'')$, or if they both dominate the same $(\xi''',K''')$.
 (If the $\Lambda/\frak{m}$ are algebraically closed, then it suffices to take the set given by the sum of the $F(\Lambda/\frak{m})$).
 
@@ -332,7 +332,7 @@ $$
 $$
 we wish to find manageable criteria for $F$ to be pro-representable, i.e. expressible via a $\Lambda$-algebra $O$ as above.
 By the corollary of [Proposition 3.1](#fga-3-ii-section-A.3-proposition-3.1), to ensure this, it is necessary and sufficient for $F$ to be _left exact_.
-In the current state of the technique of descent (cf. the questions asked in [@3-II-3, p. 9]), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.
+In the current state of the technique of descent (cf. the questions asked in [@Gro1959, I, p. 9]), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.
 
 ::: {.itenv #fga-3-ii-section-B-theorem-1 title="Theorem 1" latex="{Theorem 1}"}
 For the functor $F$ to be pro-representable, it is necessary and sufficient for it to satisfy the two followings conditions:
@@ -342,7 +342,7 @@ ii. for every algebra $A\in\cal{C}$ and every homomorphism $A\to A'$ in $\cal{C}
     $$
       A \to A' \rightrightarrows A'\otimes_A A'
     $$
-    is exact (cf. [@3-II-3, A, Definition 1.2]), the diagram
+    is exact (cf. [@Gro1959, I, A, Definition 1.2]), the diagram
     $$
       F(A) \to F(A') \rightrightarrows F(A'\otimes_A A')
     $$
@@ -360,13 +360,13 @@ The proof of this theorem is rather delicate, and cannot be sketched here.
 We content ourselves with pointing out that it relies essentially on a study of _equivalence relations_ (in the sense of categories) in _the spectrum of an Artinian algebra_ (the study of which poses even more problems, whose solutions seems essential for the further development of the theory).
 
 In applications, the verification of condition (i) is always trivial.
-The verification of condition (ii) splits into two cases: case (a), where $A'$ is a free $A$-module, can be dealt with using the _technique of descent by flat morphisms_ (cf. [@3-II-3, Theorems 1, 2, and 3]), which offers no difficulty;
+The verification of condition (ii) splits into two cases: case (a), where $A'$ is a free $A$-module, can be dealt with using the _technique of descent by flat morphisms_ (cf. [@Gro1959, I, Theorems 1, 2, and 3]), which offers no difficulty;
 to deal with case (b), we will use the following result:
 
 ::: {.itenv #fga-3-ii-section-B-theorem-2 title="Theorem 2" latex="{Theorem 2}"}
 Let $A$ be a local Artinian ring with maximal ideal $\frak{m}$, and let $A'$ be an $A$-algebra containing $A$, and such that $\frak{m}A'\subset A$, and $A\to A'\rightrightarrows A'\otimes_A A'$ is _exact_ (which is the case, in particular, if $A'/A$ is an $A$-module of length $1$).
-Let $\cal{F}$ be the fibred category (cf. [@3-II-3, A, Definition 1.1]) of quasi-coherent sheaves that are flat over varying preschemes.
-Then the morphism $\Spec(A')\to\Spec(A)$ is a _strict $\cal{F}$-descent morphism_ (cf. [@3-II-3, A, Definition 1.7]).
+Let $\cal{F}$ be the fibred category (cf. [@Gro1959, I, A, Definition 1.1]) of quasi-coherent sheaves that are flat over varying preschemes.
+Then the morphism $\Spec(A')\to\Spec(A)$ is a _strict $\cal{F}$-descent morphism_ (cf. [@Gro1959, I, A, Definition 1.7]).
 :::
 
 In other words, the data of a flat $A$-module $M$ is completely equivalent to the data of a flat $A'$-module $M'$ endowed with an $(A'\otimes_A A')$-isomorphism from $M'\otimes_A A'$ to $A'\otimes_A M'$ satisfying the usual transitivity condition for a descent data (loc. cit.).
@@ -376,8 +376,8 @@ $$
   \HH^i(A'/A,\Ga) = 0
   \qquad\text{(for }i\geq1\text{)}
 $$
-(cf. [@3-II-3, A.4.e]), with the hypothesis that $\frak{m}A'\subset A$ allowing us to easily reduce to the case where $A$ is a field (namely $A/\frak{m}$).
-We can then apply the equivalences described in [@3-II-3, p. 16].
+(cf. [@Gro1959, I, A.4.e]), with the hypothesis that $\frak{m}A'\subset A$ allowing us to easily reduce to the case where $A$ is a field (namely $A/\frak{m}$).
+We can then apply the equivalences described in [@Gro1959, I, p. 16].
 
 
 ## **C.** Applications to some particular cases {-}
@@ -473,7 +473,7 @@ $$
   F(I_A,\xi) = \HH^1\Big(X_A,\repHom_{\scr{O}_{X_A}}\big(\xi^*(\Omega_{Y_A/A}^1),\scr{O}_{X_A}\big)\Big)
 $$
 where $\Omega_{Y_A/A}^1$ is the sheaf of Kähler $1$-differentials of $Y_A$ with respect to $A$.
-Taking $A$ to be a field, we find, using [§A, Proposition 5.1](#fga-3-ii-section-A.5-proposition-5.1) and the finiteness theorem from [@3-II-2], the following corollary:
+Taking $A$ to be a field, we find, using [§A, Proposition 5.1](#fga-3-ii-section-A.5-proposition-5.1) and the finiteness theorem from [@Gro1958a], the following corollary:
 
 ::: {.itenv title="Corollary" latex="{Corollary}"}
 Suppose that $X$ is flat and proper over $S$, and that $Y$ is of finite type over $S$.
@@ -510,7 +510,7 @@ $$
   P(X/S) = \HH^0(S,\RR^1f_*(\scr{O}_X^*)),
 $$
 called the _relative Picard group_ of $X/S$.
-An element of this group is thus defined by giving an open cover $(U_i)$ of $S$, along with an invertible sheaf $\scr{L}_i$ on each $f^{-1}(U_i)$, such that $\scr{L}_i|f^{-1}(U_i\cap U_j)$ is isomorphic to $\scr{L}_j|f^{-1}(U_i\cap U_j)$ for all $i,j$, or, at least locally over $U_i\cap U_j$ (i.e. these two sheaves are "equivalent" in the sense of [@3-II-3, B.4]).
+An element of this group is thus defined by giving an open cover $(U_i)$ of $S$, along with an invertible sheaf $\scr{L}_i$ on each $f^{-1}(U_i)$, such that $\scr{L}_i|f^{-1}(U_i\cap U_j)$ is isomorphic to $\scr{L}_j|f^{-1}(U_i\cap U_j)$ for all $i,j$, or, at least locally over $U_i\cap U_j$ (i.e. these two sheaves are "equivalent" in the sense of [@Gro1959, I, B.4]).
 If $X/S$ admits a section, then $P(X/S)$ is exactly the set of classes of invertible sheaves on $X/S$ up to "equivalence" (loc. cit.).
 We now set, for all $T$ over $S$,
 $$
@@ -532,7 +532,7 @@ The definition adopted here is only reasonable when every point of $Y$ admits an
 In the general case, it is necessary to slightly modify the definition of the Picard functor in order to still obtain an existence theorem.
 
 Here, the plausible existence conditions for a Picard prescheme are the following: $X$ is _proper_ and _flat_ over $S$; $f_*(\scr{O}_X)=\scr{O}_S$; and $X$ locally admits a section over $S$.
-This condition naturally arises in the application of the technique of descent, _in eliminating the automorphisms of an invertible sheaf $\scr{L}$ on $X$ by endowing them with a marked section over the section $s$_ ([@3-II-3, B.4]).
+This condition naturally arises in the application of the technique of descent, _in eliminating the automorphisms of an invertible sheaf $\scr{L}$ on $X$ by endowing them with a marked section over the section $s$_ ([@Gro1959, I, B.4]).
 Notably, we find the following:
 :::
 
@@ -585,7 +585,7 @@ where $\kres(A)$ is the residue field of $A$;
 of course, the isomorphisms between such flat $A$-preschemes should respect the above isomorphism given in the structure.
 If $A$ is a (not necessary local) Artinian $\Lambda$-algebra, with local components $A_i$, then we take $F(A)$ to be the product of the $F(A_i)$.
 Then $F$ becomes a multiplicative functor in $A$, and we call it the _functor of modules_ for $X_0$ (and $\Lambda$).
-If this functor is representable, then it has a corresponding local topological $\Lambda$-algebra $O$, of residue field $k$, and the formal spectrum of $O$ is called the _formal scheme of modules_ for $X_0$ (and $\Lambda$) (cf. [@3-II-2] for some details on this).
+If this functor is representable, then it has a corresponding local topological $\Lambda$-algebra $O$, of residue field $k$, and the formal spectrum of $O$ is called the _formal scheme of modules_ for $X_0$ (and $\Lambda$) (cf. [@Gro1958a] for some details on this).
 
 Here, if we wish to apply the technique of descent, the "finite" automorphisms of $X_0$ are inoffensive, since they have no influence on the existence of automorphisms (in the precise sense above) of $A$-preschemes $X$;
 the necessary and sufficient condition, if $A$ is not simply a field, for $X$ to not have any non-trivial $A$-automorphisms is that
@@ -616,7 +616,7 @@ If, furthermore, $X_0$ is proper over $k$, then the formal scheme of modules is 
     where we set $P_A=X_A\times_A X_A$, where $\scr{O}_{X_A}$ is considered as a coherent sheaf on $P_A$ via the diagonal morphism $X_A\to P_A$, and where $\scr{I}_{X_A}$ denotes the coherent sheaf of ideals on $P_A$ defined by the diagonal morphism.
     More precisely, an easy globalisation of Hochschild theory shows that the $\Ext^1$ above can be identified with the set of classes, up to isomorphism, of sheaves of $I_A$-algebras $\scr{O}$ that are flat over $X_A$, and endowed with an augmentation isomorphism $\scr{O}\otimes_{I_A}A\to\scr{O}_{X_A}$ (recall that we set $I_A=At/(t^2)$).
     The submodule $F(I_A,\xi)$ is that which corresponds to the sheaves of _commutative_ algebras.
-    The simplicity hypotheses are thus not essential in the theory of modules, as [@3-II-2] implies.
+    The simplicity hypotheses are thus not essential in the theory of modules, as [@Gro1958a] implies.
 
 2. Recall (loc. cit.) that, in particular, every _simple_ and _proper algebraic curve_ $X_0$ over $k$ admits a formal scheme of modules that is simple over $\Lambda$, and of relative dimension equal to $3g-3$ if the genus $g$ is $\geq2$, and to $g$ if $g=0,1$.
     These two latter cases no longer figure directly in [Proposition 4.1](#fga-3-ii-section-C.4-proposition-4).
@@ -629,7 +629,7 @@ We can show that imposing a multiplicative structure (or even only a "unit secti
 We can also show that, if $X$ is a proper and simple scheme with "absolutely connected" fibres over a locally Noetherian prescheme $S$, then every multiplicative structure on $X$ that admits a unit section is necessarily associative and commutative (provided that it is associative and commutative on _one_ fibre, and provided that $S$ is connected), and is furthermore uniquely determined by the knowledge of the unit section.
 \oldpage{195-19}
 Further, supposing that $S$ is the spectrum of a local Artinian ring $A$ of residue field $k$, that $X$ is proper over $A$ and endowed with a section $s$, and finally that $X\otimes_A k$ is endowed with the structure of an abelian scheme over $k$, admitting the point of $X\otimes_A k$ corresponding to $s$ as the zero element, an easy calculation of obstructions, combined with an argument due to Serre, allows us to prove that there exists on $X$ a multiplicative structure admitting the section $s$ as the unit section.
-(From here, using the "existence theorem" of [@3-II-2] to pass to the case where $A$ is complete local Noetherian, and then the technique of descent from [@3-II-3] for the general case, we can prove the analogous claim for all locally Noetherian connected $S$).
+(From here, using the "existence theorem" of [@Gro1958a] to pass to the case where $A$ is complete local Noetherian, and then the technique of descent from [@Gro1959, I] for the general case, we can prove the analogous claim for all locally Noetherian connected $S$).
 This proves that the functor $F(A)$ considered here is isomorphic to the analogous functor defined at the start of this section by abstracting the multiplicative structure on $X_0$.
 It then follows that, in particular, if $\frak{m}$ is the maximal ideal of $O$, then $\frak{m}/\frak{m}^2$ is canonically isomorphic to the dual of $\HH^1(X_0,\frak{G}_{X_0/k})$, and is thus of dimension $n^2$, where $n=\dim X_0$.
 It would be very interesting to determine if $O$ is indeed _simple_ over $\Lambda$, i.e. isomorphic to an algebra of formal series in $n^2$ variables over $\Lambda$.
@@ -641,7 +641,7 @@ This could be the moment for the "_Greenberg functor_" to prove its worth...
 
 ## Extension of coverings {#fga-3-ii-section-C.5}
 
-Let $\frak{X}$ be a _formal_ Noetherian prescheme [@3-II-2], $U$ an open subset of $\frak{X}$ defined locally by the "non-vanishing" of a section of $\scr{O}_\frak{X}$ that is not a zero divisor (and thus large enough that every section of $\scr{O}_\frak{X}$ over an open subset $V$ that is zero on $U\cap V$ is zero).
+Let $\frak{X}$ be a _formal_ Noetherian prescheme [@Gro1958a], $U$ an open subset of $\frak{X}$ defined locally by the "non-vanishing" of a section of $\scr{O}_\frak{X}$ that is not a zero divisor (and thus large enough that every section of $\scr{O}_\frak{X}$ over an open subset $V$ that is zero on $U\cap V$ is zero).
 (_[Comp.]_ It is also necessary to assume that the section defining $U$ is not a zero divisor not only on $\frak{X}$, but also on every $X_n$.)
 Let $\frak{J}$ be an "ideal of definition" for $\frak{X}$, and let $X_n=(\frak{X},\scr{O}_\frak{X}/\frak{J}^{n+1})$, which is thus a ordinary Noetherian prescheme.
 Then, if $\frak{X}'$ and $\frak{X}''$ are _flat coverings_ of $\frak{X}$ (i.e. preschemes over $\frak{X}$ defined by sheaves of algebras that are coherent and locally free as sheaves of modules) that are _unramified over $U$_, the evident map
@@ -654,7 +654,7 @@ This allows us to apply the technique of descent to the situation.
 \oldpage{195-20}
 We start, in particular, with a flat covering $X'_0$ of $X_0$, unramified over $U_0$, and let $G(\frak{X})$ be the set of classes, up to isomorphism (inducing the identity on $X'_0$), of flat coverings $\frak{X}'$ of $\frak{X}$ that induce $X'_0$ on $X_0$ (and that are thus necessarily unramified over $U$).
 We similarly define $G(V)$ for every open subset $V$ of $\frak{X}$, and, more generally, $G(\frak{Y})$ for every formal prescheme $\frak{Y}$ over $\frak{X}$.
-With this, the results of [@3-II-2] and [@3-II-3] imply, first of all, the following results:
+With this, the results of [@Gro1958a] and [@Gro1959, I] imply, first of all, the following results:
 
 a. If $V$ varies amongst open subset of $\frak{X}$, then the $G(V)$ form a _sheaf_ on $\frak{X}$, say $\scr{G}_\frak{X}=\scr{G}$.
     The restriction of this sheaf to $U$ is the _constant_ sheaf whose fibres consist of a single element.
@@ -695,11 +695,11 @@ The above functor is pro-representable.
 Of course, by (a), if $U=\frak{X}$, then $G(\frak{Y})$ consists of a single element for all $\frak{Y}$ over $\frak{X}$, and the functor $F$ is then not very interesting (we will have $\scr{O}=\Lambda$).
 It seems that, in practically every other case, the topological local ring $\scr{O}$ _is not Noetherian_.
 Its existence, however, shows, in a striking manner, the _"continuous" nature_ of the set $G(\frak{X})$ of solutions (corresponding intuitively to the fact that there is a "continuous" choice in the way in which the ramification spreads when we take an extension of $X'_0$).
-We will compare this result with the point of view of J.-P. Serre [@3-II-4] via local class field theory, drawing attention as well to the _continuous_ character of the topological Galois group of the maximal abelian extension of a "geometric" local field, with the dual group (in the sense of Pontrjagin) appearing as an inductive limit of algebraic (or at least quasi-algebraic) groups;
+We will compare this result with the point of view of J.-P. Serre [@Ser1958] via local class field theory, drawing attention as well to the _continuous_ character of the topological Galois group of the maximal abelian extension of a "geometric" local field, with the dual group (in the sense of Pontrjagin) appearing as an inductive limit of algebraic (or at least quasi-algebraic) groups;
 here as well, the classification of extensions is given by infinite-dimensional "varieties".
 We can also take, in the above, $\frak{X}$ to be the formal spectrum of a complete local ring (of which $\Lambda$ will be, for example, a Cohen subring), and we might hope that the results of this section can be used in the study of extensions of a local complete ring of dimension $>1$.
 Just as much in the local case as in the global case, they might allow us to formulate precise relations between the phenomena of higher ramification and phenomena in characteristic $0$ (approachable via a transcendental way).
-In any case, it is the preliminary analysis of [Proposition 5.1](#fga-3-ii-section-C.5-proposition-5.1) that allows us to extend the methods described in [@3-II-2] for the study of the fundamental group to the "tamely ramified" case, and to resolve, by a transcendental way, the "problem of three points".
+In any case, it is the preliminary analysis of [Proposition 5.1](#fga-3-ii-section-C.5-proposition-5.1) that allows us to extend the methods described in [@Gro1958a] for the study of the fundamental group to the "tamely ramified" case, and to resolve, by a transcendental way, the "problem of three points".
 
 To finish, we note that the situation simplifies if $X_0$ is of dimension $1$;
 then, by (a) and (b), $G(\frak{X})$ can be identified with $\prod_i G(\Spec(\scr{O}_{\frak{X},x_i}))$, where the $x_i$ are the points of $X_0\setminus U$:

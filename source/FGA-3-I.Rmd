@@ -50,7 +50,7 @@ Weil considered only the case of separable finite field extensions.
 The case of radicial extensions of height $1$ was then studied by P. Cartier.
 Lacking the language of schemes, and, more particularly, lacking nilpotent elements in the rings that were under consideration, the essential identity between these two cases could not have been formulated by Cartier.
 
-Currently, it seems that the general technique of descent that will be explained (combined with, when necessary, the fundamental theorems of "formal geometry", cf. [@3-I-3]) is at the base of the majority of existence theorems in algebraic geometry.^[_[Comp.]_ It now seems excessive to say that the technique of descent is "at the base of the majority of existence theorems in algebraic geometry". This is true to a large extent for the non-projective techniques that are the object of study of the first two articles of this current series (i.e. "Techniques of descent and existence theorems in algebraic geometry"), but not for the projective techniques (articles IV, V, and VI).]
+Currently, it seems that the general technique of descent that will be explained (combined with, when necessary, the fundamental theorems of "formal geometry", cf. [@Gro1958a]) is at the base of the majority of existence theorems in algebraic geometry.^[_[Comp.]_ It now seems excessive to say that the technique of descent is "at the base of the majority of existence theorems in algebraic geometry". This is true to a large extent for the non-projective techniques that are the object of study of the first two articles of this current series (i.e. "Techniques of descent and existence theorems in algebraic geometry"), but not for the projective techniques (articles IV, V, and VI).]
 It is worth noting as well that this aforementioned technique of descent can certainly be transported to "analytic geometry", and we can hope that, in the not-too-distant future, the specialists will know how to prove the "analytic" analogues of the existence theorems in formal geometry that will be given in article II.
 In any case, the recent work of Kodaira--Spencer, whose methods seem unfit for defining and studying "varieties of modules" in the neighbourhood of their singular points, show reasonably clearly the necessity of methods that are closer to the theory of schemes (which should naturally complement transcendental techniques).
 
@@ -58,7 +58,7 @@ In the present article (namely article I) we will discuss the most elementary ca
 The applications of [Theorem 1](#fga-3-i-theorem-1), [Theorem 2](#fga-3-i-theorem-2), and [Theorem 3](#fga-3-i-theorem-3) below (in [§B.1](#fga-3-i-section-B.1)) are, however, already vast in number. 
 We will restrict ourselves to giving only some of them as examples, without aiming for the maximum generality possible.
 
-We will freely use the language of schemes, for which we refer to the already cited article, as well as [@3-I-2].
+We will freely use the language of schemes, for which we refer to the already cited article, as well as [@GR1958].
 We make clear to point out, however, that the preschemes considered in this current article are not necessarily Noetherian, and that the morphisms are not necessarily of finite type.
 \oldpage{190-02}
 So, if $A$ is a local Noetherian ring, with completion $\overline{A}$, then we will need to consider the non-Noetherian ring $\overline{\overline{A}}\otimes_A\overline{A}$, as well as the morphisms of affine schemes that correspond to the inclusions between the rings in question.
@@ -425,15 +425,15 @@ A morphism $f\colon T\to S$ of finite type is said to be _étale at $x\in T$_, o
 $f$ is said to be _étale_, or an _étalement_, or $T$ is said to be _étalé over $S$_, if $f$ is étale at all $x\in T$.
 Note that, if $S$ is locally Noetherian, then the set of points of $T$ where $f$ is étale is open, and Zariski's "main theorem" allows us to precisely state the structure of $T/S$ in a neighbourhood around such a point (by an equation of well-known type).
 
-If $S$ is a scheme of finite type over the field of complex numbers, then there exists a corresponding analytic space $\overline{S}$ (in the sense of Serre [@3-I-5]), except for the fact that $\overline{S}$ can have nilpotent elements in its structure sheaf, which changes nothing essential in [@3-I-5].
+If $S$ is a scheme of finite type over the field of complex numbers, then there exists a corresponding analytic space $\overline{S}$ (in the sense of Serre [@Ser1956]), except for the fact that $\overline{S}$ can have nilpotent elements in its structure sheaf, which changes nothing essential in [@Ser1956].
 We then easily see that $f$ is an étalement if and only if $\overline{f}\colon\overline{T}\to\overline{S}$ is an étalement, i.e. if every point of $\overline{T}$ admits a neighbourhood on which $\overline{f}$ induces an isomorphism onto an open subset of $\overline{S}$.
-In particular, to every _étale covering_ $T$ of $S$ (i.e. every finite étale morphism $f\colon T\to S$), there is a corresponding étale covering $\overline{T}$ of $\overline{S}$, which is connected if and only if $T$ is connected [@3-I-5].
+In particular, to every _étale covering_ $T$ of $S$ (i.e. every finite étale morphism $f\colon T\to S$), there is a corresponding étale covering $\overline{T}$ of $\overline{S}$, which is connected if and only if $T$ is connected [@Ser1956].
 We can also easily see that, if $T$ and $T'$ are étale schemes over $S$, then the natural map
 $$
   \Hom_S(T,T') \to \Hom_{\overline{S}}(\overline{T},\overline{T}'')
 $$
 is bijective, i.e. the functor $T\mapsto\overline{T}$ from the category of étale schemes over $S$ to the category of analytic spaces over $S$ is "fully faithful", and thus defines an equivalence between the first category and a subcategory of the second.
-A theorem of Grauert--Remmert [@3-I-2] implies that, if $S$ is normal, then we thus obtain an equivalence between the category of _étale coverings_ of $S$ and the category of (_finite_) étale coverings of $S$, i.e. every étale covering $\scr{C}$ of $\overline{S}$ is $\overline{S}$-isomorphic to some $\overline{T}$, where $T$ is an étale covering of $S$.
+A theorem of Grauert--Remmert [@GR1958] implies that, if $S$ is normal, then we thus obtain an equivalence between the category of _étale coverings_ of $S$ and the category of (_finite_) étale coverings of $S$, i.e. every étale covering $\scr{C}$ of $\overline{S}$ is $\overline{S}$-isomorphic to some $\overline{T}$, where $T$ is an étale covering of $S$.
 We will show that _the Grauert--Remmert theorem remains true without any normality hypotheses on $S$_.
 \oldpage{190-11}
 First let $S'\to S$ be a finite strict epimorphism, and suppose that the theorem has been proven for $S'$; we will show that it holds for $S$.
@@ -454,7 +454,7 @@ _Then the functor $T\mapsto T'$ is an equivalence between the category of presch
 $$
   \Hom_S(T_1,T_2) \to \Hom_{S'}(T'_1,T'_2)
 $$
-for preschemes $T_1$ and $T_2$ that are étalé over $S$, which can be proven directly without difficulty. We also use the fact that the stated theorem is true if $S'=(S,\scr{O}_S/\scr{J})$, where $\scr{J}$ is a nilpotent coherent sheaf of ideals of $\scr{O}_S$, cf. [@3-I-4, Lemma 6]).
+for preschemes $T_1$ and $T_2$ that are étalé over $S$, which can be proven directly without difficulty. We also use the fact that the stated theorem is true if $S'=(S,\scr{O}_S/\scr{J})$, where $\scr{J}$ is a nilpotent coherent sheaf of ideals of $\scr{O}_S$, cf. [@Mur1958, Lemma 6]).
 \oldpage{190-12}
 Note also that we do not suppose here that the $T$ in question are finite over $S$.
 This result implies, in particular, that the morphism $S'\to S$ induces an isomorphism between the fundamental group of $S'$ and the fundamental group of $S$ ("_topological invariance of the fundamental group of a prescheme_").
@@ -622,7 +622,7 @@ If $S'\to S$ is a strict epimorphism, then the above conditions imply that it is
 
 ::: {.rmenv title="Remark" latex="{Remark}"}
 The definition of the groups $\HH^i(S'/S,\Gm)$ in the case where $S$ (resp. $S'$) is a scheme over the field $A$ (resp. $A'$) is due to Amitsur.
-The group $\HH^2(S'/S,\Gm)$ is particularly interesting as a "global" variant of the Brauer group, for which we can refer to [@3-I-1, chap. VII].
+The group $\HH^2(S'/S,\Gm)$ is particularly interesting as a "global" variant of the Brauer group, for which we can refer to [@GD1960, chap. VII].
 :::
 
 
@@ -637,7 +637,7 @@ A morphism is said to be _faithfully flat_ if it is flat and surjective.
 :::
 
 For example, if $S=\Spec(A)$ and $S'=\Spec(A')$, then $S'$ is flat over $S$ if and only if $A'$ is a flat $A$-module, and $S'$ is faithfully flat over $S$ if and only if $A'$ is a faithfully flat $A$-module (i.e. if and only if $A'\otimes_A M$ is an _exact_ and _faithful_ functor in the $A$-module $M$);
-this also implies, in the terminology of Serre [@3-I-5], that the pair $(A,A')$ is flat.
+this also implies, in the terminology of Serre [@Ser1956], that the pair $(A,A')$ is flat.
 If $S'$ is faithfully flat over $S$, then the inverse image functor of quasi-coherent sheaves on $S$ is exact and faithful;
 \oldpage{190-17}
 in other words, for a sequence of homomorphisms of quasi-coherent sheaves on $S$ to be exact, it is necessary and sufficient that its inverse image on $S'$ be exact (in particular, for a homomorphism of quasi-coherent sheaves on $S$ to be a monomorphism (resp. an epimorphism, resp. an isomorphism), it is necessary and sufficient that its inverse image on $S'$ be a monomorphism (resp. an epimorphism, resp. an isomorphism)).
@@ -875,7 +875,7 @@ that is compatible with the morphism $h\colon X'\to S'$ and that satisfies the c
 
 ::: {.rmenv #fga-3-i-section-B.3-example-1 title="Example 1" latex="{Example 1}"}
 (_Weil_).
-Suppose that $S'/S$ is a _Galois étale covering_ with Galois group $\Gamma$ (cf. \hyperref[A.3]{(A.3)} and \hyperref[A.4.d]{(A.4.d)}).
+Suppose that $S'/S$ is a _Galois étale covering_ with Galois group $\Gamma$ (cf. [§A.3](#fga-3-i-section-A.3) and [§A.4.d](#fga-3-i-section-A.4).
 Then a descent data on a quasi-coherent sheaf $\cal{F}'$ on $S'$ (resp. on an $S'$-prescheme $X'$) is equivalent to the data of a representation of $\Gamma$ by automorphisms of $(S',\cal{F}')$ (resp. of $(S',X')$) that is compatible with the action of $\Gamma$ on $S'$.
 \oldpage{190-23}
 This result is "formal", i.e. it can be proven in terms of categories, but, from the point of view of this section, we also obtain the explicit structure of $\scr{U}$ (endowed with its ring structure, the ring homomorphism $\scr{A}'\to\scr{U}$, and the diagonal map), which is completely known thanks to the following result:
@@ -995,7 +995,7 @@ From this, and the results of the previous section, we easily conclude that, in 
 Let $S$ be a prescheme.
 \oldpage{190-26}
 Well define an _abelian scheme_ over $S$ to be a simple proper scheme $X$ over $S$ whose fibres at the points $x\in S$ are schemes of abelian varieties over the $\kres(x)$.
-Suppose that $S$ is Noetherian and _regular_ (i.e. that its local rings are regular), then we can show, using the _connection theorem_ of Murre [@3-I-4]
+Suppose that $S$ is Noetherian and _regular_ (i.e. that its local rings are regular), then we can show, using the _connection theorem_ of Murre [@Mur1958]
 (at least in the case "of equal characteristics", where the cited theorem is currently proven) that _every rational section of $X$ over $S$ is everywhere defined_ (i.e. is a section) (which generalises a classical theorem of Weil).
 It then follows, more generally, that, if $X'$ is a simple scheme over $S$, then every rational $S$-map from $X'$ to $X$ is everywhere defined.
 From this, we obtain the following, which generalises a result of Chow--Lang:
@@ -1032,16 +1032,16 @@ Also, if $P$ is of finite type over $S$, and $S$ is locally Noetherian, then the
 This leads us to the case where the base is the spectrum of a complete local ring $A$.
 If $S=\Spec(A)$ (with $A$ a complete Noetherian local ring), and if $P$ is of finite type over $S$, then the faithful flatness of $P/S$ is also equivalent to the existence of an $S'$ that is _finite and flat_ over $S$ such that $P'$ is trivial, and, if, further, $G$ is _simple_ over $S$, then we can suppose $S'$ to be _étale_ over $S$.
 Then, if, further, the residue field of $A$ is algebraically closed (the "_geometric case_"), then $P$ is faithfully flat over $A$ if and only if it is trivial.
-Thus, if $S$ is an algebraic prescheme over an algebraically closed field, and if $G$ is simple and of finite type over $S$, then we see that the faithfully-flat condition on $S$ is equivalent to the condition of being analytically trivial (SLF) of Serre [@3-I-6, pp. 1--12].
+Thus, if $S$ is an algebraic prescheme over an algebraically closed field, and if $G$ is simple and of finite type over $S$, then we see that the faithfully-flat condition on $S$ is equivalent to the condition of being analytically trivial (SLF) of Serre [@Ser1958a, pp. 1--12].
 
 We can consider other, stronger, types of conditions on $P$, that have a "local triviality" nature.
 In particular, we say that $P$ is _isotrivial_ (resp. _strictly isotrivial_) if, for all $s\in S$, there exists an open neighbourhood $U$ of $S$, and a _finite and faithfully flat_ morphism (resp. a _surjective étale covering_) $U'\to U$ such that $P'=P\times_S U'$ is trivial.
-(We stray from the terminology of Serre [@3-I-1], which uses "locally isotrivial" for what we call "strictly isotrivial").
+(We stray from the terminology of Serre [@GD1960], which uses "locally isotrivial" for what we call "strictly isotrivial").
 Strict isotriviality is mainly useful if $G$ is simple over $S$, but is, however, an inadequate notion in other cases.
 
 If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ under $G$ is affine, by [§B.2](#fga-3-i-section-B.2), whence the possibility, thanks to [Theorem 2](#fga-3-i-theorem-2), to "descend" from such bundles by faithfully flat and quasi-compact morphisms.
 \oldpage{190-28}
-Taking, in particular, $G=\GL(n)_S$, defined by the condition that the functor $S'\mapsto\Hom(S',G)$ of $S$-preschemes (with values in the category of groups) can be identified with the functor $\GL(n)(S')=\GL(n,\HH^0(S',\scr{O}_{S'}))$ described in \hyperref[§A.4.e]{A.4.e}.
+Taking, in particular, $G=\GL(n)_S$, defined by the condition that the functor $S'\mapsto\Hom(S',G)$ of $S$-preschemes (with values in the category of groups) can be identified with the functor $\GL(n)(S')=\GL(n,\HH^0(S',\scr{O}_{S'}))$ described in [§A.4.e](#fga-3-i-section-A.4).
 Using the facts
 
 i. that every principal homogeneous bundle under $G$ (resp. every locally free sheaf of rank $n$ on $S$) becomes isomorphic to the "trivial" object $G$ (resp. $\scr{O}_S^n$) under a suitable faithfully flat and quasi-compact extension of $S$;
