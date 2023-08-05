@@ -49,6 +49,7 @@ Note that $X\mapsto\Pic(X)$ is a contravariant functor in $X$ in the evident way
 If $X$ is a prescheme over a prescheme $S$, then, for variable $S'$ in the category $\Sch_{/S}$ of preschemes over $S$, we have a contravariant functor $S'\mapsto\Pic(X\times_S S')$ thanks to the above.
 This functor has no chance of being "representable" ([@Gro1959, II, A]) since, as a consequence of the existence of *non-trivial automorphisms* of invertible modules that we propose to classify, this functor is not of a *"local nature"* ([@Gro1960a, IV, 5.4]).
 There is thus an opportunity to "make it local", by introducing, for every relative prescheme $X/S$, a group of a relative nature
+
 ::: {.eqref #fga-3-v-equation-1.2 title="" latex=""}
 $$
   \Pic'(X/S)
@@ -56,9 +57,11 @@ $$
 \tag{1.2}
 $$
 :::
+
 (where $f\colon X\to S$ is the structure morphism) (cf. [@Gro1959, II, C.3]).
 In *loc. cit.* this group is called the relative Picard group, but it will be preferable to call it here the *restricted relative Picard group* of $X/S$, for reasons that will be made clear.
 As $S'$ varies over $\Sch_{/S}$, $S'\mapsto\Pic'(X\times_S S'/S')$ is a contravariant functor in $S'$, denote also by $\shPic'_{X/S}$, thus given essentially by the formula
+
 ::: {.eqref #fga-3-v-equation-1.3 title="" latex=""}
 $$
   \shPic'_{X/S}(S')
@@ -71,6 +74,7 @@ $$
 This functor is now "of local nature", given that did what was necessary to make this happen.
 Intuitively, the right-hand side of [(1.3)](#fga-3-v-equation-1.3) can be understood as the set of "algebraic families" of classes of invertible sheaves on (the fibres of) $X/S$, indexed by the parameter prescheme $S'/S$.
 When the functor $\shPic'$ is representable, the prescheme over $S$ that represents it is denoted by $\repPic_{X/S}$, and is called the *Picard prescheme* of $X$ over $S$, and so we will then have
+
 ::: {.eqref #fga-3-v-equation-1.4 title="" latex=""}
 $$
   \Hom_S(S',\repPic_{X/S})
