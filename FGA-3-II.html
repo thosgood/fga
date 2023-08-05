@@ -194,6 +194,7 @@ div.csl-indent {
 <li class="chapter" data-level="7" data-path="FGA-3-V.html"><a href="FGA-3-V.html"><i class="fa fa-check"></i><b>7</b> Picard schemes: Existence theorems</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-1"><i class="fa fa-check"></i><b>7.1</b> Relative Picard groups and functors</a></li>
+<li class="chapter" data-level="7.2" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-2"><i class="fa fa-check"></i><b>7.2</b> Relations between the various relative and absolute Picard groups</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
@@ -299,13 +300,13 @@ which can be written more explicitly as
 which is a functor from <eq env="math">{\mathcal{C}}</eq> to <eq env="math">\mathtt{Set}</eq>.
 A functor from <eq env="math">{\mathcal{C}}</eq> to <eq env="math">\mathtt{Set}</eq> that is isomorphic to a functor of this type <em>with <eq env="math">I</eq> filtered</em> is said to be <em>pro-representable</em>.
 By the previous section, these are exactly the functors that are isomorphic to <em>filtered inductive limits of representable functors</em>.
-Let <eq env="math">{\mathcal{X}}'=(X_j)_{j\in J}</eq> be another filtered projective system in <eq env="math">{\mathcal{C}}</eq> (indexed by another filtered pre-ordered set of indices <eq env="math">J</eq>).
+Let <eq env="math">{\mathcal{X}}'=(X_j)_{j\in J}</eq> be another filtered projective system in <eq env="math">{\mathcal{C}}</eq> (indexed by another filtered preordered set of indices <eq env="math">J</eq>).
 Then we can easily show that we have a canonical bijection
 <eq env="displaymath">
   \operatorname{Hom}(h_{{\mathcal{X}}'},h_{{\mathcal{X}}}) = \varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j)
 </eq>
 (generalising <a href="#fga-3-ii-section-A.1-proposition-1">§A, Proposition 1</a>).
-This leads to introducing the <em>category <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq> of pro-objects of <eq env="math">{\mathcal{C}}</eq></em>, whose objects are projective systems of objects of <eq env="math">{\mathcal{C}}</eq> (indexed by arbitrary filtered pre-ordered sets of indices), and whose morphisms between objects <eq env="math">{\mathcal{X}}=(X_i)_{i\in I}</eq> and <eq env="math">{\mathcal{X}}'=(X_j)_{j\in J}</eq> are given by
+This leads to introducing the <em>category <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq> of pro-objects of <eq env="math">{\mathcal{C}}</eq></em>, whose objects are projective systems of objects of <eq env="math">{\mathcal{C}}</eq> (indexed by arbitrary filtered preordered sets of indices), and whose morphisms between objects <eq env="math">{\mathcal{X}}=(X_i)_{i\in I}</eq> and <eq env="math">{\mathcal{X}}'=(X_j)_{j\in J}</eq> are given by
 <eq env="displaymath">
   \operatorname{Pro}\operatorname{Hom}({\mathcal{X}},{\mathcal{X}}') = \varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j),
 </eq>
@@ -351,7 +352,7 @@ In particular, if every pro-object of <eq env="math">{\mathcal{C}}</eq> is stric
 </div>
 <div id="fga-3-ii-section-A.3" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> Characterisation of pro-representable functors</h2>
-<p>Let <eq env="math">{\mathcal{C}}</eq> and <eq env="math">{\mathcal{C}}'</eq> be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, pre-ordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a “right-unit object” <eq env="math">e</eq> such that <eq env="math">\operatorname{Hom}(X,e)</eq> consists of only on element for all <eq env="math">X</eq>).
+<p>Let <eq env="math">{\mathcal{C}}</eq> and <eq env="math">{\mathcal{C}}'</eq> be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, preordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a “right-unit object” <eq env="math">e</eq> such that <eq env="math">\operatorname{Hom}(X,e)</eq> consists of only on element for all <eq env="math">X</eq>).
 Let <eq env="math">F</eq> be a covariant functor from <eq env="math">{\mathcal{C}}</eq> to <eq env="math">{\mathcal{C}}'</eq>.
 Then the following conditions are equivalent:</p>
 <ol style="list-style-type: lower-roman">

@@ -194,6 +194,7 @@ div.csl-indent {
 <li class="chapter" data-level="7" data-path="FGA-3-V.html"><a href="FGA-3-V.html"><i class="fa fa-check"></i><b>7</b> Picard schemes: Existence theorems</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-1"><i class="fa fa-check"></i><b>7.1</b> Relative Picard groups and functors</a></li>
+<li class="chapter" data-level="7.2" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-2"><i class="fa fa-check"></i><b>7.2</b> Relations between the various relative and absolute Picard groups</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
@@ -230,17 +231,17 @@ div.csl-indent {
 </ul>
 <div id="fga-3-v-section-1" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Relative Picard groups and functors</h2>
-<p>For every prescheme (more generally, every ringed space) <eq env="math">X</eq>, we define the (<em>absolute</em>) <em>Picard group</em> of <eq env="math">X</eq>, denoted <eq env="math">\operatorname{Pic}(X)</eq>, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to <eq env="math">{\mathscr{O}}_X</eq>) modules on <eq env="math">X</eq>.
-We thus have a canonical isomorphism
-::: {.eqref #fga-3-v-equation-1.1 title=“” latex=““}
-<eq env="displaymath">
+<p>For every prescheme (more generally, every ringed space) <eq env="math">X</eq>, we define the (<em>absolute</em>) <em>Picard group</em> of <eq env="math">X</eq>, denoted by <eq env="math">\operatorname{Pic}(X)</eq>, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to <eq env="math">{\mathscr{O}}_X</eq>) modules on <eq env="math">X</eq>.
+We thus have a canonical isomorphism</p>
+<div id="fga-3-v-equation-1.1" class="eqref" title="">
+<p><eq env="displaymath">
   \operatorname{Pic}(X)
   \xrightarrow{\sim}\operatorname{H}^1(X,{\mathscr{O}}_X^\times)
 \tag{1.1}
-</eq>
-:::
-where <eq env="math">{\mathscr{O}}_X^\times</eq> denotes the sheaf of units of <eq env="math">{\mathscr{O}}_X</eq> (which can be identified with the sheaf of automorphisms of the invertible module <strong>!!TO-DO: type?!!</strong> <eq env="math">{\mathscr{O}}_X</eq>).
-Note that <eq env="math">X\mapsto\operatorname{Pic}(X)</eq> is a contravariant functor in <eq env="math">X</eq> in the evident way, and that the isomorphism <a href="#fga-3-v-equation-1.1">(1.1)</a> is functorial.</p>
+</eq></p>
+</div>
+<p>where <eq env="math">{\mathscr{O}}_X^\times</eq> denotes the sheaf of units of <eq env="math">{\mathscr{O}}_X</eq> (which can be identified with the sheaf of automorphisms of the invertible module <strong>!!TO-DO: type?!!</strong> <eq env="math">{\mathscr{O}}_X</eq>).
+Note that <eq env="math">X\mapsto\operatorname{Pic}(X)</eq> is a contravariant functor in <eq env="math">X</eq> in the evident way, and that the isomorphism <a href="FGA-3-V.html#fga-3-v-equation-1.1">(1.1)</a> is functorial.</p>
 <p>If <eq env="math">X</eq> is a prescheme over a prescheme <eq env="math">S</eq>, then, for variable <eq env="math">S'</eq> in the category <eq env="math">\mathtt{Sch}_{/S}</eq> of preschemes over <eq env="math">S</eq>, we have a contravariant functor <eq env="math">S'\mapsto\operatorname{Pic}(X\times_S S')</eq> thanks to the above.
 This functor has no chance of being “representable” (<span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, II, A]</span>) since, as a consequence of the existence of <em>non-trivial automorphisms</em> of invertible modules that we propose to classify, this functor is not of a <em>“local nature”</em> (<span class="citation">[<a href="#ref-Gro1960a" role="doc-biblioref">8</a>, IV, 5.4]</span>).
 There is thus an opportunity to “make it local”, by introducing, for every relative prescheme <eq env="math">X/S</eq>, a group of a relative nature</p>
@@ -252,7 +253,7 @@ There is thus an opportunity to “make it local”, by introducing, for every r
 </eq></p>
 </div>
 <p>(where <eq env="math">f\colon X\to S</eq> is the structure morphism) (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, II, C.3]</span>).
-In <em>loc. cit.</em> this group is called the relative Picard group, but it will be preferable to call it here the <em>restricted relative Picard group</em> of <eq env="math">X/S</eq>, for reasons that will be made clear.
+In <em>loco citato</em> this group is called the relative Picard group, but it will be preferable to call it here the <em>restricted relative Picard group</em> of <eq env="math">X/S</eq>, for reasons that will be made clear.
 As <eq env="math">S'</eq> varies over <eq env="math">\mathtt{Sch}_{/S}</eq>, <eq env="math">S'\mapsto\operatorname{Pic}'(X\times_S S'/S')</eq> is a contravariant functor in <eq env="math">S'</eq>, denote also by <eq env="math">\mathscr{P}\kern -.5pt ic'_{X/S}</eq>, thus given essentially by the formula</p>
 <div id="fga-3-v-equation-1.3" class="eqref" title="">
 <p><eq env="displaymath">
@@ -272,7 +273,92 @@ When the functor <eq env="math">\mathscr{P}\kern -.5pt ic'</eq> is representable
 \tag{1.4}
 </eq></p>
 </div>
-<p>There</p>
+<p>There are, however, important cases where <eq env="math">\mathscr{P}\kern -.5pt ic'_{X/S}</eq> is not representable (example: the “Brauer–Severi” variety over a field <eq env="math">k</eq>, without a rational point over <eq env="math">k</eq>), but where there nevertheless exists a natural definition of a relative Picard prescheme.
+This is due to the fact that, in the definition of the functor <eq env="math">\mathscr{P}\kern -.5pt ic'</eq> from the absolute Picard groups <eq env="math">\operatorname{Pic}(X\times_S S'/S')</eq>, we have not localised enough;
+more precisely, <eq env="math">\mathscr{P}\kern -.5pt ic'</eq> is not in general “compatible with faithfully flat descent”.
+We now explain the details.</p>
+<p>Let <eq env="math">({\mathscr{M}})</eq> be the set of morphisms of preschemes that are <em>faithfully flat and quasi-compact</em>;
+this set is stable under base change and composition.
+Let <eq env="math">P</eq> be a contravariant functor from <eq env="math">\mathtt{Sch}_{/S}</eq> to the category of sets, and, for every <eq env="math">S</eq>-morphism <eq env="math">u\colon T'\to T</eq> with <eq env="math">u\in({\mathscr{M}})</eq>, consider the diagram</p>
+<div id="fga-3-v-equation-1.5" class="eqref" title="">
+<p><eq env="displaymath">
+  P(T)
+  \to P(T')
+  \rightrightarrows P(T'\times_T T')
+\tag{1.5}
+</eq></p>
+</div>
+<p>which is given by <eq env="math">P</eq> applied to the diagram
+<eq env="displaymath">
+  T
+  \leftarrow T'
+  \underset{\mathrm{pr}_2}{\overset{\mathrm{pr}_1}{\leftleftarrows}} T'\times_T T'.
+</eq>
+If <eq env="math">P</eq> is representable, it follows from the theory of descent (<span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, B, Theorem 2]</span>) that the diagram <a href="FGA-3-V.html#fga-3-v-equation-1.5">(1.5)</a> is exact for all <eq env="math">u\in({\mathscr{M}})</eq>.
+We express this fact by saying that <eq env="math">P</eq> is compatible with <eq env="math">({\mathscr{M}})</eq>, in the event that <eq env="math">P</eq> is “compatible with faithfully flat descent”, or that the <em>“presheaf”</em> <eq env="math">P</eq> on <eq env="math">\mathtt{Sch}_{/S}</eq> is a <em>“sheaf”</em> for the notion of localisation given by the set <eq env="math">({\mathscr{M}})</eq>.
+If <eq env="math">P</eq> is arbitrary, then a standard procedure, well known in the case of usual topological localisation, allows us to associate to it a “sheaf” <eq env="math">{\mathscr{P}}</eq> and a homomorphism of functors <eq env="math">P\to{\mathscr{P}}</eq> that is universal in an obvious sense.
+The construction of <eq env="math">{\mathscr{P}}</eq> can be made explicit in the following way: to define <eq env="math">{\mathscr{P}}(T)</eq>, we denote, for all <eq env="math">T'</eq> over <eq env="math">T</eq> such that the morphism <eq env="math">u\colon T'\to T</eq> is in <eq env="math">({\mathscr{M}})</eq>, by <eq env="math">\overline{\operatorname{H}}^0(T'/T,P)</eq> the subset of <eq env="math">P(T')</eq> consisting of the elements <eq env="math">\xi</eq> such that their images <eq env="math">\xi_1,x_2</eq> in <eq env="math">P(T'\times_T T')</eq> are such that there exists a morphism <eq env="math">v\colon T''\to T'\times_T T'</eq> in <eq env="math">({\mathscr{M}})</eq> such that <eq env="math">\xi_1</eq> and <eq env="math">\xi_2</eq> have the same image in <eq env="math">P(T'')</eq>.</p>
+<p>(N.B. The set <eq env="math">\overline{\operatorname{H}}^0</eq> thus defined is larger than the set <eq env="math">\operatorname{H}^0(T'/T,P)</eq> introduced in <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, A.4.a]</span>).
+As <eq env="math">T'</eq> varies over fixed <eq env="math">T</eq> (always with <eq env="math">u\in({\mathscr{M}})</eq>), the <eq env="math">\overline{\operatorname{H}}^0(T'/T,P)</eq> form an inductive system (when the set of the <eq env="math">T'</eq> is endowed with a preorder defined by domination), and we set</p>
+<div id="fga-3-v-equation-1.6" class="eqref" title="">
+<p><eq env="displaymath">
+  {\mathscr{P}}(T)
+  = \varinjlim_{T'} \overline{\operatorname{H}}^0(T'/T,P).
+\tag{1.6}
+</eq></p>
+</div>
+<p>The functoriality in <eq env="math">T</eq> of this expression is evident.</p>
+<p>When
+<eq env="displaymath">
+  P(T)
+  = \operatorname{Pic}(X\times_S T)
+</eq>
+the contravariant functor on <eq env="math">\mathtt{Sch}_{/S}</eq> defined by <a href="FGA-3-V.html#fga-3-v-equation-1.6">(1.6)</a> is called the <em>relative Picard functor</em> of <eq env="math">X</eq> over <eq env="math">S</eq>, and denoted by <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}</eq>, and we define the <em>relative Picard group</em> of <eq env="math">X</eq> over <eq env="math">S</eq>, denoted by <eq env="math">\operatorname{Pic}(X/S)</eq>, the group <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}(S)</eq>.
+We then have an evident bijection</p>
+<div id="fga-3-v-equation-1.7" class="eqref" title="">
+<p><eq env="displaymath">
+  \mathscr{P}\kern -.5pt ic_{X/S}(T)
+  \xrightarrow{\sim}\operatorname{Pic}(X\times_S T/T).
+\tag{1.7}
+</eq></p>
+</div>
+<p>An element of <eq env="math">\operatorname{Pic}(X/S)</eq> is thus defined by means of an element <eq env="math">\xi'</eq> of a group <eq env="math">\operatorname{Pic}(X\times_S S')</eq> (where <eq env="math">S'\to S</eq> is faithfully flat and quasi-compact) such that we can find a faithfully flat and quasi-compact morphism <eq env="math">S''\to S'\times_S S'</eq> such that the two inverse images of <eq env="math">\xi'</eq> in <eq env="math">\operatorname{Pic}(X\times_S S'')</eq> are the same.
+An element <eq env="math">\xi'</eq> of <eq env="math">\operatorname{Pic}(X\times_S S')</eq> and an element <eq env="math">\xi_1</eq> of <eq env="math">\operatorname{Pic}(X\times_S S_1)</eq> (satisfying the conditions that we have just stated) define the same element of <eq env="math">\operatorname{Pic}(X/S)</eq> if and only if there exists a faithfully flat and quasi-compact morphism <eq env="math">S'_1\to S'\times_S S_1</eq> such that the images of the two elements in question in <eq env="math">\operatorname{Pic}(X\times_S S'_1)</eq> are equal.
+It is often convenient to work instead with the functor <eq env="math">P'=\mathscr{P}\kern -.5pt ic'_{X/S}</eq> introduced above, and we immediately note that the canonical morphism <eq env="math">P\to P'</eq> defines an <em>isomorphism</em></p>
+<div id="fga-3-v-equation-1.8" class="eqref" title="">
+<p><eq env="displaymath">
+  {\mathscr{P}}
+  \xrightarrow{\sim}{\mathscr{P}}'
+\tag{1.8}
+</eq></p>
+</div>
+<p>which gives a description of <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}</eq> in terms of <eq env="math">\mathscr{P}\kern -.5pt ic'_{X/S}=P'</eq> that is usually more convenient.
+By <a href="#fga-3-v-corollary-2.3">(2.3)</a> below, if we replace <eq env="math">P</eq> by <eq env="math">P'</eq> in the description of <eq env="math">\operatorname{Pic}(X/S)</eq> that we have just given then we can take <eq env="math">S''=S'\times_S S'</eq> and <eq env="math">S'_1=S'\times_S S_1</eq>, at least under the conditions given in <em>loco citato</em>.</p>
+<p>If the functor <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}</eq> is representable, we say that <eq env="math">X/S</eq> admits a Picard prescheme, and the prescheme over <eq env="math">S</eq> that represents the functor is called the <em>Picard prescheme</em> of <eq env="math">X</eq> over <eq env="math">S</eq>, and denoted by <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>.
+For this, it evidently suffices that <eq env="math">P'=\mathscr{P}\kern -.5pt ic_{X/S}</eq> be representable, since then <eq env="math">P'</eq> is already a “sheaf”, and equation <a href="FGA-3-V.html#fga-3-v-equation-1.8">(1.8)</a> proves that the morphism <eq env="math">P'\to{\mathscr{P}}'</eq> can be identified with the canonical morphism</p>
+<div id="fga-3-v-equation-1.9" class="eqref" title="">
+<p><eq env="displaymath">
+  \mathscr{P}\kern -.5pt ic'_{X/S}
+  \to \mathscr{P}\kern -.5pt ic_{X/S}
+\tag{1.9}
+</eq></p>
+</div>
+<p>which is then an isomorphism.
+This means that our terminology is compatible with that introduced above with <a href="FGA-3-V.html#fga-3-v-equation-1.4">(1.4)</a>.
+In general, when <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists it is defined by the functorial isomorphism</p>
+<div id="fga-3-v-equation-1.10" class="eqref" title="">
+<p><eq env="displaymath">
+  \operatorname{Hom}_S(S',\underline{\operatorname{Pic}}_{X/S})
+  \xrightarrow{\sim}\operatorname{Pic}(X\times_S S'/S').
+\tag{1.10}
+</eq></p>
+</div>
+</div>
+<div id="fga-3-v-section-2" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Relations between the various relative and absolute Picard groups</h2>
+<div id="proposition-2.1" class="itenv" title="Proposition 2.1">
+<p>Let</p>
+</div>
 
 </div>
 </div>
