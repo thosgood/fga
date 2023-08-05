@@ -505,9 +505,9 @@ this is linked to the fact that the symmetric square of such a variety does not 
 
 _[Comp.]_ For a more complete study, see [FGA 3.V](FGA-3-V.html).
 
-Let $f\colon X\to S$ be an $S$-prescheme, and consider the multiplicative sheaf $\scr{O}_X^*$ of units of the structure sheaf of $X$, along with the group
+Let $f\colon X\to S$ be an $S$-prescheme, and consider the multiplicative sheaf $\scr{O}_X^\times$ of units of the structure sheaf of $X$, along with the group
 $$
-  P(X/S) = \HH^0(S,\RR^1f_*(\scr{O}_X^*)),
+  P(X/S) = \HH^0(S,\RR^1f_*(\scr{O}_X^\times)),
 $$
 called the _relative Picard group_ of $X/S$.
 An element of this group is thus defined by giving an open cover $(U_i)$ of $S$, along with an invertible sheaf $\scr{L}_i$ on each $f^{-1}(U_i)$, such that $\scr{L}_i|f^{-1}(U_i\cap U_j)$ is isomorphic to $\scr{L}_j|f^{-1}(U_i\cap U_j)$ for all $i,j$, or, at least locally over $U_i\cap U_j$ (i.e. these two sheaves are "equivalent" in the sense of [@Gro1959, I, B.4]).

@@ -6,6 +6,12 @@
 \renewcommand{\geq}{\geqslant}
 \renewcommand{\leq}{\leqslant}
 
+\providecommand{\Pic}{\operatorname{Pic}}
+\providecommand{\OO}{\scr{O}}
+\providecommand{\simto}{\xrightarrow{\sim}}
+\providecommand{\HH}{\operatorname{H}}
+\providecommand{\Sch}{\mathtt{Sch}}
+
 <!-- Shortcuts -->
 
 <!-- Content -->
@@ -25,4 +31,15 @@ _Séminaire Bourbaki_ **14** (1961--62), Talk no. 232.
 ## Relative Picard groups and functors {#fga-3-v-section-1}
 
 \oldpage{232-01}
-For
+For every prescheme (more generally, every ringed space) $X$, we define the (*absolute*) *Picard group* of $X$, denoted $\Pic(X)$, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to $\OO_X$) modules on $X$.
+We thus have a canonical isomorphism
+$$
+  \Pic(X)
+  \simto \HH^1(X,\OO_X^\times)
+\tag{1.1}
+$$
+where $\OO_X^\times$ denotes the sheaf of units of $\OO_X$ (which can be identified with the sheaf of automorphisms of the invertible module **!!TO-DO: type?!!** $\OO_X$).
+Note that $X\mapsto\Pic(X)$ is a contravariant functor in $X$ in the evident way, and that the isomorphism (1.1) is functorial.
+
+If $X$ is a prescheme over a prescheme $S$, then, for variable $S'$ in the category $\Sch_{/S}$ of preschemes over $S$, we have a contravariant functor $S'\mapsto\Pic(X\times_S S')$ thanks to the above.
+This functor has no chance of being "representable" ([@Gro1959, II, A]) since
