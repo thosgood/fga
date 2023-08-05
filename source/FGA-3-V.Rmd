@@ -147,8 +147,8 @@ $$
 $$
 :::
 
-An element of $\Pic(X/S)$ is thus defined by means of an element $\xi'$ of a group $\Pic(X\times_S S')$ (where $S'\to S$ is faithfully flat and quasi-compact) such that we can find a faithfully flat and quasi-compact morphism $S''\to S'\times_S S'$ such that the two inverse images of $\xi'$ in $\Pic(X\times_S S'')$ are the same.
-An element $\xi'$ of $\Pic(X\times_S S')$ and an element $\xi_1$ of $\Pic(X\times_S S_1)$ (satisfying the conditions that we have just stated) define the same element of $\Pic(X/S)$ if and only if there exists a faithfully flat and quasi-compact morphism $S'_1\to S'\times_S S_1$ such that the images of the two elements in question in $\Pic(X\times_S S'_1)$ are equal.
+An element of $\Pic(X/S)$ is thus defined by means of an element $\xi'$ of a group $\Pic(X\times_S S')$ (where $S'\to S$ is faithfully flat and quasi-compact) such that we can find a faithfully flat quasi-compact morphism $S''\to S'\times_S S'$ such that the two inverse images of $\xi'$ in $\Pic(X\times_S S'')$ are the same.
+An element $\xi'$ of $\Pic(X\times_S S')$ and an element $\xi_1$ of $\Pic(X\times_S S_1)$ (satisfying the conditions that we have just stated) define the same element of $\Pic(X/S)$ if and only if there exists a faithfully flat quasi-compact morphism $S'_1\to S'\times_S S_1$ such that the images of the two elements in question in $\Pic(X\times_S S'_1)$ are equal.
 It is often convenient to work instead with the functor $P'=\shPic'_{X/S}$ introduced above, and we immediately note that the canonical morphism $P\to P'$ defines an *isomorphism*
 
 ::: {.eqref #fga-3-v-equation-1.8 title="" latex=""}
@@ -188,6 +188,109 @@ $$
 
 ## Relations between the various relative and absolute Picard groups {#fga-3-v-section-2}
 
-::: {.itenv #proposition-2.1 title="Proposition 2.1" latex="{Proposition 2.1}"}
-Let
+::: {.itenv #fga-3-v-proposition-2.1 title="Proposition 2.1" latex="{Proposition 2.1}"}
+Let $f\colon X\to S$ be a morphism such that $\OO_S\simto f_*(\OO_X)$.
+Then we have an exact sequence
+$$
+  0
+  \to \Pic(S)
+  \to \Pic(X)
+  \to \Pic'(X/S).
+$$
+If $X$ admits a section over $S$, then the last morphism is surjective, i.e. we have an isomorphism
+$$
+  \Pic'(X/S)
+  \simto \Pic(X)/\Pic(S).
+$$
 :::
+
+::: {.proof}
+The exact sequence can be considered as the low degrees of the exact sequence that corresponds to the Leray spectral sequence for $f$ and $\OO_X$.
+The second claim is equally formal.
+:::
+
+::: {.itenv #fga-3-v-proposition-2.2 title="Proposition 2.2" latex="{Proposition 2.2}"}
+Let $f\colon X\to S$ be a quasi-compact separated morphism such that $\OO_S\simto f_*(\OO_X)$, and let $S'\to S$ be a faithfully flat quasi-compact morphism.
+Then
+
+i. $\Pic'(X/S)\to\Pic'(X\times_S S'/S')$ is injective;
+ii. If $X$ locally admits a section over $S$ (i.e. every $s\in S$ has an open neighbourhood $U$ such that $X|U$ has a section over $U$), then the diagram
+  $$
+    \Pic'(X/S)
+    \to \Pic'(X\times_S S'/S')
+    \rightrightarrows \Pic'(X\times_S S''/S'')
+  $$
+  (where $S''=S'\times_S S'$) is exact.
+:::
+
+::: {.proof}
+\oldpage{232-05}
+The first claim follows, thanks to the elementary properties of faithfully flat descent, from the following general remark.
+If $f\colon X\to S$ is a morphism such that $\OO_S\simto f_*(\OO_X)$, then the functor $\scr{F}\mapsto f^*(\scr{F})$, from the category of locally free modules of finite type on $S$ to the category of locally free modules of finite type on $X$, is fully faithful, and its essential image is given by the modules $\scr{G}$ on $X$ such that $f_*(\scr{G})$ is locally free and such that the canonical homomorphism
+$$
+  f^*f_*(\scr{G})
+  \to \scr{G}
+$$
+is an isomorphism.
+The second statement was proven by the theory of descent in [@Gro1959, I, B.4].
+:::
+
+The results of [(2.2)](#fga-3-v-proposition-2.2) can also be stated as follows:
+
+::: {.itenv #fga-3-v-corollary-2.3 title="Corollary 2.3" latex="{Corollary 2.3}"}
+Under the conditions of [(2.2)](#fga-3-v-proposition-2.2), the canonical homomorphism [(1.9)](#fga-3-v-equation-1.9) $\shPic'_{X/S}\to\shPic_{X/S}$ is injective, and even bijective if $X$ locally admits a section over $S$.
+(In the latter case, the relative Picard group $\Pic(X/S)$ is identified with the restricted relative Picard group $\Pic'(X/S)$.)
+:::
+
+Combining this with [(2.1)](#fga-3-v-proposition-2.1), we thus obtain:
+
+::: {.itenv #fga-3-v-corollary-2.4 title="Corollary 2.4" latex="{Corollary 2.4}"}
+Under the conditions of  [(2.2)](#fga-3-v-proposition-2.2), we have an exact sequence
+$$
+  0
+  \to \Pic(S)
+  \to \Pic(X)
+  \to \Pic(X/S).
+$$
+If $X$ admits a section over $S$, then the last homomorphism is surjective, i.e. we have an isomorphism
+$$
+  \Pic(X/S)
+  \simto \Pic(X)/\Pic(S).
+$$
+:::
+
+::: {.rmenv #fga-3-v-remark-2.5 title="Remark 2.5" latex="{Remark 2.5}"}
+Let $f\colon X\to S$ be a morphism such that $\OO_S\simto f_*(\OO_X)$, and let $g$ be a section of $X$ over $S$.
+Let $\scr{L}$ be an invertible module on $X$.
+We define the *$g$-rigidification* of $\scr{L}$ to be an isomorphism $\OO_S\simto g^*(\scr{L})$, and a *$g$-rigidified invertible module* to be an invertible module $\scr{L}$ on $X$ endowed with a $g$-rigidification.
+Every automorphism of such a structure is trivial, and $\Pic'(X/S)$ can be identified with the set of isomorphism classes of $g$-rigidified invertible modules on $S$.
+(It is this fact that allows us to use the theory of descent to prove [(2.2), (ii)](#fga-3-v-proposition-2.2).)
+This gives a new interpretation of $\Pic(X/S)$, at least when $f$ is further quasi-compact and separated, so that $\Pic(X/S)\simto\Pic'(X/S)$ by [(2.3)](#fga-3-v-corollary-2.3).
+:::
+
+::: {.rmenv #fga-3-v-remark-2.6 title="Remark 2.6" latex="{Remark 2.6}"}
+\oldpage{232-06}
+Let $f\colon X\to S$ be a morphism as in [(2.2)](#fga-3-v-proposition-2.2), and let $S'\to S$ be a faithfully flat quasi-compact morphism such that there exists an $S$-morphism $S'\to X$, i.e. such that there exists a section of $X'=X\times_S S'$ over $S'$.
+Let $S''=S'\times_S S'$, and $X''=X\times_S S''$, and consider the exact sequence
+$$
+  \Pic(X/S)
+  \to \Pic(X'/S')
+  \rightrightarrows \Pic(X''/S'').
+$$
+Applying [(2.4)](#fga-3-v-corollary-2.4), we obtain the exact sequence
+$$
+  \Pic(X/S)
+  \to \Pic(X')/\Pic(S')
+  \rightrightarrows \Pic(X'')/\Pic(S'').
+$$
+In particular, every element of the relative Picard group already "comes from" an element of $\Pic(X')$.
+This gives a substantial simplification of the description of the relative Picard group given in the previous section, and even of the Picard functor of $X$ over $S$, since, for all $T$ over $S$, we can apply the above to $X\times_S T/T$ and to the morphism $T'=S'\times_S T\to T$.
+If, for example, $f$ itself is faithfully flat, then we can take $S'=X$, which allows us, whenever $f$ is further of finite type (resp. simple, etc.), to restrict, in the description of the relative Picard functor $T\mapsto\Pic(X\times_S T/T)$, to the base changes $T'\to T$ that are of finite type (resp. simple, etc.).
+If $f$ is projective and flat, and $S$ locally Noetherian, then we can prove that we can take in the above a $S'\to S$ such that $S'$ is the direct sum of *flat covers* $S'_i$ of opens $S_i$ of $S$ that cover $S$;
+if $f$ is further separable, then we can take $S'_i$ to be étale over $S_i$.
+:::
+
+
+## The principal existence theorem: statement {#fga-3-v-section-3}
+
+We
