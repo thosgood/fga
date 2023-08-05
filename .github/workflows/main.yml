@@ -45,7 +45,8 @@ jobs:
 
       - name: 🛠 Set version hash
         run: |
-          sed -i "s/GIT_COMMIT_HASH_VARIABLE/$(git rev-parse --short "$GITHUB_SHA")/g" ./index.Rmd
+          echo "current_hash=$(git rev-parse --short "$GITHUB_SHA")" >> "$GITHUB_ENV"
+          sed -i "s/GIT_COMMIT_HASH_VARIABLE/${{ env.current_hash }}/g" ./index.Rmd
 
       - name: 🛠 Build site
         run: |
