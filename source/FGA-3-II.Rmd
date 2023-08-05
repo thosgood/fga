@@ -123,13 +123,13 @@ $$
 which is a functor from $\cal{C}$ to $\Set$.
 A functor from $\cal{C}$ to $\Set$ that is isomorphic to a functor of this type _with $I$ filtered_ is said to be _pro-representable_.
 By the previous section, these are exactly the functors that are isomorphic to _filtered inductive limits of representable functors_.
-Let $\cal{X}'=(X_j)_{j\in J}$ be another filtered projective system in $\cal{C}$ (indexed by another filtered pre-ordered set of indices $J$).
+Let $\cal{X}'=(X_j)_{j\in J}$ be another filtered projective system in $\cal{C}$ (indexed by another filtered preordered set of indices $J$).
 Then we can easily show that we have a canonical bijection
 $$
   \Hom(h_{\cal{X}'},h_{\cal{X}}) = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j)
 $$
 (generalising [§A, Proposition 1](#fga-3-ii-section-A.1-proposition-1)).
-This leads to introducing the _category $\Pro(\cal{C})$ of pro-objects of $\cal{C}$_, whose objects are projective systems of objects of $\cal{C}$ (indexed by arbitrary filtered pre-ordered sets of indices), and whose morphisms between objects $\cal{X}=(X_i)_{i\in I}$ and $\cal{X}'=(X_j)_{j\in J}$ are given by
+This leads to introducing the _category $\Pro(\cal{C})$ of pro-objects of $\cal{C}$_, whose objects are projective systems of objects of $\cal{C}$ (indexed by arbitrary filtered preordered sets of indices), and whose morphisms between objects $\cal{X}=(X_i)_{i\in I}$ and $\cal{X}'=(X_j)_{j\in J}$ are given by
 $$
   \Pro\Hom(\cal{X},\cal{X}') = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j),
 $$
@@ -180,7 +180,7 @@ In particular, if every pro-object of $\cal{C}$ is strict (cf. the previous sect
 
 ## Characterisation of pro-representable functors {#fga-3-ii-section-A.3}
 
-Let $\cal{C}$ and $\cal{C}'$ be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, pre-ordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" $e$ such that $\Hom(X,e)$ consists of only on element for all $X$).
+Let $\cal{C}$ and $\cal{C}'$ be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, preordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" $e$ such that $\Hom(X,e)$ consists of only on element for all $X$).
 Let $F$ be a covariant functor from $\cal{C}$ to $\cal{C}'$.
 Then the following conditions are equivalent:
 
