@@ -7,10 +7,9 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 
 ## To-do
 
-- `GIT_COMMIT_HASH_VARIABLE`
 - pdf output
 - pdf specific definitions (e.g. `\ourrar`, `\oullar`, `\simto`, `\simfrom`)
-- turn any FGA citations into links
+- turn any FGA citations into links?
     + (including those that are citations to the FGAs in the bibliography?)
 - consistent choice between empty lines between i. and ii. or not
 - margin/padding -top of lists in `.itenv` (seems like there's none?)
