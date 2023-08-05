@@ -224,8 +224,8 @@ ii. If $X$ locally admits a section over $S$ (i.e. every $s\in S$ has an open ne
 :::
 
 ::: {.proof}
-\oldpage{232-05}
 The first claim follows, thanks to the elementary properties of faithfully flat descent, from the following general remark.
+\oldpage{232-05}
 If $f\colon X\to S$ is a morphism such that $\OO_S\simto f_*(\OO_X)$, then the functor $\scr{F}\mapsto f^*(\scr{F})$, from the category of locally free modules of finite type on $S$ to the category of locally free modules of finite type on $X$, is fully faithful, and its essential image is given by the modules $\scr{G}$ on $X$ such that $f_*(\scr{G})$ is locally free and such that the canonical homomorphism
 $$
   f^*f_*(\scr{G})
@@ -269,8 +269,8 @@ This gives a new interpretation of $\Pic(X/S)$, at least when $f$ is further qua
 :::
 
 ::: {.rmenv #fga-3-v-remark-2.6 title="Remark 2.6" latex="{Remark 2.6}"}
-\oldpage{232-06}
 Let $f\colon X\to S$ be a morphism as in [(2.2)](#fga-3-v-proposition-2.2), and let $S'\to S$ be a faithfully flat quasi-compact morphism such that there exists an $S$-morphism $S'\to X$, i.e. such that there exists a section of $X'=X\times_S S'$ over $S'$.
+\oldpage{232-06}
 Let $S''=S'\times_S S'$, and $X''=X\times_S S''$, and consider the exact sequence
 $$
   \Pic(X/S)
@@ -293,4 +293,28 @@ if $f$ is further separable, then we can take $S'_i$ to be étale over $S_i$.
 
 ## The principal existence theorem: statement {#fga-3-v-section-3}
 
+We do not have, not even conjecturally, an existence statement for Picard preschemes that encompasses all known cases.
+A "practically necessary" condition, if we can say that, is that $f\colon X\to S$ be *proper* (ensuring essential finiteness properties) and *flat*.
+These conditions are not sufficient, even if $S$ is the spectrum of the algebra of dual numbers $k[t]/(t^2)$ over a field $k$ (say, the field $\mathbb{C}$ of complex numbers), and $X$ is of dimension $1$.
+At the moment of writing this present talk, the most important existence theorems for the Picard prescheme follow from the following theorem:
+
+::: {.itenv #fga-3-v-theorem-3.1 title="Theorem 3.1" latex="{Theorem 3.1}"}
+Let $f\colon X\to S$ be a morphism of locally Noetherian preschemes.
+Suppose that
+\oldpage{232-07}
+
+i. $f$ is projective
+ii. $f$ is flat
+iii. the geometric fibres of $f$ are integral.
+
+Under these conditions, $\repPic_{X/S}$ exists.
+:::
+
+The proof, which will be sketched in the following two sections, will at the same time show the following:
+Let $\xi$ be the section of $\repPic_{X/S}$ that corresponds to a very ample sheaf $\OO_X(1)$ over $X/S$ (i.e. induced by a projective embedding $X\to\mathbb{P}(\scr{E})$);
+then there exists an open subset $U$ of $\repPic_{X/S}$, disjoint union of quasi-projective open subsets of $S$, such that $U$ is stable under translation by $\xi$, and such that $\repPic_{X/S}$ is the increasing union of opens $U\setminus n\xi$ (each isomorphic to $U$).
+It thus follows, in particular, that, under the conditions of [(3.1)](#fga-3-v-theorem-3.1), that $\Pic_{X/S}$ is *separated* over $S$.
+
+::: {.rmenv #remark-3.2 title="Remark 3.2" latex="{Remark 3.2}"}
 We
+:::
