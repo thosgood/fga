@@ -197,6 +197,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.2" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-2"><i class="fa fa-check"></i><b>7.2</b> Relations between the various relative and absolute Picard groups</a></li>
 <li class="chapter" data-level="7.3" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-3"><i class="fa fa-check"></i><b>7.3</b> The principal existence theorem: statement</a></li>
 <li class="chapter" data-level="7.4" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-4"><i class="fa fa-check"></i><b>7.4</b> Relative Cartier divisors and projective bundles</a></li>
+<li class="chapter" data-level="7.5" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-5"><i class="fa fa-check"></i><b>7.5</b> Proof of the principal existence theorem</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
@@ -518,7 +519,7 @@ to deal with case (b), we will use the following result:</p>
 Let <eq env="math">{\mathcal{F}}</eq> be the fibred category (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, A, Definition 1.1]</span>) of quasi-coherent sheaves that are flat over varying preschemes.
 Then the morphism <eq env="math">\operatorname{Spec}(A')\to\operatorname{Spec}(A)</eq> is a <em>strict <eq env="math">{\mathcal{F}}</eq>-descent morphism</em> (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, A, Definition 1.7]</span>).</p>
 </div>
-<p>In other words, the data of a flat <eq env="math">A</eq>-module <eq env="math">M</eq> is completely equivalent to the data of a flat <eq env="math">A'</eq>-module <eq env="math">M'</eq> endowed with an <eq env="math">(A'\otimes_A A')</eq>-isomorphism from <eq env="math">M'\otimes_A A'</eq> to <eq env="math">A'\otimes_A M'</eq> satisfying the usual transitivity condition for a descent data (loc. cit.).</p>
+<p>In other words, the data of a flat <eq env="math">A</eq>-module <eq env="math">M</eq> is completely equivalent to the data of a flat <eq env="math">A'</eq>-module <eq env="math">M'</eq> endowed with an <eq env="math">(A'\otimes_A A')</eq>-isomorphism from <eq env="math">M'\otimes_A A'</eq> to <eq env="math">A'\otimes_A M'</eq> satisfying the usual transitivity condition for a descent data (<em>loc. cit.</em>).</p>
 <p>We prove <a href="FGA-3-II.html#fga-3-ii-section-B-theorem-2">Theorem 2</a> by first proving that
 <eq env="displaymath">
   \operatorname{H}^i(A'/A,\operatorname{G_a}) = 0
@@ -641,7 +642,7 @@ this is linked to the fact that the symmetric square of such a variety does not 
 </eq>
 called the <em>relative Picard group</em> of <eq env="math">X/S</eq>.
 An element of this group is thus defined by giving an open cover <eq env="math">(U_i)</eq> of <eq env="math">S</eq>, along with an invertible sheaf <eq env="math">{\mathscr{L}}_i</eq> on each <eq env="math">f^{-1}(U_i)</eq>, such that <eq env="math">{\mathscr{L}}_i|f^{-1}(U_i\cap U_j)</eq> is isomorphic to <eq env="math">{\mathscr{L}}_j|f^{-1}(U_i\cap U_j)</eq> for all <eq env="math">i,j</eq>, or, at least locally over <eq env="math">U_i\cap U_j</eq> (i.e. these two sheaves are “equivalent” in the sense of <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, B.4]</span>).
-If <eq env="math">X/S</eq> admits a section, then <eq env="math">P(X/S)</eq> is exactly the set of classes of invertible sheaves on <eq env="math">X/S</eq> up to “equivalence” (loc. cit.).
+If <eq env="math">X/S</eq> admits a section, then <eq env="math">P(X/S)</eq> is exactly the set of classes of invertible sheaves on <eq env="math">X/S</eq> up to “equivalence” (<em>loc. cit.</em>).
 We now set, for all <eq env="math">T</eq> over <eq env="math">S</eq>,
 <eq env="displaymath">
   F(T) = P(X_T/T)
@@ -731,7 +732,7 @@ where we set <eq env="math">P_A=X_A\times_A X_A</eq>, where <eq env="math">{\mat
 More precisely, an easy globalisation of Hochschild theory shows that the <eq env="math">\operatorname{Ext}^1</eq> above can be identified with the set of classes, up to isomorphism, of sheaves of <eq env="math">I_A</eq>-algebras <eq env="math">{\mathscr{O}}</eq> that are flat over <eq env="math">X_A</eq>, and endowed with an augmentation isomorphism <eq env="math">{\mathscr{O}}\otimes_{I_A}A\to{\mathscr{O}}_{X_A}</eq> (recall that we set <eq env="math">I_A=At/(t^2)</eq>).
 The submodule <eq env="math">F(I_A,\xi)</eq> is that which corresponds to the sheaves of <em>commutative</em> algebras.
 The simplicity hypotheses are thus not essential in the theory of modules, as <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span> implies.</p></li>
-<li><p>Recall (loc. cit.) that, in particular, every <em>simple</em> and <em>proper algebraic curve</em> <eq env="math">X_0</eq> over <eq env="math">k</eq> admits a formal scheme of modules that is simple over <eq env="math">\Lambda</eq>, and of relative dimension equal to <eq env="math">3g-3</eq> if the genus <eq env="math">g</eq> is <eq env="math">\geqslant 2</eq>, and to <eq env="math">g</eq> if <eq env="math">g=0,1</eq>.
+<li><p>Recall (<em>loc. cit.</em>) that, in particular, every <em>simple</em> and <em>proper algebraic curve</em> <eq env="math">X_0</eq> over <eq env="math">k</eq> admits a formal scheme of modules that is simple over <eq env="math">\Lambda</eq>, and of relative dimension equal to <eq env="math">3g-3</eq> if the genus <eq env="math">g</eq> is <eq env="math">\geqslant 2</eq>, and to <eq env="math">g</eq> if <eq env="math">g=0,1</eq>.
 These two latter cases no longer figure directly in <a href="#fga-3-ii-section-C.4-proposition-4">Proposition 4.1</a>.
 We can, however, recover them in the case of elliptic curves (<eq env="math">g=1</eq>) thanks to the remarks that will follow.</p></li>
 </ol>

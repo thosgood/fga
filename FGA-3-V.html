@@ -197,6 +197,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.2" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-2"><i class="fa fa-check"></i><b>7.2</b> Relations between the various relative and absolute Picard groups</a></li>
 <li class="chapter" data-level="7.3" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-3"><i class="fa fa-check"></i><b>7.3</b> The principal existence theorem: statement</a></li>
 <li class="chapter" data-level="7.4" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-4"><i class="fa fa-check"></i><b>7.4</b> Relative Cartier divisors and projective bundles</a></li>
+<li class="chapter" data-level="7.5" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-5"><i class="fa fa-check"></i><b>7.5</b> Proof of the principal existence theorem</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
@@ -256,7 +257,7 @@ There is thus an opportunity to “make it local”, by introducing, for every r
 </eq></p>
 </div>
 <p>(where <eq env="math">f\colon X\to S</eq> is the structure morphism) (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, II, C.3]</span>).
-In <em>loco citato</em> this group is called the relative Picard group, but it will be preferable to call it here the <em>restricted relative Picard group</em> of <eq env="math">X/S</eq>, for reasons that will be made clear.
+In <em>loc. cit.</em> this group is called the relative Picard group, but it will be preferable to call it here the <em>restricted relative Picard group</em> of <eq env="math">X/S</eq>, for reasons that will be made clear.
 As <eq env="math">S'</eq> varies over <eq env="math">\mathtt{Sch}_{/S}</eq>, <eq env="math">S'\mapsto\operatorname{Pic}'(X\times_S S'/S')</eq> is a contravariant functor in <eq env="math">S'</eq>, denote also by <eq env="math">\mathscr{P}\kern -.5pt ic'_{X/S}</eq>, thus given essentially by the formula</p>
 <div id="fga-3-v-equation-1.3" class="eqref" title="">
 <p><eq env="displaymath">
@@ -336,7 +337,7 @@ It is often convenient to work instead with the functor <eq env="math">P'=\maths
 </eq></p>
 </div>
 <p>which gives a description of <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}</eq> in terms of <eq env="math">\mathscr{P}\kern -.5pt ic'_{X/S}=P'</eq> that is usually more convenient.
-By <a href="FGA-3-V.html#fga-3-v-corollary-2.3">(2.3)</a> below, if we replace <eq env="math">P</eq> by <eq env="math">P'</eq> in the description of <eq env="math">\operatorname{Pic}(X/S)</eq> that we have just given then we can take <eq env="math">S''=S'\times_S S'</eq> and <eq env="math">S'_1=S'\times_S S_1</eq>, at least under the conditions given in <em>loco citato</em>.</p>
+By <a href="FGA-3-V.html#fga-3-v-corollary-2.3">(2.3)</a> below, if we replace <eq env="math">P</eq> by <eq env="math">P'</eq> in the description of <eq env="math">\operatorname{Pic}(X/S)</eq> that we have just given then we can take <eq env="math">S''=S'\times_S S'</eq> and <eq env="math">S'_1=S'\times_S S_1</eq>, at least under the conditions given in <em>loc. cit.</em>.</p>
 <p>If the functor <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}</eq> is representable, we say that <eq env="math">X/S</eq> admits a Picard prescheme, and the prescheme over <eq env="math">S</eq> that represents the functor is called the <em>Picard prescheme</em> of <eq env="math">X</eq> over <eq env="math">S</eq>, and denoted by <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>.
 For this, it evidently suffices that <eq env="math">P'=\mathscr{P}\kern -.5pt ic_{X/S}</eq> be representable, since then <eq env="math">P'</eq> is already a “sheaf”, and equation <a href="FGA-3-V.html#fga-3-v-equation-1.8">(1.8)</a> proves that the morphism <eq env="math">P'\to{\mathscr{P}}'</eq> can be identified with the canonical morphism</p>
 <div id="fga-3-v-equation-1.9" class="eqref" title="">
@@ -534,14 +535,14 @@ Then by the characterisation (ii) of relative Cartier divisors, <eq env="math">\
 </eq>
 is “representable by open immersions” (cf. <span class="citation">[<a href="#ref-Gro1960a" role="doc-biblioref">8</a>, IV, 3.13]</span>) by the above remarks.
 Using the principal existence theorem of <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, IV]</span>, we find:</p>
-<div id="proposition-4.1" class="itenv" title="Proposition 4.1">
+<div id="fga-3-v-proposition-4.1" class="itenv" title="Proposition 4.1">
 <p>Suppose that <eq env="math">f\colon X\to S</eq> is projective and flat.
 Then the functor <eq env="math">\mathscr{D}\kern -.5pt iv_{X/S}</eq> is representable, and, more precisely, is represented by an open of <eq env="math">\underline{\operatorname{Hilb}}_{X/S}</eq>.</p>
 </div>
 <p>For a given very ample sheaf <eq env="math">{\mathscr{O}}_X(1)</eq> over <eq env="math">X/S</eq>, using the canonical decomposition of <eq env="math">\underline{\operatorname{Hilb}}_{X/S}</eq> into a sum of opens <eq env="math">\underline{\operatorname{Hilb}}_{X/S}^Q</eq> corresponding to Hilbert polynomials <eq env="math">Q\in\mathbb{Q}[t]</eq>, we obtain an analogous decomposition
 <eq env="displaymath">
-  \repDiv_{X/S}
-  = \sqcup_{Q\in\mathbb{Q}[t]} \repDiv_{X/S}^Q
+  \underline{\operatorname{Div}}_{X/S}
+  = \sqcup_{Q\in\mathbb{Q}[t]} \underline{\operatorname{Div}}_{X/S}^Q
 </eq>
 into a sum of disjoint opens that are <em>quasi-projective</em> over <eq env="math">S</eq>.</p>
 <p>Using the map <eq env="math">D\mapsto{\mathscr{L}}(D)</eq>, we obtain a functorial homomorphism</p>
@@ -555,7 +556,42 @@ into a sum of disjoint opens that are <em>quasi-projective</em> over <eq env="ma
 <p>that we propose to study;
 it appears to be relatively representable (<span class="citation">[<a href="#ref-Gro1960a" role="doc-biblioref">8</a>, IV, 3]</span>) under rather general conditions.
 We thus start with an element <eq env="math">\xi</eq> of <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}(S')</eq>, supposing, to simplify notation, that <eq env="math">S'=S</eq>;
-we will show that the corresponding sub-functor of <eq env="math">\mathscr{D}\kern -.5pt iv_{X/S}</eq> is representable.</p>
+we will show that the corresponding sub-functor of <eq env="math">\mathscr{D}\kern -.5pt iv_{X/S}</eq> is representable.
+Consider first of all the case where <eq env="math">\xi</eq> is defined by an invertible module <eq env="math">{\mathscr{L}}</eq> on <eq env="math">X</eq>.
+Suppose that <eq env="math">X</eq> is proper and flat over <eq env="math">S</eq>, and that the geometric fibres of <eq env="math">X</eq> over <eq env="math">S</eq> are integral, which also implies (<span class="citation">[<a href="#ref-GD1960" role="doc-biblioref">10</a>, III, 7]</span>) that <eq env="math">{\mathscr{O}}_S\xrightarrow{\sim}f_*({\mathscr{O}}_X)</eq>, and that this remains true after any base change <eq env="math">S'\to S</eq>.
+Then the relative Cartier divisors <eq env="math">D</eq> on <eq env="math">X/S</eq> such that <eq env="math">{\mathscr{L}}(D)</eq> and <eq env="math">{\mathscr{L}}</eq> define the same element of <eq env="math">\operatorname{Pic}(X/S)=\mathscr{P}\kern -.5pt ic_{X/S}(S)</eq>, i.e. by <a href="FGA-3-V.html#fga-3-v-corollary-2.4">(2.4)</a> such that <eq env="math">{\mathscr{L}}(D)</eq> and <eq env="math">{\mathscr{L}}</eq> are locally isomorphic over <eq env="math">S</eq>, are in bijective correspondence with the sections of the quotient sheaf <eq env="math">f_*({\mathscr{L}})^\times/{\mathscr{O}}_S^\times</eq>.
+This correspondence is compatible with base change.
+General arguments of “Künneth” type from <em>loc. cit.</em><a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a> show that the property of <eq env="math">X/S</eq> and the flatness of <eq env="math">{\mathscr{L}}</eq> over <eq env="math">S</eq> imply the existence of a coherent module <eq env="math">{\mathscr{Q}}</eq> on <eq env="math">S</eq>, defined up to unique isomorphism, and an isomorphism of sheaves
+<eq env="displaymath">
+  f_*({\mathscr{L}})
+  \xrightarrow{\sim}\mathscr{H}\kern -.5pt om_{{\mathscr{O}}_X}({\mathscr{Q}},{\mathscr{O}}_S)
+</eq>
+and the formation of <eq env="math">{\mathscr{Q}}</eq> is furthermore compatible with base change.
+Here <eq env="math">f_*({\mathscr{L}})^\times</eq> denotes the subsheaf of sets of <eq env="math">f_*({\mathscr{L}})</eq> whose sections over <eq env="math">U</eq> are the sections of <eq env="math">{\mathscr{L}}</eq> over <eq env="math">f^{-1}(U)</eq> that define relative Cartier divisors on <eq env="math">f^{-1}(U)/U</eq>, i.e. that induces sections that are non-zero divisors on the <eq env="math">X_s</eq> (for <eq env="math">s\in U</eq>).
+Using the hypothesis that the fibres <eq env="math">X_s</eq> are integral, this simply implies that the induced sections on the fibres <eq env="math">X_s</eq> are not identically zero, or, in terms of local homomorphisms <eq env="math">{\mathscr{Q}}\to{\mathscr{O}}_S</eq>, that these homomorphisms are surjective (Nakayama).
+This shows that the set of sections of <eq env="math">f_*({\mathscr{L}})^\times/{\mathscr{O}}_S^\times</eq> is in bijective correspondence with the set of <em>invertible quotient modules of <eq env="math">{\mathscr{Q}}</eq></em>, or, by the definition of the projective bundle <eq env="math">\mathbb{P}({\mathscr{Q}})</eq> associated to the coherent module <eq env="math">{\mathscr{Q}}</eq> (cf. <span class="citation">[<a href="#ref-Gro1960a" role="doc-biblioref">8</a>, V, 2]</span>), with the set of sections of <eq env="math">\mathbb{P}({\mathscr{Q}})</eq> over <eq env="math">S</eq>.
+This description is compatible with taking inverse images, and we thus obtain the theorem below.</p>
+<div id="fga-3-v-theorem-4.3" class="itenv" title="Theorem 4.3">
+<p>Let <eq env="math">f\colon X\to S</eq> be a flat proper morphism with integral geometric fibres, with <eq env="math">S</eq> locally Noetherian, and let <eq env="math">{\mathscr{L}}</eq> be an invertible module on <eq env="math">X</eq>.
+For every <eq env="math">S'</eq> over <eq env="math">S</eq>, let <eq env="math">T(S')</eq> be the set of relative divisors <eq env="math">D</eq> on <eq env="math">X\times_S S'/S'</eq> such that <eq env="math">{\mathscr{L}}(D)</eq> is locally isomorphic to <eq env="math">{\mathscr{L}}\otimes_{{\mathscr{O}}_S}{\mathscr{O}}_{S'}</eq> over <eq env="math">S'</eq> (i.e. such that <eq env="math">{\mathscr{L}}(D)</eq> and <eq env="math">{\mathscr{L}}\otimes_{{\mathscr{O}}_S}{\mathscr{O}}_{S'}</eq>) define the same element of <eq env="math">\operatorname{Pic}(X\times_S S'/S')</eq>.
+Then there exists a coherent module <eq env="math">{\mathscr{Q}}</eq> on <eq env="math">S</eq>, determined up to unique isomorphism, such that the functor <eq env="math">T</eq> is represented by the projective bundle <eq env="math">\mathbb{P}({\mathscr{Q}})</eq>.</p>
+</div>
+<div id="fga-3-v-corollary-4.4" class="itenv" title="Corollary 4.4">
+<p>If we suppose that <eq env="math">f</eq> is projective, then the functorial homomorphism <eq env="math">\mathscr{D}\kern -.5pt iv_{X/S}\to\mathscr{P}\kern -.5pt ic_{X/S}</eq> is representable by projective morphisms.</p>
+</div>
+<p>If <eq env="math">X</eq> admits a section (resp. locally admits a section) over <eq env="math">S</eq>, then the above homomorphism is representable by projective bundles (resp. by local projective bundles) thanks to <a href="FGA-3-V.html#fga-3-v-theorem-4.3">(4.3)</a> and <a href="FGA-3-V.html#fga-3-v-proposition-2.1">(2.1)</a>.
+In the case where <eq env="math">f</eq> is quasi-projective, we can easily reduce to the previous case by a descent method, using the finite flat local quasi-sections of <eq env="math">X</eq> over <eq env="math">S</eq>.</p>
+<div id="fga-3-v-remark-4.5" class="rmenv" title="4.5">
+<p>Under the conditions of <a href="FGA-3-V.html#fga-3-v-theorem-4.3">(4.3)</a>, the module <eq env="math">{\mathscr{Q}}</eq> on <eq env="math">S</eq> is not in general locally free, as we can see by the fact that the dimension of the reduced fibres of <eq env="math">{\mathscr{Q}}</eq>, i.e. those of <eq env="math">\operatorname{H}^0(X_s,{\mathscr{L}}_s)</eq> for varying <eq env="math">s\in S</eq>, can <em>jump</em>.
+Given a coherent module <eq env="math">{\mathscr{Q}}</eq> on the locally Noetherian prescheme <eq env="math">S</eq>, we can easily show that, for any given <eq env="math">s\in S</eq>, <eq env="math">{\mathscr{Q}}</eq> is free at <eq env="math">s</eq> if and only if <eq env="math">\mathbb{P}({\mathscr{Q}})</eq> is flat over <eq env="math">S</eq> at the points over <eq env="math">s</eq> (in which case it will even be simple over <eq env="math">S</eq> at the points over <eq env="math">s</eq>);
+when this happens, with <eq env="math">{\mathscr{Q}}</eq> defined in terms of <eq env="math">{\mathscr{L}}</eq> as above, this also implies that forming the direct image <eq env="math">f_*({\mathscr{L}})</eq> <em>“commutes with base change on a neighbourhood of <eq env="math">s</eq>”</em>, or that <eq env="math">f_*({\mathscr{L}})_s\to\operatorname{H}^0(X_s,{\mathscr{L}}_s)</eq> is surjective.
+This will be the case if, for example, <eq env="math">\operatorname{H}^1(X_s,{\mathscr{L}}_s)=0</eq>.
+Subject to the existence of the preschemes in question, these criteria apply in particular to the universal situation <eq env="math">\underline{\operatorname{Div}}_{X/S}\to\underline{\operatorname{Pic}}_{X/S}</eq>, and give a necessary and sufficient condition (resp. sufficient) for this morphism to be simple at a given point of <eq env="math">\underline{\operatorname{Div}}_{X/S}</eq>.</p>
+</div>
+</div>
+<div id="fga-3-v-section-5" class="section level2" number="7.5">
+<h2><span class="header-section-number">7.5</span> Proof of the principal existence theorem</h2>
+<p>Under</p>
 
 </div>
 </div>
@@ -567,6 +603,15 @@ we will show that the corresponding sub-functor of <eq env="math">\mathscr{D}\ke
 <div id="ref-Gro1960a" class="csl-entry">
 <div class="csl-left-margin">[8] </div><div class="csl-right-inline">A. Grothendieck. <span>“Techniques de construction en géométrie analytique, <span>I</span>–<span>X</span>.”</span> <em>Séminaire Cartan</em>. <strong>13</strong> (1960/61), Talks no. 7–17.</div>
 </div>
+<div id="ref-GD1960" class="csl-entry">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4,8,11,17,20,24,28,32</strong> (1960/67).</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="12">
+<li id="fn12"><p><em>[Trans.]</em> The original also cites here a 1962 seminar on algebraic geometry at Harvard University by Mumford and Tate, but the notes from this were never completed and so there is no real existing citation.<a href="FGA-3-V.html#fnref12" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
 
