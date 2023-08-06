@@ -196,6 +196,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.1" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-1"><i class="fa fa-check"></i><b>7.1</b> Relative Picard groups and functors</a></li>
 <li class="chapter" data-level="7.2" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-2"><i class="fa fa-check"></i><b>7.2</b> Relations between the various relative and absolute Picard groups</a></li>
 <li class="chapter" data-level="7.3" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-3"><i class="fa fa-check"></i><b>7.3</b> The principal existence theorem: statement</a></li>
+<li class="chapter" data-level="7.4" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-4"><i class="fa fa-check"></i><b>7.4</b> Relative Cartier divisors and projective bundles</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
@@ -471,8 +472,27 @@ Let <eq env="math">\xi</eq> be the section of <eq env="math">\underline{\operato
 then there exists an open subset <eq env="math">U</eq> of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>, disjoint union of quasi-projective open subsets of <eq env="math">S</eq>, such that <eq env="math">U</eq> is stable under translation by <eq env="math">\xi</eq>, and such that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is the increasing union of opens <eq env="math">U\setminus n\xi</eq> (each isomorphic to <eq env="math">U</eq>).
 It thus follows, in particular, that, under the conditions of <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a>, that <eq env="math">\operatorname{Pic}_{X/S}</eq> is <em>separated</em> over <eq env="math">S</eq>.</p>
 <div id="remark-3.2" class="rmenv" title="Remark 3.2">
-<p>We</p>
+<p>We see from examples (with <eq env="math">S</eq> the spectrum of a discrete valuation ring, and <eq env="math">X</eq> of relative dimension <eq env="math">1</eq> over <eq env="math">S</eq>, for example), that if we omit hypothesis (iii) in <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a> and replace it with the weaker hypothesis that, for all <eq env="math">s\in S</eq>, the homomorphism <eq env="math">k(s)\to\operatorname{H}^0(X_s,{\mathscr{O}}_{X_s})</eq> be an isomorphism, then <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is not necessarily separated over <eq env="math">S</eq>;
+both in the case where the geometric fibres of <eq env="math">f</eq> are reduced, but where a generic integral geometric fibre “blows up” by specialisation into two irreducible components, and in the case where the geometric fibres of <eq env="math">f</eq> are irreducible, but where a generic integral geometric fibre specialises to a “multiple fibre”.
+The first case happens, for example, with a conic that degenerates into two concurrent lines; an example of the second was shown to me by D. Mumford, with an elliptic curve that degenerates to a double elliptic curve.
+These examples work in any characteristic.</p>
 </div>
+<div id="fga-3-v-remark-3.3" class="rmenv" title="Remark 3.3">
+<p>Under the conditions of <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a>, I do not know if <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is a disjoint union of opens that are of finite type, thus quasi-projective, over <eq env="math">S</eq>.
+We note that the study of the Hilbert polynomials <eq env="math">Q\in\mathbb{Q}[t]</eq> allows us, as in the case of Hilbert schemes (<span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, IV]</span>), to give a decomposition of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> as a disjoint sum of opens <eq env="math">\operatorname{Pic}_{X/S}^Q</eq>, and it seems plausible that these opens are quasi-projective over <eq env="math">S</eq>;
+this is what we will see at least in the next talk when <eq env="math">f</eq> is a simple morphism.
+We draw attention to the fact that if we replace hypothesis (i) by the hypothesis “<eq env="math">X</eq> is <em>locally</em> projective over <eq env="math">S</eq>” (which is sufficient to prove <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a>, since the question of existence of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is clearly local on <eq env="math">S</eq>) however, then it is easy to give examples where <em><eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> contains connected components that are not of finite type over <eq env="math">S</eq></em>.
+For example, let <eq env="math">X_0</eq> be a non-singular projective algebraic variety over an algebraically closed field <eq env="math">k</eq>, endowed with an automorphism <eq env="math">u</eq> and an element <eq env="math">\xi</eq> of the Néron–Severi group of <eq env="math">X_0</eq> such that the <eq env="math">u^n(\xi)</eq> are pairwise distinct.
+We can, for example, take <eq env="math">X_0</eq> to be the product of an elliptic curve <eq env="math">E</eq> with itself, and <eq env="math">u</eq> to be the automorphism <eq env="math">(x,y)\mapsto(x,y+x)</eq> of <eq env="math">E\times E</eq>.
+Let <eq env="math">S</eq> be the union of two non-singular irreducible curves that meet at two points <eq env="math">a</eq> and <eq env="math">b</eq>.
+There is a connected principal covering <eq env="math">P</eq> on <eq env="math">S</eq> of the group <eq env="math">\mathbb{Z}</eq>, and using the action of <eq env="math">\mathbb{Z}</eq> on <eq env="math">X_0</eq> defined by <eq env="math">u</eq> we thus obtain an associated bundle on <eq env="math">S</eq>, with fibre <eq env="math">X_0</eq> (trivial on <eq env="math">S\setminus\{a\}</eq> and <eq env="math">S\setminus\{b\}</eq>), which is in fact an <em>abelian</em> scheme over <eq env="math">S</eq> in the particular case in question.
+We easily see that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>, which is also the bundle associated to <eq env="math">P</eq> and to the action of <eq env="math">\mathbb{Z}</eq> on <eq env="math">\underline{\operatorname{Pic}}_{X_0/k}</eq> via <eq env="math">u</eq>, contains a connected component that is isomorphic to <eq env="math">P\times\underline{\operatorname{Pic}}_{X_0/k}^0</eq> (where <eq env="math">\underline{\operatorname{Pic}}^0</eq> denotes the connected component of the identity element in <eq env="math">\underline{\operatorname{Pic}}</eq>), which is not of finite type over <eq env="math">S</eq>.
+(One can equally produce analogous phenomena in various cases of non-separated Picard preschemes over <eq env="math">S</eq>, as described in <a href="FGA-3-V.html#fga-3-v-remark-3.3">(3.3)</a>).</p>
+</div>
+</div>
+<div id="fga-3-v-section-4" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> Relative Cartier divisors and projective bundles</h2>
+<p>We</p>
 
 </div>
 </div>
