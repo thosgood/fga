@@ -31,6 +31,7 @@
 Grothendieck, A.
 "Technique de descente et théorèmes d'existence en géométrie algébrique, V: Les schémas de Picard: Théorèmes d'existence".
 _Séminaire Bourbaki_ **14** (1961--62), Talk no. 232.
+(FGA 3.V)
 :::
 
 **TO-DO:**
@@ -393,5 +394,27 @@ Using the principal existence theorem of [@Gro1959, IV], we find:
 ::: {.itenv #proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
 Suppose that $f\colon X\to S$ is projective and flat.
 \oldpage{232-10}
-Then
+Then the functor $\shDiv_{X/S}$ is representable, and, more precisely, is represented by an open of $\repHilb_{X/S}$.
 :::
+
+For a given very ample sheaf $\OO_X(1)$ over $X/S$, using the canonical decomposition of $\repHilb_{X/S}$ into a sum of opens $\repHilb_{X/S}^Q$ corresponding to Hilbert polynomials $Q\in\mathbb{Q}[t]$, we obtain an analogous decomposition
+$$
+  \repDiv_{X/S}
+  = \sqcup_{Q\in\mathbb{Q}[t]} \repDiv_{X/S}^Q
+$$
+into a sum of disjoint opens that are *quasi-projective* over $S$.
+
+Using the map $D\mapsto\scr{L}(D)$, we obtain a functorial homomorphism
+
+::: {.eqref #fga-3-v-equation-plus title="" latex=""}
+$$
+  \shDiv_{X/S}
+  \to \shPic_{X/S}
+\tag{plus}
+$$
+:::
+
+that we propose to study;
+it appears to be relatively representable ([@Gro1960a, IV, 3]) under rather general conditions.
+We thus start with an element $\xi$ of $\shPic_{X/S}(S')$, supposing, to simplify notation, that $S'=S$;
+we will show that the corresponding sub-functor of $\shDiv_{X/S}$ is representable.
