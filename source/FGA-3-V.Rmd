@@ -10,15 +10,18 @@
 \providecommand{\shPic}{\mathscr{P}\kern -.5pt ic}
 \providecommand{\repPic}{\underline{\Pic}}
 \providecommand{\OO}{\scr{O}}
+\providecommand{\RR}{\operatorname{R}}
 \providecommand{\simto}{\xrightarrow{\sim}}
 \providecommand{\HH}{\operatorname{H}}
 \providecommand{\Sch}{\mathtt{Sch}}
 \providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\shHom}{\mathscr{H}\kern -.5pt om}
 \providecommand{\from}{\leftarrow}
 \providecommand{\pr}{\mathrm{pr}}
 \providecommand{\div}{\operatorname{div}}
 \providecommand{\Div}{\operatorname{Div}}
 \providecommand{\shDiv}{\mathscr{D}\kern -.5pt iv}
+\providecommand{\repDiv}{\underline{\Div}}
 \providecommand{\Hilb}{\operatorname{Hilb}}
 \providecommand{\shHilb}{\mathscr{H}\kern -.5pt ilb}
 \providecommand{\repHilb}{\underline{\Hilb}}
@@ -70,7 +73,7 @@ $$
 :::
 
 (where $f\colon X\to S$ is the structure morphism) (cf. [@Gro1959, II, C.3]).
-In *loco citato* this group is called the relative Picard group, but it will be preferable to call it here the *restricted relative Picard group* of $X/S$, for reasons that will be made clear.
+In *loc. cit.* this group is called the relative Picard group, but it will be preferable to call it here the *restricted relative Picard group* of $X/S$, for reasons that will be made clear.
 As $S'$ varies over $\Sch_{/S}$, $S'\mapsto\Pic'(X\times_S S'/S')$ is a contravariant functor in $S'$, denote also by $\shPic'_{X/S}$, thus given essentially by the formula
 
 ::: {.eqref #fga-3-v-equation-1.3 title="" latex=""}
@@ -167,7 +170,7 @@ $$
 :::
 
 which gives a description of $\shPic_{X/S}$ in terms of $\shPic'_{X/S}=P'$ that is usually more convenient.
-By [(2.3)](#fga-3-v-corollary-2.3) below, if we replace $P$ by $P'$ in the description of $\Pic(X/S)$ that we have just given then we can take $S''=S'\times_S S'$ and $S'_1=S'\times_S S_1$, at least under the conditions given in *loco citato*.
+By [(2.3)](#fga-3-v-corollary-2.3) below, if we replace $P$ by $P'$ in the description of $\Pic(X/S)$ that we have just given then we can take $S''=S'\times_S S'$ and $S'_1=S'\times_S S_1$, at least under the conditions given in *loc. cit.*.
 
 If the functor $\shPic_{X/S}$ is representable, we say that $X/S$ admits a Picard prescheme, and the prescheme over $S$ that represents the functor is called the *Picard prescheme* of $X$ over $S$, and denoted by $\repPic_{X/S}$.
 For this, it evidently suffices that $P'=\shPic_{X/S}$ be representable, since then $P'$ is already a "sheaf", and equation [(1.8)](#fga-3-v-equation-1.8) proves that the morphism $P'\to\scr{P}'$ can be identified with the canonical morphism
@@ -391,7 +394,7 @@ $$
 is "representable by open immersions" (cf. [@Gro1960a, IV, 3.13]) by the above remarks.
 Using the principal existence theorem of [@Gro1959, IV], we find:
 
-::: {.itenv #proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
+::: {.itenv #fga-3-v-proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
 Suppose that $f\colon X\to S$ is projective and flat.
 \oldpage{232-10}
 Then the functor $\shDiv_{X/S}$ is representable, and, more precisely, is represented by an open of $\repHilb_{X/S}$.
@@ -418,3 +421,45 @@ that we propose to study;
 it appears to be relatively representable ([@Gro1960a, IV, 3]) under rather general conditions.
 We thus start with an element $\xi$ of $\shPic_{X/S}(S')$, supposing, to simplify notation, that $S'=S$;
 we will show that the corresponding sub-functor of $\shDiv_{X/S}$ is representable.
+Consider first of all the case where $\xi$ is defined by an invertible module $\scr{L}$ on $X$.
+Suppose that $X$ is proper and flat over $S$, and that the geometric fibres of $X$ over $S$ are integral, which also implies ([@GD1960, III, 7]) that $\OO_S\simto f_*(\OO_X)$, and that this remains true after any base change $S'\to S$.
+Then the relative Cartier divisors $D$ on $X/S$ such that $\scr{L}(D)$ and $\scr{L}$ define the same element of $\Pic(X/S)=\shPic_{X/S}(S)$, i.e. by [(2.4)](#fga-3-v-corollary-2.4) such that $\scr{L}(D)$ and $\scr{L}$ are locally isomorphic over $S$, are in bijective correspondence with the sections of the quotient sheaf $f_*(\scr{L})^\times/\scr{O}_S^\times$.
+This correspondence is compatible with base change.
+General arguments of "Künneth" type from *loc. cit.*^[*[Trans.]* The original also cites here a 1962 seminar on algebraic geometry at Harvard University by Mumford and Tate, but the notes from this were never completed and so there is no real existing citation.] show that the property of $X/S$ and the flatness of $\scr{L}$ over $S$ imply the existence of a coherent module $\scr{Q}$ on $S$, defined up to unique isomorphism, and an isomorphism of sheaves
+$$
+  f_*(\scr{L})
+  \simto \shHom_{\OO_X}(\scr{Q},\OO_S)
+$$
+and the formation of $\scr{Q}$ is furthermore compatible with base change.
+Here $f_*(\scr{L})^\times$ denotes the subsheaf of sets of $f_*(\scr{L})$ whose sections over $U$ are the sections of $\scr{L}$ over $f^{-1}(U)$ that define relative Cartier divisors on $f^{-1}(U)/U$, i.e. that induces sections that are non-zero divisors on the $X_s$ (for $s\in U$).
+\oldpage{232-11}
+Using the hypothesis that the fibres $X_s$ are integral, this simply implies that the induced sections on the fibres $X_s$ are not identically zero, or, in terms of local homomorphisms $\scr{Q}\to\OO_S$, that these homomorphisms are surjective (Nakayama).
+This shows that the set of sections of $f_*(\scr{L})^\times/\OO_S^\times$ is in bijective correspondence with the set of *invertible quotient modules of $\scr{Q}$*, or, by the definition of the projective bundle $\mathbb{P}(\scr{Q})$ associated to the coherent module $\scr{Q}$ (cf. [@Gro1960a, V, 2]), with the set of sections of $\mathbb{P}(\scr{Q})$ over $S$.
+This description is compatible with taking inverse images, and we thus obtain the theorem below.
+
+::: {.itenv #fga-3-v-theorem-4.3 title="Theorem 4.3" latex="{Theorem 4.3}"}
+Let $f\colon X\to S$ be a flat proper morphism with integral geometric fibres, with $S$ locally Noetherian, and let $\scr{L}$ be an invertible module on $X$.
+For every $S'$ over $S$, let $T(S')$ be the set of relative divisors $D$ on $X\times_S S'/S'$ such that $\scr{L}(D)$ is locally isomorphic to $\scr{L}\otimes_{\OO_S}\OO_{S'}$ over $S'$ (i.e. such that $\scr{L}(D)$ and $\scr{L}\otimes_{\OO_S}\OO_{S'}$) define the same element of $\Pic(X\times_S S'/S')$.
+Then there exists a coherent module $\scr{Q}$ on $S$, determined up to unique isomorphism, such that the functor $T$ is represented by the projective bundle $\mathbb{P}(\scr{Q})$.
+:::
+
+::: {.itenv #fga-3-v-corollary-4.4 title="Corollary 4.4" latex="{Corollary 4.4}"}
+If we suppose that $f$ is projective, then the functorial homomorphism $\shDiv_{X/S}\to\shPic_{X/S}$ is representable by projective morphisms.
+:::
+
+If $X$ admits a section (resp. locally admits a section) over $S$, then the above homomorphism is representable by projective bundles (resp. by local projective bundles) thanks to [(4.3)](#fga-3-v-theorem-4.3) and [(2.1)](#fga-3-v-proposition-2.1).
+In the case where $f$ is quasi-projective, we can easily reduce to the previous case by a descent method, using the finite flat local quasi-sections of $X$ over $S$.
+
+::: {.rmenv #fga-3-v-remark-4.5 title="4.5" latex="{4.5}"}
+Under the conditions of [(4.3)](#fga-3-v-theorem-4.3), the module $\scr{Q}$ on $S$ is not in general locally free, as we can see by the fact that the dimension of the reduced fibres of $\scr{Q}$, i.e. those of $\HH^0(X_s,\scr{L}_s)$ for varying $s\in S$, can *jump*.
+Given a coherent module $\scr{Q}$ on the locally Noetherian prescheme $S$, we can easily show that, for any given $s\in S$, $\scr{Q}$ is free at $s$ if and only if $\mathbb{P}(\scr{Q})$ is flat over $S$ at the points over $s$ (in which case it will even be simple over $S$ at the points over $s$);
+when this happens, with $\scr{Q}$ defined in terms of $\scr{L}$ as above, this also implies that forming the direct image $f_*(\scr{L})$ *"commutes with base change on a neighbourhood of $s$"*, or that $f_*(\scr{L})_s\to\HH^0(X_s,\scr{L}_s)$ is surjective.
+\oldpage{232-12}
+This will be the case if, for example, $\HH^1(X_s,\scr{L}_s)=0$.
+Subject to the existence of the preschemes in question, these criteria apply in particular to the universal situation $\repDiv_{X/S}\to\repPic_{X/S}$, and give a necessary and sufficient condition (resp. sufficient) for this morphism to be simple at a given point of $\repDiv_{X/S}$.
+:::
+
+
+## Proof of the principal existence theorem {#fga-3-v-section-5}
+
+Under
