@@ -244,9 +244,9 @@ For all <eq env="math">X\in{\mathcal{C}}</eq>, let <eq env="math">h_X</eq> be th
 If we have a morphism <eq env="math">X\to X'</eq> in <eq env="math">{\mathcal{C}}</eq>, then this evidently induces a morphism <eq env="math">h_X\to h_{X'}</eq> of functors;
 <eq env="math">h_X</eq> is a covariant functor in <eq env="math">X</eq>, i.e. we have defined a <em>canonical covariant functor</em>
 <eq env="displaymath">
-  h\colon {\mathcal{C}} \to \operatorname{Hom}({\mathcal{C}}^o,\mathtt{Set})
+  h\colon {\mathcal{C}} \to \operatorname{Hom}({\mathcal{C}}^\circ,\mathtt{Set})
 </eq>
-from <eq env="math">{\mathcal{C}}</eq> to the category of covariant functors from the dual <eq env="math">{\mathcal{C}}^o</eq> of <eq env="math">{\mathcal{C}}</eq> to the category of sets.
+from <eq env="math">{\mathcal{C}}</eq> to the category of covariant functors from the dual <eq env="math">{\mathcal{C}}^\circ</eq> of <eq env="math">{\mathcal{C}}</eq> to the category of sets.
 We then recall:</p>
 <div id="fga-3-ii-section-A.1-proposition-1.1" class="itenv" title="Proposition 1.1">
 <p>This functor <eq env="math">h</eq> is <em>faithfully flat</em>;
@@ -256,9 +256,9 @@ in other words, for every pair <eq env="math">X,X'</eq> of objects of <eq env="m
 </eq>
 is <em>bijective</em>.</p>
 </div>
-<p>In particular, if a functor <eq env="math">F\in\operatorname{Hom}({\mathcal{C}}^o,\mathtt{Set})</eq> is isomorphic to a functor of the form <eq env="math">h_X</eq>, then <em><eq env="math">X</eq> is determined up to unique isomorphism</em>.
+<p>In particular, if a functor <eq env="math">F\in\operatorname{Hom}({\mathcal{C}}^\circ,\mathtt{Set})</eq> is isomorphic to a functor of the form <eq env="math">h_X</eq>, then <em><eq env="math">X</eq> is determined up to unique isomorphism</em>.
 We then say that the functor <eq env="math">F</eq> is <em>representable</em>.
-The above proposition then implies that the canonical functor <eq env="math">h</eq> defines an <em>equivalence</em> between the category <eq env="math">{\mathcal{C}}</eq> and the full subcategory of <eq env="math">\operatorname{Hom}({\mathcal{C}}^o,\mathtt{Set})</eq> consisting of representable functors.
+The above proposition then implies that the canonical functor <eq env="math">h</eq> defines an <em>equivalence</em> between the category <eq env="math">{\mathcal{C}}</eq> and the full subcategory of <eq env="math">\operatorname{Hom}({\mathcal{C}}^\circ,\mathtt{Set})</eq> consisting of representable functors.
 This fact is the basis of <em>the idea of a “solution of a universal problem”</em>, with such a problem always consisting of examining if a given (contravariant, as here, or covariant, in the dual case) functor from <eq env="math">{\mathcal{C}}</eq> to <eq env="math">\mathtt{Set}</eq> is representable.
 Note further that, even by the definition of products in a category <span class="citation">[<a href="#ref-Gro1957" role="doc-biblioref">5</a>]</span>, the functor <eq env="math">h\colon X\mapsto h_X</eq> commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking “kernels” <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span>, etc., whenever such things exist): we have an isomorphism of functors
 <eq env="displaymath">
@@ -306,7 +306,7 @@ Then we can easily show that we have a canonical bijection
 <eq env="displaymath">
   \operatorname{Hom}(h_{{\mathcal{X}}'},h_{{\mathcal{X}}}) = \varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j)
 </eq>
-(generalising <a href="#fga-3-ii-section-A.1-proposition-1">§A, Proposition 1</a>).
+(generalising <a href="FGA-3-II.html#fga-3-ii-section-A.1-proposition-1.1">§A, Proposition 1.1</a>).
 This leads to introducing the <em>category <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq> of pro-objects of <eq env="math">{\mathcal{C}}</eq></em>, whose objects are projective systems of objects of <eq env="math">{\mathcal{C}}</eq> (indexed by arbitrary filtered preordered sets of indices), and whose morphisms between objects <eq env="math">{\mathcal{X}}=(X_i)_{i\in I}</eq> and <eq env="math">{\mathcal{X}}'=(X_j)_{j\in J}</eq> are given by
 <eq env="displaymath">
   \operatorname{Pro}\operatorname{Hom}({\mathcal{X}},{\mathcal{X}}') = \varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j),
