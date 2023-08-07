@@ -462,4 +462,18 @@ Subject to the existence of the preschemes in question, these criteria apply in 
 
 ## Proof of the principal existence theorem {#fga-3-v-section-5}
 
-Under
+Under the conditions of [(3.1)](#fga-3-v-theorem-3.1), choose some module $\OO_X(1)$ that is very ample over $X/S$, and let $\xi$ be the corresponding element of $\Pic(X/S)$.
+For brevity, let $\scr{P}(S')=\Pic(X\times_S S'/S')$, and suppose, for simplicity, that $X/S$ admits a section.
+Let $\scr{P}^+(S')$ be the subset of $\scr{P}(S')$ consisting of classes of the $\scr{L}$ that are invertible on $X\times_S S'$ such that
+$$
+  \begin{aligned}
+    \RR^i f'_*(\scr{L}(n)) &= 0
+    \qquad\text{for }i>0\text{ and all }n\geq0
+  \\f'_*(\scr{L}(n)) &\neq0
+    \qquad\text{for all }n\geq0.
+  \end{aligned}
+$$
+These conditions are stable under base change, and thus define a subfunctor $\scr{P}^+$ of $\scr{P}$ that is evidently stable under translation by $\xi$.
+Using Serre's "Theorems A and B" ([@GD1960, III, 2]) and generalities ([@Gro1960a, IV, 5]), we easily see that $\scr{P}$ is representable if and only if $\scr{P}^+$ is, and so $\scr{P}^+$ will be representable by an open $U$ of the prescheme $\repPic_{X/S}$ that represents $\scr{P}$, and the latter will be an increasing union of opens $U\setminus n\xi$.
+
+For brevity, let
