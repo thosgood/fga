@@ -87,7 +87,7 @@ $$
 \oldpage{232-02}
 This functor is now "of local nature", given that did what was necessary to make this happen.
 Intuitively, the right-hand side of [(1.3)](#fga-3-v-equation-1.3) can be understood as the set of "algebraic families" of classes of invertible sheaves on (the fibres of) $X/S$, indexed by the parameter prescheme $S'/S$.
-When the functor $\shPic'$ is representable, the prescheme over $S$ that represents it is denoted by $\repPic_{X/S}$, and is called the *Picard prescheme* of $X$ over $S$, and so we will then have
+When the functor $\shPic'$ is representable, the prescheme over $S$ that represents it is denoted by $\repPic_{X/S}$, and is called the *Picard prescheme* of $X$ over $S$, and so we then have
 
 ::: {.eqref #fga-3-v-equation-1.4 title="" latex=""}
 $$
@@ -408,15 +408,11 @@ $$
 into a sum of disjoint opens that are *quasi-projective* over $S$.
 
 Using the map $D\mapsto\scr{L}(D)$, we obtain a functorial homomorphism
-
-::: {.eqref #fga-3-v-equation-plus title="" latex=""}
 $$
   \shDiv_{X/S}
   \to \shPic_{X/S}
 \tag{plus}
 $$
-:::
-
 that we propose to study;
 it appears to be relatively representable ([@Gro1960a, IV, 3]) under rather general conditions.
 We thus start with an element $\xi$ of $\shPic_{X/S}(S')$, supposing, to simplify notation, that $S'=S$;
@@ -452,7 +448,7 @@ In the case where $f$ is quasi-projective, we can easily reduce to the previous 
 
 ::: {.rmenv #fga-3-v-remark-4.5 title="4.5" latex="{4.5}"}
 Under the conditions of [(4.3)](#fga-3-v-theorem-4.3), the module $\scr{Q}$ on $S$ is not in general locally free, as we can see by the fact that the dimension of the reduced fibres of $\scr{Q}$, i.e. those of $\HH^0(X_s,\scr{L}_s)$ for varying $s\in S$, can *jump*.
-Given a coherent module $\scr{Q}$ on the locally Noetherian prescheme $S$, we can easily show that, for any given $s\in S$, $\scr{Q}$ is free at $s$ if and only if $\mathbb{P}(\scr{Q})$ is flat over $S$ at the points over $s$ (in which case it will even be simple over $S$ at the points over $s$);
+Given a coherent module $\scr{Q}$ on the locally Noetherian prescheme $S$, we can easily show that, for any given $s\in S$, $\scr{Q}$ is free at $s$ if and only if $\mathbb{P}(\scr{Q})$ is flat over $S$ at the points over $s$ (in which case it is even simple over $S$ at the points over $s$);
 when this happens, with $\scr{Q}$ defined in terms of $\scr{L}$ as above, this also implies that forming the direct image $f_*(\scr{L})$ *"commutes with base change on a neighbourhood of $s$"*, or that $f_*(\scr{L})_s\to\HH^0(X_s,\scr{L}_s)$ is surjective.
 \oldpage{232-12}
 This will be the case if, for example, $\HH^1(X_s,\scr{L}_s)=0$.
@@ -476,4 +472,35 @@ $$
 These conditions are stable under base change, and thus define a subfunctor $\scr{P}^+$ of $\scr{P}$ that is evidently stable under translation by $\xi$.
 Using Serre's "Theorems A and B" ([@GD1960, III, 2]) and generalities ([@Gro1960a, IV, 5]), we easily see that $\scr{P}$ is representable if and only if $\scr{P}^+$ is, and so $\scr{P}^+$ will be representable by an open $U$ of the prescheme $\repPic_{X/S}$ that represents $\scr{P}$, and the latter will be an increasing union of opens $U\setminus n\xi$.
 
-For brevity, let
+For brevity, let $\scr{D}=\shDiv_{X/S}$, and let $\scr{D}^+$ be the inverse image of $\scr{P}^+$ under the canonical morphism $\scr{D}\to\scr{P}$.
+So we have a morphism
+$$
+  \scr{D}^+
+  \to \scr{P}^+
+\tag{plus}
+$$
+and we already know that $\scr{D}^+$ is representable by an open $D^+$ of the prescheme $D=\repDiv_{X/S}$ (and, more precisely, by *projective bundles associated to locally free modules* that are everywhere non-zero);
+this is due to the fact that, if $\scr{L}$ on $X\times_S S'$ is, as at the start of this section, then $f'_*(\scr{L})$ is a *locally free* non-zero module, whose formation commutes with base change;
+with the notation of [(4.3)](#fga-3-v-theorem-4.3), $\scr{Q}$ is then isomorphic to the dual of $f'_*(\scr{L})$.
+Using general criteria ([@Gro1960a, IV, 4.7]), we can thus conclude that $P^+$ is representable.
+In *loc. cit.*, we take $\scr{S}$ to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by [@Gro1959, I, B]).
+\oldpage{232-13}
+Condition (a) of *loc. cit.*, namely that $(+)$ is representable by morphisms that are elements of $\scr{S}$, is satisfied as we have just seen;
+condition (b) says that the functor $\scr{P}^+$ is is compatible with faithfully flat quasi-compact descent, which is immediate.
+It remains only to prove condition (c) of *loc. cit.*, namely that the equivalence $R$ in the prescheme $D^+$ induced by the $\scr{S}$-representable morphism ($+$) is $\scr{S}$-effective, i.e. is effective and such that $D^+\to D^+/R$ is in $\scr{S}$.
+For this, note first of all that the opens ${D^+}^Q$ of $D^+$ that correspond to the virtual Hilbert polynomials $Q\in\mathbb{Q}[t]$ are stable under $R$ (since the fibres of $R$ are connected), which reduces the problem to proving that, for all $Q$, the induced equivalence relation $R^Q$ on ${D^+}^Q$ is $\scr{S}$-effective.
+But now ${D^+}^Q$ is quasi-projective, and the equivalence relation $R^Q$ is projective and flat.
+We are thus under the hypothesis of [@Gro1959, III, 6.1], which implies the desired result.
+
+In the general case where $X/S$ does not necessarily admit a section, we can easily reduce to the above case by the technique of descent, where we can repeat the above proof with the modification that is imposed upon the definition of $\scr{P}^+$.
+
+::: {.rmenv #fga-3-v-remarks-5.1 title="Remarks 5.1" latex="{Remarks 5.1}"}
+The method that we followed is essentially that of Matsusaka for the projective construction of Picard varieties.
+The result that we invoke from [@Gro1959, III] that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [-]^[*[Trans.]* The original again cites here the 1962 seminar on algebraic geometry at Harvard University by Mumford and Tate.]).
+(Classically, these quotients are constructed by using Chow coordinates).
+Note that the formation of the open $\repPic_{X/S}^+$ of $\repPic_{X/S}$ and its decomposition into opens ${\repPic_{X/S}^+}^Q$ that are quasi-projcetive over $S$ following the Hilbert polynomials for the *divisors* that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).
+:::
+
+::: {.rmenv #fga-3-v-remarks-5.2 title="Remarks 5.2" latex="{Remarks 5.2}"}
+It
+:::
