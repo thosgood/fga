@@ -319,7 +319,7 @@ are isomorphisms.</p></li>
 <p>In this statement, we suppose that we already have some coherent subsheaf <eq env="math">{\mathscr{J}}</eq> of <eq env="math">{\mathscr{O}}_Y</eq> that defines <eq env="math">Y'</eq>, whence, by taking the inverse image, a coherent subsheaf of <eq env="math">{\mathscr{O}}_X</eq> that defines <eq env="math">X'</eq>, whence, by definition, <eq env="math">{\mathscr{F}}_n</eq>, <eq env="math">X_n</eq>, <eq env="math">Y_n</eq>, and <eq env="math">f_n\colon X_n\to Y_n</eq> as in <a href="FGA-2.html#fga-2-section-2">§2</a>.
 The minor changes that need to be made to the notation in the explanation if we started with an arbitrary proper morphism between two formal schemes are evident.</p>
 <p><a href="FGA-2.html#fga-2-theorem-1">Theorem 1</a> deals only with “formal cohomology”;
-the following theorem relates it with “algebraic cohomology”, and resembles a well-known theorem of Serre <span class="citation">[<a href="#ref-Ser1956" role="doc-biblioref">17</a>]</span> on the comparison between algebraic cohomology and analytic cohomology.</p>
+the following theorem relates it with “algebraic cohomology”, and resembles a well-known theorem of Serre <span class="citation">[<a href="#ref-Ser1956" role="doc-biblioref">18</a>]</span> on the comparison between algebraic cohomology and analytic cohomology.</p>
 <div id="fga-2-theorem-2" class="itenv" title="Theorem 2">
 <p><em>First comparison theorem.</em> —
 The <eq env="math">\operatorname{R}^q f_*({\mathscr{F}})</eq> are coherent sheaves on <eq env="math">Y</eq> (which is a particular case of <a href="FGA-2.html#fga-2-theorem-1">Theorem 1</a>), and the natural homomorphisms
@@ -423,20 +423,20 @@ Applying <a href="FGA-2.html#fga-2-theorem-5-corollary-1">Corollary 1</a>, we se
 We thus deduce the following global version of Zariski’s “main theorem”:</p>
 <div id="fga-2-theorem-6" class="itenv" title="Theorem 6">
 <p>Let <eq env="math">f\colon X\to Y</eq> be a morphism of finite type.
-Then the set <eq env="math">U</eq> of points of <eq env="math">X</eq> that are isolated in their fibre is open, and, if <eq env="math">f</eq> is quasi-projective<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, then <eq env="math">U</eq> is <eq env="math">Y</eq>-isomorphic to an open subset of some scheme <eq env="math">Y'</eq> that is finite over <eq env="math">Y</eq>.</p>
+Then the set <eq env="math">U</eq> of points of <eq env="math">X</eq> that are isolated in their fibre is open, and, if <eq env="math">f</eq> is quasi-projective<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>, then <eq env="math">U</eq> is <eq env="math">Y</eq>-isomorphic to an open subset of some scheme <eq env="math">Y'</eq> that is finite over <eq env="math">Y</eq>.</p>
 </div>
 <p>Since a morphism of finite type is locally affine, and <em>a fortiori</em> locally quasi-projective, we immediately deduce from <a href="FGA-2.html#fga-2-theorem-6">Theorem 6</a> the usual local variants of the main theorem.</p>
 </div>
 <div id="fga-2-section-5" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Application to the cohomological study of proper and flat morphisms</h2>
 <p>Let <eq env="math">f\colon X\to Y</eq> be a proper morphism, and <eq env="math">{\mathscr{F}}</eq> a coherent sheaf on <eq env="math">X</eq>, with <eq env="math">{\mathscr{F}}</eq> assumed to be <eq env="math">Y</eq>-flat, i.e. the <eq env="math">{\mathscr{F}}_x</eq> are flat modules over the rings <eq env="math">{\mathscr{O}}_y</eq> (where <eq env="math">y=f(x)</eq>).
-This also implies that, for every <eq env="math">y\in Y</eq>, if we filter <eq env="math">{\mathscr{F}}</eq> along the fibre <eq env="math">f^{-1}(y)</eq> by the <eq env="math">{\mathfrak{m}}_y^n{\mathscr{F}}</eq> (where <eq env="math">{\mathfrak{m}}_y</eq> is the maximal ideal of <eq env="math">{\mathscr{O}}_y</eq>), then the associated graded algebra is isomorphic to <eq env="math">({\mathscr{F}}/{\mathfrak{m}}_y{\mathscr{F}})\otimes_{\mathfrak{K}(y)}\operatorname{gr}({\mathscr{O}}_y)</eq>;
+This also implies that, for every <eq env="math">y\in Y</eq>, if we filter <eq env="math">{\mathscr{F}}</eq> along the fibre <eq env="math">f^{-1}(y)</eq> by the <eq env="math">{\mathfrak{m}}_y^n{\mathscr{F}}</eq> (where <eq env="math">{\mathfrak{m}}_y</eq> is the maximal ideal of <eq env="math">{\mathscr{O}}_y</eq>), then the associated graded algebra is isomorphic to <eq env="math">({\mathscr{F}}/{\mathfrak{m}}_y{\mathscr{F}})\otimes_{k(y)}\operatorname{gr}({\mathscr{O}}_y)</eq>;
 in other words, we have that
 <eq env="displaymath">
   {\mathfrak{m}}_y^n{\mathscr{F}}/{\mathfrak{m}}_y^{n+1}
-  = {\mathscr{F}}_y\otimes_{\mathfrak{K}(y)}({\mathfrak{m}}_y^n/{\mathfrak{m}}_y^{n+1})
+  = {\mathscr{F}}_y\otimes_{k(y)}({\mathfrak{m}}_y^n/{\mathfrak{m}}_y^{n+1})
 </eq>
-for every integer <eq env="math">n</eq>, where <eq env="math">{\mathscr{F}}_y</eq> denotes the sheaf <eq env="math">{\mathscr{F}}/{\mathfrak{m}}_y{\mathscr{F}}</eq> induced by <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X_y</eq> (with <eq env="math">X_y</eq> denoting the fibre <eq env="math">f^{-1}(y)</eq> considered as a proper scheme over the residue field <eq env="math">\mathfrak{K}(y)</eq> of <eq env="math">y</eq>).
+for every integer <eq env="math">n</eq>, where <eq env="math">{\mathscr{F}}_y</eq> denotes the sheaf <eq env="math">{\mathscr{F}}/{\mathfrak{m}}_y{\mathscr{F}}</eq> induced by <eq env="math">{\mathscr{F}}</eq> on <eq env="math">X_y</eq> (with <eq env="math">X_y</eq> denoting the fibre <eq env="math">f^{-1}(y)</eq> considered as a proper scheme over the residue field <eq env="math">k(y)</eq> of <eq env="math">y</eq>).
 Taking this isomorphism, as well as <a href="FGA-2.html#fga-2-theorem-2">Theorem 2</a>, into account, we obtain augmentations, and sometimes computations, of the <eq env="math">\operatorname{R}^q f_*({\mathscr{F}})</eq> in a neighbourhood of <eq env="math">y</eq>, knowing the cohomology of <eq env="math">X_y</eq> with coefficients in <eq env="math">{\mathscr{F}}_y</eq>.
 Here <a href="FGA-2.html#fga-2-theorem-2">Theorem 2</a> takes the form
 <eq env="displaymath">
@@ -617,7 +617,7 @@ We must start by seeing if the first obstruction that we have, in <eq env="math"
 <li><p>We will compare the results from this section (mainly the above <a href="FGA-2.html#fga-2-theorem-9-corollary-1">Corollary 1</a> and <a href="FGA-2.html#fga-2-theorem-9-corollary-2">Corollary 2</a>), as well as those from the following, with the results of Kodaira–Spencer on the variation of complex structures.
 Using the conjectural theorem to which we have just alluded, we should be able to conclude, under the conditions of <a href="FGA-2.html#fga-2-theorem-9-corollary-1">Corollary 1</a>, but where <eq env="math">A</eq> is no longer assumed to be complete, that there exists a ring <eq env="math">A'</eq> that contains <eq env="math">A</eq>, and that is finite and unramified over <eq env="math">A</eq>, such that <eq env="math">X\otimes_AA'</eq> and <eq env="math">X'\otimes_AA'</eq> are <eq env="math">A'</eq>-isomorphic (where <eq env="math">X</eq> and <eq env="math">X'</eq> are given, and are proper flat <eq env="math">A</eq>-schemes such that <eq env="math">X\otimes_Ak=X'\otimes_Ak=X_0</eq>).
 This is what we can prove, at least, when <eq env="math">X_0={\mathfrak{P}}_k^r</eq>, by using <a href="FGA-2.html#fga-2-proposition-2-corollary-1">Corollary 1 of Proposition 2</a>.
-In any case, if <eq env="math">H^1(X_0,{\mathfrak{G}}_{X_0/k})=0</eq>, then we can prove that the fibres of <eq env="math">X</eq> and <eq env="math">X'</eq> over any point <eq env="math">y</eq> of <eq env="math">Y=\operatorname{Spec}(A)</eq> are isomorphic, or at least when we pass to the algebraic closure of the residue field <eq env="math">\mathfrak{K}(y)</eq>.
+In any case, if <eq env="math">H^1(X_0,{\mathfrak{G}}_{X_0/k})=0</eq>, then we can prove that the fibres of <eq env="math">X</eq> and <eq env="math">X'</eq> over any point <eq env="math">y</eq> of <eq env="math">Y=\operatorname{Spec}(A)</eq> are isomorphic, or at least when we pass to the algebraic closure of the residue field <eq env="math">k(y)</eq>.
 (We have a local result, seemingly stronger, when we don’t suppose that <eq env="math">A</eq> is necessarily local).
 As for “structure variations” of the projective space, we again point out the following question, suggested by a corresponding problem of Kodaira–Spencer.
 Let <eq env="math">X</eq> be a proper flat scheme, over a local integral ring <eq env="math">A</eq> with field of fractions <eq env="math">K</eq> and residue field <eq env="math">k</eq>, and suppose that <eq env="math">X\otimes_AK</eq> is isomorphic to <eq env="math">{\mathfrak{P}}_K^r</eq>.
@@ -629,7 +629,7 @@ There is an analogous question when <eq env="math">X_0</eq> is an abelian variet
 <div class="rmenv" title="Remark">
 <p><em>[Comp.]</em>
 <em>(Concerning Remark 1 above).</em>
-We note that J.-P. Serre has constructed a non-singular projective variety, of dimension <eq env="math">3</eq>, over an algebraically closed field <eq env="math">k</eq>, of characteristic <eq env="math">p&gt;0</eq>, which does not come from reduction of a proper scheme over a local integral ring with residue field <eq env="math">k</eq>, and having a field of fractions of characteristic <eq env="math">0</eq>.<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>
+We note that J.-P. Serre has constructed in <span class="citation">[<a href="#ref-Ser1961" role="doc-biblioref">22</a>]</span> a non-singular projective variety, of dimension <eq env="math">3</eq>, over an algebraically closed field <eq env="math">k</eq>, of characteristic <eq env="math">p&gt;0</eq>, which does not come from reduction of a proper scheme over a local integral ring with residue field <eq env="math">k</eq>, and having a field of fractions of characteristic <eq env="math">0</eq>.
 Mumford would have found an analogous result, with a non-singular projective <em>surface</em>.</p>
 </div>
 <div class="rmenv" title="Remark">
@@ -696,12 +696,12 @@ Then an <eq env="math">X</eq>-scheme <eq env="math">X'</eq> is said to be an <em
 <ol style="list-style-type: lower-roman">
 <li><p><eq env="math">X'</eq> is finite over <eq env="math">X</eq>, i.e. it is defined by a coherent sheaf of algebras <eq env="math">{\mathscr{A}}={\mathscr{A}}(X')</eq> on <eq env="math">X</eq>;</p></li>
 <li><p><eq env="math">{\mathscr{A}}</eq> is a locally free sheaf on <eq env="math">X</eq>;</p></li>
-<li><p>for all <eq env="math">x\in X</eq>, the quotient <eq env="math">{\mathscr{A}}_x/{\mathfrak{m}}_x{\mathscr{A}}_x = {\mathscr{A}}_x\otimes_{{\mathscr{O}}_X}\pi(x)</eq> is a separable algebra over <eq env="math">\mathfrak{K}(x)</eq>.</p></li>
+<li><p>for all <eq env="math">x\in X</eq>, the quotient <eq env="math">{\mathscr{A}}_x/{\mathfrak{m}}_x{\mathscr{A}}_x = {\mathscr{A}}_x\otimes_{{\mathscr{O}}_X}\pi(x)</eq> is a separable algebra over <eq env="math">k(x)</eq>.</p></li>
 </ol>
 <p>This notion of unramified covering (due to Serre and the speaker) posses all the elementary properties for which we can reasonably hope, and which we will not list.
 We restrict ourselves to saying that it gives rise to a <em>Galois theory</em> modelled on classical Galois theory (and containing it; the proofs being overall simpler than the proofs generally seen for the latter) and the Galois theory of topological coverings.
-More precisely, we define a <em>geometric point</em> of a scheme <eq env="math">X</eq> to be a morphism <eq env="math">a</eq> from the spectrum <eq env="math">\xi</eq> of an algebraically closed field <eq env="math">\Omega</eq> to <eq env="math">X</eq>, i.e. the data of an algebraically closed extension of the residue field <eq env="math">\mathfrak{K}(x)</eq> of a point <eq env="math">x=|a|</eq> of <eq env="math">X</eq> (called the <em>locality</em> of the geometric point <eq env="math">a</eq>).
-If <eq env="math">X'</eq> is an unramified covering of <eq env="math">X</eq>, then we can associate to it the set <eq env="math">E_a(X')</eq> of “geometric points of <eq env="math">X'</eq> over <eq env="math">a</eq>”, i.e. the set of pairs consisting of an <eq env="math">x'\in X'</eq> over <eq env="math">x</eq> and a <eq env="math">\mathfrak{K}(x)</eq>-homomorphism to <eq env="math">\Omega</eq>.
+More precisely, we define a <em>geometric point</em> of a scheme <eq env="math">X</eq> to be a morphism <eq env="math">a</eq> from the spectrum <eq env="math">\xi</eq> of an algebraically closed field <eq env="math">\Omega</eq> to <eq env="math">X</eq>, i.e. the data of an algebraically closed extension of the residue field <eq env="math">k(x)</eq> of a point <eq env="math">x=|a|</eq> of <eq env="math">X</eq> (called the <em>locality</em> of the geometric point <eq env="math">a</eq>).
+If <eq env="math">X'</eq> is an unramified covering of <eq env="math">X</eq>, then we can associate to it the set <eq env="math">E_a(X')</eq> of “geometric points of <eq env="math">X'</eq> over <eq env="math">a</eq>”, i.e. the set of pairs consisting of an <eq env="math">x'\in X'</eq> over <eq env="math">x</eq> and a <eq env="math">k(x)</eq>-homomorphism to <eq env="math">\Omega</eq>.
 We thus obtain (for fixed <eq env="math">(X,a)</eq>) a functor <eq env="math">F(X,a)</eq> from the category <eq env="math">R(X)</eq> of unramified coverings <eq env="math">X'</eq> of <eq env="math">X</eq> to the category of finite sets.
 If <eq env="math">X</eq> is connected, then the pair given by <eq env="math">R(X)</eq> and <eq env="math">F(X,a)</eq> has all the formal properties necessary in order to be isomorphic to the analogous pair defined by a suitable totally disconnected compact topological group <eq env="math">\pi</eq> (i.e. a projective limit of finite groups): we take the category <eq env="math">{\mathcal{C}}(\pi)</eq> of finite sets on which <eq env="math">\pi</eq> acts continuously, and the identity functor <eq env="math">F(\pi)(E)=E</eq> from this category to the category of finite sets.
 The group <eq env="math">\pi</eq> is also determined up to canonical isomorphic by the condition that <eq env="math">({\mathcal{C}}(\pi),F(\pi))</eq> is isomorphic to a given pair.
@@ -764,7 +764,7 @@ Then we have an exact sequence
 the exactness in the middle follows from <a href="FGA-2.html#fga-2-lemma-3">Lemma 3</a>;
 finally, the surjectivity of the last homomorphism (which is the only thing to rely on the fact that <eq env="math">A/{\mathfrak{r}}(A)</eq> is radicial) follows from <a href="FGA-2.html#fga-2-lemma-4">Lemma 4</a>.</p>
 <div id="fga-2-proposition-4" class="itenv" title="Proposition 4">
-<p>Let <eq env="math">f\colon X\to Y</eq> be a proper flat morphism such that, for all <eq env="math">y\in Y</eq>, the algebra <eq env="math">H^0(f^{-1}(y),{\mathscr{O}}_{f^{-1}(y)})</eq> is separable over the residue field <eq env="math">\mathfrak{K}(y)</eq> (which is the case, for example, if <eq env="math">f^{-1}(y)</eq> is a <em>separable scheme</em> over <eq env="math">\mathfrak{K}(y)</eq>, i.e. reduced and such that the fields corresponding to its irreducible components are separable extensions of <eq env="math">\mathfrak{K}(y)</eq>).
+<p>Let <eq env="math">f\colon X\to Y</eq> be a proper flat morphism such that, for all <eq env="math">y\in Y</eq>, the algebra <eq env="math">H^0(f^{-1}(y),{\mathscr{O}}_{f^{-1}(y)})</eq> is separable over the residue field <eq env="math">k(y)</eq> (which is the case, for example, if <eq env="math">f^{-1}(y)</eq> is a <em>separable scheme</em> over <eq env="math">k(y)</eq>, i.e. reduced and such that the fields corresponding to its irreducible components are separable extensions of <eq env="math">k(y)</eq>).
 Then the covering <eq env="math">Y'</eq> of <eq env="math">Y</eq> associated to <eq env="math">f_*({\mathscr{O}}_X)</eq> is unramified.</p>
 </div>
 <p>The proof is easy, thanks to <a href="FGA-2.html#fga-2-theorem-2">Theorem 2</a>.</p>
@@ -794,7 +794,7 @@ Consider the evident morphism</p>
 <p>induced by the natural morphisms <eq env="math">X'\to X</eq> and <eq env="math">X\to Y'</eq>;
 this will be an isomorphism whenever <eq env="math">X'</eq> is of the form <eq env="math">X\times_Y Y''</eq>, where <eq env="math">Y''</eq> is an unramified covering of <eq env="math">Y</eq>, and then <eq env="math">Y'</eq> will be exactly <eq env="math">Y''</eq>, and <a href="FGA-2.html#fga-2-equation-asterisk">Equation (<eq env="math">*</eq>)</a> will be the identity.
 We wish to precisely give the conditions for which <eq env="math">X'</eq> is of the form that we have just indicated, i.e. such that <eq env="math">Y'</eq> is unramified and <a href="FGA-2.html#fga-2-equation-asterisk">Equation (<eq env="math">*</eq>)</a> is an isomorphism.
-For this, we introduce the fibre <eq env="math">F</eq> of <eq env="math">X</eq> at <eq env="math">y</eq>, which is a proper scheme over <eq env="math">\mathfrak{K}(y)</eq>, for which <eq env="math">F'</eq> is a cover (an unramified one if <eq env="math">X</eq> is).
+For this, we introduce the fibre <eq env="math">F</eq> of <eq env="math">X</eq> at <eq env="math">y</eq>, which is a proper scheme over <eq env="math">k(y)</eq>, for which <eq env="math">F'</eq> is a cover (an unramified one if <eq env="math">X</eq> is).
 Let <eq env="math">F'_1</eq> be a connected component of <eq env="math">F'</eq> corresponding to a point <eq env="math">y'_1</eq> of <eq env="math">Y'</eq> over <eq env="math">y</eq>.
 Suppose further that</p>
 <ol start="2" style="list-style-type: lower-roman">
@@ -813,7 +813,7 @@ For an unramified covering over <eq env="math">X</eq> to be isomorphic to the in
 </div>
 <p>By <a href="FGA-2.html#fga-2-theorem-11">Theorem 11</a>, the set of points of <eq env="math">Y</eq> for which this condition is satisfied is open, and so it suffices to verify it at the points <eq env="math">y</eq> which are closed…
 Note that the following statement is equivalent to <a href="FGA-2.html#fga-2-theorem-11-corollary-1">Corollary 1</a>:</p>
-<p><em>The kernel of the homomorphism <eq env="math">\pi_1(X)\to\pi_1(Y)</eq> (which is surjective, by <a href="FGA-2.html#fga-2-lemma-4">Lemma 4</a>) is the closed invariant subgroup generated by the images in <eq env="math">\pi_1(X)</eq> of <eq env="math">\pi_1(f^{-1}(y))</eq>, where <eq env="math">f^{-1}(y)</eq> denotes the scheme <eq env="math">f^{-1}(y)\otimes_{k(y)}\overline{\mathfrak{K}(y)}</eq> (where <eq env="math">\overline{\mathfrak{K}(y)}</eq> denotes an algebraic closure of <eq env="math">\mathfrak{K}(y)</eq>).</em></p>
+<p><em>The kernel of the homomorphism <eq env="math">\pi_1(X)\to\pi_1(Y)</eq> (which is surjective, by <a href="FGA-2.html#fga-2-lemma-4">Lemma 4</a>) is the closed invariant subgroup generated by the images in <eq env="math">\pi_1(X)</eq> of <eq env="math">\pi_1(f^{-1}(y))</eq>, where <eq env="math">f^{-1}(y)</eq> denotes the scheme <eq env="math">f^{-1}(y)\otimes_{k(y)}\overline{k(y)}</eq> (where <eq env="math">\overline{k(y)}</eq> denotes an algebraic closure of <eq env="math">k(y)</eq>).</em></p>
 <p>We note that, since we cannot <em>choose</em> the same base point for all the fibres, the homomorphisms <eq env="math">\pi_1(f^{-1}(y))\to\pi_1(X)</eq> are determined (after having picked a base point for <eq env="math">X</eq>, and then for <eq env="math">Y</eq>) only up to composition with an inner automorphism of <eq env="math">\pi_1(X)</eq>.</p>
 <div id="fga-2-theorem-11-corollary-2" class="itenv" title="Corollary 2">
 <p>Under the general conditions of <a href="FGA-2.html#fga-2-theorem-11">Theorem 11</a>, suppose further that <eq env="math">Y</eq>, <eq env="math">X</eq>, and <eq env="math">X'</eq> are integral, and let <eq env="math">K</eq>, <eq env="math">L</eq>, and <eq env="math">L'</eq> be their fields (respectively).
@@ -896,8 +896,8 @@ Then we can find a group homomorphism <eq env="math">\pi_1(X_1)\to\pi_1(X_0)</eq
 Further, this homomorphism is <em>surjective</em>.</p>
 </div>
 <p>We might hope that this homomorphism is always <em>bijective</em>.
-Unfortunately, this is not the case in general if <eq env="math">\mathfrak{K}(y_0)</eq> is of characteristic <eq env="math">&gt;0</eq>.
-We will, however, obtain below a group containing the kernel of this homomorphism (at least in the case where <eq env="math">\overline{X_0}</eq> is simple), implying that, if <eq env="math">\mathfrak{K}(y_0)</eq> is of characteristic <eq env="math">0</eq>, then the above homomorphism is bijective (which is a result that we can also prove by transcendentality).
+Unfortunately, this is not the case in general if <eq env="math">k(y_0)</eq> is of characteristic <eq env="math">&gt;0</eq>.
+We will, however, obtain below a group containing the kernel of this homomorphism (at least in the case where <eq env="math">\overline{X_0}</eq> is simple), implying that, if <eq env="math">k(y_0)</eq> is of characteristic <eq env="math">0</eq>, then the above homomorphism is bijective (which is a result that we can also prove by transcendentality).
 At the very least, we already have, in any case, a group containing <eq env="math">\pi_1</eq>, given by a special fibre, using the one given by a generic fibre.
 Using, for example, the fact that an algebraic curve in characteristic <eq env="math">p</eq> lifts to a curve in characteristic <eq env="math">0</eq> (<a href="FGA-2.html#fga-2-theorem-9-corollary-4">Corollary 4 of Theorem 9</a>), we obtain, by transcendentality:</p>
 <div id="fga-2-theorem-12-corollary-3" class="itenv" title="Corollary 3">
@@ -928,7 +928,7 @@ We thus obtain:</p>
 <p>Under the above conditions, and with the above notation, for the unramified covering <eq env="math">X'_1\otimes_{K'}\overline{K}</eq> of <eq env="math">\overline{X_1}=X_1\otimes_K\overline{K}</eq> to come from an unramified covering of <eq env="math">\overline{X_0}</eq>, it is necessary and sufficient for there to exist a finite sub-extension <eq env="math">K''</eq> of <eq env="math">\overline{K}/K'</eq> such that <eq env="math">K''(X'_1)</eq> is unramified over the discrete valuation ring <eq env="math">{\mathscr{O}}''\subset K''(X_1)</eq>.</p>
 </div>
 <p>Now note that <eq env="math">{\mathscr{O}}''</eq> is the normalisation in <eq env="math">K''(X_1)</eq> of the discrete valuation ring <eq env="math">{\mathscr{O}}'\subset K'(X_1)</eq> (which is the normalisation of <eq env="math">{\mathscr{O}}</eq> in <eq env="math">K'(X_1)</eq>), and that <eq env="math">{\mathscr{O}}'</eq> contains the normalisation <eq env="math">V'</eq> of <eq env="math">V</eq> in <eq env="math">K'</eq>, with a uniformiser <eq env="math">u</eq> of <eq env="math">V'</eq> being also a uniformiser of <eq env="math">{\mathscr{O}}'</eq>.
-Suppose now that <eq env="math">X'_1</eq> is Galois, with Galois group <eq env="math">G</eq> <em>of order <eq env="math">n</eq>, coprime to the characteristic <eq env="math">p</eq> of <eq env="math">\mathfrak{K}(y_0)</eq></em> (which is also the characteristic of the residue field of <eq env="math">{\mathscr{O}}'</eq>).
+Suppose now that <eq env="math">X'_1</eq> is Galois, with Galois group <eq env="math">G</eq> <em>of order <eq env="math">n</eq>, coprime to the characteristic <eq env="math">p</eq> of <eq env="math">k(y_0)</eq></em> (which is also the characteristic of the residue field of <eq env="math">{\mathscr{O}}'</eq>).
 Then <eq env="math">K'(X_1')</eq> is “tamely ramified” over <eq env="math">{\mathscr{O}}'</eq>, from which it easily follows (via “<em>Abhyankar’s lemma</em>”) that, if we adjoin an <eq env="math">n</eq>-th root <eq env="math">v</eq> of a uniformiser of <eq env="math">{\mathscr{O}}'</eq>, then it becomes unramified over the normalisation of <eq env="math">{\mathscr{O}}'</eq> in <eq env="math">K'(X_1)(v)</eq>.
 But we can take <eq env="math">v</eq> to be an <eq env="math">n</eq>-th root of a uniformiser of <eq env="math">V'</eq>, which shows that the condition of <a href="FGA-2.html#fga-2-theorem-12-corollary-5">Corollary 5</a> is satisfied.
 (This idea of using Abhyankar’s lemma and the purity theorem was given to me by Serre).
@@ -942,9 +942,9 @@ surjective homomorphism from <a href="FGA-2.html#fga-2-theorem-12-corollary-2">C
 </div>
 <p>In other words:</p>
 <div id="fga-2-theorem-13-corollary-1" class="itenv" title="Corollary 1">
-<p>The classification of unramified Galois coverings, of Galois group of order coprime to the characteristic <eq env="math">p</eq> of <eq env="math">\mathfrak{K}(y_0)</eq>, is the same for <eq env="math">\overline{X_0}</eq> and for <eq env="math">\overline{X_1}</eq>.</p>
+<p>The classification of unramified Galois coverings, of Galois group of order coprime to the characteristic <eq env="math">p</eq> of <eq env="math">k(y_0)</eq>, is the same for <eq env="math">\overline{X_0}</eq> and for <eq env="math">\overline{X_1}</eq>.</p>
 </div>
-<p>In particular, if <eq env="math">\mathfrak{K}(y_0)</eq> is of characteristic <eq env="math">0</eq>, then we see, algebraically, that <eq env="math">\pi_1(\overline{X_1})\to\pi_1(\overline{X_0})</eq> is bijective.</p>
+<p>In particular, if <eq env="math">k(y_0)</eq> is of characteristic <eq env="math">0</eq>, then we see, algebraically, that <eq env="math">\pi_1(\overline{X_1})\to\pi_1(\overline{X_0})</eq> is bijective.</p>
 <p>We finally point out that the techniques utilised also give the following result, which is more general than <a href="FGA-2.html#fga-2-theorem-13">Theorem 13</a>:</p>
 <div id="fga-2-theorem-14" class="itenv" title="Theorem 14">
 <p>Let <eq env="math">f\colon X\to Y</eq> be a proper simple morphism, and let <eq env="math">D</eq> be a closed subscheme of <eq env="math">X</eq> that is simple over <eq env="math">Y</eq>, and of codimension <eq env="math">1</eq> at all points.
@@ -988,14 +988,16 @@ However, a study of coverings admitting ramifications that are not “tame” se
 <div class="csl-left-margin">[11] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4,8,11,17,20,24,28,32</strong> (1960/67).</div>
 </div>
 <div id="ref-Ser1956" class="csl-entry">
-<div class="csl-left-margin">[17] </div><div class="csl-right-inline">J.-P. Serre. <span>“Géométrie algébrique et géométrie analytique.”</span> <em>Ann. Institut Fourier Grenoble</em>. <strong>6</strong> (1956), 1–42.</div>
+<div class="csl-left-margin">[18] </div><div class="csl-right-inline">J.-P. Serre. <span>“Géométrie algébrique et géométrie analytique.”</span> <em>Ann. Institut Fourier Grenoble</em>. <strong>6</strong> (1956), 1–42.</div>
+</div>
+<div id="ref-Ser1961" class="csl-entry">
+<div class="csl-left-margin">[22] </div><div class="csl-right-inline">J.-P. Serre. <span>“Exemples de variétés projectives en caractéristique <eq env="math">p</eq> non relevables en caractéristique 0.”</span> <em>Proc. Nat. Acad. Sc. U.S.A.</em> <strong>47</strong> (1961), 108–109.</div>
 </div>
 </div>
 <div class="footnotes">
 <hr />
-<ol start="5">
-<li id="fn5"><p><em>[Comp.]</em> This hypothesis can be replaced by the weaker hypothesis “if <eq env="math">f</eq> is separated”, by means of the following result (see SGA VIII, 6.2): every morphism <eq env="math">f\colon X\to Y</eq> which is quasi-finite and separated is also projective.<a href="FGA-2.html#fnref5" class="footnote-back">↩︎</a></p></li>
-<li id="fn6"><p>Serre, J.-P. “Exemples des variétés projectives en caractéristique <eq env="math">p</eq> non relevables en caractéristique zéro”. <em>Proc. Nat. Acad. Sc. U.S.A.</em> <strong>47</strong> (1961), 108–109.<a href="FGA-2.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<ol start="6">
+<li id="fn6"><p><em>[Comp.]</em> This hypothesis can be replaced by the weaker hypothesis “if <eq env="math">f</eq> is separated”, by means of the following result (see SGA VIII, 6.2): every morphism <eq env="math">f\colon X\to Y</eq> which is quasi-finite and separated is also projective.<a href="FGA-2.html#fnref6" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>

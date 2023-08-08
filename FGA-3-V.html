@@ -468,7 +468,7 @@ Suppose that
 <p>The proof, which will be sketched in the following two sections, will at the same time show the following:
 Let <eq env="math">\xi</eq> be the section of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> that corresponds to a very ample sheaf <eq env="math">{\mathscr{O}}_X(1)</eq> over <eq env="math">X/S</eq> (i.e. induced by a projective embedding <eq env="math">X\to\mathbb{P}({\mathscr{E}})</eq>);
 then there exists an open subset <eq env="math">U</eq> of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>, disjoint union of quasi-projective open subsets of <eq env="math">S</eq>, such that <eq env="math">U</eq> is stable under translation by <eq env="math">\xi</eq>, and such that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is the increasing union of opens <eq env="math">U\setminus n\xi</eq> (each isomorphic to <eq env="math">U</eq>).
-It thus follows, in particular, that, under the conditions of <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a>, that <eq env="math">\operatorname{Pic}_{X/S}</eq> is <em>separated</em> over <eq env="math">S</eq>.</p>
+It thus follows, in particular, that, under the conditions of <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a>, that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is <em>separated</em> over <eq env="math">S</eq>.</p>
 <div id="remark-3.2" class="rmenv" title="Remark 3.2">
 <p>We see from examples (with <eq env="math">S</eq> the spectrum of a discrete valuation ring, and <eq env="math">X</eq> of relative dimension <eq env="math">1</eq> over <eq env="math">S</eq>, for example), that if we omit hypothesis (iii) in <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a> and replace it with the weaker hypothesis that, for all <eq env="math">s\in S</eq>, the homomorphism <eq env="math">k(s)\to\operatorname{H}^0(X_s,{\mathscr{O}}_{X_s})</eq> be an isomorphism, then <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is not necessarily separated over <eq env="math">S</eq>;
 both in the case where the geometric fibres of <eq env="math">f</eq> are reduced, but where a generic integral geometric fibre “blows up” by specialisation into two irreducible components, and in the case where the geometric fibres of <eq env="math">f</eq> are irreducible, but where a generic integral geometric fibre specialises to a “multiple fibre”.
@@ -477,7 +477,7 @@ These examples work in any characteristic.</p>
 </div>
 <div id="fga-3-v-remark-3.3" class="rmenv" title="Remark 3.3">
 <p>Under the conditions of <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a>, I do not know if <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is a disjoint union of opens that are of finite type, thus quasi-projective, over <eq env="math">S</eq>.
-We note that the study of the Hilbert polynomials <eq env="math">Q\in\mathbb{Q}[t]</eq> allows us, as in the case of Hilbert schemes (<span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, IV]</span>), to give a decomposition of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> as a disjoint sum of opens <eq env="math">\operatorname{Pic}_{X/S}^Q</eq>, and it seems plausible that these opens are quasi-projective over <eq env="math">S</eq>;
+We note that the study of the Hilbert polynomials <eq env="math">Q\in\mathbb{Q}[t]</eq> allows us, as in the case of Hilbert schemes (<span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, IV]</span>), to give a decomposition of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> as a disjoint sum of opens <eq env="math">\underline{\operatorname{Pic}}_{X/S}^Q</eq>, and it seems plausible that these opens are quasi-projective over <eq env="math">S</eq>;
 this is what we will see at least in the next talk when <eq env="math">f</eq> is a simple morphism.
 We draw attention to the fact that if we replace hypothesis (i) by the hypothesis “<eq env="math">X</eq> is <em>locally</em> projective over <eq env="math">S</eq>” (which is sufficient to prove <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a>, since the question of existence of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is clearly local on <eq env="math">S</eq>) however, then it is easy to give examples where <em><eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> contains connected components that are not of finite type over <eq env="math">S</eq></em>.
 For example, let <eq env="math">X_0</eq> be a non-singular projective algebraic variety over an algebraically closed field <eq env="math">k</eq>, endowed with an automorphism <eq env="math">u</eq> and an element <eq env="math">\xi</eq> of the Néron–Severi group of <eq env="math">X_0</eq> such that the <eq env="math">u^n(\xi)</eq> are pairwise distinct.
@@ -655,7 +655,7 @@ This question of existence certainly arises in a geometric construction, in the 
 Then <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists and (with the notation introduced in <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, II, C.2]</span>) we have a canonical isomorphism
 <eq env="displaymath">
   \underline{\operatorname{Pic}}_{X/S}
-  \xrightarrow{\sim}\prod_{S'/S} \operatorname{Pic}_{X/S'}.
+  \xrightarrow{\sim}\prod_{S'/S} \underline{\operatorname{Pic}}_{X/S'}.
 </eq></p>
 </div>
 <div class="proof">
@@ -702,7 +702,55 @@ It remains only to verify that, for <eq env="math">{\mathscr{L}}_1</eq> and <eq 
 </div>
 <p>From <a href="FGA-3-V.html#fga-3-v-proposition-6.3">(6.3)</a> we easily conclude:</p>
 <div id="fga-3-v-corollary-6.4" class="itenv" title="Corollary 6.4">
-<p>Let</p>
+<p>Let <eq env="math">X</eq> be a proper and separable scheme over a field <eq env="math">k</eq>, and let <eq env="math">X_i</eq> be the irreducible components of <eq env="math">X</eq>.
+If the <eq env="math">\underline{\operatorname{Pic}}_{X_i/k}</eq> exist, then so too does <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq>, and the canonical morphism
+<eq env="displaymath">
+  \underline{\operatorname{Pic}}_{X/k}
+  \to \prod_i \underline{\operatorname{Pic}}_{X_i/k}
+</eq>
+is affine.</p>
+</div>
+<p>Combined with <a href="FGA-3-V.html#fga-3-v-corollary-6.2">(6.2)</a>, this shows, for example, the existence of <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq> whenever <eq env="math">X</eq> is a projective scheme that is separable over a field <eq env="math">k</eq>.
+If <eq env="math">X</eq> is no longer separable over <eq env="math">k</eq>, then we equally have a reduction result, using the argument of Oort <span class="citation">[<a href="#ref-Oor1962" role="doc-biblioref">16</a>]</span>.
+The method equally applies for a scheme with arbitrary base (a useful case, for example, in proving in the following talk the finiteness result stated in <a href="FGA-3-V.html#fga-3-v-remark-3.3">(3.3)</a>).
+To avoid an overly technical statement, we restrict ourselves to the case where we are over a base field:</p>
+<div id="fga-3-v-proposition-6.5" class="itenv" title="Proposition 6.5">
+<p>Let <eq env="math">X</eq> be a proper scheme over a field <eq env="math">k</eq>, and <eq env="math">X_0</eq> a subscheme that has the same underlying set (thus defined by a nilpotent ideal on <eq env="math">X</eq>).
+Then the functorial morphism <eq env="math">\mathscr{P}\kern -.5pt ic_{X/k}\to\mathscr{P}\kern -.5pt ic_{X_0/k}</eq> is representable by affine morphisms.
+In particular, if <eq env="math">\underline{\operatorname{Pic}}_{X_0/k}</eq> exists, then so too does <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq>, and the morphism <eq env="math">\underline{\operatorname{Pic}}_{X/k}\to\underline{\operatorname{Pic}}_{X_0/k}</eq> is affine.</p>
+</div>
+<p>Combining this with <a href="#fga-3-v-corollary-3.4">(6.4)</a>, we easily conclude:</p>
+<div id="fga-3-v-corollary-6.6" class="itenv" title="Corollary 6.6">
+<p>Let <eq env="math">X</eq> be a projective prescheme over a field <eq env="math">k</eq>&gt;
+Then <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq> exists.</p>
+</div>
+<div id="fga-3-v-remark-6.6" class="rmenv" title="Remark 6.6">
+<p>It is extremely plausible that, for every <em>proper</em> scheme <eq env="math">X</eq> over a field <eq env="math">k</eq>, <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq> exists.
+The results above allow us to reduce, for this question, to the case where <eq env="math">k</eq> is algebraically closed, and where <eq env="math">X</eq> is integral.
+We then know that there exists an integral scheme <eq env="math">X'</eq> that is <em>projective</em> over <eq env="math">k</eq>, and a dominant morphism <eq env="math">g\colon X'\to X</eq> (Chow’s lemma).
+It would thus suffice to show that the corresponding functorial morphism <eq env="math">\mathscr{P}\kern -.5pt ic_{X/k}\to\mathscr{P}\kern -.5pt ic_{X'/k}</eq> is representable (and, probably, representable by affine morphisms), since we already know that <eq env="math">\mathscr{P}\kern -.5pt ic_{X'/k}</eq> is representable.
+This raises questions about non-flat descent that are not answerable as of now.
+Note that, if we restrict to considering the restriction of the functor <eq env="math">\mathscr{P}\kern -.5pt ic_{X/k}</eq> to reduced preschemes (with <eq env="math">X</eq> proper and integral over an algebraically closed field <eq env="math">k</eq>), then we do indeed obtain a representable functor, as shown by Chevalley <span class="citation">[<a href="#ref-Che1960" role="doc-biblioref">3</a>]</span> in the case where <eq env="math">X</eq> is normal, and by Seshadri <span class="citation">[<a href="#ref-Ses1962" role="doc-biblioref">23</a>]</span> by a descent method in the general case.
+But with our notation, the scheme constructed by these authors is not <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq>, but instead <eq env="math">(\underline{\operatorname{Pic}}_{X/k})_\mathrm{red}</eq>, i.e. the reduced scheme corresponding to <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq>.</p>
+</div>
+<div id="fga-3-v-remark-6.7" class="rmenv" title="Remark 6.7">
+<p>More generally, let <eq env="math">f\colon X'\to X</eq> be a surjective morphism of proper preschemes over <eq env="math">k</eq>.
+Then considering non-flat descent leads us to conjecture that <eq env="math">\underline{\operatorname{Pic}}_{X/k}\to\underline{\operatorname{Pic}}_{X'/k}</eq> is an <em>affine</em> morphism, which would in particular imply (by dividing into the connected components of the identity elements) that the corresponding homomorphism on the Néron–Severi groups is injective modulo torsion.
+We can verify this by the theory of intersections when <eq env="math">X</eq> and <eq env="math">X'</eq> are non-singular.
+The answer does not seem to be known in any other case.</p>
+</div>
+<div id="fga-3-v-remark-6.8" class="rmenv" title="Remark 6.8">
+<p>Contrary to what we might think, the consideration of Picard schemes of algebraic schemes with nilpotent elements is useful, and even indispensable, for various questions.
+If <eq env="math">X</eq> is a projective scheme, say regular, and <eq env="math">Y</eq> a hyperplane section, then we can consider the “infinitesimal neighbourhoods” <eq env="math">X_n</eq> of <eq env="math">Y</eq> of all orders, as well as the Picard schemes <eq env="math">\underline{\operatorname{Pic}}_{X_n/k}</eq>;
+when <eq env="math">X</eq> is irreducible of dimension <eq env="math">\geqslant 4</eq> (resp. <eq env="math">\geqslant 3</eq>), the canonical morphism
+<eq env="displaymath">
+  \underline{\operatorname{Pic}}_{X/k}
+  \to\underline{\operatorname{Pic}}_{X_n/k}
+  \qquad\text{for large }n
+</eq>
+is an isomorphism (resp. induces an isomorphism between the inverse images of the torsion subgroups of the Néron–Severi groups), and this result will be useful in the qualitative study of Picard schemes in the following talk.
+Similarly, the consideration of Picard schemes of certain curves with nilpotent elements and the fundamental theorems of formal geometry <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span> allow us to prove, in the case of equal characteristic, a conjecture of Mumford, namely that for every complete normal Noetherian local ring <eq env="math">A</eq> of dimension <eq env="math">2</eq>, the group of classes of divisors of <eq env="math">A</eq> can be considered as the set of rational points over <eq env="math">k</eq> of an algebraic group <eq env="math">G</eq> over the residue field <eq env="math">k</eq> (with <eq env="math">G</eq> being canonically determined once we have a field of <strong>!!TO-DO: corps de représentants!!</strong> in <eq env="math">A</eq>).
+In the case where <eq env="math">A</eq> is of arbitrary dimension, it is plausible that there exists an algebraic pro-group over <eq env="math">k</eq> that plays the same role as <eq env="math">G</eq> above, which is constructed, in the case where we can “desingularise” <eq env="math">\operatorname{Spec}(A)</eq>, as a projective limit of Picard schemes of suitable projective schemes (with nilpotent elements) over <eq env="math">k</eq>.</p>
 </div>
 
 </div>
@@ -711,6 +759,9 @@ It remains only to verify that, for <eq env="math">{\mathscr{L}}_1</eq> and <eq 
 <div id="refs" class="references csl-bib-body">
 <div id="ref-Che1960" class="csl-entry">
 <div class="csl-left-margin">[3] </div><div class="csl-right-inline">C. Chevalley. <span>“Sur la théorie de picard.”</span> <em>Amer. J. Of Math.</em> <strong>82</strong> (1960), 435–490.</div>
+</div>
+<div id="ref-Gro1958a" class="csl-entry">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline">A. Grothendieck. <span>“Géométrie formelle et géométrie algébrique.”</span> <em>Séminaire Bourbaki</em>. <strong>11</strong> (1958/59), Talk no. 182.</div>
 </div>
 <div id="ref-Gro1959" class="csl-entry">
 <div class="csl-left-margin">[8] </div><div class="csl-right-inline">A. Grothendieck. <span>“Technique de descente et théorèmes d’existence en géométrie algébrique, <span>I</span>–<span>VI</span>.”</span> <em>Séminaire Bourbaki</em>. <strong>12,13,14</strong> (1959/61), Talks no. 190, 195, 212, 221, 232, and 236.</div>
@@ -726,6 +777,12 @@ It remains only to verify that, for <eq env="math">{\mathscr{L}}_1</eq> and <eq 
 </div>
 <div id="ref-Mum1961" class="csl-entry">
 <div class="csl-left-margin">[14] </div><div class="csl-right-inline">D. Mumford. <span>“An elementary theorem in geometric invariant theory.”</span> <em>Bull. Amer. Math. Soc.</em> <strong>67</strong> (1961), 483–486.</div>
+</div>
+<div id="ref-Oor1962" class="csl-entry">
+<div class="csl-left-margin">[16] </div><div class="csl-right-inline">F. Oort. <span>“Sur le schéma de picard.”</span> <em>Bull. Soc. Math. France</em>. <strong>90</strong> (1962), 1–14.</div>
+</div>
+<div id="ref-Ses1962" class="csl-entry">
+<div class="csl-left-margin">[23] </div><div class="csl-right-inline">C.S. Seshadri. <span>“La varide picard d’une varicomplète.”</span> <em>Annali Di Mat. Pura Ed App.</em> <strong>57</strong> (1962), 117–42.</div>
 </div>
 </div>
 <div class="footnotes">
