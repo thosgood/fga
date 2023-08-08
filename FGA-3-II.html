@@ -198,6 +198,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.3" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-3"><i class="fa fa-check"></i><b>7.3</b> The principal existence theorem: statement</a></li>
 <li class="chapter" data-level="7.4" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-4"><i class="fa fa-check"></i><b>7.4</b> Relative Cartier divisors and projective bundles</a></li>
 <li class="chapter" data-level="7.5" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-5"><i class="fa fa-check"></i><b>7.5</b> Proof of the principal existence theorem</a></li>
+<li class="chapter" data-level="7.6" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-6"><i class="fa fa-check"></i><b>7.6</b> Relative existence theorems</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
@@ -263,7 +264,7 @@ is <em>bijective</em>.</p>
 We then say that the functor <eq env="math">F</eq> is <em>representable</em>.
 The above proposition then implies that the canonical functor <eq env="math">h</eq> defines an <em>equivalence</em> between the category <eq env="math">{\mathcal{C}}</eq> and the full subcategory of <eq env="math">\operatorname{Hom}({\mathcal{C}}^\circ,\mathtt{Set})</eq> consisting of representable functors.
 This fact is the basis of <em>the idea of a “solution of a universal problem”</em>, with such a problem always consisting of examining if a given (contravariant, as here, or covariant, in the dual case) functor from <eq env="math">{\mathcal{C}}</eq> to <eq env="math">\mathtt{Set}</eq> is representable.
-Note further that, even by the definition of products in a category <span class="citation">[<a href="#ref-Gro1957" role="doc-biblioref">5</a>]</span>, the functor <eq env="math">h\colon X\mapsto h_X</eq> commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking “kernels” <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span>, etc., whenever such things exist): we have an isomorphism of functors
+Note further that, even by the definition of products in a category <span class="citation">[<a href="#ref-Gro1957" role="doc-biblioref">6</a>]</span>, the functor <eq env="math">h\colon X\mapsto h_X</eq> commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking “kernels” <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span>, etc., whenever such things exist): we have an isomorphism of functors
 <eq env="displaymath">
   h_{X\times X'} \xrightarrow{\sim}h_X\times h_{X'}
 </eq>
@@ -366,7 +367,7 @@ Then the following conditions are equivalent:</p>
 <eq env="displaymath">
 X\to X'\rightrightarrows X''
     </eq>
-in <eq env="math">{\mathcal{C}}</eq> (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, A, Definition 2.1]</span>), the image of the diagram under <eq env="math">F</eq>
+in <eq env="math">{\mathcal{C}}</eq> (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, A, Definition 2.1]</span>), the image of the diagram under <eq env="math">F</eq>
 <eq env="displaymath">
 F(X)\to F(X')\rightrightarrows F(X'')
     </eq>
@@ -380,7 +381,7 @@ It is then immediate from the definitions that a representable functor is left e
   F\colon {\mathcal{C}} \to \mathtt{Set}
 </eq>
 be a covariant functor, and let <eq env="math">X\in{\mathcal{C}}</eq> and <eq env="math">\xi\in F(X)</eq>.
-We say that <eq env="math">\xi</eq> (or the pair <eq env="math">(X,\xi)</eq>) is <em>minimal</em> if, for all <eq env="math">X'\in{\mathcal{C}}</eq> and all <eq env="math">\xi'\in F(X')</eq>, and for every strict monomorphism (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, A, §2]</span>) <eq env="math">u\colon X'\to X</eq> such that <eq env="math">\xi=F(u)(\xi')</eq>, <eq env="math">u</eq> is an isomorphism.
+We say that <eq env="math">\xi</eq> (or the pair <eq env="math">(X,\xi)</eq>) is <em>minimal</em> if, for all <eq env="math">X'\in{\mathcal{C}}</eq> and all <eq env="math">\xi'\in F(X')</eq>, and for every strict monomorphism (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, A, §2]</span>) <eq env="math">u\colon X'\to X</eq> such that <eq env="math">\xi=F(u)(\xi')</eq>, <eq env="math">u</eq> is an isomorphism.
 We also say that a pair <eq env="math">(X,\xi)</eq> <em>dominates</em> <eq env="math">(X'',\xi'')</eq> (where <eq env="math">xi\in F(X)</eq> and <eq env="math">\xi''\in F(X'')</eq>) if there exists a morphism <eq env="math">v\colon X\to X''</eq> such that <eq env="math">\xi''=F(v)(\xi)</eq>;
 <em>if <eq env="math">\xi</eq> is minimal, and if <eq env="math">F</eq> is left exact, then this morphism <eq env="math">v</eq> is unique</em>;
 <em>if <eq env="math">\xi''</eq> is minimal, then <eq env="math">v</eq> is surjective</em>.
@@ -404,8 +405,8 @@ Then the pro-representable functors from <eq env="math">{\mathcal{C}}</eq> to <e
 <h2><span class="header-section-number">4.4</span> Example: groups of Galois type, pro-algebraic groups</h2>
 <p>If <eq env="math">{\mathcal{C}}</eq> is the category of ordinary finite groups, then <eq env="math">\operatorname{Pro}({\mathcal{C}})</eq> is equivalent to the category of totally disconnected compact topological<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> groups.
 It is groups of this type, and their generalisations, obtained by replacing ordinary finite groups with schemes of finite groups over a given base prescheme (for example, finite algebraic groups over a field <eq env="math">k</eq>), that serve as fundamental groups, homotopy groups, and absolute and relative homology groups for preschemes.
-In all these examples, the corollary to <a href="FGA-3-II.html#fga-3-ii-section-A.3-proposition-3.1">Proposition 3.1</a> applies, and it is indeed by the associated functor that the <eq env="math">\pi_1</eq> should be defined <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span>.
-It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the “<em>pro-algebraic groups</em>” of Serre <span class="citation">[<a href="#ref-Ser1958" role="doc-biblioref">17</a>]</span>.</p>
+In all these examples, the corollary to <a href="FGA-3-II.html#fga-3-ii-section-A.3-proposition-3.1">Proposition 3.1</a> applies, and it is indeed by the associated functor that the <eq env="math">\pi_1</eq> should be defined <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span>.
+It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the “<em>pro-algebraic groups</em>” of Serre <span class="citation">[<a href="#ref-Ser1958" role="doc-biblioref">19</a>]</span>.</p>
 </div>
 <div id="fga-3-ii-section-A.5" class="section level2" number="4.5">
 <h2><span class="header-section-number">4.5</span> Example: “formal varieties”</h2>
@@ -427,7 +428,7 @@ The functor <eq env="math">{\mathcal{C}}\to\mathtt{Set}</eq> associated to such 
 </eq>
 Note also that the category <eq env="math">{\mathcal{C}}</eq> is essentially the product of analogous categories, corresponding to the local rings that are the completions of the <eq env="math">\Lambda_{{\mathfrak{m}}}</eq> for the maximal ideals <eq env="math">{\mathfrak{m}}</eq> of <eq env="math">\Lambda</eq>;
 we can thus, if so desired, restrict to the case where <eq env="math">A</eq> is such a complete local ring.
-In any case, <eq env="math">O</eq> decomposes canonically as the topological product of its <em>local components</em>, which correspond to the “points” of the <em>formal scheme</em> <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span> defined by <eq env="math">O</eq>.
+In any case, <eq env="math">O</eq> decomposes canonically as the topological product of its <em>local components</em>, which correspond to the “points” of the <em>formal scheme</em> <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span> defined by <eq env="math">O</eq>.
 Such a point is defined by an object <eq env="math">\xi</eq> of some <eq env="math">F(K)</eq>, where <eq env="math">K\in{\mathcal{C}}</eq> is a <em>field</em> (for example, the residue field of the local component in question), and where two pairs <eq env="math">(\xi,K)</eq> and <eq env="math">(\xi',K')</eq> define the same point if and only if they are both dominated by the same <eq env="math">(\xi'',K'')</eq>, or if they both dominate the same <eq env="math">(\xi''',K''')</eq>.
 (If the <eq env="math">\Lambda/{\mathfrak{m}}</eq> are algebraically closed, then it suffices to take the set given by the sum of the <eq env="math">F(\Lambda/{\mathfrak{m}})</eq>).</p>
 <p>It is important to give conditions that ensure that the local component <eq env="math">O_\xi</eq> of <eq env="math">O</eq> corresponding to some <eq env="math">\xi\in F(K)</eq> be a <em>Noetherian</em> ring.
@@ -488,7 +489,7 @@ that is, they are usually far from being trivial.</p>
 </eq>
 we wish to find manageable criteria for <eq env="math">F</eq> to be pro-representable, i.e. expressible via a <eq env="math">\Lambda</eq>-algebra <eq env="math">O</eq> as above.
 By the corollary of <a href="FGA-3-II.html#fga-3-ii-section-A.3-proposition-3.1">Proposition 3.1</a>, to ensure this, it is necessary and sufficient for <eq env="math">F</eq> to be <em>left exact</em>.
-In the current state of the technique of descent (cf. the questions asked in <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, p. 9]</span>), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.</p>
+In the current state of the technique of descent (cf. the questions asked in <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, p. 9]</span>), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.</p>
 <div id="fga-3-ii-section-B-theorem-1" class="itenv" title="Theorem 1">
 <p>For the functor <eq env="math">F</eq> to be pro-representable, it is necessary and sufficient for it to satisfy the two followings conditions:</p>
 <ol style="list-style-type: lower-roman">
@@ -497,7 +498,7 @@ In the current state of the technique of descent (cf. the questions asked in <s
 <eq env="displaymath">
   A \to A' \rightrightarrows A'\otimes_A A'
 </eq>
-is exact (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, A, Definition 1.2]</span>), the diagram
+is exact (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, A, Definition 1.2]</span>), the diagram
 <eq env="displaymath">
   F(A) \to F(A') \rightrightarrows F(A'\otimes_A A')
 </eq>
@@ -512,12 +513,12 @@ is also exact.</li>
 <p>The proof of this theorem is rather delicate, and cannot be sketched here.
 We content ourselves with pointing out that it relies essentially on a study of <em>equivalence relations</em> (in the sense of categories) in <em>the spectrum of an Artinian algebra</em> (the study of which poses even more problems, whose solutions seems essential for the further development of the theory).</p>
 <p>In applications, the verification of condition (i) is always trivial.
-The verification of condition (ii) splits into two cases: case (a), where <eq env="math">A'</eq> is a free <eq env="math">A</eq>-module, can be dealt with using the <em>technique of descent by flat morphisms</em> (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, Theorems 1, 2, and 3]</span>), which offers no difficulty;
+The verification of condition (ii) splits into two cases: case (a), where <eq env="math">A'</eq> is a free <eq env="math">A</eq>-module, can be dealt with using the <em>technique of descent by flat morphisms</em> (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, Theorems 1, 2, and 3]</span>), which offers no difficulty;
 to deal with case (b), we will use the following result:</p>
 <div id="fga-3-ii-section-B-theorem-2" class="itenv" title="Theorem 2">
 <p>Let <eq env="math">A</eq> be a local Artinian ring with maximal ideal <eq env="math">{\mathfrak{m}}</eq>, and let <eq env="math">A'</eq> be an <eq env="math">A</eq>-algebra containing <eq env="math">A</eq>, and such that <eq env="math">{\mathfrak{m}}A'\subset A</eq>, and <eq env="math">A\to A'\rightrightarrows A'\otimes_A A'</eq> is <em>exact</em> (which is the case, in particular, if <eq env="math">A'/A</eq> is an <eq env="math">A</eq>-module of length <eq env="math">1</eq>).
-Let <eq env="math">{\mathcal{F}}</eq> be the fibred category (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, A, Definition 1.1]</span>) of quasi-coherent sheaves that are flat over varying preschemes.
-Then the morphism <eq env="math">\operatorname{Spec}(A')\to\operatorname{Spec}(A)</eq> is a <em>strict <eq env="math">{\mathcal{F}}</eq>-descent morphism</em> (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, A, Definition 1.7]</span>).</p>
+Let <eq env="math">{\mathcal{F}}</eq> be the fibred category (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, A, Definition 1.1]</span>) of quasi-coherent sheaves that are flat over varying preschemes.
+Then the morphism <eq env="math">\operatorname{Spec}(A')\to\operatorname{Spec}(A)</eq> is a <em>strict <eq env="math">{\mathcal{F}}</eq>-descent morphism</em> (cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, A, Definition 1.7]</span>).</p>
 </div>
 <p>In other words, the data of a flat <eq env="math">A</eq>-module <eq env="math">M</eq> is completely equivalent to the data of a flat <eq env="math">A'</eq>-module <eq env="math">M'</eq> endowed with an <eq env="math">(A'\otimes_A A')</eq>-isomorphism from <eq env="math">M'\otimes_A A'</eq> to <eq env="math">A'\otimes_A M'</eq> satisfying the usual transitivity condition for a descent data (<em>loc. cit.</em>).</p>
 <p>We prove <a href="FGA-3-II.html#fga-3-ii-section-B-theorem-2">Theorem 2</a> by first proving that
@@ -525,8 +526,8 @@ Then the morphism <eq env="math">\operatorname{Spec}(A')\to\operatorname{Spec}(A
   \operatorname{H}^i(A'/A,\operatorname{G_a}) = 0
   \qquad\text{(for }i\geqslant 1\text{)}
 </eq>
-(cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, A.4.e]</span>), with the hypothesis that <eq env="math">{\mathfrak{m}}A'\subset A</eq> allowing us to easily reduce to the case where <eq env="math">A</eq> is a field (namely <eq env="math">A/{\mathfrak{m}}</eq>).
-We can then apply the equivalences described in <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, p. 16]</span>.</p>
+(cf. <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, A.4.e]</span>), with the hypothesis that <eq env="math">{\mathfrak{m}}A'\subset A</eq> allowing us to easily reduce to the case where <eq env="math">A</eq> is a field (namely <eq env="math">A/{\mathfrak{m}}</eq>).
+We can then apply the equivalences described in <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, p. 16]</span>.</p>
 </div>
 <div id="c.-applications-to-some-particular-cases" class="section level2 unnumbered">
 <h2><strong>C.</strong> Applications to some particular cases</h2>
@@ -610,7 +611,7 @@ If <eq env="math">X</eq> is flat over <eq env="math">\Lambda</eq>, then this fun
   F(I_A,\xi) = \operatorname{H}^1\Big(X_A,\underline{\operatorname{Hom}}_{{\mathscr{O}}_{X_A}}\big(\xi^*(\Omega_{Y_A/A}^1),{\mathscr{O}}_{X_A}\big)\Big)
 </eq>
 where <eq env="math">\Omega_{Y_A/A}^1</eq> is the sheaf of Kähler <eq env="math">1</eq>-differentials of <eq env="math">Y_A</eq> with respect to <eq env="math">A</eq>.
-Taking <eq env="math">A</eq> to be a field, we find, using <a href="FGA-3-II.html#fga-3-ii-section-A.5-proposition-5.1">§A, Proposition 5.1</a> and the finiteness theorem from <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span>, the following corollary:</p>
+Taking <eq env="math">A</eq> to be a field, we find, using <a href="FGA-3-II.html#fga-3-ii-section-A.5-proposition-5.1">§A, Proposition 5.1</a> and the finiteness theorem from <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span>, the following corollary:</p>
 <div class="itenv" title="Corollary">
 <p>Suppose that <eq env="math">X</eq> is flat and proper over <eq env="math">S</eq>, and that <eq env="math">Y</eq> is of finite type over <eq env="math">S</eq>.
 Then <eq env="math">F</eq> is pro-representable, and the local components of the corresponding topological <eq env="math">\Lambda</eq>-algebra are <em>Noetherian</em> rings.</p>
@@ -641,7 +642,7 @@ this is linked to the fact that the symmetric square of such a variety does not 
   P(X/S) = \operatorname{H}^0(S,\operatorname{R}^1f_*({\mathscr{O}}_X^\times)),
 </eq>
 called the <em>relative Picard group</em> of <eq env="math">X/S</eq>.
-An element of this group is thus defined by giving an open cover <eq env="math">(U_i)</eq> of <eq env="math">S</eq>, along with an invertible sheaf <eq env="math">{\mathscr{L}}_i</eq> on each <eq env="math">f^{-1}(U_i)</eq>, such that <eq env="math">{\mathscr{L}}_i|f^{-1}(U_i\cap U_j)</eq> is isomorphic to <eq env="math">{\mathscr{L}}_j|f^{-1}(U_i\cap U_j)</eq> for all <eq env="math">i,j</eq>, or, at least locally over <eq env="math">U_i\cap U_j</eq> (i.e. these two sheaves are “equivalent” in the sense of <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, B.4]</span>).
+An element of this group is thus defined by giving an open cover <eq env="math">(U_i)</eq> of <eq env="math">S</eq>, along with an invertible sheaf <eq env="math">{\mathscr{L}}_i</eq> on each <eq env="math">f^{-1}(U_i)</eq>, such that <eq env="math">{\mathscr{L}}_i|f^{-1}(U_i\cap U_j)</eq> is isomorphic to <eq env="math">{\mathscr{L}}_j|f^{-1}(U_i\cap U_j)</eq> for all <eq env="math">i,j</eq>, or, at least locally over <eq env="math">U_i\cap U_j</eq> (i.e. these two sheaves are “equivalent” in the sense of <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, B.4]</span>).
 If <eq env="math">X/S</eq> admits a section, then <eq env="math">P(X/S)</eq> is exactly the set of classes of invertible sheaves on <eq env="math">X/S</eq> up to “equivalence” (<em>loc. cit.</em>).
 We now set, for all <eq env="math">T</eq> over <eq env="math">S</eq>,
 <eq env="displaymath">
@@ -660,7 +661,7 @@ Note as well that the <em>generalised Jacobians</em> of Rosenlicht are exactly t
 <p>The definition adopted here is only reasonable when every point of <eq env="math">Y</eq> admits an open neighbourhood <eq env="math">U</eq> over which <eq env="math">X</eq> admits a section.
 In the general case, it is necessary to slightly modify the definition of the Picard functor in order to still obtain an existence theorem.</p>
 <p>Here, the plausible existence conditions for a Picard prescheme are the following: <eq env="math">X</eq> is <em>proper</em> and <em>flat</em> over <eq env="math">S</eq>; <eq env="math">f_*({\mathscr{O}}_X)={\mathscr{O}}_S</eq>; and <eq env="math">X</eq> locally admits a section over <eq env="math">S</eq>.
-This condition naturally arises in the application of the technique of descent, <em>in eliminating the automorphisms of an invertible sheaf <eq env="math">{\mathscr{L}}</eq> on <eq env="math">X</eq> by endowing them with a marked section over the section <eq env="math">s</eq></em> (<span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, B.4]</span>).
+This condition naturally arises in the application of the technique of descent, <em>in eliminating the automorphisms of an invertible sheaf <eq env="math">{\mathscr{L}}</eq> on <eq env="math">X</eq> by endowing them with a marked section over the section <eq env="math">s</eq></em> (<span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, B.4]</span>).
 Notably, we find the following:</p>
 </div>
 <div id="fga-3-ii-section-C.3-proposition-3.1" class="itenv" title="Proposition 3.1">
@@ -704,7 +705,7 @@ For every local Artinian <eq env="math">\Lambda</eq>-algebra <eq env="math">A</e
 of course, the isomorphisms between such flat <eq env="math">A</eq>-preschemes should respect the above isomorphism given in the structure.
 If <eq env="math">A</eq> is a (not necessary local) Artinian <eq env="math">\Lambda</eq>-algebra, with local components <eq env="math">A_i</eq>, then we take <eq env="math">F(A)</eq> to be the product of the <eq env="math">F(A_i)</eq>.
 Then <eq env="math">F</eq> becomes a multiplicative functor in <eq env="math">A</eq>, and we call it the <em>functor of modules</em> for <eq env="math">X_0</eq> (and <eq env="math">\Lambda</eq>).
-If this functor is representable, then it has a corresponding local topological <eq env="math">\Lambda</eq>-algebra <eq env="math">O</eq>, of residue field <eq env="math">k</eq>, and the formal spectrum of <eq env="math">O</eq> is called the <em>formal scheme of modules</em> for <eq env="math">X_0</eq> (and <eq env="math">\Lambda</eq>) (cf. <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span> for some details on this).</p>
+If this functor is representable, then it has a corresponding local topological <eq env="math">\Lambda</eq>-algebra <eq env="math">O</eq>, of residue field <eq env="math">k</eq>, and the formal spectrum of <eq env="math">O</eq> is called the <em>formal scheme of modules</em> for <eq env="math">X_0</eq> (and <eq env="math">\Lambda</eq>) (cf. <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span> for some details on this).</p>
 <p>Here, if we wish to apply the technique of descent, the “finite” automorphisms of <eq env="math">X_0</eq> are inoffensive, since they have no influence on the existence of automorphisms (in the precise sense above) of <eq env="math">A</eq>-preschemes <eq env="math">X</eq>;
 the necessary and sufficient condition, if <eq env="math">A</eq> is not simply a field, for <eq env="math">X</eq> to not have any non-trivial <eq env="math">A</eq>-automorphisms is that
 <eq env="displaymath">
@@ -731,7 +732,7 @@ If, furthermore, <eq env="math">X_0</eq> is proper over <eq env="math">k</eq>, t
 where we set <eq env="math">P_A=X_A\times_A X_A</eq>, where <eq env="math">{\mathscr{O}}_{X_A}</eq> is considered as a coherent sheaf on <eq env="math">P_A</eq> via the diagonal morphism <eq env="math">X_A\to P_A</eq>, and where <eq env="math">{\mathscr{I}}_{X_A}</eq> denotes the coherent sheaf of ideals on <eq env="math">P_A</eq> defined by the diagonal morphism.
 More precisely, an easy globalisation of Hochschild theory shows that the <eq env="math">\operatorname{Ext}^1</eq> above can be identified with the set of classes, up to isomorphism, of sheaves of <eq env="math">I_A</eq>-algebras <eq env="math">{\mathscr{O}}</eq> that are flat over <eq env="math">X_A</eq>, and endowed with an augmentation isomorphism <eq env="math">{\mathscr{O}}\otimes_{I_A}A\to{\mathscr{O}}_{X_A}</eq> (recall that we set <eq env="math">I_A=At/(t^2)</eq>).
 The submodule <eq env="math">F(I_A,\xi)</eq> is that which corresponds to the sheaves of <em>commutative</em> algebras.
-The simplicity hypotheses are thus not essential in the theory of modules, as <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span> implies.</p></li>
+The simplicity hypotheses are thus not essential in the theory of modules, as <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span> implies.</p></li>
 <li><p>Recall (<em>loc. cit.</em>) that, in particular, every <em>simple</em> and <em>proper algebraic curve</em> <eq env="math">X_0</eq> over <eq env="math">k</eq> admits a formal scheme of modules that is simple over <eq env="math">\Lambda</eq>, and of relative dimension equal to <eq env="math">3g-3</eq> if the genus <eq env="math">g</eq> is <eq env="math">\geqslant 2</eq>, and to <eq env="math">g</eq> if <eq env="math">g=0,1</eq>.
 These two latter cases no longer figure directly in <a href="#fga-3-ii-section-C.4-proposition-4">Proposition 4.1</a>.
 We can, however, recover them in the case of elliptic curves (<eq env="math">g=1</eq>) thanks to the remarks that will follow.</p></li>
@@ -742,7 +743,7 @@ Suppose, for example, that <eq env="math">X_0</eq> is an <em>abelian scheme</em>
 We can show that imposing a multiplicative structure (or even only a “unit section”) eliminates the infinitesimal automorphisms, and that there thus exists a formal scheme of modules that corresponds to a complete local Noetherian ring <eq env="math">O</eq>.
 We can also show that, if <eq env="math">X</eq> is a proper and simple scheme with “absolutely connected” fibres over a locally Noetherian prescheme <eq env="math">S</eq>, then every multiplicative structure on <eq env="math">X</eq> that admits a unit section is necessarily associative and commutative (provided that it is associative and commutative on <em>one</em> fibre, and provided that <eq env="math">S</eq> is connected), and is furthermore uniquely determined by the knowledge of the unit section.
 Further, supposing that <eq env="math">S</eq> is the spectrum of a local Artinian ring <eq env="math">A</eq> of residue field <eq env="math">k</eq>, that <eq env="math">X</eq> is proper over <eq env="math">A</eq> and endowed with a section <eq env="math">s</eq>, and finally that <eq env="math">X\otimes_A k</eq> is endowed with the structure of an abelian scheme over <eq env="math">k</eq>, admitting the point of <eq env="math">X\otimes_A k</eq> corresponding to <eq env="math">s</eq> as the zero element, an easy calculation of obstructions, combined with an argument due to Serre, allows us to prove that there exists on <eq env="math">X</eq> a multiplicative structure admitting the section <eq env="math">s</eq> as the unit section.
-(From here, using the “existence theorem” of <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span> to pass to the case where <eq env="math">A</eq> is complete local Noetherian, and then the technique of descent from <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I]</span> for the general case, we can prove the analogous claim for all locally Noetherian connected <eq env="math">S</eq>).
+(From here, using the “existence theorem” of <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span> to pass to the case where <eq env="math">A</eq> is complete local Noetherian, and then the technique of descent from <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I]</span> for the general case, we can prove the analogous claim for all locally Noetherian connected <eq env="math">S</eq>).
 This proves that the functor <eq env="math">F(A)</eq> considered here is isomorphic to the analogous functor defined at the start of this section by abstracting the multiplicative structure on <eq env="math">X_0</eq>.
 It then follows that, in particular, if <eq env="math">{\mathfrak{m}}</eq> is the maximal ideal of <eq env="math">O</eq>, then <eq env="math">{\mathfrak{m}}/{\mathfrak{m}}^2</eq> is canonically isomorphic to the dual of <eq env="math">\operatorname{H}^1(X_0,{\mathfrak{G}}_{X_0/k})</eq>, and is thus of dimension <eq env="math">n^2</eq>, where <eq env="math">n=\dim X_0</eq>.
 It would be very interesting to determine if <eq env="math">O</eq> is indeed <em>simple</em> over <eq env="math">\Lambda</eq>, i.e. isomorphic to an algebra of formal series in <eq env="math">n^2</eq> variables over <eq env="math">\Lambda</eq>.
@@ -753,7 +754,7 @@ This could be the moment for the “<em>Greenberg functor</em>” to prove its w
 </div>
 <div id="fga-3-ii-section-C.5" class="section level2" number="4.10">
 <h2><span class="header-section-number">4.10</span> Extension of coverings</h2>
-<p>Let <eq env="math">{\mathfrak{X}}</eq> be a <em>formal</em> Noetherian prescheme <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span>, <eq env="math">U</eq> an open subset of <eq env="math">{\mathfrak{X}}</eq> defined locally by the “non-vanishing” of a section of <eq env="math">{\mathscr{O}}_{\mathfrak{X}}</eq> that is not a zero divisor (and thus large enough that every section of <eq env="math">{\mathscr{O}}_{\mathfrak{X}}</eq> over an open subset <eq env="math">V</eq> that is zero on <eq env="math">U\cap V</eq> is zero).
+<p>Let <eq env="math">{\mathfrak{X}}</eq> be a <em>formal</em> Noetherian prescheme <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span>, <eq env="math">U</eq> an open subset of <eq env="math">{\mathfrak{X}}</eq> defined locally by the “non-vanishing” of a section of <eq env="math">{\mathscr{O}}_{\mathfrak{X}}</eq> that is not a zero divisor (and thus large enough that every section of <eq env="math">{\mathscr{O}}_{\mathfrak{X}}</eq> over an open subset <eq env="math">V</eq> that is zero on <eq env="math">U\cap V</eq> is zero).
 (<em>[Comp.]</em> It is also necessary to assume that the section defining <eq env="math">U</eq> is not a zero divisor not only on <eq env="math">{\mathfrak{X}}</eq>, but also on every <eq env="math">X_n</eq>.)
 Let <eq env="math">{\mathfrak{J}}</eq> be an “ideal of definition” for <eq env="math">{\mathfrak{X}}</eq>, and let <eq env="math">X_n=({\mathfrak{X}},{\mathscr{O}}_{\mathfrak{X}}/{\mathfrak{J}}^{n+1})</eq>, which is thus a ordinary Noetherian prescheme.
 Then, if <eq env="math">{\mathfrak{X}}'</eq> and <eq env="math">{\mathfrak{X}}''</eq> are <em>flat coverings</em> of <eq env="math">{\mathfrak{X}}</eq> (i.e. preschemes over <eq env="math">{\mathfrak{X}}</eq> defined by sheaves of algebras that are coherent and locally free as sheaves of modules) that are <em>unramified over <eq env="math">U</eq></em>, the evident map
@@ -765,7 +766,7 @@ in particular, <em>an automorphism of <eq env="math">{\mathfrak{X}}'</eq> that i
 This allows us to apply the technique of descent to the situation.
 We start, in particular, with a flat covering <eq env="math">X'_0</eq> of <eq env="math">X_0</eq>, unramified over <eq env="math">U_0</eq>, and let <eq env="math">G({\mathfrak{X}})</eq> be the set of classes, up to isomorphism (inducing the identity on <eq env="math">X'_0</eq>), of flat coverings <eq env="math">{\mathfrak{X}}'</eq> of <eq env="math">{\mathfrak{X}}</eq> that induce <eq env="math">X'_0</eq> on <eq env="math">X_0</eq> (and that are thus necessarily unramified over <eq env="math">U</eq>).
 We similarly define <eq env="math">G(V)</eq> for every open subset <eq env="math">V</eq> of <eq env="math">{\mathfrak{X}}</eq>, and, more generally, <eq env="math">G({\mathfrak{Y}})</eq> for every formal prescheme <eq env="math">{\mathfrak{Y}}</eq> over <eq env="math">{\mathfrak{X}}</eq>.
-With this, the results of <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span> and <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I]</span> imply, first of all, the following results:</p>
+With this, the results of <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span> and <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I]</span> imply, first of all, the following results:</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>If <eq env="math">V</eq> varies amongst open subset of <eq env="math">{\mathfrak{X}}</eq>, then the <eq env="math">G(V)</eq> form a <em>sheaf</em> on <eq env="math">{\mathfrak{X}}</eq>, say <eq env="math">{\mathscr{G}}_{\mathfrak{X}}={\mathscr{G}}</eq>.
 The restriction of this sheaf to <eq env="math">U</eq> is the <em>constant</em> sheaf whose fibres consist of a single element.</p>
@@ -798,11 +799,11 @@ The combination of <a href="FGA-3-II.html#fga-3-ii-section-B-theorem-1">Theorem 
 <p>Of course, by (a), if <eq env="math">U={\mathfrak{X}}</eq>, then <eq env="math">G({\mathfrak{Y}})</eq> consists of a single element for all <eq env="math">{\mathfrak{Y}}</eq> over <eq env="math">{\mathfrak{X}}</eq>, and the functor <eq env="math">F</eq> is then not very interesting (we will have <eq env="math">{\mathscr{O}}=\Lambda</eq>).
 It seems that, in practically every other case, the topological local ring <eq env="math">{\mathscr{O}}</eq> <em>is not Noetherian</em>.
 Its existence, however, shows, in a striking manner, the <em>“continuous” nature</em> of the set <eq env="math">G({\mathfrak{X}})</eq> of solutions (corresponding intuitively to the fact that there is a “continuous” choice in the way in which the ramification spreads when we take an extension of <eq env="math">X'_0</eq>).
-We will compare this result with the point of view of J.-P. Serre <span class="citation">[<a href="#ref-Ser1958" role="doc-biblioref">17</a>]</span> via local class field theory, drawing attention as well to the <em>continuous</em> character of the topological Galois group of the maximal abelian extension of a “geometric” local field, with the dual group (in the sense of Pontrjagin) appearing as an inductive limit of algebraic (or at least quasi-algebraic) groups;
+We will compare this result with the point of view of J.-P. Serre <span class="citation">[<a href="#ref-Ser1958" role="doc-biblioref">19</a>]</span> via local class field theory, drawing attention as well to the <em>continuous</em> character of the topological Galois group of the maximal abelian extension of a “geometric” local field, with the dual group (in the sense of Pontrjagin) appearing as an inductive limit of algebraic (or at least quasi-algebraic) groups;
 here as well, the classification of extensions is given by infinite-dimensional “varieties”.
 We can also take, in the above, <eq env="math">{\mathfrak{X}}</eq> to be the formal spectrum of a complete local ring (of which <eq env="math">\Lambda</eq> will be, for example, a Cohen subring), and we might hope that the results of this section can be used in the study of extensions of a local complete ring of dimension <eq env="math">&gt;1</eq>.
 Just as much in the local case as in the global case, they might allow us to formulate precise relations between the phenomena of higher ramification and phenomena in characteristic <eq env="math">0</eq> (approachable via a transcendental way).
-In any case, it is the preliminary analysis of <a href="FGA-3-II.html#fga-3-ii-section-C.5-proposition-5.1">Proposition 5.1</a> that allows us to extend the methods described in <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">6</a>]</span> for the study of the fundamental group to the “tamely ramified” case, and to resolve, by a transcendental way, the “problem of three points”.</p>
+In any case, it is the preliminary analysis of <a href="FGA-3-II.html#fga-3-ii-section-C.5-proposition-5.1">Proposition 5.1</a> that allows us to extend the methods described in <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span> for the study of the fundamental group to the “tamely ramified” case, and to resolve, by a transcendental way, the “problem of three points”.</p>
 <p>To finish, we note that the situation simplifies if <eq env="math">X_0</eq> is of dimension <eq env="math">1</eq>;
 then, by (a) and (b), <eq env="math">G({\mathfrak{X}})</eq> can be identified with <eq env="math">\prod_i G(\operatorname{Spec}({\mathscr{O}}_{{\mathfrak{X}},x_i}))</eq>, where the <eq env="math">x_i</eq> are the points of <eq env="math">X_0\setminus U</eq>:
 <em>we can take arbitrary “local” extensions at the ramification points</em>.
@@ -813,16 +814,16 @@ Further, if <eq env="math">X_0</eq> is normal, then we note that the formal sche
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body">
 <div id="ref-Gro1957" class="csl-entry">
-<div class="csl-left-margin">[5] </div><div class="csl-right-inline">A. Grothendieck. <span>“Sur quelques points d’algèbre homologique.”</span> <em>Tohoku Math. J.</em> <strong>9</strong> (1957), 119–221.</div>
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">A. Grothendieck. <span>“Sur quelques points d’algèbre homologique.”</span> <em>Tohoku Math. J.</em> <strong>9</strong> (1957), 119–221.</div>
 </div>
 <div id="ref-Gro1958a" class="csl-entry">
-<div class="csl-left-margin">[6] </div><div class="csl-right-inline">A. Grothendieck. <span>“Géométrie formelle et géométrie algébrique.”</span> <em>Séminaire Bourbaki</em>. <strong>11</strong> (1958/59), Talk no. 182.</div>
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline">A. Grothendieck. <span>“Géométrie formelle et géométrie algébrique.”</span> <em>Séminaire Bourbaki</em>. <strong>11</strong> (1958/59), Talk no. 182.</div>
 </div>
 <div id="ref-Gro1959" class="csl-entry">
-<div class="csl-left-margin">[7] </div><div class="csl-right-inline">A. Grothendieck. <span>“Technique de descente et théorèmes d’existence en géométrie algébrique, <span>I</span>–<span>VI</span>.”</span> <em>Séminaire Bourbaki</em>. <strong>12,13,14</strong> (1959/61), Talks no. 190, 195, 212, 221, 232, and 236.</div>
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">A. Grothendieck. <span>“Technique de descente et théorèmes d’existence en géométrie algébrique, <span>I</span>–<span>VI</span>.”</span> <em>Séminaire Bourbaki</em>. <strong>12,13,14</strong> (1959/61), Talks no. 190, 195, 212, 221, 232, and 236.</div>
 </div>
 <div id="ref-Ser1958" class="csl-entry">
-<div class="csl-left-margin">[17] </div><div class="csl-right-inline">J.-P. Serre. <span>“Corps locaux et isogénies.”</span> <em>Séminaire Bourbaki</em>. <strong>11</strong> (1960), Talk no. 185.</div>
+<div class="csl-left-margin">[19] </div><div class="csl-right-inline">J.-P. Serre. <span>“Corps locaux et isogénies.”</span> <em>Séminaire Bourbaki</em>. <strong>11</strong> (1960), Talk no. 185.</div>
 </div>
 </div>
 <div class="footnotes">

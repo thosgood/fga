@@ -198,6 +198,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.3" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-3"><i class="fa fa-check"></i><b>7.3</b> The principal existence theorem: statement</a></li>
 <li class="chapter" data-level="7.4" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-4"><i class="fa fa-check"></i><b>7.4</b> Relative Cartier divisors and projective bundles</a></li>
 <li class="chapter" data-level="7.5" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-5"><i class="fa fa-check"></i><b>7.5</b> Proof of the principal existence theorem</a></li>
+<li class="chapter" data-level="7.6" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-6"><i class="fa fa-check"></i><b>7.6</b> Relative existence theorems</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
@@ -275,7 +276,7 @@ Of course, the <eq env="math">k(s)</eq> can have different characteristics.
 If <eq env="math">S=\operatorname{Spec}(k)</eq>, where <eq env="math">k</eq> is a field, then we essentially recover the usual notion of “algebraic space”, with the only difference being that now the structure sheaf can have nilpotent elements.</p>
 <p>Inspired by well-known ideas, we can define the notion of a <em>projective morphism</em>, and, more generally, of a <em>proper morphism</em>.
 Such a morphism is of finite type, and further sends closed subsets to closed subsets, and retains this property under an arbitrary change of base.</p>
-<p>With <eq env="math">X</eq> being a (Noetherian, as always) scheme, the sheaf <eq env="math">{\mathscr{O}}_X</eq> is a <em>coherent sheaf of rings</em> in the sense of <span class="citation">[<a href="#ref-Gro1960" role="doc-biblioref">4</a>]</span>.
+<p>With <eq env="math">X</eq> being a (Noetherian, as always) scheme, the sheaf <eq env="math">{\mathscr{O}}_X</eq> is a <em>coherent sheaf of rings</em> in the sense of <span class="citation">[<a href="#ref-Gro1960" role="doc-biblioref">5</a>]</span>.
 The coherent sheaves of modules on <eq env="math">X</eq> are thus also the sheaves which are locally isomorphic to a cokernel of some morphism <eq env="math">{\mathscr{O}}_X^m\to{\mathscr{O}}_X^n</eq>.</p>
 </div>
 <div id="fga-2-section-2" class="section level2" number="2.2">
@@ -318,7 +319,7 @@ are isomorphisms.</p></li>
 <p>In this statement, we suppose that we already have some coherent subsheaf <eq env="math">{\mathscr{J}}</eq> of <eq env="math">{\mathscr{O}}_Y</eq> that defines <eq env="math">Y'</eq>, whence, by taking the inverse image, a coherent subsheaf of <eq env="math">{\mathscr{O}}_X</eq> that defines <eq env="math">X'</eq>, whence, by definition, <eq env="math">{\mathscr{F}}_n</eq>, <eq env="math">X_n</eq>, <eq env="math">Y_n</eq>, and <eq env="math">f_n\colon X_n\to Y_n</eq> as in <a href="FGA-2.html#fga-2-section-2">§2</a>.
 The minor changes that need to be made to the notation in the explanation if we started with an arbitrary proper morphism between two formal schemes are evident.</p>
 <p><a href="FGA-2.html#fga-2-theorem-1">Theorem 1</a> deals only with “formal cohomology”;
-the following theorem relates it with “algebraic cohomology”, and resembles a well-known theorem of Serre <span class="citation">[<a href="#ref-Ser1956" role="doc-biblioref">15</a>]</span> on the comparison between algebraic cohomology and analytic cohomology.</p>
+the following theorem relates it with “algebraic cohomology”, and resembles a well-known theorem of Serre <span class="citation">[<a href="#ref-Ser1956" role="doc-biblioref">17</a>]</span> on the comparison between algebraic cohomology and analytic cohomology.</p>
 <div id="fga-2-theorem-2" class="itenv" title="Theorem 2">
 <p><em>First comparison theorem.</em> —
 The <eq env="math">\operatorname{R}^q f_*({\mathscr{F}})</eq> are coherent sheaves on <eq env="math">Y</eq> (which is a particular case of <a href="FGA-2.html#fga-2-theorem-1">Theorem 1</a>), and the natural homomorphisms
@@ -388,7 +389,7 @@ We suppose that</p>
 We will give here a hint on how to prove <a href="FGA-2.html#fga-2-theorem-4">Theorem 4</a>:
 we can show (cf. <a href="FGA-2.html#fga-2-proposition-3">Proposition 3</a> below) that (i) and (ii) imply that every coherent sheaf on <eq env="math">{\mathfrak{X}}_0</eq> that is locally isomorphic to a fundamental sheaf can be obtained by reduction starting from a sheaf of the same nature on <eq env="math">{\mathfrak{X}}</eq>.
 So, starting with an “ample” sheaf on <eq env="math">{\mathfrak{X}}_0</eq> (which, by (iii), exists), we lift it to obtain an invertible sheaf on <eq env="math">{\mathfrak{X}}</eq>, and, using <a href="FGA-2.html#fga-2-theorem-1">Theorem 1</a>, we prove that a multiple of this invertible sheaf defined an immersion of <eq env="math">X</eq> into the formal completion of a scheme <eq env="math">\mathbb{P}_A^r</eq> (“projective type” of dimension <eq env="math">r</eq> over <eq env="math">A</eq>).</p>
-<p>For the proof of <a href="FGA-2.html#fga-2-theorem-1">Theorem 1</a>, <a href="FGA-2.html#fga-2-theorem-2">Theorem 2</a>, and <a href="FGA-2.html#fga-2-theorem-3">Theorem 3</a>, we refer the reader to <span class="citation">[<a href="#ref-GD1960" role="doc-biblioref">10</a>, I]</span>.</p>
+<p>For the proof of <a href="FGA-2.html#fga-2-theorem-1">Theorem 1</a>, <a href="FGA-2.html#fga-2-theorem-2">Theorem 2</a>, and <a href="FGA-2.html#fga-2-theorem-3">Theorem 3</a>, we refer the reader to <span class="citation">[<a href="#ref-GD1960" role="doc-biblioref">11</a>, I]</span>.</p>
 </div>
 <div id="fga-2-section-4" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Applications to Zariski’s connection theorem and “main theorem”</h2>
@@ -981,13 +982,13 @@ However, a study of coverings admitting ramifications that are not “tame” se
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body">
 <div id="ref-Gro1960" class="csl-entry">
-<div class="csl-left-margin">[4] </div><div class="csl-right-inline">A. Grothendieck. <span>“The cohomology theory of abstract algebraic varieties,”</span> in: <em>Proceedings of the <span>Internation Congress</span> of <span>Mathematicians</span> 1958</em>. <span>Cambridge University Press</span>, 1960.</div>
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">A. Grothendieck. <span>“The cohomology theory of abstract algebraic varieties,”</span> in: <em>Proceedings of the <span>Internation Congress</span> of <span>Mathematicians</span> 1958</em>. <span>Cambridge University Press</span>, 1960.</div>
 </div>
 <div id="ref-GD1960" class="csl-entry">
-<div class="csl-left-margin">[10] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4,8,11,17,20,24,28,32</strong> (1960/67).</div>
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4,8,11,17,20,24,28,32</strong> (1960/67).</div>
 </div>
 <div id="ref-Ser1956" class="csl-entry">
-<div class="csl-left-margin">[15] </div><div class="csl-right-inline">J.-P. Serre. <span>“Géométrie algébrique et géométrie analytique.”</span> <em>Ann. Institut Fourier Grenoble</em>. <strong>6</strong> (1956), 1–42.</div>
+<div class="csl-left-margin">[17] </div><div class="csl-right-inline">J.-P. Serre. <span>“Géométrie algébrique et géométrie analytique.”</span> <em>Ann. Institut Fourier Grenoble</em>. <strong>6</strong> (1956), 1–42.</div>
 </div>
 </div>
 <div class="footnotes">

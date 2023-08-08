@@ -198,6 +198,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.3" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-3"><i class="fa fa-check"></i><b>7.3</b> The principal existence theorem: statement</a></li>
 <li class="chapter" data-level="7.4" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-4"><i class="fa fa-check"></i><b>7.4</b> Relative Cartier divisors and projective bundles</a></li>
 <li class="chapter" data-level="7.5" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-5"><i class="fa fa-check"></i><b>7.5</b> Proof of the principal existence theorem</a></li>
+<li class="chapter" data-level="7.6" data-path="FGA-3-V.html"><a href="FGA-3-V.html#fga-3-v-section-6"><i class="fa fa-check"></i><b>7.6</b> Relative existence theorems</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
@@ -229,10 +230,10 @@ Grothendieck, A.
 <em>Séminaire Bourbaki</em> <strong>9</strong> (1956–57), Talk no. 149.</p>
 </div>
 <p>The results that follow, inspired by Serre’s “theorem of algebraic duality”, were discovered in the winter of 1955 and the winter of 1956.
-They can be established very simply, thanks to reasonably elementary results on the cohomology of projective spaces <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">14</a>]</span>. and an intensive use of Cartan–Eilenberg’s homological algebra, in the form given in <span class="citation">[<a href="#ref-Gro1957" role="doc-biblioref">5</a>]</span>.</p>
+They can be established very simply, thanks to reasonably elementary results on the cohomology of projective spaces <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">16</a>]</span>. and an intensive use of Cartan–Eilenberg’s homological algebra, in the form given in <span class="citation">[<a href="#ref-Gro1957" role="doc-biblioref">6</a>]</span>.</p>
 <div id="fga-1-section-1" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> <eq env="math">\operatorname{Ext}</eq> of sheaves of modules</h2>
-<p><em>(cf. <span class="citation">[<a href="#ref-Gro1957" role="doc-biblioref">5</a> and 4]</span>)</em></p>
+<p><em>(cf. <span class="citation">[<a href="#ref-Gro1957" role="doc-biblioref">6</a> and 4]</span>)</em></p>
 <p>Let <eq env="math">X</eq> be a topological space endowed with a sheaf <eq env="math">{\mathscr{O}}</eq> of unital (but not necessarily commutative) rings.
 We consider the abelian category <eq env="math">{\mathcal{C}}^{\mathscr{O}}</eq> of sheaves of <eq env="math">{\mathscr{O}}</eq>-modules, which are also referred to as <eq env="math">{\mathscr{O}}</eq>-modules.
 We know that every object of this category admits an injective resolution, which allows us to define the <eq env="math">\operatorname{Ext}</eq> functors that have the well-known formal properties.
@@ -313,7 +314,7 @@ Furthermore, for fixed <eq env="math">x\in X</eq>, we have functorial homomorphi
 </div>
 <div id="fga-1-proposition-2" class="itenv" title="Proposition 2">
 <p>If <eq env="math">{\mathscr{A}}</eq> is isomorphic, in a neighbourhood of <eq env="math">x</eq>, to the cokernel of some homomorphism <eq env="math">{\mathscr{O}}^m\to{\mathscr{O}}^n</eq>, then <a href="FGA-1.html#fga-1-equation-1.7">(1.7)</a> is an isomorphism for all <eq env="math">p</eq>.
-This is the case, in particular, if <eq env="math">{\mathscr{A}}</eq> is a coherent <eq env="math">{\mathscr{O}}</eq>-module <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">14</a>]</span>.</p>
+This is the case, in particular, if <eq env="math">{\mathscr{A}}</eq> is a coherent <eq env="math">{\mathscr{O}}</eq>-module <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">16</a>]</span>.</p>
 </div>
 <div id="fga-1-proposition-3" class="itenv" title="Proposition 3">
 <p>Let <eq env="math">{\mathscr{L}}_\bullet=({\mathscr{L}}_i)</eq> be a left resolution of the <eq env="math">{\mathscr{O}}</eq>-module <eq env="math">{\mathscr{A}}</eq> by <eq env="math">{\mathscr{O}}</eq>-modules that are all locally isomorphic to some <eq env="math">{\mathscr{O}}^n</eq>.
@@ -843,13 +844,13 @@ Let <eq env="math">k_x={\mathscr{O}}_{(x)}</eq> be the structure sheaf of the va
 Since <eq env="math">s_{(x)}</eq> is a basis of <eq env="math">\operatorname{Ext}_{{\mathscr{O}}_X}^n(X;k_x,\Omega_X^n)</eq> by <a href="FGA-1.html#fga-1-equation-4.2">(4.2)</a>, it indeed follows that its image <eq env="math">\varepsilon_X</eq> is a basis of <eq env="math">\operatorname{H}^n(X,\Omega_X^n)</eq>.</p>
 <p>It remains only to prove the statement of <a href="FGA-1.html#fga-1-D">(D)</a>, which will follow in a purely formal way from some elementary facts summarised in the following lemmas.
 Here we suppose that <eq env="math">X</eq> is a closed subset (singular or not) of the projective space <eq env="math">\mathbf{P}</eq> of dimension <eq env="math">r</eq>.
-We use the notation <eq env="math">{\mathscr{O}}_\mathbf{P}(m)</eq> to denote the sheaf on <eq env="math">\mathbf{P}</eq> denoted by <eq env="math">{\mathscr{O}}(m)</eq> in <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">14</a>]</span>, and the notation <eq env="math">{\mathscr{O}}_X(m)</eq> for the analogous sheaf on <eq env="math">X</eq>.</p>
+We use the notation <eq env="math">{\mathscr{O}}_\mathbf{P}(m)</eq> to denote the sheaf on <eq env="math">\mathbf{P}</eq> denoted by <eq env="math">{\mathscr{O}}(m)</eq> in <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">16</a>]</span>, and the notation <eq env="math">{\mathscr{O}}_X(m)</eq> for the analogous sheaf on <eq env="math">X</eq>.</p>
 <div id="fga-1-lemma-2" class="itenv" title="Lemma 2">
 <p>The statement of <a href="FGA-1.html#fga-1-D">(D)</a> is true if <eq env="math">X=\mathbf{P}</eq> and <eq env="math">{\mathscr{F}}={\mathscr{O}}_\mathbf{P}(m)</eq>.</p>
 </div>
 <div class="proof">
 <p><span id="unlabeled-div-8" class="proof"><em>Proof</em>. </span>This lemma can be proved by a direct calculation.
-The explicit calculation of the <eq env="math">\operatorname{H}^i(\mathbf{P},{\mathscr{O}}_\mathbf{P}(m))</eq> can be found in <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">14</a>]</span>, but it also can be done in a simpler way.
+The explicit calculation of the <eq env="math">\operatorname{H}^i(\mathbf{P},{\mathscr{O}}_\mathbf{P}(m))</eq> can be found in <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">16</a>]</span>, but it also can be done in a simpler way.
 Computing the cup product <eq env="math">\operatorname{H}^i(\mathbf{P},{\mathscr{O}}_\mathbf{P}(m))\times\operatorname{H}^j(\mathbf{P},{\mathscr{O}}_\mathbf{P}(m)') \to \operatorname{H}^{i+j}(\mathbf{P},{\mathscr{O}}_\mathbf{P}(m+m'))</eq> (which is necessary to calculate the pairing in <a href="FGA-1.html#fga-1-equation-5.1">(5.1)</a>) does not present any difficulty.</p>
 </div>
 <div id="fga-1-lemma-3" class="itenv" title="Lemma 3">
@@ -857,7 +858,7 @@ Computing the cup product <eq env="math">\operatorname{H}^i(\mathbf{P},{\mathscr
 </div>
 <div class="proof">
 <p><span id="unlabeled-div-9" class="proof"><em>Proof</em>. </span>This follows from the fact that <eq env="math">{\mathscr{F}}\otimes{\mathscr{O}}_X(m)</eq> is “generated by its sections” for large enough <eq env="math">m</eq>;
-see <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">14</a>]</span>.</p>
+see <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">16</a>]</span>.</p>
 </div>
 <div id="fga-1-lemma-4" class="itenv" title="Lemma 4">
 <p>Let <eq env="math">i&gt;0</eq>.
@@ -870,7 +871,7 @@ for the second, we note that we have an isomorphism
 <eq env="displaymath">
   \operatorname{Ext}_{{\mathscr{O}}_X}^i(X;{\mathscr{O}}_X(-m),{\mathscr{B}}) = \operatorname{H}^i(X,{\mathscr{B}}\otimes{\mathscr{O}}(m))
 </eq>
-(<a href="FGA-1.html#fga-1-proposition-1-corollary-1">Corollary 1 of Proposition 1</a>), whence the conclusion, by a well-known result of <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">14</a>]</span>.</p>
+(<a href="FGA-1.html#fga-1-proposition-1-corollary-1">Corollary 1 of Proposition 1</a>), whence the conclusion, by a well-known result of <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">16</a>]</span>.</p>
 </div>
 <p>Combining the previous two lemmas, we find:</p>
 <div id="fga-1-lemma-3-and-lemma-4-corollary" class="itenv" title="Corollary">
@@ -1031,8 +1032,8 @@ The condition of the corollary is purely local, and so, if it is satisfied for <
 In particular, if this condition is satisfied for <eq env="math">{\mathscr{O}}_X</eq>, then it is satisfied for every locally-free coherent algebraic sheaf.
 This is the case, for example, for all <eq env="math">i&lt;n</eq> if <eq env="math">X</eq> is non-singular;
 and for <eq env="math">i=0</eq> if no component of <eq env="math">X</eq> consists of a single point;
-and for <eq env="math">i=0,1</eq> if <eq env="math">S</eq> is normal and all its components are of dimension <eq env="math">&gt;1</eq> (see <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">14</a>]</span>).
-For it to be satisfied for <eq env="math">i&lt;k</eq>, it is necessary and sufficient, by definition, for the local rings <eq env="math">{\mathscr{O}}_x</eq> (<eq env="math">x\in X</eq>) to be of “homological codimension <eq env="math">\geqslant k</eq>” (see <span class="citation">[<a href="#ref-Ser1956a" role="doc-biblioref">16</a>]</span> for details on this notion).
+and for <eq env="math">i=0,1</eq> if <eq env="math">S</eq> is normal and all its components are of dimension <eq env="math">&gt;1</eq> (see <span class="citation">[<a href="#ref-Ser1955" role="doc-biblioref">16</a>]</span>).
+For it to be satisfied for <eq env="math">i&lt;k</eq>, it is necessary and sufficient, by definition, for the local rings <eq env="math">{\mathscr{O}}_x</eq> (<eq env="math">x\in X</eq>) to be of “homological codimension <eq env="math">\geqslant k</eq>” (see <span class="citation">[<a href="#ref-Ser1956a" role="doc-biblioref">18</a>]</span> for details on this notion).
 If <eq env="math">k=n</eq>, then this implies, by <a href="FGA-1.html#fga-1-theorem-3bis">Theorem 3 bis</a>, that the duality theorem is true for <eq env="math">X</eq>, i.e. that <a href="FGA-1.html#fga-1-equation-6.5">(6.5)</a> is an isomorphism for all <eq env="math">p</eq> and for all <eq env="math">{\mathscr{F}}</eq>.
 We can give many equivalent conditions on the local rings <eq env="math">{\mathscr{O}}_x</eq> for this to be the case (Nagata);
 for example, those that satisfy the Cohen-Macaulay equidimensionality theorem.
@@ -1264,13 +1265,13 @@ Using the above remark, we see that, if the dimension of <eq env="math">X</eq> i
 <div class="csl-left-margin">[2] </div><div class="csl-right-inline">P. Cartier. <span>“Des groups <eq env="math">\mathrm{Ext}^s(A,B)</eq>.”</span> <em>Séminaire A. Grothendieck: Algèbre Homologique</em>. <strong>1</strong> (1957), Talk no. 3.</div>
 </div>
 <div id="ref-Gro1957" class="csl-entry">
-<div class="csl-left-margin">[5] </div><div class="csl-right-inline">A. Grothendieck. <span>“Sur quelques points d’algèbre homologique.”</span> <em>Tohoku Math. J.</em> <strong>9</strong> (1957), 119–221.</div>
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">A. Grothendieck. <span>“Sur quelques points d’algèbre homologique.”</span> <em>Tohoku Math. J.</em> <strong>9</strong> (1957), 119–221.</div>
 </div>
 <div id="ref-Ser1955" class="csl-entry">
-<div class="csl-left-margin">[14] </div><div class="csl-right-inline">J.-P. Serre. <span>“Faisceaux algébriques cohérents.”</span> <em>Annals of Math.</em> <strong>61</strong> (1955), 197–278.</div>
+<div class="csl-left-margin">[16] </div><div class="csl-right-inline">J.-P. Serre. <span>“Faisceaux algébriques cohérents.”</span> <em>Annals of Math.</em> <strong>61</strong> (1955), 197–278.</div>
 </div>
 <div id="ref-Ser1956a" class="csl-entry">
-<div class="csl-left-margin">[16] </div><div class="csl-right-inline">J.-P. Serre. <span>“Sur la dimension homologique des anneaux et des modules <span>Noethériens</span>,”</span> in: <em>Proc. <span>Intern</span>. <span>Symp</span>. On Alg. Number Theory, <span>Tokyo</span> and <span>Nikko</span>, 1955</em>. <span>Science Council of Japan, Tokyo</span>, 1956: pp. 175–189.</div>
+<div class="csl-left-margin">[18] </div><div class="csl-right-inline">J.-P. Serre. <span>“Sur la dimension homologique des anneaux et des modules <span>Noethériens</span>,”</span> in: <em>Proc. <span>Intern</span>. <span>Symp</span>. On Alg. Number Theory, <span>Tokyo</span> and <span>Nikko</span>, 1955</em>. <span>Science Council of Japan, Tokyo</span>, 1956: pp. 175–189.</div>
 </div>
 </div>
 <div class="footnotes">
