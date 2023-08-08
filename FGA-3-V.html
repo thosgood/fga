@@ -232,6 +232,11 @@ Grothendieck, A.
 “Technique de descente et théorèmes d’existence en géométrie algébrique, V: Les schémas de Picard: Théorèmes d’existence”.
 <em>Séminaire Bourbaki</em> <strong>14</strong> (1961–62), Talk no. 232.</p>
 </div>
+<p><strong>TO-DO:</strong></p>
+<ul>
+<li><strong>additif</strong></li>
+<li><strong>errata</strong></li>
+</ul>
 <div id="fga-3-v-section-1" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Relative Picard groups and functors</h2>
 <p>For every prescheme (more generally, every ringed space) <eq env="math">X</eq>, we define the (<em>absolute</em>) <em>Picard group</em> of <eq env="math">X</eq>, denoted by <eq env="math">\operatorname{Pic}(X)</eq>, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to <eq env="math">{\mathscr{O}}_X</eq>) modules on <eq env="math">X</eq>.
@@ -630,13 +635,13 @@ Note that the formation of the open <eq env="math">\underline{\operatorname{Pic}
 <p>It is not out of the question that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists whenever <eq env="math">f\colon X\to S</eq> is proper and flat and such that the homomorphisms <eq env="math">k(s)\to\operatorname{H}^0(X_s,{\mathscr{O}}_{X_s})</eq> (for <eq env="math">s\in S</eq>) are isomorphisms (this latter condition also then implying that <eq env="math">{\mathscr{O}}_S\xrightarrow{\sim}f_*({\mathscr{O}}_X)</eq>, and that this remains true after any base change <eq env="math">S'\to S</eq>).
 This at least is what we can prove in the setting of analytic spaces, if <eq env="math">f</eq> is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in <span class="citation">[<a href="#ref-Gro1960a" role="doc-biblioref">9</a>, IX, 3.1]</span>.
 In this method, the passage to the quotient by a <em>proper</em> and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of <eq env="math">X</eq> into <eq env="math">\mathbb{P}_S^r</eq>.
-This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group <span class="citation">[<a href="#ref-Mum1961" role="doc-biblioref">14</a>]</span>;
+This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group <span class="citation">[<a href="#ref-Mum1961" role="doc-biblioref">15</a>]</span>;
 for now, there is no written proof, except when <eq env="math">X</eq> has “lots of local sections” over <eq env="math">S</eq>, for example if <eq env="math">X</eq> is separable over a complete local ring.
 In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
 (Technically, the difficulty comes from the fact that, when the geometric fibres of <eq env="math">f</eq> are not integral, then the functor envisaged in <a href="FGA-3-V.html#fga-3-v-theorem-4.3">(4.3)</a> is no longer representable by the projective bundle <eq env="math">\mathbb{P}({\mathscr{Q}})</eq> itself, but by an <em>open</em> of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).</p>
 </div>
 <div id="fga-3-v-remark-5.3" class="rmenv" title="Remark 5.3">
-<p>Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang <span class="citation">[<a href="#ref-Lan1959" role="doc-biblioref">13</a>]</span> or the article by Chevalley <span class="citation">[<a href="#ref-Che1960" role="doc-biblioref">3</a>]</span>, which follow the path sketched by Weil.
+<p>Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang <span class="citation">[<a href="#ref-Lan1959" role="doc-biblioref">14</a>]</span> or the article by Chevalley <span class="citation">[<a href="#ref-Che1960" role="doc-biblioref">3</a>]</span>, which follow the path sketched by Weil.
 Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in <a href="FGA-3-V.html#fga-3-v-section-1">§1</a> (essentially those of Chevalley, but taking into account the “variety of parameters” with nilpotent elements).
 The fact that the construction of Picard schemes should precede, not follow, the theory of abelian varieties is clear a priori, by the fact that, in general, Picard schemes are not, nor do they reduce to, abelian schemes, as we already see in the case of singular curves over an algebraically closed field, where we find the “generalised Jacobians” of Rosenlicht, which are not abelian varieties.
 Furthermore, the theory of abelian varieties, and more generally of abelian schemes, becomes much simpler once we have a theory of Picard schemes in general.
@@ -714,7 +719,7 @@ If the <eq env="math">\underline{\operatorname{Pic}}_{X_i/k}</eq> exist, then so
 is affine.</p>
 </div>
 <p>Combined with <a href="FGA-3-V.html#fga-3-v-corollary-6.2">(6.2)</a>, this shows, for example, the existence of <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq> whenever <eq env="math">X</eq> is a projective scheme that is separable over a field <eq env="math">k</eq>.
-If <eq env="math">X</eq> is no longer separable over <eq env="math">k</eq>, then we equally have a reduction result, using the argument of Oort <span class="citation">[<a href="#ref-Oor1962" role="doc-biblioref">16</a>]</span>.
+If <eq env="math">X</eq> is no longer separable over <eq env="math">k</eq>, then we equally have a reduction result, using the argument of Oort <span class="citation">[<a href="#ref-Oor1962" role="doc-biblioref">17</a>]</span>.
 The method equally applies for a scheme with arbitrary base (a useful case, for example, in proving in the following talk the finiteness result stated in <a href="FGA-3-V.html#fga-3-v-remark-3.3">(3.3)</a>).
 To avoid an overly technical statement, we restrict ourselves to the case where we are over a base field:</p>
 <div id="fga-3-v-proposition-6.5" class="itenv" title="Proposition 6.5">
@@ -733,7 +738,7 @@ The results above allow us to reduce, for this question, to the case where <eq e
 We then know that there exists an integral scheme <eq env="math">X'</eq> that is <em>projective</em> over <eq env="math">k</eq>, and a dominant morphism <eq env="math">g\colon X'\to X</eq> (Chow’s lemma).
 It would thus suffice to show that the corresponding functorial morphism <eq env="math">\mathscr{P}\kern -.5pt ic_{X/k}\to\mathscr{P}\kern -.5pt ic_{X'/k}</eq> is representable (and, probably, representable by affine morphisms), since we already know that <eq env="math">\mathscr{P}\kern -.5pt ic_{X'/k}</eq> is representable.
 This raises questions about non-flat descent that are not answerable as of now.
-Note that, if we restrict to considering the restriction of the functor <eq env="math">\mathscr{P}\kern -.5pt ic_{X/k}</eq> to reduced preschemes (with <eq env="math">X</eq> proper and integral over an algebraically closed field <eq env="math">k</eq>), then we do indeed obtain a representable functor, as shown by Chevalley <span class="citation">[<a href="#ref-Che1960" role="doc-biblioref">3</a>]</span> in the case where <eq env="math">X</eq> is normal, and by Seshadri <span class="citation">[<a href="#ref-Ses1962" role="doc-biblioref">23</a>]</span> by a descent method in the general case.
+Note that, if we restrict to considering the restriction of the functor <eq env="math">\mathscr{P}\kern -.5pt ic_{X/k}</eq> to reduced preschemes (with <eq env="math">X</eq> proper and integral over an algebraically closed field <eq env="math">k</eq>), then we do indeed obtain a representable functor, as shown by Chevalley <span class="citation">[<a href="#ref-Che1960" role="doc-biblioref">3</a>]</span> in the case where <eq env="math">X</eq> is normal, and by Seshadri <span class="citation">[<a href="#ref-Ses1962" role="doc-biblioref">24</a>]</span> by a descent method in the general case.
 But with our notation, the scheme constructed by these authors is not <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq>, but instead <eq env="math">(\underline{\operatorname{Pic}}_{X/k})_\mathrm{red}</eq>, i.e. the reduced scheme corresponding to <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq>.</p>
 </div>
 <div id="fga-3-v-remark-6.7" class="rmenv" title="Remark 6.7">
@@ -776,16 +781,16 @@ In the case where <eq env="math">A</eq> is of arbitrary dimension, it is plausib
 <div class="csl-left-margin">[11] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4,8,11,17,20,24,28,32</strong> (1960/67).</div>
 </div>
 <div id="ref-Lan1959" class="csl-entry">
-<div class="csl-left-margin">[13] </div><div class="csl-right-inline">S. Lang. <em>Abelian varieties</em>. Interscience Publishers, 1959.</div>
+<div class="csl-left-margin">[14] </div><div class="csl-right-inline">S. Lang. <em>Abelian varieties</em>. Interscience Publishers, 1959.</div>
 </div>
 <div id="ref-Mum1961" class="csl-entry">
-<div class="csl-left-margin">[14] </div><div class="csl-right-inline">D. Mumford. <span>“An elementary theorem in geometric invariant theory.”</span> <em>Bull. Amer. Math. Soc.</em> <strong>67</strong> (1961), 483–486.</div>
+<div class="csl-left-margin">[15] </div><div class="csl-right-inline">D. Mumford. <span>“An elementary theorem in geometric invariant theory.”</span> <em>Bull. Amer. Math. Soc.</em> <strong>67</strong> (1961), 483–486.</div>
 </div>
 <div id="ref-Oor1962" class="csl-entry">
-<div class="csl-left-margin">[16] </div><div class="csl-right-inline">F. Oort. <span>“Sur le schéma de picard.”</span> <em>Bull. Soc. Math. France</em>. <strong>90</strong> (1962), 1–14.</div>
+<div class="csl-left-margin">[17] </div><div class="csl-right-inline">F. Oort. <span>“Sur le schéma de picard.”</span> <em>Bull. Soc. Math. France</em>. <strong>90</strong> (1962), 1–14.</div>
 </div>
 <div id="ref-Ses1962" class="csl-entry">
-<div class="csl-left-margin">[23] </div><div class="csl-right-inline">C.S. Seshadri. <span>“La varide picard d’une varicomplète.”</span> <em>Annali Di Mat. Pura Ed App.</em> <strong>57</strong> (1962), 117–42.</div>
+<div class="csl-left-margin">[24] </div><div class="csl-right-inline">C.S. Seshadri. <span>“La varide picard d’une varicomplète.”</span> <em>Annali Di Mat. Pura Ed App.</em> <strong>57</strong> (1962), 117–42.</div>
 </div>
 </div>
 <div class="footnotes">
