@@ -545,7 +545,7 @@ into a sum of disjoint opens that are <em>quasi-projective</em> over <eq env="ma
 <eq env="displaymath">
   \mathscr{D}\kern -.5pt iv_{X/S}
   \to \mathscr{P}\kern -.5pt ic_{X/S}
-\tag{plus}
+\tag{+}
 </eq>
 that we propose to study;
 it appears to be relatively representable (<span class="citation">[<a href="#ref-Gro1960a" role="doc-biblioref">9</a>, IV, 3]</span>) under rather general conditions.
@@ -603,7 +603,7 @@ So we have a morphism
 <eq env="displaymath">
   {\mathscr{D}}^+
   \to {\mathscr{P}}^+
-\tag{plus}
+\tag{+}
 </eq>
 and we already know that <eq env="math">{\mathscr{D}}^+</eq> is representable by an open <eq env="math">D^+</eq> of the prescheme <eq env="math">D=\underline{\operatorname{Div}}_{X/S}</eq> (and, more precisely, by <em>projective bundles associated to locally free modules</em> that are everywhere non-zero);
 this is due to the fact that, if <eq env="math">{\mathscr{L}}</eq> on <eq env="math">X\times_S S'</eq> is, as at the start of this section, then <eq env="math">f'_*({\mathscr{L}})</eq> is a <em>locally free</em> non-zero module, whose formation commutes with base change;
@@ -634,7 +634,7 @@ In principle, the method in question is of more general scope, since it also giv
 </div>
 <div id="fga-3-v-remark-5.3" class="rmenv" title="Remark 5.3">
 <p>Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang <span class="citation">[<a href="#ref-Lan1959" role="doc-biblioref">13</a>]</span> or the article by Chevalley <span class="citation">[<a href="#ref-Che1960" role="doc-biblioref">3</a>]</span>, which follow the path sketched by Weil.
-Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in <a href="FGA-3-V.html#fga-3-v-section-1">Section 1</a> (essentially those of Chevalley, but taking into account the “variety of parameters” with nilpotent elements).
+Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in <a href="FGA-3-V.html#fga-3-v-section-1">§1</a> (essentially those of Chevalley, but taking into account the “variety of parameters” with nilpotent elements).
 The fact that the construction of Picard schemes should precede, not follow, the theory of abelian varieties is clear a priori, by the fact that, in general, Picard schemes are not, nor do they reduce to, abelian schemes, as we already see in the case of singular curves over an algebraically closed field, where we find the “generalised Jacobians” of Rosenlicht, which are not abelian varieties.
 Furthermore, the theory of abelian varieties, and more generally of abelian schemes, becomes much simpler once we have a theory of Picard schemes in general.
 In particular, the theory of duality for abelian schemes, and notably the results of Cartier type, then become slightly more formal (cf. for example [-]<a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a>)</p>
@@ -649,7 +649,61 @@ This question of existence certainly arises in a geometric construction, in the 
 </div>
 <div id="fga-3-v-section-6" class="section level2" number="7.6">
 <h2><span class="header-section-number">7.6</span> Relative existence theorems</h2>
-<p>We</p>
+<p>We will sketch here some useful cases where the existence of certain Picard schemes implies the existence of certain others, which allows us to deduce from the principal existence theorem <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a> various other existence theorems.</p>
+<div id="fga-3-v-proposition-6.1" class="itenv" title="Proposition 6.1">
+<p>Let <eq env="math">f\colon X\to S</eq> be a flat projective morphism such that, in the Stein factorisation <eq env="math">f=f''f'</eq>, the morphism <eq env="math">f'\colon X\to S'</eq> is <em>flat</em> and has integral geometric fibres (and thus satisfies the hypotheses of <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a>), and such that the finite morphism <eq env="math">f''\colon S'\to</eq> is flat.
+Then <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists and (with the notation introduced in <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, II, C.2]</span>) we have a canonical isomorphism
+<eq env="displaymath">
+  \underline{\operatorname{Pic}}_{X/S}
+  \xrightarrow{\sim}\prod_{S'/S} \operatorname{Pic}_{X/S'}.
+</eq></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-31" class="proof"><em>Proof</em>. </span>To prove this, we first establish an isomorphism of functors
+<eq env="displaymath">
+  \mathscr{P}\kern -.5pt ic_{X/S}
+  \xrightarrow{\sim}\prod_{S'/S} \mathscr{P}\kern -.5pt ic_{X/S'}
+</eq>
+and then use <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a>, which implies that <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S'}</eq> is representable;
+we use the structure explained in <a href="FGA-3-V.html#fga-3-v-section-3">§3</a> of <eq env="math">\underline{\operatorname{Pic}}_{X/S'}</eq> (which implies that every finite subset of a fibre of <eq env="math">\underline{\operatorname{Pic}}_{X/S'}</eq> over <eq env="math">S</eq> is contained in an open affine) for the existence of <eq env="math">\prod_{S'/S}\underline{\operatorname{Pic}}_{X/S'}</eq>.</p>
+</div>
+<p>For example, if <eq env="math">X</eq> is a scheme given by a <em>sum</em> of schemes <eq env="math">X_i</eq> over <eq env="math">S</eq> that satisfy the conditions of <a href="FGA-3-V.html#fga-3-v-theorem-3.1">(3.1)</a>, then the statement of <a href="FGA-3-V.html#fga-3-v-proposition-6.1">(6.1)</a> reduces to the trivial statement
+<eq env="displaymath">
+  \underline{\operatorname{Pic}}_{X/S}
+  \xrightarrow{\sim}\prod_i \underline{\operatorname{Pic}}_{X_i/S}.
+</eq></p>
+<div id="fga-3-v-corollary-6.2" class="itenv" title="Corollary 6.2">
+<p>Let <eq env="math">f\colon X\to S</eq> be a projective flat morphism with locally integral geometric fibres (for example, a projective and normal morphism).
+Then <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-32" class="proof"><em>Proof</em>. </span>In this case, <eq env="math">S'</eq> is an étale covering of <eq env="math">S</eq> (which is true once <eq env="math">f</eq> is separable, i.e. flat with reduced geometric fibres), and we see that the structure theorem stated in <a href="FGA-3-V.html#fga-3-v-section-3">§3</a> for <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> still holds, thanks to the analogous structure of <eq env="math">\underline{\operatorname{Pic}}_{X/S'}</eq>.</p>
+</div>
+<p>Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, A.c]</span>, and of which we content ourselves here to explain only a particular case:</p>
+<div id="fga-3-v-proposition-6.3" class="itenv" title="Proposition 6.3">
+<p>Let <eq env="math">f\colon X\to S</eq> be a proper morphism, and let <eq env="math">X_1</eq> and <eq env="math">X_2</eq> be subpreschemes of <eq env="math">X</eq> that are flat over <eq env="math">S</eq>, defined by coherent ideals <eq env="math">{\mathscr{J}}_1</eq> and <eq env="math">{\mathscr{J}}_2</eq> (respectively) such that <eq env="math">{\mathscr{J}}_1\cap{\mathscr{J}}_2=(0)</eq> and such that <eq env="math">{\mathscr{O}}_X/({\mathscr{J}}_1+{\mathscr{J}}_2)</eq> is flat over <eq env="math">S</eq> (i.e. the subprescheme of <eq env="math">X</eq> that is the sup of <eq env="math">X_1</eq> and <eq env="math">X_2</eq> is <eq env="math">X</eq> itself, whereas their inf <eq env="math">Z</eq> is flat over <eq env="math">X</eq>).
+Suppose further that, for all <eq env="math">s\in S</eq>, the <strong>!!TO-DO: <eq env="math">\operatorname{Hom}k(s)\to\operatorname{H}^0(X_{i_s},{\mathscr{O}}_{X_{i_s}})</eq>!!</strong> are bijective, for <eq env="math">i=1,2</eq>.
+Then the natural homomorphism of functors
+<eq env="displaymath">
+  \mathscr{P}\kern -.5pt ic_{X/S}
+  \to \mathscr{P}\kern -.5pt ic_{X_1/S} \times \mathscr{P}\kern -.5pt ic_{X_2/S}
+</eq>
+is representable by affine morphisms, so if <eq env="math">\underline{\operatorname{Pic}}_{X_1/S}</eq> and <eq env="math">\underline{\operatorname{Pic}}_{X_2/s}</eq> exist, then so too does <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>, and the canonical morphism
+<eq env="displaymath">
+  \underline{\operatorname{Pic}}_{X/S}
+  \to \underline{\operatorname{Pic}}_{X_1/S} \times \underline{\operatorname{Pic}}_{X_2/S}
+</eq>
+is affine.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-33" class="proof"><em>Proof</em>. </span>By faithfully flat descent, we can reduce to the case where <eq env="math">Z</eq> admits a section over <eq env="math">S</eq>, thus defining sections of <eq env="math">X</eq>, <eq env="math">X_1</eq>, and <eq env="math">X_2</eq> over <eq env="math">S</eq>, and allowing us to eliminate the automorphisms in the structures in question, as explained in <a href="FGA-3-V.html#fga-3-v-remark-2.5">(2.5)</a>.
+The proof then consists of noting that the data of a “rigidified” invertible module <eq env="math">{\mathscr{L}}</eq> on <eq env="math">X</eq> is equivalent to the data of a triple <eq env="math">({\mathscr{L}}_1,{\mathscr{L}}_2,u)</eq>, where <eq env="math">{\mathscr{L}}_i</eq> is a “rigidified” module on <eq env="math">X_i</eq>, and <eq env="math">u</eq> is an isomorphism from <eq env="math">{\mathscr{L}}_1|Z</eq> to <eq env="math">{\mathscr{L}}_2|Z</eq> that is compatible with the rigidifications.
+It remains only to verify that, for <eq env="math">{\mathscr{L}}_1</eq> and <eq env="math">{\mathscr{L}}_2</eq> fixed, the data of <eq env="math">u</eq> can be expressed as a section of a suitable scheme over <eq env="math">S</eq> that is affine over <eq env="math">S</eq>, which is easy.</p>
+</div>
+<p>From <a href="FGA-3-V.html#fga-3-v-proposition-6.3">(6.3)</a> we easily conclude:</p>
+<div id="fga-3-v-corollary-6.4" class="itenv" title="Corollary 6.4">
+<p>Let</p>
+</div>
 
 </div>
 </div>
