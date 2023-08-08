@@ -406,7 +406,7 @@ Using the map $D\mapsto\scr{L}(D)$, we obtain a functorial homomorphism
 $$
   \shDiv_{X/S}
   \to \shPic_{X/S}
-\tag{plus}
+\tag{+}
 $$
 that we propose to study;
 it appears to be relatively representable ([@Gro1960a, IV, 3]) under rather general conditions.
@@ -472,7 +472,7 @@ So we have a morphism
 $$
   \scr{D}^+
   \to \scr{P}^+
-\tag{plus}
+\tag{+}
 $$
 and we already know that $\scr{D}^+$ is representable by an open $D^+$ of the prescheme $D=\repDiv_{X/S}$ (and, more precisely, by *projective bundles associated to locally free modules* that are everywhere non-zero);
 this is due to the fact that, if $\scr{L}$ on $X\times_S S'$ is, as at the start of this section, then $f'_*(\scr{L})$ is a *locally free* non-zero module, whose formation commutes with base change;
@@ -509,7 +509,7 @@ In principle, the method in question is of more general scope, since it also giv
 
 ::: {.rmenv #fga-3-v-remark-5.3 title="Remark 5.3" latex="{Remark 5.3}"}
 Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang [@Lan1959] or the article by Chevalley [@Che1960], which follow the path sketched by Weil.
-Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in [Section 1](#fga-3-v-section-1) (essentially those of Chevalley, but taking into account the "variety of parameters" with nilpotent elements).
+Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in [§1](#fga-3-v-section-1) (essentially those of Chevalley, but taking into account the "variety of parameters" with nilpotent elements).
 The fact that the construction of Picard schemes should precede, not follow, the theory of abelian varieties is clear a priori, by the fact that, in general, Picard schemes are not, nor do they reduce to, abelian schemes, as we already see in the case of singular curves over an algebraically closed field, where we find the "generalised Jacobians" of Rosenlicht, which are not abelian varieties.
 Furthermore, the theory of abelian varieties, and more generally of abelian schemes, becomes much simpler once we have a theory of Picard schemes in general.
 In particular, the theory of duality for abelian schemes, and notably the results of Cartier type, then become slightly more formal (cf. for example [-]^[*[Trans.]* The original again cites here the 1962 Mumford--Tate seminar.])
@@ -526,4 +526,69 @@ This question of existence certainly arises in a geometric construction, in the 
 
 ## Relative existence theorems {#fga-3-v-section-6}
 
-We
+We will sketch here some useful cases where the existence of certain Picard schemes implies the existence of certain others, which allows us to deduce from the principal existence theorem [(3.1)](#fga-3-v-theorem-3.1) various other existence theorems.
+
+::: {.itenv #fga-3-v-proposition-6.1 title="Proposition 6.1" latex="{Proposition 6.1}"}
+Let $f\colon X\to S$ be a flat projective morphism such that, in the Stein factorisation $f=f''f'$, the morphism $f'\colon X\to S'$ is *flat* and has integral geometric fibres (and thus satisfies the hypotheses of [(3.1)](#fga-3-v-theorem-3.1)), and such that the finite morphism $f''\colon S'\to$ is flat.
+Then $\repPic_{X/S}$ exists and (with the notation introduced in [@Gro1959, II, C.2]) we have a canonical isomorphism
+$$
+  \repPic_{X/S}
+  \simto \prod_{S'/S} \Pic_{X/S'}.
+$$
+:::
+
+::: {.proof}
+To prove this, we first establish an isomorphism of functors
+$$
+  \shPic_{X/S}
+  \simto \prod_{S'/S} \shPic_{X/S'}
+$$
+and then use [(3.1)](#fga-3-v-theorem-3.1), which implies that $\shPic_{X/S'}$ is representable;
+we use the structure explained in [§3](#fga-3-v-section-3) of $\repPic_{X/S'}$ (which implies that every finite subset of a fibre of $\repPic_{X/S'}$ over $S$ is contained in an open affine) for the existence of $\prod_{S'/S}\repPic_{X/S'}$.
+:::
+
+For example, if $X$ is a scheme given by a *sum* of schemes $X_i$ over $S$ that satisfy the conditions of [(3.1)](#fga-3-v-theorem-3.1), then the statement of [(6.1)](#fga-3-v-proposition-6.1) reduces to the trivial statement
+$$
+  \repPic_{X/S}
+  \simto \prod_i \repPic_{X_i/S}.
+$$
+
+::: {.itenv #fga-3-v-corollary-6.2 title="Corollary 6.2" latex="{Corollary 6.2}"}
+Let $f\colon X\to S$ be a projective flat morphism with locally integral geometric fibres (for example, a projective and normal morphism).
+Then $\repPic_{X/S}$ exists.
+:::
+
+::: {.proof}
+In this case, $S'$ is an étale covering of $S$ (which is true once $f$ is separable, i.e. flat with reduced geometric fibres), and we see that the structure theorem stated in [§3](#fga-3-v-section-3) for $\repPic_{X/S}$ still holds, thanks to the analogous structure of $\repPic_{X/S'}$.
+:::
+
+Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in [@Gro1959, I, A.c], and of which we content ourselves here to explain only a particular case:
+
+::: {.itenv #fga-3-v-proposition-6.3 title="Proposition 6.3" latex="{Proposition 6.3}"}
+Let $f\colon X\to S$ be a proper morphism, and let $X_1$ and $X_2$ be subpreschemes of $X$ that are flat over $S$, defined by coherent ideals $\scr{J}_1$ and $\scr{J}_2$ (respectively) such that $\scr{J}_1\cap\scr{J}_2=(0)$ and such that $\OO_X/(\scr{J}_1+\scr{J}_2)$ is flat over $S$ (i.e. the subprescheme of $X$ that is the sup of $X_1$ and $X_2$ is $X$ itself, whereas their inf $Z$ is flat over $X$).
+Suppose further that, for all $s\in S$, the **!!TO-DO: $\Hom k(s)\to\HH^0(X_{i_s},\OO_{X_{i_s}})$!!** are bijective, for $i=1,2$.
+Then the natural homomorphism of functors
+$$
+  \shPic_{X/S}
+  \to \shPic_{X_1/S} \times \shPic_{X_2/S}
+$$
+is representable by affine morphisms, so if $\repPic_{X_1/S}$ and $\repPic_{X_2/s}$ exist, then so too does $\repPic_{X/S}$, and the canonical morphism
+$$
+  \repPic_{X/S}
+  \to \repPic_{X_1/S} \times \repPic_{X_2/S}
+$$
+is affine.
+:::
+
+::: {.proof}
+By faithfully flat descent, we can reduce to the case where $Z$ admits a section over $S$, thus defining sections of $X$, $X_1$, and $X_2$ over $S$, and allowing us to eliminate the automorphisms in the structures in question, as explained in [(2.5)](#fga-3-v-remark-2.5).
+\oldpage{232-17}
+The proof then consists of noting that the data of a "rigidified" invertible module $\scr{L}$ on $X$ is equivalent to the data of a triple $(\scr{L}_1,\scr{L}_2,u)$, where $\scr{L}_i$ is a "rigidified" module on $X_i$, and $u$ is an isomorphism from $\scr{L}_1|Z$ to $\scr{L}_2|Z$ that is compatible with the rigidifications.
+It remains only to verify that, for $\scr{L}_1$ and $\scr{L}_2$ fixed, the data of $u$ can be expressed as a section of a suitable scheme over $S$ that is affine over $S$, which is easy.
+:::
+
+From [(6.3)](#fga-3-v-proposition-6.3) we easily conclude:
+
+::: {.itenv #fga-3-v-corollary-6.4 title="Corollary 6.4" latex="{Corollary 6.4}"}
+Let
+:::
