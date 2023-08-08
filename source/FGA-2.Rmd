@@ -198,7 +198,7 @@ The latter identity shows that the category of coherent sheaves on $X$ can be id
 In fact, we even have:
 
 ::: {.itenv #fga-2-theorem-3 title="Theorem 3" latex="{Theorem 3}"}
-For a sheaf of modules on $\overline{X}$ to be coherent, it is necessary and sufficient for it to be isomorphic to a sheaf of the form $\overline{\scr{F}}$, where $\scr{F}$ is a coherent sheaf on $X$ (determined up to canonical isomorphism, by [Corollary 3 of Theorem 2](#fga-2-theorem-2-corollary-3)).
+For a sheaf of modules on $\overline{X}$ to be coherent, it is necessary and sufficient that it be isomorphic to a sheaf of the form $\overline{\scr{F}}$, where $\scr{F}$ is a coherent sheaf on $X$ (determined up to canonical isomorphism, by [Corollary 3 of Theorem 2](#fga-2-theorem-2-corollary-3)).
 [We recall that now $Y=\Spec(A)$, with $A$ being a complete and separated $\scr{J}$-adic Noetherian topological ring].
 :::
 
@@ -267,7 +267,7 @@ From this, we immediately deduce the usual variants of the connection theorem.
 We state here only the following:
 
 ::: {.itenv #fga-2-theorem-5-corollary-1 title="Corollary 1" latex="{Corollary 1}"}
-For a point $x$ of $X$ to be isolated in its fibre $f^{-1}(y)$, it is necessary and sufficient for the fibre $(f')^{-1}(y')$ (where $y'=f'(x)$) to consist of a single point $x$, or for $f'$ to induce an isomorphism from a neighbourhood of $x$ to a neighbourhood of $y'$.
+For a point $x$ of $X$ to be isolated in its fibre $f^{-1}(y)$, it is necessary and sufficient that the fibre $(f')^{-1}(y')$ (where $y'=f'(x)$) consist of a single point $x$, or that $f'$ induce an isomorphism from a neighbourhood of $x$ to a neighbourhood of $y'$.
 The set of these points is an open subset $U$, and $f'$ induces an isomorphism from $U$ to an open subset of $Y'$.
 :::
 
@@ -276,7 +276,7 @@ we also note that the $(f')^{-1}(V)$ give a fundamental system of neighbourhoods
 We thus immediately deduce the following result, due to Chevalley in the "geometric" case:
 
 ::: {.itenv #fga-2-theorem-5-corollary-2 title="Corollary 2" latex="{Corollary 2}"}
-For $f$ to be a finite morphism, it is necessary and sufficient for it to be proper with finite fibres.
+For $f$ to be a finite morphism, it is necessary and sufficient that it be proper with finite fibres.
 :::
 
 If this is so, then $f'$ is effectively an isomorphism, by the above.
@@ -287,7 +287,7 @@ We thus deduce the following global version of Zariski's "main theorem":
 
 ::: {.itenv #fga-2-theorem-6 title="Theorem 6" latex="{Theorem 6}"}
 Let $f\colon X\to Y$ be a morphism of finite type.
-Then the set $U$ of points of $X$ that are isolated in their fibre is open, and, if $f$ is quasi-projective^[_[Comp.]_ This hypothesis can be replaced by the weaker hypothesis "if $f$ is separated", by means of the following result (see SGA VIII, 6.2): every morphism $f\colon X\to Y$ which is quasi-finite and separated is also projective.], then $U$ is $Y$-isomorphic to an open subset of some scheme $Y'$ that is finite over $Y$.
+Then the set $U$ of points of $X$ that are isolated in their fibre is open, and, if $f$ is quasi-projective^[*[Comp.]* This hypothesis can be replaced by the weaker hypothesis "if $f$ is separated", by means of the following result (see SGA VIII, 6.2): every morphism $f\colon X\to Y$ which is quasi-finite and separated is also projective.], then $U$ is $Y$-isomorphic to an open subset of some scheme $Y'$ that is finite over $Y$.
 :::
 
 Since a morphism of finite type is locally affine, and _a fortiori_ locally quasi-projective, we immediately deduce from [Theorem 6](#fga-2-theorem-6) the usual local variants of the main theorem.
@@ -538,14 +538,14 @@ Then, for every complete local Noetherian ring $A$ with residue field $k$, there
 :::
 
 ::: {.rmenv title="Remark" latex="{Remark}"}
-_[Comp.]_
+*[Comp.]*
 _(Concerning Remark 1 above)._
 We note that J.-P. Serre has constructed in [@Ser1961] a non-singular projective variety, of dimension $3$, over an algebraically closed field $k$, of characteristic $p>0$, which does not come from reduction of a proper scheme over a local integral ring with residue field $k$, and having a field of fractions of characteristic $0$.
 Mumford would have found an analogous result, with a non-singular projective _surface_.
 :::
 
 ::: {.rmenv title="Remark" latex="{Remark}"}
-_[Comp.]_
+*[Comp.]*
 _(Concerning Remarks 2 and 3 above.)_
 I am now less optimistic concerning the results conjectured here.
 However, the question concerning structure variations for projective space, mentioned at the end of Remark 3 above, has been positively resolved by Hironaka, and the analogous question for abelian varieties has been resolved by Koizumi.
@@ -561,7 +561,7 @@ We have not yet gotten past the "formal" stage, but the speaker still hopes to b
 \oldpage{182-16}
 
 ::: {.rmenv title="Remark" latex="{Remark}"}
-_[Comp.]_
+*[Comp.]*
 We note that Mumford has recently constructed schemes of modules for the curves of genus $g$ (cf. _Mumford--Tate seminar_, Harvard University, 1961--62).
 [Theorem 10](#fga-2-theorem-10) also proves that the "level $n$ Jacobi schemes" from the theory of modules are non-singular (and even simple over $\underline{\ZZ}$).
 :::
@@ -760,7 +760,7 @@ The proof of the theorem is easy, thanks to [Lemma 3](#fga-2-lemma-3) and [Theor
 
 ::: {.itenv #fga-2-theorem-11-corollary-1 title="Corollary 1" latex="{Corollary 1}"}
 Suppose that (i) is still satisfied.
-For an unramified covering over $X$ to be isomorphic to the inverse image of an unramified covering $Y'$ of $Y$, it is necessary and sufficient for $X'$ to induce, on each fibre $f^{-1}(y)$, a geometrically trivial covering.
+For an unramified covering over $X$ to be isomorphic to the inverse image of an unramified covering $Y'$ of $Y$, it is necessary and sufficient that $X'$ induce, on each fibre $f^{-1}(y)$, a geometrically trivial covering.
 :::
 
 By [Theorem 11](#fga-2-theorem-11), the set of points of $Y$ for which this condition is satisfied is open, and so it suffices to verify it at the points $y$ which are closed...
@@ -783,7 +783,7 @@ From this, we easily conclude:
 ::: {.itenv #fga-2-theorem-11-corollary-3 title="Corollary 3" latex="{Corollary 3}"}
 Suppose, in addition to (i), that $f$ is separable.
 Let $X'$ be a connected unramified covering of $X$.
-For $X$ to be the inverse image of an unramified covering $Y'$ of $Y$, it is necessary and sufficient for the induced covering $\overline{F}'$ of a geometric fibre $\overline{F}=\overline{f^{-1}(y)}$ to admit a regular section.
+For $X$ to be the inverse image of an unramified covering $Y'$ of $Y$, it is necessary and sufficient that the induced covering $\overline{F}'$ of a geometric fibre $\overline{F}=\overline{f^{-1}(y)}$ admit a regular section.
 :::
 
 Note that it was not necessary to suppose that $\overline{F}'$ be _geometrically_ trivial over $\overline{F}$ (which will be true _a posteriori_, even though _a priori_ this condition is a lot stronger).
@@ -894,7 +894,7 @@ The question is the equivalent to the following:
 given an unramified covering $\overline{X'_1}$ of $\overline{X_1}$ (which as can suppose to be Galois, if we wish), under which conditions must it come from an unramified covering of $X_0$?
 A priori, the given covering comes, by extension of scalars, from an unramified covering $X'_1$ of $X_1\otimes_KK'$, where $K'$ is a finite extension of the algebraic closure $\overline{K}$ of the field of fractions $K$ of $V$;
 if $X'_1$ were Galois, of group $G$, then we could choose $X'_1$ to also be Galois of group $G$.
-Thus: _for $X'_1\otimes_{K'}\overline{K}=\overline{X'_1}$ to come from an unramified covering of $X_0$, it is necessary and sufficient for there to exists a finite extension $K''$ of $K'$ in $\overline{K}$ such that $X''_1=X'_1\otimes_{K'}K''$ is of the form $X''\otimes_{V''}K''$, where $V''$ is the normal closure of $V$ in $K''$, and where $X''$ is an unramified covering of $X\otimes_V V''$._
+Thus: _for $X'_1\otimes_{K'}\overline{K}=\overline{X'_1}$ to come from an unramified covering of $X_0$, it is necessary and sufficient that there exist a finite extension $K''$ of $K'$ in $\overline{K}$ such that $X''_1=X'_1\otimes_{K'}K''$ is of the form $X''\otimes_{V''}K''$, where $V''$ is the normal closure of $V$ in $K''$, and where $X''$ is an unramified covering of $X\otimes_V V''$._
 Suppose, for example, that $X_0$ is absolutely normal, whence $X\otimes_V V''$ is normal (since it is flat over $V''$ and has normal special fibre), and its field of functions is identical to $K''(X_1)$, which is the field of functions of
 $$
   X_1\otimes_K K'' = (X\otimes_VK)\otimes_KK'' = X\otimes_VK'' = (X\otimes_VV'')\otimes_{V''}K''.
@@ -906,7 +906,7 @@ If $X_0$ is now _simple_, then it follows from the "_purity theorem_" of Nagata-
 We thus obtain:
 
 ::: {.itenv #fga-2-theorem-12-corollary-5 title="Corollary 5" latex="{Corollary 5}"}
-Under the above conditions, and with the above notation, for the unramified covering $X'_1\otimes_{K'}\overline{K}$ of $\overline{X_1}=X_1\otimes_K\overline{K}$ to come from an unramified covering of $\overline{X_0}$, it is necessary and sufficient for there to exist a finite sub-extension $K''$ of $\overline{K}/K'$ such that $K''(X'_1)$ is unramified over the discrete valuation ring $\scr{O}''\subset K''(X_1)$.
+Under the above conditions, and with the above notation, for the unramified covering $X'_1\otimes_{K'}\overline{K}$ of $\overline{X_1}=X_1\otimes_K\overline{K}$ to come from an unramified covering of $\overline{X_0}$, it is necessary and sufficient that there exist a finite sub-extension $K''$ of $\overline{K}/K'$ such that $K''(X'_1)$ is unramified over the discrete valuation ring $\scr{O}''\subset K''(X_1)$.
 :::
 
 Now note that $\scr{O}''$ is the normalisation in $K''(X_1)$ of the discrete valuation ring $\scr{O}'\subset K'(X_1)$ (which is the normalisation of $\scr{O}$ in $K'(X_1)$), and that $\scr{O}'$ contains the normalisation $V'$ of $V$ in $K'$, with a uniformiser $u$ of $V'$ being also a uniformiser of $\scr{O}'$.

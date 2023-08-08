@@ -38,7 +38,7 @@ Grothendieck, A.
 _Séminaire Bourbaki_ **12** (1959--60), Talk no. 195.
 :::
 
-(_[Trans.]_
+(*[Trans.]*
 Sections 4.1 to 4.5 were numbered A.1 to A.5 in the original;
 sections 4.6 to 4.10 were numbered C.1 to C.5.)
 
@@ -215,7 +215,7 @@ _if $\xi''$ is minimal, then $v$ is surjective_.
 From this we easily deduce the following proposition:
 
 ::: {.itenv #fga-3-ii-section-A.3-proposition-3.1 title="Proposition 3.1" latex="{Proposition 3.1}"}
-For $F$ to be strictly pro-representable, it is necessary and sufficient for it to satisfy the following two conditions:
+For $F$ to be strictly pro-representable, it is necessary and sufficient that it satisfy the following two conditions:
 
 i. $F$ is left exact; and
 ii. every pair $(X,\xi)$, with $\xi\in F(X)$, is dominated by some _minimal_ pair.
@@ -234,7 +234,7 @@ This last fact also implies that _every pro-object of $\cal{C}$ is then strict_.
 
 ## Example: groups of Galois type, pro-algebraic groups {#fga-3-ii-section-A.4}
 
-If $\cal{C}$ is the category of ordinary finite groups, then $\Pro(\cal{C})$ is equivalent to the category of totally disconnected compact topological^[_[Trans.]_ Here the word "Hausdorff" is implicit.] groups.
+If $\cal{C}$ is the category of ordinary finite groups, then $\Pro(\cal{C})$ is equivalent to the category of totally disconnected compact topological^[*[Trans.]* Here the word "Hausdorff" is implicit.] groups.
 It is groups of this type, and their generalisations, obtained by replacing ordinary finite groups with schemes of finite groups over a given base prescheme (for example, finite algebraic groups over a field $k$), that serve as fundamental groups, homotopy groups, and absolute and relative homology groups for preschemes.
 In all these examples, the corollary to [Proposition 3.1](#fga-3-ii-section-A.3-proposition-3.1) applies, and it is indeed by the associated functor that the $\pi_1$ should be defined [@Gro1958a].
 It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the "_pro-algebraic groups_" of Serre [@Ser1958].
@@ -286,18 +286,18 @@ From this, we immediately deduce the following proposition:
 
 ::: {.itenv #fga-3-ii-section-A.5-proposition-5.1 title="Proposition 5.1" latex="{Proposition 5.1}"}
 Let $\xi\in F(K)$, where $K\in\cal{C}$ is a field.
-For the corresponding local component $O_\xi$ of $O$ to be a _Noetherian_ ring, it is necessary and sufficient for the set $F(I_K,\xi)$ of elements of $F(I_K)$ that are reducible along $\xi$ to be a vector space of _finite dimension_ over $K$.
+For the corresponding local component $O_\xi$ of $O$ to be a _Noetherian_ ring, it is necessary and sufficient that the set $F(I_K,\xi)$ of elements of $F(I_K)$ that are reducible along $\xi$ be a vector space of _finite dimension_ over $K$.
 Under these conditions, we have a canonical isomorphism
 $$
   F(I_K,\xi) = \Hom(\frak{m}_\xi/\frak{m}_\xi^2+\frak{n}_\xi\scr{O}_\xi, K)
 $$
 (where $\frak{n}_\xi$ is the maximal ideal of $\Lambda$ given by the kernel of the homomorphism $\Lambda\to K$), and so, in particular, the dimension of the $K$-vector space $F(I_K,\xi)$ is equal to the dimension of the vector space $\frak{m}_\xi/\frak{m}_\xi^2$ over the field $O_\xi/\frak{m}_\xi=K(\xi)$.
 
-_[Comp.]_ The formula given above is only correct when $\Lambda$ is a field; in the general case, we must replace $\frak{m}_\xi/\frak{m}_\xi^2$ with the quotient of this space by the image of $\frak{n}_\xi/\frak{n}_\xi^2$, where $\frak{n}$ is the maximal ideal of $\Lambda$.
+*[Comp.]* The formula given above is only correct when $\Lambda$ is a field; in the general case, we must replace $\frak{m}_\xi/\frak{m}_\xi^2$ with the quotient of this space by the image of $\frak{n}_\xi/\frak{n}_\xi^2$, where $\frak{n}$ is the maximal ideal of $\Lambda$.
 :::
 
 Suppose that $O_\xi$ is Noetherian, and suppose, for notational simplicity, that $\Lambda$ is complete and local, and that $O=O_\xi$.
-(_[Comp.]_ The following definition is correct only when the residue extension $k'/k$ is _separable_; for the general case, see SGA III, 1.1.)
+(*[Comp.]* The following definition is correct only when the residue extension $k'/k$ is _separable_; for the general case, see SGA III, 1.1.)
 We say that _$O$ is simple over $\Lambda$_ if $O$ is a finite and étale algebra over the completion algebra of the localisation of $\Lambda[t_1,\ldots,t_n]$ at one of its maximal ideals that induces the maximal ideal of $\Lambda$;
 if the residue extension of $O$ over $\Lambda$ is trivial (for example, if the residue field of $\Lambda$ is algebraically closed), then this is equivalent to saying that $O$ itself is isomorphic to such a formal series algebra.
 Finally, if we no longer necessarily suppose that $O$ is Noetherian, then we again say that _$O$ is simple over $\Lambda$_ if $O$ is isomorphic to a topological projective limit of quotient $\Lambda$-algebras that are Noetherian and $\Lambda$-simple in the above sense.
@@ -305,7 +305,7 @@ We can immediately generalise to the case where $\Lambda$ and $O$ are no longer 
 With this, we have the following proposition:
 
 ::: {.itenv #fga-3-ii-section-A.5-proposition-5.2 title="Proposition 5.2" latex="{Proposition 5.2}"}
-For $O$ to be simple over $\Lambda$, it is necessary and sufficient for the associated functor $F$ to send epimorphisms to epimorphisms.
+For $O$ to be simple over $\Lambda$, it is necessary and sufficient that the associated functor $F$ send epimorphisms to epimorphisms.
 :::
 
 If this is the case, then this implies that, for every _surjective_ homomorphism $A\to A'$ in $\cal{C}$, the morphism $F(A)\to F(A')$ is also _surjective_.
@@ -332,11 +332,11 @@ $$
   F\colon \cal{C} \to \Set,
 $$
 we wish to find manageable criteria for $F$ to be pro-representable, i.e. expressible via a $\Lambda$-algebra $O$ as above.
-By the corollary of [Proposition 3.1](#fga-3-ii-section-A.3-proposition-3.1), to ensure this, it is necessary and sufficient for $F$ to be _left exact_.
+By the corollary of [Proposition 3.1](#fga-3-ii-section-A.3-proposition-3.1), to ensure this, it is necessary and sufficient that $F$ be _left exact_.
 In the current state of the technique of descent (cf. the questions asked in [@Gro1959, I, p. 9]), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.
 
 ::: {.itenv #fga-3-ii-section-B-theorem-1 title="Theorem 1" latex="{Theorem 1}"}
-For the functor $F$ to be pro-representable, it is necessary and sufficient for it to satisfy the two followings conditions:
+For the functor $F$ to be pro-representable, it is necessary and sufficient that it satisfy the two following conditions:
 
 i. $F$ commutes with finite products;
 ii. for every algebra $A\in\cal{C}$ and every homomorphism $A\to A'$ in $\cal{C}$ such that the diagram
@@ -495,7 +495,7 @@ Of course, even after having proven the existence of the "Chow scheme" of $X$ ov
 :::
 
 ::: {.rmenv title="Remark" latex="{Remark}"}
-_[Comp.]_
+*[Comp.]*
 The problems described here are completely resolved in the projective case by "Hilbert schemes" (cf. [FGA 3.IV](FGA-3-IV.html)).
 Examples by Nagata and Hironaka show, however, that the functors described are not necessarily representable if we do not make the projective hypothesis, even if we restrict to the classification of subvarieties of dimension $0$ of a complete non-singular variety of dimension $3$;
 this is linked to the fact that the symmetric square of such a variety does not necessarily exist.
@@ -504,7 +504,7 @@ this is linked to the fact that the symmetric square of such a variety does not 
 
 ## Picard schemes {#fga-3-ii-section-C.3}
 
-_[Comp.]_ For a more complete study, see [FGA 3.V](FGA-3-V.html).
+*[Comp.]* For a more complete study, see [FGA 3.V](FGA-3-V.html).
 
 Let $f\colon X\to S$ be an $S$-prescheme, and consider the multiplicative sheaf $\scr{O}_X^\times$ of units of the structure sheaf of $X$, along with the group
 $$
@@ -563,7 +563,7 @@ _eliminate the possible automorphisms of the objects that we want to classify, b
 :::
 
 ::: {.rmenv title="Remarks" latex="{Remarks}"}
-_[Comp.]_
+*[Comp.]*
 I have recently shown that the formal scheme of modules for an abelian variety over a field is indeed simple over the Witt ring, or, in other words, that every abelian scheme $X$ over a local Artinian ring that is the quotient of another such scheme $Y$ comes, by reduction, from an abelian scheme over $Y$.
 The proof simply uses the variance properties of the obstruction class of the covering, introduced in [FGA II, p. 12](FGA-2.html#fga-2-section-6).
 Recall also that the schemes of modules for curves of genus $g$ or for polarised abelian schemes have been constructed by Mumford (cf. _Séminaire Mumford--Tate_, Harvard University (1961--62)).
@@ -643,7 +643,7 @@ This could be the moment for the "_Greenberg functor_" to prove its worth...
 ## Extension of coverings {#fga-3-ii-section-C.5}
 
 Let $\frak{X}$ be a _formal_ Noetherian prescheme [@Gro1958a], $U$ an open subset of $\frak{X}$ defined locally by the "non-vanishing" of a section of $\scr{O}_\frak{X}$ that is not a zero divisor (and thus large enough that every section of $\scr{O}_\frak{X}$ over an open subset $V$ that is zero on $U\cap V$ is zero).
-(_[Comp.]_ It is also necessary to assume that the section defining $U$ is not a zero divisor not only on $\frak{X}$, but also on every $X_n$.)
+(*[Comp.]* It is also necessary to assume that the section defining $U$ is not a zero divisor not only on $\frak{X}$, but also on every $X_n$.)
 Let $\frak{J}$ be an "ideal of definition" for $\frak{X}$, and let $X_n=(\frak{X},\scr{O}_\frak{X}/\frak{J}^{n+1})$, which is thus a ordinary Noetherian prescheme.
 Then, if $\frak{X}'$ and $\frak{X}''$ are _flat coverings_ of $\frak{X}$ (i.e. preschemes over $\frak{X}$ defined by sheaves of algebras that are coherent and locally free as sheaves of modules) that are _unramified over $U$_, the evident map
 $$

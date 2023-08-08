@@ -34,12 +34,12 @@ Grothendieck, A.
 _Séminaire Bourbaki_ **12** (1959--60), Talk no. 190.
 :::
 
-(_[Trans.]_
+(*[Trans.]*
 Sections 3.1 to 3.4 were numbered A.1 to A.4 in the original;
 sections 3.5 to 3.9 were numbered B.1 to B.5.)
 
 ::: {.rmenv title="Remark" latex="{Remark}"}
-_[Comp.]_
+*[Comp.]*
 For various details concerning the theory of descent, see also SGA VI, VII, and VIII.
 :::
 
@@ -51,7 +51,7 @@ Weil considered only the case of separable finite field extensions.
 The case of radicial extensions of height $1$ was then studied by P. Cartier.
 Lacking the language of schemes, and, more particularly, lacking nilpotent elements in the rings that were under consideration, the essential identity between these two cases could not have been formulated by Cartier.
 
-Currently, it seems that the general technique of descent that will be explained (combined with, when necessary, the fundamental theorems of "formal geometry", cf. [@Gro1958a]) is at the base of the majority of existence theorems in algebraic geometry.^[_[Comp.]_ It now seems excessive to say that the technique of descent is "at the base of the majority of existence theorems in algebraic geometry". This is true to a large extent for the non-projective techniques that are the object of study of the first two articles of this current series (i.e. "Techniques of descent and existence theorems in algebraic geometry"), but not for the projective techniques (articles IV, V, and VI).]
+Currently, it seems that the general technique of descent that will be explained (combined with, when necessary, the fundamental theorems of "formal geometry", cf. [@Gro1958a]) is at the base of the majority of existence theorems in algebraic geometry.^[*[Comp.]* It now seems excessive to say that the technique of descent is "at the base of the majority of existence theorems in algebraic geometry". This is true to a large extent for the non-projective techniques that are the object of study of the first two articles of this current series (i.e. "Techniques of descent and existence theorems in algebraic geometry"), but not for the projective techniques (articles IV, V, and VI).]
 It is worth noting as well that this aforementioned technique of descent can certainly be transported to "analytic geometry", and we can hope that, in the not-too-distant future, the specialists will know how to prove the "analytic" analogues of the existence theorems in formal geometry that will be given in article II.
 In any case, the recent work of Kodaira--Spencer, whose methods seem unfit for defining and studying "varieties of modules" in the neighbourhood of their singular points, show reasonably clearly the necessity of methods that are closer to the theory of schemes (which should naturally complement transcendental techniques).
 
@@ -228,7 +228,7 @@ This latter condition (of strictness) can also be stated in a more evocative way
 "giving an object of $\cal{F}_S$ is equivalent to giving an object of $\cal{F}_{S'}$ endowed with a descent data".
 :::
 
-Note that, if an $\cal{F}$-descent morphism^[_[Comp.]_ It is useless to assume here that $\alpha$ is an $\cal{F}$-descent morphism.] $\alpha\colon S'\to S$ admits a _section_ $s\colon S\to S'$ (i.e. a morphism $s$ such that $\alpha s=\id_S$), then it is a strict $\cal{F}$-descent morphism:
+Note that, if an $\cal{F}$-descent morphism^[*[Comp.]* It is useless to assume here that $\alpha$ is an $\cal{F}$-descent morphism.] $\alpha\colon S'\to S$ admits a _section_ $s\colon S\to S'$ (i.e. a morphism $s$ such that $\alpha s=\id_S$), then it is a strict $\cal{F}$-descent morphism:
 if $\xi'\in\cal{F}_{S'}$ is endowed with descent data with respect to $\alpha$, then "it comes from" $\xi=s^*(\xi')$.
 
 
@@ -773,7 +773,7 @@ In these two cases, the speaker also does not know the answer to the following q
 let $X$ be an $S$-scheme such that $X'=X\times_S S'$ is projective over $S'$;
 is it then true that $X$ is projective over $S$?
 
-_[Comp.]_
+*[Comp.]*
 A morphism $S'\to S$ that is quasi-finite, étale, surjective, or a morphism of the form $\Spec(\overline{A})\to\Spec(A)$, is not always a strict descent morphism, even if $A$ is the local ring of an algebraic curve over an algebraically closed field $k$ and $S=\Spec(A)$.
 We can thus find a proper simple morphism $f\colon X\to S$ that makes $X$ into a principal $E$-bundle over $S$, with $E$ an elliptic curve, such that $f'\colon X'\to S'$ is projective, but $f$ is not projective.
 So this is also an example of a homogeneous principal bundle that is _non-isotrivial_ under an abelian scheme.
@@ -967,7 +967,7 @@ In other words, the classification _up to equivalence_ of invertible sheaves on 
 Since these properties remain true under flat extensions $\alpha\colon S'\to S$ of the base (by replacing the section $s$ with its inverse image $s'$ under $\alpha$), we thus conclude, taking [Theorem 1](#fga-3-i-theorem-1) into account:
 
 _With the prescheme $X/S$ being as above, and admitting a section $s$, let $\alpha\colon S'\to S$ be a faithfully flat and quasi-compact morphism; let $\cal{F}'$ be an invertible sheaf on $X'=X\times_S S'$._
-_For $\cal{F}'$ to be equivalent to the inverse image on $X'$ of an invertible sheaf $\cal{F}'$ on $X$, it is necessary and sufficient for its inverse images $p_1^*(\cal{F}')$ and $p_2^*(\cal{F}')$ on $X'\times_X X'=X\times_S(S'\times_S S')$ to be equivalent._
+_For $\cal{F}'$ to be equivalent to the inverse image on $X'$ of an invertible sheaf $\cal{F}'$ on $X$, it is necessary and sufficient that its inverse images $p_1^*(\cal{F}')$ and $p_2^*(\cal{F}')$ on $X'\times_X X'=X\times_S(S'\times_S S')$ be equivalent._
 _If this is the case, then $\cal{F}$ is determined up to equivalence._
 (We then say that $\cal{F}'$ is _rational_ on $S$).
 
