@@ -508,5 +508,22 @@ In principle, the method in question is of more general scope, since it also giv
 :::
 
 ::: {.rmenv #fga-3-v-remark-5.3 title="Remark 5.3" latex="{Remark 5.3}"}
-Note
+Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang [@Lan1959] or the article by Chevalley [@Che1960], which follow the path sketched by Weil.
+Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in [Section 1](#fga-3-v-section-1) (essentially those of Chevalley, but taking into account the "variety of parameters" with nilpotent elements).
+The fact that the construction of Picard schemes should precede, not follow, the theory of abelian varieties is clear a priori, by the fact that, in general, Picard schemes are not, nor do they reduce to, abelian schemes, as we already see in the case of singular curves over an algebraically closed field, where we find the "generalised Jacobians" of Rosenlicht, which are not abelian varieties.
+Furthermore, the theory of abelian varieties, and more generally of abelian schemes, becomes much simpler once we have a theory of Picard schemes in general.
+In particular, the theory of duality for abelian schemes, and notably the results of Cartier type, then become slightly more formal (cf. for example [-]^[*[Trans.]* The original again cites here the 1962 Mumford--Tate seminar.])
 :::
+
+::: {.rmenv #fga-3-v-remarks-5.4 title="Remarks 5.4" latex="{Remarks 5.4}"}
+The "compatibility principle" of Igusa for the Jacobian of a curve degenerating to a singular curve can only be well understood as an existence theorem of the Picard scheme of a relative scheme in curves $X/S$ that are not necessarily simple over $S$.
+This is thus a particular case of the principal existence theorem [(3.1)](#fga-3-v-theorem-3.1) when the specialised curve is integral (i.e. in classical terms, irreducible of multiplicity $1$).
+We note that, for now, the case of a reducible special curve (even when the components are of multiplicity $1$, i.e. when the special curve is separable over the residue field) is not covered by the known existence theorems, except for in the case where we are over a *complete* discrete valuation ring with algebraically closed residue field, cf. [(5.2)](#fga-3-v-remarks-5.2).
+This question of existence certainly arises in a geometric construction, in the theory of schemes, of Baily--Satake "compactifications" of modular schemes of curves of genus $g$.
+(This compactification is known for now only for $g=1$, thanks to work of Igusa).
+:::
+
+
+## Relative existence theorems {#fga-3-v-section-6}
+
+We
