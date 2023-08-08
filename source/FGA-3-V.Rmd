@@ -37,11 +37,6 @@ Grothendieck, A.
 _Séminaire Bourbaki_ **14** (1961--62), Talk no. 232.
 :::
 
-**TO-DO:**
-
-- **additif**
-- **errata**
-
 
 ## Relative Picard groups and functors {#fga-3-v-section-1}
 
@@ -421,7 +416,7 @@ Consider first of all the case where $\xi$ is defined by an invertible module $\
 Suppose that $X$ is proper and flat over $S$, and that the geometric fibres of $X$ over $S$ are integral, which also implies ([@GD1960, III, 7]) that $\OO_S\simto f_*(\OO_X)$, and that this remains true after any base change $S'\to S$.
 Then the relative Cartier divisors $D$ on $X/S$ such that $\scr{L}(D)$ and $\scr{L}$ define the same element of $\Pic(X/S)=\shPic_{X/S}(S)$, i.e. by [(2.4)](#fga-3-v-corollary-2.4) such that $\scr{L}(D)$ and $\scr{L}$ are locally isomorphic over $S$, are in bijective correspondence with the sections of the quotient sheaf $f_*(\scr{L})^\times/\scr{O}_S^\times$.
 This correspondence is compatible with base change.
-General arguments of "Künneth" type from *loc. cit.*^[*[Trans.]* The original also cites here a 1962 seminar on algebraic geometry at Harvard University by Mumford and Tate, but the notes from this were never completed and so there is no real existing citation.] show that the property of $X/S$ and the flatness of $\scr{L}$ over $S$ imply the existence of a coherent module $\scr{Q}$ on $S$, defined up to unique isomorphism, and an isomorphism of sheaves
+General arguments of "Künneth" type from *loc. cit.*^[*[Trans.]* The original also cites here a seminar on algebraic geometry at Harvard University by Mumford and Tate in the spring of 1962, but the notes from this were never completed and so there is no real existing citation.] show that the property of $X/S$ and the flatness of $\scr{L}$ over $S$ imply the existence of a coherent module $\scr{Q}$ on $S$, defined up to unique isomorphism, and an isomorphism of sheaves
 $$
   f_*(\scr{L})
   \simto \shHom_{\OO_X}(\scr{Q},\OO_S)
@@ -483,12 +478,12 @@ and we already know that $\scr{D}^+$ is representable by an open $D^+$ of the pr
 this is due to the fact that, if $\scr{L}$ on $X\times_S S'$ is, as at the start of this section, then $f'_*(\scr{L})$ is a *locally free* non-zero module, whose formation commutes with base change;
 with the notation of [(4.3)](#fga-3-v-theorem-4.3), $\scr{Q}$ is then isomorphic to the dual of $f'_*(\scr{L})$.
 Using general criteria ([@Gro1960a, IV, 4.7]), we can thus conclude that $P^+$ is representable.
-In *loc. cit.*, we take $\scr{S}$ to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by [@Gro1959, I, B]).
+In *loc. cit.*, we take $\cal{S}$ to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by [@Gro1959, I, B]).
 \oldpage{232-13}
-Condition (a) of *loc. cit.*, namely that $(+)$ is representable by morphisms that are elements of $\scr{S}$, is satisfied as we have just seen;
+Condition (a) of *loc. cit.*, namely that $(+)$ is representable by morphisms that are elements of $\cal{S}$, is satisfied as we have just seen;
 condition (b) says that the functor $\scr{P}^+$ is is compatible with faithfully flat quasi-compact descent, which is immediate.
-It remains only to prove condition (c) of *loc. cit.*, namely that the equivalence $R$ in the prescheme $D^+$ induced by the $\scr{S}$-representable morphism ($+$) is $\scr{S}$-effective, i.e. is effective and such that $D^+\to D^+/R$ is in $\scr{S}$.
-For this, note first of all that the opens ${D^+}^Q$ of $D^+$ that correspond to the virtual Hilbert polynomials $Q\in\mathbb{Q}[t]$ are stable under $R$ (since the fibres of $R$ are connected), which reduces the problem to proving that, for all $Q$, the induced equivalence relation $R^Q$ on ${D^+}^Q$ is $\scr{S}$-effective.
+It remains only to prove condition (c) of *loc. cit.*, namely that the equivalence $R$ in the prescheme $D^+$ induced by the $\cal{S}$-representable morphism ($+$) is $\cal{S}$-effective, i.e. is effective and such that $D^+\to D^+/R$ is in $\cal{S}$.
+For this, note first of all that the opens ${D^+}^Q$ of $D^+$ that correspond to the virtual Hilbert polynomials $Q\in\mathbb{Q}[t]$ are stable under $R$ (since the fibres of $R$ are connected), which reduces the problem to proving that, for all $Q$, the induced equivalence relation $R^Q$ on ${D^+}^Q$ is $\cal{S}$-effective.
 But now ${D^+}^Q$ is quasi-projective, and the equivalence relation $R^Q$ is projective and flat.
 We are thus under the hypothesis of [@Gro1959, III, 6.1], which implies the desired result.
 
@@ -496,11 +491,22 @@ In the general case where $X/S$ does not necessarily admit a section, we can eas
 
 ::: {.rmenv #fga-3-v-remarks-5.1 title="Remarks 5.1" latex="{Remarks 5.1}"}
 The method that we followed is essentially that of Matsusaka for the projective construction of Picard varieties.
-The result that we invoke from [@Gro1959, III] that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [-]^[*[Trans.]* The original again cites here the 1962 seminar on algebraic geometry at Harvard University by Mumford and Tate.]).
+The result that we invoke from [@Gro1959, III] that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [-]^[*[Trans.]* The original again cites here the 1962 Mumford--Tate seminar.]).
 (Classically, these quotients are constructed by using Chow coordinates).
 Note that the formation of the open $\repPic_{X/S}^+$ of $\repPic_{X/S}$ and its decomposition into opens ${\repPic_{X/S}^+}^Q$ that are quasi-projcetive over $S$ following the Hilbert polynomials for the *divisors* that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).
 :::
 
 ::: {.rmenv #fga-3-v-remarks-5.2 title="Remarks 5.2" latex="{Remarks 5.2}"}
-It
+It is not out of the question that $\repPic_{X/S}$ exists whenever $f\colon X\to S$ is proper and flat and such that the homomorphisms $k(s)\to\HH^0(X_s,\OO_{X_s})$ (for $s\in S$) are isomorphisms (this latter condition also then implying that $\OO_S\simto f_*(\OO_X)$, and that this remains true after any base change $S'\to S$).
+This at least is what we can prove in the setting of analytic spaces, if $f$ is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in [@Gro1960a, IX, 3.1].
+\oldpage{232-14}
+In this method, the passage to the quotient by a *proper* and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of $X$ into $\mathbb{P}_S^r$.
+This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group [@Mum1961];
+for now, there is no written proof, except when $X$ has "lots of local sections" over $S$, for example if $X$ is separable over a complete local ring.
+In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
+(Technically, the difficulty comes from the fact that, when the geometric fibres of $f$ are not integral, then the functor envisaged in [(4.3)](#fga-3-v-theorem-4.3) is no longer representable by the projective bundle $\mathbb{P}(\scr{Q})$ itself, but by an *open* of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).
+:::
+
+::: {.rmenv #fga-3-v-remark-5.3 title="Remark 5.3" latex="{Remark 5.3}"}
+Note
 :::
