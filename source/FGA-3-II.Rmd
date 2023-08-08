@@ -8,7 +8,6 @@
 
 <!-- Shortcuts -->
 
-\providecommand{\kres}{\mathfrak{K}}
 \providecommand{\simto}{\xrightarrow{\sim}}
 \providecommand{\simfrom}{\xleftarrow{\sim}}
 \providecommand{\Set}{\mathtt{Set}}
@@ -578,12 +577,12 @@ For every local Artinian $\Lambda$-algebra $A$, consider the set $F(A)$ of isomo
 
 ::: {.eqref #fga-3-ii-section-C.4-equation-asterisk}
 $$
-  X\otimes_A\kres(A) \simfrom X_0\otimes_k\kres(A)
+  X\otimes_A k(A) \simfrom X_0\otimes_k k(A)
 \tag{$*$}
 $$
 :::
 
-where $\kres(A)$ is the residue field of $A$;
+where $k(A)$ is the residue field of $A$;
 of course, the isomorphisms between such flat $A$-preschemes should respect the above isomorphism given in the structure.
 If $A$ is a (not necessary local) Artinian $\Lambda$-algebra, with local components $A_i$, then we take $F(A)$ to be the product of the $F(A_i)$.
 Then $F$ becomes a multiplicative functor in $A$, and we call it the _functor of modules_ for $X_0$ (and $\Lambda$).

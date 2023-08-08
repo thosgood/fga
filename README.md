@@ -12,6 +12,9 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 - pdf specific definitions (e.g. `\ourrar`, `\oullar`, `\simto`, `\simfrom`)
 - turn any FGA citations into links?
     + (including those that are citations to the FGAs in the bibliography?)
+- make early citations consistent with later ones
+    + e.g. EGA and SGA are not citations in FGA 1 and 2
+- move all custom commands to `index.Rmd`?
 - consistent choice between empty lines between i. and ii. or not
 - margin/padding -top of lists in `.itenv` (seems like there's none?)
 - bring over menu bar from qubit.guide? new github source icon etc.
@@ -22,5 +25,5 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 - [x] 3.II
 - [x] 3.III
 - [x] 3.IV
-- [ ] 3.V
+- [x] 3.V
 - [ ] 3.VI

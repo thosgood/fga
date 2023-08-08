@@ -10,7 +10,6 @@
 
 \providecommand{\PP}{\mathbb{P}}
 \providecommand{\ZZ}{\mathbb{Z}}
-\providecommand{\kres}{\mathfrak{K}}
 \providecommand{\red}{\mathrm{red}}
 
 \providecommand{\Spec}{\operatorname{Spec}}
@@ -298,13 +297,13 @@ Since a morphism of finite type is locally affine, and _a fortiori_ locally quas
 
 Let $f\colon X\to Y$ be a proper morphism, and $\scr{F}$ a coherent sheaf on $X$, with $\scr{F}$ assumed to be $Y$-flat, i.e. the $\scr{F}_x$ are flat modules over the rings $\scr{O}_y$ (where $y=f(x)$).
 \oldpage{182-09}
-This also implies that, for every $y\in Y$, if we filter $\scr{F}$ along the fibre $f^{-1}(y)$ by the $\frak{m}_y^n\scr{F}$ (where $\frak{m}_y$ is the maximal ideal of $\scr{O}_y$), then the associated graded algebra is isomorphic to $(\scr{F}/\frak{m}_y\scr{F})\otimes_{\kres(y)}\gr(\scr{O}_y)$;
+This also implies that, for every $y\in Y$, if we filter $\scr{F}$ along the fibre $f^{-1}(y)$ by the $\frak{m}_y^n\scr{F}$ (where $\frak{m}_y$ is the maximal ideal of $\scr{O}_y$), then the associated graded algebra is isomorphic to $(\scr{F}/\frak{m}_y\scr{F})\otimes_{k(y)}\gr(\scr{O}_y)$;
 in other words, we have that
 $$
   \frak{m}_y^n\scr{F}/\frak{m}_y^{n+1}
-  = \scr{F}_y\otimes_{\kres(y)}(\frak{m}_y^n/\frak{m}_y^{n+1})
+  = \scr{F}_y\otimes_{k(y)}(\frak{m}_y^n/\frak{m}_y^{n+1})
 $$
-for every integer $n$, where $\scr{F}_y$ denotes the sheaf $\scr{F}/\frak{m}_y\scr{F}$ induced by $\scr{F}$ on $X_y$ (with $X_y$ denoting the fibre $f^{-1}(y)$ considered as a proper scheme over the residue field $\kres(y)$ of $y$).
+for every integer $n$, where $\scr{F}_y$ denotes the sheaf $\scr{F}/\frak{m}_y\scr{F}$ induced by $\scr{F}$ on $X_y$ (with $X_y$ denoting the fibre $f^{-1}(y)$ considered as a proper scheme over the residue field $k(y)$ of $y$).
 Taking this isomorphism, as well as [Theorem 2](#fga-2-theorem-2), into account, we obtain augmentations, and sometimes computations, of the $\RR^q f_*(\scr{F})$ in a neighbourhood of $y$, knowing the cohomology of $X_y$ with coefficients in $\scr{F}_y$.
 Here [Theorem 2](#fga-2-theorem-2) takes the form
 $$
@@ -529,7 +528,7 @@ Then, for every complete local Noetherian ring $A$ with residue field $k$, there
 3. We will compare the results from this section (mainly the above [Corollary 1](#fga-2-theorem-9-corollary-1) and [Corollary 2](#fga-2-theorem-9-corollary-2)), as well as those from the following, with the results of Kodaira--Spencer on the variation of complex structures.
     Using the conjectural theorem to which we have just alluded, we should be able to conclude, under the conditions of [Corollary 1](#fga-2-theorem-9-corollary-1), but where $A$ is no longer assumed to be complete, that there exists a ring $A'$ that contains $A$, and that is finite and unramified over $A$, such that $X\otimes_AA'$ and $X'\otimes_AA'$ are $A'$-isomorphic (where $X$ and $X'$ are given, and are proper flat $A$-schemes such that $X\otimes_Ak=X'\otimes_Ak=X_0$).
     This is what we can prove, at least, when $X_0=\frak{P}_k^r$, by using [Corollary 1 of Proposition 2](#fga-2-proposition-2-corollary-1).
-    In any case, if $H^1(X_0,\frak{G}_{X_0/k})=0$, then we can prove that the fibres of $X$ and $X'$ over any point $y$ of $Y=\Spec(A)$ are isomorphic, or at least when we pass to the algebraic closure of the residue field $\kres(y)$.
+    In any case, if $H^1(X_0,\frak{G}_{X_0/k})=0$, then we can prove that the fibres of $X$ and $X'$ over any point $y$ of $Y=\Spec(A)$ are isomorphic, or at least when we pass to the algebraic closure of the residue field $k(y)$.
     (We have a local result, seemingly stronger, when we don't suppose that $A$ is necessarily local).
     As for "structure variations" of the projective space, we again point out the following question, suggested by a corresponding problem of Kodaira--Spencer.
     Let $X$ be a proper flat scheme, over a local integral ring $A$ with field of fractions $K$ and residue field $k$, and suppose that $X\otimes_AK$ is isomorphic to $\frak{P}_K^r$.
@@ -541,7 +540,7 @@ Then, for every complete local Noetherian ring $A$ with residue field $k$, there
 ::: {.rmenv title="Remark" latex="{Remark}"}
 _[Comp.]_
 _(Concerning Remark 1 above)._
-We note that J.-P. Serre has constructed a non-singular projective variety, of dimension $3$, over an algebraically closed field $k$, of characteristic $p>0$, which does not come from reduction of a proper scheme over a local integral ring with residue field $k$, and having a field of fractions of characteristic $0$.^[Serre, J.-P. "Exemples des variétés projectives en caractéristique $p$ non relevables en caractéristique zéro". _Proc. Nat. Acad. Sc. U.S.A._ **47** (1961), 108--109.]
+We note that J.-P. Serre has constructed in [@Ser1961] a non-singular projective variety, of dimension $3$, over an algebraically closed field $k$, of characteristic $p>0$, which does not come from reduction of a proper scheme over a local integral ring with residue field $k$, and having a field of fractions of characteristic $0$.
 Mumford would have found an analogous result, with a non-singular projective _surface_.
 :::
 
@@ -623,12 +622,12 @@ i. $X'$ is finite over $X$, i.e. it is defined by a coherent sheaf of algebras $
 
 ii. $\scr{A}$ is a locally free sheaf on $X$;
 
-iii. for all $x\in X$, the quotient $\scr{A}_x/\frak{m}_x\scr{A}_x = \scr{A}_x\otimes_{\scr{O}_X}\pi(x)$ is a separable algebra over $\kres(x)$.
+iii. for all $x\in X$, the quotient $\scr{A}_x/\frak{m}_x\scr{A}_x = \scr{A}_x\otimes_{\scr{O}_X}\pi(x)$ is a separable algebra over $k(x)$.
 
 This notion of unramified covering (due to Serre and the speaker) posses all the elementary properties for which we can reasonably hope, and which we will not list.
 We restrict ourselves to saying that it gives rise to a _Galois theory_ modelled on classical Galois theory (and containing it; the proofs being overall simpler than the proofs generally seen for the latter) and the Galois theory of topological coverings.
-More precisely, we define a _geometric point_ of a scheme $X$ to be a morphism $a$ from the spectrum $\xi$ of an algebraically closed field $\Omega$ to $X$, i.e. the data of an algebraically closed extension of the residue field $\kres(x)$ of a point $x=|a|$ of $X$ (called the _locality_ of the geometric point $a$).
-If $X'$ is an unramified covering of $X$, then we can associate to it the set $E_a(X')$ of "geometric points of $X'$ over $a$", i.e. the set of pairs consisting of an $x'\in X'$ over $x$ and a $\kres(x)$-homomorphism to $\Omega$.
+More precisely, we define a _geometric point_ of a scheme $X$ to be a morphism $a$ from the spectrum $\xi$ of an algebraically closed field $\Omega$ to $X$, i.e. the data of an algebraically closed extension of the residue field $k(x)$ of a point $x=|a|$ of $X$ (called the _locality_ of the geometric point $a$).
+If $X'$ is an unramified covering of $X$, then we can associate to it the set $E_a(X')$ of "geometric points of $X'$ over $a$", i.e. the set of pairs consisting of an $x'\in X'$ over $x$ and a $k(x)$-homomorphism to $\Omega$.
 We thus obtain (for fixed $(X,a)$) a functor $F(X,a)$ from the category $R(X)$ of unramified coverings $X'$ of $X$ to the category of finite sets.
 If $X$ is connected, then the pair given by $R(X)$ and $F(X,a)$ has all the formal properties necessary in order to be isomorphic to the analogous pair defined by a suitable totally disconnected compact topological group $\pi$ (i.e. a projective limit of finite groups): we take the category $\cal{C}(\pi)$ of finite sets on which $\pi$ acts continuously, and the identity functor $F(\pi)(E)=E$ from this category to the category of finite sets.
 The group $\pi$ is also determined up to canonical isomorphic by the condition that $(\cal{C}(\pi),F(\pi))$ is isomorphic to a given pair.
@@ -704,7 +703,7 @@ the exactness in the middle follows from [Lemma 3](#fga-2-lemma-3);
 finally, the surjectivity of the last homomorphism (which is the only thing to rely on the fact that $A/\frak{r}(A)$ is radicial) follows from [Lemma 4](#fga-2-lemma-4).
 
 ::: {.itenv #fga-2-proposition-4 title="Proposition 4" latex="{Proposition 4}"}
-Let $f\colon X\to Y$ be a proper flat morphism such that, for all $y\in Y$, the algebra $H^0(f^{-1}(y),\scr{O}_{f^{-1}(y)})$ is separable over the residue field $\kres(y)$ (which is the case, for example, if $f^{-1}(y)$ is a _separable scheme_ over $\kres(y)$, i.e. reduced and such that the fields corresponding to its irreducible components are separable extensions of $\kres(y)$).
+Let $f\colon X\to Y$ be a proper flat morphism such that, for all $y\in Y$, the algebra $H^0(f^{-1}(y),\scr{O}_{f^{-1}(y)})$ is separable over the residue field $k(y)$ (which is the case, for example, if $f^{-1}(y)$ is a _separable scheme_ over $k(y)$, i.e. reduced and such that the fields corresponding to its irreducible components are separable extensions of $k(y)$).
 \oldpage{182-21}
 Then the covering $Y'$ of $Y$ associated to $f_*(\scr{O}_X)$ is unramified.
 :::
@@ -743,7 +742,7 @@ $$
 induced by the natural morphisms $X'\to X$ and $X\to Y'$;
 this will be an isomorphism whenever $X'$ is of the form $X\times_Y Y''$, where $Y''$ is an unramified covering of $Y$, and then $Y'$ will be exactly $Y''$, and [Equation ($*$)](#fga-2-equation-asterisk) will be the identity.
 We wish to precisely give the conditions for which $X'$ is of the form that we have just indicated, i.e. such that $Y'$ is unramified and [Equation ($*$)](#fga-2-equation-asterisk) is an isomorphism.
-For this, we introduce the fibre $F$ of $X$ at $y$, which is a proper scheme over $\kres(y)$, for which $F'$ is a cover (an unramified one if $X$ is).
+For this, we introduce the fibre $F$ of $X$ at $y$, which is a proper scheme over $k(y)$, for which $F'$ is a cover (an unramified one if $X$ is).
 Let $F'_1$ be a connected component of $F'$ corresponding to a point $y'_1$ of $Y'$ over $y$.
 Suppose further that
 
@@ -767,7 +766,7 @@ For an unramified covering over $X$ to be isomorphic to the inverse image of an 
 By [Theorem 11](#fga-2-theorem-11), the set of points of $Y$ for which this condition is satisfied is open, and so it suffices to verify it at the points $y$ which are closed...
 Note that the following statement is equivalent to [Corollary 1](#fga-2-theorem-11-corollary-1):
 
-_The kernel of the homomorphism $\pi_1(X)\to\pi_1(Y)$ (which is surjective, by [Lemma 4](#fga-2-lemma-4)) is the closed invariant subgroup generated by the images in $\pi_1(X)$ of $\pi_1(f^{-1}(y))$, where $f^{-1}(y)$ denotes the scheme $f^{-1}(y)\otimes_{k(y)}\overline{\kres(y)}$ (where $\overline{\kres(y)}$ denotes an algebraic closure of $\kres(y)$)._
+_The kernel of the homomorphism $\pi_1(X)\to\pi_1(Y)$ (which is surjective, by [Lemma 4](#fga-2-lemma-4)) is the closed invariant subgroup generated by the images in $\pi_1(X)$ of $\pi_1(f^{-1}(y))$, where $f^{-1}(y)$ denotes the scheme $f^{-1}(y)\otimes_{k(y)}\overline{k(y)}$ (where $\overline{k(y)}$ denotes an algebraic closure of $k(y)$)._
 
 We note that, since we cannot _choose_ the same base point for all the fibres, the homomorphisms $\pi_1(f^{-1}(y))\to\pi_1(X)$ are determined (after having picked a base point for $X$, and then for $Y$) only up to composition with an inner automorphism of $\pi_1(X)$.
 
@@ -872,8 +871,8 @@ Further, this homomorphism is _surjective_.
 
 \oldpage{182-25}
 We might hope that this homomorphism is always _bijective_.
-Unfortunately, this is not the case in general if $\kres(y_0)$ is of characteristic $>0$.
-We will, however, obtain below a group containing the kernel of this homomorphism (at least in the case where $\overline{X_0}$ is simple), implying that, if $\kres(y_0)$ is of characteristic $0$, then the above homomorphism is bijective (which is a result that we can also prove by transcendentality).
+Unfortunately, this is not the case in general if $k(y_0)$ is of characteristic $>0$.
+We will, however, obtain below a group containing the kernel of this homomorphism (at least in the case where $\overline{X_0}$ is simple), implying that, if $k(y_0)$ is of characteristic $0$, then the above homomorphism is bijective (which is a result that we can also prove by transcendentality).
 At the very least, we already have, in any case, a group containing $\pi_1$, given by a special fibre, using the one given by a generic fibre.
 Using, for example, the fact that an algebraic curve in characteristic $p$ lifts to a curve in characteristic $0$ ([Corollary 4 of Theorem 9](#fga-2-theorem-9-corollary-4)), we obtain, by transcendentality:
 
@@ -911,7 +910,7 @@ Under the above conditions, and with the above notation, for the unramified cove
 :::
 
 Now note that $\scr{O}''$ is the normalisation in $K''(X_1)$ of the discrete valuation ring $\scr{O}'\subset K'(X_1)$ (which is the normalisation of $\scr{O}$ in $K'(X_1)$), and that $\scr{O}'$ contains the normalisation $V'$ of $V$ in $K'$, with a uniformiser $u$ of $V'$ being also a uniformiser of $\scr{O}'$.
-Suppose now that $X'_1$ is Galois, with Galois group $G$ _of order $n$, coprime to the characteristic $p$ of $\kres(y_0)$_ (which is also the characteristic of the residue field of $\scr{O}'$).
+Suppose now that $X'_1$ is Galois, with Galois group $G$ _of order $n$, coprime to the characteristic $p$ of $k(y_0)$_ (which is also the characteristic of the residue field of $\scr{O}'$).
 Then $K'(X_1')$ is "tamely ramified" over $\scr{O}'$, from which it easily follows (via "_Abhyankar's lemma_") that, if we adjoin an $n$-th root $v$ of a uniformiser of $\scr{O}'$, then it becomes unramified over the normalisation of $\scr{O}'$ in $K'(X_1)(v)$.
 But we can take $v$ to be an $n$-th root of a uniformiser of $V'$, which shows that the condition of [Corollary 5](#fga-2-theorem-12-corollary-5) is satisfied.
 (This idea of using Abhyankar's lemma and the purity theorem was given to me by Serre).
@@ -929,10 +928,10 @@ surjective homomorphism from [Corollary 2 of Theorem 12](#fga-2-theorem-12-corol
 In other words:
 
 ::: {.itenv #fga-2-theorem-13-corollary-1 title="Corollary 1" latex="{Corollary 1}"}
-The classification of unramified Galois coverings, of Galois group of order coprime to the characteristic $p$ of $\kres(y_0)$, is the same for $\overline{X_0}$ and for $\overline{X_1}$.
+The classification of unramified Galois coverings, of Galois group of order coprime to the characteristic $p$ of $k(y_0)$, is the same for $\overline{X_0}$ and for $\overline{X_1}$.
 :::
 
-In particular, if $\kres(y_0)$ is of characteristic $0$, then we see, algebraically, that $\pi_1(\overline{X_1})\to\pi_1(\overline{X_0})$ is bijective.
+In particular, if $k(y_0)$ is of characteristic $0$, then we see, algebraically, that $\pi_1(\overline{X_1})\to\pi_1(\overline{X_0})$ is bijective.
 
 We finally point out that the techniques utilised also give the following result, which is more general than [Theorem 13](#fga-2-theorem-13):
 
