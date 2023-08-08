@@ -228,11 +228,6 @@ Grothendieck, A.
 “Technique de descente et théorèmes d’existence en géométrie algébrique, V: Les schémas de Picard: Théorèmes d’existence”.
 <em>Séminaire Bourbaki</em> <strong>14</strong> (1961–62), Talk no. 232.</p>
 </div>
-<p><strong>TO-DO:</strong></p>
-<ul>
-<li><strong>additif</strong></li>
-<li><strong>errata</strong></li>
-</ul>
 <div id="fga-3-v-section-1" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Relative Picard groups and functors</h2>
 <p>For every prescheme (more generally, every ringed space) <eq env="math">X</eq>, we define the (<em>absolute</em>) <em>Picard group</em> of <eq env="math">X</eq>, denoted by <eq env="math">\operatorname{Pic}(X)</eq>, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to <eq env="math">{\mathscr{O}}_X</eq>) modules on <eq env="math">X</eq>.
@@ -613,11 +608,11 @@ and we already know that <eq env="math">{\mathscr{D}}^+</eq> is representable by
 this is due to the fact that, if <eq env="math">{\mathscr{L}}</eq> on <eq env="math">X\times_S S'</eq> is, as at the start of this section, then <eq env="math">f'_*({\mathscr{L}})</eq> is a <em>locally free</em> non-zero module, whose formation commutes with base change;
 with the notation of <a href="FGA-3-V.html#fga-3-v-theorem-4.3">(4.3)</a>, <eq env="math">{\mathscr{Q}}</eq> is then isomorphic to the dual of <eq env="math">f'_*({\mathscr{L}})</eq>.
 Using general criteria (<span class="citation">[<a href="#ref-Gro1960a" role="doc-biblioref">8</a>, IV, 4.7]</span>), we can thus conclude that <eq env="math">P^+</eq> is representable.
-In <em>loc. cit.</em>, we take <eq env="math">{\mathscr{S}}</eq> to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, B]</span>).
-Condition (a) of <em>loc. cit.</em>, namely that <eq env="math">(+)</eq> is representable by morphisms that are elements of <eq env="math">{\mathscr{S}}</eq>, is satisfied as we have just seen;
+In <em>loc. cit.</em>, we take <eq env="math">{\mathcal{S}}</eq> to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, I, B]</span>).
+Condition (a) of <em>loc. cit.</em>, namely that <eq env="math">(+)</eq> is representable by morphisms that are elements of <eq env="math">{\mathcal{S}}</eq>, is satisfied as we have just seen;
 condition (b) says that the functor <eq env="math">{\mathscr{P}}^+</eq> is is compatible with faithfully flat quasi-compact descent, which is immediate.
-It remains only to prove condition (c) of <em>loc. cit.</em>, namely that the equivalence <eq env="math">R</eq> in the prescheme <eq env="math">D^+</eq> induced by the <eq env="math">{\mathscr{S}}</eq>-representable morphism (<eq env="math">+</eq>) is <eq env="math">{\mathscr{S}}</eq>-effective, i.e. is effective and such that <eq env="math">D^+\to D^+/R</eq> is in <eq env="math">{\mathscr{S}}</eq>.
-For this, note first of all that the opens <eq env="math">{D^+}^Q</eq> of <eq env="math">D^+</eq> that correspond to the virtual Hilbert polynomials <eq env="math">Q\in\mathbb{Q}[t]</eq> are stable under <eq env="math">R</eq> (since the fibres of <eq env="math">R</eq> are connected), which reduces the problem to proving that, for all <eq env="math">Q</eq>, the induced equivalence relation <eq env="math">R^Q</eq> on <eq env="math">{D^+}^Q</eq> is <eq env="math">{\mathscr{S}}</eq>-effective.
+It remains only to prove condition (c) of <em>loc. cit.</em>, namely that the equivalence <eq env="math">R</eq> in the prescheme <eq env="math">D^+</eq> induced by the <eq env="math">{\mathcal{S}}</eq>-representable morphism (<eq env="math">+</eq>) is <eq env="math">{\mathcal{S}}</eq>-effective, i.e. is effective and such that <eq env="math">D^+\to D^+/R</eq> is in <eq env="math">{\mathcal{S}}</eq>.
+For this, note first of all that the opens <eq env="math">{D^+}^Q</eq> of <eq env="math">D^+</eq> that correspond to the virtual Hilbert polynomials <eq env="math">Q\in\mathbb{Q}[t]</eq> are stable under <eq env="math">R</eq> (since the fibres of <eq env="math">R</eq> are connected), which reduces the problem to proving that, for all <eq env="math">Q</eq>, the induced equivalence relation <eq env="math">R^Q</eq> on <eq env="math">{D^+}^Q</eq> is <eq env="math">{\mathcal{S}}</eq>-effective.
 But now <eq env="math">{D^+}^Q</eq> is quasi-projective, and the equivalence relation <eq env="math">R^Q</eq> is projective and flat.
 We are thus under the hypothesis of <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">7</a>, III, 6.1]</span>, which implies the desired result.</p>
 <p>In the general case where <eq env="math">X/S</eq> does not necessarily admit a section, we can easily reduce to the above case by the technique of descent, where we can repeat the above proof with the modification that is imposed upon the definition of <eq env="math">{\mathscr{P}}^+</eq>.</p>
@@ -628,7 +623,16 @@ The result that we invoke from <span class="citation">[<a href="#ref-Gro1959" ro
 Note that the formation of the open <eq env="math">\underline{\operatorname{Pic}}_{X/S}^+</eq> of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> and its decomposition into opens <eq env="math">{\underline{\operatorname{Pic}}_{X/S}^+}^Q</eq> that are quasi-projcetive over <eq env="math">S</eq> following the Hilbert polynomials for the <em>divisors</em> that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).</p>
 </div>
 <div id="fga-3-v-remarks-5.2" class="rmenv" title="Remarks 5.2">
-<p>It</p>
+<p>It is not out of the question that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists whenever <eq env="math">f\colon X\to S</eq> is proper and flat and such that the homomorphisms <eq env="math">k(s)\to\operatorname{H}^0(X_s,{\mathscr{O}}_{X_s})</eq> (for <eq env="math">s\in S</eq>) are isomorphisms (this latter condition also then implying that <eq env="math">{\mathscr{O}}_S\xrightarrow{\sim}f_*({\mathscr{O}}_X)</eq>, and that this remains true after any base change <eq env="math">S'\to S</eq>).
+This at least is what we can prove in the setting of analytic spaces, if <eq env="math">f</eq> is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in <span class="citation">[<a href="#ref-Gro1960a" role="doc-biblioref">8</a>, IX, 3.1]</span>.
+In this method, the passage to the quotient by a <em>proper</em> and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of <eq env="math">X</eq> into <eq env="math">\mathbb{P}_S^r</eq>.
+This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group <span class="citation">[<a href="#ref-Mum1961" role="doc-biblioref">12</a>]</span>;
+for now, there is no written proof, except when <eq env="math">X</eq> has “lots of local sections” over <eq env="math">S</eq>, for example if <eq env="math">X</eq> is separable over a complete local ring.
+In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
+(Technically, the difficulty comes from the fact that, when the geometric fibres of <eq env="math">f</eq> are not integral, then the functor envisaged in <a href="FGA-3-V.html#fga-3-v-theorem-4.3">(4.3)</a> is no longer representable by the projective bundle <eq env="math">\mathbb{P}({\mathscr{Q}})</eq> itself, but by an <em>open</em> of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).</p>
+</div>
+<div id="fga-3-v-remark-5.3" class="rmenv" title="Remark 5.3">
+<p>Note</p>
 </div>
 
 </div>
@@ -644,12 +648,15 @@ Note that the formation of the open <eq env="math">\underline{\operatorname{Pic}
 <div id="ref-GD1960" class="csl-entry">
 <div class="csl-left-margin">[10] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4,8,11,17,20,24,28,32</strong> (1960/67).</div>
 </div>
+<div id="ref-Mum1961" class="csl-entry">
+<div class="csl-left-margin">[12] </div><div class="csl-right-inline">D. Mumford. <span>“An elementary theorem in geometric invariant theory.”</span> <em>Bull. Amer. Math. Soc.</em> <strong>67</strong> (1961), 483–486.</div>
+</div>
 </div>
 <div class="footnotes">
 <hr />
 <ol start="12">
-<li id="fn12"><p><em>[Trans.]</em> The original also cites here a 1962 seminar on algebraic geometry at Harvard University by Mumford and Tate, but the notes from this were never completed and so there is no real existing citation.<a href="FGA-3-V.html#fnref12" class="footnote-back">↩︎</a></p></li>
-<li id="fn13"><p><em>[Trans.]</em> The original again cites here the 1962 seminar on algebraic geometry at Harvard University by Mumford and Tate.<a href="FGA-3-V.html#fnref13" class="footnote-back">↩︎</a></p></li>
+<li id="fn12"><p><em>[Trans.]</em> The original also cites here a seminar on algebraic geometry at Harvard University by Mumford and Tate in the spring of 1962, but the notes from this were never completed and so there is no real existing citation.<a href="FGA-3-V.html#fnref12" class="footnote-back">↩︎</a></p></li>
+<li id="fn13"><p><em>[Trans.]</em> The original again cites here the 1962 Mumford–Tate seminar.<a href="FGA-3-V.html#fnref13" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
