@@ -232,11 +232,6 @@ Grothendieck, A.
 “Technique de descente et théorèmes d’existence en géométrie algébrique, V: Les schémas de Picard: Théorèmes d’existence”.
 <em>Séminaire Bourbaki</em> <strong>14</strong> (1961–62), Talk no. 232.</p>
 </div>
-<p><strong>TO-DO:</strong></p>
-<ul>
-<li><strong>additif</strong></li>
-<li><strong>errata</strong></li>
-</ul>
 <div id="fga-3-v-section-1" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Relative Picard groups and functors</h2>
 <p>For every prescheme (more generally, every ringed space) <eq env="math">X</eq>, we define the (<em>absolute</em>) <em>Picard group</em> of <eq env="math">X</eq>, denoted by <eq env="math">\operatorname{Pic}(X)</eq>, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to <eq env="math">{\mathscr{O}}_X</eq>) modules on <eq env="math">X</eq>.
@@ -494,6 +489,8 @@ Let <eq env="math">S</eq> be the union of two non-singular irreducible curves th
 There is a connected principal covering <eq env="math">P</eq> on <eq env="math">S</eq> of the group <eq env="math">\mathbb{Z}</eq>, and using the action of <eq env="math">\mathbb{Z}</eq> on <eq env="math">X_0</eq> defined by <eq env="math">u</eq> we thus obtain an associated bundle on <eq env="math">S</eq>, with fibre <eq env="math">X_0</eq> (trivial on <eq env="math">S\setminus\{a\}</eq> and <eq env="math">S\setminus\{b\}</eq>), which is in fact an <em>abelian</em> scheme over <eq env="math">S</eq> in the particular case in question.
 We easily see that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>, which is also the bundle associated to <eq env="math">P</eq> and to the action of <eq env="math">\mathbb{Z}</eq> on <eq env="math">\underline{\operatorname{Pic}}_{X_0/k}</eq> via <eq env="math">u</eq>, contains a connected component that is isomorphic to <eq env="math">P\times\underline{\operatorname{Pic}}_{X_0/k}^0</eq> (where <eq env="math">\underline{\operatorname{Pic}}^0</eq> denotes the connected component of the identity element in <eq env="math">\underline{\operatorname{Pic}}</eq>), which is not of finite type over <eq env="math">S</eq>.
 (One can equally produce analogous phenomena in various cases of non-separated Picard preschemes over <eq env="math">S</eq>, as described in <a href="FGA-3-V.html#fga-3-v-remark-3.3">(3.3)</a>).</p>
+<p><em>[Comp.]</em>
+The question raised here has been answered in the positive by Mumford (see the next talk).</p>
 </div>
 </div>
 <div id="fga-3-v-section-4" class="section level2" number="7.4">
@@ -636,9 +633,11 @@ Note that the formation of the open <eq env="math">\underline{\operatorname{Pic}
 This at least is what we can prove in the setting of analytic spaces, if <eq env="math">f</eq> is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in <span class="citation">[<a href="#ref-Gro1960a" role="doc-biblioref">9</a>, IX, 3.1]</span>.
 In this method, the passage to the quotient by a <em>proper</em> and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of <eq env="math">X</eq> into <eq env="math">\mathbb{P}_S^r</eq>.
 This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group <span class="citation">[<a href="#ref-Mum1961" role="doc-biblioref">15</a>]</span>;
-for now, there is no written proof, except when <eq env="math">X</eq> has “lots of local sections” over <eq env="math">S</eq>, for example if <eq env="math">X</eq> is separable over a complete local ring.
+for now, there is no written proof, except when <eq env="math">X</eq> has “lots of local sections” over <eq env="math">S</eq>, for example if <eq env="math">X</eq> is separable over a complete local ring with algebraically closed residue field.
 In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
 (Technically, the difficulty comes from the fact that, when the geometric fibres of <eq env="math">f</eq> are not integral, then the functor envisaged in <a href="FGA-3-V.html#fga-3-v-theorem-4.3">(4.3)</a> is no longer representable by the projective bundle <eq env="math">\mathbb{P}({\mathscr{Q}})</eq> itself, but by an <em>open</em> of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).</p>
+<p><em>[Comp.]</em>
+As I point out at the start of the next talk, the existence conjecture suggested here is false, but Mumford has proven a slightly weaker theorem using his methods.</p>
 </div>
 <div id="fga-3-v-remark-5.3" class="rmenv" title="Remark 5.3">
 <p>Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang <span class="citation">[<a href="#ref-Lan1959" role="doc-biblioref">14</a>]</span> or the article by Chevalley <span class="citation">[<a href="#ref-Che1960" role="doc-biblioref">3</a>]</span>, which follow the path sketched by Weil.
@@ -690,7 +689,7 @@ Then <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists.</p>
 <p>Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, I, A.c]</span>, and of which we content ourselves here to explain only a particular case:</p>
 <div id="fga-3-v-proposition-6.3" class="itenv" title="Proposition 6.3">
 <p>Let <eq env="math">f\colon X\to S</eq> be a proper morphism, and let <eq env="math">X_1</eq> and <eq env="math">X_2</eq> be subpreschemes of <eq env="math">X</eq> that are flat over <eq env="math">S</eq>, defined by coherent ideals <eq env="math">{\mathscr{J}}_1</eq> and <eq env="math">{\mathscr{J}}_2</eq> (respectively) such that <eq env="math">{\mathscr{J}}_1\cap{\mathscr{J}}_2=(0)</eq> and such that <eq env="math">{\mathscr{O}}_X/({\mathscr{J}}_1+{\mathscr{J}}_2)</eq> is flat over <eq env="math">S</eq> (i.e. the subprescheme of <eq env="math">X</eq> that is the sup of <eq env="math">X_1</eq> and <eq env="math">X_2</eq> is <eq env="math">X</eq> itself, whereas their inf <eq env="math">Z</eq> is flat over <eq env="math">X</eq>).
-Suppose further that, for all <eq env="math">s\in S</eq>, the <strong>!!TO-DO: <eq env="math">\operatorname{Hom}k(s)\to\operatorname{H}^0(X_{i_s},{\mathscr{O}}_{X_{i_s}})</eq>!!</strong> are bijective, for <eq env="math">i=1,2</eq>.
+Suppose further that, for all <eq env="math">s\in S</eq>, the homomorphisms <eq env="math">k(s)\to\operatorname{H}^0(X_{i_s},{\mathscr{O}}_{X_{i_s}})</eq> are bijective for <eq env="math">i=1,2</eq>.
 Then the natural homomorphism of functors
 <eq env="displaymath">
   \mathscr{P}\kern -.5pt ic_{X/S}
@@ -740,16 +739,20 @@ It would thus suffice to show that the corresponding functorial morphism <eq env
 This raises questions about non-flat descent that are not answerable as of now.
 Note that, if we restrict to considering the restriction of the functor <eq env="math">\mathscr{P}\kern -.5pt ic_{X/k}</eq> to reduced preschemes (with <eq env="math">X</eq> proper and integral over an algebraically closed field <eq env="math">k</eq>), then we do indeed obtain a representable functor, as shown by Chevalley <span class="citation">[<a href="#ref-Che1960" role="doc-biblioref">3</a>]</span> in the case where <eq env="math">X</eq> is normal, and by Seshadri <span class="citation">[<a href="#ref-Ses1962" role="doc-biblioref">24</a>]</span> by a descent method in the general case.
 But with our notation, the scheme constructed by these authors is not <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq>, but instead <eq env="math">(\underline{\operatorname{Pic}}_{X/k})_\mathrm{red}</eq>, i.e. the reduced scheme corresponding to <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq>.</p>
+<p><em>[Comp.]</em>
+As we point out at the start of the next talk, the question raised here has just been answered in the affirmative by Murre.</p>
 </div>
 <div id="fga-3-v-remark-6.7" class="rmenv" title="Remark 6.7">
 <p>More generally, let <eq env="math">f\colon X'\to X</eq> be a surjective morphism of proper preschemes over <eq env="math">k</eq>.
 Then considering non-flat descent leads us to conjecture that <eq env="math">\underline{\operatorname{Pic}}_{X/k}\to\underline{\operatorname{Pic}}_{X'/k}</eq> is an <em>affine</em> morphism, which would in particular imply (by dividing into the connected components of the identity elements) that the corresponding homomorphism on the Néron–Severi groups is injective modulo torsion.
 We can verify this by the theory of intersections when <eq env="math">X</eq> and <eq env="math">X'</eq> are non-singular.
 The answer does not seem to be known in any other case.</p>
+<p><em>[Comp.]</em>
+The question raised here has been answered in the affirmative (cf. the last paragraph of the comments in the next talk).</p>
 </div>
 <div id="fga-3-v-remark-6.8" class="rmenv" title="Remark 6.8">
 <p>Contrary to what we might think, the consideration of Picard schemes of algebraic schemes with nilpotent elements is useful, and even indispensable, for various questions.
-If <eq env="math">X</eq> is a projective scheme, say regular, and <eq env="math">Y</eq> a hyperplane section, then we can consider the “infinitesimal neighbourhoods” <eq env="math">X_n</eq> of <eq env="math">Y</eq> of all orders, as well as the Picard schemes <eq env="math">\underline{\operatorname{Pic}}_{X_n/k}</eq>;
+If <eq env="math">X</eq> is a projective scheme, simple over <eq env="math">k</eq>, say, and <eq env="math">Y</eq> a hyperplane section, then we can consider the “infinitesimal neighbourhoods” <eq env="math">X_n</eq> of <eq env="math">Y</eq> of all orders, as well as the Picard schemes <eq env="math">\underline{\operatorname{Pic}}_{X_n/k}</eq>;
 when <eq env="math">X</eq> is irreducible of dimension <eq env="math">\geqslant 4</eq> (resp. <eq env="math">\geqslant 3</eq>), the canonical morphism
 <eq env="displaymath">
   \underline{\operatorname{Pic}}_{X/k}
