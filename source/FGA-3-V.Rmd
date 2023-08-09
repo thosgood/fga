@@ -39,11 +39,6 @@ Grothendieck, A.
 _Séminaire Bourbaki_ **14** (1961--62), Talk no. 232.
 :::
 
-**TO-DO:**
-
-- **additif**
-- **errata**
-
 
 ## Relative Picard groups and functors {#fga-3-v-section-1}
 
@@ -346,6 +341,9 @@ Let $S$ be the union of two non-singular irreducible curves that meet at two poi
 There is a connected principal covering $P$ on $S$ of the group $\mathbb{Z}$, and using the action of $\mathbb{Z}$ on $X_0$ defined by $u$ we thus obtain an associated bundle on $S$, with fibre $X_0$ (trivial on $S\setminus\{a\}$ and $S\setminus\{b\}$), which is in fact an *abelian* scheme over $S$ in the particular case in question.
 We easily see that $\repPic_{X/S}$, which is also the bundle associated to $P$ and to the action of $\mathbb{Z}$ on $\repPic_{X_0/k}$ via $u$, contains a connected component that is isomorphic to $P\times\repPic_{X_0/k}^0$ (where $\repPic^0$ denotes the connected component of the identity element in $\repPic$), which is not of finite type over $S$.
 (One can equally produce analogous phenomena in various cases of non-separated Picard preschemes over $S$, as described in [(3.3)](#fga-3-v-remark-3.3)).
+
+*[Comp.]*
+The question raised here has been answered in the positive by Mumford (see the next talk).
 :::
 
 
@@ -509,9 +507,12 @@ This at least is what we can prove in the setting of analytic spaces, if $f$ is 
 \oldpage{232-14}
 In this method, the passage to the quotient by a *proper* and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of $X$ into $\mathbb{P}_S^r$.
 This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group [@Mum1961];
-for now, there is no written proof, except when $X$ has "lots of local sections" over $S$, for example if $X$ is separable over a complete local ring.
+for now, there is no written proof, except when $X$ has "lots of local sections" over $S$, for example if $X$ is separable over a complete local ring with algebraically closed residue field.
 In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
 (Technically, the difficulty comes from the fact that, when the geometric fibres of $f$ are not integral, then the functor envisaged in [(4.3)](#fga-3-v-theorem-4.3) is no longer representable by the projective bundle $\mathbb{P}(\scr{Q})$ itself, but by an *open* of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).
+
+*[Comp.]*
+As I point out at the start of the next talk, the existence conjecture suggested here is false, but Mumford has proven a slightly weaker theorem using his methods.
 :::
 
 ::: {.rmenv #fga-3-v-remark-5.3 title="Remark 5.3" latex="{Remark 5.3}"}
@@ -573,7 +574,7 @@ Applying a descent procedure gives a relative existence theorem, whose scope dep
 
 ::: {.itenv #fga-3-v-proposition-6.3 title="Proposition 6.3" latex="{Proposition 6.3}"}
 Let $f\colon X\to S$ be a proper morphism, and let $X_1$ and $X_2$ be subpreschemes of $X$ that are flat over $S$, defined by coherent ideals $\scr{J}_1$ and $\scr{J}_2$ (respectively) such that $\scr{J}_1\cap\scr{J}_2=(0)$ and such that $\OO_X/(\scr{J}_1+\scr{J}_2)$ is flat over $S$ (i.e. the subprescheme of $X$ that is the sup of $X_1$ and $X_2$ is $X$ itself, whereas their inf $Z$ is flat over $X$).
-Suppose further that, for all $s\in S$, the **!!TO-DO: $\Hom k(s)\to\HH^0(X_{i_s},\OO_{X_{i_s}})$!!** are bijective, for $i=1,2$.
+Suppose further that, for all $s\in S$, the homomorphisms $k(s)\to\HH^0(X_{i_s},\OO_{X_{i_s}})$ are bijective for $i=1,2$.
 Then the natural homomorphism of functors
 $$
   \shPic_{X/S}
@@ -633,6 +634,9 @@ It would thus suffice to show that the corresponding functorial morphism $\shPic
 This raises questions about non-flat descent that are not answerable as of now.
 Note that, if we restrict to considering the restriction of the functor $\shPic_{X/k}$ to reduced preschemes (with $X$ proper and integral over an algebraically closed field $k$), then we do indeed obtain a representable functor, as shown by Chevalley [@Che1960] in the case where $X$ is normal, and by Seshadri [@Ses1962] by a descent method in the general case.
 But with our notation, the scheme constructed by these authors is not $\repPic_{X/k}$, but instead $(\repPic_{X/k})_\red$, i.e. the reduced scheme corresponding to $\repPic_{X/k}$.
+
+*[Comp.]*
+As we point out at the start of the next talk, the question raised here has just been answered in the affirmative by Murre.
 :::
 
 ::: {.rmenv #fga-3-v-remark-6.7 title="Remark 6.7" latex="{Remark 6.7}"}
@@ -640,11 +644,14 @@ More generally, let $f\colon X'\to X$ be a surjective morphism of proper presche
 Then considering non-flat descent leads us to conjecture that $\repPic_{X/k}\to\repPic_{X'/k}$ is an *affine* morphism, which would in particular imply (by dividing into the connected components of the identity elements) that the corresponding homomorphism on the Néron--Severi groups is injective modulo torsion.
 We can verify this by the theory of intersections when $X$ and $X'$ are non-singular.
 The answer does not seem to be known in any other case.
+
+*[Comp.]*
+The question raised here has been answered in the affirmative (cf. the last paragraph of the comments in the next talk).
 :::
 
 ::: {.rmenv #fga-3-v-remark-6.8 title="Remark 6.8" latex="{Remark 6.8}"}
 Contrary to what we might think, the consideration of Picard schemes of algebraic schemes with nilpotent elements is useful, and even indispensable, for various questions.
-If $X$ is a projective scheme, say regular, and $Y$ a hyperplane section, then we can consider the "infinitesimal neighbourhoods" $X_n$ of $Y$ of all orders, as well as the Picard schemes $\repPic_{X_n/k}$;
+If $X$ is a projective scheme, simple over $k$, say, and $Y$ a hyperplane section, then we can consider the "infinitesimal neighbourhoods" $X_n$ of $Y$ of all orders, as well as the Picard schemes $\repPic_{X_n/k}$;
 when $X$ is irreducible of dimension $\geq4$ (resp. $\geq3$), the canonical morphism
 $$
   \repPic_{X/k}
