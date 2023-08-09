@@ -7,6 +7,7 @@
 \renewcommand{\leq}{\leqslant}
 
 \providecommand{\Spec}{\operatorname{Spec}}
+\providecommand{\red}{\mathrm{red}}
 
 <!-- Shortcuts -->
 
@@ -52,3 +53,42 @@ the key theorems for developing such criteria can be found in [@Gro1960b], with 
 ## Topological properties of preschemes of commutative groups {#fga-3-vi-section-1}
 
 Let $k$ be a field, and $G$ be a prescheme of groups over $k$.
+Since the identity element $e$, being rational over $k$, is necessarily closed, it immediately follows that the diagonal of $G\times_k G$ is closed, and so $G$ is *separated*: *every prescheme of groups over a field is separated*.
+We denote by $G^0$ the connected component of the identity element $e$.
+Since $e$ is rational over $k$, $G^0$ is in fact *geometrically connected*, i.e. $G\mapsto G^0$ is compatible with base change to another field.
+It also follows that $G^0$ is stable under multiplication (set-theoretically), and if $G$ is locally Noetherian then $G^0$ is open, and we can consider $G^0$ as an *open subgroup* of $G$.
+In what follows, we suppose $G$ to be locally of finite type over $k$;
+then $G^0$ is *geometrically irreducible and of finite type over $k$*.
+Indeed, we can suppose that $k$ is algebraically closed, and thus that $G$ is reduced (since $G_\red$ is then a subgroup of $G$, taking into account the fact that $G_\red\times_k G_\red$ is also then reduced), and thus simple over $k$ over a non-empty open, and thus everywhere, by translating this open subset.
+But then $G$ is locally irreducible, and so its irreducible components are identical to its connected components, and so $G^0$ is irreducible.
+So let $U$ be an affine neighbourhood of $e$ in $G^0$;
+using the fact that $G^0$ is irreducible, we immediately see that $U\cdot U=D^0$, which proves that $G^0$ is quasi-compact, and thus of finite type over $k$.
+
+Suppose, for simplicity, that $G$ is commutative.
+For every integer $n>0$, let $G^{(n)}$ be the inverse image of $G^0$ under the $n$-th power homomorphism $\varphi_n$ to $G$, so $G^{(n)}$ is an open subgroup of $G$.
+We set
+$$
+  \begin{aligned}
+    G^\tau
+    &= \bigcup_{n>0} G^{(n)}
+  \\G^\sigma
+    &= \bigcup_{(n,p)=1} G^{(n)}
+  \\G^\rho
+    &= \bigcup_{h>0} G^{(p^h)}
+  \end{aligned}
+$$
+where $p$ is the characteristic order of the field $k$.
+\oldpage{236-03}
+These are open subgroups of $G$ that satisfy
+$$
+  \begin{aligned}
+    G^\sigma \cap G^\rho
+    &= G^0
+  \\G^\sigma \cdot G^\rho
+    &= G^\tau.
+  \end{aligned}
+$$
+
+::: {.rmenv #fga-3-vi-remark title="Remark" latex="{Remark}"}
+We
+:::
