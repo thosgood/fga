@@ -203,6 +203,7 @@ div.csl-indent {
 <li class="chapter" data-level="8" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html"><i class="fa fa-check"></i><b>8</b> Picard schemes: General properties</a>
 <ul>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#supplements-to-the-previous-talk-fga-3.v"><i class="fa fa-check"></i>0. Supplements to the previous talk (FGA 3.V)</a></li>
+<li class="chapter" data-level="8.1" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#fga-3-vi-section-1"><i class="fa fa-check"></i><b>8.1</b> Topological properties of preschemes of commutative groups</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
 </ul>
@@ -241,8 +242,27 @@ Grothendieck, A.
 <h2>0. Supplements to the previous talk (FGA 3.V)</h2>
 <p>There has been some progress concerning the questions of existence of Picard preschemes raised in <span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, V]</span>:</p>
 <ol style="list-style-type: lower-alpha">
-<li>(Mumford).</li>
+<li>(Mumford).
+It is not true in general that, if <eq env="math">f\colon X\to S</eq> is a projective and separable (i.e. flat with separable fibres) morphism, then the Picard prescheme <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists, even if the fibres of <eq env="math">f</eq> are of dimension <eq env="math">1</eq> and <eq env="math">S</eq> is the spectrum of a complete discrete valuation ring.
+A counterexample is given by taking <eq env="math">S=\operatorname{Spec}\mathbb{R}[[t]]</eq>, and taking <eq env="math">X</eq> to be the subscheme of <eq env="math">\mathbb{P}_S^2</eq> (with homogeneous variables <eq env="math">x,y,z</eq>) defined by the equation <eq env="math">x^2+y^2=tz^2</eq>, which represents a conic degenerating to two geometrically concurrent lines, but the special fibre over the field <eq env="math">\mathbb{R}</eq> is nevertheless irreducible (it is given by the equation <eq env="math">x^2+y^2=0</eq> in <eq env="math">\mathbb{R}</eq>).
+We easily see that, after the étale extension <eq env="math">S'\to S</eq>, with <eq env="math">S'=\operatorname{Spec}\mathbb{C}[[t]]</eq>, the Picard prescheme of <eq env="math">X'/S'</eq> exists, and we thus obtain an explicit description of it as a sum of copies of <eq env="math">\widetilde{S}</eq>, where <eq env="math">\widetilde{S}</eq> is induced by <eq env="math">S</eq> by copying the origin an infinite number of times.
+We easily observe that the descent data on <eq env="math">\underline{\operatorname{Pic}}_{X'/S'}</eq> for <eq env="math">S'\to S</eq> (given here by the actions of the Galois group <eq env="math">\mathbb{Z}/2\mathbb{Z}</eq> of <eq env="math">S'</eq> over <eq env="math">S</eq>) is not effective, since the group permutes certain doubled points (so that there are orbits that are not contained in an affine open).
+However, Mumford has shown that, if <eq env="math">f\colon X\to S</eq> is a separable projective morphism such that, for all <eq env="math">s\in S</eq>, the irreducible components of <eq env="math">X_s</eq> are geometrically irreducible with respect to <eq env="math">k(s)</eq>, then <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists;
+the proof relies on a refinement of his theorem of passage to the quotient, cf. [-].<a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a>
+Note also that it is still possible that, without any hypotheses on the irreducible components of the fibres <eq env="math">X_s</eq>, the scheme <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq> (which will be introduced below) still exists.</li>
 </ol>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>(Murre).
+If <eq env="math">X</eq> is a proper scheme over a field, then <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq> exists.
+The proof partially uses the proof of Chevalley <span class="citation">[<a href="#ref-Che1960" role="doc-biblioref">3</a>]</span>, and is fundamentally based on the group structure of the Picard functor.</li>
+</ol>
+<p>For certain additional comments concerning the theory of Picard schemes, most notably in relation to abelian schemes, we recommend consulting [-].<a href="#fn16" class="footnote-ref" id="fnref16"><sup>16</sup></a>
+Finally, a notable shortcoming of the present talk is the absence of “equivalence criteria” that would allow us to compare the Picard scheme of a projective scheme and of its hyperplane sections;
+the key theorems for developing such criteria can be found in <span class="citation">[<a href="#ref-Gro1960b" role="doc-biblioref">10</a>]</span>, with which one must combine the existence theorems for Picard schemes.</p>
+</div>
+<div id="fga-3-vi-section-1" class="section level2" number="8.1">
+<h2><span class="header-section-number">8.1</span> Topological properties of preschemes of commutative groups</h2>
+<p>Let <eq env="math">k</eq> be a field, and <eq env="math">G</eq> be a prescheme of groups over <eq env="math">k</eq>.</p>
 
 </div>
 </div>
@@ -345,11 +365,26 @@ Grothendieck, A.
 
 
 
+
+
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body">
+<div id="ref-Che1960" class="csl-entry">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">C. Chevalley. <span>“Sur la théorie de picard.”</span> <em>Amer. J. Of Math.</em> <strong>82</strong> (1960), 435–490.</div>
+</div>
 <div id="ref-Gro1959" class="csl-entry">
 <div class="csl-left-margin">[8] </div><div class="csl-right-inline">A. Grothendieck. <span>“Technique de descente et théorèmes d’existence en géométrie algébrique, <span>I</span>–<span>VI</span>.”</span> <em>Séminaire Bourbaki</em>. <strong>12,13,14</strong> (1959/61), Talks no. 190, 195, 212, 221, 232, and 236.</div>
 </div>
+<div id="ref-Gro1960b" class="csl-entry">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">A. Grothendieck. <em><span class="nocase">Séminaire de Géométrie Algébrique</span>, <span>I</span>, <span>II</span>, <span>III</span>, <span>IV</span></em>. <span>Paris, Institut des Hautes Études Scientifiques</span>, 1960/61.</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="15">
+<li id="fn15"><p><em>[Trans.]</em> The original cites here the 1962 Mumford–Tate seminar — see translator footnotes in <a href="#FGA-3-V.html">FGA 3.V</a>.<a href="FGA-3-VI.html#fnref15" class="footnote-back">↩︎</a></p></li>
+<li id="fn16"><p><em>[Trans.]</em> The original again cites here the 1962 Mumford–Tate seminar.<a href="FGA-3-VI.html#fnref16" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
 
