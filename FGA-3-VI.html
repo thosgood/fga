@@ -262,7 +262,43 @@ the key theorems for developing such criteria can be found in <span class="citat
 </div>
 <div id="fga-3-vi-section-1" class="section level2" number="8.1">
 <h2><span class="header-section-number">8.1</span> Topological properties of preschemes of commutative groups</h2>
-<p>Let <eq env="math">k</eq> be a field, and <eq env="math">G</eq> be a prescheme of groups over <eq env="math">k</eq>.</p>
+<p>Let <eq env="math">k</eq> be a field, and <eq env="math">G</eq> be a prescheme of groups over <eq env="math">k</eq>.
+Since the identity element <eq env="math">e</eq>, being rational over <eq env="math">k</eq>, is necessarily closed, it immediately follows that the diagonal of <eq env="math">G\times_k G</eq> is closed, and so <eq env="math">G</eq> is <em>separated</em>: <em>every prescheme of groups over a field is separated</em>.
+We denote by <eq env="math">G^0</eq> the connected component of the identity element <eq env="math">e</eq>.
+Since <eq env="math">e</eq> is rational over <eq env="math">k</eq>, <eq env="math">G^0</eq> is in fact <em>geometrically connected</em>, i.e. <eq env="math">G\mapsto G^0</eq> is compatible with base change to another field.
+It also follows that <eq env="math">G^0</eq> is stable under multiplication (set-theoretically), and if <eq env="math">G</eq> is locally Noetherian then <eq env="math">G^0</eq> is open, and we can consider <eq env="math">G^0</eq> as an <em>open subgroup</em> of <eq env="math">G</eq>.
+In what follows, we suppose <eq env="math">G</eq> to be locally of finite type over <eq env="math">k</eq>;
+then <eq env="math">G^0</eq> is <em>geometrically irreducible and of finite type over <eq env="math">k</eq></em>.
+Indeed, we can suppose that <eq env="math">k</eq> is algebraically closed, and thus that <eq env="math">G</eq> is reduced (since <eq env="math">G_\mathrm{red}</eq> is then a subgroup of <eq env="math">G</eq>, taking into account the fact that <eq env="math">G_\mathrm{red}\times_k G_\mathrm{red}</eq> is also then reduced), and thus simple over <eq env="math">k</eq> over a non-empty open, and thus everywhere, by translating this open subset.
+But then <eq env="math">G</eq> is locally irreducible, and so its irreducible components are identical to its connected components, and so <eq env="math">G^0</eq> is irreducible.
+So let <eq env="math">U</eq> be an affine neighbourhood of <eq env="math">e</eq> in <eq env="math">G^0</eq>;
+using the fact that <eq env="math">G^0</eq> is irreducible, we immediately see that <eq env="math">U\cdot U=D^0</eq>, which proves that <eq env="math">G^0</eq> is quasi-compact, and thus of finite type over <eq env="math">k</eq>.</p>
+<p>Suppose, for simplicity, that <eq env="math">G</eq> is commutative.
+For every integer <eq env="math">n&gt;0</eq>, let <eq env="math">G^{(n)}</eq> be the inverse image of <eq env="math">G^0</eq> under the <eq env="math">n</eq>-th power homomorphism <eq env="math">\varphi_n</eq> to <eq env="math">G</eq>, so <eq env="math">G^{(n)}</eq> is an open subgroup of <eq env="math">G</eq>.
+We set
+<eq env="displaymath">
+  \begin{aligned}
+    G^\tau
+    &amp;= \bigcup_{n&gt;0} G^{(n)}
+  \\G^\sigma
+    &amp;= \bigcup_{(n,p)=1} G^{(n)}
+  \\G^\rho
+    &amp;= \bigcup_{h&gt;0} G^{(p^h)}
+  \end{aligned}
+</eq>
+where <eq env="math">p</eq> is the characteristic order of the field <eq env="math">k</eq>.
+These are open subgroups of <eq env="math">G</eq> that satisfy
+<eq env="displaymath">
+  \begin{aligned}
+    G^\sigma \cap G^\rho
+    &amp;= G^0
+  \\G^\sigma \cdot G^\rho
+    &amp;= G^\tau.
+  \end{aligned}
+</eq></p>
+<div id="fga-3-vi-remark" class="rmenv" title="Remark">
+<p>We</p>
+</div>
 
 </div>
 </div>
