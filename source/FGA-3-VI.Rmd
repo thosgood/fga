@@ -193,14 +193,14 @@ Then $G^\sigma$ (resp. $G^\rho$) consists of the $x\in X$ such that $\nu(x)$ is 
 The function $\nu$ on $G^\tau$ is locally constructible.
 :::
 
-:::
+::: {.proof}
 This means that, for every integer $n>0$, the set of $x\in G^\tau$ such that $\nu(x)=n$ is locally constructible;
 but this is the difference between $\varphi_n^{-1}(G^0)$ and the union of the $\varphi_d^{-1}(G^0)$ where $d$ runs over the proper divisors of $n$;
 since $G^0$ is locally constructible, so too are all the $\varphi_i^{-1}(G^0)$, and thus also the aforementioned difference.
 :::
 
 Suppose that $G^0$ is closed and that $G\to S$ is universally open at the point of $G^\sigma$;
-we will show that $G^\sigma\to S$ is open, i.e. sends a neighbourhood in $G^\simga$ of any $x\in G^\sigma$ to a neighbourhood of $y=f(x)$.
+we will show that $G^\sigma\to S$ is open, i.e. sends a neighbourhood in $G^\sigma$ of any $x\in G^\sigma$ to a neighbourhood of $y=f(x)$.
 Since $G^\sigma$ is locally constructible, it suffices to show that, for every generalisation $y'$ of $y$, there exists a generalisation of $x$' of $x$ in $G$ in $y'$.
 By base change, this allows us to reduce to the case where $S$ is the spectrum of a discrete valuation ring, and where $y$ and $y'$ are the closed point and the generic point (respectively).
 Using the fact that $G\to S$ is open at $x$ (and thus there exists a generalisation $x_1$ of $x$ in $G$ over $y'$), we can further suppose that there exists a section $g$ of $G$ over $S$ such that $x=g(y)$ (after performing another base change).
