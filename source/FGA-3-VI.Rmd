@@ -162,5 +162,77 @@ Then there exists an open neighbourhood $U$ of $s$ such that $X^0|U$ is proper o
 :::
 
 ::: {.proof}
-By
+By faithfully flat descent of the base, we can reduce to the case where $S$ is the spectrum of a complete local ring, and $s$ is its closed point.
+Applying [@GD1960, III, 5.5.1], we see that $X$ decomposes into a sum of two disjoint opens $X'$ and $X''$, with $X'$ proper over $S$, and such that $X'_s=S_s^0$.
+This allows us to reduce to the case where $X=X'$, i.e. where $X$ is proper over $S$.
+In this case, we can apply a standard proof, using the valuative criterion of properness of a subset (forgotten in [@GD1960, II]).
 :::
+
+We now prove that $G^\tau$ is open, or, equivalently, taking into account the fact that the formation of $G^\tau$ (as that of $G^0$, $G^\sigma$, and $G^\rho$) commutes with base extension: for every sections $g$ of $G$ over $S$, $g^{-1}(G^\tau)$ is open.
+This implies two things:
+
+a. Let $y\in S$ be such that $g(y)\in G^\tau$.
+  Then, for all neighbours $y'\in\overline{y}$ of $y$, we have $g(y')\in G^\tau$.
+b. Let $y'\in S$ be such that $g(y')\in G^\tau$.
+  Then, for every generalisation $y$ of $y'$, we have $g(y)\in G^\tau$.
+
+For (a), note that there exists an integer $n>0$ such that $g^n(y)\in G^0$; since $G^0$ is constructible, $(g^n)^{-1}G^0$ is constructible;
+it follows that we have $g^n(y')\in G^0$ for all neighbours $y'\in\overline{y}$ of $y$.
+For (b), note that the $g(y')^n=g^n(y')$ remain in a quasi-compact open of $G_{y'}$ (since they are contained in a finite number of classes modulo $G_{y'}^0$), and so there exists a quasi-compact open $U$ in $G$ that contains the $g^n(y')$, and thus also their generalisations $g^n(y)$, and so the powers of $g(y)$ remain in a quasi-compact open of $G_y$, which easily implies that $g(y)\in G_y^\tau$.
+
+\oldpage{236-06}
+Suppose that $G^0$ is closed;
+we will show that so too is $G^\tau$.
+As we already know that $G^\tau$ is open, thus locally constructible, it remains only to show that it is stable under specialisation, which comes from the fact that it is a union of closed subsets, namely inverse images under the $n$-th power homomorphisms $\varphi_n$ of the closed subset $G^0$.
+
+The same argument shows that $G\sigma$ and $G^\rho$ are closed if $G^0$ is (under the additional hypothesis of equal characteristic in the case of the former), once we have shown that $G^\sigma$ and $G^\rho$ are locally constructible.
+But, for $x\in G^\tau$, let $\nu(x)$ be the smallest integer $n>0$ such that the $n$-th power homomorphism $\varphi_n$ sends $x$ to $G$.
+Then $G^\sigma$ (resp. $G^\rho$) consists of the $x\in X$ such that $\nu(x)$ is coprime to $p$ (resp. to a power of $p$), and our claim of constructibility then follows from the following, more precise lemma:
+
+::: {.itenv #fga-3-vi-lemma-1.4 title="Lemma 1.4" latex="{Lemma 1.4}"}
+The function $\nu$ on $G^\tau$ is locally constructible.
+:::
+
+:::
+This means that, for every integer $n>0$, the set of $x\in G^\tau$ such that $\nu(x)=n$ is locally constructible;
+but this is the difference between $\varphi_n^{-1}(G^0)$ and the union of the $\varphi_d^{-1}(G^0)$ where $d$ runs over the proper divisors of $n$;
+since $G^0$ is locally constructible, so too are all the $\varphi_i^{-1}(G^0)$, and thus also the aforementioned difference.
+:::
+
+Suppose that $G^0$ is closed and that $G\to S$ is universally open at the point of $G^\sigma$;
+we will show that $G^\sigma\to S$ is open, i.e. sends a neighbourhood in $G^\simga$ of any $x\in G^\sigma$ to a neighbourhood of $y=f(x)$.
+Since $G^\sigma$ is locally constructible, it suffices to show that, for every generalisation $y'$ of $y$, there exists a generalisation of $x$' of $x$ in $G$ in $y'$.
+By base change, this allows us to reduce to the case where $S$ is the spectrum of a discrete valuation ring, and where $y$ and $y'$ are the closed point and the generic point (respectively).
+Using the fact that $G\to S$ is open at $x$ (and thus there exists a generalisation $x_1$ of $x$ in $G$ over $y'$), we can further suppose that there exists a section $g$ of $G$ over $S$ such that $x=g(y)$ (after performing another base change).
+If $k(y')$ is of characteristic $0$, then it suffices to take any generalisation $x'$ of $x$ in $G$ over $y'$;
+it is in $G^\tau$ since $G^\tau$ is open, and thus in $G^\sigma$ since $G_{y'}^\sigma=G_{y'}^\tau$.
+If the characteristic of $k(y')$ is $p>0$, then let
+$$
+  \nu(g(y'))
+  = p^hm
+  \qquad\text{where }(m,p)=1
+$$
+\oldpage{236-07}
+and let $a$ and $b$ be integers such that $ap^h+bm=1$, and set
+$$
+  \begin{aligned}
+    g_1
+    &= g^{ap^h}
+  \\g_2
+    &= g^{bm}
+  \end{aligned}
+$$
+so that $g=g_1g_2$.
+By construction, we then have $g_1(y')\in G^\sigma$ and $g_2(y')\in G^\rho$.
+Since $G^0$ is closed, it follows that $g_1(y)\in G^\sigma$ and $g_2(y)\in G^\rho$, whence, since
+$$
+  g(y)
+  = g_1(y)g_2(y) \in G^\sigma
+$$
+we also have that $g_2(y)\in G^\sigma$, and so
+$$
+  g_2(y)\in G_y^\sigma\cap G_y^\rho
+  = G_y^0.
+$$
+But from the hypothesis, and the fact that $S$ is the spectrum of a discrete valuation ring, it follows that $G\setminus(G_y\setminus G_y^0)$ is an open of $G$ over which $G\to S$ induces an open morphism, and thus, at every point of $G_y^0$, gives a "quasi-section";
+then,
