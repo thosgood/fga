@@ -90,5 +90,77 @@ $$
 $$
 
 ::: {.rmenv #fga-3-vi-remark title="Remark" latex="{Remark}"}
-We
+We can construct the quotient group scheme $G/G^0=N$ (cf. [@Gro1959, IV]) and then define $G^\tau$, $G^\sigma$, and $G^\rho$ as the inverse images in $G$ of the torsion subgroup of $N$ (resp. of its $p$-primary component, resp. of the natural complement of its $p$-primary component, given by the sum of the $q$-primary components for $q$ prime with $q\neq p$).
+Note that $N$ is a discrete group scheme that is separable over $k$, thus (once we have chosen an algebraic closure $\overline{k}$ of $k$, giving rise to a Galois group $\pi$) can be identified with an ordinary discrete group on which $\pi$ acts by automorphisms.
+It is in this way that we can interpret, in an evident way, the construction of the torsion subgroup and the decomposition of this into its $q$-primary components.
+If $G$ is the Picard scheme of a proper scheme $X$ over $k$, then $N$ could be called the (reduced) *Néron--Severi scheme* of $X$ over $k$.
+If $G_\red^0$ is a sub-group scheme of $G^0$, which is the case whenever, in particular, $k$ is parfait, or $G^0$ is proper over $k$ (for example if $X$ is geometrically normal), then we can equally introduce the quotient $N'=G/G_\red^0$, which has the tendency to behave better than $N$ from the specialisation point of view, i.e. as $X$ varies over a family of algebraic schemes.
+:::
+
+Now let $S$ be a locally Noetherian prescheme, and $G$ a group prescheme over $S$ that is locally of finite type over $S$.
+We do not assume $G$ to be of finite type over $S$, nor separated over $S$.
+We then set
+$$
+  G^0
+  = \bigcup_{s\in S} (G_s)^0
+$$
+and, if $G$ is commutative,
+$$
+  \begin{aligned}
+    G^\tau
+    &= \bigcup_{s\in S} (G_s)^\tau
+  \\G^\sigma
+    &= \bigcup_{s\in S} (G_s)^\sigma
+  \\G^\rho
+    &= \bigcup_{s\in S} (G_s)^\rho.
+  \end{aligned}
+$$
+\oldpage{236-04}
+These are subsets of $G$, stable under the multiplication of $G$, which does not obviously imply that they can be defined by means of sub-group preschemes of $G$.
+Notably, it seems that *there does not exist in a general sub-group prescheme of $G$ whose underlying set is $G^0$*.
+Of course, if one of these sets is open, then, endowed with the induced structure, it is an open sub-group prescheme of $G$.
+We will see that this is always the case for $G^\tau$;
+in this way, from the point of view of representable functors, in particular *from the "specialisation" point of view, numerical equivalence behaves in a more satisfying manner than algebraic equivalence*.
+Here are the principle general properties of the sets that we have just defined:
+
+::: {.itenv #fga-3-vi-theorem-1.1 title="Theorem 1.1" latex="{Theorem 1.1}"}
+$G^0$, $G^\tau$, $G^\sigma$, and $G^\rho$ are *locally constructible*.
+Furthermore:
+
+i. $G^0$ is quasi-compact over $S$.
+  If the $G_s^0$ are proper, and $G$ is separated over $S$, then $G^0$ is proper over $S$ and thus closed in $G$.
+ii. $G^\tau$ is open.
+  If $G^0$ is closed, then so too is $G^\tau$.
+iii. If $G^0$ is closed, then so too is $G^\sigma$, provided that we are in equal characteristic, i.e. that all the residue fields of $S$ have the same characteristic.
+  If $G^0$ is closed and $G\to S$ is universally open at the points of $G^\sigma$ (cf. [Corollary 1.5](#fga-3-vi-corollary-1.5) below), then $G^\sigma\to S$ is universally open.
+iv. If $G^0$ is closed, then so too is $G^\rho$.
+  If we are in equal characteristic, and if, for every integer $n>0$ such that $(n,p)=1$, the $n$-th power homomorphism to $G$ is open, then $G^\rho$ is open.
+:::
+
+We now give some hints towards the proof.
+The fact that $G^0$ is locally constructible, and quasi-compact over $S$, is contained in the following lemma:
+
+::: {.itenv #fga-3-vi-lemma-1.2 title="Lemma 1.2" latex="{Lemma 1.2}"}
+If $S\neq\varnothing$ then there exists a non-empty open $U$ in $S$, a group scheme $H$ of finite type over $U$ with connected fibres, and a homomorphism of group schemes $H\to G|U$ that is an open immersion with image $G^0|U$.
+:::
+
+::: {.proof}
+To prove this lemma, we can suppose that $S$ is irreducible;
+let $\eta$ be its generic point.
+If we make the base change $S'=\Spec(\OO_{S,\eta})\to S$ then we find a group scheme $G'$ over a local Artinian ring $\OO_{S,s}=A$ inside which we have an *open* sub-group scheme ${G'}^0$ *of finite type over $A$*, as we said above.
+This thus comes from a group scheme $H$ of finite type over an open neighbourhood $U$ of $\eta$, and the canonical immersion ${G'}^0\to G'$ comes from an open immersion $H\to G|U$, which will be a homomorphism of group schemes for $U$ small enough.
+\oldpage{236-05}
+Since the fibres of $H$ are connected if we take $U$ small enough, and since they are all of the same dimension, namely that of the fibres of $G$, for $U$ small enough, it follows that, for all $s\in U$, the image of $H_s$ in $G_s$ is exactly $G_s^0$ (for $U$ small enough), which proves the lemma.
+:::
+
+The second claim in [(1.1), (i)](#fga-3-vi-theorem-1.1) is contained in the following lemma (which we apply to an quasi-compact open neighbourhood of $G^0$ in $G$):
+
+::: {.itenv #fga-3-vi-lemma-1.3 title="Lemma 1.3" latex="{Lemma 1.3}"}
+Let $X$ be a separated prescheme of finite type over $S$, with $S$ locally Noetherian, and let $g$ be a section of $X$ over $S$, and $X^0$ the union of the connected components of the $g(s)$ in the $X_s$.
+Let $s\in S$ be such that $X_s^0$ is proper over $k(s)$.
+Then there exists an open neighbourhood $U$ of $s$ such that $X^0|U$ is proper over $U$, and a fortiori closed in $X|U$.
+:::
+
+::: {.proof}
+By
 :::
