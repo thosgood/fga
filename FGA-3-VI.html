@@ -360,8 +360,72 @@ Let <eq env="math">s\in S</eq> be such that <eq env="math">X_s^0</eq> is proper 
 Then there exists an open neighbourhood <eq env="math">U</eq> of <eq env="math">s</eq> such that <eq env="math">X^0|U</eq> is proper over <eq env="math">U</eq>, and a fortiori closed in <eq env="math">X|U</eq>.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-35" class="proof"><em>Proof</em>. </span>By</p>
+<p><span id="unlabeled-div-35" class="proof"><em>Proof</em>. </span>By faithfully flat descent of the base, we can reduce to the case where <eq env="math">S</eq> is the spectrum of a complete local ring, and <eq env="math">s</eq> is its closed point.
+Applying <span class="citation">[<a href="#ref-GD1960" role="doc-biblioref">11</a>, III, 5.5.1]</span>, we see that <eq env="math">X</eq> decomposes into a sum of two disjoint opens <eq env="math">X'</eq> and <eq env="math">X''</eq>, with <eq env="math">X'</eq> proper over <eq env="math">S</eq>, and such that <eq env="math">X'_s=S_s^0</eq>.
+This allows us to reduce to the case where <eq env="math">X=X'</eq>, i.e. where <eq env="math">X</eq> is proper over <eq env="math">S</eq>.
+In this case, we can apply a standard proof, using the valuative criterion of properness of a subset (forgotten in <span class="citation">[<a href="#ref-GD1960" role="doc-biblioref">11</a>, II]</span>).</p>
 </div>
+<p>We now prove that <eq env="math">G^\tau</eq> is open, or, equivalently, taking into account the fact that the formation of <eq env="math">G^\tau</eq> (as that of <eq env="math">G^0</eq>, <eq env="math">G^\sigma</eq>, and <eq env="math">G^\rho</eq>) commutes with base extension: for every sections <eq env="math">g</eq> of <eq env="math">G</eq> over <eq env="math">S</eq>, <eq env="math">g^{-1}(G^\tau)</eq> is open.
+This implies two things:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Let <eq env="math">y\in S</eq> be such that <eq env="math">g(y)\in G^\tau</eq>.
+Then, for all neighbours <eq env="math">y'\in\overline{y}</eq> of <eq env="math">y</eq>, we have <eq env="math">g(y')\in G^\tau</eq>.</li>
+<li>Let <eq env="math">y'\in S</eq> be such that <eq env="math">g(y')\in G^\tau</eq>.
+Then, for every generalisation <eq env="math">y</eq> of <eq env="math">y'</eq>, we have <eq env="math">g(y)\in G^\tau</eq>.</li>
+</ol>
+<p>For (a), note that there exists an integer <eq env="math">n&gt;0</eq> such that <eq env="math">g^n(y)\in G^0</eq>; since <eq env="math">G^0</eq> is constructible, <eq env="math">(g^n)^{-1}G^0</eq> is constructible;
+it follows that we have <eq env="math">g^n(y')\in G^0</eq> for all neighbours <eq env="math">y'\in\overline{y}</eq> of <eq env="math">y</eq>.
+For (b), note that the <eq env="math">g(y')^n=g^n(y')</eq> remain in a quasi-compact open of <eq env="math">G_{y'}</eq> (since they are contained in a finite number of classes modulo <eq env="math">G_{y'}^0</eq>), and so there exists a quasi-compact open <eq env="math">U</eq> in <eq env="math">G</eq> that contains the <eq env="math">g^n(y')</eq>, and thus also their generalisations <eq env="math">g^n(y)</eq>, and so the powers of <eq env="math">g(y)</eq> remain in a quasi-compact open of <eq env="math">G_y</eq>, which easily implies that <eq env="math">g(y)\in G_y^\tau</eq>.</p>
+<p>Suppose that <eq env="math">G^0</eq> is closed;
+we will show that so too is <eq env="math">G^\tau</eq>.
+As we already know that <eq env="math">G^\tau</eq> is open, thus locally constructible, it remains only to show that it is stable under specialisation, which comes from the fact that it is a union of closed subsets, namely inverse images under the <eq env="math">n</eq>-th power homomorphisms <eq env="math">\varphi_n</eq> of the closed subset <eq env="math">G^0</eq>.</p>
+<p>The same argument shows that <eq env="math">G\sigma</eq> and <eq env="math">G^\rho</eq> are closed if <eq env="math">G^0</eq> is (under the additional hypothesis of equal characteristic in the case of the former), once we have shown that <eq env="math">G^\sigma</eq> and <eq env="math">G^\rho</eq> are locally constructible.
+But, for <eq env="math">x\in G^\tau</eq>, let <eq env="math">\nu(x)</eq> be the smallest integer <eq env="math">n&gt;0</eq> such that the <eq env="math">n</eq>-th power homomorphism <eq env="math">\varphi_n</eq> sends <eq env="math">x</eq> to <eq env="math">G</eq>.
+Then <eq env="math">G^\sigma</eq> (resp. <eq env="math">G^\rho</eq>) consists of the <eq env="math">x\in X</eq> such that <eq env="math">\nu(x)</eq> is coprime to <eq env="math">p</eq> (resp. to a power of <eq env="math">p</eq>), and our claim of constructibility then follows from the following, more precise lemma:</p>
+<div id="fga-3-vi-lemma-1.4" class="itenv" title="Lemma 1.4">
+<p>The function <eq env="math">\nu</eq> on <eq env="math">G^\tau</eq> is locally constructible.</p>
+</div>
+<p>:::
+This means that, for every integer <eq env="math">n&gt;0</eq>, the set of <eq env="math">x\in G^\tau</eq> such that <eq env="math">\nu(x)=n</eq> is locally constructible;
+but this is the difference between <eq env="math">\varphi_n^{-1}(G^0)</eq> and the union of the <eq env="math">\varphi_d^{-1}(G^0)</eq> where <eq env="math">d</eq> runs over the proper divisors of <eq env="math">n</eq>;
+since <eq env="math">G^0</eq> is locally constructible, so too are all the <eq env="math">\varphi_i^{-1}(G^0)</eq>, and thus also the aforementioned difference.
+:::</p>
+<p>Suppose that <eq env="math">G^0</eq> is closed and that <eq env="math">G\to S</eq> is universally open at the point of <eq env="math">G^\sigma</eq>;
+we will show that <eq env="math">G^\sigma\to S</eq> is open, i.e. sends a neighbourhood in <eq env="math">G^\simga</eq> of any <eq env="math">x\in G^\sigma</eq> to a neighbourhood of <eq env="math">y=f(x)</eq>.
+Since <eq env="math">G^\sigma</eq> is locally constructible, it suffices to show that, for every generalisation <eq env="math">y'</eq> of <eq env="math">y</eq>, there exists a generalisation of <eq env="math">x</eq>’ of <eq env="math">x</eq> in <eq env="math">G</eq> in <eq env="math">y'</eq>.
+By base change, this allows us to reduce to the case where <eq env="math">S</eq> is the spectrum of a discrete valuation ring, and where <eq env="math">y</eq> and <eq env="math">y'</eq> are the closed point and the generic point (respectively).
+Using the fact that <eq env="math">G\to S</eq> is open at <eq env="math">x</eq> (and thus there exists a generalisation <eq env="math">x_1</eq> of <eq env="math">x</eq> in <eq env="math">G</eq> over <eq env="math">y'</eq>), we can further suppose that there exists a section <eq env="math">g</eq> of <eq env="math">G</eq> over <eq env="math">S</eq> such that <eq env="math">x=g(y)</eq> (after performing another base change).
+If <eq env="math">k(y')</eq> is of characteristic <eq env="math">0</eq>, then it suffices to take any generalisation <eq env="math">x'</eq> of <eq env="math">x</eq> in <eq env="math">G</eq> over <eq env="math">y'</eq>;
+it is in <eq env="math">G^\tau</eq> since <eq env="math">G^\tau</eq> is open, and thus in <eq env="math">G^\sigma</eq> since <eq env="math">G_{y'}^\sigma=G_{y'}^\tau</eq>.
+If the characteristic of <eq env="math">k(y')</eq> is <eq env="math">p&gt;0</eq>, then let
+<eq env="displaymath">
+  \nu(g(y'))
+  = p^hm
+  \qquad\text{where }(m,p)=1
+</eq>
+and let <eq env="math">a</eq> and <eq env="math">b</eq> be integers such that <eq env="math">ap^h+bm=1</eq>, and set
+<eq env="displaymath">
+  \begin{aligned}
+    g_1
+    &amp;= g^{ap^h}
+  \\g_2
+    &amp;= g^{bm}
+  \end{aligned}
+</eq>
+so that <eq env="math">g=g_1g_2</eq>.
+By construction, we then have <eq env="math">g_1(y')\in G^\sigma</eq> and <eq env="math">g_2(y')\in G^\rho</eq>.
+Since <eq env="math">G^0</eq> is closed, it follows that <eq env="math">g_1(y)\in G^\sigma</eq> and <eq env="math">g_2(y)\in G^\rho</eq>, whence, since
+<eq env="displaymath">
+  g(y)
+  = g_1(y)g_2(y) \in G^\sigma
+</eq>
+we also have that <eq env="math">g_2(y)\in G^\sigma</eq>, and so
+<eq env="displaymath">
+  g_2(y)\in G_y^\sigma\cap G_y^\rho
+  = G_y^0.
+</eq>
+But from the hypothesis, and the fact that <eq env="math">S</eq> is the spectrum of a discrete valuation ring, it follows that <eq env="math">G\setminus(G_y\setminus G_y^0)</eq> is an open of <eq env="math">G</eq> over which <eq env="math">G\to S</eq> induces an open morphism, and thus, at every point of <eq env="math">G_y^0</eq>, gives a “quasi-section”;
+then,</p>
 
 </div>
 </div>
@@ -476,6 +540,9 @@ Then there exists an open neighbourhood <eq env="math">U</eq> of <eq env="math">
 </div>
 <div id="ref-Gro1960b" class="csl-entry">
 <div class="csl-left-margin">[10] </div><div class="csl-right-inline">A. Grothendieck. <em><span class="nocase">Séminaire de Géométrie Algébrique</span>, <span>I</span>, <span>II</span>, <span>III</span>, <span>IV</span></em>. <span>Paris, Institut des Hautes Études Scientifiques</span>, 1960/61.</div>
+</div>
+<div id="ref-GD1960" class="csl-entry">
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4,8,11,17,20,24,28,32</strong> (1960/67).</div>
 </div>
 </div>
 <div class="footnotes">
