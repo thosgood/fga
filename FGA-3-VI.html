@@ -336,7 +336,7 @@ If the <eq env="math">G_s^0</eq> are proper, and <eq env="math">G</eq> is separa
 <li><eq env="math">G^\tau</eq> is open.
 If <eq env="math">G^0</eq> is closed, then so too is <eq env="math">G^\tau</eq>.</li>
 <li>If <eq env="math">G^0</eq> is closed, then so too is <eq env="math">G^\sigma</eq>, provided that we are in equal characteristic, i.e. that all the residue fields of <eq env="math">S</eq> have the same characteristic.
-If <eq env="math">G^0</eq> is closed and <eq env="math">G\to S</eq> is universally open at the points of <eq env="math">G^\sigma</eq> (cf. <a href="#fga-3-vi-corollary-1.5">Corollary 1.5</a> below), then <eq env="math">G^\sigma\to S</eq> is universally open.</li>
+If <eq env="math">G^0</eq> is closed and <eq env="math">G\to S</eq> is universally open at the points of <eq env="math">G^\sigma</eq> (cf. <a href="FGA-3-VI.html#fga-3-vi-corollary-1.5">Corollary 1.5</a> below), then <eq env="math">G^\sigma\to S</eq> is universally open.</li>
 <li>If <eq env="math">G^0</eq> is closed, then so too is <eq env="math">G^\rho</eq>.
 If we are in equal characteristic, and if, for every integer <eq env="math">n&gt;0</eq> such that <eq env="math">(n,p)=1</eq>, the <eq env="math">n</eq>-th power homomorphism to <eq env="math">G</eq> is open, then <eq env="math">G^\rho</eq> is open.</li>
 </ol>
@@ -425,7 +425,20 @@ we also have that <eq env="math">g_2(y)\in G^\sigma</eq>, and so
   = G_y^0.
 </eq>
 But from the hypothesis, and the fact that <eq env="math">S</eq> is the spectrum of a discrete valuation ring, it follows that <eq env="math">G\setminus(G_y\setminus G_y^0)</eq> is an open of <eq env="math">G</eq> over which <eq env="math">G\to S</eq> induces an open morphism, and thus, at every point of <eq env="math">G_y^0</eq>, gives a “quasi-section”;
-then,</p>
+then, after possibly another extension of the base <eq env="math">S</eq>, we can suppose that there exists a section <eq env="math">g'_2</eq> of <eq env="math">G^0</eq> over <eq env="math">S</eq> such that <eq env="math">g'_2(y)=g_2(y)</eq>.
+Set <eq env="math">g'=g_1g'_2</eq>;
+then, by construction, <eq env="math">g'(y)=g(y)=x</eq>, and <eq env="math">g'(y')=g_1(y')g'_2(y')\in G^\sigma</eq>, and so <eq env="math">g(y')=x'</eq> is a generalisation of <eq env="math">x</eq> in <eq env="math">G^\sigma</eq> over <eq env="math">y'</eq>, which proves (iii).</p>
+<p>Finally we prove the last claim (iv).
+It suffices to prove that, if <eq env="math">x\in G^\rho</eq>, then every generalisation <eq env="math">x'</eq> of <eq env="math">x</eq> is in <eq env="math">G^\rho</eq>.
+We can suppose (after taking the images under <eq env="math">\varphi_{n^h}</eq> for suitable <eq env="math">h</eq>) that we even have <eq env="math">x\in G^0</eq>.
+Then, for every integer <eq env="math">n&gt;0</eq> coprime to the characteristic, <eq env="math">x</eq> is in the image of <eq env="math">\varphi_n</eq> (since the <eq env="math">n</eq>-th power in a connected group of finite type over a field of characteristic coprime to <eq env="math">n</eq> is surjective).
+Since <eq env="math">\varphi_n</eq> is open, it follows that <eq env="math">x'</eq> is also in the image of <eq env="math">\varphi_n</eq>.
+More precisely, let <eq env="math">U</eq> be a quasi-compact open of <eq env="math">G^\tau</eq> that contains <eq env="math">G_y^0</eq>, and then <eq env="math">x'\in\varphi_n(U)</eq> for all <eq env="math">n</eq> coprime to <eq env="math">p</eq>.
+Taking <eq env="math">n</eq> to be a common multiple of the factors of the <eq env="math">\nu(z)</eq> that are coprime to <eq env="math">p</eq>, for <eq env="math">z\in U</eq>, we see that <eq env="math">x'\in G^\rho</eq>.</p>
+<p>The claim <a href="FGA-3-VI.html#fga-3-vi-theorem-1.1">(1.1), (iii)</a> is completed like so:</p>
+<div id="fga-3-vi-corollary-1.5" class="itenv" title="Corollary 1.5">
+<p>Let</p>
+</div>
 
 </div>
 </div>
