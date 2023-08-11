@@ -235,4 +235,20 @@ $$
   = G_y^0.
 $$
 But from the hypothesis, and the fact that $S$ is the spectrum of a discrete valuation ring, it follows that $G\setminus(G_y\setminus G_y^0)$ is an open of $G$ over which $G\to S$ induces an open morphism, and thus, at every point of $G_y^0$, gives a "quasi-section";
-then,
+then, after possibly another extension of the base $S$, we can suppose that there exists a section $g'_2$ of $G^0$ over $S$ such that $g'_2(y)=g_2(y)$.
+Set $g'=g_1g'_2$;
+then, by construction, $g'(y)=g(y)=x$, and $g'(y')=g_1(y')g'_2(y')\in G^\sigma$, and so $g(y')=x'$ is a generalisation of $x$ in $G^\sigma$ over $y'$, which proves (iii).
+
+Finally we prove the last claim (iv).
+It suffices to prove that, if $x\in G^\rho$, then every generalisation $x'$ of $x$ is in $G^\rho$.
+We can suppose (after taking the images under $\varphi_{n^h}$ for suitable $h$) that we even have $x\in G^0$.
+Then, for every integer $n>0$ coprime to the characteristic, $x$ is in the image of $\varphi_n$ (since the $n$-th power in a connected group of finite type over a field of characteristic coprime to $n$ is surjective).
+Since $\varphi_n$ is open, it follows that $x'$ is also in the image of $\varphi_n$.
+More precisely, let $U$ be a quasi-compact open of $G^\tau$ that contains $G_y^0$, and then $x'\in\varphi_n(U)$ for all $n$ coprime to $p$.
+Taking $n$ to be a common multiple of the factors of the $\nu(z)$ that are coprime to $p$, for $z\in U$, we see that $x'\in G^\rho$.
+
+The claim [(1.1), (iii)](#fga-3-vi-theorem-1.1) is completed like so:
+
+::: {.itenv #fga-3-vi-corollary-1.5 title="Corollary 1.5" latex="{Corollary 1.5}"}
+Let
+:::
