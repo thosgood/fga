@@ -8,6 +8,7 @@
 
 \providecommand{\Spec}{\operatorname{Spec}}
 \providecommand{\red}{\mathrm{red}}
+\providecommand{\Ga}{\operatorname{G_a}}
 
 <!-- Shortcuts -->
 
@@ -250,5 +251,14 @@ Taking $n$ to be a common multiple of the factors of the $\nu(z)$ that are copri
 The claim [(1.1), (iii)](#fga-3-vi-theorem-1.1) is completed like so:
 
 ::: {.itenv #fga-3-vi-corollary-1.5 title="Corollary 1.5" latex="{Corollary 1.5}"}
-Let
+Let $n>1$ be an integer such that the $n$-th power homomorphism $\varphi_n\colon G\to G$ is universally open (for example, étale).
+Let $G^{(n)}=\varphi_n^{-1}(G^0)$, and suppose that the connected fibres $G_s^0$ "do not contain the additive component" (i.e the group induced by field extension from $k(s)$ to the algebraic closure does not contain a subgroup isomorphic to $\Ga$).
+\oldpage{236-08}
+Then $G\to S$ is universally open at the point of $G^{(n^h)}$.
+In particular, if the $G_s^0$ do not contain the additive component, and if, for every integer $n>1$, the homomorphism $\varphi_n$ is universally open at the points of residual characteristic coprime to $p$, then $G\to S$ is universally open at the points of $G^\sigma$, and thus [(1.1), (iii)](#fga-3-vi-theorem-1.1) if $G^0$ is closed then $G^\sigma\to S$ is universally open.
+In this case, $s\mapsto\dim G_s$ is a locally constant function on $S$.
+:::
+
+::: {.proof}
+It follows from the hypotheses that
 :::
