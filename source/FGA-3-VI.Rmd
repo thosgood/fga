@@ -29,8 +29,7 @@ _Séminaire Bourbaki_ **14** (1961--62), Talk no. 236.
 
 ## 0. Supplements to the previous talk (FGA 3.V) {.unnumbered}
 
-\oldpage{236-01}
-There has been some progress concerning the questions of existence of Picard preschemes raised in [@Gro1959, V]:
+\oldpage{236-01}There has been some progress concerning the questions of existence of Picard preschemes raised in [@Gro1959, V]:
 
 a. (Mumford).
   It is not true in general that, if $f\colon X\to S$ is a projective and separable (i.e. flat with separable fibres) morphism, then the Picard prescheme $\repPic_{X/S}$ exists, even if the fibres of $f$ are of dimension $1$ and $S$ is the spectrum of a complete discrete valuation ring.
@@ -41,8 +40,8 @@ a. (Mumford).
   the proof relies on a refinement of his theorem of passage to the quotient, cf. [-].^[*[Trans.]* The original cites here the 1962 Mumford--Tate seminar --- see translator footnotes in [FGA 3.V](#FGA-3-V.html).]
   Note also that it is still possible that, without any hypotheses on the irreducible components of the fibres $X_s$, the scheme $\repPic_{X/S}^\tau$ (which will be introduced below) still exists.
 
-\oldpage{236-02}
-b. (Murre).
+
+b. (Murre).\oldpage{236-02}
   If $X$ is a proper scheme over a field, then $\repPic_{X/k}$ exists.
   The proof partially uses the proof of Chevalley [@Che1960], and is fundamentally based on the group structure of the Picard functor.
 
@@ -79,8 +78,7 @@ $$
   \end{aligned}
 $$
 where $p$ is the characteristic order of the field $k$.
-\oldpage{236-03}
-These are open subgroups of $G$ that satisfy
+\oldpage{236-03}These are open subgroups of $G$ that satisfy
 $$
   \begin{aligned}
     G^\sigma \cap G^\rho
@@ -116,8 +114,7 @@ $$
     &= \bigcup_{s\in S} (G_s)^\rho.
   \end{aligned}
 $$
-\oldpage{236-04}
-These are subsets of $G$, stable under the multiplication of $G$, which does not obviously imply that they can be defined by means of sub-group preschemes of $G$.
+\oldpage{236-04}These are subsets of $G$, stable under the multiplication of $G$, which does not obviously imply that they can be defined by means of sub-group preschemes of $G$.
 Notably, it seems that *there does not exist in a general sub-group prescheme of $G$ whose underlying set is $G^0$*.
 Of course, if one of these sets is open, then, endowed with the induced structure, it is an open sub-group prescheme of $G$.
 We will see that this is always the case for $G^\tau$;
@@ -150,8 +147,7 @@ To prove this lemma, we can suppose that $S$ is irreducible;
 let $\eta$ be its generic point.
 If we make the base change $S'=\Spec(\OO_{S,\eta})\to S$ then we find a group scheme $G'$ over a local Artinian ring $\OO_{S,s}=A$ inside which we have an *open* sub-group scheme ${G'}^0$ *of finite type over $A$*, as we said above.
 This thus comes from a group scheme $H$ of finite type over an open neighbourhood $U$ of $\eta$, and the canonical immersion ${G'}^0\to G'$ comes from an open immersion $H\to G|U$, which will be a homomorphism of group schemes for $U$ small enough.
-\oldpage{236-05}
-Since the fibres of $H$ are connected if we take $U$ small enough, and since they are all of the same dimension, namely that of the fibres of $G$, for $U$ small enough, it follows that, for all $s\in U$, the image of $H_s$ in $G_s$ is exactly $G_s^0$ (for $U$ small enough), which proves the lemma.
+\oldpage{236-05}Since the fibres of $H$ are connected if we take $U$ small enough, and since they are all of the same dimension, namely that of the fibres of $G$, for $U$ small enough, it follows that, for all $s\in U$, the image of $H_s$ in $G_s$ is exactly $G_s^0$ (for $U$ small enough), which proves the lemma.
 :::
 
 The second claim in [(1.1), (i)](#fga-3-vi-theorem-1.1) is contained in the following lemma (which we apply to an quasi-compact open neighbourhood of $G^0$ in $G$):
@@ -181,8 +177,7 @@ For (a), note that there exists an integer $n>0$ such that $g^n(y)\in G^0$; sinc
 it follows that we have $g^n(y')\in G^0$ for all neighbours $y'\in\overline{y}$ of $y$.
 For (b), note that the $g(y')^n=g^n(y')$ remain in a quasi-compact open of $G_{y'}$ (since they are contained in a finite number of classes modulo $G_{y'}^0$), and so there exists a quasi-compact open $U$ in $G$ that contains the $g^n(y')$, and thus also their generalisations $g^n(y)$, and so the powers of $g(y)$ remain in a quasi-compact open of $G_y$, which easily implies that $g(y)\in G_y^\tau$.
 
-\oldpage{236-06}
-Suppose that $G^0$ is closed;
+\oldpage{236-06}Suppose that $G^0$ is closed;
 we will show that so too is $G^\tau$.
 As we already know that $G^\tau$ is open, thus locally constructible, it remains only to show that it is stable under specialisation, which comes from the fact that it is a union of closed subsets, namely inverse images under the $n$-th power homomorphisms $\varphi_n$ of the closed subset $G^0$.
 
@@ -213,8 +208,7 @@ $$
   = p^hm
   \qquad\text{where }(m,p)=1
 $$
-\oldpage{236-07}
-and let $a$ and $b$ be integers such that $ap^h+bm=1$, and set
+\oldpage{236-07}and let $a$ and $b$ be integers such that $ap^h+bm=1$, and set
 $$
   \begin{aligned}
     g_1
@@ -253,12 +247,34 @@ The claim [(1.1), (iii)](#fga-3-vi-theorem-1.1) is completed like so:
 ::: {.itenv #fga-3-vi-corollary-1.5 title="Corollary 1.5" latex="{Corollary 1.5}"}
 Let $n>1$ be an integer such that the $n$-th power homomorphism $\varphi_n\colon G\to G$ is universally open (for example, étale).
 Let $G^{(n)}=\varphi_n^{-1}(G^0)$, and suppose that the connected fibres $G_s^0$ "do not contain the additive component" (i.e the group induced by field extension from $k(s)$ to the algebraic closure does not contain a subgroup isomorphic to $\Ga$).
-\oldpage{236-08}
-Then $G\to S$ is universally open at the point of $G^{(n^h)}$.
+\oldpage{236-08}Then $G\to S$ is universally open at the point of $G^{(n^h)}$.
 In particular, if the $G_s^0$ do not contain the additive component, and if, for every integer $n>1$, the homomorphism $\varphi_n$ is universally open at the points of residual characteristic coprime to $p$, then $G\to S$ is universally open at the points of $G^\sigma$, and thus [(1.1), (iii)](#fga-3-vi-theorem-1.1) if $G^0$ is closed then $G^\sigma\to S$ is universally open.
 In this case, $s\mapsto\dim G_s$ is a locally constant function on $S$.
 :::
 
 ::: {.proof}
-It follows from the hypotheses that
+It follows from the hypotheses that the kernel ${}_nG$ of $\varphi_n$ is universally open over $S$, and so $G\to S$ is universally open at the points of ${}_nG$, and thus also (replacing $n$ with $n^h$) at the points of ${}_{(n^h)}G$.
+But the hypothesis on the fibres $G_s^0$ tells us exactly that the points of order some power of $n$ in $G_s$ are dense in the union of the $G^{(n^h)}$, whence it easily follows that $G\to S$ is universally open at all points of this union, in particular along the identity section, whence it easily follows that $s\mapsto\dim G_s$ is a locally constant function.
+:::
+
+::: {.rmenv #fga-3-vi-remark-1.6 title="Remark 1.6" latex="{Remark 1.6}"}
+Recall that a morphism $X\to S$ is said to be universally open if it sends every open to an open, and retains this nice property after any base change $S'\to S$.
+This also implies (if $S$ is locally Noetherian and $X\to S$ is locally of finite type) that every irreducible component of $X$ dominates $S$, and that this property is retained after any base change $S'\to S$.
+In these two claims, it suffices (thanks to the finiteness hypotheses above) to verify only for the base changes $S'\to S$ where $S'$ is the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one wants...).
+The definition extends in an evident way to the case of a subset $Z$ of $X$ (such as the subset $G^\sigma$ of $G$).
+It is a perfectly normal phenomenon, even if we start with a simple projective morphism $X\to S$ with geometrically connected fibres (for example, the fibre square of the modular family of elliptic curves over $S=\Spec\mathbb{C}[j]$), that $\repPic_{X/S}$ is not universally open over $S$, i.e. that there can be irreducible components of $\repPic_{X/S}$that live entirely over a single point of $S$;
+this is linked to the fact that the rank of the Néron--Severi group of the fibres of $X/S$ can jump up ("complex multiplication" phenomena).
+However, [(1.5)](#fga-3-vi-corollary-1.5) assures us that, in good cases, $\repPic_{X/S}^\sigma$ (and usually, it seems, even $\repPic_{X/S}^\tau$) is universally open over $S$.
+:::
+
+\oldpage{236-09}Finally, here is a useful case where, exceptionally, $G^0$ agrees to be open:
+
+::: {.itenv #fga-3-vi-corollary-1.7 title="Corollary 1.7" latex="{Corollary 1.7}"}
+Suppose that $G\to S$ is universally open at the points of $G^0$ (cf. [(1.5)](#fga-3-vi-corollary-1.5)) and that the fibres $G_s$ are separable, thus simple over $k(s)$ (this latter condition being automatically satisfied in residual characteristic zero, by a result of Cartier).
+Then $G^0$ is open in $G$.
+If, further, $S$ is reduced, then $G^0$ is simple (and in particular, flat) over $S$.
+:::
+
+::: {.proof}
+The first claim can be
 :::
