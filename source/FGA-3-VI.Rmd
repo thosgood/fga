@@ -9,6 +9,7 @@
 \providecommand{\Spec}{\operatorname{Spec}}
 \providecommand{\red}{\mathrm{red}}
 \providecommand{\Ga}{\operatorname{G_a}}
+\providecommand{\Gm}{\operatorname{G_m}}
 
 <!-- Shortcuts -->
 
@@ -287,5 +288,49 @@ If $G_s$ is separable over $k(s)$ and $S$ is reduced at $s$, then $G$ is flat ov
 :::
 
 ::: {.rmenv #fga-3-vi-remarks-1.9 title="Remarks 1.9" latex="{Remarks 1.9}"}
-I do not
+I do not know, if $G$ is separated over $S$, if $G^0$ or $G^\tau$ is always closed in $G$;
+this seems unlikely.
+In any case, we find evident counter-examples if we drop the separation hypothesis, for example by taking the affine line with a countably infinite number of copies of the origin, thus obtaining a group scheme $G$ over the affine line whose fibres are all the trivial group, apart from one, which is $\mathbb{Z}$.
+This group scheme is an open group subscheme, the closure of the identity section, of the Picard prescheme of the $S$-scheme $X$ that corresponds to a family of conics degenerating to two concurrent lines.
+
+Even starting with a flat and finite group scheme $G$ over the spectrum $S$ of a discrete valuation ring $V$, if $G^0$ is reduced at the identity section, and thus closed, then various conclusions become false if we drop certain hypotheses.
+Suppose that $V$ is of equal characteristic $p>0$, and let $G$ be the kernel of the homomorphism $\Ga\to\Ga$ given by the homomorphism of functors $f\mapsto f^p-tf$, where $t$ is a uniformiser of $V$.
+\oldpage{236-10}(Recall that, by definition, the "additive group" $\Ga$ over $S$ represents the functor $S'\mapsto\Gamma(S',\OO_{S'})$).
+Then, as an $S$-scheme, $G=\Spec V[x]/(x^p-tx)$ is the union of $p$ concurrent "lines", giving a group $\mathbb{Z}/p\mathbb{Z}$ that degenerates to an infinitesimal additive-type group.
+In this example, $G^0=G^\sigma$ (and this is one of the $p$ lines), and so $G^0$ is not open in $G$.
+In the case of unequal characteristic, with residual characteristic $p>0$, we start with a group scheme $H=\mu_p$ given by the kernel of the $p$-th power in $\Gm$, so that $H=\Spec V[x]/(x^p-1)$, which is again the union of $p$ concurrent lines, giving a group $\mathbb{Z}/p\mathbb{Z}$ (in characteristic $0$) that degenerates to an infinitesimal multiplicative-type group in characteristic $p$.
+Let $H'$ be the "constant group scheme" defined by the ordinary finite group $\mathbb{Z}/p\mathbb{Z}$, which is the disjoint sum of $\mathbb{Z}/p\mathbb{Z}$ copies of $S$, or even $\Spec V^{\mathbb{Z}/p\mathbb{Z}}$.
+Then $G=H\times_S H'$ describes a group $(\mathbb{Z}/p\mathbb{Z})^2$ in characteristic $0$ that degenerates to an infinitesimal group times $\mathbb{Z}/p\mathbb{Z}$ in characteristic $p$.
+Here $G^\rho$ is the union of the identity section and the special fibre, and so $G^\rho$ is not open, even though $G^\sigma$ is the union of the identity section and the general fibre, and is thus not closed, contrary to what is true in the case of equal characteristic in [(1.1), (iii) and (iv)](#fga-3-vi-theorem-1.1).
+Of course, these are phenomena linked to characteristic $p>0$.
+The above results give:
+:::
+
+::: {.itenv #fga-3-vi-corollary-1.10 title="Corollary 1.10" latex="{Corollary 1.10}"}
+Suppose that the residual characteristics of $S$ are all $0$, so that $G^\tau=G^\sigma$ and $G^0=G^\rho$.
+Then $G^\tau=G^\sigma$ is open, and even open and closed if $G$ is separated over $S$ and the $G_s^0$ are proper;
+under these same hypotheses, $G^0=G^\rho$ is proper over $S$ and thus closed in $G$.
+Suppose finally that, for every integer $n>1$, the $n$-th power homomorphism in $G$ is universally open, then $G^0$ is open;
+if furthermore the $G_s^0$ do not have any additive component (for example the $G_s^0$ are proper, as above), then $G^\tau\to S$ is universally open, and even simple if $S$ is reduced.
+:::
+
+Finally we note the following easy result:
+
+::: {.itenv #fga-3-vi-proposition-1.11 title="Proposition 1.11" latex="{Proposition 1.11}"}
+There exists an open subset $U$ of $S$ such that the set $G'$ of points of $G$ at which $G$ is simple (resp. flat) over $S$ is the underlying set of an open group subscheme induced by $G|U$.
+Furthermore, every section of $G$ over $U$ is a section of $G'$ over $U$.
+:::
+
+::: {.itenv #fga-3-vi-corollary-1.12 title="Corollary 1.12" latex="{Corollary 1.12}"}
+\oldpage{236-11}If $G$ is simple (resp. flat) over $S$ at the points of the identity section, then it is simple (resp. flat) at the points of every section of $G$ over $S$, and at all points of $G^0$.
+If, further, for every integer $n>0$ the $n$-th power homomorphism $\varphi_n\colon G\to G$ is étale at the points of characteristic coprime to $n$, then $G$ is simple (resp. flat) over $S$ at all points of $G^\sigma$.
+:::
+
+
+## Application to the local properties of Picard schemes {#fga-3-vi-section-2}
+
+::: {.itenv #fga-3-vi-theorem-2.1 title="Theorem 2.1" latex="{Theorem 2.1}"}
+—
+
+i. Let
 :::
