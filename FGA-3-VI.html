@@ -204,6 +204,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#supplements-to-the-previous-talk-fga-3.v"><i class="fa fa-check"></i>0. Supplements to the previous talk (FGA 3.V)</a></li>
 <li class="chapter" data-level="8.1" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#fga-3-vi-section-1"><i class="fa fa-check"></i><b>8.1</b> Topological properties of preschemes of commutative groups</a></li>
+<li class="chapter" data-level="8.2" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#fga-3-vi-section-2"><i class="fa fa-check"></i><b>8.2</b> Application to the local properties of Picard schemes</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
 </ul>
@@ -470,7 +471,46 @@ The last claim in <a href="FGA-3-VI.html#fga-3-vi-corollary-1.7">(1.7)</a>, also
 If <eq env="math">G_s</eq> is separable over <eq env="math">k(s)</eq> and <eq env="math">S</eq> is reduced at <eq env="math">s</eq>, then <eq env="math">G</eq> is flat over <eq env="math">S</eq> at the points of <eq env="math">U</eq> (and then also simple over <eq env="math">S</eq> at the points of <eq env="math">U</eq>).</p>
 </div>
 <div id="fga-3-vi-remarks-1.9" class="rmenv" title="Remarks 1.9">
-<p>I do not</p>
+<p>I do not know, if <eq env="math">G</eq> is separated over <eq env="math">S</eq>, if <eq env="math">G^0</eq> or <eq env="math">G^\tau</eq> is always closed in <eq env="math">G</eq>;
+this seems unlikely.
+In any case, we find evident counter-examples if we drop the separation hypothesis, for example by taking the affine line with a countably infinite number of copies of the origin, thus obtaining a group scheme <eq env="math">G</eq> over the affine line whose fibres are all the trivial group, apart from one, which is <eq env="math">\mathbb{Z}</eq>.
+This group scheme is an open group subscheme, the closure of the identity section, of the Picard prescheme of the <eq env="math">S</eq>-scheme <eq env="math">X</eq> that corresponds to a family of conics degenerating to two concurrent lines.</p>
+<p>Even starting with a flat and finite group scheme <eq env="math">G</eq> over the spectrum <eq env="math">S</eq> of a discrete valuation ring <eq env="math">V</eq>, if <eq env="math">G^0</eq> is reduced at the identity section, and thus closed, then various conclusions become false if we drop certain hypotheses.
+Suppose that <eq env="math">V</eq> is of equal characteristic <eq env="math">p&gt;0</eq>, and let <eq env="math">G</eq> be the kernel of the homomorphism <eq env="math">\operatorname{G_a}\to\operatorname{G_a}</eq> given by the homomorphism of functors <eq env="math">f\mapsto f^p-tf</eq>, where <eq env="math">t</eq> is a uniformiser of <eq env="math">V</eq>.
+(Recall that, by definition, the “additive group” <eq env="math">\operatorname{G_a}</eq> over <eq env="math">S</eq> represents the functor <eq env="math">S'\mapsto\Gamma(S',{\mathscr{O}}_{S'})</eq>).
+Then, as an <eq env="math">S</eq>-scheme, <eq env="math">G=\operatorname{Spec}V[x]/(x^p-tx)</eq> is the union of <eq env="math">p</eq> concurrent “lines”, giving a group <eq env="math">\mathbb{Z}/p\mathbb{Z}</eq> that degenerates to an infinitesimal additive-type group.
+In this example, <eq env="math">G^0=G^\sigma</eq> (and this is one of the <eq env="math">p</eq> lines), and so <eq env="math">G^0</eq> is not open in <eq env="math">G</eq>.
+In the case of unequal characteristic, with residual characteristic <eq env="math">p&gt;0</eq>, we start with a group scheme <eq env="math">H=\mu_p</eq> given by the kernel of the <eq env="math">p</eq>-th power in <eq env="math">\operatorname{G_m}</eq>, so that <eq env="math">H=\operatorname{Spec}V[x]/(x^p-1)</eq>, which is again the union of <eq env="math">p</eq> concurrent lines, giving a group <eq env="math">\mathbb{Z}/p\mathbb{Z}</eq> (in characteristic <eq env="math">0</eq>) that degenerates to an infinitesimal multiplicative-type group in characteristic <eq env="math">p</eq>.
+Let <eq env="math">H'</eq> be the “constant group scheme” defined by the ordinary finite group <eq env="math">\mathbb{Z}/p\mathbb{Z}</eq>, which is the disjoint sum of <eq env="math">\mathbb{Z}/p\mathbb{Z}</eq> copies of <eq env="math">S</eq>, or even <eq env="math">\operatorname{Spec}V^{\mathbb{Z}/p\mathbb{Z}}</eq>.
+Then <eq env="math">G=H\times_S H'</eq> describes a group <eq env="math">(\mathbb{Z}/p\mathbb{Z})^2</eq> in characteristic <eq env="math">0</eq> that degenerates to an infinitesimal group times <eq env="math">\mathbb{Z}/p\mathbb{Z}</eq> in characteristic <eq env="math">p</eq>.
+Here <eq env="math">G^\rho</eq> is the union of the identity section and the special fibre, and so <eq env="math">G^\rho</eq> is not open, even though <eq env="math">G^\sigma</eq> is the union of the identity section and the general fibre, and is thus not closed, contrary to what is true in the case of equal characteristic in <a href="FGA-3-VI.html#fga-3-vi-theorem-1.1">(1.1), (iii) and (iv)</a>.
+Of course, these are phenomena linked to characteristic <eq env="math">p&gt;0</eq>.
+The above results give:</p>
+</div>
+<div id="fga-3-vi-corollary-1.10" class="itenv" title="Corollary 1.10">
+<p>Suppose that the residual characteristics of <eq env="math">S</eq> are all <eq env="math">0</eq>, so that <eq env="math">G^\tau=G^\sigma</eq> and <eq env="math">G^0=G^\rho</eq>.
+Then <eq env="math">G^\tau=G^\sigma</eq> is open, and even open and closed if <eq env="math">G</eq> is separated over <eq env="math">S</eq> and the <eq env="math">G_s^0</eq> are proper;
+under these same hypotheses, <eq env="math">G^0=G^\rho</eq> is proper over <eq env="math">S</eq> and thus closed in <eq env="math">G</eq>.
+Suppose finally that, for every integer <eq env="math">n&gt;1</eq>, the <eq env="math">n</eq>-th power homomorphism in <eq env="math">G</eq> is universally open, then <eq env="math">G^0</eq> is open;
+if furthermore the <eq env="math">G_s^0</eq> do not have any additive component (for example the <eq env="math">G_s^0</eq> are proper, as above), then <eq env="math">G^\tau\to S</eq> is universally open, and even simple if <eq env="math">S</eq> is reduced.</p>
+</div>
+<p>Finally we note the following easy result:</p>
+<div id="fga-3-vi-proposition-1.11" class="itenv" title="Proposition 1.11">
+<p>There exists an open subset <eq env="math">U</eq> of <eq env="math">S</eq> such that the set <eq env="math">G'</eq> of points of <eq env="math">G</eq> at which <eq env="math">G</eq> is simple (resp. flat) over <eq env="math">S</eq> is the underlying set of an open group subscheme induced by <eq env="math">G|U</eq>.
+Furthermore, every section of <eq env="math">G</eq> over <eq env="math">U</eq> is a section of <eq env="math">G'</eq> over <eq env="math">U</eq>.</p>
+</div>
+<div id="fga-3-vi-corollary-1.12" class="itenv" title="Corollary 1.12">
+<p>If <eq env="math">G</eq> is simple (resp. flat) over <eq env="math">S</eq> at the points of the identity section, then it is simple (resp. flat) at the points of every section of <eq env="math">G</eq> over <eq env="math">S</eq>, and at all points of <eq env="math">G^0</eq>.
+If, further, for every integer <eq env="math">n&gt;0</eq> the <eq env="math">n</eq>-th power homomorphism <eq env="math">\varphi_n\colon G\to G</eq> is étale at the points of characteristic coprime to <eq env="math">n</eq>, then <eq env="math">G</eq> is simple (resp. flat) over <eq env="math">S</eq> at all points of <eq env="math">G^\sigma</eq>.</p>
+</div>
+</div>
+<div id="fga-3-vi-section-2" class="section level2" number="8.2">
+<h2><span class="header-section-number">8.2</span> Application to the local properties of Picard schemes</h2>
+<div id="fga-3-vi-theorem-2.1" class="itenv" title="Theorem 2.1">
+<p>—</p>
+<ol style="list-style-type: lower-roman">
+<li>Let</li>
+</ol>
 </div>
 
 </div>
