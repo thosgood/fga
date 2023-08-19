@@ -10,6 +10,7 @@
 \providecommand{\red}{\mathrm{red}}
 \providecommand{\Ga}{\operatorname{G_a}}
 \providecommand{\Gm}{\operatorname{G_m}}
+\providecommand{\HH}{\operatorname{HH}}
 
 <!-- Shortcuts -->
 
@@ -359,5 +360,43 @@ We note that the result becomes false if we replace "codimension $\leq2$" by "co
 :::
 
 ::: {.itenv #fga-3-vi-corollary-2.3 title="Corollary 2.3" latex="{Corollary 2.3}"}
-Let
+Let $f\colon X\to S$ be a proper and normal morphism (i.e. flat with normal geometric fibres), and suppose that $\repPic_{X/S}$ exists.
+Then $\repPic_{X/S}^0$ is proper over $S$, thus closed in $\repPic_{X/S}$;
+furthermore, $\repPic_{X/S}^\tau$ and $\repPic_{X/S}^0$ are both closed, as is $\repPic_{X/S}^\sigma$ in "equal characteristic".
+:::
+
+::: {.proof}
+We apply [(1.1)](#fga-3-vi-theorem-1.1) and [(2.1), (ii)](#fga-3-vi-theorem-2.1).
+:::
+
+::: {.itenv #fga-3-vi-corollary-2.4 title="Corollary 2.4" latex="{Corollary 2.4}"}
+Let $f\colon X\to S$ be a proper and simple morphism such that $\repPic_{X/S}$ exists and is the sum of the schemes $P^{(i)}$ of finite type over $S$ (cf. [@Gro1959, V, 4.1]).
+Then each $P^{(i)}$ is proper over $S$.
+:::
+
+::: {.proof}
+This follows from [(2.1), (i)](#fga-3-vi-theorem-2.1).
+:::
+
+As we noted in [(2.2)](#fga-3-vi-remark-2.2), the above result can be generalised by making less restrictive hypotheses on the fibres of $f$, but becomes false if we only suppose $f$ to be normal.
+In this case, I do not know if $\repPic_{X/S}^\tau$ is nevertheless proper over $S$, even if assuming it to be of finite type over $S$.
+
+::: {.itenv #fga-3-vi-theorem-2.5 title="Theorem 2.5" latex="{Theorem 2.5}"}
+\oldpage{236-13}Let $f\colon X\to S$ be a proper and flat morphism such that $\repPic_{X/S}$ exists, and, for each integer $n$, let $\varphi_n$ be the $n$-th power homomorphism in this group prescheme.
+Then $\varphi_n$ is étale at all points $x\in X$ of residual characteristic coprime to $n$.
+:::
+
+By the infinitesimal characterisation of étale morphisms, the above claim is equivalent to the following:
+
+::: {.itenv #fga-3-vi-lemma-2.6 title="Lemma 2.6" latex="{Lemma 2.6}"}
+Suppose that $S$ is the spectrum of an Artinian local ring $A$ whose maximal ideal $\frak{m}$ is $(\nu+1)$-th power null, and let $A_{\nu-1}=A/\frak{m}^\nu$ and $X_{\nu-1}=X\otimes_A A_{\nu=1}$.
+Let $\scr{L}$ be an invertible module on $X$, and $\scr{L}'_{\nu-1}$ an invertible module on $X_{\nu-1}$ whose $n$-th tensor power is isomorphic to $\scr{L}_{\nu-1}=\scr{L}\otimes_A A_{\nu-1}$.
+Then there exists an invertible module $\src{L}'$ on $X$ whose $n$-th tensor power is isomorphic to $\scr{L}$ (if $n$ is coprime to the residual characteristic of $k=k(\scr{L})$).
+:::
+
+::: {.proof}
+Set $V=\frak{m}^\nu=\frak{m}^\nu/\frak{m}^{\nu+1}$, which is a vector space over $k=k(A)$.
+We start by extending $\scr{L}'_{\nu-1}$ to an arbitrary invertible module over $\scr{L}'$ on $X$.
+The obstruction to doing this is found in $\HH^2(X_0,\OO_{X_0})\otimes_k V$, but by the hypothesis on $\scr{L}'_{\nu-1}$ and the fact that $\scr{L}_{\nu-1}$ can be extended, we see that the product of this obstruction with $n$ is zero, and so the obstruction itself must be zero since $n$ is coprime to the characteristic.
+The
 :::
