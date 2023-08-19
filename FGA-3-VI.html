@@ -205,6 +205,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#supplements-to-the-previous-talk-fga-3.v"><i class="fa fa-check"></i>0. Supplements to the previous talk (FGA 3.V)</a></li>
 <li class="chapter" data-level="8.1" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#fga-3-vi-section-1"><i class="fa fa-check"></i><b>8.1</b> Topological properties of preschemes of commutative groups</a></li>
 <li class="chapter" data-level="8.2" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#fga-3-vi-section-2"><i class="fa fa-check"></i><b>8.2</b> Application to the local properties of Picard schemes</a></li>
+<li class="chapter" data-level="8.3" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#fga-3-vi-section-3"><i class="fa fa-check"></i><b>8.3</b> The canonical abelian subscheme of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>, and the Albanese scheme</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
 </ul>
@@ -617,7 +618,42 @@ We are inclined to conjecture that (<eq env="math">\ast</eq>) is an equality in 
 which should be satisfied whenever we have a group prescheme that is locally of finite type over locally Noetherian <eq env="math">S</eq>, in which the dimension of the fibres is constant (see <a href="FGA-3-VI.html#fga-3-vi-lemma-1.3">(1.3)</a> for a positive result in this direction).</p>
 </div>
 <div id="fga-3-vi-remark-2.9" class="rmenv" title="Remark 2.9">
-<p>In all known cases, <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq> is universally open over <eq env="math">S</eq>, but</p>
+<p>In all known cases, <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq> is universally open over <eq env="math">S</eq>, but we should probably not have excessive illusions, even if <eq env="math">f\colon X\to S</eq> is simple;
+in any case, Mumford has constructed an example (it is true with <eq env="math">S</eq> non-reduced, in fact with <eq env="math">S</eq> the spectrum of an Artinian ring) where <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq> is not flat over <eq env="math">S</eq>, by infinitesimally varying the Igusa surface.
+The point envisaged by Mumford can also be found in <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\rho</eq>, and it remains possible (for <eq env="math">f\colon X\to S</eq> simple) that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is flat over <eq env="math">S</eq> at the points of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\sigma</eq>;
+the speaker doubts, however, that this is always the case, even when restricting to the points of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^0</eq> and supposing <eq env="math">S</eq> to be the spectrum of a discrete valuation ring.
+The question is linked to the study of fixed points of an abelian scheme under a finite automorphism group, a situation for which we seem to lack examples.
+It seems that even by restricting to simple and projective <eq env="math">f\colon X\to S</eq>, the results of local regularity on <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> stated in the present section, and the conjectures raised in <a href="FGA-3-VI.html#fga-3-vi-remark-2.8">(2.8)</a>, basically exhaust what can be said on this subject without more particular hypotheses on the nature of the fibres of <eq env="math">f</eq>.
+We recall, however, that, if the geometric fibres of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> are <em>reduced</em> and have no additive component, then it follows from <a href="FGA-3-VI.html#fga-3-vi-corollary-1.8">(1.8)</a> and <a href="FGA-3-VI.html#fga-3-vi-theorem-2.5">(2.5)</a> that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is simple over <eq env="math">S</eq> at the points of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\sigma</eq> whenever <eq env="math">S</eq> is reduced;
+this result still holds even, if <eq env="math">f\colon X\to S</eq> is normal, without any hypothesis on <eq env="math">S</eq>, and we will see in <a href="#fga-3-vi-theorem-3.5">(3.5)</a>.
+On this note, we point out:</p>
+</div>
+<div id="fga-3-vi-proposition-2.10" class="itenv" title="Proposition 2.10">
+<p>—</p>
+<ol style="list-style-type: lower-roman">
+<li>If <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is simple (resp. flat) over <eq env="math">S</eq> at the points of the identity section, then it is simple (resp. flat) at all points of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\sigma</eq>, and at the points of every section of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> over <eq env="math">S</eq>.</li>
+<li>Let <eq env="math">s\in S</eq> be such that <eq env="math">\operatorname{H}^2(X_s,{\mathscr{O}}_{X_s})=0</eq>.
+Then there exists an open neighbourhood <eq env="math">U</eq> of <eq env="math">s</eq> such that <eq env="math">\underline{\operatorname{Pic}}_{X/S}|U</eq> is simple over <eq env="math">U</eq>.</li>
+<li>Let <eq env="math">X</eq> be a proper scheme over a field.
+Then we have
+<eq env="displaymath">
+    \dim\underline{\operatorname{Pic}}_{X/k}
+    \leqslant\dim\operatorname{H}^1(X,{\mathscr{O}}_X)
+  </eq>
+with equality if and only if <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq> is simple over <eq env="math">k</eq>;
+this is always the case if <eq env="math">k</eq> is of characteristic <eq env="math">0</eq>.</li>
+</ol>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-45" class="proof"><em>Proof</em>. </span>Claim (i) follows from <a href="FGA-3-VI.html#fga-3-vi-theorem-2.5">(2.5)</a> and <a href="FGA-3-VI.html#fga-3-vi-corollary-1.12">(1.12)</a>, and (ii) follows from the infinitesimal criteria for simple morphisms and a well-known obstruction calculation, taking into account the fact that (by the “semi-continuous theorem”) the hypothesis made on <eq env="math">s</eq> will still hold true for neighbouring points.
+Finally, (iii) follows from the fact that <eq env="math">\operatorname{H}^1(X,{\mathscr{O}}_X)</eq> is isomorphic to the Zariski tangent space at the identity element of <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq>;
+the last claim is a particular case of a theorem of Cartier, saying that a “formal group” in characteristic <eq env="math">0</eq> is formally simple over <eq env="math">k</eq>.</p>
+</div>
+</div>
+<div id="fga-3-vi-section-3" class="section level2" number="8.3">
+<h2><span class="header-section-number">8.3</span> The canonical abelian subscheme of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>, and the Albanese scheme</h2>
+<div id="fga-3-vi-proposition-3.1" class="itenv" title="Proposition 3.1">
+<p>Let</p>
 </div>
 
 </div>
