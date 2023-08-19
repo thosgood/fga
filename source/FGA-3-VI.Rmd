@@ -391,7 +391,7 @@ By the infinitesimal characterisation of étale morphisms, the above claim is eq
 ::: {.itenv #fga-3-vi-lemma-2.6 title="Lemma 2.6" latex="{Lemma 2.6}"}
 Suppose that $S$ is the spectrum of an Artinian local ring $A$ whose maximal ideal $\frak{m}$ is $(\nu+1)$-th power null, and let $A_{\nu-1}=A/\frak{m}^\nu$ and $X_{\nu-1}=X\otimes_A A_{\nu=1}$.
 Let $\scr{L}$ be an invertible module on $X$, and $\scr{L}'_{\nu-1}$ an invertible module on $X_{\nu-1}$ whose $n$-th tensor power is isomorphic to $\scr{L}_{\nu-1}=\scr{L}\otimes_A A_{\nu-1}$.
-Then there exists an invertible module $\src{L}'$ on $X$ whose $n$-th tensor power is isomorphic to $\scr{L}$ (if $n$ is coprime to the residual characteristic of $k=k(\scr{L})$).
+Then there exists an invertible module $\scr{L}'$ on $X$ whose $n$-th tensor power is isomorphic to $\scr{L}$ (if $n$ is coprime to the residual characteristic of $k=k(\scr{L})$).
 :::
 
 ::: {.proof}
@@ -432,7 +432,7 @@ If we denote by $\alpha$, $\mu$, and $\lambda$ the dimensions of the abelian, mu
 $$
   \alpha+\mu+\lambda
   \geq \alpha'+\mu'+\lambda'
-\tag{$\aster$}
+\tag{$\ast$}
 $$
 (satisfied provided that $\repPic_{X/S}$ exists, and thus probably in all cases), and this inequality, for $\lambda=\lambda'=0$, reduces to an equality, satisfied under the same existence hypotheses:
 $$
@@ -443,20 +443,20 @@ We also have
 $$
   2\alpha+\mu
   \leq 2\alpha'+\mu'
-\tag{$\aster\aster$}
+\tag{$\ast\ast$}
 $$
 \oldpage{236-15}by the argument of Serre, if the $X_s$ are separable (without even supposing the existence of $\repPic_{X/S}^\tau$), or if the ${}_n\repPic_{X/S}$ (kernels of the $\varphi_n$ into the Picard functor) are *separated* over $S$ (taking into account the fact that they are étale over $S$, thanks to [(2.5)](#fga-3-vi-theorem-2.5)).
-We are inclined to conjecture that ($\aster$) is an equality in all cases, or at least if the $X_s$ are separable, and also that we have inequalities
+We are inclined to conjecture that ($\ast$) is an equality in all cases, or at least if the $X_s$ are separable, and also that we have inequalities
 $$
   \begin{aligned}
     \alpha &\leq \alpha'
   \\\lambda &\geq \lambda'
   \end{aligned}
-\tag{$\aster\aster\aster$}
+\tag{$\ast\ast\ast$}
 $$
 which should be satisfied whenever we have a group prescheme that is locally of finite type over locally Noetherian $S$, in which the dimension of the fibres is constant (see [(1.3)](#fga-3-vi-lemma-1.3) for a positive result in this direction).
 :::
 
 ::: {.rmenv #fga-3-vi-remark-2.9 title="Remark 2.9" latex="{Remark 2.9}"}
-In
+In all known cases, $\repPic_{X/S}^\tau$ is universally open over $S$, but
 :::
