@@ -332,5 +332,32 @@ If, further, for every integer $n>0$ the $n$-th power homomorphism $\varphi_n\co
 ::: {.itenv #fga-3-vi-theorem-2.1 title="Theorem 2.1" latex="{Theorem 2.1}"}
 —
 
-i. Let
+i. Let $f\colon X\to S$ be a proper and simple morphism, and suppose that $\repPic_{X/S}$ exists (for example, if $f$ is projective).
+  Then $\repPic_{X/S}$ is separated over $S$, and, for every closed subset $Z$ of $\repPic_{X/S}$ that is of finite type over $S$, we have that $Z$ is proper over $S$.
+ii. Let $X$ be a prescheme over a field $k$ that is proper and geometrically normal.
+  Then $\repPic_{X/S}^0$ is proper over $k$.
+:::
+
+::: {.proof}
+For (i), with the valuative criteria of [@GD1960, II, §7] it suffices to prove the following: if $S$ is the spectrum of a complete discrete valuation ring, and $U$ the open consisting of the generic point of $S$, then every rational section of $\repPic_{X/S}$ over $S$, i.e. every section over $U$, extends uniquely to a section over $S$.
+Taking into account the definition of $\repPic_{X/S}$, this is equivalent to the following statement: for every invertible module $\scr{L}$ on $V=f^{-1}(U)$, there exists an invertible module on $X$ that extends $\scr{L}$, unique up to isomorphism.
+But this follows easily from the description of invertible modules on $V$ (resp. on $X$) in terms of the classes of "Cartier" divisors, taking into account the fact that the local rings of $X$ are regular (since $X$ is simple over $S$, which is regular), and thus factorial, by Auslander, which implies that every divisor on $S$ is a Cartier divisor.
+Indeed, every divisor on $V$ can be extended to a divisor on $X$ by taking its "closure".
+
+\oldpage{236-12}For (ii), using Chow's lemma we can reduce to the case where $X$ is projective, and thus embedded into some $\mathbb{P}_k^n$;
+we can also assume that $X$ is connected.
+If $\dim X=1$, then $X$ is simple over $k$, and we can apply (i).
+If $\dim X\geq2$, then we can use a variant of the known "equivalence criteria", which implies that there exists a finite number of curves $Y_i$, simple over $X$ (obtained as intersections of $X$ with suitable linear subspaces of $\mathbb{P}_k^n$), such that $\repPic_{X/k}^\tau\to\prod_i\repPic_{Y_i/k}^\tau$ is a monomorphism, and induces a fortiori a monomorphism for the connected components.
+Since the codomain is proper over $k$ by the above, and since we are talking about a homomorphism of group schemes, which is necessarily a closed immersion, it follows that $\repPic_{X/k}^0$ is also proper over $k$.
+We can avoid recourse to delicate equivalence criteria by using the structure of commutative algebraic groups over an algebraically closed field (thanks to Chevalley--Borel);
+we are then reduced to proving that every morphism from the affine line into $\repPic_{X/S}^\tau$ is constant, which is equivalent to saying that every invertible module on $X[t]$ comes from an invertible module on $X$, which is a result that is well known and elementary and does not even use the fact that $X$ is proper over $k$ (the hypothesis that $X$ is normal allowing us to immediately reduce to the case where $X$ is regular).
+:::
+
+::: {.rmenv #fga-3-vi-remark-2.2 title="Remark 2.2" latex="{Remark 2.2}"}
+The above proof of (i) holds true even if we only suppose that $f$ is flat and that its fibres $X_s$ are locally complete intersections and simple over $k(s)$ in codimension $\leq2$, taking into account the following fact which is proven in [@Gro1960b]: a Noetherian complete intersection local ring that is regular in codimension $\leq3$ is factorial ("Samuel's conjecture").
+We note that the result becomes false if we replace "codimension $\leq2$" by "codimension $\leq1$", i.e. by the hypothesis "normal", as we can convince ourself by considering the example of a family of non-singular quadratics that degenerate to a quadratic cone.
+:::
+
+::: {.itenv #fga-3-vi-corollary-2.3 title="Corollary 2.3" latex="{Corollary 2.3}"}
+Let
 :::
