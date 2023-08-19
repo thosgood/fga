@@ -458,5 +458,42 @@ which should be satisfied whenever we have a group prescheme that is locally of 
 :::
 
 ::: {.rmenv #fga-3-vi-remark-2.9 title="Remark 2.9" latex="{Remark 2.9}"}
-In all known cases, $\repPic_{X/S}^\tau$ is universally open over $S$, but
+In all known cases, $\repPic_{X/S}^\tau$ is universally open over $S$, but we should probably not have excessive illusions, even if $f\colon X\to S$ is simple;
+in any case, Mumford has constructed an example (it is true with $S$ non-reduced, in fact with $S$ the spectrum of an Artinian ring) where $\repPic_{X/S}^\tau$ is not flat over $S$, by infinitesimally varying the Igusa surface.
+The point envisaged by Mumford can also be found in $\repPic_{X/S}^\rho$, and it remains possible (for $f\colon X\to S$ simple) that $\repPic_{X/S}$ is flat over $S$ at the points of $\repPic_{X/S}^\sigma$;
+the speaker doubts, however, that this is always the case, even when restricting to the points of $\repPic_{X/S}^0$ and supposing $S$ to be the spectrum of a discrete valuation ring.
+The question is linked to the study of fixed points of an abelian scheme under a finite automorphism group, a situation for which we seem to lack examples.
+It seems that even by restricting to simple and projective $f\colon X\to S$, the results of local regularity on $\repPic_{X/S}$ stated in the present section, and the conjectures raised in [(2.8)](#fga-3-vi-remark-2.8), basically exhaust what can be said on this subject without more particular hypotheses on the nature of the fibres of $f$.
+We recall, however, that, if the geometric fibres of $\repPic_{X/S}$ are *reduced* and have no additive component, then it follows from [(1.8)](#fga-3-vi-corollary-1.8) and [(2.5)](#fga-3-vi-theorem-2.5) that $\repPic_{X/S}$ is simple over $S$ at the points of $\repPic_{X/S}^\sigma$ whenever $S$ is reduced;
+this result still holds even, if $f\colon X\to S$ is normal, without any hypothesis on $S$, and we will see in [(3.5)](#fga-3-vi-theorem-3.5).
+On this note, we point out:
+:::
+
+::: {.itenv #fga-3-vi-proposition-2.10 title="Proposition 2.10" latex="{Proposition 2.10}"}
+—
+
+i. If $\repPic_{X/S}$ is simple (resp. flat) over $S$ at the points of the identity section, then it is simple (resp. flat) at all points of $\repPic_{X/S}^\sigma$, and at the points of every section of $\repPic_{X/S}$ over $S$.
+ii. \oldpage{236-16}Let $s\in S$ be such that $\HH^2(X_s,\OO_{X_s})=0$.
+  Then there exists an open neighbourhood $U$ of $s$ such that $\repPic_{X/S}|U$ is simple over $U$.
+iii. Let $X$ be a proper scheme over a field.
+  Then we have
+  $$
+    \dim\repPic_{X/k}
+    \leq \dim\HH^1(X,\OO_X)
+  $$
+  with equality if and only if $\repPic_{X/k}$ is simple over $k$;
+  this is always the case if $k$ is of characteristic $0$.
+:::
+
+::: {.proof}
+Claim (i) follows from [(2.5)](#fga-3-vi-theorem-2.5) and [(1.12)](#fga-3-vi-corollary-1.12), and (ii) follows from the infinitesimal criteria for simple morphisms and a well-known obstruction calculation, taking into account the fact that (by the "semi-continuous theorem") the hypothesis made on $s$ will still hold true for neighbouring points.
+Finally, (iii) follows from the fact that $\HH^1(X,\OO_X)$ is isomorphic to the Zariski tangent space at the identity element of $\repPic_{X/k}$;
+the last claim is a particular case of a theorem of Cartier, saying that a "formal group" in characteristic $0$ is formally simple over $k$.
+:::
+
+
+## The canonical abelian subscheme of $\repPic_{X/S}$, and the Albanese scheme {#fga-3-vi-section-3}
+
+::: {.itenv #fga-3-vi-proposition-3.1 title="Proposition 3.1" latex="{Proposition 3.1}"}
+Let
 :::
