@@ -563,7 +563,61 @@ Then there exists an invertible module <eq env="math">\src{L}'</eq> on <eq env="
 <p><span id="unlabeled-div-42" class="proof"><em>Proof</em>. </span>Set <eq env="math">V={\mathfrak{m}}^\nu={\mathfrak{m}}^\nu/{\mathfrak{m}}^{\nu+1}</eq>, which is a vector space over <eq env="math">k=k(A)</eq>.
 We start by extending <eq env="math">{\mathscr{L}}'_{\nu-1}</eq> to an arbitrary invertible module over <eq env="math">{\mathscr{L}}'</eq> on <eq env="math">X</eq>.
 The obstruction to doing this is found in <eq env="math">\operatorname{H}^2(X_0,{\mathscr{O}}_{X_0})\otimes_k V</eq>, but by the hypothesis on <eq env="math">{\mathscr{L}}'_{\nu-1}</eq> and the fact that <eq env="math">{\mathscr{L}}_{\nu-1}</eq> can be extended, we see that the product of this obstruction with <eq env="math">n</eq> is zero, and so the obstruction itself must be zero since <eq env="math">n</eq> is coprime to the characteristic.
-The</p>
+The arbitrariness of the extension is found in <eq env="math">\operatorname{H}^1(X_0,{\mathscr{O}}_{X_0})\otimes_k V</eq>, and the deviation <eq env="math">\xi</eq> of <eq env="math">{{\mathscr{L}}'}^{\otimes n}</eq> from <eq env="math">{\mathscr{L}}</eq> is found in the same module;
+if we try to correct <eq env="math">{\mathscr{L}}'</eq> in such a way as to render this deviation zero, then we are led to finding some <eq env="math">\eta</eq> in the aforementioned module such that <eq env="math">n\eta=\xi</eq>.
+But this is again possible thanks to the fact that <eq env="math">n</eq> is coprime to the characteristic.</p>
+</div>
+<div id="fga-3-vi-corollary" class="itenv" title="Corollary">
+<p>Under the conditions of <a href="FGA-3-VI.html#fga-3-vi-theorem-2.5">(2.5)</a>, suppose further that the Picard schemes of the fibres <eq env="math">X_s</eq> do not contain any additive component (for example, if the <eq env="math">X_s</eq> are geometrically normal, cf. <a href="FGA-3-VI.html#fga-3-vi-theorem-2.1">(2.1), (ii)</a>).
+Then <eq env="math">\underline{\operatorname{Pic}}_{X/S}\to S</eq> is universally open at the points of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\sigma</eq>.
+If <eq env="math">\underline{\operatorname{Pic}}_{X/S}^0</eq> is closed (for example, if the <eq env="math">X_s</eq> are geometrically normal, cf. <a href="FGA-3-VI.html#fga-3-vi-corollary-2.3">(2.3)</a>), then <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\sigma</eq> is itself universally open over <eq env="math">S</eq>.
+Finally, in the case of equal characteristic, <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\rho\to S</eq> is universally open.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-43" class="proof"><em>Proof</em>. </span>We apply <a href="FGA-3-VI.html#fga-3-vi-corollary-1.5">(1.5)</a> and <a href="FGA-3-VI.html#fga-3-vi-theorem-1.1">(1.1)</a>.</p>
+</div>
+<div id="fga-3-vi-corollary-2.7" class="itenv" title="Corollary 2.7">
+<p>Let <eq env="math">f\colon X\to Y</eq> be a proper and flat morphism such that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists.
+Then the function <eq env="math">s\mapsto\dim\underline{\operatorname{Pic}}_{X_s/k(s)}</eq> on <eq env="math">S</eq> is upper semi-continuous (i.e. it can jump upwards, but not downwards), and it is even continuous (i.e. locally constant) if the <eq env="math">\underline{\operatorname{Pic}}_{X_s/k(s)}</eq> do not contain any additive component.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-44" class="proof"><em>Proof</em>. </span>The first claim is trivially true, or almost so, for every group prescheme locally of finite type over a locally Noetherian base, since it suffices to look along the identity section.
+The second claim follows from <a href="FGA-3-VI.html#fga-3-vi-theorem-2.5">(2.5)</a>.</p>
+</div>
+<div id="fga-3-vi-remark-2.8" class="rmenv" title="Remark 2.8">
+<p>Let <eq env="math">s,s'\in S</eq> be such that <eq env="math">s</eq> is a specialisation of <eq env="math">s'</eq>.
+Then <a href="FGA-3-VI.html#fga-3-vi-corollary-2.7">(2.7)</a> is equivalent to an inequality (resp. equality) between the dimensions of the Picard schemes of <eq env="math">X_{s'}</eq> and of its “specialisation” <eq env="math">X_s</eq>.
+Serre noted, even before the construction of Picard schemes, that the invariance of the dimensions of the Picard varieties of the <eq env="math">X_s</eq> in the case of a <em>simple</em> morphism <eq env="math">f\colon X\to S</eq> was a formal consequence of the theory of specialisation of the fundamental group (<span class="citation">[<a href="#ref-Gro1960b" role="doc-biblioref">10</a>, X]</span>), classical relations à la Kummer between the points of finite order on the Picard variety, and the abelianisation of the fundamental group (<span class="citation">[<a href="#ref-Gro1960b" role="doc-biblioref">10</a>, XI]</span>).
+If we denote by <eq env="math">\alpha</eq>, <eq env="math">\mu</eq>, and <eq env="math">\lambda</eq> the dimensions of the abelian, multiplicative, and additive parts (respectively) of <eq env="math">\underline{\operatorname{Pic}}_{X_s/k(s)}</eq>, and we similarly define <eq env="math">\alpha'</eq>, <eq env="math">\mu'</eq>, and <eq env="math">\lambda'</eq>, then the known relations can be expressed as the following inequalities:
+<eq env="displaymath">
+  \alpha+\mu+\lambda
+  \geqslant\alpha'+\mu'+\lambda'
+\tag{$\aster$}
+</eq>
+(satisfied provided that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists, and thus probably in all cases), and this inequality, for <eq env="math">\lambda=\lambda'=0</eq>, reduces to an equality, satisfied under the same existence hypotheses:
+<eq env="displaymath">
+  \alpha+\mu
+  = \alpha'+\mu'.
+</eq>
+We also have
+<eq env="displaymath">
+  2\alpha+\mu
+  \leqslant 2\alpha'+\mu'
+\tag{$\aster\aster$}
+</eq>
+by the argument of Serre, if the <eq env="math">X_s</eq> are separable (without even supposing the existence of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq>), or if the <eq env="math">{}_n\underline{\operatorname{Pic}}_{X/S}</eq> (kernels of the <eq env="math">\varphi_n</eq> into the Picard functor) are <em>separated</em> over <eq env="math">S</eq> (taking into account the fact that they are étale over <eq env="math">S</eq>, thanks to <a href="FGA-3-VI.html#fga-3-vi-theorem-2.5">(2.5)</a>).
+We are inclined to conjecture that (<eq env="math">\aster</eq>) is an equality in all cases, or at least if the <eq env="math">X_s</eq> are separable, and also that we have inequalities
+<eq env="displaymath">
+  \begin{aligned}
+    \alpha &amp;\leqslant\alpha'
+  \\\lambda &amp;\geqslant\lambda'
+  \end{aligned}
+\tag{$\aster\aster\aster$}
+</eq>
+which should be satisfied whenever we have a group prescheme that is locally of finite type over locally Noetherian <eq env="math">S</eq>, in which the dimension of the fibres is constant (see <a href="FGA-3-VI.html#fga-3-vi-lemma-1.3">(1.3)</a> for a positive result in this direction).</p>
+</div>
+<div id="fga-3-vi-remark-2.9" class="rmenv" title="Remark 2.9">
+<p>In</p>
 </div>
 
 </div>
