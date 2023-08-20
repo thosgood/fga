@@ -736,7 +736,25 @@ A fortiori, <eq env="math">\underline{\operatorname{Pic}}_{X|U/U}^{00}</eq> exis
 </div>
 <div class="proof">
 <p><span id="unlabeled-div-49" class="proof"><em>Proof</em>. </span>We describe the principle of the proof.
-The above</p>
+The above allows us to reduce to the case where <eq env="math">S</eq> is the spectrum of an Artinian local ring <eq env="math">A</eq>, and we argue by induction on the infinitesimal order of <eq env="math">A</eq>.
+We can thus suppose that <eq env="math">\underline{\operatorname{Pic}}_{X_n/A_n}^0</eq> is simple over <eq env="math">A_n</eq>, and reduce to proving that <eq env="math">\underline{\operatorname{Pic}}_{X_{n+1}/A_{n+1}}^0</eq> is simple over <eq env="math">A_{n+1}</eq>.
+Note that, for this, it suffices to construct an abelian scheme <eq env="math">P_{n+1}</eq> over <eq env="math">A_{n+1}</eq> that extends <eq env="math">P_n=\underline{\operatorname{Pic}}_{X_n/A_n}^0</eq>, along with an invertible module <eq env="math">{\mathscr{L}}_{n+1}</eq> on <eq env="math">X_{n+1}\times_{A_{n+1}}P_{n+1}</eq> that extends the invertible module <eq env="math">{\mathscr{L}}_n</eq> on <eq env="math">X_n\times_{A_n}P_n</eq> that arises in the definition of the Picard scheme <eq env="math">\underline{\operatorname{Pic}}_{X_n/A_n}</eq> as the solution to a universal problem.
+(N.B. We can suppose that <eq env="math">X</eq> is endowed with a section over <eq env="math">S</eq>…).
+For this construction, we must use the following key result: <em>every abelian scheme defined over a quotient of an Artinian local ring can be extended</em> (in other words, the absolute “formal scheme of modules” (<span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, II]</span>) for an abelian scheme over an algebraically closed field is simple over the ring of Witt vectors over <eq env="math">k</eq>);
+this result can be obtained by using the general formal properties of the obstruction to lifting, and the group operations.
+With this result, we start by extending <eq env="math">P_n</eq> arbitrarily to <eq env="math">P_{n+1}</eq>;
+we then find an obstruction to lifting <eq env="math">{\mathscr{L}}_n</eq>, found in <eq env="math">\operatorname{H}^2(X_0\times P_0,{\mathscr{O}}_{X_0\times P_0})\otimes_k V</eq> (where <eq env="math">V={\mathfrak{m}}^{n+1}/{\mathfrak{m}}^{n+2}</eq>), and more precisely in the subspace <eq env="math">\operatorname{H}^1(X_0,{\mathscr{O}}_{X_0})\otimes\operatorname{H}^1(P_0,{\mathscr{O}}_{P_0})\otimes_k V</eq> (taking into account the fact that the restriction of <eq env="math">{\mathscr{L}}_n</eq> to the two factors <eq env="math">X_n</eq> and <eq env="math">P_n</eq> is trivial).
+But this latter space is exactly <eq env="math">\operatorname{H}^1(P_0,{\mathscr{G}}_{P_0/k})\otimes V</eq>, where <eq env="math">{\mathscr{G}}_{P_0/k}</eq> is the tangent sheaf to <eq env="math">P_0/k</eq>, and thus also the space that expresses the indeterminacy that there was in the lifting of <eq env="math">P_n</eq> to <eq env="math">P_{n+1}</eq> (<span class="citation">[<a href="#ref-Gro1959" role="doc-biblioref">8</a>, II]</span>).
+So we can correct this lifting (in exactly one way, as should be the case) in such a way as to kill the obstruction to lifting <eq env="math">{\mathscr{L}}_n</eq>.</p>
+</div>
+<div id="fga-3-vi-corollary-3.6" class="itenv" title="Corollary 3.6">
+<p>Under the conditions of <a href="FGA-3-VI.html#fga-3-vi-theorem-3.5">(3.5)</a>, <eq env="math">\operatorname{R}^1 f_*({\mathscr{O}}_X)</eq> is a locally free module on <eq env="math">S</eq> in a neighbourhood of <eq env="math">s</eq>, and its formation commutes with base change.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-50" class="proof"><em>Proof</em>. </span>This module is exactly the tangent module to <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> along the identity section.</p>
+</div>
+<div id="fga-3-vi-remark-3.7" class="rmenv" title="Remark 3.7">
+<p>Using</p>
 </div>
 
 </div>
