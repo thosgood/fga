@@ -301,7 +301,7 @@ These are open subgroups of <eq env="math">G</eq> that satisfy
 Note that <eq env="math">N</eq> is a discrete group scheme that is separable over <eq env="math">k</eq>, thus (once we have chosen an algebraic closure <eq env="math">\overline{k}</eq> of <eq env="math">k</eq>, giving rise to a Galois group <eq env="math">\pi</eq>) can be identified with an ordinary discrete group on which <eq env="math">\pi</eq> acts by automorphisms.
 It is in this way that we can interpret, in an evident way, the construction of the torsion subgroup and the decomposition of this into its <eq env="math">q</eq>-primary components.
 If <eq env="math">G</eq> is the Picard scheme of a proper scheme <eq env="math">X</eq> over <eq env="math">k</eq>, then <eq env="math">N</eq> could be called the (reduced) <em>Néron–Severi scheme</em> of <eq env="math">X</eq> over <eq env="math">k</eq>.
-If <eq env="math">G_\mathrm{red}^0</eq> is a sub-group scheme of <eq env="math">G^0</eq>, which is the case whenever, in particular, <eq env="math">k</eq> is parfait, or <eq env="math">G^0</eq> is proper over <eq env="math">k</eq> (for example if <eq env="math">X</eq> is geometrically normal), then we can equally introduce the quotient <eq env="math">N'=G/G_\mathrm{red}^0</eq>, which has the tendency to behave better than <eq env="math">N</eq> from the specialisation point of view, i.e. as <eq env="math">X</eq> varies over a family of algebraic schemes.</p>
+If <eq env="math">G_\mathrm{red}^0</eq> is a group subscheme of <eq env="math">G^0</eq>, which is the case whenever, in particular, <eq env="math">k</eq> is parfait, or <eq env="math">G^0</eq> is proper over <eq env="math">k</eq> (for example if <eq env="math">X</eq> is geometrically normal), then we can equally introduce the quotient <eq env="math">N'=G/G_\mathrm{red}^0</eq>, which has the tendency to behave better than <eq env="math">N</eq> from the specialisation point of view, i.e. as <eq env="math">X</eq> varies over a family of algebraic schemes.</p>
 </div>
 <p>Now let <eq env="math">S</eq> be a locally Noetherian prescheme, and <eq env="math">G</eq> a group prescheme over <eq env="math">S</eq> that is locally of finite type over <eq env="math">S</eq>.
 We do not assume <eq env="math">G</eq> to be of finite type over <eq env="math">S</eq>, nor separated over <eq env="math">S</eq>.
@@ -349,7 +349,7 @@ The fact that <eq env="math">G^0</eq> is locally constructible, and quasi-compac
 <div class="proof">
 <p><span id="unlabeled-div-34" class="proof"><em>Proof</em>. </span>To prove this lemma, we can suppose that <eq env="math">S</eq> is irreducible;
 let <eq env="math">\eta</eq> be its generic point.
-If we make the base change <eq env="math">S'=\operatorname{Spec}({\mathscr{O}}_{S,\eta})\to S</eq> then we find a group scheme <eq env="math">G'</eq> over a local Artinian ring <eq env="math">{\mathscr{O}}_{S,s}=A</eq> inside which we have an <em>open</em> sub-group scheme <eq env="math">{G'}^0</eq> <em>of finite type over <eq env="math">A</eq></em>, as we said above.
+If we make the base change <eq env="math">S'=\operatorname{Spec}({\mathscr{O}}_{S,\eta})\to S</eq> then we find a group scheme <eq env="math">G'</eq> over a local Artinian ring <eq env="math">{\mathscr{O}}_{S,s}=A</eq> inside which we have an <em>open</em> group subscheme <eq env="math">{G'}^0</eq> <em>of finite type over <eq env="math">A</eq></em>, as we said above.
 This thus comes from a group scheme <eq env="math">H</eq> of finite type over an open neighbourhood <eq env="math">U</eq> of <eq env="math">\eta</eq>, and the canonical immersion <eq env="math">{G'}^0\to G'</eq> comes from an open immersion <eq env="math">H\to G|U</eq>, which will be a homomorphism of group schemes for <eq env="math">U</eq> small enough.
 Since the fibres of <eq env="math">H</eq> are connected if we take <eq env="math">U</eq> small enough, and since they are all of the same dimension, namely that of the fibres of <eq env="math">G</eq>, for <eq env="math">U</eq> small enough, it follows that, for all <eq env="math">s\in U</eq>, the image of <eq env="math">H_s</eq> in <eq env="math">G_s</eq> is exactly <eq env="math">G_s^0</eq> (for <eq env="math">U</eq> small enough), which proves the lemma.</p>
 </div>
@@ -657,7 +657,30 @@ the last claim is a particular case of a theorem of Cartier, saying that a “fo
 Then <eq env="math">G_\mathrm{red}^0</eq> is separable over <eq env="math">k</eq>, and thus a simple group scheme over <eq env="math">k</eq>&gt;</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-46" class="proof"><em>Proof</em>. </span>The</p>
+<p><span id="unlabeled-div-46" class="proof"><em>Proof</em>. </span>Since the claim is trivial if <eq env="math">k</eq> is perfect, and in particular for <eq env="math">G_{\overline{k}}</eq>, where <eq env="math">\overline{k}</eq> is the algebraic closure of <eq env="math">k</eq>, it suffices to show that <eq env="math">(G_{\overline{k}}^0)_\mathrm{red}</eq> comes from a subscheme of <eq env="math">G</eq>.
+But the hypothesis that <eq env="math">G_{\overline{k}}</eq> contains no additive component easily implies that there exists an integer <eq env="math">m</eq> such that <eq env="math">(G_{\overline{k}}^0)_\mathrm{red}</eq> is the “scheme-theoretic” image of the <eq env="math">m</eq>-th power homomorphism in <eq env="math">G_{\overline{k}}</eq>.
+Since the latter homomorphism comes from the analogous homomorphism for <eq env="math">G</eq>, the scheme-theoretic image of this provides the desired object.</p>
+</div>
+<div id="fga-3-vi-corollary-3.2" class="itenv" title="Corollary 3.2">
+<p>Let <eq env="math">X</eq> be a normal and proper scheme over <eq env="math">k</eq> such that <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq> exists.
+Then there exists an abelian subscheme of <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq> whose underlying set is <eq env="math">\underline{\operatorname{Pic}}_{X/k}^0</eq>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-47" class="proof"><em>Proof</em>. </span>By <a href="FGA-3-VI.html#fga-3-vi-theorem-2.1">(2.1), (ii)</a>, since <eq env="math">\underline{\operatorname{Pic}}_{X/k}^0</eq> is proper over <eq env="math">k</eq>, it satisfies the conditions of <a href="FGA-3-VI.html#fga-3-vi-proposition-3.1">(3.1)</a>.</p>
+</div>
+<p>The above result shows that, in certain cases, the classical “Picard variety” (which is <eq env="math">(\underline{\operatorname{Pic}}_{X/\overline{k}})_\mathrm{red}^0</eq> in the current theory) “is defined over <eq env="math">k</eq>”, without supposing the field <eq env="math">k</eq> to be perfect.</p>
+<p>Now let <eq env="math">f\colon X\to S</eq> be a proper and flat relative scheme, with <eq env="math">{\mathscr{O}}_S\xrightarrow{\sim}f_*({\mathscr{O}}_X)</eq> for simplicity, such that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists and that <eq env="math">\underline{\operatorname{Pic}}_{X/S}^0</eq> is proper over <eq env="math">S</eq>.
+Suppose further, for <a href="FGA-3-VI.html#fga-3-vi-theorem-3.3">(3.3), (ii)</a>, that there exists an open of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> containing <eq env="math">\underline{\operatorname{Pic}}_{X/S}^0</eq> that is quasi-projective over <eq env="math">S</eq>;
+this condition is satisfied, as we have seen, if <eq env="math">f</eq> is projective and with separable or irreducible geometric fibres.
+Recall that an <em>abelian scheme</em> over <eq env="math">S</eq> is a group scheme over <eq env="math">S</eq> that is proper and simple over <eq env="math">S</eq> with connected geometric fibres.
+We propose to examine whether or not there exists a group subscheme <eq env="math">A</eq> of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> that is an abelian scheme and whose underlying set is <eq env="math">\underline{\operatorname{Pic}}_{X/S}^0</eq>.
+We have just seen that such an <eq env="math">A</eq> always exists if <eq env="math">S</eq> is the spectrum of a field.
+Here is what we know how to say in the general case envisaged here:</p>
+<div id="fga-3-vi-theorem-3.3" class="itenv" title="Theorem 3.3">
+<p>Under the above conditions:</p>
+<ol style="list-style-type: lower-roman">
+<li>If</li>
+</ol>
 </div>
 
 </div>
