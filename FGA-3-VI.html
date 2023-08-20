@@ -625,7 +625,7 @@ the speaker doubts, however, that this is always the case, even when restricting
 The question is linked to the study of fixed points of an abelian scheme under a finite automorphism group, a situation for which we seem to lack examples.
 It seems that even by restricting to simple and projective <eq env="math">f\colon X\to S</eq>, the results of local regularity on <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> stated in the present section, and the conjectures raised in <a href="FGA-3-VI.html#fga-3-vi-remark-2.8">(2.8)</a>, basically exhaust what can be said on this subject without more particular hypotheses on the nature of the fibres of <eq env="math">f</eq>.
 We recall, however, that, if the geometric fibres of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> are <em>reduced</em> and have no additive component, then it follows from <a href="FGA-3-VI.html#fga-3-vi-corollary-1.8">(1.8)</a> and <a href="FGA-3-VI.html#fga-3-vi-theorem-2.5">(2.5)</a> that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is simple over <eq env="math">S</eq> at the points of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\sigma</eq> whenever <eq env="math">S</eq> is reduced;
-this result still holds even, if <eq env="math">f\colon X\to S</eq> is normal, without any hypothesis on <eq env="math">S</eq>, and we will see in <a href="#fga-3-vi-theorem-3.5">(3.5)</a>.
+this result still holds even, if <eq env="math">f\colon X\to S</eq> is normal, without any hypothesis on <eq env="math">S</eq>, and we will see in <a href="FGA-3-VI.html#fga-3-vi-theorem-3.5">(3.5)</a>.
 On this note, we point out:</p>
 </div>
 <div id="fga-3-vi-proposition-2.10" class="itenv" title="Proposition 2.10">
@@ -685,7 +685,7 @@ Its formation is thus compatible with base change.</li>
 if <eq env="math">S</eq> is the spectrum of a local ring, it even suffices to test with the <eq env="math">S'=\operatorname{Spec}(A_n)</eq> where <eq env="math">A_n=A/{\mathfrak{m}}^{n+1}</eq>.
 If <eq env="math">S</eq> is reduced, then it equally suffices to test with the <eq env="math">S'</eq> that are the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one desires).</li>
 <li>Suppose that <eq env="math">A</eq> exists, and let <eq env="math">B=\operatorname{Alb}^0(X/S)</eq> be the dual abelian scheme (i.e. <eq env="math">B=\operatorname{Pic}_{A/S}^0</eq> [-]<a href="#fn17" class="footnote-ref" id="fnref17"><sup>17</sup></a>).
-Then we can canonically construct a principal homogeneous space <eq env="math">P=\Alp^1(X/S)</eq> for <eq env="math">B</eq>, and an <eq env="math">S</eq>-morphism <eq env="math">X\to P</eq> that is universal for the <eq env="math">S</eq>-morphisms from <eq env="math">X</eq> to para-abelian schemes (i.e. to principal homogeneous spaces for abelian schemes).
+Then we can canonically construct a principal homogeneous space <eq env="math">P=\operatorname{Alb}^1(X/S)</eq> for <eq env="math">B</eq>, and an <eq env="math">S</eq>-morphism <eq env="math">X\to P</eq> that is universal for the <eq env="math">S</eq>-morphisms from <eq env="math">X</eq> to para-abelian schemes (i.e. to principal homogeneous spaces for abelian schemes).
 The formation of <eq env="math">\operatorname{Alb}^0(X/S)</eq>, <eq env="math">\operatorname{Alb}^1(X/S)</eq>, and <eq env="math">X\to\operatorname{Alb}^1(X/S)</eq> commutes with base change.</li>
 </ol>
 </div>
@@ -705,7 +705,38 @@ Whence immediately (iii).</li>
 </ol>
 </div>
 <div id="fga-3-vi-remarks-3.4" class="rmenv" title="Remarks 3.4">
-<p>We</p>
+<p>We denote by <eq env="math">\underline{\operatorname{Pic}}_{X/S}^{00}</eq> the canonical abelian subscheme of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>, if it exists.
+This is, unfortunately, not always the case, as we can see by infinitesimally varying the Igusa surface (by first-order modular deformation).
+It is however possible that <eq env="math">\underline{\operatorname{Pic}}_{X/S}^{00}</eq> exists at least if <eq env="math">S</eq> is reduced, or, equivalently, by (ii), if <eq env="math">S</eq> is the spectrum of a discrete valuation ring.
+So let <eq env="math">X_0</eq> and <eq env="math">X_1</eq> be the special and generic fibres of <eq env="math">X</eq> (respectively), and let <eq env="math">A_1=\underline{\operatorname{Pic}}_{X_1/K_1}</eq>, where <eq env="math">K</eq> is the field of fractions of the valuation ring <eq env="math">V</eq>.
+By Koizumi, there exists an abelian scheme <eq env="math">A</eq> over <eq env="math">S</eq>, essentially unique, whose general fibre is <eq env="math">A_1</eq>, and we easily see as in <a href="FGA-3-VI.html#fga-3-vi-theorem-2.1">(2.1), (i)</a> (supposing from now on that <eq env="math">X</eq> is simple over <eq env="math">S</eq>) that the identity morphism of <eq env="math">A_1</eq> extends to a morphism
+<eq env="displaymath">
+  A \to \underline{\operatorname{Pic}}_{X/S}.
+</eq>
+From this, we obtain a homomorphism
+<eq env="displaymath">
+  A_0 \to \underline{\operatorname{Pic}}_{X_0/k}^{00}
+\tag{$\ast$}
+</eq>
+which we can easily show to be a surjective homomorphism with kernel equal to a finite <eq env="math">p</eq>-group, where <eq env="math">p</eq> is the characteristic of the residue field <eq env="math">k</eq> (still by using the points of finite order).
+With this, the following conditions on <eq env="math">X/S</eq> are equivalent:</p>
+<ol style="list-style-type: lower-alpha">
+<li>The above homomorphism (<eq env="math">\ast</eq>) is an isomorphism (which Shimura expresses by saying that the formation of the “Picard variety” is “compatible with specialisations”).</li>
+<li><eq env="math">\underline{\operatorname{Pic}}_{X/S}^{00}</eq> exists (and is then exactly <eq env="math">A</eq>).</li>
+<li>(For memory) The <eq env="math">\underline{\operatorname{Pic}}_{X_n/S}^{00}</eq> exist.</li>
+</ol>
+<p>By the remark that we made concerning the kernel of (<eq env="math">\ast</eq>), condition (a) is satisfied if the residual characteristic is zero, but this result will be notably generalised in <a href="FGA-3-VI.html#fga-3-vi-theorem-3.5">(3.5)</a>.</p>
+<p>Of course, if <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is simple over <eq env="math">S</eq> at the points of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^0</eq>, then the latter is open in <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> (cf. <a href="FGA-3-VI.html#fga-3-vi-corollary-1.7">(1.7)</a>) and is thus, endowed with the induced structure, an abelian subscheme of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>, and thus equal to <eq env="math">\underline{\operatorname{Pic}}_{X/S}^{00}</eq>, which exists in this case.
+But we have much better:</p>
+</div>
+<div id="fga-3-vi-theorem-3.5" class="itenv" title="Theorem 3.5">
+<p>Under the conditions of <a href="FGA-3-VI.html#fga-3-vi-theorem-3.3">(3.3)</a>, let <eq env="math">s\in S</eq> be such that <eq env="math">\underline{\operatorname{Pic}}_{X_s/k(s)}</eq> is simple over <eq env="math">k(s)</eq> (or, equivalently, such that <eq env="math">\dim\underline{\operatorname{Pic}}_{X_s/k(s)}=\dim\operatorname{H}^1(X_s,{\mathscr{O}}_{X_s})</eq>).
+Then there exists an open neighbourhood <eq env="math">U</eq> of <eq env="math">s</eq> such that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is simple over <eq env="math">S</eq> at the points of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^0|U</eq>, which is thus an open abelian subscheme in <eq env="math">\underline{\operatorname{Pic}}_{X/S}|U</eq>.
+A fortiori, <eq env="math">\underline{\operatorname{Pic}}_{X|U/U}^{00}</eq> exists.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-49" class="proof"><em>Proof</em>. </span>We describe the principle of the proof.
+The above</p>
 </div>
 
 </div>
@@ -735,7 +766,7 @@ Whence immediately (iii).</li>
 <div class="csl-left-margin">[7] </div><div class="csl-right-inline">A. Grothendieck. <span>“Géométrie formelle et géométrie algébrique.”</span> <em>Séminaire Bourbaki</em>. <strong>11</strong> (1958/59), Talk no. 182.</div>
 </div>
 <div class="csl-entry">
-<div class="csl-left-margin">[8] </div><div class="csl-right-inline">A. Grothendieck. <span>“Technique de descente et théorèmes d’existence en géométrie algébrique, <span>I</span>–<span>VI</span>.”</span> <em>Séminaire Bourbaki</em>. <strong>12,13,14</strong> (1959/61), Talks no. 190, 195, 212, 221, 232, and 236.</div>
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">A. Grothendieck. <span>“Technique de descente et théorèmes d’existence en géométrie algébrique, <span>I</span>–<span>VI</span>.”</span> <em>Séminaire Bourbaki</em>. <strong>12, 13, 14</strong> (1959/61), Talks no. 190, 195, 212, 221, 232, and 236.</div>
 </div>
 <div class="csl-entry">
 <div class="csl-left-margin">[9] </div><div class="csl-right-inline">A. Grothendieck. <span>“Techniques de construction en géométrie analytique, <span>I</span>–<span>X</span>.”</span> <em>Séminaire Cartan</em>. <strong>13</strong> (1960/61), Talks no. 7–17.</div>
@@ -744,7 +775,7 @@ Whence immediately (iii).</li>
 <div class="csl-left-margin">[10] </div><div class="csl-right-inline">A. Grothendieck. <em><span class="nocase">Séminaire de Géométrie Algébrique</span>, <span>I</span>, <span>II</span>, <span>III</span>, <span>IV</span></em>. <span>Paris, Institut des Hautes Études Scientifiques</span>, 1960/61.</div>
 </div>
 <div class="csl-entry">
-<div class="csl-left-margin">[11] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4,8,11,17,20,24,28,32</strong> (1960/67).</div>
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4, 8, 11, 17, 20, 24, 28, 32</strong> (1960/67).</div>
 </div>
 <div class="csl-entry">
 <div class="csl-left-margin">[12] </div><div class="csl-right-inline">R. Hartshorne. <span>“Connectedness of the <span>Hilbert</span> scheme.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>29</strong> (1966), 5–48.</div>
@@ -819,13 +850,13 @@ Whence immediately (iii).</li>
 <div class="csl-left-margin">[3] </div><div class="csl-right-inline">C. Chevalley. <span>“Sur la théorie de picard.”</span> <em>Amer. J. Of Math.</em> <strong>82</strong> (1960), 435–490.</div>
 </div>
 <div id="ref-Gro1959" class="csl-entry">
-<div class="csl-left-margin">[8] </div><div class="csl-right-inline">A. Grothendieck. <span>“Technique de descente et théorèmes d’existence en géométrie algébrique, <span>I</span>–<span>VI</span>.”</span> <em>Séminaire Bourbaki</em>. <strong>12,13,14</strong> (1959/61), Talks no. 190, 195, 212, 221, 232, and 236.</div>
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">A. Grothendieck. <span>“Technique de descente et théorèmes d’existence en géométrie algébrique, <span>I</span>–<span>VI</span>.”</span> <em>Séminaire Bourbaki</em>. <strong>12, 13, 14</strong> (1959/61), Talks no. 190, 195, 212, 221, 232, and 236.</div>
 </div>
 <div id="ref-Gro1960b" class="csl-entry">
 <div class="csl-left-margin">[10] </div><div class="csl-right-inline">A. Grothendieck. <em><span class="nocase">Séminaire de Géométrie Algébrique</span>, <span>I</span>, <span>II</span>, <span>III</span>, <span>IV</span></em>. <span>Paris, Institut des Hautes Études Scientifiques</span>, 1960/61.</div>
 </div>
 <div id="ref-GD1960" class="csl-entry">
-<div class="csl-left-margin">[11] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4,8,11,17,20,24,28,32</strong> (1960/67).</div>
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4, 8, 11, 17, 20, 24, 28, 32</strong> (1960/67).</div>
 </div>
 </div>
 <div class="footnotes">
