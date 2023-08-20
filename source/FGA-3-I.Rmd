@@ -1019,14 +1019,14 @@ The speaker does not know if we can replace the hypothesis that $S'\to S$ be a s
 ## Application to local triviality and isotriviality criteria {#fga-3-i-section-B.6}
 
 Let $S$ be a prescheme, $G$ a "_prescheme of groups_" over $S$, $P$ a prescheme over $S$ on which "_$G$ acts_" (on the right).
-We say that $P$ is _formally principal homogeneous_ under $G$ if the well-known morphism
+We say that $P$ is _formally principal homogeneous_ for $G$ if the well-known morphism
 $$
   G\times_S P \to P\times_S P
 $$
 \oldpage{190-27}
 (induced from the actions of $G$ on $P$) is an _isomorphism_.
-From now on, we assume $G$ to be _flat_ over $S$ (and thus faithfully flat over $S$), and we reserve the name of _principal homogeneous bundle_ under $G$ for a formally principal homogeneous bundle $P$ that is _faithfully flat_ and _quasi-compact_ over $S$.
-It is immediate that this is equivalent to being able to find a _faithfully flat_ and _quasi-compact extension_ $S'\to S$ of the base $S$ such that the formally principal homogeneous bundle $P'=P\times_S S'$ under $G'=G\times_S S'$ is _trivial_, i.e. isomorphic to $G'$ (i.e. admitting a section);
+From now on, we assume $G$ to be _flat_ over $S$ (and thus faithfully flat over $S$), and we reserve the name of _principal homogeneous bundle_ for $G$ for a formally principal homogeneous bundle $P$ that is _faithfully flat_ and _quasi-compact_ over $S$.
+It is immediate that this is equivalent to being able to find a _faithfully flat_ and _quasi-compact extension_ $S'\to S$ of the base $S$ such that the formally principal homogeneous bundle $P'=P\times_S S'$ for $G'=G\times_S S'$ is _trivial_, i.e. isomorphic to $G'$ (i.e. admitting a section);
 we can take, in particular, $S'=P$.
 Note also that, if $S$ is locally Noetherian, then the faithfully-flat hypothesis on $P$ is equivalent to the hypothesis that $\overline{P}_S=P\times_S\Spec(\overline{\scr{O}}_s)$ be faithfully flat over $\overline{\scr{O}}_s$ for all $s\in S$ (where $\overline{\scr{O}}_s$ denotes the completion of the local ring $\scr{O}_s$), as follows from the fact that $\overline{\scr{O}}_s$ is faithfully flat over $\scr{O}_s$.
 Also, if $P$ is of finite type over $S$, and $S$ is locally Noetherian, then the set of points $s$ satisfying the above condition is constructible, and so, if $S$ is a "Jacobson prescheme" (for example, a scheme of finite type over a field, or, more generally, over a Jacobson ring), then it suffices to verify the condition in question for the _closed_ points of $S$.
@@ -1040,23 +1040,23 @@ In particular, we say that $P$ is _isotrivial_ (resp. _strictly isotrivial_) if,
 (We stray from the terminology of Serre [@GD1960], which uses "locally isotrivial" for what we call "strictly isotrivial").
 Strict isotriviality is mainly useful if $G$ is simple over $S$, but is, however, an inadequate notion in other cases.
 
-If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ under $G$ is affine, by [§B.2](#fga-3-i-section-B.2), whence the possibility, thanks to [Theorem 2](#fga-3-i-theorem-2), to "descend" from such bundles by faithfully flat and quasi-compact morphisms.
+If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ for $G$ is affine, by [§B.2](#fga-3-i-section-B.2), whence the possibility, thanks to [Theorem 2](#fga-3-i-theorem-2), to "descend" from such bundles by faithfully flat and quasi-compact morphisms.
 \oldpage{190-28}
 Taking, in particular, $G=\GL(n)_S$, defined by the condition that the functor $S'\mapsto\Hom(S',G)$ of $S$-preschemes (with values in the category of groups) can be identified with the functor $\GL(n)(S')=\GL(n,\HH^0(S',\scr{O}_{S'}))$ described in [§A.4.e](#fga-3-i-section-A.4).
 Using the facts
 
-i. that every principal homogeneous bundle under $G$ (resp. every locally free sheaf of rank $n$ on $S$) becomes isomorphic to the "trivial" object $G$ (resp. $\scr{O}_S^n$) under a suitable faithfully flat and quasi-compact extension of $S$;
+i. that every principal homogeneous bundle for $G$ (resp. every locally free sheaf of rank $n$ on $S$) becomes isomorphic to the "trivial" object $G$ (resp. $\scr{O}_S^n$) under a suitable faithfully flat and quasi-compact extension of $S$;
 
-ii. that we can descend the type of objects in question (principal homogeneous bundles under $G$, resp. locally free sheaves of rank $n$) by such morphisms; and, finally
+ii. that we can descend the type of objects in question (principal homogeneous bundles for $G$, resp. locally free sheaves of rank $n$) by such morphisms; and, finally
 
 iii. that the automorphism group of the trivial bundle on any $S'/S$ is functorially isomorphic to the automorphism group of the trivial locally free sheaf of rank $n$ on $S'$,
 
-we "formally" conclude that it is "equivalent" to give, on $S$ (or on some $S'/S$) a principal homogeneous bundle of group $G$, or to give a locally free sheaf of rank $n$.
+we "formally" conclude that it is "equivalent" to give, on $S$ (or on some $S'/S$) a principal homogeneous bundle for the group $G$, or to give a locally free sheaf of rank $n$.
 (More precisely, we have an _equivalence of fibred categories_).
 We thus conclude, in particular:
 
 ::: {.itenv #fga-3-i-section-B.6-proposition-6.1 title="Proposition 6.1" latex="{Proposition 6.1}"}
-Every principal homogeneous bundle under the group $\GL(n)_S$ is locally trivial.
+Every principal homogeneous bundle for the group $\GL(n)_S$ is locally trivial.
 :::
 
 By known arguments, we thus conclude the same result for others structure groups such as $\SL(n)_S$, $\Sp(n)_S$, and products of such groups.
