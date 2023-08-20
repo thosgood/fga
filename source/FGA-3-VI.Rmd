@@ -40,7 +40,7 @@ a. (Mumford).
   We easily see that, after the étale extension $S'\to S$, with $S'=\Spec\mathbb{C}[[t]]$, the Picard prescheme of $X'/S'$ exists, and we thus obtain an explicit description of it as a sum of copies of $\widetilde{S}$, where $\widetilde{S}$ is induced by $S$ by copying the origin an infinite number of times.
   We easily observe that the descent data on $\repPic_{X'/S'}$ for $S'\to S$ (given here by the actions of the Galois group $\mathbb{Z}/2\mathbb{Z}$ of $S'$ over $S$) is not effective, since the group permutes certain doubled points (so that there are orbits that are not contained in an affine open).
   However, Mumford has shown that, if $f\colon X\to S$ is a separable projective morphism such that, for all $s\in S$, the irreducible components of $X_s$ are geometrically irreducible with respect to $k(s)$, then $\repPic_{X/S}$ exists;
-  the proof relies on a refinement of his theorem of passage to the quotient, cf. [-].^[*[Trans.]* The original cites here the 1962 Mumford--Tate seminar --- see translator footnotes in [FGA 3.V](#FGA-3-V.html).]
+  the proof relies on a refinement of his theorem of passage to the quotient, cf. [Mumford--Tate seminar, 1962].^[*[Trans.]* See translator footnotes in [FGA 3.V](#FGA-3-V.html).]
   Note also that it is still possible that, without any hypotheses on the irreducible components of the fibres $X_s$, the scheme $\repPic_{X/S}^\tau$ (which will be introduced below) still exists.
 
 
@@ -48,7 +48,7 @@ b. (Murre).\oldpage{236-02}
   If $X$ is a proper scheme over a field, then $\repPic_{X/k}$ exists.
   The proof partially uses the proof of Chevalley [@Che1960], and is fundamentally based on the group structure of the Picard functor.
 
-For certain additional comments concerning the theory of Picard schemes, most notably in relation to abelian schemes, we recommend consulting [-].^[*[Trans.]* The original again cites here the 1962 Mumford--Tate seminar.]
+For certain additional comments concerning the theory of Picard schemes, most notably in relation to abelian schemes, we recommend consulting [Mumford--Tate seminar, 1962].
 Finally, a notable shortcoming of the present talk is the absence of "equivalence criteria" that would allow us to compare the Picard scheme of a projective scheme and of its hyperplane sections;
 the key theorems for developing such criteria can be found in [@Gro1960b], with which one must combine the existence theorems for Picard schemes.
 
@@ -533,7 +533,7 @@ i. If there exists an abelian subscheme of $\repPic_{X/S}$ whose underlying set 
 ii. For there to exist such an abelian subscheme, it is necessary and sufficient that it exist after every base change $S'\to S$, where $S'$ is local Artinian;
   if $S$ is the spectrum of a local ring, it even suffices to test with the $S'=\Spec(A_n)$ where $A_n=A/\frak{m}^{n+1}$.
   If $S$ is reduced, then it equally suffices to test with the $S'$ that are the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one desires).
-iii. Suppose that $A$ exists, and let $B=\Alb^0(X/S)$ be the dual abelian scheme (i.e. $B=\Pic_{A/S}^0$ [-]^[*[Trans.]* The original again cites here the 1962 Mumford--Tate seminar.]).
+iii. Suppose that $A$ exists, and let $B=\Alb^0(X/S)$ be the dual abelian scheme (i.e. $B=\Pic_{A/S}^0$ [Mumford--Tate seminar, 1962]).
   Then we can canonically construct a principal homogeneous space $P=\Alb^1(X/S)$ for $B$, and an $S$-morphism $X\to P$ that is universal for the $S$-morphisms from $X$ to para-abelian schemes (i.e. to principal homogeneous spaces for abelian schemes).
   The formation of $\Alb^0(X/S)$, $\Alb^1(X/S)$, and $X\to\Alb^1(X/S)$ commutes with base change.
 :::
@@ -541,7 +541,7 @@ iii. Suppose that $A$ exists, and let $B=\Alb^0(X/S)$ be the dual abelian scheme
 ::: {.proof}
 We sketch the proof:
 
-i. This is a general property of rigidity for abelian subschemes of commutative group schemes: if two such subschemes agree set-theoretically at a point $s\in S$, then they agree over the entire connected component of $s$ ([-]^[*[Trans.]* The original again cites here the 1962 Mumford--Tate seminar.]).
+i. This is a general property of rigidity for abelian subschemes of commutative group schemes: if two such subschemes agree set-theoretically at a point $s\in S$, then they agree over the entire connected component of $s$ ([Mumford--Tate seminar, 1962]).
   (This result generalises a classical theorem of Chow).
 ii. Using Hilbert schemes, we see that the functor that, to every $S'$ over $S$ associates the set (consisting of either one or zero elements) of canonical abelian subschemes of $(\repPic_{X/S})\times_S S'$ is representable by a scheme $T$ of finite type over $S$.
   By (i), $T\to S$ is a monomorphism, and by [(3.2)](#fga-3-vi-corollary-3.2), it is surjective.
