@@ -588,5 +588,26 @@ A fortiori, $\repPic_{X|U/U}^{00}$ exists.
 
 ::: {.proof}
 We describe the principle of the proof.
-The above
+The above allows us to reduce to the case where $S$ is the spectrum of an Artinian local ring $A$, and we argue by induction on the infinitesimal order of $A$.
+We can thus suppose that $\repPic_{X_n/A_n}^0$ is simple over $A_n$, and reduce to proving that $\repPic_{X_{n+1}/A_{n+1}}^0$ is simple over $A_{n+1}$.
+Note that, for this, it suffices to construct an abelian scheme $P_{n+1}$ over $A_{n+1}$ that extends $P_n=\repPic_{X_n/A_n}^0$, along with an invertible module $\scr{L}_{n+1}$ on $X_{n+1}\times_{A_{n+1}}P_{n+1}$ that extends the invertible module $\scr{L}_n$ on $X_n\times_{A_n}P_n$ that arises in the definition of the Picard scheme $\repPic_{X_n/A_n}$ as the solution to a universal problem.
+(N.B. We can suppose that $X$ is endowed with a section over $S$...).
+For this construction, we must use the following key result: *every abelian scheme defined over a quotient of an Artinian local ring can be extended* (in other words, the absolute "formal scheme of modules" ([@Gro1959, II]) for an abelian scheme over an algebraically closed field is simple over the ring of Witt vectors over $k$);
+\oldpage{236-20}this result can be obtained by using the general formal properties of the obstruction to lifting, and the group operations.
+With this result, we start by extending $P_n$ arbitrarily to $P_{n+1}$;
+we then find an obstruction to lifting $\scr{L}_n$, found in $\HH^2(X_0\times P_0,\OO_{X_0\times P_0})\otimes_k V$ (where $V=\frak{m}^{n+1}/\frak{m}^{n+2}$), and more precisely in the subspace $\HH^1(X_0,\OO_{X_0})\otimes\HH^1(P_0,\OO_{P_0})\otimes_k V$ (taking into account the fact that the restriction of $\scr{L}_n$ to the two factors $X_n$ and $P_n$ is trivial).
+But this latter space is exactly $\HH^1(P_0,\scr{G}_{P_0/k})\otimes V$, where $\scr{G}_{P_0/k}$ is the tangent sheaf to $P_0/k$, and thus also the space that expresses the indeterminacy that there was in the lifting of $P_n$ to $P_{n+1}$ ([@Gro1959, II]).
+So we can correct this lifting (in exactly one way, as should be the case) in such a way as to kill the obstruction to lifting $\scr{L}_n$.
+:::
+
+::: {.itenv #fga-3-vi-corollary-3.6 title="Corollary 3.6" latex="{Corollary 3.6}"}
+Under the conditions of [(3.5)](#fga-3-vi-theorem-3.5), $\RR^1 f_*(\OO_X)$ is a locally free module on $S$ in a neighbourhood of $s$, and its formation commutes with base change.
+:::
+
+::: {.proof}
+This module is exactly the tangent module to $\repPic_{X/S}$ along the identity section.
+:::
+
+::: {.rmenv #fga-3-vi-remark-3.7 title="Remark 3.7" latex="{Remark 3.7}"}
+Using
 :::
