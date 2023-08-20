@@ -534,7 +534,7 @@ ii. For there to exist such an abelian subscheme, it is necessary and sufficient
   if $S$ is the spectrum of a local ring, it even suffices to test with the $S'=\Spec(A_n)$ where $A_n=A/\frak{m}^{n+1}$.
   If $S$ is reduced, then it equally suffices to test with the $S'$ that are the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one desires).
 iii. Suppose that $A$ exists, and let $B=\Alb^0(X/S)$ be the dual abelian scheme (i.e. $B=\Pic_{A/S}^0$ [-]^[*[Trans.]* The original again cites here the 1962 Mumford--Tate seminar.]).
-  Then we can canonically construct a principal homogeneous space $P=\Alp^1(X/S)$ for $B$, and an $S$-morphism $X\to P$ that is universal for the $S$-morphisms from $X$ to para-abelian schemes (i.e. to principal homogeneous spaces for abelian schemes).
+  Then we can canonically construct a principal homogeneous space $P=\Alb^1(X/S)$ for $B$, and an $S$-morphism $X\to P$ that is universal for the $S$-morphisms from $X$ to para-abelian schemes (i.e. to principal homogeneous spaces for abelian schemes).
   The formation of $\Alb^0(X/S)$, $\Alb^1(X/S)$, and $X\to\Alb^1(X/S)$ commutes with base change.
 :::
 
@@ -554,5 +554,39 @@ iii. Simply using the definition of $\repPic_{X/S}$, we note that, for every abe
 :::
 
 ::: {.rmenv #fga-3-vi-remarks-3.4 title="Remarks 3.4" latex="{Remarks 3.4}"}
-We
+We denote by $\repPic_{X/S}^{00}$ the canonical abelian subscheme of $\repPic_{X/S}$, if it exists.
+This is, unfortunately, not always the case, as we can see by infinitesimally varying the Igusa surface (by first-order modular deformation).
+It is however possible that $\repPic_{X/S}^{00}$ exists at least if $S$ is reduced, or, equivalently, by (ii), if $S$ is the spectrum of a discrete valuation ring.
+So let $X_0$ and $X_1$ be the special and generic fibres of $X$ (respectively), and let $A_1=\repPic_{X_1/K_1}$, where $K$ is the field of fractions of the valuation ring $V$.
+By Koizumi, there exists an abelian scheme $A$ over $S$, essentially unique, whose general fibre is $A_1$, and we easily see as in [(2.1), (i)](#fga-3-vi-theorem-2.1) (supposing from now on that $X$ is simple over $S$) that the identity morphism of $A_1$ extends to a morphism
+$$
+  A \to \repPic_{X/S}.
+$$
+From this, we obtain a homomorphism
+$$
+  A_0 \to \repPic_{X_0/k}^{00}
+\tag{$\ast$}
+$$
+which we can easily show to be a surjective homomorphism with kernel equal to a finite $p$-group, where $p$ is the characteristic of the residue field $k$ (still by using the points of finite order).
+\oldpage{236-19}With this, the following conditions on $X/S$ are equivalent:
+
+a. The above homomorphism ($\ast$) is an isomorphism (which Shimura expresses by saying that the formation of the "Picard variety" is "compatible with specialisations").
+b. $\repPic_{X/S}^{00}$ exists (and is then exactly $A$).
+c. (For memory) The $\repPic_{X_n/S}^{00}$ exist.
+
+By the remark that we made concerning the kernel of ($\ast$), condition (a) is satisfied if the residual characteristic is zero, but this result will be notably generalised in [(3.5)](#fga-3-vi-theorem-3.5).
+
+Of course, if $\repPic_{X/S}$ is simple over $S$ at the points of $\repPic_{X/S}^0$, then the latter is open in $\repPic_{X/S}$ (cf. [(1.7)](#fga-3-vi-corollary-1.7)) and is thus, endowed with the induced structure, an abelian subscheme of $\repPic_{X/S}$, and thus equal to $\repPic_{X/S}^{00}$, which exists in this case.
+But we have much better:
+:::
+
+::: {.itenv #fga-3-vi-theorem-3.5 title="Theorem 3.5" latex="{Theorem 3.5}"}
+Under the conditions of [(3.3)](#fga-3-vi-theorem-3.3), let $s\in S$ be such that $\repPic_{X_s/k(s)}$ is simple over $k(s)$ (or, equivalently, such that $\dim\repPic_{X_s/k(s)}=\dim\HH^1(X_s,\OO_{X_s})$).
+Then there exists an open neighbourhood $U$ of $s$ such that $\repPic_{X/S}$ is simple over $S$ at the points of $\repPic_{X/S}^0|U$, which is thus an open abelian subscheme in $\repPic_{X/S}|U$.
+A fortiori, $\repPic_{X|U/U}^{00}$ exists.
+:::
+
+::: {.proof}
+We describe the principle of the proof.
+The above
 :::
