@@ -95,7 +95,7 @@ We can construct the quotient group scheme $G/G^0=N$ (cf. [@Gro1959, IV]) and th
 Note that $N$ is a discrete group scheme that is separable over $k$, thus (once we have chosen an algebraic closure $\overline{k}$ of $k$, giving rise to a Galois group $\pi$) can be identified with an ordinary discrete group on which $\pi$ acts by automorphisms.
 It is in this way that we can interpret, in an evident way, the construction of the torsion subgroup and the decomposition of this into its $q$-primary components.
 If $G$ is the Picard scheme of a proper scheme $X$ over $k$, then $N$ could be called the (reduced) *Néron--Severi scheme* of $X$ over $k$.
-If $G_\red^0$ is a sub-group scheme of $G^0$, which is the case whenever, in particular, $k$ is parfait, or $G^0$ is proper over $k$ (for example if $X$ is geometrically normal), then we can equally introduce the quotient $N'=G/G_\red^0$, which has the tendency to behave better than $N$ from the specialisation point of view, i.e. as $X$ varies over a family of algebraic schemes.
+If $G_\red^0$ is a group subscheme of $G^0$, which is the case whenever, in particular, $k$ is parfait, or $G^0$ is proper over $k$ (for example if $X$ is geometrically normal), then we can equally introduce the quotient $N'=G/G_\red^0$, which has the tendency to behave better than $N$ from the specialisation point of view, i.e. as $X$ varies over a family of algebraic schemes.
 :::
 
 Now let $S$ be a locally Noetherian prescheme, and $G$ a group prescheme over $S$ that is locally of finite type over $S$.
@@ -147,7 +147,7 @@ If $S\neq\varnothing$ then there exists a non-empty open $U$ in $S$, a group sch
 ::: {.proof}
 To prove this lemma, we can suppose that $S$ is irreducible;
 let $\eta$ be its generic point.
-If we make the base change $S'=\Spec(\OO_{S,\eta})\to S$ then we find a group scheme $G'$ over a local Artinian ring $\OO_{S,s}=A$ inside which we have an *open* sub-group scheme ${G'}^0$ *of finite type over $A$*, as we said above.
+If we make the base change $S'=\Spec(\OO_{S,\eta})\to S$ then we find a group scheme $G'$ over a local Artinian ring $\OO_{S,s}=A$ inside which we have an *open* group subscheme ${G'}^0$ *of finite type over $A$*, as we said above.
 This thus comes from a group scheme $H$ of finite type over an open neighbourhood $U$ of $\eta$, and the canonical immersion ${G'}^0\to G'$ comes from an open immersion $H\to G|U$, which will be a homomorphism of group schemes for $U$ small enough.
 \oldpage{236-05}Since the fibres of $H$ are connected if we take $U$ small enough, and since they are all of the same dimension, namely that of the fibres of $G$, for $U$ small enough, it follows that, for all $s\in U$, the image of $H_s$ in $G_s$ is exactly $G_s^0$ (for $U$ small enough), which proves the lemma.
 :::
@@ -500,5 +500,32 @@ Then $G_\red^0$ is separable over $k$, and thus a simple group scheme over $k$>
 :::
 
 ::: {.proof}
-The
+Since the claim is trivial if $k$ is perfect, and in particular for $G_{\overline{k}}$, where $\overline{k}$ is the algebraic closure of $k$, it suffices to show that $(G_{\overline{k}}^0)_\red$ comes from a subscheme of $G$.
+But the hypothesis that $G_{\overline{k}}$ contains no additive component easily implies that there exists an integer $m$ such that $(G_{\overline{k}}^0)_\red$ is the "scheme-theoretic" image of the $m$-th power homomorphism in $G_{\overline{k}}$.
+Since the latter homomorphism comes from the analogous homomorphism for $G$, the scheme-theoretic image of this provides the desired object.
+:::
+
+::: {.itenv #fga-3-vi-corollary-3.2 title="Corollary 3.2" latex="{Corollary 3.2}"}
+Let $X$ be a normal and proper scheme over $k$ such that $\repPic_{X/k}$ exists.
+Then there exists an abelian subscheme of $\repPic_{X/k}$ whose underlying set is $\repPic_{X/k}^0$.
+:::
+
+::: {.proof}
+By [(2.1), (ii)](#fga-3-vi-theorem-2.1), since $\repPic_{X/k}^0$ is proper over $k$, it satisfies the conditions of [(3.1)](#fga-3-vi-proposition-3.1).
+:::
+
+\oldpage{236-17}The above result shows that, in certain cases, the classical "Picard variety" (which is $(\repPic_{X/\overline{k}})_\red^0$ in the current theory) "is defined over $k$", without supposing the field $k$ to be perfect.
+
+Now let $f\colon X\to S$ be a proper and flat relative scheme, with $\OO_S\simto f_*(\OO_X)$ for simplicity, such that $\repPic_{X/S}$ exists and that $\repPic_{X/S}^0$ is proper over $S$.
+Suppose further, for [(3.3), (ii)](#fga-3-vi-theorem-3.3), that there exists an open of $\repPic_{X/S}$ containing $\repPic_{X/S}^0$ that is quasi-projective over $S$;
+this condition is satisfied, as we have seen, if $f$ is projective and with separable or irreducible geometric fibres.
+Recall that an *abelian scheme* over $S$ is a group scheme over $S$ that is proper and simple over $S$ with connected geometric fibres.
+We propose to examine whether or not there exists a group subscheme $A$ of $\repPic_{X/S}$ that is an abelian scheme and whose underlying set is $\repPic_{X/S}^0$.
+We have just seen that such an $A$ always exists if $S$ is the spectrum of a field.
+Here is what we know how to say in the general case envisaged here:
+
+::: {.itenv #fga-3-vi-theorem-3.3 title="Theorem 3.3" latex="{Theorem 3.3}"}
+Under the above conditions:
+
+i. If
 :::

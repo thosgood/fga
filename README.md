@@ -14,6 +14,8 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
     + (including those that are citations to the FGAs in the bibliography?)
 - make early citations consistent with later ones
     + e.g. EGA and SGA are not citations in FGA 1 and 2
+- generally check that citations are "correct"
+    + e.g. the first citation in §1.1 of FGA 1 says `[6 and 4]` instead of `[6, chaps. 3 and 4]`
 - move all custom commands to `index.Rmd`?
 - consistent choice between empty lines between i. and ii. or not
 - margin/padding -top of lists in `.itenv` (seems like there's none?)
