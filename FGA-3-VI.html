@@ -528,7 +528,7 @@ If <eq env="math">\dim X=1</eq>, then <eq env="math">X</eq> is simple over <eq e
 If <eq env="math">\dim X\geqslant 2</eq>, then we can use a variant of the known “equivalence criteria”, which implies that there exists a finite number of curves <eq env="math">Y_i</eq>, simple over <eq env="math">X</eq> (obtained as intersections of <eq env="math">X</eq> with suitable linear subspaces of <eq env="math">\mathbb{P}_k^n</eq>), such that <eq env="math">\underline{\operatorname{Pic}}_{X/k}^\tau\to\prod_i\underline{\operatorname{Pic}}_{Y_i/k}^\tau</eq> is a monomorphism, and induces a fortiori a monomorphism for the connected components.
 Since the codomain is proper over <eq env="math">k</eq> by the above, and since we are talking about a homomorphism of group schemes, which is necessarily a closed immersion, it follows that <eq env="math">\underline{\operatorname{Pic}}_{X/k}^0</eq> is also proper over <eq env="math">k</eq>.
 We can avoid recourse to delicate equivalence criteria by using the structure of commutative algebraic groups over an algebraically closed field (thanks to Chevalley–Borel);
-we are then reduced to proving that every morphism from the affine line into <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq> is constant, which is equivalent to saying that every invertible module on <eq env="math">X[t]</eq> comes from an invertible module on <eq env="math">X</eq>, which is a result that is well known and elementary and does not even use the fact that <eq env="math">X</eq> is proper over <eq env="math">k</eq> (the hypothesis that <eq env="math">X</eq> is normal allowing us to immediately reduce to the case where <eq env="math">X</eq> is regular).</p>
+we are then reduced to proving that every morphism from the affine line with the origin removed into <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq> is constant, which is equivalent to saying that every invertible module on <eq env="math">X[t,t^{-1}]</eq> comes from an invertible module on <eq env="math">X</eq>, which is a result that is well known and elementary and does not even use the fact that <eq env="math">X</eq> is proper over <eq env="math">k</eq> (the hypothesis that <eq env="math">X</eq> is normal allowing us to immediately reduce to the case where <eq env="math">X</eq> is regular).</p>
 </div>
 <div id="fga-3-vi-remark-2.2" class="rmenv" title="Remark 2.2">
 <p>The above proof of (i) holds true even if we only suppose that <eq env="math">f</eq> is flat and that its fibres <eq env="math">X_s</eq> are locally complete intersections and simple over <eq env="math">k(s)</eq> in codimension <eq env="math">\leqslant 2</eq>, taking into account the following fact which is proven in <span class="citation">[<a href="#ref-Gro1960b" role="doc-biblioref">10</a>]</span>: a Noetherian complete intersection local ring that is regular in codimension <eq env="math">\leqslant 3</eq> is factorial (“Samuel’s conjecture”).
@@ -659,7 +659,7 @@ Then <eq env="math">G_\mathrm{red}^0</eq> is separable over <eq env="math">k</eq
 </div>
 <div class="proof">
 <p><span id="unlabeled-div-46" class="proof"><em>Proof</em>. </span>Since the claim is trivial if <eq env="math">k</eq> is perfect, and in particular for <eq env="math">G_{\overline{k}}</eq>, where <eq env="math">\overline{k}</eq> is the algebraic closure of <eq env="math">k</eq>, it suffices to show that <eq env="math">(G_{\overline{k}}^0)_\mathrm{red}</eq> comes from a subscheme of <eq env="math">G</eq>.
-But the hypothesis that <eq env="math">G_{\overline{k}}</eq> contains no additive component easily implies that there exists an integer <eq env="math">m</eq> such that <eq env="math">(G_{\overline{k}}^0)_\mathrm{red}</eq> is the “scheme-theoretic” image of the <eq env="math">m</eq>-th power homomorphism in <eq env="math">G_{\overline{k}}</eq>.
+But from the hypothesis that <eq env="math">G_{\overline{k}}</eq> contains no additive component it easily follows that there exists an integer <eq env="math">m</eq> such that <eq env="math">(G_{\overline{k}}^0)_\mathrm{red}</eq> is the “scheme-theoretic” image of the <eq env="math">m</eq>-th power homomorphism in <eq env="math">G_{\overline{k}}</eq>.
 Since the latter homomorphism comes from the analogous homomorphism for <eq env="math">G</eq>, the scheme-theoretic image of this provides the desired object.</p>
 </div>
 <div id="fga-3-vi-corollary-3.2" class="itenv" title="Corollary 3.2">
@@ -819,6 +819,11 @@ Then the schemes <eq env="math">\underline{\operatorname{Pic}}_{X/S}^Q</eq> (for
 </div>
 <div class="proof">
 <p><span id="unlabeled-div-52" class="proof"><em>Proof</em>. </span>Since they are of finite type over <eq env="math">S</eq>, by <a href="FGA-3-VI.html#fga-3-vi-theorem-4.1">(4.1)</a>, we can apply <a href="FGA-3-VI.html#fga-3-vi-corollary-2.4">(2.4)</a>.</p>
+</div>
+<div id="fga-3-vi-remark-comp" class="rmenv" title="Remark">
+<p><em>[Comp.]</em>
+The questions of finiteness of the type highlighted in this section have been all but totally resolved since the editing of this present talk.
+We</p>
 </div>
 
 </div>
