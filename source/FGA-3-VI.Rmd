@@ -704,12 +704,58 @@ iii. Suppose that $X$ is projective over $S$, and that all its geometric fibres 
 iv. For every integer $n\neq0$, the $n$-th power homomorphism in the group prescheme $\repPic_{X/S}$ is a morphism of finite type.
 
 Note that (i) and (ii) also imply (under the hypotheses given in their respective statements) that *a subset $M$ of $\repPic_{Y/S}$ is quasi-compact if and only if its image in $\repPic_{X/S}$ is quasi-compact*.
-We thus conclude that an invertible module $\scr{L}$ on $Y$ is $\tau$-equivalent to zero if and only if its inverse image in $X$ is;
+We thus conclude that an invertible module $\scr{L}$ on $Y$ is $\tau$-equivalent to $0$ if and only if its inverse image in $X$ is;
 in other words, $\repPic_{Y/S}^\tau$ is the inverse image of $\repPic_{X/S}^\tau$.
 In particular, to show that the first prescheme is of finite type over $S$, it suffices to prove this for the second, since $\repPic_{Y/S}\to\repPic_{X/S}$ is of finite type.
 Then using (i), Chow's lemma, and (iii), we find:
 
 v. $\repPic_{X/S}^\tau$ is of finite type over $S$.
 
-Generally,
+Generally, the conjunction of (i) for a finite morphism and (ii) allows us to reduce, for the majority of finiteness questions, to the case where $X/S$ has integral and normal geometric fibres of dimension $\leq2$;
+often, even, applying (i) for a surjective but not-necessarily finite morphism, along with the resolution of singularities of algebraic surfaces (due, in arbitrary characteristic, to Abhyankar), we can reduce to the case where $X/S$ is even simple, and thus has non-singular geometric fibres of dimension $2$.
+This allows us, for example, taking into account (v) and the Picard--Igusa inequality bounding the rank of the Néron--Severi group of a non-singular projective surface, to prove the following generalisation of the Néron finiteness theorem:
+
+vi. Let $X/S$ be proper over $S$, but otherwise arbitrary.
+  \oldpage{C-09}Then the Néron--Severi groups $\repPic_{X_i/k_i}/\repPic_{X_i/k_i}^0$ of the geometric fibres $X_i/k_i$ of $X/S$ are of finite type, and their rank and the order of their torsion subgroups are bounded.
+
+The same method of reduction to the case of non-singular surfaces, and known theorems for this case (such as the Néron finiteness theorem, and the fact that the intersection form on the Néron--Severi group is non-degenerate) implies:
+
+vii. Let $X$ be a proper scheme over an algebraically closed field.
+  Then there exists a finite number of integral closed curves $C_i$ (for $1\leq i\leq r$) in $X$, such that the following property is satisfied:
+  for every subset $M$ of $\repPic_{X/k}$, $M$ is quasi-compact if and only if the integers $\deg\scr{L}_{C'_i}$ (for $\scr{L}\in M$) are bounded (where $C'_i$ denotes the normalisation of $C_i$).
+
+In the above we can take $r$ to be the rank of the Néron--Severi group.
+Once we know that this group is of finite type, (vii) reduces to the fact that the linear forms on the Néron--Severi group defined by the curves $C$ in $X$ do not simultaneously vanish except for on the torsion elements of the Néron--Severi group.
+In the case where $X$ is non-singular and projective, this result, as well as (v), was due to Matsusaka.
+Using (vii), we easily obtain the following characterisation of invertible modules that are $\tau$-equivalent to $0$ on $X$:
+
+viii. Let $X/k$ be a proper scheme over a field, and $\scr{L}$ an invertible module on $X$.
+  Then the following conditions are equivalent:
+
+  a. $\scr{L}$ is $\tau$-equivalent to $0$.
+  b. For every coherent module $F$, we have $\chi(F\otimes\scr{L})=\chi(F)$, where $\chi$ denotes the Euler--Poincaré characteristic (or, condition (b'), we can simply take $F=\OO_Y$, where $Y$ is an integral closed subscheme of dimension $1$ in $X$).
+  c. For every $Y$ as above, writing $Y'$ to mean the normalised curve, we have $\deg\scr{L}_{Y'}=0$.
+
+  If $X/k$ is projective and endowed with an ample invertible module $\OO_X(1)$, then the above conditions are also equivalent to the following:
+
+  d. For every integer $m$, $\scr{L}^{\otimes m}(1)$ is ample.
+  e. (If $X$ is integral).
+    For every pair of integers $(m,n)$, we have
+    $$
+      \chi(\scr{L}^{\otimes m}(n))
+      = \chi(\OO(n))
+    $$
+    \oldpage{C-10}(i.e. (b) is true for $F=\scr{L}^{\otimes m}(n)$).
+
+  For the sufficiency of this last condition, note that it implies that the Hilbert polynomials of the $\scr{L}^{\otimes m}$ are all equal, and thus, by the Mumford criteria (iii), the $\scr{L}^{\otimes m}$ remain in a quasi-compact subset of $\repPic_{X/k}$, i.e. we have (a).
+  Conditions (b), (b'), and (c) should be considered as variants (for an arbitrary proper scheme) of the notion of *numerical equivalence*, usually defined for non-singular projective varieties.
+  For such varieties, the equivalence of (a) and (c) was evidently well known (Matsusaka).
+
+Criteria (e) from the above also implies the following result:
+
+ix. Let $f\colon X\to S$ be a flat projective morphism whose geometric fibres are integral.
+  Then $\repPic_{X/S}^\tau$ is open *and closed* in $\repPic_{X/S}$.
+
+We restrict ourselves to some comments on the proofs of the key results (i), (ii), and (iii) (result (iv) is a little bit different from the others, and can be proven using only (i) for radicial surjective finite morphisms, or, more precisely, for a Frobenius morphism).
+For (i),
 :::
