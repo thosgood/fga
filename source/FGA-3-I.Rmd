@@ -56,7 +56,7 @@ It is worth noting as well that this aforementioned technique of descent can cer
 In any case, the recent work of Kodaira--Spencer, whose methods seem unfit for defining and studying "varieties of modules" in the neighbourhood of their singular points, show reasonably clearly the necessity of methods that are closer to the theory of schemes (which should naturally complement transcendental techniques).
 
 In the present article (namely article I) we will discuss the most elementary case of descent (the one indicated in the title).
-The applications of [Theorem 1](#fga-3-i-theorem-1), [Theorem 2](#fga-3-i-theorem-2), and [Theorem 3](#fga-3-i-theorem-3) below (in [§B.1](#fga-3-i-section-B.1)) are, however, already vast in number. 
+The applications of [Theorem 1](#fga-3-i-section-B.1-theorem-1), [Theorem 2](#fga-3-i-theorem-2), and [Theorem 3](#fga-3-i-theorem-3) below (in [§B.1](#fga-3-i-section-B.1)) are, however, already vast in number.
 We will restrict ourselves to giving only some of them as examples, without aiming for the maximum generality possible.
 
 We will freely use the language of schemes, for which we refer to the already cited article, as well as [@GR1958].
@@ -67,7 +67,7 @@ So, if $A$ is a local Noetherian ring, with completion $\overline{A}$, then we w
 ## **A.** Preliminaries on categories {-}
 
 
-## Fibred categories, descent data, $\cal{F}$-descent morphisms {#fga-3-i-section-A.1}
+## (A.1) Fibred categories, descent data, $\cal{F}$-descent morphisms {#fga-3-i-section-A.1}
 
 
 ### (a) {#fga-3-i-section-A.1.a}
@@ -257,7 +257,7 @@ But if we no longer suppose a priori that the $\varphi_{t,t}$ are isomorphisms (
 the combination of (ii bis) and (i bis), however, does imply that the $\varphi_{t,t'}$ are isomorphisms (since we then have $\varphi_{t,t'}\varphi_{t',t}=\varphi_{t,t}=\id_{\xi'_t}$).
 
 
-## Exact diagrams and strict epimorphisms, descent morphisms, and examples {#fga-3-i-section-A.2}
+## (A.2) Exact diagrams and strict epimorphisms, descent morphisms, and examples {#fga-3-i-section-A.2}
 
 
 ### (a) {#fga-3-i-section-A.2.a}
@@ -380,8 +380,7 @@ $$
 In particular, if $\cal{F}$ denotes the fibred category (over the category $\cal{C}$ of preschemes) such that, for $X\in\cal{C}$, $\cal{F}_X$ is the category of _flat_ $X$-preschemes, then the diagram [(+)](#fga-3-i-section-A.2.b-equation) is $\cal{F}$-exact.
 (This result becomes false if we do not impose the flatness hypothesis; in particular, a finite strict epimorphism is not necessarily a descent morphism).
 We similarly see that [(+)](#fga-3-i-section-A.2.b-equation) is $\cal{F}$-exact if $\cal{F}$ denotes the fibred category for which $\cal{F}_X$ is the category of _flat_ quasi-coherent sheaves on the prescheme $X$ (here, again, the flatness hypothesis is essential).
-\oldpage{190-09}
-In either case, the question of _effectiveness_ of a gluing data (and, more specifically, of a descent data, when $S''=S'\times_S S'$) on a flat object over $S'$ is delicate (and its answer in many particular cases in one of the principal objects of these current articles).
+\oldpage{190-09}In either case, the question of _effectiveness_ of a gluing data (and, more specifically, of a descent data, when $S''=S'\times_S S'$) on a flat object over $S'$ is delicate (and its answer in many particular cases in one of the principal objects of these current articles).
 The speaker does not know if, for every finite strict epimorphism $S'\to S$, every descent data on a flat quasi-coherent sheaf on $S'$ is effective (even if we suppose that $S$ is the spectrum of a local Artinian ring, and we restrict to locally free sheaves of rank $1$).
 More generally, let $A$ be a ring, and $A'$ an $A$-algebra (where everything is commutative) such that the diagram
 $$
@@ -412,7 +411,7 @@ This is one of the main reasons for the importance of the notion of flatness in 
 :::
 
 
-## Application to étalements {#fga-3-i-section-A.3}
+## (A.3) Application to étalements {#fga-3-i-section-A.3}
 
 Let $A$ be a local ring, and $B$ a local algebra over $A$ whose maximal ideal induces that of $A$.
 \oldpage{190-10}
@@ -461,7 +460,7 @@ Note also that we do not suppose here that the $T$ in question are finite over $
 This result implies, in particular, that the morphism $S'\to S$ induces an isomorphism between the fundamental group of $S'$ and the fundamental group of $S$ ("_topological invariance of the fundamental group of a prescheme_").
 
 
-## Relations to $1$-cohomology {#fga-3-i-section-A.4}
+## (A.4) Relations to $1$-cohomology {#fga-3-i-section-A.4}
 
 
 ### (a) {#fga-3-i-section-A.4.a}
@@ -630,7 +629,7 @@ The group $\HH^2(S'/S,\Gm)$ is particularly interesting as a "global" variant of
 ## **B.** Descent by faithfully flat morphisms {-}
 
 
-## Statement of the descent theorems {#fga-3-i-section-B.1}
+## (B.1) Statement of the descent theorems {#fga-3-i-section-B.1}
 
 ::: {.rmenv #fga-3-i-section-B.1-definition-1.1 title="Definition 1.1" latex="{Definition 1.1}"}
 A morphism $\alpha\colon S'\to S$ of prescheme is said to be _flat_ if $\scr{O}_{x'}$ is a flat module over the ring $\scr{O}_{\alpha(x')}$ for all $x'\in S'$ (i.e. if $\scr{O}_{x'}\otimes_{\scr{O}_{\alpha(x')}}M$ is an exact functor in the $\scr{O}_{\alpha(x')}$-module $M$).
@@ -690,7 +689,7 @@ Then there is a bijective correspondence between quasi-coherent subsheaves of $\
 :::
 
 Of course, we have an equivalent statement in terms of quotient sheaves.
-As we have already seen in [§A.4.e](#fga-3-i-section-A.4.e), [Theorem 1](#fga-3-i-theorem-1) should be thought of as a generalisation of Hilbert's "Theorem 90", and implies, as particular cases, various formulations in terms of $1$-cohomology.
+As we have already seen in [§A.4.e](#fga-3-i-section-A.4.e), [Theorem 1](#fga-3-i-section-B.1-theorem-1) should be thought of as a generalisation of Hilbert's "Theorem 90", and implies, as particular cases, various formulations in terms of $1$-cohomology.
 For the proof, we can easily reduce to the case where $S=\Spec(A)$ and $S'=\Spec(A')$, and, for (i), we can easily restrict to proving [Corollary 1](#fga-3-i-section-B.1-corollary-1), i.e. the exactness of the diagram
 $$
   M = A\otimes_A M \to
@@ -718,16 +717,16 @@ If $A'$ is faithfully flat over $A$, then $\HH^0(A'/A,\Ga)=A$, and $\HH^i(A'/A,\
 
 ::: {.proof}
 _Part (ii)._
-To prove part (ii) of [Theorem 1](#fga-3-i-theorem-1), we proceed, as for (i), by restricting to the case where $S'$ over $S$ admits a section, where the result then follows from (i) (cf. [§A.1.c](#fga-3-i-section-A.1.c)).
+To prove part (ii) of [Theorem 1](#fga-3-i-section-B.1-theorem-1), we proceed, as for (i), by restricting to the case where $S'$ over $S$ admits a section, where the result then follows from (i) (cf. [§A.1.c](#fga-3-i-section-A.1.c)).
 :::
 
-We can evidently vary [Theorem 1](#fga-3-i-theorem-1) and its corollaries _ad libitum_ by introducing various additional structures on the quasi-coherent sheaves (or systems of sheaves) in question.
+We can evidently vary [Theorem 1](#fga-3-i-section-B.1-theorem-1) and its corollaries _ad libitum_ by introducing various additional structures on the quasi-coherent sheaves (or systems of sheaves) in question.
 \oldpage{190-19}
 For example, the data on $S$ of a quasi-coherent sheaf of commutative algebras "is equivalent to" the data on $S'$ of such a sheaf endowed with a descent data relative to $\alpha\colon S'\to S$.
 Taking into account the functorial correspondence between such quasi-coherent sheaves on $S$ and affine preschemes over $S$, we obtain the second claim of the following theorem:
 
 ::: {.itenv #fga-3-i-section-B.1-theorem-2 title="Theorem 2" latex="{Theorem 2}"}
-Let $\alpha\colon S'\to S$ be as in [Theorem 1](#fga-3-i-theorem-1).
+Let $\alpha\colon S'\to S$ be as in [Theorem 1](#fga-3-i-section-B.1-theorem-1).
 Then $\alpha$ is a (non-strict, in general) _descent morphism_ (cf. [§A, Definition 2.4](#fga-3-i-section-A-definition-2.4)), and it is a _strict descent morphism_ for the fibred category of affine schemes over preschemes (cf. [§A, Definition 1.7](#fga-3-i-section-A.1-definition-1.7).
 :::
 
@@ -740,8 +739,8 @@ $$
   \Hom_{S''}(X'',Y'')
 $$
 is _exact_, i.e. $\alpha^*$ is a bijection from $\Hom_S(X,Y)$ to the subset of $\Hom_{S'}(X',Y')$ consisting of homomorphisms that are compatible with the canonical descent data on $X'$ and $Y'$ (i.e. whose inverse images under the two projections from $S''$ to $S'$ are equal).
-This follows easily from [Theorem 1](#fga-3-i-theorem-1) and [Corollary 1](#fga-3-i-section-B.1-corollary-1), if we restrict to $Y$ being affine over $S$;
-in the general case, we need to combine [Theorem 1](#fga-3-i-theorem-1) with the following result:
+This follows easily from [Theorem 1](#fga-3-i-section-B.1-theorem-1) and [Corollary 1](#fga-3-i-section-B.1-corollary-1), if we restrict to $Y$ being affine over $S$;
+in the general case, we need to combine [Theorem 1](#fga-3-i-section-B.1-theorem-1) with the following result:
 
 ::: {.itenv #fga-3-i-section-B.1-lemma-1.2 title="Lemma 1.2" latex="{Lemma 1.2}"}
 Let $\alpha\colon S'\to S$ be a faithfully flat and quasi-compact morphism.
@@ -780,20 +779,20 @@ So this is also an example of a homogeneous principal bundle that is _non-isotri
 :::
 
 
-## Application to the descent of certain properties of morphisms {#fga-3-i-section-B.2}
+## (B.2) Application to the descent of certain properties of morphisms {#fga-3-i-section-B.2}
 
 Let $P$ be a class of morphisms of preschemes.
 Let $\alpha\colon S\to S'$ be a morphism of preschemes, and let $f\colon X\to Y$ be a morphism of $S$-preschemes, with $f'\colon X'\to Y'$ the inverse image of $f$ under $\alpha$.
 We can then ask if the relation "$f'\in P$" implies that "$f\in P$".
 It appears that the answer is affirmative in many important cases, if we suppose that $\alpha$ is _faithfully flat_ and _quasi-compact_ (this latter hypothesis being sometimes overly strong).
 We can see this directly without difficulty if $P$ is the class of surjective (resp. radicial) morphisms (with these two cases following from the surjectivity of $\alpha$), or flat (resp. faithfully flat, resp. simple) morphisms (with these three cases following from the faithful flatness of $\alpha$), or morphisms of finite type.
-Using [Theorem 1](#fga-3-i-theorem-1), [Theorem 2](#fga-3-i-theorem-2), and [Lemma 1.2](#fga-3-i-section-B.1-lemma-1.2), we see that it is also true if $P$ is one of the following classes:
+Using [Theorem 1](#fga-3-i-section-B.1-theorem-1), [Theorem 2](#fga-3-i-theorem-2), and [Lemma 1.2](#fga-3-i-section-B.1-lemma-1.2), we see that it is also true if $P$ is one of the following classes:
 isomorphisms, open immersions, closed immersions, immersions (if $f$ is of finite type, and $Y$ is locally Noetherian), affine morphisms, finite morphisms, quasi-finite morphisms, open morphisms, closed morphisms, homeomorphisms, separated morphisms, or proper morphisms.
 \oldpage{190-21}
 The only important case not covered here is that of projective or quasi-projective morphisms, which has already been discussed in the remark in [§B.1](#fga-3-i-section-B.1).
 
 
-## Decent by finite faithfully flat morphisms {#fga-3-i-section-B.3}
+## (B.3) Decent by finite faithfully flat morphisms {#fga-3-i-section-B.3}
 
 Let $\alpha\colon S'\to S$ be a _finite_ morphism, corresponding to a sheaf of algebras $\scr{A}'$ on $S$ that is _locally free_ and of finite type as a sheaf of modules, and everywhere non-zero.
 Then $\alpha$ is a faithfully flat and quasi-compact morphism, to which we can thus apply the above results.
@@ -952,7 +951,7 @@ Note that we have not needed to impose any flatness, non-singular, or finiteness
 
 
 
-## Application to rationality criteria {#fga-3-i-section-B.4}
+## (B.4) Application to rationality criteria {#fga-3-i-section-B.4}
 
 Let $X$ be an $S$-prescheme such that the direct image of $\scr{O}_X$ on $S$ is $\scr{O}_S$;
 this property remains true for any flat base extension $S'\to S$.
@@ -964,7 +963,7 @@ We also, independently of the section $s$, regard two invertible sheaves $\cal{F
 Then _every invertible sheaf $\cal{F}$ on $X$ is equivalent to an invertible sheaf $\cal{F}_1$ endowed with a marked section over $s$_ (we take $\cal{F}_1=Fs^*(\cal{F})^{-1}$), _and $\cal{F}_1$ is determined up to isomorphism_.
 In other words, the classification _up to equivalence_ of invertible sheaves on $X$ is the same as the classification _up to isomorphism_ of invertible sheaves endowed with a marked section.
 
-Since these properties remain true under flat extensions $\alpha\colon S'\to S$ of the base (by replacing the section $s$ with its inverse image $s'$ under $\alpha$), we thus conclude, taking [Theorem 1](#fga-3-i-theorem-1) into account:
+Since these properties remain true under flat extensions $\alpha\colon S'\to S$ of the base (by replacing the section $s$ with its inverse image $s'$ under $\alpha$), we thus conclude, taking [Theorem 1](#fga-3-i-section-B.1-theorem-1) into account:
 
 _With the prescheme $X/S$ being as above, and admitting a section $s$, let $\alpha\colon S'\to S$ be a faithfully flat and quasi-compact morphism; let $\cal{F}'$ be an invertible sheaf on $X'=X\times_S S'$._
 _For $\cal{F}'$ to be equivalent to the inverse image on $X'$ of an invertible sheaf $\cal{F}'$ on $X$, it is necessary and sufficient that its inverse images $p_1^*(\cal{F}')$ and $p_2^*(\cal{F}')$ on $X'\times_X X'=X\times_S(S'\times_S S')$ be equivalent._
@@ -991,7 +990,7 @@ The Atiyah--Cartier class can also be understood as the obstruction to the exist
 From this, and the results of the previous section, we easily conclude that, in the case of the aforementioned [Example 2](#fga-3-i-section-B.3-example-1), and when $X/S$ admits a section, the vanishing of the Atiyah--Cartier class is also sufficient for $\cal{F}'$ to be rational on $S$.
 
 
-## Application to the restriction of the base scheme to an abelian scheme {#fga-3-i-section-B.5}
+## (B.5) Application to the restriction of the base scheme to an abelian scheme {#fga-3-i-section-B.5}
 
 Let $S$ be a prescheme.
 \oldpage{190-26}
@@ -1016,7 +1015,7 @@ The speaker does not know if we can replace the hypothesis that $S'\to S$ be a s
 :::
 
 
-## Application to local triviality and isotriviality criteria {#fga-3-i-section-B.6}
+## (B.6) Application to local triviality and isotriviality criteria {#fga-3-i-section-B.6}
 
 Let $S$ be a prescheme, $G$ a "_prescheme of groups_" over $S$, $P$ a prescheme over $S$ on which "_$G$ acts_" (on the right).
 We say that $P$ is _formally principal homogeneous_ for $G$ if the well-known morphism

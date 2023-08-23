@@ -46,7 +46,7 @@ sections 4.6 to 4.10 were numbered C.1 to C.5.
 ## **A.** Representable and pro-representable functors {-}
 
 
-## Representable functors {#fga-3-ii-section-A.1}
+## (A.1) Representable functors {#fga-3-ii-section-A.1}
 
 Let $\cal{C}$ be a category.
 \oldpage{195-01}
@@ -110,7 +110,7 @@ _the general yoga is purely and simply identifying, using the canonical functor 
 The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce _covariant representable functors $\cal{C}\to\Set$_, i.e. those of the form $Y\mapsto\Hom(X,Y)=h'_X(Y)$.
 
 
-## Pro-representable functors, pro-objects {#fga-3-ii-section-A.2}
+## (A.2) Pro-representable functors, pro-objects {#fga-3-ii-section-A.2}
 
 Let $\cal{X}=(X_i)_{i\in I}$ be a projective system of objects of $\cal{C}$;
 there is a corresponding covariant functor
@@ -179,7 +179,7 @@ $$
 In particular, if every pro-object of $\cal{C}$ is strict (cf. the previous section), then the extended functor $\overline{F}$ commutes with projective limits.
 
 
-## Characterisation of pro-representable functors {#fga-3-ii-section-A.3}
+## (A.3) Characterisation of pro-representable functors {#fga-3-ii-section-A.3}
 
 Let $\cal{C}$ and $\cal{C}'$ be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, preordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" $e$ such that $\Hom(X,e)$ consists of only on element for all $X$).
 Let $F$ be a covariant functor from $\cal{C}$ to $\cal{C}'$.
@@ -232,7 +232,7 @@ Then the pro-representable functors from $\cal{C}$ to $\Set$ are exactly the lef
 This last fact also implies that _every pro-object of $\cal{C}$ is then strict_.
 
 
-## Example: groups of Galois type, pro-algebraic groups {#fga-3-ii-section-A.4}
+## (A.4) Example: groups of Galois type, pro-algebraic groups {#fga-3-ii-section-A.4}
 
 If $\cal{C}$ is the category of ordinary finite groups, then $\Pro(\cal{C})$ is equivalent to the category of totally disconnected compact topological^[*[Trans.]* Here the word "Hausdorff" is implicit.] groups.
 It is groups of this type, and their generalisations, obtained by replacing ordinary finite groups with schemes of finite groups over a given base prescheme (for example, finite algebraic groups over a field $k$), that serve as fundamental groups, homotopy groups, and absolute and relative homology groups for preschemes.
@@ -240,7 +240,7 @@ In all these examples, the corollary to [Proposition 3.1](#fga-3-ii-section-A.3-
 It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the "_pro-algebraic groups_" of Serre [@Ser1958].
 
 
-## Example: "formal varieties" {#fga-3-ii-section-A.5}
+## (A.5) Example: "formal varieties" {#fga-3-ii-section-A.5}
 
 Let $\Lambda$ be a Noetherian ring, $\cal{C}$ the category of $\Lambda$-algebras that are Artinian modules of finite type over $\Lambda$ (or, more concisely, _Artinian $\Lambda$-algebras_).
 \oldpage{195-07}
@@ -359,13 +359,13 @@ The proof of this theorem is rather delicate, and cannot be sketched here.
 We content ourselves with pointing out that it relies essentially on a study of _equivalence relations_ (in the sense of categories) in _the spectrum of an Artinian algebra_ (the study of which poses even more problems, whose solutions seems essential for the further development of the theory).
 
 In applications, the verification of condition (i) is always trivial.
-The verification of condition (ii) splits into two cases: case (a), where $A'$ is a free $A$-module, can be dealt with using the _technique of descent by flat morphisms_ (cf. [@Gro1959, I, Theorems 1, 2, and 3]), which offers no difficulty;
+The verification of condition (ii) splits into two cases: case (a), where $A'$ is a free $A$-module, can be dealt with using the _technique of descent by flat morphisms_ (cf. [FGA 1, Theorems 1, 2, and 3](FGA-1.html)), which offers no difficulty;
 to deal with case (b), we will use the following result:
 
 ::: {.itenv #fga-3-ii-section-B-theorem-2 title="Theorem 2" latex="{Theorem 2}"}
 Let $A$ be a local Artinian ring with maximal ideal $\frak{m}$, and let $A'$ be an $A$-algebra containing $A$, and such that $\frak{m}A'\subset A$, and $A\to A'\rightrightarrows A'\otimes_A A'$ is _exact_ (which is the case, in particular, if $A'/A$ is an $A$-module of length $1$).
-Let $\cal{F}$ be the fibred category (cf. [@Gro1959, I, A, Definition 1.1]) of quasi-coherent sheaves that are flat over varying preschemes.
-Then the morphism $\Spec(A')\to\Spec(A)$ is a _strict $\cal{F}$-descent morphism_ (cf. [@Gro1959, I, A, Definition 1.7]).
+Let $\cal{F}$ be the fibred category (cf. [FGA 3.I, A, Definition 1.1](FGA-3-I.html#fga-3-i-section-A.1-definition-1.1)) of quasi-coherent sheaves that are flat over varying preschemes.
+Then the morphism $\Spec(A')\to\Spec(A)$ is a _strict $\cal{F}$-descent morphism_ (cf. [FGA 3.I, A, Definition 1.7](FGA-3-I.html#fga-3-i-section-A.1-definition-1.7)).
 :::
 
 In other words, the data of a flat $A$-module $M$ is completely equivalent to the data of a flat $A'$-module $M'$ endowed with an $(A'\otimes_A A')$-isomorphism from $M'\otimes_A A'$ to $A'\otimes_A M'$ satisfying the usual transitivity condition for a descent data (*loc. cit.*).
@@ -375,14 +375,14 @@ $$
   \HH^i(A'/A,\Ga) = 0
   \qquad\text{(for }i\geq1\text{)}
 $$
-(cf. [@Gro1959, I, A.4.e]), with the hypothesis that $\frak{m}A'\subset A$ allowing us to easily reduce to the case where $A$ is a field (namely $A/\frak{m}$).
-We can then apply the equivalences described in [@Gro1959, I, p.16].
+(cf. [FGA 3.I, A.4.e](FGA-3-I.html#fga-3-i-section-A.4.e)), with the hypothesis that $\frak{m}A'\subset A$ allowing us to easily reduce to the case where $A$ is a field (namely $A/\frak{m}$).
+We can then apply the equivalences described in [FGA 3.I, p.16](FGA-3-I.html#fga-3-i-section-A.4.e).
 
 
 ## **C.** Applications to some particular cases {-}
 
 
-## General remarks on functors represented by preschemes {#fga-3-ii-section-C.1}
+## (C.1) General remarks on functors represented by preschemes {#fga-3-ii-section-C.1}
 
 Let $S$ be a locally Noetherian prescheme.
 \oldpage{195-11}
@@ -420,7 +420,7 @@ if $\frak{m}$ is the maximal ideal of $\scr{O}$, then the dual of $\frak{m}/\fra
 It is only when the Picard group is an algebraic group in the classical sense (i.e. simple over the base field $k$) that the dimension of $\HH^1(V,\scr{O}_V)$ (which is always equal to that of $\frak{m}/\frak{m}^2$) is equal to that of the Picard group.
 
 
-## The schemes $\repHom_S(X,Y)$, $\prod_{X/S}Z$, $\repAut(X)$, etc. {#fga-3-ii-section-C.2}
+## (C.2) The schemes $\repHom_S(X,Y)$, $\prod_{X/S}Z$, $\repAut(X)$, etc. {#fga-3-ii-section-C.2}
 
 Let $X$ and $Y$ be preschemes over $S$;
 \oldpage{195-13}
@@ -500,7 +500,7 @@ this is linked to the fact that the symmetric square of such a variety does not 
 :::
 
 
-## Picard schemes {#fga-3-ii-section-C.3}
+## (C.3) Picard schemes {#fga-3-ii-section-C.3}
 
 *[Comp.]* For a more complete study, see [FGA 3.V](FGA-3-V.html).
 
@@ -509,7 +509,7 @@ $$
   P(X/S) = \HH^0(S,\RR^1f_*(\scr{O}_X^\times)),
 $$
 called the _relative Picard group_ of $X/S$.
-An element of this group is thus defined by giving an open cover $(U_i)$ of $S$, along with an invertible sheaf $\scr{L}_i$ on each $f^{-1}(U_i)$, such that $\scr{L}_i|f^{-1}(U_i\cap U_j)$ is isomorphic to $\scr{L}_j|f^{-1}(U_i\cap U_j)$ for all $i,j$, or, at least locally over $U_i\cap U_j$ (i.e. these two sheaves are "equivalent" in the sense of [@Gro1959, I, B.4]).
+An element of this group is thus defined by giving an open cover $(U_i)$ of $S$, along with an invertible sheaf $\scr{L}_i$ on each $f^{-1}(U_i)$, such that $\scr{L}_i|f^{-1}(U_i\cap U_j)$ is isomorphic to $\scr{L}_j|f^{-1}(U_i\cap U_j)$ for all $i,j$, or, at least locally over $U_i\cap U_j$ (i.e. these two sheaves are "equivalent" in the sense of [FGA 3.I, B.4](FGA-3-I.html#fga-3-i-section-B.4)).
 If $X/S$ admits a section, then $P(X/S)$ is exactly the set of classes of invertible sheaves on $X/S$ up to "equivalence" (*loc. cit.*).
 We now set, for all $T$ over $S$,
 $$
@@ -531,7 +531,7 @@ The definition adopted here is only reasonable when every point of $Y$ admits an
 In the general case, it is necessary to slightly modify the definition of the Picard functor in order to still obtain an existence theorem.
 
 Here, the plausible existence conditions for a Picard prescheme are the following: $X$ is _proper_ and _flat_ over $S$; $f_*(\scr{O}_X)=\scr{O}_S$; and $X$ locally admits a section over $S$.
-This condition naturally arises in the application of the technique of descent, _in eliminating the automorphisms of an invertible sheaf $\scr{L}$ on $X$ by endowing them with a marked section over the section $s$_ ([@Gro1959, I, B.4]).
+This condition naturally arises in the application of the technique of descent, _in eliminating the automorphisms of an invertible sheaf $\scr{L}$ on $X$ by endowing them with a marked section over the section $s$_ ([FGA 3.I, B.4](FGA-3-I.html#fga-3-i-section-B.4)).
 Notably, we find the following:
 :::
 
@@ -568,7 +568,7 @@ Recall also that the schemes of modules for curves of genus $g$ or for polarised
 :::
 
 
-## Formal modules of a variety {#fga-3-ii-section-C.4}
+## (C.4) Formal modules of a variety {#fga-3-ii-section-C.4}
 
 Let $\Lambda$ be a _local_ Noetherian ring of residue field $k$ (more often than not, $\Lambda$ will be equal to $k$, or to a Cohen $p$-ring), and let $X_0$ be a prescheme over $k$.
 For every local Artinian $\Lambda$-algebra $A$, consider the set $F(A)$ of isomorphism classes of $A$-preschemes $X$ that are _flat_ over $A$, endowed with an isomorphism
@@ -638,7 +638,7 @@ In characteristic $p\neq0$, it evidently suffices to restrict to the case where 
 This could be the moment for the "_Greenberg functor_" to prove its worth...
 
 
-## Extension of coverings {#fga-3-ii-section-C.5}
+## (C.5) Extension of coverings {#fga-3-ii-section-C.5}
 
 Let $\frak{X}$ be a _formal_ Noetherian prescheme [@Gro1958a], $U$ an open subset of $\frak{X}$ defined locally by the "non-vanishing" of a section of $\scr{O}_\frak{X}$ that is not a zero divisor (and thus large enough that every section of $\scr{O}_\frak{X}$ over an open subset $V$ that is zero on $U\cap V$ is zero).
 (*[Comp.]* It is also necessary to assume that the section defining $U$ is not a zero divisor not only on $\frak{X}$, but also on every $X_n$.)

@@ -42,8 +42,8 @@ For a refinement of his result, and various applications the the theory, see _S�
 The problems discussed in the current talk differ from those discussed in the two previous ones, in that we try to represent certain covariant, no longer contravariant, functors of varying schemes.
 The procedure of passing to the quotient is, however, essential in many questions of construction in algebraic geometry, including those from [FGA 3.I](FGA-3-I.html) and [FGA 3.II](FGA-3-II.html).
 Indeed, the question of _effectiveness of a descent data_ on a $T$-prescheme $X$, with respect to a faithfully flat and quasi-compact morphism $T\to S$, is equivalent to the question of existence of a quotient of $X$ (satisfying reasonable properties that we examine below) by the flat equivalence relation on $X$ defined by the descent data;
-the questions raised in [@Gro1959, I, A.2.c] can probably be answered at the same time as the questions posed in [§2](#fga-3-iii-section-2) of this current talk.
-Similarly, the _Picard scheme_ (for the definition, see [@Gro1959, II, C.3]) of an $S$-scheme $X$ can be defined in many ways, such as as a quotient of certain other schemes (with positive divisors, or immersions into a projective) by flat equivalence relations, with the definition and construction of these auxiliary schemes being also more simple: they are basically schemes of the type $\Hom_S(X,Y)$, and variants defined in [@Gro1959, II, C.2], and their construction will be the subject of the following talk (under suitable hypotheses of projectivity).
+the questions raised in [FGA 3.I, A.2.c](FGA-3-I.html#fga-3-i-section-A.2.c) can probably be answered at the same time as the questions posed in [§2](#fga-3-iii-section-2) of this current talk.
+Similarly, the _Picard scheme_ (for the definition, see [FGA 3.II, C.3](FGA-3-II.html#fga-3-ii-section-C.3)) of an $S$-scheme $X$ can be defined in many ways, such as as a quotient of certain other schemes (with positive divisors, or immersions into a projective) by flat equivalence relations, with the definition and construction of these auxiliary schemes being also more simple: they are basically schemes of the type $\Hom_S(X,Y)$, and variants defined in [FGA 3.II, C.2](FGA-3-II.html#fga-3-ii-section-C.2), and their construction will be the subject of the following talk (under suitable hypotheses of projectivity).
 Thus, combining the results of the current talk with those of the following, we will obtain the construction of Picard schemes, under suitable hypotheses.
 
 The problem of passing to the quotient in preschemes again offers unresolved questions.
@@ -73,7 +73,7 @@ We introduce an evident equivalence relation on equivalence pairs with target $X
 
 If $X\times X$ exists, then the data of an equivalence relation on $X$ is equivalent to the data of a sub-object $R$ of $X\times X$ such that, for every object $T$ of $\cal{C}$, the subset of $(X\times X)(T)=X(T)\times X(T)$ that corresponds to $R(T)$ is the graph of an equivalence relation on $X(T)$.
 Denoting the morphisms from $R$ to $X$ induced by the projections $\pr_1$ and $\pr_2$ by $p_1$ and $p_2$ (respectively), the above condition says that $(p_1,p_2)$ is an equivalence pair.
-We can also express the axioms of a set-theoretical equivalence relation for the $R(T)$ in the $X(T)$ diagrammatically in $\cal{C}$ (under the assumption that both $X\times X$ and the fibre product $(R,p_2)\times_X(R,p_1)$ exist), following the general principle of [@Gro1959, II, A.1].
+We can also express the axioms of a set-theoretical equivalence relation for the $R(T)$ in the $X(T)$ diagrammatically in $\cal{C}$ (under the assumption that both $X\times X$ and the fibre product $(R,p_2)\times_X(R,p_1)$ exist), following the general principle of [FGA 3.II, A.1](FGA-3-II.html#fga-3-ii-section-A.1).
 We will not need this.
 
 Every time that we have a pair of morphisms $(p_1,p_2)$ with the same source $R$ and the same target $X$, we can define the _cokernel_ of the pair as an object $Y$ of $\cal{C}$ that represents the contravariant (in $Z$) functor
@@ -114,7 +114,7 @@ i. the fibre product $R=X\times_Y X$ exists ;
 ii. the quotient $X/(p_1,p_2)$ exists, where $p_1$ and $p_2$ are the projections from $R$ to $X$ ; and
 iii. the morphism $X/(p_1,p_2)\to Y$ induced by $f$ is an isomorphism.
 
-Then $f$ is indeed an epimorphism, and even a strict epimorphism (cf.[@Gro1959, I, A.2.3]), with the converse being true if the fibre product $X\times_Y X$ exists.
+Then $f$ is indeed an epimorphism, and even a strict epimorphism (cf.[FGA 3.I, A.2.c](FGA-3-I.html#fga-3-i-section-A.2.c)), with the converse being true if the fibre product $X\times_Y X$ exists.
 We also say that the quotient object of $X$ defined by the epimorphism $f$ is an _effective quotient_ of $X$.
 
 The above definitions imply the following "_Galois correspondence_":
@@ -143,7 +143,7 @@ We also note that we can show, using the Noetherian hypothesis, that finite indu
 \oldpage{212-05}
 As we mentioned in [FGA 3.I](FGA-3-I.html), _there are non-effective epimorphisms in $\cal{C}$_ (or even non-strict, which is the same, since fibre products exist).
 _I do not know if equivalence relations are still effective_ if we have no flatness hypothesis.
-I have only obtained, in this direction, very partial, positive, results, that are vital for the proof of the fundamental theorem of the formal theory of modules (cf. [@Gro1959, II, B, Theorem 1]).
+I have only obtained, in this direction, very partial, positive, results, that are vital for the proof of the fundamental theorem of the formal theory of modules (cf. [FGA 3.II, B, Theorem 1](FGA-3-II.html#fga-3-ii-section-B-theorem-1)).
 We note that it is easy, in the given problem, to reduce to the case where $S$ is the spectrum of a local Artinian ring, with an algebraically closed residue field.
 But even if $A$ is a field, the answer is not known.
 
@@ -176,7 +176,7 @@ This implies that, if $R$ is an equivalence relation on $X$, where $X$ is finite
 
 We now suppose that $\cal{C}$ is an arbitrary category.
 Let $G$ and $X$ be objects of $\cal{C}$, and suppose that $G$ is a $\cal{C}$-group with operators on the object $X$.
-This implies (cf. [@Gro1959, II, A.1]) that, for every object $T$ of $\cal{C}$, we have a group structure on $G(T)$, and the structure of an operator domain on $X(T)$ acting on $G(T)$, such that, for variable $T$, the structures in question "vary functorially" in $T$.
+This implies (cf. [FGA 3.II, A.1](FGA-3-II.html#fga-3-ii-section-A.1)) that, for every object $T$ of $\cal{C}$, we have a group structure on $G(T)$, and the structure of an operator domain on $X(T)$ acting on $G(T)$, such that, for variable $T$, the structures in question "vary functorially" in $T$.
 If the products $G\times G$ and $G\times X$ exist in $\cal{C}$, then such a structure can also be defined as a pair of morphisms
 $$
   \begin{gathered}
@@ -253,7 +253,7 @@ $$
   \end{aligned}
 $$
 
-Having recalled these notions, the general definitions in [@Gro1959, II, A.1] show, in particular, what we should mean by "the structure of a _$\cal{C}$-category_" (resp. _$\cal{C}$-groupoid_) on a pair of objects $(X,R)$ of an arbitrary category $\cal{C}$:
+Having recalled these notions, the general definitions in [FGA 3.II, A.1](FGA-3-II.html#fga-3-ii-section-A.1) show, in particular, what we should mean by "the structure of a _$\cal{C}$-category_" (resp. _$\cal{C}$-groupoid_) on a pair of objects $(X,R)$ of an arbitrary category $\cal{C}$:
 it is, by definition, the data, for every object $T$ in $\cal{C}$, of the structure of a category (resp. groupoid) in the set-theoretic sense, whose set of objects is $X(T)$, and set of arrows is $R(T)$, with these structures "varying functorially" in $T$.
 This thus implies the definition of two morphisms
 $$
@@ -534,7 +534,7 @@ i. $F$ is flat over $S$; and
 ii. the kernel of $u$ is finite.
 
 Under these conditions, the quotient scheme $G/F$ exists, and the canonical morphism $G\to G/F$ is surjective and open, and its fibres are the set-theoretic equivalence classes defined by the right action of $F$ on $G$.
-Finally, if $u$ is a monomorphism, then the morphism $G\to G/F$ is flat, and the morphism $G\times F\to G\times_{(G/F)}G$ is an isomorphism, or, in other words, $G$ is a principal homogeneous space over $G/F$, with structure group $F$ (acting on the right), or rather $F\times_S(G/F)$ considered as a group scheme over $G/F$ (cf. [@Gro1959, I, B.6]).
+Finally, if $u$ is a monomorphism, then the morphism $G\to G/F$ is flat, and the morphism $G\times F\to G\times_{(G/F)}G$ is an isomorphism, or, in other words, $G$ is a principal homogeneous space over $G/F$, with structure group $F$ (acting on the right), or rather $F\times_S(G/F)$ considered as a group scheme over $G/F$ (cf. [FGA 3.I, B.6](FGA-3-I.html#fga-3-i-section-B.6)).
 :::
 
 ::: {.itenv #fga-3-iii-corollary-7.3 title="Corollary 7.3" latex="{Corollary 7.3}"}
@@ -586,7 +586,7 @@ Under the above conditions:
 
 1. The equivalence relation defined by $G$ is effective, the quotient $Y=X/G$ is of finite type over $S$, and the canonical morphism $f\colon X\to Y$ is flat and surjective (and thus $X$ becomes a homogeneous principal bundle on $Y$, with group $G\times_S Y=\GP(n)_Y$).
 
-2. Let $\scr{L}'$ be the invertible sheaf on $Y$ induced from $\scr{L}$ by "faithfully flat descent" under $f$ (cf. [@Gro1959, I, B, Theorem 1]).
+2. Let $\scr{L}'$ be the invertible sheaf on $Y$ induced from $\scr{L}$ by "faithfully flat descent" under $f$ (cf. [FGA 3.I, B, Theorem 1](FGA-3-I.html#fga-3-i-section-B.1-theorem-1)).
     Then $\scr{L}'$ is "pre-ample" on $Y$ with respect to $S$, i.e. there exists an integer $m$ and a quasi-finite morphism from $Y$ to some suitable projective-type scheme $\mathbb{P}_S^N$ such that $(\scr{L}')^{\otimes m}$ is isomorphic to the inverse image of $\cal{O}_{\mathbb{P}_S^N}(1)$.
 :::
 
