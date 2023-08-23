@@ -68,8 +68,7 @@ Either way, in algebraic geometry, as well as in analytic geometry, it remains t
 Let $k$ be a field, and $X$ a $k$-prescheme (which we take to be of finite type, for simplicity).
 For every extension $K/k$, we obtain a $K$-prescheme $X_K=X\otimes_k K$.
 If $\scr{F}$ is a coherent sheaf on $X_K$, and if $K'$ is an extension of $K$, then $\scr{F}\otimes_K K'=\scr{F}_{K'}$ is a quasi-coherent sheaf on $X_K\otimes_KK'=X_{K'}$.
-\oldpage{221-02}
-So, if $K$ and $K'$ are arbitrary extensions of $k$, and $\scr{F}$ a quasi-coherent sheaf on $X_K$ and $\scr{F}'$ a quasi-coherent sheaf on $X_{K'}$, then we say that $\scr{F}$ and $\scr{F}'$ are _equivalent_ if there exists an extension $K''/k$ as well as $k$-homomorphisms $K\to K''$ and $K'\to K''$ such that $\scr{F}_{K''}$ and $\scr{F}'_{K''}$ are isomorphic on $X_{K''}$ **(TO-DO: ? is this right?)**.
+\oldpage{221-02}So, if $K$ and $K'$ are arbitrary extensions of $k$, and $\scr{F}$ a quasi-coherent sheaf on $X_K$ and $\scr{F}'$ a quasi-coherent sheaf on $X_{K'}$, then we say that $\scr{F}$ and $\scr{F}'$ are _equivalent_ if there exists an extension $K''/k$ as well as $k$-homomorphisms $K\to K''$ and $K'\to K''$ such that $\scr{F}_{K''}$ and $\scr{F}'_{K''}$ are isomorphic over $X_{K''}$.
 This defines an equivalence relation, and we are interested in the equivalence classes of sheaves under this relation, and of sets of such equivalence classes.
 Note that, if $X_0$ is of finite type over $k$, then every class of coherent sheaves can be defined by a coherent sheaf on $X_K$, where $K$ is some extension of $k$ _of finite type_.
 We can thus, in the definition of classes of coherent sheaves, restrict ourselves to _algebraically closed_ extensions of $k$, and we can also restrict ourselves to a fixed algebraically closed extension $\Omega$ of $k$, of infinite transcendence degree;
