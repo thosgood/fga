@@ -27,7 +27,7 @@ _Séminaire Bourbaki_ **14** (1961--62), Talk no. 236.
 
 ## 0. Supplements to the previous talk (FGA 3.V) {.unnumbered}
 
-\oldpage{236-01}There has been some progress concerning the questions of existence of Picard preschemes raised in [@Gro1959, V]:
+\oldpage{236-01}There has been some progress concerning the questions of existence of Picard preschemes raised in [FGA 3.V](FGA-3-V.html):
 
 a. (Mumford).
   It is not true in general that, if $f\colon X\to S$ is a projective and separable (i.e. flat with separable fibres) morphism, then the Picard prescheme $\repPic_{X/S}$ exists, even if the fibres of $f$ are of dimension $1$ and $S$ is the spectrum of a complete discrete valuation ring.
@@ -87,7 +87,7 @@ $$
 $$
 
 ::: {.rmenv #fga-3-vi-remark title="Remark" latex="{Remark}"}
-We can construct the quotient group scheme $G/G^0=N$ (cf. [@Gro1959, IV]) and then define $G^\tau$, $G^\sigma$, and $G^\rho$ as the inverse images in $G$ of the torsion subgroup of $N$ (resp. of its $p$-primary component, resp. of the natural complement of its $p$-primary component, given by the sum of the $q$-primary components for $q$ prime with $q\neq p$).
+We can construct the quotient group scheme $G/G^0=N$ (cf. [FGA 3.IV](FGA-3-IV.html)) and then define $G^\tau$, $G^\sigma$, and $G^\rho$ as the inverse images in $G$ of the torsion subgroup of $N$ (resp. of its $p$-primary component, resp. of the natural complement of its $p$-primary component, given by the sum of the $q$-primary components for $q$ prime with $q\neq p$).
 Note that $N$ is a discrete group scheme that is separable over $k$, thus (once we have chosen an algebraic closure $\overline{k}$ of $k$, giving rise to a Galois group $\pi$) can be identified with an ordinary discrete group on which $\pi$ acts by automorphisms.
 It is in this way that we can interpret, in an evident way, the construction of the torsion subgroup and the decomposition of this into its $q$-primary components.
 If $G$ is the Picard scheme of a proper scheme $X$ over $k$, then $N$ could be called the (reduced) *Néron--Severi scheme* of $X$ over $k$.
@@ -587,11 +587,11 @@ The above allows us to reduce to the case where $S$ is the spectrum of an Artini
 We can thus suppose that $\repPic_{X_n/A_n}^0$ is simple over $A_n$, and reduce to proving that $\repPic_{X_{n+1}/A_{n+1}}^0$ is simple over $A_{n+1}$.
 Note that, for this, it suffices to construct an abelian scheme $P_{n+1}$ over $A_{n+1}$ that extends $P_n=\repPic_{X_n/A_n}^0$, along with an invertible module $\scr{L}_{n+1}$ on $X_{n+1}\times_{A_{n+1}}P_{n+1}$ that extends the invertible module $\scr{L}_n$ on $X_n\times_{A_n}P_n$ that arises in the definition of the Picard scheme $\repPic_{X_n/A_n}$ as the solution to a universal problem.
 (N.B. We can suppose that $X$ is endowed with a section over $S$...).
-For this construction, we must use the following key result: *every abelian scheme defined over a quotient of an Artinian local ring can be extended* (in other words, the absolute "formal scheme of modules" ([@Gro1959, II]) for an abelian scheme over an algebraically closed field is simple over the ring of Witt vectors over $k$);
+For this construction, we must use the following key result: *every abelian scheme defined over a quotient of an Artinian local ring can be extended* (in other words, the absolute "formal scheme of modules" ([FGA 3.II](FGA-3-II.html)) for an abelian scheme over an algebraically closed field is simple over the ring of Witt vectors over $k$);
 \oldpage{236-20}this result can be obtained by using the general formal properties of the obstruction to lifting, and the group operations.
 With this result, we start by extending $P_n$ arbitrarily to $P_{n+1}$;
 we then find an obstruction to lifting $\scr{L}_n$, found in $\HH^2(X_0\times P_0,\OO_{X_0\times P_0})\otimes_k V$ (where $V=\frak{m}^{n+1}/\frak{m}^{n+2}$), and more precisely in the subspace $\HH^1(X_0,\OO_{X_0})\otimes\HH^1(P_0,\OO_{P_0})\otimes_k V$ (taking into account the fact that the restriction of $\scr{L}_n$ to the two factors $X_n$ and $P_n$ is trivial).
-But this latter space is exactly $\HH^1(P_0,\scr{G}_{P_0/k})\otimes V$, where $\scr{G}_{P_0/k}$ is the tangent sheaf to $P_0/k$, and thus also the space that expresses the indeterminacy that there was in the lifting of $P_n$ to $P_{n+1}$ ([@Gro1959, II]).
+But this latter space is exactly $\HH^1(P_0,\scr{G}_{P_0/k})\otimes V$, where $\scr{G}_{P_0/k}$ is the tangent sheaf to $P_0/k$, and thus also the space that expresses the indeterminacy that there was in the lifting of $P_n$ to $P_{n+1}$ ([FGA 3.II](FGA-3-II.html)).
 So we can correct this lifting (in exactly one way, as should be the case) in such a way as to kill the obstruction to lifting $\scr{L}_n$.
 :::
 
@@ -652,7 +652,7 @@ we obtain a counterexample when $X$ is "a conic degenerating to two lines".
 \oldpage{236-22}It is possible, however, that this is the case if $f$ is *separable* and has *irreducible geometric fibres*.
 The question is linked to knowing if $\repPic_{X/S}^\tau$ is of finite type over $S$, which can be true without any hypotheses on the fibres of $X/S$.
 When $f\colon X\to S$ is simple, we note that $\repPic_{X/S}^\tau$ is contained in one of the $\repPic_{X/S}^Q$ (thanks to the fact that, on a non-singular projective variety, "torsion" equivalence is finer than (in fact, "identical to", thanks to Matsusaka) numerical equivalence for divisors), and is thus of finite type over $S$ if the $\repPic_{X/S}^Q$ are.
-Note that these finiteness questions that we have just highlighted still make sense even without supposing the existence of $\repPic_{X/S}$, since they can be expressed by saying that certain families of invertible modules are "limited", in the sense of [@Gro1959, IV]:
+Note that these finiteness questions that we have just highlighted still make sense even without supposing the existence of $\repPic_{X/S}$, since they can be expressed by saying that certain families of invertible modules are "limited", in the sense of [FGA 3.IV](FGA-3-IV.html):
 Consider, for every algebraically closed field $k$, the integral subschemes of $\mathbb{P}_k^r$ of dimension $n$ and degree $d$, and the invertible modules on these preschemes that have a Hilbert polynomial $Q$ (where $r$, $n$, $d$, and $Q$ are given), and show that the family of these modules (considered as coherent modules on the $\mathbb{P}_k^r$) is *limited*, i.e. can be parametrised by a scheme of finite type over $\mathbb{Z}$.
 
 Using the method of Matsusaka [@Mat1957], a rather technical proof (using the "equivalence criteria" in a suitable form) allow us to answer in the affirmative when we restrict to the non-singular subvarieties of $\mathbb{P}_k^r$.

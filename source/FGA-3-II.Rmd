@@ -38,9 +38,9 @@ Grothendieck, A.
 _Séminaire Bourbaki_ **12** (1959--60), Talk no. 195.
 :::
 
-(*[Trans.]*
+*[Trans.]*
 Sections 4.1 to 4.5 were numbered A.1 to A.5 in the original;
-sections 4.6 to 4.10 were numbered C.1 to C.5.)
+sections 4.6 to 4.10 were numbered C.1 to C.5.
 
 
 ## **A.** Representable and pro-representable functors {-}
@@ -297,7 +297,7 @@ $$
 :::
 
 Suppose that $O_\xi$ is Noetherian, and suppose, for notational simplicity, that $\Lambda$ is complete and local, and that $O=O_\xi$.
-(*[Comp.]* The following definition is correct only when the residue extension $k'/k$ is _separable_; for the general case, see SGA III, 1.1.)
+(*[Comp.]* The following definition is correct only when the residue extension $k'/k$ is _separable_; for the general case, see [@Gro1960b, III, 1.1].)
 We say that _$O$ is simple over $\Lambda$_ if $O$ is a finite and étale algebra over the completion algebra of the localisation of $\Lambda[t_1,\ldots,t_n]$ at one of its maximal ideals that induces the maximal ideal of $\Lambda$;
 if the residue extension of $O$ over $\Lambda$ is trivial (for example, if the residue field of $\Lambda$ is algebraically closed), then this is equivalent to saying that $O$ itself is isomorphic to such a formal series algebra.
 Finally, if we no longer necessarily suppose that $O$ is Noetherian, then we again say that _$O$ is simple over $\Lambda$_ if $O$ is isomorphic to a topological projective limit of quotient $\Lambda$-algebras that are Noetherian and $\Lambda$-simple in the above sense.
@@ -628,7 +628,7 @@ We can show that imposing a multiplicative structure (or even only a "unit secti
 We can also show that, if $X$ is a proper and simple scheme with "absolutely connected" fibres over a locally Noetherian prescheme $S$, then every multiplicative structure on $X$ that admits a unit section is necessarily associative and commutative (provided that it is associative and commutative on _one_ fibre, and provided that $S$ is connected), and is furthermore uniquely determined by the knowledge of the unit section.
 \oldpage{195-19}
 Further, supposing that $S$ is the spectrum of a local Artinian ring $A$ of residue field $k$, that $X$ is proper over $A$ and endowed with a section $s$, and finally that $X\otimes_A k$ is endowed with the structure of an abelian scheme over $k$, admitting the point of $X\otimes_A k$ corresponding to $s$ as the zero element, an easy calculation of obstructions, combined with an argument due to Serre, allows us to prove that there exists on $X$ a multiplicative structure admitting the section $s$ as the unit section.
-(From here, using the "existence theorem" of [@Gro1958a] to pass to the case where $A$ is complete local Noetherian, and then the technique of descent from [@Gro1959, I] for the general case, we can prove the analogous claim for all locally Noetherian connected $S$).
+(From here, using the "existence theorem" of [@Gro1958a] to pass to the case where $A$ is complete local Noetherian, and then the technique of descent from [FGA 3.I](FGA-3-I.html) for the general case, we can prove the analogous claim for all locally Noetherian connected $S$).
 This proves that the functor $F(A)$ considered here is isomorphic to the analogous functor defined at the start of this section by abstracting the multiplicative structure on $X_0$.
 It then follows that, in particular, if $\frak{m}$ is the maximal ideal of $O$, then $\frak{m}/\frak{m}^2$ is canonically isomorphic to the dual of $\HH^1(X_0,\frak{G}_{X_0/k})$, and is thus of dimension $n^2$, where $n=\dim X_0$.
 It would be very interesting to determine if $O$ is indeed _simple_ over $\Lambda$, i.e. isomorphic to an algebra of formal series in $n^2$ variables over $\Lambda$.
@@ -653,7 +653,7 @@ This allows us to apply the technique of descent to the situation.
 \oldpage{195-20}
 We start, in particular, with a flat covering $X'_0$ of $X_0$, unramified over $U_0$, and let $G(\frak{X})$ be the set of classes, up to isomorphism (inducing the identity on $X'_0$), of flat coverings $\frak{X}'$ of $\frak{X}$ that induce $X'_0$ on $X_0$ (and that are thus necessarily unramified over $U$).
 We similarly define $G(V)$ for every open subset $V$ of $\frak{X}$, and, more generally, $G(\frak{Y})$ for every formal prescheme $\frak{Y}$ over $\frak{X}$.
-With this, the results of [@Gro1958a] and [@Gro1959, I] imply, first of all, the following results:
+With this, the results of [@Gro1958a] and [FGA 3.I](FGA-3-I.html) imply, first of all, the following results:
 
 a. If $V$ varies amongst open subset of $\frak{X}$, then the $G(V)$ form a _sheaf_ on $\frak{X}$, say $\scr{G}_\frak{X}=\scr{G}$.
     The restriction of this sheaf to $U$ is the _constant_ sheaf whose fibres consist of a single element.

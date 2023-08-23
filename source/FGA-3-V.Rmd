@@ -331,7 +331,7 @@ These examples work in any characteristic.
 
 ::: {.rmenv #fga-3-v-remark-3.3 title="Remark 3.3" latex="{Remark 3.3}"}
 Under the conditions of [(3.1)](#fga-3-v-theorem-3.1), I do not know if $\repPic_{X/S}$ is a disjoint union of opens that are of finite type, thus quasi-projective, over $S$.
-We note that the study of the Hilbert polynomials $Q\in\mathbb{Q}[t]$ allows us, as in the case of Hilbert schemes ([@Gro1959, IV]), to give a decomposition of $\repPic_{X/S}$ as a disjoint sum of opens $\repPic_{X/S}^Q$, and it seems plausible that these opens are quasi-projective over $S$;
+We note that the study of the Hilbert polynomials $Q\in\mathbb{Q}[t]$ allows us, as in the case of Hilbert schemes ([FGA 3.IV](FGA-3-IV.html)), to give a decomposition of $\repPic_{X/S}$ as a disjoint sum of opens $\repPic_{X/S}^Q$, and it seems plausible that these opens are quasi-projective over $S$;
 this is what we will see at least in the next talk when $f$ is a simple morphism.
 We draw attention to the fact that if we replace hypothesis (i) by the hypothesis "$X$ is *locally* projective over $S$" (which is sufficient to prove [(3.1)](#fga-3-v-theorem-3.1), since the question of existence of $\repPic_{X/S}$ is clearly local on $S$) however, then it is easy to give examples where *$\repPic_{X/S}$ contains connected components that are not of finite type over $S$*.
 \oldpage{232-08}
@@ -386,13 +386,13 @@ $$
   = \Div(X\times_S S'/S').
 $$
 Suppose that $X$ is flat and proper over $S$.
-Then by the characterisation (ii) of relative Cartier divisors, $\shDiv_{X/S}$ can be considered as a sub-functor of the functor $\shHilb_{X/S}$ defined in [@Gro1959, IV], and the inclusion morphism
+Then by the characterisation (ii) of relative Cartier divisors, $\shDiv_{X/S}$ can be considered as a sub-functor of the functor $\shHilb_{X/S}$ defined in [FGA 3.IV](FGA-3-IV.html), and the inclusion morphism
 $$
   \shDiv_{X/S}
   \to \shHilb_{X/S}
 $$
 is "representable by open immersions" (cf. [@Gro1960a, IV, 3.13]) by the above remarks.
-Using the principal existence theorem of [@Gro1959, IV], we find:
+Using the principal existence theorem of [FGA 3.IV](FGA-3-IV.html), we find:
 
 ::: {.itenv #fga-3-v-proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
 Suppose that $f\colon X\to S$ is projective and flat.
@@ -496,7 +496,7 @@ In the general case where $X/S$ does not necessarily admit a section, we can eas
 
 ::: {.rmenv #fga-3-v-remarks-5.1 title="Remarks 5.1" latex="{Remarks 5.1}"}
 The method that we followed is essentially that of Matsusaka for the projective construction of Picard varieties.
-The result that we invoke from [@Gro1959, III] that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [Mumford--Tate seminar, 1962]).
+The result that we invoke from [FGA 3.III](FGA-3-III.html) that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [Mumford--Tate seminar, 1962]).
 (Classically, these quotients are constructed by using Chow coordinates).
 Note that the formation of the open $\repPic_{X/S}^+$ of $\repPic_{X/S}$ and its decomposition into opens ${\repPic_{X/S}^+}^Q$ that are quasi-projcetive over $S$ following the Hilbert polynomials for the *divisors* that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).
 :::
