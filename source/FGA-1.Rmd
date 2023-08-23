@@ -1195,26 +1195,26 @@ From the above result, [Theorem 6](#fga-1-theorem-6) can be deduced from the def
 \oldpage{149-24}—
 
 1. For the definitions preceding [Theorem 6](#fga-1-theorem-6), it was not necessary for $X$ to be non-singular, since it was not necessary to work with only _finite_ resolutions.
-    But, if $X$ is singular, then we can no long be sure, a priori, that the $(\underline{T}_r^s)^p(\scr{A}_1,\ldots;\scr{B}_1,\ldots)$ are _coherent_ sheaves, since, in the complex of sheaves
-    $$
-      \shHom_{\scr{O}_X}(\underline{L}(\scr{A}_1)\otimes\ldots,\underline{L}(\scr{B}_1)\otimes\ldots)
-    $$
-    there will be an infinite number of components of any given total degree.
+  But, if $X$ is singular, then we can no long be sure, a priori, that the $(\underline{T}_r^s)^p(\scr{A}_1,\ldots;\scr{B}_1,\ldots)$ are _coherent_ sheaves, since, in the complex of sheaves
+  $$
+    \shHom_{\scr{O}_X}(\underline{L}(\scr{A}_1)\otimes\ldots,\underline{L}(\scr{B}_1)\otimes\ldots)
+  $$
+  there will be an infinite number of components of any given total degree.
 
 2. We can easily verify that, in the formulas in [(8.1)](#fga-1-equation-8.1), we can replace _one_ of the $\underline{L}(\scr{B}_i)$ with $\scr{B}_i$.
-    Taking [Proposition 3](#fga-1-proposition-3) into account, this shows that we have
-    $$
-      \begin{aligned}
-        \underline{T}_1^{1\bullet}(\scr{A};\scr{B})
-        &= \shExt_{\scr{O}_X}^\bullet(\scr{A},\scr{B})
-      \\T_1^{1\bullet}(\scr{A};\scr{B})
-        &= \Ext_{\scr{O}_X}^\bullet(X;\scr{A},\scr{B}).
-      \end{aligned}
-    \tag{8.8}
-    $$
-    In particular, taking $r=s=1$ and $\scr{A}_1=\scr{O}_X$ in [(8.6)](#fga-1-equation-8.6), we recover [Theorem 3](#fga-1-theorem-3).
-    Equation (8.8) also implies that $T_0^{1\bullet}(\scr{B})=\HH^\bullet(X,\scr{B})$, and that $T_1^{0\bullet}(\scr{A})=\Ext_{\scr{O}_X}^\bullet(X;\scr{A},\scr{O}_X)$.
+  Taking [Proposition 3](#fga-1-proposition-3) into account, this shows that we have
+  $$
+    \begin{aligned}
+      \underline{T}_1^{1\bullet}(\scr{A};\scr{B})
+      &= \shExt_{\scr{O}_X}^\bullet(\scr{A},\scr{B})
+    \\T_1^{1\bullet}(\scr{A};\scr{B})
+      &= \Ext_{\scr{O}_X}^\bullet(X;\scr{A},\scr{B}).
+    \end{aligned}
+  \tag{8.8}
+  $$
+  In particular, taking $r=s=1$ and $\scr{A}_1=\scr{O}_X$ in [(8.6)](#fga-1-equation-8.6), we recover [Theorem 3](#fga-1-theorem-3).
+  Equation (8.8) also implies that $T_0^{1\bullet}(\scr{B})=\HH^\bullet(X,\scr{B})$, and that $T_1^{0\bullet}(\scr{A})=\Ext_{\scr{O}_X}^\bullet(X;\scr{A},\scr{O}_X)$.
 
 3. We see, in [(8.1)](#fga-1-equation-8.1), that the functors $\underline{T}_r^{s\bullet}$ and $T_r^{s\bullet}$ have, in general, components in positive _and_ negative degrees.
-    Using the above remark, we see that, if the dimension of $X$ is $n$, then the non-zero components of $\underline{T}_r^{s\bullet}$ are concentrated between degrees $-(s-1)n$ and $rn$ if $s>0$, and between degrees $0$ and $rn$ if $s=0$; the non-zero components of $T_r^{s\bullet}$ are concentrated between degrees $-(s-1)n$ and $(r+1)n$ if $s>0$, and between degrees $0$ and $(r+1)n$ if $s=0$ (and, unless I am mistaken, if $r>0$, between degrees $-(s-1)n$ and $rn$, resp. $0$ and $rn$).
+  Using the above remark, we see that, if the dimension of $X$ is $n$, then the non-zero components of $\underline{T}_r^{s\bullet}$ are concentrated between degrees $-(s-1)n$ and $rn$ if $s>0$, and between degrees $0$ and $rn$ if $s=0$; the non-zero components of $T_r^{s\bullet}$ are concentrated between degrees $-(s-1)n$ and $(r+1)n$ if $s>0$, and between degrees $0$ and $(r+1)n$ if $s=0$ (and, unless I am mistaken, if $r>0$, between degrees $-(s-1)n$ and $rn$, resp. $0$ and $rn$).
 :::

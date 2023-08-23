@@ -127,10 +127,10 @@ _Finiteness theorem._ ---
 i. The $\RR^q\overline{f}_*(\overline{\scr{F}})$ are coherent sheaves on $\overline{Y}$.
 
 ii. The natural homomorphisms
-    $$
-        \RR^q\overline{f}_*(\overline{\scr{F}}) \to \varprojlim_n\RR^q (f_n)_*(\scr{F}_n)
-    $$
-    are isomorphisms.
+  $$
+    \RR^q\overline{f}_*(\overline{\scr{F}}) \to \varprojlim_n\RR^q (f_n)_*(\scr{F}_n)
+  $$
+  are isomorphisms.
 :::
 
 In this statement, we suppose that we already have some coherent subsheaf $\scr{J}$ of $\scr{O}_Y$ that defines $Y'$, whence, by taking the inverse image, a coherent subsheaf of $\scr{O}_X$ that defines $X'$, whence, by definition, $\scr{F}_n$, $X_n$, $Y_n$, and $f_n\colon X_n\to Y_n$ as in [§2](#fga-2-section-2).
@@ -210,9 +210,9 @@ Let $A$ be a complete local Noetherian ring, with residue field $k$, and let $\f
 We suppose that
 
 i. the local rings of $\scr{O}_{\frak{X}}$ are _flat_ $A$-modules, or, equivalently, that, if we endow $\scr{O}_{\frak{X}}$ and $A$ with the filtration given by powers of the maximal ideal of $A$, then the associated graded algebras satisfy
-    $$
-      \gr(\scr{O}_{\frak{X}}) \simeq \gr^0(\scr{O}_{\frak{X}})\otimes_k\gr(A);
-    $$
+  $$
+    \gr(\scr{O}_{\frak{X}}) \simeq \gr^0(\scr{O}_{\frak{X}})\otimes_k\gr(A);
+  $$
 
 ii. $H^2(\frak{X}_0,\scr{O}_{\frak{X}_0})=0$, where we consider $\frak{X}_0=\frak{X}\otimes_Ak$ as an algebraic scheme over $k$;
 
@@ -489,26 +489,26 @@ Then, for every complete local Noetherian ring $A$ with residue field $k$, there
 —
 
 1. [Corollary 3](#fga-2-theorem-9-corollary-3) and [Corollary 4](#fga-2-theorem-9-corollary-4) are above all interesting if $k$ is of characteristic $p\neq0$, taking $A$ to be a discrete valuation ring _of characteristic $0$_, with residue field $k$;
-    for example, the "smallest possible $A$", i.e. that for which $p$ generates the maximal ideal.
-    (In fact, by theorems of Cohen, it suffices to have [Corollary 3](#fga-2-theorem-9-corollary-3) and [Corollary 4](#fga-2-theorem-9-corollary-4) for such a ring $A$).
-    We note that, concerning this point, according to the specialists, we do not know if there exist schemes over a field $k$ that are not reductions $\mod p$ of a flat scheme defined over such a ring $A$.
-    At the least, the results of this section give a way of systematically investigating this question.
-    We must start by seeing if the first obstruction that we have, in $H^2(X_0,\frak{G}_{X_0/k})$, is necessarily zero.
+  for example, the "smallest possible $A$", i.e. that for which $p$ generates the maximal ideal.
+  (In fact, by theorems of Cohen, it suffices to have [Corollary 3](#fga-2-theorem-9-corollary-3) and [Corollary 4](#fga-2-theorem-9-corollary-4) for such a ring $A$).
+  We note that, concerning this point, according to the specialists, we do not know if there exist schemes over a field $k$ that are not reductions $\mod p$ of a flat scheme defined over such a ring $A$.
+  At the least, the results of this section give a way of systematically investigating this question.
+  We must start by seeing if the first obstruction that we have, in $H^2(X_0,\frak{G}_{X_0/k})$, is necessarily zero.
 
 2. \oldpage{182-15}We note that [Theorem 3](#fga-2-theorem-3), and the corresponding technique, only works for a _complete_ (local, for simplicity) base ring.
 
-    In order to go from known results concerning the completion of a local ring to the corresponding results for the local ring itself, we would need a fourth "fundamental theorem", whose precise statement still needs to be found.
+  In order to go from known results concerning the completion of a local ring to the corresponding results for the local ring itself, we would need a fourth "fundamental theorem", whose precise statement still needs to be found.
 
 3. We will compare the results from this section (mainly the above [Corollary 1](#fga-2-theorem-9-corollary-1) and [Corollary 2](#fga-2-theorem-9-corollary-2)), as well as those from the following, with the results of Kodaira--Spencer on the variation of complex structures.
-    Using the conjectural theorem to which we have just alluded, we should be able to conclude, under the conditions of [Corollary 1](#fga-2-theorem-9-corollary-1), but where $A$ is no longer assumed to be complete, that there exists a ring $A'$ that contains $A$, and that is finite and unramified over $A$, such that $X\otimes_AA'$ and $X'\otimes_AA'$ are $A'$-isomorphic (where $X$ and $X'$ are given, and are proper flat $A$-schemes such that $X\otimes_Ak=X'\otimes_Ak=X_0$).
-    This is what we can prove, at least, when $X_0=\frak{P}_k^r$, by using [Corollary 1 of Proposition 2](#fga-2-proposition-2-corollary-1).
-    In any case, if $H^1(X_0,\frak{G}_{X_0/k})=0$, then we can prove that the fibres of $X$ and $X'$ over any point $y$ of $Y=\Spec(A)$ are isomorphic, or at least when we pass to the algebraic closure of the residue field $k(y)$.
-    (We have a local result, seemingly stronger, when we don't suppose that $A$ is necessarily local).
-    As for "structure variations" of the projective space, we again point out the following question, suggested by a corresponding problem of Kodaira--Spencer.
-    Let $X$ be a proper flat scheme, over a local integral ring $A$ with field of fractions $K$ and residue field $k$, and suppose that $X\otimes_AK$ is isomorphic to $\frak{P}_K^r$.
-    Is it then true that $X\otimes_Ak=X_0$ is isomorphic to $\frak{P}_k^R$ (or at least, over the algebraic closure of $k$)?
-    In this question, we can assume that $A$ is a complete discrete valuation ring.
-    There is an analogous question when $X_0$ is an abelian variety.
+  Using the conjectural theorem to which we have just alluded, we should be able to conclude, under the conditions of [Corollary 1](#fga-2-theorem-9-corollary-1), but where $A$ is no longer assumed to be complete, that there exists a ring $A'$ that contains $A$, and that is finite and unramified over $A$, such that $X\otimes_AA'$ and $X'\otimes_AA'$ are $A'$-isomorphic (where $X$ and $X'$ are given, and are proper flat $A$-schemes such that $X\otimes_Ak=X'\otimes_Ak=X_0$).
+  This is what we can prove, at least, when $X_0=\frak{P}_k^r$, by using [Corollary 1 of Proposition 2](#fga-2-proposition-2-corollary-1).
+  In any case, if $H^1(X_0,\frak{G}_{X_0/k})=0$, then we can prove that the fibres of $X$ and $X'$ over any point $y$ of $Y=\Spec(A)$ are isomorphic, or at least when we pass to the algebraic closure of the residue field $k(y)$.
+  (We have a local result, seemingly stronger, when we don't suppose that $A$ is necessarily local).
+  As for "structure variations" of the projective space, we again point out the following question, suggested by a corresponding problem of Kodaira--Spencer.
+  Let $X$ be a proper flat scheme, over a local integral ring $A$ with field of fractions $K$ and residue field $k$, and suppose that $X\otimes_AK$ is isomorphic to $\frak{P}_K^r$.
+  Is it then true that $X\otimes_Ak=X_0$ is isomorphic to $\frak{P}_k^R$ (or at least, over the algebraic closure of $k$)?
+  In this question, we can assume that $A$ is a complete discrete valuation ring.
+  There is an analogous question when $X_0$ is an abelian variety.
 :::
 
 ::: {.rmenv title="Remark" latex="{Remark}"}
@@ -788,11 +788,11 @@ Then the fundamental groups of $X$ and $X\times_kK$ are the same, i.e. every unr
 —
 
 1. Using [Proposition 4](#fga-2-proposition-4), we see that the hypothesis that $f_*(\scr{O}_X)=\scr{O}_Y$ in [Corollary 4](#fga-2-theorem-11-corollary-4) is not essential.
-    In the general case, instead of putting the trivial group $e$ after $\pi_1(Y)$, one must continue by $\pi_0(\overline{F})\to\pi_0(X)\to\pi_0(Y)\to e$,
-    as in algebraic topology.
+  In the general case, instead of putting the trivial group $e$ after $\pi_1(Y)$, one must continue by $\pi_0(\overline{F})\to\pi_0(X)\to\pi_0(Y)\to e$,
+  as in algebraic topology.
 
 2. \oldpage{182-24}In general, we cannot say anything at the moment about the kernel of $\pi_1(\overline{F})\to\pi_1(X)$, although it should involve a $\pi_2(Y)$.
-    It seems, however, that we should be able to prove that $\pi_1(\overline{F})\to\pi_1(X)$ is _injective_ if $Y$ is the spectrum of a local ring $A$, by appealing to [Theorem 12](#fga-2-theorem-12) below (which shows that this is the case if $A$ is _complete_).
+  It seems, however, that we should be able to prove that $\pi_1(\overline{F})\to\pi_1(X)$ is _injective_ if $Y$ is the spectrum of a local ring $A$, by appealing to [Theorem 12](#fga-2-theorem-12) below (which shows that this is the case if $A$ is _complete_).
 :::
 
 [Theorem 11](#fga-2-theorem-11) used only [Theorem 1](#fga-2-theorem-1) and [Theorem 2](#fga-2-theorem-2);
@@ -922,7 +922,7 @@ If $X_0$ is of genus $0$, and $n=3$, then we have a solution to the "_three poin
 —
 
 1. A more complete study, probably involving generalised Galois coverings of $X$, $X_0$, and $X_1$ (of eventually infinitesimal Galois group), should allow one to recover the kernel in [Corollary 2 of Theorem 12](#fga-2-theorem-12-corollary-2).
-    However, a study of coverings admitting ramifications that are not "tame" seems much more difficult.
+  However, a study of coverings admitting ramifications that are not "tame" seems much more difficult.
 
 2. [Lemma 6](#fga-2-lemma-6), combined with a result of Grauert concerning the formal completion of a non-singular projective scheme along a hyperplane section (or with the theorem, as yet unproven, mentioned in Remark 2 after [Theorem 11](#fga-2-theorem-11)), would also allow us to prove, in "abstract" algebraic geometry, the classical _Lefschetz theorem_ on the fundamental group.
 :::

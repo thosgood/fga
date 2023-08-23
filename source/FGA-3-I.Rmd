@@ -77,15 +77,15 @@ A _fibred category $\cal{F}$ with base $\cal{C}$_ (or _over $\cal{C}$_) consists
 - for every $X\in\cal{C}$, a category $\cal{F}_X$
 
 - for every $\cal{C}$-morphism $f\colon X\to Y$, a functor $f^*\colon\cal{F}_Y\to\cal{F}_X$, which we also write as
-    $$
-      f^*(\xi) = \xi \times_Y X
-    $$
-    for $\xi\in\cal{F}_Y$ (with $X$ being thought of as an "object of $\cal{C}$ over $Y$", i.e. as being endowed with the morphism $f$)
+  $$
+    f^*(\xi) = \xi \times_Y X
+  $$
+  for $\xi\in\cal{F}_Y$ (with $X$ being thought of as an "object of $\cal{C}$ over $Y$", i.e. as being endowed with the morphism $f$)
 
 - for any two composible morphisms $X\xrightarrow{f}Y\xrightarrow{g}Z$, an isomorphism of functors
-    $$
-      c_{f,g}\colon (gf)^* \to f^*g^*
-    $$
+  $$
+    c_{f,g}\colon (gf)^* \to f^*g^*
+  $$
 
 with the above data being subject to the conditions that
 
@@ -94,15 +94,15 @@ i. $\id^*=\id$
 ii. $c_{f,g}$ is the identity isomorphism if $f$ or $g$ is an identity isomorphism
 
 iii. for any three composible morphisms $X\xrightarrow{f}Y\xrightarrow{g}Z\xrightarrow{h}T$, the following diagram, given by using the isomorphisms of the form $c_{u,v}$, commutes:
-    $$
-      \begin{CD}
-        (h(gf))^* @= ((hg)f)^*
-      \\@VVV @VVV
-      \\(gf)^*h^* @. f^*(hg)^*
-      \\@VVV @VVV
-      \\(f^*g^*)h^* @= f^*(g^*h^*)
-      \end{CD}
-    $$
+  $$
+    \begin{CD}
+      (h(gf))^* @= ((hg)f)^*
+    \\@VVV @VVV
+    \\(gf)^*h^* @. f^*(hg)^*
+    \\@VVV @VVV
+    \\(f^*g^*)h^* @= f^*(g^*h^*)
+    \end{CD}
+  $$
 :::
 
 ::: {.rmenv #fga-3-i-section-A.1-example-1 title="Example 1" latex="{Example 1}"}
@@ -642,10 +642,10 @@ Then $\alpha$ is a _strict descent morphism_ (cf. [Definition 1.7](#fga-3-i-sect
 This statement implies two things:
 
 i. If $\cal{F}$ and $\scr{G}$ are quasi-coherent sheaves on $S$, and $\cal{F}'$ and $\scr{G}'$ their inverse images on $S'$, then the natural homomorphism
-    $$
-      \Hom(\cal{F},\scr{G}) \to \Hom(\cal{F}',\scr{G}')
-    $$
-    is a bijection from the left-hand side to the subgroup of the right-hand side consisting of homomorphisms $\cal{F}'\to\scr{G}'$ that are compatible with the canonical descent data on these sheaves, i.e. whose inverse images under the two projections of $S''=S'\times_S S'$ to $S'$ give the same homomorphism $\cal{F}''\to\scr{G}''$.
+  $$
+    \Hom(\cal{F},\scr{G}) \to \Hom(\cal{F}',\scr{G}')
+  $$
+  is a bijection from the left-hand side to the subgroup of the right-hand side consisting of homomorphisms $\cal{F}'\to\scr{G}'$ that are compatible with the canonical descent data on these sheaves, i.e. whose inverse images under the two projections of $S''=S'\times_S S'$ to $S'$ give the same homomorphism $\cal{F}''\to\scr{G}''$.
 
 ii. Every quasi-coherent sheaf $\cal{F}'$ on $S'$ endowed with a descent data with respect to the morphism $\alpha\colon S'\to S$ (cf. [Definition 1.6](#fga-3-i-section-A.1-definition-1.6) is isomorphic (endowed with this data) to the inverse image of a quasi-coherent sheaf $\cal{F}$ on $S$.
 

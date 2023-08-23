@@ -8,7 +8,6 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 ## To-do
 
 - pdf output
-- indent 2 spaces instead of 4 for lists
 - fix other citations to the Mumford--Tate seminar
 - pdf specific definitions (e.g. `\ourrar`, `\oullar`, `\simto`, `\simfrom`)
 - generally check that citations are "correct"

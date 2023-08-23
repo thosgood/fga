@@ -219,15 +219,15 @@ Recall that a _groupoid_ is defined to be a category where all the morphisms are
 \oldpage{212-08}A category should be defined as consisting of two base sets, $X$ and $R$, with the former being the set of _objects_ and the latter the set of _arrows_, endowed with the following structures:
 
 i. a pair of maps
-    $$
-      p_1,p_2\colon R\rightrightarrows X
-    $$
-    called the _source map_ and the _target map_ ;
+  $$
+    p_1,p_2\colon R\rightrightarrows X
+  $$
+  called the _source map_ and the _target map_ ;
 ii. a map
-    $$
-      \pi\colon(R,p_2)\times_X(R,p_1) \to R
-    $$
-    called the _composition map_.
+  $$
+    \pi\colon(R,p_2)\times_X(R,p_1) \to R
+  $$
+  called the _composition map_.
 
 These data should satisfy well-known axioms, which we will not repeat here, and which can be expressed in terms of the commutativity of certain diagrams along with the existence of a (necessarily unique) map $D\colon X\to R$ that makes two other diagrams commute, where $D$ corresponds to passing from an object to the corresponding identity map, and satisfies
 $$
@@ -364,7 +364,7 @@ Let $Y=\Spec(A)$, and $f\colon X\to Y$ the morphism defined by the embedding of 
 
 i. $B$ is integral over $A$, i.e. $f$ is an integral morphism.
 ii. The morphism $f$ is surjective, and its fibres are the set-theoretic equivalence classes
-    $p_2(p_1^{-1}(x))$ in $X$ modulo $\cal{R}$, and the topology of $Y$ is the quotient of that of $X$.
+  $p_2(p_1^{-1}(x))$ in $X$ modulo $\cal{R}$, and the topology of $Y$ is the quotient of that of $X$.
 iii. $Y$ is the quotient of $X$ by $\cal{R}$ in the category of preschemes.
 iv. If $\cal{R}$ comes from an equivalence _relation_, then the morphism $f\colon X\to Y$ is finite and locally free (i.e. $B$ is a projective $A$-module of finite type), and the equivalence relation is effective, i.e. $R_1\to X\times_Y X$ is an isomorphism.
 :::
@@ -417,11 +417,11 @@ The data of a finite, locally free, and surjective morphism $f\colon X\to Y$ of 
 1. We have not needed to make any Noetherian hypothesis.
 
 2. This idea of passing to the quotient contains, as a particular case, the "inseparable descent" of Cartier, which corresponds to the determination of finite and locally free morphisms $f\colon X\to Y$ such that $f_*(\cal{O}_X)$ admits a $p$-basis with respect to $\cal{O}_Y$ (where $X$ is a given prescheme whose sheaf $\cal{O}_X$ is annihilated by the prime number $p>0$).
-    We note that this result can also be easily expressed without any regularity hypothesis on the local rings, and without supposing that $X$ is an algebraic scheme over a field.
-    The theory of Jacobson--Bourbaki is obtained by taking $X$ to be the spectrum of a field of characteristic $p$.
+  We note that this result can also be easily expressed without any regularity hypothesis on the local rings, and without supposing that $X$ is an algebraic scheme over a field.
+  The theory of Jacobson--Bourbaki is obtained by taking $X$ to be the spectrum of a field of characteristic $p$.
 
 3. Gabriel had already obtained a particular case of [Theorem 5.3](#fga-3-iii-theorem-5.3) in the theory of passing to the quotient for finite commutative groups over a field $k$.
-    (Compare with [Corollary 7.4](#fga-3-iii-corollary-7.4)).
+  (Compare with [Corollary 7.4](#fga-3-iii-corollary-7.4)).
 :::
 
 
@@ -438,7 +438,7 @@ Under these conditions:
 i. $Y=X/\cal{R}$ exists, and (if $S$ is Noetherian) is quasi-projective^[*[Comp.]* The fact that $Y=X/\cal{R}$ is quasi-projective over $S$ has only been proven, for now, in the case where $\cal{R}$ comes from an equivalence relation.] over $S$.
 
 ii. The canonical morphism $f\colon X\to Y$ is surjective, proper, and open, and its fibres are the equivalence classes $p_2(p_1^{-1}(x))$ in $X$ modulo $\cal{R}$, and so $Y$ can be identified with the topological quotient space of $X$ by the set-theoretic equivalence relation defined by $\cal{R}$.
-    Finally, $R_1\to X\times_Y X$ is surjective.
+  Finally, $R_1\to X\times_Y X$ is surjective.
 
 iii. If $\cal{R}$ comes from an equivalence relation, then the equivalence relation in question is effective, i.e. $R_1\to X\times_Y X$ is an isomorphism, and, further, $f\colon X\to Y$ is flat (and thus faithfully flat).
 :::
@@ -466,7 +466,7 @@ Then there exists a _dense_ open subset $U$ of $X$ that is _saturated_ for $\cal
 i. If $\cal{R}_U$ is the equivalence pre-relation induced by $\cal{R}$ on $U$, then $U/\cal{R}_U$ exists, and is of finite type over $S$.
 
 ii. The canonical morphism $U\to U/\cal{R}_U$ is surjective and open, and its fibres are the set-theoretic equivalence classes for $\cal{R}_U$ (and thus $U/\cal{R}_U$ is a topological quotient space of $U$ by the set-theoretic equivalence relation defined by $\cal{R}_U$).
-    Finally, the morphism $(\cal{R}_U)_1\to U\times_{U/\cal{R}_U}U$ is surjective.
+  Finally, the morphism $(\cal{R}_U)_1\to U\times_{U/\cal{R}_U}U$ is surjective.
 
 iii. If $\cal{R}$ comes from an equivalence relation, then we can suppose that $U\to U/\cal{R}_U$ is faithfully flat and that $\cal{R}_U$ is effective.
 :::
@@ -477,11 +477,11 @@ iii. If $\cal{R}$ comes from an equivalence relation, then we can suppose that $
 —
 
 1. I do not know if, in [Theorem 6.1](#fga-3-iii-theorem-6.1) and [Theorem 6.2](#fga-3-iii-theorem-6.2), hypothesis (b) is useless.
-    In practice, it obliges us, in the passage to the quotient by groups, to restrict to he case where the stabilisers are all finite groups.
+  In practice, it obliges us, in the passage to the quotient by groups, to restrict to he case where the stabilisers are all finite groups.
 
 2. We can ask if there are results analogous to [Theorem 6.1](#fga-3-iii-theorem-6.1) and [Theorem 6.2](#fga-3-iii-theorem-6.2) without any flatness hypothesis.
-      I have no counter example in this direction.
-      However, even keeping the flatness hypothesis, and restricting to equivalence relations such that $p_1\colon R\to X$ is flat and quasi-finite (but not finite), and with $X$ affine, it can still be the case that $R$ is not effective: take the equivalence relations induced on the affine open subsets covering the Nagata variety (or a group with two elements acting in a "non-admissible" way).
+  I have no counter example in this direction.
+  However, even keeping the flatness hypothesis, and restricting to equivalence relations such that $p_1\colon R\to X$ is flat and quasi-finite (but not finite), and with $X$ affine, it can still be the case that $R$ is not effective: take the equivalence relations induced on the affine open subsets covering the Nagata variety (or a group with two elements acting in a "non-admissible" way).
 :::
 
 
@@ -567,7 +567,7 @@ Under the above conditions:
 1. The equivalence relation defined by $G$ is effective, the quotient $Y=X/G$ is of finite type over $S$, and the canonical morphism $f\colon X\to Y$ is flat and surjective (and thus $X$ becomes a homogeneous principal bundle on $Y$, with group $G\times_S Y=\GP(n)_Y$).
 
 2. Let $\scr{L}'$ be the invertible sheaf on $Y$ induced from $\scr{L}$ by "faithfully flat descent" under $f$ (cf. [FGA 3.I, B, Theorem 1](FGA-3-I.html#fga-3-i-section-B.1-theorem-1)).
-    Then $\scr{L}'$ is "pre-ample" on $Y$ with respect to $S$, i.e. there exists an integer $m$ and a quasi-finite morphism from $Y$ to some suitable projective-type scheme $\mathbb{P}_S^N$ such that $(\scr{L}')^{\otimes m}$ is isomorphic to the inverse image of $\cal{O}_{\mathbb{P}_S^N}(1)$.
+  Then $\scr{L}'$ is "pre-ample" on $Y$ with respect to $S$, i.e. there exists an integer $m$ and a quasi-finite morphism from $Y$ to some suitable projective-type scheme $\mathbb{P}_S^N$ such that $(\scr{L}')^{\otimes m}$ is isomorphic to the inverse image of $\cal{O}_{\mathbb{P}_S^N}(1)$.
 :::
 
 We note that, even if $X$ is separated over $S$, then it can be the case that $Y$ is not separated over $S$ (a situation that arises in not-at-all-pathological "module problems").

@@ -589,17 +589,17 @@ If, furthermore, $X_0$ is proper over $k$, then the formal scheme of modules is 
 —
 
 1. If $X_0$ is not assumed to be simple over $k$, then $F(I_A,\xi)$ can be identified with a sub-$A$-module of
-    $$
-      \Ext_{\scr{O}_{P_A}}^1(P_A;\scr{I}_{X_A},\scr{O}_{X_A})
-    $$
-    where we set $P_A=X_A\times_A X_A$, where $\scr{O}_{X_A}$ is considered as a coherent sheaf on $P_A$ via the diagonal morphism $X_A\to P_A$, and where $\scr{I}_{X_A}$ denotes the coherent sheaf of ideals on $P_A$ defined by the diagonal morphism.
-    More precisely, an easy globalisation of Hochschild theory shows that the $\Ext^1$ above can be identified with the set of classes, up to isomorphism, of sheaves of $I_A$-algebras $\scr{O}$ that are flat over $X_A$, and endowed with an augmentation isomorphism $\scr{O}\otimes_{I_A}A\to\scr{O}_{X_A}$ (recall that we set $I_A=At/(t^2)$).
-    The submodule $F(I_A,\xi)$ is that which corresponds to the sheaves of _commutative_ algebras.
-    The simplicity hypotheses are thus not essential in the theory of modules, as [@Gro1958a] implies.
+  $$
+    \Ext_{\scr{O}_{P_A}}^1(P_A;\scr{I}_{X_A},\scr{O}_{X_A})
+  $$
+  where we set $P_A=X_A\times_A X_A$, where $\scr{O}_{X_A}$ is considered as a coherent sheaf on $P_A$ via the diagonal morphism $X_A\to P_A$, and where $\scr{I}_{X_A}$ denotes the coherent sheaf of ideals on $P_A$ defined by the diagonal morphism.
+  More precisely, an easy globalisation of Hochschild theory shows that the $\Ext^1$ above can be identified with the set of classes, up to isomorphism, of sheaves of $I_A$-algebras $\scr{O}$ that are flat over $X_A$, and endowed with an augmentation isomorphism $\scr{O}\otimes_{I_A}A\to\scr{O}_{X_A}$ (recall that we set $I_A=At/(t^2)$).
+  The submodule $F(I_A,\xi)$ is that which corresponds to the sheaves of _commutative_ algebras.
+  The simplicity hypotheses are thus not essential in the theory of modules, as [@Gro1958a] implies.
 
 2. Recall (*loc. cit.*) that, in particular, every _simple_ and _proper algebraic curve_ $X_0$ over $k$ admits a formal scheme of modules that is simple over $\Lambda$, and of relative dimension equal to $3g-3$ if the genus $g$ is $\geq2$, and to $g$ if $g=0,1$.
-    These two latter cases no longer figure directly in [Proposition 4.1](#fga-3-ii-section-C.4-proposition-4).
-    We can, however, recover them in the case of elliptic curves ($g=1$) thanks to the remarks that will follow.
+  These two latter cases no longer figure directly in [Proposition 4.1](#fga-3-ii-section-C.4-proposition-4).
+  We can, however, recover them in the case of elliptic curves ($g=1$) thanks to the remarks that will follow.
 :::
 
 We can, of course, vary [Proposition 4.1](#fga-3-ii-section-C.4-proposition-4) _ad libitum_ by considering systems of schemes over $k$ endowed with various structures.
@@ -634,20 +634,20 @@ We similarly define $G(V)$ for every open subset $V$ of $\frak{X}$, and, more ge
 With this, the results of [@Gro1958a] and [FGA 3.I](FGA-3-I.html) imply, first of all, the following results:
 
 a. If $V$ varies amongst open subset of $\frak{X}$, then the $G(V)$ form a _sheaf_ on $\frak{X}$, say $\scr{G}_\frak{X}=\scr{G}$.
-    The restriction of this sheaf to $U$ is the _constant_ sheaf whose fibres consist of a single element.
+  The restriction of this sheaf to $U$ is the _constant_ sheaf whose fibres consist of a single element.
 
-    More generally, describing the fibres of $\scr{G}_\frak{X}$ is a question of complete local rings, in a precise way:
+  More generally, describing the fibres of $\scr{G}_\frak{X}$ is a question of complete local rings, in a precise way:
 
 b. For all $x\in\frak{X}$, we have
-    $$
-      \scr{G}_x = G(\Spec(\scr{O}_{\frak{X},x})) \subset G(\Spec(\widehat{\scr{O}}_{\frak{X},x}))
-    $$
-    (i.e. isomorphism classes of finite free algebras $B$ over $\widehat{\scr{O}}_{\frak{X},x}$ endowed with an isomorphism from $B\otimes_{\widehat{\scr{O}}_{\frak{X},x}}\scr{O}_{X_0,x}$ to $(\widehat{\scr{O}}'_0)_x$, where $\scr{O}'_0$ is the sheaf of algebras on $X_0$ that defines $X'_0$).
+  $$
+    \scr{G}_x = G(\Spec(\scr{O}_{\frak{X},x})) \subset G(\Spec(\widehat{\scr{O}}_{\frak{X},x}))
+  $$
+  (i.e. isomorphism classes of finite free algebras $B$ over $\widehat{\scr{O}}_{\frak{X},x}$ endowed with an isomorphism from $B\otimes_{\widehat{\scr{O}}_{\frak{X},x}}\scr{O}_{X_0,x}$ to $(\widehat{\scr{O}}'_0)_x$, where $\scr{O}'_0$ is the sheaf of algebras on $X_0$ that defines $X'_0$).
 
 c. We have a canonical isomorphism $\scr{G}_\frak{X}=\varprojlim\scr{G}_{\frak{X}_n}$; in other words, for every open subset $V$ of $\frak{X}$, we have $G(V)=\varprojlim G(V_n)$.
 
 d. Suppose that $\frak{X}$ comes from an ordinary _proper_ scheme $X$ over a complete local Noetherian ring $\Lambda$ that has ideal of definition $\frak{m}$ by taking the $\scr{J}$-adic completion of $\scr{O}_X$, where $\scr{J}=\frak{m}\cdot\scr{O}_X$.
-    Then $G(\frak{X})$ is canonically isomorphic to the set of classes of flat coverings of the _ordinary_ scheme $X$ that are "reducible along $X'_0$".
+  Then $G(\frak{X})$ is canonically isomorphic to the set of classes of flat coverings of the _ordinary_ scheme $X$ that are "reducible along $X'_0$".
 
 Figuratively speaking, we can say that (a) and (b) establish the fundamental relations between the local and global aspects of the problem; (c) gives the relations between the "finite" and "infinitesimal" aspects; and finally (d) remembers (under precise conditions) the identity between the "formal" and "algebraic" aspects.
 
