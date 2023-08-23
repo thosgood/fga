@@ -8,6 +8,7 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 ## To-do
 
 - pdf output
+- fix other citations to the Mumford--Tate seminar
 - pdf specific definitions (e.g. `\ourrar`, `\oullar`, `\simto`, `\simfrom`)
 - turn any FGA citations into links?
     + (including those that are citations to the FGAs in the bibliography?)

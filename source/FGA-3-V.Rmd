@@ -125,7 +125,7 @@ If $P$ is arbitrary, then a standard procedure, well known in the case of usual 
 The construction of $\scr{P}$ can be made explicit in the following way: to define $\scr{P}(T)$, we denote, for all $T'$ over $T$ such that the morphism $u\colon T'\to T$ is in $(\scr{M})$, by $\overline{\HH}^0(T'/T,P)$ the subset of $P(T')$ consisting of the elements $\xi$ such that their images $\xi_1,x_2$ in $P(T'\times_T T')$ are such that there exists a morphism $v\colon T''\to T'\times_T T'$ in $(\scr{M})$ such that $\xi_1$ and $\xi_2$ have the same image in $P(T'')$.
 
 \oldpage{232-03}
-(N.B. The set $\overline{\HH}^0$ thus defined is larger than the set $\HH^0(T'/T,P)$ introduced in [@Gro1959, I, A.4.a]).
+(N.B. The set $\overline{\HH}^0$ thus defined is larger than the set $\HH^0(T'/T,P)$ introduced in [FGA 3.I, A.4.a](FGA-3-I.html#fga-3-i-section-A.4.a)).
 As $T'$ varies over fixed $T$ (always with $u\in(\scr{M})$), the $\overline{\HH}^0(T'/T,P)$ form an inductive system (when the set of the $T'$ is endowed with a preorder defined by domination), and we set
 
 ::: {.eqref #fga-3-v-equation-1.6 title="" latex=""}
@@ -239,7 +239,7 @@ $$
   \to \scr{G}
 $$
 is an isomorphism.
-The second statement was proven by the theory of descent in [@Gro1959, I, B.4].
+The second statement was proven by the theory of descent in [FGA 3.I, B.4](FGA-3-I.html#fga-3-i-section-B.4).
 :::
 
 The results of [(2.2)](#fga-3-v-proposition-2.2) can also be stated as follows:
@@ -483,14 +483,14 @@ and we already know that $\scr{D}^+$ is representable by an open $D^+$ of the pr
 this is due to the fact that, if $\scr{L}$ on $X\times_S S'$ is, as at the start of this section, then $f'_*(\scr{L})$ is a *locally free* non-zero module, whose formation commutes with base change;
 with the notation of [(4.3)](#fga-3-v-theorem-4.3), $\scr{Q}$ is then isomorphic to the dual of $f'_*(\scr{L})$.
 Using general criteria ([@Gro1960a, IV, 4.7]), we can thus conclude that $P^+$ is representable.
-In *loc. cit.*, we take $\cal{S}$ to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by [@Gro1959, I, B]).
+In *loc. cit.*, we take $\cal{S}$ to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by [FGA 3.I, B](#fga-3-i-section-B.1)).
 \oldpage{232-13}
 Condition (a) of *loc. cit.*, namely that $(+)$ is representable by morphisms that are elements of $\cal{S}$, is satisfied as we have just seen;
 condition (b) says that the functor $\scr{P}^+$ is is compatible with faithfully flat quasi-compact descent, which is immediate.
 It remains only to prove condition (c) of *loc. cit.*, namely that the equivalence $R$ in the prescheme $D^+$ induced by the $\cal{S}$-representable morphism ($+$) is $\cal{S}$-effective, i.e. is effective and such that $D^+\to D^+/R$ is in $\cal{S}$.
 For this, note first of all that the opens ${D^+}^Q$ of $D^+$ that correspond to the virtual Hilbert polynomials $Q\in\mathbb{Q}[t]$ are stable under $R$ (since the fibres of $R$ are connected), which reduces the problem to proving that, for all $Q$, the induced equivalence relation $R^Q$ on ${D^+}^Q$ is $\cal{S}$-effective.
 But now ${D^+}^Q$ is quasi-projective, and the equivalence relation $R^Q$ is projective and flat.
-We are thus under the hypothesis of [@Gro1959, III, 6.1], which implies the desired result.
+We are thus under the hypothesis of [FGA 3.III, Theorem 6.1](FGA-3-III.html#fga-3-iii-theorem-6.1), which implies the desired result.
 
 In the general case where $X/S$ does not necessarily admit a section, we can easily reduce to the above case by the technique of descent, where we can repeat the above proof with the modification that is imposed upon the definition of $\scr{P}^+$.
 
@@ -538,7 +538,7 @@ We will sketch here some useful cases where the existence of certain Picard sche
 
 ::: {.itenv #fga-3-v-proposition-6.1 title="Proposition 6.1" latex="{Proposition 6.1}"}
 Let $f\colon X\to S$ be a flat projective morphism such that, in the Stein factorisation $f=f''f'$, the morphism $f'\colon X\to S'$ is *flat* and has integral geometric fibres (and thus satisfies the hypotheses of [(3.1)](#fga-3-v-theorem-3.1)), and such that the finite morphism $f''\colon S'\to$ is flat.
-Then $\repPic_{X/S}$ exists and (with the notation introduced in [@Gro1959, II, C.2]) we have a canonical isomorphism
+Then $\repPic_{X/S}$ exists and (with the notation introduced in [FGA 3.II, C.2](FGA-3-II.html#fga-3-ii-section-C.2)) we have a canonical isomorphism
 $$
   \repPic_{X/S}
   \simto \prod_{S'/S} \repPic_{X/S'}.
@@ -570,7 +570,7 @@ Then $\repPic_{X/S}$ exists.
 In this case, $S'$ is an étale covering of $S$ (which is true once $f$ is separable, i.e. flat with reduced geometric fibres), and we see that the structure theorem stated in [§3](#fga-3-v-section-3) for $\repPic_{X/S}$ still holds, thanks to the analogous structure of $\repPic_{X/S'}$.
 :::
 
-Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in [@Gro1959, I, A.c], and of which we content ourselves here to explain only a particular case:
+Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in [FGA 3.I, A.3.c](FGA-3-I.html#fga-3-i-section-A.3.c), and of which we content ourselves here to explain only a particular case:
 
 ::: {.itenv #fga-3-v-proposition-6.3 title="Proposition 6.3" latex="{Proposition 6.3}"}
 Let $f\colon X\to S$ be a proper morphism, and let $X_1$ and $X_2$ be subpreschemes of $X$ that are flat over $S$, defined by coherent ideals $\scr{J}_1$ and $\scr{J}_2$ (respectively) such that $\scr{J}_1\cap\scr{J}_2=(0)$ and such that $\OO_X/(\scr{J}_1+\scr{J}_2)$ is flat over $S$ (i.e. the subprescheme of $X$ that is the sup of $X_1$ and $X_2$ is $X$ itself, whereas their inf $Z$ is flat over $X$).
