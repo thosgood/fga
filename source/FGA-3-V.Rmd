@@ -58,7 +58,7 @@ where $\OO_X^\times$ denotes the sheaf of units of $\OO_X$ (which can be identif
 Note that $X\mapsto\Pic(X)$ is a contravariant functor in $X$ in the evident way, and that the isomorphism [(1.1)](#fga-3-v-equation-1.1) is functorial.
 
 If $X$ is a prescheme over a prescheme $S$, then, for variable $S'$ in the category $\Sch_{/S}$ of preschemes over $S$, we have a contravariant functor $S'\mapsto\Pic(X\times_S S')$ thanks to the above.
-This functor has no chance of being "representable" ([@Gro1959, II, A]) since, as a consequence of the existence of *non-trivial automorphisms* of invertible modules that we propose to classify, this functor is not of a *"local nature"* ([@Gro1960a, IV, 5.4]).
+This functor has no chance of being "representable" ([FGA 3.II, A](FGA-3-II.html#fga-3-ii-section-A.1)) since, as a consequence of the existence of *non-trivial automorphisms* of invertible modules that we propose to classify, this functor is not of a *"local nature"* ([@Gro1960a, IV, 5.4]).
 There is thus an opportunity to "make it local", by introducing, for every relative prescheme $X/S$, a group of a relative nature
 
 ::: {.eqref #fga-3-v-equation-1.2 title="" latex=""}
@@ -69,7 +69,7 @@ $$
 $$
 :::
 
-(where $f\colon X\to S$ is the structure morphism) (cf. [@Gro1959, II, C.3]).
+(where $f\colon X\to S$ is the structure morphism) (cf. [FGA 3.II, C.3](FGA-3-II.html#fga-3-ii-section-C.3)).
 In *loc. cit.* this group is called the relative Picard group, but it will be preferable to call it here the *restricted relative Picard group* of $X/S$, for reasons that will be made clear.
 As $S'$ varies over $\Sch_{/S}$, $S'\mapsto\Pic'(X\times_S S'/S')$ is a contravariant functor in $S'$, denote also by $\shPic'_{X/S}$, thus given essentially by the formula
 
@@ -119,7 +119,7 @@ $$
   \from T'
   \underset{\pr_2}{\overset{\pr_1}{\leftleftarrows}} T'\times_T T'.
 $$
-If $P$ is representable, it follows from the theory of descent ([@Gro1959, I, B, Theorem 2]) that the diagram [(1.5)](#fga-3-v-equation-1.5) is exact for all $u\in(\scr{M})$.
+If $P$ is representable, it follows from the theory of descent ([FGA 3.I, B, Theorem 2](FGA-3-I.html#fga-3-i-section-B.1-theorem-2)) that the diagram [(1.5)](#fga-3-v-equation-1.5) is exact for all $u\in(\scr{M})$.
 We express this fact by saying that $P$ is compatible with $(\scr{M})$, in the event that $P$ is "compatible with faithfully flat descent", or that the *"presheaf"* $P$ on $\Sch_{/S}$ is a *"sheaf"* for the notion of localisation given by the set $(\scr{M})$.
 If $P$ is arbitrary, then a standard procedure, well known in the case of usual topological localisation, allows us to associate to it a "sheaf" $\scr{P}$ and a homomorphism of functors $P\to\scr{P}$ that is universal in an obvious sense.
 The construction of $\scr{P}$ can be made explicit in the following way: to define $\scr{P}(T)$, we denote, for all $T'$ over $T$ such that the morphism $u\colon T'\to T$ is in $(\scr{M})$, by $\overline{\HH}^0(T'/T,P)$ the subset of $P(T')$ consisting of the elements $\xi$ such that their images $\xi_1,x_2$ in $P(T'\times_T T')$ are such that there exists a morphism $v\colon T''\to T'\times_T T'$ in $(\scr{M})$ such that $\xi_1$ and $\xi_2$ have the same image in $P(T'')$.

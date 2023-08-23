@@ -56,7 +56,7 @@ It is worth noting as well that this aforementioned technique of descent can cer
 In any case, the recent work of Kodaira--Spencer, whose methods seem unfit for defining and studying "varieties of modules" in the neighbourhood of their singular points, show reasonably clearly the necessity of methods that are closer to the theory of schemes (which should naturally complement transcendental techniques).
 
 In the present article (namely article I) we will discuss the most elementary case of descent (the one indicated in the title).
-The applications of [Theorem 1](#fga-3-i-section-B.1-theorem-1), [Theorem 2](#fga-3-i-theorem-2), and [Theorem 3](#fga-3-i-theorem-3) below (in [§B.1](#fga-3-i-section-B.1)) are, however, already vast in number.
+The applications of [Theorem 1](#fga-3-i-section-B.1-theorem-1), [Theorem 2](#fga-3-i-section-B.1-theorem-2), and [Theorem 3](#fga-3-i-section-B.1-theorem-3) below (in [§B.1](#fga-3-i-section-B.1)) are, however, already vast in number.
 We will restrict ourselves to giving only some of them as examples, without aiming for the maximum generality possible.
 
 We will freely use the language of schemes, for which we refer to the already cited article, as well as [@GR1958].
@@ -747,7 +747,7 @@ Let $\alpha\colon S'\to S$ be a faithfully flat and quasi-compact morphism.
 Then $S$ can be identified with a _topological quotient space of $S'$_, i.e. every subset $U$ of $S$ such that $\alpha^{-1}(U)$ is open, is open.
 :::
 
-To complete [Theorem 2](#fga-3-i-theorem-2), we must give effectiveness criteria for a descent data on an $S'$-prescheme $X'$ (in the case where $X'$ is not assumed to be affine over $S'$).
+To complete [Theorem 2](#fga-3-i-section-B.1-theorem-2), we must give effectiveness criteria for a descent data on an $S'$-prescheme $X'$ (in the case where $X'$ is not assumed to be affine over $S'$).
 Note first of all that _such a descent data is not necessarily effective_, even if $S$ is the spectrum of a field $k$, $S'$ the spectrum of a quadratic extension $k'$ of $k$, and $S''$ a proper algebraic scheme of dimension $2$ over $S'$ (as we can see, due to Serre, by using the non-projective surface of Nagata).
 _For a descent data on $X'/S'$ with respect to $\alpha\colon S'\to S$ (assumed to be faithfully flat and quasi-compact) to be effective, it is necessary and sufficient that $X'$ be a union of open subsets $X'_i$ that are affine over $S'$ and "stable" under the descent data on $X'$._
 This is certainly the case (for any $X'/S'$ and any descent data on $X'$) if the morphism $\alpha\colon S'\to S$ is _radicial_ (i.e. injective, and with radicial residual extensions).
@@ -786,7 +786,7 @@ Let $\alpha\colon S\to S'$ be a morphism of preschemes, and let $f\colon X\to Y$
 We can then ask if the relation "$f'\in P$" implies that "$f\in P$".
 It appears that the answer is affirmative in many important cases, if we suppose that $\alpha$ is _faithfully flat_ and _quasi-compact_ (this latter hypothesis being sometimes overly strong).
 We can see this directly without difficulty if $P$ is the class of surjective (resp. radicial) morphisms (with these two cases following from the surjectivity of $\alpha$), or flat (resp. faithfully flat, resp. simple) morphisms (with these three cases following from the faithful flatness of $\alpha$), or morphisms of finite type.
-Using [Theorem 1](#fga-3-i-section-B.1-theorem-1), [Theorem 2](#fga-3-i-theorem-2), and [Lemma 1.2](#fga-3-i-section-B.1-lemma-1.2), we see that it is also true if $P$ is one of the following classes:
+Using [Theorem 1](#fga-3-i-section-B.1-theorem-1), [Theorem 2](#fga-3-i-section-B.1-theorem-2), and [Lemma 1.2](#fga-3-i-section-B.1-lemma-1.2), we see that it is also true if $P$ is one of the following classes:
 isomorphisms, open immersions, closed immersions, immersions (if $f$ is of finite type, and $Y$ is locally Noetherian), affine morphisms, finite morphisms, quasi-finite morphisms, open morphisms, closed morphisms, homeomorphisms, separated morphisms, or proper morphisms.
 \oldpage{190-21}
 The only important case not covered here is that of projective or quasi-projective morphisms, which has already been discussed in the remark in [§B.1](#fga-3-i-section-B.1).
@@ -943,7 +943,7 @@ $$
 
 (This is what we may call a _linear connection on $\cal{F}$_, which is further _flat_ and _compatible with the $p$-th powers_).
 We can similarly write down the notion of a descent data on an $S'$-prescheme $X'$, with equation [(3.4)](#fga-3-i-section-B.3-equation-3.4) being replaced by the condition that the $\overline{X}$ are _derivations_ of $\scr{O}_{X'}$.
-Since the morphism $S'\to S$ is radicial, [Theorem 3](#fga-3-i-theorem-3) ensures that every such descent data is effective, and thus defines an $S$-prescheme $X$.
+Since the morphism $S'\to S$ is radicial, [Theorem 3](#fga-3-i-section-B.1-theorem-3) ensures that every such descent data is effective, and thus defines an $S$-prescheme $X$.
 \oldpage{190-24}
 
 Note that we have not needed to impose any flatness, non-singular, or finiteness hypotheses on $\cal{F}'$ or $X'$.
@@ -1003,7 +1003,7 @@ _with $S$ Noetherian and regular, and $K$ denoting its ring of rational function
 
 Using the above uniqueness result, we see that the question of restriction of the base to $X$ is local on $S$ (and thus that it suffices to know how to do the restriction to $\Spec(\scr{O}_x)$, where $x\in S$).
 In the same way, we see that, if $S'\to S$ is a _simple_ morphism of finite type, if $Y'$ is the ring of rational functions of $S'$, and if $X\otimes_K K'$ is of the form $X'_0\times_{S'}\Spec(K')$, _then $X'_0$ is endowed with a canonical descent data with respect to $\alpha$_.
-Taking [Theorem 3](#fga-3-i-theorem-3) into account, we thus conclude:
+Taking [Theorem 3](#fga-3-i-section-B.1-theorem-3) into account, we thus conclude:
 
 ::: {.itenv #fga-3-i-section-B.5-proposition-5.1 title="Proposition 5.1" latex="{Proposition 5.1}"}
 Let $S$ be an irreducible regular Noetherian prescheme, with field of rational functions $Y$, let $K'$ be a finite extension of $K$ that is _unramified over $S$_, let $S'$ be the normalisation of $S$ in $K'$ (which is thus an étale cover of $S$), and let $X$ be an abelian scheme over $K$ such that $X\otimes_K K'$ is of the form $X'_0\times_{S'}\Spec(K')$, where $X'_0$ is a projective abelian scheme over $S'$.
@@ -1011,7 +1011,7 @@ Then $X$ is of the form $X_0\times_S\Spec(K)$, where $X_0$ is a projective abeli
 :::
 
 ::: {.rmenv title="Remark" latex="{Remark}"}
-The speaker does not know if we can replace the hypothesis that $S'\to S$ be a surjective étale cover (which allows us to apply [Theorem 3](#fga-3-i-theorem-3)) with the hypothesis that it is instead a _simple_ and _surjective_ morphism of finite type (not even if we suppose that it is an étalement), or if the proposition still holds true without supposing that $X'_0$ is projective over $S'$ (a condition which could be automatically satisfied).
+The speaker does not know if we can replace the hypothesis that $S'\to S$ be a surjective étale cover (which allows us to apply [Theorem 3](#fga-3-i-section-B.1-theorem-3)) with the hypothesis that it is instead a _simple_ and _surjective_ morphism of finite type (not even if we suppose that it is an étalement), or if the proposition still holds true without supposing that $X'_0$ is projective over $S'$ (a condition which could be automatically satisfied).
 :::
 
 
@@ -1039,7 +1039,7 @@ In particular, we say that $P$ is _isotrivial_ (resp. _strictly isotrivial_) if,
 (We stray from the terminology of Serre [@GD1960], which uses "locally isotrivial" for what we call "strictly isotrivial").
 Strict isotriviality is mainly useful if $G$ is simple over $S$, but is, however, an inadequate notion in other cases.
 
-If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ for $G$ is affine, by [§B.2](#fga-3-i-section-B.2), whence the possibility, thanks to [Theorem 2](#fga-3-i-theorem-2), to "descend" from such bundles by faithfully flat and quasi-compact morphisms.
+If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ for $G$ is affine, by [§B.2](#fga-3-i-section-B.2), whence the possibility, thanks to [Theorem 2](#fga-3-i-section-B.1-theorem-2), to "descend" from such bundles by faithfully flat and quasi-compact morphisms.
 \oldpage{190-28}
 Taking, in particular, $G=\GL(n)_S$, defined by the condition that the functor $S'\mapsto\Hom(S',G)$ of $S$-preschemes (with values in the category of groups) can be identified with the functor $\GL(n)(S')=\GL(n,\HH^0(S',\scr{O}_{S'}))$ described in [§A.4.e](#fga-3-i-section-A.4).
 Using the facts
