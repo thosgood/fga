@@ -265,7 +265,7 @@ Recall that a morphism $X\to S$ is said to be universally open if it sends every
 This also implies (if $S$ is locally Noetherian and $X\to S$ is locally of finite type) that every irreducible component of $X$ dominates $S$, and that this property is retained after any base change $S'\to S$.
 In these two claims, it suffices (thanks to the finiteness hypotheses above) to verify only for the base changes $S'\to S$ where $S'$ is the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one wants...).
 The definition extends in an evident way to the case of a subset $Z$ of $X$ (such as the subset $G^\sigma$ of $G$).
-It is a perfectly normal phenomenon, even if we start with a simple projective morphism $X\to S$ with geometrically connected fibres (for example, the fibre square of the modular family of elliptic curves over $S=\Spec\mathbb{C}[j]$), that $\repPic_{X/S}$ is not universally open over $S$, i.e. that there can be irreducible components of $\repPic_{X/S}$that live entirely over a single point of $S$;
+It is a perfectly normal phenomenon, even if we start with a simple projective morphism $X\to S$ with connected geometric fibres (for example, the fibre square of the modular family of elliptic curves over $S=\Spec\mathbb{C}[j]$), that $\repPic_{X/S}$ is not universally open over $S$, i.e. that there can be irreducible components of $\repPic_{X/S}$that live entirely over a single point of $S$;
 this is linked to the fact that the rank of the Néron--Severi group of the fibres of $X/S$ can jump up ("complex multiplication" phenomena).
 However, [(1.5)](#fga-3-vi-corollary-1.5) assures us that, in good cases, $\repPic_{X/S}^\sigma$ (and usually, it seems, even $\repPic_{X/S}^\tau$) is universally open over $S$.
 :::
@@ -650,4 +650,41 @@ but since the corresponding statement with $S$ Artinian is false (cf. Remarks [(
 
 ## The finiteness theorem for the Picard scheme {#fga-3-vi-section-4}
 
-Let
+Let $f\colon X\to S$ be a projective and flat morphism such that $\repPic_{X/S}$ exists.
+Then the "Hilbert polynomials" $Q\in\mathbb{Q}[t]$ allow us to decompose $\repPic_{X/S}$ into a sum of opens $\repPic_{X/S}^Q$.
+If we do not make any further hypotheses, ensuring for example that $\repPic_{X/S}$ is separated over $S$, then it will not be true in general that these opens are of finite type over $S$;
+we obtain a counterexample when $X$ is "a conic degenerating to two lines".
+\oldpage{236-22}It is possible, however, that this is the case if $f$ is *separable* and has *irreducible geometric fibres*.
+The question is linked to knowing if $\repPic_{X/S}^\tau$ is of finite type over $S$, which can be true without any hypotheses on the fibres of $X/S$.
+When $f\colon X\to S$ is simple, we note that $\repPic_{X/S}^\tau$ is contained in one of the $\repPic_{X/S}^Q$ (thanks to the fact that, on a non-singular projective variety, "torsion" equivalence is finer than (in fact, "identical to", thanks to Matsusaka) numerical equivalence for divisors), and is thus of finite type over $S$ if the $\repPic_{X/S}^Q$ are.
+Note that these finiteness questions that we have just highlighted still make sense even without supposing the existence of $\repPic_{X/S}$, since they can be expressed by saying that certain families of invertible modules are "limited", in the sense of [@Gro1959, IV]:
+Consider, for every algebraically closed field $k$, the integral subschemes of $\mathbb{P}_k^r$ of dimension $n$ and degree $d$, and the invertible modules on these preschemes that have a Hilbert polynomial $Q$ (where $r$, $n$, $d$, and $Q$ are given), and show that the family of these modules (considered as coherent modules on the $\mathbb{P}_k^r$) is *limited*, i.e. can be parametrised by a scheme of finite type over $\mathbb{Z}$.
+
+Using the method of Matsusaka [@Mat1957], a rather technical proof (using the "equivalence criteria" in a suitable form) allow us to answer in the affirmative when we restrict to the non-singular subvarieties of $\mathbb{P}_k^r$.
+More precisely, we obtain the following result:
+
+::: {.itenv #fga-3-vi-theorem-4.1 title="Theorem 4.1" latex="{Theorem 4.1}"}
+Let $f\colon X\to S$ be a simple projective morphism with connected geometric fibres, with $S$ Noetherian.
+Let $\OO_X(1)$ be a very ample module on $X$ with respect to $S$, and $E$ a subset of $\repPic_{X/S}$ corresponding to a family $(\scr{L}_i)$ of invertible modules on the geometric fibres $\overline{X}_{s_i}$ of $X/S$, with $D_i$ a (not-necessarily positive) divisor on $\overline{X}_{s_i}$ that defines $\scr{L}_i$, and let $a_n^{(i)}t^n+\ldots+a_0^{(i)}$ be the Hilbert polynomial of $\scr{L}_i$, and let $\xi=\xi_i$ be a divisor that defines $\OO_X(1)$, i.e. a hyperplane section.
+
+Then the following conditions are equivalent:
+
+a. $Q$ is quasi-compact, i.e. contains an open of finite type over $S$, i.e.. the family $(\scr{L}_i)$ is limited.
+
+b. $E$ is contained in the union of a finite number of the sets $\repPic_{X/S}^Q$, for $Q\in\mathbb{Q}[t]$, i.e. the set of Hilbert polynomials of the $\scr{L}_i$ is finite.
+
+b'. (If the fibres of $X/S$ are all of the same dimension $n$).
+  The coefficients $a_{n-1}^{(i)}$ and $a_{n-2}^{(i)}$ of the Hilbert polynomials of the $\scr{L}_i$ are contained in a finite set.
+
+b''. (If the fibres of $X/S$ are all of the same dimension $n$).
+  The integers $\xi^{n-1}D_i$ and $\xi^{n-2}D_i^2$ (the projective degrees of $D_i$ and of $D_i^2$) are bounded above.
+:::
+
+::: {.itenv #fga-3-vi-corollary-4.2 title="Corollary 4.2" latex="{Corollary 4.2}"}
+Let $f\colon X\to S$ be a simple projective morphism, with connected geometric fibres.
+Then the schemes $\repPic_{X/S}^Q$ (for $Q\in\mathbb{Q}[t]$) and $\repPic_{X/S}^\tau$ are projective over $S$.
+:::
+
+::: {.proof}
+Since they are of finite type over $S$, by [(4.1)](#fga-3-vi-theorem-4.1), we can apply [(2.4)](#fga-3-vi-corollary-2.4).
+:::
