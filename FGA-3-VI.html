@@ -835,14 +835,60 @@ Then <eq env="math">M</eq> is quasi-compact if and only if, in the Hilbert polyn
 <li><p>For every integer <eq env="math">n\neq0</eq>, the <eq env="math">n</eq>-th power homomorphism in the group prescheme <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is a morphism of finite type.</p></li>
 </ol>
 <p>Note that (i) and (ii) also imply (under the hypotheses given in their respective statements) that <em>a subset <eq env="math">M</eq> of <eq env="math">\underline{\operatorname{Pic}}_{Y/S}</eq> is quasi-compact if and only if its image in <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is quasi-compact</em>.
-We thus conclude that an invertible module <eq env="math">{\mathscr{L}}</eq> on <eq env="math">Y</eq> is <eq env="math">\tau</eq>-equivalent to zero if and only if its inverse image in <eq env="math">X</eq> is;
+We thus conclude that an invertible module <eq env="math">{\mathscr{L}}</eq> on <eq env="math">Y</eq> is <eq env="math">\tau</eq>-equivalent to <eq env="math">0</eq> if and only if its inverse image in <eq env="math">X</eq> is;
 in other words, <eq env="math">\underline{\operatorname{Pic}}_{Y/S}^\tau</eq> is the inverse image of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq>.
 In particular, to show that the first prescheme is of finite type over <eq env="math">S</eq>, it suffices to prove this for the second, since <eq env="math">\underline{\operatorname{Pic}}_{Y/S}\to\underline{\operatorname{Pic}}_{X/S}</eq> is of finite type.
 Then using (i), Chow’s lemma, and (iii), we find:</p>
 <ol start="22" style="list-style-type: lower-alpha">
 <li><eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq> is of finite type over <eq env="math">S</eq>.</li>
 </ol>
-<p>Generally,</p>
+<p>Generally, the conjunction of (i) for a finite morphism and (ii) allows us to reduce, for the majority of finiteness questions, to the case where <eq env="math">X/S</eq> has integral and normal geometric fibres of dimension <eq env="math">\leqslant 2</eq>;
+often, even, applying (i) for a surjective but not-necessarily finite morphism, along with the resolution of singularities of algebraic surfaces (due, in arbitrary characteristic, to Abhyankar), we can reduce to the case where <eq env="math">X/S</eq> is even simple, and thus has non-singular geometric fibres of dimension <eq env="math">2</eq>.
+This allows us, for example, taking into account (v) and the Picard–Igusa inequality bounding the rank of the Néron–Severi group of a non-singular projective surface, to prove the following generalisation of the Néron finiteness theorem:</p>
+<ol start="6" style="list-style-type: lower-roman">
+<li>Let <eq env="math">X/S</eq> be proper over <eq env="math">S</eq>, but otherwise arbitrary.
+Then the Néron–Severi groups <eq env="math">\underline{\operatorname{Pic}}_{X_i/k_i}/\underline{\operatorname{Pic}}_{X_i/k_i}^0</eq> of the geometric fibres <eq env="math">X_i/k_i</eq> of <eq env="math">X/S</eq> are of finite type, and their rank and the order of their torsion subgroups are bounded.</li>
+</ol>
+<p>The same method of reduction to the case of non-singular surfaces, and known theorems for this case (such as the Néron finiteness theorem, and the fact that the intersection form on the Néron–Severi group is non-degenerate) implies:</p>
+<ol start="7" style="list-style-type: lower-roman">
+<li>Let <eq env="math">X</eq> be a proper scheme over an algebraically closed field.
+Then there exists a finite number of integral closed curves <eq env="math">C_i</eq> (for <eq env="math">1\leqslant i\leqslant r</eq>) in <eq env="math">X</eq>, such that the following property is satisfied:
+for every subset <eq env="math">M</eq> of <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq>, <eq env="math">M</eq> is quasi-compact if and only if the integers <eq env="math">\deg{\mathscr{L}}_{C'_i}</eq> (for <eq env="math">{\mathscr{L}}\in M</eq>) are bounded (where <eq env="math">C'_i</eq> denotes the normalisation of <eq env="math">C_i</eq>).</li>
+</ol>
+<p>In the above we can take <eq env="math">r</eq> to be the rank of the Néron–Severi group.
+Once we know that this group is of finite type, (vii) reduces to the fact that the linear forms on the Néron–Severi group defined by the curves <eq env="math">C</eq> in <eq env="math">X</eq> do not simultaneously vanish except for on the torsion elements of the Néron–Severi group.
+In the case where <eq env="math">X</eq> is non-singular and projective, this result, as well as (v), was due to Matsusaka.
+Using (vii), we easily obtain the following characterisation of invertible modules that are <eq env="math">\tau</eq>-equivalent to <eq env="math">0</eq> on <eq env="math">X</eq>:</p>
+<ol start="8" style="list-style-type: lower-roman">
+<li>Let <eq env="math">X/k</eq> be a proper scheme over a field, and <eq env="math">{\mathscr{L}}</eq> an invertible module on <eq env="math">X</eq>.
+Then the following conditions are equivalent:</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><eq env="math">{\mathscr{L}}</eq> is <eq env="math">\tau</eq>-equivalent to <eq env="math">0</eq>.</li>
+<li>For every coherent module <eq env="math">F</eq>, we have <eq env="math">\chi(F\otimes{\mathscr{L}})=\chi(F)</eq>, where <eq env="math">\chi</eq> denotes the Euler–Poincaré characteristic (or, condition (b’), we can simply take <eq env="math">F={\mathscr{O}}_Y</eq>, where <eq env="math">Y</eq> is an integral closed subscheme of dimension <eq env="math">1</eq> in <eq env="math">X</eq>).</li>
+<li>For every <eq env="math">Y</eq> as above, writing <eq env="math">Y'</eq> to mean the normalised curve, we have <eq env="math">\deg{\mathscr{L}}_{Y'}=0</eq>.</li>
+</ol>
+<p>If <eq env="math">X/k</eq> is projective and endowed with an ample invertible module <eq env="math">{\mathscr{O}}_X(1)</eq>, then the above conditions are also equivalent to the following:</p>
+<ol start="4" style="list-style-type: lower-alpha">
+<li>For every integer <eq env="math">m</eq>, <eq env="math">{\mathscr{L}}^{\otimes m}(1)</eq> is ample.</li>
+<li>(If <eq env="math">X</eq> is integral).
+For every pair of integers <eq env="math">(m,n)</eq>, we have
+<eq env="displaymath">
+\chi({\mathscr{L}}^{\otimes m}(n))
+= \chi({\mathscr{O}}(n))
+    </eq>
+(i.e. (b) is true for <eq env="math">F={\mathscr{L}}^{\otimes m}(n)</eq>).</li>
+</ol>
+<p>For the sufficiency of this last condition, note that it implies that the Hilbert polynomials of the <eq env="math">{\mathscr{L}}^{\otimes m}</eq> are all equal, and thus, by the Mumford criteria (iii), the <eq env="math">{\mathscr{L}}^{\otimes m}</eq> remain in a quasi-compact subset of <eq env="math">\underline{\operatorname{Pic}}_{X/k}</eq>, i.e. we have (a).
+Conditions (b), (b’), and (c) should be considered as variants (for an arbitrary proper scheme) of the notion of <em>numerical equivalence</em>, usually defined for non-singular projective varieties.
+For such varieties, the equivalence of (a) and (c) was evidently well known (Matsusaka).</p>
+<p>Criteria (e) from the above also implies the following result:</p>
+<ol start="9" style="list-style-type: lower-roman">
+<li>Let <eq env="math">f\colon X\to S</eq> be a flat projective morphism whose geometric fibres are integral.
+Then <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq> is open <em>and closed</em> in <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>.</li>
+</ol>
+<p>We restrict ourselves to some comments on the proofs of the key results (i), (ii), and (iii) (result (iv) is a little bit different from the others, and can be proven using only (i) for radicial surjective finite morphisms, or, more precisely, for a Frobenius morphism).
+For (i),</p>
 </div>
 
 </div>
