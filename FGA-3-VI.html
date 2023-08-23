@@ -800,13 +800,13 @@ More precisely, we obtain the following result:</p>
 Let <eq env="math">{\mathscr{O}}_X(1)</eq> be a very ample module on <eq env="math">X</eq> with respect to <eq env="math">S</eq>, and <eq env="math">E</eq> a subset of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> corresponding to a family <eq env="math">({\mathscr{L}}_i)</eq> of invertible modules on the geometric fibres <eq env="math">\overline{X}_{s_i}</eq> of <eq env="math">X/S</eq>, with <eq env="math">D_i</eq> a (not-necessarily positive) divisor on <eq env="math">\overline{X}_{s_i}</eq> that defines <eq env="math">{\mathscr{L}}_i</eq>, and let <eq env="math">a_n^{(i)}t^n+\ldots+a_0^{(i)}</eq> be the Hilbert polynomial of <eq env="math">{\mathscr{L}}_i</eq>, and let <eq env="math">\xi=\xi_i</eq> be a divisor that defines <eq env="math">{\mathscr{O}}_X(1)</eq>, i.e. a hyperplane section.</p>
 <p>Then the following conditions are equivalent:</p>
 <ol style="list-style-type: lower-alpha">
-<li><p><eq env="math">Q</eq> is quasi-compact, i.e. contains an open of finite type over <eq env="math">S</eq>, i.e.. the family <eq env="math">({\mathscr{L}}_i)</eq> is limited.</p></li>
-<li><p><eq env="math">E</eq> is contained in the union of a finite number of the sets <eq env="math">\underline{\operatorname{Pic}}_{X/S}^Q</eq>, for <eq env="math">Q\in\mathbb{Q}[t]</eq>, i.e. the set of Hilbert polynomials of the <eq env="math">{\mathscr{L}}_i</eq> is finite.</p></li>
+<li><eq env="math">Q</eq> is quasi-compact, i.e. contains an open of finite type over <eq env="math">S</eq>, i.e.. the family <eq env="math">({\mathscr{L}}_i)</eq> is limited.</li>
+<li><eq env="math">E</eq> is contained in the union of a finite number of the sets <eq env="math">\underline{\operatorname{Pic}}_{X/S}^Q</eq>, for <eq env="math">Q\in\mathbb{Q}[t]</eq>, i.e. the set of Hilbert polynomials of the <eq env="math">{\mathscr{L}}_i</eq> is finite.</li>
+<li>(If the fibres of <eq env="math">X/S</eq> are all of the same dimension <eq env="math">n</eq>).<a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a>
+The coefficients <eq env="math">a_{n-1}^{(i)}</eq> and <eq env="math">a_{n-2}^{(i)}</eq> of the Hilbert polynomials of the <eq env="math">{\mathscr{L}}_i</eq> are contained in a finite set.</li>
+<li>(If the fibres of <eq env="math">X/S</eq> are all of the same dimension <eq env="math">n</eq>).
+The integers <eq env="math">\xi^{n-1}D_i</eq> and <eq env="math">\xi^{n-2}D_i^2</eq> (the projective degrees of <eq env="math">D_i</eq> and of <eq env="math">D_i^2</eq>) are bounded above.</li>
 </ol>
-<p>b’. (If the fibres of <eq env="math">X/S</eq> are all of the same dimension <eq env="math">n</eq>).
-The coefficients <eq env="math">a_{n-1}^{(i)}</eq> and <eq env="math">a_{n-2}^{(i)}</eq> of the Hilbert polynomials of the <eq env="math">{\mathscr{L}}_i</eq> are contained in a finite set.</p>
-<p>b’’. (If the fibres of <eq env="math">X/S</eq> are all of the same dimension <eq env="math">n</eq>).
-The integers <eq env="math">\xi^{n-1}D_i</eq> and <eq env="math">\xi^{n-2}D_i^2</eq> (the projective degrees of <eq env="math">D_i</eq> and of <eq env="math">D_i^2</eq>) are bounded above.</p>
 </div>
 <div id="fga-3-vi-corollary-4.2" class="itenv" title="Corollary 4.2">
 <p>Let <eq env="math">f\colon X\to S</eq> be a simple projective morphism, with connected geometric fibres.
@@ -828,8 +828,21 @@ Then <eq env="math">f^*\colon\underline{\operatorname{Pic}}_{Y/S}\to\underline{\
 Let <eq env="math">f\colon X\to Y</eq> be the canonical immersion.
 Finally, suppose that the irreducible components of the fibres of <eq env="math">Y/S</eq> are of dimension <eq env="math">\geqslant 3</eq>.
 Then <eq env="math">f^*\colon\underline{\operatorname{Pic}}_{Y/S}\to\underline{\operatorname{Pic}}_{X/S}</eq> is of finite type.</p></li>
-<li><p>Suppose</p></li>
+<li><p>Suppose that <eq env="math">X</eq> is projective over <eq env="math">S</eq>, and that all its geometric fibres are integral and of dimension <eq env="math">n</eq>.
+Let <eq env="math">{\mathscr{O}}_X(1)</eq> be an ample invertible module on <eq env="math">X</eq>, allowing us to define Hilbert polynomials.
+Let <eq env="math">M</eq> be a subset of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>.
+Then <eq env="math">M</eq> is quasi-compact if and only if, in the Hilbert polynomials <eq env="math">a_0x^n+a_1x^{n-1}+a_2x^{n-2}+\ldots+a_n</eq> of the elements of <eq env="math">M</eq>, the coefficients <eq env="math">a_1</eq> and <eq env="math">a_2</eq> are bounded.</p></li>
+<li><p>For every integer <eq env="math">n\neq0</eq>, the <eq env="math">n</eq>-th power homomorphism in the group prescheme <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is a morphism of finite type.</p></li>
 </ol>
+<p>Note that (i) and (ii) also imply (under the hypotheses given in their respective statements) that <em>a subset <eq env="math">M</eq> of <eq env="math">\underline{\operatorname{Pic}}_{Y/S}</eq> is quasi-compact if and only if its image in <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is quasi-compact</em>.
+We thus conclude that an invertible module <eq env="math">{\mathscr{L}}</eq> on <eq env="math">Y</eq> is <eq env="math">\tau</eq>-equivalent to zero if and only if its inverse image in <eq env="math">X</eq> is;
+in other words, <eq env="math">\underline{\operatorname{Pic}}_{Y/S}^\tau</eq> is the inverse image of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq>.
+In particular, to show that the first prescheme is of finite type over <eq env="math">S</eq>, it suffices to prove this for the second, since <eq env="math">\underline{\operatorname{Pic}}_{Y/S}\to\underline{\operatorname{Pic}}_{X/S}</eq> is of finite type.
+Then using (i), Chow’s lemma, and (iii), we find:</p>
+<ol start="22" style="list-style-type: lower-alpha">
+<li><eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq> is of finite type over <eq env="math">S</eq>.</li>
+</ol>
+<p>Generally,</p>
 </div>
 
 </div>
@@ -938,6 +951,7 @@ Then <eq env="math">f^*\colon\underline{\operatorname{Pic}}_{Y/S}\to\underline{\
 
 
 
+
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body">
 <div id="ref-Che1960" class="csl-entry">
@@ -963,6 +977,7 @@ Then <eq env="math">f^*\colon\underline{\operatorname{Pic}}_{Y/S}\to\underline{\
 <hr />
 <ol start="13">
 <li id="fn13"><p><em>[Trans.]</em> See translator footnotes in <a href="#FGA-3-V.html">FGA 3.V</a>.<a href="FGA-3-VI.html#fnref13" class="footnote-back">↩︎</a></p></li>
+<li id="fn14"><p><em>[Trans.]</em> Conditions (c) and (d) were originally called (b’) and (b’’).<a href="FGA-3-VI.html#fnref14" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
