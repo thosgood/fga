@@ -24,11 +24,6 @@ Grothendieck, A.
 _Séminaire Bourbaki_ **14** (1961--62), Talk no. 236.
 :::
 
-**TO-DO:**
-
-- **additif**
-- **errata**
-
 
 ## 0. Supplements to the previous talk (FGA 3.V) {.unnumbered}
 
@@ -692,5 +687,17 @@ Since they are of finite type over $S$, by [(4.1)](#fga-3-vi-theorem-4.1), we ca
 ::: {.rmenv #fga-3-vi-remark-comp title="Remark" latex="{Remark}"}
 *[Comp.]*
 \oldpage{C-07}The questions of finiteness of the type highlighted in this section have been all but totally resolved since the editing of this present talk.
-We
+We note here the principal facts no known in this direction.
+To simplify the statements, we implicitly assume that all the Picard preschemes that arise in the statements exist, even though an evident modification of these statements would allow us to get rid of any existence hypothesis.
+In what follows, $S$ denotes a Noetherian scheme, and $X$ and $Y$ are proper schemes over $S$.
+
+i. Let $f\colon X\to Y$ be a surjective morphism.
+  Then $f^*\colon\repPic_{Y/S}\to\repPic_{X/S}$ is a morphism of finite type.
+
+ii. \oldpage{C-08}Suppose that $Y$ is projective over $S$, endowed with an invertible module that is ample with respect to $S$, and let $X$ be the scheme of zeros of an arbitrary section of this module.
+  Let $f\colon X\to Y$ be the canonical immersion.
+  Finally, suppose that the irreducible components of the fibres of $Y/S$ are of dimension $\geq3$.
+  Then $f^*\colon\repPic_{Y/S}\to\repPic_{X/S}$ is of finite type.
+
+iii. Suppose
 :::
