@@ -206,6 +206,7 @@ div.csl-indent {
 <li class="chapter" data-level="8.1" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#fga-3-vi-section-1"><i class="fa fa-check"></i><b>8.1</b> Topological properties of preschemes of commutative groups</a></li>
 <li class="chapter" data-level="8.2" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#fga-3-vi-section-2"><i class="fa fa-check"></i><b>8.2</b> Application to the local properties of Picard schemes</a></li>
 <li class="chapter" data-level="8.3" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#fga-3-vi-section-3"><i class="fa fa-check"></i><b>8.3</b> The canonical abelian subscheme of <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>, and the Albanese scheme</a></li>
+<li class="chapter" data-level="8.4" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#fga-3-vi-section-4"><i class="fa fa-check"></i><b>8.4</b> The finiteness theorem for the Picard scheme</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="FGA-3-VI.html"><a href="FGA-3-VI.html#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
 </ul>
@@ -754,8 +755,41 @@ So we can correct this lifting (in exactly one way, as should be the case) in su
 <p><span id="unlabeled-div-50" class="proof"><em>Proof</em>. </span>This module is exactly the tangent module to <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> along the identity section.</p>
 </div>
 <div id="fga-3-vi-remark-3.7" class="rmenv" title="Remark 3.7">
-<p>Using</p>
+<p>Using the same argument as for <a href="FGA-3-VI.html#fga-3-vi-theorem-3.5">(3.5)</a>, we can show that, if <eq env="math">S'</eq> is a subscheme of <eq env="math">S</eq> defined by a nilpotent coherent ideal, and if we suppose only that <eq env="math">\underline{\operatorname{Pic}}_{X'/S'}^0</eq> exists and has simple fibres, then <eq env="math">\underline{\operatorname{Pic}}_{X/S}^0</eq> necessarily exists and is an abelian scheme over <eq env="math">S</eq>.
+This allows us to construct Picard schemes in certain cases, despite the absence of any projective hypothesis;
+for example, the dual abelian scheme of an abelian scheme over an Artinian ring always exists.
+Using <a href="FGA-3-VI.html#fga-3-vi-corollary-3.6">(3.6)</a> in the case where <eq env="math">X</eq> is an abelian scheme over <eq env="math">S</eq>, and using the known structure of <eq env="math">\operatorname{H}^\bullet(X_s,{\mathscr{O}}_{X_s})</eq> as an exterior algebra over <eq env="math">\operatorname{H}^1(X_s,{\mathscr{O}}_{X_s})</eq> (Rosenlicht–Serre), we find that <eq env="math">\operatorname{R}^if_*({\mathscr{O}}_X)</eq> is locally free for <em>all</em> <eq env="math">i</eq>, and more precisely that it is isomorphic to the <eq env="math">i</eq>-th exterior power of <eq env="math">\operatorname{R}^1f_*({\mathscr{O}}_X)</eq>.</p>
 </div>
+<div id="fga-3-vi-remark-3.8" class="rmenv" title="Remark 3.8">
+<p>In the case of a simple projective morphism <eq env="math">f\colon X\to S</eq>, with <eq env="math">S</eq> reduced and of residual characteristics zero, the result of <a href="FGA-3-VI.html#fga-3-vi-corollary-3.6">(3.6)</a> was already known, by transcendental methods, as a consequence of Hodge theory.
+In fact, all the <eq env="math">\operatorname{R}^pf_*(\Omega_{X/S}^q)</eq> are then locally free.
+We have, however, counterexamples in the case of unequal characteristics for “locally free <eq env="math">\operatorname{R}^1f_*({\mathscr{O}}_X)</eq>”, by Serre varieties (<span class="citation">[<a href="#ref-Ser1958b" role="doc-biblioref">23</a>]</span>).
+It seems that we do not have any counterexample in equal characteristic.</p>
+</div>
+<div id="fga-3-vi-corollary-3.8" class="itenv" title="Corollary 3.8">
+<p>Under the conditions of <a href="FGA-3-VI.html#fga-3-vi-theorem-3.5">(3.5)</a>, <eq env="math">\underline{\operatorname{Pic}}_{X/S}|U</eq> is simple over <eq env="math">U</eq> at all points of <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\sigma|U</eq>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-51" class="proof"><em>Proof</em>. </span>We apply <a href="FGA-3-VI.html#fga-3-vi-proposition-2.10">(2.10), (i)</a>.</p>
+</div>
+<p>In particular, taking <a href="FGA-3-VI.html#fga-3-vi-proposition-2.10">(2.10), (iii)</a> into account:</p>
+<div id="fga-3-vi-corollary-3.9" class="itenv" title="Corollary 3.9">
+<p>Suppose that <eq env="math">S</eq> is of residual characteristics zero.
+Then <eq env="math">\underline{\operatorname{Pic}}_{X/S}^\tau</eq> is simple over <eq env="math">S</eq>.</p>
+</div>
+<div id="fga-3-vi-remark-3.10" class="rmenv" title="Remark 3.10">
+<p>We thus deduce, for example, that if <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is also <em>proper</em> over <eq env="math">S</eq>, then the Néron–Severi torsion group of geometric fibres of <eq env="math">f</eq> is constant on every connected component of <eq env="math">S</eq> (which is also evident by transcendental methods when <eq env="math">f</eq> is simple and projective).
+We note that the direct use of <a href="FGA-3-VI.html#fga-3-vi-theorem-2.5">(2.5)</a> allows us to show, more generally, that, if <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is proper over <eq env="math">S</eq> (for example, if <eq env="math">f\colon X\to S</eq> is simple and projective), and if <eq env="math">q</eq> is a prime number distinct from the residual characteristics of <eq env="math">S</eq>, then the <eq env="math">q</eq>-primary component of the Néron–Severi torsion groups of geometric fibres of <eq env="math">X/S</eq> is constant on every connected component of <eq env="math">S</eq>.
+It is no longer, however, the case in characteristic <eq env="math">p&gt;0</eq> for the <eq env="math">p</eq>-primary component of the torsion group.
+However, it remains possible that the rank over the <eq env="math">k(s)</eq> of <eq env="math">\underline{\operatorname{Pic}}_{X_s/k(s)}/\underline{\operatorname{Pic}}_{X_s/k(s)}^{00}=T_{X_s/k(s)}</eq> is locally constant;
+when <eq env="math">S</eq> is reduced, we can show that this is equivalent to showing that <eq env="math">\underline{\operatorname{Pic}}_{X/S}^{00}</eq> exists and that <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> is <em>flat</em> over <eq env="math">S</eq>, and it suffices to test in the cases where <eq env="math">S</eq> is the spectrum of a discrete valuation ring.
+This is what I have verified in the few examples that I have looked at;
+but since the corresponding statement with <eq env="math">S</eq> Artinian is false (cf. Remarks <a href="FGA-3-VI.html#fga-3-vi-remark-2.9">(2.9)</a> and <a href="FGA-3-VI.html#fga-3-vi-remarks-3.4">(3.4)</a>), we must not get carried away.</p>
+</div>
+</div>
+<div id="fga-3-vi-section-4" class="section level2" number="8.4">
+<h2><span class="header-section-number">8.4</span> The finiteness theorem for the Picard scheme</h2>
+<p>Let</p>
 
 </div>
 </div>
@@ -829,13 +863,16 @@ So we can correct this lifting (in exactly one way, as should be the case) in su
 <div class="csl-left-margin">[22] </div><div class="csl-right-inline">J.-P. Serre. <span>“Espaces fibrés algébriques.”</span> <em>Séminaire Chevalley</em>. <strong>3</strong> (1958), Talk no. 1.</div>
 </div>
 <div class="csl-entry">
-<div class="csl-left-margin">[23] </div><div class="csl-right-inline">J.-P. Serre. <span>“Exemples de variétés projectives en caractéristique <eq env="math">p</eq> non relevables en caractéristique 0.”</span> <em>Proc. Nat. Acad. Sc. U.S.A.</em> <strong>47</strong> (1961), 108–109.</div>
+<div class="csl-left-margin">[23] </div><div class="csl-right-inline">J.-P. Serre. <span>“Sur la topologie des variétés algébriques en caractéristique <eq env="math">p</eq>,”</span> in: <em>Symposium Internacional de Topologia Algebraica, <span>Mexico</span>, 1956</em>. <span>Universidad nacional autonoma, Mexico</span>, 1958: pp. 24–53.</div>
 </div>
 <div class="csl-entry">
-<div class="csl-left-margin">[24] </div><div class="csl-right-inline">C.S. Seshadri. <span>“La varide picard d’une varicomplète.”</span> <em>Annali Di Mat. Pura Ed App.</em> <strong>57</strong> (1962), 117–42.</div>
+<div class="csl-left-margin">[24] </div><div class="csl-right-inline">J.-P. Serre. <span>“Exemples de variétés projectives en caractéristique <eq env="math">p</eq> non relevables en caractéristique 0.”</span> <em>Proc. Nat. Acad. Sc. U.S.A.</em> <strong>47</strong> (1961), 108–109.</div>
 </div>
 <div class="csl-entry">
-<div class="csl-left-margin">[25] </div><div class="csl-right-inline">G. Zappa. <span>“Sull’esistenza, sopra la superficie algebriche, di sistemi continui completi infiniti, la cui curva e a serie caratteristica incompleta.”</span> <strong>9</strong> (1945), 91–93.</div>
+<div class="csl-left-margin">[25] </div><div class="csl-right-inline">C.S. Seshadri. <span>“La varide picard d’une varicomplète.”</span> <em>Annali Di Mat. Pura Ed App.</em> <strong>57</strong> (1962), 117–42.</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">[26] </div><div class="csl-right-inline">G. Zappa. <span>“Sull’esistenza, sopra la superficie algebriche, di sistemi continui completi infiniti, la cui curva e a serie caratteristica incompleta.”</span> <strong>9</strong> (1945), 91–93.</div>
 </div>
 </div>
 </div>
@@ -870,6 +907,9 @@ So we can correct this lifting (in exactly one way, as should be the case) in su
 </div>
 <div id="ref-GD1960" class="csl-entry">
 <div class="csl-left-margin">[11] </div><div class="csl-right-inline">A. Grothendieck, J. Dieudonné. <span>“<span class="nocase">Eléments de Géométrie Algébrique</span>.”</span> <em>Pub. Math. De l’IHÉS</em>. <strong>4, 8, 11, 17, 20, 24, 28, 32</strong> (1960/67).</div>
+</div>
+<div id="ref-Ser1958b" class="csl-entry">
+<div class="csl-left-margin">[23] </div><div class="csl-right-inline">J.-P. Serre. <span>“Sur la topologie des variétés algébriques en caractéristique <eq env="math">p</eq>,”</span> in: <em>Symposium Internacional de Topologia Algebraica, <span>Mexico</span>, 1956</em>. <span>Universidad nacional autonoma, Mexico</span>, 1958: pp. 24–53.</div>
 </div>
 </div>
 <div class="footnotes">
