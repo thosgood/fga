@@ -43,9 +43,7 @@ sections 3.5 to 3.9 were numbered B.1 to B.5.
 For various details concerning the theory of descent, see also [@Gro1960b, VI, VII, and VIII].
 :::
 
-\oldpage{190-01}
-
-From a technical point of view, the current article, and those that will follow, can be considered as variations on Hilbert's celebrated "Theorem 90".
+\oldpage{190-01}From a technical point of view, the current article, and those that will follow, can be considered as variations on Hilbert's celebrated "Theorem 90".
 The introduction of the method of descent in algebraic geometry seems to be due to A. Weil, under the name of "descent of the base field".
 Weil considered only the case of separable finite field extensions.
 The case of radicial extensions of height $1$ was then studied by P. Cartier.
@@ -61,8 +59,7 @@ We will restrict ourselves to giving only some of them as examples, without aimi
 
 We will freely use the language of schemes, for which we refer to the already cited article, as well as [@GR1958].
 We make clear to point out, however, that the preschemes considered in this current article are not necessarily Noetherian, and that the morphisms are not necessarily of finite type.
-\oldpage{190-02}
-So, if $A$ is a local Noetherian ring, with completion $\overline{A}$, then we will need to consider the non-Noetherian ring $\overline{\overline{A}}\otimes_A\overline{A}$, as well as the morphisms of affine schemes that correspond to the inclusions between the rings in question.
+\oldpage{190-02}So, if $A$ is a local Noetherian ring, with completion $\overline{A}$, then we will need to consider the non-Noetherian ring $\overline{\overline{A}}\otimes_A\overline{A}$, as well as the morphisms of affine schemes that correspond to the inclusions between the rings in question.
 
 ## **A.** Preliminaries on categories {-}
 
@@ -116,8 +113,7 @@ We then define a fibred category $\cal{F}$ with base $\cal{C}$ by setting $\cal{
 ::: {.rmenv #fga-3-i-section-A.1-example-2 title="Example 2" latex="{Example 2}"}
 Let $\cal{C}$ be the category of preschemes, and, for $X\in\cal{C}$, let $\cal{F}_X$ be the category of quasi-coherent sheaves of modules on $X$.
 If $f\colon X\to Y$ is a morphism of preschemes, then $f^*\colon\cal{F}_Y\to\cal{F}_X$ is the _inverse image of sheaves of modules_ functor.
-\oldpage{190-03}
-We thus obtain a category fibred over $\cal{C}$.
+\oldpage{190-03}We thus obtain a category fibred over $\cal{C}$.
 :::
 
 
@@ -172,8 +168,7 @@ $$
 :::
 
 With this definition, the objects of $\cal{F}_{S'}$ that are endowed with gluing data (with respect to $\beta_1$ and $\beta_2$) then form a _category_.
-If $\alpha\colon S'\to S$ is a morphism such that $\alpha\beta_1=\alpha\beta_2$, then, for every $\xi\in\cal{F}_{S'}$, the object $\xi'=\alpha^*(\xi)$ of $\cal{F}_{S'}$ is endowed with a canonical gluing data, since
-\oldpage{190-04}
+\oldpage{190-04}If $\alpha\colon S'\to S$ is a morphism such that $\alpha\beta_1=\alpha\beta_2$, then, for every $\xi\in\cal{F}_{S'}$, the object $\xi'=\alpha^*(\xi)$ of $\cal{F}_{S'}$ is endowed with a canonical gluing data, since
 $$
   \beta_i^*\alpha^*(\xi)
   \simeq (\alpha\beta_i)^*(\xi)
@@ -208,10 +203,8 @@ i. $\Delta^*(\varphi) = \id_\xi$, where $\Delta\colon S'\to S'\times_S S'$ denot
 
 ii. $p_{31}^*(\varphi) = p_{32}^*(\varphi)p_{21}^*(\varphi)$, where $p_{ij}$ denotes the canonical projection from $S'\times_S S'\times_S S'$ to the partial product of its $i$th and $j$th factors.
 
-\oldpage{190-05}
-
 ::: {.rmenv #fga-3-i-section-A.1-definition-1.6 title="Definition 1.6" latex="{Definition 1.6}"}
-We define _descent data_ on $\xi'\in\cal{F}_{S'}$, with respect to the morphism $\alpha\colon S'\to S$, to be a gluing data on $\xi'$ with respect to the pair $(p_1,p_2)$ of canonical projections $S'\times_S S'\to S'$ that satisfies conditions (i) and (ii) above.
+\oldpage{190-05}We define _descent data_ on $\xi'\in\cal{F}_{S'}$, with respect to the morphism $\alpha\colon S'\to S$, to be a gluing data on $\xi'$ with respect to the pair $(p_1,p_2)$ of canonical projections $S'\times_S S'\to S'$ that satisfies conditions (i) and (ii) above.
 :::
 
 ::: {.rmenv #fga-3-i-section-A.1-definition-1.7 title="Definition 1.7" latex="{Definition 1.7}"}
@@ -247,8 +240,7 @@ $$
 (satisfying the evident conditions of functoriality in $T$).
 Conditions (i) and (ii) of [§A.1.c](#fga-3-i-section-A.1.c) can then be written as
 
-i bis. $\varphi_{t,t}=\id_{\xi'_t}$, for all $T$ and all $t\in S'(T)$.
-\oldpage{190-06}
+i bis. \oldpage{190-06}$\varphi_{t,t}=\id_{\xi'_t}$, for all $T$ and all $t\in S'(T)$.
 
 ii bis. $\varphi_{t,t''}=\varphi_{t,t'}\varphi_{t',t''}$, for all $T$ and all $t,t',t''\in S'(T)$.
 
@@ -301,8 +293,7 @@ $$
   S' \oullar{p_1}{p_2}
   S'\times_S S'
 $$
-\oldpage{190-07}
-is exact, i.e. that $S$ is a cokernel of the pair $(p_1,p_2)$.
+\oldpage{190-07}is exact, i.e. that $S$ is a cokernel of the pair $(p_1,p_2)$.
 In any case, a cokernel morphism is a strict epimorphism.
 Note also that, if a strict epimorphism is also a monomorphism, then it is an isomorphism.
 We leave to the reader the task of developing the dual notion of a _strict monomorphism_.
@@ -342,8 +333,7 @@ $$
 $$
 :::
 
-is exact if and only if the diagram of sheaves on $S$
-\oldpage{190-08}
+\oldpage{190-08}is exact if and only if the diagram of sheaves on $S$
 $$
   \scr{O}_S = \scr{A} \xrightarrow{\alpha}
   \scr{A}' \ourrar{\beta_1}{\beta_2}
@@ -414,8 +404,7 @@ This is one of the main reasons for the importance of the notion of flatness in 
 ## (A.3) Application to étalements {#fga-3-i-section-A.3}
 
 Let $A$ be a local ring, and $B$ a local algebra over $A$ whose maximal ideal induces that of $A$.
-\oldpage{190-10}
-We say that $B$ is _étalé_ over $A$ (instead of "unramified", as used elsewhere) if it satisfies the following conditions:
+\oldpage{190-10}We say that $B$ is _étalé_ over $A$ (instead of "unramified", as used elsewhere) if it satisfies the following conditions:
 
 i. $B$ is flat over $A$; and
 ii. $B/\frak{m}B$ is a separable finite extension of $A/\frak{m}=k$ (where $\frak{m}$ denotes the maximal ideal of $A$).
@@ -435,8 +424,7 @@ $$
 is bijective, i.e. the functor $T\mapsto\overline{T}$ from the category of étale schemes over $S$ to the category of analytic spaces over $S$ is "fully faithful", and thus defines an equivalence between the first category and a subcategory of the second.
 A theorem of Grauert--Remmert [@GR1958] implies that, if $S$ is normal, then we thus obtain an equivalence between the category of _étale coverings_ of $S$ and the category of (_finite_) étale coverings of $S$, i.e. every étale covering $\scr{C}$ of $\overline{S}$ is $\overline{S}$-isomorphic to some $\overline{T}$, where $T$ is an étale covering of $S$.
 We will show that _the Grauert--Remmert theorem remains true without any normality hypotheses on $S$_.
-\oldpage{190-11}
-First let $S'\to S$ be a finite strict epimorphism, and suppose that the theorem has been proven for $S'$; we will show that it holds for $S$.
+\oldpage{190-11}First let $S'\to S$ be a finite strict epimorphism, and suppose that the theorem has been proven for $S'$; we will show that it holds for $S$.
 Let $\scr{C}$ be an étale covering of $\overline{S}$, and consider its inverse image $\scr{C}'$ over $S'$, which corresponds to a coherent analytic sheaf $\frak{A}'$ of algebras on $S'$ that is the inverse image of a sheaf of algebras $\frak{A}$ on $\overline{S}$ defining $\scr{C}$.
 By hypothesis, on $S'$, $\scr{C}'$ comes from an étale covering $T'$ of $S'$, i.e. $\frak{A}'$ comes from a coherent sheaf of algebras $\scr{A}'$ on $S'$.
 Also, $\frak{A}'$ is endowed with a canonical descent data with respect to $\overline{S}'\to\overline{S}$, i.e. with an isomorphism between its two inverse images on $\overline{S}'\times_{\overline{S}}\overline{S}'=\overline{S'\times_SS'}$ (satisfying conditions (i) and (ii)), and this isomorphism comes from, by what has already been said, an isomorphism between the corresponding algebraic sheaves, i.e. from a descent data on $\scr{A}'$ with respect to $S'\to S$.
@@ -455,8 +443,7 @@ $$
   \Hom_S(T_1,T_2) \to \Hom_{S'}(T'_1,T'_2)
 $$
 for preschemes $T_1$ and $T_2$ that are étalé over $S$, which can be proven directly without difficulty. We also use the fact that the stated theorem is true if $S'=(S,\scr{O}_S/\scr{J})$, where $\scr{J}$ is a nilpotent coherent sheaf of ideals of $\scr{O}_S$, cf. [@Mur1958, Lemma 6]).
-\oldpage{190-12}
-Note also that we do not suppose here that the $T$ in question are finite over $S$.
+\oldpage{190-12}Note also that we do not suppose here that the $T$ in question are finite over $S$.
 This result implies, in particular, that the morphism $S'\to S$ induces an isomorphism between the fundamental group of $S'$ and the fundamental group of $S$ ("_topological invariance of the fundamental group of a prescheme_").
 
 
@@ -491,8 +478,7 @@ in particular, if $T$ and $T'$ are such that each one dominates the other, then 
 Suppose that $\cal{C}$ has all fibre products.
 Then we can, for fixed $S\in\cal{C}$, apply the above to the category $\cal{C}_S$ of objects of $\cal{C}$ over $S$;
 we then write $C^\bullet(T/S,F)$ and $\HH^\bullet(T/S,F)$ instead of $C^\bullet(T,F)$ and $\HH^\bullet(T,F)$ if we wish to make clear that we are working in the category $\cal{C}_S$;
-\oldpage{190-13}
-then $C^\bullet(T/S,F)$ is a cochain complex in $\cal{C}'$ that, in degree $n$, is equal to $F(T\times_S T\times_S\ldots\times_S T)$ (where there are $n+1$ factors $T$).
+\oldpage{190-13}then $C^\bullet(T/S,F)$ is a cochain complex in $\cal{C}'$ that, in degree $n$, is equal to $F(T\times_S T\times_S\ldots\times_S T)$ (where there are $n+1$ factors $T$).
 
 Note that, as per usual, we can define $\HH^0(T/S,F)$ without assuming the category $\cal{C}'$ to be abelian:
 it is the kernel ([Definition 2.1](#fga-3-i-section-A.2-definition-2.1)), if it exists, of the pair $(F(p_1),F(p_2))$ of morphisms
@@ -538,8 +524,7 @@ $$
   G_\xi(S') = \Aut(\xi\times_S S'),
 $$
 we thus define a contravariant functor $G_\xi$ from $\cal{C}_S$ to the category of groups.
-\oldpage{190-14}
-With this setup, we claim that _$Z^1(S'/S,G)$ is canonically identified with the set of descent data on $\xi'=\xi\times_S S'$ with respect to $S'\to S$_ ([Definition 1.6](#fga-3-i-section-A.1-definition-1.6)), and that _$\HH^1(S'/S,G)$ can be identified with the set of isomorphism classes of objects of $\cal{F}_{S'}$ endowed with a descent data relative to $\alpha\colon S'\to S$ that are isomorphic, as objects of $\cal{F}_{S'}$, to $\xi'=\xi\times_S S'$_.
+\oldpage{190-14}With this setup, we claim that _$Z^1(S'/S,G)$ is canonically identified with the set of descent data on $\xi'=\xi\times_S S'$ with respect to $S'\to S$_ ([Definition 1.6](#fga-3-i-section-A.1-definition-1.6)), and that _$\HH^1(S'/S,G)$ can be identified with the set of isomorphism classes of objects of $\cal{F}_{S'}$ endowed with a descent data relative to $\alpha\colon S'\to S$ that are isomorphic, as objects of $\cal{F}_{S'}$, to $\xi'=\xi\times_S S'$_.
 Then, _if $\alpha\colon S'\to S$ is an $\cal{F}$-descent morphism_ (cf. [§A.4.b](#fga-3-i-section-A.4.b)), _then $\HH^1(S'/S,G)$ contains as a subset the set of isomorphism classes of objects $\eta$ of $\cal{F}_S$ such that $\eta\times_S S'$ is isomorphic (in $\cal{F}_{S'}$) to $\xi\times_S S'$_;
 further, _this inclusion is the identity if and only if every descent data on $\xi'=\xi\times_S S'$ with respect to $\alpha\colon S'\to S$ is effective_.
 (This will be the case, in particular, if $\alpha\colon S'\to S$ is a strict $S$-descent morphism).
@@ -575,8 +560,7 @@ We similarly define the functor $\Gm$ (for "multiplicative group") by
 $$
   \Gm(X) = \HH^0(X,\scr{O}_X)^\times
 $$
-(i.e. the group of invertible elements of the ring $\HH^0(X,\scr{O}_X)$), and, more generally, the functor $\GL(n)$ (for "linear group of order $n$") by
-\oldpage{190-15}
+\oldpage{190-15}(i.e. the group of invertible elements of the ring $\HH^0(X,\scr{O}_X)$), and, more generally, the functor $\GL(n)$ (for "linear group of order $n$") by
 $$
   \GL(n)(X) = \GL(n,\HH^0(X,\scr{O}_X)),
 $$
@@ -607,8 +591,7 @@ $$
 Similarly, $C^n(S'/S,\Gm)=C^n(A'/A,\Gm)$ can be identified with $(\bigotimes_A^{n+1}A')^\times$, with the simplicial operations for $C^\bullet(A'/A,\Gm)$ being induced by those in $C^\bullet(S'/S,\Ga)$.
 We can write down the simplicial operations for $C^\bullet(A'/A,\GL(n))$ in the same explicit manner.
 _In all the cases known to the speaker, $\HH^i(A'/A,\Ga)=0$ for $i>0$, and, if $A$ is local, then $\HH^1(A'/A,\Gm)=0$, and, more generally, $\HH^1(A'/A,\GL(n))=(e)$_ (if $S'\to S$ is an $\cal{F}$-descent morphisms, i.e. if the diagram $A\to A'\rightrightarrows A'\otimes_A A'$ is exact, then compare this with [§A.2.c](#fga-3-i-section-A.2.c)).
-\oldpage{190-16}
-We note that _Hilbert's "Theorem 90" is exactly the fact that $\HH^1(S'/S,\Gm)=0$ if $A$ is a field and $A'$ is a finite Galois extension of $A$_ (cf. [Example 1](#fga-3-i-section-A.4-example-1)), _and we can also express it by saying that, in the case in question, $S'\to S$ is a strict descent morphisms for the fibred category of locally free sheaves of rank $1$._
+\oldpage{190-16}We note that _Hilbert's "Theorem 90" is exactly the fact that $\HH^1(S'/S,\Gm)=0$ if $A$ is a field and $A'$ is a finite Galois extension of $A$_ (cf. [Example 1](#fga-3-i-section-A.4-example-1)), _and we can also express it by saying that, in the case in question, $S'\to S$ is a strict descent morphisms for the fibred category of locally free sheaves of rank $1$._
 This latter statement is the one that is most suitable to generalise Hilbert's theorem, by varying the hypotheses both on the morphism $S'\to S$ and on the quasi-coherent sheaves in question.
 
 Finally, we note that, for a local _Artinian_ $A$ with maximal ideal $\frak{m}$, and an $A$-algebra $A'$ (where we denote, for any integer $k>0$, the ring $A/\frak{m}^{k+1}$ (resp. $A'/\frak{m}^{k+1}A'$) by $A_k$ (resp. $A'_k$)), the following properties are equivalent:
@@ -639,8 +622,7 @@ A morphism is said to be _faithfully flat_ if it is flat and surjective.
 For example, if $S=\Spec(A)$ and $S'=\Spec(A')$, then $S'$ is flat over $S$ if and only if $A'$ is a flat $A$-module, and $S'$ is faithfully flat over $S$ if and only if $A'$ is a faithfully flat $A$-module (i.e. if and only if $A'\otimes_A M$ is an _exact_ and _faithful_ functor in the $A$-module $M$);
 this also implies, in the terminology of Serre [@Ser1956], that the pair $(A,A')$ is flat.
 If $S'$ is faithfully flat over $S$, then the inverse image functor of quasi-coherent sheaves on $S$ is exact and faithful;
-\oldpage{190-17}
-in other words, for a sequence of homomorphisms of quasi-coherent sheaves on $S$ to be exact, it is necessary and sufficient that its inverse image on $S'$ be exact (in particular, for a homomorphism of quasi-coherent sheaves on $S$ to be a monomorphism (resp. an epimorphism, resp. an isomorphism), it is necessary and sufficient that its inverse image on $S'$ be a monomorphism (resp. an epimorphism, resp. an isomorphism)).
+\oldpage{190-17}in other words, for a sequence of homomorphisms of quasi-coherent sheaves on $S$ to be exact, it is necessary and sufficient that its inverse image on $S'$ be exact (in particular, for a homomorphism of quasi-coherent sheaves on $S$ to be a monomorphism (resp. an epimorphism, resp. an isomorphism), it is necessary and sufficient that its inverse image on $S'$ be a monomorphism (resp. an epimorphism, resp. an isomorphism)).
 This property holds true if we restrict to an arbitrary open subset of $S'$, and then characterise faithfully flat morphisms in this form.
 
 ::: {.rmenv #fga-3-i-section-B.1-definition-1.2 title="Definition 1.2" latex="{Definition 1.2}"}
@@ -671,8 +653,7 @@ Setting $\cal{F}=\scr{O}_S$ in (i), we obtain:
 
 ::: {.rmenv #fga-3-i-section-B.1-corollary-1 title="Corollary 1" latex="{Corollary 1}"}
 Let $\scr{G}$ be a quasi-coherent sheaf on $S$, with $\scr{G}'$ and $\scr{G}''$ denoting its inverse images on $S'$ and $S''=S'\times_S S'$ (respectively), and let $p_1$ and $p_2$ be the two projections from $S''$ to $S$.
-Then the diagram of maps of sets
-\oldpage{190-18}
+\oldpage{190-18}Then the diagram of maps of sets
 $$
   \Gamma(\scr{G}) \xrightarrow{\alpha^*}
   \Gamma(\scr{G}') \ourrar{p_1^*}{p_2^*}
@@ -721,8 +702,7 @@ To prove part (ii) of [Theorem 1](#fga-3-i-section-B.1-theorem-1), we proceed, a
 :::
 
 We can evidently vary [Theorem 1](#fga-3-i-section-B.1-theorem-1) and its corollaries _ad libitum_ by introducing various additional structures on the quasi-coherent sheaves (or systems of sheaves) in question.
-\oldpage{190-19}
-For example, the data on $S$ of a quasi-coherent sheaf of commutative algebras "is equivalent to" the data on $S'$ of such a sheaf endowed with a descent data relative to $\alpha\colon S'\to S$.
+\oldpage{190-19}For example, the data on $S$ of a quasi-coherent sheaf of commutative algebras "is equivalent to" the data on $S'$ of such a sheaf endowed with a descent data relative to $\alpha\colon S'\to S$.
 Taking into account the functorial correspondence between such quasi-coherent sheaves on $S$ and affine preschemes over $S$, we obtain the second claim of the following theorem:
 
 ::: {.itenv #fga-3-i-section-B.1-theorem-2 title="Theorem 2" latex="{Theorem 2}"}
@@ -751,8 +731,7 @@ To complete [Theorem 2](#fga-3-i-section-B.1-theorem-2), we must give effectiven
 Note first of all that _such a descent data is not necessarily effective_, even if $S$ is the spectrum of a field $k$, $S'$ the spectrum of a quadratic extension $k'$ of $k$, and $S''$ a proper algebraic scheme of dimension $2$ over $S'$ (as we can see, due to Serre, by using the non-projective surface of Nagata).
 _For a descent data on $X'/S'$ with respect to $\alpha\colon S'\to S$ (assumed to be faithfully flat and quasi-compact) to be effective, it is necessary and sufficient that $X'$ be a union of open subsets $X'_i$ that are affine over $S'$ and "stable" under the descent data on $X'$._
 This is certainly the case (for any $X'/S'$ and any descent data on $X'$) if the morphism $\alpha\colon S'\to S$ is _radicial_ (i.e. injective, and with radicial residual extensions).
-\oldpage{190-20}
-We can also show that this is the case if $\alpha\colon S'\to S$ is _finite_, and every finite subset of $X'$ that is contained in a fibre of $X'$ over $S$ is also contained in an open subset of $X'$ that is affine over $S$ (this is the _Weil criterion_).
+\oldpage{190-20}We can also show that this is the case if $\alpha\colon S'\to S$ is _finite_, and every finite subset of $X'$ that is contained in a fibre of $X'$ over $S$ is also contained in an open subset of $X'$ that is affine over $S$ (this is the _Weil criterion_).
 It is, in particular, the case if $X'/S'$ is quasi-projective, and, in this case, we can show that the "descended" prescheme $X/S$ is also quasi-projective (and projective if $X'/S'$ is projective).
 In summary:
 
@@ -788,8 +767,7 @@ It appears that the answer is affirmative in many important cases, if we suppose
 We can see this directly without difficulty if $P$ is the class of surjective (resp. radicial) morphisms (with these two cases following from the surjectivity of $\alpha$), or flat (resp. faithfully flat, resp. simple) morphisms (with these three cases following from the faithful flatness of $\alpha$), or morphisms of finite type.
 Using [Theorem 1](#fga-3-i-section-B.1-theorem-1), [Theorem 2](#fga-3-i-section-B.1-theorem-2), and [Lemma 1.2](#fga-3-i-section-B.1-lemma-1.2), we see that it is also true if $P$ is one of the following classes:
 isomorphisms, open immersions, closed immersions, immersions (if $f$ is of finite type, and $Y$ is locally Noetherian), affine morphisms, finite morphisms, quasi-finite morphisms, open morphisms, closed morphisms, homeomorphisms, separated morphisms, or proper morphisms.
-\oldpage{190-21}
-The only important case not covered here is that of projective or quasi-projective morphisms, which has already been discussed in the remark in [§B.1](#fga-3-i-section-B.1).
+\oldpage{190-21}The only important case not covered here is that of projective or quasi-projective morphisms, which has already been discussed in the remark in [§B.1](#fga-3-i-section-B.1).
 
 
 ## (B.3) Decent by finite faithfully flat morphisms {#fga-3-i-section-B.3}
@@ -841,8 +819,7 @@ If we have a pairing of quasi-coherent sheaves on $S'$:
 $$
   \cal{F}'_1\times\cal{F}'_2 \to \cal{F}'_3
 $$
-\oldpage{190-22}
-(that we can think of as a pairing of sheaves of $\scr{A}'$-modules on $S$), and gluing data on the $\cal{F}'_i$ defined by homomorphisms $T_i\colon\scr{U}\to\shHom_{\scr{O}_S}(\cal{F}'_i,\cal{F}'_i)$ (for $i=1,2,3$), then these data are _equivalent to the given pairing_, in the evident meaning of the phrase, if and only if the following condition is satisfied:
+\oldpage{190-22}(that we can think of as a pairing of sheaves of $\scr{A}'$-modules on $S$), and gluing data on the $\cal{F}'_i$ defined by homomorphisms $T_i\colon\scr{U}\to\shHom_{\scr{O}_S}(\cal{F}'_i,\cal{F}'_i)$ (for $i=1,2,3$), then these data are _equivalent to the given pairing_, in the evident meaning of the phrase, if and only if the following condition is satisfied:
 
 For every section $\xi$ of $\scr{U}$ over an open subset, and denoting by $\Delta\xi=\sum\xi'_i\otimes_{\scr{A}'}\xi''_i$ the section of $\scr{U}\otimes_{\scr{A}'}\scr{U}$ (where $\scr{U}$ is considered as an $\scr{A}'$-module with its left structure) defined by the formula
 $$
@@ -877,8 +854,7 @@ that is compatible with the morphism $h\colon X'\to S'$ and that satisfies the c
 (_Weil_).
 Suppose that $S'/S$ is a _Galois étale covering_ with Galois group $\Gamma$ (cf. [§A.3](#fga-3-i-section-A.3) and [§A.4.d](#fga-3-i-section-A.4).
 Then a descent data on a quasi-coherent sheaf $\cal{F}'$ on $S'$ (resp. on an $S'$-prescheme $X'$) is equivalent to the data of a representation of $\Gamma$ by automorphisms of $(S',\cal{F}')$ (resp. of $(S',X')$) that is compatible with the action of $\Gamma$ on $S'$.
-\oldpage{190-23}
-This result is "formal", i.e. it can be proven in terms of categories, but, from the point of view of this section, we also obtain the explicit structure of $\scr{U}$ (endowed with its ring structure, the ring homomorphism $\scr{A}'\to\scr{U}$, and the diagonal map), which is completely known thanks to the following result:
+\oldpage{190-23}This result is "formal", i.e. it can be proven in terms of categories, but, from the point of view of this section, we also obtain the explicit structure of $\scr{U}$ (endowed with its ring structure, the ring homomorphism $\scr{A}'\to\scr{U}$, and the diagonal map), which is completely known thanks to the following result:
 _$\scr{U}$ admits, as a left $A'$-module, a basis given by the sections of $\scr{U}$ that correspond to elements of $\Gamma$_.
 :::
 
@@ -943,8 +919,7 @@ $$
 
 (This is what we may call a _linear connection on $\cal{F}$_, which is further _flat_ and _compatible with the $p$-th powers_).
 We can similarly write down the notion of a descent data on an $S'$-prescheme $X'$, with equation [(3.4)](#fga-3-i-section-B.3-equation-3.4) being replaced by the condition that the $\overline{X}$ are _derivations_ of $\scr{O}_{X'}$.
-Since the morphism $S'\to S$ is radicial, [Theorem 3](#fga-3-i-section-B.1-theorem-3) ensures that every such descent data is effective, and thus defines an $S$-prescheme $X$.
-\oldpage{190-24}
+\oldpage{190-24}Since the morphism $S'\to S$ is radicial, [Theorem 3](#fga-3-i-section-B.1-theorem-3) ensures that every such descent data is effective, and thus defines an $S$-prescheme $X$.
 
 Note that we have not needed to impose any flatness, non-singular, or finiteness hypotheses on $\cal{F}'$ or $X'$.
 
@@ -971,8 +946,7 @@ _If this is the case, then $\cal{F}$ is determined up to equivalence._
 (We then say that $\cal{F}'$ is _rational_ on $S$).
 
 Considering this principle in the case where $\alpha\colon S'\to S$ is as in [Example 1](#fga-3-i-section-B.3-example-1) and [Example 2](#fga-3-i-section-B.3-example-2) in the previous section, we recover the _rationality criteria of Weil and of Cartier_.
-\oldpage{190-25}
-(We note that the authors restrict to the case where $S$ and $S'$ are spectra of fields;
+\oldpage{190-25}(We note that the authors restrict to the case where $S$ and $S'$ are spectra of fields;
 a fortiori, $S$ is then the spectrum of a local ring, and the equivalence relation introduced above is exactly the relation of being isomorphic).
 The the first case, $\cal{F}'$ is rational on $S$ if and only if its images under $\Gamma$ are all equivalent to $\cal{F}'$.
 To express the rationality criterion in the second case, we consider, more generally, the diagonal morphism $X'\to X''=X'\times_X X'$ of $X'/X$, with the corresponding sheaf of ideals $\scr{I}$ on $X'\times_X X'$, and the sheaf $\scr{I}/\scr{I}^2$, which can be identified with its inverse image $\Omega_{X'/X}^1$ on $X$ (the _sheaf of $1$-differentials of $X'$ with respect to $X$_).
@@ -993,8 +967,7 @@ From this, and the results of the previous section, we easily conclude that, in 
 ## (B.5) Application to the restriction of the base scheme to an abelian scheme {#fga-3-i-section-B.5}
 
 Let $S$ be a prescheme.
-\oldpage{190-26}
-Well define an _abelian scheme_ over $S$ to be a simple proper scheme $X$ over $S$ whose fibres at the points $x\in S$ are schemes of abelian varieties over the $k(x)$.
+\oldpage{190-26}We define an _abelian scheme_ over $S$ to be a simple proper scheme $X$ over $S$ whose fibres at the points $x\in S$ are schemes of abelian varieties over the $k(x)$.
 Suppose that $S$ is Noetherian and _regular_ (i.e. that its local rings are regular), then we can show, using the _connection theorem_ of Murre [@Mur1958]
 (at least in the case "of equal characteristics", where the cited theorem is currently proven) that _every rational section of $X$ over $S$ is everywhere defined_ (i.e. is a section) (which generalises a classical theorem of Weil).
 It then follows, more generally, that, if $X'$ is a simple scheme over $S$, then every rational $S$-map from $X'$ to $X$ is everywhere defined.
@@ -1022,8 +995,7 @@ We say that $P$ is _formally principal homogeneous_ for $G$ if the well-known mo
 $$
   G\times_S P \to P\times_S P
 $$
-\oldpage{190-27}
-(induced from the actions of $G$ on $P$) is an _isomorphism_.
+\oldpage{190-27}(induced from the actions of $G$ on $P$) is an _isomorphism_.
 From now on, we assume $G$ to be _flat_ over $S$ (and thus faithfully flat over $S$), and we reserve the name of _principal homogeneous bundle_ for $G$ for a formally principal homogeneous bundle $P$ that is _faithfully flat_ and _quasi-compact_ over $S$.
 It is immediate that this is equivalent to being able to find a _faithfully flat_ and _quasi-compact extension_ $S'\to S$ of the base $S$ such that the formally principal homogeneous bundle $P'=P\times_S S'$ for $G'=G\times_S S'$ is _trivial_, i.e. isomorphic to $G'$ (i.e. admitting a section);
 we can take, in particular, $S'=P$.
@@ -1040,8 +1012,7 @@ In particular, we say that $P$ is _isotrivial_ (resp. _strictly isotrivial_) if,
 Strict isotriviality is mainly useful if $G$ is simple over $S$, but is, however, an inadequate notion in other cases.
 
 If $G$ is _affine_ over $S$, then every principal homogeneous bundle $P$ for $G$ is affine, by [§B.2](#fga-3-i-section-B.2), whence the possibility, thanks to [Theorem 2](#fga-3-i-section-B.1-theorem-2), to "descend" from such bundles by faithfully flat and quasi-compact morphisms.
-\oldpage{190-28}
-Taking, in particular, $G=\GL(n)_S$, defined by the condition that the functor $S'\mapsto\Hom(S',G)$ of $S$-preschemes (with values in the category of groups) can be identified with the functor $\GL(n)(S')=\GL(n,\HH^0(S',\scr{O}_{S'}))$ described in [§A.4.e](#fga-3-i-section-A.4).
+\oldpage{190-28}Taking, in particular, $G=\GL(n)_S$, defined by the condition that the functor $S'\mapsto\Hom(S',G)$ of $S$-preschemes (with values in the category of groups) can be identified with the functor $\GL(n)(S')=\GL(n,\HH^0(S',\scr{O}_{S'}))$ described in [§A.4.e](#fga-3-i-section-A.4).
 Using the facts
 
 i. that every principal homogeneous bundle for $G$ (resp. every locally free sheaf of rank $n$ on $S$) becomes isomorphic to the "trivial" object $G$ (resp. $\scr{O}_S^n$) under a suitable faithfully flat and quasi-compact extension of $S$;

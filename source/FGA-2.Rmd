@@ -30,9 +30,7 @@ Grothendieck, A.
 _Séminaire Bourbaki_ **11** (1958--59), Talk no. 182.
 :::
 
-\oldpage{C-03}
-
-The substance of [§1](#fga-2-section-1) to [§5](#fga-2-section-5) is contained in the published part of [@GD1960, III]; that of [§6](#fga-2-section-6) and [§7](#fga-2-section-7) is contained in [@Gro1960b, III].
+\oldpage{C-03}The substance of [§1](#fga-2-section-1) to [§5](#fga-2-section-5) is contained in the published part of [@GD1960, III]; that of [§6](#fga-2-section-6) and [§7](#fga-2-section-7) is contained in [@Gro1960b, III].
 For the study of the fundamental group, see [@Gro1960b, V, IX, X, and XI], as well as [@Gro1960b, X, XII, and XIII] for the Lefschetz-type theorems and numerous open questions.
 Only the theory of moderately ramified coverings (cf. [Theorem 14](#fga-2-theorem-14)) has not yet been the subject of a dedicated talk.
 The [corollary to Theorem 14](#fga-2-theorem-14-corollary-1), which completely determines Galois coverings of order coprime to the characteristic of an algebraic curve over an algebraically closed field, has been used in an essential manner on three separate occasions:
@@ -46,9 +44,7 @@ The [corollary to Theorem 14](#fga-2-theorem-14-corollary-1), which completely d
 
 ## Schemes {#fga-2-section-1}
 
-\oldpage{182-01}
-
-We know that an affine algebraic space defined over a field $k$ is essentially determined by its affine algebra $A$ (the ring of regular functions defined over $k$), and the morphisms $X\to Y$ of algebraic spaces correspond bijectively to homomorphisms $A(Y)\to A(X)$ of $k$-algebras.
+\oldpage{182-01}We know that an affine algebraic space defined over a field $k$ is essentially determined by its affine algebra $A$ (the ring of regular functions defined over $k$), and the morphisms $X\to Y$ of algebraic spaces correspond bijectively to homomorphisms $A(Y)\to A(X)$ of $k$-algebras.
 The affine algebra corresponding to an algebraic space is a $k$-algebra of finite type, and, from the "classical" point of view, it has no nilpotent elements;
 conversely, every such algebra is obtained as the affine algebra of an algebraic space defined over $k$.
 There is thus a known dictionary that allows us to interpret situations concerning affine algebraic spaces in terms of commutative algebra.
@@ -64,9 +60,7 @@ Thus $X$ becomes a _ringed space_, and is called the _prime spectrum_ of $A$.
 A ring homomorphism $f\colon A\to B$ defines a morphism $f'\colon\Spec(B)\to\Spec(A)$ of ringed spaces, with the underlying map of sets being exactly $\frak{p}\mapsto f^{-1}(\frak{p})$.
 The homomorphisms $\Spec(B)\to\Spec(A)$ of ringed spaces obtained in this manner are exactly those for which the homomorphisms $\scr{O}_x\to\scr{O}_y$ (where $x=f'(y)$) are local (i.e. the inverse image of a maximal ideal is a maximal ideal).
 
-\oldpage{182-02}
-
-We define an _affine scheme_ to be a ringed space that is isomorphic to some $\Spec(A)$, and a _prescheme_ to be a locally-affine ringed space, i.e. such that every point has an open neighbourhood that is an affine scheme for the induced structure.
+\oldpage{182-02}We define an _affine scheme_ to be a ringed space that is isomorphic to some $\Spec(A)$, and a _prescheme_ to be a locally-affine ringed space, i.e. such that every point has an open neighbourhood that is an affine scheme for the induced structure.
 We define, in an evident way, _morphisms_ of preschemes;
 locally, they correspond to ring homomorphisms.
 
@@ -89,9 +83,7 @@ Thus $X$ can be, to a certain extent, considered as a family of "algebraic space
 Of course, the $k(s)$ can have different characteristics.
 If $S=\Spec(k)$, where $k$ is a field, then we essentially recover the usual notion of "algebraic space", with the only difference being that now the structure sheaf can have nilpotent elements.
 
-\oldpage{182-03}
-
-Inspired by well-known ideas, we can define the notion of a _projective morphism_, and, more generally, of a _proper morphism_.
+\oldpage{182-03}Inspired by well-known ideas, we can define the notion of a _projective morphism_, and, more generally, of a _proper morphism_.
 Such a morphism is of finite type, and further sends closed subsets to closed subsets, and retains this property under an arbitrary change of base.
 
 With $X$ being a (Noetherian, as always) scheme, the sheaf $\scr{O}_X$ is a _coherent sheaf of rings_ in the sense of [@Gro1960].
@@ -115,9 +107,7 @@ We define a _formal scheme_ (implicitly assumed to be Noetherian) to be a topolo
 there is an isomorphism of sheaves of topological rings $\scr{O}_{\frak{X}}=\varprojlim_n\scr{O}_n$, where the $\scr{O}_n$ form a projective system of sheaves of rings on $\frak{X}$, with each one making $\frak{X}$ into a scheme $\frak{X}_n$, and such that, for $m\geq n$, the homomorphism $\scr{O}_m\to\scr{O}_n$ is surjective and has $\scr{J}_m^{n+1}$ as its kernel, where $\scr{J}_m$ is the kernel of $\scr{O}_m\to\scr{O}_0$.
 We will show that $\scr{O}_{\frak{X}}$ is a _coherent_ sheaf of _local Noetherian_ rings.
 
-\oldpage{182-04}
-
-By the definitions, a formal completion $\overline{X}$ as above is a formal scheme, and, conversely, every formal scheme is _locally_ of this type.
+\oldpage{182-04}By the definitions, a formal completion $\overline{X}$ as above is a formal scheme, and, conversely, every formal scheme is _locally_ of this type.
 In fact, the data of a formal _affine_ scheme (i.e. such that $\frak{X}_0$ is affine, which implies that all the $\frak{X}_n$ are affine) is equivalent to the data of a separated complete $\scr{J}$-adic Noetherian topological ring.
 
 The usual definitions (morphism, morphism of finite type, proper morphism, etc.) for ordinary schemes generalise without problem to formal schemes.
@@ -149,10 +139,8 @@ The minor changes that need to be made to the notation in the explanation if we 
 [Theorem 1](#fga-2-theorem-1) deals only with "formal cohomology";
 the following theorem relates it with "algebraic cohomology", and resembles a well-known theorem of Serre [@Ser1956] on the comparison between algebraic cohomology and analytic cohomology.
 
-\oldpage{182-05}
-
 ::: {.itenv #fga-2-theorem-2 title="Theorem 2" latex="{Theorem 2}"}
-_First comparison theorem._ ---
+\oldpage{182-05}_First comparison theorem._ ---
 The $\RR^q f_*(\scr{F})$ are coherent sheaves on $Y$ (which is a particular case of [Theorem 1](#fga-2-theorem-1)), and the natural homomorphisms
 $$
   \overline{\RR^q f_*(\scr{F})} \to \varprojlim_n \RR^q (f_n)_*(\scr{F}_n)
@@ -192,9 +180,7 @@ $$
   \end{aligned}
 $$
 
-\oldpage{182-06}
-
-The latter identity shows that the category of coherent sheaves on $X$ can be identified with a _subcategory_ (with morphisms being the induced morphisms) of the category of coherent sheaves on $\overline{X}$.
+\oldpage{182-06}The latter identity shows that the category of coherent sheaves on $X$ can be identified with a _subcategory_ (with morphisms being the induced morphisms) of the category of coherent sheaves on $\overline{X}$.
 In fact, we even have:
 
 ::: {.itenv #fga-2-theorem-3 title="Theorem 3" latex="{Theorem 3}"}
@@ -232,9 +218,7 @@ ii. $H^2(\frak{X}_0,\scr{O}_{\frak{X}_0})=0$, where we consider $\frak{X}_0=\fra
 
 iii.  $\frak{X}_0$ is projective.
 
-\oldpage{182-07}
-
-Then, under these conditions, $\frak{X}$ is algebraisable, and, more precisely, is isomorphic to $\overline{X}$, where $X$ is some projective $A$-scheme.
+\oldpage{182-07}Then, under these conditions, $\frak{X}$ is algebraisable, and, more precisely, is isomorphic to $\overline{X}$, where $X$ is some projective $A$-scheme.
 :::
 
 Conditions (ii) and (iii) will be satisfied if, in particular, $\frak{X}_0$ is a _simple curve_ over $k$, and [Theorem 4](#fga-2-theorem-4) can be applied, in particular, in the "module theory" of curves of a given genus...
@@ -261,9 +245,7 @@ Then $f$ factors uniquely (up to isomorphism) as $f=gf'$, where $g\colon Y'\to Y
 Also, the fibres of $f'$ are connected, i.e. the set of connected components of a fibre $f^{-1}(y)$ of $f$ is in bijective correspondence with the set of points of $Y'$ over $y$, i.e. the set of maximal ideals in $f_*(\scr{O}_X)_y$.
 :::
 
-\oldpage{182-06}
-
-From this, we immediately deduce the usual variants of the connection theorem.
+\oldpage{182-06}From this, we immediately deduce the usual variants of the connection theorem.
 We state here only the following:
 
 ::: {.itenv #fga-2-theorem-5-corollary-1 title="Corollary 1" latex="{Corollary 1}"}
@@ -296,8 +278,7 @@ Since a morphism of finite type is locally affine, and _a fortiori_ locally quas
 ## Application to the cohomological study of proper and flat morphisms {#fga-2-section-5}
 
 Let $f\colon X\to Y$ be a proper morphism, and $\scr{F}$ a coherent sheaf on $X$, with $\scr{F}$ assumed to be $Y$-flat, i.e. the $\scr{F}_x$ are flat modules over the rings $\scr{O}_y$ (where $y=f(x)$).
-\oldpage{182-09}
-This also implies that, for every $y\in Y$, if we filter $\scr{F}$ along the fibre $f^{-1}(y)$ by the $\frak{m}_y^n\scr{F}$ (where $\frak{m}_y$ is the maximal ideal of $\scr{O}_y$), then the associated graded algebra is isomorphic to $(\scr{F}/\frak{m}_y\scr{F})\otimes_{k(y)}\gr(\scr{O}_y)$;
+\oldpage{182-09}This also implies that, for every $y\in Y$, if we filter $\scr{F}$ along the fibre $f^{-1}(y)$ by the $\frak{m}_y^n\scr{F}$ (where $\frak{m}_y$ is the maximal ideal of $\scr{O}_y$), then the associated graded algebra is isomorphic to $(\scr{F}/\frak{m}_y\scr{F})\otimes_{k(y)}\gr(\scr{O}_y)$;
 in other words, we have that
 $$
   \frak{m}_y^n\scr{F}/\frak{m}_y^{n+1}
@@ -336,9 +317,8 @@ If $u_0$ is an isomorphism (resp. a monomorphism, resp. an epimorphism), then so
 
 In particular:
 
-\oldpage{182-10}
 ::: {.itenv #fga-2-theorem-7-corollary-2 title="Corollary 2" latex="{Corollary 2}"}
-Let $E_0$ be a locally free coherent sheaf on $X_y$ such that $H^1(X_y;\shHom_{\scr{O}_X}(E_0,E_0))=0$.
+\oldpage{182-10}Let $E_0$ be a locally free coherent sheaf on $X_y$ such that $H^1(X_y;\shHom_{\scr{O}_X}(E_0,E_0))=0$.
 Then any two locally free sheaves whose restrictions to $X_y$ are isomorphic to $E_0$ are themselves isomorphic to one another in a neighbourhood of $X_y$.
 :::
 
@@ -376,8 +356,7 @@ The above corollary can then be expressed by saying that we have an exact sequen
 $$
   e \to \Aut(E)/\Gamma(Y,\scr{O}_Y^*) \to \Aut_Y(X) \to \Gamma \to e
 $$
-(which can also be deduced from the exact sequence in cohomology induced by the exact sequence of _sheaves_ of groups
-\oldpage{182-11}
+\oldpage{182-11}(which can also be deduced from the exact sequence in cohomology induced by the exact sequence of _sheaves_ of groups
 $$
   e \to \scr{O}_X^\times \to \shAut \to \shAut_Y(X) \to e,
 $$
@@ -410,8 +389,7 @@ This $\scr{F}$ is also unique up to isomorphism if $H^1(X_0,\shHom_{\scr{O}_{X_0
 Let $X_0$ be a scheme of finite type over the field $k$, and suppose that $X_0$ is _simple_ (by which we mean _absolutely_ simple) over $k$, but not necessarily proper over $k$.
 Let $A$ be a local Artinian ring with residue field $k$.
 We are interested in finding schemes $X$ that are flat over $A$, and such that $X\otimes_A k=X_0$ (this is the starting point of the "_theory of modules_", or of "structure variations" of $X_0$).
-\oldpage{182-12}
-It is equivalent to give either such an $X$ or, on the topological space $X_0$, a sheaf $\scr{O}_X$ endowed with the following structures:
+\oldpage{182-12}It is equivalent to give either such an $X$ or, on the topological space $X_0$, a sheaf $\scr{O}_X$ endowed with the following structures:
 
 i. $\scr{O}_X$ is a sheaf of $A$-algebras;
 
@@ -435,14 +413,13 @@ However, for any integer $n>0$, let $A_{n-1}=A/\frak{m}^n$, and suppose that we 
 we intend to lift $X_{n-1}$ to a flat $A_n$-scheme $X_n$.
 We already know, by [Theorem 8](#fga-2-theorem-8), that this is possible locally;
 we can also easily verify that, if $U_n$ lifts an open subset $U_{n-1}$ of $X_{n-1}$, then the sheaf of groups of automorphisms of $U_n$ (that induce the identity on $U_{n-1}$) is canonically isomorphic to $\frak{G}_{X_0/k}\otimes_k\frak{m}^n/\frak{m}^{n+1}$ restricted to $U_{n-1}$, and thus, in particular, commutative (where $\frak{G}_{X_0/k}$ denotes the sheaf of germs of $k$-derivations on $X_0$).
-It follows easily that we have an _obstruction of constructing $X_n$ lifting $X_{n-1}$_, which lives in $H^2(X_0,\frak{G}_{X_0/k})\otimes\frak{m}^n/\frak{m}^{n+1}$.
+It follows easily that we have an *obstruction of constructing $X_n$ lifting $X_{n-1}$*, which lives in $H^2(X_0,\frak{G}_{X_0/k})\otimes\frak{m}^n/\frak{m}^{n+1}$.
 Then:
 
 ::: {.itenv #fga-2-theorem-8-corollary-1 title="Corollary 1" latex="{Corollary 1}"}
 Let $X_0$ be a simple scheme of finite type over $k$, and suppose that
 $$H^2(X_0,\frak{G}_{X_0/k})=0.$$
-\oldpage{182-13}
-Then, for every local Artinian ring $A$ with residue field $k$, there exists a flat $A$-scheme $X$ such that $X\otimes_A k=X_0$.
+\oldpage{182-13}Then, for every local Artinian ring $A$ with residue field $k$, there exists a flat $A$-scheme $X$ such that $X\otimes_A k=X_0$.
 :::
 
 Also, if we can find _one_ $X$ that is flat over $A$ and that lifts $X_0$, then, by [Theorem 8](#fga-2-theorem-8), the set of classes (up to isomorphism) of flat $A$-schemes that lift $X_0$ can be identified with $H^1(X_0,\shAut(X))$, where $\shAut(X)$ denotes the sheaf of germs of automorphisms of the sheaf $\scr{O_X}$ of $A$-algebras _that are compatible with the augmentation_.
@@ -471,8 +448,7 @@ Then, for every local Artinian ring $A$ with residue field $k$, _there exists at
 ::: {.itenv #fga-2-theorem-9 title="Theorem 9" latex="{Theorem 9}"}
 Let $k$ be a field, and $X_0$ a _simple_ scheme of finite type over $k$.
 For every complete locally Noetherian ring $A$ with residue field $k$, let $F(A)$ be the set of classes (up to an isomorphism that induces the identity on $X_0$) of formal schemes $\frak{X}$ over $A$, of finite type, and flat over $A$, such that $X\otimes_Ak=X_0$.
-\oldpage{182-14}
-With this notation:
+\oldpage{182-14}With this notation:
 for all $A$,
 
 i. if $H^1(X_0,\frak{G}_{X_0/k})=0$ then $F(A)$ has at most one element;
@@ -519,9 +495,7 @@ Then, for every complete local Noetherian ring $A$ with residue field $k$, there
     At the least, the results of this section give a way of systematically investigating this question.
     We must start by seeing if the first obstruction that we have, in $H^2(X_0,\frak{G}_{X_0/k})$, is necessarily zero.
 
-\oldpage{182-15}
-
-2. We note that [Theorem 3](#fga-2-theorem-3), and the corresponding technique, only works for a _complete_ (local, for simplicity) base ring.
+2. \oldpage{182-15}We note that [Theorem 3](#fga-2-theorem-3), and the corresponding technique, only works for a _complete_ (local, for simplicity) base ring.
 
     In order to go from known results concerning the completion of a local ring to the corresponding results for the local ring itself, we would need a fourth "fundamental theorem", whose precise statement still needs to be found.
 
@@ -558,11 +532,9 @@ Since the speaker has only recently encountered this theory himself, we will be 
 For simplicity, we work over a _field_ $k$, i.e. we work in _equal characteristic_, even though [Theorem 8](#fga-2-theorem-8) allows us to also discuss the more general case, without any fundamental changes, so it seems.
 We have not yet gotten past the "formal" stage, but the speaker still hopes to be able to construct true schemes of modules in certain cases from this, and, in particular, construct, for every integer $g$, a scheme over the integers that plays the role of universal scheme of modules for the simple curves of genus $g$.
 
-\oldpage{182-16}
-
 ::: {.rmenv title="Remark" latex="{Remark}"}
 *[Comp.]*
-We note that Mumford has recently constructed schemes of modules for the curves of genus $g$ (cf. _Mumford--Tate seminar_, Harvard University, 1961--62).
+\oldpage{182-16}We note that Mumford has recently constructed schemes of modules for the curves of genus $g$ (cf. _Mumford--Tate seminar_, Harvard University, 1961--62).
 [Theorem 10](#fga-2-theorem-10) also proves that the "level $n$ Jacobi schemes" from the theory of modules are non-singular (and even simple over $\underline{\ZZ}$).
 :::
 
@@ -585,8 +557,7 @@ Furthermore, we see that the isomorphism ($*$) and its above description still h
 Of course, as always, $\cal{O}$ can indeed _a priori_ have nilpotent elements, and it seems likely that there should exist cases where $\cal{O}$ is itself Artinian, without being identical to $k$.
 This tells us at which point the point of view of Kodaira--Spencer (restricting to considering the $A$ that are _regular_ rings) is _a priori_ inadequate in the general case.
 
-\oldpage{182-17}
-It remains to give sufficient conditions for there to exist a formal scheme of modules for $X_0$, assumed to be proper over $k$.
+\oldpage{182-17}It remains to give sufficient conditions for there to exist a formal scheme of modules for $X_0$, assumed to be proper over $k$.
 Generally, it is easy to give simple necessary and sufficient conditions on a functor $A\to F(A)$ (from local $k$-algebras of finite rank to sets) in order for it to be of the form $\Hom(\cal{O},A)$ for some suitable $\cal{O}$.
 We do not give the details here.
 We point out only that, in the case which we are studying, these conditions impose non-trivial conditions of a cohomological nature on $X_0$, and it seems unlikely that they will always be satisfied, even though the speaker has not constructed any counterexamples.
@@ -615,8 +586,7 @@ The techniques described allows us to tackle the system study of the fundamental
 The first two theorems stated in this section are generalisations of results in a recent work by Lang--Serre.
 
 Let $X$ be a scheme.
-Then an $X$-scheme $X'$ is said to be an _unramified covering of $X$_ if
-\oldpage{182-18}
+\oldpage{182-18}Then an $X$-scheme $X'$ is said to be an _unramified covering of $X$_ if
 
 i. $X'$ is finite over $X$, i.e. it is defined by a coherent sheaf of algebras $\scr{A}=\scr{A}(X')$ on $X$;
 
@@ -634,8 +604,7 @@ The group $\pi$ is also determined up to canonical isomorphic by the condition t
 To be precise, $\pi$ is called the _fundamental group of the connected scheme $X$ at the geometric point $a$_, and we denote it by $\pi_1(X,a)$.
 If $X$ is not connected, then we can replace it by the connected component containing $x=|a|$.
 If, however, $X$ is connected, then the groups $\pi_1(X,a')$ and $\pi_1(X,a')$ are isomorphic for any two geometric points $a'$ and $a''$ of $X$ (with the isomorphism being determined up to inner automorphism), and thus we can, as per usual, choose the most suitable $a$ for our purposes, such as the generic point of $X$ that is assumed to be irreducible.
-\oldpage{182-19}
-Of course, $\pi_1(X,a)$ is a _covariant functor in the pointed scheme $(X,a)$_.
+\oldpage{182-19}Of course, $\pi_1(X,a)$ is a _covariant functor in the pointed scheme $(X,a)$_.
 Every statement concerning the classification of inseparable coverings can then be translated into the language of group theory, following the well-known dictionary (except that we must take into account the fact that here we have _topological groups_).
 
 Our goal is to develop an analogue of the homotopy exact sequence of fibre bundles, relative to a proper morphism $f\colon X\to Y$.
@@ -660,8 +629,7 @@ Let $X'$ be an unramified covering of $X$, and let $A'=H^0(X',\scr{O}_{X'})$, wh
 Let $X_0$ and $X'_0$ be the reduced subschemes associated to $X$ and $X'$, respectively (obtained by splitting by the sheaves of nilpotent elements in $\scr{O}_X$ and $\scr{O}_{X'}$, respectively).
 Let $k$ be a subfield of $A/\frak{r}(A)$ over which $A/\frak{r}(A)$ is finite (so $X_0$ is a complete algebraic scheme over $k$, and $X'_0$ is an unramified covering).
 Finally, let $\Omega$ be an algebraically closed extension of $k$, and consider the unramified covering $X'_0\otimes_k\Omega$ of $X_0\otimes_k\Omega$.
-Then the following two conditions are equivalent:
-\oldpage{182-20}
+\oldpage{182-20}Then the following two conditions are equivalent:
 
 i. $X'_0\otimes_k\Omega$ is completely decomposed over $X_0\otimes_k\Omega$;
 ii. the natural morphism $X'\to X\otimes_AA'$ is an isomorphism.
@@ -704,8 +672,7 @@ finally, the surjectivity of the last homomorphism (which is the only thing to r
 
 ::: {.itenv #fga-2-proposition-4 title="Proposition 4" latex="{Proposition 4}"}
 Let $f\colon X\to Y$ be a proper flat morphism such that, for all $y\in Y$, the algebra $H^0(f^{-1}(y),\scr{O}_{f^{-1}(y)})$ is separable over the residue field $k(y)$ (which is the case, for example, if $f^{-1}(y)$ is a _separable scheme_ over $k(y)$, i.e. reduced and such that the fields corresponding to its irreducible components are separable extensions of $k(y)$).
-\oldpage{182-21}
-Then the covering $Y'$ of $Y$ associated to $f_*(\scr{O}_X)$ is unramified.
+\oldpage{182-21}Then the covering $Y'$ of $Y$ associated to $f_*(\scr{O}_X)$ is unramified.
 :::
 
 The proof is easy, thanks to [Theorem 2](#fga-2-theorem-2).
@@ -751,8 +718,7 @@ iii. $F'_1$ is a geometrically trivial covering of $F$ (cf. [Lemma 3](#fga-2-lem
 
 ::: {.itenv #fga-2-theorem-11 title="Theorem 11" latex="{Theorem 11}"}
 Under these conditions, there exists an open neighbourhood $U'$ of $y'_1$ in $Y'$ such that [Equation ($*$)](#fga-2-equation-asterisk) is an isomorphism over $U'$.
-\oldpage{182-22}
-Furthermore, $Y'$ is unramified at $y'_1$ over $Y$ (but can be ramified at other points $y'$ of $Y'$ over $y$).
+\oldpage{182-22}Furthermore, $Y'$ is unramified at $y'_1$ over $Y$ (but can be ramified at other points $y'$ of $Y'$ over $y$).
 :::
 
 Of course, conditions (ii) and (iii) are also necessary for the conclusion of the theorem.
@@ -787,8 +753,7 @@ For $X$ to be the inverse image of an unramified covering $Y'$ of $Y$, it is nec
 :::
 
 Note that it was not necessary to suppose that $\overline{F}'$ be _geometrically_ trivial over $\overline{F}$ (which will be true _a posteriori_, even though _a priori_ this condition is a lot stronger).
-\oldpage{182-23}
-[Corollary 3](#fga-2-theorem-11-corollary-3) is equivalent to the following statement:
+\oldpage{182-23}[Corollary 3](#fga-2-theorem-11-corollary-3) is equivalent to the following statement:
 
 ::: {.itenv #fga-2-theorem-11-corollary-4 title="Corollary 4" latex="{Corollary 4}"}
 Let $f\colon X\to Y$ be a proper and separable morphism such that $f_*(\scr{O}_X)=\scr{O}_Y$.
@@ -826,9 +791,7 @@ Then the fundamental groups of $X$ and $X\times_kK$ are the same, i.e. every unr
     In the general case, instead of putting the trivial group $e$ after $\pi_1(Y)$, one must continue by $\pi_0(\overline{F})\to\pi_0(X)\to\pi_0(Y)\to e$,
     as in algebraic topology.
 
-\oldpage{182-24}
-
-2. In general, we cannot say anything at the moment about the kernel of $\pi_1(\overline{F})\to\pi_1(X)$, although it should involve a $\pi_2(Y)$.
+2. \oldpage{182-24}In general, we cannot say anything at the moment about the kernel of $\pi_1(\overline{F})\to\pi_1(X)$, although it should involve a $\pi_2(Y)$.
     It seems, however, that we should be able to prove that $\pi_1(\overline{F})\to\pi_1(X)$ is _injective_ if $Y$ is the spectrum of a local ring $A$, by appealing to [Theorem 12](#fga-2-theorem-12) below (which shows that this is the case if $A$ is _complete_).
 :::
 
@@ -869,8 +832,7 @@ Then we can find a group homomorphism $\pi_1(X_1)\to\pi_1(X_0)$, defined up to i
 Further, this homomorphism is _surjective_.
 :::
 
-\oldpage{182-25}
-We might hope that this homomorphism is always _bijective_.
+\oldpage{182-25}We might hope that this homomorphism is always _bijective_.
 Unfortunately, this is not the case in general if $k(y_0)$ is of characteristic $>0$.
 We will, however, obtain below a group containing the kernel of this homomorphism (at least in the case where $\overline{X_0}$ is simple), implying that, if $k(y_0)$ is of characteristic $0$, then the above homomorphism is bijective (which is a result that we can also prove by transcendentality).
 At the very least, we already have, in any case, a group containing $\pi_1$, given by a special fibre, using the one given by a generic fibre.
@@ -899,8 +861,7 @@ Suppose, for example, that $X_0$ is absolutely normal, whence $X\otimes_V V''$ i
 $$
   X_1\otimes_K K'' = (X\otimes_VK)\otimes_KK'' = X\otimes_VK'' = (X\otimes_VV'')\otimes_{V''}K''.
 $$
-\oldpage{182-26}
-Let $L''=K''(X'_1)$ be the field of functions of $X'_1\otimes_{K'}K''$, which is a separable finite extension of $K''(X_1)$, and the above condition also implies that _$L''$ is an unramified extension of the field of functions of $X\otimes_VV''$_ (i.e. the normalisation of $X\otimes_V V''$ in $L''$ is unramified over $X\otimes_VV''$).
+\oldpage{182-26}Let $L''=K''(X'_1)$ be the field of functions of $X'_1\otimes_{K'}K''$, which is a separable finite extension of $K''(X_1)$, and the above condition also implies that _$L''$ is an unramified extension of the field of functions of $X\otimes_VV''$_ (i.e. the normalisation of $X\otimes_V V''$ in $L''$ is unramified over $X\otimes_VV''$).
 It suffices to show that $L''$ is unramified at the points of the special fibre of $X\otimes_VV''$ (since it is unramified over the generic fibre $X_1\otimes_KK''$).
 If $X_0$ is now _simple_, then it follows from the "_purity theorem_" of Nagata--Zariski that it even suffices to show that $L''$ is unramified over the local ring $\scr{O}''$ of the generic point of the normalisation of $X\otimes_VV''$, which is a discrete valuation ring, equal to the normalisation in $K''(X_1)$ of the local ring $\scr{O}\subset K(X_1)$ of the generic point of the special fibre of $X$.
 We thus obtain:
@@ -920,8 +881,7 @@ With this notation, we obtain:
 ::: {.itenv #fga-2-theorem-13 title="Theorem 13" latex="{Theorem 13}"}
 Let $f\colon X\to Y$ be a proper flat morphism, $y_1$ a point of $Y$, and $y_0$ a specialisation of $y_1$.
 Suppose that $\overline{X_0}$ is connected and simple.
-\oldpage{182-27}
-Then the homomorphism $\overline{\pi_1}(\overline{X_1})\to\overline{\pi_1}(\overline{X_0})$ induced by the
+\oldpage{182-27}Then the homomorphism $\overline{\pi_1}(\overline{X_1})\to\overline{\pi_1}(\overline{X_0})$ induced by the
 surjective homomorphism from [Corollary 2 of Theorem 12](#fga-2-theorem-12-corollary-2) is an _isomorphism_.
 :::
 
@@ -956,8 +916,7 @@ For every finite group $G$ _of order coprime to the characteristic_ that is gene
 :::
 
 If $X_0$ is of genus $0$, and $n=3$, then we have a solution to the "_three point problem_", at least for Galois coverings of order coprime to the characteristic.
-\oldpage{182-28}
-(Here, [Theorem 9](#fga-2-theorem-9) is actually useless, and it seems that we can deduce the above corollary from the particular case in question in the three point problem).
+\oldpage{182-28}(Here, [Theorem 9](#fga-2-theorem-9) is actually useless, and it seems that we can deduce the above corollary from the particular case in question in the three point problem).
 
 ::: {.rmenv title="Remarks" latex="{Remarks}"}
 —

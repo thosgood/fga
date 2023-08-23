@@ -39,7 +39,7 @@ An important theorem in this direction has been obtained by Mumford [@Mum1961].
 For a refinement of his result, and various applications the the theory, see _Séminaire Mumford--Tate_, Harvard University (1961--62).
 :::
 
-The problems discussed in the current talk differ from those discussed in the two previous ones, in that we try to represent certain covariant, no longer contravariant, functors of varying schemes.
+\oldpage{212-01}The problems discussed in the current talk differ from those discussed in the two previous ones, in that we try to represent certain covariant, no longer contravariant, functors of varying schemes.
 The procedure of passing to the quotient is, however, essential in many questions of construction in algebraic geometry, including those from [FGA 3.I](FGA-3-I.html) and [FGA 3.II](FGA-3-II.html).
 Indeed, the question of _effectiveness of a descent data_ on a $T$-prescheme $X$, with respect to a faithfully flat and quasi-compact morphism $T\to S$, is equivalent to the question of existence of a quotient of $X$ (satisfying reasonable properties that we examine below) by the flat equivalence relation on $X$ defined by the descent data;
 the questions raised in [FGA 3.I, A.2.c](FGA-3-I.html#fga-3-i-section-A.2.c) can probably be answered at the same time as the questions posed in [§2](#fga-3-iii-section-2) of this current talk.
@@ -55,8 +55,7 @@ That is to say, its solution deserves the efforts of specialists of algebraic gr
 ## Equivalence relations, effective equivalence relations {#fga-3-iii-section-1}
 
 Let $\cal{C}$ be a category, and $X$ an object of $\cal{C}$.
-\oldpage{212-01}
-A pair of morphisms
+\oldpage{212-02}A pair of morphisms
 $$
   p_1,p_2\colon R\rightrightarrows X,
 $$
@@ -82,8 +81,7 @@ $$
 $$
 which denotes the set of morphisms $u$ from $X$ to $Z$ such that $up_1=up_2$.
 If $Y$ exists, then it is determined up to unique isomorphism.
-\oldpage{212-03}
-We will denote it by $Y/(p_1,p_2)$, or, by an abuse of notation, $Y/R$, with the latter mostly being used when $(p_1,p_2)$ is an equivalence pair: it is then common to identify, in notation, the equivalence relation defined by the pair with the one defined by $R$.
+\oldpage{212-03}We will denote it by $Y/(p_1,p_2)$, or, by an abuse of notation, $Y/R$, with the latter mostly being used when $(p_1,p_2)$ is an equivalence pair: it is then common to identify, in notation, the equivalence relation defined by the pair with the one defined by $R$.
 Note that, if we consider $Y$ as a quotient of $X$, then it depends only on the equivalence relation defined by the pair $(p_1,p_2)$
 
 We now start with a morphism
@@ -119,10 +117,8 @@ We also say that the quotient object of $X$ defined by the epimorphism $f$ is an
 
 The above definitions imply the following "_Galois correspondence_":
 
-\oldpage{212-04}
-
 ::: {.itenv #fga-3-iii-proposition-1.1 title="Proposition 1.1" latex="{Proposition 1.1}"}
-There is a bijective correspondence, respecting the natural orders, between the set of effective equivalence relations $R$ on $X$ and the set of effective quotients $Y$ of $X$, with such an $R$ corresponding to the effective quotient $X/R$, and such a $Y$ corresponding to the effective equivalence relation defined by the canonical projection $X\to Y$ (which is defined by the fibre product $X\times_Y X$ endowed with its two projections).
+\oldpage{212-04}There is a bijective correspondence, respecting the natural orders, between the set of effective equivalence relations $R$ on $X$ and the set of effective quotients $Y$ of $X$, with such an $R$ corresponding to the effective quotient $X/R$, and such a $Y$ corresponding to the effective equivalence relation defined by the canonical projection $X\to Y$ (which is defined by the fibre product $X\times_Y X$ endowed with its two projections).
 :::
 
 In very nice categories (sets, sheaves of sets, etc.), every quotient is effective, and every equivalence relation is effective.
@@ -140,8 +136,7 @@ the fibre product of preschemes $X$ and $Y$ over $S$ corresponds to the tensor p
 For finite inductive limits, it suffices to consider, on one hand, finite sums, which correspond to the ordinary product of $A$-algebras, and, on the other hand, cokernels of pairs of morphisms $X\rightrightarrows Y$, which correspond (as we can immediately see) to the sub-ring of $C$ given by elements where the homomorphisms $u,v\colon C\rightrightarrows B$ agree (with this sub-ring being finite over $A$ thanks to the Noetherian hypothesis).
 We also note that we can show, using the Noetherian hypothesis, that finite inductive limits, and, in particular, quotients, thus constructed in the category $\cal{C}$ of finite preschemes over $S$ are, in fact, quotients in the category of _all_ preschemes.
 
-\oldpage{212-05}
-As we mentioned in [FGA 3.I](FGA-3-I.html), _there are non-effective epimorphisms in $\cal{C}$_ (or even non-strict, which is the same, since fibre products exist).
+\oldpage{212-05}As we mentioned in [FGA 3.I](FGA-3-I.html), _there are non-effective epimorphisms in $\cal{C}$_ (or even non-strict, which is the same, since fibre products exist).
 _I do not know if equivalence relations are still effective_ if we have no flatness hypothesis.
 I have only obtained, in this direction, very partial, positive, results, that are vital for the proof of the fundamental theorem of the formal theory of modules (cf. [FGA 3.II, B, Theorem 1](FGA-3-II.html#fga-3-ii-section-B-theorem-1)).
 We note that it is easy, in the given problem, to reduce to the case where $S$ is the spectrum of a local Artinian ring, with an algebraically closed residue field.
@@ -162,8 +157,7 @@ The only general positive fact known to the author is the following:
 
 ::: {.itenv #fga-3-iii-proposition-2.1 title="Proposition 2.1" latex="{Proposition 2.1}"}
 Let $S$ be a locally Noetherian prescheme, $s$ a point of $S$, and $\Omega$ an algebraically closed extension of $k(s)$.
-\oldpage{212-06}
-Consider the corresponding "fibre functor" $F$, that associates, to any $S$-scheme $X$ that is finite over $S$, the set of points of $X/S$ with values in $\Omega$.
+\oldpage{212-06}Consider the corresponding "fibre functor" $F$, that associates, to any $S$-scheme $X$ that is finite over $S$, the set of points of $X/S$ with values in $\Omega$.
 This functor (which is trivially left exact) is _right exact_, i.e. it commutes with finite inductive limits, and, in particular, with the cokernel of pairs of morphisms.
 :::
 
@@ -191,8 +185,7 @@ Suppose that $G\times X$ exists, and consider the two morphisms
 $$
   p_1,p_2\colon G\times X\rightrightarrows X
 $$
-with
-\oldpage{212-07}
+\oldpage{212-07}with
 $$
   \begin{aligned}
     p_1 &= \pr_1
@@ -223,8 +216,7 @@ It is thus important to find a generalisation of the notion of equivalence relat
 ## Equivalence pre-relations {#fga-3-iii-section-4}
 
 Recall that a _groupoid_ is defined to be a category where all the morphisms are isomorphisms.
-A category should be defined as consisting of two base sets, $X$ and $R$, with the former being the set of _objects_ and the latter the set of _arrows_, endowed with the following structures:
-\oldpage{212-08}
+\oldpage{212-08}A category should be defined as consisting of two base sets, $X$ and $R$, with the former being the set of _objects_ and the latter the set of _arrows_, endowed with the following structures:
 
 i. a pair of maps
     $$
@@ -259,8 +251,7 @@ This thus implies the definition of two morphisms
 $$
   p_1,p_2\colon R\rightrightarrows X
 $$
-called the _source morphism_ and the _target morphism_, and, if the fibre product in question exists, a morphism
-\oldpage{212-09}
+\oldpage{212-09}called the _source morphism_ and the _target morphism_, and, if the fibre product in question exists, a morphism
 $$
   \pi\colon (R,p_2)\times_X(R,p_1) \to R
 $$
@@ -287,8 +278,7 @@ We note that the category $\cal{S}$ is equivalent to the category of finite _non
 In $\cal{S}$, the sum of a finite _non-empty_ family of objects clearly exists, as does the amalgamated sum of two objects over a third (the dual operation to the fibre product).
 We denote by $\cal{S}'$ the subcategory of $\cal{S}$ that has the same objects, but where the morphisms are _increasing maps_ between the $\Delta_n$.
 This category is equivalent to the category of finite non-empty totally ordered sets.
-\oldpage{212-10}
-In this category, the sum of two objects never exists, and the amalgamated sum of two objects $A$ and $B$ over a third $C$ does not exist in general (take, for example, $C=\Delta_0$, and $A=B=\Delta_1$, with the two structure maps $u\colon C\to A$ and $v\colon C\to B$ being the equal).
+\oldpage{212-10}In this category, the sum of two objects never exists, and the amalgamated sum of two objects $A$ and $B$ over a third $C$ does not exist in general (take, for example, $C=\Delta_0$, and $A=B=\Delta_1$, with the two structure maps $u\colon C\to A$ and $v\colon C\to B$ being the equal).
 However, in certain cases, the amalgamated sum _does_ exist;
 consider
 $$
@@ -317,9 +307,7 @@ Then:
 ::: {.itenv #fga-3-iii-proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
 The functor $Z\mapsto Z''$ from the category of categories to the category of semi-simplicial sets is fully faithful, and defines an equivalence between the category of _categories_ and the category of semi-simplicial sets, i.e. contravariant functors $K$ from $\cal{S}'$ to $\Set$ _that send amalgamated sums $A\coprod_C B$ (of the type described above) to fibre products of sets_.
 
-\oldpage{212-11}
-
-Similarly, the functor $Z\mapsto Z'$ from the category of groupoids to the category of simplicial sets is fully faithful, and defines an equivalence between the category of _groupoids_ and the category of simplicial sets, i.e. contravariant functors $K$ from $\cal{S}$ to $\Set$ _that send amalgamated sums to fibre products_.
+\oldpage{212-11}Similarly, the functor $Z\mapsto Z'$ from the category of groupoids to the category of simplicial sets is fully faithful, and defines an equivalence between the category of _groupoids_ and the category of simplicial sets, i.e. contravariant functors $K$ from $\cal{S}$ to $\Set$ _that send amalgamated sums to fibre products_.
 :::
 
 We can thus consider categories as specific examples of semi-simplicial sets, and groupoids as specific examples of simplicial sets, with, of course, the condition that we argue "up to isomorphism", as is rigorous when we interpret certain structures in terms of others.
@@ -348,8 +336,7 @@ $$
 But we note that only these data alone do not determine the structure in question, contrary to what happens for equivalence pairs.
 In this talk, we are interested in this notion with the aim of obtaining criteria for the possibility of passing to the quotient, i.e. for being able to form the cokernel of the pair $(p_1,p_2)$.
 The statement of this problem thus makes no reference to the additional data inherent to a groupoid.
-\oldpage{212-12}
-In the proof of the results that will follow, we will, however, make use of this additional data, and, in particular, of the simplicial operations (including the symmetry operations) up to dimension $3$ (the fourth fibre power of $R$ over $X$ will appear).
+\oldpage{212-12}In the proof of the results that will follow, we will, however, make use of this additional data, and, in particular, of the simplicial operations (including the symmetry operations) up to dimension $3$ (the fourth fibre power of $R$ over $X$ will appear).
 
 An equivalence relation on an object $X$ of $\cal{C}$ defines an equivalence pre-relation: it suffices to show this in the set-theoretic case, and we then associate, to an equivalence relation on a set $X$, the groupoid whose set of objects is $X$, and whose set of arrows is the graph set of the equivalence relation.
 
@@ -373,8 +360,7 @@ Let $X=\Spec(B)$ be an affine scheme, $\cal{R}$ an equivalence pre-relation on $
 We suppose that the first projection $p_1\colon R_1\to X$ is a finite and locally free morphism, i.e. that the corresponding homomorphism of rings $p'_1\colon B\to C$ makes $C$ a projective $B$-module of finite type.
 Let $A$ be the subring of $B$ given by the kernel of the pair of homomorphisms $p'_1,p'_2\colon B\rightrightarrows C$ (i.e. the set of elements $b$ such that $p'_1(b)=p'_2(b)$).
 Let $Y=\Spec(A)$, and $f\colon X\to Y$ the morphism defined by the embedding of $A$ into $B$.
-Under these conditions:
-\oldpage{212-13}
+\oldpage{212-13}Under these conditions:
 
 i. $B$ is integral over $A$, i.e. $f$ is an integral morphism.
 ii. The morphism $f$ is surjective, and its fibres are the set-theoretic equivalence classes
@@ -406,10 +392,9 @@ For $\cal{R}$ to be admissible, it is necessary and sufficient for every set-the
 :::
 
 We can in fact easily show that every equivalence class modulo $\cal{R}$ in $X$ is then contained in an affine open subset that is _stable_ under $\cal{R}$, and we construct the quotient $Y$ by gluing the pieces obtained by applying [Theorem 5.1](#fga-3-iii-theorem-5.1).
-\oldpage{212-14}
 
 ::: {.itenv #fga-3-iii-corollary-5.4 title="Corollary 5.4" latex="{Corollary 5.4}"}
-Suppose that this condition is satisfied, and, further, that $\cal{R}$ comes from an equivalence relation.
+\oldpage{212-14}Suppose that this condition is satisfied, and, further, that $\cal{R}$ comes from an equivalence relation.
 Then the equivalence relation is question is effective, i.e. $R_1\to X\times_Y X$ is an isomorphism, and $f\colon X\to Y$ is a finite and locally free morphism.
 :::
 
@@ -443,8 +428,7 @@ The data of a finite, locally free, and surjective morphism $f\colon X\to Y$ of 
 ## Quotient by a proper and flat equivalence relation {#fga-3-iii-section-6}
 
 ::: {.itenv #fga-3-iii-theorem-6.1 title="Theorem 6.1" latex="{Theorem 6.1}"}
-Let $S$ be a _locally Noetherian_ prescheme, $X$ a _quasi-projective_ $S$-scheme, and $\cal{R}$ an equivalence pre-relation on $X$, such that:
-\oldpage{212-15}
+\oldpage{212-15}Let $S$ be a _locally Noetherian_ prescheme, $X$ a _quasi-projective_ $S$-scheme, and $\cal{R}$ an equivalence pre-relation on $X$, such that:
 
 a. $p_1\colon R_1\to X$ is proper and flat; and
 b. $R_1\to X\times_S X$ is a finite morphism (or, equivalently, by (a), a morphism with finite fibres, which is a condition that is automatically satisfied if $\cal{R}$ comes from an equivalence relation).
@@ -487,8 +471,7 @@ ii. The canonical morphism $U\to U/\cal{R}_U$ is surjective and open, and its fi
 iii. If $\cal{R}$ comes from an equivalence relation, then we can suppose that $U\to U/\cal{R}_U$ is faithfully flat and that $\cal{R}_U$ is effective.
 :::
 
-\oldpage{212-16}
-This is a result of an essentially "birational" nature.
+\oldpage{212-16}This is a result of an essentially "birational" nature.
 
 ::: {.rmenv #fga-3-iii-remarks-6.3 title="Remarks 6.3" latex="{Remarks 6.3}"}
 —
@@ -520,8 +503,7 @@ Consider the closed subscheme $C$ of $A$ given by "the closure" of $C'$, i.e. th
 Then $C_K=C'$, and, since $V$ is a discrete valuation ring, we easily deduce that $C$ is a subscheme in groups of $A$ over $V$.
 Since $A$ is proper over $\Spec(V)=S$, so too is $C$.
 Further, $A$ is projective over $S$.
-\oldpage{212-17}
-We can thus apply [Theorem 6.1](#fga-3-iii-theorem-6.1) in order to construct $A/C=B$, which is the desired $B$.
+\oldpage{212-17}We can thus apply [Theorem 6.1](#fga-3-iii-theorem-6.1) in order to construct $A/C=B$, which is the desired $B$.
 :::
 
 Finally, essentially known arguments allow us to extract from [Theorem 6.2](#fga-3-iii-theorem-6.2) the following result:
@@ -553,8 +535,7 @@ The usual formalism (as in the Noether theorems) holds amongst algebraic groups 
 :::
 
 This result allows us to treat the passage to the quotient in a uniform way for algebraic (in the classical sense, i.e. irreducible over $k$ and simple over $k$) groups, and the passage to the quotient by "infinitesimal" subgroups considered by Cartier.
-\oldpage{212-18}
-It is advantageous to consider the "hyperalgebras" introduced by Cartier, following from the work of Dieudonné on formal groups, as groups in the category of formal schemes over $k$, and, if necessary (if they correspond to hyperalgebras of finite rank over $k$), as algebraic groups that are finite over $k$.
+\oldpage{212-18}It is advantageous to consider the "hyperalgebras" introduced by Cartier, following from the work of Dieudonné on formal groups, as groups in the category of formal schemes over $k$, and, if necessary (if they correspond to hyperalgebras of finite rank over $k$), as algebraic groups that are finite over $k$.
 
 
 ## A conjecture {#fga-3-iii-section-8}
@@ -578,8 +559,7 @@ Note that we can prove that $\GL(n-1)$ equally represents the functor $S\mapsto\
 It is in this way that it appears in the theory of modules.
 
 Let $S$ be a Noetherian scheme, which we can, if we want, suppose to be affine, and let $X$ be a quasi-projective $S$-prescheme endowed with an invertible sheaf $\scr{L}$ that is very ample with respect to $S$.
-Suppose that the group $G=\GP(n)_S$ acts on $X$ and $\scr{L}$ simultaneously (in a way that is compatible with its action on $X$), and that it acts _freely_ on $S$.
-\oldpage{212-19}
+\oldpage{212-19}Suppose that the group $G=\GP(n)_S$ acts on $X$ and $\scr{L}$ simultaneously (in a way that is compatible with its action on $X$), and that it acts _freely_ on $S$.
 
 ::: {.itenv #fga-3-iii-conjecture-8.1 title="Conjecture 8.1" latex="{Conjecture 8.1}"}
 Under the above conditions:
@@ -602,8 +582,7 @@ The only positive fact that is known to me concerning the above conjecture is th
 _Let $X$ be an affine scheme over a field $k$ of characteristic $0$, on which the group $\GL(n)_k$ or $\GP(n-1)_k$ acts freely. Then the equivalence relation defined by $G$ is effective, the quotient $X/G$ is affine, and the morphism $X\to X/G$ is flat and surjective._
 The proof uses the following fact (that, for now, has only been proven in characteristic $0$):
 if we let $G$ act on the affine ring $A$ of $G$, considered as a vector space over $k$, then the trivial representation of $G$ only appears once (in a composition series of a vector subspace of finite dimension over $k$ that is stable under $G$).
-\oldpage{212-20}
-It seems possible that a systematic use of the theory of linear representations of $G$ would give a proof of the conjecture, or at least when we work over a base field.
+\oldpage{212-20}It seems possible that a systematic use of the theory of linear representations of $G$ would give a proof of the conjecture, or at least when we work over a base field.
 When we are no longer working over a base field, the author knows nothing.
 :::
 
