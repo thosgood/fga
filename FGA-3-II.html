@@ -734,8 +734,8 @@ If, furthermore, <eq env="math">X_0</eq> is proper over <eq env="math">k</eq>, t
 <ol style="list-style-type: decimal">
 <li><p>If <eq env="math">X_0</eq> is not assumed to be simple over <eq env="math">k</eq>, then <eq env="math">F(I_A,\xi)</eq> can be identified with a sub-<eq env="math">A</eq>-module of
 <eq env="displaymath">
-   \operatorname{Ext}_{{\mathscr{O}}_{P_A}}^1(P_A;{\mathscr{I}}_{X_A},{\mathscr{O}}_{X_A})
-</eq>
+\operatorname{Ext}_{{\mathscr{O}}_{P_A}}^1(P_A;{\mathscr{I}}_{X_A},{\mathscr{O}}_{X_A})
+  </eq>
 where we set <eq env="math">P_A=X_A\times_A X_A</eq>, where <eq env="math">{\mathscr{O}}_{X_A}</eq> is considered as a coherent sheaf on <eq env="math">P_A</eq> via the diagonal morphism <eq env="math">X_A\to P_A</eq>, and where <eq env="math">{\mathscr{I}}_{X_A}</eq> denotes the coherent sheaf of ideals on <eq env="math">P_A</eq> defined by the diagonal morphism.
 More precisely, an easy globalisation of Hochschild theory shows that the <eq env="math">\operatorname{Ext}^1</eq> above can be identified with the set of classes, up to isomorphism, of sheaves of <eq env="math">I_A</eq>-algebras <eq env="math">{\mathscr{O}}</eq> that are flat over <eq env="math">X_A</eq>, and endowed with an augmentation isomorphism <eq env="math">{\mathscr{O}}\otimes_{I_A}A\to{\mathscr{O}}_{X_A}</eq> (recall that we set <eq env="math">I_A=At/(t^2)</eq>).
 The submodule <eq env="math">F(I_A,\xi)</eq> is that which corresponds to the sheaves of <em>commutative</em> algebras.
@@ -775,13 +775,15 @@ We start, in particular, with a flat covering <eq env="math">X'_0</eq> of <eq en
 We similarly define <eq env="math">G(V)</eq> for every open subset <eq env="math">V</eq> of <eq env="math">{\mathfrak{X}}</eq>, and, more generally, <eq env="math">G({\mathfrak{Y}})</eq> for every formal prescheme <eq env="math">{\mathfrak{Y}}</eq> over <eq env="math">{\mathfrak{X}}</eq>.
 With this, the results of <span class="citation">[<a href="#ref-Gro1958a" role="doc-biblioref">7</a>]</span> and <a href="FGA-3-I.html">FGA 3.I</a> imply, first of all, the following results:</p>
 <ol style="list-style-type: lower-alpha">
-<li><p>If <eq env="math">V</eq> varies amongst open subset of <eq env="math">{\mathfrak{X}}</eq>, then the <eq env="math">G(V)</eq> form a <em>sheaf</em> on <eq env="math">{\mathfrak{X}}</eq>, say <eq env="math">{\mathscr{G}}_{\mathfrak{X}}={\mathscr{G}}</eq>.
-The restriction of this sheaf to <eq env="math">U</eq> is the <em>constant</em> sheaf whose fibres consist of a single element.</p>
-<p>More generally, describing the fibres of <eq env="math">{\mathscr{G}}_{\mathfrak{X}}</eq> is a question of complete local rings, in a precise way:</p></li>
+<li>If <eq env="math">V</eq> varies amongst open subset of <eq env="math">{\mathfrak{X}}</eq>, then the <eq env="math">G(V)</eq> form a <em>sheaf</em> on <eq env="math">{\mathfrak{X}}</eq>, say <eq env="math">{\mathscr{G}}_{\mathfrak{X}}={\mathscr{G}}</eq>.
+The restriction of this sheaf to <eq env="math">U</eq> is the <em>constant</em> sheaf whose fibres consist of a single element.</li>
+</ol>
+<p>More generally, describing the fibres of <eq env="math">{\mathscr{G}}_{\mathfrak{X}}</eq> is a question of complete local rings, in a precise way:</p>
+<ol start="2" style="list-style-type: lower-alpha">
 <li><p>For all <eq env="math">x\in{\mathfrak{X}}</eq>, we have
 <eq env="displaymath">
-   {\mathscr{G}}_x = G(\operatorname{Spec}({\mathscr{O}}_{{\mathfrak{X}},x})) \subset G(\operatorname{Spec}(\widehat{{\mathscr{O}}}_{{\mathfrak{X}},x}))
-</eq>
+{\mathscr{G}}_x = G(\operatorname{Spec}({\mathscr{O}}_{{\mathfrak{X}},x})) \subset G(\operatorname{Spec}(\widehat{{\mathscr{O}}}_{{\mathfrak{X}},x}))
+  </eq>
 (i.e. isomorphism classes of finite free algebras <eq env="math">B</eq> over <eq env="math">\widehat{{\mathscr{O}}}_{{\mathfrak{X}},x}</eq> endowed with an isomorphism from <eq env="math">B\otimes_{\widehat{{\mathscr{O}}}_{{\mathfrak{X}},x}}{\mathscr{O}}_{X_0,x}</eq> to <eq env="math">(\widehat{{\mathscr{O}}}'_0)_x</eq>, where <eq env="math">{\mathscr{O}}'_0</eq> is the sheaf of algebras on <eq env="math">X_0</eq> that defines <eq env="math">X'_0</eq>).</p></li>
 <li><p>We have a canonical isomorphism <eq env="math">{\mathscr{G}}_{\mathfrak{X}}=\varprojlim{\mathscr{G}}_{{\mathfrak{X}}_n}</eq>; in other words, for every open subset <eq env="math">V</eq> of <eq env="math">{\mathfrak{X}}</eq>, we have <eq env="math">G(V)=\varprojlim G(V_n)</eq>.</p></li>
 <li><p>Suppose that <eq env="math">{\mathfrak{X}}</eq> comes from an ordinary <em>proper</em> scheme <eq env="math">X</eq> over a complete local Noetherian ring <eq env="math">\Lambda</eq> that has ideal of definition <eq env="math">{\mathfrak{m}}</eq> by taking the <eq env="math">{\mathscr{J}}</eq>-adic completion of <eq env="math">{\mathscr{O}}_X</eq>, where <eq env="math">{\mathscr{J}}={\mathfrak{m}}\cdot{\mathscr{O}}_X</eq>.
