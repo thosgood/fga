@@ -7,11 +7,11 @@ The original notes have been scanned and uploaded by the Grothendieck Circle [he
 
 ## To-do
 
-- **check for `TO-DO`s**
 - pdf output
 - pdf specific definitions (e.g. `\ourrar`, `\oullar`, `\simto`, `\simfrom`)
 - turn any FGA citations into links?
     + (including those that are citations to the FGAs in the bibliography?)
+    + **probably best to remove FGA from the bibliography entirely tbh and replace inline citations with "FGA X.Y, Z"**
 - make early citations consistent with later ones
     + e.g. EGA and SGA are not citations in FGA 1 and 2
 - generally check that citations are "correct"

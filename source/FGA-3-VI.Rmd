@@ -613,7 +613,7 @@ Using [(3.6)](#fga-3-vi-corollary-3.6) in the case where $X$ is an abelian schem
 ::: {.rmenv #fga-3-vi-remark-3.8 title="Remark 3.8" latex="{Remark 3.8}"}
 In the case of a simple projective morphism $f\colon X\to S$, with $S$ reduced and of residual characteristics zero, the result of [(3.6)](#fga-3-vi-corollary-3.6) was already known, by transcendental methods, as a consequence of Hodge theory.
 In fact, all the $\RR^pf_*(\Omega_{X/S}^q)$ are then locally free.
-\oldpage{236-21}We have, however, counterexamples in the case of unequal characteristics for "locally free $\RR^1f_*(\OO_X)$", by Serre varieties ([@Ser1958b, p. 50]).
+\oldpage{236-21}We have, however, counterexamples in the case of unequal characteristics for "locally free $\RR^1f_*(\OO_X)$", by Serre varieties ([@Ser1958b, p.50]).
 It seems that we do not have any counterexample in equal characteristic.
 :::
 
@@ -751,11 +751,19 @@ viii. Let $X/k$ be a proper scheme over a field, and $\scr{L}$ an invertible mod
   Conditions (b), (b'), and (c) should be considered as variants (for an arbitrary proper scheme) of the notion of *numerical equivalence*, usually defined for non-singular projective varieties.
   For such varieties, the equivalence of (a) and (c) was evidently well known (Matsusaka).
 
-Criteria (e) from the above also implies the following result:
+Criterion (e) from the above also implies the following result:
 
 ix. Let $f\colon X\to S$ be a flat projective morphism whose geometric fibres are integral.
   Then $\repPic_{X/S}^\tau$ is open *and closed* in $\repPic_{X/S}$.
 
 We restrict ourselves to some comments on the proofs of the key results (i), (ii), and (iii) (result (iv) is a little bit different from the others, and can be proven using only (i) for radicial surjective finite morphisms, or, more precisely, for a Frobenius morphism).
-For (i),
+For (i), we use, in an essential way, the ideas of non-flat descent (see [@Gro1959, I, p.9]).
+One finds that (thinking only of finiteness results) the lack of effectivity criteria for descent data is inoffensive.
+Mumford has recently proven a slightly weaker form of (iii), where the criteria makes use of *all* the coefficients of the Hilbert polynomial.
+His argument is extremely simple, and is inspired by the proof of an amplitude criterion by Nakai (stated by the latter for non-singular surfaces, and generalised by Mumford to arbitrary projective morphisms).
+It seems to me that this argument only works under a gentle additional restriction on the fibres of $X/S$ (Serre's ($\text{S}_2$) property), which is satisfied if the geometric fibres are normal.
+We then use this restricted criterion in the proof of (ii): criterion (i) allows us to reduce to the case where $Y/S$ is flat with integral and normal geometric fibres, and applying the Mumford criteria we easily reduce to the case where $X/S$ satisfies the same conditions.
+From the dimension hypothesis it then follows that the geometric fibres of $Y$ and of $X$ are of depth $\geq2$ at their closed points, which allows us to apply the "equivalence criteria" under the form that is given in [@Gro1960b, XII], and finishes the proof of (ii).
+Once we have (i) and (ii), it is not difficult in the Mumford criteria to discard the hypothesis that the fibres be normal, and to prove it under the stronger form given in (iii).
+\oldpage{C-11}We note finally that the proof of (i) and (ii) also shows that, in the case where $S$ is the spectrum of a field $k$, the morphism $\repPic_{Y/k}\to\repPic_{X/k}$ is *affine* (and not only of finite type).
 :::
