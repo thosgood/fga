@@ -609,5 +609,45 @@ This module is exactly the tangent module to $\repPic_{X/S}$ along the identity 
 :::
 
 ::: {.rmenv #fga-3-vi-remark-3.7 title="Remark 3.7" latex="{Remark 3.7}"}
-Using
+Using the same argument as for [(3.5)](#fga-3-vi-theorem-3.5), we can show that, if $S'$ is a subscheme of $S$ defined by a nilpotent coherent ideal, and if we suppose only that $\repPic_{X'/S'}^0$ exists and has simple fibres, then $\repPic_{X/S}^0$ necessarily exists and is an abelian scheme over $S$.
+This allows us to construct Picard schemes in certain cases, despite the absence of any projective hypothesis;
+for example, the dual abelian scheme of an abelian scheme over an Artinian ring always exists.
+Using [(3.6)](#fga-3-vi-corollary-3.6) in the case where $X$ is an abelian scheme over $S$, and using the known structure of $\HH^\bullet(X_s,\OO_{X_s})$ as an exterior algebra over $\HH^1(X_s,\OO_{X_s})$ (Rosenlicht--Serre), we find that $\RR^if_*(\OO_X)$ is locally free for *all* $i$, and more precisely that it is isomorphic to the $i$-th exterior power of $\RR^1f_*(\OO_X)$.
 :::
+
+::: {.rmenv #fga-3-vi-remark-3.8 title="Remark 3.8" latex="{Remark 3.8}"}
+In the case of a simple projective morphism $f\colon X\to S$, with $S$ reduced and of residual characteristics zero, the result of [(3.6)](#fga-3-vi-corollary-3.6) was already known, by transcendental methods, as a consequence of Hodge theory.
+In fact, all the $\RR^pf_*(\Omega_{X/S}^q)$ are then locally free.
+\oldpage{236-21}We have, however, counterexamples in the case of unequal characteristics for "locally free $\RR^1f_*(\OO_X)$", by Serre varieties ([@Ser1958b, p. 50]).
+It seems that we do not have any counterexample in equal characteristic.
+:::
+
+::: {.itenv #fga-3-vi-corollary-3.8 title="Corollary 3.8" latex="{Corollary 3.8}"}
+Under the conditions of [(3.5)](#fga-3-vi-theorem-3.5), $\repPic_{X/S}|U$ is simple over $U$ at all points of $\repPic_{X/S}^\sigma|U$.
+:::
+
+::: {.proof}
+We apply [(2.10), (i)](#fga-3-vi-proposition-2.10).
+:::
+
+In particular, taking [(2.10), (iii)](#fga-3-vi-proposition-2.10) into account:
+
+::: {.itenv #fga-3-vi-corollary-3.9 title="Corollary 3.9" latex="{Corollary 3.9}"}
+Suppose that $S$ is of residual characteristics zero.
+Then $\repPic_{X/S}^\tau$ is simple over $S$.
+:::
+
+::: {.rmenv #fga-3-vi-remark-3.10 title="Remark 3.10" latex="{Remark 3.10}"}
+We thus deduce, for example, that if $\repPic_{X/S}$ is also *proper* over $S$, then the Néron--Severi torsion group of geometric fibres of $f$ is constant on every connected component of $S$ (which is also evident by transcendental methods when $f$ is simple and projective).
+We note that the direct use of [(2.5)](#fga-3-vi-theorem-2.5) allows us to show, more generally, that, if $\repPic_{X/S}$ is proper over $S$ (for example, if $f\colon X\to S$ is simple and projective), and if $q$ is a prime number distinct from the residual characteristics of $S$, then the $q$-primary component of the Néron--Severi torsion groups of geometric fibres of $X/S$ is constant on every connected component of $S$.
+It is no longer, however, the case in characteristic $p>0$ for the $p$-primary component of the torsion group.
+However, it remains possible that the rank over the $k(s)$ of $\repPic_{X_s/k(s)}/\repPic_{X_s/k(s)}^{00}=T_{X_s/k(s)}$ is locally constant;
+when $S$ is reduced, we  can show that this is equivalent to showing that $\repPic_{X/S}^{00}$ exists and that $\repPic_{X/S}$ is *flat* over $S$, and it suffices to test in the cases where $S$ is the spectrum of a discrete valuation ring.
+This is what I have verified in the few examples that I have looked at;
+but since the corresponding statement with $S$ Artinian is false (cf. Remarks [(2.9)](#fga-3-vi-remark-2.9) and [(3.4)](#fga-3-vi-remarks-3.4)), we must not get carried away.
+:::
+
+
+## The finiteness theorem for the Picard scheme {#fga-3-vi-section-4}
+
+Let
