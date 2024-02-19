@@ -51,7 +51,7 @@ $$
 The functors $h_\scr{A}$ and $\underline{h}_\scr{A}$ are left exact and covariant, and so we consider their right-derived functors, denoted by $\Ext_\scr{O}^p(X;\scr{A},\scr{B})$ and $\shExt_\scr{O}^p(\scr{A},\scr{B})$ (respectively).
 We then have, by definition,
 
-::: {.eqref #fga-1-equation-1.2 title="" latex=""}
+::: {.eqenv #fga-1-equation-1.2 title="" latex=""}
 $$
   \begin{gathered}
     \Ext_\scr{O}^p(X;\scr{A},\scr{B}) = (\RR^p h_\scr{A})(\scr{B}) = \HH^p(\Hom_\scr{O}(X;\scr{A},C(\scr{B})))
@@ -76,7 +76,7 @@ From this, it is a well-known result that:
 :::: {.itenv #fga-1-proposition-1 title="Proposition 1" latex="{Proposition 1}"}
 For every $\scr{O}$-module $\scr{A}$, there exists a cohomological spectral functor on $\cal{C}^\scr{O}$ that abuts to the graded functor $(\Ext_\scr{O}^\bullet(X;\scr{A},\scr{B}))$, and whose initial page is
 
-::: {.eqref #fga-1-equation-1.4 title="" latex=""}
+::: {.eqenv #fga-1-equation-1.4 title="" latex=""}
 $$
   E_2^{p,q}(\scr{A},\scr{B}) = \HH^p(X,\shExt_\scr{O}^q(\scr{A},\scr{B})).
 \tag{1.4}
@@ -89,7 +89,7 @@ From this, we obtain "_boundary homomorphisms_", as well as a short exact sequen
 :::: {.itenv #fga-1-proposition-1-corollary-1 title="Corollary 1" latex="{Corollary 1}"}
 If $\scr{A}$ is locally isomorphic to $\scr{O}^n$, then we have canonical isomorphisms
 
-::: {.eqref #fga-1-equation-1.5 title="" latex=""}
+::: {.eqenv #fga-1-equation-1.5 title="" latex=""}
 $$
   \Ext_\scr{O}^p(X;\scr{A},\scr{B}) \xleftarrow{\sim} \HH^p(x,\shHom_\scr{O}(\scr{A},\scr{B}))
 \tag{1.5}
@@ -112,7 +112,7 @@ $$
 as follows from the fact that the restriction to $U$ of an injective $\scr{O}$-module is an injective $(\scr{O}|U)$-module.
 Furthermore, for fixed $x\in X$, we have functorial homomorphisms
 
-::: {.eqref #fga-1-equation-1.7 title="" latex=""}
+::: {.eqenv #fga-1-equation-1.7 title="" latex=""}
 $$
   \shHom_\scr{O}(\scr{A},\scr{B})_x \to \Hom_{\scr{O}_x}(\scr{A}_x,\scr{B}_x)
 \tag{1.7}
@@ -121,7 +121,7 @@ $$
 
 that uniquely extend to homomorphisms of cohomological functors (in $\scr{B}$):
 
-::: {.eqref #fga-1-equation-1.8 title="" latex=""}
+::: {.eqenv #fga-1-equation-1.8 title="" latex=""}
 $$
   \shExt_\scr{O}^p(\scr{A},\scr{B})_x \to \Ext_{\scr{O}_x}^p(\scr{A}_x,\scr{B}_x).
 \tag{1.8}
@@ -163,7 +163,7 @@ The cycles of degree $n$ are the maps of degree $n$ that anticommute with $u$ (a
 We can then consider $\HH^\bullet(\Hom(K,L))$, which is an invariant of the homotopy types of $K$ and $L$, and which we sometimes denote by $\HH^\bullet(K,L)$.
 If we have a third complex $M$, then the composition of homomorphisms defines a pairing $\Hom(K,L)\times\Hom(L,M)\to\Hom(K,M)$ which is compatible with the differential maps, whence, by passing to the cohomology of pairings,
 
-::: {.eqref #fga-1-equation-2.2 title="" latex=""}
+::: {.eqenv #fga-1-equation-2.2 title="" latex=""}
 $$
   \HH^\bullet(K,L)\times\HH^\bullet(L,M) \to \HH^\bullet(K,M)
 \tag{2.2}
@@ -232,7 +232,7 @@ So, if we restrict to sheaves that are locally isomorphic to some $\scr{O}^m$, t
 Let $A$ be a unital commutative ring endowed with an ideal $\frak{J}$.
 We will define, for any $A$-module $M$, functorial homomorphisms
 
-::: {.eqref #fga-1-equation-3.1 title="" latex=""}
+::: {.eqenv #fga-1-equation-3.1 title="" latex=""}
 $$
   \begin{aligned}
     \Ext_A^p(A/\frak{J},M) &\to \Hom_A(\wedge^p\frak{J}/\frak{J}^2,M\otimes A/\frak{J})
@@ -246,7 +246,7 @@ where the tensor and exterior products are taken over the ring $A$;
 note also that $\frak{J}/\frak{J}^2$ is in fact an $A/\frak{J}$-module, and that its exterior powers as an $A$-module agree with its exterior powers as an $A/\frak{J}$-module.
 The definition of the homomorphisms in [(3.1)](#fga-1-equation-3.1) come from the definition, for every system $x=(x_1,\ldots,x_p)$ of points of $\frak{J}$, of homomorphisms $\varphi_x$ given by
 
-::: {.eqref #fga-1-equation-3.2 title="" latex=""}
+::: {.eqenv #fga-1-equation-3.2 title="" latex=""}
 $$
   \begin{aligned}
     \varphi_x\colon \Ext_A^p(A/\frak{J},M) &\to M\otimes A/\frak{J}
@@ -277,7 +277,7 @@ $$
 $$
 whence, by composing with the homomorphisms to the $\Ext$ and the $\Tor$ induced by the augmentation homomorphism $\HH_0(K_x)\to A/\frak{J}$, we obtain homomorphisms
 
-::: {.eqref #fga-1-equation-3.3 title="" latex=""}
+::: {.eqenv #fga-1-equation-3.3 title="" latex=""}
 $$
   \begin{aligned}
     \psi_x\colon \Ext_A^\bullet(A/\frak{J},M) &\to \HH^\bullet(\Hom_A(K_x,M))
@@ -290,7 +290,7 @@ $$
 But we immediately note that, in the maximal dimension $p$, the cohomology of the right-hand side is $M(x_1M+\ldots+x_pM)$ (resp. the set of elements of $M$ that are annihilated by each of the $x_i$).
 Since the $x_i$ are in $\frak{J}$, we thus obtain homomorphisms
 
-::: {.eqref #fga-1-equation-3.4 title="" latex=""}
+::: {.eqenv #fga-1-equation-3.4 title="" latex=""}
 $$
   \begin{aligned}
     \HH^p(\Hom_A(K_x,M)) &\to M\otimes A/\frak{J}
@@ -354,7 +354,7 @@ $$
 as well as
 \oldpage{149-08}
 
-::: {.eqref #fga-1-equation-3.6bis title="" latex=""}
+::: {.eqenv #fga-1-equation-3.6bis title="" latex=""}
 $$
   \Ext_{\scr{O}_X}^p(\scr{O}_Y,\Omega_X^n) = \Omega_Y^{n-p}.
 \tag{3.6 bis}
@@ -397,7 +397,7 @@ Finally, the last claim of [Proposition 5](#fga-1-proposition-5) is more subtle,
 \oldpage{149-09}Denote by $\omega_Y^q$ the sheaf $\Ext_{\scr{O}_X}^p(\scr{O}_Y,\Omega_X^n)$.
 Then there is a functorial isomorphism for coherent algebraic sheaves $\scr{F}$ on $Y$:
 
-::: {.eqref #fga-1-equation-3.8 title="" latex=""}
+::: {.eqenv #fga-1-equation-3.8 title="" latex=""}
 $$
   \shExt_{\scr{O}_X}^p(\scr{F},\Omega_X^n) = \shHom_{\scr{O}_X}(\scr{F},\omega_Y^q).
 \tag{3.8}
@@ -418,7 +418,7 @@ we do this, in particular, with $\scr{O}_Y$ and $\Omega_Y$.
 Let $\scr{F}$ be a coherent algebraic sheaf on $X$ whose support is of dimension $\leq n-p$, and let $\scr{L}$ be a coherent algebraic sheaf on $X$ that is locally free.
 Then $\shExt_{\scr{O}_X}^i(X;\scr{F},\scr{L})$ is zero for $i<p$, and there is a canonical isomorphism
   
-::: {.eqref #fga-1-equation-4.1 title="" latex=""}
+::: {.eqenv #fga-1-equation-4.1 title="" latex=""}
 $$
   \Ext_\scr{O}^p(X;\scr{F},\scr{L}) = \HH^0(X,\shExt_\scr{O}^p(\scr{F},\scr{L})).
 \tag{4.1}
@@ -427,7 +427,7 @@ $$
 
 If $\scr{F}$ is a coherent algebraic sheaf on a closed subset $W$ of $X$ of dimension $\leq n-p$, then we have a canonical isomorphism
 
-::: {.eqref #fga-1-equation-4.1bis title="" latex=""}
+::: {.eqenv #fga-1-equation-4.1bis title="" latex=""}
 $$
   \shExt_{\scr{O}_X}^p(\scr{F},\scr{L}) = \shHom_{\scr{O}_X}(\scr{F}\otimes\scr{L}'\otimes\Omega_X^n,\omega_Y^{n-p})
 \tag{4.1 bis}
@@ -453,7 +453,7 @@ where $q=n-p$, whence the formula in [(4.1 bis)](#fga-1-equation-4.1bis).
 
 \oldpage{149-10}Setting, in particular, $\scr{F}=\scr{O}_Y$ and $\scr{L}=\Omega_X^p$, we obtain (taking into account the fact that $\Omega_X^n\otimes(\Omega_X^p)'=\Omega_X^{n-p}$) a canonical isomorphism
 
-::: {.eqref #fga-1-equation-4.2 title="" latex=""}
+::: {.eqenv #fga-1-equation-4.2 title="" latex=""}
 $$
   \Ext_{\scr{O}_X}^p(X;\scr{O}_Y,\Omega_X^p) = \Hom_{\scr{O}_X}(X;\Omega_X^{n-p},\omega_Y^{n-p}).
 \tag{4.2}
@@ -470,7 +470,7 @@ $$
 We thus obtain an element of $\HH^p(X,\Omega_X^p)$, denoted by $P_X(Y)$, that we call the _cohomology class of $Y$ in $X$_;
 it is induced by the section $s_Y$ of $\shExt_{\scr{O}_X}^p(\scr{O}_Y,\Omega_X^p)$ by the following diagram of homomorphisms:
 
-::: {.eqref #fga-1-equation-4.3 title="" latex=""}
+::: {.eqenv #fga-1-equation-4.3 title="" latex=""}
 $$
   \begin{CD}
     \Ext_{\scr{O}_X}^p(X;\scr{O}_Y,\Omega_X^p) @>\sim>> \HH^0(X,\shExt_{\scr{O}_X}^p(\scr{O}_Y,\Omega_X^p))
@@ -495,7 +495,7 @@ With this, we have:
 :::: {.itenv #fga-1-theorem-1 title="Theorem 1" latex="{Theorem 1}"}
 \oldpage{149-11}If $Z^{n-p}$ and $Z'^{n-p'}$ are non-singular cycles that intersect transversally, then
 
-::: {.eqref #fga-1-equation-4.4 title="" latex=""}
+::: {.eqenv #fga-1-equation-4.4 title="" latex=""}
 $$
   P_X(Z\cdot Z') = P_X(Z)\cdot P_X(Z')
 \tag{4.4}
@@ -528,7 +528,7 @@ then $\alpha$ is induced by the homomorphism of complexes $\scr{O}_X\to\scr{L}$ 
 The homomorphism $\beta$ is a well-known "boundary map".
 Consider an analogous diagram, relative to a locally-free resolution $\scr{L}'_\bullet$ of $\scr{O}_Y$, and consider the commutative diagram of pairings:
 
-::: {.eqref #fga-1-equation-4.5 title="" latex=""}
+::: {.eqenv #fga-1-equation-4.5 title="" latex=""}
 $$
   \scriptsize
   \begin{CD}
@@ -575,7 +575,7 @@ $$
 for $i>0$, from the fact that $Y$ and $Y'$ intersect transversally.
 Then [Theorem 1](#fga-1-theorem-1) follows from the formula:
 
-::: {.eqref #fga-1-equation-4.6 title="" latex=""}
+::: {.eqenv #fga-1-equation-4.6 title="" latex=""}
 $$
   s_{Y}\cdot s_{Y'} = s_{Y\cdot Y'}
 \tag{4.6}
@@ -586,7 +586,7 @@ $$
 This formula in [(4.6)](#fga-1-equation-4.6), which is of a purely local nature, can easily be proven by taking $\scr{L}_\bullet$ and $\scr{L}'_\bullet$ to be the resolutions described in [Proposition 4](#fga-1-proposition-4).
 We can similarly prove (even more easily) that $Z\mapsto P_X(Z)$ is compatible with the cartesian product:
 
-::: {.eqref #fga-1-equation-4.7 title="" latex=""}
+::: {.eqenv #fga-1-equation-4.7 title="" latex=""}
 $$
   P_{X\times X'}(Z\times Z')  = P_X(Z)\otimes P_{X'}(Z')
 \tag{4.7}
@@ -596,7 +596,7 @@ $$
 (a formula which holds true if $Z$ (resp. $Z'$) is a non-singular cycle on the non-singular variety $X$ (resp. $X'$), with $Z\times Z'$ being thought of as a non-singular cycle on $X\times X'$).
 From [(4.4)](#fga-1-equation-4.4) and [(4.7)](#fga-1-equation-4.7), it follows that $P_X(Z)$ is also compatible with the operation given by taking the "inverse image" under a morphism $f\colon X\to X'$ of non-singular varieties:
 
-::: {.eqref #fga-1-equation-4.8 title="" latex=""}
+::: {.eqenv #fga-1-equation-4.8 title="" latex=""}
 $$
   P_X(f^{-1}(Z')) = f^*(P_{X'}(Z))
 \tag{4.8}
@@ -664,7 +664,7 @@ $$
 $$
 i.e.
 
-::: {.eqref #fga-1-equation-5.1 title="" latex=""}
+::: {.eqenv #fga-1-equation-5.1 title="" latex=""}
 $$
   \HH^p(X,\scr{F})\times\Ext_{\scr{O}_X}^{n-p}(X;\scr{F},\Omega_X^n) \to \HH^n(X,\Omega_X^n).
 \tag{5.1}
@@ -673,7 +673,7 @@ $$
 
 Taking [Theorem 2](#fga-1-theorem-2) into account, this pairing defines a homomorphism
 
-::: {.eqref #fga-1-equation-5.2 title="" latex=""}
+::: {.eqenv #fga-1-equation-5.2 title="" latex=""}
 $$
   \Ext_{\scr{O}_X}^{n-p}(X;\scr{F},\Omega_X^n) \to (\HH^p(X,\scr{F}))'.
 \tag{5.2}
@@ -705,7 +705,7 @@ It suffices to apply [Theorem 3](#fga-1-theorem-3) and [Corollary 1 of Propositi
 :::: {.itenv #fga-1-D title="(D)" latex="{(D)}"}
 The homomorphism
 
-::: {.eqref #fga-1-equation-5.2bis title="" latex=""}
+::: {.eqenv #fga-1-equation-5.2bis title="" latex=""}
 $$
   \Ext_{\scr{O}_X}^{n-p}(X;\scr{F},\Omega_X^n) \to (\HH^p(X,\scr{F}))'\otimes\scr{L}
 \tag{5.2 bis}
@@ -718,7 +718,7 @@ $$
 We will show that [(D)](#fga-1-D) implies [Theorem 2](#fga-1-theorem-2).
 Let $k_x=\scr{O}_{(x)}$ be the structure sheaf of the variety consisting of a single point $x\in X$, and consider the canonical homomorphism $\scr{O}_X\to k_x$, and the associated homomorphism
 
-::: {.eqref #fga-1-equation-5.3 title="" latex=""}
+::: {.eqenv #fga-1-equation-5.3 title="" latex=""}
 $$
   \HH^0(X,\scr{O}_X) \to \HH^0(X,k_x).
 \tag{5.3}
@@ -727,7 +727,7 @@ $$
 
 Its transpose can be identified with the homomorphism
 
-::: {.eqref #fga-1-equation-5.4 title="" latex=""}
+::: {.eqenv #fga-1-equation-5.4 title="" latex=""}
 $$
   \Ext_{\scr{O}_X}^n(X;k_x,\Omega_X^n)\otimes\scr{L}' \to \Ext_{\scr{O}_X}^n(X;\scr{O}_X,\Omega_X^n)\otimes\scr{L}'
 \tag{5.4}
@@ -736,7 +736,7 @@ $$
 
 induced by the homomorphism between the $\Ext^n$ associated to $\scr{O}_X\to k_x$, i.e.
 
-::: {.eqref #fga-1-equation-5.5 title="" latex=""}
+::: {.eqenv #fga-1-equation-5.5 title="" latex=""}
 $$
   \Ext_{\scr{O}_X}^n(X;k_x,\Omega_X^n) \to \Ext_{\scr{O}_X}^n(X;\scr{O}_X,\Omega_X^n)
 \tag{5.5}
@@ -833,7 +833,7 @@ $$
 $$
 whence we have an isomorphism
 
-::: {.eqref #fga-1-equation-5.6 title="" latex=""}
+::: {.eqenv #fga-1-equation-5.6 title="" latex=""}
 $$
   \HH^n(X,\scr{F})'
   = \Hom_{\scr{O}_X}(X;\scr{F},\Omega_X^n)
@@ -844,7 +844,7 @@ $$
 
 Taking $\scr{F}=\Omega_X^n$, we obtain an isomorphism
 
-::: {.eqref #fga-1-equation-5.7 title="" latex=""}
+::: {.eqenv #fga-1-equation-5.7 title="" latex=""}
 $$
   \eta\colon \HH^n(X,\Omega_X^n) \xrightarrow{\sim} k.
 \tag{5.7}
@@ -871,7 +871,7 @@ $$
 Let $X$ be a closed subset of dimension $n$ of the projective space $\bb{P}$ of dimension $r$.
 Equation [(5.6)](#fga-1-equation-5.6) can then be written as
 
-::: {.eqref #fga-1-equation-6.1 title="" latex=""}
+::: {.eqenv #fga-1-equation-6.1 title="" latex=""}
 $$
   \HH^n(X,\scr{F})'
   \simeq \Hom_{\scr{O}_X}(X;\scr{F},\omega_X^n)
@@ -892,7 +892,7 @@ $$
 $$
 whence the existence of a distinguished element in $\HH^n(X,\omega_X^n)$, corresponding to the identity morphism from $\omega_X^n$ to itself:
 
-::: {.eqref #fga-1-equation-6.3 title="" latex=""}
+::: {.eqenv #fga-1-equation-6.3 title="" latex=""}
 $$
   \eta\colon \HH^n(X,\Omega_X^n) \to k.
 \tag{6.3}
@@ -907,7 +907,7 @@ $$
 $$
 and compose them with the homomorphism $\eta$ in [(6.3)](#fga-1-equation-6.3); we thus obtain functorial homomorphisms
 
-::: {.eqref #fga-1-equation-6.5 title="" latex=""}
+::: {.eqenv #fga-1-equation-6.5 title="" latex=""}
 $$
   \Ext_{\scr{O}_X}^{n-p}(X;\scr{F},\omega_X^n) \to \HH^p(X,\scr{F})'
 \tag{6.5}
@@ -941,7 +941,7 @@ finally, ii.$\iff$iv. follows from [the corollary to the following proposition](
 Let $\scr{F}$ be a coherent algebraic sheaf on $X$, and let $i$ be an integer.
 Then, for large enough $m$, we have an isomorphism
 
-::: {.eqref #fga-1-equation-6.6 title="" latex=""}
+::: {.eqenv #fga-1-equation-6.6 title="" latex=""}
 $$
   \HH^i(X,\scr{F}(-m))' \simeq \HH^0(X,E^{n-i}(\scr{F})(m))
 \tag{6.6}
@@ -996,7 +996,7 @@ $$
 $$
 \oldpage{149-20}Since we are working with Poincaré algebras, we obtain, by transposition, a homomorphism of vector spaces
 
-::: {.eqref #fga-1-equation-7.3 title="" latex=""}
+::: {.eqenv #fga-1-equation-7.3 title="" latex=""}
 $$
   f_*\colon \HH^\bullet(Y)\to\HH^\bullet(X).
 \tag{7.3}
@@ -1088,7 +1088,7 @@ This allows us to define, given integers $r,s\geq0$, two cohomological multifunc
 one takes values in the category of coherent algebraic sheaves on $X$, and the other in the category of modules over $\HH^0(X,\scr{O}_X)$.
 \oldpage{149-22}We define them by the formulas
 
-::: {.eqref #fga-1-equation-8.1 title="" latex=""}
+::: {.eqenv #fga-1-equation-8.1 title="" latex=""}
 $$
   \begin{aligned}
     &\underline{T}_r^{s\bullet}(\scr{A}_1,\ldots,\scr{A}_r;\scr{B}_1,\ldots,\scr{B}_s)
@@ -1107,7 +1107,7 @@ $\underline{T}_0^0$ is concentrated in degree $0$, where it is the sheaf $\scr{O
 and $T_0^0$ is equal to $\HH^\bullet(X,\scr{O}_X)$.
 The fact that the right-hand sides of [(8.1)](#fga-1-equation-8.1) do not depend on the chosen resolutions is evident for $\underline{T}$ (since the question is then local), and for $T$ it follows from preceding general remarks, taking into account the spectral sequence for the hypercohomology of the complex of sheaves $\scr{K}=\shHom_{\scr{O}_X}(\underline{L}(\scr{A}_1)\otimes\ldots,\underline{L}(\scr{B}_1)\otimes\ldots$ that abuts to the hypercohomology of $X$ with respect to $\scr{K}$, and whose initial page is $\HH^p(X,\HH^q(\scr{K}))$, i.e.
 
-::: {.eqref #fga-1-equation-8.2 title="" latex=""}
+::: {.eqenv #fga-1-equation-8.2 title="" latex=""}
 $$
   E_2^{p,q} = \HH^p(X,(\underline{T}_r^s)^{(q)}(\scr{A}_1,\ldots,\scr{A}_r;\scr{B}_1,\ldots,\scr{B}_s)).
 \tag{8.2}
@@ -1120,7 +1120,7 @@ We can easily define the coboundary maps relative to miscellaneous arguments $\s
 We define, on the system of functors $\underline{T}_r^{s\bullet}$ (resp. $T_r^{s\bullet}$), operations that are analogous to those of tensor calculus, and whose definitions are immediate from the defining formulas in [(8.1)](#fga-1-equation-8.1).
 We thus have a _composition_ (generalising that which was described in [§2](#fga-1-section-2)):
 
-::: {.eqref #fga-1-equation-8.3 title="" latex=""}
+::: {.eqenv #fga-1-equation-8.3 title="" latex=""}
 $$
   \begin{gathered}
     T_r^{s\bullet}(\scr{A}_1,\ldots,\scr{A}_r;\scr{B}_1,\ldots,\scr{B}_s)
@@ -1135,7 +1135,7 @@ that satisfies the evident properties of associativity, compatibility with the f
 Similarly, we have symmetry operations, whose explicit descriptions we leave to the reader.
 \oldpage{149-23}We further have a _contraction_ operation every time one of the arguments $\scr{A}_i$ is equal to one of the arguments $\scr{B}_j$:
 
-::: {.eqref #fga-1-equation-8.4 title="" latex=""}
+::: {.eqenv #fga-1-equation-8.4 title="" latex=""}
 $$
   \begin{gathered}
     T_r^{s\bullet}(\scr{A}_1,\ldots,\scr{A}_{i-1},\scr{C},\scr{A}_{i+1},\ldots,\scr{A}_r;\scr{B}_1,\ldots,\scr{B}_{j-1},\scr{C},\scr{B}_{j+1},\ldots,\scr{B}_s)
@@ -1162,7 +1162,7 @@ The relations between the various operations thus introduced are the same as for
 Now let $n$ be the dimension of $X$.
 By successively applying a tensor composition [(8.3)](#fga-1-equation-8.3) and contractions [(8.4)](#fga-1-equation-8.4) on repeated arguments, we obtain a pairing
 
-::: {.eqref #fga-1-equation-8.6 title="" latex=""}
+::: {.eqenv #fga-1-equation-8.6 title="" latex=""}
 $$
   \begin{gathered}
     (T_r^s)^p(\scr{A}_1,\ldots;\scr{B}_1,\ldots)

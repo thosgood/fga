@@ -28,6 +28,7 @@
 \providecommand{\Hilb}{\operatorname{Hilb}}
 \providecommand{\shHilb}{\mathscr{H}\kern -.5pt ilb}
 \providecommand{\repHilb}{\underline{\Hilb}}
+\providecommand{\Pic}{\operatorname{Pic}}
 \providecommand{\repPic}{\underline{\Pic}}
 \providecommand{\repIsom}{\underline{\operatorname{Isom}}}
 \providecommand{\repImm}{\underline{\operatorname{Imm}}}
@@ -53,10 +54,10 @@ _Séminaire Bourbaki_ **13** (1960--61), Talk no. 221.
 Unfortunately, they have not as of yet allowed us to solve the existence problems posed in [FGA 3.II](FGA-3-II.html).
 In the current article, and the following, we will solve these problems by imposing projective hypotheses.
 The techniques used are typically projective, and practically make no use of any results from [FGA 3.I](FGA-3-I.html) and [FGA 3.II](FGA-3-II.html).
-Here we will construct "Hilbert schemes", which are meant to replace the use of Chow coordinates, as was mentioned in [FGA 3.II, C.2](FGA-3-II.html#fga-3-ii-section-C.2).
-In the next article, the theory of passing to the quotient in schemes, developed in [FGA 3.III](FGA-3-III.html), combined with the theory of Hilbert schemes, will allow us, for example, to construct Picard schemes (defined in [FGA 3.II, C.3](FGA-3-II.html#fga-3-ii-section-C.3)) under rather general conditions.
+Here we will construct "Hilbert schemes", which are meant to replace the use of Chow coordinates, as was mentioned in [FGA 3.II, C.2](#fga-3-ii-section-C.2).
+In the next article, the theory of passing to the quotient in schemes, developed in [FGA 3.III](FGA-3-III.html), combined with the theory of Hilbert schemes, will allow us, for example, to construct Picard schemes (defined in [FGA 3.II, C.3](#fga-3-ii-section-C.3)) under rather general conditions.
 
-In summary, we can say that we now have a more or less satisfying technique of projective constructions, apart from the fact that we are still missing^[See the addendum at the end of this article.] a theory of passing to the quotient by groups such as the projective group, acting "without fixed points" (cf. [FGA 3.III, §8](FGA-3-III.html#fga-3-iii-section-8)).
+In summary, we can say that we now have a more or less satisfying technique of projective constructions, apart from the fact that we are still missing^[See the addendum at the end of this article.] a theory of passing to the quotient by groups such as the projective group, acting "without fixed points" (cf. [FGA 3.III, §8](#fga-3-iii-section-8)).
 The situation even seems slightly better in analytic geometry (if we restrict to the study of "projective" analytic spaces over a given analytic space), since, for analytic spaces, the difficulty of passing to the quotient by a group that acts nicely disappears.
 Either way, in algebraic geometry, as well as in analytic geometry, it remains to develop a construction technique that works without any projective hypotheses.
 
@@ -465,7 +466,7 @@ In the contrary case, we have $P(n)\geq Q(n)$ for large $n$, and so $U_N=U_{n_0}
 
 In particular, the set $U_\infty$ of $s\in S$ such that
 
-::: {.eqref #fga-3-iv-equation-asterisk title="" latex=""}
+::: {.eqenv #fga-3-iv-equation-asterisk title="" latex=""}
 $$
   \rank_{k(s)}M_{ns}\otimes_{\OO_{S,s}}k(s) \leq P(n)
   \qquad\text{for all }n\geq\nu
@@ -589,7 +590,7 @@ b. Generally we can impose all sorts of supplementary natural conditions on the 
   Of course, the conjunction of conditions where each is represented by an open $U_i$ of $\repQuot_{\FXS}$ is represented by the open intersection.
   For example, considering, for all $S'$ over $S$, the set of closed subpreschemes $Y$ of $X'=X\times_S S'$ that are étale covers [@Gro1960b, I] of a given rank $r$ over $S'$, we obtain a representable contravariant functor in $S'$.
 
-c. The preschemes $\repHom_S(X,Y)$, $\prod_{X/S}Z/S$, and $\repIsom_S(X,Y)$, defined in [FGA 3.II, C.2](FGA-3-II.html#fga-3-ii-section-C.2) exist thanks to suitable projective hypotheses, and can be realised as opens in suitable Hilbert preschemes.
+c. The preschemes $\repHom_S(X,Y)$, $\prod_{X/S}Z/S$, and $\repIsom_S(X,Y)$, defined in [FGA 3.II, C.2](#fga-3-ii-section-C.2) exist thanks to suitable projective hypotheses, and can be realised as opens in suitable Hilbert preschemes.
   Since we have $\repHom_S(X,Y)=\prod_{X/S}((X\times Y)/X)$, the case of $\Hom_S(X,Y)$ reduces to that of $\prod_{X/S}(Z/X)$.
   We then note that, for all $S'$ over $S$, the set of sections of $Z'=Z\times_S S'$ over $X'=X\times_S S'$ is in bijective correspondence with the set of subpreschemes $\Gamma$ of $Z$ (necessarily closed if $Z$ is separated over $X$) such that the morphism $\Gamma\to X'$ induced by $Z'\to X'$ is an isomorphism.
   \oldpage{221-20}In this way, _if $X$ is flat and proper over $S$, and $Z$ quasi-projective over $S$, then $\prod_{X/S}(Z/X)$ exists and is realised as an open subprescheme of $\repHilb_{Z/S}$._
@@ -795,7 +796,7 @@ This thus imposes serious limitations on the possibilities of non-projective con
 (It is, however, plausible that such limitations do not present themselves in analytic geometry, just as they do not present themselves in formal geometry (cf. [FGA 3.II](FGA-3-II.html))).
 However, if $X$ is a proper scheme over the spectrum $S$ of a field $k$, and if $Z$ is quasi-projective over $X$, then $\prod_{X/S}(Z/X)$ exists, and is a scheme, given by the sum of a sequence of quasi-projective schemes over $S$ (as in the projective case [(3.1)](#fga-3-iv-theorem-3.1)).
 To see this, we can reduce to the case where $X$ is itself projective, by dominating $X$ by a projective $S$-scheme $X'$;
-we will not give here the details of the proof, which also uses the result of factorisation of a finite morphism given in [FGA 3.I, A.2.b](FGA-3-I.html#fga-3-i-section-A.2.b).
+we will not give here the details of the proof, which also uses the result of factorisation of a finite morphism given in [FGA 3.I, A.2.b](#fga-3-i-section-A.2.b).
 The success of the method is all in the fact that, with $S$ the spectrum of a field, the $X'$ that appears in Chow's lemma will automatically be flat over $S$.
 I do not know if the result remains true without any hypotheses on $S$, supposing only that $X$ is proper and flat over $S$, and that $Z$ is quasi-projective over $X$.
 An important case in the applications is that where $Z$ is a closed subscheme of $X$;

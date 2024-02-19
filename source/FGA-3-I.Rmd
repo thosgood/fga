@@ -139,7 +139,7 @@ $$
 such that $\alpha\beta_1=\alpha\beta_2$;
 this diagram is said to be _$\cal{F}$-exact_ if, for every pair $(\xi,\eta)$ of elements of $\cal{F}_S$, the diagram of sets
 
-::: {.eqref #fga-3-i-section-A.1-definition-1.3-equation}
+::: {.eqenv #fga-3-i-section-A.1-definition-1.3-equation}
 $$
   \Hom(\xi,\eta) \xrightarrow{\alpha^*}
   \Hom(\alpha^*(\xi),\alpha^*(\eta)) \ourrar{\beta_1^*}{\beta_2^*}
@@ -324,7 +324,7 @@ Let $S\in\cal{C}$, and let $S'$ and $S''$ be preschemes that are _finite_ over $
 Let $\alpha\colon S'\to S$ be the structure morphism of $S'$, and let $\beta_1$ and $\beta_2$ be $S$-morphisms from $S''$ to $S'$, defined by algebra homomorphisms $\scr{A}'\to\scr{A}''$, which we also denote by $\beta_1$ and $\beta_2$.
 Using the fact that a finite morphism is closed (the first Cohen--Seidenberg theorem), we can easily prove that the diagram in $\cal{C}$
 
-::: {.eqref #fga-3-i-section-A.2.b-equation}
+::: {.eqenv #fga-3-i-section-A.2.b-equation}
 $$
   S \xleftarrow{\alpha}
   S' \oullar{\beta_1}{\beta_2}
@@ -786,7 +786,7 @@ $$
 $$
 i.e. to the data, for every section $\xi$ of $\scr{U}$ over an open subset $V$, of a homomorphism of $\scr{O}_S$-modules $T_\xi\colon\cal{F}'|V\to\cal{F}'|V$ that satisfies the conditions
 
-::: {.eqref #fga-3-i-section-B.3-equation-3.1}
+::: {.eqenv #fga-3-i-section-B.3-equation-3.1}
 $$
   \begin{aligned}
     T_{f\xi}(x) &= fT_\xi(x),
@@ -799,7 +799,7 @@ $$
 where $f$ and $x$ are (respectively) sections of $\scr{A}'$ and $\cal{F}'$ over an open subset of $S$ that is contained inside $V$.
 Conditions (i) and (ii) of a descent data (cf. [§A.1.c](#fga-3-i-section-A.1.c)) can then be written (respectively) as
 
-::: {.eqref #fga-3-i-section-B.3-equation-3.2}
+::: {.eqenv #fga-3-i-section-B.3-equation-3.2}
 $$
   T_{1_U}(x) = x,
   \qquad\text{i.e. }T_{1_U}=\id_{\cal{F}'}
@@ -807,7 +807,7 @@ $$
 $$
 :::
 
-::: {.eqref #fga-3-i-section-B.3-equation-3.3}
+::: {.eqenv #fga-3-i-section-B.3-equation-3.3}
 $$
   T_{\xi\eta} = T_\xi T_\eta.
 \tag{3.3}
@@ -827,7 +827,7 @@ $$
 $$
 (where $f$ and $g$ are sections of $\scr{A}'$ over a smaller open subset), we have the formula
 
-::: {.eqref #fga-3-i-section-B.3-equation-3.4}
+::: {.eqenv #fga-3-i-section-B.3-equation-3.4}
 $$
   T_\xi^{(3)}(x\cdot y) = \sum_i T_{\xi'_i}^{(1)}x\cdot T_{\xi''_i}^{(2)}y
 \tag{3.4}
@@ -864,7 +864,7 @@ Let $p$ be a prime number, and suppose that $p\scr{O}_S=0$ (i.e. that $\scr{O}_S
 We suppose that the set of the $i$ is finite, of cardinality $n$.
 Let $\frak{C}$ be the sheaf of $A$-derivations of $A'$, which is a locally free sheaf of rank $n$ of $A'$-modules, and, furthermore, a sheaf of Lie $p$-algebras over $\scr{A}$ (but not over $\scr{A}'$) that satisfies the following condition:
 
-::: {.eqref #fga-3-i-section-B.3-equation-3.5}
+::: {.eqenv #fga-3-i-section-B.3-equation-3.5}
 $$
   [X,fY] = X(f)Y + f[X,Y].
 \tag{3.5}
@@ -875,7 +875,7 @@ $$
 :::: {.itenv title="Lemma" latex="{Lemma}"}
 $\scr{U}=\shHom_{\scr{O}_S}(\scr{A}',\scr{A}')$ is generated, as an $\scr{O}_S$-algebra endowed with an algebra homomorphism $\scr{A}'\to\scr{U}$, by the sub-left-$A'$-module $\frak{C}$, with the following additional relations:
 
-::: {.eqref #fga-3-i-section-B.3-equation-3.6}
+::: {.eqenv #fga-3-i-section-B.3-equation-3.6}
 $$
   \begin{cases}
     Xf-fX &= X(f)
@@ -889,28 +889,28 @@ $$
 
 It follows from the above lemma that a descent data on the quasi-coherent sheaf $\cal{F}'$ on $S'$ is equivalent to the data, for all $X\in\frak{C}$, of an $\scr{O}_S$-endomorphism $\overline{X}$ of $\cal{F}'$ that satisfies the following conditions:
 
-::: {.eqref #fga-3-i-section-B.3-equation-3.7}
+::: {.eqenv #fga-3-i-section-B.3-equation-3.7}
 $$
   \overline{fX} = f\overline{X}
 \tag{3.7}
 $$
 :::
 
-::: {.eqref #fga-3-i-section-B.3-equation-3.8}
+::: {.eqenv #fga-3-i-section-B.3-equation-3.8}
 $$
   \overline{X}(fx) = X(f)x + f\overline{X}(x)
 \tag{3.8}
 $$
 :::
 
-::: {.eqref #fga-3-i-section-B.3-equation-3.9}
+::: {.eqenv #fga-3-i-section-B.3-equation-3.9}
 $$
   \overline{[X,Y]} = [\overline{X},\overline{Y}]
 \tag{3.9}
 $$
 :::
 
-::: {.eqref #fga-3-i-section-B.3-equation-3.10}
+::: {.eqenv #fga-3-i-section-B.3-equation-3.10}
 $$
   \overline{X^{(p)}} = \overline{X}^p.
 \tag{3.10}

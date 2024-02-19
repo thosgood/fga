@@ -45,7 +45,7 @@ _Séminaire Bourbaki_ **14** (1961--62), Talk no. 232.
 \oldpage{232-01}For every prescheme (more generally, every ringed space) $X$, we define the (*absolute*) *Picard group* of $X$, denoted by $\Pic(X)$, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to $\OO_X$) modules on $X$.
 We thus have a canonical isomorphism
 
-::: {.eqref #fga-3-v-equation-1.1 title="" latex=""}
+::: {.eqenv #fga-3-v-equation-1.1 title="" latex=""}
 $$
   \Pic(X)
   \simto \HH^1(X,\OO_X^\times)
@@ -57,10 +57,10 @@ where $\OO_X^\times$ denotes the sheaf of units of $\OO_X$ (which can be identif
 Note that $X\mapsto\Pic(X)$ is a contravariant functor in $X$ in the evident way, and that the isomorphism [(1.1)](#fga-3-v-equation-1.1) is functorial.
 
 If $X$ is a prescheme over a prescheme $S$, then, for variable $S'$ in the category $\Sch_{/S}$ of preschemes over $S$, we have a contravariant functor $S'\mapsto\Pic(X\times_S S')$ thanks to the above.
-This functor has no chance of being "representable" ([FGA 3.II, A](FGA-3-II.html#fga-3-ii-section-A.1)) since, as a consequence of the existence of *non-trivial automorphisms* of invertible modules that we propose to classify, this functor is not of a *"local nature"* ([@Gro1960a, IV, 5.4]).
+This functor has no chance of being "representable" ([FGA 3.II, A](#fga-3-ii-section-A.1)) since, as a consequence of the existence of *non-trivial automorphisms* of invertible modules that we propose to classify, this functor is not of a *"local nature"* ([@Gro1960a, IV, 5.4]).
 There is thus an opportunity to "make it local", by introducing, for every relative prescheme $X/S$, a group of a relative nature
 
-::: {.eqref #fga-3-v-equation-1.2 title="" latex=""}
+::: {.eqenv #fga-3-v-equation-1.2 title="" latex=""}
 $$
   \Pic'(X/S)
   = \HH^0(S,\RR^1f_*(\OO_X^\times))
@@ -68,11 +68,11 @@ $$
 $$
 :::
 
-(where $f\colon X\to S$ is the structure morphism) (cf. [FGA 3.II, C.3](FGA-3-II.html#fga-3-ii-section-C.3)).
+(where $f\colon X\to S$ is the structure morphism) (cf. [FGA 3.II, C.3](#fga-3-ii-section-C.3)).
 In *loc. cit.* this group is called the relative Picard group, but it will be preferable to call it here the *restricted relative Picard group* of $X/S$, for reasons that will be made clear.
 As $S'$ varies over $\Sch_{/S}$, $S'\mapsto\Pic'(X\times_S S'/S')$ is a contravariant functor in $S'$, denote also by $\shPic'_{X/S}$, thus given essentially by the formula
 
-::: {.eqref #fga-3-v-equation-1.3 title="" latex=""}
+::: {.eqenv #fga-3-v-equation-1.3 title="" latex=""}
 $$
   \shPic'_{X/S}(S')
   = \Pic(X\times_S S'/S').
@@ -84,7 +84,7 @@ $$
 Intuitively, the right-hand side of [(1.3)](#fga-3-v-equation-1.3) can be understood as the set of "algebraic families" of classes of invertible sheaves on (the fibres of) $X/S$, indexed by the parameter prescheme $S'/S$.
 When the functor $\shPic'$ is representable, the prescheme over $S$ that represents it is denoted by $\repPic_{X/S}$, and is called the *Picard prescheme* of $X$ over $S$, and so we then have
 
-::: {.eqref #fga-3-v-equation-1.4 title="" latex=""}
+::: {.eqenv #fga-3-v-equation-1.4 title="" latex=""}
 $$
   \Hom_S(S',\repPic_{X/S})
   \cong \shPic'_{X/S}(S')
@@ -102,7 +102,7 @@ Let $(\scr{M})$ be the set of morphisms of preschemes that are *faithfully flat 
 this set is stable under base change and composition.
 Let $P$ be a contravariant functor from $\Sch_{/S}$ to the category of sets, and, for every $S$-morphism $u\colon T'\to T$ with $u\in(\scr{M})$, consider the diagram
 
-::: {.eqref #fga-3-v-equation-1.5 title="" latex=""}
+::: {.eqenv #fga-3-v-equation-1.5 title="" latex=""}
 $$
   P(T)
   \to P(T')
@@ -117,15 +117,15 @@ $$
   \from T'
   \underset{\pr_2}{\overset{\pr_1}{\leftleftarrows}} T'\times_T T'.
 $$
-If $P$ is representable, it follows from the theory of descent ([FGA 3.I, B, Theorem 2](FGA-3-I.html#fga-3-i-section-B.1-theorem-2)) that the diagram [(1.5)](#fga-3-v-equation-1.5) is exact for all $u\in(\scr{M})$.
+If $P$ is representable, it follows from the theory of descent ([FGA 3.I, B, Theorem 2](#fga-3-i-section-B.1-theorem-2)) that the diagram [(1.5)](#fga-3-v-equation-1.5) is exact for all $u\in(\scr{M})$.
 We express this fact by saying that $P$ is compatible with $(\scr{M})$, in the event that $P$ is "compatible with faithfully flat descent", or that the *"presheaf"* $P$ on $\Sch_{/S}$ is a *"sheaf"* for the notion of localisation given by the set $(\scr{M})$.
 If $P$ is arbitrary, then a standard procedure, well known in the case of usual topological localisation, allows us to associate to it a "sheaf" $\scr{P}$ and a homomorphism of functors $P\to\scr{P}$ that is universal in an obvious sense.
 The construction of $\scr{P}$ can be made explicit in the following way: to define $\scr{P}(T)$, we denote, for all $T'$ over $T$ such that the morphism $u\colon T'\to T$ is in $(\scr{M})$, by $\overline{\HH}^0(T'/T,P)$ the subset of $P(T')$ consisting of the elements $\xi$ such that their images $\xi_1,x_2$ in $P(T'\times_T T')$ are such that there exists a morphism $v\colon T''\to T'\times_T T'$ in $(\scr{M})$ such that $\xi_1$ and $\xi_2$ have the same image in $P(T'')$.
 
-\oldpage{232-03}(N.B. The set $\overline{\HH}^0$ thus defined is larger than the set $\HH^0(T'/T,P)$ introduced in [FGA 3.I, A.4.a](FGA-3-I.html#fga-3-i-section-A.4.a)).
+\oldpage{232-03}(N.B. The set $\overline{\HH}^0$ thus defined is larger than the set $\HH^0(T'/T,P)$ introduced in [FGA 3.I, A.4.a](#fga-3-i-section-A.4.a)).
 As $T'$ varies over fixed $T$ (always with $u\in(\scr{M})$), the $\overline{\HH}^0(T'/T,P)$ form an inductive system (when the set of the $T'$ is endowed with a preorder defined by domination), and we set
 
-::: {.eqref #fga-3-v-equation-1.6 title="" latex=""}
+::: {.eqenv #fga-3-v-equation-1.6 title="" latex=""}
 $$
   \scr{P}(T)
   = \varinjlim_{T'} \overline{\HH}^0(T'/T,P).
@@ -143,7 +143,7 @@ $$
 the contravariant functor on $\Sch_{/S}$ defined by [(1.6)](#fga-3-v-equation-1.6) is called the *relative Picard functor* of $X$ over $S$, and denoted by $\shPic_{X/S}$, and we define the *relative Picard group* of $X$ over $S$, denoted by $\Pic(X/S)$, the group $\shPic_{X/S}(S)$.
 We then have an evident bijection
 
-::: {.eqref #fga-3-v-equation-1.7 title="" latex=""}
+::: {.eqenv #fga-3-v-equation-1.7 title="" latex=""}
 $$
   \shPic_{X/S}(T)
   \simto \Pic(X\times_S T/T).
@@ -155,7 +155,7 @@ An element of $\Pic(X/S)$ is thus defined by means of an element $\xi'$ of a gro
 An element $\xi'$ of $\Pic(X\times_S S')$ and an element $\xi_1$ of $\Pic(X\times_S S_1)$ (satisfying the conditions that we have just stated) define the same element of $\Pic(X/S)$ if and only if there exists a faithfully flat quasi-compact morphism $S'_1\to S'\times_S S_1$ such that the images of the two elements in question in $\Pic(X\times_S S'_1)$ are equal.
 It is often convenient to work instead with the functor $P'=\shPic'_{X/S}$ introduced above, and we immediately note that the canonical morphism $P\to P'$ defines an *isomorphism*
 
-::: {.eqref #fga-3-v-equation-1.8 title="" latex=""}
+::: {.eqenv #fga-3-v-equation-1.8 title="" latex=""}
 $$
   \scr{P}
   \simto \scr{P}'
@@ -169,7 +169,7 @@ By [(2.3)](#fga-3-v-corollary-2.3) below, if we replace $P$ by $P'$ in the descr
 If the functor $\shPic_{X/S}$ is representable, we say that $X/S$ admits a Picard prescheme, and the prescheme over $S$ that represents the functor is called the *Picard prescheme* of $X$ over $S$, and denoted by $\repPic_{X/S}$.
 For this, it evidently suffices that $P'=\shPic_{X/S}$ be representable, since then $P'$ is already a "sheaf", and equation [(1.8)](#fga-3-v-equation-1.8) proves that the morphism $P'\to\scr{P}'$ can be identified with the canonical morphism
 
-::: {.eqref #fga-3-v-equation-1.9 title="" latex=""}
+::: {.eqenv #fga-3-v-equation-1.9 title="" latex=""}
 $$
   \shPic'_{X/S}
   \to \shPic_{X/S}
@@ -181,7 +181,7 @@ which is then an isomorphism.
 This means that our terminology is compatible with that introduced above with [(1.4)](#fga-3-v-equation-1.4).
 In general, when $\repPic_{X/S}$ exists it is defined by the functorial isomorphism
 
-::: {.eqref #fga-3-v-equation-1.10 title="" latex=""}
+::: {.eqenv #fga-3-v-equation-1.10 title="" latex=""}
 $$
   \Hom_S(S',\repPic_{X/S})
   \simto \Pic(X\times_S S'/S').
@@ -235,7 +235,7 @@ $$
   \to \scr{G}
 $$
 is an isomorphism.
-The second statement was proven by the theory of descent in [FGA 3.I, B.4](FGA-3-I.html#fga-3-i-section-B.4).
+The second statement was proven by the theory of descent in [FGA 3.I, B.4](#fga-3-i-section-B.4).
 :::
 
 The results of [(2.2)](#fga-3-v-proposition-2.2) can also be stated as follows:
@@ -478,7 +478,7 @@ condition (b) says that the functor $\scr{P}^+$ is is compatible with faithfully
 It remains only to prove condition (c) of *loc. cit.*, namely that the equivalence $R$ in the prescheme $D^+$ induced by the $\cal{S}$-representable morphism ($+$) is $\cal{S}$-effective, i.e. is effective and such that $D^+\to D^+/R$ is in $\cal{S}$.
 For this, note first of all that the opens ${D^+}^Q$ of $D^+$ that correspond to the virtual Hilbert polynomials $Q\in\mathbb{Q}[t]$ are stable under $R$ (since the fibres of $R$ are connected), which reduces the problem to proving that, for all $Q$, the induced equivalence relation $R^Q$ on ${D^+}^Q$ is $\cal{S}$-effective.
 But now ${D^+}^Q$ is quasi-projective, and the equivalence relation $R^Q$ is projective and flat.
-We are thus under the hypothesis of [FGA 3.III, Theorem 6.1](FGA-3-III.html#fga-3-iii-theorem-6.1), which implies the desired result.
+We are thus under the hypothesis of [FGA 3.III, Theorem 6.1](#fga-3-iii-theorem-6.1), which implies the desired result.
 
 In the general case where $X/S$ does not necessarily admit a section, we can easily reduce to the above case by the technique of descent, where we can repeat the above proof with the modification that is imposed upon the definition of $\scr{P}^+$.
 
@@ -525,7 +525,7 @@ We will sketch here some useful cases where the existence of certain Picard sche
 
 ::: {.itenv #fga-3-v-proposition-6.1 title="Proposition 6.1" latex="{Proposition 6.1}"}
 Let $f\colon X\to S$ be a flat projective morphism such that, in the Stein factorisation $f=f''f'$, the morphism $f'\colon X\to S'$ is *flat* and has integral geometric fibres (and thus satisfies the hypotheses of [(3.1)](#fga-3-v-theorem-3.1)), and such that the finite morphism $f''\colon S'\to$ is flat.
-Then $\repPic_{X/S}$ exists and (with the notation introduced in [FGA 3.II, C.2](FGA-3-II.html#fga-3-ii-section-C.2)) we have a canonical isomorphism
+Then $\repPic_{X/S}$ exists and (with the notation introduced in [FGA 3.II, C.2](#fga-3-ii-section-C.2)) we have a canonical isomorphism
 $$
   \repPic_{X/S}
   \simto \prod_{S'/S} \repPic_{X/S'}.
@@ -557,7 +557,7 @@ Then $\repPic_{X/S}$ exists.
 In this case, $S'$ is an étale covering of $S$ (which is true once $f$ is separable, i.e. flat with reduced geometric fibres), and we see that the structure theorem stated in [§3](#fga-3-v-section-3) for $\repPic_{X/S}$ still holds, thanks to the analogous structure of $\repPic_{X/S'}$.
 :::
 
-Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in [FGA 3.I, A.3.c](FGA-3-I.html#fga-3-i-section-A.3.c), and of which we content ourselves here to explain only a particular case:
+Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in [FGA 3.I, A.3.c](#fga-3-i-section-A.3.c), and of which we content ourselves here to explain only a particular case:
 
 ::: {.itenv #fga-3-v-proposition-6.3 title="Proposition 6.3" latex="{Proposition 6.3}"}
 Let $f\colon X\to S$ be a proper morphism, and let $X_1$ and $X_2$ be subpreschemes of $X$ that are flat over $S$, defined by coherent ideals $\scr{J}_1$ and $\scr{J}_2$ (respectively) such that $\scr{J}_1\cap\scr{J}_2=(0)$ and such that $\OO_X/(\scr{J}_1+\scr{J}_2)$ is flat over $S$ (i.e. the subprescheme of $X$ that is the sup of $X_1$ and $X_2$ is $X$ itself, whereas their inf $Z$ is flat over $X$).

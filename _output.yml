@@ -18,5 +18,10 @@ bookdown::gitbook:
       theme: white
       family: serif
       size: 2
+    download: ["FGA.pdf"]
     sharing: no
     info: no
+bookdown::pdf_book:
+  template: pandoc-template.latex
+  latex_engine: pdflatex
+  keep_tex: yes

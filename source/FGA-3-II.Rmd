@@ -185,7 +185,7 @@ iii. $F$ commutes with finite products, and, for every exact diagram
   $$
     X\to X'\rightrightarrows X''
   $$
-  in $\cal{C}$ (cf. [FGA 3.I, A, Definition 2.1](FGA-3-I.html#fga-3-i-section-A.2-definition-2.1)), the image of the diagram under $F$
+  in $\cal{C}$ (cf. [FGA 3.I, A, Definition 2.1](#fga-3-i-section-A.2-definition-2.1)), the image of the diagram under $F$
   $$
     F(X)\to F(X')\rightrightarrows F(X'')
   $$
@@ -201,7 +201,7 @@ $$
   F\colon \cal{C} \to \Set
 $$
 be a covariant functor, and let $X\in\cal{C}$ and $\xi\in F(X)$.
-\oldpage{195-06}We say that $\xi$ (or the pair $(X,\xi)$) is _minimal_ if, for all $X'\in\cal{C}$ and all $\xi'\in F(X')$, and for every strict monomorphism (cf. [FGA 3.I, A, §2](FGA-3-I.html#fga-3-i-section-A.2)) $u\colon X'\to X$ such that $\xi=F(u)(\xi')$, $u$ is an isomorphism.
+\oldpage{195-06}We say that $\xi$ (or the pair $(X,\xi)$) is _minimal_ if, for all $X'\in\cal{C}$ and all $\xi'\in F(X')$, and for every strict monomorphism (cf. [FGA 3.I, A, §2](#fga-3-i-section-A.2)) $u\colon X'\to X$ such that $\xi=F(u)(\xi')$, $u$ is an isomorphism.
 We also say that a pair $(X,\xi)$ _dominates_ $(X'',\xi'')$ (where $xi\in F(X)$ and $\xi''\in F(X'')$) if there exists a morphism $v\colon X\to X''$ such that $\xi''=F(v)(\xi)$;
 _if $\xi$ is minimal, and if $F$ is left exact, then this morphism $v$ is unique_;
 _if $\xi''$ is minimal, then $v$ is surjective_.
@@ -322,7 +322,7 @@ $$
 $$
 we wish to find manageable criteria for $F$ to be pro-representable, i.e. expressible via a $\Lambda$-algebra $O$ as above.
 By the corollary of [Proposition 3.1](#fga-3-ii-section-A.3-proposition-3.1), to ensure this, it is necessary and sufficient that $F$ be _left exact_.
-In the current state of the technique of descent (cf. the questions asked in [FGA 3.I, p.9](FGA-3-I.html#fga-3-i-section-A.2.c)), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.
+In the current state of the technique of descent (cf. the questions asked in [FGA 3.I, p.9](#fga-3-i-section-A.2.c)), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.
 
 ::: {.itenv #fga-3-ii-section-B-theorem-1 title="Theorem 1" latex="{Theorem 1}"}
 For the functor $F$ to be pro-representable, it is necessary and sufficient that it satisfy the two following conditions:
@@ -332,7 +332,7 @@ ii. for every algebra $A\in\cal{C}$ and every homomorphism $A\to A'$ in $\cal{C}
   $$
     A \to A' \rightrightarrows A'\otimes_A A'
   $$
-  is exact (cf. [FGA 3.I, A, Definition 1.2](FGA-3-I.html#fga-3-i-section-A.1-definition-1.2)), the diagram
+  is exact (cf. [FGA 3.I, A, Definition 1.2](#fga-3-i-section-A.1-definition-1.2)), the diagram
   $$
     F(A) \to F(A') \rightrightarrows F(A'\otimes_A A')
   $$
@@ -348,13 +348,13 @@ The proof of this theorem is rather delicate, and cannot be sketched here.
 We content ourselves with pointing out that it relies essentially on a study of _equivalence relations_ (in the sense of categories) in _the spectrum of an Artinian algebra_ (the study of which poses even more problems, whose solutions seems essential for the further development of the theory).
 
 In applications, the verification of condition (i) is always trivial.
-The verification of condition (ii) splits into two cases: case (a), where $A'$ is a free $A$-module, can be dealt with using the _technique of descent by flat morphisms_ (cf. [FGA 1, Theorems 1, 2, and 3](FGA-1.html)), which offers no difficulty;
+The verification of condition (ii) splits into two cases: case (a), where $A'$ is a free $A$-module, can be dealt with using the _technique of descent by flat morphisms_ (cf. [FGA 1, Theorems 1, 2, and 3](#fga-1)), which offers no difficulty;
 to deal with case (b), we will use the following result:
 
 ::: {.itenv #fga-3-ii-section-B-theorem-2 title="Theorem 2" latex="{Theorem 2}"}
 Let $A$ be a local Artinian ring with maximal ideal $\frak{m}$, and let $A'$ be an $A$-algebra containing $A$, and such that $\frak{m}A'\subset A$, and $A\to A'\rightrightarrows A'\otimes_A A'$ is _exact_ (which is the case, in particular, if $A'/A$ is an $A$-module of length $1$).
-Let $\cal{F}$ be the fibred category (cf. [FGA 3.I, A, Definition 1.1](FGA-3-I.html#fga-3-i-section-A.1-definition-1.1)) of quasi-coherent sheaves that are flat over varying preschemes.
-Then the morphism $\Spec(A')\to\Spec(A)$ is a _strict $\cal{F}$-descent morphism_ (cf. [FGA 3.I, A, Definition 1.7](FGA-3-I.html#fga-3-i-section-A.1-definition-1.7)).
+Let $\cal{F}$ be the fibred category (cf. [FGA 3.I, A, Definition 1.1](#fga-3-i-section-A.1-definition-1.1)) of quasi-coherent sheaves that are flat over varying preschemes.
+Then the morphism $\Spec(A')\to\Spec(A)$ is a _strict $\cal{F}$-descent morphism_ (cf. [FGA 3.I, A, Definition 1.7](#fga-3-i-section-A.1-definition-1.7)).
 :::
 
 In other words, the data of a flat $A$-module $M$ is completely equivalent to the data of a flat $A'$-module $M'$ endowed with an $(A'\otimes_A A')$-isomorphism from $M'\otimes_A A'$ to $A'\otimes_A M'$ satisfying the usual transitivity condition for a descent data (*loc. cit.*).
@@ -364,8 +364,8 @@ $$
   \HH^i(A'/A,\Ga) = 0
   \qquad\text{(for }i\geq1\text{)}
 $$
-(cf. [FGA 3.I, A.4.e](FGA-3-I.html#fga-3-i-section-A.4.e)), with the hypothesis that $\frak{m}A'\subset A$ allowing us to easily reduce to the case where $A$ is a field (namely $A/\frak{m}$).
-We can then apply the equivalences described in [FGA 3.I, p.16](FGA-3-I.html#fga-3-i-section-A.4.e).
+(cf. [FGA 3.I, A.4.e](#fga-3-i-section-A.4.e)), with the hypothesis that $\frak{m}A'\subset A$ allowing us to easily reduce to the case where $A$ is a field (namely $A/\frak{m}$).
+We can then apply the equivalences described in [FGA 3.I, p.16](#fga-3-i-section-A.4.e).
 
 
 ## **C.** Applications to some particular cases {-}
@@ -492,7 +492,7 @@ $$
   P(X/S) = \HH^0(S,\RR^1f_*(\scr{O}_X^\times)),
 $$
 called the _relative Picard group_ of $X/S$.
-An element of this group is thus defined by giving an open cover $(U_i)$ of $S$, along with an invertible sheaf $\scr{L}_i$ on each $f^{-1}(U_i)$, such that $\scr{L}_i|f^{-1}(U_i\cap U_j)$ is isomorphic to $\scr{L}_j|f^{-1}(U_i\cap U_j)$ for all $i,j$, or, at least locally over $U_i\cap U_j$ (i.e. these two sheaves are "equivalent" in the sense of [FGA 3.I, B.4](FGA-3-I.html#fga-3-i-section-B.4)).
+An element of this group is thus defined by giving an open cover $(U_i)$ of $S$, along with an invertible sheaf $\scr{L}_i$ on each $f^{-1}(U_i)$, such that $\scr{L}_i|f^{-1}(U_i\cap U_j)$ is isomorphic to $\scr{L}_j|f^{-1}(U_i\cap U_j)$ for all $i,j$, or, at least locally over $U_i\cap U_j$ (i.e. these two sheaves are "equivalent" in the sense of [FGA 3.I, B.4](#fga-3-i-section-B.4)).
 If $X/S$ admits a section, then $P(X/S)$ is exactly the set of classes of invertible sheaves on $X/S$ up to "equivalence" (*loc. cit.*).
 We now set, for all $T$ over $S$,
 $$
@@ -513,7 +513,7 @@ The definition adopted here is only reasonable when every point of $Y$ admits an
 In the general case, it is necessary to slightly modify the definition of the Picard functor in order to still obtain an existence theorem.
 
 Here, the plausible existence conditions for a Picard prescheme are the following: $X$ is _proper_ and _flat_ over $S$; $f_*(\scr{O}_X)=\scr{O}_S$; and $X$ locally admits a section over $S$.
-This condition naturally arises in the application of the technique of descent, _in eliminating the automorphisms of an invertible sheaf $\scr{L}$ on $X$ by endowing them with a marked section over the section $s$_ ([FGA 3.I, B.4](FGA-3-I.html#fga-3-i-section-B.4)).
+This condition naturally arises in the application of the technique of descent, _in eliminating the automorphisms of an invertible sheaf $\scr{L}$ on $X$ by endowing them with a marked section over the section $s$_ ([FGA 3.I, B.4](#fga-3-i-section-B.4)).
 Notably, we find the following:
 :::
 
@@ -544,7 +544,7 @@ _eliminate the possible automorphisms of the objects that we want to classify, b
 ::: {.rmenv title="Remarks" latex="{Remarks}"}
 *[Comp.]*
 I have recently shown that the formal scheme of modules for an abelian variety over a field is indeed simple over the Witt ring, or, in other words, that every abelian scheme $X$ over a local Artinian ring that is the quotient of another such scheme $Y$ comes, by reduction, from an abelian scheme over $Y$.
-The proof simply uses the variance properties of the obstruction class of the covering, introduced in [FGA II, p.12](FGA-2.html#fga-2-section-6).
+The proof simply uses the variance properties of the obstruction class of the covering, introduced in [FGA II, p.12](#fga-2-section-6).
 Recall also that the schemes of modules for curves of genus $g$ or for polarised abelian schemes have been constructed by Mumford (cf. _Séminaire Mumford--Tate_, Harvard University (1961--62)).
 :::
 
@@ -554,7 +554,7 @@ Recall also that the schemes of modules for curves of genus $g$ or for polarised
 Let $\Lambda$ be a _local_ Noetherian ring of residue field $k$ (more often than not, $\Lambda$ will be equal to $k$, or to a Cohen $p$-ring), and let $X_0$ be a prescheme over $k$.
 For every local Artinian $\Lambda$-algebra $A$, consider the set $F(A)$ of isomorphism classes of $A$-preschemes $X$ that are _flat_ over $A$, endowed with an isomorphism
 
-::: {.eqref #fga-3-ii-section-C.4-equation-asterisk}
+::: {.eqenv #fga-3-ii-section-C.4-equation-asterisk}
 $$
   X\otimes_A k(A) \simfrom X_0\otimes_k k(A)
 \tag{$*$}
