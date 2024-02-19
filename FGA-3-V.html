@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7 Picard schemes: Existence theorems | Foundations of Algebraic Geometry</title>
   <meta name="description" content="7 Picard schemes: Existence theorems | Foundations of Algebraic Geometry" />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7 Picard schemes: Existence theorems | Foundations of Algebraic Geometry" />
   <meta property="og:type" content="book" />
@@ -240,7 +240,7 @@ Grothendieck, A.
 <h2><span class="header-section-number">7.1</span> Relative Picard groups and functors</h2>
 <p>For every prescheme (more generally, every ringed space) <eq env="math">X</eq>, we define the (<em>absolute</em>) <em>Picard group</em> of <eq env="math">X</eq>, denoted by <eq env="math">\operatorname{Pic}(X)</eq>, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to <eq env="math">{\mathscr{O}}_X</eq>) modules on <eq env="math">X</eq>.
 We thus have a canonical isomorphism</p>
-<div id="fga-3-v-equation-1.1" class="eqref" title="">
+<div id="fga-3-v-equation-1.1" class="eqenv" title="">
 <p><eq env="displaymath">
   \operatorname{Pic}(X)
   \xrightarrow{\sim}\operatorname{H}^1(X,{\mathscr{O}}_X^\times)
@@ -252,7 +252,7 @@ Note that <eq env="math">X\mapsto\operatorname{Pic}(X)</eq> is a contravariant f
 <p>If <eq env="math">X</eq> is a prescheme over a prescheme <eq env="math">S</eq>, then, for variable <eq env="math">S'</eq> in the category <eq env="math">\mathtt{Sch}_{/S}</eq> of preschemes over <eq env="math">S</eq>, we have a contravariant functor <eq env="math">S'\mapsto\operatorname{Pic}(X\times_S S')</eq> thanks to the above.
 This functor has no chance of being “representable” (<a href="FGA-3-II.html#fga-3-ii-section-A.1">FGA 3.II, A</a>) since, as a consequence of the existence of <em>non-trivial automorphisms</em> of invertible modules that we propose to classify, this functor is not of a <em>“local nature”</em> (<span class="citation">[<a href="#ref-Gro1960a" role="doc-biblioref">8</a>, IV, 5.4]</span>).
 There is thus an opportunity to “make it local”, by introducing, for every relative prescheme <eq env="math">X/S</eq>, a group of a relative nature</p>
-<div id="fga-3-v-equation-1.2" class="eqref" title="">
+<div id="fga-3-v-equation-1.2" class="eqenv" title="">
 <p><eq env="displaymath">
   \operatorname{Pic}'(X/S)
   = \operatorname{H}^0(S,\operatorname{R}^1f_*({\mathscr{O}}_X^\times))
@@ -262,7 +262,7 @@ There is thus an opportunity to “make it local”, by introducing, for every r
 <p>(where <eq env="math">f\colon X\to S</eq> is the structure morphism) (cf. <a href="FGA-3-II.html#fga-3-ii-section-C.3">FGA 3.II, C.3</a>).
 In <em>loc. cit.</em> this group is called the relative Picard group, but it will be preferable to call it here the <em>restricted relative Picard group</em> of <eq env="math">X/S</eq>, for reasons that will be made clear.
 As <eq env="math">S'</eq> varies over <eq env="math">\mathtt{Sch}_{/S}</eq>, <eq env="math">S'\mapsto\operatorname{Pic}'(X\times_S S'/S')</eq> is a contravariant functor in <eq env="math">S'</eq>, denote also by <eq env="math">\mathscr{P}\kern -.5pt ic'_{X/S}</eq>, thus given essentially by the formula</p>
-<div id="fga-3-v-equation-1.3" class="eqref" title="">
+<div id="fga-3-v-equation-1.3" class="eqenv" title="">
 <p><eq env="displaymath">
   \mathscr{P}\kern -.5pt ic'_{X/S}(S')
   = \operatorname{Pic}(X\times_S S'/S').
@@ -272,7 +272,7 @@ As <eq env="math">S'</eq> varies over <eq env="math">\mathtt{Sch}_{/S}</eq>, <eq
 <p>This functor is now “of local nature”, given that did what was necessary to make this happen.
 Intuitively, the right-hand side of <a href="FGA-3-V.html#fga-3-v-equation-1.3">(1.3)</a> can be understood as the set of “algebraic families” of classes of invertible sheaves on (the fibres of) <eq env="math">X/S</eq>, indexed by the parameter prescheme <eq env="math">S'/S</eq>.
 When the functor <eq env="math">\mathscr{P}\kern -.5pt ic'</eq> is representable, the prescheme over <eq env="math">S</eq> that represents it is denoted by <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>, and is called the <em>Picard prescheme</em> of <eq env="math">X</eq> over <eq env="math">S</eq>, and so we then have</p>
-<div id="fga-3-v-equation-1.4" class="eqref" title="">
+<div id="fga-3-v-equation-1.4" class="eqenv" title="">
 <p><eq env="displaymath">
   \operatorname{Hom}_S(S',\underline{\operatorname{Pic}}_{X/S})
   \cong \mathscr{P}\kern -.5pt ic'_{X/S}(S')
@@ -287,7 +287,7 @@ We now explain the details.</p>
 <p>Let <eq env="math">({\mathscr{M}})</eq> be the set of morphisms of preschemes that are <em>faithfully flat and quasi-compact</em>;
 this set is stable under base change and composition.
 Let <eq env="math">P</eq> be a contravariant functor from <eq env="math">\mathtt{Sch}_{/S}</eq> to the category of sets, and, for every <eq env="math">S</eq>-morphism <eq env="math">u\colon T'\to T</eq> with <eq env="math">u\in({\mathscr{M}})</eq>, consider the diagram</p>
-<div id="fga-3-v-equation-1.5" class="eqref" title="">
+<div id="fga-3-v-equation-1.5" class="eqenv" title="">
 <p><eq env="displaymath">
   P(T)
   \to P(T')
@@ -307,7 +307,7 @@ If <eq env="math">P</eq> is arbitrary, then a standard procedure, well known in 
 The construction of <eq env="math">{\mathscr{P}}</eq> can be made explicit in the following way: to define <eq env="math">{\mathscr{P}}(T)</eq>, we denote, for all <eq env="math">T'</eq> over <eq env="math">T</eq> such that the morphism <eq env="math">u\colon T'\to T</eq> is in <eq env="math">({\mathscr{M}})</eq>, by <eq env="math">\overline{\operatorname{H}}^0(T'/T,P)</eq> the subset of <eq env="math">P(T')</eq> consisting of the elements <eq env="math">\xi</eq> such that their images <eq env="math">\xi_1,x_2</eq> in <eq env="math">P(T'\times_T T')</eq> are such that there exists a morphism <eq env="math">v\colon T''\to T'\times_T T'</eq> in <eq env="math">({\mathscr{M}})</eq> such that <eq env="math">\xi_1</eq> and <eq env="math">\xi_2</eq> have the same image in <eq env="math">P(T'')</eq>.</p>
 <p>(N.B. The set <eq env="math">\overline{\operatorname{H}}^0</eq> thus defined is larger than the set <eq env="math">\operatorname{H}^0(T'/T,P)</eq> introduced in <a href="FGA-3-I.html#fga-3-i-section-A.4.a">FGA 3.I, A.4.a</a>).
 As <eq env="math">T'</eq> varies over fixed <eq env="math">T</eq> (always with <eq env="math">u\in({\mathscr{M}})</eq>), the <eq env="math">\overline{\operatorname{H}}^0(T'/T,P)</eq> form an inductive system (when the set of the <eq env="math">T'</eq> is endowed with a preorder defined by domination), and we set</p>
-<div id="fga-3-v-equation-1.6" class="eqref" title="">
+<div id="fga-3-v-equation-1.6" class="eqenv" title="">
 <p><eq env="displaymath">
   {\mathscr{P}}(T)
   = \varinjlim_{T'} \overline{\operatorname{H}}^0(T'/T,P).
@@ -322,7 +322,7 @@ As <eq env="math">T'</eq> varies over fixed <eq env="math">T</eq> (always with <
 </eq>
 the contravariant functor on <eq env="math">\mathtt{Sch}_{/S}</eq> defined by <a href="FGA-3-V.html#fga-3-v-equation-1.6">(1.6)</a> is called the <em>relative Picard functor</em> of <eq env="math">X</eq> over <eq env="math">S</eq>, and denoted by <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}</eq>, and we define the <em>relative Picard group</em> of <eq env="math">X</eq> over <eq env="math">S</eq>, denoted by <eq env="math">\operatorname{Pic}(X/S)</eq>, the group <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}(S)</eq>.
 We then have an evident bijection</p>
-<div id="fga-3-v-equation-1.7" class="eqref" title="">
+<div id="fga-3-v-equation-1.7" class="eqenv" title="">
 <p><eq env="displaymath">
   \mathscr{P}\kern -.5pt ic_{X/S}(T)
   \xrightarrow{\sim}\operatorname{Pic}(X\times_S T/T).
@@ -332,7 +332,7 @@ We then have an evident bijection</p>
 <p>An element of <eq env="math">\operatorname{Pic}(X/S)</eq> is thus defined by means of an element <eq env="math">\xi'</eq> of a group <eq env="math">\operatorname{Pic}(X\times_S S')</eq> (where <eq env="math">S'\to S</eq> is faithfully flat and quasi-compact) such that we can find a faithfully flat quasi-compact morphism <eq env="math">S''\to S'\times_S S'</eq> such that the two inverse images of <eq env="math">\xi'</eq> in <eq env="math">\operatorname{Pic}(X\times_S S'')</eq> are the same.
 An element <eq env="math">\xi'</eq> of <eq env="math">\operatorname{Pic}(X\times_S S')</eq> and an element <eq env="math">\xi_1</eq> of <eq env="math">\operatorname{Pic}(X\times_S S_1)</eq> (satisfying the conditions that we have just stated) define the same element of <eq env="math">\operatorname{Pic}(X/S)</eq> if and only if there exists a faithfully flat quasi-compact morphism <eq env="math">S'_1\to S'\times_S S_1</eq> such that the images of the two elements in question in <eq env="math">\operatorname{Pic}(X\times_S S'_1)</eq> are equal.
 It is often convenient to work instead with the functor <eq env="math">P'=\mathscr{P}\kern -.5pt ic'_{X/S}</eq> introduced above, and we immediately note that the canonical morphism <eq env="math">P\to P'</eq> defines an <em>isomorphism</em></p>
-<div id="fga-3-v-equation-1.8" class="eqref" title="">
+<div id="fga-3-v-equation-1.8" class="eqenv" title="">
 <p><eq env="displaymath">
   {\mathscr{P}}
   \xrightarrow{\sim}{\mathscr{P}}'
@@ -343,7 +343,7 @@ It is often convenient to work instead with the functor <eq env="math">P'=\maths
 By <a href="FGA-3-V.html#fga-3-v-corollary-2.3">(2.3)</a> below, if we replace <eq env="math">P</eq> by <eq env="math">P'</eq> in the description of <eq env="math">\operatorname{Pic}(X/S)</eq> that we have just given then we can take <eq env="math">S''=S'\times_S S'</eq> and <eq env="math">S'_1=S'\times_S S_1</eq>, at least under the conditions given in <em>loc. cit.</em>.</p>
 <p>If the functor <eq env="math">\mathscr{P}\kern -.5pt ic_{X/S}</eq> is representable, we say that <eq env="math">X/S</eq> admits a Picard prescheme, and the prescheme over <eq env="math">S</eq> that represents the functor is called the <em>Picard prescheme</em> of <eq env="math">X</eq> over <eq env="math">S</eq>, and denoted by <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq>.
 For this, it evidently suffices that <eq env="math">P'=\mathscr{P}\kern -.5pt ic_{X/S}</eq> be representable, since then <eq env="math">P'</eq> is already a “sheaf”, and equation <a href="FGA-3-V.html#fga-3-v-equation-1.8">(1.8)</a> proves that the morphism <eq env="math">P'\to{\mathscr{P}}'</eq> can be identified with the canonical morphism</p>
-<div id="fga-3-v-equation-1.9" class="eqref" title="">
+<div id="fga-3-v-equation-1.9" class="eqenv" title="">
 <p><eq env="displaymath">
   \mathscr{P}\kern -.5pt ic'_{X/S}
   \to \mathscr{P}\kern -.5pt ic_{X/S}
@@ -353,7 +353,7 @@ For this, it evidently suffices that <eq env="math">P'=\mathscr{P}\kern -.5pt ic
 <p>which is then an isomorphism.
 This means that our terminology is compatible with that introduced above with <a href="FGA-3-V.html#fga-3-v-equation-1.4">(1.4)</a>.
 In general, when <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists it is defined by the functorial isomorphism</p>
-<div id="fga-3-v-equation-1.10" class="eqref" title="">
+<div id="fga-3-v-equation-1.10" class="eqenv" title="">
 <p><eq env="displaymath">
   \operatorname{Hom}_S(S',\underline{\operatorname{Pic}}_{X/S})
   \xrightarrow{\sim}\operatorname{Pic}(X\times_S S'/S').
@@ -689,7 +689,7 @@ Then <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> exists.</p>
 <div class="proof">
 <p><span id="unlabeled-div-32" class="proof"><em>Proof</em>. </span>In this case, <eq env="math">S'</eq> is an étale covering of <eq env="math">S</eq> (which is true once <eq env="math">f</eq> is separable, i.e. flat with reduced geometric fibres), and we see that the structure theorem stated in <a href="FGA-3-V.html#fga-3-v-section-3">§3</a> for <eq env="math">\underline{\operatorname{Pic}}_{X/S}</eq> still holds, thanks to the analogous structure of <eq env="math">\underline{\operatorname{Pic}}_{X/S'}</eq>.</p>
 </div>
-<p>Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in <a href="FGA-3-I.html#fga-3-i-section-A.3.c">FGA 3.I, A.3.c</a>, and of which we content ourselves here to explain only a particular case:</p>
+<p>Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in <a href="#fga-3-i-section-A.3.c">FGA 3.I, A.3.c</a>, and of which we content ourselves here to explain only a particular case:</p>
 <div id="fga-3-v-proposition-6.3" class="itenv" title="Proposition 6.3">
 <p>Let <eq env="math">f\colon X\to S</eq> be a proper morphism, and let <eq env="math">X_1</eq> and <eq env="math">X_2</eq> be subpreschemes of <eq env="math">X</eq> that are flat over <eq env="math">S</eq>, defined by coherent ideals <eq env="math">{\mathscr{J}}_1</eq> and <eq env="math">{\mathscr{J}}_2</eq> (respectively) such that <eq env="math">{\mathscr{J}}_1\cap{\mathscr{J}}_2=(0)</eq> and such that <eq env="math">{\mathscr{O}}_X/({\mathscr{J}}_1+{\mathscr{J}}_2)</eq> is flat over <eq env="math">S</eq> (i.e. the subprescheme of <eq env="math">X</eq> that is the sup of <eq env="math">X_1</eq> and <eq env="math">X_2</eq> is <eq env="math">X</eq> itself, whereas their inf <eq env="math">Z</eq> is flat over <eq env="math">X</eq>).
 Suppose further that, for all <eq env="math">s\in S</eq>, the homomorphisms <eq env="math">k(s)\to\operatorname{H}^0(X_{i_s},{\mathscr{O}}_{X_{i_s}})</eq> are bijective for <eq env="math">i=1,2</eq>.
@@ -793,7 +793,7 @@ In the case where <eq env="math">A</eq> is of arbitrary dimension, it is plausib
 <div class="csl-left-margin">[17] </div><div class="csl-right-inline">F. Oort. <span>“Sur le schéma de picard.”</span> <em>Bull. Soc. Math. France</em>. <strong>90</strong> (1962), 1–14.</div>
 </div>
 <div id="ref-Ses1962" class="csl-entry">
-<div class="csl-left-margin">[25] </div><div class="csl-right-inline">C.S. Seshadri. <span>“La varide picard d’une varicomplète.”</span> <em>Annali Di Mat. Pura Ed App.</em> <strong>57</strong> (1962), 117–42.</div>
+<div class="csl-left-margin">[25] </div><div class="csl-right-inline">C.S. Seshadri. <span>“La variété de picard d’une variété complète.”</span> <em>Annali Di Mat. Pura Ed App.</em> <strong>57</strong> (1962), 117–42.</div>
 </div>
 </div>
 <div class="footnotes">
@@ -880,7 +880,7 @@ gitbook.start({
 "link": "https://github.com/thosgood/fga/blob/main/source/FGA-3-V.Rmd",
 "text": null
 },
-"download": null,
+"download": "FGA.pdf",
 "search": {
 "engine": "fuse",
 "options": null
