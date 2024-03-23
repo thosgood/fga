@@ -1,0 +1,60 @@
+\title{Results concerning local cohomology}
+\taxon{Section}
+\number{3}
+\parent{fga1}
+
+\import{fga1-macros}
+
+\p{
+  Let #{A} be a unital commutative ring endowed with an ideal #{\mathfrak{J}}.
+  We will define, for any #{A}-module #{M}, functorial homomorphisms
+
+  \subtree[fga1-equation-3.1]{
+    \taxon{equation}
+    \number{3.1}
+    ##{
+      \begin{aligned}
+        \Ext_A^p(A/\mathfrak{J},M)
+        &\to \Hom_A(\wedge^p\mathfrak{J}/\mathfrak{J}^2,M\otimes A/\mathfrak{J})
+      \\\Tor_p^A(A/\mathfrak{J},M)
+        &\from (\wedge^p\mathfrak{J}/\mathfrak{J}^2)\otimes\Hom_A(A/\mathfrak{J},M)
+      \end{aligned}
+    \tag{3.1}
+    }
+  }
+
+  where the tensor and exterior products are taken over the ring #{A};
+  note also that #{\mathfrak{J}/\mathfrak{J}^2} is in fact an #{A/\mathfrak{J}}-module, and that its exterior powers as an #{A}-module agree with its exterior powers as an #{A/\mathfrak{J}}-module.
+  The definition of the homomorphisms in \ref{fga1-equation-3.1} come from the definition, for every system #{x=(x_1,\ldots,x_p)} of points of #{\mathfrak{J}}, of homomorphisms #{\varphi_x} given by
+
+  \subtree[fga1-equation-3.2]{
+    \taxon{equation}
+    \number{3.2}
+    ##{
+      \begin{aligned}
+        \varphi_x\colon \Ext_A^p(A/\mathfrak{J},M) &\to M\otimes A/\mathfrak{J}
+      \\\varphi_x\colon \Hom_A(A/\mathfrak{J},M) &\to \Tor_p^A(A/\mathfrak{J},M)
+      \end{aligned}
+    \tag{3.2}
+    }
+  }
+
+  \oldpage{149-06}
+  such that the following conditions are satisfied:
+}
+
+\p{\todo{the following list should be i, ii}}
+
+\ol{
+  \li{
+    #{\varphi_{x_1,\ldots,x_p}} depends on the system of the #{x_i\in\mathfrak{J}} in an alternating #{A}-multilinear way;
+  }
+
+  \li{
+    #{\varphi_{x_1,\ldots,x_p}} is zero when any of the #{x_i} is in #{\mathfrak{J}^2}.
+  }
+}
+
+\p{
+  In fact, (ii) follows from (i), since #{a\varphi_x=0} for #{a\in\mathfrak{J}}, as we see by noting that all the modules in \ref{fga1-equation-3.2} are annihilated by #{\mathfrak{J}}.
+}
