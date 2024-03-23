@@ -4,3 +4,61 @@
 \parent{fga1}
 
 \import{fga1-macros}
+
+\p{
+  In all that follows, #{X} denotes an algebraic set of dimension #{n}, defined over a field #{k} which we assume, for simplicity, to be algebraically closed.
+  Except for in \ref{fga1-6}, we assume that #{X} is non-singular.
+  We denote by #{\sh{O}_X} the structure sheaf of #{X}, and by #{\Omega_X^\bullet=\bigcup_p\Omega_X^p} the sheaf of germs of differential forms on #{X}.
+  If #{Y} is a closed subset of #{X}, then we identify coherent algebraic sheaves on #{Y} with coherent algebraic sheaves on #{X} that are zero outside of #{Y};
+  we do this, in particular, with #{\sh{O}_Y} and #{\Omega_Y}.
+}
+
+\subtree[fga1-lemma-1]{
+  \taxon{lemma}
+  \number{1}
+
+  \p{
+    Let #{\sh{F}} be a coherent algebraic sheaf on #{X} whose support is of dimension #{\leq n-p}, and let #{\sh{L}} be a coherent algebraic sheaf on #{X} that is locally free.
+    Then #{\shExt_{\sh{O}_X}^i(X;\sh{F},\sh{L})} is zero for #{i<p}, and there is a canonical isomorphism
+
+    \subtree[fga1-equation-4.1]{
+      \taxon{equation}
+      \number{4.1}
+      ##{
+        \Ext_\sh{O}^p(X;\sh{F},\sh{L})
+        = \HH^0(X,\shExt_\sh{O}^p(\sh{F},\sh{L})).
+      \tag{4.1}
+      }
+    }
+
+    If #{\sh{F}} is a coherent algebraic sheaf on a closed subset #{W} of #{X} of dimension #{\leq n-p}, then we have a canonical isomorphism
+
+    \subtree[fga1-equation-4.1bis]{
+      \taxon{equation}
+      \number{4.1 bis}
+      ##{
+        \shExt_{\sh{O}_X}^p(\sh{F},\sh{L})
+        = \shHom_{\sh{O}_X}(\sh{F}\otimes\sh{L}'\otimes\Omega_X^n,\omega_Y^{n-p})
+      \tag{4.1 bis}
+      }
+    }
+
+    where #{\omega_Y^{n-p}} is the sheaf on #{Y} defined in [the corollary to Proposition 5](fga1-proposition-5-corollary-1) (which can be identified with #{\Omega_Y^{n-p}} if #{Y} is non-singular).
+  }
+
+  \proof{
+    \p{
+      The formula in \ref{fga1-equation-4.1} is an immediate consequence of the spectral sequence from \ref{fga1-proposition-1}, as well as \ref{fga1-proposition-5};
+      by the formula in \ref{fga1-equation-3.8}, we can write
+      ##{
+        \begin{gathered}
+          \shExt_{\sh{O}_X}^p(\sh{F},\sh{L})
+          = \sh{L}\otimes(\Omega_X^n)'\otimes\shExt_{\sh{O}_X}(\sh{F},\Omega_X^n)
+        \\= \sh{L}\otimes(\Omega_X^n)'\otimes\shHom_{\sh{O}_X}(\sh{F},\omega_Y^q)
+        \\= \shHom_{\sh{O}_X}(\sh{F}\otimes\sh{L}'\otimes\Omega_X^n,\omega_Y^q)
+        \end{gathered}
+      }
+      where #{q=n-p}, whence the formula in \ref{fga1-equation-4.1bis}.
+    }
+  }
+}
