@@ -153,3 +153,23 @@
     This is the case, in particular, if #{\sh{A}} is a coherent #{\sh{O}}-module [@Ser1955].
   }
 }
+
+\subtree[fga1-proposition-3]{
+  \taxon{proposition}
+  \number{3}
+
+  \p{
+    Let #{\sh{L}_\bullet=(\sh{L}_i)} be a left resolution of the #{\sh{O}}-module #{\sh{A}} by #{\sh{O}}-modules that are all locally isomorphic to some #{\sh{O}^n}.
+    Then #{\shExt_\sh{O}(\sh{A},\sh{B})} can be identified with #{\HH^\bullet(\shHom_\sh{O}(\sh{L}_\bullet,\sh{B}))}, and #{\Ext_\sh{O}(X;\sh{A},\sh{B})} can be identified with the hypercohomology of #{X} with respect to the complex #{\shHom_\sh{O}(\sh{L}_\bullet,\sh{B})}.
+  }
+
+  \proof{
+    \p{
+      The proof is standard: we consider the bicomplex #{\shHom_\sh{O}(\sh{L}_\bullet,C(\sh{B}))}, where #{C(\sh{B})} is an injective resolution of #{\sh{B}}, as well as the natural homomorphisms into this bicomplex from #{\shHom_\sh{O}(\sh{L}_\bullet,\sh{B})} and #{\shHom_\sh{O}(\sh{A},C(\sh{B}))}.
+    }
+  }
+}
+
+\p{
+  To finish, we note that the two #{\Ext} functors introduced in \ref{fga1-equation-1.2} are not only cohomological functors in #{\sh{B}}, but in fact \em{cohomological bifunctors}, covariant in #{\sh{B}}, and contravariant in #{\sh{A}}.
+}
