@@ -1,0 +1,25 @@
+\def\from{#{\leftarrow}}
+\def\bb{#{\mathbf}}
+
+\def\Ext{#{\operatorname{Ext}}}
+\def\shExt{#{\mathscr{E}\kern -.5pt xt}}
+\def\Hom{#{\operatorname{Hom}}}
+\def\shHom{#{\mathscr{H}\kern -.5pt om}}
+\def\Tor{#{\operatorname{Tor}}}
+\def\RR{#{\operatorname{R}}}
+\def\HH{#{\operatorname{H}}}
+
+\def\note[x]{\em{[Trans.] \x}}
+\def\todo[x]{\strong{\em{TO-DO: \x}}}
+\def\fref[x]{[\x \strong{(?)}]}
+\def\footnote[x]{(\x)}
+
+\def\proof[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{proof}
+      \body
+    }
+  }
+}
