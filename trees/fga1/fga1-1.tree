@@ -15,6 +15,7 @@
   We know that every object of this category admits an injective resolution, which allows us to define the #{\Ext} functors that have the well-known formal properties.
   More precisely, to avoid confusion, we denote by #{\Hom_\sh{O}(X;\sh{A},\sh{B})}, or simply #{\Hom(X;\sh{A},\sh{B})}, the abelian \em{groups} of #{\sh{O}}-homomorphisms from #{\sh{A}} to #{\sh{B}}, whereas #{\shHom_\sh{O}(\sh{A},\sh{B})} denotes the \em{sheaf} of germs of homomorphisms from #{\sh{A}} to #{\sh{B}} (where #{\sh{A},\sh{B}\in\mathcal{C}^\sh{O}}).
   We define, for fixed #{\sh{A}\in\mathcal{C}^\sh{O}}, functors #{h_\sh{A}} and #{\underline{h}_\sh{A}}, with values in the category #{\mathcal{C}} of abelian groups and the category #{\mathcal{C}^Z} of abelian sheaves on #{X} (respectively), by the formulas:
+
   \subtree[fga1-equation-1.1]{
     \taxon{equation}
     \number{1.1}
@@ -28,8 +29,10 @@
     \tag{1.1}
     }
   }
+
   The functors #{h_\sh{A}} and #{\underline{h}_\sh{A}} are left exact and covariant, and so we consider their right-derived functors, denoted by #{\Ext_\sh{O}^p(X;\sh{A},\sh{B})} and #{\shExt_\sh{O}^p(\sh{A},\sh{B})} (respectively).
   We then have, by definition,
+
   \subtree[fga1-equation-1.2]{
     \taxon{equation}
     \number{1.2}
@@ -45,9 +48,11 @@
     \tag{1.2}
     }
   }
+
   where #{\RR^p} denotes the passage to right-derived functors, and where #{C(\sh{B})} denotes an arbitrary injective resolution of #{\sh{B}} in #{\mathcal{C}^\sh{O}}.
   We denote by #{\Gamma\colon\mathcal{C}^Z\to\mathcal{C}} the "sections" functor;
   recall that its right-derived functors are denoted by #{B\mapsto\HH^p(X,\sh{B})}:
+
   \subtree[fga1-equation-1.3]{
     \taxon{equation}
     \number{1.3}
@@ -58,6 +63,8 @@
     \tag{1.3}
     }
   }
+
+  \oldpage{149-02}
   We evidently have #{h_\sh{A}=\Gamma\underline{h}_\sh{A}};
   we can also show that #{\underline{h}_\sh{A}} sends injective objects to #{\Gamma}-acyclic objects.
   From this, it is a well-known result that:
@@ -69,6 +76,7 @@
 
   \p{
     For every #{\sh{O}}-module #{\sh{A}}, there exists a cohomological spectral functor on #{\mathcal{C}^\sh{O}} that abuts to the graded functor #{(\Ext_\sh{O}^\bullet(X;\sh{A},\sh{B}))}, and whose initial page is
+
     \subtree[fga1-equation-1.4]{
       \taxon{equation}
       \number{1.4}
@@ -91,6 +99,7 @@
 
   \p{
     If #{\sh{A}} is locally isomorphic to #{\sh{O}^n}, then we have canonical isomorphisms
+
     \subtree[fga1-equation-1.5]{
       \taxon{equation}
       \number{1.5}
@@ -100,8 +109,10 @@
       \tag{1.5}
       }
     }
+
     (given by the boundary homomorphisms of the spectral sequence).
     In particular, we have a canonical isomorphism
+
     \subtree[fga1-equation-1.6]{
       \taxon{equation}
       \number{1.6}
@@ -123,6 +134,7 @@
   }
   as follows from the fact that the restriction to #{U} of an injective #{\sh{O}}-module is an injective #{(\sh{O}|U)}-module.
   Furthermore, for fixed #{x\in X}, we have functorial homomorphisms
+
   \subtree[fga1-equation-1.7]{
     \taxon{equation}
     \number{1.7}
@@ -132,7 +144,9 @@
     \tag{1.7}
     }
   }
+
   that uniquely extend to homomorphisms of cohomological functors (in #{\sh{B}}):
+  
   \subtree[fga1-equation-1.8]{
     \taxon{equation}
     \number{1.8}
@@ -159,6 +173,7 @@
   \number{3}
 
   \p{
+    \oldpage{149-03}
     Let #{\sh{L}_\bullet=(\sh{L}_i)} be a left resolution of the #{\sh{O}}-module #{\sh{A}} by #{\sh{O}}-modules that are all locally isomorphic to some #{\sh{O}^n}.
     Then #{\shExt_\sh{O}(\sh{A},\sh{B})} can be identified with #{\HH^\bullet(\shHom_\sh{O}(\sh{L}_\bullet,\sh{B}))}, and #{\Ext_\sh{O}(X;\sh{A},\sh{B})} can be identified with the hypercohomology of #{X} with respect to the complex #{\shHom_\sh{O}(\sh{L}_\bullet,\sh{B})}.
   }
