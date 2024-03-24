@@ -49,3 +49,151 @@
   We then see that this spectral sequence itself does not depend on the chosen resolutions, and its abutment is the left-hand side of \ref{fga1-equation-8.1}.
   We can easily define the coboundary maps relative to miscellaneous arguments #{\sh{A}_i,\sh{B}_j} by noting that every exact sequence #{0\to\sh{F}'\to\sh{F}\to\sh{F}''\to0} can be resolved by an exact sequence of finite locally-free complexes.
 }
+
+\p{
+  We define, on the system of functors #{\underline{T}_r^{s\bullet}} (resp. #{T_r^{s\bullet}}), operations that are analogous to those of tensor calculus, and whose definitions are immediate from the defining formulas in \ref{fga1-equation-8.1}.
+  We thus have a \em{composition} (generalising that described in \ref{fga1-2}):
+
+  \subtree[fga1-equation-8.3]{
+    \taxon{equation}
+    \number{8.3}
+    ##{
+      \begin{gathered}
+        T_r^{s\bullet}(\sh{A}_1,\ldots,\sh{A}_r;\sh{B}_1,\ldots,\sh{B}_s)
+        \times T_{r'}^{s'\bullet}(\sh{A}'_1,\ldots,\sh{A}'_{r'};\sh{B}'_1,\ldots,\sh{B}'_{s'})
+      \\\to T_{r+r'}^{(s+s')\bullet}(\sh{A}_1,\ldots,\sh{A}_r,\sh{A}'_1,\ldots,\sh{A}'_{r'};\sh{B}_1,\ldots,\sh{B}_s,\sh{B}'_1,\ldots,\sh{B}'_{s'})
+      \end{gathered}
+    \startverb\tag{8.3}\stopverb
+    }
+  }
+
+  that satisfies the evident properties of associativity, compatibility with the functorial homomorphisms and the coboundary homomorphisms, and spectral sequences.
+  Similarly, we have symmetry operations, whose explicit descriptions we leave to the reader.
+  \oldpage{149-23}
+  We further have a \em{contraction} operation every time one of the arguments #{\sh{A}_i} is equal to one of the arguments #{\sh{B}_j}:
+
+  \subtree[fga1-equation-8.4]{
+    \taxon{equation}
+    \number{8.4}
+    ##{
+      \begin{gathered}
+        T_r^{s\bullet}(\sh{A}_1,\ldots,\sh{A}_{i-1},\sh{C},\sh{A}_{i+1},\ldots,\sh{A}_r;\sh{B}_1,\ldots,\sh{B}_{j-1},\sh{C},\sh{B}_{j+1},\ldots,\sh{B}_s)
+      \\\to -T_{r-1}^{(s-1)\bullet}(\sh{A}_1,\ldots,\widehat{\sh{A}_i},\ldots,\sh{A}_r;\sh{B}_1,\ldots,\widehat{\sh{B}_j},\ldots,\sh{B}_s).
+      \end{gathered}
+    \startverb\tag{8.4}\stopverb
+    }
+  }
+
+  Furthermore, if some argument #{\sh{A}_i} is a locally-free sheaf, then we can suppress it by replacing one of the #{\sh{A}_j} (for #{j\neq i}) by #{\sh{A}_j\otimes\sh{A}_i}, or one of the #{\sh{B}_k} by #{\sh{B}_k\otimes\sh{A}'_i} (where #{\sh{A}'_i=\shHom_{\sh{O}_X}(\sh{A}_i,\sh{O}_X)});
+  we have an analogous rule for the case where one of the arguments #{\sh{B}_j} is locally free.
+  In particular, we can always suppress any argument that is equal to #{\sh{O}_X}.
+  If all the arguments are locally free, except for at most one of the arguments #{\sh{B}_i}, then the rule that we have just stated gives a functorial isomorphism
+
+  \subtree[fga1-equation-8.5]{
+    \taxon{equation}
+    \number{8.5}
+    ##{
+      T_r^{s\bullet}(\sh{A}_1,\ldots,\sh{A}_r;\sh{B}_1,\ldots,\sh{B}_s)
+      = \HH^\bullet(X,\sh{A}'_1\otimes\ldots\otimes\sh{A}'_{r}\otimes\sh{B}_1\otimes\sh{B}_s)
+    \startverb\tag{8.5}\stopverb
+    }
+  }
+
+  (since we can restrict to the case where #{r=0} and #{s=1}, and there it is immediate;
+  we can also directly use the spectral sequence whose initial term is \ref{fga1-equation-8.2}).
+  The corresponding operations of all the above can also be defined for the #{\underline{T}_r^s}.
+  The relations between the various operations thus introduced are the same as for the analogous relations in tensor calculus.
+}
+
+\p{
+  Now let #{n} be the dimension of #{X}.
+  By successively applying a tensor composition \ref{fga1-equation-8.3} and contractions \ref{fga1-equation-8.4} on repeated arguments, we obtain a pairing
+
+  \subtree[fga1-equation-8.6]{
+    \taxon{equation}
+    \number{8.6}
+    ##{
+      \begin{gathered}
+        (T_r^s)^p(\sh{A}_1,\ldots;\sh{B}_1,\ldots)
+        \times (T_r^s)^{n-p}(\sh{B}_1,\ldots;\sh{A}_1,\ldots,\sh{A}_r\otimes\Omega_X^n)
+      \\\to\HH^n(X,\Omega_X^n).
+      \end{gathered}
+    \startverb\tag{8.6}\stopverb
+    }
+  }
+}
+
+\subtree[fga1-theorem-6]{
+  \taxon{theorem}
+  \number{6}
+
+  \p{
+    If #{X} is a non-singular projective variety, then the pairings in \ref{fga1-equation-8.6} are dualities.
+  }
+
+  \proof{
+    \p{
+      This follows in a purely formal way from the [corollary of Theorem 3](fga1-theorem-3-corollary).
+      In fact, it easily follows from this corollary that, if #{\sh{K}} is a complex of \em{locally-free} coherent algebraic sheaves, then the hypercohomology of #{X} with respect to #{\sh{K}} is in duality with the hypercohomology of #{X} with respect to #{\sh{K}'\otimes\Omega_X^n} via the natural pairings
+
+      \subtree[fga1-equation-8.7]{
+        \taxon{equation}
+        \number{8.7}
+        ##{
+          \underline{\RR}^p\Gamma(\sh{K})
+          \times \underline{\RR}^{n-p}\Gamma(\sh{K}'\otimes\Omega_X^n)
+          \to \underline{\RR}^n\Gamma(\Omega_X^n)
+          = \HH^n(X,\Omega_X^n).
+        \startverb\tag{8.7}\stopverb
+        }
+      }
+      
+      We can see this by using the spectral sequence with initial page #{\HH^p(\HH^q(X,\sh{K}))} and the analogous spectral sequence for #{\sh{K}'\otimes\Omega_X^n}.
+      From the above result, \ref{fga1-theorem-6} can be deduced from the definition \ref{fga1-equation-8.1}.
+    }
+  }
+}
+
+\subtree{
+  \taxon{remarks}
+
+  \ol{
+
+    \li{
+      \oldpage{149-24}
+      For the definitions preceding \ref{fga1-theorem-6}, it was not necessary for #{X} to be non-singular, since it was not necessary to work with only \em{finite} resolutions.
+      But, if #{X} is singular, then we can no long be sure, a priori, that the #{(\underline{T}_r^s)^p(\sh{A}_1,\ldots;\sh{B}_1,\ldots)} are \em{coherent} sheaves, since, in the complex of sheaves
+      ##{
+        \shHom_{\sh{O}_X}(\underline{L}(\sh{A}_1)\otimes\ldots,\underline{L}(\sh{B}_1)\otimes\ldots)
+      }
+      there will be an infinite number of components of any given total degree.
+    }
+
+    \li{
+      We can easily verify that, in the formulas in \ref{fga1-equation-8.1}, we can replace \em{one} of the #{\underline{L}(\sh{B}_i)} with #{\sh{B}_i}.
+      Taking \ref{fga1-proposition-3} into account, this shows that we have
+      
+      \subtree[fga1-equation-8.8]{
+        \taxon{equation}
+        \number{8.8}
+        ##{
+          \begin{aligned}
+            \underline{T}_1^{1\bullet}(\sh{A};\sh{B})
+            &= \shExt_{\sh{O}_X}^\bullet(\sh{A},\sh{B})
+          \\T_1^{1\bullet}(\sh{A};\sh{B})
+            &= \Ext_{\sh{O}_X}^\bullet(X;\sh{A},\sh{B}).
+          \end{aligned}
+        \startverb\tag{8.8}\stopverb
+        }
+      }
+
+      In particular, taking #{r=s=1} and #{\sh{A}_1=\sh{O}_X} in \ref{fga1-equation-8.6}, we recover \ref{fga1-theorem-3}.
+      \ref{fga1-equation-8.8} also implies that #{T_0^{1\bullet}(\sh{B})=\HH^\bullet(X,\sh{B})}, and that #{T_1^{0\bullet}(\sh{A})=\Ext_{\sh{O}_X}^\bullet(X;\sh{A},\sh{O}_X)}.
+    }
+
+    \li{
+      We see, in \ref{fga1-equation-8.1}, that the functors #{\underline{T}_r^{s\bullet}} and #{T_r^{s\bullet}} have, in general, components in positive \em{and} negative degrees.
+      Using the above remark, we see that, if the dimension of #{X} is #{n}, then the non-zero components of #{\underline{T}_r^{s\bullet}} are concentrated between degrees #{-(s-1)n} and #{rn} if #{s>0}, and between degrees #{0} and #{rn} if #{s=0}; the non-zero components of #{T_r^{s\bullet}} are concentrated between degrees #{-(s-1)n} and #{(r+1)n} if #{s>0}, and between degrees #{0} and #{(r+1)n} if #{s=0} (and, unless I am mistaken, if #{r>0}, between degrees #{-(s-1)n} and #{rn}, resp. #{0} and #{rn}).
+    }
+  }
+}
