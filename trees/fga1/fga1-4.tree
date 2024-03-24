@@ -4,6 +4,7 @@
 \parent{fga1}
 
 \import{fga1-macros}
+\put\transclude/numbered{false}
 
 \p{
   In all that follows, #{X} denotes an algebraic set of dimension #{n}, defined over a field #{k} which we assume, for simplicity, to be algebraically closed.
@@ -258,4 +259,63 @@
 
 \p{
   The last hypothesis in \ref{fga1-theorem-1} is used only to be able to conclude that every coherent algebraic sheaf on #{X} is a quotient of a locally-free coherent algebraic sheaf (Serre) and thus admits a left resolution by locally-free sheaves.
+}
+
+\subtree[fga1-theorem-1-corollary-1]{
+  \taxon{corollary}
+  \number{1}
+
+  \p{
+    \oldpage{149-13}
+    Let #{X} and #{X'} be non-singular varieties that are locally-closed in a projective space, and suppose that #{X'} is complete.
+    Let #{U} be a non-singular cycle on #{X\times X'}, and let #{a} and #{b} be points of #{X'} such that #{U} intersects transversally with the cycles #{X\times(a)} and #{X\times(b)}.
+    Let #{Z} and #{Z'} be non-singular cycles on #{X} such that #{Z\times(a)=(X\times(a))\cdot U} and #{Z\times(b)=(X\times(b))\cdot U}.
+    Then
+    ##{
+      P_X(Z) = P_X(Z').
+    }
+  }
+
+  \proof{
+    \p{
+      Let #{f_a\colon X\to X\times X'} be defined by #{f_a(x)=(x,a)}.
+      Then, by \ref{fga1-equation-4.8}, we have #{P(Z)=f_a^*(P(U))};
+      similarly, #{P(Z')=f_b^*(P(U))}.
+      But then, using the Künneth formula
+      ##{
+        \HH^\bullet(X\times X',\Omega_{X\times X'}^\bullet)
+        = \HH^\bullet(X,\Omega_X^\bullet)\otimes\HH^\bullet(X',\Omega_{X'}^\bullet)
+      }
+      and the fact that #{\HH^0(X',\Omega_{X'})} is simply the scalars, we easily see that #{f_a^*=f_b^*}, whence the result.
+    }
+  }
+}
+
+\p{
+  For all #{x\in X}, #{(x)} is a non-singular subvariety of #{X} of codimension #{n}, and thus defines an element #{\varepsilon_x} of #{\HH^n(X,\Omega_X^n)}.
+  If #{X} is a non-singular projective variety, then it follows from \ref{fga1-theorem-1-corollary-1} that #{\varepsilon_x} does not depend on the chosen point #{x}, and we thus denote it by #{\varepsilon_X} and call it the \em{fundamental class} of #{\HH^n(X,\Omega_X^n)}.
+}
+
+\subtree{
+  \taxon{remark}
+
+  \p{
+    To have a satisfying theory, we must define #{P_X(Z)} for arbitrary cycles #{Z}, and prove \ref{fga1-theorem-1} for proper intersections of cycles.
+    (At the time of writing this talk, this has still not been done in full generality).
+    Assuming that we have done this, \ref{fga1-theorem-1-corollary-1} becomes the following:
+    \em{if #{Z} and #{Z'} are two algebraically-equivalent cycles, then #{P_X(Z)=P_X(Z')}}
+    (a claim which does not seem to follow from the above, even if #{Z} and #{Z'} are non-singular).
+  }
+}
+
+\subtree{
+  \taxon{remark}
+
+  \p{
+    \comp
+    As I pointed out in my conference at the international Congress of Mathematicians in 1958 \footnote{Grothendieck, A. "The cohomology theory of abstract algebraic varieties", in \em{Proceedings of the international Congress of Mathematicians [1958, Edinburgh]}, Cambridge University Press (1960), 103–118.}, the questions raised here are now completely resolved.
+
+    The reader will find more information on the duality of coherent sheaves in \em{loc. cit.}, p.112–115, as well as in [@GD1960, III.2], and in [@Gro1960b].
+    A more systematic treatment can be found in a later chapter of [@GD1960] (chapter IX in the provisional plan).
+  }
 }
