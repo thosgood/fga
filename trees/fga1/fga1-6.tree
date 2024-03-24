@@ -6,3 +6,177 @@
 \import{fga1-macros}
 \import{bibliography}
 \put\transclude/numbered{false}
+
+\p{
+  Let #{X} be a closed subset of dimension #{n} of the projective space #{\bb{P}} of dimension #{r}.
+  \ref{fga1-equation-5.6} can then be written as
+
+  \subtree[fga1-equation-6.1]{
+    \taxon{equation}
+    \number{6.1}
+    ##{
+      \HH^n(X,\sh{F})'
+      \simeq \Hom_{\sh{O}_X}(X;\sh{F},\omega_X^n)
+      = \Ext_{\sh{O}_X}^0(X;\sh{F},\omega_X^n)
+    \startverb\tag{6.1}\stopverb
+    }
+  }
+
+  where we set
+  \note{This equation is labelled (6.2) in the original, but this seems to be a typo, since a later equation shares the same number, and any references to (6.2) seem to indeed point to the later equation instead of this one.}
+  ##{
+    \omega_X^n
+    = E^0(\sh{O}_X)
+    = \shExt_{\sh{O}_\bb{P}}^{r-n}(\sh{O}_X,\Omega_\bb{P}^r).
+  }
+  As mentioned in \ref{fga1-proposition-5}, the sheaf thus defined does not depend on the chosen immersion of #{X} into the non-singular variety #{\bb{P}}.
+  Taking #{\sh{F}=\omega_X^n} in \ref{fga1-equation-6.1}, we find that
+
+  \subtree[fga1-equation-6.2]{
+    \taxon{equation}
+    \number{6.2}
+    ##{
+      \HH^n(X,\omega_X^n)'
+      \simeq \Hom_{\sh{O}_X}(X;\omega_X^n,\omega_X^n)
+    \startverb\tag{6.2}\stopverb
+    }
+  }
+
+  whence the existence of a distinguished element in #{\HH^n(X,\omega_X^n)}, corresponding to the identity morphism from #{\omega_X^n} to itself:
+
+  \subtree[fga1-equation-6.3]{
+    \taxon{equation}
+    \number{6.3}
+    ##{
+      \eta\colon \HH^n(X,\Omega_X^n) \to k.
+    \startverb\tag{6.3}\stopverb
+    }
+  }
+
+  \oldpage{149-18}
+  Then consider the pairings defined by the composition of the #{\Ext}:
+
+  \subtree[fga1-equation-6.4]{
+    \taxon{equation}
+    \number{6.4}
+    ##{
+      \HH^p(X,\sh{F}) \times \Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\omega_X^n)
+      \to \HH^n(X,\omega_X^n)
+    \startverb\tag{6.4}\stopverb
+    }
+  }
+
+  and compose them with the homomorphism #{\eta} in \ref{fga1-equation-6.3}; we thus obtain functorial homomorphisms
+
+  \subtree[fga1-equation-6.5]{
+    \taxon{equation}
+    \number{6.5}
+    ##{
+      \Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\omega_X^n)
+      \to \HH^p(X,\sh{F})'
+    \startverb\tag{6.5}\stopverb
+    }
+  }
+
+  which are compatible with the boundary maps (generalising \ref{fga1-equation-5.2}).
+  We can prove that, for #{p=n}, we thus obtain the isomorphism in \ref{fga1-equation-6.1}.
+  With this, we have:
+}
+
+\subtree[fga1-theorem-3bis]{
+  \taxon{theorem}
+  \number{3 bis}
+
+  \p{
+    For any given integer #{k\geq0}, the four following conditions on #{X} are equivalent:
+  }
+
+  \p{\todo{the following list should be i, ii, etc}}
+
+  \ol{
+    \li{
+      The functorial homomorphism in \ref{fga1-equation-6.5} is an isomorphism for #{n-k\leq p\leq n}.
+    }
+
+    \li{
+      #{\HH^p(X,\sh{O}_X(-m)) = 0} for #{n-k\leq p<n} and large enough #{m}.
+    }
+
+    \li{
+      The functor #{\HH^p(X,\sh{F})} on the category of coherent algebraic sheaves on #{X} is coeffaceable for #{n-k\leq p<n}.
+    }
+
+    \li{
+      #{E^i(\sh{O}_X) = \shExt_{\sh{O}_\bb{P}}^{r-n+i}(\sh{O}_X,\omega_\bb{P}^r) = 0} for #{0<i\leq k}.
+    }
+  }
+
+  \proof{
+    \p{
+      (i)#{\implies}(ii) by \ref{fga1-lemma-4};
+      (ii)#{\implies}(iii) by \ref{fga1-lemma-3};
+      (iii)#{\implies}(i) by a well-known standard argument, taking into account the fact that the two sides of \ref{fga1-equation-6.5} are then coeffaceable functors for #{n-k\leq p<n} (the first being so by \ref{fga1-lemma-4});
+      finally, (ii)#{\iff}(iv) follows from [the corollary to Proposition 6](fga1-proposition-6-corollary).
+    }
+  }
+}
+
+\subtree[fga1-proposition-6]{
+  \taxon{proposition}
+  \number{6}
+  \p{
+    Let #{\sh{F}} be a coherent algebraic sheaf on #{X}, and let #{i} be an integer.
+    Then, for large enough #{m}, we have an isomorphism
+
+    \subtree[fga1-equation-6.6]{
+      \taxon{equation}
+      \number{6.6}
+      ##{
+        \HH^i(X,\sh{F}(-m))' \simeq \HH^0(X,E^{n-i}(\sh{F})(m))
+      \startverb\tag{6.6}\stopverb
+      }
+    }
+
+    where we set
+
+    \subtree[fga1-equation-6.7]{
+      \taxon{equation}
+      \number{6.7}
+      ##{
+        E^j(\sh{F}) = \shExt_{\sh{O}_\bb{P}}^{r-n+j}(\sh{F},\Omega_\bb{P}^r)
+      \startverb\tag{6.7}\stopverb
+      }
+    }
+
+    (compare with \ref{fga1-proposition-5} in \ref{fga1-3}).
+  }
+
+  \proof{
+    \p{
+      Indeed, by the duality theorem for #{\bb{P}}, the left-hand side of \ref{fga1-equation-6.6} is isomorphic to #{\Ext_{\sh{O}_\bb{P}}^{r-i}(\bb{P};\sh{F}(-m),\Omega_\bb{P}^r)}, and so \ref{fga1-equation-6.6} follows from \ref{fga1-lemma-5}.
+    }
+  }
+}
+
+\subtree[fga1-proposition-6-corollary]{
+  \taxon{corollary}
+
+  \p{
+    \oldpage{149-19}
+    For #{\HH^i(X,\sh{F}(-m))} to be zero for large enough #{m}, it is necessary and sufficient that #{E^{n-i}(\sh{F})} be zero.
+  }
+}
+
+\p{
+  Recall that the #{E^j(\sh{F})} do not depend on the projective immersion in question.
+  The condition of the corollary is purely local, and so, if it is satisfied for #{\sh{F}}, then it is also satisfied for every sheaf that is locally isomorphic to some #{\sh{F}^n}.
+  In particular, if this condition is satisfied for #{\sh{O}_X}, then it is satisfied for every locally-free coherent algebraic sheaf.
+  This is the case, for example, for all #{i<n} if #{X} is non-singular;
+  and for #{i=0} if no component of #{X} consists of a single point;
+  and for #{i=0,1} if #{S} is normal and all its components are of dimension #{>1} (see [@Ser1955]).
+  For it to be satisfied for #{i<k}, it is necessary and sufficient, by definition, that the local rings #{\sh{O}_x} (for #{x\in X}) be of "homological codimension #{\geq k}" (see [@Ser1956a] for details on this notion).
+  If #{k=n}, then this implies, by [Theorem 3 bis](#fga1-theorem-3bis), that the duality theorem is true for #{X}, i.e. that \ref{fga1-equation-6.5} is an isomorphism for all #{p} and for all #{\sh{F}}.
+  We can give many equivalent conditions on the local rings #{\sh{O}_x} for this to be the case (Nagata);
+  for example, those that satisfy the Cohen-Macaulay equidimensionality theorem.
+  It is also the case, for example, if #{X} is locally a "complete intersection" in a non-singular ambient variety.
+}
