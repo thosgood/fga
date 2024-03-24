@@ -269,3 +269,58 @@
   Since the homomorphisms in \ref{fga1-equation-5.2bis} are functorial and compatible with the coboundary maps, and since, for #{p<n}, both sides of \ref{fga1-equation-5.2bis} are coeffaceable functors in #{\sh{F}} (the [corollary to Lemmas 3 and 4](fga1-lemma-3-and-lemma-4-corollary)), it follows, by a standard argument, that \ref{fga1-equation-5.2bis} is an isomorphism for all #{p}.
   This proves the duality theorem for the projective space.
 }
+
+\p{
+  Now suppose that #{X} is arbitrary, but non-singular.
+  By the duality theorem for #{\bb{P}}, we have an isomorphism
+  ##{
+    \HH^n(X,\sh{F})
+    = \HH^n(\bb{P},\sh{F})'
+    = \Ext_{\sh{O}_\bb{P}}^{r-n}(\bb{P};\sh{F},\Omega_\bb{P}^r).
+  }
+  By \ref{fga1-lemma-1}, the far-right-hand side can be identified with
+  ##{
+    \Hom_{\sh{O}_\bb{P}}(\bb{P};\sh{F},\omega_X^n)
+    = \Hom_{\sh{O}_X}(X;\sh{F},\Omega_X^n)
+    = \Ext_{\sh{O}_X}^0(X;\sh{F},\Omega_X^n)
+  }
+  whence we have an isomorphism
+
+  \subtree[fga1-equation-5.6]{
+    \taxon{equation}
+    \number{5.6}
+    ##{
+      \HH^n(X,\sh{F})'
+      = \Hom_{\sh{O}_X}(X;\sh{F},\Omega_X^n)
+      = \Ext_{\sh{O}_X}^0(X;\sh{F},\Omega_X^n).
+    \startverb\tag{5.6}\stopverb
+    }
+  }
+
+  Taking #{\sh{F}=\Omega_X^n}, we obtain an isomorphism
+
+  \subtree[fga1-equation-5.7]{
+    \taxon{equation}
+    \number{5.7}
+    ##{
+      \eta\colon \HH^n(X,\Omega_X^n) \xrightarrow{\sim} k.
+    \startverb\tag{5.7}\stopverb
+    }
+  }
+
+  \oldpage{149-17}
+  We can prove that the isomorphism in \ref{fga1-equation-5.6} is exactly \ref{fga1-equation-5.2bis} with #{p=n} and #{\sh{L}=k}, by \ref{fga1-equation-5.7}.
+  Subsequently, \ref{fga1-equation-5.2bis} is an isomorphism for #{p=n}.
+  To prove that it is an isomorphism for all #{p}, it again suffices to prove that, for #{p<n}, the two sides of \ref{fga1-equation-5.2bis} are coeffaceable functors in #{\sh{F}}, and, a fortiori (taking \ref{fga1-lemma-3} into account), that the two sides are zero when we take #{\sh{F}=\sh{O}_X(-m)} with large enough #{m}.
+  But, for the left-hand side, this is true by \ref{fga1-lemma-4}, and for the right-hand side we can write, using the duality theorem for #{\bb{P}},
+  ##{
+    \HH^p(X,\sh{O}_X(-m))'
+    = \Ext_{\sh{O}_\bb{P}}^{r-p}(\bb{P};\sh{O}_X(-m),\Omega_\bb{P}^r).
+  }
+  The right-hand side is zero for #{p<n} and large enough #{m}, as follows from \ref{fga1-lemma-5} (where in fact #{X=\bb{P}}) and from the fact that #{\sh{O}_X} is of cohomological dimension #{\leq r-n} when thought of as a coherent algebraic sheaf on #{\bb{P}} (since #{X} is non-singular), whence
+  ##{
+    \shExt_{\sh{O}_\bb{P}}^{r-p}(\sh{O}_X,\Omega_\bb{P}^r)
+    = 0
+    \quad\text{for }p<n.
+  }
+}
