@@ -1,8 +1,167 @@
 \title{Poincaré duality}
-\taxon{Section}
 \number{7}
 \parent{fga1}
 
 \import{fga1-macros}
 \import{bibliography}
 \put\transclude/numbered{false}
+
+\p{
+  Let #{X} be a non-singular projective variety of dimension #{n}.
+  Then #{\HH^\bullet(X)=\HH^\bullet(X,\Omega_X^\bullet)} is a finite-dimensional bigraded anticommutative algebra, that we grade by the total degree, so that #{\HH^{p,q}(X)=\HH^p(X,\Omega_X^q)} is of degree #{p+q};
+  the degrees of #{\HH^\bullet(X)} are concentrated between #{0} and #{2n}.
+  By \ref{fga1-theorem-2} and [the corollary to Theorem 3](fga1-theorem-3-corollary), #{\HH^\bullet(X)} is a "Poincaré algebra" of dimension #{2n}, i.e. #{\HH^{2n}(X)} is endowed with an isomorphism to the base field #{k}, and the product #{\HH^m(X)\times\HH^{2n-m}(X)\to\HH^{2n}(X)=k} is a duality between #{\HH^m(X)} and #{\HH^{2n-m}(X)}.
+  Furthermore, if #{Y} is another non-singular projective variety, then the Künneth formula for coherent algebraic sheaves gives
+
+  \subtree[fga1-equation-7.1]{
+    \taxon{equation}
+    \number{7.1}
+    ##{
+      \HH^\bullet(X\times Y) = \HH^\bullet(X)\otimes\HH^\bullet(Y)
+    \startverb\tag{7.1}\stopverb
+    }
+  }
+
+  which is an isomorphism that is compatible with the Poincaré algebra structures.
+  Furthermore, #{\HH^\bullet(X)} is, as a commutative algebra, a covariant functor in #{X}, since a morphism #{f\colon Y\to X} defines, in an evident way, a homomorphism of graded algebras
+
+  \subtree[fga1-equation-7.2]{
+    \taxon{equation}
+    \number{7.2}
+    ##{
+      f^*\colon \HH^\bullet(X)\to\HH^\bullet(Y).
+    \startverb\tag{7.2}\stopverb
+    }
+  }
+
+  \oldpage{149-20}
+  Since we are working with Poincaré algebras, we obtain, by transposition, a homomorphism of vector spaces
+
+  \subtree[fga1-equation-7.3]{
+    \taxon{equation}
+    \number{7.3}
+    ##{
+      f_*\colon \HH^\bullet(Y)\to\HH^\bullet(X).
+    \startverb\tag{7.3}\stopverb
+    }
+  }
+
+  We have seen in \ref{fga1-4} that the effect of #{f^*} on cohomology classes that correspond to non-singular cycles can be interpreted geometrically by taking the cohomology classes that correspond to their inverse images.
+  It is important, in our current study, to show that \ref{fga1-equation-7.3} corresponds similarly to the "direct image" operation on cycles.
+  This follows (under suitable non-singularity conditions, at least) from the following particular case:
+}
+
+\subtree[fga1-theorem-4]{
+  \taxon{theorem}
+  \number{4}
+
+  \p{
+    If #{f} is the identity map from a non-singular subvariety #{Y^m} of #{X^n} to #{X^n}, then, denoting by #{1_Y} the unit element of #{\HH(Y)}, we have
+
+    \subtree[fga1-equation-7.4]{
+      \taxon{equation}
+      \number{7.4}
+      ##{
+        f_*(1_Y) = P_X(Y)
+      \startverb\tag{7.4}\stopverb
+      }
+    }
+    
+    where the right-hand side is the cohomology class in #{X} associated to #{Y}.
+  }
+
+  \proof{
+    \p{
+      We consider, by \ref{fga1-theorem-3}, the transpose of the homomorphism
+      ##{
+        \HH^m(X,\Omega_X^m)
+        \to \HH^m(Y,\Omega_Y^m)
+        = \HH^m(X,\Omega_Y^m)
+      }
+      as the homomorphism
+      
+      \subtree[fga1-equation-7.5]{
+        \taxon{equation}
+        \number{7.5}
+        ##{
+          \begin{CD}
+            @.
+            \Ext_{\sh{O}_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
+            @>\sim>>
+            \Hom_{\sh{O}_X}(X;\Omega_Y^m,\Omega_Y^m)
+          \\@. @VVV @.
+          \\\HH^{n-m}(X,\Omega_X^{n-m})
+            @>\sim>>
+            \Ext_{\sh{O}_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
+          \end{CD}
+        \startverb\tag{7.5}\stopverb
+        }
+      }
+
+      We can verify that the element #{1_Y} of the dual of #{\HH^m(Y,\Omega_Y^m)} is identified with the element of the right-hand side corresponding to the identity endomorphism of #{\Omega_Y^m}, and also that the image of this element in #{\HH^{n-m}(X,\Omega_X^{n-m})} is indeed #{P_X(Y)}.
+    }
+  }
+}
+
+\p{
+  \ref{fga1-equation-7.4} in \ref{fga1-theorem-4} is equivalent to
+
+  \subtree[fga1-equation-7.4bis]{
+    \taxon{equation}
+    \number{7.4 bis}
+    ##{
+      \langle \xi^{m,m}, P_X(Y) \rangle \varepsilon_Y
+      = f_*(\xi^{m,m})
+      \quad\text{where }\xi^{m,m}\in\HH^m(X,\Omega_X^m)
+    \startverb\tag{7.4 bis}\stopverb
+    }
+  }
+  
+  where #{\varepsilon_Y} is the fundamental element of #{\HH^m(Y,\Omega_Y^m)}, and this, in the case of non-singular projective varieties, gives a new definition of the cohomology class associated to #{Y}.
+}
+
+\p{
+  \oldpage{149-21}
+  These relations (which could have been given in \ref{fga1-4}) can be stated, and are indeed true, for arbitrary non-singular varieties, with the second, for example, following from the commutativity of the following diagram of canonical endomorphisms:
+
+  \subtree[fga1-equation-7.6]{
+    \taxon{equation}
+    \number{7.6}
+    ##{
+      \footnotesize
+      \begin{CD}
+        \Ext_{\sh{O}_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
+        @<<<
+        \Ext_{\sh{O}_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
+        @>\sim>>
+        \Hom_{\sh{O}_X}(X;\Omega_Y^m,\Omega_Y^m)
+      \\@VVV @. @VVV
+      \\\Ext_{\sh{O}_X}^{n-m}(X;\sh{O}_X,\Omega_X^{n-m})
+        @<<<
+        \Ext_{\sh{O}_X}^{n-m}(X;\sh{O}_Y,\Omega_X^{n-m})
+        @>\sim>>
+        \Hom_{\sh{O}_X}(X;\Omega_X^m,\Omega_Y^m)
+      \end{CD}
+    \startverb\tag{7.6}\stopverb
+    }
+  }
+
+  We thus obtain an exact equivalent of the formalism of Poincaré duality for compact oriented varieties.
+  In particular, \ref{fga1-theorem-4} allows us to determine the cohomology class associated to the diagonal of #{X\times X}.
+  By a well-known argument, we thus deduce, for example, a \em{Lefschetz formula}:
+}
+
+\subtree[fga1-theorem-5]{
+  \taxon{theorem}
+  \number{5}
+
+  \p{
+    Let #{f} be an endomorphism of a non-singular projective variety #{X} such that the fixed points of #{f} are of multiplicity #{1}.
+    Then the number of these fixed points is congruent, modulo the characteristic of #{k}, to the alternating sum of the traces of the endomorphisms of the #{\HH^i(X)} defined by #{f}.
+  }
+}
+
+\p{
+  The restriction on #{f} that we have to make is related to the difficulties mentioned in the remark in \ref{fga1-4}.
+  We note, however, that the Lefschetz formula still holds true if #{f} is "homotopic" to an endomorphism whose fixed points are all of multiplicity #{1}.
+}
