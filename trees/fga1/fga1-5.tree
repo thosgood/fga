@@ -24,3 +24,93 @@
     }
   }
 }
+
+\p{
+  With the above theorem, we can thus identify #{\HH^n(X,\Omega_X^n)} with the field #{k}.
+  \oldpage{149-14}
+  We now consider the pairings described in \ref{fga1-2}, which give, in particular, a pairing
+  ##{
+    \Ext_{\sh{O}_X}^p(X;\sh{O}_X,\sh{F})\times\Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\Omega_X^n)
+    \to \Ext_{\sh{O}_X}^n(X;\sh{O}_X,\Omega_X^n)
+  }
+  i.e.
+
+  \subtree[fga1-equation-5.1]{
+    \taxon{equation}
+    \number{5.1}
+    ##{
+      \HH^p(X,\sh{F})\times\Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\Omega_X^n)
+      \to \HH^n(X,\Omega_X^n).
+    \startverb\tag{5.1}\stopverb
+    }
+  }
+
+  Taking \ref{fga1-theorem-2} into account, this pairing defines a homomorphism
+
+  \subtree[fga1-equation-5.2]{
+    \taxon{equation}
+    \number{5.2}
+    ##{
+      \Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\Omega_X^n)
+      \to (\HH^p(X,\sh{F}))'.
+    \startverb\tag{5.2}\stopverb
+    }
+  }
+
+  This homomorphism is functorial in #{\sh{F}}, and commutes with the coboundary maps relative to the exact sequences #{0\to\sh{F}'\to\sh{F}\to\sh{F}''\to0}.
+}
+
+\subtree[fga1-theorem-3]{
+  \taxon{theorem}
+  \number{3}
+
+  \p{
+    The homomorphism in \ref{fga1-equation-5.2} is an isomorphism.
+  }
+}
+
+\p{
+  In particular, we recover the following result of Serre:
+}
+
+\subtree[fga1-theorem-3-corollary]{
+  \taxon{corollary}
+
+  \p{
+    Let #{E} be an algebraic vector bundle on #{X}, and #{\sh{O}_X(E)} the sheaf of germs of regular sections of #{X}.
+    Then we have canonical isomorphisms\note{This equation is labelled (5.3) in the original copy of the notes, but this seems to be a typo, since a later equation shares the same number, and any references to (5.3) seem to indeed point to the later equation instead of this one.}
+    ##{
+      (\HH^p(X,\sh{O}_X(E)))'
+      = \HH^{n-p}(X,\Omega_X^n\otimes\sh{O}_X(E')).
+    }
+  }
+
+  \proof{
+    \p{
+      It suffices to apply \ref{fga1-theorem-3} and [Corollary 1 of Proposition 1](fga1-proposition-1-corollary-1).
+    }
+  }
+}
+
+\p{
+  \ref{fga1-theorem-2} and \ref{fga1-theorem-3} will follow from the following claim:
+}
+
+\subtree[fga1-d]{
+  \number{D}
+
+  \p{
+    The homomorphism
+    \subtree[fga1-equation-5.2bis]{
+      \taxon{equation}
+      \number{5.2 bis}
+      ##{
+        \Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\Omega_X^n)
+        \to (\HH^p(X,\sh{F}))'\otimes\sh{L}
+      \startverb\tag{5.2 bis}\stopverb
+      }
+    }
+
+    (where #{\sh{L}=\HH^n(X,\Omega_X^n)}) induced by the pairing in \ref{fga1-equation-5.1} is an isomorphism.
+  }
+}

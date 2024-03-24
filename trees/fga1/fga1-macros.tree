@@ -11,11 +11,11 @@
 
 \def\sh[x]{#{\mathcal{\x}}}
 
-\def\note[x]{\em{[Trans.] \x}}
+\def\footnote[x]{(\x)}
+\def\note[x]{ \footnote{\em{[Trans.] \x}}}
 \def\comp{\em{[Comp.]}}
 \def\todo[x]{\strong{\em{TO-DO: \x}}}
 \def\fref[x]{[\x \strong{(?)}]}
-\def\footnote[x]{(\x)}
 \def\oldpage[x]{}
 
 \def\proof[body]{
