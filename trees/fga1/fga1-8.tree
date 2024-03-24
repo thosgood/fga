@@ -5,3 +5,47 @@
 \import{fga1-macros}
 \import{bibliography}
 \put\transclude/numbered{false}
+
+\p{
+  Let #{X} be a non-singular algebraic variety such that every coherent algebraic sheaf #{\sh{F}} on #{X} is isomorphic to a locally-free coherent algebraic sheaf (which is the case if #{X} is locally closed in some projective space).
+  Then every coherent algebraic sheaf #{\sh{F}} on #{X} admits a finite resolution #{\sh{L}} by locally-free sheaves, and, for any two such resolutions, we can always find a third, along with homomorphisms, from it to the first two, that are compatible with the augmentations.
+  Similarly, if #{\sh{L}} is a finite locally-free resolution of #{\sh{F}}, and if we have a homomorphism #{\sh{F}'\to\sh{F}}, then there exists a finite locally-free resolution #{\sh{L}'} of #{\sh{F}'} along with a homomorphism #{\sh{L}'\to\sh{L}} that is compatible with #{\sh{F}'\to\sh{F}}, that we can even assume to be surjective if #{\sh{F}'\to\sh{F}} is surjective.
+  This allows us to define, given integers #{r,s\geq0}, two cohomological multifunctors, with arguments #{\sh{A}_1,\ldots,\sh{A}_r;\sh{B}_1,\ldots,\sh{B}_s} in the category of coherent algebraic sheaves on #{X};
+  one takes values in the category of coherent algebraic sheaves on #{X}, and the other in the category of modules over #{\HH^0(X,\sh{O}_X)}.
+  \oldpage{149-22}
+  We define them by the formulas
+
+  \subtree[fga1-equation-8.1]{
+    \taxon{equation}
+    \number{8.1}
+    ##{
+      \begin{aligned}
+        &\underline{T}_r^{s\bullet}(\sh{A}_1,\ldots,\sh{A}_r;\sh{B}_1,\ldots,\sh{B}_s)
+      \\&= \HH^\bullet(\shHom_{\sh{O}_X}(\underline{L}(\sh{A}_1)\otimes\ldots\otimes\underline{L}(\sh{A}_r), \underline{L}(\sh{B}_1)\otimes\ldots\otimes\underline{L}(\sh{B}_s))),
+      \\&T_r^{s\bullet}(\sh{A}_1,\ldots,\sh{A}_r;\sh{B}_1,\ldots,\sh{B}_s)
+      \\&= \underline{\RR}^\bullet\Gamma(\shHom_{\sh{O}_X}(\underline{L}(\sh{A}_1)\otimes\ldots\otimes\underline{L}(\sh{A}_r), \underline{L}(\sh{B}_1)\otimes\ldots\otimes\underline{L}(\sh{B}_s)))
+      \end{aligned}
+    \startverb\tag{8.1}\stopverb
+    }
+  }
+
+  where #{\underline{L}(\sh{F})} denotes a finite locally-free resolution of the coherent algebraic sheaf #{\sh{F}}, and #{\underline{\RR}^\bullet\Gamma(\sh{K})} denotes the hypercohomology of the space #{X} with respect to the complex of sheaves #{\sh{K}}.
+  If #{r} (resp. #{s}) is zero, then we replace the tensor product of the #{\underline{L}(\sh{A}_i)} (resp. of the #{\underline{L}(\sh{B}_j)}) by #{\sh{O}_X}.
+  In particular, #{\underline{T}_0^0} and #{T_0^0} are graded functors with no arguments:
+  #{\underline{T}_0^0} is concentrated in degree #{0}, where it is the sheaf #{\sh{O}_X};
+  and #{T_0^0} is equal to #{\HH^\bullet(X,\sh{O}_X)}.
+  The fact that the right-hand sides of \ref{fga1-equation-8.1} do not depend on the chosen resolutions is evident for #{\underline{T}} (since the question is then local), and for #{T} it follows from preceding general remarks, taking into account the spectral sequence for the hypercohomology of the complex of sheaves #{\sh{K}=\shHom_{\sh{O}_X}(\underline{L}(\sh{A}_1)\otimes\ldots,\underline{L}(\sh{B}_1)\otimes\ldots)} that abuts to the hypercohomology of #{X} with respect to #{\sh{K}}, and whose initial page is #{\HH^p(X,\HH^q(\sh{K}))}, i.e.
+
+  \subtree[fga1-equation-8.2]{
+    \taxon{equation}
+    \number{8.2}
+    ##{
+      E_2^{p,q}
+      = \HH^p(X,(\underline{T}_r^s)^{(q)}(\sh{A}_1,\ldots,\sh{A}_r;\sh{B}_1,\ldots,\sh{B}_s)).
+    \startverb\tag{8.2}\stopverb
+    }
+  }
+
+  We then see that this spectral sequence itself does not depend on the chosen resolutions, and its abutment is the left-hand side of \ref{fga1-equation-8.1}.
+  We can easily define the coboundary maps relative to miscellaneous arguments #{\sh{A}_i,\sh{B}_j} by noting that every exact sequence #{0\to\sh{F}'\to\sh{F}\to\sh{F}''\to0} can be resolved by an exact sequence of finite locally-free complexes.
+}
