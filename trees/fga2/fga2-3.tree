@@ -38,7 +38,7 @@
 }
 
 \p{
-  In the statement of \ref{fga2-theorem-1}, we suppose that we already have some coherent subsheaf #{\sh{J}} of #{\sh{O}_Y} that defines #{Y'}, whence, by taking the inverse image, a coherent subsheaf of #{\sh{O}_X} that defines #{X'}, whence, by definition, #{\sh{F}_n}, #{X_n}, #{Y_n}, and #{f_n\colon X_n\to Y_n} as in \ref{fga2-2}.
+  In the statement of \ref{fga2-theorem-1}, we suppose that we already have some coherent subsheaf #{\sh{J}} of #{\OO_Y} that defines #{Y'}, whence, by taking the inverse image, a coherent subsheaf of #{\OO_X} that defines #{X'}, whence, by definition, #{\sh{F}_n}, #{X_n}, #{Y_n}, and #{f_n\colon X_n\to Y_n} as in \ref{fga2-2}.
   The minor changes that need to be made to the notation in the explanation if we started with an arbitrary proper morphism between two formal schemes are evident.
 }
 
@@ -76,4 +76,131 @@
   This corollary is, for #{q=0}, a generalisation of Zariski's "fundamental theorem of holomorphic functions", from which we will deduce a generalisation of Zariski's "connection theorem".
   We also note that, while (ii) in \ref{fga2-theorem-1} is trivial for #{q=0}, this is not at all the case for \ref{fga2-theorem-2} nor for its equivalent formulation (\ref{fga2-theorem-2-corollary-1}).
   In fact, the proof proceeds by decreasing induction on #{q} (being trivial for large #{q}, since then both sides of the equation are zero), and the case #{q=0} thus appears as the last induction step, and so could be called the "most difficult" case.
+}
+
+\subtree[fga2-theorem-2-corollary-2]{
+  \taxon{corollary}
+  \number{2}
+
+  \p{
+    Let #{Y=\Spec(A)}, and let #{Y'} be defined by an ideal #{\sh{J}} of #{A}.
+    Then, for every coherent sheaf #{\sh{F}} on #{X}, the #{H^q(X,\sh{F})} are #{A}-modules of finite type, whose #{\sh{J}}-adic completions are the #{H^q(\overline{X},\overline{\sh{F}})}.
+  }
+}
+
+\p{
+  Finally, applying this corollary to #{H=\shHom_{\OO_X}(\sh{F},\sh{G})}, we obtain:
+}
+
+\subtree[fga2-theorem-2-corollary-3]{
+  \taxon{corollary}
+  \number{3}
+
+  \p{
+    Let #{Y=\Spec(A)}, and let #{Y'} be defined by an ideal #{\sh{J}} of #{A}.
+    Let #{\sh{F}} and #{\sh{G}} be coherent sheaves on #{X}.
+    Then #{\Hom(\sh{F},\sh{G})} is an #{A}-module of finite type, whose #{\sh{J}}-adic completion can be identified with #{\Hom(\overline{\sh{F}},\overline{\sh{G}})}.
+  }
+}
+
+\p{
+  Of course, the natural map #{\Hom(\sh{F},\sh{G})\to\Hom(\overline{\sh{F}},\overline{\sh{G}})} is that which sends a homomorphism #{u\colon\sh{F}\to\sh{G}} to its extension "by continuity" #{\overline{u}\colon\overline{\sh{F}}\to\overline{\sh{G}}} (so that #{\overline{\sh{F}}} becomes a functor in #{\sh{F}}).
+}
+
+\p{
+  Now suppose that #{A} is separated and complete for its #{\sh{J}}-adic topology.
+  Then \ref{fga2-theorem-2-corollary-2} and \ref{fga2-theorem-2-corollary-3} above give:
+  ##{
+    \begin{aligned}
+      H^q(X,\sh{F}) &= H^q(\overline{X},\overline{\sh{F}}),
+    \\\Hom(\sh{F},\sh{G}) &= \Hom(\overline{\sh{F}},\overline{\sh{G}}).
+    \end{aligned}
+  }
+  \oldpage{182-06}
+  The latter identity shows that the category of coherent sheaves on #{X} can be identified with a \em{subcategory} (with morphisms being the induced morphisms) of the category of coherent sheaves on #{\overline{X}}.
+  In fact, we even have:
+}
+
+\subtree[fga2-theorem-3]{
+  \taxon{theorem}
+  \number{3}
+
+  \p{
+    For a sheaf of modules on #{\overline{X}} to be coherent, it is necessary and sufficient that it be isomorphic to a sheaf of the form #{\overline{\sh{F}}}, where #{\sh{F}} is a coherent sheaf on #{X} (determined up to canonical isomorphism, by \ref{fga2-theorem-2-corollary-3} above).
+    (We recall that now #{Y=\Spec(A)}, with #{A} being a complete and separated #{\sh{J}}-adic Noetherian topological ring).
+  }
+}
+
+\subtree[fga2-theorem-3-corollary-1]{
+  \taxon{corollary}
+  \number{1}
+
+  \p{
+    The closed subschemes of #{X} are in bijective correspondence with the closed formal subschemes of #{\overline{X}}.
+  }
+}
+
+\p{
+  Indeed, they correspond to coherent subsheaves of #{\OO_X} (resp. of #{\OO_{\overline{X}}}).
+  Considering the graphs of morphisms as closed subschemes, \ref{fga2-theorem-3-corollary-1} above implies:
+}
+
+\subtree[fga2-theorem-3-corollary-2]{
+  \taxon{corollary}
+  \number{2}
+
+  \p{
+    Let #{X} and #{Z} be proper schemes over #{A} (which is a separated complete #{\sh{J}}-adic Noetherian ring).
+    Then the map #{g\mapsto\overline{g}} defines a bijective correspondence between #{Y}-morphism from #{X} to #{Z} and #{\overline{Y}}-morphisms from #{\overline{X}} to #{\overline{Z}}.
+  }
+}
+
+\p{
+  In other words, proper algebraic schemes over #{A} give a subcategory (with the morphisms being the induced morphisms) of the category of proper formal schemes over #{\overline{Y}}.
+  We note, however, that \em{there exist proper formal schemes over #{\overline{Y}} that are not "algebraisable"}, i.e. isomorphic to some #{\overline{X}}, where #{X} is proper over #{A} (just as there exist compact complex-analytic varieties that do not come from algebraic varieties defined over the field of complex numbers).
+  Such formal schemes naturally appear in "module theory".
+  We note, however, an interesting case where a formal scheme is algebraisable:
+}
+
+\subtree[fga2-theorem-4]{
+  \taxon{theorem}
+  \number{4}
+
+  \p{
+    Let #{A} be a complete local Noetherian ring, with residue field #{k}, and let #{\mathfrak{X}} be a proper formal scheme over #{A} (endowed with its #{\mathfrak{r}(A)}-adic topology).
+    We suppose that
+    \todo{the following list should be i, ii, etc}
+
+    \ol{
+      \li{
+        the local rings of #{\OO_{\mathfrak{X}}} are \em{flat} #{A}-modules, or, equivalently, that, if we endow #{\OO_{\mathfrak{X}}} and #{A} with the filtration given by powers of the maximal ideal of #{A}, then the associated graded algebras satisfy
+        ##{
+          \gr(\OO_{\mathfrak{X}})
+          \simeq \gr^0(\OO_{\mathfrak{X}})\otimes_k\gr(A);
+        }
+      }
+
+      \li{
+        #{H^2(\mathfrak{X}_0,\OO_{\mathfrak{X}_0})=0}, where we consider #{\mathfrak{X}_0=\mathfrak{X}\otimes_Ak} as an algebraic scheme over #{k};
+      }
+
+      \li{
+        #{\mathfrak{X}_0} is projective.
+      }
+    }
+
+    \oldpage{182-07}
+    Then, under these conditions, #{\mathfrak{X}} is algebraisable, and, more precisely, is isomorphic to #{\overline{X}}, where #{X} is some projective #{A}-scheme.
+  }
+}
+
+\p{
+  Conditions (ii) and (iii) in \ref{fga2-theorem-4} will be satisfied if, in particular, #{\mathfrak{X}_0} is a \em{simple curve} over #{k}, and \ref{fga2-theorem-4} can be applied, in particular, in the "module theory" of curves of a given genus...
+  We will give here a hint on how to prove \ref{fga2-theorem-4}:
+  we can show (cf. \fref{fga2-proposition-3} below) that (i) and (ii) imply that every coherent sheaf on #{\mathfrak{X}_0} that is locally isomorphic to a fundamental sheaf can be obtained by reduction starting from a sheaf of the same nature on #{\mathfrak{X}}.
+  So, starting with an "ample" sheaf on #{\mathfrak{X}_0} (which, by (iii), exists), we lift it to obtain an invertible sheaf on #{\mathfrak{X}}, and, using \ref{fga2-theorem-1}, we prove that a multiple of this invertible sheaf defined an immersion of #{X} into the formal completion of a scheme #{\PP_A^r} ("projective type" of dimension #{r} over #{A}).
+}
+
+\p{
+  For the proof of \ref{fga2-theorem-1}, \ref{fga2-theorem-2}, and \ref{fga2-theorem-3}, we refer the reader to [[GD1960, I]](GD1960).
 }

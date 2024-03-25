@@ -11,7 +11,7 @@
   Then every coherent algebraic sheaf #{\sh{F}} on #{X} admits a finite resolution #{\sh{L}} by locally-free sheaves, and, for any two such resolutions, we can always find a third, along with homomorphisms, from it to the first two, that are compatible with the augmentations.
   Similarly, if #{\sh{L}} is a finite locally-free resolution of #{\sh{F}}, and if we have a homomorphism #{\sh{F}'\to\sh{F}}, then there exists a finite locally-free resolution #{\sh{L}'} of #{\sh{F}'} along with a homomorphism #{\sh{L}'\to\sh{L}} that is compatible with #{\sh{F}'\to\sh{F}}, that we can even assume to be surjective if #{\sh{F}'\to\sh{F}} is surjective.
   This allows us to define, given integers #{r,s\geq0}, two cohomological multifunctors, with arguments #{\sh{A}_1,\ldots,\sh{A}_r;\sh{B}_1,\ldots,\sh{B}_s} in the category of coherent algebraic sheaves on #{X};
-  one takes values in the category of coherent algebraic sheaves on #{X}, and the other in the category of modules over #{\HH^0(X,\sh{O}_X)}.
+  one takes values in the category of coherent algebraic sheaves on #{X}, and the other in the category of modules over #{\HH^0(X,\OO_X)}.
   \oldpage{149-22}
   We define them by the formulas
 
@@ -21,20 +21,20 @@
     ##{
       \begin{aligned}
         &\underline{T}_r^{s\bullet}(\sh{A}_1,\ldots,\sh{A}_r;\sh{B}_1,\ldots,\sh{B}_s)
-      \\&= \HH^\bullet(\shHom_{\sh{O}_X}(\underline{L}(\sh{A}_1)\otimes\ldots\otimes\underline{L}(\sh{A}_r), \underline{L}(\sh{B}_1)\otimes\ldots\otimes\underline{L}(\sh{B}_s))),
+      \\&= \HH^\bullet(\shHom_{\OO_X}(\underline{L}(\sh{A}_1)\otimes\ldots\otimes\underline{L}(\sh{A}_r), \underline{L}(\sh{B}_1)\otimes\ldots\otimes\underline{L}(\sh{B}_s))),
       \\&T_r^{s\bullet}(\sh{A}_1,\ldots,\sh{A}_r;\sh{B}_1,\ldots,\sh{B}_s)
-      \\&= \underline{\RR}^\bullet\Gamma(\shHom_{\sh{O}_X}(\underline{L}(\sh{A}_1)\otimes\ldots\otimes\underline{L}(\sh{A}_r), \underline{L}(\sh{B}_1)\otimes\ldots\otimes\underline{L}(\sh{B}_s)))
+      \\&= \underline{\RR}^\bullet\Gamma(\shHom_{\OO_X}(\underline{L}(\sh{A}_1)\otimes\ldots\otimes\underline{L}(\sh{A}_r), \underline{L}(\sh{B}_1)\otimes\ldots\otimes\underline{L}(\sh{B}_s)))
       \end{aligned}
     \startverb\tag{8.1}\stopverb
     }
   }
 
   where #{\underline{L}(\sh{F})} denotes a finite locally-free resolution of the coherent algebraic sheaf #{\sh{F}}, and #{\underline{\RR}^\bullet\Gamma(\sh{K})} denotes the hypercohomology of the space #{X} with respect to the complex of sheaves #{\sh{K}}.
-  If #{r} (resp. #{s}) is zero, then we replace the tensor product of the #{\underline{L}(\sh{A}_i)} (resp. of the #{\underline{L}(\sh{B}_j)}) by #{\sh{O}_X}.
+  If #{r} (resp. #{s}) is zero, then we replace the tensor product of the #{\underline{L}(\sh{A}_i)} (resp. of the #{\underline{L}(\sh{B}_j)}) by #{\OO_X}.
   In particular, #{\underline{T}_0^0} and #{T_0^0} are graded functors with no arguments:
-  #{\underline{T}_0^0} is concentrated in degree #{0}, where it is the sheaf #{\sh{O}_X};
-  and #{T_0^0} is equal to #{\HH^\bullet(X,\sh{O}_X)}.
-  The fact that the right-hand sides of \ref{fga1-equation-8.1} do not depend on the chosen resolutions is evident for #{\underline{T}} (since the question is then local), and for #{T} it follows from preceding general remarks, taking into account the spectral sequence for the hypercohomology of the complex of sheaves #{\sh{K}=\shHom_{\sh{O}_X}(\underline{L}(\sh{A}_1)\otimes\ldots,\underline{L}(\sh{B}_1)\otimes\ldots)} that abuts to the hypercohomology of #{X} with respect to #{\sh{K}}, and whose initial page is #{\HH^p(X,\HH^q(\sh{K}))}, i.e.
+  #{\underline{T}_0^0} is concentrated in degree #{0}, where it is the sheaf #{\OO_X};
+  and #{T_0^0} is equal to #{\HH^\bullet(X,\OO_X)}.
+  The fact that the right-hand sides of \ref{fga1-equation-8.1} do not depend on the chosen resolutions is evident for #{\underline{T}} (since the question is then local), and for #{T} it follows from preceding general remarks, taking into account the spectral sequence for the hypercohomology of the complex of sheaves #{\sh{K}=\shHom_{\OO_X}(\underline{L}(\sh{A}_1)\otimes\ldots,\underline{L}(\sh{B}_1)\otimes\ldots)} that abuts to the hypercohomology of #{X} with respect to #{\sh{K}}, and whose initial page is #{\HH^p(X,\HH^q(\sh{K}))}, i.e.
 
   \subtree[fga1-equation-8.2]{
     \taxon{equation}
@@ -84,9 +84,9 @@
     }
   }
 
-  Furthermore, if some argument #{\sh{A}_i} is a locally-free sheaf, then we can suppress it by replacing one of the #{\sh{A}_j} (for #{j\neq i}) by #{\sh{A}_j\otimes\sh{A}_i}, or one of the #{\sh{B}_k} by #{\sh{B}_k\otimes\sh{A}'_i} (where #{\sh{A}'_i=\shHom_{\sh{O}_X}(\sh{A}_i,\sh{O}_X)});
+  Furthermore, if some argument #{\sh{A}_i} is a locally-free sheaf, then we can suppress it by replacing one of the #{\sh{A}_j} (for #{j\neq i}) by #{\sh{A}_j\otimes\sh{A}_i}, or one of the #{\sh{B}_k} by #{\sh{B}_k\otimes\sh{A}'_i} (where #{\sh{A}'_i=\shHom_{\OO_X}(\sh{A}_i,\OO_X)});
   we have an analogous rule for the case where one of the arguments #{\sh{B}_j} is locally free.
-  In particular, we can always suppress any argument that is equal to #{\sh{O}_X}.
+  In particular, we can always suppress any argument that is equal to #{\OO_X}.
   If all the arguments are locally free, except for at most one of the arguments #{\sh{B}_i}, then the rule that we have just stated gives a functorial isomorphism
 
   \subtree[fga1-equation-8.5]{
@@ -163,7 +163,7 @@
       For the definitions preceding \ref{fga1-theorem-6}, it was not necessary for #{X} to be non-singular, since it was not necessary to work with only \em{finite} resolutions.
       But, if #{X} is singular, then we can no long be sure, a priori, that the #{(\underline{T}_r^s)^p(\sh{A}_1,\ldots;\sh{B}_1,\ldots)} are \em{coherent} sheaves, since, in the complex of sheaves
       ##{
-        \shHom_{\sh{O}_X}(\underline{L}(\sh{A}_1)\otimes\ldots,\underline{L}(\sh{B}_1)\otimes\ldots)
+        \shHom_{\OO_X}(\underline{L}(\sh{A}_1)\otimes\ldots,\underline{L}(\sh{B}_1)\otimes\ldots)
       }
       there will be an infinite number of components of any given total degree.
     }
@@ -178,16 +178,16 @@
         ##{
           \begin{aligned}
             \underline{T}_1^{1\bullet}(\sh{A};\sh{B})
-            &= \shExt_{\sh{O}_X}^\bullet(\sh{A},\sh{B})
+            &= \shExt_{\OO_X}^\bullet(\sh{A},\sh{B})
           \\T_1^{1\bullet}(\sh{A};\sh{B})
-            &= \Ext_{\sh{O}_X}^\bullet(X;\sh{A},\sh{B}).
+            &= \Ext_{\OO_X}^\bullet(X;\sh{A},\sh{B}).
           \end{aligned}
         \startverb\tag{8.8}\stopverb
         }
       }
 
-      In particular, taking #{r=s=1} and #{\sh{A}_1=\sh{O}_X} in \ref{fga1-equation-8.6}, we recover \ref{fga1-theorem-3}.
-      \ref{fga1-equation-8.8} also implies that #{T_0^{1\bullet}(\sh{B})=\HH^\bullet(X,\sh{B})}, and that #{T_1^{0\bullet}(\sh{A})=\Ext_{\sh{O}_X}^\bullet(X;\sh{A},\sh{O}_X)}.
+      In particular, taking #{r=s=1} and #{\sh{A}_1=\OO_X} in \ref{fga1-equation-8.6}, we recover \ref{fga1-theorem-3}.
+      \ref{fga1-equation-8.8} also implies that #{T_0^{1\bullet}(\sh{B})=\HH^\bullet(X,\sh{B})}, and that #{T_1^{0\bullet}(\sh{A})=\Ext_{\OO_X}^\bullet(X;\sh{A},\OO_X)}.
     }
 
     \li{

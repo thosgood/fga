@@ -171,7 +171,7 @@
   \number{2}
 
   \p{
-    Let #{X} be a non-singular variety over an algebraically-closed field #{k}, #{Y} a closed non-singular subvariety of #{X}, #{\sh{O}_X} the structure sheaf of #{X}, and #{\sh{O}_Y} the structure sheaf of #{Y}, considered as a quotient sheaf of #{\sh{O}_X}.
+    Let #{X} be a non-singular variety over an algebraically-closed field #{k}, #{Y} a closed non-singular subvariety of #{X}, #{\OO_X} the structure sheaf of #{X}, and #{\OO_Y} the structure sheaf of #{Y}, considered as a quotient sheaf of #{\OO_X}.
     Let #{n} be the dimension of #{X}, and #{n-p} the dimension of #{Y}.
     Let #{\Omega_X} (resp. #{\Omega_Y}) be the sheaf of germs of regular differential forms on #{X} (resp. #{Y}).
     Then we have canonical isomorphisms
@@ -180,7 +180,7 @@
       \taxon{equation}
       \number{3.6}
       ##{
-        \shExt_{\sh{O}_X}^p(\Omega_Y^{n-p},\Omega_X^n) = \sh{O}_Y
+        \shExt_{\OO_X}^p(\Omega_Y^{n-p},\Omega_X^n) = \OO_Y
       \startverb\tag{3.6}\stopverb
       }
     }
@@ -192,7 +192,7 @@
       \taxon{equation}
       \number{3.6 bis}
       ##{
-        \Ext_{\sh{O}_X}^p(\sh{O}_Y,\Omega_X^n) = \Omega_Y^{n-p}.
+        \Ext_{\OO_X}^p(\OO_Y,\Omega_X^n) = \Omega_Y^{n-p}.
       \startverb\tag{3.6 bis}\stopverb
       }
     }
@@ -211,14 +211,14 @@
   \p{
     Let #{X} be a non-singular algebraic variety of dimension #{n}, and let #{Y} be an algebraic subset of dimension #{q=n-p} of #{X}.
     Let #{\sh{F}} be a coherent algebraic sheaf on #{X} with support contained in #{Y}, and let #{\sh{L}} be a locally-free algebraic sheaf on #{X}.
-    Then the sheaves #{\shExt_{\sh{O}_X}^i(\sh{F},\sh{L})} are zero for #{i<p}, and, when #{i=p}, there is a canonical isomorphism
+    Then the sheaves #{\shExt_{\OO_X}^i(\sh{F},\sh{L})} are zero for #{i<p}, and, when #{i=p}, there is a canonical isomorphism
 
     \subtree[fga1-equation-3.7]{
       \taxon{equation}
       \number{3.7}
       ##{
-        \shExt_{\sh{O}_X}^p(\sh{F},\sh{L})
-        = \shHom_{\sh{O}_X}(\sh{F},\shExt^p(\sh{O}_X/\mathfrak{J},\sh{L}))
+        \shExt_{\OO_X}^p(\sh{F},\sh{L})
+        = \shHom_{\OO_X}(\sh{F},\shExt^p(\OO_X/\mathfrak{J},\sh{L}))
       \startverb\tag{3.7}\stopverb
       }
     }
@@ -230,18 +230,18 @@
       \taxon{equation}
       \number{3.7 bis}
       ##{
-        \shExt_{\sh{O}_X}^p(\sh{F},\sh{L})
-        = \shHom_{\sh{O}_Y}(\sh{F},\shExt^p(\sh{O}_Y,\sh{L})).
+        \shExt_{\OO_X}^p(\sh{F},\sh{L})
+        = \shHom_{\OO_Y}(\sh{F},\shExt^p(\OO_Y,\sh{L})).
       \startverb\tag{3.7 bis}\stopverb
       }
     }
 
-    Finally, with #{\sh{F}} still a coherent algebraic sheaf on #{Y}, the sheaves #{\sh{E}^i=\shExt_{\sh{O}_X}^{p+i}(\sh{F},\Omega_X^n)} do not depend on the choice of immersion of the algebraic space #{Y} into the non-singular algebraic variety #{X}.
+    Finally, with #{\sh{F}} still a coherent algebraic sheaf on #{Y}, the sheaves #{\sh{E}^i=\shExt_{\OO_X}^{p+i}(\sh{F},\Omega_X^n)} do not depend on the choice of immersion of the algebraic space #{Y} into the non-singular algebraic variety #{X}.
   }
 
   \proof{
     \p{
-      Since the question is local, we can assume that #{X} is affine and that #{\sh{L}=\sh{O}_X}.
+      Since the question is local, we can assume that #{X} is affine and that #{\sh{L}=\OO_X}.
       This then reduces to a problem of commutative algebra, and, more specifically, of local algebra:
       if #{A} is a regular locality, and #{M} an #{A}-module whose support is of dimension #{\leq q=n-p}, then we have to prove that #{\Ext_A^i(M,A)=0} for #{i<p} and that #{\Ext_A^p(M,A)=\Hom_A(M,\Ext^p(A/\mathfrak{J},A))}, where #{\mathfrak{J}} is an arbitrary ideal of "dimension" #{\leq q} that annihilates #{M}.
       For the first claim, we proceed by induction on #{q}:
@@ -258,15 +258,15 @@
 
   \p{
     \oldpage{149-09}
-    Denote by #{\omega_Y^q} the sheaf #{\Ext_{\sh{O}_X}^p(\sh{O}_Y,\Omega_X^n)}.
+    Denote by #{\omega_Y^q} the sheaf #{\Ext_{\OO_X}^p(\OO_Y,\Omega_X^n)}.
     Then there is a functorial isomorphism for coherent algebraic sheaves #{\sh{F}} on #{Y}:
 
     \subtree[fga1-equation-3.8]{
       \taxon{equation}
       \number{3.8}
       ##{
-        \shExt_{\sh{O}_X}^p(\sh{F},\Omega_X^n)
-        = \shHom_{\sh{O}_X}(\sh{F},\omega_Y^q).
+        \shExt_{\OO_X}^p(\sh{F},\Omega_X^n)
+        = \shHom_{\OO_X}(\sh{F},\omega_Y^q).
       \startverb\tag{3.8}\stopverb
       }
     }

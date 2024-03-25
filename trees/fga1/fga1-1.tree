@@ -11,11 +11,11 @@
 }
 
 \p{
-  Let #{X} be a topological space endowed with a sheaf #{\sh{O}} of unital (but not necessarily commutative) rings.
-  We consider the abelian category #{\mathcal{C}^\sh{O}} of sheaves of #{\sh{O}}-modules, which are also referred to as #{\sh{O}}-modules.
+  Let #{X} be a topological space endowed with a sheaf #{\OO} of unital (but not necessarily commutative) rings.
+  We consider the abelian category #{\mathcal{C}^\OO} of sheaves of #{\OO}-modules, which are also referred to as #{\OO}-modules.
   We know that every object of this category admits an injective resolution, which allows us to define the #{\Ext} functors that have the well-known formal properties.
-  More precisely, to avoid confusion, we denote by #{\Hom_\sh{O}(X;\sh{A},\sh{B})}, or simply #{\Hom(X;\sh{A},\sh{B})}, the abelian \em{groups} of #{\sh{O}}-homomorphisms from #{\sh{A}} to #{\sh{B}}, whereas #{\shHom_\sh{O}(\sh{A},\sh{B})} denotes the \em{sheaf} of germs of homomorphisms from #{\sh{A}} to #{\sh{B}} (where #{\sh{A},\sh{B}\in\mathcal{C}^\sh{O}}).
-  We define, for fixed #{\sh{A}\in\mathcal{C}^\sh{O}}, functors #{h_\sh{A}} and #{\underline{h}_\sh{A}}, with values in the category #{\mathcal{C}} of abelian groups and the category #{\mathcal{C}^Z} of abelian sheaves on #{X} (respectively), by the formulas:
+  More precisely, to avoid confusion, we denote by #{\Hom_\OO(X;\sh{A},\sh{B})}, or simply #{\Hom(X;\sh{A},\sh{B})}, the abelian \em{groups} of #{\OO}-homomorphisms from #{\sh{A}} to #{\sh{B}}, whereas #{\shHom_\OO(\sh{A},\sh{B})} denotes the \em{sheaf} of germs of homomorphisms from #{\sh{A}} to #{\sh{B}} (where #{\sh{A},\sh{B}\in\mathcal{C}^\OO}).
+  We define, for fixed #{\sh{A}\in\mathcal{C}^\OO}, functors #{h_\sh{A}} and #{\underline{h}_\sh{A}}, with values in the category #{\mathcal{C}} of abelian groups and the category #{\mathcal{C}^Z} of abelian sheaves on #{X} (respectively), by the formulas:
 
   \subtree[fga1-equation-1.1]{
     \taxon{equation}
@@ -23,15 +23,15 @@
     ##{
       \begin{aligned}
         h_\sh{A}(\sh{B})
-        &= \Hom_\sh{O}(X;\sh{A},\sh{B})
+        &= \Hom_\OO(X;\sh{A},\sh{B})
       \\\underline{h}_\sh{A}(\sh{B})
-        &= \shHom_\sh{O}(\sh{A},\sh{B}).
+        &= \shHom_\OO(\sh{A},\sh{B}).
       \end{aligned}
     \startverb\tag{1.1}\stopverb
     }
   }
 
-  The functors #{h_\sh{A}} and #{\underline{h}_\sh{A}} are left exact and covariant, and so we consider their right-derived functors, denoted by #{\Ext_\sh{O}^p(X;\sh{A},\sh{B})} and #{\shExt_\sh{O}^p(\sh{A},\sh{B})} (respectively).
+  The functors #{h_\sh{A}} and #{\underline{h}_\sh{A}} are left exact and covariant, and so we consider their right-derived functors, denoted by #{\Ext_\OO^p(X;\sh{A},\sh{B})} and #{\shExt_\OO^p(\sh{A},\sh{B})} (respectively).
   We then have, by definition,
 
   \subtree[fga1-equation-1.2]{
@@ -39,18 +39,18 @@
     \number{1.2}
     ##{
       \begin{gathered}
-        \Ext_\sh{O}^p(X;\sh{A},\sh{B})
+        \Ext_\OO^p(X;\sh{A},\sh{B})
         = (\RR^p h_\sh{A})(\sh{B})
-        = \HH^p(\Hom_\sh{O}(X;\sh{A},C(\sh{B})))
-      \\\shExt_\sh{O}^p(\sh{A},\sh{B})
+        = \HH^p(\Hom_\OO(X;\sh{A},C(\sh{B})))
+      \\\shExt_\OO^p(\sh{A},\sh{B})
         = (\RR^p \underline{h}_\sh{A})(\sh{B})
-        = \HH^p(\shHom_\sh{O}(\sh{A},C(\sh{B})))
+        = \HH^p(\shHom_\OO(\sh{A},C(\sh{B})))
       \end{gathered}
     \startverb\tag{1.2}\stopverb
     }
   }
 
-  where #{\RR^p} denotes the passage to right-derived functors, and where #{C(\sh{B})} denotes an arbitrary injective resolution of #{\sh{B}} in #{\mathcal{C}^\sh{O}}.
+  where #{\RR^p} denotes the passage to right-derived functors, and where #{C(\sh{B})} denotes an arbitrary injective resolution of #{\sh{B}} in #{\mathcal{C}^\OO}.
   We denote by #{\Gamma\colon\mathcal{C}^Z\to\mathcal{C}} the "sections" functor;
   recall that its right-derived functors are denoted by #{B\mapsto\HH^p(X,\sh{B})}:
 
@@ -76,14 +76,14 @@
   \number{1}
 
   \p{
-    For every #{\sh{O}}-module #{\sh{A}}, there exists a cohomological spectral functor on #{\mathcal{C}^\sh{O}} that abuts to the graded functor #{(\Ext_\sh{O}^\bullet(X;\sh{A},\sh{B}))}, and whose initial page is
+    For every #{\OO}-module #{\sh{A}}, there exists a cohomological spectral functor on #{\mathcal{C}^\OO} that abuts to the graded functor #{(\Ext_\OO^\bullet(X;\sh{A},\sh{B}))}, and whose initial page is
 
     \subtree[fga1-equation-1.4]{
       \taxon{equation}
       \number{1.4}
       ##{
         E_2^{p,q}(\sh{A},\sh{B})
-        = \HH^p(X,\shExt_\sh{O}^q(\sh{A},\sh{B})).
+        = \HH^p(X,\shExt_\OO^q(\sh{A},\sh{B})).
       \startverb\tag{1.4}\stopverb
       }
     }
@@ -99,14 +99,14 @@
   \number{1}
 
   \p{
-    If #{\sh{A}} is locally isomorphic to #{\sh{O}^n}, then we have canonical isomorphisms
+    If #{\sh{A}} is locally isomorphic to #{\OO^n}, then we have canonical isomorphisms
 
     \subtree[fga1-equation-1.5]{
       \taxon{equation}
       \number{1.5}
       ##{
-        \Ext_\sh{O}^p(X;\sh{A},\sh{B})
-        \xleftarrow{\sim} \HH^p(x,\shHom_\sh{O}(\sh{A},\sh{B}))
+        \Ext_\OO^p(X;\sh{A},\sh{B})
+        \xleftarrow{\sim} \HH^p(x,\shHom_\OO(\sh{A},\sh{B}))
       \startverb\tag{1.5}\stopverb
       }
     }
@@ -118,7 +118,7 @@
       \taxon{equation}
       \number{1.6}
       ##{
-        \Ext_\sh{O}^p(X;\sh{O},\sh{B})
+        \Ext_\OO^p(X;\OO,\sh{B})
         = \HH^p(X,\sh{B}).
       \startverb\tag{1.6}\stopverb
       }
@@ -127,21 +127,21 @@
 }
 
 \p{
-  To use these results, we need to know how to explicitly describe the #{\Ext_\sh{O}^p(\sh{A},\sh{B})}.
+  To use these results, we need to know how to explicitly describe the #{\Ext_\OO^p(\sh{A},\sh{B})}.
   They are functors that we calculate locally, i.e. if #{V} is an open subset of #{X}, then
   ##{
-    \shExt_\sh{O}^p(\sh{A},\sh{B})|U
-    = \shExt_{\sh{O}|U}^p(\sh{A}|U,\sh{B}|U)
+    \shExt_\OO^p(\sh{A},\sh{B})|U
+    = \shExt_{\OO|U}^p(\sh{A}|U,\sh{B}|U)
   }
-  as follows from the fact that the restriction to #{U} of an injective #{\sh{O}}-module is an injective #{(\sh{O}|U)}-module.
+  as follows from the fact that the restriction to #{U} of an injective #{\OO}-module is an injective #{(\OO|U)}-module.
   Furthermore, for fixed #{x\in X}, we have functorial homomorphisms
 
   \subtree[fga1-equation-1.7]{
     \taxon{equation}
     \number{1.7}
     ##{
-      \shHom_\sh{O}(\sh{A},\sh{B})_x
-      \to \Hom_{\sh{O}_x}(\sh{A}_x,\sh{B}_x)
+      \shHom_\OO(\sh{A},\sh{B})_x
+      \to \Hom_{\OO_x}(\sh{A}_x,\sh{B}_x)
     \startverb\tag{1.7}\stopverb
     }
   }
@@ -152,8 +152,8 @@
     \taxon{equation}
     \number{1.8}
     ##{
-      \shExt_\sh{O}^p(\sh{A},\sh{B})_x
-      \to \Ext_{\sh{O}_x}^p(\sh{A}_x,\sh{B}_x).
+      \shExt_\OO^p(\sh{A},\sh{B})_x
+      \to \Ext_{\OO_x}^p(\sh{A}_x,\sh{B}_x).
     \startverb\tag{1.8}\stopverb
     }
   }
@@ -164,8 +164,8 @@
   \number{2}
 
   \p{
-    If #{\sh{A}} is isomorphic, in a neighbourhood of #{x}, to the cokernel of some homomorphism #{\sh{O}^m\to\sh{O}^n}, then \ref{fga1-equation-1.7} is an isomorphism for all #{p}.
-    This is the case, in particular, if #{\sh{A}} is a coherent #{\sh{O}}-module [[Ser1955]](Ser1955).
+    If #{\sh{A}} is isomorphic, in a neighbourhood of #{x}, to the cokernel of some homomorphism #{\OO^m\to\OO^n}, then \ref{fga1-equation-1.7} is an isomorphism for all #{p}.
+    This is the case, in particular, if #{\sh{A}} is a coherent #{\OO}-module [[Ser1955]](Ser1955).
   }
 }
 
@@ -175,13 +175,13 @@
 
   \p{
     \oldpage{149-03}
-    Let #{\sh{L}_\bullet=(\sh{L}_i)} be a left resolution of the #{\sh{O}}-module #{\sh{A}} by #{\sh{O}}-modules that are all locally isomorphic to some #{\sh{O}^n}.
-    Then #{\shExt_\sh{O}(\sh{A},\sh{B})} can be identified with #{\HH^\bullet(\shHom_\sh{O}(\sh{L}_\bullet,\sh{B}))}, and #{\Ext_\sh{O}(X;\sh{A},\sh{B})} can be identified with the hypercohomology of #{X} with respect to the complex #{\shHom_\sh{O}(\sh{L}_\bullet,\sh{B})}.
+    Let #{\sh{L}_\bullet=(\sh{L}_i)} be a left resolution of the #{\OO}-module #{\sh{A}} by #{\OO}-modules that are all locally isomorphic to some #{\OO^n}.
+    Then #{\shExt_\OO(\sh{A},\sh{B})} can be identified with #{\HH^\bullet(\shHom_\OO(\sh{L}_\bullet,\sh{B}))}, and #{\Ext_\OO(X;\sh{A},\sh{B})} can be identified with the hypercohomology of #{X} with respect to the complex #{\shHom_\OO(\sh{L}_\bullet,\sh{B})}.
   }
 
   \proof{
     \p{
-      The proof is standard: we consider the bicomplex #{\shHom_\sh{O}(\sh{L}_\bullet,C(\sh{B}))}, where #{C(\sh{B})} is an injective resolution of #{\sh{B}}, as well as the natural homomorphisms into this bicomplex from #{\shHom_\sh{O}(\sh{L}_\bullet,\sh{B})} and #{\shHom_\sh{O}(\sh{A},C(\sh{B}))}.
+      The proof is standard: we consider the bicomplex #{\shHom_\OO(\sh{L}_\bullet,C(\sh{B}))}, where #{C(\sh{B})} is an injective resolution of #{\sh{B}}, as well as the natural homomorphisms into this bicomplex from #{\shHom_\OO(\sh{L}_\bullet,\sh{B})} and #{\shHom_\OO(\sh{A},C(\sh{B}))}.
     }
   }
 }

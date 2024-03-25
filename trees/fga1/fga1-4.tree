@@ -9,9 +9,9 @@
 \p{
   In all that follows, #{X} denotes an algebraic set of dimension #{n}, defined over a field #{k} which we assume, for simplicity, to be algebraically closed.
   Except for in \ref{fga1-6}, we assume that #{X} is non-singular.
-  We denote by #{\sh{O}_X} the structure sheaf of #{X}, and by #{\Omega_X^\bullet=\bigcup_p\Omega_X^p} the sheaf of germs of differential forms on #{X}.
+  We denote by #{\OO_X} the structure sheaf of #{X}, and by #{\Omega_X^\bullet=\bigcup_p\Omega_X^p} the sheaf of germs of differential forms on #{X}.
   If #{Y} is a closed subset of #{X}, then we identify coherent algebraic sheaves on #{Y} with coherent algebraic sheaves on #{X} that are zero outside of #{Y};
-  we do this, in particular, with #{\sh{O}_Y} and #{\Omega_Y}.
+  we do this, in particular, with #{\OO_Y} and #{\Omega_Y}.
 }
 
 \subtree[fga1-lemma-1]{
@@ -20,14 +20,14 @@
 
   \p{
     Let #{\sh{F}} be a coherent algebraic sheaf on #{X} whose support is of dimension #{\leq n-p}, and let #{\sh{L}} be a coherent algebraic sheaf on #{X} that is locally free.
-    Then #{\shExt_{\sh{O}_X}^i(X;\sh{F},\sh{L})} is zero for #{i<p}, and there is a canonical isomorphism
+    Then #{\shExt_{\OO_X}^i(X;\sh{F},\sh{L})} is zero for #{i<p}, and there is a canonical isomorphism
 
     \subtree[fga1-equation-4.1]{
       \taxon{equation}
       \number{4.1}
       ##{
-        \Ext_\sh{O}^p(X;\sh{F},\sh{L})
-        = \HH^0(X,\shExt_\sh{O}^p(\sh{F},\sh{L})).
+        \Ext_\OO^p(X;\sh{F},\sh{L})
+        = \HH^0(X,\shExt_\OO^p(\sh{F},\sh{L})).
       \startverb\tag{4.1}\stopverb
       }
     }
@@ -38,8 +38,8 @@
       \taxon{equation}
       \number{4.1 bis}
       ##{
-        \shExt_{\sh{O}_X}^p(\sh{F},\sh{L})
-        = \shHom_{\sh{O}_X}(\sh{F}\otimes\sh{L}'\otimes\Omega_X^n,\omega_Y^{n-p})
+        \shExt_{\OO_X}^p(\sh{F},\sh{L})
+        = \shHom_{\OO_X}(\sh{F}\otimes\sh{L}'\otimes\Omega_X^n,\omega_Y^{n-p})
       \startverb\tag{4.1 bis}\stopverb
       }
     }
@@ -53,10 +53,10 @@
       by the formula in \ref{fga1-equation-3.8}, we can write
       ##{
         \begin{gathered}
-          \shExt_{\sh{O}_X}^p(\sh{F},\sh{L})
-          = \sh{L}\otimes(\Omega_X^n)'\otimes\shExt_{\sh{O}_X}(\sh{F},\Omega_X^n)
-        \\= \sh{L}\otimes(\Omega_X^n)'\otimes\shHom_{\sh{O}_X}(\sh{F},\omega_Y^q)
-        \\= \shHom_{\sh{O}_X}(\sh{F}\otimes\sh{L}'\otimes\Omega_X^n,\omega_Y^q)
+          \shExt_{\OO_X}^p(\sh{F},\sh{L})
+          = \sh{L}\otimes(\Omega_X^n)'\otimes\shExt_{\OO_X}(\sh{F},\Omega_X^n)
+        \\= \sh{L}\otimes(\Omega_X^n)'\otimes\shHom_{\OO_X}(\sh{F},\omega_Y^q)
+        \\= \shHom_{\OO_X}(\sh{F}\otimes\sh{L}'\otimes\Omega_X^n,\omega_Y^q)
         \end{gathered}
       }
       where #{q=n-p}, whence the formula in \ref{fga1-equation-4.1bis}.
@@ -66,39 +66,39 @@
 
 \p{
   \oldpage{149-10}
-  Setting, in particular, #{\sh{F}=\sh{O}_Y} and #{\sh{L}=\Omega_X^p}, we obtain (taking into account the fact that #{\Omega_X^n\otimes(\Omega_X^p)'=\Omega_X^{n-p}}) a canonical isomorphism
+  Setting, in particular, #{\sh{F}=\OO_Y} and #{\sh{L}=\Omega_X^p}, we obtain (taking into account the fact that #{\Omega_X^n\otimes(\Omega_X^p)'=\Omega_X^{n-p}}) a canonical isomorphism
 
   \subtree[fga1-equation-4.2]{
     \taxon{equation}
     \number{4.2}
     ##{
-      \Ext_{\sh{O}_X}^p(X;\sh{O}_Y,\Omega_X^p)
-      = \Hom_{\sh{O}_X}(X;\Omega_X^{n-p},\omega_Y^{n-p}).
+      \Ext_{\OO_X}^p(X;\OO_Y,\Omega_X^p)
+      = \Hom_{\OO_X}(X;\Omega_X^{n-p},\omega_Y^{n-p}).
     \startverb\tag{4.2}\stopverb
     }
   }
 
   Now suppose, for simplicity, that #{Y} is \em{non-singular}, so that #{\omega_Y^{n-p}=\Omega_Y^{n-p}}.
-  There is a natural homomorphism from #{\Omega_X^{n-p}} to #{\Omega_Y^{n-p}}, whence a canonical section #{s_Y} of the sheaf #{\shExt_{\sh{O}_X}^p(\sh{O}_Y,\Omega_X^p)}, that we call, if all the components of #{Y} are of dimension #{n-p}, the \em{fundamental section} of the sheaf #{\shExt_{\sh{O}_X}^p(\sh{O}_Y,\Omega_X^p)}.
-  By \ref{fga1-equation-4.1}, this section defines an element of #{\Ext_{\sh{O}_X}^p(X;\sh{O}_Y,\Omega_X^p)}.
-  But the natural homomorphism #{\sh{O}_X\to\sh{O}_Y} defines a homomorphism
+  There is a natural homomorphism from #{\Omega_X^{n-p}} to #{\Omega_Y^{n-p}}, whence a canonical section #{s_Y} of the sheaf #{\shExt_{\OO_X}^p(\OO_Y,\Omega_X^p)}, that we call, if all the components of #{Y} are of dimension #{n-p}, the \em{fundamental section} of the sheaf #{\shExt_{\OO_X}^p(\OO_Y,\Omega_X^p)}.
+  By \ref{fga1-equation-4.1}, this section defines an element of #{\Ext_{\OO_X}^p(X;\OO_Y,\Omega_X^p)}.
+  But the natural homomorphism #{\OO_X\to\OO_Y} defines a homomorphism
   ##{
-    \Ext_{\sh{O}_X}^p(X;\sh{O}_Y,\Omega_X^p)
-    \to \Ext_{\sh{O}_X}^p(X;\sh{O}_X,\Omega_X^p)
+    \Ext_{\OO_X}^p(X;\OO_Y,\Omega_X^p)
+    \to \Ext_{\OO_X}^p(X;\OO_X,\Omega_X^p)
     = \HH^p(X,\Omega_X^p).
   }
   We thus obtain an element of #{\HH^p(X,\Omega_X^p)}, denoted by #{P_X(Y)}, that we call the \em{cohomology class of #{Y} in #{X}};
-  it is induced by the section #{s_Y} of #{\shExt_{\sh{O}_X}^p(\sh{O}_Y,\Omega_X^p)} by the following diagram of homomorphisms:
+  it is induced by the section #{s_Y} of #{\shExt_{\OO_X}^p(\OO_Y,\Omega_X^p)} by the following diagram of homomorphisms:
 
   \subtree[fga1-equation-4.3]{
     \taxon{equation}
     \number{4.3}
     ##{
       \begin{CD}
-        \Ext_{\sh{O}_X}^p(X;\sh{O}_Y,\Omega_X^p) @>\sim>> \HH^0(X,\shExt_{\sh{O}_X}^p(\sh{O}_Y,\Omega_X^p))
+        \Ext_{\OO_X}^p(X;\OO_Y,\Omega_X^p) @>\sim>> \HH^0(X,\shExt_{\OO_X}^p(\OO_Y,\Omega_X^p))
       \\@VVV
       \\\begin{gathered}
-          \Ext_{\sh{O}_X}^p(X;\sh{O}_X,\Omega_X^y)
+          \Ext_{\OO_X}^p(X;\OO_X,\Omega_X^y)
           \\=\HH^p(X,\Omega_X^p)
         \end{gathered}
       \end{CD}
@@ -147,20 +147,20 @@
   \proof{
     \p{
       To prove \ref{fga1-theorem-1}, we can assume that #{Z} and #{Z'} are irreducible non-singular subvarieties #{Y} and #{Y'} that intersect transversally.
-      Let #{\sh{L}_\bullet} be a left resolution of #{\sh{O}_Y} by locally-free sheaves;
+      Let #{\sh{L}_\bullet} be a left resolution of #{\OO_Y} by locally-free sheaves;
       then, by \ref{fga1-proposition-3}, the diagram of homomorphisms in \ref{fga1-equation-4.3} can be identified with the diagram
       ##{
         \begin{CD}
-          (\underline{\RR}^p\Gamma)\big(\shHom_{\sh{O}_X}(\sh{L}_\bullet,\Omega_X^p)\big) @>\beta>> \Gamma\big(\HH^p\big(\shHom_{\sh{O}_X}(\sh{L}_\bullet,\Omega_X^p)\big)\big)
+          (\underline{\RR}^p\Gamma)\big(\shHom_{\OO_X}(\sh{L}_\bullet,\Omega_X^p)\big) @>\beta>> \Gamma\big(\HH^p\big(\shHom_{\OO_X}(\sh{L}_\bullet,\Omega_X^p)\big)\big)
         \\@V\alpha VV .
         \\(\RR^p\Gamma)(\Omega_X^p)
         \end{CD}
       }
       where #{\beta} is an isomorphism, and where #{\Gamma} is the "group of sections" functor on the category of abelian sheaves on #{X}, #{\underline{\RR}^p\Gamma} is its hypercohomology in dimension #{p}, and #{\RR^p\Gamma} is its #{p}-th derived functor.
-      For simplicity, we assume that #{\sh{L}_0=\sh{O}_X}, and that the augmentation #{\sh{L}_0\to\sh{O}_Y} is the natural homomorphism (which we can indeed safely assume);
-      then #{\alpha} is induced by the homomorphism of complexes #{\sh{O}_X\to\sh{L}} (with #{\sh{O}_X} being thought of as a complex concentrated in degree #{0}), taking into account the fact that #{\underline{\RR}^p\Gamma(\sh{K})=\RR^p\Gamma(\sh{K}_0)} if #{\sh{K}} is a complex of sheaves concentrated in degree #{0}.
+      For simplicity, we assume that #{\sh{L}_0=\OO_X}, and that the augmentation #{\sh{L}_0\to\OO_Y} is the natural homomorphism (which we can indeed safely assume);
+      then #{\alpha} is induced by the homomorphism of complexes #{\OO_X\to\sh{L}} (with #{\OO_X} being thought of as a complex concentrated in degree #{0}), taking into account the fact that #{\underline{\RR}^p\Gamma(\sh{K})=\RR^p\Gamma(\sh{K}_0)} if #{\sh{K}} is a complex of sheaves concentrated in degree #{0}.
       The homomorphism #{\beta} is a well-known "boundary map".
-      Consider an analogous diagram, relative to a locally-free resolution #{\sh{L}'_\bullet} of #{\sh{O}_Y}, and consider the commutative diagram of pairings:
+      Consider an analogous diagram, relative to a locally-free resolution #{\sh{L}'_\bullet} of #{\OO_Y}, and consider the commutative diagram of pairings:
 
       \subtree[fga1-equation-4.5]{
         \taxon{equation}
@@ -170,23 +170,23 @@
           \begin{CD}
             \RR^p\Gamma(\Omega_X^p)
             @<<<
-            \underline{\RR}^p\Gamma\big(\shHom_{\sh{O}_X}(\sh{L}_\bullet,\Omega_X^p)\big)
+            \underline{\RR}^p\Gamma\big(\shHom_{\OO_X}(\sh{L}_\bullet,\Omega_X^p)\big)
             @>\sim>>
-            \Gamma\big(\HH^p\big(\shHom_{\sh{O}_X}(\sh{L}_\bullet,\Omega_X^p)\big)\big)
+            \Gamma\big(\HH^p\big(\shHom_{\OO_X}(\sh{L}_\bullet,\Omega_X^p)\big)\big)
           \\@. @. @.
           \\\times @. \times @. \times
           \\@. @. @.
           \\\RR^{p'}\Gamma(\Omega_X^{p'})
             @<<<
-            \underline{\RR}^{p'}\Gamma\big(\shHom_{\sh{O}_X}(\sh{L}'_\bullet,\Omega_X^{p'})\big)
+            \underline{\RR}^{p'}\Gamma\big(\shHom_{\OO_X}(\sh{L}'_\bullet,\Omega_X^{p'})\big)
             @>\sim>>
-            \Gamma\big(\HH^{p'}\big(\shHom_{\sh{O}_X}(\sh{L}'_\bullet,\Omega_X^{p'})\big)\big)
+            \Gamma\big(\HH^{p'}\big(\shHom_{\OO_X}(\sh{L}'_\bullet,\Omega_X^{p'})\big)\big)
           \\@VVV @VVV @VVV
           \\\RR^{p+p'}\Gamma(\Omega_X^{p+p'})
             @<<<
-            \underline{\RR}^{p+p'}\Gamma\big(\shHom_{\sh{O}_X}(\sh{L}_\bullet\otimes\sh{L}'_\bullet,\Omega_X^{p+p'})\big)
+            \underline{\RR}^{p+p'}\Gamma\big(\shHom_{\OO_X}(\sh{L}_\bullet\otimes\sh{L}'_\bullet,\Omega_X^{p+p'})\big)
             @>\sim>>
-            \Gamma\big(\HH^{p+p'}\big(\shHom_{\sh{O}_X}(\sh{L}_\bullet\otimes\sh{L}'_\bullet,\Omega_X^{p+p'})\big)\big)
+            \Gamma\big(\HH^{p+p'}\big(\shHom_{\OO_X}(\sh{L}_\bullet\otimes\sh{L}'_\bullet,\Omega_X^{p+p'})\big)\big)
           \end{CD}
         \startverb\tag{4.5}\stopverb
         }
@@ -195,23 +195,23 @@
       \oldpage{149-12}
       The pairings in the two columns on the right are induced by the pairing of complexes of sheaves
       ##{
-        \shHom_{\sh{O}_X}(\sh{L}_\bullet,\Omega_X^p) \times \shHom_{\sh{O}_X}(\sh{L}'_\bullet,\Omega_X^{p'})
-        \to \shHom_{\sh{O}_X}(\sh{L}_\bullet\otimes\sh{L}',\Omega_X^{p+p'})
+        \shHom_{\OO_X}(\sh{L}_\bullet,\Omega_X^p) \times \shHom_{\OO_X}(\sh{L}'_\bullet,\Omega_X^{p'})
+        \to \shHom_{\OO_X}(\sh{L}_\bullet\otimes\sh{L}',\Omega_X^{p+p'})
       }
       that we define by using the exterior product #{\Omega_X^p\times\Omega_X^{p'}\to\Omega_X^{p+p'}};
       the pairing in the first column is the cup product (relative to the exterior product).
       I claim that the last line of \ref{fga1-equation-4.5}can be identified with the diagram of isomorphisms analogous to \ref{fga1-equation-4.3}, where #{Y} is replaced by #{Y\cap Y'} and #{p} by #{p+p'}.
-      For this, it suffices to show that #{\sh{L}\otimes\sh{L}'} is a resolution (evidently locally-free) of #{\sh{O}_{Y\cap Y'}}.
+      For this, it suffices to show that #{\sh{L}\otimes\sh{L}'} is a resolution (evidently locally-free) of #{\OO_{Y\cap Y'}}.
       But then
       ##{
         \HH_0(\sh{L}\otimes\sh{L}')
-        = \sh{O}_Y\otimes\sh{O}_{Y'}
-        = \sh{O}_{Y\cap Y'}
+        = \OO_Y\otimes\OO_{Y'}
+        = \OO_{Y\cap Y'}
       }
       and
       ##{
         \HH_i(\sh{L}\otimes\sh{L}')
-        = \Tor_i^{\sh{O}_X}(\sh{O}_Y,\sh{O}_{Y'})
+        = \Tor_i^{\OO_X}(\OO_Y,\OO_{Y'})
         = 0
       }
       for #{i>0}, from the fact that #{Y} and #{Y'} intersect transversally.

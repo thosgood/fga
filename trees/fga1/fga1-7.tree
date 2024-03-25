@@ -86,13 +86,13 @@
         ##{
           \begin{CD}
             @.
-            \Ext_{\sh{O}_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
+            \Ext_{\OO_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
             @>\sim>>
-            \Hom_{\sh{O}_X}(X;\Omega_Y^m,\Omega_Y^m)
+            \Hom_{\OO_X}(X;\Omega_Y^m,\Omega_Y^m)
           \\@. @VVV @.
           \\\HH^{n-m}(X,\Omega_X^{n-m})
             @>\sim>>
-            \Ext_{\sh{O}_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
+            \Ext_{\OO_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
           \end{CD}
         \startverb\tag{7.5}\stopverb
         }
@@ -130,17 +130,17 @@
     ##{
       \footnotesize
       \begin{CD}
-        \Ext_{\sh{O}_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
+        \Ext_{\OO_X}^{n-m}(X;\Omega_X^m,\Omega_X^n)
         @<<<
-        \Ext_{\sh{O}_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
+        \Ext_{\OO_X}^{n-m}(X;\Omega_Y^m,\Omega_X^n)
         @>\sim>>
-        \Hom_{\sh{O}_X}(X;\Omega_Y^m,\Omega_Y^m)
+        \Hom_{\OO_X}(X;\Omega_Y^m,\Omega_Y^m)
       \\@VVV @. @VVV
-      \\\Ext_{\sh{O}_X}^{n-m}(X;\sh{O}_X,\Omega_X^{n-m})
+      \\\Ext_{\OO_X}^{n-m}(X;\OO_X,\Omega_X^{n-m})
         @<<<
-        \Ext_{\sh{O}_X}^{n-m}(X;\sh{O}_Y,\Omega_X^{n-m})
+        \Ext_{\OO_X}^{n-m}(X;\OO_Y,\Omega_X^{n-m})
         @>\sim>>
-        \Hom_{\sh{O}_X}(X;\Omega_X^m,\Omega_Y^m)
+        \Hom_{\OO_X}(X;\Omega_X^m,\Omega_Y^m)
       \end{CD}
     \startverb\tag{7.6}\stopverb
     }

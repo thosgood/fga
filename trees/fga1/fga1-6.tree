@@ -14,8 +14,8 @@
     \number{6.1}
     ##{
       \HH^n(X,\sh{F})'
-      \simeq \Hom_{\sh{O}_X}(X;\sh{F},\omega_X^n)
-      = \Ext_{\sh{O}_X}^0(X;\sh{F},\omega_X^n)
+      \simeq \Hom_{\OO_X}(X;\sh{F},\omega_X^n)
+      = \Ext_{\OO_X}^0(X;\sh{F},\omega_X^n)
     \startverb\tag{6.1}\stopverb
     }
   }
@@ -24,8 +24,8 @@
   \note{This equation is labelled (6.2) in the original, but this seems to be a typo, since a later equation shares the same number, and any references to (6.2) seem to indeed point to the later equation instead of this one.}
   ##{
     \omega_X^n
-    = E^0(\sh{O}_X)
-    = \shExt_{\sh{O}_\bb{P}}^{r-n}(\sh{O}_X,\Omega_\bb{P}^r).
+    = E^0(\OO_X)
+    = \shExt_{\OO_\bb{P}}^{r-n}(\OO_X,\Omega_\bb{P}^r).
   }
   As mentioned in \ref{fga1-proposition-5}, the sheaf thus defined does not depend on the chosen immersion of #{X} into the non-singular variety #{\bb{P}}.
   Taking #{\sh{F}=\omega_X^n} in \ref{fga1-equation-6.1}, we find that
@@ -35,7 +35,7 @@
     \number{6.2}
     ##{
       \HH^n(X,\omega_X^n)'
-      \simeq \Hom_{\sh{O}_X}(X;\omega_X^n,\omega_X^n)
+      \simeq \Hom_{\OO_X}(X;\omega_X^n,\omega_X^n)
     \startverb\tag{6.2}\stopverb
     }
   }
@@ -58,7 +58,7 @@
     \taxon{equation}
     \number{6.4}
     ##{
-      \HH^p(X,\sh{F}) \times \Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\omega_X^n)
+      \HH^p(X,\sh{F}) \times \Ext_{\OO_X}^{n-p}(X;\sh{F},\omega_X^n)
       \to \HH^n(X,\omega_X^n)
     \startverb\tag{6.4}\stopverb
     }
@@ -70,7 +70,7 @@
     \taxon{equation}
     \number{6.5}
     ##{
-      \Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\omega_X^n)
+      \Ext_{\OO_X}^{n-p}(X;\sh{F},\omega_X^n)
       \to \HH^p(X,\sh{F})'
     \startverb\tag{6.5}\stopverb
     }
@@ -96,7 +96,7 @@
       }
 
       \li{
-        #{\HH^p(X,\sh{O}_X(-m)) = 0} for #{n-k\leq p<n} and large enough #{m}.
+        #{\HH^p(X,\OO_X(-m)) = 0} for #{n-k\leq p<n} and large enough #{m}.
       }
 
       \li{
@@ -104,7 +104,7 @@
       }
 
       \li{
-        #{E^i(\sh{O}_X) = \shExt_{\sh{O}_\bb{P}}^{r-n+i}(\sh{O}_X,\omega_\bb{P}^r) = 0} for #{0<i\leq k}.
+        #{E^i(\OO_X) = \shExt_{\OO_\bb{P}}^{r-n+i}(\OO_X,\omega_\bb{P}^r) = 0} for #{0<i\leq k}.
       }
     }
   }
@@ -141,7 +141,7 @@
       \taxon{equation}
       \number{6.7}
       ##{
-        E^j(\sh{F}) = \shExt_{\sh{O}_\bb{P}}^{r-n+j}(\sh{F},\Omega_\bb{P}^r)
+        E^j(\sh{F}) = \shExt_{\OO_\bb{P}}^{r-n+j}(\sh{F},\Omega_\bb{P}^r)
       \startverb\tag{6.7}\stopverb
       }
     }
@@ -151,7 +151,7 @@
 
   \proof{
     \p{
-      Indeed, by the duality theorem for #{\bb{P}}, the left-hand side of \ref{fga1-equation-6.6} is isomorphic to #{\Ext_{\sh{O}_\bb{P}}^{r-i}(\bb{P};\sh{F}(-m),\Omega_\bb{P}^r)}, and so \ref{fga1-equation-6.6} follows from \ref{fga1-lemma-5}.
+      Indeed, by the duality theorem for #{\bb{P}}, the left-hand side of \ref{fga1-equation-6.6} is isomorphic to #{\Ext_{\OO_\bb{P}}^{r-i}(\bb{P};\sh{F}(-m),\Omega_\bb{P}^r)}, and so \ref{fga1-equation-6.6} follows from \ref{fga1-lemma-5}.
     }
   }
 }
@@ -168,13 +168,13 @@
 \p{
   Recall that the #{E^j(\sh{F})} do not depend on the projective immersion in question.
   The condition of the corollary is purely local, and so, if it is satisfied for #{\sh{F}}, then it is also satisfied for every sheaf that is locally isomorphic to some #{\sh{F}^n}.
-  In particular, if this condition is satisfied for #{\sh{O}_X}, then it is satisfied for every locally-free coherent algebraic sheaf.
+  In particular, if this condition is satisfied for #{\OO_X}, then it is satisfied for every locally-free coherent algebraic sheaf.
   This is the case, for example, for all #{i<n} if #{X} is non-singular;
   and for #{i=0} if no component of #{X} consists of a single point;
   and for #{i=0,1} if #{S} is normal and all its components are of dimension #{>1} (see [[Ser1955]](Ser1955)).
-  For it to be satisfied for #{i<k}, it is necessary and sufficient, by definition, that the local rings #{\sh{O}_x} (for #{x\in X}) be of "homological codimension #{\geq k}" (see [[Ser1956a]](Ser1956a) for details on this notion).
+  For it to be satisfied for #{i<k}, it is necessary and sufficient, by definition, that the local rings #{\OO_x} (for #{x\in X}) be of "homological codimension #{\geq k}" (see [[Ser1956a]](Ser1956a) for details on this notion).
   If #{k=n}, then this implies, by [Theorem 3 bis](#fga1-theorem-3bis), that the duality theorem is true for #{X}, i.e. that \ref{fga1-equation-6.5} is an isomorphism for all #{p} and for all #{\sh{F}}.
-  We can give many equivalent conditions on the local rings #{\sh{O}_x} for this to be the case (Nagata);
+  We can give many equivalent conditions on the local rings #{\OO_x} for this to be the case (Nagata);
   for example, those that satisfy the Cohen-Macaulay equidimensionality theorem.
   It is also the case, for example, if #{X} is locally a "complete intersection" in a non-singular ambient variety.
 }

@@ -30,8 +30,8 @@
   \oldpage{149-14}
   We now consider the pairings described in \ref{fga1-2}, which give, in particular, a pairing
   ##{
-    \Ext_{\sh{O}_X}^p(X;\sh{O}_X,\sh{F})\times\Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\Omega_X^n)
-    \to \Ext_{\sh{O}_X}^n(X;\sh{O}_X,\Omega_X^n)
+    \Ext_{\OO_X}^p(X;\OO_X,\sh{F})\times\Ext_{\OO_X}^{n-p}(X;\sh{F},\Omega_X^n)
+    \to \Ext_{\OO_X}^n(X;\OO_X,\Omega_X^n)
   }
   i.e.
 
@@ -39,7 +39,7 @@
     \taxon{equation}
     \number{5.1}
     ##{
-      \HH^p(X,\sh{F})\times\Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\Omega_X^n)
+      \HH^p(X,\sh{F})\times\Ext_{\OO_X}^{n-p}(X;\sh{F},\Omega_X^n)
       \to \HH^n(X,\Omega_X^n).
     \startverb\tag{5.1}\stopverb
     }
@@ -51,7 +51,7 @@
     \taxon{equation}
     \number{5.2}
     ##{
-      \Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\Omega_X^n)
+      \Ext_{\OO_X}^{n-p}(X;\sh{F},\Omega_X^n)
       \to (\HH^p(X,\sh{F}))'.
     \startverb\tag{5.2}\stopverb
     }
@@ -77,12 +77,12 @@
   \taxon{corollary}
 
   \p{
-    Let #{E} be an algebraic vector bundle on #{X}, and #{\sh{O}_X(E)} the sheaf of germs of regular sections of #{X}.
+    Let #{E} be an algebraic vector bundle on #{X}, and #{\OO_X(E)} the sheaf of germs of regular sections of #{X}.
     Then we have canonical isomorphisms
     \note{This equation is labelled (5.3) in the original copy of the notes, but this seems to be a typo, since a later equation shares the same number, and any references to (5.3) seem to indeed point to the later equation instead of this one.}
     ##{
-      (\HH^p(X,\sh{O}_X(E)))'
-      = \HH^{n-p}(X,\Omega_X^n\otimes\sh{O}_X(E')).
+      (\HH^p(X,\OO_X(E)))'
+      = \HH^{n-p}(X,\Omega_X^n\otimes\OO_X(E')).
     }
   }
 
@@ -107,7 +107,7 @@
       \taxon{equation}
       \number{5.2 bis}
       ##{
-        \Ext_{\sh{O}_X}^{n-p}(X;\sh{F},\Omega_X^n)
+        \Ext_{\OO_X}^{n-p}(X;\sh{F},\Omega_X^n)
         \to (\HH^p(X,\sh{F}))'\otimes\sh{L}
       \startverb\tag{5.2 bis}\stopverb
       }
@@ -119,13 +119,13 @@
 
 \p{
   We will show that \ref{fga1-d} implies \ref{fga1-theorem-2}.
-  Let #{k_x=\sh{O}_{(x)}} be the structure sheaf of the variety consisting of a single point #{x\in X}, and consider the canonical homomorphism #{\sh{O}_X\to k_x}, and the associated homomorphism
+  Let #{k_x=\OO_{(x)}} be the structure sheaf of the variety consisting of a single point #{x\in X}, and consider the canonical homomorphism #{\OO_X\to k_x}, and the associated homomorphism
 
   \subtree[fga1-equation-5.3]{
     \taxon{equation}
     \number{5.3}
     ##{
-      \HH^0(X,\sh{O}_X) \to \HH^0(X,k_x).
+      \HH^0(X,\OO_X) \to \HH^0(X,k_x).
     \startverb\tag{5.3}\stopverb
     }
   }
@@ -136,32 +136,32 @@
     \taxon{equation}
     \number{5.4}
     ##{
-      \Ext_{\sh{O}_X}^n(X;k_x,\Omega_X^n)\otimes\sh{L}' \to \Ext_{\sh{O}_X}^n(X;\sh{O}_X,\Omega_X^n)\otimes\sh{L}'
+      \Ext_{\OO_X}^n(X;k_x,\Omega_X^n)\otimes\sh{L}' \to \Ext_{\OO_X}^n(X;\OO_X,\Omega_X^n)\otimes\sh{L}'
     \startverb\tag{5.4}\stopverb
     }
   }
 
-  induced by the homomorphism between the #{\Ext^n} associated to #{\sh{O}_X\to k_x}, i.e.
+  induced by the homomorphism between the #{\Ext^n} associated to #{\OO_X\to k_x}, i.e.
 
   \subtree[fga1-equation-5.5]{
     \taxon{equation}
     \number{5.5}
     ##{
-      \Ext_{\sh{O}_X}^n(X;k_x,\Omega_X^n)
-      \to \Ext_{\sh{O}_X}^n(X;\sh{O}_X,\Omega_X^n)
+      \Ext_{\OO_X}^n(X;k_x,\Omega_X^n)
+      \to \Ext_{\OO_X}^n(X;\OO_X,\Omega_X^n)
     \startverb\tag{5.5}\stopverb
     }
   }
 
   \oldpage{149-15}
   Since \ref{fga1-equation-5.3} is an isomorphism, so too is \ref{fga1-equation-5.4}, and thus so too is \ref{fga1-equation-5.5}.
-  Since #{s_{(x)}} is a basis of #{\Ext_{\sh{O}_X}^n(X;k_x,\Omega_X^n)} by \ref{fga1-equation-4.2}, it indeed follows that its image #{\varepsilon_X} is a basis of #{\HH^n(X,\Omega_X^n)}.
+  Since #{s_{(x)}} is a basis of #{\Ext_{\OO_X}^n(X;k_x,\Omega_X^n)} by \ref{fga1-equation-4.2}, it indeed follows that its image #{\varepsilon_X} is a basis of #{\HH^n(X,\Omega_X^n)}.
 }
 
 \p{
   It remains only to prove \ref{fga1-d}, which will follow in a purely formal way from some elementary facts summarised in the following lemmas.
   Here we suppose that #{X} is a closed subset (singular or not) of the projective space #{\bb{P}} of dimension #{r}.
-  We use the notation #{\sh{O}_\bb{P}(m)} to denote the sheaf on #{\bb{P}} denoted by #{\sh{O}(m)} in [[Ser1955]](Ser1955), and the notation #{\sh{O}_X(m)} for the analogous sheaf on #{X}.
+  We use the notation #{\OO_\bb{P}(m)} to denote the sheaf on #{\bb{P}} denoted by #{\OO(m)} in [[Ser1955]](Ser1955), and the notation #{\OO_X(m)} for the analogous sheaf on #{X}.
 }
 
 \subtree[fga1-lemma-2]{
@@ -169,14 +169,14 @@
   \number{2}
 
   \p{
-    The statement of \ref{fga1-d} is true if #{X=\bb{P}} and #{\sh{F}=\sh{O}_\bb{P}(m)}.
+    The statement of \ref{fga1-d} is true if #{X=\bb{P}} and #{\sh{F}=\OO_\bb{P}(m)}.
   }
 
   \proof{
     \p{
       This lemma can be proved by a direct calculation.
-      The explicit calculation of the #{\HH^i(\bb{P},\sh{O}_\bb{P}(m))} can be found in [[Ser1955]](Ser1955), but it also can be done in a simpler way.
-      Computing the cup product #{\HH^i(\bb{P},\sh{O}_\bb{P}(m))\times\HH^j(\bb{P},\sh{O}_\bb{P}(m)') \to \HH^{i+j}(\bb{P},\sh{O}_\bb{P}(m+m'))} (which is necessary to calculate the pairing in \ref{fga1-equation-5.1}) does not present any difficulty.
+      The explicit calculation of the #{\HH^i(\bb{P},\OO_\bb{P}(m))} can be found in [[Ser1955]](Ser1955), but it also can be done in a simpler way.
+      Computing the cup product #{\HH^i(\bb{P},\OO_\bb{P}(m))\times\HH^j(\bb{P},\OO_\bb{P}(m)') \to \HH^{i+j}(\bb{P},\OO_\bb{P}(m+m'))} (which is necessary to calculate the pairing in \ref{fga1-equation-5.1}) does not present any difficulty.
     }
   }
 }
@@ -186,12 +186,12 @@
   \number{3}
 
   \p{
-    Every coherent algebraic sheaf #{\sh{F}} on #{X} is isomorphic to a sheaf that is some quotient of #{\sh{O}_X(-m)^k}, and we can take #{m} to be as large as we wish.
+    Every coherent algebraic sheaf #{\sh{F}} on #{X} is isomorphic to a sheaf that is some quotient of #{\OO_X(-m)^k}, and we can take #{m} to be as large as we wish.
   }
 
   \proof{
     \p{
-      This follows from the fact that #{\sh{F}\otimes\sh{O}_X(m)} is "generated by its sections" for large enough #{m};
+      This follows from the fact that #{\sh{F}\otimes\OO_X(m)} is "generated by its sections" for large enough #{m};
       see [[Ser1955]](Ser1955).
     }
   }
@@ -203,8 +203,8 @@
 
   \p{
     Let #{i>0}.
-    Then #{\HH^{r-i}(\bb{P},\sh{O}_\bb{P}(-m))=0} for large enough #{m};
-    and, for every coherent algebra sheaf #{\sh{B}} on #{X}, we have that #{\Ext_{\sh{O}_X}^i(X;\sh{O}_X(-m),\sh{B})=0} for large enough #{m}.
+    Then #{\HH^{r-i}(\bb{P},\OO_\bb{P}(-m))=0} for large enough #{m};
+    and, for every coherent algebra sheaf #{\sh{B}} on #{X}, we have that #{\Ext_{\OO_X}^i(X;\OO_X(-m),\sh{B})=0} for large enough #{m}.
   }
 
   \proof{
@@ -212,8 +212,8 @@
       The first claim follows from the explicit calculations mentioned above;
       for the second, we note that we have an isomorphism
       ##{
-        \Ext_{\sh{O}_X}^i(X;\sh{O}_X(-m),\sh{B})
-        = \HH^i(X,\sh{B}\otimes\sh{O}(m))
+        \Ext_{\OO_X}^i(X;\OO_X(-m),\sh{B})
+        = \HH^i(X,\sh{B}\otimes\OO(m))
       }
       (by [Corollary 1 of Proposition 1](fga1-proposition-1-corollary-1)), whence the conclusion, by a well-known result of [[Ser1955]](Ser1955).
     }
@@ -229,7 +229,7 @@
 
   \p{
     Let #{i>0}.
-    Then the functor #{\sh{F}\mapsto\HH^{r-i}(\bb{P},\sh{F})} on the category of coherent algebraic sheaves on #{\bb{P}} is coeffaceable, and so too is the functor #{\Ext_{\sh{O}_X}^i(X;\sh{F},\sh{B})} on the category of coherent algebraic sheaves on #{X}.
+    Then the functor #{\sh{F}\mapsto\HH^{r-i}(\bb{P},\sh{F})} on the category of coherent algebraic sheaves on #{\bb{P}} is coeffaceable, and so too is the functor #{\Ext_{\OO_X}^i(X;\sh{F},\sh{B})} on the category of coherent algebraic sheaves on #{X}.
   }
 }
 
@@ -239,12 +239,12 @@
 
   \p{
     \oldpage{149-16}
-    Let #{\sh{A}} and #{\sh{B}} be coherent algebraic sheaves on #{X}, and let #{\sh{A}(m)=\sh{A}\otimes\sh{O}_X(m)}.
+    Let #{\sh{A}} and #{\sh{B}} be coherent algebraic sheaves on #{X}, and let #{\sh{A}(m)=\sh{A}\otimes\OO_X(m)}.
     Then, for large enough #{m}, the canonical homomorphism
     ##{
-      \Ext_{\sh{O}_X}^i(X;\sh{A}(-m),\sh{B})
-      \to \HH^0(X,\shExt_{\sh{O}_X}^i(\sh{A}(-m),\sh{B}))
-      = \HH^0(X,\shExt_{\sh{O}_X}^i(\sh{A},\sh{B})(m))
+      \Ext_{\OO_X}^i(X;\sh{A}(-m),\sh{B})
+      \to \HH^0(X,\shExt_{\OO_X}^i(\sh{A}(-m),\sh{B}))
+      = \HH^0(X,\shExt_{\OO_X}^i(\sh{A},\sh{B})(m))
     }
     is an isomorphism.
   }
@@ -254,8 +254,8 @@
       This follows immediately from the spectral sequence in \ref{fga1-proposition-1} applied to #{\sh{A}(-m)} and #{\sh{B}}, since we then have that
       ##{
         E_2^{p,q}(\sh{A}(-m),\sh{B})
-        = \HH^p(X,\shExt_{\sh{O}_X}^q(\sh{A}(-m),\sh{B}))
-        = \HH^p(X,\shExt_{\sh{O}_X}^q(\sh{A},\sh{B})(m))
+        = \HH^p(X,\shExt_{\OO_X}^q(\sh{A}(-m),\sh{B}))
+        = \HH^p(X,\shExt_{\OO_X}^q(\sh{A},\sh{B})(m))
       }
       which is zero for #{p>0} and large enough #{m}.
     }
@@ -265,7 +265,7 @@
 \p{
   We now prove \ref{fga1-d} in the case where #{X=\bb{P}}.
   We will first prove that \ref{fga1-equation-5.2bis} is an isomorphism for #{p=n};
-  since both sides are then left-exact functors (since #{\HH^{r+i}(\bb{P},\sh{F})=0}), it follows from \ref{fga1-lemma-3} that it suffices to prove the claim for #{\sh{F}=\sh{O}_\bb{P}(-m)}, but this is covered by \ref{fga1-lemma-2}.
+  since both sides are then left-exact functors (since #{\HH^{r+i}(\bb{P},\sh{F})=0}), it follows from \ref{fga1-lemma-3} that it suffices to prove the claim for #{\sh{F}=\OO_\bb{P}(-m)}, but this is covered by \ref{fga1-lemma-2}.
   Since the homomorphisms in \ref{fga1-equation-5.2bis} are functorial and compatible with the coboundary maps, and since, for #{p<n}, both sides of \ref{fga1-equation-5.2bis} are coeffaceable functors in #{\sh{F}} (the [corollary to Lemmas 3 and 4](fga1-lemma-3-and-lemma-4-corollary)), it follows, by a standard argument, that \ref{fga1-equation-5.2bis} is an isomorphism for all #{p}.
   This proves the duality theorem for the projective space.
 }
@@ -276,13 +276,13 @@
   ##{
     \HH^n(X,\sh{F})
     = \HH^n(\bb{P},\sh{F})'
-    = \Ext_{\sh{O}_\bb{P}}^{r-n}(\bb{P};\sh{F},\Omega_\bb{P}^r).
+    = \Ext_{\OO_\bb{P}}^{r-n}(\bb{P};\sh{F},\Omega_\bb{P}^r).
   }
   By \ref{fga1-lemma-1}, the far-right-hand side can be identified with
   ##{
-    \Hom_{\sh{O}_\bb{P}}(\bb{P};\sh{F},\omega_X^n)
-    = \Hom_{\sh{O}_X}(X;\sh{F},\Omega_X^n)
-    = \Ext_{\sh{O}_X}^0(X;\sh{F},\Omega_X^n)
+    \Hom_{\OO_\bb{P}}(\bb{P};\sh{F},\omega_X^n)
+    = \Hom_{\OO_X}(X;\sh{F},\Omega_X^n)
+    = \Ext_{\OO_X}^0(X;\sh{F},\Omega_X^n)
   }
   whence we have an isomorphism
 
@@ -291,8 +291,8 @@
     \number{5.6}
     ##{
       \HH^n(X,\sh{F})'
-      = \Hom_{\sh{O}_X}(X;\sh{F},\Omega_X^n)
-      = \Ext_{\sh{O}_X}^0(X;\sh{F},\Omega_X^n).
+      = \Hom_{\OO_X}(X;\sh{F},\Omega_X^n)
+      = \Ext_{\OO_X}^0(X;\sh{F},\Omega_X^n).
     \startverb\tag{5.6}\stopverb
     }
   }
@@ -311,15 +311,15 @@
   \oldpage{149-17}
   We can prove that the isomorphism in \ref{fga1-equation-5.6} is exactly \ref{fga1-equation-5.2bis} with #{p=n} and #{\sh{L}=k}, by \ref{fga1-equation-5.7}.
   Subsequently, \ref{fga1-equation-5.2bis} is an isomorphism for #{p=n}.
-  To prove that it is an isomorphism for all #{p}, it again suffices to prove that, for #{p<n}, the two sides of \ref{fga1-equation-5.2bis} are coeffaceable functors in #{\sh{F}}, and, a fortiori (taking \ref{fga1-lemma-3} into account), that the two sides are zero when we take #{\sh{F}=\sh{O}_X(-m)} with large enough #{m}.
+  To prove that it is an isomorphism for all #{p}, it again suffices to prove that, for #{p<n}, the two sides of \ref{fga1-equation-5.2bis} are coeffaceable functors in #{\sh{F}}, and, a fortiori (taking \ref{fga1-lemma-3} into account), that the two sides are zero when we take #{\sh{F}=\OO_X(-m)} with large enough #{m}.
   But, for the left-hand side, this is true by \ref{fga1-lemma-4}, and for the right-hand side we can write, using the duality theorem for #{\bb{P}},
   ##{
-    \HH^p(X,\sh{O}_X(-m))'
-    = \Ext_{\sh{O}_\bb{P}}^{r-p}(\bb{P};\sh{O}_X(-m),\Omega_\bb{P}^r).
+    \HH^p(X,\OO_X(-m))'
+    = \Ext_{\OO_\bb{P}}^{r-p}(\bb{P};\OO_X(-m),\Omega_\bb{P}^r).
   }
-  The right-hand side is zero for #{p<n} and large enough #{m}, as follows from \ref{fga1-lemma-5} (where in fact #{X=\bb{P}}) and from the fact that #{\sh{O}_X} is of cohomological dimension #{\leq r-n} when thought of as a coherent algebraic sheaf on #{\bb{P}} (since #{X} is non-singular), whence
+  The right-hand side is zero for #{p<n} and large enough #{m}, as follows from \ref{fga1-lemma-5} (where in fact #{X=\bb{P}}) and from the fact that #{\OO_X} is of cohomological dimension #{\leq r-n} when thought of as a coherent algebraic sheaf on #{\bb{P}} (since #{X} is non-singular), whence
   ##{
-    \shExt_{\sh{O}_\bb{P}}^{r-p}(\sh{O}_X,\Omega_\bb{P}^r)
+    \shExt_{\OO_\bb{P}}^{r-p}(\OO_X,\Omega_\bb{P}^r)
     = 0
     \quad\text{for }p<n.
   }
