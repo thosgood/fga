@@ -3,12 +3,12 @@
 \parent{fga1}
 
 \import{fga1-macros}
-\import{bibliography}
+
 \put\transclude/numbered{false}
 
 \p{
   The results of this section are due, independently, to Cartier and Yoneda;
-  see a talk by Cartier [@Car1957] for more details.
+  see a talk by Cartier [[Car1957]](Car1957) for more details.
   Let #{\mathcal{C}} be an abelian category, and let #{K} and #{L} be two graded objects of #{\mathcal{C}}.
   We denote by #{\Hom(K,L)} the graded abelian group whose degree-#{n} component consists of homogeneous homomorphisms of degree #{n} from #{K} to #{L} (i.e. systems #{(u_i)} of homomorphisms #{K^i\to L^{i+n}}).
   If #{K} and #{L} are complexes (with differentials of degree #{+1}, to fix conventions), then we endow #{\Hom(K,L)} with the differential operator given by
