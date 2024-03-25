@@ -5,3 +5,22 @@
 \import{fga2-macros}
 
 \put\transclude/numbered{false}
+
+\p{
+  Let #{f\colon X\to Y} be a proper morphism, and #{\sh{F}} a coherent sheaf on #{X}, with #{\sh{F}} assumed to be #{Y}-flat, i.e. the #{\sh{F}_x} are flat modules over the rings #{\OO_y} (where #{y=f(x)}).
+  \oldpage{182-09}
+  This also implies that, for every #{y\in Y}, if we filter #{\sh{F}} along the fibre #{f^{-1}(y)} by the #{\mathfrak{m}_y^n\sh{F}} (where #{\mathfrak{m}_y} is the maximal ideal of #{\OO_y}), then the associated graded algebra is isomorphic to #{(\sh{F}/\mathfrak{m}_y\sh{F})\otimes_{k(y)}\gr(\OO_y)};
+  in other words, we have that
+  ##{
+    \mathfrak{m}_y^n\sh{F}/\mathfrak{m}_y^{n+1}
+    = \sh{F}_y\otimes_{k(y)}(\mathfrak{m}_y^n/\mathfrak{m}_y^{n+1})
+  }
+  for every integer #{n}, where #{\sh{F}_y} denotes the sheaf #{\sh{F}/\mathfrak{m}_y\sh{F}} induced by #{\sh{F}} on #{X_y} (with #{X_y} denoting the fibre #{f^{-1}(y)} considered as a proper scheme over the residue field #{k(y)} of #{y}).
+  Taking this isomorphism, as well as \ref{fga2-theorem-2}, into account, we obtain augmentations, and sometimes computations, of the #{\RR^q f_*(\sh{F})} in a neighbourhood of #{y}, knowing the cohomology of #{X_y} with coefficients in #{\sh{F}_y}.
+  Here \ref{fga2-theorem-2} takes the form
+  ##{
+    \overline{\RR^q f_*(\sh{F})}
+    = \varprojlim_n H^q(\sh{F}_y,\sh{F}/\mathfrak{m}_y^n\sh{F}).
+  }
+  We will mention here only the following consequence:
+}
