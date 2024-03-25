@@ -5,3 +5,75 @@
 \import{fga2-macros}
 
 \put\transclude/numbered{false}
+
+\p{
+  Let #{f\colon X\to Y} be a proper morphism of schemes (Noetherian, as always), and let #{Y'} be a closed subset of #{Y'}, with #{X'} its inverse image in #{X}, and consider the corresponding formal completions #{\overline{Y}} and #{\overline{X}}.
+  Then #{f} induces a morphism #{\overline{f}\colon\overline{X}\to\overline{Y}} of formal schemes, which is also proper.
+  Let #{\sh{F}} be a coherent sheaf on #{X}, then #{\overline{\sh{F}}} is a coherent sheaf on #{\overline{X}}.
+  In \ref{fga2-theorem-1}, we forget #{X}, #{Y}, and #{\sh{F}}, and consider only the proper morphism #{\overline{f}} of formal schemes, along with the coherent sheaf #{\overline{\sh{F}}} on #{\overline{X}}.
+  (However, the speaker has only written the complete proof in the case where we start with some #{X}, #{Y}, #{f}, and #{F}).
+}
+
+\subtree[fga2-theorem-1]{
+  \taxon{theorem}
+  \number{1}
+  \title{Finiteness theorem}
+
+  \p{\todo{the following list should be i, ii}}
+
+  \ol{
+    \li{
+      The #{\RR^q\overline{f}_*(\overline{\sh{F}})} are coherent sheaves on #{\overline{Y}}.
+    }
+
+    \li{
+      The natural homomorphisms
+      ##{
+        \RR^q\overline{f}_*(\overline{\sh{F}})
+        \to \varprojlim_n\RR^q (f_n)_*(\sh{F}_n)
+      }
+      are isomorphisms.
+    }
+  }
+}
+
+\p{
+  In the statement of \ref{fga2-theorem-1}, we suppose that we already have some coherent subsheaf #{\sh{J}} of #{\sh{O}_Y} that defines #{Y'}, whence, by taking the inverse image, a coherent subsheaf of #{\sh{O}_X} that defines #{X'}, whence, by definition, #{\sh{F}_n}, #{X_n}, #{Y_n}, and #{f_n\colon X_n\to Y_n} as in \ref{fga2-2}.
+  The minor changes that need to be made to the notation in the explanation if we started with an arbitrary proper morphism between two formal schemes are evident.
+}
+
+\p{
+  \ref{fga2-theorem-1} deals only with "formal cohomology";
+  the following theorem relates it with "algebraic cohomology", and resembles a well-known theorem of Serre [[Ser1956]](Ser1956) on the comparison between algebraic cohomology and analytic cohomology.
+}
+
+\subtree[fga2-theorem-2]{
+  \taxon{theorem}
+  \number{2}
+  \title{First comparison theorem}
+
+  \p{
+    \oldpage{182-05}
+    The #{\RR^q f_*(\sh{F})} are coherent sheaves on #{Y} (which is a particular case of \ref{fga2-theorem-1}), and the natural homomorphisms
+    ##{
+      \overline{\RR^q f_*(\sh{F})}
+      \to \varprojlim_n \RR^q (f_n)_*(\sh{F}_n)
+    }
+    are isomorphisms.
+  }
+}
+
+\subtree[fga2-theorem-2-corollary-1]{
+  \taxon{corollary}
+  \number{1}
+
+  \p{
+    There are canonical isomorphisms #{\overline{\RR^q f_*(\sh{F})} = \RR^q\overline{f}_*(\overline{\sh{F}})}.
+  }
+}
+
+\p{
+  This corollary is, for #{q=0}, a generalisation of Zariski's "fundamental theorem of holomorphic functions", from which we will deduce a generalisation of Zariski's "connection theorem".
+  We also note that, while (ii) in \ref{fga2-theorem-1} is trivial for #{q=0}, this is not at all the case for \ref{fga2-theorem-2} nor for its equivalent formulation (\ref{fga2-theorem-2-corollary-1}).
+  In fact, the proof proceeds by decreasing induction on #{q} (being trivial for large #{q}, since then both sides of the equation are zero), and the case #{q=0} thus appears as the last induction step, and so could be called the "most difficult" case.
+}
