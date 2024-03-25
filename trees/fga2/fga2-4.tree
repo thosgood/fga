@@ -5,3 +5,81 @@
 \import{fga2-macros}
 
 \put\transclude/numbered{false}
+
+\p{
+  Let #{f\colon X\to Y} be a proper morphism of schemes.
+  Then, by the finiteness theorem (\ref{fga2-theorem-1}), #{f_*(\OO_X)=\underline{A}} is a coherent sheaf on #{Y}, and is also a sheaf of commutative algebras, and thus corresponds to a #{Y}-scheme #{g\colon Y'\to Y} that is finite over #{Y} (defined by the condition of being affine over #{Y}, i.e. the inverse image of an affine open is affine, and #{g_*(\OO_{Y'})=\underline{A}}).
+  It is immediate that #{f} then canonically factors as #{f=gf'}, where #{f'\colon X\to Y'} is a morphism from #{X} to #{Y} that is now such that #{f'_*(\OO_X)=\OO_{Y'}}.
+  This factorisation of #{f} is called the \em{Stein factorisation} of #{f}.
+  Applying the first comparison theorem (\ref{fga2-theorem-2}) and its [Corollary 1](fga2-theorem-2-corollary-1) to #{f'} and the subset #{Y'} consisting of a single point #{y'}, we see that #{(f')^{-1}(y')=X'} is connected (or, in other words, the formal sections of #{X} along #{X'} do not form a local ring, but the completion #{f'_*(\OO_X)_{y'}=\OO_{y'}} is local!)
+  We have proven:
+}
+
+\subtree[fga2-theorem-5]{
+  \taxon{theorem}
+  \number{5}
+  \title{Zariski's "connection theorem"}
+
+  \p{
+    Let #{f\colon X\to Y} be a proper morphism.
+    Then #{f} factors uniquely (up to isomorphism) as #{f=gf'}, where #{g\colon Y'\to Y} is finite, and #{f'\colon X\to Y'} is such that #{f'_*(\OO_X)=\OO_{Y'}} (whence #{g_*(\OO_{Y'})=f_*(\OO_X)}).
+    Also, the fibres of #{f'} are connected, i.e. the set of connected components of a fibre #{f^{-1}(y)} of #{f} is in bijective correspondence with the set of points of #{Y'} over #{y}, i.e. the set of maximal ideals in #{f_*(\OO_X)_y}.
+  }
+}
+
+\p{
+  \oldpage{182-06}
+  From this, we immediately deduce the usual variants of the connection theorem.
+  We state here only the following:
+}
+
+\subtree[fga2-theorem-5-corollary-1]{
+  \taxon{corollary}
+  \number{1}
+
+  \p{
+    For a point #{x} of #{X} to be isolated in its fibre #{f^{-1}(y)}, it is necessary and sufficient that the fibre #{(f')^{-1}(y')} (where #{y'=f'(x)}) consist of a single point #{x}, or that #{f'} induce an isomorphism from a neighbourhood of #{x} to a neighbourhood of #{y'}.
+    The set of these points is an open subset #{U}, and #{f'} induces an isomorphism from #{U} to an open subset of #{Y'}.
+  }
+}
+
+\p{
+  To show that #{f'} is a local isomorphism at #{x}, we note that #{f'} induces an \em{isomorphism} #{\OO_{y'}\to\OO_x}, as we see thanks to #{f'(\OO_X)=\OO_{Y'}};
+  we also note that the #{(f')^{-1}(V)} give a fundamental system of neighbourhoods of #{x} when #{V} runs over a fundamental system of neighbourhoods of #{y'} (since #{f'} is a closed map whose fibre at #{y'} consists of the single point #{x}).
+  We thus immediately deduce the following result, due to Chevalley in the "geometric" case:
+}
+
+\subtree[fga2-theorem-5-corollary-2]{
+  \taxon{corollary}
+  \number{2}
+
+  \p{
+    For #{f} to be a finite morphism, it is necessary and sufficient that it be proper with finite fibres.
+  }
+}
+
+\p{
+  If the hypotheses of \ref{fga2-theorem-5-corollary-2} hold, then #{f'} is effectively an isomorphism, by the above.
+}
+
+\p{
+  Let #{f\colon X\to Y} be a morphism that is not necessarily proper, but suppose that #{X} is contained in some proper #{Y}-scheme #{\overline{f}\colon\overline{X}\to Y} as an open subset (which is the case if, in particular, #{\overline{f}} is quasi-projective).
+  Applying [Corollary 1](fga2-theorem-5-corollary-1), we see that #{\overline{f'}} induces an isomorphism from the set #{U} of points of #{X} that are isolated in their fibre to an open subset of #{Y'} (and that #{U} is indeed an open subset).
+  We thus deduce the following global version of Zariski's "main theorem":
+}
+
+\subtree[fga2-theorem-6]{
+  \taxon{theorem}
+  \number{6}
+
+  \p{
+    Let #{f\colon X\to Y} be a morphism of finite type.
+    Then the set #{U} of points of #{X} that are isolated in their fibre is open, and, if #{f} is quasi-projective,
+    \footnote{\comp This hypothesis can be replaced by the weaker hypothesis "if #{f} is separated", by means of the following result (see [[Gro1960b, VIII, 6.2]](Gro1960b)): every morphism #{f\colon X\to Y} which is quasi-finite and separated is also projective.}
+    then #{U} is #{Y}-isomorphic to an open subset of some scheme #{Y'} that is finite over #{Y}.
+  }
+}
+
+\p{
+  Since a morphism of finite type is locally affine, and \em{a fortiori} locally quasi-projective, we immediately deduce from \ref{fga2-theorem-6} the usual local variants of the main theorem.
+}
