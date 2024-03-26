@@ -11,3 +11,71 @@
   For simplicity, we work over a \em{field} #{k}, i.e. we work in \em{equal characteristic}, even though \ref{fga2-theorem-8} allows us to also discuss the more general case, without any fundamental changes, so it seems.
   We have not yet gotten past the "formal" stage, but the speaker still hopes to be able to construct true schemes of modules in certain cases from this, and, in particular, construct, for every integer #{g}, a scheme over the integers that plays the role of universal scheme of modules for the simple curves of genus #{g}.
 }
+
+\subtree{
+  \taxon{remark}
+
+  \p{
+    \comp
+    \oldpage{182-16}
+    We note that Mumford has recently constructed schemes of modules for the curves of genus #{g} (cf. \em{Mumford–Tate seminar}, Harvard University, 1961–62).
+    \ref{fga2-theorem-10} also proves that the "level #{n} Jacobi schemes" from the theory of modules are non-singular (and even simple over #{\underline{\ZZ}}).
+  }
+}
+
+\p{
+  We continue to use the setting and notation of \ref{fga2-theorem-9}, and now suppose that #{A} is a local algebra of finite rank over #{k}, which is assumed to be algebraically closed, for simplicity.
+  Then #{F(A)} can be thought of as a covariant functor in #{A}, with values in the category of sets, with a homomorphism #{A\to B} of #{k}-algebras defining a map #{F(A)\to F(B)}, since every flat #{A}-scheme #{X} with #{X\otimes_Ak=X_0} gives rise to a #{B}-scheme #{X\otimes_AB} with the same properties.
+  \em{Suppose} that we can find a complete local Noetherian #{k}-algebra #{\OO}, as well as a functorial isomorphism
+  ##{
+    \Hom(\OO,A) \xrightarrow{\sim} F(A)
+    \startverb\tag{*}\stopverb
+  }
+  (where the left-hand side denotes homomorphisms of #{k}-algebras).
+  We can easily see that such an #{\OO} is determined up to canonical isomorphism, and so we call the formal spectrum #{\mathfrak{Y}} of #{\OO} (i.e. the topological space consisting of a single point, endowed with a sheaf of topological rings consisting of just #{\OO}) the \em{formal scheme of modules for #{X_0}}.
+  (Note that it does not necessarily exist).
+  Let #{\mathfrak{r}} be the maximal ideal of #{\OO}, and, for all #{n}, let #{\OO_n=\OO /\mathfrak{r}^{n+1}} (so that #{\OO_0=k}).
+  Then the canonical homomorphism #{\OO\to\OO_n} is an element of #{\Hom(\OO,\OO_n)}, and thus defines an element of #{F(\OO_n)}, i.e. a flat #{\OO_n}-scheme #{X_n} whose restriction #{\mod\mathfrak{r}} is #{X_0}.
+  These #{X_n} are induced from one another by extension of scalars (i.e. here by reductions), whence it follows that they come from a formal scheme #{\mathfrak{X}} that is well determined by the formal scheme of modules #{\mathfrak{Y}};
+  further, #{\mathfrak{X}} is flat over #{\mathfrak{Y}}, and #{\mathfrak{X}_0=X_0}.
+  The isomorphism #{(*)} is then given, as we can immediately see, by associating to each homomorphism #{\OO\to A} of #{k}-algebras the class of the #{A}-scheme #{\mathfrak{X}\otimes_{\OO} A} (i.e. to every morphism #{\mathfrak{Y}'=\Spec(A)\to\mathfrak{Y}} of #{k}-schemes, we associate the #{\mathfrak{Y}'}-scheme #{\mathfrak{X}\otimes_{\mathfrak{Y}}\mathfrak{Y}'} given by base change).
+  Furthermore, we see that the isomorphism #{(*)} and its above description still hold even if we only suppose that #{A} is a complete local Noetherian #{k}-algebra (not necessarily Artinian).
+  Of course, as always, #{\OO} can indeed \em{a priori} have nilpotent elements, and it seems likely that there should exist cases where #{\OO} is itself Artinian, without being identical to #{k}.
+  This tells us at which point the point of view of Kodaira–Spencer (restricting to considering the #{A} that are \em{regular} rings) is \em{a priori} inadequate in the general case.
+}
+
+\p{
+  \oldpage{182-17}
+  It remains to give sufficient conditions for there to exist a formal scheme of modules for #{X_0}, assumed to be proper over #{k}.
+  Generally, it is easy to give simple necessary and sufficient conditions on a functor #{A\to F(A)} (from local #{k}-algebras of finite rank to sets) in order for it to be of the form #{\Hom(\OO,A)} for some suitable #{\OO}.
+  We do not give the details here.
+  We point out only that, in the case which we are studying, these conditions impose non-trivial conditions of a cohomological nature on #{X_0}, and it seems unlikely that they will always be satisfied, even though the speaker has not constructed any counterexamples.
+  It seems plausible, however, that the condition #{H^0(X,\mathfrak{G}_{X_0/k})=0} is \em{sufficient} (even if not at all necessary) in order to guarantee the existence of a formal scheme of modules.
+  We restrict ourselves to stating here a theorem that deals with a particularly simple case (whose analogue in the theory of analytic spaces is well known, cf. Kodaira–Spencer), which can easily be proven using the results from the previous section:
+}
+
+\subtree[fga2-theorem-10]{
+  \taxon{theorem}
+  \number{10}
+
+  \p{
+    Let #{X_0} be a simple proper scheme over the field #{k} such that
+    ##{
+      H^0(X_0,\mathfrak{G}_{X_0/k})
+      = H^2(X_0,\mathfrak{G}_{X_0/k})
+      = 0.
+    }
+    Then there exists a formal scheme of modules for #{X_0}, corresponding to a local regular ring #{\mathcal{O}} (i.e. an algebra of formal series over #{k}).
+  }
+}
+
+\p{
+  As we have already pointed out, it is not true in general that the formal scheme #{\mathfrak{X}} over #{\mathcal{O}} is algebraisable;
+  but we know that this is true, however, when #{X_0} is projective and #{H^2(X_0,\OO_{X_0})=0} (\ref{fga2-theorem-4}), such as when #{X_0} is of dimension #{1}.
+  This is what gives some hope of constructing a scheme of modules over the integers for curves of a given genus...
+}
+
+\p{
+  Note also that methods such as those described in this section can be applied in the construction and study of Picard varieties, as well as in many other constructions.
+  We will return to this soon.
+}
