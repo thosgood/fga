@@ -20,7 +20,7 @@
   Here \ref{fga2-theorem-2} takes the form
   ##{
     \overline{\RR^q f_*(\sh{F})}
-    = \varprojlim_n H^q(\sh{F}_y,\sh{F}/\mathfrak{m}_y^n\sh{F}).
+    = \varprojlim_n \HH^q(\sh{F}_y,\sh{F}/\mathfrak{m}_y^n\sh{F}).
   }
   We will mention here only the following consequence:
 }
@@ -31,11 +31,11 @@
 
   \p{
     Let #{f\colon X\to Y} be a proper morphism, and #{\sh{F}} a coherent #{Y}-flat sheaf on #{X}.
-    Let #{y\in Y}, let #{q} be an integer, and suppose that #{H^q(X_y,\sh{F}_y)=0}.
+    Let #{y\in Y}, let #{q} be an integer, and suppose that #{\HH^q(X_y,\sh{F}_y)=0}.
     Then #{\RR^q f_*(\sh{F})} is zero on a a neighbourhood of #{y}, and, for every #{n}, the natural homomorphism
     ##{
       \RR^{q-1}f_*(\sh{F})_y
-      \to H^{q-1}(X_y,\sh{F}_y/\mathfrak{m}_y^n\sh{F}_y)
+      \to \HH^{q-1}(X_y,\sh{F}_y/\mathfrak{m}_y^n\sh{F}_y)
     }
     is surjective.
   }
@@ -52,7 +52,7 @@
 
   \p{
     Let #{f} be a flat proper morphism, #{\sh{F}} and #{\sh{G}} locally free coherent sheaves on #{X}, and #{y\in Y};
-    suppose that #{H^1(X_y,\shHom_{\OO_X}(\sh{F}_y,\sh{G}))=0}.
+    suppose that #{\HH^1(X_y,\shHom_{\OO_X}(\sh{F}_y,\sh{G}))=0}.
     Then every homomorphism #{u_0\colon\sh{F}_y\to\sh{G}_y} is induced by a homomorphism #{u\colon\sh{F}|V\to\sh{G}|V}, where #{V=f^{-1}(U)} is the inverse image of a neighbourhood #{U} of #{y}.
   }
 }
@@ -76,7 +76,7 @@
 
   \p{
     \oldpage{182-10}
-    Let #{E_0} be a locally free coherent sheaf on #{X_y} such that #{H^1(X_y;\shHom_{\OO_X}(E_0,E_0))=0}.
+    Let #{E_0} be a locally free coherent sheaf on #{X_y} such that #{\HH^1(X_y;\shHom_{\OO_X}(E_0,E_0))=0}.
     Then any two locally free sheaves whose restrictions to #{X_y} are isomorphic to #{E_0} are themselves isomorphic to one another in a neighbourhood of #{X_y}.
   }
 }
@@ -90,7 +90,7 @@
   \number{3}
 
   \p{
-    Suppose that #{H^1(X_y,\OO_{X_y})=0}.
+    Suppose that #{\HH^1(X_y,\OO_{X_y})=0}.
     Then any two invertible sheaves on #{X} (i.e. locally isomorphic to #{\OO_X}) whose restrictions to #{X_y} are isomorphic are themselves isomorphic to one another.
   }
 }

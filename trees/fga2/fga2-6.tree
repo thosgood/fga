@@ -18,15 +18,15 @@
   \number{3}
 
   \p{
-    Let #{\mathfrak{X}} be a proper formal scheme that is flat over #{A}, and let #{\sh{F}_0} be a locally free sheaf on #{X_0} such that #{H^2(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))=0}.
+    Let #{\mathfrak{X}} be a proper formal scheme that is flat over #{A}, and let #{\sh{F}_0} be a locally free sheaf on #{X_0} such that #{\HH^2(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))=0}.
     Then there exists a locally free sheaf #{\sh{F}} on #{\mathfrak{X}} that induces, on #{X_0}, a sheaf isomorphic to #{\sh{F}_0}.
-    (This #{\sh{F}} is also unique up to isomorphism if #{H^1(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))=0}).
+    (This #{\sh{F}} is also unique up to isomorphism if #{\HH^1(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))=0}).
   }
 }
 
 \p{
   We construct, step by step, locally free sheaves #{\sh{F}_n} on the #{X_n} that induce one another.
-  The construction of #{\sh{F}_0} is met with an obstruction living in #{H^2(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))\otimes_{A/\sh{J}}(\sh{J}^n/\sh{J}^{n+1})}, but this is zero, by hypothesis.
+  The construction of #{\sh{F}_0} is met with an obstruction living in #{\HH^2(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))\otimes_{A/\sh{J}}(\sh{J}^n/\sh{J}^{n+1})}, but this is zero, by hypothesis.
   Now, using \ref{fga2-theorem-3}, we obtain:
 }
 
@@ -37,7 +37,7 @@
   \p{
     Let #{X} be a proper scheme that is flat over #{A}, and let #{\sh{F}_0} be as above.
     Then there exists a locally free sheaf #{\sh{F}} on #{X} that induces, on #{X_0}, a sheaf that is isomorphic to #{\sh{F}_0}.
-    This #{\sh{F}} is also unique up to isomorphism if #{H^1(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))=0}.
+    This #{\sh{F}} is also unique up to isomorphism if #{\HH^1(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))=0}.
   }
 }
 
@@ -47,12 +47,12 @@
   We are interested in finding schemes #{X} that are flat over #{A}, and such that #{X\otimes_A k=X_0} (this is the starting point of the "_theory of modules_", or of "structure variations" of #{X_0}).
   \oldpage{182-12}
   It is equivalent to give either such an #{X} or, on the topological space #{X_0}, a sheaf #{\OO_X} endowed with the following structures:
+  \todo{the following list should be i, ii}
 
   \ol{
     \li{
       #{\OO_X} is a sheaf of #{A}-algebras;
     }
-
     \li{
       #{\OO_X} is endowed with an augmentation homomorphism #{\OO_X\to\OO_{X_0}} (that is compatible with the #{A}-algebra structures);
     }
@@ -72,5 +72,93 @@
     Let #{A} be a local Artinian ring of residue field #{k}.
     Then there exists an #{A}-scheme #{X} that is flat over #{A} and such that #{X\otimes_A k=X_0}.
     Further, any two such schemes are necessarily isomorphic.
+  }
+}
+
+\p{
+  Note that the isomorphic in question is not canonical, since #{X} will have, in general, non-trivial #{A}-automorphisms that induce the identity on #{X_0}.
+  Furthermore, there is not, in general, a "canonical" choice of #{X} satisfying the given conditions, except in the case where #{A} is a #{k}-algebra (the case of \em{equal characteristics}), where we can take #{X=X_0\otimes_k A}, i.e. #{\OO_X=\OO_{X_0}\otimes_k A} (whether or not #{X_0} is affine, in fact).
+  In the case of unequal characteristics, I do not know in general, when #{X_0} is not affine, if we can "lift" #{X_0} to an #{X} defined over #{A}.
+  However, for any integer #{n>0}, let #{A_{n-1}=A/\mathfrak{m}^n}, and suppose that we have lifted #{X_0} to a flat #{A_{n-1}}-scheme #{X_{n-1}};
+  we intend to lift #{X_{n-1}} to a flat #{A_n}-scheme #{X_n}.
+  We already know, by \ref{fga2-theorem-8}, that this is possible locally;
+  we can also easily verify that, if #{U_n} lifts an open subset #{U_{n-1}} of #{X_{n-1}}, then the sheaf of groups of automorphisms of #{U_n} (that induce the identity on #{U_{n-1}}) is canonically isomorphic to #{\mathfrak{G}_{X_0/k}\otimes_k\mathfrak{m}^n/\mathfrak{m}^{n+1}} restricted to #{U_{n-1}}, and thus, in particular, commutative (where #{\mathfrak{G}_{X_0/k}} denotes the sheaf of germs of #{k}-derivations on #{X_0}).
+  It follows easily that we have an *obstruction of constructing #{X_n} lifting #{X_{n-1}}*, which lives in #{\HH^2(X_0,\mathfrak{G}_{X_0/k})\otimes\mathfrak{m}^n/\mathfrak{m}^{n+1}}.
+  Then:
+}
+
+\subtree[fga2-theorem-8-corollary-1]{
+  \taxon{corollary}
+  \number{1}
+
+  \p{
+    Let #{X_0} be a simple scheme of finite type over #{k}, and suppose that
+    ##{
+      \HH^2(X_0,\mathfrak{G}_{X_0/k})
+      = 0.
+    }
+    \oldpage{182-13}
+    Then, for every local Artinian ring #{A} with residue field #{k}, there exists a flat #{A}-scheme #{X} such that #{X\otimes_A k=X_0}.
+  }
+}
+
+\p{
+  Also, if we can find \em{one} #{X} that is flat over #{A} and that lifts #{X_0}, then, by \ref{fga2-theorem-8}, the set of classes (up to isomorphism) of flat #{A}-schemes that lift #{X_0} can be identified with #{\HH^1(X_0,\shAut(X))}, where #{\shAut(X)} denotes the sheaf of germs of automorphisms of the sheaf #{\sh{O_X}} of #{A}-algebras \em{that are compatible with the augmentation}.
+  The filtration of #{\OO_X} defines a filtration of #{\shAut(X)}, with the quotient of this sheaf by the #{n}-th subgroup of the filtration being #{\shAut(X_n)};
+  the graded algebra associated to this filtration is commutative, and can be identified with #{\mathfrak{G}_{X_0/k}\otimes_k\gr(A)}.
+  In particular, if #{\mathfrak{m}^{n+1}} is the first power of #{\mathfrak{m}} that is not zero, then #{F^n(\shAut(X))} (the last stage of the filtration) is in the centre of #{\shAut(X)}, and is isomorphic to #{\mathfrak{G}_{X_0/k}\otimes_k\mathfrak{m}^n};
+  it is also the sheaf of germs of automorphisms of #{X} that induce the identity on #{X_{n-1}=X\otimes_A A/\mathfrak{m}^n}.
+  Using these results, we immediately obtain the following statements:
+}
+
+\subtree[fga2-theorem-8-corollary-2]{
+  \taxon{corollary}
+  \number{2}
+
+  \p{
+    Let #{X_0} be a simple scheme of finite type over #{k}, and let #{A} be a local Artinian ring with residue field #{k} and maximal ideal #{\mathfrak{m}}.
+    Suppose that #{\mathfrak{m}^{n+1}=0}.
+    Let #{A_{n-1}=A/\mathfrak{m}^n}, and let #{X_{n-1}} be a flat #{A_{n-1}}-scheme such that #{X_{n-1}\otimes_Ak=X_0}.
+    Then the set of classes (up to an isomorphism that induces the identity on #{X_{n-1}}) of flat #{A}-schemes #{X_n} such that #{X\otimes_AA_{n-1}=X_{n-1}} is either empty, or a homogeneous principal space under #{\HH^1(X_0,\mathfrak{G}_{X_0/k})\otimes_k\mathfrak{m}^n}.
+  }
+}
+
+\p{
+  (Note that, in general, there is no privileged choice of origin in the latter homogeneous principal space, since there is no privileged way of lifting #{X_{n-1}} to #{X_n}).
+}
+
+\subtree[fga2-theorem-8-corollary-3]{
+  \taxon{corollary}
+  \number{3}
+
+  \p{
+    Let #{X_0} be a simple scheme of finite type over #{k}, and suppose that #{\HH^1(X_0,\mathfrak{G}_{X_0/k})=0}.
+    Then, for every local Artinian ring #{A} with residue field #{k}, \em{there exists at most one flat #{A}-scheme #{X}} (up to isomorphism) such that #{X\otimes_Ak=X_0}.
+  }
+}
+
+\p{
+  \ref{fga2-theorem-8-corollary-1} and \ref{fga2-theorem-8-corollary-3} of \ref{fga2-theorem-8} immediately imply the claims, which seem more general, obtained by supposing only that #{A} is a \em{complete local Noetherian ring with residue field #{k}}, provided that we introduce #{X} as a formal scheme over #{A}:
+}
+
+\subtree[fga2-theorem-9]{
+  \taxon{theorem}
+  \number{9}
+
+  \p{
+    Let #{k} be a field, and #{X_0} a \em{simple} scheme of finite type over #{k}.
+    For every complete locally Noetherian ring #{A} with residue field #{k}, let #{F(A)} be the set of classes (up to an isomorphism that induces the identity on #{X_0}) of formal schemes #{\mathfrak{X}} over #{A}, of finite type, and flat over #{A}, such that #{X\otimes_Ak=X_0}.
+    \oldpage{182-14}
+    With this notation: for all #{A},
+    \todo{the following list should be i, ii}
+
+    \ol{
+      \li{
+        if #{\HH^1(X_0,\mathfrak{G}_{X_0/k})=0} then #{F(A)} has at most one element;
+      }
+      \li{
+        if #{\HH^2(X_0,\mathfrak{G}_{X_0/k})=0} then #{F(A)} has at least one element.
+      }
+    }
   }
 }
