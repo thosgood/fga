@@ -24,3 +24,126 @@
   }
   We will mention here only the following consequence:
 }
+
+\subtree[fga2-proposition-1]{
+  \taxon{proposition}
+  \number{1}
+
+  \p{
+    Let #{f\colon X\to Y} be a proper morphism, and #{\sh{F}} a coherent #{Y}-flat sheaf on #{X}.
+    Let #{y\in Y}, let #{q} be an integer, and suppose that #{H^q(X_y,\sh{F}_y)=0}.
+    Then #{\RR^q f_*(\sh{F})} is zero on a a neighbourhood of #{y}, and, for every #{n}, the natural homomorphism
+    ##{
+      \RR^{q-1}f_*(\sh{F})_y
+      \to H^{q-1}(X_y,\sh{F}_y/\mathfrak{m}_y^n\sh{F}_y)
+    }
+    is surjective.
+  }
+}
+
+\p{
+  In particular, if #{f} is a flat morphism (i.e. if #{\OO_X} is #{Y}-flat), then every locally free coherent sheaf #{\sh{F}} on #{X} is #{Y}-flat.
+  Let #{\sh{F}} and #{\sh{G}} be two such sheaves, and apply \ref{fga2-proposition-1} to #{\shHom_{\OO_X}(\sh{F},\sh{G})} and #{q=1} to obtain:
+}
+
+\subtree[fga2-theorem-7]{
+  \taxon{theorem}
+  \number{7}
+
+  \p{
+    Let #{f} be a flat proper morphism, #{\sh{F}} and #{\sh{G}} locally free coherent sheaves on #{X}, and #{y\in Y};
+    suppose that #{H^1(X_y,\shHom_{\OO_X}(\sh{F}_y,\sh{G}))=0}.
+    Then every homomorphism #{u_0\colon\sh{F}_y\to\sh{G}_y} is induced by a homomorphism #{u\colon\sh{F}|V\to\sh{G}|V}, where #{V=f^{-1}(U)} is the inverse image of a neighbourhood #{U} of #{y}.
+  }
+}
+
+\subtree[fga2-theorem-7-corollary-1]{
+  \taxon{corollary}
+  \number{1}
+
+  \p{
+    If #{u_0} is an isomorphism (resp. a monomorphism, resp. an epimorphism), then so too is #{u}, for small enough #{U}.
+  }
+}
+
+\p{
+  In particular:
+}
+
+\subtree[fga2-theorem-7-corollary-2]{
+  \taxon{corollary}
+  \number{2}
+
+  \p{
+    \oldpage{182-10}
+    Let #{E_0} be a locally free coherent sheaf on #{X_y} such that #{H^1(X_y;\shHom_{\OO_X}(E_0,E_0))=0}.
+    Then any two locally free sheaves whose restrictions to #{X_y} are isomorphic to #{E_0} are themselves isomorphic to one another in a neighbourhood of #{X_y}.
+  }
+}
+
+\p{
+  Thus:
+}
+
+\subtree[fga2-theorem-7-corollary-3]{
+  \taxon{corollary}
+  \number{3}
+
+  \p{
+    Suppose that #{H^1(X_y,\OO_{X_y})=0}.
+    Then any two invertible sheaves on #{X} (i.e. locally isomorphic to #{\OO_X}) whose restrictions to #{X_y} are isomorphic are themselves isomorphic to one another.
+  }
+}
+
+\p{
+  It thus follows that:
+}
+
+\subtree[fga2-proposition-2]{
+  \taxon{proposition}
+  \number{2}
+
+  \p{
+    Let #{Y} be a connected scheme, and #{E} a locally free coherent sheaf on #{Y}.
+    Consider the bundle of projective spaces #{X=\PP(E)} associated to #{E}, endowed with its well-known invertible sheaf #{\OO_X(1)}.
+    Then every invertible sheaf #{\sh{L}} on #{X} is isomorphic to a sheaf of the form #{f^*(\sh{L}')\otimes\OO_X(n)}, where #{\sh{L}'} is an invertible sheaf on #{Y}, and #{n} is an integer.
+    Furthermore, #{n} is uniquely determined, and #{\sh{L}'} is determined up to isomorphism.
+  }
+
+  \proof{
+    \p{
+      \ref{fga2-theorem-7-corollary-3} above proves that #{\sh{L}} is isomorphic to an #{\OO_X(n)}-module on a neighbourhood of each fibre.
+      The rest is more or less formal.
+    }
+  }
+}
+
+\p{
+  \ref{fga2-proposition-2} allows us to determine the #{Y}-morphisms from #{X=\PP(E)} to another projective bundle.
+  We see, in particular:
+}
+
+\subtree[fga2-proposition-2-corollary-1]{
+  \taxon{corollary}
+  \number{1}
+
+  \p{
+    Let #{u} be an automorphism of #{X=\PP(E)}.
+    Then there exists an invertible sheaf #{\sh{L}'} on #{Y}, and an isomorphism #{v} from #{E} to #{E\otimes\sh{L}'} such that #{u} is the isomorphism corresponding to #{\PP(E)\xrightarrow{\sim}\PP(E\otimes\sh{L}')=\PP(E)};
+    the pair #{(v,\sh{L}')} is determined up to isomorphism.
+  }
+}
+
+\p{
+  Let #{\Gamma} be the set of classes of invertible bundles #{\sh{L}'} on #{Y} such that #{E\otimes\sh{L}'} is isomorphic to #{E}.
+  Its elements are torsion, since, if #{n} is the rank of #{E}, then (by taking #{n}-th exterior powers) we must have that #{(\sh{L}')^{\otimes n}\xrightarrow{\sim}\OO_Y}.
+  The above corollary can then be expressed by saying that we have an exact sequence of groups:
+  ##{
+    e \to \Aut(E)/\Gamma(Y,\OO_Y^*) \to \Aut_Y(X) \to \Gamma \to e
+  }
+  \oldpage{182-11}(which can also be deduced from the exact sequence in cohomology induced by the exact sequence of \em{sheaves} of groups
+  ##{
+    e \to \OO_X^\times \to \shAut \to \shAut_Y(X) \to e,
+  }
+  where #{\OO_X^\times} is the sheaf of "units" of #{\OO_X}, identified with the centre of #{\shAut(E)}.)
+}
