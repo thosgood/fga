@@ -10,3 +10,149 @@
   The techniques described allows us to tackle the system study of the fundamental group, using the example of topological theory.
   The first two theorems stated in this section are generalisations of results in a recent work by Lang–Serre.
 }
+
+\p{
+  Let #{X} be a scheme.
+  \oldpage{182-18}
+  Then an #{X}-scheme #{X'} is said to be an \em{unramified covering of #{X}} if
+
+  \todo{this list should be i, ii, etc}
+  \ol{
+    \li{
+      #{X'} is finite over #{X}, i.e. it is defined by a coherent sheaf of algebras #{\sh{A}=\sh{A}(X')} on #{X};
+    }
+    \li{
+      #{\sh{A}} is a locally free sheaf on #{X};
+    }
+    \li{
+      for all #{x\in X}, the quotient #{\sh{A}_x/\mathfrak{m}_x\sh{A}_x = \sh{A}_x\otimes_{\OO_X}\pi(x)} is a separable algebra over #{k(x)}.
+    }
+  }
+
+  This notion of unramified covering (due to Serre and the speaker) posses all the elementary properties for which we can reasonably hope, and which we will not list.
+  We restrict ourselves to saying that it gives rise to a \em{Galois theory} modelled on classical Galois theory (and containing it; the proofs being overall simpler than the proofs generally seen for the latter) and the Galois theory of topological coverings.
+  More precisely, we define a \em{geometric point} of a scheme #{X} to be a morphism #{a} from the spectrum #{\xi} of an algebraically closed field #{\Omega} to #{X}, i.e. the data of an algebraically closed extension of the residue field #{k(x)} of a point #{x=|a|} of #{X} (called the \em{locality} of the geometric point #{a}).
+  If #{X'} is an unramified covering of #{X}, then we can associate to it the set #{E_a(X')} of "geometric points of #{X'} over #{a}", i.e. the set of pairs consisting of an #{x'\in X'} over #{x} and a #{k(x)}-homomorphism to #{\Omega}.
+  We thus obtain (for fixed #{(X,a)}) a functor #{F(X,a)} from the category #{R(X)} of unramified coverings #{X'} of #{X} to the category of finite sets.
+  If #{X} is connected, then the pair given by #{R(X)} and #{F(X,a)} has all the formal properties necessary in order to be isomorphic to the analogous pair defined by a suitable totally disconnected compact topological group #{\pi} (i.e. a projective limit of finite groups): we take the category #{\mathcal{C}(\pi)} of finite sets on which #{\pi} acts continuously, and the identity functor #{F(\pi)(E)=E} from this category to the category of finite sets.
+  The group #{\pi} is also determined up to canonical isomorphic by the condition that #{(\mathcal{C}(\pi),F(\pi))} is isomorphic to a given pair.
+  To be precise, #{\pi} is called the \em{fundamental group of the connected scheme #{X} at the geometric point #{a}}, and we denote it by #{\pi_1(X,a)}.
+  If #{X} is not connected, then we can replace it by the connected component containing #{x=|a|}.
+  If, however, #{X} is connected, then the groups #{\pi_1(X,a')} and #{\pi_1(X,a')} are isomorphic for any two geometric points #{a'} and #{a''} of #{X} (with the isomorphism being determined up to inner automorphism), and thus we can, as per usual, choose the most suitable #{a} for our purposes, such as the generic point of #{X} that is assumed to be irreducible.
+  \oldpage{182-19}
+  Of course, #{\pi_1(X,a)} is a \em{covariant functor in the pointed scheme #{(X,a)}}.
+  Every statement concerning the classification of inseparable coverings can then be translated into the language of group theory, following the well-known dictionary (except that we must take into account the fact that here we have \em{topological groups}).  
+}
+
+\p{
+  Our goal is to develop an analogue of the homotopy exact sequence of fibre bundles, relative to a proper morphism #{f\colon X\to Y}.
+  Clearly, since we don't know what the higher homotopy groups are, we will only have necessarily incomplete results.
+  In order to be able to apply the fundamental theorems from \ref{fga2-3}, we must first explain certain elementary lemmas concerning schemes over Artinian rings or fields (following the general procedure!).
+}
+
+\subtree[fga2-lemma-1]{
+  \taxon{lemma}
+  \number{1}
+
+  \p{
+    Let #{(X',a')} be a pointed unramified covering associated to a pointed representation of #{\pi_1(X,a)} in a finite set #{E} (endowed with a marked point #{e}),
+    Then the canonical morphism #{\pi_1(X',a')\to\pi_1(X,a)} identifies the domain with the stabiliser of #{e} in #{\pi_1(X,a)} (and is thus injective).
+  }
+}
+
+\subtree[fga2-lemma-2]{
+  \taxon{lemma}
+  \number{2}
+
+  \p{
+    Let #{X} be an algebraic scheme over the field #{k}, and let #{k'} be a radicial extension of #{k}.
+    Then every unramified covering of #{X\otimes_kk'} is given by the inverse image (i.e. extension of scalars) of an unramified covering of #{X}, determined up to isomorphism.  
+  }
+}
+
+\p{
+  It follows, in particular, from these two lemmas that, for \em{every} algebraic extension #{K} of #{k}, and every geometric point #{a'} of #{X'=X\otimes_kK} that projects to the geometric point #{a} of #{X}, that the functorial homomorphism #{\pi_1(X',a')\to\pi_1(X,a)} is injective.
+}
+
+\subtree[fga2-lemma-3]{
+  \taxon{lemma}
+  \number{3}
+
+  \p{
+    Let #{X} be a complete scheme over a local Artinian ring #{A}, such that #{H^0(X,\OO_X)=A}.
+    Let #{X'} be an unramified covering of #{X}, and let #{A'=H^0(X',\OO_{X'})}, which is thus a ring that is finite over #{A} (and which may a priori be ramified over #{A}).
+    Let #{X_0} and #{X'_0} be the reduced subschemes associated to #{X} and #{X'}, respectively (obtained by splitting by the sheaves of nilpotent elements in #{\OO_X} and #{\OO_{X'}}, respectively).
+    Let #{k} be a subfield of #{A/\mathfrak{r}(A)} over which #{A/\mathfrak{r}(A)} is finite (so #{X_0} is a complete algebraic scheme over #{k}, and #{X'_0} is an unramified covering).
+    Finally, let #{\Omega} be an algebraically closed extension of #{k}, and consider the unramified covering #{X'_0\otimes_k\Omega} of #{X_0\otimes_k\Omega}.
+    \oldpage{182-20}
+    Then the following two conditions are equivalent:
+    \todo{the following list should be i, ii}
+
+    \ol{
+      \li{
+        #{X'_0\otimes_k\Omega} is completely decomposed over #{X_0\otimes_k\Omega};
+      }
+      \li{
+        the natural morphism #{X'\to X\otimes_AA'} is an isomorphism.
+      }
+    }
+
+    Under these conditions, #{A'} is an \em{unramified} extension of #{A}.
+    Finally, if #{X'} is connected, then condition (i) is equivalent to the following, seemingly weaker, condition:
+    \todo{the following list should be i bis}
+
+    \ol{
+      \li{
+        #{X'_0\otimes_k\Omega} admits a regular section over #{X_0\otimes_k\Omega}.
+      }
+    }
+  }
+}
+
+\p{
+  When condition (ii) of \ref{fga2-lemma-3} is satisfied, we say that the unramified covering #{X'} of #{X} is \em{geometrically trivial}.
+}
+
+\subtree[fga2-lemma-4]{
+  \taxon{lemma}
+  \number{4}
+
+  \p{
+    Let #{f\colon X\to Y} be a proper morphism such that #{f_*(\OO_X)=\OO_Y}.
+    Let #{a} be a geometric point of #{X}, and #{b} its projection over #{Y}.
+    Then #{\pi_1(X,a)\to\pi_1(Y,b)} is \em{surjective}.
+  }
+}
+
+\p{
+  What we need to show is effectively the following: if an unramified covering #{Y'} of #{Y} (corresponding to a locally free sheaf of algebras #{\sh{A}}) is such that #{X\otimes_YY'} is disconnected, then #{Y'} is also disconnected.
+  In fact, #{\sh{A}} is then the direct sum of two non-zero sheaves of rings, and thus so too is its direct image, which is exactly #{\sh{A}\otimes f_*(\OO_X)=\sh{A}}.
+}
+
+\subtree[fga2-lemma-5]{
+  \taxon{lemma}
+  \number{5}
+
+  \p{
+    Let #{X} be a complete scheme over a field #{k}, and suppose that #{H^0(X,\OO_X)} is a local ring #{A}, and that #{A/\mathfrak{r}(A)} is radicial over #{k}.
+    Let #{\Omega} be an algebraic closure of #{k}, and let #{\overline{X}=X\otimes_k\Omega} (which is connected).
+    Pick a geometric point #{\overline{a}} of #{\overline{X}} that projects to the geometric point #{a} of #{X}.
+    Then we have an exact sequence
+    ##{
+      e
+      \to \pi_1(\overline{X},\overline{e})
+      \to \pi_1(X,a)
+      \to \pi_1(k,b)
+      \to e
+    }
+    (where #{\pi_1(k,b)} is the Galois group of #{\Omega} over #{k}).
+  }
+
+  \proof{
+    \p{
+      The fact that the first homomorphism is injective has already been shown with \ref{fga2-lemma-1} and \ref{fga2-lemma-2};
+      the exactness in the middle follows from \ref{fga2-lemma-3};
+      finally, the surjectivity of the last homomorphism (which is the only thing to rely on the fact that #{A/\mathfrak{r}(A)} is radicial) follows from \ref{fga2-lemma-4}.
+    }
+  }
+}
