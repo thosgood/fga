@@ -162,3 +162,117 @@
     }
   }
 }
+
+\subtree[fga2-theorem-9-corollary-1]{
+  \taxon{corollary}
+  \number{1}
+
+  \p{
+    Suppose that #{X_0} is proper over #{k}.
+    Under condition (i) of \ref{fga2-theorem-9}, for all #{A}, there exists at most (up to an isomorphism that induces the identity on #{X_0}) one scheme #{X} that is proper, flat over #{A}, and such that #{X\otimes_Ak=X_0}.
+  }
+}
+
+\p{
+  We can use [Corollary 2 of Theorem 3](fga2-theorem-3-corollary-2).
+  For example:
+}
+
+\subtree[fga2-theorem-9-corollary-2]{
+  \taxon{corollary}
+  \number{2}
+
+  \p{
+    If #{X} is a proper flat #{A}-scheme such that #{X\otimes_A k} is isomorphic to the projective-type scheme #{\mathfrak{P}_k^r} of dimension #{r} over #{k}, then #{X} is isomorphic to #{\mathfrak{P}_k^r}.
+  }
+}
+
+\p{
+  (We can also deduce this result from [Corollary 1 of Proposition 3](fga2-proposition-3-corollary-1)).
+}
+
+\subtree[fga2-theorem-9-corollary-3]{
+  \taxon{corollary}
+  \number{3}
+
+  \p{
+    Let #{X_0} be a simple projective scheme over #{k}, and suppose that
+    ##{
+      H^2(X_0,\OO_{X_0})
+      = H^2(X_0,\mathfrak{G}_{X_0/k})
+      = 0.
+    }
+    Then, for all #{A}, there exists a flat projective #{A}-scheme such that #{X\otimes_Ak=X_0}.
+  }
+}
+
+\p{
+  We can combine part (ii) of \ref{fga2-theorem-9} with \ref{fga2-theorem-4}.
+  In particular:
+}
+
+\subtree[fga2-theorem-9-corollary-4]{
+  \taxon{corollary}
+  \number{4}
+
+  \p{
+    Let #{X_0} be the scheme of a complete simple algebraic curve over #{k}.
+    Then, for every complete local Noetherian ring #{A} with residue field #{k}, there exists a "simple curve scheme" #{X} over #{A}, such that #{X\otimes_Ak=X_0}.
+  }
+}
+
+\subtree{
+  \taxon{remarks}
+
+  \ol{
+    \li{
+      \ref{fga2-theorem-9-corollary-3} and \ref{fga2-theorem-9-corollary-4} are above all interesting if #{k} is of characteristic #{p\neq0}, taking #{A} to be a discrete valuation ring \em{of characteristic #{0}}, with residue field #{k};
+      for example, the "smallest possible #{A}", i.e. that for which #{p} generates the maximal ideal.
+      (In fact, by theorems of Cohen, it suffices to have \ref{fga2-theorem-9-corollary-3} and \ref{fga2-theorem-9-corollary-4} for such a ring #{A}).
+      We note that, concerning this point, according to the specialists, we do not know if there exist schemes over a field #{k} that are not reductions #{\mod p} of a flat scheme defined over such a ring #{A}.
+      At the least, the results of this section give a way of systematically investigating this question.
+      We must start by seeing if the first obstruction that we have, in #{H^2(X_0,\mathfrak{G}_{X_0/k})}, is necessarily zero.
+    }
+
+    \li{
+      \oldpage{182-15}
+      We note that \ref{fga2-theorem-3}, and the corresponding technique, only works for a \em{complete} (local, for simplicity) base ring.
+      In order to go from known results concerning the completion of a local ring to the corresponding results for the local ring itself, we would need a fourth "fundamental theorem", whose precise statement still needs to be found.
+    }
+
+    \li{
+      We will compare the results from this section (mainly the above \ref{fga2-theorem-9-corollary-1} and \ref{fga2-theorem-9-corollary-2}), as well as those from the following, with the results of Kodaira--Spencer on the variation of complex structures.
+      Using the conjectural theorem to which we have just alluded, we should be able to conclude, under the conditions of \ref{fga2-theorem-9-corollary-1}, but where #{A} is no longer assumed to be complete, that there exists a ring #{A'} that contains #{A}, and that is finite and unramified over #{A}, such that #{X\otimes_AA'} and #{X'\otimes_AA'} are #{A'}-isomorphic (where #{X} and #{X'} are given, and are proper flat #{A}-schemes such that #{X\otimes_Ak=X'\otimes_Ak=X_0}).
+      This is what we can prove, at least, when #{X_0=\mathfrak{P}_k^r}, by using [Corollary 1 of Proposition 2](#fga2-proposition-2-corollary-1).
+      In any case, if #{H^1(X_0,\mathfrak{G}_{X_0/k})=0}, then we can prove that the fibres of #{X} and #{X'} over any point #{y} of #{Y=\Spec(A)} are isomorphic, or at least when we pass to the algebraic closure of the residue field #{k(y)}.
+      (We have a local result, seemingly stronger, when we don't suppose that #{A} is necessarily local).
+      As for "structure variations" of the projective space, we again point out the following question, suggested by a corresponding problem of Kodaira--Spencer.
+      Let #{X} be a proper flat scheme, over a local integral ring #{A} with field of fractions #{K} and residue field #{k}, and suppose that #{X\otimes_AK} is isomorphic to #{\mathfrak{P}_K^r}.
+      Is it then true that #{X\otimes_Ak=X_0} is isomorphic to #{\mathfrak{P}_k^R} (or at least, over the algebraic closure of #{k})?
+      In this question, we can assume that #{A} is a complete discrete valuation ring.
+      There is an analogous question when #{X_0} is an abelian variety.
+    }
+  }
+}
+
+\subtree{
+  \taxon{remark}
+
+  \p{
+    \comp
+    \em{(Concerning Remark 1 above).}
+    We note that J.-P. Serre has constructed in [[Ser1961]](Ser1961) a non-singular projective variety, of dimension #{3}, over an algebraically closed field #{k}, of characteristic #{p>0}, which does not come from reduction of a proper scheme over a local integral ring with residue field #{k}, and having a field of fractions of characteristic #{0}.
+    Mumford would have found an analogous result, with a non-singular projective \em{surface}.
+  }
+}
+
+\subtree{
+  \taxon{remark}
+
+  \p{
+    \comp
+    \em{(Concerning Remarks 2 and 3 above).}
+    I am now less optimistic concerning the results conjectured here.
+    However, the question concerning structure variations for projective space, mentioned at the end of Remark 3 above, has been positively resolved by Hironaka, and the analogous question for abelian varieties has been resolved by Koizumi.
+  }
+}
