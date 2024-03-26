@@ -5,3 +5,21 @@
 \import{fga2-macros}
 
 \put\transclude/numbered{false}
+
+\p{
+  \ref{fga2-theorem-7} gave a uniqueness result for locally free coherent sheaves, by using \ref{fga2-theorem-1} and \ref{fga2-theorem-2}.
+  Using \ref{fga2-theorem-3}, we now obtain \em{existence} theorems for sheaves, for morphisms of schemes, or for schemes.
+  In the following, #{A} denotes a local Noetherian ring, assumed to be separated and \em{complete}.
+  The general method still consists of making \em{formal} construction, which consists essentially of doing \em{algebraic geometry over an Artinian ring}, and deducing conclusions from this that are "algebraic" in nature, by using the three fundamental theorems.
+}
+
+\subtree[fga2-proposition-3]{
+  \taxon{proposition}
+  \number{3}
+
+  \p{
+    Let #{\mathfrak{X}} be a proper formal scheme that is flat over #{A}, and let #{\sh{F}_0} be a locally free sheaf on #{X_0} such that #{H^2(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))=0}.
+    Then there exists a locally free sheaf #{\sh{F}} on #{\mathfrak{X}} that induces, on #{X_0}, a sheaf isomorphic to #{\sh{F}_0}.
+    (This #{\sh{F}} is also unique up to isomorphism if #{H^1(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))=0}).
+  }
+}
