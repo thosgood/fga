@@ -23,3 +23,54 @@
     (This #{\sh{F}} is also unique up to isomorphism if #{H^1(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))=0}).
   }
 }
+
+\p{
+  We construct, step by step, locally free sheaves #{\sh{F}_n} on the #{X_n} that induce one another.
+  The construction of #{\sh{F}_0} is met with an obstruction living in #{H^2(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))\otimes_{A/\sh{J}}(\sh{J}^n/\sh{J}^{n+1})}, but this is zero, by hypothesis.
+  Now, using \ref{fga2-theorem-3}, we obtain:
+}
+
+\subtree[fga2-proposition-3-corollary-1]{
+  \taxon{corollary}
+  \number{1}
+
+  \p{
+    Let #{X} be a proper scheme that is flat over #{A}, and let #{\sh{F}_0} be as above.
+    Then there exists a locally free sheaf #{\sh{F}} on #{X} that induces, on #{X_0}, a sheaf that is isomorphic to #{\sh{F}_0}.
+    This #{\sh{F}} is also unique up to isomorphism if #{H^1(X_0,\shHom_{\OO_{X_0}}(\sh{F}_0,\sh{F}_0))=0}.
+  }
+}
+
+\p{
+  Let #{X_0} be a scheme of finite type over the field #{k}, and suppose that #{X_0} is \em{simple} (by which we mean \em{absolutely} simple) over #{k}, but not necessarily proper over #{k}.
+  Let #{A} be a local Artinian ring with residue field #{k}.
+  We are interested in finding schemes #{X} that are flat over #{A}, and such that #{X\otimes_A k=X_0} (this is the starting point of the "_theory of modules_", or of "structure variations" of #{X_0}).
+  \oldpage{182-12}
+  It is equivalent to give either such an #{X} or, on the topological space #{X_0}, a sheaf #{\OO_X} endowed with the following structures:
+
+  \ol{
+    \li{
+      #{\OO_X} is a sheaf of #{A}-algebras;
+    }
+
+    \li{
+      #{\OO_X} is endowed with an augmentation homomorphism #{\OO_X\to\OO_{X_0}} (that is compatible with the #{A}-algebra structures);
+    }
+  }
+
+  and with the above data being subject to the following conditions: the augmentation induces an isomorphism #{\OO_X\otimes_A k\xrightarrow{\sim}\OO_{X_0}};
+  #{\OO_X} is flat over #{A}, i.e. the graded algebra associated to #{\OO_X} filtered by the powers of the maximal ideal #{\mathfrak{m}} of #{A} is isomorphic to #{\gr^0(\OO_X)\otimes_k\gr(A)}, i.e. we have isomorphisms #{\mathfrak{m}^n\OO_X/\mathfrak{m}^{n+1}\OO_X = \OO_{X_0}\otimes_k(\mathfrak{m}^n/\mathfrak{m}^{n+1})}.
+  The fundamental fact is the following:
+}
+
+\subtree[fga2-theorem-8]{
+  \taxon{theorem}
+  \number{8}
+
+  \p{
+    Let #{X_0} be a simple scheme of finite type over the field #{k}, and assume #{X_0} to be affine.
+    Let #{A} be a local Artinian ring of residue field #{k}.
+    Then there exists an #{A}-scheme #{X} that is flat over #{A} and such that #{X\otimes_A k=X_0}.
+    Further, any two such schemes are necessarily isomorphic.
+  }
+}
