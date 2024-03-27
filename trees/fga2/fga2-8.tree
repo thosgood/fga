@@ -41,7 +41,7 @@
   If, however, #{X} is connected, then the groups #{\pi_1(X,a')} and #{\pi_1(X,a')} are isomorphic for any two geometric points #{a'} and #{a''} of #{X} (with the isomorphism being determined up to inner automorphism), and thus we can, as per usual, choose the most suitable #{a} for our purposes, such as the generic point of #{X} that is assumed to be irreducible.
   \oldpage{182-19}
   Of course, #{\pi_1(X,a)} is a \em{covariant functor in the pointed scheme #{(X,a)}}.
-  Every statement concerning the classification of inseparable coverings can then be translated into the language of group theory, following the well-known dictionary (except that we must take into account the fact that here we have \em{topological groups}).  
+  Every statement concerning the classification of inseparable coverings can then be translated into the language of group theory, following the well-known dictionary (except that we must take into account the fact that here we have \em{topological groups}).
 }
 
 \p{
@@ -66,7 +66,7 @@
 
   \p{
     Let #{X} be an algebraic scheme over the field #{k}, and let #{k'} be a radicial extension of #{k}.
-    Then every unramified covering of #{X\otimes_kk'} is given by the inverse image (i.e. extension of scalars) of an unramified covering of #{X}, determined up to isomorphism.  
+    Then every unramified covering of #{X\otimes_kk'} is given by the inverse image (i.e. extension of scalars) of an unramified covering of #{X}, determined up to isomorphism.
   }
 }
 
@@ -153,6 +153,94 @@
       The fact that the first homomorphism is injective has already been shown with \ref{fga2-lemma-1} and \ref{fga2-lemma-2};
       the exactness in the middle follows from \ref{fga2-lemma-3};
       finally, the surjectivity of the last homomorphism (which is the only thing to rely on the fact that #{A/\mathfrak{r}(A)} is radicial) follows from \ref{fga2-lemma-4}.
+    }
+  }
+}
+
+\subtree[fga2-proposition-4]{
+  \taxon{proposition}
+  \number{4}
+
+  \p{
+    Let #{f\colon X\to Y} be a proper flat morphism such that, for all #{y\in Y}, the algebra #{H^0(f^{-1}(y),\OO_{f^{-1}(y)})} is separable over the residue field #{k(y)} (which is the case, for example, if #{f^{-1}(y)} is a \em{separable scheme} over #{k(y)}, i.e. reduced and such that the fields corresponding to its irreducible components are separable extensions of #{k(y)}).
+    \oldpage{182-21}
+    Then the covering #{Y'} of #{Y} associated to #{f_*(\OO_X)} is unramified.
+  }
+
+  \proof{
+    \p{
+      The proof is easy, thanks to \ref{fga2-theorem-2}.
+    }
+  }
+}
+
+\p{
+  \ref{fga2-proposition-4}, combined with \ref{fga2-lemma-1}, practically reduces the homotopical study of proper and flat morphisms (with separable fibres) to the case where #{f_*(\OO_X)=\OO_Y} (since, using Stein factorisation, we can replace #{Y} by #{Y'}).
+}
+
+\subtree{
+  \taxon{Remark}
+
+  \p{
+    A flat morphism of finite type whose fibres are separable (resp. simple) schemes is said to be \em{separable} (resp. \em{simple}).
+    We show that, if #{f} is flat and if #{f^{-1}(y)} is separable (resp. simple) then there exists a neighbourhood of #{f^{-1}(y)} on which #{f} is separable (resp. simple).
+    The same result holds true for "absolutely normal" (this is \em{Bertini's theorem}).
+  }
+}
+
+\p{
+  Let #{f\colon X\to Y} be a proper morphism such that
+  \todo{the following list should be i}
+
+  \ol{
+    \li{
+      #{f_*(\OO_X) = \OO_Y}
+    }
+  }
+  and let #{X'} be a finite scheme over #{X}.
+  Let #{Y'} be the covering of #{Y} corresponding to the Stein factorisation of #{X'\to Y} (cf. \ref{fga2-theorem-5}).
+  Let #{y\in Y}, so that the set of connected components of the fibre #{F'} of #{X'} over #{y} can be identified with the set of points #{y'\in Y'} over #{y} (\ref{fga2-theorem-5}).
+  Consider the evident morphism
+  \subtree[fga2-equation-star]{
+    \taxon{equation}
+    \number{*}
+    ##{
+      X'\to X\times_Y Y'
+    \startverb\tag{*}\stopverb
+    }
+  }
+  induced by the natural morphisms #{X'\to X} and #{X\to Y'};
+  this will be an isomorphism whenever #{X'} is of the form #{X\times_Y Y''}, where #{Y''} is an unramified covering of #{Y}, and then #{Y'} will be exactly #{Y''}, and \ref{fga2-equation-star} will be the identity.
+  We wish to precisely give the conditions for which #{X'} is of the form that we have just indicated, i.e. such that #{Y'} is unramified and \ref{fga2-equation-star} is an isomorphism.
+  For this, we introduce the fibre #{F} of #{X} at #{y}, which is a proper scheme over #{k(y)}, for which #{F'} is a cover (an unramified one if #{X} is).
+  Let #{F'_1} be a connected component of #{F'} corresponding to a point #{y'_1} of #{Y'} over #{y}.
+  Suppose further that
+  \todo{the following list should be ii, iii}
+
+  \ol{
+    \li{
+      #{X'} is unramified over #{X} at the points of #{F'_1} (and thus #{F'_1} is an unramified cover of #{F}), and
+    }
+    \li{
+      #{F'_1} is a geometrically trivial covering of #{F} (cf. \ref{fga2-lemma-3}).
+    }
+  }
+}
+
+\subtree[fga2-theorem-11]{
+  \taxon{theorem}
+  \number{11}
+
+  \p{
+    Under the above conditions, there exists an open neighbourhood #{U'} of #{y'_1} in #{Y'} such that \ref{fga2-equation-star} is an isomorphism over #{U'}.
+    \oldpage{182-22}
+    Furthermore, #{Y'} is unramified at #{y'_1} over #{Y} (but can be ramified at other points #{y'} of #{Y'} over #{y}).
+  }
+
+  \proof{
+    \p{
+      Of course, conditions (ii) and (iii) are also necessary for the conclusion of the theorem.
+      The proof of the theorem is easy, thanks to \ref{fga2-lemma-3} and \ref{fga2-theorem-2}.
     }
   }
 }
