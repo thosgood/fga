@@ -19,3 +19,55 @@
     is said to be \em{exact} if #{u} is a bijection from #{E} to the subset of #{E'} consisting of the #{x'\in E'} such that #{v_1(x')=v_2(x')}.
   }
 }
+
+\subtree[fga3.i-a.1.b-definition-1.3]{
+  \taxon{definition}
+  \number{1.3}
+
+  \p{
+    Let #{\mathcal{F}} be a fibred category with base #{\mathcal{C}}, and consider a diagram of morphisms in #{\mathcal{C}}
+    ##{
+      S \xleftarrow{\alpha}
+      S' \oullar{\beta_1}{\beta_2}
+      S''
+    }
+    such that #{\alpha\beta_1=\alpha\beta_2};
+    this diagram is said to be \em{#{\mathcal{F}}-exact} if, for every pair #{(\xi,\eta)} of elements of #{\mathcal{F}_S}, the diagram of sets
+
+    \subtree[fga3.i-a.1.b-definition-1.3-equation]{
+      \taxon{equation}
+      \number{+}
+      ##{
+        \Hom(\xi,\eta) \xrightarrow{\alpha^*}
+        \Hom(\alpha^*(\xi),\alpha^*(\eta)) \ourrar{\beta_1^*}{\beta_2^*}
+        \Hom(\gamma^*(\xi),\gamma^*(\eta))
+      \startverb\tag{+}\stopverb
+      }
+    }
+
+    (where #{\gamma=\alpha\beta_1=\alpha\beta_2}) is exact.
+  }
+
+  \p{
+    In this diagram above, for simplicity, we have identified #{\beta_i^*\alpha^*} with #{(\alpha\beta_i)^*=\gamma^*}, using #{c_{\beta_i,\alpha}}.
+  }
+}
+
+\subtree[fga3.i-a.1.b-definition-1.4]{
+  \taxon{definition}
+  \number{1.4}
+  
+  \p{
+    Let #{\mathcal{F}} be a fibred category with base #{\mathcal{C}}, and consider morphisms #{\beta_1,\beta_2\colon S''\to S'} in #{\mathcal{C}}.
+    Let #{\xi'\in\mathcal{F}_{S'}}.
+    We define a \em{gluing data} on #{\xi'} (with respect to the pair #{(\beta_1,\beta_2)}) to be an isomorphism from #{\beta_1^*(\xi')} to #{\beta_2^*(\xi')}.
+    If #{\xi',\eta'\in\mathcal{F}_{S'}} are both endowed with gluing data, then a morphism #{u\colon\xi'\to\eta'} in #{\mathcal{F}_{S'}} is said to be \em{compatible with the gluing data} if the following diagram commutes:
+    ##{
+      \begin{CD}
+        \beta_1^*(\xi') @>>> \beta_2^*(\xi')
+      \\@VVV @VVV
+      \\\beta_1^*(\eta') @>>> \beta_2^*(\eta').
+      \end{CD}
+    }
+  }
+}
