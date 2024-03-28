@@ -1,0 +1,88 @@
+\number{a}
+\parent{fga3.i-a.1}
+
+\import{fga3.i-macros}
+
+\put\transclude/numbered{false}
+
+\subtree[fga3.i-a.1.a-definition-1.1]{
+  \taxon{definition}
+  \number{1.1}
+
+  \p{
+    A \em{fibred category #{\mathcal{F}} with base #{\mathcal{C}}} (or \em{over #{\mathcal{C}}}) consists of
+
+    \ul{
+      \li{
+        a category #{\mathcal{C}}
+      }
+
+      \li{
+        for every #{X\in\mathcal{C}}, a category #{\mathcal{F}_X}
+      }
+
+      \li{
+        for every #{\mathcal{C}}-morphism #{f\colon X\to Y}, a functor #{f^*\colon\mathcal{F}_Y\to\mathcal{F}_X}, which we also write as
+        ##{
+          f^*(\xi) = \xi \times_Y X
+        }
+        for #{\xi\in\mathcal{F}_Y} (with #{X} being thought of as an "object of #{\mathcal{C}} over #{Y}", i.e. as being endowed with the morphism #{f})
+      }
+
+      \li{
+        for any two composible morphisms #{X\xrightarrow{f}Y\xrightarrow{g}Z}, an isomorphism of functors
+        ##{
+          c_{f,g}\colon (gf)^* \to f^*g^*
+        }
+      }
+    }
+
+    with the above data being subject to the conditions that
+    \todo{the following list should be i, ii, etc}
+
+    \ol{
+      \li{
+        #{\id^*=\id}
+      }
+
+      \li{
+        #{c_{f,g}} is the identity isomorphism if #{f} or #{g} is an identity isomorphism
+      }
+
+      \li{
+        for any three composible morphisms #{X\xrightarrow{f}Y\xrightarrow{g}Z\xrightarrow{h}T}, the following diagram, given by using the isomorphisms of the form #{c_{u,v}}, commutes:
+        ##{
+          \begin{CD}
+            (h(gf))^* @= ((hg)f)^*
+          \\@VVV @VVV
+          \\(gf)^*h^* @. f^*(hg)^*
+          \\@VVV @VVV
+          \\(f^*g^*)h^* @= f^*(g^*h^*)
+          \end{CD}
+        }
+      }
+    }
+  }
+}
+
+\subtree[fga3.i-a.1.a-example-1]{
+  \taxon{example}
+  \number{1}
+
+  \p{
+    Let #{\mathcal{C}} be a category where all fibre products exist.
+    We then define a fibred category #{\mathcal{F}} with base #{\mathcal{C}} by setting #{\mathcal{F}_X} to be the category of objects of #{\mathcal{C}} over #{X}, and the functor #{f^*\colon\mathcal{F}_Y\to\mathcal{F}_X} corresponding to a morphism #{f\colon X\to Y} being defined by the \em{fibre product} #{Z\mapsto Z\times_Y X}.
+  }
+}
+
+\subtree[fga3.i-a.1.a-example-2]{
+  \taxon{example}
+  \number{2}
+
+  \p{
+    Let #{\mathcal{C}} be the category of preschemes, and, for #{X\in\mathcal{C}}, let #{\mathcal{F}_X} be the category of quasi-coherent sheaves of modules on #{X}.
+    If #{f\colon X\to Y} is a morphism of preschemes, then #{f^*\colon\mathcal{F}_Y\to\mathcal{F}_X} is the \em{inverse image of sheaves of modules} functor.
+    \oldpage{190-03}
+    We thus obtain a category fibred over #{\mathcal{C}}.
+  }
+}

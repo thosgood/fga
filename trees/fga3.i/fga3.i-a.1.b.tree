@@ -1,0 +1,21 @@
+\number{b}
+\parent{fga3.i-a.1}
+
+\import{fga3.i-macros}
+
+\put\transclude/numbered{false}
+
+\subtree[fga3.i-a.1.b-definition-1.2]{
+  \taxon{definition}
+  \number{1.2}
+
+  \p{
+    A diagram of maps of sets
+    ##{
+      E \xrightarrow{u}
+      E' \ourrar{v_1}{v_2}
+      E''
+    }
+    is said to be \em{exact} if #{u} is a bijection from #{E} to the subset of #{E'} consisting of the #{x'\in E'} such that #{v_1(x')=v_2(x')}.
+  }
+}
