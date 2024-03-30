@@ -1,0 +1,38 @@
+\number{d}
+\parent{fga3.i-a.1}
+
+\import{fga3.i-macros}
+
+\put\transclude/numbered{false}
+
+\p{
+  We can present the above notions in a more intuitive manner, by introducing, for an object #{T} of #{\mathcal{C}} over #{S}, the set
+  ##{
+    \Hom_S(T,S') = S'(T),
+  }
+  where elements will be denoted by #{t}, #{t'}, etc.
+  Given an object #{\xi'\in\mathcal{F}_{S'}}, there then corresponds, to every #{t\in S'(T)}, an object #{t^*(\xi')} of #{\mathcal{F}_T}, which will also be denoted by #{\xi'_t}.
+  A gluing data on #{\xi'} (with respect to #{(p_1,p_2)}) is then defined by the data, for every #{T} over #{S}, and every pair of points #{t,t'\in S'(T)}, of an isomorphism
+  ##{
+    \varphi_{t',t}\colon \xi'_t \to \xi'_{t'}
+  }
+  (satisfying the evident conditions of functoriality in #{T}).
+  Conditions (i) and (ii) of \ref{fga3.i-a.1.c} can then be written as
+
+  \todo{the following list should be i bis, ii bis}
+  
+  \ol{
+    \li{
+      \oldpage{190-06}
+      #{\varphi_{t,t}=\id_{\xi'_t}}, for all #{T} and all #{t\in S'(T)}.
+    }
+
+    \li{
+      #{\varphi_{t,t''}=\varphi_{t,t'}\varphi_{t',t''}}, for all #{T} and all #{t,t',t''\in S'(T)}.
+    }
+  }
+
+  We can show that (ii bis) implies that #{\varphi_{t,t}^2=\varphi_{t,t}}, by taking #{t=t'=t''}, and thus, since #{\varphi_{t,t}} is an isomorphism by hypothesis, implies (i bis), which is thus a consequence of (ii bis) (and so (i) is also a consequence of (ii)).
+  But if we no longer suppose a priori that the #{\varphi_{t,t}} are isomorphisms (i.e. that #{\varphi\colon p_1^*(\xi')\to p_2^*(\xi')} is an isomorphism), then (ii bis) no longer necessarily implies (i bis);
+  the combination of (ii bis) and (i bis), however, does imply that the #{\varphi_{t,t'}} are isomorphisms (since we then have #{\varphi_{t,t'}\varphi_{t',t}=\varphi_{t,t}=\id_{\xi'_t}}).
+}
