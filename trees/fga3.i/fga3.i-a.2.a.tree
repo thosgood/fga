@@ -9,5 +9,93 @@
   \taxon{definition}
   \number{2.1}
 
-  
+  \p{
+    Let #{\mathcal{C}} be a category.
+    A diagram of morphisms
+    ##{
+      T \xrightarrow{\alpha}
+      T' \ourrar{\beta_1}{\beta_2}
+      T''
+    }
+    is said to be \em{exact} if, for all #{Z\in\mathcal{C}}, the corresponding diagram of sets
+    ##{
+      \Hom(Z,T) \to
+      \Hom(Z,T') \rightrightarrows
+      \Hom(Z,T'')
+    }
+    is exact (\ref{fga3.i-a-definition-1.2}).
+    We then say that #{(T,\alpha)} (or, by an abuse of language, #{T}) is a \em{kernel} of the pair #{(\beta_1,\beta_2)} of morphisms.
+  }
+}
+
+\p{
+  This kernel is evidently determined up to unique isomorphism.
+  If #{\mathcal{C}} is the category of sets, then the above definition is compatible with \ref{fga3.i-a-definition-1.2}.
+  Dually, we define the exactness of a diagram of morphisms in #{\mathcal{C}}
+  ##{
+    S \xleftarrow{\alpha}
+    S' \oullar{\beta_1}{\beta_2}
+    S''
+  }
+  and then say that #{(S,\alpha)} is a \em{cokernel} of the pair #{(\beta_1,\beta_2)} of morphisms.
+}
+
+\subtree[fga3.i-a-definition-2.2]{
+  \taxon{definition}
+  \number{2.2}
+
+  \p{
+    A morphism #{\alpha\colon S'\to S} is said to be a \em{strict epimorphism} if it is an epimorphism and, for every morphism #{u\colon S'\to Z}, the following necessary condition is also sufficient for #{u} to factor as #{S'\to S\to Z}:
+    for every #{S''\in\mathcal{C}} and every pair #{\beta_1,\beta_2\colon S''\to S} of morphisms such that #{\alpha\beta_1=\alpha\beta_2}, we also have that #{u\beta_1=u\beta_2}.
+  }
+}
+
+\p{
+  If the fibre product #{S'\times_S S'} exists, then it is equivalent to say that the diagram
+  ##{
+    S \xleftarrow{\alpha}
+    S' \oullar{p_1}{p_2}
+    S'\times_S S'
+  }
+  \oldpage{190-07}
+  is exact, i.e. that #{S} is a cokernel of the pair #{(p_1,p_2)}.
+  In any case, a cokernel morphism is a strict epimorphism.
+  Note also that, if a strict epimorphism is also a monomorphism, then it is an isomorphism.
+  We leave to the reader the task of developing the dual notion of a \em{strict monomorphism}.
+}
+
+\p{
+  To make the relation between the ideas of #{\mathcal{F}}-descent morphisms and strict epimorphisms more precise, we introduce the following definitions:
+}
+
+\subtree[fga3.i-a-definition-2.3]{
+  \taxon{definition}
+  \number{2.3}
+
+  \p{
+    A morphism #{\alpha\colon S'\to S} is said to be a \em{universal epimorphism} (resp. a \em{strict universal epimorphism}) if, for every #{T} over #{S}, the fibre product #{T'=S'\times_S T} exists, and the projection #{T'\to T} is an epimorphism (resp. a strict epimorphism).
+  }
+}
+
+\p{
+  In very nice categories (such as the category of sets, the category of sets over a topological space, abelian categories, etc.), the four notions of "epijectivity" introduced above all coincide;
+  they are, however, all distinct in a category such as the category of preschemes, or the category of preschemes over a given non-empty prescheme #{S}, even if we restrict to #{S}-schemes that are finite over #{S}.
+}
+
+\subtree[fga3.i-a-definition-2.4]{
+  \taxon{definition}
+  \number{2.4}
+
+  \p{
+    A morphism #{\alpha\colon S'\to S} is said to be a \em{descent morphism} (resp. a \em{strict descent morphism}) if it is an #{\mathcal{F}}-descent morphism (resp. a strict #{\mathcal{F}}-descent morphism) (cf. \ref{fga3.i-a-definition-1.7}), where #{\mathcal{F}} denotes the fibred category over #{\mathcal{C}} of objects of #{\mathcal{C}} over objects of #{\mathcal{C}} (cf. \ref{fga3.i-a-example-1}).
+  }
+}
+
+\subtree[fga3.i-a-proposition-2.1]{
+  \taxon{proposition}
+  \number{2.1}
+
+  \p{
+    If #{\mathcal{C}} has all finite products and (finite) fibre products, then there is an identity between descent morphisms in #{\mathcal{C}} and strict universal epimorphisms in #{\mathcal{C}}.
+  }
 }
