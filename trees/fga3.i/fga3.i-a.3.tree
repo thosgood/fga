@@ -5,3 +5,62 @@
 \import{fga3.i-macros}
 
 \put\transclude/numbered{false}
+
+\p{
+  Let #{A} be a local ring, and #{B} a local algebra over #{A} whose maximal ideal induces that of #{A}.
+  \oldpage{190-10}
+  We say that #{B} is \em{étalé} over #{A} (instead of "unramified", as used elsewhere) if it satisfies the following conditions:
+  \todo{the following list should be i, ii}
+
+  \ol{
+    \li{
+      #{B} is flat over #{A}; and
+    }
+    \li{
+      #{B/\mathfrak{m}B} is a separable finite extension of #{A/\mathfrak{m}=k} (where #{\mathfrak{m}} denotes the maximal ideal of #{A}).
+    }
+  }
+
+  If #{A} and #{B} are Noetherian, and #{k} is algebraically closed, then this implies that the homomorphism #{\overline{A}\to\overline{B}} between the completions that extends #{A\to B} is an isomorphism.
+  A morphism #{f\colon T\to S} of finite type is said to be \em{étale at #{x\in T}}, or #{T} is said to be \em{étalé over #{S} at #{x}}, if #{\sh{O}_x} is étalé over #{\sh{O}_{f(x)}};
+  #{f} is said to be \em{étale}, or an \em{étalement}, or #{T} is said to be \em{étalé over #{S}}, if #{f} is étale at all #{x\in T}.
+  Note that, if #{S} is locally Noetherian, then the set of points of #{T} where #{f} is étale is open, and Zariski's "main theorem" allows us to precisely state the structure of #{T/S} in a neighbourhood around such a point (by an equation of well-known type).
+}
+
+\p{
+  If #{S} is a scheme of finite type over the field of complex numbers, then there exists a corresponding analytic space #{\overline{S}} (in the sense of Serre [[Ser1956]](Ser1956)), except for the fact that #{\overline{S}} can have nilpotent elements in its structure sheaf, which changes nothing essential in [[Ser1956]](Ser1956).
+  We then easily see that #{f} is an étalement if and only if #{\overline{f}\colon\overline{T}\to\overline{S}} is an étalement, i.e. if every point of #{\overline{T}} admits a neighbourhood on which #{\overline{f}} induces an isomorphism onto an open subset of #{\overline{S}}.
+  In particular, to every \em{étale covering} #{T} of #{S} (i.e. every finite étale morphism #{f\colon T\to S}), there is a corresponding étale covering #{\overline{T}} of #{\overline{S}}, which is connected if and only if #{T} is connected [[Ser1956]](Ser1956).
+  We can also easily see that, if #{T} and #{T'} are étale schemes over #{S}, then the natural map
+  ##{
+    \Hom_S(T,T') \to \Hom_{\overline{S}}(\overline{T},\overline{T}'')
+  }
+  is bijective, i.e. the functor #{T\mapsto\overline{T}} from the category of étale schemes over #{S} to the category of analytic spaces over #{S} is "fully faithful", and thus defines an equivalence between the first category and a subcategory of the second.
+  A theorem of Grauert–Remmert [[GR1958]](GR1958) implies that, if #{S} is normal, then we thus obtain an equivalence between the category of \em{étale coverings} of #{S} and the category of (\em{finite}) étale coverings of #{S}, i.e. every étale covering #{\sh{C}} of #{\overline{S}} is #{\overline{S}}-isomorphic to some #{\overline{T}}, where #{T} is an étale covering of #{S}.
+  We will show that \em{the Grauert–Remmert theorem remains true without any normality hypotheses on #{S}}.
+  \oldpage{190-11}
+  First let #{S'\to S} be a finite strict epimorphism, and suppose that the theorem has been proven for #{S'}; we will show that it holds for #{S}.
+  Let #{\sh{C}} be an étale covering of #{\overline{S}}, and consider its inverse image #{\sh{C}'} over #{S'}, which corresponds to a coherent analytic sheaf #{\mathfrak{A}'} of algebras on #{S'} that is the inverse image of a sheaf of algebras #{\mathfrak{A}} on #{\overline{S}} defining #{\sh{C}}.
+  By hypothesis, on #{S'}, #{\sh{C}'} comes from an étale covering #{T'} of #{S'}, i.e. #{\mathfrak{A}'} comes from a coherent sheaf of algebras #{\sh{A}'} on #{S'}.
+  Also, #{\mathfrak{A}'} is endowed with a canonical descent data with respect to #{\overline{S}'\to\overline{S}}, i.e. with an isomorphism between its two inverse images on #{\overline{S}'\times_{\overline{S}}\overline{S}'=\overline{S'\times_SS'}} (satisfying conditions (i) and (ii)), and this isomorphism comes from, by what has already been said, an isomorphism between the corresponding algebraic sheaves, i.e. from a descent data on #{\sh{A}'} with respect to #{S'\to S}.
+  We can easily show that the latter is effective (since it is effective on #{\mathfrak{A}'}, and the effectiveness of a descent data, as described explicitly in the previous section, is something that can be checked locally on the \em{completions} of the modules that are involved).
+  From this, we obtain a coherent sheaf of algebras #{\sh{A}} on #{S} that defines a covering #{T} of #{S}, and this is the desired covering.
+  The above result then obviously holds true if #{S'\to S} is just a composition of a finite number of finite strict epimorphisms, i.e. is just an arbitrary finite epimorphism (by the factorisation result stated in \ref{fga3.i-a.2}).
+  It thus follows that the Grauert–Remmert theorem holds true if #{S} is a \em{reduced} scheme, i.e. such that #{\sh{O}_S} has no nilpotent elements, as we can see by introducing its normalisation #{S'}.
+  We can easily pass to the general case.
+}
+
+\p{
+  A completely analogous argument, again using the factorisation result for finite strict epimorphisms, and the "formal" nature of the effectiveness of descent data, allows us to prove the following result:
+  let #{S} be a locally Noetherian prescheme, and let #{S'\to S} be a finite, surjective, and radicial morphism (or, equivalently, a morphism of finite type such that, for every #{T} over #{S}, the morphism #{T'=S'\times_S T\to T} is a homeomorphism, which we can also express by saying that #{S'\to S} is a \em{universal homeomorphism}).
+  For every #{T} étalé over #{S}, consider its inverse image #{T'=T\times_S S'}, which is étalé over #{S'}.
+  \em{Then the functor #{T\mapsto T'} is an equivalence between the category of preschemes #{T} that are étalé over #{S} and the category of preschemes #{T'} that are étalé over #{S'}.}
+  (We use the bijectivity of
+  ##{
+    \Hom_S(T_1,T_2) \to \Hom_{S'}(T'_1,T'_2)
+  }
+  for preschemes #{T_1} and #{T_2} that are étalé over #{S}, which can be proven directly without difficulty. We also use the fact that the stated theorem is true if #{S'=(S,\sh{O}_S/\sh{J})}, where #{\sh{J}} is a nilpotent coherent sheaf of ideals of #{\sh{O}_S}, cf. [[Mur1958](Mur1958), Lemma 6]).
+  \oldpage{190-12}
+  Note also that we do not suppose here that the #{T} in question are finite over #{S}.
+  This result implies, in particular, that the morphism #{S'\to S} induces an isomorphism between the fundamental group of #{S'} and the fundamental group of #{S} ("\em{topological invariance of the fundamental group of a prescheme}").
+}
