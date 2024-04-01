@@ -1,6 +1,64 @@
-\number{a}
+\number{A.4.a}
 \parent{fga3.i-a.4}
 
 \import{fga3.i-macros}
 
 \put\transclude/numbered{false}
+
+\p{
+  Let #{\mathcal{C}} be a category such that the product of any two objects always exists, and let #{T\in\mathcal{C}}.
+  For every finite set #{I\neq\varnothing}, we can consider #{T^I}, and so we obtain a covariant functor from the category of non-empty finite sets to the category #{\mathcal{C}}, i.e. what we can call a \em{simplicial object} of #{\mathcal{C}}, denoted by #{K_T}.
+  This object depends covariantly on #{T};
+  also, \em{if #{u} and #{v} are morphisms #{T\to T'}, then the corresponding morphisms #{K_T\to K_{T}} are homotopic}.
+  We say that #{T} \em{dominates} #{T'} if #{\Hom(T,T')\neq\varnothing}, and this gives an (upward) directed preorder on #{\mathcal{C}}.
+  It follows from the above that, if #{T} dominates #{T'}, then there exists a canonical class (up to homotopy) of homomorphisms of simplicial objects #{K_T\to K_{T'}};
+  in particular, if #{K_T} and #{K_{T'}} are such that #{T} and #{T'} dominate one another, then #{K_T} and #{K_{T'}} are homotopically equivalent.
+  Now let #{F} be a (contravariant, to be clear) functor from #{\mathcal{C}} to an \em{abelian} category #{\mathcal{C}'}.
+  Then
+  ##{
+    C^\bullet(T,F) = F(K_T)
+  }
+  is a cosimplicial object of #{\mathcal{C}'}, and thus defines, in a well-known way, a (cochain) complex in #{\mathcal{C}'}, of which we can take the cohomology:
+  ##{
+    \HH^\bullet(T,F)
+    = \HH^\bullet(C^\bullet(T,F))
+    = \HH^\bullet(F(K_T))
+  }
+  (we may write a subscript "#{\mathcal{C}}" on the #{\HH^\bullet} if there is any possibility for confusion).
+  This is a cohomological functor in #{F}, of which the variance for #{T} varying follows from what has already been said about the #{K_T};
+  more precisely, for fixed #{F} and varying #{T} in #{\mathcal{C}} (preordered by the domination relation), the #{\HH^\bullet(T,F)} form an inductive system of graded objects of #{\mathcal{C}'};
+  in particular, if #{T} and #{T'} are such that each one dominates the other, then #{\HH^\bullet(T,F)} and #{\HH^\bullet(T',F)} are canonically isomorphic.
+}
+
+\p{
+  Suppose that #{\mathcal{C}} has all fibre products.
+  Then we can, for fixed #{S\in\mathcal{C}}, apply the above to the category #{\mathcal{C}_S} of objects of #{\mathcal{C}} over #{S};
+  we then write #{C^\bullet(T/S,F)} and #{\HH^\bullet(T/S,F)} instead of #{C^\bullet(T,F)} and #{\HH^\bullet(T,F)} if we wish to make clear that we are working in the category #{\mathcal{C}_S};
+  \oldpage{190-13}
+  then #{C^\bullet(T/S,F)} is a cochain complex in #{\mathcal{C}'} that, in degree #{n}, is equal to #{F(T\times_S T\times_S\ldots\times_S T)} (where there are #{n+1} factors #{T}).
+}
+
+\p{
+  Note that, as per usual, we can define #{\HH^0(T/S,F)} without assuming the category #{\mathcal{C}'} to be abelian:
+  it is the kernel (\ref{fga3.i-a.2-definition-2.1}), if it exists, of the pair #{(F(p_1),F(p_2))} of morphisms
+  ##{
+    F(T) \to F(T\times_S T)
+  }
+  corresponding to the two projections #{p_1,p_2\colon T\times_S T\to T}.
+  In particular, we then have the natural morphism (called the \em{augmentation})
+  ##{
+    F(S) \to \HH^0(T/S,F)
+  }
+  which is an isomorphism in nice cases (in particular, in the case where #{T\to S} is a strict epimorphism and #{F} is "left exact").
+  Similarly, if #{F} takes values in the category of groups in a category #{\mathcal{C}''}, then we can also define #{\HH^1(T/S,F)};
+  in the case where #{\mathcal{C}''} is the category of sets (i.e. when #{F} takes values in the category of non-necessarily-commutative groups), #{\HH^1(T,F)} is the quotient of the subgroup #{Z^1(T/S,F)} of #{C^1(T/S,F) = F(T\times_S T)} consisting of the #{g} such that
+  ##{
+    F(p_{31})(g)
+    = F(p_{32})(g) F(p_{21})(g)
+  }
+  by the group with operators #{F(T)} acting on #{C^1(T/S,F)}, and thus, in particular, on the subset #{Z^1(T/S,F)}, by
+  ##{
+    \rho(g')\cdot g
+    = F(p_2)(g') g F(p_1)(g')^{-1}.
+  }
+}

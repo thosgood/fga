@@ -1,0 +1,102 @@
+\number{A.4.e}
+\parent{fga3.i-a.4}
+
+\import{fga3.i-macros}
+
+\put\transclude/numbered{false}
+
+\subtree[fga3.i-a.4-example-2]{
+  \taxon{example}
+  \number{2}
+
+  \p{
+    Let #{\mathcal{C}} be the category of preschemes.
+    We denote by #{\Ga} (for "additive group") the contravariant functor from #{\mathcal{C}} to the category of abelian groups, defined by
+    ##{
+      \Ga(X)
+      = \HH^0(X,\sh{O}_X).
+    }
+    We similarly define the functor #{\Gm} (for "multiplicative group") by
+    ##{
+      \Gm(X)
+      = \HH^0(X,\sh{O}_X)^\times
+    }
+    \oldpage{190-15}
+    (i.e. the group of invertible elements of the ring #{\HH^0(X,\sh{O}_X)}), and, more generally, the functor #{\GL(n)} (for "linear group of order #{n}") by
+    ##{
+      \GL(n)(X)
+      = \GL(n,\HH^0(X,\sh{O}_X)),
+    }
+    which is a functor from #{\mathcal{C}} to the category of (not-necessary-commutative, if #{n>1}) groups;
+    for #{n=1} we recover #{\Gm}.
+    We can also think of #{\GL(n)} as an automorphism functor (cf. \ref{fga3.i-a.4.c}) by considering the fibred category #{\mathcal{F}} with base #{\mathcal{C}} such that #{\mathcal{F}_X} is the category of locally free sheaves on #{X}, for #{X\in\mathcal{C}}, since then #{\GL(n)(X)=\Aut_{\mathcal{F}_X}(\sh{O}_X^n)}.
+    By \ref{fga3.i-a.4.b}, it follows that, if #{\alpha\colon S'\to S} is an #{\mathcal{F}}-descent morphism (cf. \ref{fga3.i-a.2.c}), then #{\HH^1(S'/S,\GL(n))} contains the set of isomorphism classes of locally free sheaves on #{S} whose inverse image on #{S'} is isomorphic to #{\sh{O}_{S'}^n}, and this inclusion is an equality if and only if every descent data on #{\sh{O}_{S'}^n} (with respect to #{\alpha\colon S'\to S}) is effective.
+    If #{S} is the spectrum of a local ring, then this implies that #{\HH^1(S'/S,\GL(n))=(e)}, since every locally free sheaf on #{S} is then trivial.
+  }
+
+  \p{
+    We note that the following conditions concerning a morphism #{\alpha\colon S'\to S} are equivalent:
+    \todo{the following list should be i, ii, etc.}
+
+    \ol{
+      \li{
+        The augmentation homomorphism #{\HH^0(S,\sh{O}_S) = \Ga(S)\to\HH^0(S'/S,\Ga)} is an isomorphism.
+      }
+      \li{
+        #{\alpha\colon S'\to S} is an #{\mathcal{F}}-descent morphism (where #{\mathcal{F}} is the fibred category over #{\mathcal{C}} described above).
+      }
+      \li{
+        #{\alpha\colon S'\to S} is a strict epimorphism (cf. \ref{fga3.i-a.2.c}).
+      }
+    }
+  }
+
+  \p{
+    Now suppose that #{S=\Spec(A)} and #{S'=\Spec(A')};
+    then
+    ##{
+      C^n(S'/S,\Ga)
+      = C^n(A'/A,\Ga)
+      = \underbrace{A'\otimes_A A'\otimes_A\ldots\otimes_A A'}_{n+1\text{ copies of }A'}
+    }
+    with the coboundary operator #{C^n(A'/A,\Ga)\to C^{n+1}(A'/A,\Ga)} being the alternating sum of the face operators
+    ##{
+      \partial_i(x_0\otimes x_1\otimes\ldots\otimes x_n)
+      = x_0\otimes\ldots\otimes x_{i-1}\otimes1_{A'}\otimes x_i\otimes\ldots\otimes x_n.
+    }
+    Similarly, #{C^n(S'/S,\Gm)=C^n(A'/A,\Gm)} can be identified with #{(\bigotimes_A^{n+1}A')^\times}, with the simplicial operations for #{C^\bullet(A'/A,\Gm)} being induced by those in #{C^\bullet(S'/S,\Ga)}.
+    We can write down the simplicial operations for #{C^\bullet(A'/A,\GL(n))} in the same explicit manner.
+    \em{In all the cases known to the speaker, #{\HH^i(A'/A,\Ga)=0} for #{i>0}, and, if #{A} is local, then #{\HH^1(A'/A,\Gm)=0}, and, more generally, #{\HH^1(A'/A,\GL(n))=(e)}} (if #{S'\to S} is an #{\mathcal{F}}-descent morphisms, i.e. if the diagram #{A\to A'\rightrightarrows A'\otimes_A A'} is exact, then compare this with \ref{fga3.i-a.2.c}).
+    \oldpage{190-16}
+    We note that \em{Hilbert's "Theorem 90" is exactly the fact that #{\HH^1(S'/S,\Gm)=0} if #{A} is a field and #{A'} is a finite Galois extension of #{A}} (cf. \ref{fga3.i-a.4-example-1}), \em{and we can also express it by saying that, in the case in question, #{S'\to S} is a strict descent morphisms for the fibred category of locally free sheaves of rank #{1}}.
+    This latter statement is the one that is most suitable to generalise Hilbert's theorem, by varying the hypotheses both on the morphism #{S'\to S} and on the quasi-coherent sheaves in question.
+  }
+
+  \p{
+    Finally, we note that, for a local \em{Artinian} #{A} with maximal ideal #{\mathfrak{m}}, and an #{A}-algebra #{A'} (where we denote, for any integer #{k>0}, the ring #{A/\mathfrak{m}^{k+1}} (resp. #{A'/\mathfrak{m}^{k+1}A'}) by #{A_k} (resp. #{A'_k})), the following properties are equivalent:
+    \todo{the following list should be i, ii, etc.}
+
+    \ol{
+      \li{
+        #{\HH^1(A'_k/A_k,\Ga)=0} for all #{k}.
+      }
+      \li{
+        #{\HH^1(A'_k/A_k,\Gm)=0} for all #{k}.
+      }
+      \li{
+        #{\HH^1(A'_k/A_k,\GL(n))=(e)} for all #{k} and all #{n}.
+      }
+    }
+
+    If #{S'\to S} is a strict epimorphism, then the above conditions imply that it is a \em{strict} descent morphism for free modules (not necessarily of finite type) over #{A'}.
+  }
+}
+
+\subtree{
+  \taxon{remark}
+
+  \p{
+    The definition of the groups #{\HH^i(S'/S,\Gm)} in the case where #{S} (resp. #{S'}) is a scheme over the field #{A} (resp. #{A'}) is due to Amitsur.
+    The group #{\HH^2(S'/S,\Gm)} is particularly interesting as a "global" variant of the Brauer group, for which we can refer to [[GD1960](GD1960), VII].
+  }
+}

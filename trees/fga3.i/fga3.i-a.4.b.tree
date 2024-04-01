@@ -1,0 +1,21 @@
+\number{A.4.b}
+\parent{fga3.i-a.4}
+
+\import{fga3.i-macros}
+
+\put\transclude/numbered{false}
+
+\p{
+  For example, let #{\mathcal{F}} be a fibred category with base #{\mathcal{C}}.
+  Let #{\xi,\eta\in\mathcal{F}_S}, and, for all #{S'} over #{S}, let
+  ##{
+    F_{\xi,\eta}(S')
+    = \Hom(\xi\times_S S', \eta\times_S S').
+  }
+  Then #{F_{\xi,\eta}} is a contravariant functor from #{\mathcal{C}_S} to the category of sets.
+  With this setup, \em{saying that the augmentation morphism}
+  ##{
+    F_{\xi,\eta}(S) \to \HH^0(S'/S,F_{\xi,\eta})
+  }
+  \em{is an isomorphism for every pair of elements #{\xi,\eta\in\mathcal{F}_S} implies that #{\alpha\colon S'\to S} is an #{\mathcal{F}}-descent morphism} (\ref{fga3.i-a.1-definition-1.7}).
+}

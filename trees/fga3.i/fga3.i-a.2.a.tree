@@ -1,11 +1,11 @@
-\number{a}
+\number{A.2.a}
 \parent{fga3.i-a.2}
 
 \import{fga3.i-macros}
 
 \put\transclude/numbered{false}
 
-\subtree[fga3.i-a-definition-2.1]{
+\subtree[fga3.i-a.2-definition-2.1]{
   \taxon{definition}
   \number{2.1}
 
@@ -23,14 +23,14 @@
       \Hom(Z,T') \rightrightarrows
       \Hom(Z,T'')
     }
-    is exact (\ref{fga3.i-a-definition-1.2}).
+    is exact (\ref{fga3.i-a.1-definition-1.2}).
     We then say that #{(T,\alpha)} (or, by an abuse of language, #{T}) is a \em{kernel} of the pair #{(\beta_1,\beta_2)} of morphisms.
   }
 }
 
 \p{
   This kernel is evidently determined up to unique isomorphism.
-  If #{\mathcal{C}} is the category of sets, then the above definition is compatible with \ref{fga3.i-a-definition-1.2}.
+  If #{\mathcal{C}} is the category of sets, then the above definition is compatible with \ref{fga3.i-a.1-definition-1.2}.
   Dually, we define the exactness of a diagram of morphisms in #{\mathcal{C}}
   ##{
     S \xleftarrow{\alpha}
@@ -40,7 +40,7 @@
   and then say that #{(S,\alpha)} is a \em{cokernel} of the pair #{(\beta_1,\beta_2)} of morphisms.
 }
 
-\subtree[fga3.i-a-definition-2.2]{
+\subtree[fga3.i-a.2-definition-2.2]{
   \taxon{definition}
   \number{2.2}
 
@@ -68,7 +68,7 @@
   To make the relation between the ideas of #{\mathcal{F}}-descent morphisms and strict epimorphisms more precise, we introduce the following definitions:
 }
 
-\subtree[fga3.i-a-definition-2.3]{
+\subtree[fga3.i-a.2-definition-2.3]{
   \taxon{definition}
   \number{2.3}
 
@@ -82,16 +82,16 @@
   they are, however, all distinct in a category such as the category of preschemes, or the category of preschemes over a given non-empty prescheme #{S}, even if we restrict to #{S}-schemes that are finite over #{S}.
 }
 
-\subtree[fga3.i-a-definition-2.4]{
+\subtree[fga3.i-a.2-definition-2.4]{
   \taxon{definition}
   \number{2.4}
 
   \p{
-    A morphism #{\alpha\colon S'\to S} is said to be a \em{descent morphism} (resp. a \em{strict descent morphism}) if it is an #{\mathcal{F}}-descent morphism (resp. a strict #{\mathcal{F}}-descent morphism) (cf. \ref{fga3.i-a-definition-1.7}), where #{\mathcal{F}} denotes the fibred category over #{\mathcal{C}} of objects of #{\mathcal{C}} over objects of #{\mathcal{C}} (cf. \ref{fga3.i-a-example-1}).
+    A morphism #{\alpha\colon S'\to S} is said to be a \em{descent morphism} (resp. a \em{strict descent morphism}) if it is an #{\mathcal{F}}-descent morphism (resp. a strict #{\mathcal{F}}-descent morphism) (cf. \ref{fga3.i-a.1-definition-1.7}), where #{\mathcal{F}} denotes the fibred category over #{\mathcal{C}} of objects of #{\mathcal{C}} over objects of #{\mathcal{C}} (cf. \ref{fga3.i-a.1-example-1}).
   }
 }
 
-\subtree[fga3.i-a-proposition-2.1]{
+\subtree[fga3.i-a.2-proposition-2.1]{
   \taxon{proposition}
   \number{2.1}
 

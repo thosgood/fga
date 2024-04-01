@@ -1,0 +1,22 @@
+\number{A.4.d}
+\parent{fga3.i-a.4}
+
+\import{fga3.i-macros}
+
+\put\transclude/numbered{false}
+
+\subtree[fga3.i-a.4-example-1]{
+  \taxon{example}
+  \number{1}
+
+  \p{
+    Let #{S'} be an object over #{S\in\mathcal{C}}, and let #{\Gamma} be a group of automorphisms of #{S'} such that #{S'} is "formally #{\Gamma}-principal over #{S}", i.e. such that the natural morphism
+    ##{
+      \Gamma\times S' \to S'\times_S S'
+    }
+    (where #{\Gamma\times S'} denotes the direct sum of #{\Gamma} copies of #{S'}) is an isomorphism.
+    (We suppose that all the necessary direct sums exist in #{\mathcal{C}}).
+    Let #{F} be a contravariant functor from #{\mathcal{C}} to the category of abelian groups.
+    Then \em{#{C^\bullet(S'/S,F)} is canonically isomorphic to the simplicial group #{C^\bullet(\Gamma,F(S'))} of standard homogeneous cochains, and so #{\HH^\bullet(S'/S,F)} is canonically isomorphic to #{\HH^\bullet(\Gamma,F(S'))}}.
+  }
+}
