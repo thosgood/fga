@@ -1,0 +1,55 @@
+\number{c}
+\parent{fga3.i-a.2}
+
+\import{fga3.i-macros}
+
+\put\transclude/numbered{false}
+
+\p{
+  If \ref{fga3.i-a.2.b-equation} is an exact diagram of finite morphisms, then, for every \em{flat} morphism #{T\to S} of prescheme, the diagram induced from \ref{fga3.i-a.2.b-equation} by a change of base #{T\to S} is again exact.
+  It thus follows that, if #{X} and #{Y} are #{S}-preschemes, with #{X} \em{flat} over #{S}, then the following diagram of maps (where #{X'} and #{Y'} are the inverse images of #{X} and #{Y} over #{S'}, and #{X''} and #{Y''} are their inverse images over #{S''}) is exact:
+  ##{
+    \Hom_S(X,Y) \to
+    \Hom_{S'}(X',Y') \rightrightarrows
+    \Hom_{S''}(X'',Y'').
+  }
+  In particular, if #{\mathcal{F}} denotes the fibred category (over the category #{\mathcal{C}} of preschemes) such that, for #{X\in\mathcal{C}}, #{\mathcal{F}_X} is the category of \em{flat} #{X}-preschemes, then the diagram \ref{fga3.i-a.2.b-equation} is #{\mathcal{F}}-exact.
+  (This result becomes false if we do not impose the flatness hypothesis; in particular, a finite strict epimorphism is not necessarily a descent morphism).
+  We similarly see that \ref{fga3.i-a.2.b-equation} is #{\mathcal{F}}-exact if #{\mathcal{F}} denotes the fibred category for which #{\mathcal{F}_X} is the category of \em{flat} quasi-coherent sheaves on the prescheme #{X} (here, again, the flatness hypothesis is essential).
+  \oldpage{190-09}
+  In either case, the question of \em{effectiveness} of a gluing data (and, more specifically, of a descent data, when #{S''=S'\times_S S'}) on a flat object over #{S'} is delicate (and its answer in many particular cases in one of the principal objects of these current articles).
+  The speaker does not know if, for every finite strict epimorphism #{S'\to S}, every descent data on a flat quasi-coherent sheaf on #{S'} is effective (even if we suppose that #{S} is the spectrum of a local Artinian ring, and we restrict to locally free sheaves of rank #{1}).
+  More generally, let #{A} be a ring, and #{A'} an #{A}-algebra (where everything is commutative) such that the diagram
+  ##{
+    A \to
+    A' \rightrightarrows
+    A'\otimes_A A'
+  }
+  is exact, which is equivalent to saying that the corresponding morphism #{S'\to S} between the spectra of #{A'} and #{A} is an #{\mathcal{F}}-descent morphism, where #{\mathcal{F}} is the fibred category of flat quasi-coherent sheaves.
+  Let #{M'} be a flat #{A'}-module endowed with a descent data to #{A}, i.e. with an isomorphism
+  ##{
+    \varphi\colon M'\otimes_A A'
+    \xrightarrow{\sim} A'\otimes_A M'
+  }
+  of #{(A'\otimes_A A')}-modules that satisfies conditions (i) and (ii) of \ref{fga3.i-a.1.c} (which we leave to the reader to write out in terms of modules).
+  Is this data effective (relative to the fibred category of flat quasi-coherent sheaves)?
+  Let #{M} be the subset of #{M'} consisting of the #{x'\in M'} such that
+  ##{
+    \varphi(x'\otimes_A 1_{A'})
+    = 1_{A'}\otimes_A x',
+  }
+  which is a sub-#{A}-module of #{M'}.
+  The canonical injection #{M\to M'} defines a homomorphism of #{A'}-modules #{M\otimes_A A'\to M'}.
+  \em{The effectiveness of #{\varphi} then implies the following: #{M} is a flat #{A}-module, and the above homomorphism is an isomorphism.}
+}
+
+\subtree{
+  \taxon{remark}
+
+  \p{
+    In the above, we have imposed no flatness hypotheses on the morphisms of the diagram \ref{fga3.i-a.2.b-equation}, and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over #{S} and #{S'} that we consider.
+    In \fref{fga3.i-b.2}, we will impose a flatness hypothesis on #{\alpha\colon S'\to S}, which will allow us to have a technique of descent for objects over #{S} and #{S'} that are no longer under any flatness hypotheses.
+    In any case, there is a flatness hypothesis involved somewhere.
+    This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base \em{fields}, over which everything, in fact, is flat!).
+  }
+}
