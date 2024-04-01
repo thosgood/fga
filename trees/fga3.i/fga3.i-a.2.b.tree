@@ -1,0 +1,53 @@
+\number{b}
+\parent{fga3.i-a.2}
+
+\import{fga3.i-macros}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \taxon{example}
+
+  \p{
+    Let #{\mathcal{C}} be the category of preschemes.
+    Let #{S\in\mathcal{C}}, and let #{S'} and #{S''} be preschemes that are \em{finite} over #{S}, i.e. that correspond to sheaves of algebras #{\sh{A}'} and #{\sh{A}''} over #{S} that are quasi-coherent (as sheaves of modules) and of finite type (i.e. coherent, if #{S} is locally Noetherian).
+    Let #{\alpha\colon S'\to S} be the structure morphism of #{S'}, and let #{\beta_1} and #{\beta_2} be #{S}-morphisms from #{S''} to #{S'}, defined by algebra homomorphisms #{\sh{A}'\to\sh{A}''}, which we also denote by #{\beta_1} and #{\beta_2}.
+    Using the fact that a finite morphism is closed (the first Cohen–Seidenberg theorem), we can easily prove that the diagram in #{\mathcal{C}}
+
+    \subtree[fga3.i-a.2.b-equation]{
+      \taxon{equation}
+      \number{+}
+      ##{
+        S \xleftarrow{\alpha}
+        S' \oullar{\beta_1}{\beta_2}
+        S''
+      \startverb\tag{+}\stopverb
+      }
+    }
+
+    \oldpage{190-08}
+    is exact if and only if the diagram of sheaves on #{S}
+    ##{
+      \sh{O}_S = \sh{A} \xrightarrow{\alpha}
+      \sh{A}' \ourrar{\beta_1}{\beta_2}
+      \sh{A}''
+    }
+    is exact.
+    In particular, if #{\alpha\colon S'\to S} is a finite morphism corresponding to a sheaf #{\sh{A}'} of algebras on #{S}, then #{\alpha} is a strict epimorphism if and only if the diagram of sheaves
+    ##{
+      \sh{O}_S = \sh{A} \to
+      \sh{A}' \ourrar{p_1}{p_2}
+      \sh{A}'\otimes_{\sh{A}}\sh{A}'
+    }
+    is exact (it is an epimorphism if and only if #{\sh{A}\to\sh{A}'} is injective).
+    If #{S} is affine of ring #{A}, then #{S'} is affine of ring #{A'}, with #{A'} finite over #{A}, and so #{S'\to S} is a strict epimorphism if and only if #{A\to A'} is an isomorphism from #{A} to the subring of #{A'} consisting of the #{x'\in A'} such that
+    ##{
+      1_{A'}\otimes_A x' - x'\otimes_A 1_{A'}
+      = 0
+    }
+    (it is an epimorphism if and only if #{A\to A'} is injective).
+    As we have already mentioned, even if #{S} is the scheme of a local Artinian ring, then a finite morphism #{S'\to S} that is an epimorphism is not necessarily a strict epimorphism.
+    However, we can prove that, \em{if #{S} is a Noetherian prescheme, then every finite morphism #{S'\to S} that is an epimorphism is the composition of a finite sequence of strict epimorphisms} (also finite).
+    This also shows that the composition of two strict epimorphisms is not necessarily a strict epimorphism.
+  }
+}
