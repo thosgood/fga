@@ -6,3 +6,14 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  Let #{P} be a class of morphisms of preschemes.
+  Let #{\alpha\colon S\to S'} be a morphism of preschemes, and let #{f\colon X\to Y} be a morphism of #{S}-preschemes, with #{f'\colon X'\to Y'} the inverse image of #{f} under #{\alpha}.
+  We can then ask if the relation "#{f'\in P}" implies that "#{f\in P}".
+  It appears that the answer is affirmative in many important cases, if we suppose that #{\alpha} is \em{faithfully flat} and \em{quasi-compact} (this latter hypothesis sometimes being overly strong).
+  We can see this directly without difficulty if #{P} is the class of surjective (resp. radicial) morphisms (with these two cases following from the surjectivity of #{\alpha}), or flat (resp. faithfully flat, resp. simple) morphisms (with these three cases following from the faithful flatness of #{\alpha}), or morphisms of finite type.
+  Using \ref{fga3.i-b.1-theorem-1}, \ref{fga3.i-b.1-theorem-2}, and \ref{fga3.i-b.1-lemma-1.2}, we see that it is also true if #{P} is one of the following classes:
+  isomorphisms, open immersions, closed immersions, immersions (if #{f} is of finite type, and #{Y} is locally Noetherian), affine morphisms, finite morphisms, quasi-finite morphisms, open morphisms, closed morphisms, homeomorphisms, separated morphisms, or proper morphisms.
+  \oldpage{190-21}
+  The only important case not covered here is that of projective or quasi-projective morphisms, which has already been discussed in the remark in \ref{fga3.i-b.1}.
+}
