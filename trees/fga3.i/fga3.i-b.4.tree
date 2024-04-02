@@ -6,3 +6,50 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  Let #{X} be an #{S}-prescheme such that the direct image of #{\sh{O}_X} on #{S} is #{\sh{O}_S};
+  this property remains true for any flat base extension #{S'\to S}.
+  If #{\mathcal{F}} is an \em{invertible sheaf} (i.e. locally free of rank #{1}) on #{X}, then there is a bijective correspondence between automorphisms of #{\mathcal{F}} (identified with the invertible sections of #{\sh{O}_X}) and invertible sections of #{\sh{O}_S}.
+  So let #{s} be a section of #{X} over #{S};
+  we define a \em{section of #{\mathcal{F}} over #{s}} to be a section of the invertible sheaf #{s^*(\mathcal{F})} on #{S}.
+  It follows from the above that, if #{\mathcal{F}_i} (for #{i=1,2}) are invertible sheaves on #{X}, each endowed with a section over #{s}, and \em{if #{\mathcal{F}_1} and #{\mathcal{F}_2} are isomorphic, then there exists exactly one isomorphism from #{\mathcal{F}_1} to #{\mathcal{F}_2} that is compatible with the sections in question} (i.e. sending the first to the second).
+  We also, independently of the section #{s}, regard two invertible sheaves #{\mathcal{F}_1} and #{\mathcal{F}_2} on #{X} as \em{equivalent} if every point of #{S} has an open neighbourhood #{U} such that the restrictions of #{\mathcal{F}_1} and #{\mathcal{F}_2} to #{X|U} are isomorphic.
+  Then \em{every invertible sheaf #{\mathcal{F}} on #{X} is equivalent to an invertible sheaf #{\mathcal{F}_1} endowed with a marked section over #{s}} (we take #{\mathcal{F}_1=Fs^*(\mathcal{F})^{-1}}), \em{and #{\mathcal{F}_1} is determined up to isomorphism}.
+  In other words, the classification \em{up to equivalence} of invertible sheaves on #{X} is the same as the classification \em{up to isomorphism} of invertible sheaves endowed with a marked section.
+}
+
+\p{
+  Since these properties remain true under flat extensions #{\alpha\colon S'\to S} of the base (by replacing the section #{s} with its inverse image #{s'} under #{\alpha}), we thus conclude, taking \ref{fga3.i-b.1-theorem-1} into account:
+}
+
+\p{
+  \em{
+    With the prescheme #{X/S} being as above, and admitting a section #{s}, let #{\alpha\colon S'\to S} be a faithfully flat and quasi-compact morphism; let #{\mathcal{F}'} be an invertible sheaf on #{X'=X\times_S S'}.
+    For #{\mathcal{F}'} to be equivalent to the inverse image on #{X'} of an invertible sheaf #{\mathcal{F}'} on #{X}, it is necessary and sufficient that its inverse images #{p_1^*(\mathcal{F}')} and #{p_2^*(\mathcal{F}')} on #{X'\times_X X'=X\times_S(S'\times_S S')} be equivalent.
+    If this is the case, then #{\mathcal{F}} is determined up to equivalence.
+  }
+  (We then say that #{\mathcal{F}'} is \em{rational} on #{S}).
+}
+
+\p{
+  Considering this principle in the case where #{\alpha\colon S'\to S} is as in \ref{fga3.i-b.3-example-1} and \ref{fga3.i-b.3-example-2} in the previous section, we recover the \em{rationality criteria of Weil and of Cartier}.
+  \oldpage{190-25}
+  (We note that the authors restrict to the case where #{S} and #{S'} are spectra of fields;
+  a fortiori, #{S} is then the spectrum of a local ring, and the equivalence relation introduced above is exactly the relation of being isomorphic).
+  The the first case, #{\mathcal{F}'} is rational on #{S} if and only if its images under #{\Gamma} are all equivalent to #{\mathcal{F}'}.
+  To express the rationality criterion in the second case, we consider, more generally, the diagonal morphism #{X'\to X''=X'\times_X X'} of #{X'/X}, with the corresponding sheaf of ideals #{\sh{I}} on #{X'\times_X X'}, and the sheaf #{\sh{I}/\sh{I}^2}, which can be identified with its inverse image #{\Omega_{X'/X}^1} on #{X} (the \em{sheaf of #{1}-differentials of #{X'} with respect to #{X}}).
+  Since the restrictions of the #{\mathcal{F}''_i=p_i(\mathcal{F}')} (for #{i=1,2}) to the diagonal are isomorphic (since they are both isomorphic to #{\mathcal{F}'}), i.e. #{\mathcal{F}''_1(\mathcal{F}''_2)^{-1}=\mathcal{F}''} has a restriction to the diagonal which is trivial, it follows that the restriction of #{\mathcal{F}''} to #{(X'',\sh{O}_{X''}/\sh{I}^2)} is given, up to isomorphism, by a well-defined element #{\xi} of
+  ##{
+    \HH^1(X'',\sh{I}/\sh{I}^2)
+    = \HH^1(X',\Omega_{X'/X}^1).
+  }
+  Also, being precise, we have #{\Omega_{X'/X}^1=\Omega_{S'/S}^1\otimes_{\sh{O}_S}\sh{O}_X}, and thus, \em{if #{\Omega_{S'/S}^1} is locally free on #{S}} (as in the Cartier case), \em{then #{\xi} defines a section of #{\RR^1f'(\sh{O}_{X'})\otimes\Omega_{S'/S}^1} on #{S'}} (called the \em{Atiyah–Cartier class of the invertible sheaf #{\mathcal{F}} on #{X'/S}}) \em{whose vanishing is necessary and sufficient for the inverse images of #{\mathcal{F}'} under the two projections of}
+  ##{
+    (X'',\sh{O}_{X''}/\sh{I}^2)
+    = X\times_S(S'',\sh{O}_{S''}/\sh{J}^2)
+  }
+  \em{to #{X'} to be equivalent} (where #{\sh{J}} is the sheaf of ideals on #{S''=S'\times_S S'} defined by the diagonal morphism #{S'\to S'\times_S S'}).
+  This vanishing is thus trivially \em{necessary} for the inverse images of #{\mathcal{F}'} on #{X''=X\times_S S''} itself to be equivalent, and thus also for #{\mathcal{F}} to be equivalent to the inverse image of an invertible sheaf #{\mathcal{F}} on #{X}.
+  The Atiyah–Cartier class can also be understood as the obstruction to the existence, locally over #{S'}, of a \em{connection} of #{\mathcal{F}'} relative to the derivations of #{X'/X}, with such a connection further being determined when we know the derivations of #{\mathcal{F}'} corresponding to the natural extensions of derivations of #{S'/S} to #{X'}.
+  From this, and the results of the previous section, we easily conclude that, in the case of the aforementioned \ref{fga3.i-b.3-example-2}, and when #{X/S} admits a section, the vanishing of the Atiyah–Cartier class is also sufficient for #{\mathcal{F}'} to be rational on #{S}.
+}
