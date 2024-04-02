@@ -6,3 +6,136 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  Let #{\alpha\colon S'\to S} be a \em{finite} morphism, corresponding to a sheaf of algebras #{\sh{A}'} on #{S} that is \em{locally free} and of finite type as a sheaf of modules, and everywhere non-zero.
+  Then #{\alpha} is a faithfully flat and quasi-compact morphism, to which we can thus apply the above results.
+  The data of a quasi-coherent sheaf #{\mathcal{F}'} on #{S'} is equivalent to the data of the quasi-coherent sheaf #{\alpha_*(\mathcal{F}')} on #{S} endowed with its #{\sh{A}'}-modules structure (noting that #{\sh{A}'=\alpha_*(\sh{O}_{S'})}).
+  For simplicity, we also denote this sheaf on #{S} by #{\mathcal{F}'}.
+  The two inverse images #{p_i^*(\mathcal{F}')} of #{\mathcal{F}'} on #{S'\times_S S'} similarly correspond to the quasi-coherent sheaves of #{(\sh{A}'\otimes_{\sh{O}_S}\sh{A}')}-modules #{\mathcal{F}'\otimes_{\sh{O}_S}\sh{A}'} and #{\sh{A}'\otimes_{\sh{O}_S}\mathcal{F}'}.
+  The data of an #{(S'\times_S S')}-homomorphism from the former to the latter is equivalent to the data of a homomorphism of #{(\sh{A}'\otimes\sh{A}')}-modules, and, taking into account the fact that #{\sh{A}'} is locally free, this is equivalent to the data of a homomorphism of #{(\sh{A}'\otimes\sh{A}')}-modules:
+  ##{
+    \sh{U}
+    = \shHom_{\sh{O}_S}(\sh{A}',\sh{A}')
+    = \sh{A}'\otimes\check{\sh{A}}'
+    \to \shHom_{\sh{O}_S}(\mathcal{F}',\mathcal{F}')
+  }
+  i.e. to the data, for every section #{\xi} of #{\sh{U}} over an open subset #{V}, of a homomorphism of #{\sh{O}_S}-modules #{T_\xi\colon\mathcal{F}'|V\to\mathcal{F}'|V} that satisfies the conditions
+
+  \subtree[fga3.i-b.3-equation-3.1]{
+    \taxon{equation}
+    \number{3.1}
+    ##{
+      \begin{aligned}
+        T_{f\xi}(x)
+        &= fT_\xi(x),
+      \\T_{\xi f}(x)
+        &= T_\xi(fx),
+      \end{aligned}
+    \startverb\tag{3.1}\stopverb
+    }
+  }
+
+  where #{f} and #{x} are (respectively) sections of #{\sh{A}'} and #{\mathcal{F}'} over an open subset of #{S} that is contained inside #{V}.
+  Conditions (i) and (ii) of a descent data (cf. \ref{fga3.i-a.1.c}) can then be written (respectively) as
+
+  \subtree[fga3.i-b.3-equation-3.2]{
+    \taxon{equation}
+    \number{3.2}
+    ##{
+      T_{1_U}(x)
+      = x
+      \qquad\text{i.e. }T_{1_U}=\id_{\mathcal{F}'}
+    \startverb\tag{3.2}\stopverb
+    }
+  }
+
+  \subtree[fga3.i-b.3-equation-3.3]{
+    \taxon{equation}
+    \number{3.3}
+    ##{
+      T_{\xi\eta}
+      = T_\xi T_\eta.
+    \startverb\tag{3.3}\stopverb
+    }
+  }
+
+  In other words, \em{a descent data on #{\mathcal{F}'} is equivalent to a representation of the sheaf #{\sh{U}=\shHom_{\sh{O}_S}(\sh{A}',\sh{A}')} of #{\sh{O}_S}-algebras in the sheaf #{\shHom_{\sh{O}_S}(\mathcal{F}',\mathcal{F}')} of #{\sh{O}_S}-algebras that satisfies the two linearity conditions (\ref{fga3.i-b.3-equation-3.1})}.
+  If we have a pairing of quasi-coherent sheaves on #{S'}:
+  ##{
+    \mathcal{F}'_1\times\mathcal{F}'_2 \to \mathcal{F}'_3
+  }
+  \oldpage{190-22}
+  (that we can think of as a pairing of sheaves of #{\sh{A}'}-modules on #{S}), and gluing data on the #{\mathcal{F}'_i} defined by homomorphisms #{T_i\colon\sh{U}\to\shHom_{\sh{O}_S}(\mathcal{F}'_i,\mathcal{F}'_i)} (for #{i=1,2,3}), then these data are \em{equivalent to the given pairing}, in the evident meaning of the phrase, if and only if the following condition is satisfied:
+}
+
+\p{
+  For every section #{\xi} of #{\sh{U}} over an open subset, and denoting by #{\Delta\xi=\sum\xi'_i\otimes_{\sh{A}'}\xi''_i} the section of #{\sh{U}\otimes_{\sh{A}'}\sh{U}} (where #{\sh{U}} is considered as an #{\sh{A}'}-module with its left structure) defined by the formula
+  ##{
+    \xi\cdot(fg)
+    = \sum_i\xi'_i(f)\xi''_i(g)
+  }
+  (where #{f} and #{g} are sections of #{\sh{A}'} over a smaller open subset), we have the formula
+
+  \subtree[fga3.i-b.3-equation-3.4]{
+    \taxon{equation}
+    \number{3.4}
+    ##{
+      T_\xi^{(3)}(x\cdot y)
+      = \sum_i T_{\xi'_i}^{(1)}x\cdot T_{\xi''_i}^{(2)}y
+    \startverb\tag{3.4}\stopverb
+    }
+  }
+
+  for every pair #{(x,y)} of sections of #{\sh{A}'} over a smaller subset.
+  (We can express this property by saying that the homomorphisms #{T^{(i)}} are \em{compatible with the diagonal map of #{\sh{U}}}, with respect to the given pair).
+  In particular, \ref{fga3.i-b.3-equation-3.1}, \ref{fga3.i-b.3-equation-3.2}, \ref{fga3.i-b.3-equation-3.3}, and \ref{fga3.i-b.3-equation-3.4} allow us to understand, in terms of representations of algebras via diagonal maps, the descent data on a quasi-coherent sheaf of \em{algebras} on #{S'}, and thus also (by restricting to commutative algebras) the descent data on an affine #{S'}-scheme.
+}
+
+\p{
+  From here, we obtain an analogous interpretation of descent data on an arbitrary #{S'}-prescheme #{X'}:
+  the data of such an #{X'} is equivalent to the data of a prescheme #{X'} \em{over #{S}} endowed with a homomorphism of #{\sh{O}_S}-algebras
+  ##{
+    \sh{A}'\to\sh{O}_{X'},
+  }
+  and a descent data on #{X'} is equivalent to the data of a sheaf homomorphism
+  ##{
+    \sh{U}
+    \to \shHom_{h^{-1}(\sh{O}_S)}(\sh{O}_{X'},\sh{O}_{X'})
+  }
+  that is compatible with the morphism #{h\colon X'\to S'} and that satisfies the conditions analogous to \ref{fga3.i-b.3-equation-3.1}, \ref{fga3.i-b.3-equation-3.2}, \ref{fga3.i-b.3-equation-3.3}, and \ref{fga3.i-b.3-equation-3.4} above.
+}
+
+\subtree[fga3.i-b.3-example-1]{
+  \taxon{example}
+  \number{1}
+  \title{Weil's example}
+
+  \p{
+    Suppose that #{S'/S} is a \em{Galois étale covering} with Galois group #{\Gamma} (cf. \ref{fga3.i-a.3} and \ref{fga3.i-a.4}).
+    Then a descent data on a quasi-coherent sheaf #{\mathcal{F}'} on #{S'} (resp. on an #{S'}-prescheme #{X'}) is equivalent to the data of a representation of #{\Gamma} by automorphisms of #{(S',\mathcal{F}')} (resp. of #{(S',X')}) that is compatible with the action of #{\Gamma} on #{S'}.
+    \oldpage{190-23}
+    This result is "formal", i.e. it can be proven in terms of categories, but, from the point of view of this section, we also obtain the explicit structure of #{\sh{U}} (endowed with its ring structure, the ring homomorphism #{\sh{A}'\to\sh{U}}, and the diagonal map), which is completely known thanks to the following result:
+    \em{#{\sh{U}} admits, as a left #{A'}-module, a basis given by the sections of #{\sh{U}} that correspond to elements of #{\Gamma}}.
+  }
+}
+
+\subtree[fga3.i-b.3-example-2]{
+  \taxon{example}
+  \number{2}
+  \title{Cartier's example}
+
+  \p{
+    Let #{p} be a prime number, and suppose that #{p\sh{O}_S=0} (i.e. that #{\sh{O}_S} is of \em{characteristic #{p}}), that #{(\sh{A}')^p\subset\sh{O}_S=\sh{A}} (i.e. that #{S'/S} is \em{radicial of height #{1}}), and that the sheaf of algebras #{\sh{A}'} over #{\sh{A}} \em{locally admits a #{p}-basis} (i.e. a family #{(x_i)} of sections such that #{\sh{A}'} is generated as an algebra by the #{x_i} under the sole condition that #{x_i^p=0}).
+    We suppose that the set of the #{i} is finite, of cardinality #{n}.
+    Let #{\mathfrak{C}} be the sheaf of #{A}-derivations of #{A'}, which is a locally free sheaf of rank #{n} of #{A'}-modules, and, furthermore, a sheaf of Lie #{p}-algebras over #{\sh{A}} (but not over #{\sh{A}'}) that satisfies the following condition:
+
+    \subtree[fga3.i-b.3-equation-3.5]{
+      \taxon{equation}
+      \number{3.5}
+      ##{
+        [X,fY] = X(f)Y + f[X,Y].
+      \startverb\tag{3.5}\stopverb
+      }
+    }
+  }
+}
