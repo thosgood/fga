@@ -6,4 +6,89 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  Let #{\mathcal{C}} and #{\mathcal{C}'} be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, preordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" #{e} such that #{\Hom(X,e)} consists of only on element for all #{X}).
+  Let #{F} be a covariant functor from #{\mathcal{C}} to #{\mathcal{C}'}.
+  Then the following conditions are equivalent:
+  \todo{the following list should be i, ii, etc.}
 
+  \ol{
+    \li{
+      #{F} commutes with finite projective limits;
+    }
+
+    \li{
+      #{F} commutes with finite products and with finite fibred products;
+    }
+
+    \li{
+      #{F} commutes with finite products, and, for every exact diagram
+      ##{
+        X\to X'\rightrightarrows X''
+      }
+      in #{\mathcal{C}} (cf. [FGA 3.I, A, Definition 2.1](fga3.i-a.2-definition-2.1)), the image of the diagram under #{F}
+      ##{
+        F(X)\to F(X')\rightrightarrows F(X'')
+      }
+      is exact.
+    }
+  }
+
+  We then say that #{F} is \em{left exact}.
+}
+
+\p{
+  In what follows, we assume that finite projective limits always exist in #{\mathcal{C}}.
+  It is then immediate from the definitions that a representable functor is left exact, and, by taking the limit, that \em{a pro-representable functor is left exact}.
+}
+
+\p{
+  To obtain a converse, let
+  ##{
+    F\colon \mathcal{C} \to \Set
+  }
+  be a covariant functor, and let #{X\in\mathcal{C}} and #{\xi\in F(X)}.
+  \oldpage{195-06}
+  We say that #{\xi} (or the pair #{(X,\xi)}) is \em{minimal} if, for all #{X'\in\mathcal{C}} and all #{\xi'\in F(X')}, and for every strict monomorphism (cf. [FGA 3.I, A, §2](fga3.i-a.2)) #{u\colon X'\to X} such that #{\xi=F(u)(\xi')}, #{u} is an isomorphism.
+  We also say that a pair #{(X,\xi)} \em{dominates} #{(X'',\xi'')} (where #{\xi\in F(X)} and #{\xi''\in F(X'')}) if there exists a morphism #{v\colon X\to X''} such that #{\xi''=F(v)(\xi)};
+  \em{if #{\xi} is minimal, and if #{F} is left exact, then this morphism #{v} is unique};
+  \em{if #{\xi''} is minimal, then #{v} is surjective}.
+  From this we easily deduce the following proposition:
+}
+
+\subtree[fga3.ii-a.3-proposition-3.1]{
+  \taxon{proposition}
+  \number{3.1}
+
+  \p{
+    For #{F} to be strictly pro-representable, it is necessary and sufficient that it satisfy the following two conditions:
+    \todo{the following list should be i, ii}
+
+    \ol{
+      \li{
+        #{F} is left exact; and
+      }
+      \li{
+        every pair #{(X,\xi)}, with #{\xi\in F(X)}, is dominated by some \em{minimal} pair.
+      }
+    }
+  }
+}
+
+\p{
+  This second condition is trivial if every object of #{\mathcal{C}} is Artinian (by taking a sub-object #{X'} of #{X} that is minimal amongst those for which there exists some #{\xi'\in F(X')} such that #{\xi} is the image of #{\xi'}).
+  Whence:
+}
+
+\subtree{
+  \taxon{corollary}
+
+  \p{
+    Let #{\mathcal{C}} be a category whose objects are all Artinian and in which all finite projective limits exist.
+    Then the pro-representable functors from #{\mathcal{C}} to #{\Set} are exactly the left exact functors, and they are in fact strictly pro-representable.
+  }
+}
+
+\p{
+  This last fact also implies that \em{every pro-object of #{\mathcal{C}} is then strict}.
+}

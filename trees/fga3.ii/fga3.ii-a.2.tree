@@ -6,4 +6,83 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  Let #{\mathcal{X}=(X_i)_{i\in I}} be a projective system of objects of #{\mathcal{C}};
+  there is a corresponding covariant functor
+  ##{
+    h'_{\mathcal{X}}
+    = \varinjlim_i h'_{X_i}
+  }
+  which can be written more explicitly as
+  ##{
+    h'_{\mathcal{X}}(Y)
+    = \varinjlim_i h'_{X_i}(Y)
+    = \varinjlim_i\Hom(X_i,Y)
+  }
+  which is a functor from #{\mathcal{C}} to #{\Set}.
+  A functor from #{\mathcal{C}} to #{\Set} that is isomorphic to a functor of this type \em{with #{I} filtered} is said to be \em{pro-representable}.
+  By the previous section, these are exactly the functors that are isomorphic to \em{filtered inductive limits of representable functors}.
+  Let #{\mathcal{X}'=(X_j)_{j\in J}} be another filtered projective system in #{\mathcal{C}} (indexed by another filtered preordered set of indices #{J}).
+  Then we can easily show that we have a canonical bijection
+  ##{
+    \Hom(h_{\mathcal{X}'},h_{\mathcal{X}})
+    = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j)
+  }
+  (generalising \ref{fga3.ii-a.1-proposition-1.1}).
+  This leads to introducing the \em{category #{\Pro(\mathcal{C})} of pro-objects of #{\mathcal{C}}}, whose objects are projective systems of objects of #{\mathcal{C}} (indexed by arbitrary filtered preordered sets of indices), and whose morphisms between objects #{\mathcal{X}=(X_i)_{i\in I}} and #{\mathcal{X}'=(X_j)_{j\in J}} are given by
+  ##{
+    \Pro\Hom(\mathcal{X},\mathcal{X}')
+    = \varprojlim_j\varinjlim_i\Hom(X_i,X'_j),
+  }
+  with the composition of pro-homomorphisms being evident.
+  By the very construction itself, #{\mathcal{X}\mapsto h'_{\mathcal{X}}} can be considered as a contravariant functor in #{\mathcal{X}}, establishing an \em{equivalence between the dual category of the category #{\Pro(\mathcal{C})} of pro-objects of #{\mathcal{C}} and the category of pro-representable covariant functors from #{\mathcal{C}} to #{\Set}}.
+  \oldpage{195-04}
+  Of course, an object #{X} of #{\mathcal{C}} canonically defines a pro-object, denoted again by #{X}, so that \em{#{\mathcal{C}} is equivalent to a full subcategory of #{\Pro(\mathcal{C})}}.
+  Then, if #{\mathcal{X}=(X_i)_{i\in I}} is an arbitrary pro-object of #{\mathcal{C}}, then (with the above identification) we have that
+  ##{
+    \mathcal{X}
+    = \varprojlim_i X_i
+  }
+  with the projective limit being \em{taken in #{\Pro(\mathcal{C})}} (since #{h_{\mathcal{X}}=\varinjlim_i h_{X_i}}).
+}
 
+\p{
+  We draw attention to the fact that, even if the projective limit of the #{X_i} \em{exists in #{\mathcal{C}}}, it will generally \em{not} be isomorphic to the projective limit #{\mathcal{X}} in #{\Pro(\mathcal{C})}, as is already evident in the case where #{\mathcal{C}} is the category of sets.
+  We note that, by the definition itself, #{\varprojlim{}_{\mathcal{C}}X_i=L} is defined by the condition that the functor
+  ##{
+    \varprojlim_i\Hom_{\mathcal{C}}(Y,X_i)
+    = \Hom_{\Pro(\mathcal{C})}(Y,\mathcal{X})
+  }
+  in #{Y\in\mathcal{C}} and with values in #{\Set} be representable via #{\mathcal{L}}, i.e. that it be isomorphic to #{\Hom_{\mathcal{C}}(Y,\mathcal{L})};
+  then \em{#{\lim{}_{\mathcal{C}}X_i} is already defined in terms of the \em{pro-object} #{\mathcal{X}}}, and, in a precise way, depends functorially on the pro-object #{\mathcal{X}} whenever it is defined;
+  there is therefore no problem with denoting it by #{\lim{}_{\mathcal{C}}(\mathcal{X})}.
+  If projective limits in #{\mathcal{C}} always exist, then #{\lim{}_{\mathcal{C}}(\mathcal{X})} is a functor from #{\Pro(\mathcal{C})} to #{\mathcal{C}}, and there is a canonical homomorphism of functors #{\lim_\mathcal{C}(\mathcal{X})\to\mathcal{X}}.
+  Since every (covariant, say, for simplicity) functor
+  ##{
+    F\colon \mathcal{C} \to \mathcal{C}'
+  }
+  can be extended in an obvious way to a functor
+  ##{
+    \Pro(F)\colon \Pro(\mathcal{C}) \to \Pro(\mathcal{C}'),
+  }
+  it follows that, if projective limits always exist in #{\mathcal{C}'}, then #{F} also canonically defines a composite functor
+  ##{
+    \overline{F}
+    = \varprojlim{}_{\mathcal{C}'}\colon \Pro(\mathcal{C}) \to \mathcal{C}'
+  }
+  sending #{\mathcal{X}=(X_i)_{i\in I}} to #{\varprojlim{}_{\mathcal{C}'}F(X_i)}.
+}
+
+\p{
+  A pro-object #{\mathcal{X}} is said to be a \em{strict pro-object} if it is isomorphic to a pro-object #{(X_i)_{i\in I}}, where the transition morphisms #{X_i\to X_j} are \em{epimorphisms};
+  a functor defined by such an object is said to be \em{strictly pro-representable}.
+  We can thus further demand that #{I} be a filtered \em{ordered} set, and that every epimorphism #{X_i\to X'} be equivalent to an epimorphism #{X_i\to X_j} for some suitable #{j\in I} (uniquely determined by this condition).
+  \oldpage{195-05}
+  Under these conditions, the projective system #{(X_i)_{i\in I}} is determined \em{up to unique isomorphism} (in the usual sense of isomorphisms of projective systems).
+  It thus follows that \em{the projective limit of a projective system #{\mathcal{X}^{(\alpha)}} of strict pro-objects always exists in #{\Pro(\mathcal{C})}}, and that, with the above notation of #{F} and #{\overline{F}}, we have that
+  ##{
+    \overline{F}\varprojlim_\alpha\mathcal{X}^{(\alpha)}
+    = \varprojlim_\alpha{}_{\mathcal{C}'}F(X^{(\alpha)}).
+  }
+  In particular, if every pro-object of #{\mathcal{C}} is strict (cf. the previous section), then the extended functor #{\overline{F}} commutes with projective limits.
+}
