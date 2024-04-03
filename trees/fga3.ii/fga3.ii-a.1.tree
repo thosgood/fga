@@ -24,3 +24,55 @@
   from #{\mathcal{C}} to the category of covariant functors from the dual #{\mathcal{C}^\op} of #{\mathcal{C}} to the category of sets.
   We then recall:
 }
+
+\subtree[fga3.ii-a.1-proposition-1.1]{
+  \taxon{proposition}
+  \number{1.1}
+
+  \p{
+    This functor #{h} is \em{fully faithful};
+    in other words, for every pair #{X,X'} of objects of #{\mathcal{C}}, the natural map
+    ##{
+      \Hom(X,X') \to \Hom(h_X,h_{X'})
+    }
+    is \em{bijective}.
+  }
+}
+
+\p{
+  In particular, if a functor #{F\in\Hom(\mathcal{C}^\op,\Set)} is isomorphic to a functor of the form #{h_X}, then \em{#{X} is determined up to unique isomorphism}.
+  We then say that the functor #{F} is \em{representable}.
+  The above proposition then implies that the canonical functor #{h} defines an \em{equivalence} between the category #{\mathcal{C}} and the full subcategory of #{\Hom(\mathcal{C}^\op,\Set)} consisting of representable functors.
+  This fact is the basis of \em{the idea of a "solution of a universal problem"}, with such a problem always consisting of examining if a given (contravariant, as here, or covariant, in the dual case) functor from #{\mathcal{C}} to #{\Set} is representable.
+  \oldpage{195-02}
+  Note further that, even by the definition of products in a category [[Gro1957]](Gro1957), the functor #{h\colon X\mapsto h_X} commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking "kernels" [[Gro1958a]](Gro1958a), etc., whenever such things exist): we have an isomorphism of functors
+  ##{
+    h_{X\times X'} \simto h_X\times h_{X'}
+  }
+  whenever #{X\times X'} exists, i.e. we have functorial (in #{Y}) bijections
+  ##{
+    h_{X\times X'} \simto h_X(Y)\times h_{X'}(Y).
+  }
+  In particular, the data of a morphism
+  ##{
+    X\times X' \to X''
+  }
+  in #{\mathcal{C}} (i.e. of a "\em{composition law}" in #{\mathcal{C}} between #{X}, #{X'}, and #{X''}) is equivalent to the data of a morphism #{h_{X\times X'}=h_X\times h_{X'}\to h_{X''}}, i.e. to the data, for all #{Y\in\mathcal{C}}, of a composition law of \em{sets}
+  ##{
+    h_X(Y)\times h_{X'}(Y) \to h_{X''}(Y)
+  }
+  such that, for every morphism #{Y\to Y'} in #{\mathcal{C}}, the system of set maps
+  ##{
+    h_{X^{(i)}}(Y) \to h_{X^{(i)}}(Y')
+    \qquad\text{(for #{i=0,1,2})}
+  }
+  is a morphism for the two composition laws, with respect to #{Y} and #{Y'}.
+  In this way, we see that the idea of a "#{\mathcal{C}-group}" structure, or a "#{\mathcal{C}}-ring" structure, etc. on an object #{X} of #{\mathcal{C}} can be expressed in the most manageable way (in theory as much as in practice) by saying that, for every #{Y\in\mathcal{C}}, we have a group law (resp. ring law, etc.) in the usual sense on the set #{h_X(Y)}, with the maps #{h_X(Y)\to h_X(Y')} corresponding to morphisms #{Y\to Y'} that should be group homomorphisms (resp. ring homomorphisms, etc.).
+  This is the most intuitive and manageable way of defining, for example, the various classical groups #{\Ga}, #{\Gm}, #{\GL(n)}, etc. on a prescheme #{S} over an arbitrary base, and of writing the classical relations between these groups, or of placing a "vector bundle" structure on the affine scheme #{V(\sh{F})} over #{S} defined by a quasi-coherent sheaf #{\sh{F}}, and of defining and studying the many associated flag varieties (Grassmannians, projective bundles), etc.;
+  \em{the general yoga is purely and simply identifying, using the canonical functor #{h}, the objects of #{\mathcal{C}} with particular contravariant functors (namely, representable functors) from #{\mathcal{C}} to the category of sets}.
+}
+
+\p{
+  \oldpage{195-03}
+  The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce \em{covariant representable functors #{\mathcal{C}\to\Set}}, i.e. those of the form #{Y\mapsto\Hom(X,Y)=h'_X(Y)}.
+}
