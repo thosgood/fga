@@ -1,0 +1,26 @@
+\title{Representable functors}
+\number{A.1}
+\parent{fga3.ii-a}
+
+\import{fga3.ii-macros}
+
+\put\transclude/numbered{false}
+
+\p{
+  Let #{\mathcal{C}} be a category.
+  \oldpage{195-01}
+  For all #{X\in\mathcal{C}}, let #{h_X} be the contravariant functor from #{\mathcal{C}} to the category #{\Set} of sets given by
+  ##{
+    \begin{aligned}
+      h_X\colon \mathcal{C} &\to \Set
+    \\Y&\mapsto \Hom(Y,X).
+    \end{aligned}
+  }
+  If we have a morphism #{X\to X'} in #{\mathcal{C}}, then this evidently induces a morphism #{h_X\to h_{X'}} of functors;
+  #{h_X} is a covariant functor in #{X}, i.e. we have defined a \em{canonical covariant functor}
+  ##{
+    h\colon \mathcal{C} \to \Hom(\mathcal{C}^\op,\Set)
+  }
+  from #{\mathcal{C}} to the category of covariant functors from the dual #{\mathcal{C}^\op} of #{\mathcal{C}} to the category of sets.
+  We then recall:
+}
