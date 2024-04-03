@@ -6,3 +6,82 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  Let #{S} be a prescheme, #{G} a "\em{prescheme of groups}" over #{S}, #{P} a prescheme over #{S} on which "\em{#{G} acts}" (on the right).
+  We say that #{P} is \em{formally principal homogeneous} for #{G} if the well-known morphism
+  ##{
+    G\times_S P \to P\times_S P
+  }
+  \oldpage{190-27}
+  (induced from the actions of #{G} on #{P}) is an \em{isomorphism}.
+  From now on, we assume #{G} to be \em{flat} over #{S} (and thus faithfully flat over #{S}), and we reserve the name of \em{principal homogeneous bundle} for #{G} for a formally principal homogeneous bundle #{P} that is \em{faithfully flat} and \em{quasi-compact} over #{S}.
+  It is immediate that this is equivalent to being able to find a \em{faithfully flat} and \em{quasi-compact extension} #{S'\to S} of the base #{S} such that the formally principal homogeneous bundle #{P'=P\times_S S'} for #{G'=G\times_S S'} is \em{trivial}, i.e. isomorphic to #{G'} (i.e. admitting a section);
+  we can take, in particular, #{S'=P}.
+  Note also that, if #{S} is locally Noetherian, then the faithfully-flat hypothesis on #{P} is equivalent to the hypothesis that #{\overline{P}_S=P\times_S\Spec(\overline{\sh{O}}_s)} be faithfully flat over #{\overline{\sh{O}}_s} for all #{s\in S} (where #{\overline{\sh{O}}_s} denotes the completion of the local ring #{\sh{O}_s}), as follows from the fact that #{\overline{\sh{O}}_s} is faithfully flat over #{\sh{O}_s}.
+  Also, if #{P} is of finite type over #{S}, and #{S} is locally Noetherian, then the set of points #{s} satisfying the above condition is constructible, and so, if #{S} is a "Jacobson prescheme" (for example, a scheme of finite type over a field, or, more generally, over a Jacobson ring), then it suffices to verify the condition in question for the \em{closed} points of #{S}.
+  This leads us to the case where the base is the spectrum of a complete local ring #{A}.
+  If #{S=\Spec(A)} (with #{A} a complete Noetherian local ring), and if #{P} is of finite type over #{S}, then the faithful flatness of #{P/S} is also equivalent to the existence of an #{S'} that is \em{finite and flat} over #{S} such that #{P'} is trivial, and, if, further, #{G} is \em{simple} over #{S}, then we can suppose #{S'} to be \em{étale} over #{S}.
+  Then, if, further, the residue field of #{A} is algebraically closed (the "\em{geometric case}"), then #{P} is faithfully flat over #{A} if and only if it is trivial.
+  Thus, if #{S} is an algebraic prescheme over an algebraically closed field, and if #{G} is simple and of finite type over #{S}, then we see that the faithfully-flat condition on #{S} is equivalent to the condition of being analytically trivial (SLF) of Serre [[Ser1958a](Ser1958a), pp.1–12].
+}
+
+\p{
+  We can consider other, stronger, types of conditions on #{P}, that have a "local triviality" nature.
+  In particular, we say that #{P} is \em{isotrivial} (resp. \em{strictly isotrivial}) if, for all #{s\in S}, there exists an open neighbourhood #{U} of #{S}, and a \em{finite and faithfully flat} morphism (resp. a \em{surjective étale covering}) #{U'\to U} such that #{P'=P\times_S U'} is trivial.
+  (We stray from the terminology of Serre [[GD1960]](GD1960), which uses "locally isotrivial" for what we call "strictly isotrivial").
+  Strict isotriviality is mainly useful if #{G} is simple over #{S}, but is, however, an inadequate notion in other cases.
+}
+
+\p{
+  If #{G} is \em{affine} over #{S}, then every principal homogeneous bundle #{P} for #{G} is affine, by \ref{fga3.i-b.2}, whence the possibility, thanks to \ref{fga3.i-b.1-theorem-2}, to "descend" from such bundles by faithfully flat and quasi-compact morphisms.
+  \oldpage{190-28}
+  Taking, in particular, #{G=\GL(n)_S}, defined by the condition that the functor #{S'\mapsto\Hom(S',G)} of #{S}-preschemes (with values in the category of groups) can be identified with the functor #{\GL(n)(S')=\GL(n,\HH^0(S',\sh{O}_{S'}))} described in \ref{fga3.i-a.4}.
+  Using the facts
+  \todo{the following list should be i, ii, etc.}
+
+  \ol{
+    \li{
+      that every principal homogeneous bundle for #{G} (resp. every locally free sheaf of rank #{n} on #{S}) becomes isomorphic to the "trivial" object #{G} (resp. #{\sh{O}_S^n}) under a suitable faithfully flat and quasi-compact extension of #{S};
+    }
+
+    \li{
+      that we can descend the type of objects in question (principal homogeneous bundles for #{G}, resp. locally free sheaves of rank #{n}) by such morphisms; and, finally
+    }
+
+    \li{
+      that the automorphism group of the trivial bundle on any #{S'/S} is functorially isomorphic to the automorphism group of the trivial locally free sheaf of rank #{n} on #{S'},
+    }
+  }
+
+  we "formally" conclude that it is "equivalent" to give, on #{S} (or on some #{S'/S}) a principal homogeneous bundle for the group #{G}, or to give a locally free sheaf of rank #{n}.
+  (More precisely, we have an \em{equivalence of fibred categories}).
+  We thus conclude, in particular:
+}
+
+\subtree[fga3.i-b.6-proposition-6.1]{
+  \taxon{proposition}
+  \number{6.1}
+  
+  \p{
+    Every principal homogeneous bundle for the group #{\GL(n)_S} is locally trivial.
+  }
+}
+
+\p{
+  By known arguments, we thus conclude the same result for others structure groups such as #{\SL(n)_S}, #{\Sp(n)_S}, and products of such groups.
+  We thus also conclude that, if #{F} is a closed subgroup of #{G=\GL(n)_S} that is flat over #{S}, and such that the quotient #{G/F} exists, and such that #{G} is an isotrivial (resp. strictly isotrivial) principal homogeneous bundle on #{G/F}, of structure group #{F\times_S(G/F)}, then \em{every} principal homogeneous bundle of structure group #{F} is isotrivial (resp. strictly isotrivial).
+  This applies to all the "linear groups" on #{S} that have been used up until now, and, in particular, to the case where #{G=S\times_k\Gamma}, with #{S} a prescheme over the field #{k}, and #{\Gamma} a linear group (in the classical sense) over #{k} (and thus in particular simple).
+  This thus answers, for such groups, a question of Serre (\em{loc. cit.}).
+}
+
+\p{
+  We also point out that, for most groups (linear or not) that are simple over #{S} that we know of, and certainly for all those of the form #{S\times_k\Gamma} as above, we can show that every isotrivial principal homogeneous bundle is strictly isotrivial, which answers, in particular, another question of Serre (\em{loc. cit.} pp.1–14), taking into account the fact that a homogeneous principal bundle obtained by a descent \em{à la} Cartier (cf. \ref{fga3.i-b.3-example-2}) is obviously isotrivial.
+}
+
+\subtree{
+  \taxon{remark}
+  
+  \p{
+    One of the essential difficulties in these questions (setting aside the question of the existence of quotient schemes) is the lack of effectiveness criteria for a descent data along a faithfully flat \em{non-finite} morphism.
+  }
+}

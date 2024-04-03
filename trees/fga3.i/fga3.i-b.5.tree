@@ -6,3 +6,36 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  Let #{S} be a prescheme.
+  \oldpage{190-26}
+  We define an \em{abelian scheme} over #{S} to be a simple proper scheme #{X} over #{S} whose fibres at the points #{x\in S} are schemes of abelian varieties over the #{k(x)}.
+  Suppose that #{S} is Noetherian and \em{regular} (i.e. that its local rings are regular), then we can show, using the \em{connection theorem} of Murre [[Mur1958]](Mur1958) (at least in the case "of equal characteristics", where the cited theorem is currently proven) that \em{every rational section of #{X} over #{S} is everywhere defined} (i.e. is a section) (which generalises a classical theorem of Weil).
+  It then follows, more generally, that, if #{X'} is a simple scheme over #{S}, then every rational #{S}-map from #{X'} to #{X} is everywhere defined.
+  From this, we obtain the following, which generalises a result of Chow–Lang:
+  \em{with #{S} Noetherian and regular, and #{K} denoting its ring of rational functions} (a direct sum of fields), \em{let #{X} be an abelian scheme over #{K}; if #{X} is isomorphic to a #{K}-scheme of the form #{X_0\times_S\Spec(K)}, where #{X_0} is an abelian scheme over #{S}, then #{X_0} is determined up to unique isomorphism.}
+}
+
+\p{
+  Using the above uniqueness result, we see that the question of restriction of the base to #{X} is local on #{S} (and thus that it suffices to know how to do the restriction to #{\Spec(\sh{O}_x)}, where #{x\in S}).
+  In the same way, we see that, if #{S'\to S} is a \em{simple} morphism of finite type, if #{Y'} is the ring of rational functions of #{S'}, and if #{X\otimes_K K'} is of the form #{X'_0\times_{S'}\Spec(K')}, \em{then #{X'_0} is endowed with a canonical descent data with respect to #{\alpha}}.
+  Taking \ref{fga3.i-b.1-theorem-3} into account, we thus conclude:
+}
+
+\subtree[fga3.i-b.5-proposition-5.1]{
+  \taxon{proposition}
+  \number{5.1}
+  
+  \p{
+    Let #{S} be an irreducible regular Noetherian prescheme, with field of rational functions #{Y}, let #{K'} be a finite extension of #{K} that is \em{unramified over #{S}}, let #{S'} be the normalisation of #{S} in #{K'} (which is thus an étale cover of #{S}), and let #{X} be an abelian scheme over #{K} such that #{X\otimes_K K'} is of the form #{X'_0\times_{S'}\Spec(K')}, where #{X'_0} is a projective abelian scheme over #{S'}.
+    Then #{X} is of the form #{X_0\times_S\Spec(K)}, where #{X_0} is a projective abelian scheme over #{S}.
+  }
+}
+
+\subtree{
+  \taxon{remark}
+
+  \p{
+    The speaker does not know if we can replace the hypothesis that #{S'\to S} be a surjective étale cover (which allows us to apply \ref{fga3.i-b.1-theorem-3}) with the hypothesis that it is instead a \em{simple} and \em{surjective} morphism of finite type (not even if we suppose that it is an étalement), or if the proposition still holds true without supposing that #{X'_0} is projective over #{S'} (a condition which could be automatically satisfied).
+  }
+}
