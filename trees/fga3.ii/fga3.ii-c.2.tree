@@ -6,4 +6,103 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  Let #{X} and #{Y} be preschemes over #{S};
+  \oldpage{195-13}
+  for every prescheme #{T} over #{S}, let #{X_T=X\times_S T} and #{Y_T=Y\times_S T}, and consider the set
+  ##{
+    F(T)
+    = \Hom_T(X_T,Y_T)
+    = \Hom_S(X_T,Y)
+    = \Hom_S(X\times_S T,Y)
+  }
+  as a contravariant functor in #{T}.
+  If it is representable, then we denote by #{\repHom_S(X,Y)} the prescheme over #{S} that represents it, and we then have a functorial isomorphism
+  ##{
+    \Hom_S(T,\repHom_S(X,Y)) \simto \Hom_S(T\times_S X,Y).
+  }
+  There are variants of this universal problem, the solutions to which can be summarised as follows: a prescheme of \em{#{S}-automorphisms of} an #{S}-prescheme #{X} (which will be a prescheme in \em{groups}), a prescheme of \em{#{S}-homomorphisms} from an #{S}-prescheme in \em{groups} to another (which will be a prescheme in commutative groups if the latter scheme in groups is commutative), etc.
+  We can also generalise the definition of #{\repHom_S(X,Y)} by considering a prescheme #{Z} over the prescheme #{X} over #{S}, and the functor
+  ##{
+    F(T)
+    = \Hom_{X_T}(X_T,Z_T)
+  }
+  (the set of "sections" of #{Z_T} over #{X_T});
+  if this functor is representable, then the #{S}-prescheme that represents it will be denoted by #{\Pi_{X/S}Z}, and we will thus have, by definition, a functorial isomorphism
+  ##{
+    \Hom_S(T,\Pi_{X/S}Z)
+    = \Hom_{X_T}(X_T,Z_T).
+  }
+  Setting #{Z=Y\times_S X}, we recover #{\repHom_S(X,Y)}.
+  From these definitions follows a formula for the new preschemes thus introduced that is as trivial as it is useful, that we will not give here (given that it holds in every category where products and fibred products exist).
+  More serious is the question of \em{existence} of schemes of the type #{\repHom_S(X,Y)}.
+  We note first of all that, for fixed #{X}, #{\repHom_S(X,Y)} (resp. #{\Pi_{X/S}Z}) can only exist for all #{Y} over #{S} (resp. for all #{Z} over #{X}) if #{X} is \em{flat} over #{S}.
+  Furthermore, we can convince ourselves that it is not reasonable to expect the existence of a solution, for general enough #{Y}, except in the case where #{X} is further \em{proper} over #{S}.
+  It seems, however, that these conditions are sufficient for the existence of #{\repHom_S(X,Y)} and #{\Pi_{X/S}Z}, with the condition that, if necessary, we make some sort of "quasi-projective" hypothesis on #{Y/S} (resp. #{Z/X});
+  this is what we can verify anyway in numerous cases (for example, when #{Y} is \em{affine} over #{S}, or, by direct elementary constructions, when #{X} is \em{finite} over #{S}).
+  Then \ref{fga3.ii-b-theorem-1} and \ref{fga3.ii-b-theorem-2} give:
+}
 
+\subtree[fga3.ii-c.2-proposition-2.1]{
+  \taxon{proposition}
+  \number{2.1}
+
+  \p{
+    \oldpage{195-14}
+    Let #{\Lambda} be a Noetherian ring, and #{X} and #{Y} arbitrary preschemes over #{\Lambda}.
+    Consider the functor
+    ##{
+      F(A)
+      = \Hom_A(X_A,Y_A)
+    }
+    on the category #{\mathcal{C}_0} of Artinian #{\Lambda}-algebras.
+    If #{X} is flat over #{\Lambda}, then this functor is pro-representable.
+  }
+}
+
+\p{
+  Furthermore, we can show that, for all #{A\in\mathcal{C}_0} and all #{\xi\in F(A)}, we have a canonical isomorphism
+  ##{
+    F(I_A,\xi)
+    = \HH^1\Big(X_A,\repHom_{\sh{O}_{X_A}}\big(\xi^*(\Omega_{Y_A/A}^1),\sh{O}_{X_A}\big)\Big)
+  }
+  where #{\Omega_{Y_A/A}^1} is the sheaf of Kähler #{1}-differentials of #{Y_A} with respect to #{A}.
+  Taking #{A} to be a field, we find, using [§A, Proposition 5.1](fga3.ii-a.5-proposition-5.1) and the finiteness theorem from \ref{fga2}, the following corollary:
+}
+
+\subtree{
+  \taxon{corollary}
+
+  \p{
+    Suppose that #{X} is flat and proper over #{S}, and that #{Y} is of finite type over #{S}.
+    Then #{F} is pro-representable, and the local components of the corresponding topological #{\Lambda}-algebra are \em{Noetherian} rings.
+  }
+}
+
+\subtree{
+  \taxon{remarks}
+
+  \p{
+    The problems considered in this section, and many others, having been generally studied, in the framework of classical algebraic geometry, via the "Chow coordinates" of cycles in projective space, allow us to consider these cycles as points of suitable projective varieties.
+    This procedure, and, more generally, the use of Chow coordinates, seems irredeemably insufficient from the point of view of schemes, since it destroys the nilpotent elements in the parameterised varieties, and, in particular, do not lend themselves to a satisfying study of infinitesimal variations of cycles (without taking its non-intrinsic nature, linked to the projective space, into account).
+    The language of Chow coordinates has sadly been the only one used by many algebraic geometers for the study of families of varieties or families of cycles, which seems to have been a serious obstacle to the understanding of these notions, despite its certain technical interest (probably temporary).
+    If we wish to obtain the analogue of Chow varieties in the theory of schemes, we are led to the following universal problem:
+    let #{X} be a prescheme over #{S}, and, for every prescheme #{T} over #{S}, consider the set #{F(T)} of closed sub-preschemes of #{X_T=X\times_S T} that are \em{flat} over #{T}; we want to represent this functor in #{T} via some prescheme over #{S}.
+    \oldpage{195-15}
+    More generally, we can start with a quasi-coherent sheaf #{\sh{G}} on #{X}, and take #{F(T)} to be the set of quotient sheaves of #{\sh{G}_T} that are flat over #{T}.
+    It seems that there exists a solution to this problem, with a scheme #{C} that is locally of finite type over #{S}, if #{X} is proper over #{S}, if #{S} is locally Noetherian, and if #{F} is furthermore coherent.
+    In any case, supposing only that #{S} is locally Noetherian, the restriction of #{F} to "Artinian #{S}-algebras" is pro-representable, and, if, furthermore, #{X} is proper over #{S}, and #{F} is coherent, then the local components of the corresponding topological ring #{\sh{O}} are Noetherian.
+    Of course, even after having proven the existence of the "Chow scheme" of #{X} over #{S}, it remains to find a decomposition of it into disjoint open subsets #{C_i} (corresponding to fixing continuous invariants, such as degree and dimension of the cycles that we vary) over #{S}, as well as to make precise the relations between this scheme with the classical Chow varieties, and to make precise when a #{C_i} is \em{projective} (or at least quasi-projective) over #{S}.
+  }
+}
+
+\subtree{
+  \taxon{remark}
+    
+  \p{
+    \comp
+    The problems described here are completely resolved in the projective case by "Hilbert schemes" (cf. \ref{fga3.iv}).
+    Examples by Nagata and Hironaka show, however, that the functors described are not necessarily representable if we do not make the projective hypothesis, even if we restrict to the classification of subvarieties of dimension #{0} of a complete non-singular variety of dimension #{3};
+    this is linked to the fact that the symmetric square of such a variety does not necessarily exist.
+  }
+}
