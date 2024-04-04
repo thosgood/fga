@@ -86,25 +86,25 @@
   \number{3 bis}
 
   \p{
-    For any given integer #{k\geq0}, the four following conditions on #{X} are equivalent:
+    For any given integer #{k\geqslant0}, the four following conditions on #{X} are equivalent:
 
     \todo{the following list should be i, ii, etc}
 
     \ol{
       \li{
-        The functorial homomorphism in \ref{fga1-equation-6.5} is an isomorphism for #{n-k\leq p\leq n}.
+        The functorial homomorphism in \ref{fga1-equation-6.5} is an isomorphism for #{n-k\leqslant p\leqslant n}.
       }
 
       \li{
-        #{\HH^p(X,\OO_X(-m)) = 0} for #{n-k\leq p<n} and large enough #{m}.
+        #{\HH^p(X,\OO_X(-m)) = 0} for #{n-k\leqslant p<n} and large enough #{m}.
       }
 
       \li{
-        The functor #{\HH^p(X,\sh{F})} on the category of coherent algebraic sheaves on #{X} is coeffaceable for #{n-k\leq p<n}.
+        The functor #{\HH^p(X,\sh{F})} on the category of coherent algebraic sheaves on #{X} is coeffaceable for #{n-k\leqslant p<n}.
       }
 
       \li{
-        #{E^i(\OO_X) = \shExt_{\OO_\bb{P}}^{r-n+i}(\OO_X,\omega_\bb{P}^r) = 0} for #{0<i\leq k}.
+        #{E^i(\OO_X) = \shExt_{\OO_\bb{P}}^{r-n+i}(\OO_X,\omega_\bb{P}^r) = 0} for #{0<i\leqslant k}.
       }
     }
   }
@@ -113,7 +113,7 @@
     \p{
       (i)#{\implies}(ii) by \ref{fga1-lemma-4};
       (ii)#{\implies}(iii) by \ref{fga1-lemma-3};
-      (iii)#{\implies}(i) by a well-known standard argument, taking into account the fact that the two sides of \ref{fga1-equation-6.5} are then coeffaceable functors for #{n-k\leq p<n} (the first being so by \ref{fga1-lemma-4});
+      (iii)#{\implies}(i) by a well-known standard argument, taking into account the fact that the two sides of \ref{fga1-equation-6.5} are then coeffaceable functors for #{n-k\leqslant p<n} (the first being so by \ref{fga1-lemma-4});
       finally, (ii)#{\iff}(iv) follows from [the corollary to Proposition 6](fga1-proposition-6-corollary).
     }
   }
@@ -172,7 +172,7 @@
   This is the case, for example, for all #{i<n} if #{X} is non-singular;
   and for #{i=0} if no component of #{X} consists of a single point;
   and for #{i=0,1} if #{S} is normal and all its components are of dimension #{>1} (see [[Ser1955]](Ser1955)).
-  For it to be satisfied for #{i<k}, it is necessary and sufficient, by definition, that the local rings #{\OO_x} (for #{x\in X}) be of "homological codimension #{\geq k}" (see [[Ser1956a]](Ser1956a) for details on this notion).
+  For it to be satisfied for #{i<k}, it is necessary and sufficient, by definition, that the local rings #{\OO_x} (for #{x\in X}) be of "homological codimension #{\geqslant k}" (see [[Ser1956a]](Ser1956a) for details on this notion).
   If #{k=n}, then this implies, by [Theorem 3 bis](#fga1-theorem-3bis), that the duality theorem is true for #{X}, i.e. that \ref{fga1-equation-6.5} is an isomorphism for all #{p} and for all #{\sh{F}}.
   We can give many equivalent conditions on the local rings #{\OO_x} for this to be the case (Nagata);
   for example, those that satisfy the Cohen-Macaulay equidimensionality theorem.

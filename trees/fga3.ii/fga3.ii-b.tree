@@ -1,0 +1,97 @@
+\title{The two existence theorems}
+\number{B}
+\parent{fga3.ii}
+
+\import{fga3.ii-macros}
+
+\put\transclude/numbered{false}
+
+\p{
+  Keeping the notation of \ref{fga3.ii-a.5}, and, given a covariant functor
+  ##{
+    F\colon \mathcal{C} \to \Set,
+  }
+  we wish to find manageable criteria for #{F} to be pro-representable, i.e. expressible via a #{\Lambda}-algebra #{O} as above.
+  By the corollary of [§A, Proposition 3.1](fga3.ii-a.3-proposition-3.1), to ensure this, it is necessary and sufficient that #{F} be \em{left exact}.
+  In the current state of the technique of descent (cf. the questions asked in [FGA 3.I, §A.2.c](fga3.i-a.2.c)), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.
+}
+
+\subtree[fga3.ii-b-theorem-1]{
+  \taxon{theorem}
+  \number{1}
+
+  \p{
+    For the functor #{F} to be pro-representable, it is necessary and sufficient that it satisfy the two following conditions:
+    \todo{the following list should be i, ii}
+
+    \ol{
+      \li{
+        #{F} commutes with finite products;
+      }
+      \li{
+        for every algebra #{A\in\mathcal{C}} and every homomorphism #{A\to A'} in #{\mathcal{C}} such that the diagram
+        ##{
+          A \to A' \rightrightarrows A'\otimes_A A'
+        }
+        is exact (cf. [FGA 3.I, §A, Definition 1.2](fga3.i-a.1-definition-1.2)), the diagram
+        ##{
+          F(A) \to F(A') \rightrightarrows F(A'\otimes_A A')
+        }
+        is also exact.
+      }
+    }
+
+    \oldpage{195-10}
+    Furthermore, it suffices to verify condition (ii) in the case where #{A} is local, and when, further, we are in one of the two following cases:
+    \todo{the following list should be a, b}
+
+    \ol{
+      \li{
+        #{A} is a \em{free} module over #{A};
+      }
+      \li{
+        the quotient module #{A'/A} is an #{A}-module \em{of length #{1}}.
+      }
+    }
+  }
+
+  \proof{
+    \p{
+      The proof of this theorem is rather delicate, and cannot be sketched here.
+      We content ourselves with pointing out that it relies essentially on a study of \em{equivalence relations} (in the sense of categories) in \em{the spectrum of an Artinian algebra} (the study of which poses even more problems, whose solutions seems essential for the further development of the theory).
+    }
+  }
+}
+
+\p{
+  In applications, the verification of condition (i) is always trivial.
+  The verification of condition (ii) splits into two cases: case (a), where #{A'} is a free #{A}-module, can be dealt with using the \em{technique of descent by flat morphisms} (cf. [FGA 1, Theorems 1, 2, and 3](fga-1)), which offers no difficulty;
+  to deal with case (b), we will use the following result:
+}
+
+\subtree[fga3.ii-b-theorem-2]{
+  \taxon{theorem}
+  \number{2}
+
+  \p{
+    Let #{A} be a local Artinian ring with maximal ideal #{\mathfrak{m}}, and let #{A'} be an #{A}-algebra containing #{A}, and such that #{\mathfrak{m}A'\subset A}, and #{A\to A'\rightrightarrows A'\otimes_A A'} is \em{exact} (which is the case, in particular, if #{A'/A} is an #{A}-module of length #{1}).
+    Let #{\mathcal{F}} be the fibred category (cf. [FGA 3.I, §A, Definition 1.1](fga3.i-a.1-definition-1.1)) of quasi-coherent sheaves that are flat over varying preschemes.
+    Then the morphism #{\Spec(A')\to\Spec(A)} is a \em{strict #{\mathcal{F}}-descent morphism} (cf. [FGA 3.I, §A, Definition 1.7](fga3.i-a.1-definition-1.7)).
+  }
+
+  \proof{
+    \p{
+      We prove this by first proving that
+      ##{
+        \HH^i(A'/A,\Ga) = 0
+        \qquad\text{for }i\geqslant1
+      }
+      (cf. [FGA 3.I, §A.4.e](fga3.i-a.4.e)), with the hypothesis that #{\mathfrak{m}A'\subset A} allowing us to easily reduce to the case where #{A} is a field (namely #{A/\mathfrak{m}}).
+      We can then apply the equivalences described in [FGA 3.I, §A.4.e](fga3.i-a.4.e).
+    }
+  }
+}
+
+\p{
+  In other words, the data of a flat #{A}-module #{M} is completely equivalent to the data of a flat #{A'}-module #{M'} endowed with an #{(A'\otimes_A A')}-isomorphism from #{M'\otimes_A A'} to #{A'\otimes_A M'} satisfying the usual transitivity condition for a descent data (\em{loc. cit.}).
+}
