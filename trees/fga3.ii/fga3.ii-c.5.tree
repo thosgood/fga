@@ -6,4 +6,97 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  Let #{\mathfrak{X}} be a \em{formal} Noetherian prescheme [\ref{fga2}], #{U} an open subset of #{\mathfrak{X}} defined locally by the "non-vanishing" of a section of #{\sh{O}_\mathfrak{X}} that is not a zero divisor (and thus large enough that every section of #{\sh{O}_\mathfrak{X}} over an open subset #{V} that is zero on #{U\cap V} is zero).
+  (\comp It is also necessary to assume that the section defining #{U} is not a zero divisor not only on #{\mathfrak{X}}, but also on every #{X_n}.)
+  Let #{\mathfrak{J}} be an "ideal of definition" for #{\mathfrak{X}}, and let #{X_n=(\mathfrak{X},\sh{O}_\mathfrak{X}/\mathfrak{J}^{n+1})}, which is thus a ordinary Noetherian prescheme.
+  Then, if #{\mathfrak{X}'} and #{\mathfrak{X}''} are \em{flat coverings} of #{\mathfrak{X}} (i.e. preschemes over #{\mathfrak{X}} defined by sheaves of algebras that are coherent and locally free as sheaves of modules) that are \em{unramified over #{U}}, the evident map
+  ##{
+    \Hom_\mathfrak{X}(\mathfrak{X}',\mathfrak{X}'')
+    \to \Hom_{X_0}(X'_0,X''_0)
+  }
+  is \em{injective};
+  in particular, \em{an automorphism of #{\mathfrak{X}'} that induces the identity on #{X'_0} is the identity}.
+  This allows us to apply the technique of descent to the situation.
+  \oldpage{195-20}
+  We start, in particular, with a flat covering #{X'_0} of #{X_0}, unramified over #{U_0}, and let #{G(\mathfrak{X})} be the set of classes, up to isomorphism (inducing the identity on #{X'_0}), of flat coverings #{\mathfrak{X}'} of #{\mathfrak{X}} that induce #{X'_0} on #{X_0} (and that are thus necessarily unramified over #{U}).
+  We similarly define #{G(V)} for every open subset #{V} of #{\mathfrak{X}}, and, more generally, #{G(\mathfrak{Y})} for every formal prescheme #{\mathfrak{Y}} over #{\mathfrak{X}}.
+  With this, the results of \ref{fga2} and \ref{fga3.i} imply, first of all, the following results:
+  \todo{the following list should be a, b, etc.}
 
+  \ol{
+    \li{
+      \p{
+        If #{V} varies amongst open subset of #{\mathfrak{X}}, then the #{G(V)} form a \em{sheaf} on #{\mathfrak{X}}, say #{\sh{G}_\mathfrak{X}=\sh{G}}.
+        The restriction of this sheaf to #{U} is the \em{constant} sheaf whose fibres consist of a single element.
+      }
+      \p{
+        More generally, describing the fibres of #{\sh{G}_\mathfrak{X}} is a question of complete local rings, in a precise way:
+      }
+    }
+      
+    \li{
+      For all #{x\in\mathfrak{X}}, we have
+      ##{
+        \sh{G}_x = G(\Spec(\sh{O}_{\mathfrak{X},x})) \subset G(\Spec(\widehat{\sh{O}}_{\mathfrak{X},x}))
+      }
+      (i.e. isomorphism classes of finite free algebras #{B} over #{\widehat{\sh{O}}_{\mathfrak{X},x}} endowed with an isomorphism from #{B\otimes_{\widehat{\sh{O}}_{\mathfrak{X},x}}\sh{O}_{X_0,x}} to #{(\widehat{\sh{O}}'_0)_x}, where #{\sh{O}'_0} is the sheaf of algebras on #{X_0} that defines #{X'_0}).
+    }
+
+    \li{
+      We have a canonical isomorphism #{\sh{G}_\mathfrak{X}=\varprojlim\sh{G}_{\mathfrak{X}_n}}; in other words, for every open subset #{V} of #{\mathfrak{X}}, we have #{G(V)=\varprojlim G(V_n)}.
+    }
+
+    \li{
+      Suppose that #{\mathfrak{X}} comes from an ordinary \em{proper} scheme #{X} over a complete local Noetherian ring #{\Lambda} that has ideal of definition #{\mathfrak{m}} by taking the #{\sh{J}}-adic completion of #{\sh{O}_X}, where #{\sh{J}=\mathfrak{m}\cdot\sh{O}_X}.
+      Then #{G(\mathfrak{X})} is canonically isomorphic to the set of classes of flat coverings of the \em{ordinary} scheme #{X} that are "reducible along #{X'_0}".
+    }
+  }
+
+  Figuratively speaking, we can say that (a) and (b) establish the fundamental relations between the local and global aspects of the problem; (c) gives the relations between the "finite" and "infinitesimal" aspects; and finally (d) remembers (under precise conditions) the identity between the "formal" and "algebraic" aspects.
+}
+
+\p{
+  Now suppose that #{\mathfrak{X}} is defined by a local complete Noetherian ring #{\Lambda}, with #{\sh{J}=\mathfrak{m}\cdot\sh{O}_X} (and so #{X_0} is a prescheme over #{{\Lambda}/\mathfrak{m}}).
+  For every algebra #{A} that is finite over #{\Lambda}, we set
+  ##{
+    F(A)
+    = G(\mathfrak{X}\times_\Lambda A).
+  }
+  This is a covariant functor in #{A}, with values in the category of sets, and, by (c), this functor is completely determined by how it acts on Artinian algebras #{A};
+  it is equivalent to say either that this functor is pro-representable, i.e. of the form
+  ##{
+    F(A)
+    = \Hom_{\text{top. }\Lambda\text{-algebras}}(\sh{O},A)
+  }
+  \oldpage{195-21}
+  where #{\sh{O}} is a topological #{\Lambda} algebra of the type described in \ref{fga3.ii-a.5}, or that this is true when we restrict to only Artinian algebras #{A}.
+  The combination of \ref{fga3.ii-b-theorem-1} and \ref{fga3.ii-b-theorem-2} then effectively implies:
+}
+
+\subtree[fga3.ii-c.5-proposition-5.1]{
+  \taxon{proposition}
+  \number{5.1}
+  
+  \p{
+    The above functor is pro-representable.
+  }
+}
+
+\p{
+  Of course, by (a), if #{U=\mathfrak{X}}, then #{G(\mathfrak{Y})} consists of a single element for all #{\mathfrak{Y}} over #{\mathfrak{X}}, and the functor #{F} is then not very interesting (we will have #{\sh{O}=\Lambda}).
+  It seems that, in practically every other case, the topological local ring #{\sh{O}} \em{is not Noetherian}.
+  Its existence, however, shows, in a striking manner, the \em{"continuous" nature} of the set #{G(\mathfrak{X})} of solutions (corresponding intuitively to the fact that there is a "continuous" choice in the way in which the ramification spreads when we take an extension of #{X'_0}).
+  We will compare this result with the point of view of J.-P. Serre [@Ser1958] via local class field theory, drawing attention as well to the \em{continuous} character of the topological Galois group of the maximal abelian extension of a "geometric" local field, with the dual group (in the sense of Pontrjagin) appearing as an inductive limit of algebraic (or at least quasi-algebraic) groups;
+  here as well, the classification of extensions is given by infinite-dimensional "varieties".
+  We can also take, in the above, #{\mathfrak{X}} to be the formal spectrum of a complete local ring (of which #{\Lambda} will be, for example, a Cohen subring), and we might hope that the results of this section can be used in the study of extensions of a local complete ring of dimension #{>1}.
+  Just as much in the local case as in the global case, they might allow us to formulate precise relations between the phenomena of higher ramification and phenomena in characteristic #{0} (approachable via a transcendental way).
+  In any case, it is the preliminary analysis of \ref{fga3.ii-c.5-proposition-5.1} that allows us to extend the methods described in \ref{fga2} for the study of the fundamental group to the "tamely ramified" case, and to resolve, by a transcendental way, the "problem of three points".
+}
+
+\p{
+  To finish, we note that the situation simplifies if #{X_0} is of dimension #{1};
+  then, by (a) and (b), #{G(\mathfrak{X})} can be identified with #{\prod_i G(\Spec(\sh{O}_{\mathfrak{X},x_i}))}, where the #{x_i} are the points of #{X_0\setminus U}:
+  \em{we can take arbitrary "local" extensions at the ramification points}.
+  Further, if #{X_0} is normal, then we note that the formal scheme of modules guaranteed by \ref{fga3.ii-c.5-proposition-5.1} is \em{simple} over #{\Spec(\Lambda)}.
+}
