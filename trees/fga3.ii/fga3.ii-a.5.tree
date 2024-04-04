@@ -6,4 +6,111 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  Let #{\Lambda} be a Noetherian ring, #{\mathcal{C}} the category of #{\Lambda}-algebras that are Artinian modules of finite type over #{\Lambda} (or, more concisely, \em{Artinian #{\Lambda}-algebras}).
+  \oldpage{195-07}
+  The conditions of the corollary to
+  \ref{fga3.ii-a.3-proposition-3.1} are then satisfied.
+  Here, the category #{\Pro(\mathcal{C})} is equivalent to the category of \em{topological algebras} #{O} over #{\Lambda} that are isomorphic to topological projective limits
+  ##{
+    O
+    = \varprojlim O_i
+  }
+  of algebras #{O_i\in\mathcal{C}}, i.e. those whose topology is \em{linear}, \em{separated}, and \em{complete}, and such that, for every open ideal #{\mathfrak{J}_i} of #{O}, the algebra #{O/\mathfrak{J}_i} is an \em{Artinian} algebra over #{\Lambda}.
+  The functor #{\mathcal{C}\to\Set} associated to such an algebra is exactly
+  ##{
+    \begin{aligned}
+      F(A)
+      &= h'_{O}(A)
+    \\&= \{\text{continuous homomorphisms of topological }\Lambda\text{-algebras }O\to A\}
+    \\&= \varinjlim_i \Hom_{\Lambda\text{-algebras}}(O_i,A).
+    \end{aligned}
+  }
+  Note also that the category #{\mathcal{C}} is essentially the product of analogous categories, corresponding to the local rings that are the completions of the #{\Lambda_{\mathfrak{m}}} for the maximal ideals #{\mathfrak{m}} of #{\Lambda};
+  we can thus, if so desired, restrict to the case where #{A} is such a complete local ring.
+  In any case, #{O} decomposes canonically as the topological product of its \em{local components}, which correspond to the "points" of the \em{formal scheme} [\ref{fga2}] defined by #{O}.
+  Such a point is defined by an object #{\xi} of some #{F(K)}, where #{K\in\mathcal{C}} is a \em{field} (for example, the residue field of the local component in question), and where two pairs #{(\xi,K)} and #{(\xi',K')} define the same point if and only if they are both dominated by the same #{(\xi'',K'')}, or if they both dominate the same #{(\xi''',K''')}.
+  (If the #{{\Lambda}/\mathfrak{m}} are algebraically closed, then it suffices to take the set given by the sum of the #{F({\Lambda}/\mathfrak{m})}).
+}
 
+\p{
+  It is important to give conditions that ensure that the local component #{O_\xi} of #{O} corresponding to some #{\xi\in F(K)} be a \em{Noetherian} ring.
+  If #{\Lambda} is a complete local ring (Noetherian, we recall), then it is equivalent to say that #{O_\xi} is isomorphic to a \em{quotient ring of a formal series ring #{\Lambda[{[t_1,\ldots,t_n]}]}}.
+  To give such a criteria, we introduce (for every ring #{A}) the #{A}-algebra #{I_A} of "dual numbers" of #{A}, defined by
+  ##{
+    I_A
+    = A[t]/t^2A[t].
+  }
+  Let #{\varepsilon\colon I_A\to A} be the augmentation homomorphism, which defines (if #{A\in\mathcal{C}}) a map
+  ##{
+    F(\varepsilon)\colon F(I_A) \to F(A).
+  }
+  \oldpage{195-08}
+  Using the fact that #{F} is left exact, we intrinsically define the structure of an #{A}-module on the subset
+  ##{
+    F(I_A,\xi)
+    = F(\xi)^{-1}(\xi) \subset F(I_A)
+  }
+  consisting of the #{\xi'\in F(I_A)} that are "reducible along #{\xi}";
+  using the explicit form of #{F} in terms of #{O}, we find that this #{K}-module can be identified with #{\Hom_\Lambda(\mathfrak{m}_{\xi}/\mathfrak{m}_\xi^2,A)}, where #{m_\xi} is the kernel of the homomorphism #{\xi\colon O\to A}, i.e. if #{A} is a field, then the maximal ideal of the local component #{O_\xi} of #{O}.
+  From this, we immediately deduce the following proposition:
+}
+
+\subtree[fga3.ii-a.5-proposition-5.1]{
+  \taxon{proposition}
+  \number{5.1}
+
+  \p{
+    Let #{\xi\in F(K)}, where #{K\in\mathcal{C}} is a field.
+    For the corresponding local component #{O_\xi} of #{O} to be a \em{Noetherian} ring, it is necessary and sufficient that the set #{F(I_K,\xi)} of elements of #{F(I_K)} that are reducible along #{\xi} be a vector space of \em{finite dimension} over #{K}.
+    Under these conditions, we have a canonical isomorphism
+    ##{
+      F(I_K,\xi)
+      = \Hom(\mathfrak{m}_{\xi}/\mathfrak{m}_\xi^2+\mathfrak{n}_\xi\sh{O}_\xi, K)
+    }
+    (where #{\mathfrak{n}_\xi} is the maximal ideal of #{\Lambda} given by the kernel of the homomorphism #{\Lambda\to K}), and so, in particular, the dimension of the #{K}-vector space #{F(I_K,\xi)} is equal to the dimension of the vector space #{\mathfrak{m}_{\xi}/\mathfrak{m}_\xi^2} over the field #{O_{\xi}/\mathfrak{m}_\xi=K(\xi)}.
+  }
+
+  \p{
+    \comp
+    The formula given above is only correct when #{\Lambda} is a field; in the general case, we must replace #{\mathfrak{m}_{\xi}/\mathfrak{m}_\xi^2} with the quotient of this space by the image of #{\mathfrak{n}_{\xi}/\mathfrak{n}_\xi^2}, where #{\mathfrak{n}} is the maximal ideal of #{\Lambda}.
+  }
+}
+
+\p{
+  Suppose that #{O_\xi} is Noetherian, and suppose, for notational simplicity, that #{\Lambda} is complete and local, and that #{O=O_\xi}.
+  (\comp The following definition is correct only when the residue extension #{k'/k} is \em{separable}; for the general case, see [[Gro1960b](Gro1960b), III, 1.1].)
+  We say that \em{#{O} is simple over #{\Lambda}} if #{O} is a finite and étale algebra over the completion algebra of the localisation of #{\Lambda[t_1,\ldots,t_n]} at one of its maximal ideals that induces the maximal ideal of #{\Lambda};
+  if the residue extension of #{O} over #{\Lambda} is trivial (for example, if the residue field of #{\Lambda} is algebraically closed), then this is equivalent to saying that #{O} itself is isomorphic to such a formal series algebra.
+  Finally, if we no longer necessarily suppose that #{O} is Noetherian, then we again say that \em{#{O} is simple over #{\Lambda}} if #{O} is isomorphic to a topological projective limit of quotient #{\Lambda}-algebras that are Noetherian and #{\Lambda}-simple in the above sense.
+  We can immediately generalise to the case where #{\Lambda} and #{O} are no longer assumed to be local.
+  With this, we have the following proposition:
+}
+
+\subtree[fga3.ii-a.5-proposition-5.2]{
+  \taxon{proposition}
+  \number{5.2}
+
+  \p{
+    For #{O} to be simple over #{\Lambda}, it is necessary and sufficient that the associated functor #{F} send epimorphisms to epimorphisms.
+  }
+}
+
+\p{
+  If this is the case, then this implies that, for every \em{surjective} homomorphism #{A\to A'} in #{\mathcal{C}}, the morphism #{F(A)\to F(A')} is also \em{surjective}.
+  Of course, it suffices to verify this condition in the case where #{A} is \em{local}, and (proceeding step-by-step) where the ideal of #{A} given by the kernel of #{A\to A'} is annihilated by the maximal ideal of #{A}.
+  This leads, in practice, to verifying that a certain obstruction, linked to \em{infinitesimal} invariants of the situation that give us a functor #{F}, is null;
+  this is a problem of a \em{cohomological} nature.
+}
+
+\p{
+  \oldpage{195-09}
+  To finish, we say some words, in the above context, about \em{rings of definition}.
+  Let #{F} still be a functor from #{\mathcal{C}} to #{\Set}, assumed to be pro-representable via a topological #{\Lambda}-algebra #{O}.
+  Then, for every #{A\in\mathcal{C}} and every #{\xi\in F(A)}, there exists a \em{smallest} subring #{A'} of #{A} such that #{\xi} is the image of an element #{\xi'} of #{F(A')} (which is then uniquely determined):
+  indeed, it suffices to think of #{\xi} as a homomorphism from #{O} to #{A}, and to take #{A'} to be the image of #{O} under this #{\xi}.
+  We then say that #{A'} is the \em{ring of definition of the object #{\xi\in F(A)}}.
+  If #{u\colon A\to B} is an algebra homomorphism, and if #{\eta=F(u)(\xi)}, then the ring of definition of #{\eta} is the image under #{u} of the ring of definition of #{\xi}.
+  If we start with a functor #{F} from #{\mathcal{C}} to #{\Set}, then the existence of rings of definition, along with their properties that we have just discussed, is more or less \em{equivalent} to the condition that #{F} be pro-representable;
+  that is, they are usually far from being trivial.
+}
