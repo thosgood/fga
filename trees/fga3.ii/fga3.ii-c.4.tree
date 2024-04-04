@@ -6,4 +6,90 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  Let #{\Lambda} be a \em{local} Noetherian ring of residue field #{k} (more often than not, #{\Lambda} will be equal to #{k}, or to a Cohen #{p}-ring), and let #{X_0} be a prescheme over #{k}.
+  For every local Artinian #{\Lambda}-algebra #{A}, consider the set #{F(A)} of isomorphism classes of #{A}-preschemes #{X} that are \em{flat} over #{A}, endowed with an isomorphism
 
+  \subtree[fga3.ii-c.4-equation-star]{
+    \taxon{equation}
+    \number{*}
+    ##{
+      X\otimes_A k(A) \simfrom X_0\otimes_k k(A)
+    \startverb\tag{*}\stopverb
+    }
+  }
+
+  where #{k(A)} is the residue field of #{A};
+  of course, the isomorphisms between such flat #{A}-preschemes should respect the above isomorphism given in the structure.
+  If #{A} is a (not necessary local) Artinian #{\Lambda}-algebra, with local components #{A_i}, then we take #{F(A)} to be the product of the #{F(A_i)}.
+  Then #{F} becomes a multiplicative functor in #{A}, and we call it the \em{functor of modules} for #{X_0} (and #{\Lambda}).
+  If this functor is representable, then it has a corresponding local topological #{\Lambda}-algebra #{O}, of residue field #{k}, and the formal spectrum of #{O} is called the \em{formal scheme of modules} for #{X_0} (and #{\Lambda}) (cf. \ref{fga2} for some details on this).
+}
+
+\p{
+  Here, if we wish to apply the technique of descent, the "finite" automorphisms of #{X_0} are inoffensive, since they have no influence on the existence of automorphisms (in the precise sense above) of #{A}-preschemes #{X};
+  the necessary and sufficient condition, if #{A} is not simply a field, for #{X} to not have any non-trivial #{A}-automorphisms is that
+  ##{
+    \HH^0(X_0,\mathfrak{G}_{X_0/k})
+    = 0
+  }
+  where #{\mathfrak{G}_{X_0/k}} denotes the sheaf of #{k}-derivations (i.e. the tangent sheaf) of #{X_0}.
+  We can easily show (at least, if #{X_0} is simple over #{k}) that
+  ##{
+    F(I_A,\xi)
+    = \HH^1(X_A,\mathfrak{G}_{X_A/A}).
+  }
+  We thus conclude, as per usual:
+}
+
+\subtree[fga3.ii-c.4-proposition-4.1]{
+  \taxon{proposition}
+  \number{4.1}
+  
+  \p{
+    Suppose that #{\HH^0(X_0,\mathfrak{G}_{X_0/k})=0}.
+    \oldpage{195-18}
+    Then the formal scheme of modules for #{X_0} exists.
+    If, furthermore, #{X_0} is proper over #{k}, then the formal scheme of modules is Noetherian.
+  }
+}
+
+\subtree{
+  \taxon{remarks}
+
+  \ol{
+    \li{
+      If #{X_0} is not assumed to be simple over #{k}, then #{F(I_A,\xi)} can be identified with a sub-#{A}-module of
+      ##{
+        \Ext_{\sh{O}_{P_A}}^1(P_A;\sh{I}_{X_A},\sh{O}_{X_A})
+      }
+      where we set #{P_A=X_A\times_A X_A}, where #{\sh{O}_{X_A}} is considered as a coherent sheaf on #{P_A} via the diagonal morphism #{X_A\to P_A}, and where #{\sh{I}_{X_A}} denotes the coherent sheaf of ideals on #{P_A} defined by the diagonal morphism.
+      More precisely, an easy globalisation of Hochschild theory shows that the #{\Ext^1} above can be identified with the set of classes, up to isomorphism, of sheaves of #{I_A}-algebras #{\sh{O}} that are flat over #{X_A}, and endowed with an augmentation isomorphism #{\sh{O}\otimes_{I_A}A\to\sh{O}_{X_A}} (recall that we set #{I_A=At/(t^2)}).
+      The submodule #{F(I_A,\xi)} is that which corresponds to the sheaves of \em{commutative} algebras.
+      The simplicity hypotheses are thus not essential in the theory of modules, as \ref{fga2} implies.
+    }
+
+    \li{
+      Recall (\em{loc. cit.}) that, in particular, every \em{simple} and \em{proper algebraic curve} #{X_0} over #{k} admits a formal scheme of modules that is simple over #{\Lambda}, and of relative dimension equal to #{3g-3} if the genus #{g} is #{\geqslant2}, and to #{g} if #{g=0,1}.
+      These two latter cases no longer figure directly in \ref{fga3.ii-c.4-proposition-4.1}.
+      We can, however, recover them in the case of elliptic curves (#{g=1}) thanks to the remarks that will follow.
+    }
+  }
+}
+
+\p{
+  We can, of course, vary \ref{fga3.ii-c.4-proposition-4.1} \em{ad libitum} by considering systems of schemes over #{k} endowed with various structures.
+  Suppose, for example, that #{X_0} is an \em{abelian scheme} over #{k}, with a marked origin (i.e. #{X_0} is considered as a scheme in \em{groups} over #{k}), and let #{F(A)} be the set of isomorphism classes of \em{abelian} schemes over #{A} (i.e. of schemes in groups that are proper and simple over #{A}) endowed with an isomorphism as in \ref{fga3.ii-c.4-equation-star} of abelian schemes.
+  We can show that imposing a multiplicative structure (or even only a "unit section") eliminates the infinitesimal automorphisms, and that there thus exists a formal scheme of modules that corresponds to a complete local Noetherian ring #{O}.
+  We can also show that, if #{X} is a proper and simple scheme with "absolutely connected" fibres over a locally Noetherian prescheme #{S}, then every multiplicative structure on #{X} that admits a unit section is necessarily associative and commutative (provided that it is associative and commutative on \em{one} fibre, and provided that #{S} is connected), and is furthermore uniquely determined by the knowledge of the unit section.
+  \oldpage{195-19}
+  Further, supposing that #{S} is the spectrum of a local Artinian ring #{A} of residue field #{k}, that #{X} is proper over #{A} and endowed with a section #{s}, and finally that #{X\otimes_A k} is endowed with the structure of an abelian scheme over #{k}, admitting the point of #{X\otimes_A k} corresponding to #{s} as the zero element, an easy calculation of obstructions, combined with an argument due to Serre, allows us to prove that there exists on #{X} a multiplicative structure admitting the section #{s} as the unit section.
+  (From here, using the "existence theorem" of \ref{fga2} to pass to the case where #{A} is complete local Noetherian, and then the technique of descent from \ref{fga3.i} for the general case, we can prove the analogous claim for all locally Noetherian connected #{S}).
+  This proves that the functor #{F(A)} considered here is isomorphic to the analogous functor defined at the start of this section by abstracting the multiplicative structure on #{X_0}.
+  It then follows that, in particular, if #{\mathfrak{m}} is the maximal ideal of #{O}, then #{\mathfrak{m}/\mathfrak{m}^2} is canonically isomorphic to the dual of #{\HH^1(X_0,\mathfrak{G}_{X_0/k})}, and is thus of dimension #{n^2}, where #{n=\dim X_0}.
+  It would be very interesting to determine if #{O} is indeed \em{simple} over #{\Lambda}, i.e. isomorphic to an algebra of formal series in #{n^2} variables over #{\Lambda}.
+  Now [§A, Proposition 5.2](fga3.ii-a.5-proposition-5.2) allows us to give an equivalent formulation of this problem as an \em{existence problem of abelian schemes that are reducible along a given abelian scheme}.
+  In any case, we see, by a transcendental way, that the answer is affirmative if #{k} is of characteristic #{0}.
+  In characteristic #{p\neq0}, it evidently suffices to restrict to the case where #{\Lambda} is the ring of Witt vectors constructed over an algebraically closed field #{k}.
+  This could be the moment for the "\em{Greenberg functor}" to prove its worth...
+}
