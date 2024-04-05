@@ -3,8 +3,8 @@
 \providecommand{\scr}[1]{{\mathscr{#1}}}
 \renewcommand{\cal}[1]{{\mathcal{#1}}}
 \renewcommand{\frak}[1]{{\mathfrak{#1}}}
-\renewcommand{\geq}{\geqslant}
-\renewcommand{\leq}{\leqslant}
+\renewcommand{\geqslant}{\geqslantslant}
+\renewcommand{\leqslant}{\leqslantslant}
 
 \providecommand{\Pic}{\operatorname{Pic}}
 \providecommand{\shPic}{\mathscr{P}\kern -.5pt ic}
@@ -453,9 +453,9 @@ Let $\sh{P}^+(S')$ be the subset of $\sh{P}(S')$ consisting of classes of the $\
 $$
   \begin{aligned}
     \RR^i f'_*(\sh{L}(n)) &= 0
-    \qquad\text{for }i>0\text{ and all }n\geq0
+    \qquad\text{for }i>0\text{ and all }n\geqslant0
   \\f'_*(\sh{L}(n)) &\neq0
-    \qquad\text{for all }n\geq0.
+    \qquad\text{for all }n\geqslant0.
   \end{aligned}
 $$
 These conditions are stable under base change, and thus define a subfunctor $\sh{P}^+$ of $\sh{P}$ that is evidently stable under translation by $\xi$.
@@ -637,7 +637,7 @@ The question raised here has been answered in the affirmative (cf. the last para
 ::: {.rmenv #fga-3-v-remark-6.8 title="Remark 6.8" latex="{Remark 6.8}"}
 Contrary to what we might think, the consideration of Picard schemes of algebraic schemes with nilpotent elements is useful, and even indispensable, for various questions.
 If $X$ is a projective scheme, simple over $k$, say, and $Y$ a hyperplane section, then we can consider the "infinitesimal neighbourhoods" $X_n$ of $Y$ of all orders, as well as the Picard schemes $\repPic_{X_n/k}$;
-when $X$ is irreducible of dimension $\geq4$ (resp. $\geq3$), the canonical morphism
+when $X$ is irreducible of dimension $\geqslant4$ (resp. $\geqslant3$), the canonical morphism
 $$
   \repPic_{X/k}
   \to\repPic_{X_n/k}

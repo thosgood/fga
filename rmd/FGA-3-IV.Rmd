@@ -1,53 +1,3 @@
-# Hilbert schemes {#fga-3.iv}
-
-\providecommand{\scr}[1]{{\mathscr{#1}}}
-\renewcommand{\cal}[1]{{\mathcal{#1}}}
-\renewcommand{\frak}[1]{{\mathfrak{#1}}}
-\renewcommand{\geq}{\geqslant}
-\renewcommand{\leq}{\leqslant}
-
-<!-- Shortcuts -->
-
-\providecommand{\Tor}{\operatorname{Tor}}
-\providecommand{\shTor}{\mathscr{T}\kern -.5pt or}
-\providecommand{\Ext}{\operatorname{Ext}}
-\providecommand{\shExt}{\mathscr{E}\kern -.5pt xt}
-\providecommand{\Hom}{\operatorname{Hom}}
-\providecommand{\shHom}{\mathscr{H}\kern -.5pt om}
-\providecommand{\repHom}{\underline{\Hom}}
-\providecommand{\supp}{\operatorname{supp}}
-\providecommand{\red}{{\mathrm{red}}}
-\providecommand{\OO}{\sh{O}}
-\providecommand{\PP}{\mathbb{P}}
-\providecommand{\Quot}{\operatorname{Quot}}
-\providecommand{\shQuot}{\mathscr{Q}\kern -.5pt out}
-\providecommand{\repQuot}{\underline{\Quot}}
-\providecommand{\Grass}{\operatorname{Grass}}
-\providecommand{\shGrass}{\mathscr{G}\kern -.5pt rass}
-\providecommand{\repGrass}{\underline{\Grass}}
-\providecommand{\Hilb}{\operatorname{Hilb}}
-\providecommand{\shHilb}{\mathscr{H}\kern -.5pt ilb}
-\providecommand{\repHilb}{\underline{\Hilb}}
-\providecommand{\Pic}{\operatorname{Pic}}
-\providecommand{\repPic}{\underline{\Pic}}
-\providecommand{\repIsom}{\underline{\operatorname{Isom}}}
-\providecommand{\repImm}{\underline{\operatorname{Imm}}}
-\providecommand{\FXS}{{\sh{F}/X/S}}
-\providecommand{\FXSp}{{\sh{F}'/X'/S'}}
-\providecommand{\RR}{\operatorname{R}}
-\providecommand{\rank}{\operatorname{rank}}
-\providecommand{\Spec}{\operatorname{Spec}}
-\providecommand{\Symm}{\operatorname{Symm}}
-
-<!-- Content -->
-
-::: {.original-citation}
-[FGA 3.IV]
-Grothendieck, A.
-"Technique de descente et théorèmes d'existence en géométrie algébrique, IV: Les schémas de Hilbert".
-_Séminaire Bourbaki_ **13** (1960--61), Talk no. 221.
-:::
-
 ## Introduction {-}
 
 \oldpage{221-01}The techniques described in [FGA 3.I](FGA-3-I.html) and [FGA 3.II](FGA-3-II.html) were, for the most part, independent of any projective hypotheses on the schemes in question.
@@ -177,18 +127,18 @@ b. The Hilbert polynomials $P_\sh{F}$ of the sheaves $\sh{F}$ whose class is in 
 
 It remains to prove the "sufficient" part, which will be a particular case of a more precise result.
 For every coherent module $\sh{F}$ on a prescheme of finite type over a field $K$, and for every integer $r$, let $N_r$ be the submodule of $\sh{F}$ whose sections over an open subset are the sections of $\sh{F}$ over the same subset whose support is of dimension $<r$.
-We thus have that $N_r=\sh{F}$ for $r>\dim\supp\sh{F}$, and $N_r=0$ for $r\leq0$, and we thus obtain a finite increasing filtration of $\sh{F}$ whose factors $N_r/N_{r+1}$ are such that their associated prime cycles are exactly the associated prime cycles of $\sh{F}$ that are of dimension $r$.
+We thus have that $N_r=\sh{F}$ for $r>\dim\supp\sh{F}$, and $N_r=0$ for $r\leqslant0$, and we thus obtain a finite increasing filtration of $\sh{F}$ whose factors $N_r/N_{r+1}$ are such that their associated prime cycles are exactly the associated prime cycles of $\sh{F}$ that are of dimension $r$.
 We set
 $$
   \sh{F}_{(r)} = \sh{F}/N_r
 $$
-so that the associated prime cycles of $\sh{F}_{(r)}$ are exactly the associated prime cycles of $\sh{F}$ that are of dimension $\geq r$, and, in particular, $\sh{F}_{(r)}$ is equal to $\sh{F}$ if and only if the associated prime cycles of $\sh{F}$ are of dimension $\geq r$.
+so that the associated prime cycles of $\sh{F}_{(r)}$ are exactly the associated prime cycles of $\sh{F}$ that are of dimension $\geqslant r$, and, in particular, $\sh{F}_{(r)}$ is equal to $\sh{F}$ if and only if the associated prime cycles of $\sh{F}$ are of dimension $\geqslant r$.
 With this, we have:
 
 ::: {.itenv #fga-3-iv-theorem-2.2 title="Theorem 2.2" latex="{Theorem 2.2}"}
 Under the conditions of [Theorem 2.1](#fga-3-iv-theorem-2.1), let $s$ be an integer, and suppose that $E$ satisfies condition (a), as well as the following weakened form of (b):
 
-- (b<sub>s</sub>) The Poincaré polynomials $P_\sh{F}$ of the sheaves $\sh{F}$ whose class is in $E$ have coefficients _in degrees $\leq (s-1)$_ that are bounded.
+- (b<sub>s</sub>) The Poincaré polynomials $P_\sh{F}$ of the sheaves $\sh{F}$ whose class is in $E$ have coefficients _in degrees $\leqslant (s-1)$_ that are bounded.
 
 Under these conditions, the sheaves $\sh{F}_{(s)}$ (for the $\sh{F}$ whose class is in $E$) form a bounded family.
 Furthermore, the coefficients in degree $(s-2)$ of the $P_\sh{F}$ are bounded below.
@@ -197,7 +147,7 @@ Furthermore, the coefficients in degree $(s-2)$ of the $P_\sh{F}$ are bounded be
 \oldpage{221-07}Thus:
 
 ::: {.itenv #fga-3-iv-corollary-2.3 title="Corollary 2.3" latex="{Corollary 2.3}"}
-Suppose that the sheaves $\sh{F}$ whose class is in $E$ are such that all their associated prime cycles are of dimension $d$, with $s\leq d\leq r$.
+Suppose that the sheaves $\sh{F}$ whose class is in $E$ are such that all their associated prime cycles are of dimension $d$, with $s\leqslant d\leqslant r$.
 Then, in condition (b) of [Theorem 2.1](#fga-3-iv-theorem-2.1), we can restrict to the coefficients of $P_\sh{F}$ between degree $(s-1)$ and $r$, inclusive.
 :::
 
@@ -213,7 +163,7 @@ Here, the degree $a$ of $Y$ can be most conveniently defined as the coefficient 
 
 ::: {.itenv #fga-3-iv-lemma-2.5 title="Lemma 2.5" latex="{Lemma 2.5}"}
 Let $\sh{L}$ be a coherent sheaf on $X$, and $E$ a set of classes of the quotient sheaves $\sh{F}$ of the sheaf $\sh{L}_K$ (where $K$ is a residue extension of $S$).
-Suppose that the fibres of $X$ over $S$ are of dimension $\leq r$, and set
+Suppose that the fibres of $X$ over $S$ are of dimension $\leqslant r$, and set
 $$
   P_\sh{F}(n) = a_\sh{F}n^r/r! + b_\sh{F}n^{r-1}/(r-1)! + \text{terms of degree }<r-1.
 $$
@@ -232,7 +182,7 @@ $$
 Furthermore, we can suppose that $\sh{L}=\OO_{\PP_S^r}(k)^s$, for some suitable $k$ and $s$.
 The coefficient $a_\sh{F}$ satisfies
 $$
-  0\leq a_\sh{F} \leq s
+  0\leqslant a_\sh{F} \leqslant s
 $$
 and is thus bounded.
 With this in mind, saying that the $n^{r-1}$ coefficient $P_\sh{F}(n)$ is bounded below (resp. bounded) is equivalent to saying the same thing for the $P_\sh{F}(n-k)=P_{\sh{F}(-k)}(n)$.
@@ -249,22 +199,22 @@ whence
 $$
   P_\sh{F} = P_{\sh{F}_{(r)}} + P_{N_r}
 $$
-and, since the $n^{r-1}$ coefficient of $P_{N_r}$ is positive (since $\dim\supp N_r\leq r-1$), we have that
+and, since the $n^{r-1}$ coefficient of $P_{N_r}$ is positive (since $\dim\supp N_r\leqslant r-1$), we have that
 $$
-  b_{\sh{F}_{(r)}} \leq b_\sh{F}.
+  b_{\sh{F}_{(r)}} \leqslant b_\sh{F}.
 $$
 This allows us, in proving the lemma, to replace $\sh{F}$ by $\sh{F}_{(r)}$, i.e. to suppose that the quotients $\sh{F}$ of $\sh{L}$ in question are torsion free.
 
-Since $\PP_K^r$ is normal, it follows that $\sh{F}$ is locally free of rank $a=a_\sh{F}$ on an open $U=\PP_K^r\setminus Y$, where $Y$ is of codimension $\geq2$.
-Thus $\bigwedge^a\sh{F}$ is a sheaf on $\PP_K^r$ whose restriction to $U$ is invertible, and thus (since $\PP_K^r$ is regular, and $Y$ is of codimension $\geq2$) isomorphism to the restriction of an invertible sheaf on $\PP_K^r$, defined up to isomorphism.
+Since $\PP_K^r$ is normal, it follows that $\sh{F}$ is locally free of rank $a=a_\sh{F}$ on an open $U=\PP_K^r\setminus Y$, where $Y$ is of codimension $\geqslant2$.
+Thus $\bigwedge^a\sh{F}$ is a sheaf on $\PP_K^r$ whose restriction to $U$ is invertible, and thus (since $\PP_K^r$ is regular, and $Y$ is of codimension $\geqslant2$) isomorphism to the restriction of an invertible sheaf on $\PP_K^r$, defined up to isomorphism.
 This latter sheaf is of the form $\OO_{\PP_K^r}(d)$ for some well defined integer $d$.
-Since $\bigwedge^a\sh{F}$ is a quotient of $\bigwedge^a\OO_{\PP_K^r}^n\simeq\OO_{\PP_K^r}^N$ with $N=\binom{n}{a}$, it admits $N$ canonical sections, which thus define sections of $\OO_{\PP_K^r}(d)$ over $U$, which are restrictions of sections $s_i$ (for $1\leq i\leq N$) of $\OO_{\PP_K^r}(d)$ (since $\PP_K^r$ is normal, and $Y$ is of codimension $\geq2$).
-\oldpage{221-09}These $s_i$ generate $\OO_{\PP_K^r}(d)$ at the points of $U$, and are thus not all zero, which implies that $d\geq0$.
+Since $\bigwedge^a\sh{F}$ is a quotient of $\bigwedge^a\OO_{\PP_K^r}^n\simeq\OO_{\PP_K^r}^N$ with $N=\binom{n}{a}$, it admits $N$ canonical sections, which thus define sections of $\OO_{\PP_K^r}(d)$ over $U$, which are restrictions of sections $s_i$ (for $1\leqslant i\leqslant N$) of $\OO_{\PP_K^r}(d)$ (since $\PP_K^r$ is normal, and $Y$ is of codimension $\geqslant2$).
+\oldpage{221-09}These $s_i$ generate $\OO_{\PP_K^r}(d)$ at the points of $U$, and are thus not all zero, which implies that $d\geqslant0$.
 An easy calculation also shows that
 $$
   b_\sh{F} = a_\sh{F}(r+1)/2 + d.
 $$
-This shows, in particular, that $b_\sh{F}\geq0$, and so $b_\sh{F}$ is bounded below.
+This shows, in particular, that $b_\sh{F}\geqslant0$, and so $b_\sh{F}$ is bounded below.
 It is bounded if and only if $d$ is bounded;
 we will show that $\sh{F}$ then remains in a bounded family.
 We can fix $a_\sh{F}$ and $b_\sh{F}$, as well as $a$ and $b$ (and thus $d$).
@@ -294,7 +244,7 @@ Furthermore, if the $b_\sh{F}$ are bounded, then the $\sh{F}_{(r)}$ are bounded.
 We can suppose that the base field $K$ of the sheaves $\sh{F}$ is algebraically closed.
 We endow each $\supp\sh{F}_{(r)}$(the union of the components of degree $r$) with the induced reduced structure.
 Then the degrees of the $\supp\sh{F}_{(r)}$ are bounded above by $a$, and so, by [(2.4)](#fga-3-iv-lemma-2.4), the $\supp\sh{F}_{(r)}$ form a bounded set.
-Furthermore, for each component of $\supp\sh{F}_{(r)}$, the length of $\sh{F}_{(r)}$ for this component is $\leq a$, and so, if $\sh{I}_\sh{F}$ is the ideal that defines $\supp\sh{F}_{(r)}$, then $\sh{F}_{(r)}$ can be considered as a module on the subscheme $Y_\sh{F}$ of $X$ defined by $\sh{I}_\sh{F}^a$.
+Furthermore, for each component of $\supp\sh{F}_{(r)}$, the length of $\sh{F}_{(r)}$ for this component is $\leqslant a$, and so, if $\sh{I}_\sh{F}$ is the ideal that defines $\supp\sh{F}_{(r)}$, then $\sh{F}_{(r)}$ can be considered as a module on the subscheme $Y_\sh{F}$ of $X$ defined by $\sh{I}_\sh{F}^a$.
 \oldpage{221-10}As in the previous lemma, we can also reduce to the case where $\sh{F}=\sh{F}_{(r)}$, so that $\sh{F}$ comes from a module on $Y_\sh{F}$.
 The $Y_\sh{F}$ correspond to a bounded family of quotient modules of the $\OO_{X_K}$, and thus come from a closed subscheme $Y$ of some scheme $X\times_S T$.
 We can then apply [(2.5)](#fga-3-iv-lemma-2.5) to $Y/T$ and $\sh{L}\otimes_X Y$, whence the conclusion.
@@ -302,7 +252,7 @@ We can then apply [(2.5)](#fga-3-iv-lemma-2.5) to $Y/T$ and $\sh{L}\otimes_X Y$,
 
 ::: {.proof}
 We can now prove [(2.2)](#fga-3-iv-theorem-2.2) by induction on the upper bound $r$ of the $\dim\supp\sh{F}$.
-The statement is trivial for $r<0$, so suppose that $r\geq0$ and that the statement has been proven for $r'<r$.
+The statement is trivial for $r<0$, so suppose that $r\geqslant0$ and that the statement has been proven for $r'<r$.
 By [(2.6)](#fga-3-iv-lemma-2.6), the $\sh{F}_{(r)}$ form a bounded family, and so too, by part (i) of [(1.2)], do the kernels of the homomorphisms $\sh{L}_K\to\sh{F}_{(r)}$;
 there thus exists a coherent module $\sh{L}'$ on $X$ such that kernels in question, and thus also the $N_r(\sh{F})=\Ker(\sh{F}\to\sh{F}_{(r)})$, are quotients of modules $\sh{L}'_K$.
 Since the $\sh{F}_{(r)}$ are bounded, the $P_{\sh{F}_{(r)}}$ are bounded, and the formula
@@ -366,44 +316,44 @@ The rest of this section is dedicated to the proof of [Theorem 3.2](#fga-3-iv-th
 Let $\nu$ be an integer.
 For every $S'$ over $S$, we denote by $A_\nu(S')$ the set of quotients $\sh{G}=\sh{F}'/\sh{H}$ of $\sh{F}'=\sh{F}\otimes_{\OO_S}\OO_{S'}$ that are coherent, flat over $S'$, and satisfy the following conditions:
 
-a. $\RR^i f'_*(\sh{G}(n))=0$ for $i>0$ and $n\geq\nu$;
-b. $\RR^i f'_*(\sh{H}(n))=0$ for $i>0$ and $n\geq\nu$;
-c. $f'_*(\sh{H}(\nu+k))=\mathcal{S}'_k f'_*(\sh{H}(\nu))$ for $k\geq0$.
+a. $\RR^i f'_*(\sh{G}(n))=0$ for $i>0$ and $n\geqslant\nu$;
+b. $\RR^i f'_*(\sh{H}(n))=0$ for $i>0$ and $n\geqslant\nu$;
+c. $f'_*(\sh{H}(\nu+k))=\mathcal{S}'_k f'_*(\sh{H}(\nu))$ for $k\geqslant0$.
 
 For this last condition, we suppose that $X$ is written as the homogeneous prime spectrum of a quasi-coherent positively-graded algebra $\mathcal{S}_\bullet$ over $S$ that is generated by $\mathcal{S}_1$, and we set $\mathcal{S}'=\mathcal{S}\otimes_{\OO_S}\OO_{S'}$, so that $X'$ is the homogeneous prime spectrum of $\mathcal{S}'$.
 To prove [Theorem 3.2](#fga-3-iv-theorem-3.2), we can easily reduce to the case where $X=\PP_S^r$ (since $S$ is a union of open subsets $U$ such that $X|U$ is a closed subscheme of $\PP_U^r$, and $\OO_X(1)$ is induced by $\OO_{\PP_U^r}(1)$), and where $\sh{F}$ is of the form $(\OO_{\PP_S^r})^N$, and thus flat over $S$.
 Then, in the above, the sheaves $\sh{H}$ are also flat over $S'$.
-It then follows from the Künneth relations [@GD1960, III, §7] and from (b) that the conditions (a) and (b) are stable under base change, and imply that, for $n\geq\nu$, forming $f'_*(\sh{G}(n))$ and $F'_*(\sh{H}(n))$ commutes with extension of the base (*loc. cit.*).
+It then follows from the Künneth relations [@GD1960, III, §7] and from (b) that the conditions (a) and (b) are stable under base change, and imply that, for $n\geqslant\nu$, forming $f'_*(\sh{G}(n))$ and $F'_*(\sh{H}(n))$ commutes with extension of the base (*loc. cit.*).
 In other words, *$A_\nu(S')$ is a contravariant functor in $S'$, and in a precise sense a subfunctor of $A(S')=\shQuot_{\FXS}^P(S')$*.
 For varying $\nu$, we thus obtain an increasing sequence of subsets $A_\nu(S')$ of $A(S')$, whose union is $A(S')$ by a well known theorem of Serre [@GD1960, III, §2].
 Note now that, if $\sh{G}$ is a coherent quotient of $\sh{F}'$ which is flat over $S$, and $s$ an element of $S$ such that the base change $\Spec(k(s))\to S$ gives rise to a quotient $\sh{G}_s$ of $\sh{F}_s$ satisfying conditions (a), (b), and (c), i.e. is in $A_\nu\Spec(k(s))$, then there exists an open neighbourhood $U$ of $s$ such that these same conditions are satisfied by $\sh{G}|(f')^{-1}(U)$, i.e. this quotient is in $A_\nu(U)$;
-for (a) and (b), this follows in fact from the "Theorem of holomorphic functions" [@GD1960, III, §7], and (c) follows from the Nakayama lemma and the fact that we know that $f'_*(\sh{H}(n+k))=S'_kf'_*(\sh{H}(n))$ anyway for $n$ large enough and $k\geq0$ [@GD1960, III,§2].
+for (a) and (b), this follows in fact from the "Theorem of holomorphic functions" [@GD1960, III, §7], and (c) follows from the Nakayama lemma and the fact that we know that $f'_*(\sh{H}(n+k))=S'_kf'_*(\sh{H}(n))$ anyway for $n$ large enough and $k\geqslant0$ [@GD1960, III,§2].
 \oldpage{221-13}From these remarks, we conclude the following (compare with [@Gro1960a, IV]).
 *For the functor $A$ to be representable, it is necessary and sufficient that the functors $A_\nu$ be representable, and then the $S$-prescheme $Q$ that represents $A$ is the increasing union of the opens $Q_\nu$ that represent the $A_\nu$.*
 
 Let
 $$
   M_\bullet
-  = \sum_{n\geq0} f_*(\sh{F}(n))
+  = \sum_{n\geqslant0} f_*(\sh{F}(n))
   = \mathcal{S}_\bullet^N
 $$
 so that we have
 $$
   M'_\bullet
   = M_\bullet\otimes_{\OO_S}\OO_{S'}
-  = \sum_{n\geq0} f'_*(\sh{F}(n))
+  = \sum_{n\geqslant0} f'_*(\sh{F}(n))
   = {\mathcal{S}'_\bullet}^N.
 $$
 
 It follows from (a) that we have
 
-a'. $f'_*(\sh{G}(n))$ is locally free of rank $P(n)$ for $n\geq\nu$ [@GD1960, III, §7]
+a'. $f'_*(\sh{G}(n))$ is locally free of rank $P(n)$ for $n\geqslant\nu$ [@GD1960, III, §7]
 
 and it follows from (b),for $i=1$, that we have
 
 a''. $f'_*(\sh{G}(n))$ is a quotient module of $M'_n$.
 
-Also, the knowledge of this quotient module, for $n=\nu$, implies, by (c), that the knowledge of the submodules $f'_*(\sh{H}(n))$ of $M_n$ for $n\geq\nu$, and thus the knowledge of $\sh{H}$ and consequently of $\sh{G}$.
+Also, the knowledge of this quotient module, for $n=\nu$, implies, by (c), that the knowledge of the submodules $f'_*(\sh{H}(n))$ of $M_n$ for $n\geqslant\nu$, and thus the knowledge of $\sh{H}$ and consequently of $\sh{G}$.
 We thus obtain an *injective map*
 $$
   A_\nu(S') \to \shGrass_{P(\nu)}(M'_\nu)
@@ -424,29 +374,29 @@ If we have a quotient module $N$ of $M'_\nu$ that is locally free of rank $P(\nu
 \oldpage{221-14}Changing notation, we can suppose that $S'=S$, i.e. we have a quotient $N_\nu$ of $M_\nu$ by a submodule $R_\nu$.
 For it to come from an element of $A(s)$, it is necessary and sufficient that it satisfy the following two conditions:
 
-i. $M_{\nu+k}/\mathcal{S}_k R_\nu$ is locally free of rank $P(\nu+k)$ for $k\geq0$.
-ii. Both the subsheaf $\sh{H}$ of $\sh{F}$ defined by the graded submodule $R_\bullet=\sum_{k\geq0}\sh{S}_kR_\nu$ of $M_\bullet$ (cf. [@GD1960, II, §3]) and the quotient $\sh{G}=\sh{F}/\sh{H}$ satisfy conditions (a) and (b) above.
+i. $M_{\nu+k}/\mathcal{S}_k R_\nu$ is locally free of rank $P(\nu+k)$ for $k\geqslant0$.
+ii. Both the subsheaf $\sh{H}$ of $\sh{F}$ defined by the graded submodule $R_\bullet=\sum_{k\geqslant0}\sh{S}_kR_\nu$ of $M_\bullet$ (cf. [@GD1960, II, §3]) and the quotient $\sh{G}=\sh{F}/\sh{H}$ satisfy conditions (a) and (b) above.
 
 These conditions are clearly necessary, and if they are satisfied then the sheaf $\sh{G}$ defined in (ii) above, being isomorphic to the sheaf associated to the graded $\sh{S}_\bullet$-module $N_\bullet$ given by the sum of the $M_{n+k}/\sh{S}_kR$ is *flat* over $S$ (since its fibres are direct factors of localisations of $N$ for homogeneous prime ideals of $\mathcal{S}_\bullet$), and correspond to the Hilbert polynomial $P$ by virtue of (i).
-Taking (ii) into account, we then see that (a') and (a'') are satisfied, and thus, for $n\geq\nu$, the natural homomorphism $N_n\to f_*(\sh{G}(n))$ is a *surjective* homomorphism of locally free modules of equal rank, and thus an isomorphism, and thus $f_*(\sh{H}(\nu+k))=\mathcal{S}_kR_\nu$ for all $k\geq0$, which proves that $\sh{G}\in A_\nu(S)$ and that $R_\nu$ is the element of $\Grass_{P(\nu)}(M_\nu)$ defined by $\sh{G}$.
+Taking (ii) into account, we then see that (a') and (a'') are satisfied, and thus, for $n\geqslant\nu$, the natural homomorphism $N_n\to f_*(\sh{G}(n))$ is a *surjective* homomorphism of locally free modules of equal rank, and thus an isomorphism, and thus $f_*(\sh{H}(\nu+k))=\mathcal{S}_kR_\nu$ for all $k\geqslant0$, which proves that $\sh{G}\in A_\nu(S)$ and that $R_\nu$ is the element of $\Grass_{P(\nu)}(M_\nu)$ defined by $\sh{G}$.
 
 Criteria (i) and (ii) above apply equally to the situation obtained after a change of base $S'\to S$.
 We will prove first of all the fact that condition (i) is satisfied after the change of base $S'\to S$ can be expressed by saying that $S'\to S$ is bounded by a certain subprescheme $Z$ of $S$;
 once we have shown this result, we are led (replacing $S$ with $Z$) to the case where condition (i) is already satisfied on $S$, and since it is stable under change of base, it remains to express condition (ii).
-But then, if $U$ denotes the set of $s\in S$ such that the cohomology of the sheaves induced on the fibre $X_s$ by $\sh{G}(n)$ and $\sh{H}(n)$ is zero in dimension $>0$ for $n\geq\nu$, then we have already shown that $U$ is open, and condition (ii) will be satisfied after a change of base $S'\to S$ if and only if $S'\to S$ is bounded by $U$, which proves [Lemma 3.3](#fga-3-iv-lemma-3.3).
+But then, if $U$ denotes the set of $s\in S$ such that the cohomology of the sheaves induced on the fibre $X_s$ by $\sh{G}(n)$ and $\sh{H}(n)$ is zero in dimension $>0$ for $n\geqslant\nu$, then we have already shown that $U$ is open, and condition (ii) will be satisfied after a change of base $S'\to S$ if and only if $S'\to S$ is bounded by $U$, which proves [Lemma 3.3](#fga-3-iv-lemma-3.3).
 It thus remains to prove the following lemma:
 
 ::: {.itenv #fga-3-iv-lemma-3.4 title="Lemma 3.4" latex="Lemma 3.4"}
 Let $S$ be a locally Noetherian prescheme, endowed with a quasi-coherent positively-graded algebra $\mathcal{S}_\bullet$ generated by $\mathcal{S}_1$, and let $M_\bullet$ be a quasi-coherent graded $\mathcal{S}$-module of finite type, $P$ a polynomial with rational coefficients, and $\nu$ and integer.
 Then there exists a (clearly uniquet) subprescheme $Z$ of $S$ that has the following property:
-for every prescheme $S'$ over $S$, for $M_n\otimes_{\OO_S}\OO_{S'}$ to be locally free of rank $P(n)$ for all $n\geq\nu$, it is necessary and sufficient that $S'\to S$ be bounded by $Z$.
+for every prescheme $S'$ over $S$, for $M_n\otimes_{\OO_S}\OO_{S'}$ to be locally free of rank $P(n)$ for all $n\geqslant\nu$, it is necessary and sufficient that $S'\to S$ be bounded by $Z$.
 :::
 
 \oldpage{221-15}We can evidently suppose that $S$ is affine, and thus Noetherian.
 Then:
 
 ::: {.itenv #fga-3-iv-lemma-3.5 title="Lemma 3.5" latex="{Lemma 3.5}"}
-For every integer $N\geq\nu$, let $U_N$ be the open subset of $S$ consisting of $s\in S$ such that $\rank_{k(s)}M_{ns}\otimes_{\OO_{S,s}}k(s)\leq P(n)$ for all $\nu\leq n\leq N$.
+For every integer $N\geqslant\nu$, let $U_N$ be the open subset of $S$ consisting of $s\in S$ such that $\rank_{k(s)}M_{ns}\otimes_{\OO_{S,s}}k(s)\leqslant P(n)$ for all $\nu\leqslant n\leqslant N$.
 Then the decreasing sequence of open subsets $U_N$ stabilises.
 :::
 
@@ -457,19 +407,19 @@ Finally, we can evidently suppose that $S$ is connected.
 But then [@GD1960, III, §7] there exists an integer $n_0$ and a polynomial $Q$ such that
 $$
   \rank_{k(s)}M_{ns}\otimes_{\OO_{S,s}}k(s) = Q(n)
-  \qquad\text{for }n\geq n_0.
+  \qquad\text{for }n\geqslant n_0.
 $$
 Suppose first of all that $P<Q$, and so $P(n)\neq Q(n)$ for large $n$.
 Then we evidently have $U_N=\varnothing$ for large enough $N$, and thus a fortiori the sequence of $U_N$ stabilises.
-In the contrary case, we have $P(n)\geq Q(n)$ for large $n$, and so $U_N=U_{n_0}$ for $N\geq n_0$, and the sequence of the $U_N$ again stabilises.
+In the contrary case, we have $P(n)\geqslant Q(n)$ for large $n$, and so $U_N=U_{n_0}$ for $N\geqslant n_0$, and the sequence of the $U_N$ again stabilises.
 :::
 
 In particular, the set $U_\infty$ of $s\in S$ such that
 
 ::: {.eqenv #fga-3-iv-equation-asterisk title="" latex=""}
 $$
-  \rank_{k(s)}M_{ns}\otimes_{\OO_{S,s}}k(s) \leq P(n)
-  \qquad\text{for all }n\geq\nu
+  \rank_{k(s)}M_{ns}\otimes_{\OO_{S,s}}k(s) \leqslant P(n)
+  \qquad\text{for all }n\geqslant\nu
 \tag{$*$}
 $$
 :::
@@ -481,7 +431,7 @@ We can then, for the proof of [Lemma 3.4](#fga-3-iv-lemma-3.4) replace $S$ with 
 Let $M$ be a module on a locally Noetherian prescheme $S$, and $r$ an integer.
 Then there exists a (clearly unique) subprescheme $Z$ of $S$ that has the following property:
 for all $S'$ over $S$, for $M\otimes_{\OO_S}\OO_{S'}$ to be locally free of rank $r$, it is necessary and sufficient that $S'\to S$ be bounded by $Z$.
-If $\rank_{k(s)}M_s\otimes_{\OO_{S,s}}k(s)\leq r$ for all $s$, then $Z$ is a closed subprescheme of $S$ (supposing that $M$ is coherent).
+If $\rank_{k(s)}M_s\otimes_{\OO_{S,s}}k(s)\leqslant r$ for all $s$, then $Z$ is a closed subprescheme of $S$ (supposing that $M$ is coherent).
 :::
 
 ::: {.proof}
@@ -495,7 +445,7 @@ We then see that the closed subprescheme $Z$ of $S$ defined by the ideal generat
 :::
 
 ::: {.proof}
-Returning to the proof of [(3.4)](#fga-3-iv-lemma-3.4) where we left off, we denote by $Z_n$ the _closed_ subprescheme of $S$ associated, by [(3.6)](#fga-3-iv-lemma-3.6), to the module $M_n$ and the integer $r=P(n)$, and by $Z'_N$ the infimum of the $Z_n$ for $\nu\leq n\leq N$.
+Returning to the proof of [(3.4)](#fga-3-iv-lemma-3.4) where we left off, we denote by $Z_n$ the _closed_ subprescheme of $S$ associated, by [(3.6)](#fga-3-iv-lemma-3.6), to the module $M_n$ and the integer $r=P(n)$, and by $Z'_N$ the infimum of the $Z_n$ for $\nu\leqslant n\leqslant N$.
 Then the $Z_N$ form a decreasing sequence of closed subpreschemes of $Z$, which is thus necessarily stationary.
 Let $Z$ be the constant value of the $Z_W$ for large $N$.
 This is the desired $Z$ in [(3.4)](#fga-3-iv-lemma-3.4).
@@ -524,8 +474,8 @@ The proof also shows, at the same time, the following:
 
 ::: {.itenv #fga-3-iv-proposition-3.8 title="Proposition 3.8" latex="{Proposition 3.8}"}
 Under the conditions of [(3.2)](#fga-3-iv-theorem-3.2), let $Q=\repQuot_{\FXS}^P$, $X_Q=X\times_s Q$, $\sh{F}_Q=\sh{F}\otimes_{\OO_S}\OO_Q$, and let $\sh{G}$ be the coherent quotient of $\sh{F}_Q$, which is flat over $Q$, that has $P$ as its relative Hilbert polynomial, so that $(Q,\sh{G})$ represents the functor $\shQuot_{\FXS}^P$.
-Then there exists an integer $\nu$ such that, for $n\geq\nu$, $(f_Q)_*(\sh{G}(n))$ is a locally free module over $Q$ of rank $P(n)$, and is very ample with respect to $S$, i.e. it defines an immersion of $Q$ into a Grassmannian scheme $\repGrass_{P(n)}(M)$ over $S$.
-A fortiori, for $n\geq\nu$, the sheaf $\bigwedge^{P(n)}(f_Q)_*(\sh{G}(n))$ over $Q$ is invertible and very ample with respect to $S$.
+Then there exists an integer $\nu$ such that, for $n\geqslant\nu$, $(f_Q)_*(\sh{G}(n))$ is a locally free module over $Q$ of rank $P(n)$, and is very ample with respect to $S$, i.e. it defines an immersion of $Q$ into a Grassmannian scheme $\repGrass_{P(n)}(M)$ over $S$.
+A fortiori, for $n\geqslant\nu$, the sheaf $\bigwedge^{P(n)}(f_Q)_*(\sh{G}(n))$ over $Q$ is invertible and very ample with respect to $S$.
 :::
 
 ::: {.proof}
@@ -778,7 +728,7 @@ $$
   \sh{N}_{X/S}\colon \repHilb_{X/S}^n \to \Symm_S^n(X).
 $$
 This is evidently an isomorphism for $n=0$ and $n=1$.
-But for $n\geq1$, even if $S$ is the spectrum of a field $k$, and $X$ is simple over $S$, it is not in general an isomorphism nor even an injective morphism, since a sub-scheme of dimension $0$ of $X$ (corresponding, for example, to a primary ideal $\sh{I}$ for the maximal ideal in a local ring $\OO_{X,x}$, for a closed point $x$ of $X$) is not known when we know only the cycle that it defines (to be precise, when we know the codimension over $k$ of $\sh{I}$ in $\OO_{X,x}$).
+But for $n\geqslant1$, even if $S$ is the spectrum of a field $k$, and $X$ is simple over $S$, it is not in general an isomorphism nor even an injective morphism, since a sub-scheme of dimension $0$ of $X$ (corresponding, for example, to a primary ideal $\sh{I}$ for the maximal ideal in a local ring $\OO_{X,x}$, for a closed point $x$ of $X$) is not known when we know only the cycle that it defines (to be precise, when we know the codimension over $k$ of $\sh{I}$ in $\OO_{X,x}$).
 We can only say the following (where $S$ is once more arbitrary):
 
 a. If $X$ is simple over $S$, then the norm morphism defines an isomorphism from the open of $\repHilb_{X/S}^n$ that corresponds to the classification of étale covers of rank $n$ contained inside $X$ (cf. [§4.b](#fga-3-iv-section-4)) to the open of $\Symm_S^n(X)$ that corresponds to the $n$-cycles without multiple components.

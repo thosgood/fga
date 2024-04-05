@@ -1,31 +1,4 @@
 \def\Set{#{\mathtt{Set}}}
 \def\pr{#{\mathrm{pr}}}
-\def\Gm{#{\mathrm{G}_\mathrm{m}}}
-\def\id{#{\operatorname{id}}}
-\def\Hom{#{\operatorname{Hom}}}
-\def\Spec{#{\operatorname{Spec}}}
-\def\Ker{#{\operatorname{Ker}}}
-\def\GL{#{\operatorname{GL}}}
 \def\sGL{#{\operatorname{\mathscr{G}\kern -2pt\mathscr{L}}}}
 \def\GP{#{\operatorname{GP}}}
-\def\Aut{#{\operatorname{Aut}}}
-\def\OO{#\mathcal{\x}}
-
-\def\sh[x]{#{\mathscr{\x}}}
-
-\def\footnote[x]{(\x)}
-\def\note[x]{ \footnote{\em{[Trans.] \x}}}
-\def\comp{\em{[Comp.]}}
-\def\todo[x]{\strong{\em{TO-DO: \x}}}
-\def\fref[x]{[\x \strong{(?)}]}
-\def\oldpage[x]{}
-
-\def\proof[body]{
-  \scope{
-    \put\transclude/toc{false}
-    \subtree{
-      \taxon{proof}
-      \body
-    }
-  }
-}

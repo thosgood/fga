@@ -1,0 +1,60 @@
+\def\footnote[x]{(\x)}
+\def\note[x]{ \footnote{\em{[Trans.] \x}}}
+\def\comp{\em{[Comp.]}}
+\def\todo[x]{\strong{\em{TO-DO: \x}}}
+\def\fref[x]{[\x \strong{(?)}]}
+\def\oldpage[x]{}
+
+\def\proof[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{proof}
+      \body
+    }
+  }
+}
+
+\def\sh[x]{#{\mathscr{\x}}}
+
+\def\from{#{\leftarrow}}
+\def\simto{#{\xrightarrow{\sim}}}
+\def\simfrom{#{\xleftarrow{\sim}}}
+
+\def\id{#{\operatorname{id}}}
+\def\Ker{#{\operatorname{Ker}}}
+\def\Spec{#{\operatorname{Spec}}}
+\def\HH{#{\operatorname{H}}}
+\def\GL{#{\operatorname{GL}}}
+\def\Ga{#{\operatorname{G_a}}}
+\def\Gm{#{\operatorname{G_m}}}
+\def\SL{#{\operatorname{SL}}}
+\def\Sp{#{\operatorname{Sp}}}
+\def\Pro{#{\operatorname{Pro}}}
+\def\RR{#{\operatorname{R}}}
+\def\op{#{\circ}}
+\def\OO{#{\mathcal{O}}}
+
+\def\Hom{#{\operatorname{Hom}}}
+\def\shHom{#{\mathscr{H}\kern -2.5pt\mathit{om}}}
+\def\repHom{#{\underline{\Hom}}}
+\def\Aut{#{\operatorname{Aut}}}
+\def\shAut{#{\mathscr{A}\kern -1.75pt\mathit{ut}}}
+\def\repAut{#{\underline{\Aut}}}
+\def\Tor{#{\operatorname{Tor}}}
+\def\shTor{#{\mathscr{T}\kern -2.75pt\mathit{or}}}
+\def\Ext{#{\operatorname{Ext}}}
+\def\shExt{#{\mathscr{E}\kern -1.5pt\mathit{xt}}}
+\def\Quot{#{\operatorname{Quot}}}
+\def\shQuot{#{\mathscr{Q}\kern -.75pt\mathit{out}}}
+\def\repQuot{#{\underline{\Quot}}}
+\def\Grass{#{\operatorname{Grass}}}
+\def\shGrass{#{\mathscr{G}\kern -1.25pt\mathit{rass}}}
+\def\repGrass{#{\underline{\Grass}}}
+\def\Hilb{#{\operatorname{Hilb}}}
+\def\shHilb{#{\mathscr{H}\kern -1.75pt\mathit{ilb}}}
+\def\repHilb{#{\underline{\Hilb}}}
+\def\Pic{#{\operatorname{Pic}}}
+\def\repPic{#{\underline{\Pic}}}
+\def\repIsom{#{\underline{\operatorname{Isom}}}}
+\def\repImm{#{\underline{\operatorname{Imm}}}}

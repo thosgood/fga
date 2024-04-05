@@ -3,8 +3,8 @@
 \providecommand{\scr}[1]{{\mathscr{#1}}}
 \renewcommand{\cal}[1]{{\mathcal{#1}}}
 \renewcommand{\frak}[1]{{\mathfrak{#1}}}
-\renewcommand{\geq}{\geqslant}
-\renewcommand{\leq}{\leqslant}
+\renewcommand{\geqslant}{\geqslantslant}
+\renewcommand{\leqslant}{\leqslantslant}
 
 \providecommand{\Spec}{\operatorname{Spec}}
 \providecommand{\red}{\mathrm{red}}
@@ -344,15 +344,15 @@ Indeed, every divisor on $V$ can be extended to a divisor on $X$ by taking its "
 \oldpage{236-12}For (ii), using Chow's lemma we can reduce to the case where $X$ is projective, and thus embedded into some $\mathbb{P}_k^n$;
 we can also assume that $X$ is connected.
 If $\dim X=1$, then $X$ is simple over $k$, and we can apply (i).
-If $\dim X\geq2$, then we can use a variant of the known "equivalence criteria", which implies that there exists a finite number of curves $Y_i$, simple over $X$ (obtained as intersections of $X$ with suitable linear subspaces of $\mathbb{P}_k^n$), such that $\repPic_{X/k}^\tau\to\prod_i\repPic_{Y_i/k}^\tau$ is a monomorphism, and induces a fortiori a monomorphism for the connected components.
+If $\dim X\geqslant2$, then we can use a variant of the known "equivalence criteria", which implies that there exists a finite number of curves $Y_i$, simple over $X$ (obtained as intersections of $X$ with suitable linear subspaces of $\mathbb{P}_k^n$), such that $\repPic_{X/k}^\tau\to\prod_i\repPic_{Y_i/k}^\tau$ is a monomorphism, and induces a fortiori a monomorphism for the connected components.
 Since the codomain is proper over $k$ by the above, and since we are talking about a homomorphism of group schemes, which is necessarily a closed immersion, it follows that $\repPic_{X/k}^0$ is also proper over $k$.
 We can avoid recourse to delicate equivalence criteria by using the structure of commutative algebraic groups over an algebraically closed field (thanks to Chevalley--Borel);
 we are then reduced to proving that every morphism from the affine line with the origin removed into $\repPic_{X/S}^\tau$ is constant, which is equivalent to saying that every invertible module on $X[t,t^{-1}]$ comes from an invertible module on $X$, which is a result that is well known and elementary and does not even use the fact that $X$ is proper over $k$ (the hypothesis that $X$ is normal allowing us to immediately reduce to the case where $X$ is regular).
 :::
 
 ::: {.rmenv #fga-3-vi-remark-2.2 title="Remark 2.2" latex="{Remark 2.2}"}
-The above proof of (i) holds true even if we only suppose that $f$ is flat and that its fibres $X_s$ are locally complete intersections and simple over $k(s)$ in codimension $\leq2$, taking into account the following fact which is proven in [@Gro1960b]: a Noetherian complete intersection local ring that is regular in codimension $\leq3$ is factorial ("Samuel's conjecture").
-We note that the result becomes false if we replace "codimension $\leq2$" by "codimension $\leq1$", i.e. by the hypothesis "normal", as we can convince ourself by considering the example of a family of non-singular quadratics that degenerate to a quadratic cone.
+The above proof of (i) holds true even if we only suppose that $f$ is flat and that its fibres $X_s$ are locally complete intersections and simple over $k(s)$ in codimension $\leqslant2$, taking into account the following fact which is proven in [@Gro1960b]: a Noetherian complete intersection local ring that is regular in codimension $\leqslant3$ is factorial ("Samuel's conjecture").
+We note that the result becomes false if we replace "codimension $\leqslant2$" by "codimension $\leqslant1$", i.e. by the hypothesis "normal", as we can convince ourself by considering the example of a family of non-singular quadratics that degenerate to a quadratic cone.
 :::
 
 ::: {.itenv #fga-3-vi-corollary-2.3 title="Corollary 2.3" latex="{Corollary 2.3}"}
@@ -427,7 +427,7 @@ Serre noted, even before the construction of Picard schemes, that the invariance
 If we denote by $\alpha$, $\mu$, and $\lambda$ the dimensions of the abelian, multiplicative, and additive parts (respectively) of $\repPic_{X_s/k(s)}$, and we similarly define $\alpha'$, $\mu'$, and $\lambda'$, then the known relations can be expressed as the following inequalities:
 $$
   \alpha+\mu+\lambda
-  \geq \alpha'+\mu'+\lambda'
+  \geqslant \alpha'+\mu'+\lambda'
 \tag{$\ast$}
 $$
 (satisfied provided that $\repPic_{X/S}$ exists, and thus probably in all cases), and this inequality, for $\lambda=\lambda'=0$, reduces to an equality, satisfied under the same existence hypotheses:
@@ -438,15 +438,15 @@ $$
 We also have
 $$
   2\alpha+\mu
-  \leq 2\alpha'+\mu'
+  \leqslant 2\alpha'+\mu'
 \tag{$\ast\ast$}
 $$
 \oldpage{236-15}by the argument of Serre, if the $X_s$ are separable (without even supposing the existence of $\repPic_{X/S}^\tau$), or if the ${}_n\repPic_{X/S}$ (kernels of the $\varphi_n$ into the Picard functor) are *separated* over $S$ (taking into account the fact that they are étale over $S$, thanks to [(2.5)](#fga-3-vi-theorem-2.5)).
 We are inclined to conjecture that ($\ast$) is an equality in all cases, or at least if the $X_s$ are separable, and also that we have inequalities
 $$
   \begin{aligned}
-    \alpha &\leq \alpha'
-  \\\lambda &\geq \lambda'
+    \alpha &\leqslant \alpha'
+  \\\lambda &\geqslant \lambda'
   \end{aligned}
 \tag{$\ast\ast\ast$}
 $$
@@ -475,7 +475,7 @@ iii. Let $X$ be a proper scheme over a field.
   Then we have
   $$
     \dim\repPic_{X/k}
-    \leq \dim\HH^1(X,\OO_X)
+    \leqslant \dim\HH^1(X,\OO_X)
   $$
   with equality if and only if $\repPic_{X/k}$ is simple over $k$;
   this is always the case if $k$ is of characteristic $0$.
@@ -693,7 +693,7 @@ i. Let $f\colon X\to Y$ be a surjective morphism.
 
 ii. \oldpage{C-08}Suppose that $Y$ is projective over $S$, endowed with an invertible module that is ample with respect to $S$, and let $X$ be the scheme of zeros of an arbitrary section of this module.
   Let $f\colon X\to Y$ be the canonical immersion.
-  Finally, suppose that the irreducible components of the fibres of $Y/S$ are of dimension $\geq3$.
+  Finally, suppose that the irreducible components of the fibres of $Y/S$ are of dimension $\geqslant3$.
   Then $f^*\colon\repPic_{Y/S}\to\repPic_{X/S}$ is of finite type.
 
 iii. Suppose that $X$ is projective over $S$, and that all its geometric fibres are integral and of dimension $n$.
@@ -711,7 +711,7 @@ Then using (i), Chow's lemma, and (iii), we find:
 
 v. $\repPic_{X/S}^\tau$ is of finite type over $S$.
 
-Generally, the conjunction of (i) for a finite morphism and (ii) allows us to reduce, for the majority of finiteness questions, to the case where $X/S$ has integral and normal geometric fibres of dimension $\leq2$;
+Generally, the conjunction of (i) for a finite morphism and (ii) allows us to reduce, for the majority of finiteness questions, to the case where $X/S$ has integral and normal geometric fibres of dimension $\leqslant2$;
 often, even, applying (i) for a surjective but not-necessarily finite morphism, along with the resolution of singularities of algebraic surfaces (due, in arbitrary characteristic, to Abhyankar), we can reduce to the case where $X/S$ is even simple, and thus has non-singular geometric fibres of dimension $2$.
 This allows us, for example, taking into account (v) and the Picard--Igusa inequality bounding the rank of the Néron--Severi group of a non-singular projective surface, to prove the following generalisation of the Néron finiteness theorem:
 
@@ -721,7 +721,7 @@ vi. Let $X/S$ be proper over $S$, but otherwise arbitrary.
 The same method of reduction to the case of non-singular surfaces, and known theorems for this case (such as the Néron finiteness theorem, and the fact that the intersection form on the Néron--Severi group is non-degenerate) implies:
 
 vii. Let $X$ be a proper scheme over an algebraically closed field.
-  Then there exists a finite number of integral closed curves $C_i$ (for $1\leq i\leq r$) in $X$, such that the following property is satisfied:
+  Then there exists a finite number of integral closed curves $C_i$ (for $1\leqslant i\leqslant r$) in $X$, such that the following property is satisfied:
   for every subset $M$ of $\repPic_{X/k}$, $M$ is quasi-compact if and only if the integers $\deg\sh{L}_{C'_i}$ (for $\sh{L}\in M$) are bounded (where $C'_i$ denotes the normalisation of $C_i$).
 
 In the above we can take $r$ to be the rank of the Néron--Severi group.
@@ -763,7 +763,7 @@ Mumford has recently proven a slightly weaker form of (iii), where the criteria 
 His argument is extremely simple, and is inspired by the proof of an amplitude criterion by Nakai (stated by the latter for non-singular surfaces, and generalised by Mumford to arbitrary projective morphisms).
 It seems to me that this argument only works under a gentle additional restriction on the fibres of $X/S$ (Serre's ($\text{S}_2$) property), which is satisfied if the geometric fibres are normal.
 We then use this restricted criterion in the proof of (ii): criterion (i) allows us to reduce to the case where $Y/S$ is flat with integral and normal geometric fibres, and applying the Mumford criteria we easily reduce to the case where $X/S$ satisfies the same conditions.
-From the dimension hypothesis it then follows that the geometric fibres of $Y$ and of $X$ are of depth $\geq2$ at their closed points, which allows us to apply the "equivalence criteria" under the form that is given in [@Gro1960b, XII], and finishes the proof of (ii).
+From the dimension hypothesis it then follows that the geometric fibres of $Y$ and of $X$ are of depth $\geqslant2$ at their closed points, which allows us to apply the "equivalence criteria" under the form that is given in [@Gro1960b, XII], and finishes the proof of (ii).
 Once we have (i) and (ii), it is not difficult in the Mumford criteria to discard the hypothesis that the fibres be normal, and to prove it under the stronger form given in (iii).
 \oldpage{C-11}We note finally that the proof of (i) and (ii) also shows that, in the case where $S$ is the spectrum of a field $k$, the morphism $\repPic_{Y/k}\to\repPic_{X/k}$ is *affine* (and not only of finite type).
 :::
