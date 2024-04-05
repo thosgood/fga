@@ -6,4 +6,134 @@
 
 \put\transclude/numbered{false}
 
+\subtree[fga3.iii-5-theorem-5.1]{
+  \taxon{theorem}
+  \number{5.1}
+  
+  \p{
+    Let #{X=\Spec(B)} be an affine scheme, #{\mathcal{R}} an equivalence pre-relation on #{X}, whose component #{R_1} is affine: say, #{R_1=\Spec(C)}.
+    We suppose that the first projection #{p_1\colon R_1\to X} is a finite and locally free morphism, i.e. that the corresponding homomorphism of rings #{p'_1\colon B\to C} makes #{C} a projective #{B}-module of finite type.
+    Let #{A} be the subring of #{B} given by the kernel of the pair of homomorphisms #{p'_1,p'_2\colon B\rightrightarrows C} (i.e. the set of elements #{b} such that #{p'_1(b)=p'_2(b)}).
+    Let #{Y=\Spec(A)}, and #{f\colon X\to Y} the morphism defined by the embedding of #{A} into #{B}.
+    \oldpage{212-13}
+    Under these conditions:
+    \todo{the following list should be i, ii, etc.}
 
+    \ol{
+      \li{
+        #{B} is integral over #{A}, i.e. #{f} is an integral morphism.
+      }
+
+      \li{
+        The morphism #{f} is surjective, and its fibres are the set-theoretic equivalence classes #{p_2(p_1^{-1}(x))} in #{X} modulo #{\mathcal{R}}, and the topology of #{Y} is the quotient of that of #{X}.
+      }
+
+      \li{
+        #{Y} is the quotient of #{X} by #{\mathcal{R}} in the category of preschemes.
+      }
+
+      \li{
+        If #{\mathcal{R}} comes from an equivalence _relation_, then the morphism #{f\colon X\to Y} is finite and locally free (i.e. #{B} is a projective #{A}-module of finite type), and the equivalence relation is effective, i.e. #{R_1\to X\times_Y X} is an isomorphism.
+      }
+    }
+  }
+}
+
+\p{
+  This theorem generalises the well-known theorem concerning the case of a finite group #{G} acting by automorphisms on the ring #{B}, and with ring #{A} of invariants, and the proof is analogous to the known proof.
+  We can make (iii) more precise as follows:
+}
+
+\subtree[fga3.iii-5-corollary-5.2]{
+  \taxon{corollary}
+  \number{5.2}
+  
+  \p{
+    The canonical morphism #{R_1\to X\times_Y X} is \em{surjective}.
+  }
+}
+
+\p{
+  Let #{\mathcal{R}} continue to be a "finite and locally free" equivalence pre-relation on #{X}, but with #{X} now being an arbitrary prescheme.
+  Suppose that we can find a prescheme #{Y} and a morphism #{f\colon X\to Y} such that #{fp_1=fp_2}, and further such that the sequence
+  ##{
+    \mathcal{O}_Y \to f_*(\mathcal{O}_X) \rightrightarrows g_*(\mathcal{O}_R)
+  }
+  of homomorphisms of sheaves of rings on #{Y} is exact (where #{g=fp_i}).
+  It then follows from the theorem that we have conclusions (i) to (iv) analogous to those of the theorem, and, in particular, by (iii), #{Y} is the quotient of #{X} by #{\mathcal{R}}, and thus determined up to unique isomorphism.
+  Under these conditions, we say that the equivalence pre-relation #{\mathcal{R}} on #{X} is \em{admissible}.
+  With this definition:
+}
+
+\subtree[fga3.iii-5-theorem-5.3]{
+  \taxon{theorem}
+  \number{5.3}
+
+  \p{
+    Let #{X} be a prescheme, and #{\mathcal{R}} an equivalence pre-relation on #{X} such that #{p_1\colon R_1\to X} is a finite and locally free morphism.
+    For #{\mathcal{R}} to be admissible, it is necessary and sufficient for every set-theoretic equivalence class #{p_2(p_1^{-1}(x))} in #{X} modulo #{\mathcal{R}} to be contained in an affine open subset (a condition that is always satisfied if every finite subset of #{X} is contained in an affine open subset, for example if #{X} is quasi-projective over an affine scheme).
+  }
+}
+
+\p{
+  We can in fact easily show that every equivalence class modulo #{\mathcal{R}} in #{X} is then contained in an affine open subset that is \em{stable} under #{\mathcal{R}}, and we construct the quotient #{Y} by gluing the pieces obtained by applying \ref{fga3.iii-5-theorem-5.1}.
+}
+
+\subtree[fga3.iii-5-corollary-5.4]{
+  \taxon{corollary}
+  \number{5.4}
+  
+  \p{
+    \oldpage{212-14}
+    Suppose that this condition is satisfied, and, further, that #{\mathcal{R}} comes from an equivalence relation.
+    Then the equivalence relation is question is effective, i.e. #{R_1\to X\times_Y X} is an isomorphism, and #{f\colon X\to Y} is a finite and locally free morphism.
+  }
+}
+
+\p{
+  We then immediately conclude, by descent, the following:
+}
+
+\subtree[fga3.iii-5-corollary-5.5]{
+  \taxon{corollary}
+  \number{5.5}
+
+  \p{
+    Under the conditions of \ref{fga3.iii-5-corollary-5.4}, for #{X} to be everywhere of rank #{n} over #{Y}, it is necessary and sufficient that #{(R_1,p_1)} be everywhere of rank #{n} over #{X}.
+    If #{X} and #{R_1} are #{Z}-preschemes, and #{p_1} and #{p_2} are #{Z}-morphisms (and thus #{Y} a #{Z}-prescheme), then #{X} is flat over #{Z} if and only if #{Y} is flat over #{Z}.
+  }
+}
+
+\p{
+  In summary:
+}
+
+\subtree{
+  \taxon{scholium}
+
+  \p{
+    The data of a finite, locally free, and surjective morphism #{f\colon X\to Y} of preschemes is equivalent to the data of a prescheme #{X} endowed with an equivalence relation #{R} such that #{p_1\colon R\to X} is finite and locally free, and such that every class #{p_2(p_1^{-1}(x))} is contained in an affine open subset.
+  }
+}
+
+\subtree[fga3.iii-5-remarks-5.6]{
+  \taxon{remarks}
+  \number{5.6}
+
+  \ol{
+    \li{
+      We have not needed to make any Noetherian hypothesis.
+    }
+
+    \li{
+      This idea of passing to the quotient contains, as a particular case, the "inseparable descent" of Cartier, which corresponds to the determination of finite and locally free morphisms #{f\colon X\to Y} such that #{f_*(\mathcal{O}_X)} admits a #{p}-basis with respect to #{\mathcal{O}_Y} (where #{X} is a given prescheme whose sheaf #{\mathcal{O}_X} is annihilated by the prime number #{p>0}).
+      We note that this result can also be easily expressed without any regularity hypothesis on the local rings, and without supposing that #{X} is an algebraic scheme over a field.
+      The theory of Jacobson–Bourbaki is obtained by taking #{X} to be the spectrum of a field of characteristic #{p}.
+    }
+
+    \li{
+      Gabriel had already obtained a particular case of \ref{fga3.iii-5-theorem-5.3} in the theory of passing to the quotient for finite commutative groups over a field #{k}.
+      (Compare with \ref{fga3.iii-7-corollary-7.4}).
+    }
+  }
+}

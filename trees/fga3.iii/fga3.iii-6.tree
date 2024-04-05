@@ -6,4 +6,127 @@
 
 \put\transclude/numbered{false}
 
+\subtree[fga3.iii-6-theorem-6.1]{
+  \taxon{theorem}
+  \number{6.1}
 
+  \p{
+    \oldpage{212-15}
+    Let #{S} be a \em{locally Noetherian} prescheme, #{X} a \em{quasi-projective} #{S}-scheme, and #{\mathcal{R}} an equivalence pre-relation on #{X}, such that:
+    \todo{the following list should be a, b}
+
+    \ol{
+      \li{
+        #{p_1\colon R_1\to X} is proper and flat; and
+      }
+
+      \li{
+        #{R_1\to X\times_S X} is a finite morphism (or, equivalently, by (a), a morphism with finite fibres, which is a condition that is automatically satisfied if #{\mathcal{R}} comes from an equivalence relation).
+      }
+    }
+
+    Under these conditions:
+    \todo{the following list should be i, ii, etc.}
+
+    \ol{
+      \li{
+        #{Y=X/\mathcal{R}} exists, and (if #{S} is Noetherian) is quasi-projective over #{S}.
+        \note{\comp The fact that #{Y=X/\mathcal{R}} is quasi-projective over #{S} has only been proven, for now, in the case where #{\mathcal{R}} comes from an equivalence relation.}
+      }
+
+      \li{
+        The canonical morphism #{f\colon X\to Y} is surjective, proper, and open, and its fibres are the equivalence classes #{p_2(p_1^{-1}(x))} in #{X} modulo #{\mathcal{R}}, and so #{Y} can be identified with the topological quotient space of #{X} by the set-theoretic equivalence relation defined by #{\mathcal{R}}.
+        Finally, #{R_1\to X\times_Y X} is surjective.
+      }
+
+      \li{
+        If #{\mathcal{R}} comes from an equivalence relation, then the equivalence relation in question is effective, i.e. #{R_1\to X\times_Y X} is an isomorphism, and, further, #{f\colon X\to Y} is flat (and thus faithfully flat).
+      }
+    }
+  }
+
+  \proof{
+    \p{
+      For the proof, we can reduce to \ref{fga3.iii-5-theorem-5.1} by considering suitable quasi-sections of #{X} for #{\mathcal{R}}, with the proof being analogous to the construction of algebraic quotient groups in the \em{Séminaire Chevalley}.
+    }
+  }
+}
+
+\p{
+  In summary:
+}
+
+\subtree{
+  \taxon{scholium}
+
+  \p{
+    Let #{X} be quasi-projective over #{S}, with #{S} locally Noetherian.
+    Then the data of a proper, faithfully flat, and surjective morphism #{f\colon X\to Y} from #{X} to an #{S}-prescheme #{Y} is equivalent to the data of an equivalence relation #{R} on #{X} such that #{p_1\colon R\to X} is proper and flat.
+  }
+}
+
+\p{
+  The same method gives the following result:
+}
+
+\subtree[fga3.iii-6-theorem-6.2]{
+  \taxon{theorem}
+  \number{6.2}
+
+  \p{
+    Let #{S} be a Noetherian prescheme, #{X} a prescheme of finite type over #{S}, and #{\mathcal{R}} an equivalence pre-relation on the #{S}-prescheme #{X}.
+    Suppose that
+    \todo{the following list should be a, b}
+
+    \ol{
+      \li{
+        #{p_1\colon R_1\to X} is flat and of finite type; and
+      }
+      \li{
+        the morphism #{R_1\to X\times_S X} is quasi-finite (i.e. has finite fibres).
+      }
+    }
+
+    Then there exists a \em{dense} open subset #{U} of #{X} that is \em{saturated} for #{\mathcal{R}}, such that:
+    \todo{the following list should be i, ii, etc.}
+
+    \ol{
+      \li{
+        If #{\mathcal{R}_U} is the equivalence pre-relation induced by #{\mathcal{R}} on #{U}, then #{U/\mathcal{R}_U} exists, and is of finite type over #{S}.
+      }
+
+      \li{
+        The canonical morphism #{U\to U/\mathcal{R}_U} is surjective and open, and its fibres are the set-theoretic equivalence classes for #{\mathcal{R}_U} (and thus #{U/\mathcal{R}_U} is a topological quotient space of #{U} by the set-theoretic equivalence relation defined by #{\mathcal{R}_U}).
+        Finally, the morphism #{(\mathcal{R}_U)_1\to U\times_{U/\mathcal{R}_U}U} is surjective.
+      }
+
+      \li{
+        If #{\mathcal{R}} comes from an equivalence relation, then we can suppose that #{U\to U/\mathcal{R}_U} is faithfully flat and that #{\mathcal{R}_U} is effective.
+      }
+    }
+  }
+}
+
+
+\p{
+  \oldpage{212-16}
+  This is a result of an essentially "birational" nature.
+}
+
+\subtree[fga3.iii-6-remarks-6.3]{
+  \taxon{remarks}
+  \number{6.3}
+
+  \ol{
+    \li{
+      I do not know if, in \ref{fga3.iii-6-theorem-6.1} and \ref{fga3.iii-6-theorem-6.2}, hypothesis (b) is useless.
+      In practice, it obliges us, in the passage to the quotient by groups, to restrict to he case where the stabilisers are all finite groups.
+    }
+
+    \li{
+      We can ask if there are results analogous to \ref{fga3.iii-6-theorem-6.1} and \ref{fga3.iii-6-theorem-6.2} without any flatness hypothesis.
+      I have no counter example in this direction.
+      However, even keeping the flatness hypothesis, and restricting to equivalence relations such that #{p_1\colon R\to X} is flat and quasi-finite (but not finite), and with #{X} affine, it can still be the case that #{R} is not effective: take the equivalence relations induced on the affine open subsets covering the Nagata variety (or a group with two elements acting in a "non-admissible" way).
+    }
+  }
+}
