@@ -6,4 +6,56 @@
 
 \put\transclude/numbered{false}
 
+\p{
+  We now suppose that #{\mathcal{C}} is an arbitrary category.
+  Let #{G} and #{X} be objects of #{\mathcal{C}}, and suppose that #{G} is a #{\mathcal{C}}-group with operators on the object #{X}.
+  This implies (cf. [FGA 3.II, §A.1](fga3.ii-a.1)) that, for every object #{T} of #{\mathcal{C}}, we have a group structure on #{G(T)}, and the structure of an operator domain on #{X(T)} acting on #{G(T)}, such that, for variable #{T}, the structures in question "vary functorially" in #{T}.
+  If the products #{G\times G} and #{G\times X} exist in #{\mathcal{C}}, then such a structure can also be defined as a pair of morphisms
+  ##{
+    \begin{gathered}
+      G\times G\to G
+    \\\pi\colon G\times X\to X
+    \end{gathered}
+  }
+  subject to the condition that, for every object #{T} of #{\mathcal{C}}, the corresponding composition laws for the sets #{G(T)} and #{X(T)} make #{G(T)} into a group acting on #{X(T)}.
+  Translating this axiom into the commutativity of certain diagrams in #{\mathcal{C}} is easy, but tedious, and, in fact, perfectly useless in all cases known to me.
+}
 
+\p{
+  Suppose that #{G\times X} exists, and consider the two morphisms
+  ##{
+    p_1,p_2\colon G\times X\rightrightarrows X
+  }
+  \oldpage{212-07}
+  with
+  ##{
+    \begin{aligned}
+      p_1 &= \pr_1
+    \\p_2 &= \pi.
+    \end{aligned}
+  }
+  We immediately note that the pair #{(p_1,p_2)} is an equivalence pair if, and only if, for every object #{T} of #{\mathcal{C}}, the map
+  ##{
+    G(T)\times X(T)
+    \sim (G\times X)(T) \to X(T)\times X(T)
+  }
+  defined by this pair is injective, i.e. if the group #{G(T)} acts \em{freely} on the set #{X(T)}, i.e. if #{g\in G(T)}, #{x\in X(T)}, and #{g\cdot x=x}, then #{g} is the identity element of the group #{G(T)}.
+  We then say that #{G} \em{acts freely} on #{X} (or that #{X} is a \em{principal #{\mathcal{C}}-space under #{G}}).
+  The equivalence relation associated to the pair #{(p_1,p_2)} is then called the \em{equivalence relation defined by the group #{G}} acting freely on #{X}.
+  If #{X\times X} also exists, and we consider the morphism
+  ##{
+    p\colon G\times X\to X\times X
+  }
+  defined by the pair #{(p_1,p_2)}, then the condition that #{G} acts freely implies that #{p} is a \em{monomorphism}.
+}
+
+\p{
+  Of course, even if #{G} dose not act freely on #{X}, we still wish to have existence criteria for a quotient of #{X} by #{G}, i.e. for the cokernel of the above pair #{(p_1,p_2)}.
+}
+
+\p{
+  The cokernel in question will often be denoted by #{X/G}, or by #{X\backslash G} if #{G} acts on the left (with the previous notation being reserved for when #{G} acts on the right).
+  We note that, even if the "image" of #{G\times X} under #{p} exists (this image being defined, for example, as the smallest sub-object of #{X\times X} through which we can factor #{p}), say, #{R}, then this is usually not an equivalence relation on #{X}.
+  If we then try to pass directly to the quotient under #{R} (or, more precisely, under the pair of morphisms from #{R} to #{X} induced by the two projections #{\pr_i}), then we lose the particular characteristics of the original pair #{(p_1,p_2)}.
+  It is thus important to find a generalisation of the notion of equivalence relations, appealing directly to the pair defined by a #{\mathcal{C}}-group with operators.
+}
