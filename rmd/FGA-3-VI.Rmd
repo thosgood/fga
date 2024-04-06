@@ -276,7 +276,7 @@ If, further, $S$ is reduced, then $G^0$ is simple (and in particular, flat) over
 ::: {.proof}
 The first claim can be made more precise by noting that if, for some given $s\in S$, we have that $G\to S$ is universally open at the points of $G_s^0$, and if $G_s^0$ is separable over $k(s)$, then $G^0$ is a neighbourhood of $G_s^0$ (and it so happens that the hypotheses made on $s$ remain satisfied by all neighbouring points).
 A proof of this statement, which is independent of all the structure of the group, can be found in [@GD1960, IV, §7].
-The last claim in [(1.7)](#fga-3-vi-corollary-1.7), also independent of group structure and of any question of connected components, is a particular case of a flatness criteria given in [@Gro1960b, §5], which implies, more generally:
+The last claim in [(1.7)](#fga-3-vi-corollary-1.7), also independent of group structure and of any question of connected components, is a particular case of a flatness criterion given in [@Gro1960b, §5], which implies, more generally:
 :::
 
 ::: {.itenv #fga-3-vi-corollary-1.8 title="Corollary 1.8" latex="{Corollary 1.8}"}
@@ -336,7 +336,7 @@ ii. Let $X$ be a prescheme over a field $k$ that is proper and geometrically nor
 :::
 
 ::: {.proof}
-For (i), with the valuative criteria of [@GD1960, II, §7] it suffices to prove the following: if $S$ is the spectrum of a complete discrete valuation ring, and $U$ the open consisting of the generic point of $S$, then every rational section of $\repPic_{X/S}$ over $S$, i.e. every section over $U$, extends uniquely to a section over $S$.
+For (i), with the valuative criterion of [@GD1960, II, §7] it suffices to prove the following: if $S$ is the spectrum of a complete discrete valuation ring, and $U$ the open consisting of the generic point of $S$, then every rational section of $\repPic_{X/S}$ over $S$, i.e. every section over $U$, extends uniquely to a section over $S$.
 Taking into account the definition of $\repPic_{X/S}$, this is equivalent to the following statement: for every invertible module $\sh{L}$ on $V=f^{-1}(U)$, there exists an invertible module on $X$ that extends $\sh{L}$, unique up to isomorphism.
 But this follows easily from the description of invertible modules on $V$ (resp. on $X$) in terms of the classes of "Cartier" divisors, taking into account the fact that the local rings of $X$ are regular (since $X$ is simple over $S$, which is regular), and thus factorial, by Auslander, which implies that every divisor on $S$ is a Cartier divisor.
 Indeed, every divisor on $V$ can be extended to a divisor on $X$ by taking its "closure".
@@ -482,7 +482,7 @@ iii. Let $X$ be a proper scheme over a field.
 :::
 
 ::: {.proof}
-Claim (i) follows from [(2.5)](#fga-3-vi-theorem-2.5) and [(1.12)](#fga-3-vi-corollary-1.12), and (ii) follows from the infinitesimal criteria for simple morphisms and a well-known obstruction calculation, taking into account the fact that (by the "semi-continuous theorem") the hypothesis made on $s$ will still hold true for neighbouring points.
+Claim (i) follows from [(2.5)](#fga-3-vi-theorem-2.5) and [(1.12)](#fga-3-vi-corollary-1.12), and (ii) follows from the infinitesimal criterion for simple morphisms and a well-known obstruction calculation, taking into account the fact that (by the "semi-continuous theorem") the hypothesis made on $s$ will still hold true for neighbouring points.
 Finally, (iii) follows from the fact that $\HH^1(X,\OO_X)$ is isomorphic to the Zariski tangent space at the identity element of $\repPic_{X/k}$;
 the last claim is a particular case of a theorem of Cartier, saying that a "formal group" in characteristic $0$ is formally simple over $k$.
 :::
@@ -747,7 +747,7 @@ viii. Let $X/k$ be a proper scheme over a field, and $\sh{L}$ an invertible modu
     $$
     \oldpage{C-10}(i.e. (b) is true for $F=\sh{L}^{\otimes m}(n)$).
 
-  For the sufficiency of this last condition, note that it implies that the Hilbert polynomials of the $\sh{L}^{\otimes m}$ are all equal, and thus, by the Mumford criteria (iii), the $\sh{L}^{\otimes m}$ remain in a quasi-compact subset of $\repPic_{X/k}$, i.e. we have (a).
+  For the sufficiency of this last condition, note that it implies that the Hilbert polynomials of the $\sh{L}^{\otimes m}$ are all equal, and thus, by the Mumford criterion (iii), the $\sh{L}^{\otimes m}$ remain in a quasi-compact subset of $\repPic_{X/k}$, i.e. we have (a).
   Conditions (b), (b'), and (c) should be considered as variants (for an arbitrary proper scheme) of the notion of *numerical equivalence*, usually defined for non-singular projective varieties.
   For such varieties, the equivalence of (a) and (c) was evidently well known (Matsusaka).
 
@@ -759,11 +759,11 @@ ix. Let $f\colon X\to S$ be a flat projective morphism whose geometric fibres ar
 We restrict ourselves to some comments on the proofs of the key results (i), (ii), and (iii) (result (iv) is a little bit different from the others, and can be proven using only (i) for radicial surjective finite morphisms, or, more precisely, for a Frobenius morphism).
 For (i), we use, in an essential way, the ideas of non-flat descent (see [FGA 3.I, p.9](#fga-3-i-section-A.2.c)).
 One finds that (thinking only of finiteness results) the lack of effectivity criteria for descent data is inoffensive.
-Mumford has recently proven a slightly weaker form of (iii), where the criteria makes use of *all* the coefficients of the Hilbert polynomial.
+Mumford has recently proven a slightly weaker form of (iii), where the criterion makes use of *all* the coefficients of the Hilbert polynomial.
 His argument is extremely simple, and is inspired by the proof of an amplitude criterion by Nakai (stated by the latter for non-singular surfaces, and generalised by Mumford to arbitrary projective morphisms).
 It seems to me that this argument only works under a gentle additional restriction on the fibres of $X/S$ (Serre's ($\text{S}_2$) property), which is satisfied if the geometric fibres are normal.
-We then use this restricted criterion in the proof of (ii): criterion (i) allows us to reduce to the case where $Y/S$ is flat with integral and normal geometric fibres, and applying the Mumford criteria we easily reduce to the case where $X/S$ satisfies the same conditions.
+We then use this restricted criterion in the proof of (ii): criterion (i) allows us to reduce to the case where $Y/S$ is flat with integral and normal geometric fibres, and applying the Mumford criterion we easily reduce to the case where $X/S$ satisfies the same conditions.
 From the dimension hypothesis it then follows that the geometric fibres of $Y$ and of $X$ are of depth $\geqslant2$ at their closed points, which allows us to apply the "equivalence criteria" under the form that is given in [@Gro1960b, XII], and finishes the proof of (ii).
-Once we have (i) and (ii), it is not difficult in the Mumford criteria to discard the hypothesis that the fibres be normal, and to prove it under the stronger form given in (iii).
+Once we have (i) and (ii), it is not difficult in the Mumford criterion to discard the hypothesis that the fibres be normal, and to prove it under the stronger form given in (iii).
 \oldpage{C-11}We note finally that the proof of (i) and (ii) also shows that, in the case where $S$ is the spectrum of a field $k$, the morphism $\repPic_{Y/k}\to\repPic_{X/k}$ is *affine* (and not only of finite type).
 :::
