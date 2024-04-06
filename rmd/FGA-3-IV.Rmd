@@ -15,7 +15,7 @@ Let $E$ and $E'$ be two sets of classes of coherent sheaves on $X$.
 Consider the classes of all sheaves of the form $\sh{F}\otimes\sh{F}'$, where $\sh{F}$ and $\sh{F}'$ are coherent sheaves on the _same_ $X_K$, with the class of $\sh{F}$ being in $E$ and the class of $\sh{F}'$ being in $E'$.
 We thus define a set of classes of coherent sheaves that we denote by $E\otimes E'$.
 We can similarly define $\shTor_i(E,E')$, etc.
-Generally, to every function $\sh{U}$ that sends each sequence $\sh{F}_1,\ldots,scr{F}_n$ of $n$ coherent sheaves on one single $X_K$ to a set $\sh{U}(\sh{F}_1,\ldots,\sh{F}_n)$ of coherent sheaves on $X_K$, and that has the evident property of compatibility with isomorphisms of sheaves and inverse images under change of base, we associate a function, denoted by the same notation $\sh{U}$, that sends each sequence $E_1,\ldots,E_n$ of $n$ sets of classes of coherent sheaves to a set $\sh{U}(E_1,\ldots,E_n)$ of classes of coherent sheaves.
+Generally, to every function $\sh{U}$ that sends each sequence $\sh{F}_1,\ldots,\sh{F}_n$ of $n$ coherent sheaves on one single $X_K$ to a set $\sh{U}(\sh{F}_1,\ldots,\sh{F}_n)$ of coherent sheaves on $X_K$, and that has the evident property of compatibility with isomorphisms of sheaves and inverse images under change of base, we associate a function, denoted by the same notation $\sh{U}$, that sends each sequence $E_1,\ldots,E_n$ of $n$ sets of classes of coherent sheaves to a set $\sh{U}(E_1,\ldots,E_n)$ of classes of coherent sheaves.
 
 Our aim in this section is to give a definition of certain sets of classes of sheaves, said to be _bounded_, and to show that the most standard operations $\sh{U}$, applied to bounded sets, give sets that are again bounded.
 
@@ -84,7 +84,7 @@ Then the classes of the structure sheaves of the $(\supp\sh{F})_\red$, where $\s
 Here, $(\supp\sh{F})_\red$ denotes the support of $\sh{F}$, endowed with the induced reduced structure, i.e. its structure sheaf is the quotient of $\OO_{X_K}$ by the largest sheaf of ideals that defines $\supp\sh{F}$.
 We can prove the analogous result to [(1.3)](#fga3.iv-proposition-1.3) for the sheaves canonically induced from $\sh{F}$ by the theory of primary decomposition;
 for example, the $\sh{F}/\sh{F}_i$, where the $\sh{F}_i$ are the primary subsheaves of $\sh{F}$ for the components of the support of $\sh{F}$, and minimal with respect to this property;
-or the $\OO_{X_K}/\mathfrak{p}$, where $\mathfrak{p}$ is a prime sheaf of ideals associated to $\sh{F}$, or the $\OO_{X_K}/\mathfrak{q}$, where the $\sh{q}$ is a primary sheaf of ideals associated to a component of the support of $\sh{F}$ (the reference field being algebraically closed).
+or the $\OO_{X_K}/\mathfrak{p}$, where $\mathfrak{p}$ is a prime sheaf of ideals associated to $\sh{F}$, or the $\OO_{X_K}/\mathfrak{q}$, where $\mathfrak{q}$ is a primary sheaf of ideals associated to a component of the support of $\sh{F}$ (the reference field being algebraically closed).
 
 ## Bounded families and the Hilbert polynomial {#fga3.iv-2}
 
@@ -219,7 +219,7 @@ $$
   \to \shHom\left( \bigwedge^{a-1}\sh{L}_{K'}, \OO_{\PP_K^r}(d) \right)
 $$
 where the first arrow is the canonical homomorphism coming from the exterior product, and the second comes from $s$.
-We then conclude by part (i) of [(1.2)](#fga3.iv-proposition-1.2).
+We then conclude by part (i) of [Proposition 1.2](#fga3.iv-proposition-1.2).
 :::
 
 The combination of the two lemmas above allows us to prove the following:
@@ -259,7 +259,7 @@ Thus the $N_r$ satisfy conditions (a) and (b<sub>s</sub>), and so, by the induct
 But $\sh{F}_{(s)}$ is an extension of $\sh{F}_{(r)}$ by $(N_r)_{(s)}$, and so, by part (ii) of [(1.2)](#fga3.iv-proposition-1.2), the $\sh{F}_{(s)}$ are bounded.
 For the last claim of [(2.2)](#fga3.iv-theorem-2.2), we note that the kernels $N_s$ of $\sh{F}\to\sh{F}_{(s)}$ are bounded, by part (i) of [(1.2)](#fga3.iv-proposition-1.2), and that the coefficient of the $n^{s-1}$ term in $P_{N_s}$ is bounded;
 then [(2.6)](#fga3.iv-lemma-2.6) proves that the coefficient of the following term is bounded below.
-This finishes the proof
+This finishes the proof.
 :::
 
 
@@ -385,9 +385,9 @@ once we have shown this result, we are led (replacing $S$ with $Z$) to the case 
 But then, if $U$ denotes the set of $s\in S$ such that the cohomology of the sheaves induced on the fibre $X_s$ by $\sh{G}(n)$ and $\sh{H}(n)$ is zero in dimension $>0$ for $n\geqslant\nu$, then we have already shown that $U$ is open, and condition (ii) will be satisfied after a change of base $S'\to S$ if and only if $S'\to S$ is bounded by $U$, which proves [Lemma 3.3](#fga3.iv-lemma-3.3).
 It thus remains to prove the following lemma:
 
-::: {.itenv #fga3.iv-lemma-3.4 title="Lemma 3.4" latex="Lemma 3.4"}
+::: {.itenv #fga3.iv-lemma-3.4 title="Lemma 3.4" latex="{Lemma 3.4}"}
 Let $S$ be a locally Noetherian prescheme, endowed with a quasi-coherent positively-graded algebra $\mathcal{S}_\bullet$ generated by $\mathcal{S}_1$, and let $M_\bullet$ be a quasi-coherent graded $\mathcal{S}$-module of finite type, $P$ a polynomial with rational coefficients, and $\nu$ and integer.
-Then there exists a (clearly uniquet) subprescheme $Z$ of $S$ that has the following property:
+Then there exists a (clearly unique) subprescheme $Z$ of $S$ that has the following property:
 for every prescheme $S'$ over $S$, for $M_n\otimes_{\OO_S}\OO_{S'}$ to be locally free of rank $P(n)$ for all $n\geqslant\nu$, it is necessary and sufficient that $S'\to S$ be bounded by $Z$.
 :::
 
@@ -587,7 +587,7 @@ acts naturally on $\sh{E}$, which thus becomes a "formally $\mathscr{A}$-princip
 
 We thus conclude:
 
-::: {.itenv #fga3.iv-corollary-5.2 title="Corollary 5.2"}
+::: {.itenv #fga3.iv-corollary-5.2 title="Corollary 5.2" latex="{Corollary 5.2}"}
 Suppose that there exists locally on $X$ an extension $\sh{G}$ of $\sh{G}_0$ to a quotient of $\sh{F}$ that is flat over $S$ (i.e. that the fibres of the sheaf $\sh{E}$ are non-empty).
 Then there exists a canonical obstruction class
 $$
@@ -599,7 +599,7 @@ If this class is zero, then the set $\sh{E}(X)$ of all possible extensions is a 
 
 The existence of a global extension is thus guaranteed, in particular, if $\HH^1(X,\sh{A})=0$.
 
-::: {.itenv #fga3.iv-corollary-5.3 title="Corollary 5.3"}
+::: {.itenv #fga3.iv-corollary-5.3 title="Corollary 5.3" latex="{Corollary 5.3}"}
 Suppose that $Q=\repQuot_\FXS$ exists (cf. [§4.a](#fga3.iv-4)) --- for example, suppose that $X$ is quasi-projective over some locally Noetherian $S$, and $\sh{F}$ is coherent.
 Let $x\in Q$, corresponding to a residue extension $K=k(x)$ of some $k(s)$ (where $s\in S$).
 \oldpage{221-22}
@@ -644,13 +644,13 @@ $$
 where the first factor on the right-hand side is the normal cone of $Y_0$ inside $X_0$.
 Using the fundamental criterion of simplicity [@Gro1960b, III, 3.1], we find, for example:
 
-::: {.itenv #fga3.iv-corollary-5.4 title="Corollary 5.4"}
+::: {.itenv #fga3.iv-corollary-5.4 title="Corollary 5.4" latex="{Corollary 5.4}"}
 Under the conditions of [(5.3)](#fga3.iv-corollary-5.3), suppose that $\sh{F}=\OO_X$, with $X$ flat over $S$, and that the closed subprescheme $Y_0$ of $X_0$ that corresponds to $\sh{G}_0$ is locally a complete intersection.
 Then the Zariski tangent space of $Q_s$ at $x$ is canonically isomorphic to $\HH^0(Y_0,\check{\sh{N}}_{X_0/Y_0})$.
 If $\HH^1(Y_0,\check{\sh{N}_{X_0/Y_0}})=0$, then the Hilbert prescheme $X$ is simple over $S$ at the point $x$ (where $\check{\sh{N}}_{X_0/Y_0}$ is the normal sheaf of $Y_0$ inside $X_0$).
 :::
 
-::: {.rmenv #fga3.iv-remark-5.5 title="Remark 5.5"}
+::: {.rmenv #fga3.iv-remark-5.5 title="Remark 5.5" latex="{Remark 5.5}"}
 This statement applies in particular when $Y_0$ is a complete intersection in $X_0$ defined by *one* single equation, i.e. is a positive "Cartier divisor".
 Then $\check{\sh{N}}_{X_0/Y_0}$ is isomorphic to the sheaf on $Y_0$ induced by the invertible sheaf $\sh{J}^{-1}$ on $X_0$ defined by the divisor $Y_0$.
 This is the situation that we find in particular in the study of families of positive divisors on a non-singular projective variety $X_0$.
@@ -667,20 +667,20 @@ Concerning the example of Zappa, we note that Mumford has even constructed an ir
 Blowing up the curves obtained, he also obtains a regular projective scheme of dimension $3$ over $\mathbb{C}$, whose formal scheme of modules is non-reduced at its generic point, or, equivalently, such that its local variety of modules, in the sense of analytic geometry, over $\mathbb{C}$ (see *Séminaire Cartan **13**, 1960/61*) is non-reduced at all its points.
 :::
 
-::: {.rmenv #fga3.iv-remark-5.6 title="Remark 5.6"}
-We have given, in [(5.4)](#fga3.iv-remark-5.4), a criterion for simplicity, which applies in particular to schemes of divisors.
+::: {.rmenv #fga3.iv-remark-5.6 title="Remark 5.6" latex="{Remark 5.6}"}
+We have given, in [Remark 5.4](#fga3.iv-remark-5.4), a criterion for simplicity, which applies in particular to schemes of divisors.
 Kodaira gave a different criterion in [@Kod1956], given by the vanishing of $\HH^1(X_0,\sh{L})$, where $\sh{L}=\sh{J}_0^{-1}$ is the invertible sheaf on $X_0$ defined by the divisor $Y_0$;
 this criterion holds whenever $S$ is the spectrum of a field of characteristic $0$, and is proved in [@Kod1956] by transcendental methods in the case where the base field is $\mathbb{C}$.
 We note here that, in general, $S$ now arbitrary, Kodaira's condition is a sufficient condition for the canonical morphism $D\to\repPic_{X/S}$ from the prescheme of divisors to the Picard prescheme of $X/S$ to be simple at the point $x$ in question (as we easily verify by the usual criterion for simplicity, once we have the existence of $\repPic_{X/S}$).
 Then if, further, $\repPic_{X/S}$ is simple over $S$ at the point given by the image of $x$ (for example if $\repPic_{X/S}$ is simple over $S$), then $D$ is simple over $S$ at $x$.
-On the other hand, Cartier has shown that every group prescheme locally of finite type over *a field $k$ of characteristic $0$* is simple over $k$>
+On the other hand, Cartier has shown that every group prescheme locally of finite type over *a field $k$ of characteristic $0$* is simple over $k$.
 By combining these two results, we recover the result of Kodaira.
 Note that it follows from these remarks that, over a field $K$ of characteristic $p>0$, if $\repPic_{X/S}$ is not simple over $k$ (which is the case whenever $X$ is the Igusa surface), then the condition $\HH^1(X_0,\sh{L})=0$ implies to the contrary that $D$ is not simple at $x$, and even not reduced at $x$ if $K$ is algebraically closed.
 :::
 
 To finish, we give the following result, which plays an important role in the differential study of fibred spaces:
 
-::: {.itenv #fga3.iv-proposition-5.7 title="Proposition 5.7"}
+::: {.itenv #fga3.iv-proposition-5.7 title="Proposition 5.7" latex="{Proposition 5.7}"}
 Let $X$ be a finite prescheme that is flat over $S$ and locally Noetherian, and let $Z$ be a prescheme over $S$ such that $\prod_{X/S}(Z/X)$ exists (which is the case if $Z$ is quasi-projective over $X$).
 If $Z$ is simple over $X$, then $\prod_{X/S}(Z/X)$ is simple over $S$.
 :::
