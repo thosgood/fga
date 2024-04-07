@@ -1,91 +1,3 @@
-## Bounded sets of sheaves: invariance properties {#fga3.iv-1}
-
-Let $k$ be a field, and $X$ a $k$-prescheme (which we take to be of finite type, for simplicity).
-For every extension $K/k$, we obtain a $K$-prescheme $X_K=X\otimes_k K$.
-If $\sh{F}$ is a coherent sheaf on $X_K$, and if $K'$ is an extension of $K$, then $\sh{F}\otimes_K K'=\sh{F}_{K'}$ is a quasi-coherent sheaf on $X_K\otimes_KK'=X_{K'}$.
-\oldpage{221-02}
-So, if $K$ and $K'$ are arbitrary extensions of $k$, and $\sh{F}$ a quasi-coherent sheaf on $X_K$ and $\sh{F}'$ a quasi-coherent sheaf on $X_{K'}$, then we say that $\sh{F}$ and $\sh{F}'$ are _equivalent_ if there exists an extension $K''/k$ as well as $k$-homomorphisms $K\to K''$ and $K'\to K''$ such that $\sh{F}_{K''}$ and $\sh{F}'_{K''}$ are isomorphic over $X_{K''}$.
-This defines an equivalence relation, and we are interested in the equivalence classes of sheaves under this relation, and of sets of such equivalence classes.
-Note that, if $X_0$ is of finite type over $k$, then every class of coherent sheaves can be defined by a coherent sheaf on $X_K$, where $K$ is some extension of $k$ _of finite type_.
-We can thus, in the definition of classes of coherent sheaves, restrict ourselves to _algebraically closed_ extensions of $k$, and we can also restrict ourselves to a fixed algebraically closed extension $\Omega$ of $k$, of infinite transcendence degree;
-two coherent sheaves $\sh{F}$ and $\sh{F}'$ on $X_\Omega$ are then equivalent if and only if there exists a $K$-automorphism $\sigma$ of $\Omega$ such that $\sh{F}\otimes_K(\Omega,\sigma)$ is isomorphic to $\sh{F}'$.
-Note that there is a bijective correspondence between classes of coherent sheaves under the first definition and under the second.
-
-Let $E$ and $E'$ be two sets of classes of coherent sheaves on $X$.
-Consider the classes of all sheaves of the form $\sh{F}\otimes\sh{F}'$, where $\sh{F}$ and $\sh{F}'$ are coherent sheaves on the _same_ $X_K$, with the class of $\sh{F}$ being in $E$ and the class of $\sh{F}'$ being in $E'$.
-We thus define a set of classes of coherent sheaves that we denote by $E\otimes E'$.
-We can similarly define $\shTor_i(E,E')$, etc.
-Generally, to every function $\sh{U}$ that sends each sequence $\sh{F}_1,\ldots,\sh{F}_n$ of $n$ coherent sheaves on one single $X_K$ to a set $\sh{U}(\sh{F}_1,\ldots,\sh{F}_n)$ of coherent sheaves on $X_K$, and that has the evident property of compatibility with isomorphisms of sheaves and inverse images under change of base, we associate a function, denoted by the same notation $\sh{U}$, that sends each sequence $E_1,\ldots,E_n$ of $n$ sets of classes of coherent sheaves to a set $\sh{U}(E_1,\ldots,E_n)$ of classes of coherent sheaves.
-
-Our aim in this section is to give a definition of certain sets of classes of sheaves, said to be _bounded_, and to show that the most standard operations $\sh{U}$, applied to bounded sets, give sets that are again bounded.
-
-Let $X$ be a prescheme of finite type over $S$, with $S$ _Noetherian_.
-For all $s\in S$, the fibre $X_s$ is a prescheme of finite type over $k(s)$, and we will consider the classes of coherent sheaves on $X_s$, in the above sense.
-This gives meaning to the phrase "class of coherent sheaves on a fibre of $X/S$", as well as to analogous phrases.
-Similarly, proceeding separately on each fibre, we can again consider operations such as $E\otimes E'$ etc. that send systems of sets of classes of coherent sheaves on the fibres of $X/S$ to sets of classes of coherent sheaves on the fibres of $X/S$.
-
-::: {.rmenv #fga3.iv-definition-1.1 title="Definition 1.1" latex="{Definition 1.1}"}
-\oldpage{221-03}
-Let $E$ be a set of classes of coherent sheaves on the fibres of $X/S$.
-We say that $E$ is _bounded_ if there exists a prescheme $S'$ of finite type over $S$, along with a coherent sheaf $\sh{F}'$ on $X'=X\times_S S'$, such that $E$ is contained in the set of classes of sheaves on the fibres of $X/S$ defined by $\sh{F}'$.
-:::
-
-This construction, by definition, sends $s\in S$ to the classes of sheaves $\sh{F}'\otimes_{S'}k(s')$, where $s'$ runs over the points of $S'$ over $s$ (so that $k(s')$ is an extension of $k(s)$, and $X\otimes (X_s)_{k(s')}$ can be identified with the fibre $X'\otimes_{S'}k(s')=X'_{s'}$ of $X'$ at $s'$).
-We can say that the bounded sets are those that are contained in an _algebraic family_ of coherent sheaves, parametrised by some $S'$ of finite type over $S$.
-
-A finite union of bounded sets is bounded (take the prescheme given by the sum of the parametrising preschemes $S_i$ defining the bounding algebraic families).
-A base change $T\to S$ sends a family which is bounded with respect to $X/S$ to a family which is bounded with respect to $X_T/T$, and the converse is true if $T\to S$ is surjective (or, more generally, if its image contains the $s$ which appear in the given family $E$ for $X/S$).
-This theoretically leads us to determine the bounded families only in the case where $S$ is the spectrum of an algebra of finite type over the ring of integers $\mathbb{Z}$.
-
-If $E$ and $E'$ are bounded families of classes of sheaves with respect to $X/S$, then $E\otimes E'$ is also bounded:
-indeed, if $E$ (resp. $E'$) is bounded by the algebraic families defined by $T\to S$ and $\sh{F}$ on $X_T$ (resp. $T'\to S$ and $\sh{F}'$ on $X_{T'}$), then $E\otimes E'$ is bounded by the algebraic family defined by $T''=T\times_S T'\to S$ and the sheaf $\sh{F}''$ on $X_{T''}$ given by the tensor product of the inverse images of $\sh{F}$ and $\sh{F}'$ on $X_{T''}$.
-This argument is correct only because the functor $\sh{F}\otimes\sh{F}'$ is right exact in both $\sh{F}$ and $\sh{F}'$, and thus commutates with base extension (and, in particular, with passing to the fibres).
-It is not applicable as-is to local operations, such as $\shTor_i(E,E')$, $\shHom(E,E')$, $\shExt^i(E,E')$.
-We can, however, show that these operations also send bounded sets to bounded sets, by proceeding as for $E\otimes E'$, but by also using results of the following type (all contained in [@Gro1960b, IV 6.11]):
-a bounded family $E$ is always bounded by an algebraic family defined by a coherent sheaf $\sh{F}$ on some $X_T$ (with $T$ of finite type over $S$) that is _flat_ with respect to $T$.
-(We "cut into bits" the initial space of parameters).
-\oldpage{221-04}
-Such flatness properties on suitable sheaves indeed ensure the commutativity of operations such as $\shTor_i(\sh{F},\sh{F}')$ with arbitrary base change.
-The same method applies to operations of a global nature:
-direct images and derived direct images of coherent sheaves under proper morphisms, global $\Ext$ with respect to proper morphisms (cf. [@GD1960, III §6]), etc.;
-all these operations send bounded families of sheaves to bounded families of sheaves (N.B. here the preschemes over which we are taking the various sheaves can change under the operations in question).
-
-The two claims that follow can be proven by _essentially_ the same flatness technique;
-for the primary decomposition on the fibres of a morphisms of finite type, see, in particular, [@GD1960, IV].
-
-::: {.itenv #fga3.iv-proposition-1.2 title="Proposition 1.2" latex="{Proposition 1.2}"}
-Let $E$ and $E'$ be bounded sets of classes of sheaves on the fibres of $X/S$, with $X$ assumed to be proper over $S$.
-Then
-
-i. the family of kernels, cokernels, and images of homomorphisms $\sh{F}\to\sh{F}'$ (where the class of $\sh{F}$ is in $E$ and the class of $\sh{F}'$ is in $E'$) is bounded;
-ii. the family of extensions $\sh{F}''$ of $\sh{F}$ by $\sh{F}'$ (where the class of $\sh{F}$ is in $E$ and the class of $\sh{F}'$ is in $E'$) is bounded.
-:::
-
-::: {.proof}
-After potentially applying a suitable base change, we can suppose that $E$ and $E'$ are defined by coherent sheaves $\sh{G}$ and $\sh{G}'$ (respectively) on some $X_T/T$, with $T$ of finite type over $S$.
-Further, we can suppose that certain flatness hypotheses are satisfied, implying that constructing the sheaves $f_T(\shHom_{\OO_{X_T}}(\sh{G},\sh{G}'))$ and $\shExt_{f_T}^1(\sh{G},\sh{G}')$ commutes with base change by an arbitrary morphism $T'\to T$.
-Further, we can suppose that the coherent sheaves above are locally free on $T$.
-So let $T_0$ and $T_1$ be the vector bundles on $T$ whose sheaves of germs of sections are (respectively) the above sheaves.
-We can then canonically define a homomorphism $\sh{G}_{T_0}\to\sh{G}'_{T_0}$ of coherent sheaves on $X_{T_0}$, along with an extension
-$$
-  0 \to \sh{G}_{T_1} \to \sh{G}'' \to \sh{G}'_{T_1} \to 0
-$$
-of coherent sheaves on $X_{T_1}$ that has the evident universal property.
-This second sheaf defines an algebraic family that bounds the family in question in (ii).
-\oldpage{221-05}
-This is also true for the kernel, cokernel, and image of the above homomorphism, and the consideration of this proves (i) (provided that we assume the cokernel to be flat with respect to $T_0$, in which case we can again reduce to cutting $T_0$ into pieces...).
-:::
-
-::: {.itenv #fga3.iv-proposition-1.3 title="Proposition 1.3" latex="{Proposition 1.3}"}
-Let $E$ be a bounded family of classes of sheaves on the fibres of $X/S$.
-Then the classes of the structure sheaves of the $(\supp\sh{F})_\red$, where $\sh{F}$ is a coherent sheaf on some $X_K$, with $K$ algebraically closed, and whose class is in $E$, form a bounded family.
-:::
-
-Here, $(\supp\sh{F})_\red$ denotes the support of $\sh{F}$, endowed with the induced reduced structure, i.e. its structure sheaf is the quotient of $\OO_{X_K}$ by the largest sheaf of ideals that defines $\supp\sh{F}$.
-We can prove the analogous result to [(1.3)](#fga3.iv-proposition-1.3) for the sheaves canonically induced from $\sh{F}$ by the theory of primary decomposition;
-for example, the $\sh{F}/\sh{F}_i$, where the $\sh{F}_i$ are the primary subsheaves of $\sh{F}$ for the components of the support of $\sh{F}$, and minimal with respect to this property;
-or the $\OO_{X_K}/\mathfrak{p}$, where $\mathfrak{p}$ is a prime sheaf of ideals associated to $\sh{F}$, or the $\OO_{X_K}/\mathfrak{q}$, where $\mathfrak{q}$ is a primary sheaf of ideals associated to a component of the support of $\sh{F}$ (the reference field being algebraically closed).
-
 ## Bounded families and the Hilbert polynomial {#fga3.iv-2}
 
 In the following, we assume that $X$ is projective over $S$, and endowed with a very ample sheaf, denoted by $\OO_X(1)$.
@@ -95,10 +7,10 @@ To each coherent sheaf $\sh{F}$ on $X_K$, we associate the function
 $$
   P_\sh{F}(n) = \text{the Euler--Poincaré characteristic of }\sh{F}(n)\text{ on }X_k
 $$
-which is a polynomial in the integer $n$, and called the _Hilbert polynomial_ of $\sh{F}$.
+which is a polynomial in the integer $n$, and called the \em{Hilbert polynomial} of $\sh{F}$.
 For large values of $n$, $P(n)$ is exactly the dimension of $\HH^0(X_k,\sh{F}(n))$ over $K$, since the $\HH^i(X_k,\sh{F}(n))$ are zero for $i>0$ and large enough $n$.
 
-Now, if $\sh{F}$ is a coherent sheaf on $X$ which is _flat_ with respect to $S$, then the Hilbert polynomials of the sheaves $\sh{F}_S$ induced on the fibres $X_S$ (with respect to one single connected component of $S$) are all equal [@GD1960, III, §7].
+Now, if $\sh{F}$ is a coherent sheaf on $X$ which is \em{flat} with respect to $S$, then the Hilbert polynomials of the sheaves $\sh{F}_S$ induced on the fibres $X_S$ (with respect to one single connected component of $S$) are all equal [[GD1960](GD1960), III, §7].
 It thus follows (without any flatness hypothesis) that the set of Hilbert polynomials of the sheaves $\sh{F}_s$, for $s\in S$, is finite for every coherent sheaf $\sh{F}$ on $X$.
 
 \oldpage{221-06}
@@ -127,7 +39,7 @@ so that the associated prime cycles of $\sh{F}_{(r)}$ are exactly the associated
 With this, we have:
 
 ::: {.itenv #fga3.iv-theorem-2.2 title="Theorem 2.2" latex="{Theorem 2.2}"}
-Under the conditions of [Theorem 2.1](#fga3.iv-theorem-2.1), let $s$ be an integer, and suppose that $E$ satisfies condition (a), as well as the following weakened form of (b):
+Under the conditions of \ref{fga3.iv-2-theorem-2.1}, let $s$ be an integer, and suppose that $E$ satisfies condition (a), as well as the following weakened form of (b):
 
 - (b<sub>s</sub>) The Poincaré polynomials $P_\sh{F}$ of the sheaves $\sh{F}$ whose class is in $E$ have coefficients _in degrees $\leqslant (s-1)$_ that are bounded.
 
@@ -320,11 +232,11 @@ c. $f'_*(\sh{H}(\nu+k))=\mathcal{S}'_k f'_*(\sh{H}(\nu))$ for $k\geqslant0$.
 For this last condition, we suppose that $X$ is written as the homogeneous prime spectrum of a quasi-coherent positively-graded algebra $\mathcal{S}_\bullet$ over $S$ that is generated by $\mathcal{S}_1$, and we set $\mathcal{S}'=\mathcal{S}\otimes_{\OO_S}\OO_{S'}$, so that $X'$ is the homogeneous prime spectrum of $\mathcal{S}'$.
 To prove [Theorem 3.2](#fga3.iv-theorem-3.2), we can easily reduce to the case where $X=\PP_S^r$ (since $S$ is a union of open subsets $U$ such that $X|U$ is a closed subscheme of $\PP_U^r$, and $\OO_X(1)$ is induced by $\OO_{\PP_U^r}(1)$), and where $\sh{F}$ is of the form $(\OO_{\PP_S^r})^N$, and thus flat over $S$.
 Then, in the above, the sheaves $\sh{H}$ are also flat over $S'$.
-It then follows from the Künneth relations [@GD1960, III, §7] and from (b) that the conditions (a) and (b) are stable under base change, and imply that, for $n\geqslant\nu$, forming $f'_*(\sh{G}(n))$ and $F'_*(\sh{H}(n))$ commutes with extension of the base (*loc. cit.*).
+It then follows from the Künneth relations [[GD1960](GD1960), III, §7] and from (b) that the conditions (a) and (b) are stable under base change, and imply that, for $n\geqslant\nu$, forming $f'_*(\sh{G}(n))$ and $F'_*(\sh{H}(n))$ commutes with extension of the base (*loc. cit.*).
 In other words, *$A_\nu(S')$ is a contravariant functor in $S'$, and in a precise sense a subfunctor of $A(S')=\shQuot_{\FXS}^P(S')$*.
-For varying $\nu$, we thus obtain an increasing sequence of subsets $A_\nu(S')$ of $A(S')$, whose union is $A(S')$ by a well known theorem of Serre [@GD1960, III, §2].
+For varying $\nu$, we thus obtain an increasing sequence of subsets $A_\nu(S')$ of $A(S')$, whose union is $A(S')$ by a well known theorem of Serre [[GD1960](GD1960), III, §2].
 Note now that, if $\sh{G}$ is a coherent quotient of $\sh{F}'$ which is flat over $S$, and $s$ an element of $S$ such that the base change $\Spec(k(s))\to S$ gives rise to a quotient $\sh{G}_s$ of $\sh{F}_s$ satisfying conditions (a), (b), and (c), i.e. is in $A_\nu\Spec(k(s))$, then there exists an open neighbourhood $U$ of $s$ such that these same conditions are satisfied by $\sh{G}|(f')^{-1}(U)$, i.e. this quotient is in $A_\nu(U)$;
-for (a) and (b), this follows in fact from the "Theorem of holomorphic functions" [@GD1960, III, §7], and (c) follows from the Nakayama lemma and the fact that we know that $f'_*(\sh{H}(n+k))=S'_kf'_*(\sh{H}(n))$ anyway for $n$ large enough and $k\geqslant0$ [@GD1960, III,§2].
+for (a) and (b), this follows in fact from the "Theorem of holomorphic functions" [[GD1960](GD1960), III, §7], and (c) follows from the Nakayama lemma and the fact that we know that $f'_*(\sh{H}(n+k))=S'_kf'_*(\sh{H}(n))$ anyway for $n$ large enough and $k\geqslant0$ [[GD1960](GD1960), III,§2].
 \oldpage{221-13}
 From these remarks, we conclude the following (compare with [@Gro1960a, IV]).
 *For the functor $A$ to be representable, it is necessary and sufficient that the functors $A_\nu$ be representable, and then the $S$-prescheme $Q$ that represents $A$ is the increasing union of the opens $Q_\nu$ that represent the $A_\nu$.*
@@ -345,7 +257,7 @@ $$
 
 It follows from (a) that we have
 
-a'. $f'_*(\sh{G}(n))$ is locally free of rank $P(n)$ for $n\geqslant\nu$ [@GD1960, III, §7]
+a'. $f'_*(\sh{G}(n))$ is locally free of rank $P(n)$ for $n\geqslant\nu$ [[GD1960](GD1960), III, §7]
 
 and it follows from (b),for $i=1$, that we have
 
@@ -374,7 +286,7 @@ Changing notation, we can suppose that $S'=S$, i.e. we have a quotient $N_\nu$ o
 For it to come from an element of $A(s)$, it is necessary and sufficient that it satisfy the following two conditions:
 
 i. $M_{\nu+k}/\mathcal{S}_k R_\nu$ is locally free of rank $P(\nu+k)$ for $k\geqslant0$.
-ii. Both the subsheaf $\sh{H}$ of $\sh{F}$ defined by the graded submodule $R_\bullet=\sum_{k\geqslant0}\sh{S}_kR_\nu$ of $M_\bullet$ (cf. [@GD1960, II, §3]) and the quotient $\sh{G}=\sh{F}/\sh{H}$ satisfy conditions (a) and (b) above.
+ii. Both the subsheaf $\sh{H}$ of $\sh{F}$ defined by the graded submodule $R_\bullet=\sum_{k\geqslant0}\sh{S}_kR_\nu$ of $M_\bullet$ (cf. [[GD1960](GD1960), II, §3]) and the quotient $\sh{G}=\sh{F}/\sh{H}$ satisfy conditions (a) and (b) above.
 
 These conditions are clearly necessary, and if they are satisfied then the sheaf $\sh{G}$ defined in (ii) above, being isomorphic to the sheaf associated to the graded $\sh{S}_\bullet$-module $N_\bullet$ given by the sum of the $M_{n+k}/\sh{S}_kR$ is *flat* over $S$ (since its fibres are direct factors of localisations of $N$ for homogeneous prime ideals of $\mathcal{S}_\bullet$), and correspond to the Hilbert polynomial $P$ by virtue of (i).
 Taking (ii) into account, we then see that (a') and (a'') are satisfied, and thus, for $n\geqslant\nu$, the natural homomorphism $N_n\to f_*(\sh{G}(n))$ is a *surjective* homomorphism of locally free modules of equal rank, and thus an isomorphism, and thus $f_*(\sh{H}(\nu+k))=\mathcal{S}_kR_\nu$ for all $k\geqslant0$, which proves that $\sh{G}\in A_\nu(S)$ and that $R_\nu$ is the element of $\Grass_{P(\nu)}(M_\nu)$ defined by $\sh{G}$.
@@ -404,7 +316,7 @@ Then the decreasing sequence of open subsets $U_N$ stabilises.
 We know [@Gro1960b, IV] that $S$ admits a finite partition into reduced subschemes $S_i$ such that each $M\otimes_{\OO_S}\OO_{S_i}$ is *flat* over $S$.
 We can thus suppose that $M$ is flat, and thus that the $M_n$ are flat.
 Finally, we can evidently suppose that $S$ is connected.
-But then [@GD1960, III, §7] there exists an integer $n_0$ and a polynomial $Q$ such that
+But then [[GD1960](GD1960), III, §7] there exists an integer $n_0$ and a polynomial $Q$ such that
 $$
   \rank_{k(s)}M_{ns}\otimes_{\OO_{S,s}}k(s) = Q(n)
   \qquad\text{for }n\geqslant n_0.
@@ -456,7 +368,7 @@ This finishes the proof of [(3.4)](#fga3.iv-lemma-3.4), and thus also of [(3.3)]
 We have thus proven that _$\shQuot_{\FXS}^P$ is representable by an $S$-prescheme $Q$ that is an increasing union of open quasi-projective subpreschemes $Q_\nu$ over $S$._
 To go further, we need to invoke [Theorem 2.1](#fga3.iv-theorem-2.1), whence we easily conclude that $Q$ is _quasi-compact_ (since it is the image of a prescheme $S'$ of finite type over $S$ that parametrises the family of quotient sheaves of the $\sh{F}_K$ whose Hilbert polynomial is $P$).
 Thus $Q$ is equal to one of the $Q_\nu$, and thus quasi-projective over $S$.
-To prove that it is projective over $S$, it thus remains to prove that it is _proper_ over $S$, and for this it suffices to invoke the valuative criterion of properness in the form given in [@GD1960, II, 7.3.8].
+To prove that it is projective over $S$, it thus remains to prove that it is _proper_ over $S$, and for this it suffices to invoke the valuative criterion of properness in the form given in [[GD1960](GD1960), II, 7.3.8].
 It suffices to verify the following:
 
 ::: {.itenv #fga3.iv-lemma-3.7 title="Lemma 3.7" latex="{Lemma 3.7}"}
@@ -466,7 +378,7 @@ Then there exists a unique quasi-coherent quotient module $\sh{G}$ of $\sh{F}$ t
 
 ::: {.proof}
 \oldpage{221-17}
-Indeed, if $\sh{G}_s=\sh{F}_s/\sh{H}_s$, it suffices to consider the largest subsheaf $\sh{H}$ of $\sh{F}$ that induces $\sh{H}_s$ ([@GD1960, I, 9.4.2]) and to take $\sh{G}=\sh{F}/\sh{H}$.
+Indeed, if $\sh{G}_s=\sh{F}_s/\sh{H}_s$, it suffices to consider the largest subsheaf $\sh{H}$ of $\sh{F}$ that induces $\sh{H}_s$ ([[GD1960](GD1960), I, 9.4.2]) and to take $\sh{G}=\sh{F}/\sh{H}$.
 We easily verify that this sheaf works.
 :::
 
