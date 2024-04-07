@@ -20,7 +20,7 @@ So the sheaves $\sh{F}_s$ induced on the fibres are also quotients of the sheaf 
 
 From these two remarks, we reduce the "necessary" part of the following theorem:
 
-::: {.itenv #fga3.iv-theorem-2.1 title="Theorem 2.1" latex="{Theorem 2.1}"}
+::: {.itenv #fga3.iv-2-theorem-2.1 title="Theorem 2.1" latex="{Theorem 2.1}"}
   Let $X$ be projective over $S$, with $S$ Noetherian, and $\OO_X(1)$ very ample over $X$ with respect to $S$.
   Let $E$ be a set of classes of sheaves on the fibres of $X/S$.
   For $E$ to be bounded, it is necessary and sufficient that it satisfy the following conditions:
@@ -41,140 +41,149 @@ We set
 so that the associated prime cycles of $\sh{F}_{(r)}$ are exactly the associated prime cycles of $\sh{F}$ that are of dimension $\geqslant r$, and, in particular, $\sh{F}_{(r)}$ is equal to $\sh{F}$ if and only if the associated prime cycles of $\sh{F}$ are of dimension $\geqslant r$.
 With this, we have:
 
-::: {.itenv #fga3.iv-theorem-2.2 title="Theorem 2.2" latex="{Theorem 2.2}"}
-Under the conditions of \ref{fga3.iv-2-theorem-2.1}, let $s$ be an integer, and suppose that $E$ satisfies condition (a), as well as the following weakened form of (b):
+::: {.itenv #fga3.iv-2-theorem-2.2 title="Theorem 2.2" latex="{Theorem 2.2}"}
+  Under the conditions of \ref{fga3.iv-2-theorem-2.1}, let $s$ be an integer, and suppose that $E$ satisfies condition (a), as well as the following weakened form of (b):
+  \todo{the following list should be b_s}
 
-- (b<sub>s</sub>) The Poincaré polynomials $P_\sh{F}$ of the sheaves $\sh{F}$ whose class is in $E$ have coefficients \em{in degrees $\leqslant (s-1)$} that are bounded.
+    1. The Poincaré polynomials $P_\sh{F}$ of the sheaves $\sh{F}$ whose class is in $E$ have coefficients \em{in degrees $\leqslant (s-1)$} that are bounded.
 
-Under these conditions, the sheaves $\sh{F}_{(s)}$ (for the $\sh{F}$ whose class is in $E$) form a bounded family.
-Furthermore, the coefficients in degree $(s-2)$ of the $P_\sh{F}$ are bounded below.
+  Under these conditions, the sheaves $\sh{F}_{(s)}$ (for the $\sh{F}$ whose class is in $E$) form a bounded family.
+  Furthermore, the coefficients in degree $(s-2)$ of the $P_\sh{F}$ are bounded below.
 :::
 
 \oldpage{221-07}
 Thus:
 
-::: {.itenv #fga3.iv-corollary-2.3 title="Corollary 2.3" latex="{Corollary 2.3}"}
-Suppose that the sheaves $\sh{F}$ whose class is in $E$ are such that all their associated prime cycles are of dimension $d$, with $s\leqslant d\leqslant r$.
-Then, in condition (b) of [Theorem 2.1](#fga3.iv-theorem-2.1), we can restrict to the coefficients of $P_\sh{F}$ between degree $(s-1)$ and $r$, inclusive.
+::: {.itenv #fga3.iv-2-corollary-2.3 title="Corollary 2.3" latex="{Corollary 2.3}"}
+  Suppose that the sheaves $\sh{F}$ whose class is in $E$ are such that all their associated prime cycles are of dimension $d$, with $s\leqslant d\leqslant r$.
+  Then, in condition (b) of \ref{fga3.iv-2-theorem-2.1}, we can restrict to the coefficients of $P_\sh{F}$ between degree $(s-1)$ and $r$, inclusive.
 :::
 
-The end of this section is dedicated to a sketch proof of [Theorem 2.2](#fga3.iv-theorem-2.2).
+The end of this section is dedicated to a sketch proof of \ref{fga3.iv-2-theorem-2.2}.
 The key lemmas are the two following lemmas, of which the first is well known (and summarises the useful mathematical content of Chow coordinates):
 
-::: {.itenv #fga3.iv-lemma-2.4 title="Lemma 2.4 (Chow)" latex="{Lemma 2.4 (Chow)}"}
-Consider the structure sheaves of the subschemes $Y$ with fibre $X_K$ (where $K$ is an algebraically closed extension of the residue field of $S$), where $Y$ is reduced, and all its components are of the same dimension $r$ (and with $\OO_Y$ being thought of as a quotient sheaf of $\OO_X$).
-If the degrees of $Y$ are bounded, then the $Y$ form a bounded family.
+::: {.itenv #fga3.iv-2-lemma-2.4 title="Lemma 2.4 (Chow)" latex="{Lemma 2.4 (Chow)}"}
+  Consider the structure sheaves of the subschemes $Y$ with fibre $X_K$ (where $K$ is an algebraically closed extension of the residue field of $S$), where $Y$ is reduced, and all its components are of the same dimension $r$ (and with $\OO_Y$ being thought of as a quotient sheaf of $\OO_X$).
+  If the degrees of $Y$ are bounded, then the $Y$ form a bounded family.
 :::
 
 Here, the degree $a$ of $Y$ can be most conveniently defined as the coefficient of the dominant term of $P_{\OO_Y}=an^r/r!+\ldots$.
 
-::: {.itenv #fga3.iv-lemma-2.5 title="Lemma 2.5" latex="{Lemma 2.5}"}
-Let $\sh{L}$ be a coherent sheaf on $X$, and $E$ a set of classes of the quotient sheaves $\sh{F}$ of the sheaf $\sh{L}_K$ (where $K$ is a residue extension of $S$).
-Suppose that the fibres of $X$ over $S$ are of dimension $\leqslant r$, and set
-$$
-  P_\sh{F}(n) = a_\sh{F}n^r/r! + b_\sh{F}n^{r-1}/(r-1)! + \text{terms of degree }<r-1.
-$$
-Then the coefficient $a_\sh{F}$ is bounded (above), and $b_\sh{F}$ is bounded below.
-If $b_\sh{F}$ is bounded, then the family $\sh{F}_{(r)}$ is bounded.
+::: {.itenv #fga3.iv-2-lemma-2.5 title="Lemma 2.5" latex="{Lemma 2.5}"}
+  Let $\sh{L}$ be a coherent sheaf on $X$, and $E$ a set of classes of the quotient sheaves $\sh{F}$ of the sheaf $\sh{L}_K$ (where $K$ is a residue extension of $S$).
+  Suppose that the fibres of $X$ over $S$ are of dimension $\leqslant r$, and set
+  ##{
+    P_\sh{F}(n)
+    = a_\sh{F}n^r/r! + b_\sh{F}n^{r-1}/(r-1)! + \text{terms of degree }<r-1.
+  }
+  Then the coefficient $a_\sh{F}$ is bounded (above), and $b_\sh{F}$ is bounded below.
+  If $b_\sh{F}$ is bounded, then the family $\sh{F}_{(r)}$ is bounded.
 :::
 
 ::: {.proof}
-By replacing $S$ by a union of subschemes of $S$ that cover $S$, we can suppose that there exists a \em{finite} morphism $f\colon X\to\PP_S^r$ such that $\OO_X(1)$ is isomorphic to the inverse image of $\OO_{\PP_S^r}(1)$, and thus, for every coherent sheaf $\sh{F}$ on $X$, we have that $P_\sh{F}=P_{f_*(\sh{F})}$.
-We can also easily show (by the technique of the previous section) that a set of sheaves $\sh{F}$ on $X$ is bounded if and only if the set of $f_*(\sh{F})$ is bounded.
-Finally, we have that
-$$
-  f_*(\sh{F})_{(r)} = f_*(\sh{F}_{(r)}).
-$$
-\oldpage{221-08}
-This thus allows us to reduce to the case where $X=\PP_S^r$.
-Furthermore, we can suppose that $\sh{L}=\OO_{\PP_S^r}(k)^s$, for some suitable $k$ and $s$.
-The coefficient $a_\sh{F}$ satisfies
-$$
-  0\leqslant a_\sh{F} \leqslant s
-$$
-and is thus bounded.
-With this in mind, saying that the $n^{r-1}$ coefficient $P_\sh{F}(n)$ is bounded below (resp. bounded) is equivalent to saying the same thing for the $P_\sh{F}(n-k)=P_{\sh{F}(-k)}(n)$.
-This leads us to the case where
-$$
-  \sh{L} = \OO_{\PP_S^r}^s.
-$$
+    By replacing $S$ by a union of subschemes of $S$ that cover $S$, we can suppose that there exists a \em{finite} morphism $f\colon X\to\PP_S^r$ such that $\OO_X(1)$ is isomorphic to the inverse image of $\OO_{\PP_S^r}(1)$, and thus, for every coherent sheaf $\sh{F}$ on $X$, we have that $P_\sh{F}=P_{f_*(\sh{F})}$.
+    We can also easily show (by the technique of the previous section) that a set of sheaves $\sh{F}$ on $X$ is bounded if and only if the set of $f_*(\sh{F})$ is bounded.
+    Finally, we have that
+    ##{
+      f_*(\sh{F})_{(r)}
+      = f_*(\sh{F}_{(r)}).
+    }
+    \oldpage{221-08}
+    This thus allows us to reduce to the case where $X=\PP_S^r$.
+    Furthermore, we can suppose that $\sh{L}=\OO_{\PP_S^r}(k)^s$, for some suitable $k$ and $s$.
+    The coefficient $a_\sh{F}$ satisfies
+    ##{
+      0\leqslant a_\sh{F} \leqslant s
+    }
+    and is thus bounded.
+    With this in mind, saying that the $n^{r-1}$ coefficient $P_\sh{F}(n)$ is bounded below (resp. bounded) is equivalent to saying the same thing for the $P_\sh{F}(n-k)=P_{\sh{F}(-k)}(n)$.
+    This leads us to the case where
+    ##{
+      \sh{L}
+      = \OO_{\PP_S^r}^s.
+    }
 
-Consider the exact sequence
-$$
-  0 \to N_r \to \sh{F} \to \sh{F}_{(r)} \to 0
-$$
-whence
-$$
-  P_\sh{F} = P_{\sh{F}_{(r)}} + P_{N_r}
-$$
-and, since the $n^{r-1}$ coefficient of $P_{N_r}$ is positive (since $\dim\supp N_r\leqslant r-1$), we have that
-$$
-  b_{\sh{F}_{(r)}} \leqslant b_\sh{F}.
-$$
-This allows us, in proving the lemma, to replace $\sh{F}$ by $\sh{F}_{(r)}$, i.e. to suppose that the quotients $\sh{F}$ of $\sh{L}$ in question are torsion free.
+    Consider the exact sequence
+    ##{
+      0 \to N_r \to \sh{F} \to \sh{F}_{(r)} \to 0
+    }
+    whence
+    ##{
+      P_\sh{F}
+      = P_{\sh{F}_{(r)}} + P_{N_r}
+    }
+    and, since the $n^{r-1}$ coefficient of $P_{N_r}$ is positive (since $\dim\supp N_r\leqslant r-1$), we have that
+    ##{
+      b_{\sh{F}_{(r)}} \leqslant b_\sh{F}.
+    }
+    This allows us, in proving the lemma, to replace $\sh{F}$ by $\sh{F}_{(r)}$, i.e. to suppose that the quotients $\sh{F}$ of $\sh{L}$ in question are torsion free.
 
-Since $\PP_K^r$ is normal, it follows that $\sh{F}$ is locally free of rank $a=a_\sh{F}$ on an open $U=\PP_K^r\setminus Y$, where $Y$ is of codimension $\geqslant2$.
-Thus $\bigwedge^a\sh{F}$ is a sheaf on $\PP_K^r$ whose restriction to $U$ is invertible, and thus (since $\PP_K^r$ is regular, and $Y$ is of codimension $\geqslant2$) isomorphism to the restriction of an invertible sheaf on $\PP_K^r$, defined up to isomorphism.
-This latter sheaf is of the form $\OO_{\PP_K^r}(d)$ for some well defined integer $d$.
-Since $\bigwedge^a\sh{F}$ is a quotient of $\bigwedge^a\OO_{\PP_K^r}^n\simeq\OO_{\PP_K^r}^N$ with $N=\binom{n}{a}$, it admits $N$ canonical sections, which thus define sections of $\OO_{\PP_K^r}(d)$ over $U$, which are restrictions of sections $s_i$ (for $1\leqslant i\leqslant N$) of $\OO_{\PP_K^r}(d)$ (since $\PP_K^r$ is normal, and $Y$ is of codimension $\geqslant2$).
-\oldpage{221-09}
-These $s_i$ generate $\OO_{\PP_K^r}(d)$ at the points of $U$, and are thus not all zero, which implies that $d\geqslant0$.
-An easy calculation also shows that
-$$
-  b_\sh{F} = a_\sh{F}(r+1)/2 + d.
-$$
-This shows, in particular, that $b_\sh{F}\geqslant0$, and so $b_\sh{F}$ is bounded below.
-It is bounded if and only if $d$ is bounded;
-we will show that $\sh{F}$ then remains in a bounded family.
-We can fix $a_\sh{F}$ and $b_\sh{F}$, as well as $a$ and $b$ (and thus $d$).
-The data of the $N$ sections $s_i$ of $\OO_{\PP_K^r}(d)$, i.e. of a homomorphism $s\colon\bigwedge^a\sh{L}_K\to\OO_{\PP_K^r}(d)$, allows us to recover $\sh{F}$ as the co-image of the corresponding composite homomorphism:
-$$
-  \sh{L}_K
-  \to \shHom\left( \bigwedge^{a-1}\sh{L}_{K'}, \bigwedge^a\sh{L}_K \right)
-  \to \shHom\left( \bigwedge^{a-1}\sh{L}_{K'}, \OO_{\PP_K^r}(d) \right)
-$$
-where the first arrow is the canonical homomorphism coming from the exterior product, and the second comes from $s$.
-We then conclude by part (i) of [Proposition 1.2](#fga3.iv-proposition-1.2).
+    Since $\PP_K^r$ is normal, it follows that $\sh{F}$ is locally free of rank $a=a_\sh{F}$ on an open $U=\PP_K^r\setminus Y$, where $Y$ is of codimension $\geqslant2$.
+    Thus $\bigwedge^a\sh{F}$ is a sheaf on $\PP_K^r$ whose restriction to $U$ is invertible, and thus (since $\PP_K^r$ is regular, and $Y$ is of codimension $\geqslant2$) isomorphism to the restriction of an invertible sheaf on $\PP_K^r$, defined up to isomorphism.
+    This latter sheaf is of the form $\OO_{\PP_K^r}(d)$ for some well defined integer $d$.
+    Since $\bigwedge^a\sh{F}$ is a quotient of $\bigwedge^a\OO_{\PP_K^r}^n\simeq\OO_{\PP_K^r}^N$ with $N=\binom{n}{a}$, it admits $N$ canonical sections, which thus define sections of $\OO_{\PP_K^r}(d)$ over $U$, which are restrictions of sections $s_i$ (for $1\leqslant i\leqslant N$) of $\OO_{\PP_K^r}(d)$ (since $\PP_K^r$ is normal, and $Y$ is of codimension $\geqslant2$).
+    \oldpage{221-09}
+    These $s_i$ generate $\OO_{\PP_K^r}(d)$ at the points of $U$, and are thus not all zero, which implies that $d\geqslant0$.
+    An easy calculation also shows that
+    ##{
+      b_\sh{F}
+      = a_\sh{F}(r+1)/2 + d.
+    }
+    This shows, in particular, that $b_\sh{F}\geqslant0$, and so $b_\sh{F}$ is bounded below.
+    It is bounded if and only if $d$ is bounded;
+    we will show that $\sh{F}$ then remains in a bounded family.
+    We can fix $a_\sh{F}$ and $b_\sh{F}$, as well as $a$ and $b$ (and thus $d$).
+    The data of the $N$ sections $s_i$ of $\OO_{\PP_K^r}(d)$, i.e. of a homomorphism $s\colon\bigwedge^a\sh{L}_K\to\OO_{\PP_K^r}(d)$, allows us to recover $\sh{F}$ as the co-image of the corresponding composite homomorphism:
+    ##{
+      \sh{L}_K
+      \to \shHom\left( \bigwedge^{a-1}\sh{L}_{K'}, \bigwedge^a\sh{L}_K \right)
+      \to \shHom\left( \bigwedge^{a-1}\sh{L}_{K'}, \OO_{\PP_K^r}(d) \right)
+    }
+    where the first arrow is the canonical homomorphism coming from the exterior product, and the second comes from $s$.
+    We then conclude by part (i) of \ref{fga3.iv-1-proposition-1.2}.
 :::
 
 The combination of the two lemmas above allows us to prove the following:
 
 ::: {.itenv #fga3.iv-lemma-2.6 title="Lemma 2.6" latex="{Lemma 2.6}"}
-Suppose, under the preliminary conditions of [(2.1)](#fga3.iv-theorem-2.1), that, for all $\sh{F}$, we have
-$$
-  P_\sh{F}(n) = a_\sh{F} n^r/r! + b_\sh{F} n^{r-1}/(r-1)! + \text{terms of degree }<r-1
-$$
-and that the coefficients $a_\sh{F}$ are bounded.
-Then the coefficients $b_\sh{F}$ are bounded below..
-Furthermore, if the $b_\sh{F}$ are bounded, then the $\sh{F}_{(r)}$ are bounded.
+  Suppose, under the preliminary conditions of \ref{fga3.iv-2-theorem-2.1}, that, for all $\sh{F}$, we have
+  ##{
+    P_\sh{F}(n)
+    = a_\sh{F} n^r/r! + b_\sh{F} n^{r-1}/(r-1)! + \text{terms of degree }<r-1
+  }
+  and that the coefficients $a_\sh{F}$ are bounded.
+  Then the coefficients $b_\sh{F}$ are bounded below.
+  Furthermore, if the $b_\sh{F}$ are bounded, then the $\sh{F}_{(r)}$ are bounded.
 :::
 
 ::: {.proof}
-We can suppose that the base field $K$ of the sheaves $\sh{F}$ is algebraically closed.
-We endow each $\supp\sh{F}_{(r)}$(the union of the components of degree $r$) with the induced reduced structure.
-Then the degrees of the $\supp\sh{F}_{(r)}$ are bounded above by $a$, and so, by [(2.4)](#fga3.iv-lemma-2.4), the $\supp\sh{F}_{(r)}$ form a bounded set.
-Furthermore, for each component of $\supp\sh{F}_{(r)}$, the length of $\sh{F}_{(r)}$ for this component is $\leqslant a$, and so, if $\sh{I}_\sh{F}$ is the ideal that defines $\supp\sh{F}_{(r)}$, then $\sh{F}_{(r)}$ can be considered as a module on the subscheme $Y_\sh{F}$ of $X$ defined by $\sh{I}_\sh{F}^a$.
-\oldpage{221-10}
-As in the previous lemma, we can also reduce to the case where $\sh{F}=\sh{F}_{(r)}$, so that $\sh{F}$ comes from a module on $Y_\sh{F}$.
-The $Y_\sh{F}$ correspond to a bounded family of quotient modules of the $\OO_{X_K}$, and thus come from a closed subscheme $Y$ of some scheme $X\times_S T$.
-We can then apply [(2.5)](#fga3.iv-lemma-2.5) to $Y/T$ and $\sh{L}\otimes_X Y$, whence the conclusion.
+    We can suppose that the base field $K$ of the sheaves $\sh{F}$ is algebraically closed.
+    We endow each $\supp\sh{F}_{(r)}$(the union of the components of degree $r$) with the induced reduced structure.
+    Then the degrees of the $\supp\sh{F}_{(r)}$ are bounded above by $a$, and so, by \ref{fga3.iv-2-lemma-2.4}, the $\supp\sh{F}_{(r)}$ form a bounded set.
+    Furthermore, for each component of $\supp\sh{F}_{(r)}$, the length of $\sh{F}_{(r)}$ for this component is $\leqslant a$, and so, if $\sh{I}_\sh{F}$ is the ideal that defines $\supp\sh{F}_{(r)}$, then $\sh{F}_{(r)}$ can be considered as a module on the subscheme $Y_\sh{F}$ of $X$ defined by $\sh{I}_\sh{F}^a$.
+    \oldpage{221-10}
+    As in the previous lemma, we can also reduce to the case where $\sh{F}=\sh{F}_{(r)}$, so that $\sh{F}$ comes from a module on $Y_\sh{F}$.
+    The $Y_\sh{F}$ correspond to a bounded family of quotient modules of the $\OO_{X_K}$, and thus come from a closed subscheme $Y$ of some scheme $X\times_S T$.
+    We can then apply \ref{fga3.iv-2-lemma-2.5} to $Y/T$ and $\sh{L}\otimes_X Y$, whence the conclusion.
 :::
 
 ::: {.proof}
-We can now prove [(2.2)](#fga3.iv-theorem-2.2) by induction on the upper bound $r$ of the $\dim\supp\sh{F}$.
-The statement is trivial for $r<0$, so suppose that $r\geqslant0$ and that the statement has been proven for $r'<r$.
-By [(2.6)](#fga3.iv-lemma-2.6), the $\sh{F}_{(r)}$ form a bounded family, and so too, by part (i) of [(1.2)], do the kernels of the homomorphisms $\sh{L}_K\to\sh{F}_{(r)}$;
-there thus exists a coherent module $\sh{L}'$ on $X$ such that kernels in question, and thus also the $N_r(\sh{F})=\Ker(\sh{F}\to\sh{F}_{(r)})$, are quotients of modules $\sh{L}'_K$.
-Since the $\sh{F}_{(r)}$ are bounded, the $P_{\sh{F}_{(r)}}$ are bounded, and the formula
-$$
-  P_\sh{F} = P_{\sh{F}_{(r)}} + P_{N_r}
-$$
-then shows that the $P_{N_r}$ satisfy the same condition (b<sub>s</sub>) as the $P_\sh{F}$.
-Thus the $N_r$ satisfy conditions (a) and (b<sub>s</sub>), and so, by the induction hypothesis, the $(N_r)_{(s)}$ are bounded.
-But $\sh{F}_{(s)}$ is an extension of $\sh{F}_{(r)}$ by $(N_r)_{(s)}$, and so, by part (ii) of [(1.2)](#fga3.iv-proposition-1.2), the $\sh{F}_{(s)}$ are bounded.
-For the last claim of [(2.2)](#fga3.iv-theorem-2.2), we note that the kernels $N_s$ of $\sh{F}\to\sh{F}_{(s)}$ are bounded, by part (i) of [(1.2)](#fga3.iv-proposition-1.2), and that the coefficient of the $n^{s-1}$ term in $P_{N_s}$ is bounded;
-then [(2.6)](#fga3.iv-lemma-2.6) proves that the coefficient of the following term is bounded below.
-This finishes the proof.
+    (Proof of \ref{fga3.iv-2-theorem-2.2})
+    We can now prove \ref{fga3.iv-2-theorem-2.2} by induction on the upper bound $r$ of the $\dim\supp\sh{F}$.
+    The statement is trivial for $r<0$, so suppose that $r\geqslant0$ and that the statement has been proven for $r'<r$.
+    By \ref{fga3.iv-2-lemma-2.6}, the $\sh{F}_{(r)}$ form a bounded family, and so too, by part (i) of [(1.2)], do the kernels of the homomorphisms $\sh{L}_K\to\sh{F}_{(r)}$;
+    there thus exists a coherent module $\sh{L}'$ on $X$ such that kernels in question, and thus also the $N_r(\sh{F})=\Ker(\sh{F}\to\sh{F}_{(r)})$, are quotients of modules $\sh{L}'_K$.
+    Since the $\sh{F}_{(r)}$ are bounded, the $P_{\sh{F}_{(r)}}$ are bounded, and the formula
+    ##{
+      P_\sh{F}
+      = P_{\sh{F}_{(r)}} + P_{N_r}
+    }
+    then shows that the $P_{N_r}$ satisfy the same condition (b<sub>s</sub>) as the $P_\sh{F}$.
+    Thus the $N_r$ satisfy conditions (a) and (b<sub>s</sub>), and so, by the induction hypothesis, the $(N_r)_{(s)}$ are bounded.
+    But $\sh{F}_{(s)}$ is an extension of $\sh{F}_{(r)}$ by $(N_r)_{(s)}$, and so, by part (ii) of \ref{fga3.iv-1-proposition-1.2}, the $\sh{F}_{(s)}$ are bounded.
+    For the last claim of \ref{fga3.iv-2-theorem-2.2}, we note that the kernels $N_s$ of $\sh{F}\to\sh{F}_{(s)}$ are bounded, by part (i) of \ref{fga3.iv-1-proposition-1.2}, and that the coefficient of the $n^{s-1}$ term in $P_{N_s}$ is bounded;
+    then \ref{fga3.iv-2-lemma-2.6} proves that the coefficient of the following term is bounded below.
+    This finishes the proof.
 :::
 
 
