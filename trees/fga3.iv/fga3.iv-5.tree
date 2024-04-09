@@ -6,3 +6,192 @@
 \import{fga3.iv-macros}
 
 \put\transclude/numbered{false}
+
+\p{
+  \oldpage{221-21}
+  We have the following result:
+}
+
+\subtree[fga3.iv-5-proposition-5.1]{
+  \taxon{proposition}
+  \number{5.1}
+
+  \p{
+    Let #{S} be a prescheme, #{S_0} a subprescheme defined by a square-zero quasi-coherent ideal #{\sh{I}}, #{X} an #{S}-prescheme, and #{\sh{F}} a quasi-coherent module on #{X}.
+    Let #{X_0=\sh{F}\times_S S_0} and #{\sh{F}_0=\sh{F}\otimes_{\OO_S}\OO_{S_0}}.
+    Finally, let #{\sh{G}_0=\sh{F}_0/\sh{H}_0} be a quasi-coherent quotient module of #{\sh{F}_0} that is flat over #{S_0}.
+    For every open #{U} of #{X}, let #{\sh{E}(U)} be the set of quasi-coherent quotient modules #{\sh{G}} of #{\sh{F}|U} that are flat over #{S} and are such that #{\sh{G}\otimes_{\OO_S}\OO_{S_0}=\sh{G}_0};
+    as #{U} varies, the #{\sh{E}(U)} are the sections of a sheaf #{\sh{E}} on #{U}.
+    With this, the sheaf of groups
+    ##{
+      \sh{A}
+      = \repHom_{\OO_{X_0}}(\sh{H}_0,\sh{G}_0\otimes_{\OO_{S_0}}\sh{I})
+    }
+    acts naturally on #{\sh{E}}, which thus becomes a "formally #{\mathscr{A}}-principal homogeneous" sheaf (i.e. for every open #{U} in #{X}, #{\sh{E}(U)} is either empty or an #{\sh{A}(U)}-principal homogeneous set).
+  }
+}
+
+\p{
+  We thus conclude:
+}
+
+\subtree[fga3.iv-5-corollary-5.2]{
+  \taxon{corollary}
+  \number{5.2}
+
+  \p{
+    Suppose that there exists locally on #{X} an extension #{\sh{G}} of #{\sh{G}_0} to a quotient of #{\sh{F}} that is flat over #{S} (i.e. that the fibres of the sheaf #{\sh{E}} are non-empty).
+    Then there exists a canonical obstruction class
+    ##{
+      c(\sh{G}_0) \in \HH^1(X,\sh{A})
+    }
+    whose vanishing is necessary and sufficient for the existence of a global extension #{\sh{G}} of #{\sh{G}_0} to a quotient of #{\sh{F}} that is flat over #{S}.
+    If this class is zero, then the set #{\sh{E}(X)} of all possible extensions is a principal homogenous set for #{\sh{A}(X)=\Hom_{\OO_X}(\sh{H}_0,\sh{G}_0\otimes_{\OO_{S_0}}\sh{I})}.
+  }
+}
+
+\p{
+  The existence of a global extension is thus guaranteed, in particular, if #{\HH^1(X,\sh{A})=0}.
+}
+
+\subtree[fga3.iv-5-corollary-5.3]{
+  \taxon{corollary}
+  \number{5.3}  
+
+  \p{
+    Suppose that #{Q=\repQuot_\FXS} exists (cf. [§4.a](#fga3.iv-4)) --- for example, suppose that #{X} is quasi-projective over some locally Noetherian #{S}, and #{\sh{F}} is coherent.
+    Let #{x\in Q}, corresponding to a residue extension #{K=k(x)} of some #{k(s)} (where #{s\in S}).
+    \oldpage{221-22}
+    Then #{x} is defined by a coherent quotient module #{\sh{G}_0=\sh{F}_0/\sh{H}_0} of the module #{\sh{F}_0=F_K} on the #{K}-prescheme #{X_K}.
+    Let #{\sh{A}} be the coherent sheaf on #{X_K} defined by
+    ##{
+      \sh{A} = \repHom_{\OO_{X_0}}(\sh{H}_0,\sh{G}_0).
+    }
+
+    Then the Zariski tangent space of the fibre #{Q_s} at the point #{x} (given by the dual over #{K} of #{\mathfrak{m}/\mathfrak{m}^2}, where #{\mathfrak{m}} is the maximal ideal of #{\OO_{Q_k,x}}) is canonically isomorphic to #{\HH^0(X_k,\sh{A})}.
+  }
+}
+
+\p{
+  The result giving the Zariski tangent space can be generalised, and gives a characterisation, for a given #{S}-morphism #{g\colon S'\to Q}, i.e. a section #{g'} of #{Q'=Q\times_S S'} over #{S'}, of the module
+  ##{
+    \Omega
+    = g^*(\Omega_{Q/S}^1)
+    = {g'}^*(\sh{J}/\sh{J}^2)
+  }
+  (where #{\sh{J}} is the ideal on #{Q'} defined by the section #{g'} of #{Q'} over #{S'}) by the formula
+  ##{
+    \Hom_{\OO_{S'}}(\Omega,\sh{M})
+    \simeq \HH^0(X',\sh{A})
+  }
+  which is functorial in the coherent module #{\sh{M}} over #{S'}, and where #{\sh{A}} is again the module on #{X'=X\times_S S'} defined by
+  ##{
+    \sh{A} = \repHom_{\OO_{X'}}(\sh{H},\sh{G}\otimes_{\OO_S}\sh{M})
+  }
+  (#{\sh{G}=\sh{F}'/\sh{H}} being the quotient module of #{\sh{F}'=\sh{F}\otimes_{\OO_S}\OO_{S'}} that corresponds to #{g}).
+  It suffices to apply \ref{fga3.iv-5-proposition-5.1} by replacing #{S_0} with #{S'}, and #{S} with the prescheme #{D(\sh{M})=(S',\OO_{S'}+\sh{M})}, where #{\sh{M}} is considered as a square-zero ideal.
+}
+
+\p{
+  If, in \ref{fga3.iv-5-proposition-5.1}, we have #{\sh{F}=\OO_X}, then the data of #{\sh{G}_0} corresponds to the data of a closed subprescheme #{Y_0} of #{X_0} that is flat over #{S_0}, defined by the ideal #{\sh{J}_0=\sh{M}_0}, and then \ref{fga3.iv-3-equation-star} gives
+  ##{
+    \sh{A}
+    = \repHom_{\OO_{X_0}}(\sh{J}_0/\sh{J}_0^2,\OO_{Y_0}\otimes_{\OO_{S_0}}\sh{J})
+  }
+  where #{\sh{J}/\sh{J}^2} is thought of as the \em{conormal sheaf} of #{Y_0} in #{X_0}, which we also denote by #{\sh{N}_{Y_0/X_0}};
+  \oldpage{221-23}
+  it is then interesting to consider #{\sh{A}} as a module over #{Y_0}, and to calculate #{\HH^0} and #{\HH^1} on #{Y}.
+  If #{Y_0} is locally a complete intersection in #{X_0}, with #{X} flat over #{S}, then, in \ref{fga3.iv-5-proposition-5.1}, the possibility of a local extension is guaranteed, and #{\sh{J}/\sh{J}^2} is locally free over #{Y_0} and we can write
+  ##{
+    \sh{A}
+    = \check{\sh{N}}_{X_0/Y_0}\otimes_{\OO_{S_0}}\sh{J}
+  }
+  where the first factor on the right-hand side is the normal cone of #{Y_0} inside #{X_0}.
+  Using the fundamental criterion of simplicity [[Gro1960b](Gro1960b), III, 3.1], we find, for example:
+}
+
+\subtree[fga3.iv-5-corollary-5.4]{
+  \taxon{corollary}
+  \number{5.4}
+
+  \p{
+    Under the conditions of \ref{fga3.iv-5-corollary-5.3}, suppose that #{\sh{F}=\OO_X}, with #{X} flat over #{S}, and that the closed subprescheme #{Y_0} of #{X_0} that corresponds to #{\sh{G}_0} is locally a complete intersection.
+    Then the Zariski tangent space of #{Q_s} at #{x} is canonically isomorphic to #{\HH^0(Y_0,\check{\sh{N}}_{X_0/Y_0})}.
+    If #{\HH^1(Y_0,\check{\sh{N}_{X_0/Y_0}})=0}, then the Hilbert prescheme #{X} is simple over #{S} at the point #{x} (where #{\check{\sh{N}}_{X_0/Y_0}} is the normal sheaf of #{Y_0} inside #{X_0}).
+  }
+}
+
+\subtree[fga3.iv-5-remark-5.5]{
+  \taxon{remark}
+  \number{5.5}
+
+  \p{
+    This statement applies in particular when #{Y_0} is a complete intersection in #{X_0} defined by \em{one} single equation, i.e. is a positive "Cartier divisor".
+    Then #{\check{\sh{N}}_{X_0/Y_0}} is isomorphic to the sheaf on #{Y_0} induced by the invertible sheaf #{\sh{J}^{-1}} on #{X_0} defined by the divisor #{Y_0}.
+    This is the situation that we find in particular in the study of families of positive divisors on a non-singular projective variety #{X_0}.
+    The isomorphism between the Zariski tangent space at the point #{x} of #{Q} (or, if one prefers, of the open #{D} of #{Q} that corresponds to the divisors) and #{\sh{H}^0(Y_0,\check{\sh{N}}_{X_0/Y_0})} was known in classical algebraic geometry under the name of "*characteristic homomorphism*" (from the former to the latter).
+    It was not defined when #{x} was a simple point of the variety of parameters #{T} of a "complete continuous family" of divisors, i.e. from our point of view, of an irreducible component of the scheme #{D}, endowed with the induced \em{reduced} structure.
+    The tangent space of #{T} at #{x} is then a \em{subspace} of the tangent space of #{D} at #{x}, and so the characteristic homomorphic of yore is indeed injective, but it is not surjective except for under supplementary conditions, for example if #{D} is integral at #{x}.
+    \oldpage{221-24}
+    In fact, Zappa [[Zap1945]](Zap1945) constructed an example (with #{X} a non-singular projective surface over the \em{field of complex numbers}) where even at the generic point of #{T} the characteristic homomorphism is not surjective.
+    \em{This thus implies that #{D} is not integral even at the generic point of the irreducible component in question.}
+    This shows in a particularly striking manner how varieties with nilpotent elements are necessary for understanding the most classical phenomena of the theory of surfaces.
+  }
+
+  \p{
+    \comp
+    Concerning the example of Zappa, we note that Mumford has even constructed an irreducible component of the Hilbert scheme for #{\PP_\mathbb{C}^3} (whose general points represent non-singular curves of degree #{14} and genus #{24}), which is non-reduced at its generic points.
+    Blowing up the curves obtained, he also obtains a regular projective scheme of dimension #{3} over #{\mathbb{C}}, whose formal scheme of modules is non-reduced at its generic point, or, equivalently, such that its local variety of modules, in the sense of analytic geometry, over #{\mathbb{C}} (see \em{Séminaire Cartan} \strong{13}, 1960/61) is non-reduced at all its points.
+  }
+}
+
+\subtree[fga3.iv-5-remark-5.6]{
+  \taxon{remark}
+  \number{5.6}
+
+  \p{
+    We have given, in \ref{fga3.iv-5-remark-5.5}, a criterion for simplicity, which applies in particular to schemes of divisors.
+    Kodaira gave a different criterion in [[Kod1956]](Kod1956), given by the vanishing of #{\HH^1(X_0,\sh{L})}, where #{\sh{L}=\sh{J}_0^{-1}} is the invertible sheaf on #{X_0} defined by the divisor #{Y_0};
+    this criterion holds whenever #{S} is the spectrum of a field of characteristic #{0}, and is proved in [[Kod1956]](Kod1956) by transcendental methods in the case where the base field is #{\mathbb{C}}.
+    We note here that, in general, #{S} now arbitrary, Kodaira's condition is a sufficient condition for the canonical morphism #{D\to\repPic_{X/S}} from the prescheme of divisors to the Picard prescheme of #{X/S} to be simple at the point #{x} in question (as we easily verify by the usual criterion for simplicity, once we have the existence of #{\repPic_{X/S}}).
+    Then if, further, #{\repPic_{X/S}} is simple over #{S} at the point given by the image of #{x} (for example if #{\repPic_{X/S}} is simple over #{S}), then #{D} is simple over #{S} at #{x}.
+    On the other hand, Cartier has shown that every group prescheme locally of finite type over \em{a field #{k} of characteristic #{0}} is simple over #{k}.
+    By combining these two results, we recover the result of Kodaira.
+    Note that it follows from these remarks that, over a field #{K} of characteristic #{p>0}, if #{\repPic_{X/S}} is not simple over #{k} (which is the case whenever #{X} is the Igusa surface), then the condition #{\HH^1(X_0,\sh{L})=0} implies to the contrary that #{D} is not simple at #{x}, and even not reduced at #{x} if #{K} is algebraically closed.
+  }
+}
+
+\p{
+  To finish, we give the following result, which plays an important role in the differential study of fibred spaces:
+}
+
+\subtree[fga3.iv-5-proposition-5.7]{
+  \taxon{proposition}
+  \number{5.7}
+
+  \p{
+    Let #{X} be a finite prescheme that is flat over #{S} and locally Noetherian, and let #{Z} be a prescheme over #{S} such that #{\prod_{X/S}(Z/X)} exists (which is the case if #{Z} is quasi-projective over #{X}).
+    If #{Z} is simple over #{X}, then #{\prod_{X/S}(Z/X)} is simple over #{S}.
+  }
+
+  \proof{
+    \p{
+      This is an immediate consequence of the definition, and of the usual criterion of simplicity [[Gro1960b](Gro1960b), III, §3.1].
+    }
+  }
+}
+
+\p{
+  Note that if #{X} is finite and flat over #{S}, then the question of the existence of #{\prod_{X/S}(Z/X)} can be dealt with in a very elementary manner, without using the theory of Hilbert schemes.
+  \oldpage{221-25}
+  We find, for example, that if #{X} is radicial over #{S}, then #{\prod_{X/S}(Z/X)} exists without any restrictions on #{Z}.
+  For example, let #{T} be an #{S}-prescheme, and let #{T_n} be "the infinitesimal neighbourhood of order #{n}" of the diagonal of #{T\times_S T} in #{T\times_S T}, endowed with the morphisms #{p_1,p_2\colon T_n\to T} induced by the two projections.
+  We can consider #{T_n} as a finite prescheme over #{T} thanks to #{p_1}, and we suppose further that #{T_n} is flat over #{T} (which is the case if #{T} is simple over #{S}).
+  For every prescheme #{X} over #{T}, set
+  ##{
+    (X/T/S)^{(n)}
+    = \prod_{T_n/S}(p_2^*(X/T)/T_n)
+  }
+  which is a prescheme over #{T} called the \em{bundle of germs of sections of order #{n} of #{X} over #{T}} (with respect to #{S}).
+  This depends functorially on #{X}, and is simple over #{T} if #{X} is.
+}
