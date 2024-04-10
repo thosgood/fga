@@ -6,3 +6,150 @@
 \import{fga3.v-macros}
 
 \put\transclude/numbered{false}
+
+\subtree[fga3.v-2-proposition-2.1]{
+  \taxon{proposition}
+  \number{2.1}
+
+  \p{
+    Let #{f\colon X\to S} be a morphism such that #{\OO_S\simto f_*(\OO_X)}.
+    Then we have an exact sequence
+    ##{
+      0
+      \to \Pic(S)
+      \to \Pic(X)
+      \to \Pic'(X/S).
+    }
+    If #{X} admits a section over #{S}, then the last morphism is surjective, i.e. we have an isomorphism
+    ##{
+      \Pic'(X/S)
+      \simto \Pic(X)/\Pic(S).
+    }
+  }
+
+  \proof{
+    \p{
+      The exact sequence can be considered as the low degrees of the exact sequence that corresponds to the Leray spectral sequence for #{f} and #{\OO_X}.
+      The second claim is equally formal.
+    }
+  }
+}
+
+\subtree[fga3.v-2-proposition-2.2]{
+  \taxon{proposition}
+  \number{2.2}
+
+  \p{
+    Let #{f\colon X\to S} be a quasi-compact separated morphism such that #{\OO_S\simto f_*(\OO_X)}, and let #{S'\to S} be a faithfully flat quasi-compact morphism.
+    Then
+    \todo{the following list should be i, ii}
+
+    \ol{
+      \li{
+        #{\Pic'(X/S)\to\Pic'(X\times_S S'/S')} is injective;
+      }
+      \li{
+        If #{X} locally admits a section over #{S} (i.e. every #{s\in S} has an open neighbourhood #{U} such that #{X|U} has a section over #{U}), then the diagram
+        ##{
+          \Pic'(X/S)
+          \to \Pic'(X\times_S S'/S')
+          \rightrightarrows \Pic'(X\times_S S''/S'')
+        }
+        (where #{S''=S'\times_S S'}) is exact.
+      }
+    }
+  }
+
+  \proof{
+    \p{
+      The first claim follows, thanks to the elementary properties of faithfully flat descent, from the following general remark.
+      \oldpage{232-05}
+      If #{f\colon X\to S} is a morphism such that #{\OO_S\simto f_*(\OO_X)}, then the functor #{\sh{F}\mapsto f^*(\sh{F})}, from the category of locally free modules of finite type on #{S} to the category of locally free modules of finite type on #{X}, is fully faithful, and its essential image is given by the modules #{\sh{G}} on #{X} such that #{f_*(\sh{G})} is locally free and such that the canonical homomorphism
+      ##{
+        f^*f_*(\sh{G})
+        \to \sh{G}
+      }
+      is an isomorphism.
+      The second statement was proven by the theory of descent in [FGA 3.I, §B.4](fga3.i-b.4).
+    }
+  }
+}
+
+\p{
+  The results of \ref{fga3.v-2-proposition-2.2} can also be stated as follows:
+}
+
+\subtree[fga3.v-2-corollary-2.3]{
+  \taxon{corollary}
+  \number{2.3}
+
+  \p{
+    Under the conditions of \ref{fga3.v-2-proposition-2.2}, the canonical homomorphism \ref{fga3.v-1-equation-1.9} #{\shPic'_{X/S}\to\shPic_{X/S}} is injective, and even bijective if #{X} locally admits a section over #{S}.
+    (In the latter case, the relative Picard group #{\Pic(X/S)} is identified with the restricted relative Picard group #{\Pic'(X/S)}.)
+  }
+}
+
+\p{
+  Combining this with \ref{fga3.v-2-proposition-2.1}, we thus obtain:
+}
+
+\subtree[fga3.v-2-corollary-2.4]{
+  \taxon{corollary}
+  \number{2.4}
+
+  \p{
+    Under the conditions of \ref{fga3.v-2-proposition-2.2}, we have an exact sequence
+    ##{
+      0
+      \to \Pic(S)
+      \to \Pic(X)
+      \to \Pic(X/S).
+    }
+    If #{X} admits a section over #{S}, then the last homomorphism is surjective, i.e. we have an isomorphism
+    ##{
+      \Pic(X/S)
+      \simto \Pic(X)/\Pic(S).
+    }
+  }
+}
+
+\subtree[fga3.v-2-remark-2.5]{
+  \taxon{remark}
+  \number{2.5}
+
+  \p{
+    Let #{f\colon X\to S} be a morphism such that #{\OO_S\simto f_*(\OO_X)}, and let #{g} be a section of #{X} over #{S}.
+    Let #{\sh{L}} be an invertible module on #{X}.
+    We define the \em{#{g}-rigidification} of #{\sh{L}} to be an isomorphism #{\OO_S\simto g^*(\sh{L})}, and a \em{#{g}-rigidified invertible module} to be an invertible module #{\sh{L}} on #{X} endowed with a #{g}-rigidification.
+    Every automorphism of such a structure is trivial, and #{\Pic'(X/S)} can be identified with the set of isomorphism classes of #{g}-rigidified invertible modules on #{S}.
+    (It is this fact that allows us to use the theory of descent to prove (ii) of \ref{fga3.v-2-proposition-2.2}.)
+    This gives a new interpretation of #{\Pic(X/S)}, at least when #{f} is further quasi-compact and separated, so that #{\Pic(X/S)\simto\Pic'(X/S)} by \ref{fga3.v-2-corollary-2.3}.
+  }
+}
+
+  \subtree[fga3.v-2-remark-2.6]{
+  \taxon{remark}
+  \number{2.6}
+
+  \p{
+    Let #{f\colon X\to S} be a morphism as in \ref{fga3.v-2-proposition-2.2}, and let #{S'\to S} be a faithfully flat quasi-compact morphism such that there exists an #{S}-morphism #{S'\to X}, i.e. such that there exists a section of #{X'=X\times_S S'} over #{S'}.
+    \oldpage{232-06}
+    Let #{S''=S'\times_S S'}, and #{X''=X\times_S S''}, and consider the exact sequence
+    ##{
+      \Pic(X/S)
+      \to \Pic(X'/S')
+      \rightrightarrows \Pic(X''/S'').
+    }
+    Applying \ref{fga3.v-2-corollary-2.4}, we obtain the exact sequence
+    ##{
+      \Pic(X/S)
+      \to \Pic(X')/\Pic(S')
+      \rightrightarrows \Pic(X'')/\Pic(S'').
+    }
+    In particular, every element of the relative Picard group already "comes from" an element of #{\Pic(X')}.
+    This gives a substantial simplification of the description of the relative Picard group given in the previous section, and even of the Picard functor of #{X} over #{S}, since, for all #{T} over #{S}, we can apply the above to #{X\times_S T/T} and to the morphism #{T'=S'\times_S T\to T}.
+    If, for example, #{f} itself is faithfully flat, then we can take #{S'=X}, which allows us, whenever #{f} is further of finite type (resp. simple, etc.), to restrict, in the description of the relative Picard functor #{T\mapsto\Pic(X\times_S T/T)}, to the base changes #{T'\to T} that are of finite type (resp. simple, etc.).
+    If #{f} is projective and flat, and #{S} locally Noetherian, then we can prove that we can take in the above a #{S'\to S} such that #{S'} is the direct sum of \em{flat covers} #{S'_i} of opens #{S_i} of #{S} that cover #{S};
+    if #{f} is further separable, then we can take #{S'_i} to be étale over #{S_i}.
+  }
+}

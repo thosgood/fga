@@ -6,3 +6,185 @@
 \import{fga3.v-macros}
 
 \put\transclude/numbered{false}
+
+\p{
+  \oldpage{232-01}
+  For every prescheme (more generally, every ringed space) #{X}, we define the (\em{absolute}) \em{Picard group} of #{X}, denoted by #{\Pic(X)}, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to #{\OO_X}) modules on #{X}.
+  We thus have a canonical isomorphism
+
+  \subtree[fga3.v-1-equation-1.1]{
+    \taxon{equation}
+    \number{1.1}
+    ##{
+      \Pic(X) \simto \HH^1(X,\OO_X^\times)
+    \startverb\tag{1.1}\stopverb
+    }
+  }
+
+  where #{\OO_X^\times} denotes the sheaf of units of #{\OO_X} (which can be identified with the sheaf of automorphisms of the invertible module #{\OO_X}).
+  Note that #{X\mapsto\Pic(X)} is a contravariant functor in #{X} in the evident way, and that the isomorphism \ref{fga3.v-1-equation-1.1} is functorial.
+}
+
+\p{
+  If #{X} is a prescheme over a prescheme #{S}, then, for variable #{S'} in the category #{\Sch_{/S}} of preschemes over #{S}, we have a contravariant functor #{S'\mapsto\Pic(X\times_S S')} thanks to the above.
+  This functor has no chance of being "representable" ([FGA 3.II, §A](fga3.ii-a.1)) since, as a consequence of the existence of \em{non-trivial automorphisms} of invertible modules that we propose to classify, this functor is not of a "\em{local nature}" ([[Gro1960a](Gro1960a), IV, 5.4]).
+  There is thus an opportunity to "make it local", by introducing, for every relative prescheme #{X/S}, a group of a relative nature
+
+  \subtree[fga3.v-1-equation-1.2]{
+    \taxon{equation}
+    \number{1.2}
+    ##{
+      \Pic'(X/S)
+      = \HH^0(S,\RR^1f_*(\OO_X^\times))
+    \startverb\tag{1.2}\stopverb
+    }
+  }
+
+  (where #{f\colon X\to S} is the structure morphism) (cf. [FGA 3.II, §C.3](fga3.ii-c.3)).
+  In \em{loc. cit.} this group is called the relative Picard group, but it will be preferable to call it here the \em{restricted relative Picard group} of #{X/S}, for reasons that will be made clear.
+  As #{S'} varies over #{\Sch_{/S}}, #{S'\mapsto\Pic'(X\times_S S'/S')} is a contravariant functor in #{S'}, denote also by #{\shPic'_{X/S}}, thus given essentially by the formula
+
+  \subtree[fga3.v-1-equation-1.3]{
+    \taxon{equation}
+    \number{1.3}
+    ##{
+      \shPic'_{X/S}(S')
+      = \Pic(X\times_S S'/S').
+    \startverb\tag{1.3}\stopverb
+    }
+  }
+
+  \oldpage{232-02}
+  This functor is now "of local nature", given that did what was necessary to make this happen.
+  Intuitively, the right-hand side of \ref{fga3.v-1-equation-1.3} can be understood as the set of "algebraic families" of classes of invertible sheaves on (the fibres of) #{X/S}, indexed by the parameter prescheme #{S'/S}.
+  When the functor #{\shPic'} is representable, the prescheme over #{S} that represents it is denoted by #{\repPic_{X/S}}, and is called the \em{Picard prescheme} of #{X} over #{S}, and so we then have
+
+  \subtree[fga3.v-1-equation-1.4]{
+    \taxon{equation}
+    \number{1.4}
+    ##{
+      \Hom_S(S',\repPic_{X/S})
+      \cong \shPic'_{X/S}(S')
+      = \Pic'(X\times_S S'/S').
+    \startverb\tag{1.4}\stopverb
+    }
+  }
+
+  There are, however, important cases where #{\shPic'_{X/S}} is not representable (example: the "Brauer–Severi" variety over a field #{k}, without a rational point over #{k}), but where there nevertheless exists a natural definition of a relative Picard prescheme.
+  This is due to the fact that, in the definition of the functor #{\shPic'} from the absolute Picard groups #{\Pic(X\times_S S'/S')}, we have not localised enough;
+  more precisely, #{\shPic'} is not in general "compatible with faithfully flat descent".
+  We now explain the details.
+}
+
+\p{
+  Let #{(\sh{M})} be the set of morphisms of preschemes that are \em{faithfully flat and quasi-compact};
+  this set is stable under base change and composition.
+  Let #{P} be a contravariant functor from #{\Sch_{/S}} to the category of sets, and, for every #{S}-morphism #{u\colon T'\to T} with #{u\in(\sh{M})}, consider the diagram
+
+  \subtree[fga3.v-1-equation-1.5]{
+    \taxon{equation}
+    \number{1.5}
+    ##{
+      P(T)
+      \to P(T')
+      \rightrightarrows P(T'\times_T T')
+    \startverb\tag{1.5}\stopverb
+    }
+  }
+
+  which is given by #{P} applied to the diagram
+  ##{
+    T
+    \from T'
+    \underset{\pr_2}{\overset{\pr_1}{\leftleftarrows}} T'\times_T T'.
+  }
+  If #{P} is representable, it follows from the theory of descent ([FGA 3.I, §B, Theorem 2](fga3.i-b.1-theorem-2)) that the diagram \ref{fga3.v-1-equation-1.5} is exact for all #{u\in(\sh{M})}.
+  We express this fact by saying that #{P} is compatible with #{(\sh{M})}, in the event that #{P} is "compatible with faithfully flat descent", or that the \em{"presheaf"} #{P} on #{\Sch_{/S}} is a \em{"sheaf"} for the notion of localisation given by the set #{(\sh{M})}.
+  If #{P} is arbitrary, then a standard procedure, well known in the case of usual topological localisation, allows us to associate to it a "sheaf" #{\sh{P}} and a homomorphism of functors #{P\to\sh{P}} that is universal in an obvious sense.
+  The construction of #{\sh{P}} can be made explicit in the following way: to define #{\sh{P}(T)}, we denote, for all #{T'} over #{T} such that the morphism #{u\colon T'\to T} is in #{(\sh{M})}, by #{\overline{\HH}^0(T'/T,P)} the subset of #{P(T')} consisting of the elements #{\xi} such that their images #{\xi_1,x_2} in #{P(T'\times_T T')} are such that there exists a morphism #{v\colon T''\to T'\times_T T'} in #{(\sh{M})} such that #{\xi_1} and #{\xi_2} have the same image in #{P(T'')}.
+}
+
+\p{
+  \oldpage{232-03}
+  (N.B. The set #{\overline{\HH}^0} thus defined is larger than the set #{\HH^0(T'/T,P)} introduced in [FGA 3.I, §A.4.a](fga3.i-a.4.a)).
+  As #{T'} varies over fixed #{T} (always with #{u\in(\sh{M})}), the #{\overline{\HH}^0(T'/T,P)} form an inductive system (when the set of the #{T'} is endowed with a preorder defined by domination), and we set
+
+  \subtree[fga3.v-1-equation-1.6]{
+    \taxon{equation}
+    \number{1.6}
+    ##{
+      \sh{P}(T)
+      = \varinjlim_{T'} \overline{\HH}^0(T'/T,P).
+    \startverb\tag{1.6}\stopverb
+    }
+  }
+
+  The functoriality in #{T} of this expression is evident.
+}
+
+\p{
+  When
+  ##{
+    P(T)
+    = \Pic(X\times_S T)
+  }
+  the contravariant functor on #{\Sch_{/S}} defined by \ref{fga3.v-1-equation-1.6} is called the \em{relative Picard functor} of #{X} over #{S}, and denoted by #{\shPic_{X/S}}, and we define the \em{relative Picard group} of #{X} over #{S}, denoted by #{\Pic(X/S)}, the group #{\shPic_{X/S}(S)}.
+  We then have an evident bijection
+
+  \subtree[fga3.v-1-equation-1.7]{
+    \taxon{equation}
+    \number{1.7}
+    ##{
+      \shPic_{X/S}(T)
+      \simto \Pic(X\times_S T/T).
+    \startverb\tag{1.7}\stopverb
+    }
+  }
+
+  An element of #{\Pic(X/S)} is thus defined by means of an element #{\xi'} of a group #{\Pic(X\times_S S')} (where #{S'\to S} is faithfully flat and quasi-compact) such that we can find a faithfully flat quasi-compact morphism #{S''\to S'\times_S S'} such that the two inverse images of #{\xi'} in #{\Pic(X\times_S S'')} are the same.
+  An element #{\xi'} of #{\Pic(X\times_S S')} and an element #{\xi_1} of #{\Pic(X\times_S S_1)} (satisfying the conditions that we have just stated) define the same element of #{\Pic(X/S)} if and only if there exists a faithfully flat quasi-compact morphism #{S'_1\to S'\times_S S_1} such that the images of the two elements in question in #{\Pic(X\times_S S'_1)} are equal.
+  It is often convenient to work instead with the functor #{P'=\shPic'_{X/S}} introduced above, and we immediately note that the canonical morphism #{P\to P'} defines an \em{isomorphism}
+
+  \subtree[fga3.v-1-equation-1.8]{
+    \taxon{equation}
+    \number{1.8}
+    ##{
+      \sh{P}
+      \simto \sh{P}'
+    \startverb\tag{1.8}\stopverb
+    }
+  }
+
+  which gives a description of #{\shPic_{X/S}} in terms of #{\shPic'_{X/S}=P'} that is usually more convenient.
+  By \ref{fga3.v-2-corollary-2.3} below, if we replace #{P} by #{P'} in the description of #{\Pic(X/S)} that we have just given then we can take #{S''=S'\times_S S'} and #{S'_1=S'\times_S S_1}, at least under the conditions given in \em{loc. cit.}.
+}
+
+\p{
+  \oldpage{232-04}
+  If the functor #{\shPic_{X/S}} is representable, we say that #{X/S} admits a Picard prescheme, and the prescheme over #{S} that represents the functor is called the \em{Picard prescheme} of #{X} over #{S}, and denoted by #{\repPic_{X/S}}.
+  For this, it evidently suffices that #{P'=\shPic_{X/S}} be representable, since then #{P'} is already a "sheaf", and equation \ref{fga3.v-1-equation-1.8} proves that the morphism #{P'\to\sh{P}'} can be identified with the canonical morphism
+
+  \subtree[fga3.v-1-equation-1.9]{
+    \taxon{equation}
+    \number{1.9}
+    ##{
+      \shPic'_{X/S}
+      \to \shPic_{X/S}
+    \startverb\tag{1.9}\stopverb
+    }
+  }
+
+  which is then an isomorphism.
+  This means that our terminology is compatible with that introduced above with \ref{fga3.v-1-equation-1.4}.
+  In general, when #{\repPic_{X/S}} exists it is defined by the functorial isomorphism
+
+  \subtree[fga3.v-1-equation-1.10]{
+    \taxon{equation}
+    \number{1.10}
+    ##{
+      \Hom_S(S',\repPic_{X/S})
+      \simto \Pic(X\times_S S'/S').
+    \startverb\tag{1.10}\stopverb
+    }
+  }
+}
