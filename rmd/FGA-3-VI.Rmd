@@ -1,12 +1,12 @@
 ## Topological properties of preschemes of commutative groups {#fga3.vi-1}
 
 Let $k$ be a field, and $G$ be a prescheme of groups over $k$.
-Since the identity element $e$, being rational over $k$, is necessarily closed, it immediately follows that the diagonal of $G\times_k G$ is closed, and so $G$ is *separated*: *every prescheme of groups over a field is separated*.
+Since the identity element $e$, being rational over $k$, is necessarily closed, it immediately follows that the diagonal of $G\times_k G$ is closed, and so $G$ is \em{separated*: \em{every prescheme of groups over a field is separated}.
 We denote by $G^0$ the connected component of the identity element $e$.
-Since $e$ is rational over $k$, $G^0$ is in fact *geometrically connected*, i.e. $G\mapsto G^0$ is compatible with base change to another field.
-It also follows that $G^0$ is stable under multiplication (set-theoretically), and if $G$ is locally Noetherian then $G^0$ is open, and we can consider $G^0$ as an *open subgroup* of $G$.
+Since $e$ is rational over $k$, $G^0$ is in fact \em{geometrically connected}, i.e. $G\mapsto G^0$ is compatible with base change to another field.
+It also follows that $G^0$ is stable under multiplication (set-theoretically), and if $G$ is locally Noetherian then $G^0$ is open, and we can consider $G^0$ as an \em{open subgroup} of $G$.
 In what follows, we suppose $G$ to be locally of finite type over $k$;
-then $G^0$ is *geometrically irreducible and of finite type over $k$*.
+then $G^0$ is \em{geometrically irreducible and of finite type over $k$}.
 Indeed, we can suppose that $k$ is algebraically closed, and thus that $G$ is reduced (since $G_\red$ is then a subgroup of $G$, taking into account the fact that $G_\red\times_k G_\red$ is also then reduced), and thus simple over $k$ over a non-empty open, and thus everywhere, by translating this open subset.
 But then $G$ is locally irreducible, and so its irreducible components are identical to its connected components, and so $G^0$ is irreducible.
 So let $U$ be an affine neighbourhood of $e$ in $G^0$;
@@ -41,7 +41,7 @@ $$
 We can construct the quotient group scheme $G/G^0=N$ (cf. [FGA 3.IV](fga3.iv)) and then define $G^\tau$, $G^\sigma$, and $G^\rho$ as the inverse images in $G$ of the torsion subgroup of $N$ (resp. of its $p$-primary component, resp. of the natural complement of its $p$-primary component, given by the sum of the $q$-primary components for $q$ prime with $q\neq p$).
 Note that $N$ is a discrete group scheme that is separable over $k$, thus (once we have chosen an algebraic closure $\overline{k}$ of $k$, giving rise to a Galois group $\pi$) can be identified with an ordinary discrete group on which $\pi$ acts by automorphisms.
 It is in this way that we can interpret, in an evident way, the construction of the torsion subgroup and the decomposition of this into its $q$-primary components.
-If $G$ is the Picard scheme of a proper scheme $X$ over $k$, then $N$ could be called the (reduced) *Néron–Severi scheme* of $X$ over $k$.
+If $G$ is the Picard scheme of a proper scheme $X$ over $k$, then $N$ could be called the (reduced) \em{Néron–Severi scheme} of $X$ over $k$.
 If $G_\red^0$ is a group subscheme of $G^0$, which is the case whenever, in particular, $k$ is parfait, or $G^0$ is proper over $k$ (for example if $X$ is geometrically normal), then we can equally introduce the quotient $N'=G/G_\red^0$, which has the tendency to behave better than $N$ from the specialisation point of view, i.e. as $X$ varies over a family of algebraic schemes.
 :::
 
@@ -65,14 +65,14 @@ $$
 $$
 \oldpage{236-04}
 These are subsets of $G$, stable under the multiplication of $G$, which does not obviously imply that they can be defined by means of sub-group preschemes of $G$.
-Notably, it seems that *there does not exist in a general sub-group prescheme of $G$ whose underlying set is $G^0$*.
+Notably, it seems that \em{there does not exist in a general sub-group prescheme of $G$ whose underlying set is $G^0$}.
 Of course, if one of these sets is open, then, endowed with the induced structure, it is an open sub-group prescheme of $G$.
 We will see that this is always the case for $G^\tau$;
-in this way, from the point of view of representable functors, in particular *from the "specialisation" point of view, numerical equivalence behaves in a more satisfying manner than algebraic equivalence*.
+in this way, from the point of view of representable functors, in particular \em{from the "specialisation" point of view, numerical equivalence behaves in a more satisfying manner than algebraic equivalence}.
 Here are the principle general properties of the sets that we have just defined:
 
 ::: {.itenv #fga3.vi-theorem-1.1 title="Theorem 1.1" latex="{Theorem 1.1}"}
-$G^0$, $G^\tau$, $G^\sigma$, and $G^\rho$ are *locally constructible*.
+$G^0$, $G^\tau$, $G^\sigma$, and $G^\rho$ are \em{locally constructible}.
 Furthermore:
 
 i. $G^0$ is quasi-compact over $S$.
@@ -95,7 +95,7 @@ If $S\neq\varnothing$ then there exists a non-empty open $U$ in $S$, a group sch
 ::: {.proof}
 To prove this lemma, we can suppose that $S$ is irreducible;
 let $\eta$ be its generic point.
-If we make the base change $S'=\Spec(\OO_{S,\eta})\to S$ then we find a group scheme $G'$ over a local Artinian ring $\OO_{S,s}=A$ inside which we have an *open* group subscheme ${G'}^0$ *of finite type over $A$*, as we said above.
+If we make the base change $S'=\Spec(\OO_{S,\eta})\to S$ then we find a group scheme $G'$ over a local Artinian ring $\OO_{S,s}=A$ inside which we have an \em{open} group subscheme ${G'}^0$ \em{of finite type over $A$}, as we said above.
 This thus comes from a group scheme $H$ of finite type over an open neighbourhood $U$ of $\eta$, and the canonical immersion ${G'}^0\to G'$ comes from an open immersion $H\to G|U$, which will be a homomorphism of group schemes for $U$ small enough.
 \oldpage{236-05}
 Since the fibres of $H$ are connected if we take $U$ small enough, and since they are all of the same dimension, namely that of the fibres of $G$, for $U$ small enough, it follows that, for all $s\in U$, the image of $H_s$ in $G_s$ is exactly $G_s^0$ (for $U$ small enough), which proves the lemma.
@@ -385,7 +385,7 @@ The second claim follows from [(2.5)](#fga3.vi-theorem-2.5).
 ::: {.rmenv #fga3.vi-remark-2.8 title="Remark 2.8" latex="{Remark 2.8}"}
 Let $s,s'\in S$ be such that $s$ is a specialisation of $s'$.
 Then [(2.7)](#fga3.vi-corollary-2.7) is equivalent to an inequality (resp. equality) between the dimensions of the Picard schemes of $X_{s'}$ and of its "specialisation" $X_s$.
-Serre noted, even before the construction of Picard schemes, that the invariance of the dimensions of the Picard varieties of the $X_s$ in the case of a *simple* morphism $f\colon X\to S$ was a formal consequence of the theory of specialisation of the fundamental group ([[Gro1960b](Gro1960b), X]), classical relations à la Kummer between the points of finite order on the Picard variety, and the abelianisation of the fundamental group ([[Gro1960b](Gro1960b), XI]).
+Serre noted, even before the construction of Picard schemes, that the invariance of the dimensions of the Picard varieties of the $X_s$ in the case of a \em{simple} morphism $f\colon X\to S$ was a formal consequence of the theory of specialisation of the fundamental group ([[Gro1960b](Gro1960b), X]), classical relations à la Kummer between the points of finite order on the Picard variety, and the abelianisation of the fundamental group ([[Gro1960b](Gro1960b), XI]).
 If we denote by $\alpha$, $\mu$, and $\lambda$ the dimensions of the abelian, multiplicative, and additive parts (respectively) of $\repPic_{X_s/k(s)}$, and we similarly define $\alpha'$, $\mu'$, and $\lambda'$, then the known relations can be expressed as the following inequalities:
 $$
   \alpha+\mu+\lambda
@@ -404,7 +404,7 @@ $$
 \tag{$\ast\ast$}
 $$
 \oldpage{236-15}
-by the argument of Serre, if the $X_s$ are separable (without even supposing the existence of $\repPic_{X/S}^\tau$), or if the ${}_n\repPic_{X/S}$ (kernels of the $\varphi_n$ into the Picard functor) are *separated* over $S$ (taking into account the fact that they are étale over $S$, thanks to [(2.5)](#fga3.vi-theorem-2.5)).
+by the argument of Serre, if the $X_s$ are separable (without even supposing the existence of $\repPic_{X/S}^\tau$), or if the ${}_n\repPic_{X/S}$ (kernels of the $\varphi_n$ into the Picard functor) are \em{separated} over $S$ (taking into account the fact that they are étale over $S$, thanks to [(2.5)](#fga3.vi-theorem-2.5)).
 We are inclined to conjecture that ($\ast$) is an equality in all cases, or at least if the $X_s$ are separable, and also that we have inequalities
 $$
   \begin{aligned}
@@ -423,7 +423,7 @@ The point envisaged by Mumford can also be found in $\repPic_{X/S}^\rho$, and it
 the speaker doubts, however, that this is always the case, even when restricting to the points of $\repPic_{X/S}^0$ and supposing $S$ to be the spectrum of a discrete valuation ring.
 The question is linked to the study of fixed points of an abelian scheme under a finite automorphism group, a situation for which we seem to lack examples.
 It seems that even by restricting to simple and projective $f\colon X\to S$, the results of local regularity on $\repPic_{X/S}$ stated in the present section, and the conjectures raised in [(2.8)](#fga3.vi-remark-2.8), basically exhaust what can be said on this subject without more particular hypotheses on the nature of the fibres of $f$.
-We recall, however, that, if the geometric fibres of $\repPic_{X/S}$ are *reduced* and have no additive component, then it follows from [(1.8)](#fga3.vi-corollary-1.8) and [(2.5)](#fga3.vi-theorem-2.5) that $\repPic_{X/S}$ is simple over $S$ at the points of $\repPic_{X/S}^\sigma$ whenever $S$ is reduced;
+We recall, however, that, if the geometric fibres of $\repPic_{X/S}$ are \em{reduced} and have no additive component, then it follows from [(1.8)](#fga3.vi-corollary-1.8) and [(2.5)](#fga3.vi-theorem-2.5) that $\repPic_{X/S}$ is simple over $S$ at the points of $\repPic_{X/S}^\sigma$ whenever $S$ is reduced;
 this result still holds even, if $f\colon X\to S$ is normal, without any hypothesis on $S$, and we will see in [(3.5)](#fga3.vi-theorem-3.5).
 On this note, we point out:
 :::
@@ -480,7 +480,7 @@ The above result shows that, in certain cases, the classical "Picard variety" (w
 Now let $f\colon X\to S$ be a proper and flat relative scheme, with $\OO_S\simto f_*(\OO_X)$ for simplicity, such that $\repPic_{X/S}$ exists and that $\repPic_{X/S}^0$ is proper over $S$.
 Suppose further, for [(3.3), (ii)](#fga3.vi-theorem-3.3), that there exists an open of $\repPic_{X/S}$ containing $\repPic_{X/S}^0$ that is quasi-projective over $S$;
 this condition is satisfied, as we have seen, if $f$ is projective and with separable or irreducible geometric fibres.
-Recall that an *abelian scheme* over $S$ is a group scheme over $S$ that is proper and simple over $S$ with connected geometric fibres.
+Recall that an \em{abelian scheme} over $S$ is a group scheme over $S$ that is proper and simple over $S$ with connected geometric fibres.
 We propose to examine whether or not there exists a group subscheme $A$ of $\repPic_{X/S}$ that is an abelian scheme and whose underlying set is $\repPic_{X/S}^0$.
 We have just seen that such an $A$ always exists if $S$ is the spectrum of a field.
 Here is what we know how to say in the general case envisaged here:
@@ -555,7 +555,7 @@ The above allows us to reduce to the case where $S$ is the spectrum of an Artini
 We can thus suppose that $\repPic_{X_n/A_n}^0$ is simple over $A_n$, and reduce to proving that $\repPic_{X_{n+1}/A_{n+1}}^0$ is simple over $A_{n+1}$.
 Note that, for this, it suffices to construct an abelian scheme $P_{n+1}$ over $A_{n+1}$ that extends $P_n=\repPic_{X_n/A_n}^0$, along with an invertible module $\sh{L}_{n+1}$ on $X_{n+1}\times_{A_{n+1}}P_{n+1}$ that extends the invertible module $\sh{L}_n$ on $X_n\times_{A_n}P_n$ that arises in the definition of the Picard scheme $\repPic_{X_n/A_n}$ as the solution to a universal problem.
 (N.B. We can suppose that $X$ is endowed with a section over $S$...).
-For this construction, we must use the following key result: *every abelian scheme defined over a quotient of an Artinian local ring can be extended* (in other words, the absolute "formal scheme of modules" ([FGA 3.II](fga3.ii)) for an abelian scheme over an algebraically closed field is simple over the ring of Witt vectors over $k$);
+For this construction, we must use the following key result: \em{every abelian scheme defined over a quotient of an Artinian local ring can be extended} (in other words, the absolute "formal scheme of modules" ([FGA 3.II](fga3.ii)) for an abelian scheme over an algebraically closed field is simple over the ring of Witt vectors over $k$);
 \oldpage{236-20}
 this result can be obtained by using the general formal properties of the obstruction to lifting, and the group operations.
 With this result, we start by extending $P_n$ arbitrarily to $P_{n+1}$;
@@ -576,7 +576,7 @@ This module is exactly the tangent module to $\repPic_{X/S}$ along the identity 
 Using the same argument as for [(3.5)](#fga3.vi-theorem-3.5), we can show that, if $S'$ is a subscheme of $S$ defined by a nilpotent coherent ideal, and if we suppose only that $\repPic_{X'/S'}^0$ exists and has simple fibres, then $\repPic_{X/S}^0$ necessarily exists and is an abelian scheme over $S$.
 This allows us to construct Picard schemes in certain cases, despite the absence of any projective hypothesis;
 for example, the dual abelian scheme of an abelian scheme over an Artinian ring always exists.
-Using [(3.6)](#fga3.vi-corollary-3.6) in the case where $X$ is an abelian scheme over $S$, and using the known structure of $\HH^\bullet(X_s,\OO_{X_s})$ as an exterior algebra over $\HH^1(X_s,\OO_{X_s})$ (Rosenlicht–Serre), we find that $\RR^if_*(\OO_X)$ is locally free for *all* $i$, and more precisely that it is isomorphic to the $i$-th exterior power of $\RR^1f_*(\OO_X)$.
+Using [(3.6)](#fga3.vi-corollary-3.6) in the case where $X$ is an abelian scheme over $S$, and using the known structure of $\HH^\bullet(X_s,\OO_{X_s})$ as an exterior algebra over $\HH^1(X_s,\OO_{X_s})$ (Rosenlicht–Serre), we find that $\RR^if_*(\OO_X)$ is locally free for \em{all} $i$, and more precisely that it is isomorphic to the $i$-th exterior power of $\RR^1f_*(\OO_X)$.
 :::
 
 ::: {.rmenv #fga3.vi-remark-3.8 title="Remark 3.8" latex="{Remark 3.8}"}
@@ -603,11 +603,11 @@ Then $\repPic_{X/S}^\tau$ is simple over $S$.
 :::
 
 ::: {.rmenv #fga3.vi-remark-3.10 title="Remark 3.10" latex="{Remark 3.10}"}
-We thus deduce, for example, that if $\repPic_{X/S}$ is also *proper* over $S$, then the Néron–Severi torsion group of geometric fibres of $f$ is constant on every connected component of $S$ (which is also evident by transcendental methods when $f$ is simple and projective).
+We thus deduce, for example, that if $\repPic_{X/S}$ is also \em{proper} over $S$, then the Néron–Severi torsion group of geometric fibres of $f$ is constant on every connected component of $S$ (which is also evident by transcendental methods when $f$ is simple and projective).
 We note that the direct use of [(2.5)](#fga3.vi-theorem-2.5) allows us to show, more generally, that, if $\repPic_{X/S}$ is proper over $S$ (for example, if $f\colon X\to S$ is simple and projective), and if $q$ is a prime number distinct from the residual characteristics of $S$, then the $q$-primary component of the Néron–Severi torsion groups of geometric fibres of $X/S$ is constant on every connected component of $S$.
 It is no longer, however, the case in characteristic $p>0$ for the $p$-primary component of the torsion group.
 However, it remains possible that the rank over the $k(s)$ of $\repPic_{X_s/k(s)}/\repPic_{X_s/k(s)}^{00}=T_{X_s/k(s)}$ is locally constant;
-when $S$ is reduced, we  can show that this is equivalent to showing that $\repPic_{X/S}^{00}$ exists and that $\repPic_{X/S}$ is *flat* over $S$, and it suffices to test in the cases where $S$ is the spectrum of a discrete valuation ring.
+when $S$ is reduced, we  can show that this is equivalent to showing that $\repPic_{X/S}^{00}$ exists and that $\repPic_{X/S}$ is \em{flat} over $S$, and it suffices to test in the cases where $S$ is the spectrum of a discrete valuation ring.
 This is what I have verified in the few examples that I have looked at;
 but since the corresponding statement with $S$ Artinian is false (cf. Remarks [(2.9)](#fga3.vi-remark-2.9) and [(3.4)](#fga3.vi-remarks-3.4)), we must not get carried away.
 :::
@@ -620,11 +620,11 @@ Then the "Hilbert polynomials" $Q\in\mathbb{Q}[t]$ allow us to decompose $\repPi
 If we do not make any further hypotheses, ensuring for example that $\repPic_{X/S}$ is separated over $S$, then it will not be true in general that these opens are of finite type over $S$;
 we obtain a counterexample when $X$ is "a conic degenerating to two lines".
 \oldpage{236-22}
-It is possible, however, that this is the case if $f$ is *separable* and has *irreducible geometric fibres*.
+It is possible, however, that this is the case if $f$ is \em{separable} and has \em{irreducible geometric fibres}.
 The question is linked to knowing if $\repPic_{X/S}^\tau$ is of finite type over $S$, which can be true without any hypotheses on the fibres of $X/S$.
 When $f\colon X\to S$ is simple, we note that $\repPic_{X/S}^\tau$ is contained in one of the $\repPic_{X/S}^Q$ (thanks to the fact that, on a non-singular projective variety, "torsion" equivalence is finer than (in fact, "identical to", thanks to Matsusaka) numerical equivalence for divisors), and is thus of finite type over $S$ if the $\repPic_{X/S}^Q$ are.
 Note that these finiteness questions that we have just highlighted still make sense even without supposing the existence of $\repPic_{X/S}$, since they can be expressed by saying that certain families of invertible modules are "limited", in the sense of [FGA 3.IV](fga3.iv):
-Consider, for every algebraically closed field $k$, the integral subschemes of $\mathbb{P}_k^r$ of dimension $n$ and degree $d$, and the invertible modules on these preschemes that have a Hilbert polynomial $Q$ (where $r$, $n$, $d$, and $Q$ are given), and show that the family of these modules (considered as coherent modules on the $\mathbb{P}_k^r$) is *limited*, i.e. can be parametrised by a scheme of finite type over $\mathbb{Z}$.
+Consider, for every algebraically closed field $k$, the integral subschemes of $\mathbb{P}_k^r$ of dimension $n$ and degree $d$, and the invertible modules on these preschemes that have a Hilbert polynomial $Q$ (where $r$, $n$, $d$, and $Q$ are given), and show that the family of these modules (considered as coherent modules on the $\mathbb{P}_k^r$) is \em{limited}, i.e. can be parametrised by a scheme of finite type over $\mathbb{Z}$.
 
 Using the method of Matsusaka [[Mat1957]](Mat1957), a rather technical proof (using the "equivalence criteria" in a suitable form) allow us to answer in the affirmative when we restrict to the non-singular subvarieties of $\mathbb{P}_k^r$.
 More precisely, we obtain the following result:
@@ -638,7 +638,7 @@ Then the following conditions are equivalent:
 
 a. $Q$ is quasi-compact, i.e. contains an open of finite type over $S$, i.e.. the family $(\sh{L}_i)$ is limited.
 b. $E$ is contained in the union of a finite number of the sets $\repPic_{X/S}^Q$, for $Q\in\mathbb{Q}[t]$, i.e. the set of Hilbert polynomials of the $\sh{L}_i$ is finite.
-b'. (If the fibres of $X/S$ are all of the same dimension $n$).^[*[Trans.]* Conditions (c) and (d) were originally called (b') and (b'').]
+b'. (If the fibres of $X/S$ are all of the same dimension $n$).
   The coefficients $a_{n-1}^{(i)}$ and $a_{n-2}^{(i)}$ of the Hilbert polynomials of the $\sh{L}_i$ are contained in a finite set.
 b''. \oldpage{236-23}
 
@@ -656,7 +656,7 @@ Since they are of finite type over $S$, by [(4.1)](#fga3.vi-theorem-4.1), we can
 :::
 
 ::: {.rmenv #fga3.vi-remark-comp title="Remark" latex="{Remark}"}
-*[Comp.]*
+\comp
 \oldpage{C-07}
 The questions of finiteness of the type highlighted in this section have been all but totally resolved since the editing of this present talk.
 We note here the principal facts now known in this direction.
@@ -680,7 +680,7 @@ iii. Suppose that $X$ is projective over $S$, and that all its geometric fibres 
 
 iv. For every integer $n\neq0$, the $n$-th power homomorphism in the group prescheme $\repPic_{X/S}$ is a morphism of finite type.
 
-Note that (i) and (ii) also imply (under the hypotheses given in their respective statements) that *a subset $M$ of $\repPic_{Y/S}$ is quasi-compact if and only if its image in $\repPic_{X/S}$ is quasi-compact*.
+Note that (i) and (ii) also imply (under the hypotheses given in their respective statements) that \em{a subset $M$ of $\repPic_{Y/S}$ is quasi-compact if and only if its image in $\repPic_{X/S}$ is quasi-compact}.
 We thus conclude that an invertible module $\sh{L}$ on $Y$ is $\tau$-equivalent to $0$ if and only if its inverse image in $X$ is;
 in other words, $\repPic_{Y/S}^\tau$ is the inverse image of $\repPic_{X/S}^\tau$.
 In particular, to show that the first prescheme is of finite type over $S$, it suffices to prove this for the second, since $\repPic_{Y/S}\to\repPic_{X/S}$ is of finite type.
@@ -734,24 +734,24 @@ viii. Let $X/k$ be a proper scheme over a field, and $\sh{L}$ an invertible modu
     (i.e. (b) is true for $F=\sh{L}^{\otimes m}(n)$).
 
   For the sufficiency of this last condition, note that it implies that the Hilbert polynomials of the $\sh{L}^{\otimes m}$ are all equal, and thus, by the Mumford criterion (iii), the $\sh{L}^{\otimes m}$ remain in a quasi-compact subset of $\repPic_{X/k}$, i.e. we have (a).
-  Conditions (b), (b'), and (c) should be considered as variants (for an arbitrary proper scheme) of the notion of *numerical equivalence*, usually defined for non-singular projective varieties.
+  Conditions (b), (b'), and (c) should be considered as variants (for an arbitrary proper scheme) of the notion of \em{numerical equivalence}, usually defined for non-singular projective varieties.
   For such varieties, the equivalence of (a) and (c) was evidently well known (Matsusaka).
 
 Criterion (e) from the above also implies the following result:
 \todo{the following list should be ix}
 
 ix. Let $f\colon X\to S$ be a flat projective morphism whose geometric fibres are integral.
-  Then $\repPic_{X/S}^\tau$ is open *and closed* in $\repPic_{X/S}$.
+  Then $\repPic_{X/S}^\tau$ is open \em{and closed} in $\repPic_{X/S}$.
 
 We restrict ourselves to some comments on the proofs of the key results (i), (ii), and (iii) (result (iv) is a little bit different from the others, and can be proven using only (i) for radicial surjective finite morphisms, or, more precisely, for a Frobenius morphism).
 For (i), we use, in an essential way, the ideas of non-flat descent (see [FGA 3.I, §A.2.c](#fga3.i-a.2.c)).
 One finds that (thinking only of finiteness results) the lack of effectivity criteria for descent data is inoffensive.
-Mumford has recently proven a slightly weaker form of (iii), where the criterion makes use of *all* the coefficients of the Hilbert polynomial.
+Mumford has recently proven a slightly weaker form of (iii), where the criterion makes use of \em{all} the coefficients of the Hilbert polynomial.
 His argument is extremely simple, and is inspired by the proof of an amplitude criterion by Nakai (stated by the latter for non-singular surfaces, and generalised by Mumford to arbitrary projective morphisms).
 It seems to me that this argument only works under a gentle additional restriction on the fibres of $X/S$ (Serre's ($\text{S}_2$) property), which is satisfied if the geometric fibres are normal.
 We then use this restricted criterion in the proof of (ii): criterion (i) allows us to reduce to the case where $Y/S$ is flat with integral and normal geometric fibres, and applying the Mumford criterion we easily reduce to the case where $X/S$ satisfies the same conditions.
 From the dimension hypothesis it then follows that the geometric fibres of $Y$ and of $X$ are of depth $\geqslant2$ at their closed points, which allows us to apply the "equivalence criteria" under the form that is given in [[Gro1960b](Gro1960b), XII], and finishes the proof of (ii).
 Once we have (i) and (ii), it is not difficult in the Mumford criterion to discard the hypothesis that the fibres be normal, and to prove it under the stronger form given in (iii).
 \oldpage{C-
-11}We note finally that the proof of (i) and (ii) also shows that, in the case where $S$ is the spectrum of a field $k$, the morphism $\repPic_{Y/k}\to\repPic_{X/k}$ is *affine* (and not only of finite type).
+11}We note finally that the proof of (i) and (ii) also shows that, in the case where $S$ is the spectrum of a field $k$, the morphism $\repPic_{Y/k}\to\repPic_{X/k}$ is \em{affine} (and not only of finite type).
 :::

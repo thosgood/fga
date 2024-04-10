@@ -1,55 +1,54 @@
 ## Relative Picard groups and functors {#fga3.v-1}
 
 \oldpage{232-01}
-For every prescheme (more generally, every ringed space) $X$, we define the (*absolute*) *Picard group* of $X$, denoted by $\Pic(X)$, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to $\OO_X$) modules on $X$.
+For every prescheme (more generally, every ringed space) $X$, we define the (\em{absolute}) \em{Picard group} of $X$, denoted by $\Pic(X)$, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to $\OO_X$) modules on $X$.
 We thus have a canonical isomorphism
 
 ::: {.eqenv #fga3.v-equation-1.1 title="" latex=""}
-$$
-  \Pic(X)
-  \simto \HH^1(X,\OO_X^\times)
-\tag{1.1}
-$$
+  $$
+    \Pic(X) \simto \HH^1(X,\OO_X^\times)
+  \startverb\tag{1.1}\stopverb
+  $$
 :::
 
 where $\OO_X^\times$ denotes the sheaf of units of $\OO_X$ (which can be identified with the sheaf of automorphisms of the invertible module $\OO_X$).
-Note that $X\mapsto\Pic(X)$ is a contravariant functor in $X$ in the evident way, and that the isomorphism [(1.1)](#fga3.v-equation-1.1) is functorial.
+Note that $X\mapsto\Pic(X)$ is a contravariant functor in $X$ in the evident way, and that the isomorphism \ref{fga3.v-equation-1.1} is functorial.
 
 If $X$ is a prescheme over a prescheme $S$, then, for variable $S'$ in the category $\Sch_{/S}$ of preschemes over $S$, we have a contravariant functor $S'\mapsto\Pic(X\times_S S')$ thanks to the above.
-This functor has no chance of being "representable" ([FGA 3.II, §A](fga3.ii-a.1)) since, as a consequence of the existence of *non-trivial automorphisms* of invertible modules that we propose to classify, this functor is not of a *"local nature"* ([[Gro1960a](Gro1960a), IV, 5.4]).
+This functor has no chance of being "representable" ([FGA 3.II, §A](fga3.ii-a.1)) since, as a consequence of the existence of \em{non-trivial automorphisms} of invertible modules that we propose to classify, this functor is not of a "\em{local nature}" ([[Gro1960a](Gro1960a), IV, 5.4]).
 There is thus an opportunity to "make it local", by introducing, for every relative prescheme $X/S$, a group of a relative nature
 
 ::: {.eqenv #fga3.v-equation-1.2 title="" latex=""}
 $$
   \Pic'(X/S)
   = \HH^0(S,\RR^1f_*(\OO_X^\times))
-\tag{1.2}
+\startverb\tag{1.2}\stopverb
 $$
 :::
 
 (where $f\colon X\to S$ is the structure morphism) (cf. [FGA 3.II, §C.3](fga3.ii-c.3)).
-In *loc. cit.* this group is called the relative Picard group, but it will be preferable to call it here the *restricted relative Picard group* of $X/S$, for reasons that will be made clear.
+In \em{loc. cit.} this group is called the relative Picard group, but it will be preferable to call it here the \em{restricted relative Picard group} of $X/S$, for reasons that will be made clear.
 As $S'$ varies over $\Sch_{/S}$, $S'\mapsto\Pic'(X\times_S S'/S')$ is a contravariant functor in $S'$, denote also by $\shPic'_{X/S}$, thus given essentially by the formula
 
 ::: {.eqenv #fga3.v-equation-1.3 title="" latex=""}
 $$
   \shPic'_{X/S}(S')
   = \Pic(X\times_S S'/S').
-\tag{1.3}
+\startverb\tag{1.3}\stopverb
 $$
 :::
 
 \oldpage{232-02}
 This functor is now "of local nature", given that did what was necessary to make this happen.
 Intuitively, the right-hand side of [(1.3)](#fga3.v-equation-1.3) can be understood as the set of "algebraic families" of classes of invertible sheaves on (the fibres of) $X/S$, indexed by the parameter prescheme $S'/S$.
-When the functor $\shPic'$ is representable, the prescheme over $S$ that represents it is denoted by $\repPic_{X/S}$, and is called the *Picard prescheme* of $X$ over $S$, and so we then have
+When the functor $\shPic'$ is representable, the prescheme over $S$ that represents it is denoted by $\repPic_{X/S}$, and is called the \em{Picard prescheme} of $X$ over $S$, and so we then have
 
 ::: {.eqenv #fga3.v-equation-1.4 title="" latex=""}
 $$
   \Hom_S(S',\repPic_{X/S})
   \cong \shPic'_{X/S}(S')
   = \Pic'(X\times_S S'/S').
-\tag{1.4}
+\startverb\tag{1.4}\stopverb
 $$
 :::
 
@@ -58,7 +57,7 @@ This is due to the fact that, in the definition of the functor $\shPic'$ from th
 more precisely, $\shPic'$ is not in general "compatible with faithfully flat descent".
 We now explain the details.
 
-Let $(\sh{M})$ be the set of morphisms of preschemes that are *faithfully flat and quasi-compact*;
+Let $(\sh{M})$ be the set of morphisms of preschemes that are \em{faithfully flat and quasi-compact};
 this set is stable under base change and composition.
 Let $P$ be a contravariant functor from $\Sch_{/S}$ to the category of sets, and, for every $S$-morphism $u\colon T'\to T$ with $u\in(\sh{M})$, consider the diagram
 
@@ -67,7 +66,7 @@ $$
   P(T)
   \to P(T')
   \rightrightarrows P(T'\times_T T')
-\tag{1.5}
+\startverb\tag{1.5}\stopverb
 $$
 :::
 
@@ -78,7 +77,7 @@ $$
   \underset{\pr_2}{\overset{\pr_1}{\leftleftarrows}} T'\times_T T'.
 $$
 If $P$ is representable, it follows from the theory of descent ([FGA 3.I, §B, Theorem 2](fga3.i-b.1-theorem-2)) that the diagram [(1.5)](#fga3.v-equation-1.5) is exact for all $u\in(\sh{M})$.
-We express this fact by saying that $P$ is compatible with $(\sh{M})$, in the event that $P$ is "compatible with faithfully flat descent", or that the *"presheaf"* $P$ on $\Sch_{/S}$ is a *"sheaf"* for the notion of localisation given by the set $(\sh{M})$.
+We express this fact by saying that $P$ is compatible with $(\sh{M})$, in the event that $P$ is "compatible with faithfully flat descent", or that the \em{"presheaf"} $P$ on $\Sch_{/S}$ is a \em{"sheaf"} for the notion of localisation given by the set $(\sh{M})$.
 If $P$ is arbitrary, then a standard procedure, well known in the case of usual topological localisation, allows us to associate to it a "sheaf" $\sh{P}$ and a homomorphism of functors $P\to\sh{P}$ that is universal in an obvious sense.
 The construction of $\sh{P}$ can be made explicit in the following way: to define $\sh{P}(T)$, we denote, for all $T'$ over $T$ such that the morphism $u\colon T'\to T$ is in $(\sh{M})$, by $\overline{\HH}^0(T'/T,P)$ the subset of $P(T')$ consisting of the elements $\xi$ such that their images $\xi_1,x_2$ in $P(T'\times_T T')$ are such that there exists a morphism $v\colon T''\to T'\times_T T'$ in $(\sh{M})$ such that $\xi_1$ and $\xi_2$ have the same image in $P(T'')$.
 
@@ -90,7 +89,7 @@ As $T'$ varies over fixed $T$ (always with $u\in(\sh{M})$), the $\overline{\HH}^
 $$
   \sh{P}(T)
   = \varinjlim_{T'} \overline{\HH}^0(T'/T,P).
-\tag{1.6}
+\startverb\tag{1.6}\stopverb
 $$
 :::
 
@@ -101,42 +100,41 @@ $$
   P(T)
   = \Pic(X\times_S T)
 $$
-the contravariant functor on $\Sch_{/S}$ defined by [(1.6)](#fga3.v-equation-1.6) is called the *relative Picard functor* of $X$ over $S$, and denoted by $\shPic_{X/S}$, and we define the *relative Picard group* of $X$ over $S$, denoted by $\Pic(X/S)$, the group $\shPic_{X/S}(S)$.
+the contravariant functor on $\Sch_{/S}$ defined by [(1.6)](#fga3.v-equation-1.6) is called the \em{relative Picard functor} of $X$ over $S$, and denoted by $\shPic_{X/S}$, and we define the \em{relative Picard group} of $X$ over $S$, denoted by $\Pic(X/S)$, the group $\shPic_{X/S}(S)$.
 We then have an evident bijection
 
 ::: {.eqenv #fga3.v-equation-1.7 title="" latex=""}
 $$
   \shPic_{X/S}(T)
   \simto \Pic(X\times_S T/T).
-\tag{1.7}
+\startverb\tag{1.7}\stopverb
 $$
 :::
 
 An element of $\Pic(X/S)$ is thus defined by means of an element $\xi'$ of a group $\Pic(X\times_S S')$ (where $S'\to S$ is faithfully flat and quasi-compact) such that we can find a faithfully flat quasi-compact morphism $S''\to S'\times_S S'$ such that the two inverse images of $\xi'$ in $\Pic(X\times_S S'')$ are the same.
 An element $\xi'$ of $\Pic(X\times_S S')$ and an element $\xi_1$ of $\Pic(X\times_S S_1)$ (satisfying the conditions that we have just stated) define the same element of $\Pic(X/S)$ if and only if there exists a faithfully flat quasi-compact morphism $S'_1\to S'\times_S S_1$ such that the images of the two elements in question in $\Pic(X\times_S S'_1)$ are equal.
-It is often convenient to work instead with the functor $P'=\shPic'_{X/S}$ introduced above, and we immediately note that the canonical morphism $P\to P'$ defines an *isomorphism*
+It is often convenient to work instead with the functor $P'=\shPic'_{X/S}$ introduced above, and we immediately note that the canonical morphism $P\to P'$ defines an \em{isomorphism}
 
 ::: {.eqenv #fga3.v-equation-1.8 title="" latex=""}
 $$
   \sh{P}
   \simto \sh{P}'
-\tag{1.8}
+\startverb\tag{1.8}\stopverb
 $$
 :::
 
 which gives a description of $\shPic_{X/S}$ in terms of $\shPic'_{X/S}=P'$ that is usually more convenient.
-By [(2.3)](#fga3.v-corollary-2.3) below, if we replace $P$ by $P'$ in the description of $\Pic(X/S)$ that we have just given then we can take $S''=S'\times_S S'$ and $S'_1=S'\times_S S_1$, at least under the conditions given in *loc. cit.*.
+By [(2.3)](#fga3.v-corollary-2.3) below, if we replace $P$ by $P'$ in the description of $\Pic(X/S)$ that we have just given then we can take $S''=S'\times_S S'$ and $S'_1=S'\times_S S_1$, at least under the conditions given in \em{loc. cit.}.
+
 \oldpage{232-04}
-
-
-If the functor $\shPic_{X/S}$ is representable, we say that $X/S$ admits a Picard prescheme, and the prescheme over $S$ that represents the functor is called the *Picard prescheme* of $X$ over $S$, and denoted by $\repPic_{X/S}$.
+If the functor $\shPic_{X/S}$ is representable, we say that $X/S$ admits a Picard prescheme, and the prescheme over $S$ that represents the functor is called the \em{Picard prescheme} of $X$ over $S$, and denoted by $\repPic_{X/S}$.
 For this, it evidently suffices that $P'=\shPic_{X/S}$ be representable, since then $P'$ is already a "sheaf", and equation [(1.8)](#fga3.v-equation-1.8) proves that the morphism $P'\to\sh{P}'$ can be identified with the canonical morphism
 
 ::: {.eqenv #fga3.v-equation-1.9 title="" latex=""}
 $$
   \shPic'_{X/S}
   \to \shPic_{X/S}
-\tag{1.9}
+\startverb\tag{1.9}\stopverb
 $$
 :::
 
@@ -148,7 +146,7 @@ In general, when $\repPic_{X/S}$ exists it is defined by the functorial isomorph
 $$
   \Hom_S(S',\repPic_{X/S})
   \simto \Pic(X\times_S S'/S').
-\tag{1.10}
+\startverb\tag{1.10}\stopverb
 $$
 :::
 
@@ -229,7 +227,7 @@ $$
 ::: {.rmenv #fga3.v-remark-2.5 title="Remark 2.5" latex="{Remark 2.5}"}
 Let $f\colon X\to S$ be a morphism such that $\OO_S\simto f_*(\OO_X)$, and let $g$ be a section of $X$ over $S$.
 Let $\sh{L}$ be an invertible module on $X$.
-We define the *$g$-rigidification* of $\sh{L}$ to be an isomorphism $\OO_S\simto g^*(\sh{L})$, and a *$g$-rigidified invertible module* to be an invertible module $\sh{L}$ on $X$ endowed with a $g$-rigidification.
+We define the \em{#{g}-rigidification} of $\sh{L}$ to be an isomorphism $\OO_S\simto g^*(\sh{L})$, and a \em{#{g}-rigidified invertible module} to be an invertible module $\sh{L}$ on $X$ endowed with a $g$-rigidification.
 Every automorphism of such a structure is trivial, and $\Pic'(X/S)$ can be identified with the set of isomorphism classes of $g$-rigidified invertible modules on $S$.
 (It is this fact that allows us to use the theory of descent to prove [(2.2), (ii)](#fga3.v-proposition-2.2).)
 This gives a new interpretation of $\Pic(X/S)$, at least when $f$ is further quasi-compact and separated, so that $\Pic(X/S)\simto\Pic'(X/S)$ by [(2.3)](#fga3.v-corollary-2.3).
@@ -253,7 +251,7 @@ $$
 In particular, every element of the relative Picard group already "comes from" an element of $\Pic(X')$.
 This gives a substantial simplification of the description of the relative Picard group given in the previous section, and even of the Picard functor of $X$ over $S$, since, for all $T$ over $S$, we can apply the above to $X\times_S T/T$ and to the morphism $T'=S'\times_S T\to T$.
 If, for example, $f$ itself is faithfully flat, then we can take $S'=X$, which allows us, whenever $f$ is further of finite type (resp. simple, etc.), to restrict, in the description of the relative Picard functor $T\mapsto\Pic(X\times_S T/T)$, to the base changes $T'\to T$ that are of finite type (resp. simple, etc.).
-If $f$ is projective and flat, and $S$ locally Noetherian, then we can prove that we can take in the above a $S'\to S$ such that $S'$ is the direct sum of *flat covers* $S'_i$ of opens $S_i$ of $S$ that cover $S$;
+If $f$ is projective and flat, and $S$ locally Noetherian, then we can prove that we can take in the above a $S'\to S$ such that $S'$ is the direct sum of \em{flat covers} $S'_i$ of opens $S_i$ of $S$ that cover $S$;
 if $f$ is further separable, then we can take $S'_i$ to be étale over $S_i$.
 :::
 
@@ -261,7 +259,7 @@ if $f$ is further separable, then we can take $S'_i$ to be étale over $S_i$.
 ## The principal existence theorem: statement {#fga3.v-3}
 
 We do not have, not even conjecturally, an existence statement for Picard preschemes that encompasses all known cases.
-A "practically necessary" condition, if we can say that, is that $f\colon X\to S$ be *proper* (ensuring essential finiteness properties) and *flat*.
+A "practically necessary" condition, if we can say that, is that $f\colon X\to S$ be \em{proper} (ensuring essential finiteness properties) and \em{flat}.
 These conditions are not sufficient, even if $S$ is the spectrum of the algebra of dual numbers $k[t]/(t^2)$ over a field $k$ (say, the field $\mathbb{C}$ of complex numbers), and $X$ is of dimension $1$.
 At the moment of writing this present talk, the most important existence theorems for the Picard prescheme follow from the following theorem:
 
@@ -280,7 +278,7 @@ Under these conditions, $\repPic_{X/S}$ exists.
 The proof, which will be sketched in the following two sections, will at the same time show the following:
 Let $\xi$ be the section of $\repPic_{X/S}$ that corresponds to a very ample sheaf $\OO_X(1)$ over $X/S$ (i.e. induced by a projective embedding $X\to\mathbb{P}(\sh{E})$);
 then there exists an open subset $U$ of $\repPic_{X/S}$, disjoint union of quasi-projective open subsets of $S$, such that $U$ is stable under translation by $\xi$, and such that $\repPic_{X/S}$ is the increasing union of opens $U\setminus n\xi$ (each isomorphic to $U$).
-It thus follows, in particular, that, under the conditions of [(3.1)](#fga3.v-theorem-3.1), that $\repPic_{X/S}$ is *separated* over $S$.
+It thus follows, in particular, that, under the conditions of [(3.1)](#fga3.v-theorem-3.1), that $\repPic_{X/S}$ is \em{separated} over $S$.
 
 ::: {.rmenv #remark-3.2 title="Remark 3.2" latex="{Remark 3.2}"}
 We see from examples (with $S$ the spectrum of a discrete valuation ring, and $X$ of relative dimension $1$ over $S$, for example), that if we omit hypothesis (iii) in [(3.1)](#fga3.v-theorem-3.1) and replace it with the weaker hypothesis that, for all $s\in S$, the homomorphism $k(s)\to\HH^0(X_s,\OO_{X_s})$ be an isomorphism, then $\repPic_{X/S}$ is not necessarily separated over $S$;
@@ -293,16 +291,16 @@ These examples work in any characteristic.
 Under the conditions of [(3.1)](#fga3.v-theorem-3.1), I do not know if $\repPic_{X/S}$ is a disjoint union of opens that are of finite type, thus quasi-projective, over $S$.
 We note that the study of the Hilbert polynomials $Q\in\mathbb{Q}[t]$ allows us, as in the case of Hilbert schemes ([FGA 3.IV](fga3.iv)), to give a decomposition of $\repPic_{X/S}$ as a disjoint sum of opens $\repPic_{X/S}^Q$, and it seems plausible that these opens are quasi-projective over $S$;
 this is what we will see at least in the next talk when $f$ is a simple morphism.
-We draw attention to the fact that if we replace hypothesis (i) by the hypothesis "$X$ is *locally* projective over $S$" (which is sufficient to prove [(3.1)](#fga3.v-theorem-3.1), since the question of existence of $\repPic_{X/S}$ is clearly local on $S$) however, then it is easy to give examples where *$\repPic_{X/S}$ contains connected components that are not of finite type over $S$*.
+We draw attention to the fact that if we replace hypothesis (i) by the hypothesis "$X$ is \em{locally} projective over $S$" (which is sufficient to prove [(3.1)](#fga3.v-theorem-3.1), since the question of existence of $\repPic_{X/S}$ is clearly local on $S$) however, then it is easy to give examples where \em{$\repPic_{X/S}$ contains connected components that are not of finite type over $S$}.
 \oldpage{232-08}
 For example, let $X_0$ be a non-singular projective algebraic variety over an algebraically closed field $k$, endowed with an automorphism $u$ and an element $\xi$ of the Néron–Severi group of $X_0$ such that the $u^n(\xi)$ are pairwise distinct.
 We can, for example, take $X_0$ to be the product of an elliptic curve $E$ with itself, and $u$ to be the automorphism $(x,y)\mapsto(x,y+x)$ of $E\times E$.
 Let $S$ be the union of two non-singular irreducible curves that meet at two points $a$ and $b$.
-There is a connected principal covering $P$ on $S$ of the group $\mathbb{Z}$, and using the action of $\mathbb{Z}$ on $X_0$ defined by $u$ we thus obtain an associated bundle on $S$, with fibre $X_0$ (trivial on $S\setminus\{a\}$ and $S\setminus\{b\}$), which is in fact an *abelian* scheme over $S$ in the particular case in question.
+There is a connected principal covering $P$ on $S$ of the group $\mathbb{Z}$, and using the action of $\mathbb{Z}$ on $X_0$ defined by $u$ we thus obtain an associated bundle on $S$, with fibre $X_0$ (trivial on $S\setminus\{a\}$ and $S\setminus\{b\}$), which is in fact an \em{abelian} scheme over $S$ in the particular case in question.
 We easily see that $\repPic_{X/S}$, which is also the bundle associated to $P$ and to the action of $\mathbb{Z}$ on $\repPic_{X_0/k}$ via $u$, contains a connected component that is isomorphic to $P\times\repPic_{X_0/k}^0$ (where $\repPic^0$ denotes the connected component of the identity element in $\repPic$), which is not of finite type over $S$.
 (One can equally produce analogous phenomena in various cases of non-separated Picard preschemes over $S$, as described in [(3.3)](#fga3.v-remark-3.3)).
 
-*[Comp.]*
+\comp
 The question raised here has been answered in the positive by Mumford (see the next talk).
 :::
 
@@ -312,7 +310,7 @@ The question raised here has been answered in the positive by Mumford (see the n
 We will only need to use positive divisors, and we omit the qualification of "positive" in the rest of this section.
 
 Let $X$ be a prescheme.
-A *Cartier divisor*, or simply divisor, on $X$ is a closed subprescheme $D$ of $X$ defined by an ideal $\sh{J}$ that is an *invertible* module, i.e. locally generated by a section that is a *non-zero divisor* of $\OO_X$.
+A \em{Cartier divisor}, or simply divisor, on $X$ is a closed subprescheme $D$ of $X$ defined by an ideal $\sh{J}$ that is an \em{invertible} module, i.e. locally generated by a section that is a \em{non-zero divisor} of $\OO_X$.
 To $D$ we associate the invertible module
 $$
   \sh{L}(D)
@@ -325,7 +323,7 @@ $$
   = \sh{L}(D)
 $$
 i.e. $s_D\in\Gamma(X,\sh{L}(D))$.
-The data of a divisor is essentially *equivalent* to the data of an invertible module $\sh{L}$ on $X$ endowed with a section $s$ that is nowhere a zero divisor, by associating to such a pair $(\sh{L},s)$ the "divisor" of $s$, denoted by $\div(s)$.
+The data of a divisor is essentially \em{equivalent} to the data of an invertible module $\sh{L}$ on $X$ endowed with a section $s$ that is nowhere a zero divisor, by associating to such a pair $(\sh{L},s)$ the "divisor" of $s$, denoted by $\div(s)$.
 \oldpage{232-09}
 For a given invertible $\sh{L}$ on $X$, the set of divisors $D$ that define $\sh{L}$ is in bijective correspondence with the quotient set $\Gamma(X,\sh{L})^\times/\Gamma(X,\OO_X^\times)$, where $\Gamma(X,\sh{L})^\times$ denotes the subset of $\Gamma(X,\sh{L})$ consisting of sections that are nowhere zero divisors.
 
@@ -337,7 +335,7 @@ i. $\sh{J}$ is invertible at $x$ (i.e. $\sh{J}_x$ is generated by a regular elem
 ii. $X$ and $D$ are flat over $S$ at $x$, and $D_s$ is a Cartier divisor on the fibre $X_s$ at the point $x$.
 iii. $X$ is flat over $S$ at $x$, and $\sh{J}_x$ is generated by an element $f_x$ that induces on $X_s$ a non-zero divisor germ.
 
-We then say that $D$ is a *relative Cartier divisor* or simply a relative divisor, on $X/S$ at the point in question.
+We then say that $D$ is a \em{relative Cartier divisor} or simply a relative divisor, on $X/S$ at the point in question.
 We note that, in (i), $D$ is also a relative divisor at points in a neighbourhood of $x$, so if $X$ and $D$ are flat over $S$, with $D$ proper over $S$, then the set of $s\in S$ such that $D_s$ is a Cartier divisor in $X_s$ (i.e. such that $D$ is a relative Cartier divisor at the points of $X_s$) is an open subset of $S$.
 We have also done what is necessary in the definition above in order to ensure that the notion of relative Cartier divisor be stable under arbitrary base change $S'\to S$.
 So consider the set $\Div(X/S)$ of relative divisors on $X/S$, and then the contravariant functor in $S'$ (that varies over $S$) defined by
@@ -365,13 +363,13 @@ $$
   \repDiv_{X/S}
   = \sqcup_{Q\in\mathbb{Q}[t]} \repDiv_{X/S}^Q
 $$
-into a sum of disjoint opens that are *quasi-projective* over $S$.
+into a sum of disjoint opens that are \em{quasi-projective} over $S$.
 
 Using the map $D\mapsto\sh{L}(D)$, we obtain a functorial homomorphism
 $$
   \shDiv_{X/S}
   \to \shPic_{X/S}
-\tag{+}
+\startverb\tag{+}\stopverb
 $$
 that we propose to study;
 it appears to be relatively representable ([[Gro1960a](Gro1960a), IV, 3]) under rather general conditions.
@@ -381,7 +379,7 @@ Consider first of all the case where $\xi$ is defined by an invertible module $\
 Suppose that $X$ is proper and flat over $S$, and that the geometric fibres of $X$ over $S$ are integral, which also implies ([[GD1960](GD1960), III, §7]) that $\OO_S\simto f_*(\OO_X)$, and that this remains true after any base change $S'\to S$.
 Then the relative Cartier divisors $D$ on $X/S$ such that $\sh{L}(D)$ and $\sh{L}$ define the same element of $\Pic(X/S)=\shPic_{X/S}(S)$, i.e. by [(2.4)](#fga3.v-corollary-2.4) such that $\sh{L}(D)$ and $\sh{L}$ are locally isomorphic over $S$, are in bijective correspondence with the sections of the quotient sheaf $f_*(\sh{L})^\times/\sh{O}_S^\times$.
 This correspondence is compatible with base change.
-General arguments of "Künneth" type from *loc. cit.*^[*[Trans.]* The original also cites here a seminar on algebraic geometry at Harvard University by Mumford and Tate in the spring of 1962, but the notes from this were never completed and so there is no real existing citation. This citation appears again throughout both this present talk and the next.] show that the property of $X/S$ and the flatness of $\sh{L}$ over $S$ imply the existence of a coherent module $\sh{Q}$ on $S$, defined up to unique isomorphism, and an isomorphism of sheaves
+General arguments of "Künneth" type from \em{loc. cit.}^[[Trans.] The original also cites here a seminar on algebraic geometry at Harvard University by Mumford and Tate in the spring of 1962, but the notes from this were never completed and so there is no real existing citation. This citation appears again throughout both this present talk and the next.] show that the property of $X/S$ and the flatness of $\sh{L}$ over $S$ imply the existence of a coherent module $\sh{Q}$ on $S$, defined up to unique isomorphism, and an isomorphism of sheaves
 $$
   f_*(\sh{L})
   \simto \shHom_{\OO_X}(\sh{Q},\OO_S)
@@ -390,7 +388,7 @@ and the formation of $\sh{Q}$ is furthermore compatible with base change.
 Here $f_*(\sh{L})^\times$ denotes the subsheaf of sets of $f_*(\sh{L})$ whose sections over $U$ are the sections of $\sh{L}$ over $f^{-1}(U)$ that define relative Cartier divisors on $f^{-1}(U)/U$, i.e. that induces sections that are non-zero divisors on the $X_s$ (for $s\in U$).
 \oldpage{232-11}
 Using the hypothesis that the fibres $X_s$ are integral, this simply implies that the induced sections on the fibres $X_s$ are not identically zero, or, in terms of local homomorphisms $\sh{Q}\to\OO_S$, that these homomorphisms are surjective (Nakayama).
-This shows that the set of sections of $f_*(\sh{L})^\times/\OO_S^\times$ is in bijective correspondence with the set of *invertible quotient modules of $\sh{Q}$*, or, by the definition of the projective bundle $\mathbb{P}(\sh{Q})$ associated to the coherent module $\sh{Q}$ (cf. [[Gro1960a](Gro1960a), V, 2]), with the set of sections of $\mathbb{P}(\sh{Q})$ over $S$.
+This shows that the set of sections of $f_*(\sh{L})^\times/\OO_S^\times$ is in bijective correspondence with the set of \em{invertible quotient modules of $\sh{Q}$}, or, by the definition of the projective bundle $\mathbb{P}(\sh{Q})$ associated to the coherent module $\sh{Q}$ (cf. [[Gro1960a](Gro1960a), V, 2]), with the set of sections of $\mathbb{P}(\sh{Q})$ over $S$.
 This description is compatible with taking inverse images, and we thus obtain the theorem below.
 
 ::: {.itenv #fga3.v-theorem-4.3 title="Theorem 4.3" latex="{Theorem 4.3}"}
@@ -407,9 +405,9 @@ If $X$ admits a section (resp. locally admits a section) over $S$, then the abov
 In the case where $f$ is quasi-projective, we can easily reduce to the previous case by a descent method, using the finite flat local quasi-sections of $X$ over $S$.
 
 ::: {.rmenv #fga3.v-remark-4.5 title="Remark 4.5" latex="{Remark 4.5}"}
-Under the conditions of [(4.3)](#fga3.v-theorem-4.3), the module $\sh{Q}$ on $S$ is not in general locally free, as we can see by the fact that the dimension of the reduced fibres of $\sh{Q}$, i.e. those of $\HH^0(X_s,\sh{L}_s)$ for varying $s\in S$, can *jump*.
+Under the conditions of [(4.3)](#fga3.v-theorem-4.3), the module $\sh{Q}$ on $S$ is not in general locally free, as we can see by the fact that the dimension of the reduced fibres of $\sh{Q}$, i.e. those of $\HH^0(X_s,\sh{L}_s)$ for varying $s\in S$, can \em{jump}.
 Given a coherent module $\sh{Q}$ on the locally Noetherian prescheme $S$, we can easily show that, for any given $s\in S$, $\sh{Q}$ is free at $s$ if and only if $\mathbb{P}(\sh{Q})$ is flat over $S$ at the points over $s$ (in which case it is even simple over $S$ at the points over $s$);
-when this happens, with $\sh{Q}$ defined in terms of $\sh{L}$ as above, this also implies that forming the direct image $f_*(\sh{L})$ *"commutes with base change on a neighbourhood of $s$"*, or that $f_*(\sh{L})_s\to\HH^0(X_s,\sh{L}_s)$ is surjective.
+when this happens, with $\sh{Q}$ defined in terms of $\sh{L}$ as above, this also implies that forming the direct image $f_*(\sh{L})$ \em{"commutes with base change on a neighbourhood of $s$"}, or that $f_*(\sh{L})_s\to\HH^0(X_s,\sh{L}_s)$ is surjective.
 \oldpage{232-12}
 This will be the case if, for example, $\HH^1(X_s,\sh{L}_s)=0$.
 Subject to the existence of the preschemes in question, these criteria apply in particular to the universal situation $\repDiv_{X/S}\to\repPic_{X/S}$, and give a necessary and sufficient condition (resp. sufficient) for this morphism to be simple at a given point of $\repDiv_{X/S}$.
@@ -437,17 +435,17 @@ So we have a morphism
 $$
   \sh{D}^+
   \to \sh{P}^+
-\tag{+}
+\startverb\tag{+}\stopverb
 $$
-and we already know that $\sh{D}^+$ is representable by an open $D^+$ of the prescheme $D=\repDiv_{X/S}$ (and, more precisely, by *projective bundles associated to locally free modules* that are everywhere non-zero);
-this is due to the fact that, if $\sh{L}$ on $X\times_S S'$ is, as at the start of this section, then $f'_*(\sh{L})$ is a *locally free* non-zero module, whose formation commutes with base change;
+and we already know that $\sh{D}^+$ is representable by an open $D^+$ of the prescheme $D=\repDiv_{X/S}$ (and, more precisely, by \em{projective bundles associated to locally free modules} that are everywhere non-zero);
+this is due to the fact that, if $\sh{L}$ on $X\times_S S'$ is, as at the start of this section, then $f'_*(\sh{L})$ is a \em{locally free} non-zero module, whose formation commutes with base change;
 with the notation of [(4.3)](#fga3.v-theorem-4.3), $\sh{Q}$ is then isomorphic to the dual of $f'_*(\sh{L})$.
 Using the general criterion ([[Gro1960a](Gro1960a), IV, 4.7]), we can thus conclude that $P^+$ is representable.
-In *loc. cit.*, we take $\mathcal{S}$ to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by [FGA 3.I, §B](fga3.i-b.1)).
+In \em{loc. cit.}, we take $\mathcal{S}$ to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by [FGA 3.I, §B](fga3.i-b.1)).
 \oldpage{232-13}
-Condition (a) of *loc. cit.*, namely that $(+)$ is representable by morphisms that are elements of $\mathcal{S}$, is satisfied as we have just seen;
+Condition (a) of \em{loc. cit.}, namely that $(+)$ is representable by morphisms that are elements of $\mathcal{S}$, is satisfied as we have just seen;
 condition (b) says that the functor $\sh{P}^+$ is is compatible with faithfully flat quasi-compact descent, which is immediate.
-It remains only to prove condition (c) of *loc. cit.*, namely that the equivalence $R$ in the prescheme $D^+$ induced by the $\mathcal{S}$-representable morphism ($+$) is $\mathcal{S}$-effective, i.e. is effective and such that $D^+\to D^+/R$ is in $\mathcal{S}$.
+It remains only to prove condition (c) of \em{loc. cit.}, namely that the equivalence $R$ in the prescheme $D^+$ induced by the $\mathcal{S}$-representable morphism ($+$) is $\mathcal{S}$-effective, i.e. is effective and such that $D^+\to D^+/R$ is in $\mathcal{S}$.
 For this, note first of all that the opens ${D^+}^Q$ of $D^+$ that correspond to the virtual Hilbert polynomials $Q\in\mathbb{Q}[t]$ are stable under $R$ (since the fibres of $R$ are connected), which reduces the problem to proving that, for all $Q$, the induced equivalence relation $R^Q$ on ${D^+}^Q$ is $\mathcal{S}$-effective.
 But now ${D^+}^Q$ is quasi-projective, and the equivalence relation $R^Q$ is projective and flat.
 We are thus under the hypothesis of [FGA 3.III, Theorem 6.1](fga3.iii-6-theorem-6.1), which implies the desired result.
@@ -458,20 +456,20 @@ In the general case where $X/S$ does not necessarily admit a section, we can eas
 The method that we followed is essentially that of Matsusaka for the projective construction of Picard varieties.
 The result that we invoke from [FGA 3.III](fga3.iii) that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [Mumford–Tate seminar, 1962]).
 (Classically, these quotients are constructed by using Chow coordinates).
-Note that the formation of the open $\repPic_{X/S}^+$ of $\repPic_{X/S}$ and its decomposition into opens ${\repPic_{X/S}^+}^Q$ that are quasi-projcetive over $S$ following the Hilbert polynomials for the *divisors* that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).
+Note that the formation of the open $\repPic_{X/S}^+$ of $\repPic_{X/S}$ and its decomposition into opens ${\repPic_{X/S}^+}^Q$ that are quasi-projcetive over $S$ following the Hilbert polynomials for the \em{divisors} that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).
 :::
 
 ::: {.rmenv #fga3.v-remarks-5.2 title="Remarks 5.2" latex="{Remarks 5.2}"}
 It is not out of the question that $\repPic_{X/S}$ exists whenever $f\colon X\to S$ is proper and flat and such that the homomorphisms $k(s)\to\HH^0(X_s,\OO_{X_s})$ (for $s\in S$) are isomorphisms (this latter condition also then implying that $\OO_S\simto f_*(\OO_X)$, and that this remains true after any base change $S'\to S$).
 This at least is what we can prove in the setting of analytic spaces, if $f$ is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in [[Gro1960a](Gro1960a), IX, 3.1].
 \oldpage{232-14}
-In this method, the passage to the quotient by a *proper* and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of $X$ into $\mathbb{P}_S^r$.
+In this method, the passage to the quotient by a \em{proper} and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of $X$ into $\mathbb{P}_S^r$.
 This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group [[Mum1961]](Mum1961);
 for now, there is no written proof, except when $X$ has "lots of local sections" over $S$, for example if $X$ is separable over a complete local ring with algebraically closed residue field.
 In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
-(Technically, the difficulty comes from the fact that, when the geometric fibres of $f$ are not integral, then the functor envisaged in [(4.3)](#fga3.v-theorem-4.3) is no longer representable by the projective bundle $\mathbb{P}(\sh{Q})$ itself, but by an *open* of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).
+(Technically, the difficulty comes from the fact that, when the geometric fibres of $f$ are not integral, then the functor envisaged in [(4.3)](#fga3.v-theorem-4.3) is no longer representable by the projective bundle $\mathbb{P}(\sh{Q})$ itself, but by an \em{open} of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).
 
-*[Comp.]*
+\comp
 As I point out at the start of the next talk, the existence conjecture suggested here is false, but Mumford has proven a slightly weaker theorem using his methods.
 :::
 
@@ -488,7 +486,7 @@ In particular, the theory of duality for abelian schemes, and notably the result
 
 The "compatibility principle" of Igusa for the Jacobian of a curve degenerating to a singular curve can only be well understood as an existence theorem of the Picard scheme of a relative scheme in curves $X/S$ that are not necessarily simple over $S$.
 This is thus a particular case of the principal existence theorem [(3.1)](#fga3.v-theorem-3.1) when the specialised curve is integral (i.e. in classical terms, irreducible of multiplicity $1$).
-We note that, for now, the case of a reducible special curve (even when the components are of multiplicity $1$, i.e. when the special curve is separable over the residue field) is not covered by the known existence theorems, except for in the case where we are over a *complete* discrete valuation ring with algebraically closed residue field, cf. [(5.2)](#fga3.v-remarks-5.2).
+We note that, for now, the case of a reducible special curve (even when the components are of multiplicity $1$, i.e. when the special curve is separable over the residue field) is not covered by the known existence theorems, except for in the case where we are over a \em{complete} discrete valuation ring with algebraically closed residue field, cf. [(5.2)](#fga3.v-remarks-5.2).
 This question of existence certainly arises in a geometric construction, in the theory of schemes, of Baily–Satake "compactifications" of modular schemes of curves of genus $g$.
 (This compactification is known for now only for $g=1$, thanks to work of Igusa).
 :::
@@ -499,7 +497,7 @@ This question of existence certainly arises in a geometric construction, in the 
 We will sketch here some useful cases where the existence of certain Picard schemes implies the existence of certain others, which allows us to deduce from the principal existence theorem [(3.1)](#fga3.v-theorem-3.1) various other existence theorems.
 
 ::: {.itenv #fga3.v-proposition-6.1 title="Proposition 6.1" latex="{Proposition 6.1}"}
-Let $f\colon X\to S$ be a flat projective morphism such that, in the Stein factorisation $f=f''f'$, the morphism $f'\colon X\to S'$ is *flat* and has integral geometric fibres (and thus satisfies the hypotheses of [(3.1)](#fga3.v-theorem-3.1)), and such that the finite morphism $f''\colon S'\to$ is flat.
+Let $f\colon X\to S$ be a flat projective morphism such that, in the Stein factorisation $f=f''f'$, the morphism $f'\colon X\to S'$ is \em{flat} and has integral geometric fibres (and thus satisfies the hypotheses of [(3.1)](#fga3.v-theorem-3.1)), and such that the finite morphism $f''\colon S'\to$ is flat.
 Then $\repPic_{X/S}$ exists and (with the notation introduced in [FGA 3.II, §C.2](fga3.ii-c.2)) we have a canonical isomorphism
 $$
   \repPic_{X/S}
@@ -519,7 +517,7 @@ we use the structure explained in \ref{fga3.v-3} of $\repPic_{X/S'}$ (which impl
 
 \oldpage{232-16}
 
-For example, if $X$ is a scheme given by a *sum* of schemes $X_i$ over $S$ that satisfy the conditions of [(3.1)](#fga3.v-theorem-3.1), then the statement of [(6.1)](#fga3.v-proposition-6.1) reduces to the trivial statement
+For example, if $X$ is a scheme given by a \em{sum} of schemes $X_i$ over $S$ that satisfy the conditions of [(3.1)](#fga3.v-theorem-3.1), then the statement of [(6.1)](#fga3.v-proposition-6.1) reduces to the trivial statement
 $$
   \repPic_{X/S}
   \simto \prod_i \repPic_{X_i/S}.
@@ -590,26 +588,26 @@ Then $\repPic_{X/k}$ exists.
 :::
 
 ::: {.rmenv #fga3.v-remark-6.6 title="Remark 6.6" latex="{Remark 6.6}"}
-It is extremely plausible that, for every *proper* scheme $X$ over a field $k$, $\repPic_{X/k}$ exists.
+It is extremely plausible that, for every \em{proper} scheme $X$ over a field $k$, $\repPic_{X/k}$ exists.
 The results above allow us to reduce, for this question, to the case where $k$ is algebraically closed, and where $X$ is integral.
-We then know that there exists an integral scheme $X'$ that is *projective* over $k$, and a dominant morphism $g\colon X'\to X$ (Chow's lemma).
+We then know that there exists an integral scheme $X'$ that is \em{projective} over $k$, and a dominant morphism $g\colon X'\to X$ (Chow's lemma).
 \oldpage{232-18}
 It would thus suffice to show that the corresponding functorial morphism $\shPic_{X/k}\to\shPic_{X'/k}$ is representable (and, probably, representable by affine morphisms), since we already know that $\shPic_{X'/k}$ is representable.
 This raises questions about non-flat descent that are not answerable as of now.
 Note that, if we restrict to considering the restriction of the functor $\shPic_{X/k}$ to reduced preschemes (with $X$ proper and integral over an algebraically closed field $k$), then we do indeed obtain a representable functor, as shown by Chevalley [[Che1960]](Che1960) in the case where $X$ is normal, and by Seshadri [[Ses1962]](Ses1962) by a descent method in the general case.
 But with our notation, the scheme constructed by these authors is not $\repPic_{X/k}$, but instead $(\repPic_{X/k})_\red$, i.e. the reduced scheme corresponding to $\repPic_{X/k}$.
 
-*[Comp.]*
+\comp
 As we point out at the start of the next talk, the question raised here has just been answered in the affirmative by Murre.
 :::
 
 ::: {.rmenv #fga3.v-remark-6.7 title="Remark 6.7" latex="{Remark 6.7}"}
 More generally, let $f\colon X'\to X$ be a surjective morphism of proper preschemes over $k$.
-Then considering non-flat descent leads us to conjecture that $\repPic_{X/k}\to\repPic_{X'/k}$ is an *affine* morphism, which would in particular imply (by dividing into the connected components of the identity elements) that the corresponding homomorphism on the Néron–Severi groups is injective modulo torsion.
+Then considering non-flat descent leads us to conjecture that $\repPic_{X/k}\to\repPic_{X'/k}$ is an \em{affine} morphism, which would in particular imply (by dividing into the connected components of the identity elements) that the corresponding homomorphism on the Néron–Severi groups is injective modulo torsion.
 We can verify this by the theory of intersections when $X$ and $X'$ are non-singular.
 The answer does not seem to be known in any other case.
 
-*[Comp.]*
+\comp
 The question raised here has been answered in the affirmative (cf. the last paragraph of the comments in the next talk).
 :::
 
