@@ -1,53 +1,3 @@
-## The principal existence theorem: statement {#fga3.v-3}
-
-We do not have, not even conjecturally, an existence statement for Picard preschemes that encompasses all known cases.
-A "practically necessary" condition, if we can say that, is that $f\colon X\to S$ be \em{proper} (ensuring essential finiteness properties) and \em{flat}.
-These conditions are not sufficient, even if $S$ is the spectrum of the algebra of dual numbers $k[t]/(t^2)$ over a field $k$ (say, the field $\mathbb{C}$ of complex numbers), and $X$ is of dimension $1$.
-At the moment of writing this present talk, the most important existence theorems for the Picard prescheme follow from the following theorem:
-
-::: {.itenv #fga3.v-theorem-3.1 title="Theorem 3.1" latex="{Theorem 3.1}"}
-  Let $f\colon X\to S$ be a morphism of locally Noetherian preschemes.
-  \oldpage{232-07}
-  Suppose that
-  \todo{the following list should be i, ii, etc}
-
-    i. $f$ is projective
-    ii. $f$ is flat
-    iii. the geometric fibres of $f$ are integral.
-
-  Under these conditions, $\repPic_{X/S}$ exists.
-:::
-
-The proof, which will be sketched in the following two sections, will at the same time show the following:
-Let $\xi$ be the section of $\repPic_{X/S}$ that corresponds to a very ample sheaf $\OO_X(1)$ over $X/S$ (i.e. induced by a projective embedding $X\to\mathbb{P}(\sh{E})$);
-then there exists an open subset $U$ of $\repPic_{X/S}$, disjoint union of quasi-projective open subsets of $S$, such that $U$ is stable under translation by $\xi$, and such that $\repPic_{X/S}$ is the increasing union of opens $U\setminus n\xi$ (each isomorphic to $U$).
-It thus follows, in particular, that, under the conditions of [(3.1)](#fga3.v-theorem-3.1), that $\repPic_{X/S}$ is \em{separated} over $S$.
-
-::: {.rmenv #remark-3.2 title="Remark 3.2" latex="{Remark 3.2}"}
-  We see from examples (with $S$ the spectrum of a discrete valuation ring, and $X$ of relative dimension $1$ over $S$, for example), that if we omit hypothesis (iii) in [(3.1)](#fga3.v-theorem-3.1) and replace it with the weaker hypothesis that, for all $s\in S$, the homomorphism $k(s)\to\HH^0(X_s,\OO_{X_s})$ be an isomorphism, then $\repPic_{X/S}$ is not necessarily separated over $S$;
-  both in the case where the geometric fibres of $f$ are reduced, but where a generic integral geometric fibre "blows up" by specialisation into two irreducible components, and in the case where the geometric fibres of $f$ are irreducible, but where a generic integral geometric fibre specialises to a "multiple fibre".
-  The first case happens, for example, with a conic that degenerates into two concurrent lines; an example of the second was shown to me by D. Mumford, with an elliptic curve that degenerates to a double elliptic curve.
-  These examples work in any characteristic.
-:::
-
-::: {.rmenv #fga3.v-remark-3.3 title="Remark 3.3" latex="{Remark 3.3}"}
-  Under the conditions of [(3.1)](#fga3.v-theorem-3.1), I do not know if $\repPic_{X/S}$ is a disjoint union of opens that are of finite type, thus quasi-projective, over $S$.
-  We note that the study of the Hilbert polynomials $Q\in\mathbb{Q}[t]$ allows us, as in the case of Hilbert schemes ([FGA 3.IV](fga3.iv)), to give a decomposition of $\repPic_{X/S}$ as a disjoint sum of opens $\repPic_{X/S}^Q$, and it seems plausible that these opens are quasi-projective over $S$;
-  this is what we will see at least in the next talk when $f$ is a simple morphism.
-  We draw attention to the fact that if we replace hypothesis (i) by the hypothesis "$X$ is \em{locally} projective over $S$" (which is sufficient to prove [(3.1)](#fga3.v-theorem-3.1), since the question of existence of $\repPic_{X/S}$ is clearly local on $S$) however, then it is easy to give examples where \em{$\repPic_{X/S}$ contains connected components that are not of finite type over $S$}.
-  \oldpage{232-08}
-  For example, let $X_0$ be a non-singular projective algebraic variety over an algebraically closed field $k$, endowed with an automorphism $u$ and an element $\xi$ of the Néron–Severi group of $X_0$ such that the $u^n(\xi)$ are pairwise distinct.
-  We can, for example, take $X_0$ to be the product of an elliptic curve $E$ with itself, and $u$ to be the automorphism $(x,y)\mapsto(x,y+x)$ of $E\times E$.
-  Let $S$ be the union of two non-singular irreducible curves that meet at two points $a$ and $b$.
-  There is a connected principal covering $P$ on $S$ of the group $\mathbb{Z}$, and using the action of $\mathbb{Z}$ on $X_0$ defined by $u$ we thus obtain an associated bundle on $S$, with fibre $X_0$ (trivial on $S\setminus\{a\}$ and $S\setminus\{b\}$), which is in fact an \em{abelian} scheme over $S$ in the particular case in question.
-  We easily see that $\repPic_{X/S}$, which is also the bundle associated to $P$ and to the action of $\mathbb{Z}$ on $\repPic_{X_0/k}$ via $u$, contains a connected component that is isomorphic to $P\times\repPic_{X_0/k}^0$ (where $\repPic^0$ denotes the connected component of the identity element in $\repPic$), which is not of finite type over $S$.
-  (One can equally produce analogous phenomena in various cases of non-separated Picard preschemes over $S$, as described in [(3.3)](#fga3.v-remark-3.3)).
-
-  \comp
-  The question raised here has been answered in the positive by Mumford (see \ref{fga3.vi}).
-:::
-
-
 ## Relative Cartier divisors and projective bundles {#fga3.v-4}
 
 We will only need to use positive divisors, and we omit the qualification of "positive" in the rest of this section.
@@ -96,7 +46,7 @@ $$
 is "representable by open immersions" (cf. [[Gro1960a](Gro1960a), IV, 3.13]) by the above remarks.
 Using the principal existence theorem of \ref{fga3.iv}, we find:
 
-::: {.itenv #fga3.v-proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
+::: {.itenv #fga3.v-4-proposition-4.1 title="Proposition 4.1" latex="{Proposition 4.1}"}
   Suppose that $f\colon X\to S$ is projective and flat.
   \oldpage{232-10}
   Then the functor $\shDiv_{X/S}$ is representable, and, more precisely, is represented by an open of $\repHilb_{X/S}$.
@@ -123,7 +73,7 @@ Consider first of all the case where $\xi$ is defined by an invertible module $\
 Suppose that $X$ is proper and flat over $S$, and that the geometric fibres of $X$ over $S$ are integral, which also implies ([[GD1960](GD1960), III, §7]) that $\OO_S\simto f_*(\OO_X)$, and that this remains true after any base change $S'\to S$.
 Then the relative Cartier divisors $D$ on $X/S$ such that $\sh{L}(D)$ and $\sh{L}$ define the same element of $\Pic(X/S)=\shPic_{X/S}(S)$, i.e. by \ref{fga3.v-2-corollary-2.4} such that $\sh{L}(D)$ and $\sh{L}$ are locally isomorphic over $S$, are in bijective correspondence with the sections of the quotient sheaf $f_*(\sh{L})^\times/\sh{O}_S^\times$.
 This correspondence is compatible with base change.
-General arguments of "Künneth" type from \em{loc. cit.}^[[Trans.] The original also cites here a seminar on algebraic geometry at Harvard University by Mumford and Tate in the spring of 1962, but the notes from this were never completed and so there is no real existing citation. This citation appears again throughout both this present talk and the next.] show that the property of $X/S$ and the flatness of $\sh{L}$ over $S$ imply the existence of a coherent module $\sh{Q}$ on $S$, defined up to unique isomorphism, and an isomorphism of sheaves
+General arguments of "Künneth" type from \em{loc. cit.} and [Mumford–Tate seminar, 1962] show that the property of $X/S$ and the flatness of $\sh{L}$ over $S$ imply the existence of a coherent module $\sh{Q}$ on $S$, defined up to unique isomorphism, and an isomorphism of sheaves
 $$
   f_*(\sh{L})
   \simto \shHom_{\OO_X}(\sh{Q},\OO_S)
@@ -135,21 +85,21 @@ Using the hypothesis that the fibres $X_s$ are integral, this simply implies tha
 This shows that the set of sections of $f_*(\sh{L})^\times/\OO_S^\times$ is in bijective correspondence with the set of \em{invertible quotient modules of $\sh{Q}$}, or, by the definition of the projective bundle $\mathbb{P}(\sh{Q})$ associated to the coherent module $\sh{Q}$ (cf. [[Gro1960a](Gro1960a), V, 2]), with the set of sections of $\mathbb{P}(\sh{Q})$ over $S$.
 This description is compatible with taking inverse images, and we thus obtain the theorem below.
 
-::: {.itenv #fga3.v-theorem-4.3 title="Theorem 4.3" latex="{Theorem 4.3}"}
+::: {.itenv #fga3.v-4-theorem-4.3 title="Theorem 4.3" latex="{Theorem 4.3}"}
   Let $f\colon X\to S$ be a flat proper morphism with integral geometric fibres, with $S$ locally Noetherian, and let $\sh{L}$ be an invertible module on $X$.
   For every $S'$ over $S$, let $T(S')$ be the set of relative divisors $D$ on $X\times_S S'/S'$ such that $\sh{L}(D)$ is locally isomorphic to $\sh{L}\otimes_{\OO_S}\OO_{S'}$ over $S'$ (i.e. such that $\sh{L}(D)$ and $\sh{L}\otimes_{\OO_S}\OO_{S'}$) define the same element of $\Pic(X\times_S S'/S')$.
   Then there exists a coherent module $\sh{Q}$ on $S$, determined up to unique isomorphism, such that the functor $T$ is represented by the projective bundle $\mathbb{P}(\sh{Q})$.
 :::
 
-::: {.itenv #fga3.v-corollary-4.4 title="Corollary 4.4" latex="{Corollary 4.4}"}
+::: {.itenv #fga3.v-4-corollary-4.4 title="Corollary 4.4" latex="{Corollary 4.4}"}
   If we suppose that $f$ is projective, then the functorial homomorphism $\shDiv_{X/S}\to\shPic_{X/S}$ is representable by projective morphisms.
 :::
 
-If $X$ admits a section (resp. locally admits a section) over $S$, then the above homomorphism is representable by projective bundles (resp. by local projective bundles) thanks to [(4.3)](#fga3.v-theorem-4.3) and \ref{fga3.v-2-proposition-2.1}.
+If $X$ admits a section (resp. locally admits a section) over $S$, then the above homomorphism is representable by projective bundles (resp. by local projective bundles) thanks to \ref{fga3.v-4-theorem-4.3} and \ref{fga3.v-2-proposition-2.1}.
 In the case where $f$ is quasi-projective, we can easily reduce to the previous case by a descent method, using the finite flat local quasi-sections of $X$ over $S$.
 
-::: {.rmenv #fga3.v-remark-4.5 title="Remark 4.5" latex="{Remark 4.5}"}
-  Under the conditions of [(4.3)](#fga3.v-theorem-4.3), the module $\sh{Q}$ on $S$ is not in general locally free, as we can see by the fact that the dimension of the reduced fibres of $\sh{Q}$, i.e. those of $\HH^0(X_s,\sh{L}_s)$ for varying $s\in S$, can \em{jump}.
+::: {.rmenv #fga3.v-4-remark-4.5 title="Remark 4.5" latex="{Remark 4.5}"}
+  Under the conditions of \ref{fga3.v-4-theorem-4.3}, the module $\sh{Q}$ on $S$ is not in general locally free, as we can see by the fact that the dimension of the reduced fibres of $\sh{Q}$, i.e. those of $\HH^0(X_s,\sh{L}_s)$ for varying $s\in S$, can \em{jump}.
   Given a coherent module $\sh{Q}$ on the locally Noetherian prescheme $S$, we can easily show that, for any given $s\in S$, $\sh{Q}$ is free at $s$ if and only if $\mathbb{P}(\sh{Q})$ is flat over $S$ at the points over $s$ (in which case it is even simple over $S$ at the points over $s$);
   when this happens, with $\sh{Q}$ defined in terms of $\sh{L}$ as above, this also implies that forming the direct image $f_*(\sh{L})$ \em{"commutes with base change on a neighbourhood of $s$"}, or that $f_*(\sh{L})_s\to\HH^0(X_s,\sh{L}_s)$ is surjective.
   \oldpage{232-12}
@@ -160,7 +110,7 @@ In the case where $f$ is quasi-projective, we can easily reduce to the previous 
 
 ## Proof of the principal existence theorem {#fga3.v-5}
 
-Under the conditions of [(3.1)](#fga3.v-theorem-3.1), choose some module $\OO_X(1)$ that is very ample over $X/S$, and let $\xi$ be the corresponding element of $\Pic(X/S)$.
+Under the conditions of \ref{fga3.v-3-theorem-3.1}, choose some module $\OO_X(1)$ that is very ample over $X/S$, and let $\xi$ be the corresponding element of $\Pic(X/S)$.
 For brevity, let $\sh{P}(S')=\Pic(X\times_S S'/S')$, and suppose, for simplicity, that $X/S$ admits a section.
 Let $\sh{P}^+(S')$ be the subset of $\sh{P}(S')$ consisting of classes of the $\sh{L}$ that are invertible on $X\times_S S'$ such that
 $$
@@ -189,7 +139,7 @@ So we have a morphism
 
 and we already know that $\sh{D}^+$ is representable by an open $D^+$ of the prescheme $D=\repDiv_{X/S}$ (and, more precisely, by \em{projective bundles associated to locally free modules} that are everywhere non-zero);
 this is due to the fact that, if $\sh{L}$ on $X\times_S S'$ is, as at the start of this section, then $f'_*(\sh{L})$ is a \em{locally free} non-zero module, whose formation commutes with base change;
-with the notation of [(4.3)](#fga3.v-theorem-4.3), $\sh{Q}$ is then isomorphic to the dual of $f'_*(\sh{L})$.
+with the notation of \ref{fga3.v-4-theorem-4.3}, $\sh{Q}$ is then isomorphic to the dual of $f'_*(\sh{L})$.
 Using the general criterion ([[Gro1960a](Gro1960a), IV, 4.7]), we can thus conclude that $P^+$ is representable.
 In \em{loc. cit.}, we take $\mathcal{S}$ to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by [FGA 3.I, §B](fga3.i-b.1)).
 \oldpage{232-13}
@@ -202,14 +152,14 @@ We are thus under the hypothesis of [FGA 3.III, Theorem 6.1](fga3.iii-6-theorem-
 
 In the general case where $X/S$ does not necessarily admit a section, we can easily reduce to the above case by the technique of descent, where we can repeat the above proof with the modification that is imposed upon the definition of $\sh{P}^+$.
 
-::: {.rmenv #fga3.v-remarks-5.1 title="Remarks 5.1" latex="{Remarks 5.1}"}
+::: {.rmenv #fga3.v-5-remarks-5.1 title="Remarks 5.1" latex="{Remarks 5.1}"}
   The method that we followed is essentially that of Matsusaka for the projective construction of Picard varieties.
   The result that we invoke from \ref{fga3.iii} that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [Mumford–Tate seminar, 1962]).
   (Classically, these quotients are constructed by using Chow coordinates).
   Note that the formation of the open $\repPic_{X/S}^+$ of $\repPic_{X/S}$ and its decomposition into opens ${\repPic_{X/S}^+}^Q$ that are quasi-projcetive over $S$ following the Hilbert polynomials for the \em{divisors} that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).
 :::
 
-::: {.rmenv #fga3.v-remarks-5.2 title="Remarks 5.2" latex="{Remarks 5.2}"}
+::: {.rmenv #fga3.v-5-remarks-5.2 title="Remarks 5.2" latex="{Remarks 5.2}"}
   It is not out of the question that $\repPic_{X/S}$ exist whenever $f\colon X\to S$ is proper and flat and such that the homomorphisms $k(s)\to\HH^0(X_s,\OO_{X_s})$ (for $s\in S$) are isomorphisms (this latter condition also then implying that $\OO_S\simto f_*(\OO_X)$, and that this remain true after any base change $S'\to S$).
   This at least is what we can prove in the setting of analytic spaces, if $f$ is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in [[Gro1960a](Gro1960a), IX, 3.1].
   \oldpage{232-14}
@@ -217,13 +167,13 @@ In the general case where $X/S$ does not necessarily admit a section, we can eas
   This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group [[Mum1961]](Mum1961);
   for now, there is no written proof, except when $X$ has "lots of local sections" over $S$, for example if $X$ is separable over a complete local ring with algebraically closed residue field.
   In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
-  (Technically, the difficulty comes from the fact that, when the geometric fibres of $f$ are not integral, then the functor envisaged in [(4.3)](#fga3.v-theorem-4.3) is no longer representable by the projective bundle $\mathbb{P}(\sh{Q})$ itself, but by an \em{open} of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).
+  (Technically, the difficulty comes from the fact that, when the geometric fibres of $f$ are not integral, then the functor envisaged in \ref{fga3.v-4-theorem-4.3} is no longer representable by the projective bundle $\mathbb{P}(\sh{Q})$ itself, but by an \em{open} of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).
 
   \comp
   As I point out at the start of the next talk, the existence conjecture suggested here is false, but Mumford has proven a slightly weaker theorem using his methods.
 :::
 
-::: {.rmenv #fga3.v-remark-5.3 title="Remark 5.3" latex="{Remark 5.3}"}
+::: {.rmenv #fga3.v-5-remark-5.3 title="Remark 5.3" latex="{Remark 5.3}"}
   Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang [[Lan1959]](Lan1959) or the article by Chevalley [[Che1960]](Che1960), which follow the path sketched by Weil.
   Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in \ref{fga3.v-1} (essentially those of Chevalley, but taking into account the "variety of parameters" with nilpotent elements).
   The fact that the construction of Picard schemes should precede, not follow, the theory of abelian varieties is clear a priori, by the fact that, in general, Picard schemes are not, nor do they reduce to, abelian schemes, as we already see in the case of singular curves over an algebraically closed field, where we find the "generalised Jacobians" of Rosenlicht, which are not abelian varieties.
@@ -231,11 +181,11 @@ In the general case where $X/S$ does not necessarily admit a section, we can eas
   In particular, the theory of duality for abelian schemes, and notably the results of Cartier type, then become slightly more formal (cf. for example [Mumford–Tate seminar, 1962]).
 :::
 
-::: {.rmenv #fga3.v-remarks-5.4 title="Remarks 5.4" latex="{Remarks 5.4}"}
+::: {.rmenv #fga3.v-5-remarks-5.4 title="Remarks 5.4" latex="{Remarks 5.4}"}
   \oldpage{232-15}
   The "compatibility principle" of Igusa for the Jacobian of a curve degenerating to a singular curve can only be well understood as an existence theorem of the Picard scheme of a relative scheme in curves $X/S$ that are not necessarily simple over $S$.
-  This is thus a particular case of the principal existence theorem [(3.1)](#fga3.v-theorem-3.1) when the specialised curve is integral (i.e. in classical terms, irreducible of multiplicity $1$).
-  We note that, for now, the case of a reducible special curve (even when the components are of multiplicity $1$, i.e. when the special curve is separable over the residue field) is not covered by the known existence theorems, except for in the case where we are over a \em{complete} discrete valuation ring with algebraically closed residue field, cf. [(5.2)](#fga3.v-remarks-5.2).
+  This is thus a particular case of the principal existence theorem \ref{fga3.v-3-theorem-3.1} when the specialised curve is integral (i.e. in classical terms, irreducible of multiplicity $1$).
+  We note that, for now, the case of a reducible special curve (even when the components are of multiplicity $1$, i.e. when the special curve is separable over the residue field) is not covered by the known existence theorems, except for in the case where we are over a \em{complete} discrete valuation ring with algebraically closed residue field, cf. \ref{fga3.v-5-remarks-5.2}.
   This question of existence certainly arises in a geometric construction, in the theory of schemes, of Baily–Satake "compactifications" of modular schemes of curves of genus $g$.
   (This compactification is known for now only for $g=1$, thanks to work of Igusa).
 :::
@@ -243,10 +193,10 @@ In the general case where $X/S$ does not necessarily admit a section, we can eas
 
 ## Relative existence theorems {#fga3.v-6}
 
-We will sketch here some useful cases where the existence of certain Picard schemes implies the existence of certain others, which allows us to deduce from the principal existence theorem [(3.1)](#fga3.v-theorem-3.1) various other existence theorems.
+We will sketch here some useful cases where the existence of certain Picard schemes implies the existence of certain others, which allows us to deduce from the principal existence theorem \ref{fga3.v-3-theorem-3.1} various other existence theorems.
 
-::: {.itenv #fga3.v-proposition-6.1 title="Proposition 6.1" latex="{Proposition 6.1}"}
-  Let $f\colon X\to S$ be a flat projective morphism such that, in the Stein factorisation $f=f''f'$, the morphism $f'\colon X\to S'$ is \em{flat} and has integral geometric fibres (and thus satisfies the hypotheses of [(3.1)](#fga3.v-theorem-3.1)), and such that the finite morphism $f''\colon S'\to$ is flat.
+::: {.itenv #fga3.v-6-proposition-6.1 title="Proposition 6.1" latex="{Proposition 6.1}"}
+  Let $f\colon X\to S$ be a flat projective morphism such that, in the Stein factorisation $f=f''f'$, the morphism $f'\colon X\to S'$ is \em{flat} and has integral geometric fibres (and thus satisfies the hypotheses of \ref{fga3.v-3-theorem-3.1}), and such that the finite morphism $f''\colon S'\to$ is flat.
   Then $\repPic_{X/S}$ exists and (with the notation introduced in [FGA 3.II, §C.2](fga3.ii-c.2)) we have a canonical isomorphism
   $$
     \repPic_{X/S}
@@ -260,18 +210,18 @@ We will sketch here some useful cases where the existence of certain Picard sche
       \shPic_{X/S}
       \simto \prod_{S'/S} \shPic_{X/S'}
     $$
-    and then use [(3.1)](#fga3.v-theorem-3.1), which implies that $\shPic_{X/S'}$ is representable;
+    and then use \ref{fga3.v-3-theorem-3.1}, which implies that $\shPic_{X/S'}$ is representable;
     we use the structure explained in \ref{fga3.v-3} of $\repPic_{X/S'}$ (which implies that every finite subset of a fibre of $\repPic_{X/S'}$ over $S$ is contained in an affine open) for the existence of $\prod_{S'/S}\repPic_{X/S'}$.
 :::
 
 \oldpage{232-16}
-For example, if $X$ is a scheme given by a \em{sum} of schemes $X_i$ over $S$ that satisfy the conditions of [(3.1)](#fga3.v-theorem-3.1), then the statement of [(6.1)](#fga3.v-proposition-6.1) reduces to the trivial statement
+For example, if $X$ is a scheme given by a \em{sum} of schemes $X_i$ over $S$ that satisfy the conditions of \ref{fga3.v-3-theorem-3.1}, then the statement of \ref{fga3.v-6-proposition-6.1} reduces to the trivial statement
 $$
   \repPic_{X/S}
   \simto \prod_i \repPic_{X_i/S}.
 $$
 
-::: {.itenv #fga3.v-corollary-6.2 title="Corollary 6.2" latex="{Corollary 6.2}"}
+::: {.itenv #fga3.v-6-corollary-6.2 title="Corollary 6.2" latex="{Corollary 6.2}"}
   Let $f\colon X\to S$ be a projective flat morphism with locally integral geometric fibres (for example, a projective and normal morphism).
   Then $\repPic_{X/S}$ exists.
 :::
@@ -282,7 +232,7 @@ $$
 
 Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in [FGA 3.I, §A.2.c](fga3.i-a.2.c), and of which we content ourselves here to explain only a particular case:
 
-::: {.itenv #fga3.v-proposition-6.3 title="Proposition 6.3" latex="{Proposition 6.3}"}
+::: {.itenv #fga3.v-6-proposition-6.3 title="Proposition 6.3" latex="{Proposition 6.3}"}
   Let $f\colon X\to S$ be a proper morphism, and let $X_1$ and $X_2$ be subpreschemes of $X$ that are flat over $S$, defined by coherent ideals $\sh{J}_1$ and $\sh{J}_2$ (respectively) such that $\sh{J}_1\cap\sh{J}_2=(0)$ and such that $\OO_X/(\sh{J}_1+\sh{J}_2)$ is flat over $S$ (i.e. the subprescheme of $X$ that is the sup of $X_1$ and $X_2$ is $X$ itself, whereas their inf $Z$ is flat over $X$).
   Suppose further that, for all $s\in S$, the homomorphisms $k(s)\to\HH^0(X_{i_s},\OO_{X_{i_s}})$ are bijective for $i=1,2$.
   Then the natural homomorphism of functors
@@ -299,15 +249,15 @@ Applying a descent procedure gives a relative existence theorem, whose scope dep
 :::
 
 ::: {.proof}
-    By faithfully flat descent, we can reduce to the case where $Z$ admits a section over $S$, thus defining sections of $X$, $X_1$, and $X_2$ over $S$, and allowing us to eliminate the automorphisms in the structures in question, as explained in [(2.5)](#fga3.v-remark-2.5).
+    By faithfully flat descent, we can reduce to the case where $Z$ admits a section over $S$, thus defining sections of $X$, $X_1$, and $X_2$ over $S$, and allowing us to eliminate the automorphisms in the structures in question, as explained in \ref{fga3.v-2-remark-2.5}.
     \oldpage{232-17}
     The proof then consists of noting that the data of a "rigidified" invertible module $\sh{L}$ on $X$ is equivalent to the data of a triple $(\sh{L}_1,\sh{L}_2,u)$, where $\sh{L}_i$ is a "rigidified" module on $X_i$, and $u$ is an isomorphism from $\sh{L}_1|Z$ to $\sh{L}_2|Z$ that is compatible with the rigidifications.
     It remains only to verify that, for $\sh{L}_1$ and $\sh{L}_2$ fixed, the data of $u$ can be expressed as a section of a suitable scheme over $S$ that is affine over $S$, which is easy.
 :::
 
-From [(6.3)](#fga3.v-proposition-6.3) we easily conclude:
+From \ref{fga3.v-6-proposition-6.3} we easily conclude:
 
-::: {.itenv #fga3.v-corollary-6.4 title="Corollary 6.4" latex="{Corollary 6.4}"}
+::: {.itenv #fga3.v-6-corollary-6.4 title="Corollary 6.4" latex="{Corollary 6.4}"}
   Let $X$ be a proper and separable scheme over a field $k$, and let $X_i$ be the irreducible components of $X$.
   If the $\repPic_{X_i/k}$ exist, then so too does $\repPic_{X/k}$, and the canonical morphism
   $$
@@ -317,25 +267,25 @@ From [(6.3)](#fga3.v-proposition-6.3) we easily conclude:
   is affine.
 :::
 
-Combined with [(6.2)](#fga3.v-corollary-6.2), this shows, for example, the existence of $\repPic_{X/k}$ whenever $X$ is a projective scheme that is separable over a field $k$.
+Combined with \ref{fga3.v-6-corollary-6.2}, this shows, for example, the existence of $\repPic_{X/k}$ whenever $X$ is a projective scheme that is separable over a field $k$.
 If $X$ is no longer separable over $k$, then we equally have a reduction result, using the argument of Oort [[Oor1962]](Oor1962).
-The method equally applies for a scheme with arbitrary base (a useful case, for example, in proving in the following talk the finiteness result stated in [(3.3)](#fga3.v-remark-3.3)).
+The method equally applies for a scheme with arbitrary base (a useful case, for example, in proving in the following talk the finiteness result stated in \ref{fga3.v-remark-3.3}).
 To avoid an overly technical statement, we restrict ourselves to the case where we are over a base field:
 
-::: {.itenv #fga3.v-proposition-6.5 title="Proposition 6.5" latex="{Proposition 6.5}"}
+::: {.itenv #fga3.v-6-proposition-6.5 title="Proposition 6.5" latex="{Proposition 6.5}"}
   Let $X$ be a proper scheme over a field $k$, and $X_0$ a subscheme that has the same underlying set (thus defined by a nilpotent ideal on $X$).
   Then the functorial morphism $\shPic_{X/k}\to\shPic_{X_0/k}$ is representable by affine morphisms.
   In particular, if $\repPic_{X_0/k}$ exists, then so too does $\repPic_{X/k}$, and the morphism $\repPic_{X/k}\to\repPic_{X_0/k}$ is affine.
 :::
 
-Combining this with [Corollary 6.4](#fga3.v-corollary-6.4), we easily conclude:
+Combining this with \ref{fga3.v-6-corollary-6.4}, we easily conclude:
 
-::: {.itenv #fga3.v-corollary-6.6 title="Corollary 6.6" latex="{Corollary 6.6}"}
+::: {.itenv #fga3.v-6-corollary-6.6 title="Corollary 6.6" latex="{Corollary 6.6}"}
   Let $X$ be a projective prescheme over a field $k$>
   Then $\repPic_{X/k}$ exists.
 :::
 
-::: {.rmenv #fga3.v-remark-6.6 title="Remark 6.6" latex="{Remark 6.6}"}
+::: {.rmenv #fga3.v-6-remark-6.6 title="Remark 6.6" latex="{Remark 6.6}"}
   It is extremely plausible that, for every \em{proper} scheme $X$ over a field $k$, $\repPic_{X/k}$ exists.
   The results above allow us to reduce, for this question, to the case where $k$ is algebraically closed, and where $X$ is integral.
   We then know that there exists an integral scheme $X'$ that is \em{projective} over $k$, and a dominant morphism $g\colon X'\to X$ (Chow's lemma).
@@ -349,7 +299,7 @@ Combining this with [Corollary 6.4](#fga3.v-corollary-6.4), we easily conclude:
   As we point out at the start of the next talk, the question raised here has just been answered in the affirmative by Murre.
 :::
 
-::: {.rmenv #fga3.v-remark-6.7 title="Remark 6.7" latex="{Remark 6.7}"}
+::: {.rmenv #fga3.v-6-remark-6.7 title="Remark 6.7" latex="{Remark 6.7}"}
   More generally, let $f\colon X'\to X$ be a surjective morphism of proper preschemes over $k$.
   Then considering non-flat descent leads us to conjecture that $\repPic_{X/k}\to\repPic_{X'/k}$ is an \em{affine} morphism, which would in particular imply (by dividing into the connected components of the identity elements) that the corresponding homomorphism on the Néron–Severi groups is injective modulo torsion.
   We can verify this by the theory of intersections when $X$ and $X'$ are non-singular.
@@ -359,7 +309,7 @@ Combining this with [Corollary 6.4](#fga3.v-corollary-6.4), we easily conclude:
   The question raised here has been answered in the affirmative (cf. the last paragraph of the comments in the next talk).
 :::
 
-::: {.rmenv #fga3.v-remark-6.8 title="Remark 6.8" latex="{Remark 6.8}"}
+::: {.rmenv #fga3.v-6-remark-6.8 title="Remark 6.8" latex="{Remark 6.8}"}
   Contrary to what we might think, the consideration of Picard schemes of algebraic schemes with nilpotent elements is useful, and even indispensable, for various questions.
   If $X$ is a projective scheme, simple over $k$, say, and $Y$ a hyperplane section, then we can consider the "infinitesimal neighbourhoods" $X_n$ of $Y$ of all orders, as well as the Picard schemes $\repPic_{X_n/k}$;
   when $X$ is irreducible of dimension $\geqslant4$ (resp. $\geqslant3$), the canonical morphism
