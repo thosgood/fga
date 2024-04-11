@@ -6,3 +6,405 @@
 \import{fga3.vi-macros}
 
 \put\transclude/numbered{false}
+
+\p{
+  Let #{k} be a field, and #{G} be a prescheme of groups over #{k}.
+  Since the identity element #{e}, being rational over #{k}, is necessarily closed, it immediately follows that the diagonal of #{G\times_k G} is closed, and so #{G} is \em{separated}: \em{every prescheme of groups over a field is separated}.
+  We denote by #{G^0} the connected component of the identity element #{e}.
+  Since #{e} is rational over #{k}, #{G^0} is in fact \em{geometrically connected}, i.e. #{G\mapsto G^0} is compatible with base change to another field.
+  It also follows that #{G^0} is stable under multiplication (set-theoretically), and if #{G} is locally Noetherian then #{G^0} is open, and we can consider #{G^0} as an \em{open subgroup} of #{G}.
+  In what follows, we suppose #{G} to be locally of finite type over #{k};
+  then #{G^0} is \em{geometrically irreducible and of finite type over #{k}}.
+  Indeed, we can suppose that #{k} is algebraically closed, and thus that #{G} is reduced (since #{G_\red} is then a subgroup of #{G}, taking into account the fact that #{G_\red\times_k G_\red} is also then reduced), and thus simple over #{k} over a non-empty open, and thus everywhere, by translating this open subset.
+  But then #{G} is locally irreducible, and so its irreducible components are identical to its connected components, and so #{G^0} is irreducible.
+  So let #{U} be an affine neighbourhood of #{e} in #{G^0};
+  using the fact that #{G^0} is irreducible, we immediately see that #{U\cdot U=D^0}, which proves that #{G^0} is quasi-compact, and thus of finite type over #{k}.
+}
+
+\p{
+  Suppose, for simplicity, that #{G} is commutative.
+  For every integer #{n>0}, let #{G^{(n)}} be the inverse image of #{G^0} under the #{n}-th power homomorphism #{\varphi_n} to #{G}, so #{G^{(n)}} is an open subgroup of #{G}.
+  We set
+  ##{
+    \begin{aligned}
+      G^\tau
+      &= \bigcup_{n>0} G^{(n)}
+    \\G^\sigma
+      &= \bigcup_{(n,p)=1} G^{(n)}
+    \\G^\rho
+      &= \bigcup_{h>0} G^{(p^h)}
+    \end{aligned}
+  }
+  where #{p} is the characteristic order of the field #{k}.
+  \oldpage{236-03}
+  These are open subgroups of #{G} that satisfy
+  ##{
+    \begin{aligned}
+      G^\sigma \cap G^\rho
+      &= G^0
+    \\G^\sigma \cdot G^\rho
+      &= G^\tau.
+    \end{aligned}
+  }
+}
+
+\subtree[fga3.vi-1-remark]{
+  \taxon{remark}
+
+  \p{
+    We can construct the quotient group scheme #{G/G^0=N} (cf. \ref{fga3.iv}) and then define #{G^\tau}, #{G^\sigma}, and #{G^\rho} as the inverse images in #{G} of the torsion subgroup of #{N} (resp. of its #{p}-primary component, resp. of the natural complement of its #{p}-primary component, given by the sum of the #{q}-primary components for #{q} prime with #{q\neq p}).
+    Note that #{N} is a discrete group scheme that is separable over #{k}, thus (once we have chosen an algebraic closure #{\overline{k}} of #{k}, giving rise to a Galois group #{\pi}) can be identified with an ordinary discrete group on which #{\pi} acts by automorphisms.
+    It is in this way that we can interpret, in an evident way, the construction of the torsion subgroup and the decomposition of this into its #{q}-primary components.
+    If #{G} is the Picard scheme of a proper scheme #{X} over #{k}, then #{N} could be called the (reduced) \em{Néron–Severi scheme} of #{X} over #{k}.
+    If #{G_\red^0} is a group subscheme of #{G^0}, which is the case whenever, in particular, #{k} is parfait, or #{G^0} is proper over #{k} (for example if #{X} is geometrically normal), then we can equally introduce the quotient #{N'=G/G_\red^0}, which has the tendency to behave better than #{N} from the specialisation point of view, i.e. as #{X} varies over a family of algebraic schemes.
+  }
+}
+
+\p{
+  Now let #{S} be a locally Noetherian prescheme, and #{G} a group prescheme over #{S} that is locally of finite type over #{S}.
+  We do not assume #{G} to be of finite type over #{S}, nor separated over #{S}.
+  We then set
+  ##{
+    G^0
+    = \bigcup_{s\in S} (G_s)^0
+  }
+  and, if #{G} is commutative,
+  ##{
+    \begin{aligned}
+      G^\tau
+      &= \bigcup_{s\in S} (G_s)^\tau
+    \\G^\sigma
+      &= \bigcup_{s\in S} (G_s)^\sigma
+    \\G^\rho
+      &= \bigcup_{s\in S} (G_s)^\rho.
+    \end{aligned}
+  }
+  \oldpage{236-04}
+  These are subsets of #{G}, stable under the multiplication of #{G}, which does not obviously imply that they can be defined by means of sub-group preschemes of #{G}.
+  Notably, it seems that \em{there does not exist in a general sub-group prescheme of #{G} whose underlying set is #{G^0}}.
+  Of course, if one of these sets is open, then, endowed with the induced structure, it is an open sub-group prescheme of #{G}.
+  We will see that this is always the case for #{G^\tau};
+  in this way, from the point of view of representable functors, in particular \em{from the "specialisation" point of view, numerical equivalence behaves in a more satisfying manner than algebraic equivalence}.
+  Here are the principle general properties of the sets that we have just defined:
+}
+
+\subtree[fga3.vi-1-theorem-1.1]{
+  \taxon{theorem}
+  \number{1.1}
+
+  \p{
+    #{G^0}, #{G^\tau}, #{G^\sigma}, and #{G^\rho} are \em{locally constructible}.
+    Furthermore:
+    \todo{the following list should be i, ii, etc}
+
+    \ol{
+      \li{
+        #{G^0} is quasi-compact over #{S}.
+        If the #{G_s^0} are proper, and #{G} is separated over #{S}, then #{G^0} is proper over #{S} and thus closed in #{G}.
+      }
+      \li{
+        #{G^\tau} is open.
+        If #{G^0} is closed, then so too is #{G^\tau}.
+      }
+      \li{
+        If #{G^0} is closed, then so too is #{G^\sigma}, provided that we are in equal characteristic, i.e. that all the residue fields of #{S} have the same characteristic.
+        If #{G^0} is closed and #{G\to S} is universally open at the points of #{G^\sigma} (cf. \ref{fga3.vi-1-corollary-1.5} below), then #{G^\sigma\to S} is universally open.
+      }
+      \li{
+        If #{G^0} is closed, then so too is #{G^\rho}.
+        If we are in equal characteristic, and if, for every integer #{n>0} such that #{(n,p)=1}, the #{n}-th power homomorphism to #{G} is open, then #{G^\rho} is open.
+      }
+    }
+  }
+}
+
+\p{
+  We now give some hints towards the proof.
+  The fact that #{G^0} is locally constructible, and quasi-compact over #{S}, is contained in the following lemma:
+}
+
+\subtree[fga3.vi-1-lemma-1.2]{
+  \taxon{lemma}
+  \number{1.2}
+
+  \p{
+    If #{S\neq\varnothing} then there exists a non-empty open #{U} in #{S}, a group scheme #{H} of finite type over #{U} with connected fibres, and a homomorphism of group schemes #{H\to G|U} that is an open immersion with image #{G^0|U}.
+  }
+
+  \proof{
+    \p{
+      To prove this lemma, we can suppose that #{S} is irreducible;
+      let #{\eta} be its generic point.
+      If we make the base change #{S'=\Spec(\OO_{S,\eta})\to S} then we find a group scheme #{G'} over a local Artinian ring #{\OO_{S,s}=A} inside which we have an \em{open} group subscheme #{{G'}^0} \em{of finite type over #{A}}, as we said above.
+      This thus comes from a group scheme #{H} of finite type over an open neighbourhood #{U} of #{\eta}, and the canonical immersion #{{G'}^0\to G'} comes from an open immersion #{H\to G|U}, which will be a homomorphism of group schemes for #{U} small enough.
+      \oldpage{236-05}
+      Since the fibres of #{H} are connected if we take #{U} small enough, and since they are all of the same dimension, namely that of the fibres of #{G}, for #{U} small enough, it follows that, for all #{s\in U}, the image of #{H_s} in #{G_s} is exactly #{G_s^0} (for #{U} small enough), which proves the lemma.
+    }
+  }
+}
+
+\p{
+  The second claim in (i) of \ref{fga3.vi-1-theorem-1.1} is contained in the following lemma (which we apply to an quasi-compact open neighbourhood of #{G^0} in #{G}):
+}
+
+\subtree[fga3.vi-1-lemma-1.3]{
+  \taxon{lemma}
+  \number{1.3}
+
+  \p{
+    Let #{X} be a separated prescheme of finite type over #{S}, with #{S} locally Noetherian, and let #{g} be a section of #{X} over #{S}, and #{X^0} the union of the connected components of the #{g(s)} in the #{X_s}.
+    Let #{s\in S} be such that #{X_s^0} is proper over #{k(s)}.
+    Then there exists an open neighbourhood #{U} of #{s} such that #{X^0|U} is proper over #{U}, and a fortiori closed in #{X|U}.
+  }
+
+  \proof{
+    \p{
+      By faithfully flat descent of the base, we can reduce to the case where #{S} is the spectrum of a complete local ring, and #{s} is its closed point.
+      Applying [[GD1960](GD1960), III, §5.5.1], we see that #{X} decomposes into a sum of two disjoint opens #{X'} and #{X''}, with #{X'} proper over #{S}, and such that #{X'_s=S_s^0}.
+      This allows us to reduce to the case where #{X=X'}, i.e. where #{X} is proper over #{S}.
+      In this case, we can apply a standard proof, using the valuative criterion of properness of a subset (forgotten in [[GD1960](GD1960), II]).
+    }
+  }
+}
+
+\p{
+  We now prove that #{G^\tau} is open, or, equivalently, taking into account the fact that the formation of #{G^\tau} (as that of #{G^0}, #{G^\sigma}, and #{G^\rho}) commutes with base extension: for every sections #{g} of #{G} over #{S}, #{g^{-1}(G^\tau)} is open.
+  This implies two things:
+  \todo{the following list should be a, b}
+
+  \ol{
+    \li{
+      Let #{y\in S} be such that #{g(y)\in G^\tau}.
+      Then, for all neighbours #{y'\in\overline{y}} of #{y}, we have #{g(y')\in G^\tau}.
+    }
+    \li{
+      Let #{y'\in S} be such that #{g(y')\in G^\tau}.
+      Then, for every generalisation #{y} of #{y'}, we have #{g(y)\in G^\tau}.
+    }
+  }
+
+  For (a), note that there exists an integer #{n>0} such that #{g^n(y)\in G^0}; since #{G^0} is constructible, #{(g^n)^{-1}G^0} is constructible;
+  it follows that we have #{g^n(y')\in G^0} for all neighbours #{y'\in\overline{y}} of #{y}.
+  For (b), note that the #{g(y')^n=g^n(y')} remain in a quasi-compact open of #{G_{y'}} (since they are contained in a finite number of classes modulo #{G_{y'}^0}), and so there exists a quasi-compact open #{U} in #{G} that contains the #{g^n(y')}, and thus also their generalisations #{g^n(y)}, and so the powers of #{g(y)} remain in a quasi-compact open of #{G_y}, which easily implies that #{g(y)\in G_y^\tau}.
+}
+
+\p{
+  \oldpage{236-06}
+  Suppose that #{G^0} is closed;
+  we will show that so too is #{G^\tau}.
+  As we already know that #{G^\tau} is open, thus locally constructible, it remains only to show that it is stable under specialisation, which comes from the fact that it is a union of closed subsets, namely inverse images under the #{n}-th power homomorphisms #{\varphi_n} of the closed subset #{G^0}.
+}
+
+\p{
+  The same argument shows that #{G\sigma} and #{G^\rho} are closed if #{G^0} is (under the additional hypothesis of equal characteristic in the case of the former), once we have shown that #{G^\sigma} and #{G^\rho} are locally constructible.
+  But, for #{x\in G^\tau}, let #{\nu(x)} be the smallest integer #{n>0} such that the #{n}-th power homomorphism #{\varphi_n} sends #{x} to #{G}.
+  Then #{G^\sigma} (resp. #{G^\rho}) consists of the #{x\in X} such that #{\nu(x)} is coprime to #{p} (resp. to a power of #{p}), and our claim of constructibility then follows from the following, more precise lemma:
+}
+
+\subtree[fga3.vi-1-lemma-1.4]{
+  \taxon{lemma}
+  \number{1.4}
+
+  \p{
+    The function #{\nu} on #{G^\tau} is locally constructible.
+  }
+
+  \proof{
+    \p{
+      This means that, for every integer #{n>0}, the set of #{x\in G^\tau} such that #{\nu(x)=n} is locally constructible;
+      but this is the difference between #{\varphi_n^{-1}(G^0)} and the union of the #{\varphi_d^{-1}(G^0)} where #{d} runs over the proper divisors of #{n};
+      since #{G^0} is locally constructible, so too are all the #{\varphi_i^{-1}(G^0)}, and thus also the aforementioned difference.
+    }
+  }
+}
+
+\p{
+  Suppose that #{G^0} is closed and that #{G\to S} is universally open at the point of #{G^\sigma};
+  we will show that #{G^\sigma\to S} is open, i.e. sends a neighbourhood in #{G^\sigma} of any #{x\in G^\sigma} to a neighbourhood of #{y=f(x)}.
+  Since #{G^\sigma} is locally constructible, it suffices to show that, for every generalisation #{y'} of #{y}, there exists a generalisation of #{x}' of #{x} in #{G} in #{y'}.
+  By base change, this allows us to reduce to the case where #{S} is the spectrum of a discrete valuation ring, and where #{y} and #{y'} are the closed point and the generic point (respectively).
+  Using the fact that #{G\to S} is open at #{x} (and thus there exists a generalisation #{x_1} of #{x} in #{G} over #{y'}), we can further suppose that there exists a section #{g} of #{G} over #{S} such that #{x=g(y)} (after performing another base change).
+  If #{k(y')} is of characteristic #{0}, then it suffices to take any generalisation #{x'} of #{x} in #{G} over #{y'};
+  it is in #{G^\tau} since #{G^\tau} is open, and thus in #{G^\sigma} since #{G_{y'}^\sigma=G_{y'}^\tau}.
+  If the characteristic of #{k(y')} is #{p>0}, then let
+  ##{
+    \nu(g(y'))
+    = p^hm
+    \qquad\text{where }(m,p)=1
+  }
+  \oldpage{236-07}
+  and let #{a} and #{b} be integers such that #{ap^h+bm=1}, and set
+  ##{
+    \begin{aligned}
+      g_1
+      &= g^{ap^h}
+    \\g_2
+      &= g^{bm}
+    \end{aligned}
+  }
+  so that #{g=g_1g_2}.
+  By construction, we then have #{g_1(y')\in G^\sigma} and #{g_2(y')\in G^\rho}.
+  Since #{G^0} is closed, it follows that #{g_1(y)\in G^\sigma} and #{g_2(y)\in G^\rho}, whence, since
+  ##{
+    g(y)
+    = g_1(y)g_2(y) \in G^\sigma
+  }
+  we also have that #{g_2(y)\in G^\sigma}, and so
+  ##{
+    g_2(y)\in G_y^\sigma\cap G_y^\rho
+    = G_y^0.
+  }
+  But from the hypothesis, and the fact that #{S} is the spectrum of a discrete valuation ring, it follows that #{G\setminus(G_y\setminus G_y^0)} is an open of #{G} over which #{G\to S} induces an open morphism, and thus, at every point of #{G_y^0}, gives a "quasi-section";
+  then, after possibly another extension of the base #{S}, we can suppose that there exists a section #{g'_2} of #{G^0} over #{S} such that #{g'_2(y)=g_2(y)}.
+  Set #{g'=g_1g'_2};
+  then, by construction, #{g'(y)=g(y)=x}, and #{g'(y')=g_1(y')g'_2(y')\in G^\sigma}, and so #{g(y')=x'} is a generalisation of #{x} in #{G^\sigma} over #{y'}, which proves (iii).
+}
+
+\p{
+  Finally we prove the last claim (iv).
+  It suffices to prove that, if #{x\in G^\rho}, then every generalisation #{x'} of #{x} is in #{G^\rho}.
+  We can suppose (after taking the images under #{\varphi_{n^h}} for suitable #{h}) that we even have #{x\in G^0}.
+  Then, for every integer #{n>0} coprime to the characteristic, #{x} is in the image of #{\varphi_n} (since the #{n}-th power in a connected group of finite type over a field of characteristic coprime to #{n} is surjective).
+  Since #{\varphi_n} is open, it follows that #{x'} is also in the image of #{\varphi_n}.
+  More precisely, let #{U} be a quasi-compact open of #{G^\tau} that contains #{G_y^0}, and then #{x'\in\varphi_n(U)} for all #{n} coprime to #{p}.
+  Taking #{n} to be a common multiple of the factors of the #{\nu(z)} that are coprime to #{p}, for #{z\in U}, we see that #{x'\in G^\rho}.
+}
+
+\p{
+  Claim (iii) of \ref{fga3.vi-1-theorem-1.1} is finished off as follows:
+}
+
+\subtree[fga3.vi-1-corollary-1.5]{
+  \taxon{corollary}
+  \number{1.5}
+
+  \p{
+    Let #{n>1} be an integer such that the #{n}-th power homomorphism #{\varphi_n\colon G\to G} is universally open (for example, étale).
+    Let #{G^{(n)}=\varphi_n^{-1}(G^0)}, and suppose that the connected fibres #{G_s^0} "do not contain the additive component" (i.e. the group induced by field extension from #{k(s)} to the algebraic closure does not contain a subgroup isomorphic to #{\Ga}).
+    \oldpage{236-08}
+    Then #{G\to S} is universally open at the point of #{G^{(n^h)}}.
+    In particular, if the #{G_s^0} do not contain the additive component, and if, for every integer #{n>1}, the homomorphism #{\varphi_n} is universally open at the points of residual characteristic coprime to #{p}, then #{G\to S} is universally open at the points of #{G^\sigma}, and thus ((iii) of \ref{fga3.vi-1-theorem-1.1}) if #{G^0} is closed then #{G^\sigma\to S} is universally open.
+    In this case, #{s\mapsto\dim G_s} is a locally constant function on #{S}.
+  }
+
+  \proof{
+    \p{
+      It follows from the hypotheses that the kernel #{{}_nG} of #{\varphi_n} is universally open over #{S}, and so #{G\to S} is universally open at the points of #{{}_nG}, and thus also (replacing #{n} with #{n^h}) at the points of #{{}_{(n^h)}G}.
+      But the hypothesis on the fibres #{G_s^0} tells us exactly that the points of order some power of #{n} in #{G_s} are dense in the union of the #{G^{(n^h)}}, whence it easily follows that #{G\to S} is universally open at all points of this union, in particular along the identity section, whence it easily follows that #{s\mapsto\dim G_s} is a locally constant function.
+    }
+  }
+}
+
+\subtree[fga3.vi-1-remark-1.6]{
+  \taxon{remark}
+  \number{1.6}
+
+  \p{
+    Recall that a morphism #{X\to S} is said to be universally open if it sends every open to an open, and retains this nice property after any base change #{S'\to S}.
+    This also implies (if #{S} is locally Noetherian and #{X\to S} is locally of finite type) that every irreducible component of #{X} dominates #{S}, and that this property is retained after any base change #{S'\to S}.
+    In these two claims, it suffices (thanks to the finiteness hypotheses above) to verify only for the base changes #{S'\to S} where #{S'} is the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one wants...).
+    The definition extends in an evident way to the case of a subset #{Z} of #{X} (such as the subset #{G^\sigma} of #{G}).
+    It is a perfectly normal phenomenon, even if we start with a simple projective morphism #{X\to S} with connected geometric fibres (for example, the fibre square of the modular family of elliptic curves over #{S=\Spec\mathbb{C}[j]}), that #{\repPic_{X/S}} is not universally open over #{S}, i.e. that there can be irreducible components of #{\repPic_{X/S}}that live entirely over a single point of #{S};
+    this is linked to the fact that the rank of the Néron–Severi group of the fibres of #{X/S} can jump up ("complex multiplication" phenomena).
+    However, [(1.5)](#fga3.vi-1-corollary-1.5) assures us that, in good cases, #{\repPic_{X/S}^\sigma} (and usually, it seems, even #{\repPic_{X/S}^\tau}) is universally open over #{S}.
+  }
+}
+
+\p{
+  \oldpage{236-09}
+  Finally, here is a useful case where, exceptionally, #{G^0} agrees to be open:
+}
+
+\subtree[fga3.vi-1-corollary-1.7]{
+  \taxon{corollary}
+  \number{1.7}
+
+  \p{
+    Suppose that #{G\to S} is universally open at the points of #{G^0} (cf. \ref{fga3.vi-1-corollary-1.5}) and that the fibres #{G_s} are separable, thus simple over #{k(s)} (this latter condition being automatically satisfied in residual characteristic zero, by a result of Cartier).
+    Then #{G^0} is open in #{G}.
+    If, further, #{S} is reduced, then #{G^0} is simple (and in particular, flat) over #{S}.
+  }
+
+  \proof{
+    \p{
+      The first claim can be made more precise by noting that if, for some given #{s\in S}, we have that #{G\to S} is universally open at the points of #{G_s^0}, and if #{G_s^0} is separable over #{k(s)}, then #{G^0} is a neighbourhood of #{G_s^0} (and it so happens that the hypotheses made on #{s} remain satisfied by all neighbouring points).
+      A proof of this statement, which is independent of all the structure of the group, can be found in [[GD1960](GD1960), IV, §7].
+      The last claim in \ref{fga3.vi-1-corollary-1.7}, also independent of group structure and of any question of connected components, is a particular case of a flatness criterion given in [[Gro1960b](Gro1960b), §5], which implies, more generally:
+    }
+  }
+}
+
+\subtree[fga3.vi-1-corollary-1.8]{
+  \taxon{corollary}
+  \number{1.8}
+
+  \p{
+    Let #{U} be an open subset of a fibre #{G_s} such that #{G\to S} is universally open at the points of #{U} (cf. [(1.5)](#fga3.vi-1-corollary-1.5)).
+    If #{G_s} is separable over #{k(s)} and #{S} is reduced at #{s}, then #{G} is flat over #{S} at the points of #{U} (and then also simple over #{S} at the points of #{U}).
+  }
+}
+
+\subtree[fga3.vi-1-remarks-1.9]{
+  \taxon{remarks}
+  \number{1.9}
+
+  \p{
+    I do not know, if #{G} is separated over #{S}, if #{G^0} or #{G^\tau} is always closed in #{G};
+    this seems unlikely.
+    In any case, we find evident counter-examples if we drop the separation hypothesis, for example by taking the affine line with a countably infinite number of copies of the origin, thus obtaining a group scheme #{G} over the affine line whose fibres are all the trivial group, apart from one, which is #{\mathbb{Z}}.
+    This group scheme is an open group subscheme, the closure of the identity section, of the Picard prescheme of the #{S}-scheme #{X} that corresponds to a family of conics degenerating to two concurrent lines.
+  }
+
+  \p{
+    Even starting with a flat and finite group scheme #{G} over the spectrum #{S} of a discrete valuation ring #{V}, if #{G^0} is reduced at the identity section, and thus closed, then various conclusions become false if we drop certain hypotheses.
+    Suppose that #{V} is of equal characteristic #{p>0}, and let #{G} be the kernel of the homomorphism #{\Ga\to\Ga} given by the homomorphism of functors #{f\mapsto f^p-tf}, where #{t} is a uniformiser of #{V}.
+    \oldpage{236-10}
+    (Recall that, by definition, the "additive group" #{\Ga} over #{S} represents the functor #{S'\mapsto\Gamma(S',\OO_{S'})}).
+    Then, as an #{S}-scheme, #{G=\Spec V[x]/(x^p-tx)} is the union of #{p} concurrent "lines", giving a group #{\mathbb{Z}/p\mathbb{Z}} that degenerates to an infinitesimal additive-type group.
+    In this example, #{G^0=G^\sigma} (and this is one of the #{p} lines), and so #{G^0} is not open in #{G}.
+    In the case of unequal characteristic, with residual characteristic #{p>0}, we start with a group scheme #{H=\mu_p} given by the kernel of the #{p}-th power in #{\Gm}, so that #{H=\Spec V[x]/(x^p-1)}, which is again the union of #{p} concurrent lines, giving a group #{\mathbb{Z}/p\mathbb{Z}} (in characteristic #{0}) that degenerates to an infinitesimal multiplicative-type group in characteristic #{p}.
+    Let #{H'} be the "constant group scheme" defined by the ordinary finite group #{\mathbb{Z}/p\mathbb{Z}}, which is the disjoint sum of #{\mathbb{Z}/p\mathbb{Z}} copies of #{S}, or even #{\Spec V^{\mathbb{Z}/p\mathbb{Z}}}.
+    Then #{G=H\times_S H'} describes a group #{(\mathbb{Z}/p\mathbb{Z})^2} in characteristic #{0} that degenerates to an infinitesimal group times #{\mathbb{Z}/p\mathbb{Z}} in characteristic #{p}.
+    Here #{G^\rho} is the union of the identity section and the special fibre, and so #{G^\rho} is not open, even though #{G^\sigma} is the union of the identity section and the general fibre, and is thus not closed, contrary to what is true in the case of equal characteristic in (iii) and (iv) of \ref{fga3.vi-1-theorem-1.1}.
+    Of course, these are phenomena linked to characteristic #{p>0}.
+    The above results give:
+  }
+}
+
+\subtree[fga3.vi-1-corollary-1.10]{
+  \taxon{corollary}
+  \number{1.10}
+
+  \p{
+    Suppose that the residual characteristics of #{S} are all #{0}, so that #{G^\tau=G^\sigma} and #{G^0=G^\rho}.
+    Then #{G^\tau=G^\sigma} is open, and even open and closed if #{G} is separated over #{S} and the #{G_s^0} are proper;
+    under these same hypotheses, #{G^0=G^\rho} is proper over #{S} and thus closed in #{G}.
+    Suppose finally that, for every integer #{n>1}, the #{n}-th power homomorphism in #{G} is universally open, then #{G^0} is open;
+    if furthermore the #{G_s^0} do not have any additive component (for example the #{G_s^0} are proper, as above), then #{G^\tau\to S} is universally open, and even simple if #{S} is reduced.
+  }
+}
+
+\p{
+  Finally we note the following easy result:
+}
+
+\subtree[fga3.vi-1-proposition-1.11]{
+  \taxon{proposition}
+  \number{1.11}
+
+  \p{
+    There exists an open subset #{U} of #{S} such that the set #{G'} of points of #{G} at which #{G} is simple (resp. flat) over #{S} is the underlying set of an open group subscheme induced by #{G|U}.
+    Furthermore, every section of #{G} over #{U} is a section of #{G'} over #{U}.
+  }
+}
+
+\subtree[fga3.vi-1-corollary-1.12]{
+  \taxon{corollary}
+  \number{1.12}
+
+  \p{
+    \oldpage{236-11}
+    If #{G} is simple (resp. flat) over #{S} at the points of the identity section, then it is simple (resp. flat) at the points of every section of #{G} over #{S}, and at all points of #{G^0}.
+    If, further, for every integer #{n>0} the #{n}-th power homomorphism #{\varphi_n\colon G\to G} is étale at the points of characteristic coprime to #{n}, then #{G} is simple (resp. flat) over #{S} at all points of #{G^\sigma}.
+  }
+}
