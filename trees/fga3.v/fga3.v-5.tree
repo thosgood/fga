@@ -6,3 +6,111 @@
 \import{fga3.v-macros}
 
 \put\transclude/numbered{false}
+
+\p{
+  Under the conditions of \ref{fga3.v-3-theorem-3.1}, choose some module #{\OO_X(1)} that is very ample over #{X/S}, and let #{\xi} be the corresponding element of #{\Pic(X/S)}.
+  For brevity, let #{\sh{P}(S')=\Pic(X\times_S S'/S')}, and suppose, for simplicity, that #{X/S} admits a section.
+  Let #{\sh{P}^+(S')} be the subset of #{\sh{P}(S')} consisting of classes of the #{\sh{L}} that are invertible on #{X\times_S S'} such that
+  ##{
+    \begin{aligned}
+      \RR^i f'_*(\sh{L}(n)) &= 0
+      \qquad\text{for }i>0\text{ and all }n\geqslant0
+    \\f'_*(\sh{L}(n)) &\neq0
+      \qquad\text{for all }n\geqslant0.
+    \end{aligned}
+  }
+  These conditions are stable under base change, and thus define a subfunctor #{\sh{P}^+} of #{\sh{P}} that is evidently stable under translation by #{\xi}.
+  Using Serre's "Theorems A and B" ([[GD1960](GD1960), III, §2]) and generalities ([[Gro1960a](Gro1960a), IV, 5]), we easily see that #{\sh{P}} is representable if and only if #{\sh{P}^+} is, and so #{\sh{P}^+} will be representable by an open #{U} of the prescheme #{\repPic_{X/S}} that represents #{\sh{P}}, and the latter will be an increasing union of opens #{U\setminus n\xi}.
+}
+
+\p{
+  For brevity, let #{\sh{D}=\shDiv_{X/S}}, and let #{\sh{D}^+} be the inverse image of #{\sh{P}^+} under the canonical morphism #{\sh{D}\to\sh{P}}.
+  So we have a morphism
+
+  \subtree[fga3.v-5-equation-plus]{
+    \taxon{equation}
+    \number{+}
+    ##{
+      \sh{D}^+
+      \to \sh{P}^+
+    \startverb\tag{+}\stopverb
+    }
+  }
+
+  and we already know that #{\sh{D}^+} is representable by an open #{D^+} of the prescheme #{D=\repDiv_{X/S}} (and, more precisely, by \em{projective bundles associated to locally free modules} that are everywhere non-zero);
+  this is due to the fact that, if #{\sh{L}} on #{X\times_S S'} is, as at the start of this section, then #{f'_*(\sh{L})} is a \em{locally free} non-zero module, whose formation commutes with base change;
+  with the notation of \ref{fga3.v-4-theorem-4.3}, #{\sh{Q}} is then isomorphic to the dual of #{f'_*(\sh{L})}.
+  Using the general criterion ([[Gro1960a](Gro1960a), IV, 4.7]), we can thus conclude that #{P^+} is representable.
+  In \em{loc. cit.}, we take #{\mathcal{S}} to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by [FGA 3.I, §B](fga3.i-b.1)).
+  \oldpage{232-13}
+  Condition (a) of \em{loc. cit.}, namely that \ref{fga3.v-5-equation-plus} is representable by morphisms that are elements of #{\mathcal{S}}, is satisfied as we have just seen;
+  condition (b) says that the functor #{\sh{P}^+} is is compatible with faithfully flat quasi-compact descent, which is immediate.
+  It remains only to prove condition (c) of \em{loc. cit.}, namely that the equivalence #{R} in the prescheme #{D^+} induced by the #{\mathcal{S}}-representable morphism in \ref{fga3.v-5-equation-plus} is #{\mathcal{S}}-effective, i.e. is effective and such that #{D^+\to D^+/R} is in #{\mathcal{S}}.
+  For this, note first of all that the opens #{{D^+}^Q} of #{D^+} that correspond to the virtual Hilbert polynomials #{Q\in\mathbb{Q}[t]} are stable under #{R} (since the fibres of #{R} are connected), which reduces the problem to proving that, for all #{Q}, the induced equivalence relation #{R^Q} on #{{D^+}^Q} is #{\mathcal{S}}-effective.
+  But now #{{D^+}^Q} is quasi-projective, and the equivalence relation #{R^Q} is projective and flat.
+  We are thus under the hypothesis of [FGA 3.III, Theorem 6.1](fga3.iii-6-theorem-6.1), which implies the desired result.
+}
+
+\p{
+  In the general case where #{X/S} does not necessarily admit a section, we can easily reduce to the above case by the technique of descent, where we can repeat the above proof with the modification that is imposed upon the definition of #{\sh{P}^+}.
+}
+
+\subtree[fga3.v-5-remarks-5.1]{
+  \taxon{remarks}
+  \number{5.1}
+
+  \p{
+    The method that we followed is essentially that of Matsusaka for the projective construction of Picard varieties.
+    The result that we invoke from \ref{fga3.iii} that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [Mumford–Tate seminar, 1962]).
+    (Classically, these quotients are constructed by using Chow coordinates).
+    Note that the formation of the open #{\repPic_{X/S}^+} of #{\repPic_{X/S}} and its decomposition into opens #{{\repPic_{X/S}^+}^Q} that are quasi-projcetive over #{S} following the Hilbert polynomials for the \em{divisors} that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).
+  }
+}
+
+\subtree[fga3.v-5-remarks-5.2]{
+  \taxon{remarks}
+  \number{5.2}
+
+  \p{
+    It is not out of the question that #{\repPic_{X/S}} exist whenever #{f\colon X\to S} is proper and flat and such that the homomorphisms #{k(s)\to\HH^0(X_s,\OO_{X_s})} (for #{s\in S}) are isomorphisms (this latter condition also then implying that #{\OO_S\simto f_*(\OO_X)}, and that this remain true after any base change #{S'\to S}).
+    This at least is what we can prove in the setting of analytic spaces, if #{f} is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in [[Gro1960a](Gro1960a), IX, 3.1].
+    \oldpage{232-14}
+    In this method, the passage to the quotient by a \em{proper} and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of #{X} into #{\mathbb{P}_S^r}.
+    This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group [[Mum1961]](Mum1961);
+    for now, there is no written proof, except when #{X} has "lots of local sections" over #{S}, for example if #{X} is separable over a complete local ring with algebraically closed residue field.
+    In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
+    (Technically, the difficulty comes from the fact that, when the geometric fibres of #{f} are not integral, then the functor envisaged in \ref{fga3.v-4-theorem-4.3} is no longer representable by the projective bundle #{\mathbb{P}(\sh{Q})} itself, but by an \em{open} of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).
+  }
+
+  \p{
+    \comp
+    As I point out at the start of the next talk, the existence conjecture suggested here is false, but Mumford has proven a slightly weaker theorem using his methods.
+  }
+}
+
+\subtree[fga3.v-5-remark-5.3]{
+  \taxon{remark}
+  \number{5.3}
+
+  \p{
+    Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang [[Lan1959]](Lan1959) or the article by Chevalley [[Che1960]](Che1960), which follow the path sketched by Weil.
+    Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in \ref{fga3.v-1} (essentially those of Chevalley, but taking into account the "variety of parameters" with nilpotent elements).
+    The fact that the construction of Picard schemes should precede, not follow, the theory of abelian varieties is clear a priori, by the fact that, in general, Picard schemes are not, nor do they reduce to, abelian schemes, as we already see in the case of singular curves over an algebraically closed field, where we find the "generalised Jacobians" of Rosenlicht, which are not abelian varieties.
+    Furthermore, the theory of abelian varieties, and more generally of abelian schemes, becomes much simpler once we have a theory of Picard schemes in general.
+    In particular, the theory of duality for abelian schemes, and notably the results of Cartier type, then become slightly more formal (cf. for example [Mumford–Tate seminar, 1962]).
+  }
+}
+
+\subtree[fga3.v-5-remarks-5.4]{
+  \taxon{remarks}
+  \number{5.4}
+
+  \p{
+    \oldpage{232-15}
+    The "compatibility principle" of Igusa for the Jacobian of a curve degenerating to a singular curve can only be well understood as an existence theorem of the Picard scheme of a relative scheme in curves #{X/S} that are not necessarily simple over #{S}.
+    This is thus a particular case of the principal existence theorem \ref{fga3.v-3-theorem-3.1} when the specialised curve is integral (i.e. in classical terms, irreducible of multiplicity #{1}).
+    We note that, for now, the case of a reducible special curve (even when the components are of multiplicity #{1}, i.e. when the special curve is separable over the residue field) is not covered by the known existence theorems, except for in the case where we are over a \em{complete} discrete valuation ring with algebraically closed residue field, cf. \ref{fga3.v-5-remarks-5.2}.
+    This question of existence certainly arises in a geometric construction, in the theory of schemes, of Baily–Satake "compactifications" of modular schemes of curves of genus #{g}.
+    (This compactification is known for now only for #{g=1}, thanks to work of Igusa).
+  }
+}
