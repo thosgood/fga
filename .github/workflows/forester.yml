@@ -21,6 +21,9 @@ jobs:
           ocaml-compiler: "5.1"
 
       - name: Install dependencies
+        run: sudo apt install libev
+
+      - name: Install Forester
         run: opam install forester
 
       - name: Update environment

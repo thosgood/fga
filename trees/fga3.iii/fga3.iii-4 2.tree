@@ -1,0 +1,196 @@
+\title{Equivalence pre-relations}
+\number{4}
+\parent{fga3.iii}
+
+\import{fga-macros}
+\import{fga3.iii-macros}
+
+\put\transclude/numbered{false}
+
+\p{
+  Recall that a \em{groupoid} is defined to be a category where all the morphisms are isomorphisms.
+  \oldpage{212-08}
+  A category should be defined as consisting of two base sets, #{X} and #{R}, with the former being the set of \em{objects} and the latter the set of \em{arrows}, endowed with the following structures:
+  \todo{the following list should be i, ii, etc.}
+
+  \ol{
+    \li{
+      a pair of maps
+      ##{
+        p_1,p_2\colon R\rightrightarrows X
+      }
+      called the \em{source map} and the \em{target map} ;
+    }
+    \li{
+      a map
+      ##{
+        \pi\colon(R,p_2)\times_X(R,p_1) \to R
+      }
+      called the \em{composition map}.
+    }
+  }
+
+  These data should satisfy well-known axioms, which we will not repeat here, and which can be expressed in terms of the commutativity of certain diagrams along with the existence of a (necessarily unique) map #{D\colon X\to R} that makes two other diagrams commute, where #{D} corresponds to passing from an object to the corresponding identity map, and satisfies
+  ##{
+    p_1\circ D = p_2\circ D = \id_X.
+  }
+  To say that a category is a groupoid then, implies the existence of a (necessarily unique) map
+  ##{
+    s\colon R\to R
+  }
+  called the \em{symmetry} of #{R}, that sends every arrow to an inverse arrow, which can be expressed in terms of the commutativity of four other diagrams, built from #{s}, #{\Delta}, and the above data, and of which the first two can be written as
+  ##{
+    \begin{aligned}
+      p_1\circ s &= p_2
+    \\p_2\circ s &= p_1.
+    \end{aligned}
+  }
+}
+
+\p{
+  Having recalled these notions, the general definitions in [FGA 3.II, §A.1](fga3.ii-a.1) show, in particular, what we should mean by "the structure of a \em{#{\mathcal{C}}-category}" (resp. \em{#{\mathcal{C}}-groupoid}) on a pair of objects #{(X,R)} of an arbitrary category #{\mathcal{C}}:
+  it is, by definition, the data, for every object #{T} in #{\mathcal{C}}, of the structure of a category (resp. groupoid) in the set-theoretic sense, whose set of objects is #{X(T)}, and set of arrows is #{R(T)}, with these structures "varying functorially" in #{T}.
+  This thus implies the definition of two morphisms
+  ##{
+    p_1,p_2\colon R\rightrightarrows X
+  }
+  \oldpage{212-09}
+  called the \em{source morphism} and the \em{target morphism}, and, if the fibre product in question exists, a morphism
+  ##{
+    \pi\colon (R,p_2)\times_X(R,p_1) \to R
+  }
+  called the \em{composition morphism};
+  these three morphisms then suffice to determine the structure of a category (resp. groupoid) on #{(X,R)}, with the condition to place on them being the following: for every #{T}, the three corresponding morphisms for #{X(T)} and #{R(T)} define the structure of a category (resp. groupoid) on the pair of sets #{(X(T),R(T))}.
+  If necessary, this can be expressed in terms of the commutativity of certain diagrams, implying a well-determined morphism
+  ##{
+    D\colon X\to R
+  }
+  and, in the case of groupoids, a well-determined morphism
+  ##{
+    s\colon R\to R
+  }
+  where the diagrams are as in the "set-theoretic" case.
+  This tedious interpretation of the axioms is thankfully useless in practice, with the only theoretical interest in the possibility of being able to express the data and the axioms using morphisms and equalities of morphisms between certain fibre products being the following: if we have a left-exact functor #{F\colon\mathcal{C}\to\mathcal{C}'} (i.e. a functor that commutes with finite products and fibre products), then it sends #{\mathcal{C}}-categories (resp. #{\mathcal{C}}-groupoids) to a #{\mathcal{C}'}-categories (resp. #{\mathcal{C}'}-groupoids) (under the condition that finite products and fibre products exist in #{\mathcal{C}}).
+}
+
+\p{
+  It is important, in practice, to know how to understand the morphisms #{p_1}, #{p_2}, #{\pi}, #{D}, and #{s} as \em{simplicial operations} in a suitable semi-simplicial or simplicial objects of #{\mathcal{C}} (or, at least when fibre products exist in #{\mathcal{C}}).
+  To fix terminology, we introduce the category #{\mathcal{S}} of \em{simplex types} as the category whose objects are finite sets of the form
+  ##{
+    \Delta_n
+    = [0,n]
+  }
+  for #{n\in\mathbb{Z}}, where #{[0,n]} denotes the interval of integers from #{0} to #{n} (inclusive), and whose morphisms are \em{arbitrary maps} between these finite sets.
+  We note that the category #{\mathcal{S}} is equivalent to the category of \em{non-empty} finite sets, where we take the morphisms to be maps between finite sets.
+  In #{\mathcal{S}}, the sum of a \em{non-empty} finite family of objects clearly exists, as does the amalgamated sum of two objects over a third (the dual operation to the fibre product).
+  We denote by #{\mathcal{S}'} the subcategory of #{\mathcal{S}} that has the same objects, but where the morphisms are \em{increasing maps} between the #{\Delta_n}.
+  This category is equivalent to the category of non-empty finite totally ordered sets.
+  \oldpage{212-10}
+  In this category, the sum of two objects never exists, and the amalgamated sum of two objects #{A} and #{B} over a third #{C} does not exist in general (take, for example, #{C=\Delta_0}, and #{A=B=\Delta_1}, with the two structure maps #{u\colon C\to A} and #{v\colon C\to B} being the equal).
+  However, in certain cases, the amalgamated sum \em{does} exist;
+  consider
+  ##{
+    \begin{gathered}
+      A = \Delta_m
+      \qquad B = \Delta_n
+      \qquad C = \Delta_0
+    \\u(0) = m
+      \qquad v(0) = 0
+    \end{gathered}
+  }
+  which is such that
+  ##{
+    A\coprod_C B
+    = \Delta_{m+n}.
+  }
+}
+
+\p{
+  A \em{simplicial object} (resp. \em{semi-simplicial object}) in a category #{\mathcal{C}} is defined to be a contravariant functor #{K} from #{\mathcal{S}} (resp. #{\mathcal{S}'}) to #{\mathcal{C}}.
+  A simplicial object thus defines a semi-simplicial object by restriction, but the former differs from the latter essentially by the presence of \em{symmetry operations} in the #{K_n=K(\Delta_n)}, which correspond to the images under the functor #{K} of the elements of the symmetric group on #{n+1} elements (considered as the automorphism group of #{\Delta_n} in #{\mathcal{S}}).
+}
+
+\p{
+  With the above, for all #{n}, let #{\Delta'_n} (resp. #{\Delta''_n}) be the finite category whose set of objects is #{\Delta_n}, and whose set of arrows is defined by the "chaotic order" relation (resp. the natural total order relation) on #{\Delta_n} (i.e. the set of arrows is the graph of the order relation).
+  It is clear that #{\Delta'_n} (resp. #{\Delta''_n}) depends functorially on the object #{\Delta_n} of #{\mathcal{S}} (resp. #{\mathcal{S}'}).
+  So if #{Z} is a category, then #{\Hom(\Delta'_n,Z)} (resp. #{\Hom(\Delta''_n,Z)}) is, for varying #{\Delta_n}, a functor from the category #{\mathcal{S}} (resp. #{\mathcal{S}'}) to the category of sets, i.e. a \em{simplicial set} (resp. \em{semi-simplicial set}), which is said to be \em{associated to the category #{Z}}, and denoted by #{Z'} (resp. #{Z''}).
+  We also have an obvious natural homomorphism from the semi-simplicial set associated to #{Z'} to #{Z''}, and this is an isomorphism if and only if #{Z} is a groupoid.
+  Then:
+}
+
+\subtree[fga3.iii-4-proposition-4.1]{
+  \taxon{proposition}
+  \number{4.1}
+
+  \p{
+    The functor #{Z\mapsto Z''} from the category of categories to the category of semi-simplicial sets is fully faithful, and defines an equivalence between the category of \em{categories} and the category of semi-simplicial sets, i.e. contravariant functors #{K} from #{\mathcal{S}'} to #{\Set} \em{that send amalgamated sums #{A\coprod_C B} (of the type described above) to fibre products of sets}.
+  }
+
+  \p{
+    \oldpage{212-11}
+    Similarly, the functor #{Z\mapsto Z'} from the category of groupoids to the category of simplicial sets is fully faithful, and defines an equivalence between the category of \em{groupoids} and the category of simplicial sets, i.e. contravariant functors #{K} from #{\mathcal{S}} to #{\Set} \em{that send amalgamated sums to fibre products}.
+  }
+}
+
+\p{
+  We can thus consider categories as specific examples of semi-simplicial sets, and groupoids as specific examples of simplicial sets, with, of course, the condition that we argue "up to isomorphism", as is rigorous when we interpret certain structures in terms of others.
+  The usual procedure of reduction to the set-theoretic case then implies:
+}
+
+\subtree[fga3.iii-4-corollary-4.2]{
+  \taxon{corollary}
+  \number{4.2}
+
+  \p{
+    The above claim remains true when we replace categories, groupoids, and simplicial sets with #{\mathcal{C}}-categories, #{\mathcal{C}}-groupoids, and #{\mathcal{C}}-simplicial objects (respectively), \em{provided that} fibre products exist in #{\mathcal{C}}.
+  }
+}
+
+\p{
+  The semi-simplicial object #{K} in #{\mathcal{C}} associated to a category #{(X,R,\ldots)} in #{\mathcal{C}} can be made explicit by considering the component #{K_n=K(\Delta_n)} of #{K} as being the #{(n+1)}-th fibre product of #{(R,p_1)} over #{X}, or, even better, by the inductive formula
+  ##{
+    \begin{aligned}
+      K_0 &= R
+    \\K_n &= (K_{n-1},p_n^{(n-1)})\times_X(R,p_1)
+    \end{aligned}
+  }
+  where the #{p_i^{(n-1)}} (for #{0<i<n-1}) are the natural projections from #{K_{n-1}} to #{X} (which can also be defined inductively).
+  In this way, #{p_1}, #{p_2}, #{\pi}, #{D}, and #{s} can be understood as simplicial operations that correspond to morphisms in #{\mathcal{S}}, namely: the #{0} face of #{\Delta_1}, the #{1} face of #{\Delta_1}, the #{(0,2)} face of #{\Delta_2}, the degeneracy #{\Delta_1\to\Delta_0}, and the symmetry of #{\Delta_1} (respectively).
+  Every other semi-simplicial (resp. simplicial) operation can be formally obtained from the four (resp. five) aforementioned operations by composition and fibre products.
+}
+
+\p{
+  We now define an \em{equivalence pre-relation} on an object #{X} of a category to be the data of a groupoid whose object of objects is #{X}.
+  Such a data gives, amongst other things, an object #{R} along with two morphisms
+  ##{
+    p_1,p_2\colon R\rightrightarrows X.
+  }
+  But we note that only these data alone do not determine the structure in question, contrary to what happens for equivalence pairs.
+  In this talk, we are interested in this notion with the aim of obtaining criteria for the possibility of passing to the quotient, i.e. for being able to form the cokernel of the pair #{(p_1,p_2)}.
+  The statement of this problem thus makes no reference to the additional data inherent to a groupoid.
+  \oldpage{212-12}
+  In the proof of the results that will follow, we will, however, make use of this additional data, and, in particular, of the simplicial operations (including the symmetry operations) up to dimension #{3} (the fourth fibre power of #{R} over #{X} will appear).
+}
+
+\p{
+  An equivalence relation on an object #{X} of #{\mathcal{C}} defines an equivalence pre-relation: it suffices to show this in the set-theoretic case, and we then associate, to an equivalence relation on a set #{X}, the groupoid whose set of objects is #{X}, and whose set of arrows is the graph set of the equivalence relation.
+}
+
+\p{
+  A #{\mathcal{C}}-monoid #{G} acting on an object #{X} of #{\mathcal{C}} defines a #{\mathcal{C}}-category whose basic objects are #{R=G\times X} and #{X} (under the condition that #{G\times X} exists), and that is a #{\mathcal{C}}-groupoid if and only if #{G} is a group.
+  It again suffices to prove this in the set-theoretic case.
+  We then define the composition of arrows #{(g,a)} and #{(g',g\cdot a)} as being
+  ##{
+    (g',g\cdot a) \circ (g,a)
+    = (g'g,a)
+  }
+  i.e. if #{a,b\in X} then #{\Hom(a,b)} is, by definition, the transporter of #{a} to #{b}, and morphisms compose thanks to the composition of elements of #{G}.
+}
+
+\subtree[fga3.iii-4-remark]{
+  \taxon{remark}
+
+  \p{
+    We can avoid the logical difficulties that arise in a statement such as \ref{fga3.iii-4-proposition-4.1} by implicitly assuming that all the objects in question can be found in a fixed "universe" (that is itself a set).
+  }
+}
