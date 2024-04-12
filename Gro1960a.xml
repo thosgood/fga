@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>538</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>Gro1960a</fr:addr><fr:route>Gro1960a.xml</fr:route><fr:title>Techniques de construction en géométrie analytique</fr:title><fr:date><fr:year>1960</fr:year></fr:date><fr:authors><fr:author>A. Grothendieck</fr:author></fr:authors><fr:meta
+name="venue"><fr:em>Séminaire Cartan</fr:em> <fr:strong>13</fr:strong> Talks no. 7–17</fr:meta><fr:meta
+name="bibtex">@article{Gro1960a,
+  title = {Techniques de construction en g\'{e}om\'{e}trie analytique, {{I}}--{{X}}},
+  author = {Grothendieck, A.},
+  year = {1960/61},
+  journal = {S\'{e}minaire Cartan},
+  volume = {13},
+  pages = {Talks no. 7--17},
+}</fr:meta></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>523</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.v-5-remarks-5.2</fr:addr><fr:route>fga3.v-5-remarks-5.2.xml</fr:route><fr:number>5.2</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    It is not out of the question that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exist whenever <fr:tex>f \colon  X \to  S</fr:tex> is proper and flat and such that the homomorphisms <fr:tex>k(s) \to \operatorname {H} ^0(X_s, \mathcal {O} _{X_s})</fr:tex> (for <fr:tex>s \in  S</fr:tex>) are isomorphisms (this latter condition also then implying that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, and that this remain true after any base change <fr:tex>S' \to  S</fr:tex>).
+    This at least is what we can prove in the setting of analytic spaces, if <fr:tex>f</fr:tex> is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in [<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, IX, 3.1].
+    
+    In this method, the passage to the quotient by a <fr:em>proper</fr:em> and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of <fr:tex>X</fr:tex> into <fr:tex>\mathbb {P}_S^r</fr:tex>.
+    This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group <fr:link
+href="Mum1961.xml"
+type="local"
+addr="Mum1961">[Mum1961]</fr:link>;
+    for now, there is no written proof, except when <fr:tex>X</fr:tex> has "lots of local sections" over <fr:tex>S</fr:tex>, for example if <fr:tex>X</fr:tex> is separable over a complete local ring with algebraically closed residue field.
+    In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
+    (Technically, the difficulty comes from the fact that, when the geometric fibres of <fr:tex>f</fr:tex> are not integral, then the functor envisaged in <fr:ref
+addr="fga3.v-4-theorem-4.3"
+href="fga3.v-4-theorem-4.3.xml"
+taxon="Theorem"
+number="4.3"></fr:ref> is no longer representable by the projective bundle <fr:tex>\mathbb {P}( \mathscr { Q } )</fr:tex> itself, but by an <fr:em>open</fr:em> of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).
+  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    As I point out at the start of the next talk, the existence conjecture suggested here is false, but Mumford has proven a slightly weaker theorem using his methods.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>524</fr:anchor><fr:addr>fga3.iv-3</fr:addr><fr:route>fga3.iv-3.xml</fr:route><fr:title><fr:link
+href="fga3.iv.xml"
+type="local"
+addr="fga3.iv">Hilbert schemes</fr:link> › Hilbert schemes: definition, existence theorem</fr:title><fr:number>3</fr:number><fr:parent>fga3.iv</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>X</fr:tex> be a prescheme over another prescheme <fr:tex>S</fr:tex>, and <fr:tex>\mathscr { F }</fr:tex> a quasi-coherent module on <fr:tex>X</fr:tex>.
+  We denote by
+  <fr:tex
+display="block">      \operatorname {Quot} ( { \mathscr { F } /X/S} )   </fr:tex>
+  the set of quasi-coherent modules given by quotients of <fr:tex>\mathscr { F }</fr:tex> that are flat over <fr:tex>S</fr:tex>.
+  Now let <fr:tex>S' \to  S</fr:tex> be a base change morphisms, and set <fr:tex>X'=X \times _S S'</fr:tex>, and <fr:tex>\mathscr { F } '= \mathscr { F } \otimes _{ \mathcal {O} _S} \mathcal {O} _{S'}</fr:tex>, so that <fr:tex>X'</fr:tex> is a prescheme over <fr:tex>S'</fr:tex> endowed with a quasi coherent module <fr:tex>\mathscr { F } '</fr:tex>, and we can consider <fr:tex>\operatorname {Quot} ( { \mathscr { F } '/X'/S'} )</fr:tex>.
+  
+  We set
+  <fr:tex
+display="block">      \mathscr {Q} \kern  -.75pt \mathit {out} _{ { \mathscr { F } /X/S} } (S')     =  \operatorname {Quot} ( { \mathscr { F } '/X'/S'} )   </fr:tex>
+  (where <fr:tex>X'=X \times _S S'</fr:tex>, as above).
+</fr:p><fr:p>
+  Now, if <fr:tex>S'' \to  S'</fr:tex> is an <fr:tex>S</fr:tex>-morphism, then <fr:tex>X''=X \times _S S''</fr:tex> is isomorphic to <fr:tex>X' \times _{S'}S''</fr:tex>, and <fr:tex>\mathscr { F } ''</fr:tex> is isomorphic to <fr:tex>\mathscr { F } ' \otimes _{ \mathcal {O} _{S'}} \mathcal {O} _{S''}</fr:tex>, and, since the inverse image functor <fr:tex>\mathscr { G } ' \mapsto \mathscr { G } ' \otimes _{ \mathcal {O} _{S'}} \mathcal {O} _{S''}</fr:tex> from the category of quasi-coherent modules on <fr:tex>X''</fr:tex> is right exact, and sends <fr:tex>S'</fr:tex>-flat modules to <fr:tex>S''</fr:tex>-flat modules, we obtain a natural map
+  <fr:tex
+display="block">      \operatorname {Quot} ( { \mathscr { F } '/X'/S'} )  \to   \operatorname {Quot} ( \mathscr { F } ''/X''/S'')   </fr:tex>
+  and so <fr:tex>\mathscr {Q} \kern  -.75pt \mathit {out} _{ { \mathscr { F } /X/S} } (S')</fr:tex> is a <fr:em>contravariant functor in <fr:tex>S'</fr:tex></fr:em> (where <fr:tex>S'</fr:tex> is a prescheme over <fr:tex>S</fr:tex>), with values in the categories of sets.
+  In what follows, we suppose that <fr:tex>X</fr:tex> is <fr:em>projective</fr:em> over a <fr:em>Noetherian</fr:em> <fr:tex>S</fr:tex>, with <fr:tex>\mathscr { F }</fr:tex> <fr:em>coherent</fr:em>;
+  for simplicity, we will limit ourselves to considering those <fr:tex>S'</fr:tex> that are <fr:em>locally Noetherian</fr:em> over <fr:tex>S</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>387</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.iv-3-theorem-3.1</fr:addr><fr:route>fga3.iv-3-theorem-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.iv-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under these conditions, the contravariant functor <fr:tex>\mathscr {Q} \kern  -.75pt \mathit {out} _{ { \mathscr { F } /X/S} }</fr:tex> on the category of locally Noetherian <fr:tex>S</fr:tex>-preschemes is <fr:em>representable</fr:em> by an <fr:tex>S</fr:tex>-prescheme <fr:tex>\underline { \operatorname {Quot} } _{ { \mathscr { F } /X/S} }</fr:tex>, given by the sum of a sequence of projective <fr:tex>S</fr:tex>-schemes (and a fortiori <fr:tex>\underline { \operatorname {Quot} } _{ { \mathscr { F } /X/S} }</fr:tex> is locally of finite type over <fr:tex>S</fr:tex>).
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We will obtain such a decomposition in the following way.
+  Let <fr:tex>\mathcal {O} _X(1)</fr:tex> be an invertible sheaf on <fr:tex>X</fr:tex> that is very ample with respect to <fr:tex>S</fr:tex>.
+  For every polynomial <fr:tex>P(n)</fr:tex> with rational coefficients, let <fr:tex>\operatorname {Quot} ^P( { \mathscr { F } /X/S} )</fr:tex> be the subset of <fr:tex>\operatorname {Quot} ( { \mathscr { F } /X/S} )</fr:tex> consisting of coherent quotients <fr:tex>\mathscr { G }</fr:tex> of <fr:tex>\mathscr { F }</fr:tex> that are flat over <fr:tex>S</fr:tex> and whose Hilbert polynomial at each <fr:tex>s \in  S</fr:tex> is equal to <fr:tex>P</fr:tex>.
+  We then set
+  <fr:tex
+display="block">      \mathscr {Q} \kern  -.75pt \mathit {out} _ { \mathscr { F } /X/S} ^P(S')     =  \operatorname {Quot} ^P( { \mathscr { F } '/X'/S'} )   </fr:tex>
+  and thus obtain a subfunctor of <fr:tex>\mathscr {Q} \kern  -.75pt \mathit {out} _ { \mathscr { F } /X/S}</fr:tex>.
+  The invariance property of Hilbert polynomials (recalled in <fr:link
+href="#fga3.iv-2"
+type="external">§2</fr:link>) implies the following:
+  <fr:em>For <fr:tex>\mathscr {Q} \kern  -.75pt \mathit {out} _ { \mathscr { F } /X/S}</fr:tex> to be representable, it is necessary and sufficient that the <fr:tex>\mathscr {Q} \kern  -.75pt \mathit {out} _ { \mathscr { F } /X/S} ^P</fr:tex> be representable, and then the <fr:tex>S</fr:tex>-prescheme <fr:tex>\underline { \operatorname {Quot} } _{ { \mathscr { F } /X/S} }</fr:tex> which represents it is isomorphic to the prescheme given by the sum of the <fr:tex>\underline { \operatorname {Quot} } _{ { \mathscr { F } /X/S} }^P</fr:tex> that represent the functors <fr:tex>\mathscr {Q} \kern  -.75pt \mathit {out} _ { \mathscr { F } /X/S} ^P</fr:tex>.</fr:em>
+  With this, <fr:ref
+addr="fga3.iv-3-theorem-3.1"
+href="fga3.iv-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref> will be a consequence of the following theorem:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>388</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.iv-3-theorem-3.2</fr:addr><fr:route>fga3.iv-3-theorem-3.2.xml</fr:route><fr:number>3.2</fr:number><fr:parent>fga3.iv-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    With the above notation, the functor <fr:tex>\mathscr {Q} \kern  -.75pt \mathit {out} _ { \mathscr { F } /X/S} ^P</fr:tex> is representable by a projective <fr:tex>S</fr:tex>-prescheme <fr:tex>\operatorname {Quot} _ { \mathscr { F } /X/S} ^P</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  The rest of this section is dedicated to the proof of <fr:ref
+addr="fga3.iv-3-theorem-3.2"
+href="fga3.iv-3-theorem-3.2.xml"
+taxon="Theorem"
+number="3.2"></fr:ref>.
+</fr:p><fr:p>
+  Let <fr:tex>\nu</fr:tex> be an integer.
+  For every <fr:tex>S'</fr:tex> over <fr:tex>S</fr:tex>, we denote by <fr:tex>A_ \nu (S')</fr:tex> the set of quotients <fr:tex>\mathscr { G } = \mathscr { F } '/ \mathscr { H }</fr:tex> of <fr:tex>\mathscr { F } '= \mathscr { F } \otimes _{ \mathcal {O} _S} \mathcal {O} _{S'}</fr:tex> that are coherent, flat over <fr:tex>S'</fr:tex>, and satisfy the following conditions:
+  <fr:strong><fr:em>TO-DO: the following list should be a, b, etc</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>\operatorname {R} ^i f'_*( \mathscr { G }  (n))=0</fr:tex> for <fr:tex>i&gt;0</fr:tex> and <fr:tex>n \geqslant \nu</fr:tex>;
+    </fr:li>
+    <fr:li><fr:tex>\operatorname {R} ^i f'_*( \mathscr { H }  (n))=0</fr:tex> for <fr:tex>i&gt;0</fr:tex> and <fr:tex>n \geqslant \nu</fr:tex>;
+    </fr:li>
+    <fr:li><fr:tex>f'_*( \mathscr { H }  ( \nu +k))= \mathcal {S}'_k f'_*( \mathscr { H }  ( \nu ))</fr:tex> for <fr:tex>k \geqslant0</fr:tex>.
+    </fr:li></fr:ol>
+
+  For this last condition, we suppose that <fr:tex>X</fr:tex> is written as the homogeneous prime spectrum of a quasi-coherent positively-graded algebra <fr:tex>\mathcal {S}_ \bullet</fr:tex> over <fr:tex>S</fr:tex> that is generated by <fr:tex>\mathcal {S}_1</fr:tex>, and we set <fr:tex>\mathcal {S}'= \mathcal {S} \otimes _{ \mathcal {O} _S} \mathcal {O} _{S'}</fr:tex>, so that <fr:tex>X'</fr:tex> is the homogeneous prime spectrum of <fr:tex>\mathcal {S}'</fr:tex>.
+  To prove <fr:ref
+addr="fga3.iv-3-theorem-3.2"
+href="fga3.iv-3-theorem-3.2.xml"
+taxon="Theorem"
+number="3.2"></fr:ref>, we can easily reduce to the case where <fr:tex>X= \mathbb {P} _S^r</fr:tex> (since <fr:tex>S</fr:tex> is a union of open subsets <fr:tex>U</fr:tex> such that <fr:tex>X|U</fr:tex> is a closed subscheme of <fr:tex>\mathbb {P} _U^r</fr:tex>, and <fr:tex>\mathcal {O} _X(1)</fr:tex> is induced by <fr:tex>\mathcal {O} _{ \mathbb {P} _U^r} (1)</fr:tex>), and where <fr:tex>\mathscr { F }</fr:tex> is of the form <fr:tex>( \mathcal {O} _{ \mathbb {P} _S^r})^N</fr:tex>, and thus flat over <fr:tex>S</fr:tex>.
+  Then, in the above, the sheaves <fr:tex>\mathscr { H }</fr:tex> are also flat over <fr:tex>S'</fr:tex>.
+  It then follows from the Künneth relations [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, III, §7] and from (b) that the conditions (a) and (b) are stable under base change, and imply that, for <fr:tex>n \geqslant \nu</fr:tex>, forming <fr:tex>f'_*( \mathscr { G }  (n))</fr:tex> and <fr:tex>F'_*( \mathscr { H }  (n))</fr:tex> commutes with extension of the base (*loc. cit.*).
+  In other words, <fr:em><fr:tex>A_ \nu (S')</fr:tex> is a contravariant functor in <fr:tex>S'</fr:tex>, and in a precise sense a subfunctor of <fr:tex>A(S')= \mathscr {Q} \kern  -.75pt \mathit {out} _{ { \mathscr { F } /X/S} }^P(S')</fr:tex></fr:em>.
+  For varying <fr:tex>\nu</fr:tex>, we thus obtain an increasing sequence of subsets <fr:tex>A_ \nu (S')</fr:tex> of <fr:tex>A(S')</fr:tex>, whose union is <fr:tex>A(S')</fr:tex> by a well known theorem of Serre [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, III, §2].
+  Note now that, if <fr:tex>\mathscr { G }</fr:tex> is a coherent quotient of <fr:tex>\mathscr { F } '</fr:tex> which is flat over <fr:tex>S</fr:tex>, and <fr:tex>s</fr:tex> an element of <fr:tex>S</fr:tex> such that the base change <fr:tex>\operatorname {Spec} (k(s)) \to  S</fr:tex> gives rise to a quotient <fr:tex>\mathscr { G } _s</fr:tex> of <fr:tex>\mathscr { F } _s</fr:tex> satisfying conditions (a), (b), and (c), i.e. is in <fr:tex>A_ \nu \operatorname {Spec} (k(s))</fr:tex>, then there exists an open neighbourhood <fr:tex>U</fr:tex> of <fr:tex>s</fr:tex> such that these same conditions are satisfied by <fr:tex>\mathscr { G } |(f')^{-1} (U)</fr:tex>, i.e. this quotient is in <fr:tex>A_ \nu (U)</fr:tex>;
+  for (a) and (b), this follows in fact from the "Theorem of holomorphic functions" [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, III, §7], and (c) follows from the Nakayama lemma and the fact that we know that <fr:tex>f'_*( \mathscr { H }  (n+k))=S'_kf'_*( \mathscr { H }  (n))</fr:tex> anyway for <fr:tex>n</fr:tex> large enough and <fr:tex>k \geqslant0</fr:tex> [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, III,§2].
+  
+  From these remarks, we conclude the following (compare with [<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, IV]):
+  <fr:em>For the functor <fr:tex>A</fr:tex> to be representable, it is necessary and sufficient that the functors <fr:tex>A_ \nu</fr:tex> be representable, and then the <fr:tex>S</fr:tex>-prescheme <fr:tex>Q</fr:tex> that represents <fr:tex>A</fr:tex> is the increasing union of the opens <fr:tex>Q_ \nu</fr:tex> that represent the <fr:tex>A_ \nu</fr:tex>.</fr:em></fr:p><fr:p>
+  Let
+  <fr:tex
+display="block">     M_ \bullet      =  \sum _{n \geqslant0 } f_*( \mathscr { F }  (n))     =  \mathcal {S}_ \bullet ^N   </fr:tex>
+  so that we have
+  <fr:tex
+display="block">     M'_ \bullet      = M_ \bullet \otimes _{ \mathcal {O} _S} \mathcal {O} _{S'}     =  \sum _{n \geqslant0 } f'_*( \mathscr { F }  (n))     = { \mathcal {S}'_ \bullet }^N.   </fr:tex></fr:p><fr:p>
+  It follows from (a) that we have
+  <fr:strong><fr:em>TO-DO: the following list should be a'</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>f'_*( \mathscr { G }  (n))</fr:tex> is locally free of rank <fr:tex>P(n)</fr:tex> for <fr:tex>n \geqslant \nu</fr:tex> [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, III, §7]
+    </fr:li></fr:ol>
+
+  and it follows from (b),for <fr:tex>i=1</fr:tex>, that we have
+  <fr:strong><fr:em>TO-DO: the following list should be a''</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>f'_*( \mathscr { G }  (n))</fr:tex> is a quotient module of <fr:tex>M'_n</fr:tex>.
+    </fr:li></fr:ol>
+
+  Also, the knowledge of this quotient module, for <fr:tex>n= \nu</fr:tex>, implies, by (c), that the knowledge of the submodules <fr:tex>f'_*( \mathscr { H }  (n))</fr:tex> of <fr:tex>M_n</fr:tex> for <fr:tex>n \geqslant \nu</fr:tex>, and thus the knowledge of <fr:tex>\mathscr { H }</fr:tex> and consequently of <fr:tex>\mathscr { G }</fr:tex>.
+  We thus obtain an <fr:em>injective map</fr:em>
+  <fr:tex
+display="block">     A_ \nu (S')  \to   \mathscr {G} \kern  -1.25pt \mathit {rass} _{P( \nu )} (M'_ \nu )   </fr:tex>
+  from <fr:tex>A_ \nu (S')</fr:tex> to the set of locally free quotient modules of <fr:tex>M'</fr:tex> of rank <fr:tex>P( \nu )</fr:tex>, whence a <fr:em>functorial</fr:em> homomorphism
+  <fr:tex
+display="block">     i_ \nu \colon  A_ \nu (S')  \to   \mathscr {G} \kern  -1.25pt \mathit {rass} _{P( \nu )} (M_ \nu )(S')   </fr:tex>
+  where the functor on the right hand side is representable by the Grassmannian scheme <fr:tex>\operatorname {Grass} _{P( \nu )} (M_ \nu )</fr:tex> (compare with [<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, V]), which is projective over <fr:tex>S</fr:tex>.
+  Then
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>389</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-3-lemma-3.3</fr:addr><fr:route>fga3.iv-3-lemma-3.3.xml</fr:route><fr:number>3.3</fr:number><fr:parent>fga3.iv-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:tex>A_ \nu (S')</fr:tex> is a representable functor, and the morphism <fr:tex>Q_ \nu \to \operatorname {Grass} _{P( \nu )} (M_ \nu )</fr:tex> that represents the homomorphism <fr:tex>i_ \nu</fr:tex> is an immersion (which implies that <fr:tex>Q_ \nu</fr:tex> is quasi-projective over <fr:tex>S</fr:tex>).
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  This claim is equivalent to the following (compare with [<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, IV]):
+  <fr:em>If we have a quotient module <fr:tex>N</fr:tex> of <fr:tex>M'_ \nu</fr:tex> that is locally free of rank <fr:tex>P( \nu )</fr:tex>, then there exists a subprescheme <fr:tex>Z</fr:tex> of <fr:tex>S'</fr:tex> such that, for every locally Noetherian prescheme <fr:tex>T'</fr:tex> over <fr:tex>S'</fr:tex>, the inverse image of <fr:tex>N</fr:tex> over <fr:tex>T'</fr:tex> is in <fr:tex>\Im  A_ \nu (T')</fr:tex> if and only if <fr:tex>T' \to  S'</fr:tex> is bounded by the subprescheme <fr:tex>Z</fr:tex>.</fr:em>
+  
+  Changing notation, we can suppose that <fr:tex>S'=S</fr:tex>, i.e. we have a quotient <fr:tex>N_ \nu</fr:tex> of <fr:tex>M_ \nu</fr:tex> by a submodule <fr:tex>R_ \nu</fr:tex>.
+  For it to come from an element of <fr:tex>A(s)</fr:tex>, it is necessary and sufficient that it satisfy the following two conditions:
+  <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>M_{ \nu +k}/ \mathcal {S}_k R_ \nu</fr:tex> is locally free of rank <fr:tex>P( \nu +k)</fr:tex> for <fr:tex>k \geqslant0</fr:tex>.
+    </fr:li>
+    <fr:li>
+      Both the subsheaf <fr:tex>\mathscr { H }</fr:tex> of <fr:tex>\mathscr { F }</fr:tex> defined by the graded submodule <fr:tex>R_ \bullet = \sum _{k \geqslant0 } \mathscr { S } _kR_ \nu</fr:tex> of <fr:tex>M_ \bullet</fr:tex> (cf. [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, II, §3]) and the quotient <fr:tex>\mathscr { G } = \mathscr { F } / \mathscr { H }</fr:tex> satisfy conditions (a) and (b) above.
+    </fr:li></fr:ol>
+
+  These conditions are clearly necessary, and if they are satisfied then the sheaf <fr:tex>\mathscr { G }</fr:tex> defined in (ii) above, being isomorphic to the sheaf associated to the graded <fr:tex>\mathscr { S } _ \bullet</fr:tex>-module <fr:tex>N_ \bullet</fr:tex> given by the sum of the <fr:tex>M_{n+k}/ \mathscr { S } _kR</fr:tex> is <fr:em>flat</fr:em> over <fr:tex>S</fr:tex> (since its fibres are direct factors of localisations of <fr:tex>N</fr:tex> for homogeneous prime ideals of <fr:tex>\mathcal {S}_ \bullet</fr:tex>), and correspond to the Hilbert polynomial <fr:tex>P</fr:tex> by virtue of (i).
+  Taking (ii) into account, we then see that (a') and (a'') are satisfied, and thus, for <fr:tex>n \geqslant \nu</fr:tex>, the natural homomorphism <fr:tex>N_n \to  f_*( \mathscr { G }  (n))</fr:tex> is a <fr:em>surjective</fr:em> homomorphism of locally free modules of equal rank, and thus an isomorphism, and thus <fr:tex>f_*( \mathscr { H }  ( \nu +k))= \mathcal {S}_kR_ \nu</fr:tex> for all <fr:tex>k \geqslant0</fr:tex>, which proves that <fr:tex>\mathscr { G } \in  A_ \nu (S)</fr:tex> and that <fr:tex>R_ \nu</fr:tex> is the element of <fr:tex>\operatorname {Grass} _{P( \nu )} (M_ \nu )</fr:tex> defined by <fr:tex>\mathscr { G }</fr:tex>.
+</fr:p><fr:p>
+  Criteria (i) and (ii) above apply equally to the situation obtained after a change of base <fr:tex>S' \to  S</fr:tex>.
+  We will prove first of all the fact that condition (i) is satisfied after the change of base <fr:tex>S' \to  S</fr:tex> can be expressed by saying that <fr:tex>S' \to  S</fr:tex> is bounded by a certain subprescheme <fr:tex>Z</fr:tex> of <fr:tex>S</fr:tex>;
+  once we have shown this result, we are led (replacing <fr:tex>S</fr:tex> with <fr:tex>Z</fr:tex>) to the case where condition (i) is already satisfied on <fr:tex>S</fr:tex>, and since it is stable under change of base, it remains to express condition (ii).
+  But then, if <fr:tex>U</fr:tex> denotes the set of <fr:tex>s \in  S</fr:tex> such that the cohomology of the sheaves induced on the fibre <fr:tex>X_s</fr:tex> by <fr:tex>\mathscr { G }  (n)</fr:tex> and <fr:tex>\mathscr { H }  (n)</fr:tex> is zero in dimension <fr:tex>&gt;0</fr:tex> for <fr:tex>n \geqslant \nu</fr:tex>, then we have already shown that <fr:tex>U</fr:tex> is open, and condition (ii) will be satisfied after a change of base <fr:tex>S' \to  S</fr:tex> if and only if <fr:tex>S' \to  S</fr:tex> is bounded by <fr:tex>U</fr:tex>, which proves <fr:ref
+addr="fga3.iv-3-lemma-3.3"
+href="fga3.iv-3-lemma-3.3.xml"
+taxon="Lemma"
+number="3.3"></fr:ref>.
+  It thus remains to prove the following lemma:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>390</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-3-lemma-3.4</fr:addr><fr:route>fga3.iv-3-lemma-3.4.xml</fr:route><fr:number>3.4</fr:number><fr:parent>fga3.iv-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>S</fr:tex> be a locally Noetherian prescheme, endowed with a quasi-coherent positively-graded algebra <fr:tex>\mathcal {S}_ \bullet</fr:tex> generated by <fr:tex>\mathcal {S}_1</fr:tex>, and let <fr:tex>M_ \bullet</fr:tex> be a quasi-coherent graded <fr:tex>\mathcal {S}</fr:tex>-module of finite type, <fr:tex>P</fr:tex> a polynomial with rational coefficients, and <fr:tex>\nu</fr:tex> and integer.
+    Then there exists a (clearly unique) subprescheme <fr:tex>Z</fr:tex> of <fr:tex>S</fr:tex> that has the following property:
+    for every prescheme <fr:tex>S'</fr:tex> over <fr:tex>S</fr:tex>, for <fr:tex>M_n \otimes _{ \mathcal {O} _S} \mathcal {O} _{S'}</fr:tex> to be locally free of rank <fr:tex>P(n)</fr:tex> for all <fr:tex>n \geqslant \nu</fr:tex>, it is necessary and sufficient that <fr:tex>S' \to  S</fr:tex> be bounded by <fr:tex>Z</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We can evidently suppose that <fr:tex>S</fr:tex> is affine, and thus Noetherian.
+  Then:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>391</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-3-lemma-3.5</fr:addr><fr:route>fga3.iv-3-lemma-3.5.xml</fr:route><fr:number>3.5</fr:number><fr:parent>fga3.iv-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For every integer <fr:tex>N \geqslant \nu</fr:tex>, let <fr:tex>U_N</fr:tex> be the open subset of <fr:tex>S</fr:tex> consisting of <fr:tex>s \in  S</fr:tex> such that <fr:tex>\operatorname {rank} _{k(s)}M_{ns} \otimes _{ \mathcal {O} _{S,s}} k(s) \leqslant  P(n)</fr:tex> for all <fr:tex>\nu \leqslant  n \leqslant  N</fr:tex>.
+    Then the decreasing sequence of open subsets <fr:tex>U_N</fr:tex> stabilises.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>281</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-3-lemma-3.5</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      We know [<fr:link
+href="Gro1960b.xml"
+type="local"
+addr="Gro1960b">Gro1960b</fr:link>, IV] that <fr:tex>S</fr:tex> admits a finite partition into reduced subschemes <fr:tex>S_i</fr:tex> such that each <fr:tex>M \otimes _{ \mathcal {O} _S} \mathcal {O} _{S_i}</fr:tex> is <fr:em>flat</fr:em> over <fr:tex>S</fr:tex>.
+      We can thus suppose that <fr:tex>M</fr:tex> is flat, and thus that the <fr:tex>M_n</fr:tex> are flat.
+      Finally, we can evidently suppose that <fr:tex>S</fr:tex> is connected.
+      But then [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, III, §7] there exists an integer <fr:tex>n_0</fr:tex> and a polynomial <fr:tex>Q</fr:tex> such that
+      <fr:tex
+display="block">          \operatorname {rank} _{k(s)}M_{ns} \otimes _{ \mathcal {O} _{S,s}} k(s)         = Q(n)          \qquad \text {for } n \geqslant  n_0.       </fr:tex>
+      Suppose first of all that <fr:tex>P&lt;Q</fr:tex>, and so <fr:tex>P(n) \neq  Q(n)</fr:tex> for large <fr:tex>n</fr:tex>.
+      Then we evidently have <fr:tex>U_N= \varnothing</fr:tex> for large enough <fr:tex>N</fr:tex>, and thus a fortiori the sequence of <fr:tex>U_N</fr:tex> stabilises.
+      In the contrary case, we have <fr:tex>P(n) \geqslant  Q(n)</fr:tex> for large <fr:tex>n</fr:tex>, and so <fr:tex>U_N=U_{n_0}</fr:tex> for <fr:tex>N \geqslant  n_0</fr:tex>, and the sequence of the <fr:tex>U_N</fr:tex> again stabilises.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  In particular, the set <fr:tex>U_ \infty</fr:tex> of <fr:tex>s \in  S</fr:tex> such that
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>392</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.iv-3-equation-star</fr:addr><fr:route>fga3.iv-3-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga3.iv-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {rank} _{k(s)}M_{ns} \otimes _{ \mathcal {O} _{S,s}} k(s)  \leqslant  P(n)        \qquad \text {for all } n \geqslant \nu      \tag{*}     </fr:tex></fr:mainmatter></fr:tree>
+
+  is open, since it is the intersection of the <fr:tex>U_N</fr:tex>.
+  We can then, for the proof of <fr:ref
+addr="fga3.iv-3-lemma-3.4"
+href="fga3.iv-3-lemma-3.4.xml"
+taxon="Lemma"
+number="3.4"></fr:ref> replace <fr:tex>S</fr:tex> with the open subset <fr:tex>U</fr:tex>, which leads us to the case where the inequality in <fr:ref
+addr="fga3.iv-3-equation-star"
+href="fga3.iv-3-equation-star.xml"
+taxon="Equation"
+number="*"></fr:ref> is satisfied at all <fr:tex>s \in  S</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>394</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-3-lemma-3.6</fr:addr><fr:route>fga3.iv-3-lemma-3.6.xml</fr:route><fr:number>3.6</fr:number><fr:parent>fga3.iv-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>M</fr:tex> be a module on a locally Noetherian prescheme <fr:tex>S</fr:tex>, and <fr:tex>r</fr:tex> an integer.
+    Then there exists a (clearly unique) subprescheme <fr:tex>Z</fr:tex> of <fr:tex>S</fr:tex> that has the following property:
+    for all <fr:tex>S'</fr:tex> over <fr:tex>S</fr:tex>, for <fr:tex>M \otimes _{ \mathcal {O} _S} \mathcal {O} _{S'}</fr:tex> to be locally free of rank <fr:tex>r</fr:tex>, it is necessary and sufficient that <fr:tex>S' \to  S</fr:tex> be bounded by <fr:tex>Z</fr:tex>.
+    If <fr:tex>\operatorname {rank} _{k(s)}M_s \otimes _{ \mathcal {O} _{S,s}} k(s) \leqslant  r</fr:tex> for all <fr:tex>s</fr:tex>, then <fr:tex>Z</fr:tex> is a closed subprescheme of <fr:tex>S</fr:tex> (supposing that <fr:tex>M</fr:tex> is coherent).
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>393</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-3-lemma-3.6</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      Indeed, the above reasoning leads us to the case where we have the inequality <fr:ref
+addr="fga3.iv-3-equation-star"
+href="fga3.iv-3-equation-star.xml"
+taxon="Equation"
+number="*"></fr:ref> for all <fr:tex>s \in  S</fr:tex> (by replacing, if necessary, <fr:tex>S</fr:tex> with the open subset consisting of the <fr:tex>s</fr:tex> where the inequality is satisfied).
+      We can then suppose that <fr:tex>M</fr:tex> fits into an exact sequence
+      <fr:tex
+display="block">          \mathcal {O} _S^q  \to   \mathcal {O} _S^r  \to  M  \to  0       </fr:tex>
+      and the condition in question on the <fr:tex>S'</fr:tex> over <fr:tex>S</fr:tex> also implies that, in the corresponding exact sequence <fr:tex>\mathcal {O} _{S'}^q \to \mathcal {O} _{S'}^r \to  M' \to  0</fr:tex>, the second arrow is an isomorphism, i.e. the first is zero.
+      We then see that the closed subprescheme <fr:tex>Z</fr:tex> of <fr:tex>S</fr:tex> defined by the ideal generated by the coefficients of the matrix defining the homomorphism <fr:tex>\mathcal {O} _S^q \to \mathcal {O} _S^r</fr:tex> satisfies the desired condition.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  Returning to the proof of <fr:ref
+addr="fga3.iv-3-lemma-3.4"
+href="fga3.iv-3-lemma-3.4.xml"
+taxon="Lemma"
+number="3.4"></fr:ref> where we left off, we denote by <fr:tex>Z_n</fr:tex> the <fr:em>closed</fr:em> subprescheme of <fr:tex>S</fr:tex> associated, by <fr:ref
+addr="fga3.iv-3-lemma-3.6"
+href="fga3.iv-3-lemma-3.6.xml"
+taxon="Lemma"
+number="3.6"></fr:ref>, to the module <fr:tex>M_n</fr:tex> and the integer <fr:tex>r=P(n)</fr:tex>, and by <fr:tex>Z'_N</fr:tex> the infimum of the <fr:tex>Z_n</fr:tex> for <fr:tex>\nu \leqslant  n \leqslant  N</fr:tex>.
+  Then the <fr:tex>Z_N</fr:tex> form a decreasing sequence of closed subpreschemes of <fr:tex>Z</fr:tex>, which is thus necessarily stationary.
+  Let <fr:tex>Z</fr:tex> be the constant value of the <fr:tex>Z_W</fr:tex> for large <fr:tex>N</fr:tex>.
+  This is the desired <fr:tex>Z</fr:tex> in <fr:ref
+addr="fga3.iv-3-lemma-3.4"
+href="fga3.iv-3-lemma-3.4.xml"
+taxon="Lemma"
+number="3.4"></fr:ref>.
+  This finishes the proof of <fr:ref
+addr="fga3.iv-3-lemma-3.4"
+href="fga3.iv-3-lemma-3.4.xml"
+taxon="Lemma"
+number="3.4"></fr:ref>, and thus also of <fr:ref
+addr="fga3.iv-3-lemma-3.3"
+href="fga3.iv-3-lemma-3.3.xml"
+taxon="Lemma"
+number="3.3"></fr:ref>.
+</fr:p><fr:p>
+  We have thus proven that <fr:em><fr:tex>\mathscr {Q} \kern  -.75pt \mathit {out} _{ { \mathscr { F } /X/S} }^P</fr:tex> is representable by an <fr:tex>S</fr:tex>-prescheme <fr:tex>Q</fr:tex> that is an increasing union of open quasi-projective subpreschemes <fr:tex>Q_ \nu</fr:tex> over <fr:tex>S</fr:tex></fr:em>.
+  To go further, we need to invoke <fr:ref
+addr="fga3.iv-3-theorem-3.1"
+href="fga3.iv-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>, whence we easily conclude that <fr:tex>Q</fr:tex> is <fr:em>quasi-compact</fr:em> (since it is the image of a prescheme <fr:tex>S'</fr:tex> of finite type over <fr:tex>S</fr:tex> that parametrises the family of quotient sheaves of the <fr:tex>\mathscr { F } _K</fr:tex> whose Hilbert polynomial is <fr:tex>P</fr:tex>).
+  Thus <fr:tex>Q</fr:tex> is equal to one of the <fr:tex>Q_ \nu</fr:tex>, and thus quasi-projective over <fr:tex>S</fr:tex>.
+  To prove that it is projective over <fr:tex>S</fr:tex>, it thus remains to prove that it is <fr:em>proper</fr:em> over <fr:tex>S</fr:tex>, and for this it suffices to invoke the valuative criterion of properness in the form given in [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, II, 7.3.8].
+  It suffices to verify the following:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>395</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-3-lemma-3.7</fr:addr><fr:route>fga3.iv-3-lemma-3.7.xml</fr:route><fr:number>3.7</fr:number><fr:parent>fga3.iv-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>S</fr:tex> be the spectrum of a discrete valuation ring, <fr:tex>s</fr:tex> its generic point, <fr:tex>X</fr:tex> a prescheme over <fr:tex>S</fr:tex>, <fr:tex>\mathscr { F }</fr:tex> a quasi-coherent module over <fr:tex>X</fr:tex>, and <fr:tex>\mathscr { G } _s</fr:tex> a quasi-coherent quotient module of <fr:tex>\mathscr { F } _s= \mathscr { F } \otimes _{ \mathcal {O} _S} k(s)</fr:tex> over <fr:tex>X_s</fr:tex>.
+    Then there exists a unique quasi-coherent quotient module <fr:tex>\mathscr { G }</fr:tex> of <fr:tex>\mathscr { F }</fr:tex> that is flat over <fr:tex>S</fr:tex> and whose restriction to <fr:tex>X_s</fr:tex> is <fr:tex>\mathscr { G } _s</fr:tex>.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>283</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-3-lemma-3.7</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      Indeed, if <fr:tex>\mathscr { G } _s= \mathscr { F } _s/ \mathscr { H } _s</fr:tex>, it suffices to consider the largest subsheaf <fr:tex>\mathscr { H }</fr:tex> of <fr:tex>\mathscr { F }</fr:tex> that induces <fr:tex>\mathscr { H } _s</fr:tex> ([<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, I, 9.4.2]) and to take <fr:tex>\mathscr { G } = \mathscr { F } / \mathscr { H }</fr:tex>.
+      We easily verify that this sheaf works.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p><fr:ref
+addr="fga3.iv-3-theorem-3.2"
+href="fga3.iv-3-theorem-3.2.xml"
+taxon="Theorem"
+number="3.2"></fr:ref>, and thus <fr:ref
+addr="fga3.iv-3-theorem-3.1"
+href="fga3.iv-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>, is now completely proven.
+</fr:p><fr:p>
+  The proof also shows, at the same time, the following:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>397</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iv-3-proposition-3.8</fr:addr><fr:route>fga3.iv-3-proposition-3.8.xml</fr:route><fr:number>3.8</fr:number><fr:parent>fga3.iv-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the conditions of <fr:ref
+addr="fga3.iv-3-theorem-3.2"
+href="fga3.iv-3-theorem-3.2.xml"
+taxon="Theorem"
+number="3.2"></fr:ref>, let <fr:tex>Q= \underline { \operatorname {Quot} } _{ { \mathscr { F } /X/S} }^P</fr:tex>, <fr:tex>X_Q=X \times _s Q</fr:tex>, <fr:tex>\mathscr { F } _Q= \mathscr { F } \otimes _{ \mathcal {O} _S} \mathcal {O} _Q</fr:tex>, and let <fr:tex>\mathscr { G }</fr:tex> be the coherent quotient of <fr:tex>\mathscr { F } _Q</fr:tex>, which is flat over <fr:tex>Q</fr:tex>, that has <fr:tex>P</fr:tex> as its relative Hilbert polynomial, so that <fr:tex>(Q, \mathscr { G } )</fr:tex> represents the functor <fr:tex>\mathscr {Q} \kern  -.75pt \mathit {out} _{ { \mathscr { F } /X/S} }^P</fr:tex>.
+    Then there exists an integer <fr:tex>\nu</fr:tex> such that, for <fr:tex>n \geqslant \nu</fr:tex>, <fr:tex>(f_Q)_*( \mathscr { G }  (n))</fr:tex> is a locally free module over <fr:tex>Q</fr:tex> of rank <fr:tex>P(n)</fr:tex>, and is very ample with respect to <fr:tex>S</fr:tex>, i.e. it defines an immersion of <fr:tex>Q</fr:tex> into a Grassmannian scheme <fr:tex>\underline { \operatorname {Grass} } _{P(n)} (M)</fr:tex> over <fr:tex>S</fr:tex>.
+    A fortiori, for <fr:tex>n \geqslant \nu</fr:tex>, the sheaf <fr:tex>\bigwedge ^{P(n)} (f_Q)_*( \mathscr { G }  (n))</fr:tex> over <fr:tex>Q</fr:tex> is invertible and very ample with respect to <fr:tex>S</fr:tex>.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>396</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-3-proposition-3.8</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      Indeed, we can reduce, as in <fr:ref
+addr="fga3.iv-3-theorem-3.2"
+href="fga3.iv-3-theorem-3.2.xml"
+taxon="Theorem"
+number="3.2"></fr:ref>, to the case where <fr:tex>\mathscr { F }</fr:tex> is flat over <fr:tex>S</fr:tex>, and then it suffices to take an integer <fr:tex>\nu</fr:tex> such that <fr:tex>A_ \nu =A</fr:tex> (with the notation above).
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  The most important application of <fr:ref
+addr="fga3.iv-3-theorem-3.2"
+href="fga3.iv-3-theorem-3.2.xml"
+taxon="Theorem"
+number="3.2"></fr:ref> is in the case where <fr:tex>\mathscr { F } = \mathcal {O} _X</fr:tex>.
+  We then write
+  <fr:tex
+display="block">      \begin {aligned}        \underline { \operatorname {Quot} } _{ \mathcal {O} _X/X/S}       &amp;=  \underline { \operatorname {Hilb} } _{X/S}      \\ \underline { \operatorname {Quot} } _{ \mathcal {O} _X/X/S}^P       &amp;=  \underline { \operatorname {Hilb} } _{X/S}^P      \end {aligned}   </fr:tex>
+  and so we have a decomposition
+  <fr:tex
+display="block">      \underline { \operatorname {Hilb} } _{X/S}     =  \coprod _P  \underline { \operatorname {Hilb} } _{X/S}^P.   </fr:tex>
+  By definition, <fr:tex>\underline { \operatorname {Hilb} } _{X/S}</fr:tex> represents the functor <fr:tex>\mathscr {H} \kern  -1.75pt \mathit {ilb} _{X/S} (S')</fr:tex> which is given by the set of closed subpreschemes of <fr:tex>X'=X \times _S S'</fr:tex> that are flat over <fr:tex>S</fr:tex>;
+  and <fr:tex>\underline { \operatorname {Hilb} } _{X/S}^P</fr:tex> represents the subfunctor corresponding to the closed subpreschemes that admit a given Hilbert polynomial <fr:tex>P</fr:tex>.
+  These preschemes are also called the <fr:em>Hilbert prescheme</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex> and the <fr:em>Hilbert prescheme of index <fr:tex>P</fr:tex></fr:em>, respectively.
+  The terminology is justified by the role played in the theory by the Hilbert polynomials.
+  Their difference in nature with the classical Chow varieties (meant to parametrise cycles, not varieties) is analogous to that between <fr:em>the Chow ring</fr:em> of classes of cycles of a variety and <fr:em>the ring of classes of sheaves</fr:em> of the variety (as is introduced in the Riemann–Roch theorem <fr:link
+href="BS1958.xml"
+type="local"
+addr="BS1958">[BS1958]</fr:link>);
+  
+  we note that, when <fr:tex>X= \mathbb {P} _S^r</fr:tex>, with <fr:tex>S</fr:tex> the spectrum of a field, the knowledge of the Hilbert polynomial of a coherent module <fr:tex>\mathscr { F }</fr:tex> over <fr:tex>X</fr:tex> is equivalent to that of the Chern classes of <fr:tex>\mathscr { F }</fr:tex>, or even of the class of <fr:tex>\mathscr { F }</fr:tex> in the ring of classes of coherent sheaves on <fr:tex>X</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>398</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.iv-3-remarks-3.9</fr:addr><fr:route>fga3.iv-3-remarks-3.9.xml</fr:route><fr:number>3.9</fr:number><fr:parent>fga3.iv-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    We also note that the construction of <fr:tex>\underline { \operatorname {Quot} } _{ { \mathscr { F } /X/S} }</fr:tex> and <fr:tex>\underline { \operatorname {Quot} } _{ { \mathscr { F } /X/S} }^P</fr:tex> was reduced to the case where <fr:tex>X= \mathbb {P} _S^r</fr:tex> and <fr:tex>\mathscr { F } = \mathcal {O} _X^N</fr:tex>, with <fr:tex>\mathcal {O} _X(1)</fr:tex> being the usual very ample sheaf;
+    more precisely, the general <fr:tex>\underline { \operatorname {Quot} } _{ { \mathscr { F } /X/S} }</fr:tex> arise as closed subpreschemes of the above.
+    Since forming the <fr:tex>\underline { \operatorname {Quot} } _{ { \mathscr { F } /X/S} }^P</fr:tex> is evidently compatible with base change <fr:tex>S' \to  S</fr:tex>, we see that we can reduce to the case where further <fr:tex>S= \operatorname {Spec} ( \mathbb {Z})</fr:tex>:
+    <fr:tex
+display="block">        \mathscr { Q } _{r,N}^P       =  \underline { \operatorname {Quot} } _{( \mathcal {O} _{ \mathbb {P} _{ \mathbb {Z}}^r})^N/ \mathbb {P} _{ \mathbb {Z}}^r/ \operatorname {Spec} ( \mathbb {Z})}     </fr:tex>
+    and, more particularly, the absolute Hilbert schemes:
+    <fr:tex
+display="block">        \underline { \operatorname {Hilb} } _r^P       =  \mathscr { Q } _{r,1}^P.     </fr:tex>
+    A more detailed study of these schemes, starting with determining their connected components (are they connected?), and their irreducible components (by Serre <fr:link
+href="Ser1961.xml"
+type="local"
+addr="Ser1961">[Ser1961]</fr:link>, there can exist irreducible components that exist entirely over a prime number <fr:tex>p \neq0</fr:tex>), would be very interesting.
+    Recall the question of Weil, asking if the irreducible components of the fibres of <fr:tex>\underline { \operatorname {Hilb} } _r^P</fr:tex> over the <fr:tex>s \in \operatorname {Spec} ( \mathbb {Z})</fr:tex> correspond to "regular" extensions of the prime field, i.e. if they are "relatively connected".
+    It could be the case that these questions are more accessible for Hilbert schemes than for "Chow varieties".
+
+    <fr:em>[Comp.]</fr:em>
+    The study of connected components of Hilbert schemes over an algebraically closed field was done by Hartshorne, who proves that the <fr:tex>\underline { \operatorname {Hilb} } _r^P</fr:tex> are connected, and determines the pairs <fr:tex>(r,P)</fr:tex> for which <fr:tex>\underline { \operatorname {Hilb} } _r^P \neq \varnothing</fr:tex> <fr:link
+href="Har1966.xml"
+type="local"
+addr="Har1966">[Har1966]</fr:link>.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>525</fr:anchor><fr:addr>fga3.v-5</fr:addr><fr:route>fga3.v-5.xml</fr:route><fr:title><fr:link
+href="fga3.v.xml"
+type="local"
+addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Proof of the principal existence theorem</fr:title><fr:number>5</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Under the conditions of <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>, choose some module <fr:tex>\mathcal {O} _X(1)</fr:tex> that is very ample over <fr:tex>X/S</fr:tex>, and let <fr:tex>\xi</fr:tex> be the corresponding element of <fr:tex>\operatorname {Pic} (X/S)</fr:tex>.
+  For brevity, let <fr:tex>\mathscr { P } (S')= \operatorname {Pic} (X \times _S S'/S')</fr:tex>, and suppose, for simplicity, that <fr:tex>X/S</fr:tex> admits a section.
+  Let <fr:tex>\mathscr { P } ^+(S')</fr:tex> be the subset of <fr:tex>\mathscr { P } (S')</fr:tex> consisting of classes of the <fr:tex>\mathscr { L }</fr:tex> that are invertible on <fr:tex>X \times _S S'</fr:tex> such that
+  <fr:tex
+display="block">      \begin {aligned}        \operatorname {R} ^i f'_*( \mathscr { L } (n)) &amp;= 0        \qquad \text {for }i&gt;0 \text { and all }n \geqslant0       \\ f'_*( \mathscr { L } (n)) &amp; \neq0         \qquad \text {for all }n \geqslant0 .      \end {aligned}   </fr:tex>
+  These conditions are stable under base change, and thus define a subfunctor <fr:tex>\mathscr { P } ^+</fr:tex> of <fr:tex>\mathscr { P }</fr:tex> that is evidently stable under translation by <fr:tex>\xi</fr:tex>.
+  Using Serre's "Theorems A and B" ([<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, III, §2]) and generalities ([<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, IV, 5]), we easily see that <fr:tex>\mathscr { P }</fr:tex> is representable if and only if <fr:tex>\mathscr { P } ^+</fr:tex> is, and so <fr:tex>\mathscr { P } ^+</fr:tex> will be representable by an open <fr:tex>U</fr:tex> of the prescheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> that represents <fr:tex>\mathscr { P }</fr:tex>, and the latter will be an increasing union of opens <fr:tex>U \setminus  n \xi</fr:tex>.
+</fr:p><fr:p>
+  For brevity, let <fr:tex>\mathscr { D } = \mathscr {D} \kern  -1pt \mathit {iv} _{X/S}</fr:tex>, and let <fr:tex>\mathscr { D } ^+</fr:tex> be the inverse image of <fr:tex>\mathscr { P } ^+</fr:tex> under the canonical morphism <fr:tex>\mathscr { D } \to \mathscr { P }</fr:tex>.
+  So we have a morphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>400</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-5-equation-plus</fr:addr><fr:route>fga3.v-5-equation-plus.xml</fr:route><fr:number>+</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr { D } ^+        \to   \mathscr { P } ^+     \tag{+}     </fr:tex></fr:mainmatter></fr:tree>
+
+  and we already know that <fr:tex>\mathscr { D } ^+</fr:tex> is representable by an open <fr:tex>D^+</fr:tex> of the prescheme <fr:tex>D= \underline { \operatorname {Div} } _{X/S}</fr:tex> (and, more precisely, by <fr:em>projective bundles associated to locally free modules</fr:em> that are everywhere non-zero);
+  this is due to the fact that, if <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X \times _S S'</fr:tex> is, as at the start of this section, then <fr:tex>f'_*( \mathscr { L } )</fr:tex> is a <fr:em>locally free</fr:em> non-zero module, whose formation commutes with base change;
+  with the notation of <fr:ref
+addr="fga3.v-4-theorem-4.3"
+href="fga3.v-4-theorem-4.3.xml"
+taxon="Theorem"
+number="4.3"></fr:ref>, <fr:tex>\mathscr { Q }</fr:tex> is then isomorphic to the dual of <fr:tex>f'_*( \mathscr { L } )</fr:tex>.
+  Using the general criterion ([<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, IV, 4.7]), we can thus conclude that <fr:tex>P^+</fr:tex> is representable.
+  In <fr:em>loc. cit.</fr:em>, we take <fr:tex>\mathcal {S}</fr:tex> to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by <fr:link
+href="fga3.i-b.1.xml"
+type="local"
+addr="fga3.i-b.1">FGA 3.I, §B</fr:link>).
+  
+  Condition (a) of <fr:em>loc. cit.</fr:em>, namely that <fr:ref
+addr="fga3.v-5-equation-plus"
+href="fga3.v-5-equation-plus.xml"
+taxon="Equation"
+number="+"></fr:ref> is representable by morphisms that are elements of <fr:tex>\mathcal {S}</fr:tex>, is satisfied as we have just seen;
+  condition (b) says that the functor <fr:tex>\mathscr { P } ^+</fr:tex> is is compatible with faithfully flat quasi-compact descent, which is immediate.
+  It remains only to prove condition (c) of <fr:em>loc. cit.</fr:em>, namely that the equivalence <fr:tex>R</fr:tex> in the prescheme <fr:tex>D^+</fr:tex> induced by the <fr:tex>\mathcal {S}</fr:tex>-representable morphism in <fr:ref
+addr="fga3.v-5-equation-plus"
+href="fga3.v-5-equation-plus.xml"
+taxon="Equation"
+number="+"></fr:ref> is <fr:tex>\mathcal {S}</fr:tex>-effective, i.e. is effective and such that <fr:tex>D^+ \to  D^+/R</fr:tex> is in <fr:tex>\mathcal {S}</fr:tex>.
+  For this, note first of all that the opens <fr:tex>{D^+}^Q</fr:tex> of <fr:tex>D^+</fr:tex> that correspond to the virtual Hilbert polynomials <fr:tex>Q \in \mathbb {Q}[t]</fr:tex> are stable under <fr:tex>R</fr:tex> (since the fibres of <fr:tex>R</fr:tex> are connected), which reduces the problem to proving that, for all <fr:tex>Q</fr:tex>, the induced equivalence relation <fr:tex>R^Q</fr:tex> on <fr:tex>{D^+}^Q</fr:tex> is <fr:tex>\mathcal {S}</fr:tex>-effective.
+  But now <fr:tex>{D^+}^Q</fr:tex> is quasi-projective, and the equivalence relation <fr:tex>R^Q</fr:tex> is projective and flat.
+  We are thus under the hypothesis of <fr:link
+href="fga3.iii-6-theorem-6.1.xml"
+type="local"
+addr="fga3.iii-6-theorem-6.1">FGA 3.III, Theorem 6.1</fr:link>, which implies the desired result.
+</fr:p><fr:p>
+  In the general case where <fr:tex>X/S</fr:tex> does not necessarily admit a section, we can easily reduce to the above case by the technique of descent, where we can repeat the above proof with the modification that is imposed upon the definition of <fr:tex>\mathscr { P } ^+</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>401</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.v-5-remarks-5.1</fr:addr><fr:route>fga3.v-5-remarks-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The method that we followed is essentially that of Matsusaka for the projective construction of Picard varieties.
+    The result that we invoke from <fr:ref
+addr="fga3.iii"
+href="fga3.iii.xml"
+taxon="FGA"
+number="3.III"></fr:ref> that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [Mumford–Tate seminar, 1962]).
+    (Classically, these quotients are constructed by using Chow coordinates).
+    Note that the formation of the open <fr:tex>\underline { \operatorname {Pic} } _{X/S}^+</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> and its decomposition into opens <fr:tex>{ \underline { \operatorname {Pic} } _{X/S}^+}^Q</fr:tex> that are quasi-projcetive over <fr:tex>S</fr:tex> following the Hilbert polynomials for the <fr:em>divisors</fr:em> that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>402</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.v-5-remarks-5.2</fr:addr><fr:route>fga3.v-5-remarks-5.2.xml</fr:route><fr:number>5.2</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    It is not out of the question that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exist whenever <fr:tex>f \colon  X \to  S</fr:tex> is proper and flat and such that the homomorphisms <fr:tex>k(s) \to \operatorname {H} ^0(X_s, \mathcal {O} _{X_s})</fr:tex> (for <fr:tex>s \in  S</fr:tex>) are isomorphisms (this latter condition also then implying that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, and that this remain true after any base change <fr:tex>S' \to  S</fr:tex>).
+    This at least is what we can prove in the setting of analytic spaces, if <fr:tex>f</fr:tex> is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in [<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, IX, 3.1].
+    
+    In this method, the passage to the quotient by a <fr:em>proper</fr:em> and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of <fr:tex>X</fr:tex> into <fr:tex>\mathbb {P}_S^r</fr:tex>.
+    This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group <fr:link
+href="Mum1961.xml"
+type="local"
+addr="Mum1961">[Mum1961]</fr:link>;
+    for now, there is no written proof, except when <fr:tex>X</fr:tex> has "lots of local sections" over <fr:tex>S</fr:tex>, for example if <fr:tex>X</fr:tex> is separable over a complete local ring with algebraically closed residue field.
+    In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
+    (Technically, the difficulty comes from the fact that, when the geometric fibres of <fr:tex>f</fr:tex> are not integral, then the functor envisaged in <fr:ref
+addr="fga3.v-4-theorem-4.3"
+href="fga3.v-4-theorem-4.3.xml"
+taxon="Theorem"
+number="4.3"></fr:ref> is no longer representable by the projective bundle <fr:tex>\mathbb {P}( \mathscr { Q } )</fr:tex> itself, but by an <fr:em>open</fr:em> of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).
+  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    As I point out at the start of the next talk, the existence conjecture suggested here is false, but Mumford has proven a slightly weaker theorem using his methods.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>403</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-5-remark-5.3</fr:addr><fr:route>fga3.v-5-remark-5.3.xml</fr:route><fr:number>5.3</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang <fr:link
+href="Lan1959.xml"
+type="local"
+addr="Lan1959">[Lan1959]</fr:link> or the article by Chevalley <fr:link
+href="Che1960.xml"
+type="local"
+addr="Che1960">[Che1960]</fr:link>, which follow the path sketched by Weil.
+    Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in <fr:ref
+addr="fga3.v-1"
+href="fga3.v-1.xml"
+number="1"></fr:ref> (essentially those of Chevalley, but taking into account the "variety of parameters" with nilpotent elements).
+    The fact that the construction of Picard schemes should precede, not follow, the theory of abelian varieties is clear a priori, by the fact that, in general, Picard schemes are not, nor do they reduce to, abelian schemes, as we already see in the case of singular curves over an algebraically closed field, where we find the "generalised Jacobians" of Rosenlicht, which are not abelian varieties.
+    Furthermore, the theory of abelian varieties, and more generally of abelian schemes, becomes much simpler once we have a theory of Picard schemes in general.
+    In particular, the theory of duality for abelian schemes, and notably the results of Cartier type, then become slightly more formal (cf. for example [Mumford–Tate seminar, 1962]).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>404</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.v-5-remarks-5.4</fr:addr><fr:route>fga3.v-5-remarks-5.4.xml</fr:route><fr:number>5.4</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The "compatibility principle" of Igusa for the Jacobian of a curve degenerating to a singular curve can only be well understood as an existence theorem of the Picard scheme of a relative scheme in curves <fr:tex>X/S</fr:tex> that are not necessarily simple over <fr:tex>S</fr:tex>.
+    This is thus a particular case of the principal existence theorem <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref> when the specialised curve is integral (i.e. in classical terms, irreducible of multiplicity <fr:tex>1</fr:tex>).
+    We note that, for now, the case of a reducible special curve (even when the components are of multiplicity <fr:tex>1</fr:tex>, i.e. when the special curve is separable over the residue field) is not covered by the known existence theorems, except for in the case where we are over a <fr:em>complete</fr:em> discrete valuation ring with algebraically closed residue field, cf. <fr:ref
+addr="fga3.v-5-remarks-5.2"
+href="fga3.v-5-remarks-5.2.xml"
+taxon="Remarks"
+number="5.2"></fr:ref>.
+    This question of existence certainly arises in a geometric construction, in the theory of schemes, of Baily–Satake "compactifications" of modular schemes of curves of genus <fr:tex>g</fr:tex>.
+    (This compactification is known for now only for <fr:tex>g=1</fr:tex>, thanks to work of Igusa).
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>526</fr:anchor><fr:addr>fga3.v-4</fr:addr><fr:route>fga3.v-4.xml</fr:route><fr:title><fr:link
+href="fga3.v.xml"
+type="local"
+addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Relative Cartier divisors and projective bundles</fr:title><fr:number>4</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  We will only need to use positive divisors, and we omit the qualification of "positive" in the rest of this section.
+</fr:p><fr:p>
+  Let <fr:tex>X</fr:tex> be a prescheme.
+  A <fr:em>Cartier divisor</fr:em>, or simply divisor, on <fr:tex>X</fr:tex> is a closed subprescheme <fr:tex>D</fr:tex> of <fr:tex>X</fr:tex> defined by an ideal <fr:tex>\mathscr { J }</fr:tex> that is an <fr:em>invertible</fr:em> module, i.e. locally generated by a section that is a <fr:em>non-zero divisor</fr:em> of <fr:tex>\mathcal {O} _X</fr:tex>.
+  To <fr:tex>D</fr:tex> we associate the invertible module
+  <fr:tex
+display="block">      \mathscr { L } (D)     =  \mathscr { J } ^{-1}   </fr:tex>
+  and the canonical injection <fr:tex>\mathscr { J } \to \mathcal {O} _X</fr:tex> gives a canonical homomorphism
+  <fr:tex
+display="block">     s_D \colon   \mathcal {O} _X      \to   \mathscr { J } ^{-1}     =  \mathscr { L } (D)   </fr:tex>
+  i.e. <fr:tex>s_D \in \Gamma (X, \mathscr { L } (D))</fr:tex>.
+  The data of a divisor is essentially <fr:em>equivalent</fr:em> to the data of an invertible module <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X</fr:tex> endowed with a section <fr:tex>s</fr:tex> that is nowhere a zero divisor, by associating to such a pair <fr:tex>( \mathscr { L } ,s)</fr:tex> the "divisor" of <fr:tex>s</fr:tex>, denoted by <fr:tex>\operatorname {div} (s)</fr:tex>.
+  
+  For a given invertible <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X</fr:tex>, the set of divisors <fr:tex>D</fr:tex> that define <fr:tex>\mathscr { L }</fr:tex> is in bijective correspondence with the quotient set <fr:tex>\Gamma (X, \mathscr { L } )^{ \times }/ \Gamma (X, \mathcal {O} _X^ \times )</fr:tex>, where <fr:tex>\Gamma (X, \mathscr { L } )^ \times</fr:tex> denotes the subset of <fr:tex>\Gamma (X, \mathscr { L } )</fr:tex> consisting of sections that are nowhere zero divisors.
+</fr:p><fr:p>
+  Now suppose that we have a morphism <fr:tex>f \colon  X \to  S</fr:tex> that is locally of finite type, and suppose, for simplicity, that <fr:tex>S</fr:tex> is locally Noetherian.
+  Let <fr:tex>\mathscr { J }</fr:tex> be a coherent ideal on <fr:tex>X</fr:tex>, with <fr:tex>D</fr:tex> the subscheme of <fr:tex>X</fr:tex> that it defines, and let <fr:tex>x \in  X</fr:tex> and <fr:tex>s=f(x)</fr:tex>.
+  We will show that the following conditions are equivalent:
+  <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>\mathscr { J }</fr:tex> is invertible at <fr:tex>x</fr:tex> (i.e. <fr:tex>\mathscr { J } _x</fr:tex> is generated by a regular element of <fr:tex>\mathcal {O} _{X,x}</fr:tex>) and <fr:tex>D</fr:tex> is flat over <fr:tex>S</fr:tex> at <fr:tex>x</fr:tex>.
+    </fr:li>
+    <fr:li><fr:tex>X</fr:tex> and <fr:tex>D</fr:tex> are flat over <fr:tex>S</fr:tex> at <fr:tex>x</fr:tex>, and <fr:tex>D_s</fr:tex> is a Cartier divisor on the fibre <fr:tex>X_s</fr:tex> at the point <fr:tex>x</fr:tex>.
+    </fr:li>
+    <fr:li><fr:tex>X</fr:tex> is flat over <fr:tex>S</fr:tex> at <fr:tex>x</fr:tex>, and <fr:tex>\mathscr { J } _x</fr:tex> is generated by an element <fr:tex>f_x</fr:tex> that induces on <fr:tex>X_s</fr:tex> a non-zero divisor germ.
+    </fr:li></fr:ol>
+
+  We then say that <fr:tex>D</fr:tex> is a <fr:em>relative Cartier divisor</fr:em> or simply a relative divisor, on <fr:tex>X/S</fr:tex> at the point in question.
+  We note that, in (i), <fr:tex>D</fr:tex> is also a relative divisor at points in a neighbourhood of <fr:tex>x</fr:tex>, so if <fr:tex>X</fr:tex> and <fr:tex>D</fr:tex> are flat over <fr:tex>S</fr:tex>, with <fr:tex>D</fr:tex> proper over <fr:tex>S</fr:tex>, then the set of <fr:tex>s \in  S</fr:tex> such that <fr:tex>D_s</fr:tex> is a Cartier divisor in <fr:tex>X_s</fr:tex> (i.e. such that <fr:tex>D</fr:tex> is a relative Cartier divisor at the points of <fr:tex>X_s</fr:tex>) is an open subset of <fr:tex>S</fr:tex>.
+  We have also done what is necessary in the definition above in order to ensure that the notion of relative Cartier divisor be stable under arbitrary base change <fr:tex>S' \to  S</fr:tex>.
+  So consider the set <fr:tex>\operatorname {Div} (X/S)</fr:tex> of relative divisors on <fr:tex>X/S</fr:tex>, and then the contravariant functor in <fr:tex>S'</fr:tex> (that varies over <fr:tex>S</fr:tex>) defined by
+  <fr:tex
+display="block">      \mathscr {D} \kern  -1pt \mathit {iv} _{X/S}(S')     =  \operatorname {Div} (X \times _S S'/S').   </fr:tex>
+  Suppose that <fr:tex>X</fr:tex> is flat and proper over <fr:tex>S</fr:tex>.
+  Then by the characterisation (ii) of relative Cartier divisors, <fr:tex>\mathscr {D} \kern  -1pt \mathit {iv} _{X/S}</fr:tex> can be considered as a sub-functor of the functor <fr:tex>\mathscr {H} \kern  -1.75pt \mathit {ilb} _{X/S}</fr:tex> defined in <fr:ref
+addr="fga3.iv"
+href="fga3.iv.xml"
+taxon="FGA"
+number="3.IV"></fr:ref>, and the inclusion morphism
+  <fr:tex
+display="block">      \mathscr {D} \kern  -1pt \mathit {iv} _{X/S}      \to   \mathscr {H} \kern  -1.75pt \mathit {ilb} _{X/S}   </fr:tex>
+  is "representable by open immersions" (cf. [<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, IV, 3.13]) by the above remarks.
+  Using the principal existence theorem of <fr:ref
+addr="fga3.iv"
+href="fga3.iv.xml"
+taxon="FGA"
+number="3.IV"></fr:ref>, we find:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>406</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-4-proposition-4.1</fr:addr><fr:route>fga3.v-4-proposition-4.1.xml</fr:route><fr:number>4.1</fr:number><fr:parent>fga3.v-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose that <fr:tex>f \colon  X \to  S</fr:tex> is projective and flat.
+    
+    Then the functor <fr:tex>\mathscr {D} \kern  -1pt \mathit {iv} _{X/S}</fr:tex> is representable, and, more precisely, is represented by an open of <fr:tex>\underline { \operatorname {Hilb} } _{X/S}</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  For a given very ample sheaf <fr:tex>\mathcal {O} _X(1)</fr:tex> over <fr:tex>X/S</fr:tex>, using the canonical decomposition of <fr:tex>\underline { \operatorname {Hilb} } _{X/S}</fr:tex> into a sum of opens <fr:tex>\underline { \operatorname {Hilb} } _{X/S}^Q</fr:tex> corresponding to Hilbert polynomials <fr:tex>Q \in \mathbb {Q}[t]</fr:tex>, we obtain an analogous decomposition
+  <fr:tex
+display="block">      \underline { \operatorname {Div} } _{X/S}     =  \sqcup _{Q \in \mathbb {Q}[t]}  \underline { \operatorname {Div} } _{X/S}^Q   </fr:tex>
+  into a sum of disjoint opens that are <fr:em>quasi-projective</fr:em> over <fr:tex>S</fr:tex>.
+</fr:p><fr:p>
+  Using the map <fr:tex>D \mapsto \mathscr { L } (D)</fr:tex>, we obtain a functorial homomorphism
+  <fr:tex
+display="block">      \mathscr {D} \kern  -1pt \mathit {iv} _{X/S}      \to   \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}   \tag{+}   </fr:tex>
+  that we propose to study;
+  it appears to be relatively representable ([<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, IV, 3]) under rather general conditions.
+  We thus start with an element <fr:tex>\xi</fr:tex> of <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}(S')</fr:tex>, supposing, to simplify notation, that <fr:tex>S'=S</fr:tex>;
+  we will show that the corresponding sub-functor of <fr:tex>\mathscr {D} \kern  -1pt \mathit {iv} _{X/S}</fr:tex> is representable.
+  Consider first of all the case where <fr:tex>\xi</fr:tex> is defined by an invertible module <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X</fr:tex>.
+  Suppose that <fr:tex>X</fr:tex> is proper and flat over <fr:tex>S</fr:tex>, and that the geometric fibres of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex> are integral, which also implies ([<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, III, §7]) that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, and that this remains true after any base change <fr:tex>S' \to  S</fr:tex>.
+  Then the relative Cartier divisors <fr:tex>D</fr:tex> on <fr:tex>X/S</fr:tex> such that <fr:tex>\mathscr { L } (D)</fr:tex> and <fr:tex>\mathscr { L }</fr:tex> define the same element of <fr:tex>\operatorname {Pic} (X/S)= \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}(S)</fr:tex>, i.e. by <fr:ref
+addr="fga3.v-2-corollary-2.4"
+href="fga3.v-2-corollary-2.4.xml"
+taxon="Corollary"
+number="2.4"></fr:ref> such that <fr:tex>\mathscr { L } (D)</fr:tex> and <fr:tex>\mathscr { L }</fr:tex> are locally isomorphic over <fr:tex>S</fr:tex>, are in bijective correspondence with the sections of the quotient sheaf <fr:tex>f_*( \mathscr { L } )^{ \times }/ \mathscr { O } _S^ \times</fr:tex>.
+  This correspondence is compatible with base change.
+  General arguments of "Künneth" type from <fr:em>loc. cit.</fr:em> and [Mumford–Tate seminar, 1962] show that the property of <fr:tex>X/S</fr:tex> and the flatness of <fr:tex>\mathscr { L }</fr:tex> over <fr:tex>S</fr:tex> imply the existence of a coherent module <fr:tex>\mathscr { Q }</fr:tex> on <fr:tex>S</fr:tex>, defined up to unique isomorphism, and an isomorphism of sheaves
+  <fr:tex
+display="block">     f_*( \mathscr { L } )      \xrightarrow { \sim }   \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { Q } , \mathcal {O} _S)   </fr:tex>
+  and the formation of <fr:tex>\mathscr { Q }</fr:tex> is furthermore compatible with base change.
+  Here <fr:tex>f_*( \mathscr { L } )^ \times</fr:tex> denotes the subsheaf of sets of <fr:tex>f_*( \mathscr { L } )</fr:tex> whose sections over <fr:tex>U</fr:tex> are the sections of <fr:tex>\mathscr { L }</fr:tex> over <fr:tex>f^{-1}(U)</fr:tex> that define relative Cartier divisors on <fr:tex>f^{-1}(U)/U</fr:tex>, i.e. that induces sections that are non-zero divisors on the <fr:tex>X_s</fr:tex> (for <fr:tex>s \in  U</fr:tex>).
+  
+  Using the hypothesis that the fibres <fr:tex>X_s</fr:tex> are integral, this simply implies that the induced sections on the fibres <fr:tex>X_s</fr:tex> are not identically zero, or, in terms of local homomorphisms <fr:tex>\mathscr { Q } \to \mathcal {O} _S</fr:tex>, that these homomorphisms are surjective (Nakayama).
+  This shows that the set of sections of <fr:tex>f_*( \mathscr { L } )^{ \times }/ \mathcal {O} _S^ \times</fr:tex> is in bijective correspondence with the set of <fr:em>invertible quotient modules of <fr:tex>\mathscr { Q }</fr:tex></fr:em>, or, by the definition of the projective bundle <fr:tex>\mathbb {P}( \mathscr { Q } )</fr:tex> associated to the coherent module <fr:tex>\mathscr { Q }</fr:tex> (cf. [<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, V, §2]), with the set of sections of <fr:tex>\mathbb {P}( \mathscr { Q } )</fr:tex> over <fr:tex>S</fr:tex>.
+  This description is compatible with taking inverse images, and we thus obtain the theorem below.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>407</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.v-4-theorem-4.3</fr:addr><fr:route>fga3.v-4-theorem-4.3.xml</fr:route><fr:number>4.3</fr:number><fr:parent>fga3.v-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a flat proper morphism with integral geometric fibres, with <fr:tex>S</fr:tex> locally Noetherian, and let <fr:tex>\mathscr { L }</fr:tex> be an invertible module on <fr:tex>X</fr:tex>.
+    For every <fr:tex>S'</fr:tex> over <fr:tex>S</fr:tex>, let <fr:tex>T(S')</fr:tex> be the set of relative divisors <fr:tex>D</fr:tex> on <fr:tex>X \times _S S'/S'</fr:tex> such that <fr:tex>\mathscr { L } (D)</fr:tex> is locally isomorphic to <fr:tex>\mathscr { L } \otimes _{ \mathcal {O} _S} \mathcal {O} _{S'}</fr:tex> over <fr:tex>S'</fr:tex> (i.e. such that <fr:tex>\mathscr { L } (D)</fr:tex> and <fr:tex>\mathscr { L } \otimes _{ \mathcal {O} _S} \mathcal {O} _{S'}</fr:tex>) define the same element of <fr:tex>\operatorname {Pic} (X \times _S S'/S')</fr:tex>.
+    Then there exists a coherent module <fr:tex>\mathscr { Q }</fr:tex> on <fr:tex>S</fr:tex>, determined up to unique isomorphism, such that the functor <fr:tex>T</fr:tex> is represented by the projective bundle <fr:tex>\mathbb {P}( \mathscr { Q } )</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>408</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-4-corollary-4.4</fr:addr><fr:route>fga3.v-4-corollary-4.4.xml</fr:route><fr:number>4.4</fr:number><fr:parent>fga3.v-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If we suppose that <fr:tex>f</fr:tex> is projective, then the functorial homomorphism <fr:tex>\mathscr {D} \kern  -1pt \mathit {iv} _{X/S} \to \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> is representable by projective morphisms.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  If <fr:tex>X</fr:tex> admits a section (resp. locally admits a section) over <fr:tex>S</fr:tex>, then the above homomorphism is representable by projective bundles (resp. by local projective bundles) thanks to <fr:ref
+addr="fga3.v-4-theorem-4.3"
+href="fga3.v-4-theorem-4.3.xml"
+taxon="Theorem"
+number="4.3"></fr:ref> and <fr:ref
+addr="fga3.v-2-proposition-2.1"
+href="fga3.v-2-proposition-2.1.xml"
+taxon="Proposition"
+number="2.1"></fr:ref>.
+  In the case where <fr:tex>f</fr:tex> is quasi-projective, we can easily reduce to the previous case by a descent method, using the finite flat local quasi-sections of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>409</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-4-remark-4.5</fr:addr><fr:route>fga3.v-4-remark-4.5.xml</fr:route><fr:number>4.5</fr:number><fr:parent>fga3.v-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the conditions of <fr:ref
+addr="fga3.v-4-theorem-4.3"
+href="fga3.v-4-theorem-4.3.xml"
+taxon="Theorem"
+number="4.3"></fr:ref>, the module <fr:tex>\mathscr { Q }</fr:tex> on <fr:tex>S</fr:tex> is not in general locally free, as we can see by the fact that the dimension of the reduced fibres of <fr:tex>\mathscr { Q }</fr:tex>, i.e. those of <fr:tex>\operatorname {H} ^0(X_s, \mathscr { L } _s)</fr:tex> for varying <fr:tex>s \in  S</fr:tex>, can <fr:em>jump</fr:em>.
+    Given a coherent module <fr:tex>\mathscr { Q }</fr:tex> on the locally Noetherian prescheme <fr:tex>S</fr:tex>, we can easily show that, for any given <fr:tex>s \in  S</fr:tex>, <fr:tex>\mathscr { Q }</fr:tex> is free at <fr:tex>s</fr:tex> if and only if <fr:tex>\mathbb {P}( \mathscr { Q } )</fr:tex> is flat over <fr:tex>S</fr:tex> at the points over <fr:tex>s</fr:tex> (in which case it is even simple over <fr:tex>S</fr:tex> at the points over <fr:tex>s</fr:tex>);
+    when this happens, with <fr:tex>\mathscr { Q }</fr:tex> defined in terms of <fr:tex>\mathscr { L }</fr:tex> as above, this also implies that forming the direct image <fr:tex>f_*( \mathscr { L } )</fr:tex> <fr:em>"commutes with base change on a neighbourhood of <fr:tex>s</fr:tex>"</fr:em>, or that <fr:tex>f_*( \mathscr { L } )_s \to \operatorname {H} ^0(X_s, \mathscr { L } _s)</fr:tex> is surjective.
+    
+    This will be the case if, for example, <fr:tex>\operatorname {H} ^1(X_s, \mathscr { L } _s)=0</fr:tex>.
+    Subject to the existence of the preschemes in question, these criteria apply in particular to the universal situation <fr:tex>\underline { \operatorname {Div} } _{X/S} \to \underline { \operatorname {Pic} } _{X/S}</fr:tex>, and give a necessary and sufficient condition (resp. sufficient) for this morphism to be simple at a given point of <fr:tex>\underline { \operatorname {Div} } _{X/S}</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>537</fr:anchor><fr:addr>fga3.v-1</fr:addr><fr:route>fga3.v-1.xml</fr:route><fr:title><fr:link
+href="fga3.v.xml"
+type="local"
+addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Relative Picard groups and functors</fr:title><fr:number>1</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  For every prescheme (more generally, every ringed space) <fr:tex>X</fr:tex>, we define the (<fr:em>absolute</fr:em>) <fr:em>Picard group</fr:em> of <fr:tex>X</fr:tex>, denoted by <fr:tex>\operatorname {Pic} (X)</fr:tex>, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to <fr:tex>\mathcal {O} _X</fr:tex>) modules on <fr:tex>X</fr:tex>.
+  We thus have a canonical isomorphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>527</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.1</fr:addr><fr:route>fga3.v-1-equation-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Pic} (X)  \xrightarrow { \sim }   \operatorname {H} ^1(X, \mathcal {O} _X^ \times )     \tag{1.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  where <fr:tex>\mathcal {O} _X^ \times</fr:tex> denotes the sheaf of units of <fr:tex>\mathcal {O} _X</fr:tex> (which can be identified with the sheaf of automorphisms of the invertible module <fr:tex>\mathcal {O} _X</fr:tex>).
+  Note that <fr:tex>X \mapsto \operatorname {Pic} (X)</fr:tex> is a contravariant functor in <fr:tex>X</fr:tex> in the evident way, and that the isomorphism <fr:ref
+addr="fga3.v-1-equation-1.1"
+href="fga3.v-1-equation-1.1.xml"
+taxon="Equation"
+number="1.1"></fr:ref> is functorial.
+</fr:p><fr:p>
+  If <fr:tex>X</fr:tex> is a prescheme over a prescheme <fr:tex>S</fr:tex>, then, for variable <fr:tex>S'</fr:tex> in the category <fr:tex>\mathtt {Sch} _{/S}</fr:tex> of preschemes over <fr:tex>S</fr:tex>, we have a contravariant functor <fr:tex>S' \mapsto \operatorname {Pic} (X \times _S S')</fr:tex> thanks to the above.
+  This functor has no chance of being "representable" (<fr:link
+href="fga3.ii-a.1.xml"
+type="local"
+addr="fga3.ii-a.1">FGA 3.II, §A</fr:link>) since, as a consequence of the existence of <fr:em>non-trivial automorphisms</fr:em> of invertible modules that we propose to classify, this functor is not of a "<fr:em>local nature</fr:em>" ([<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, IV, 5.4]).
+  There is thus an opportunity to "make it local", by introducing, for every relative prescheme <fr:tex>X/S</fr:tex>, a group of a relative nature
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>528</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.2</fr:addr><fr:route>fga3.v-1-equation-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Pic} '(X/S)       =  \operatorname {H} ^0(S, \operatorname {R} ^1f_*( \mathcal {O} _X^ \times ))     \tag{1.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  (where <fr:tex>f \colon  X \to  S</fr:tex> is the structure morphism) (cf. <fr:link
+href="fga3.ii-c.3.xml"
+type="local"
+addr="fga3.ii-c.3">FGA 3.II, §C.3</fr:link>).
+  In <fr:em>loc. cit.</fr:em> this group is called the relative Picard group, but it will be preferable to call it here the <fr:em>restricted relative Picard group</fr:em> of <fr:tex>X/S</fr:tex>, for reasons that will be made clear.
+  As <fr:tex>S'</fr:tex> varies over <fr:tex>\mathtt {Sch} _{/S}</fr:tex>, <fr:tex>S' \mapsto \operatorname {Pic} '(X \times _S S'/S')</fr:tex> is a contravariant functor in <fr:tex>S'</fr:tex>, denote also by <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}</fr:tex>, thus given essentially by the formula
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>529</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.3</fr:addr><fr:route>fga3.v-1-equation-1.3.xml</fr:route><fr:number>1.3</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}(S')       =  \operatorname {Pic} (X \times _S S'/S').     \tag{1.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  
+  This functor is now "of local nature", given that did what was necessary to make this happen.
+  Intuitively, the right-hand side of <fr:ref
+addr="fga3.v-1-equation-1.3"
+href="fga3.v-1-equation-1.3.xml"
+taxon="Equation"
+number="1.3"></fr:ref> can be understood as the set of "algebraic families" of classes of invertible sheaves on (the fibres of) <fr:tex>X/S</fr:tex>, indexed by the parameter prescheme <fr:tex>S'/S</fr:tex>.
+  When the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '</fr:tex> is representable, the prescheme over <fr:tex>S</fr:tex> that represents it is denoted by <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, and is called the <fr:em>Picard prescheme</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and so we then have
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>530</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.4</fr:addr><fr:route>fga3.v-1-equation-1.4.xml</fr:route><fr:number>1.4</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Hom} _S(S', \underline { \operatorname {Pic} } _{X/S})        \cong   \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}(S')       =  \operatorname {Pic} '(X \times _S S'/S').     \tag{1.4}     </fr:tex></fr:mainmatter></fr:tree>
+
+  There are, however, important cases where <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}</fr:tex> is not representable (example: the "Brauer–Severi" variety over a field <fr:tex>k</fr:tex>, without a rational point over <fr:tex>k</fr:tex>), but where there nevertheless exists a natural definition of a relative Picard prescheme.
+  This is due to the fact that, in the definition of the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '</fr:tex> from the absolute Picard groups <fr:tex>\operatorname {Pic} (X \times _S S'/S')</fr:tex>, we have not localised enough;
+  more precisely, <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '</fr:tex> is not in general "compatible with faithfully flat descent".
+  We now explain the details.
+</fr:p><fr:p>
+  Let <fr:tex>( \mathscr { M } )</fr:tex> be the set of morphisms of preschemes that are <fr:em>faithfully flat and quasi-compact</fr:em>;
+  this set is stable under base change and composition.
+  Let <fr:tex>P</fr:tex> be a contravariant functor from <fr:tex>\mathtt {Sch} _{/S}</fr:tex> to the category of sets, and, for every <fr:tex>S</fr:tex>-morphism <fr:tex>u \colon  T' \to  T</fr:tex> with <fr:tex>u \in ( \mathscr { M } )</fr:tex>, consider the diagram
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>531</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.5</fr:addr><fr:route>fga3.v-1-equation-1.5.xml</fr:route><fr:number>1.5</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       P(T)        \to  P(T')        \rightrightarrows  P(T' \times _T T')     \tag{1.5}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which is given by <fr:tex>P</fr:tex> applied to the diagram
+  <fr:tex
+display="block">     T      \leftarrow  T'      \underset { \mathrm {pr} _2}{ \overset { \mathrm {pr} _1}{ \leftleftarrows }} T' \times _T T'.   </fr:tex>
+  If <fr:tex>P</fr:tex> is representable, it follows from the theory of descent (<fr:link
+href="fga3.i-b.1-theorem-2.xml"
+type="local"
+addr="fga3.i-b.1-theorem-2">FGA 3.I, §B, Theorem 2</fr:link>) that the diagram <fr:ref
+addr="fga3.v-1-equation-1.5"
+href="fga3.v-1-equation-1.5.xml"
+taxon="Equation"
+number="1.5"></fr:ref> is exact for all <fr:tex>u \in ( \mathscr { M } )</fr:tex>.
+  We express this fact by saying that <fr:tex>P</fr:tex> is compatible with <fr:tex>( \mathscr { M } )</fr:tex>, in the event that <fr:tex>P</fr:tex> is "compatible with faithfully flat descent", or that the <fr:em>"presheaf"</fr:em> <fr:tex>P</fr:tex> on <fr:tex>\mathtt {Sch} _{/S}</fr:tex> is a <fr:em>"sheaf"</fr:em> for the notion of localisation given by the set <fr:tex>( \mathscr { M } )</fr:tex>.
+  If <fr:tex>P</fr:tex> is arbitrary, then a standard procedure, well known in the case of usual topological localisation, allows us to associate to it a "sheaf" <fr:tex>\mathscr { P }</fr:tex> and a homomorphism of functors <fr:tex>P \to \mathscr { P }</fr:tex> that is universal in an obvious sense.
+  The construction of <fr:tex>\mathscr { P }</fr:tex> can be made explicit in the following way: to define <fr:tex>\mathscr { P } (T)</fr:tex>, we denote, for all <fr:tex>T'</fr:tex> over <fr:tex>T</fr:tex> such that the morphism <fr:tex>u \colon  T' \to  T</fr:tex> is in <fr:tex>( \mathscr { M } )</fr:tex>, by <fr:tex>\overline { \operatorname {H} }^0(T'/T,P)</fr:tex> the subset of <fr:tex>P(T')</fr:tex> consisting of the elements <fr:tex>\xi</fr:tex> such that their images <fr:tex>\xi _1,x_2</fr:tex> in <fr:tex>P(T' \times _T T')</fr:tex> are such that there exists a morphism <fr:tex>v \colon  T'' \to  T' \times _T T'</fr:tex> in <fr:tex>( \mathscr { M } )</fr:tex> such that <fr:tex>\xi _1</fr:tex> and <fr:tex>\xi _2</fr:tex> have the same image in <fr:tex>P(T'')</fr:tex>.
+</fr:p><fr:p>
+  (N.B. The set <fr:tex>\overline { \operatorname {H} }^0</fr:tex> thus defined is larger than the set <fr:tex>\operatorname {H} ^0(T'/T,P)</fr:tex> introduced in <fr:link
+href="fga3.i-a.4.a.xml"
+type="local"
+addr="fga3.i-a.4.a">FGA 3.I, §A.4.a</fr:link>).
+  As <fr:tex>T'</fr:tex> varies over fixed <fr:tex>T</fr:tex> (always with <fr:tex>u \in ( \mathscr { M } )</fr:tex>), the <fr:tex>\overline { \operatorname {H} }^0(T'/T,P)</fr:tex> form an inductive system (when the set of the <fr:tex>T'</fr:tex> is endowed with a preorder defined by domination), and we set
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>532</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.6</fr:addr><fr:route>fga3.v-1-equation-1.6.xml</fr:route><fr:number>1.6</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr { P } (T)       =  \varinjlim _{T'}  \overline { \operatorname {H} }^0(T'/T,P).     \tag{1.6}     </fr:tex></fr:mainmatter></fr:tree>
+
+  The functoriality in <fr:tex>T</fr:tex> of this expression is evident.
+</fr:p><fr:p>
+  When
+  <fr:tex
+display="block">     P(T)     =  \operatorname {Pic} (X \times _S T)   </fr:tex>
+  the contravariant functor on <fr:tex>\mathtt {Sch} _{/S}</fr:tex> defined by <fr:ref
+addr="fga3.v-1-equation-1.6"
+href="fga3.v-1-equation-1.6.xml"
+taxon="Equation"
+number="1.6"></fr:ref> is called the <fr:em>relative Picard functor</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and denoted by <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex>, and we define the <fr:em>relative Picard group</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, denoted by <fr:tex>\operatorname {Pic} (X/S)</fr:tex>, the group <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}(S)</fr:tex>.
+  We then have an evident bijection
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>533</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.7</fr:addr><fr:route>fga3.v-1-equation-1.7.xml</fr:route><fr:number>1.7</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}(T)        \xrightarrow { \sim }   \operatorname {Pic} (X \times _S T/T).     \tag{1.7}     </fr:tex></fr:mainmatter></fr:tree>
+
+  An element of <fr:tex>\operatorname {Pic} (X/S)</fr:tex> is thus defined by means of an element <fr:tex>\xi '</fr:tex> of a group <fr:tex>\operatorname {Pic} (X \times _S S')</fr:tex> (where <fr:tex>S' \to  S</fr:tex> is faithfully flat and quasi-compact) such that we can find a faithfully flat quasi-compact morphism <fr:tex>S'' \to  S' \times _S S'</fr:tex> such that the two inverse images of <fr:tex>\xi '</fr:tex> in <fr:tex>\operatorname {Pic} (X \times _S S'')</fr:tex> are the same.
+  An element <fr:tex>\xi '</fr:tex> of <fr:tex>\operatorname {Pic} (X \times _S S')</fr:tex> and an element <fr:tex>\xi _1</fr:tex> of <fr:tex>\operatorname {Pic} (X \times _S S_1)</fr:tex> (satisfying the conditions that we have just stated) define the same element of <fr:tex>\operatorname {Pic} (X/S)</fr:tex> if and only if there exists a faithfully flat quasi-compact morphism <fr:tex>S'_1 \to  S' \times _S S_1</fr:tex> such that the images of the two elements in question in <fr:tex>\operatorname {Pic} (X \times _S S'_1)</fr:tex> are equal.
+  It is often convenient to work instead with the functor <fr:tex>P'= \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}</fr:tex> introduced above, and we immediately note that the canonical morphism <fr:tex>P \to  P'</fr:tex> defines an <fr:em>isomorphism</fr:em>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>534</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.8</fr:addr><fr:route>fga3.v-1-equation-1.8.xml</fr:route><fr:number>1.8</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr { P }         \xrightarrow { \sim }   \mathscr { P } '     \tag{1.8}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which gives a description of <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> in terms of <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}=P'</fr:tex> that is usually more convenient.
+  By <fr:ref
+addr="fga3.v-2-corollary-2.3"
+href="fga3.v-2-corollary-2.3.xml"
+taxon="Corollary"
+number="2.3"></fr:ref> below, if we replace <fr:tex>P</fr:tex> by <fr:tex>P'</fr:tex> in the description of <fr:tex>\operatorname {Pic} (X/S)</fr:tex> that we have just given then we can take <fr:tex>S''=S' \times _S S'</fr:tex> and <fr:tex>S'_1=S' \times _S S_1</fr:tex>, at least under the conditions given in <fr:em>loc. cit.</fr:em>.
+</fr:p><fr:p>
+  If the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> is representable, we say that <fr:tex>X/S</fr:tex> admits a Picard prescheme, and the prescheme over <fr:tex>S</fr:tex> that represents the functor is called the <fr:em>Picard prescheme</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and denoted by <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>.
+  For this, it evidently suffices that <fr:tex>P'= \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> be representable, since then <fr:tex>P'</fr:tex> is already a "sheaf", and equation <fr:ref
+addr="fga3.v-1-equation-1.8"
+href="fga3.v-1-equation-1.8.xml"
+taxon="Equation"
+number="1.8"></fr:ref> proves that the morphism <fr:tex>P' \to \mathscr { P } '</fr:tex> can be identified with the canonical morphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>535</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.9</fr:addr><fr:route>fga3.v-1-equation-1.9.xml</fr:route><fr:number>1.9</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}        \to   \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}     \tag{1.9}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which is then an isomorphism.
+  This means that our terminology is compatible with that introduced above with <fr:ref
+addr="fga3.v-1-equation-1.4"
+href="fga3.v-1-equation-1.4.xml"
+taxon="Equation"
+number="1.4"></fr:ref>.
+  In general, when <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists it is defined by the functorial isomorphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>536</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.10</fr:addr><fr:route>fga3.v-1-equation-1.10.xml</fr:route><fr:number>1.10</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Hom} _S(S', \underline { \operatorname {Pic} } _{X/S})        \xrightarrow { \sim }   \operatorname {Pic} (X \times _S S'/S').     \tag{1.10}     </fr:tex></fr:mainmatter></fr:tree></fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

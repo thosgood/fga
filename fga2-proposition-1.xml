@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1138</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga2-proposition-1</fr:addr><fr:route>fga2-proposition-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism, and <fr:tex>\mathscr { F }</fr:tex> a coherent <fr:tex>Y</fr:tex>-flat sheaf on <fr:tex>X</fr:tex>.
+    Let <fr:tex>y \in  Y</fr:tex>, let <fr:tex>q</fr:tex> be an integer, and suppose that <fr:tex>\operatorname {H} ^q(X_y, \mathscr { F } _y)=0</fr:tex>.
+    Then <fr:tex>\operatorname {R} ^q f_*( \mathscr { F } )</fr:tex> is zero on a a neighbourhood of <fr:tex>y</fr:tex>, and, for every <fr:tex>n</fr:tex>, the natural homomorphism
+    <fr:tex
+display="block">        \operatorname {R} ^{q-1}f_*( \mathscr { F } )_y        \to   \operatorname {H} ^{q-1}(X_y, \mathscr { F } _y/ \mathfrak {m}_y^n \mathscr { F } _y)     </fr:tex>
+    is surjective.
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1137</fr:anchor><fr:addr>fga2-5</fr:addr><fr:route>fga2-5.xml</fr:route><fr:title><fr:link
+href="fga2.xml"
+type="local"
+addr="fga2">Formal geometry and algebraic geometry</fr:link> › Application to the cohomological study of proper and flat morphisms</fr:title><fr:number>5</fr:number><fr:parent>fga2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism, and <fr:tex>\mathscr { F }</fr:tex> a coherent sheaf on <fr:tex>X</fr:tex>, with <fr:tex>\mathscr { F }</fr:tex> assumed to be <fr:tex>Y</fr:tex>-flat, i.e. the <fr:tex>\mathscr { F } _x</fr:tex> are flat modules over the rings <fr:tex>\mathcal {O} _y</fr:tex> (where <fr:tex>y=f(x)</fr:tex>).
+  
+  This also implies that, for every <fr:tex>y \in  Y</fr:tex>, if we filter <fr:tex>\mathscr { F }</fr:tex> along the fibre <fr:tex>f^{-1}(y)</fr:tex> by the <fr:tex>\mathfrak {m}_y^n \mathscr { F }</fr:tex> (where <fr:tex>\mathfrak {m}_y</fr:tex> is the maximal ideal of <fr:tex>\mathcal {O} _y</fr:tex>), then the associated graded algebra is isomorphic to <fr:tex>( \mathscr { F } / \mathfrak {m}_y \mathscr { F } ) \otimes _{k(y)} \operatorname {gr} ( \mathcal {O} _y)</fr:tex>;
+  in other words, we have that
+  <fr:tex
+display="block">      \mathfrak {m}_y^n \mathscr { F } / \mathfrak {m}_y^{n+1}     =  \mathscr { F } _y \otimes _{k(y)}( \mathfrak {m}_y^n/ \mathfrak {m}_y^{n+1})   </fr:tex>
+  for every integer <fr:tex>n</fr:tex>, where <fr:tex>\mathscr { F } _y</fr:tex> denotes the sheaf <fr:tex>\mathscr { F } / \mathfrak {m}_y \mathscr { F }</fr:tex> induced by <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X_y</fr:tex> (with <fr:tex>X_y</fr:tex> denoting the fibre <fr:tex>f^{-1}(y)</fr:tex> considered as a proper scheme over the residue field <fr:tex>k(y)</fr:tex> of <fr:tex>y</fr:tex>).
+  Taking this isomorphism, as well as <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref>, into account, we obtain augmentations, and sometimes computations, of the <fr:tex>\operatorname {R} ^q f_*( \mathscr { F } )</fr:tex> in a neighbourhood of <fr:tex>y</fr:tex>, knowing the cohomology of <fr:tex>X_y</fr:tex> with coefficients in <fr:tex>\mathscr { F } _y</fr:tex>.
+  Here <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref> takes the form
+  <fr:tex
+display="block">      \overline { \operatorname {R} ^q f_*( \mathscr { F } )}     =  \varprojlim _n  \operatorname {H} ^q( \mathscr { F } _y, \mathscr { F } / \mathfrak {m}_y^n \mathscr { F } ).   </fr:tex>
+  We will mention here only the following consequence:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga2-proposition-1</fr:addr><fr:route>fga2-proposition-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism, and <fr:tex>\mathscr { F }</fr:tex> a coherent <fr:tex>Y</fr:tex>-flat sheaf on <fr:tex>X</fr:tex>.
+    Let <fr:tex>y \in  Y</fr:tex>, let <fr:tex>q</fr:tex> be an integer, and suppose that <fr:tex>\operatorname {H} ^q(X_y, \mathscr { F } _y)=0</fr:tex>.
+    Then <fr:tex>\operatorname {R} ^q f_*( \mathscr { F } )</fr:tex> is zero on a a neighbourhood of <fr:tex>y</fr:tex>, and, for every <fr:tex>n</fr:tex>, the natural homomorphism
+    <fr:tex
+display="block">        \operatorname {R} ^{q-1}f_*( \mathscr { F } )_y        \to   \operatorname {H} ^{q-1}(X_y, \mathscr { F } _y/ \mathfrak {m}_y^n \mathscr { F } _y)     </fr:tex>
+    is surjective.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In particular, if <fr:tex>f</fr:tex> is a flat morphism (i.e. if <fr:tex>\mathcal {O} _X</fr:tex> is <fr:tex>Y</fr:tex>-flat), then every locally free coherent sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex> is <fr:tex>Y</fr:tex>-flat.
+  Let <fr:tex>\mathscr { F }</fr:tex> and <fr:tex>\mathscr { G }</fr:tex> be two such sheaves, and apply <fr:ref
+addr="fga2-proposition-1"
+href="fga2-proposition-1.xml"
+taxon="Proposition"
+number="1"></fr:ref> to <fr:tex>\mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { F } , \mathscr { G } )</fr:tex> and <fr:tex>q=1</fr:tex> to obtain:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>326</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-7</fr:addr><fr:route>fga2-theorem-7.xml</fr:route><fr:number>7</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f</fr:tex> be a flat proper morphism, <fr:tex>\mathscr { F }</fr:tex> and <fr:tex>\mathscr { G }</fr:tex> locally free coherent sheaves on <fr:tex>X</fr:tex>, and <fr:tex>y \in  Y</fr:tex>;
+    suppose that <fr:tex>\operatorname {H} ^1(X_y, \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { F } _y, \mathscr { G } ))=0</fr:tex>.
+    Then every homomorphism <fr:tex>u_0 \colon \mathscr { F } _y \to \mathscr { G } _y</fr:tex> is induced by a homomorphism <fr:tex>u \colon \mathscr { F } |V \to \mathscr { G } |V</fr:tex>, where <fr:tex>V=f^{-1}(U)</fr:tex> is the inverse image of a neighbourhood <fr:tex>U</fr:tex> of <fr:tex>y</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-7-corollary-1</fr:addr><fr:route>fga2-theorem-7-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>u_0</fr:tex> is an isomorphism (resp. a monomorphism, resp. an epimorphism), then so too is <fr:tex>u</fr:tex>, for small enough <fr:tex>U</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In particular:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-7-corollary-2</fr:addr><fr:route>fga2-theorem-7-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>E_0</fr:tex> be a locally free coherent sheaf on <fr:tex>X_y</fr:tex> such that <fr:tex>\operatorname {H} ^1(X_y; \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}(E_0,E_0))=0</fr:tex>.
+    Then any two locally free sheaves whose restrictions to <fr:tex>X_y</fr:tex> are isomorphic to <fr:tex>E_0</fr:tex> are themselves isomorphic to one another in a neighbourhood of <fr:tex>X_y</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Thus:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>329</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-7-corollary-3</fr:addr><fr:route>fga2-theorem-7-corollary-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose that <fr:tex>\operatorname {H} ^1(X_y, \mathcal {O} _{X_y})=0</fr:tex>.
+    Then any two invertible sheaves on <fr:tex>X</fr:tex> (i.e. locally isomorphic to <fr:tex>\mathcal {O} _X</fr:tex>) whose restrictions to <fr:tex>X_y</fr:tex> are isomorphic are themselves isomorphic to one another.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  It thus follows that:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>331</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga2-proposition-2</fr:addr><fr:route>fga2-proposition-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>Y</fr:tex> be a connected scheme, and <fr:tex>E</fr:tex> a locally free coherent sheaf on <fr:tex>Y</fr:tex>.
+    Consider the bundle of projective spaces <fr:tex>X= \mathbb {P} (E)</fr:tex> associated to <fr:tex>E</fr:tex>, endowed with its well-known invertible sheaf <fr:tex>\mathcal {O} _X(1)</fr:tex>.
+    Then every invertible sheaf <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X</fr:tex> is isomorphic to a sheaf of the form <fr:tex>f^*( \mathscr { L } ') \otimes \mathcal {O} _X(n)</fr:tex>, where <fr:tex>\mathscr { L } '</fr:tex> is an invertible sheaf on <fr:tex>Y</fr:tex>, and <fr:tex>n</fr:tex> is an integer.
+    Furthermore, <fr:tex>n</fr:tex> is uniquely determined, and <fr:tex>\mathscr { L } '</fr:tex> is determined up to isomorphism.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>330</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga2-proposition-2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p><fr:ref
+addr="fga2-theorem-7-corollary-3"
+href="fga2-theorem-7-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> above proves that <fr:tex>\mathscr { L }</fr:tex> is isomorphic to an <fr:tex>\mathcal {O} _X(n)</fr:tex>-module on a neighbourhood of each fibre.
+      The rest is more or less formal.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p><fr:ref
+addr="fga2-proposition-2"
+href="fga2-proposition-2.xml"
+taxon="Proposition"
+number="2"></fr:ref> allows us to determine the <fr:tex>Y</fr:tex>-morphisms from <fr:tex>X= \mathbb {P} (E)</fr:tex> to another projective bundle.
+  We see, in particular:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>332</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-proposition-2-corollary-1</fr:addr><fr:route>fga2-proposition-2-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>u</fr:tex> be an automorphism of <fr:tex>X= \mathbb {P} (E)</fr:tex>.
+    Then there exists an invertible sheaf <fr:tex>\mathscr { L } '</fr:tex> on <fr:tex>Y</fr:tex>, and an isomorphism <fr:tex>v</fr:tex> from <fr:tex>E</fr:tex> to <fr:tex>E \otimes \mathscr { L } '</fr:tex> such that <fr:tex>u</fr:tex> is the isomorphism corresponding to <fr:tex>\mathbb {P} (E) \xrightarrow { \sim } \mathbb {P} (E \otimes \mathscr { L } ')= \mathbb {P} (E)</fr:tex>;
+    the pair <fr:tex>(v, \mathscr { L } ')</fr:tex> is determined up to isomorphism.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Let <fr:tex>\Gamma</fr:tex> be the set of classes of invertible bundles <fr:tex>\mathscr { L } '</fr:tex> on <fr:tex>Y</fr:tex> such that <fr:tex>E \otimes \mathscr { L } '</fr:tex> is isomorphic to <fr:tex>E</fr:tex>.
+  Its elements are torsion, since, if <fr:tex>n</fr:tex> is the rank of <fr:tex>E</fr:tex>, then (by taking <fr:tex>n</fr:tex>-th exterior powers) we must have that <fr:tex>( \mathscr { L } ')^{ \otimes  n} \xrightarrow { \sim } \mathcal {O} _Y</fr:tex>.
+  The above corollary can then be expressed by saying that we have an exact sequence of groups:
+  <fr:tex
+display="block">     e  \to   \operatorname {Aut} (E)/ \Gamma (Y, \mathcal {O} _Y^*)  \to   \operatorname {Aut} _Y(X)  \to   \Gamma   \to  e   </fr:tex>
+  (which can also be deduced from the exact sequence in cohomology induced by the exact sequence of <fr:em>sheaves</fr:em> of groups
+  <fr:tex
+display="block">     e  \to   \mathcal {O} _X^ \times   \to   \mathscr {A} \kern  -1.75pt \mathit {ut}   \to   \mathscr {A} \kern  -1.75pt \mathit {ut} _Y(X)  \to  e,   </fr:tex>
+  where <fr:tex>\mathcal {O} _X^ \times</fr:tex> is the sheaf of "units" of <fr:tex>\mathcal {O} _X</fr:tex>, identified with the centre of <fr:tex>\mathscr {A} \kern  -1.75pt \mathit {ut} (E)</fr:tex>.)
+</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1136</fr:anchor><fr:addr>fga2-5</fr:addr><fr:route>fga2-5.xml</fr:route><fr:title><fr:link
+href="fga2.xml"
+type="local"
+addr="fga2">Formal geometry and algebraic geometry</fr:link> › Application to the cohomological study of proper and flat morphisms</fr:title><fr:number>5</fr:number><fr:parent>fga2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism, and <fr:tex>\mathscr { F }</fr:tex> a coherent sheaf on <fr:tex>X</fr:tex>, with <fr:tex>\mathscr { F }</fr:tex> assumed to be <fr:tex>Y</fr:tex>-flat, i.e. the <fr:tex>\mathscr { F } _x</fr:tex> are flat modules over the rings <fr:tex>\mathcal {O} _y</fr:tex> (where <fr:tex>y=f(x)</fr:tex>).
+  
+  This also implies that, for every <fr:tex>y \in  Y</fr:tex>, if we filter <fr:tex>\mathscr { F }</fr:tex> along the fibre <fr:tex>f^{-1}(y)</fr:tex> by the <fr:tex>\mathfrak {m}_y^n \mathscr { F }</fr:tex> (where <fr:tex>\mathfrak {m}_y</fr:tex> is the maximal ideal of <fr:tex>\mathcal {O} _y</fr:tex>), then the associated graded algebra is isomorphic to <fr:tex>( \mathscr { F } / \mathfrak {m}_y \mathscr { F } ) \otimes _{k(y)} \operatorname {gr} ( \mathcal {O} _y)</fr:tex>;
+  in other words, we have that
+  <fr:tex
+display="block">      \mathfrak {m}_y^n \mathscr { F } / \mathfrak {m}_y^{n+1}     =  \mathscr { F } _y \otimes _{k(y)}( \mathfrak {m}_y^n/ \mathfrak {m}_y^{n+1})   </fr:tex>
+  for every integer <fr:tex>n</fr:tex>, where <fr:tex>\mathscr { F } _y</fr:tex> denotes the sheaf <fr:tex>\mathscr { F } / \mathfrak {m}_y \mathscr { F }</fr:tex> induced by <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X_y</fr:tex> (with <fr:tex>X_y</fr:tex> denoting the fibre <fr:tex>f^{-1}(y)</fr:tex> considered as a proper scheme over the residue field <fr:tex>k(y)</fr:tex> of <fr:tex>y</fr:tex>).
+  Taking this isomorphism, as well as <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref>, into account, we obtain augmentations, and sometimes computations, of the <fr:tex>\operatorname {R} ^q f_*( \mathscr { F } )</fr:tex> in a neighbourhood of <fr:tex>y</fr:tex>, knowing the cohomology of <fr:tex>X_y</fr:tex> with coefficients in <fr:tex>\mathscr { F } _y</fr:tex>.
+  Here <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref> takes the form
+  <fr:tex
+display="block">      \overline { \operatorname {R} ^q f_*( \mathscr { F } )}     =  \varprojlim _n  \operatorname {H} ^q( \mathscr { F } _y, \mathscr { F } / \mathfrak {m}_y^n \mathscr { F } ).   </fr:tex>
+  We will mention here only the following consequence:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga2-proposition-1</fr:addr><fr:route>fga2-proposition-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism, and <fr:tex>\mathscr { F }</fr:tex> a coherent <fr:tex>Y</fr:tex>-flat sheaf on <fr:tex>X</fr:tex>.
+    Let <fr:tex>y \in  Y</fr:tex>, let <fr:tex>q</fr:tex> be an integer, and suppose that <fr:tex>\operatorname {H} ^q(X_y, \mathscr { F } _y)=0</fr:tex>.
+    Then <fr:tex>\operatorname {R} ^q f_*( \mathscr { F } )</fr:tex> is zero on a a neighbourhood of <fr:tex>y</fr:tex>, and, for every <fr:tex>n</fr:tex>, the natural homomorphism
+    <fr:tex
+display="block">        \operatorname {R} ^{q-1}f_*( \mathscr { F } )_y        \to   \operatorname {H} ^{q-1}(X_y, \mathscr { F } _y/ \mathfrak {m}_y^n \mathscr { F } _y)     </fr:tex>
+    is surjective.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In particular, if <fr:tex>f</fr:tex> is a flat morphism (i.e. if <fr:tex>\mathcal {O} _X</fr:tex> is <fr:tex>Y</fr:tex>-flat), then every locally free coherent sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex> is <fr:tex>Y</fr:tex>-flat.
+  Let <fr:tex>\mathscr { F }</fr:tex> and <fr:tex>\mathscr { G }</fr:tex> be two such sheaves, and apply <fr:ref
+addr="fga2-proposition-1"
+href="fga2-proposition-1.xml"
+taxon="Proposition"
+number="1"></fr:ref> to <fr:tex>\mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { F } , \mathscr { G } )</fr:tex> and <fr:tex>q=1</fr:tex> to obtain:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>326</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-7</fr:addr><fr:route>fga2-theorem-7.xml</fr:route><fr:number>7</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f</fr:tex> be a flat proper morphism, <fr:tex>\mathscr { F }</fr:tex> and <fr:tex>\mathscr { G }</fr:tex> locally free coherent sheaves on <fr:tex>X</fr:tex>, and <fr:tex>y \in  Y</fr:tex>;
+    suppose that <fr:tex>\operatorname {H} ^1(X_y, \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { F } _y, \mathscr { G } ))=0</fr:tex>.
+    Then every homomorphism <fr:tex>u_0 \colon \mathscr { F } _y \to \mathscr { G } _y</fr:tex> is induced by a homomorphism <fr:tex>u \colon \mathscr { F } |V \to \mathscr { G } |V</fr:tex>, where <fr:tex>V=f^{-1}(U)</fr:tex> is the inverse image of a neighbourhood <fr:tex>U</fr:tex> of <fr:tex>y</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-7-corollary-1</fr:addr><fr:route>fga2-theorem-7-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>u_0</fr:tex> is an isomorphism (resp. a monomorphism, resp. an epimorphism), then so too is <fr:tex>u</fr:tex>, for small enough <fr:tex>U</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In particular:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-7-corollary-2</fr:addr><fr:route>fga2-theorem-7-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>E_0</fr:tex> be a locally free coherent sheaf on <fr:tex>X_y</fr:tex> such that <fr:tex>\operatorname {H} ^1(X_y; \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}(E_0,E_0))=0</fr:tex>.
+    Then any two locally free sheaves whose restrictions to <fr:tex>X_y</fr:tex> are isomorphic to <fr:tex>E_0</fr:tex> are themselves isomorphic to one another in a neighbourhood of <fr:tex>X_y</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Thus:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>329</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-7-corollary-3</fr:addr><fr:route>fga2-theorem-7-corollary-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose that <fr:tex>\operatorname {H} ^1(X_y, \mathcal {O} _{X_y})=0</fr:tex>.
+    Then any two invertible sheaves on <fr:tex>X</fr:tex> (i.e. locally isomorphic to <fr:tex>\mathcal {O} _X</fr:tex>) whose restrictions to <fr:tex>X_y</fr:tex> are isomorphic are themselves isomorphic to one another.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  It thus follows that:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>331</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga2-proposition-2</fr:addr><fr:route>fga2-proposition-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>Y</fr:tex> be a connected scheme, and <fr:tex>E</fr:tex> a locally free coherent sheaf on <fr:tex>Y</fr:tex>.
+    Consider the bundle of projective spaces <fr:tex>X= \mathbb {P} (E)</fr:tex> associated to <fr:tex>E</fr:tex>, endowed with its well-known invertible sheaf <fr:tex>\mathcal {O} _X(1)</fr:tex>.
+    Then every invertible sheaf <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X</fr:tex> is isomorphic to a sheaf of the form <fr:tex>f^*( \mathscr { L } ') \otimes \mathcal {O} _X(n)</fr:tex>, where <fr:tex>\mathscr { L } '</fr:tex> is an invertible sheaf on <fr:tex>Y</fr:tex>, and <fr:tex>n</fr:tex> is an integer.
+    Furthermore, <fr:tex>n</fr:tex> is uniquely determined, and <fr:tex>\mathscr { L } '</fr:tex> is determined up to isomorphism.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>330</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga2-proposition-2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p><fr:ref
+addr="fga2-theorem-7-corollary-3"
+href="fga2-theorem-7-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> above proves that <fr:tex>\mathscr { L }</fr:tex> is isomorphic to an <fr:tex>\mathcal {O} _X(n)</fr:tex>-module on a neighbourhood of each fibre.
+      The rest is more or less formal.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p><fr:ref
+addr="fga2-proposition-2"
+href="fga2-proposition-2.xml"
+taxon="Proposition"
+number="2"></fr:ref> allows us to determine the <fr:tex>Y</fr:tex>-morphisms from <fr:tex>X= \mathbb {P} (E)</fr:tex> to another projective bundle.
+  We see, in particular:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>332</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-proposition-2-corollary-1</fr:addr><fr:route>fga2-proposition-2-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>u</fr:tex> be an automorphism of <fr:tex>X= \mathbb {P} (E)</fr:tex>.
+    Then there exists an invertible sheaf <fr:tex>\mathscr { L } '</fr:tex> on <fr:tex>Y</fr:tex>, and an isomorphism <fr:tex>v</fr:tex> from <fr:tex>E</fr:tex> to <fr:tex>E \otimes \mathscr { L } '</fr:tex> such that <fr:tex>u</fr:tex> is the isomorphism corresponding to <fr:tex>\mathbb {P} (E) \xrightarrow { \sim } \mathbb {P} (E \otimes \mathscr { L } ')= \mathbb {P} (E)</fr:tex>;
+    the pair <fr:tex>(v, \mathscr { L } ')</fr:tex> is determined up to isomorphism.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Let <fr:tex>\Gamma</fr:tex> be the set of classes of invertible bundles <fr:tex>\mathscr { L } '</fr:tex> on <fr:tex>Y</fr:tex> such that <fr:tex>E \otimes \mathscr { L } '</fr:tex> is isomorphic to <fr:tex>E</fr:tex>.
+  Its elements are torsion, since, if <fr:tex>n</fr:tex> is the rank of <fr:tex>E</fr:tex>, then (by taking <fr:tex>n</fr:tex>-th exterior powers) we must have that <fr:tex>( \mathscr { L } ')^{ \otimes  n} \xrightarrow { \sim } \mathcal {O} _Y</fr:tex>.
+  The above corollary can then be expressed by saying that we have an exact sequence of groups:
+  <fr:tex
+display="block">     e  \to   \operatorname {Aut} (E)/ \Gamma (Y, \mathcal {O} _Y^*)  \to   \operatorname {Aut} _Y(X)  \to   \Gamma   \to  e   </fr:tex>
+  (which can also be deduced from the exact sequence in cohomology induced by the exact sequence of <fr:em>sheaves</fr:em> of groups
+  <fr:tex
+display="block">     e  \to   \mathcal {O} _X^ \times   \to   \mathscr {A} \kern  -1.75pt \mathit {ut}   \to   \mathscr {A} \kern  -1.75pt \mathit {ut} _Y(X)  \to  e,   </fr:tex>
+  where <fr:tex>\mathcal {O} _X^ \times</fr:tex> is the sheaf of "units" of <fr:tex>\mathcal {O} _X</fr:tex>, identified with the centre of <fr:tex>\mathscr {A} \kern  -1.75pt \mathit {ut} (E)</fr:tex>.)
+</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

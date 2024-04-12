@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1706</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.iii-6-theorem-6.2</fr:addr><fr:route>fga3.iii-6-theorem-6.2.xml</fr:route><fr:number>6.2</fr:number><fr:parent>fga3.iii-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>S</fr:tex> be a Noetherian prescheme, <fr:tex>X</fr:tex> a prescheme of finite type over <fr:tex>S</fr:tex>, and <fr:tex>\mathcal {R}</fr:tex> an equivalence pre-relation on the <fr:tex>S</fr:tex>-prescheme <fr:tex>X</fr:tex>.
+    Suppose that
+    <fr:strong><fr:em>TO-DO: the following list should be a, b</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>p_1 \colon  R_1 \to  X</fr:tex> is flat and of finite type; and
+      </fr:li>
+      <fr:li>
+        the morphism <fr:tex>R_1 \to  X \times _S X</fr:tex> is quasi-finite (i.e. has finite fibres).
+      </fr:li></fr:ol>
+
+    Then there exists a <fr:em>dense</fr:em> open subset <fr:tex>U</fr:tex> of <fr:tex>X</fr:tex> that is <fr:em>saturated</fr:em> for <fr:tex>\mathcal {R}</fr:tex>, such that:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+    <fr:ol><fr:li>
+        If <fr:tex>\mathcal {R}_U</fr:tex> is the equivalence pre-relation induced by <fr:tex>\mathcal {R}</fr:tex> on <fr:tex>U</fr:tex>, then <fr:tex>U/ \mathcal {R}_U</fr:tex> exists, and is of finite type over <fr:tex>S</fr:tex>.
+      </fr:li>
+
+      <fr:li>
+        The canonical morphism <fr:tex>U \to  U/ \mathcal {R}_U</fr:tex> is surjective and open, and its fibres are the set-theoretic equivalence classes for <fr:tex>\mathcal {R}_U</fr:tex> (and thus <fr:tex>U/ \mathcal {R}_U</fr:tex> is a topological quotient space of <fr:tex>U</fr:tex> by the set-theoretic equivalence relation defined by <fr:tex>\mathcal {R}_U</fr:tex>).
+        Finally, the morphism <fr:tex>( \mathcal {R}_U)_1 \to  U \times _{U/ \mathcal {R}_U}U</fr:tex> is surjective.
+      </fr:li>
+
+      <fr:li>
+        If <fr:tex>\mathcal {R}</fr:tex> comes from an equivalence relation, then we can suppose that <fr:tex>U \to  U/ \mathcal {R}_U</fr:tex> is faithfully flat and that <fr:tex>\mathcal {R}_U</fr:tex> is effective.
+      </fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1705</fr:anchor><fr:addr>fga3.iii-6</fr:addr><fr:route>fga3.iii-6.xml</fr:route><fr:title><fr:link
+href="fga3.iii.xml"
+type="local"
+addr="fga3.iii">Quotient preschemes</fr:link> › Quotient by a proper and flat equivalence relation</fr:title><fr:number>6</fr:number><fr:parent>fga3.iii</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1683</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.iii-6-theorem-6.1</fr:addr><fr:route>fga3.iii-6-theorem-6.1.xml</fr:route><fr:number>6.1</fr:number><fr:parent>fga3.iii-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>S</fr:tex> be a <fr:em>locally Noetherian</fr:em> prescheme, <fr:tex>X</fr:tex> a <fr:em>quasi-projective</fr:em> <fr:tex>S</fr:tex>-scheme, and <fr:tex>\mathcal {R}</fr:tex> an equivalence pre-relation on <fr:tex>X</fr:tex>, such that:
+    <fr:strong><fr:em>TO-DO: the following list should be a, b</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>p_1 \colon  R_1 \to  X</fr:tex> is proper and flat; and
+      </fr:li>
+
+      <fr:li><fr:tex>R_1 \to  X \times _S X</fr:tex> is a finite morphism (or, equivalently, by (a), a morphism with finite fibres, which is a condition that is automatically satisfied if <fr:tex>\mathcal {R}</fr:tex> comes from an equivalence relation).
+      </fr:li></fr:ol>
+
+    Under these conditions:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>Y=X/ \mathcal {R}</fr:tex> exists, and (if <fr:tex>S</fr:tex> is Noetherian) is quasi-projective over <fr:tex>S</fr:tex>.
+         (<fr:em>[Trans.] <fr:em>[Comp.]</fr:em> The fact that <fr:tex>Y=X/ \mathcal {R}</fr:tex> is quasi-projective over <fr:tex>S</fr:tex> has only been proven, for now, in the case where <fr:tex>\mathcal {R}</fr:tex> comes from an equivalence relation.</fr:em>)</fr:li>
+
+      <fr:li>
+        The canonical morphism <fr:tex>f \colon  X \to  Y</fr:tex> is surjective, proper, and open, and its fibres are the equivalence classes <fr:tex>p_2(p_1^{-1}(x))</fr:tex> in <fr:tex>X</fr:tex> modulo <fr:tex>\mathcal {R}</fr:tex>, and so <fr:tex>Y</fr:tex> can be identified with the topological quotient space of <fr:tex>X</fr:tex> by the set-theoretic equivalence relation defined by <fr:tex>\mathcal {R}</fr:tex>.
+        Finally, <fr:tex>R_1 \to  X \times _Y X</fr:tex> is surjective.
+      </fr:li>
+
+      <fr:li>
+        If <fr:tex>\mathcal {R}</fr:tex> comes from an equivalence relation, then the equivalence relation in question is effective, i.e. <fr:tex>R_1 \to  X \times _Y X</fr:tex> is an isomorphism, and, further, <fr:tex>f \colon  X \to  Y</fr:tex> is flat (and thus faithfully flat).
+      </fr:li></fr:ol></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1673</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iii-6-theorem-6.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      For the proof, we can reduce to <fr:ref
+addr="fga3.iii-5-theorem-5.1"
+href="fga3.iii-5-theorem-5.1.xml"
+taxon="Theorem"
+number="5.1"></fr:ref> by considering suitable quasi-sections of <fr:tex>X</fr:tex> for <fr:tex>\mathcal {R}</fr:tex>, with the proof being analogous to the construction of algebraic quotient groups in the <fr:em>Séminaire Chevalley</fr:em>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  In summary:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1684</fr:anchor><fr:taxon>Scholium</fr:taxon><fr:addr>fga3.iii-6-scholium</fr:addr><fr:route>fga3.iii-6-scholium.xml</fr:route><fr:parent>fga3.iii-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be quasi-projective over <fr:tex>S</fr:tex>, with <fr:tex>S</fr:tex> locally Noetherian.
+    Then the data of a proper, faithfully flat, and surjective morphism <fr:tex>f \colon  X \to  Y</fr:tex> from <fr:tex>X</fr:tex> to an <fr:tex>S</fr:tex>-prescheme <fr:tex>Y</fr:tex> is equivalent to the data of an equivalence relation <fr:tex>R</fr:tex> on <fr:tex>X</fr:tex> such that <fr:tex>p_1 \colon  R \to  X</fr:tex> is proper and flat.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  The same method gives the following result:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1685</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.iii-6-theorem-6.2</fr:addr><fr:route>fga3.iii-6-theorem-6.2.xml</fr:route><fr:number>6.2</fr:number><fr:parent>fga3.iii-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>S</fr:tex> be a Noetherian prescheme, <fr:tex>X</fr:tex> a prescheme of finite type over <fr:tex>S</fr:tex>, and <fr:tex>\mathcal {R}</fr:tex> an equivalence pre-relation on the <fr:tex>S</fr:tex>-prescheme <fr:tex>X</fr:tex>.
+    Suppose that
+    <fr:strong><fr:em>TO-DO: the following list should be a, b</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>p_1 \colon  R_1 \to  X</fr:tex> is flat and of finite type; and
+      </fr:li>
+      <fr:li>
+        the morphism <fr:tex>R_1 \to  X \times _S X</fr:tex> is quasi-finite (i.e. has finite fibres).
+      </fr:li></fr:ol>
+
+    Then there exists a <fr:em>dense</fr:em> open subset <fr:tex>U</fr:tex> of <fr:tex>X</fr:tex> that is <fr:em>saturated</fr:em> for <fr:tex>\mathcal {R}</fr:tex>, such that:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+    <fr:ol><fr:li>
+        If <fr:tex>\mathcal {R}_U</fr:tex> is the equivalence pre-relation induced by <fr:tex>\mathcal {R}</fr:tex> on <fr:tex>U</fr:tex>, then <fr:tex>U/ \mathcal {R}_U</fr:tex> exists, and is of finite type over <fr:tex>S</fr:tex>.
+      </fr:li>
+
+      <fr:li>
+        The canonical morphism <fr:tex>U \to  U/ \mathcal {R}_U</fr:tex> is surjective and open, and its fibres are the set-theoretic equivalence classes for <fr:tex>\mathcal {R}_U</fr:tex> (and thus <fr:tex>U/ \mathcal {R}_U</fr:tex> is a topological quotient space of <fr:tex>U</fr:tex> by the set-theoretic equivalence relation defined by <fr:tex>\mathcal {R}_U</fr:tex>).
+        Finally, the morphism <fr:tex>( \mathcal {R}_U)_1 \to  U \times _{U/ \mathcal {R}_U}U</fr:tex> is surjective.
+      </fr:li>
+
+      <fr:li>
+        If <fr:tex>\mathcal {R}</fr:tex> comes from an equivalence relation, then we can suppose that <fr:tex>U \to  U/ \mathcal {R}_U</fr:tex> is faithfully flat and that <fr:tex>\mathcal {R}_U</fr:tex> is effective.
+      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
+  This is a result of an essentially "birational" nature.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1686</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.iii-6-remarks-6.3</fr:addr><fr:route>fga3.iii-6-remarks-6.3.xml</fr:route><fr:number>6.3</fr:number><fr:parent>fga3.iii-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>
+      I do not know if, in <fr:ref
+addr="fga3.iii-6-theorem-6.1"
+href="fga3.iii-6-theorem-6.1.xml"
+taxon="Theorem"
+number="6.1"></fr:ref> and <fr:ref
+addr="fga3.iii-6-theorem-6.2"
+href="fga3.iii-6-theorem-6.2.xml"
+taxon="Theorem"
+number="6.2"></fr:ref>, hypothesis (b) is useless.
+      In practice, it obliges us, in the passage to the quotient by groups, to restrict to he case where the stabilisers are all finite groups.
+    </fr:li>
+
+    <fr:li>
+      We can ask if there are results analogous to <fr:ref
+addr="fga3.iii-6-theorem-6.1"
+href="fga3.iii-6-theorem-6.1.xml"
+taxon="Theorem"
+number="6.1"></fr:ref> and <fr:ref
+addr="fga3.iii-6-theorem-6.2"
+href="fga3.iii-6-theorem-6.2.xml"
+taxon="Theorem"
+number="6.2"></fr:ref> without any flatness hypothesis.
+      I have no counter example in this direction.
+      However, even keeping the flatness hypothesis, and restricting to equivalence relations such that <fr:tex>p_1 \colon  R \to  X</fr:tex> is flat and quasi-finite (but not finite), and with <fr:tex>X</fr:tex> affine, it can still be the case that <fr:tex>R</fr:tex> is not effective: take the equivalence relations induced on the affine open subsets covering the Nagata variety (or a group with two elements acting in a "non-admissible" way).
+    </fr:li></fr:ol></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1703</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.iii-6-remarks-6.3</fr:addr><fr:route>fga3.iii-6-remarks-6.3.xml</fr:route><fr:number>6.3</fr:number><fr:parent>fga3.iii-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>
+      I do not know if, in <fr:ref
+addr="fga3.iii-6-theorem-6.1"
+href="fga3.iii-6-theorem-6.1.xml"
+taxon="Theorem"
+number="6.1"></fr:ref> and <fr:ref
+addr="fga3.iii-6-theorem-6.2"
+href="fga3.iii-6-theorem-6.2.xml"
+taxon="Theorem"
+number="6.2"></fr:ref>, hypothesis (b) is useless.
+      In practice, it obliges us, in the passage to the quotient by groups, to restrict to he case where the stabilisers are all finite groups.
+    </fr:li>
+
+    <fr:li>
+      We can ask if there are results analogous to <fr:ref
+addr="fga3.iii-6-theorem-6.1"
+href="fga3.iii-6-theorem-6.1.xml"
+taxon="Theorem"
+number="6.1"></fr:ref> and <fr:ref
+addr="fga3.iii-6-theorem-6.2"
+href="fga3.iii-6-theorem-6.2.xml"
+taxon="Theorem"
+number="6.2"></fr:ref> without any flatness hypothesis.
+      I have no counter example in this direction.
+      However, even keeping the flatness hypothesis, and restricting to equivalence relations such that <fr:tex>p_1 \colon  R \to  X</fr:tex> is flat and quasi-finite (but not finite), and with <fr:tex>X</fr:tex> affine, it can still be the case that <fr:tex>R</fr:tex> is not effective: take the equivalence relations induced on the affine open subsets covering the Nagata variety (or a group with two elements acting in a "non-admissible" way).
+    </fr:li></fr:ol></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1704</fr:anchor><fr:addr>fga3.iii-7</fr:addr><fr:route>fga3.iii-7.xml</fr:route><fr:title><fr:link
+href="fga3.iii.xml"
+type="local"
+addr="fga3.iii">Quotient preschemes</fr:link> › Applications</fr:title><fr:number>7</fr:number><fr:parent>fga3.iii</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  As we said in the introduction, the most important application of <fr:ref
+addr="fga3.iii-6-theorem-6.1"
+href="fga3.iii-6-theorem-6.1.xml"
+taxon="Theorem"
+number="6.1"></fr:ref> is the construction of Picard schemes, as well as solutions to various other problems of "modules", to which we will later return.
+</fr:p><fr:p>
+  We obtain a simple proof of the following result of Shimura:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1694</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iii-7-proposition-7.1</fr:addr><fr:route>fga3.iii-7-proposition-7.1.xml</fr:route><fr:number>7.1</fr:number><fr:parent>fga3.iii-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>A</fr:tex> be an abelian scheme defined over a discrete valuation ring <fr:tex>V</fr:tex> with field of fractions <fr:tex>K</fr:tex>.
+    Then every abelian scheme <fr:tex>B'</fr:tex> over <fr:tex>K</fr:tex> that is isogenous to a quotient of <fr:tex>A \otimes _V K</fr:tex> "simplifies well for <fr:tex>V</fr:tex>", i.e. is isomorphic to some <fr:tex>B \otimes _V A</fr:tex>, where <fr:tex>B</fr:tex> is an abelian scheme over <fr:tex>V</fr:tex> (essentially unique, we recall).
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1692</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iii-7-proposition-7.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      We can suppose that <fr:tex>B'</fr:tex> is the quotient of <fr:tex>A_K</fr:tex> by a subscheme in groups <fr:tex>C'</fr:tex>.
+      (N.B. <fr:tex>C'</fr:tex> will not, in general, be "reduced", i.e. its local rings will have nilpotent elements).
+      Consider the closed subscheme <fr:tex>C</fr:tex> of <fr:tex>A</fr:tex> given by "the closure" of <fr:tex>C'</fr:tex>, i.e. the smallest closed subscheme of <fr:tex>A</fr:tex> such that <fr:tex>C_K</fr:tex> contains <fr:tex>C'</fr:tex>.
+      Then <fr:tex>C_K=C'</fr:tex>, and, since <fr:tex>V</fr:tex> is a discrete valuation ring, we easily deduce that <fr:tex>C</fr:tex> is a subscheme in groups of <fr:tex>A</fr:tex> over <fr:tex>V</fr:tex>.
+      Since <fr:tex>A</fr:tex> is proper over <fr:tex>\operatorname {Spec} (V)=S</fr:tex>, so too is <fr:tex>C</fr:tex>.
+      Further, <fr:tex>A</fr:tex> is projective over <fr:tex>S</fr:tex>.
+      
+      We can thus apply <fr:ref
+addr="fga3.iii-6-theorem-6.1"
+href="fga3.iii-6-theorem-6.1.xml"
+taxon="Theorem"
+number="6.1"></fr:ref> in order to construct <fr:tex>A/C=B</fr:tex>, which is the desired <fr:tex>B</fr:tex>.    
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  Finally, essentially known arguments allow us to extract from <fr:ref
+addr="fga3.iii-6-theorem-6.2"
+href="fga3.iii-6-theorem-6.2.xml"
+taxon="Theorem"
+number="6.2"></fr:ref> the following result:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1695</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.iii-7-theorem-7.2</fr:addr><fr:route>fga3.iii-7-theorem-7.2.xml</fr:route><fr:number>7.2</fr:number><fr:parent>fga3.iii-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>S</fr:tex> be the spectrum of an Artinian ring, <fr:tex>F</fr:tex> and <fr:tex>G</fr:tex> group schemes of finite type over <fr:tex>S</fr:tex>, and <fr:tex>u \colon  F \to  G</fr:tex> a homomorphism of group schemes over <fr:tex>S</fr:tex>.
+    Suppose that
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>F</fr:tex> is flat over <fr:tex>S</fr:tex>; and
+      </fr:li>
+      <fr:li>
+        the kernel of <fr:tex>u</fr:tex> is finite.
+      </fr:li></fr:ol>
+
+    Under these conditions, the quotient scheme <fr:tex>G/F</fr:tex> exists, and the canonical morphism <fr:tex>G \to  G/F</fr:tex> is surjective and open, and its fibres are the set-theoretic equivalence classes defined by the right action of <fr:tex>F</fr:tex> on <fr:tex>G</fr:tex>.
+    Finally, if <fr:tex>u</fr:tex> is a monomorphism, then the morphism <fr:tex>G \to  G/F</fr:tex> is flat, and the morphism <fr:tex>G \times  F \to  G \times _{(G/F)}G</fr:tex> is an isomorphism, or, in other words, <fr:tex>G</fr:tex> is a principal homogeneous space over <fr:tex>G/F</fr:tex>, with structure group <fr:tex>F</fr:tex> (acting on the right), or rather <fr:tex>F \times _S(G/F)</fr:tex> considered as a group scheme over <fr:tex>G/F</fr:tex> (cf. <fr:link
+href="fga3.i-b.6.xml"
+type="local"
+addr="fga3.i-b.6">FGA 3.I, §B.6</fr:link>).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1696</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.iii-7-corollary-7.3</fr:addr><fr:route>fga3.iii-7-corollary-7.3.xml</fr:route><fr:number>7.3</fr:number><fr:parent>fga3.iii-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under these conditions, for <fr:tex>G</fr:tex> to be flat over <fr:tex>S</fr:tex>, it is necessary and sufficient that <fr:tex>G/F</fr:tex> be flat over <fr:tex>S</fr:tex>.
+    If this condition is satisfied, then the passage to the quotient by <fr:tex>F</fr:tex> commutes with every extension of the base <fr:tex>S</fr:tex>, and if <fr:tex>F</fr:tex> is an invariant subgroup of <fr:tex>G</fr:tex>, then <fr:tex>G/F</fr:tex> can be endowed with the structure of a <fr:em>quotient group</fr:em> of <fr:tex>G</fr:tex> by <fr:tex>F</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  The situation is particularly simple if <fr:tex>S</fr:tex> is the spectrum of a field, since then every <fr:tex>S</fr:tex>-prescheme is automatically flat over <fr:tex>S</fr:tex>.
+  We find:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1697</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.iii-7-corollary-7.4</fr:addr><fr:route>fga3.iii-7-corollary-7.4.xml</fr:route><fr:number>7.4</fr:number><fr:parent>fga3.iii-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>F</fr:tex> and <fr:tex>G</fr:tex> be group schemes of finite type over a field <fr:tex>k</fr:tex>, and let <fr:tex>u \colon  F \to  G</fr:tex> be a homomorphism of <fr:tex>k</fr:tex>-groups.
+    Then <fr:tex>u</fr:tex> factors as <fr:tex>F \to  F' \to  G</fr:tex>, where <fr:tex>F \to  F'</fr:tex> is a homomorphism given by passing to the quotient by the closed subgroup <fr:tex>\operatorname {Ker}  u</fr:tex> of <fr:tex>F</fr:tex>, and where <fr:tex>F' \to  G</fr:tex> is a group homomorphism that is a closed immersion.
+    The quotient <fr:tex>G/F=G/F'</fr:tex> exists.
+    The usual formalism (as in the Noether theorems) holds amongst algebraic groups over <fr:tex>k</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  This result allows us to treat the passage to the quotient in a uniform way for algebraic (in the classical sense, i.e. irreducible over <fr:tex>k</fr:tex> and simple over <fr:tex>k</fr:tex>) groups, and the passage to the quotient by "infinitesimal" subgroups considered by Cartier.
+  
+  It is advantageous to consider the "hyperalgebras" introduced by Cartier, following from the work of Dieudonné on formal groups, as groups in the category of formal schemes over <fr:tex>k</fr:tex>, and, if necessary (if they correspond to hyperalgebras of finite rank over <fr:tex>k</fr:tex>), as algebraic groups that are finite over <fr:tex>k</fr:tex>.
+</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

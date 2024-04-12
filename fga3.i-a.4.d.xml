@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1447</fr:anchor><fr:addr>fga3.i-a.4.d</fr:addr><fr:route>fga3.i-a.4.d.xml</fr:route><fr:number>A.4.d</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>477</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.4-example-1</fr:addr><fr:route>fga3.i-a.4-example-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.i-a.4.d</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>S'</fr:tex> be an object over <fr:tex>S \in \mathcal {C}</fr:tex>, and let <fr:tex>\Gamma</fr:tex> be a group of automorphisms of <fr:tex>S'</fr:tex> such that <fr:tex>S'</fr:tex> is "formally <fr:tex>\Gamma</fr:tex>-principal over <fr:tex>S</fr:tex>", i.e. such that the natural morphism
+    <fr:tex
+display="block">        \Gamma \times  S'  \to  S' \times _S S'     </fr:tex>
+    (where <fr:tex>\Gamma \times  S'</fr:tex> denotes the direct sum of <fr:tex>\Gamma</fr:tex> copies of <fr:tex>S'</fr:tex>) is an isomorphism.
+    (We suppose that all the necessary direct sums exist in <fr:tex>\mathcal {C}</fr:tex>).
+    Let <fr:tex>F</fr:tex> be a contravariant functor from <fr:tex>\mathcal {C}</fr:tex> to the category of abelian groups.
+    Then <fr:em><fr:tex>C^ \bullet (S'/S,F)</fr:tex> is canonically isomorphic to the simplicial group <fr:tex>C^ \bullet ( \Gamma ,F(S'))</fr:tex> of standard homogeneous cochains, and so <fr:tex>\operatorname {H} ^ \bullet (S'/S,F)</fr:tex> is canonically isomorphic to <fr:tex>\operatorname {H} ^ \bullet ( \Gamma ,F(S'))</fr:tex></fr:em>.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1446</fr:anchor><fr:addr>fga3.i-a.4</fr:addr><fr:route>fga3.i-a.4.xml</fr:route><fr:title><fr:link
+href="fga3.i-a.xml"
+type="local"
+addr="fga3.i-a"><fr:link
+href="fga3.i.xml"
+type="local"
+addr="fga3.i">Generalities, and descent by faithfully flat morphisms</fr:link> › Preliminaries on categories</fr:link> › Relations to 1-cohomology</fr:title><fr:number>A.4</fr:number><fr:parent>fga3.i-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>473</fr:anchor><fr:addr>fga3.i-a.4.a</fr:addr><fr:route>fga3.i-a.4.a.xml</fr:route><fr:number>A.4.a</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal {C}</fr:tex> be a category such that the product of any two objects always exists, and let <fr:tex>T \in \mathcal {C}</fr:tex>.
+  For every finite set <fr:tex>I \neq \varnothing</fr:tex>, we can consider <fr:tex>T^I</fr:tex>, and so we obtain a covariant functor from the category of non-empty finite sets to the category <fr:tex>\mathcal {C}</fr:tex>, i.e. what we can call a <fr:em>simplicial object</fr:em> of <fr:tex>\mathcal {C}</fr:tex>, denoted by <fr:tex>K_T</fr:tex>.
+  This object depends covariantly on <fr:tex>T</fr:tex>;
+  also, <fr:em>if <fr:tex>u</fr:tex> and <fr:tex>v</fr:tex> are morphisms <fr:tex>T \to  T'</fr:tex>, then the corresponding morphisms <fr:tex>K_T \to  K_{T}</fr:tex> are homotopic</fr:em>.
+  We say that <fr:tex>T</fr:tex> <fr:em>dominates</fr:em> <fr:tex>T'</fr:tex> if <fr:tex>\operatorname {Hom} (T,T') \neq \varnothing</fr:tex>, and this gives an (upward) directed preorder on <fr:tex>\mathcal {C}</fr:tex>.
+  It follows from the above that, if <fr:tex>T</fr:tex> dominates <fr:tex>T'</fr:tex>, then there exists a canonical class (up to homotopy) of homomorphisms of simplicial objects <fr:tex>K_T \to  K_{T'}</fr:tex>;
+  in particular, if <fr:tex>K_T</fr:tex> and <fr:tex>K_{T'}</fr:tex> are such that <fr:tex>T</fr:tex> and <fr:tex>T'</fr:tex> dominate one another, then <fr:tex>K_T</fr:tex> and <fr:tex>K_{T'}</fr:tex> are homotopically equivalent.
+  Now let <fr:tex>F</fr:tex> be a (contravariant, to be clear) functor from <fr:tex>\mathcal {C}</fr:tex> to an <fr:em>abelian</fr:em> category <fr:tex>\mathcal {C}'</fr:tex>.
+  Then
+  <fr:tex
+display="block">     C^ \bullet (T,F) = F(K_T)   </fr:tex>
+  is a cosimplicial object of <fr:tex>\mathcal {C}'</fr:tex>, and thus defines, in a well-known way, a (cochain) complex in <fr:tex>\mathcal {C}'</fr:tex>, of which we can take the cohomology:
+  <fr:tex
+display="block">      \operatorname {H} ^ \bullet (T,F)     =  \operatorname {H} ^ \bullet (C^ \bullet (T,F))     =  \operatorname {H} ^ \bullet (F(K_T))   </fr:tex>
+  (we may write a subscript "<fr:tex>\mathcal {C}</fr:tex>" on the <fr:tex>\operatorname {H} ^ \bullet</fr:tex> if there is any possibility for confusion).
+  This is a cohomological functor in <fr:tex>F</fr:tex>, of which the variance for <fr:tex>T</fr:tex> varying follows from what has already been said about the <fr:tex>K_T</fr:tex>;
+  more precisely, for fixed <fr:tex>F</fr:tex> and varying <fr:tex>T</fr:tex> in <fr:tex>\mathcal {C}</fr:tex> (preordered by the domination relation), the <fr:tex>\operatorname {H} ^ \bullet (T,F)</fr:tex> form an inductive system of graded objects of <fr:tex>\mathcal {C}'</fr:tex>;
+  in particular, if <fr:tex>T</fr:tex> and <fr:tex>T'</fr:tex> are such that each one dominates the other, then <fr:tex>\operatorname {H} ^ \bullet (T,F)</fr:tex> and <fr:tex>\operatorname {H} ^ \bullet (T',F)</fr:tex> are canonically isomorphic.
+</fr:p><fr:p>
+  Suppose that <fr:tex>\mathcal {C}</fr:tex> has all fibre products.
+  Then we can, for fixed <fr:tex>S \in \mathcal {C}</fr:tex>, apply the above to the category <fr:tex>\mathcal {C}_S</fr:tex> of objects of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>S</fr:tex>;
+  we then write <fr:tex>C^ \bullet (T/S,F)</fr:tex> and <fr:tex>\operatorname {H} ^ \bullet (T/S,F)</fr:tex> instead of <fr:tex>C^ \bullet (T,F)</fr:tex> and <fr:tex>\operatorname {H} ^ \bullet (T,F)</fr:tex> if we wish to make clear that we are working in the category <fr:tex>\mathcal {C}_S</fr:tex>;
+  
+  then <fr:tex>C^ \bullet (T/S,F)</fr:tex> is a cochain complex in <fr:tex>\mathcal {C}'</fr:tex> that, in degree <fr:tex>n</fr:tex>, is equal to <fr:tex>F(T \times _S T \times _S \ldots \times _S T)</fr:tex> (where there are <fr:tex>n+1</fr:tex> factors <fr:tex>T</fr:tex>).
+</fr:p><fr:p>
+  Note that, as per usual, we can define <fr:tex>\operatorname {H} ^0(T/S,F)</fr:tex> without assuming the category <fr:tex>\mathcal {C}'</fr:tex> to be abelian:
+  it is the kernel (<fr:ref
+addr="fga3.i-a.2-definition-2.1"
+href="fga3.i-a.2-definition-2.1.xml"
+taxon="Definition"
+number="2.1"></fr:ref>), if it exists, of the pair <fr:tex>(F(p_1),F(p_2))</fr:tex> of morphisms
+  <fr:tex
+display="block">     F(T)  \to  F(T \times _S T)   </fr:tex>
+  corresponding to the two projections <fr:tex>p_1,p_2 \colon  T \times _S T \to  T</fr:tex>.
+  In particular, we then have the natural morphism (called the <fr:em>augmentation</fr:em>)
+  <fr:tex
+display="block">     F(S)  \to   \operatorname {H} ^0(T/S,F)   </fr:tex>
+  which is an isomorphism in nice cases (in particular, in the case where <fr:tex>T \to  S</fr:tex> is a strict epimorphism and <fr:tex>F</fr:tex> is "left exact").
+  Similarly, if <fr:tex>F</fr:tex> takes values in the category of groups in a category <fr:tex>\mathcal {C}''</fr:tex>, then we can also define <fr:tex>\operatorname {H} ^1(T/S,F)</fr:tex>;
+  in the case where <fr:tex>\mathcal {C}''</fr:tex> is the category of sets (i.e. when <fr:tex>F</fr:tex> takes values in the category of non-necessarily-commutative groups), <fr:tex>\operatorname {H} ^1(T,F)</fr:tex> is the quotient of the subgroup <fr:tex>Z^1(T/S,F)</fr:tex> of <fr:tex>C^1(T/S,F) = F(T \times _S T)</fr:tex> consisting of the <fr:tex>g</fr:tex> such that
+  <fr:tex
+display="block">     F(p_{31})(g)     = F(p_{32})(g) F(p_{21})(g)   </fr:tex>
+  by the group with operators <fr:tex>F(T)</fr:tex> acting on <fr:tex>C^1(T/S,F)</fr:tex>, and thus, in particular, on the subset <fr:tex>Z^1(T/S,F)</fr:tex>, by
+  <fr:tex
+display="block">      \rho (g') \cdot  g     = F(p_2)(g') g F(p_1)(g')^{-1}.   </fr:tex></fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>474</fr:anchor><fr:addr>fga3.i-a.4.b</fr:addr><fr:route>fga3.i-a.4.b.xml</fr:route><fr:number>A.4.b</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  For example, let <fr:tex>\mathcal {F}</fr:tex> be a fibred category with base <fr:tex>\mathcal {C}</fr:tex>.
+  Let <fr:tex>\xi , \eta \in \mathcal {F}_S</fr:tex>, and, for all <fr:tex>S'</fr:tex> over <fr:tex>S</fr:tex>, let
+  <fr:tex
+display="block">     F_{ \xi , \eta }(S')     =  \operatorname {Hom} ( \xi \times _S S',  \eta \times _S S').   </fr:tex>
+  Then <fr:tex>F_{ \xi , \eta }</fr:tex> is a contravariant functor from <fr:tex>\mathcal {C}_S</fr:tex> to the category of sets.
+  With this setup, <fr:em>saying that the augmentation morphism</fr:em>
+  <fr:tex
+display="block">     F_{ \xi , \eta }(S)  \to   \operatorname {H} ^0(S'/S,F_{ \xi , \eta })   </fr:tex>
+  <fr:em>is an isomorphism for every pair of elements <fr:tex>\xi , \eta \in \mathcal {F}_S</fr:tex> implies that <fr:tex>\alpha \colon  S' \to  S</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism</fr:em> (<fr:ref
+addr="fga3.i-a.1-definition-1.7"
+href="fga3.i-a.1-definition-1.7.xml"
+taxon="Definition"
+number="1.7"></fr:ref>).
+</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>476</fr:anchor><fr:addr>fga3.i-a.4.c</fr:addr><fr:route>fga3.i-a.4.c.xml</fr:route><fr:number>A.4.c</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Similarly, for <fr:tex>\xi \in \mathcal {F}_S</fr:tex> and any object <fr:tex>S'</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> over
+  <fr:tex
+display="block">     G_ \xi (S')     =  \operatorname {Aut} ( \xi \times _S S'),   </fr:tex>
+  we thus define a contravariant functor <fr:tex>G_ \xi</fr:tex> from <fr:tex>\mathcal {C}_S</fr:tex> to the category of groups.
+  
+  With this setup, we claim that <fr:em><fr:tex>Z^1(S'/S,G)</fr:tex> is canonically identified with the set of descent data on <fr:tex>\xi '= \xi \times _S S'</fr:tex> with respect to <fr:tex>S' \to  S</fr:tex></fr:em> (<fr:ref
+addr="fga3.i-a.1-definition-1.6"
+href="fga3.i-a.1-definition-1.6.xml"
+taxon="Definition"
+number="1.6"></fr:ref>), and that <fr:em><fr:tex>\operatorname {H} ^1(S'/S,G)</fr:tex> can be identified with the set of isomorphism classes of objects of <fr:tex>\mathcal {F}_{S'}</fr:tex> endowed with a descent data relative to <fr:tex>\alpha \colon  S' \to  S</fr:tex> that are isomorphic, as objects of <fr:tex>\mathcal {F}_{S'}</fr:tex>, to <fr:tex>\xi '= \xi \times _S S'</fr:tex></fr:em>.
+  Then, _if <fr:tex>\alpha \colon  S' \to  S</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism_ (cf. <fr:ref
+addr="fga3.i-a.4.b"
+href="fga3.i-a.4.b.xml"
+number="A.4.b"></fr:ref>), _then <fr:tex>\operatorname {H} ^1(S'/S,G)</fr:tex> contains as a subset the set of isomorphism classes of objects <fr:tex>\eta</fr:tex> of <fr:tex>\mathcal {F}_S</fr:tex> such that <fr:tex>\eta \times _S S'</fr:tex> is isomorphic (in <fr:tex>\mathcal {F}_{S'}</fr:tex>) to <fr:tex>\xi \times _S S'</fr:tex>_;
+  further, <fr:em>this inclusion is the identity if and only if every descent data on <fr:tex>\xi '= \xi \times _S S'</fr:tex> with respect to <fr:tex>\alpha \colon  S' \to  S</fr:tex> is effective</fr:em>.
+  (This will be the case, in particular, if <fr:tex>\alpha \colon  S' \to  S</fr:tex> is a strict <fr:tex>S</fr:tex>-descent morphism).
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>475</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.4.c-remark</fr:addr><fr:route>fga3.i-a.4.c-remark.xml</fr:route><fr:parent>fga3.i-a.4.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The cochain complexes of the form <fr:tex>C^ \bullet (T/S,F)</fr:tex> contain, as particular cases, the majority of standard known complexes (that of Čech cohomology, of group cohomology, etc.), and play an important role in algebraic geometry (notably in the "Weil cohomology" of preschemes).
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>478</fr:anchor><fr:addr>fga3.i-a.4.d</fr:addr><fr:route>fga3.i-a.4.d.xml</fr:route><fr:number>A.4.d</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>477</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.4-example-1</fr:addr><fr:route>fga3.i-a.4-example-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.i-a.4.d</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>S'</fr:tex> be an object over <fr:tex>S \in \mathcal {C}</fr:tex>, and let <fr:tex>\Gamma</fr:tex> be a group of automorphisms of <fr:tex>S'</fr:tex> such that <fr:tex>S'</fr:tex> is "formally <fr:tex>\Gamma</fr:tex>-principal over <fr:tex>S</fr:tex>", i.e. such that the natural morphism
+    <fr:tex
+display="block">        \Gamma \times  S'  \to  S' \times _S S'     </fr:tex>
+    (where <fr:tex>\Gamma \times  S'</fr:tex> denotes the direct sum of <fr:tex>\Gamma</fr:tex> copies of <fr:tex>S'</fr:tex>) is an isomorphism.
+    (We suppose that all the necessary direct sums exist in <fr:tex>\mathcal {C}</fr:tex>).
+    Let <fr:tex>F</fr:tex> be a contravariant functor from <fr:tex>\mathcal {C}</fr:tex> to the category of abelian groups.
+    Then <fr:em><fr:tex>C^ \bullet (S'/S,F)</fr:tex> is canonically isomorphic to the simplicial group <fr:tex>C^ \bullet ( \Gamma ,F(S'))</fr:tex> of standard homogeneous cochains, and so <fr:tex>\operatorname {H} ^ \bullet (S'/S,F)</fr:tex> is canonically isomorphic to <fr:tex>\operatorname {H} ^ \bullet ( \Gamma ,F(S'))</fr:tex></fr:em>.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>481</fr:anchor><fr:addr>fga3.i-a.4.e</fr:addr><fr:route>fga3.i-a.4.e.xml</fr:route><fr:number>A.4.e</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>479</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.4-example-2</fr:addr><fr:route>fga3.i-a.4-example-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga3.i-a.4.e</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathcal {C}</fr:tex> be the category of preschemes.
+    We denote by <fr:tex>\operatorname {G_a}</fr:tex> (for "additive group") the contravariant functor from <fr:tex>\mathcal {C}</fr:tex> to the category of abelian groups, defined by
+    <fr:tex
+display="block">        \operatorname {G_a} (X)       =  \operatorname {H} ^0(X, \mathscr { O } _X).     </fr:tex>
+    We similarly define the functor <fr:tex>\operatorname {G_m}</fr:tex> (for "multiplicative group") by
+    <fr:tex
+display="block">        \operatorname {G_m} (X)       =  \operatorname {H} ^0(X, \mathscr { O } _X)^ \times      </fr:tex>
+    
+    (i.e. the group of invertible elements of the ring <fr:tex>\operatorname {H} ^0(X, \mathscr { O } _X)</fr:tex>), and, more generally, the functor <fr:tex>\operatorname {GL} (n)</fr:tex> (for "linear group of order <fr:tex>n</fr:tex>") by
+    <fr:tex
+display="block">        \operatorname {GL} (n)(X)       =  \operatorname {GL} (n, \operatorname {H} ^0(X, \mathscr { O } _X)),     </fr:tex>
+    which is a functor from <fr:tex>\mathcal {C}</fr:tex> to the category of (not-necessary-commutative, if <fr:tex>n&gt;1</fr:tex>) groups;
+    for <fr:tex>n=1</fr:tex> we recover <fr:tex>\operatorname {G_m}</fr:tex>.
+    We can also think of <fr:tex>\operatorname {GL} (n)</fr:tex> as an automorphism functor (cf. <fr:ref
+addr="fga3.i-a.4.c"
+href="fga3.i-a.4.c.xml"
+number="A.4.c"></fr:ref>) by considering the fibred category <fr:tex>\mathcal {F}</fr:tex> with base <fr:tex>\mathcal {C}</fr:tex> such that <fr:tex>\mathcal {F}_X</fr:tex> is the category of locally free sheaves on <fr:tex>X</fr:tex>, for <fr:tex>X \in \mathcal {C}</fr:tex>, since then <fr:tex>\operatorname {GL} (n)(X)= \operatorname {Aut} _{ \mathcal {F}_X}( \mathscr { O } _X^n)</fr:tex>.
+    By <fr:ref
+addr="fga3.i-a.4.b"
+href="fga3.i-a.4.b.xml"
+number="A.4.b"></fr:ref>, it follows that, if <fr:tex>\alpha \colon  S' \to  S</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism (cf. <fr:ref
+addr="fga3.i-a.2.c"
+href="fga3.i-a.2.c.xml"
+number="A.2.c"></fr:ref>), then <fr:tex>\operatorname {H} ^1(S'/S, \operatorname {GL} (n))</fr:tex> contains the set of isomorphism classes of locally free sheaves on <fr:tex>S</fr:tex> whose inverse image on <fr:tex>S'</fr:tex> is isomorphic to <fr:tex>\mathscr { O } _{S'}^n</fr:tex>, and this inclusion is an equality if and only if every descent data on <fr:tex>\mathscr { O } _{S'}^n</fr:tex> (with respect to <fr:tex>\alpha \colon  S' \to  S</fr:tex>) is effective.
+    If <fr:tex>S</fr:tex> is the spectrum of a local ring, then this implies that <fr:tex>\operatorname {H} ^1(S'/S, \operatorname {GL} (n))=(e)</fr:tex>, since every locally free sheaf on <fr:tex>S</fr:tex> is then trivial.
+  </fr:p><fr:p>
+    We note that the following conditions concerning a morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> are equivalent:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+    <fr:ol><fr:li>
+        The augmentation homomorphism <fr:tex>\operatorname {H} ^0(S, \mathscr { O } _S) =  \operatorname {G_a} (S) \to \operatorname {H} ^0(S'/S, \operatorname {G_a} )</fr:tex> is an isomorphism.
+      </fr:li>
+      <fr:li><fr:tex>\alpha \colon  S' \to  S</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism (where <fr:tex>\mathcal {F}</fr:tex> is the fibred category over <fr:tex>\mathcal {C}</fr:tex> described above).
+      </fr:li>
+      <fr:li><fr:tex>\alpha \colon  S' \to  S</fr:tex> is a strict epimorphism (cf. <fr:ref
+addr="fga3.i-a.2.c"
+href="fga3.i-a.2.c.xml"
+number="A.2.c"></fr:ref>).
+      </fr:li></fr:ol></fr:p><fr:p>
+    Now suppose that <fr:tex>S= \operatorname {Spec} (A)</fr:tex> and <fr:tex>S'= \operatorname {Spec} (A')</fr:tex>;
+    then
+    <fr:tex
+display="block">       C^n(S'/S, \operatorname {G_a} )       = C^n(A'/A, \operatorname {G_a} )       =  \underbrace {A' \otimes _A A' \otimes _A \ldots \otimes _A A'}_{n+1 \text { copies of }A'}     </fr:tex>
+    with the coboundary operator <fr:tex>C^n(A'/A, \operatorname {G_a} ) \to  C^{n+1}(A'/A, \operatorname {G_a} )</fr:tex> being the alternating sum of the face operators
+    <fr:tex
+display="block">        \partial _i(x_0 \otimes  x_1 \otimes \ldots \otimes  x_n)       = x_0 \otimes \ldots \otimes  x_{i-1} \otimes1 _{A'} \otimes  x_i \otimes \ldots \otimes  x_n.     </fr:tex>
+    Similarly, <fr:tex>C^n(S'/S, \operatorname {G_m} )=C^n(A'/A, \operatorname {G_m} )</fr:tex> can be identified with <fr:tex>( \bigotimes _A^{n+1}A')^ \times</fr:tex>, with the simplicial operations for <fr:tex>C^ \bullet (A'/A, \operatorname {G_m} )</fr:tex> being induced by those in <fr:tex>C^ \bullet (S'/S, \operatorname {G_a} )</fr:tex>.
+    We can write down the simplicial operations for <fr:tex>C^ \bullet (A'/A, \operatorname {GL} (n))</fr:tex> in the same explicit manner.
+    <fr:em>In all the cases known to the speaker, <fr:tex>\operatorname {H} ^i(A'/A, \operatorname {G_a} )=0</fr:tex> for <fr:tex>i&gt;0</fr:tex>, and, if <fr:tex>A</fr:tex> is local, then <fr:tex>\operatorname {H} ^1(A'/A, \operatorname {G_m} )=0</fr:tex>, and, more generally, <fr:tex>\operatorname {H} ^1(A'/A, \operatorname {GL} (n))=(e)</fr:tex></fr:em> (if <fr:tex>S' \to  S</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphisms, i.e. if the diagram <fr:tex>A \to  A' \rightrightarrows  A' \otimes _A A'</fr:tex> is exact, then compare this with <fr:ref
+addr="fga3.i-a.2.c"
+href="fga3.i-a.2.c.xml"
+number="A.2.c"></fr:ref>).
+    
+    We note that <fr:em>Hilbert's "Theorem 90" is exactly the fact that <fr:tex>\operatorname {H} ^1(S'/S, \operatorname {G_m} )=0</fr:tex> if <fr:tex>A</fr:tex> is a field and <fr:tex>A'</fr:tex> is a finite Galois extension of <fr:tex>A</fr:tex></fr:em> (cf. <fr:ref
+addr="fga3.i-a.4-example-1"
+href="fga3.i-a.4-example-1.xml"
+taxon="Example"
+number="1"></fr:ref>), <fr:em>and we can also express it by saying that, in the case in question, <fr:tex>S' \to  S</fr:tex> is a strict descent morphisms for the fibred category of locally free sheaves of rank <fr:tex>1</fr:tex></fr:em>.
+    This latter statement is the one that is most suitable to generalise Hilbert's theorem, by varying the hypotheses both on the morphism <fr:tex>S' \to  S</fr:tex> and on the quasi-coherent sheaves in question.
+  </fr:p><fr:p>
+    Finally, we note that, for a local <fr:em>Artinian</fr:em> <fr:tex>A</fr:tex> with maximal ideal <fr:tex>\mathfrak {m}</fr:tex>, and an <fr:tex>A</fr:tex>-algebra <fr:tex>A'</fr:tex> (where we denote, for any integer <fr:tex>k&gt;0</fr:tex>, the ring <fr:tex>A/ \mathfrak {m}^{k+1}</fr:tex> (resp. <fr:tex>A'/ \mathfrak {m}^{k+1}A'</fr:tex>) by <fr:tex>A_k</fr:tex> (resp. <fr:tex>A'_k</fr:tex>)), the following properties are equivalent:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>\operatorname {H} ^1(A'_k/A_k, \operatorname {G_a} )=0</fr:tex> for all <fr:tex>k</fr:tex>.
+      </fr:li>
+      <fr:li><fr:tex>\operatorname {H} ^1(A'_k/A_k, \operatorname {G_m} )=0</fr:tex> for all <fr:tex>k</fr:tex>.
+      </fr:li>
+      <fr:li><fr:tex>\operatorname {H} ^1(A'_k/A_k, \operatorname {GL} (n))=(e)</fr:tex> for all <fr:tex>k</fr:tex> and all <fr:tex>n</fr:tex>.
+      </fr:li></fr:ol>
+
+    If <fr:tex>S' \to  S</fr:tex> is a strict epimorphism, then the above conditions imply that it is a <fr:em>strict</fr:em> descent morphism for free modules (not necessarily of finite type) over <fr:tex>A'</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>480</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.4.e-remark</fr:addr><fr:route>fga3.i-a.4.e-remark.xml</fr:route><fr:parent>fga3.i-a.4.e</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The definition of the groups <fr:tex>\operatorname {H} ^i(S'/S, \operatorname {G_m} )</fr:tex> in the case where <fr:tex>S</fr:tex> (resp. <fr:tex>S'</fr:tex>) is a scheme over the field <fr:tex>A</fr:tex> (resp. <fr:tex>A'</fr:tex>) is due to Amitsur.
+    The group <fr:tex>\operatorname {H} ^2(S'/S, \operatorname {G_m} )</fr:tex> is particularly interesting as a "global" variant of the Brauer group, for which we can refer to [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, VII].
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1445</fr:anchor><fr:addr>fga3.i-a.4</fr:addr><fr:route>fga3.i-a.4.xml</fr:route><fr:title><fr:link
+href="fga3.i-a.xml"
+type="local"
+addr="fga3.i-a"><fr:link
+href="fga3.i.xml"
+type="local"
+addr="fga3.i">Generalities, and descent by faithfully flat morphisms</fr:link> › Preliminaries on categories</fr:link> › Relations to 1-cohomology</fr:title><fr:number>A.4</fr:number><fr:parent>fga3.i-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>473</fr:anchor><fr:addr>fga3.i-a.4.a</fr:addr><fr:route>fga3.i-a.4.a.xml</fr:route><fr:number>A.4.a</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal {C}</fr:tex> be a category such that the product of any two objects always exists, and let <fr:tex>T \in \mathcal {C}</fr:tex>.
+  For every finite set <fr:tex>I \neq \varnothing</fr:tex>, we can consider <fr:tex>T^I</fr:tex>, and so we obtain a covariant functor from the category of non-empty finite sets to the category <fr:tex>\mathcal {C}</fr:tex>, i.e. what we can call a <fr:em>simplicial object</fr:em> of <fr:tex>\mathcal {C}</fr:tex>, denoted by <fr:tex>K_T</fr:tex>.
+  This object depends covariantly on <fr:tex>T</fr:tex>;
+  also, <fr:em>if <fr:tex>u</fr:tex> and <fr:tex>v</fr:tex> are morphisms <fr:tex>T \to  T'</fr:tex>, then the corresponding morphisms <fr:tex>K_T \to  K_{T}</fr:tex> are homotopic</fr:em>.
+  We say that <fr:tex>T</fr:tex> <fr:em>dominates</fr:em> <fr:tex>T'</fr:tex> if <fr:tex>\operatorname {Hom} (T,T') \neq \varnothing</fr:tex>, and this gives an (upward) directed preorder on <fr:tex>\mathcal {C}</fr:tex>.
+  It follows from the above that, if <fr:tex>T</fr:tex> dominates <fr:tex>T'</fr:tex>, then there exists a canonical class (up to homotopy) of homomorphisms of simplicial objects <fr:tex>K_T \to  K_{T'}</fr:tex>;
+  in particular, if <fr:tex>K_T</fr:tex> and <fr:tex>K_{T'}</fr:tex> are such that <fr:tex>T</fr:tex> and <fr:tex>T'</fr:tex> dominate one another, then <fr:tex>K_T</fr:tex> and <fr:tex>K_{T'}</fr:tex> are homotopically equivalent.
+  Now let <fr:tex>F</fr:tex> be a (contravariant, to be clear) functor from <fr:tex>\mathcal {C}</fr:tex> to an <fr:em>abelian</fr:em> category <fr:tex>\mathcal {C}'</fr:tex>.
+  Then
+  <fr:tex
+display="block">     C^ \bullet (T,F) = F(K_T)   </fr:tex>
+  is a cosimplicial object of <fr:tex>\mathcal {C}'</fr:tex>, and thus defines, in a well-known way, a (cochain) complex in <fr:tex>\mathcal {C}'</fr:tex>, of which we can take the cohomology:
+  <fr:tex
+display="block">      \operatorname {H} ^ \bullet (T,F)     =  \operatorname {H} ^ \bullet (C^ \bullet (T,F))     =  \operatorname {H} ^ \bullet (F(K_T))   </fr:tex>
+  (we may write a subscript "<fr:tex>\mathcal {C}</fr:tex>" on the <fr:tex>\operatorname {H} ^ \bullet</fr:tex> if there is any possibility for confusion).
+  This is a cohomological functor in <fr:tex>F</fr:tex>, of which the variance for <fr:tex>T</fr:tex> varying follows from what has already been said about the <fr:tex>K_T</fr:tex>;
+  more precisely, for fixed <fr:tex>F</fr:tex> and varying <fr:tex>T</fr:tex> in <fr:tex>\mathcal {C}</fr:tex> (preordered by the domination relation), the <fr:tex>\operatorname {H} ^ \bullet (T,F)</fr:tex> form an inductive system of graded objects of <fr:tex>\mathcal {C}'</fr:tex>;
+  in particular, if <fr:tex>T</fr:tex> and <fr:tex>T'</fr:tex> are such that each one dominates the other, then <fr:tex>\operatorname {H} ^ \bullet (T,F)</fr:tex> and <fr:tex>\operatorname {H} ^ \bullet (T',F)</fr:tex> are canonically isomorphic.
+</fr:p><fr:p>
+  Suppose that <fr:tex>\mathcal {C}</fr:tex> has all fibre products.
+  Then we can, for fixed <fr:tex>S \in \mathcal {C}</fr:tex>, apply the above to the category <fr:tex>\mathcal {C}_S</fr:tex> of objects of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>S</fr:tex>;
+  we then write <fr:tex>C^ \bullet (T/S,F)</fr:tex> and <fr:tex>\operatorname {H} ^ \bullet (T/S,F)</fr:tex> instead of <fr:tex>C^ \bullet (T,F)</fr:tex> and <fr:tex>\operatorname {H} ^ \bullet (T,F)</fr:tex> if we wish to make clear that we are working in the category <fr:tex>\mathcal {C}_S</fr:tex>;
+  
+  then <fr:tex>C^ \bullet (T/S,F)</fr:tex> is a cochain complex in <fr:tex>\mathcal {C}'</fr:tex> that, in degree <fr:tex>n</fr:tex>, is equal to <fr:tex>F(T \times _S T \times _S \ldots \times _S T)</fr:tex> (where there are <fr:tex>n+1</fr:tex> factors <fr:tex>T</fr:tex>).
+</fr:p><fr:p>
+  Note that, as per usual, we can define <fr:tex>\operatorname {H} ^0(T/S,F)</fr:tex> without assuming the category <fr:tex>\mathcal {C}'</fr:tex> to be abelian:
+  it is the kernel (<fr:ref
+addr="fga3.i-a.2-definition-2.1"
+href="fga3.i-a.2-definition-2.1.xml"
+taxon="Definition"
+number="2.1"></fr:ref>), if it exists, of the pair <fr:tex>(F(p_1),F(p_2))</fr:tex> of morphisms
+  <fr:tex
+display="block">     F(T)  \to  F(T \times _S T)   </fr:tex>
+  corresponding to the two projections <fr:tex>p_1,p_2 \colon  T \times _S T \to  T</fr:tex>.
+  In particular, we then have the natural morphism (called the <fr:em>augmentation</fr:em>)
+  <fr:tex
+display="block">     F(S)  \to   \operatorname {H} ^0(T/S,F)   </fr:tex>
+  which is an isomorphism in nice cases (in particular, in the case where <fr:tex>T \to  S</fr:tex> is a strict epimorphism and <fr:tex>F</fr:tex> is "left exact").
+  Similarly, if <fr:tex>F</fr:tex> takes values in the category of groups in a category <fr:tex>\mathcal {C}''</fr:tex>, then we can also define <fr:tex>\operatorname {H} ^1(T/S,F)</fr:tex>;
+  in the case where <fr:tex>\mathcal {C}''</fr:tex> is the category of sets (i.e. when <fr:tex>F</fr:tex> takes values in the category of non-necessarily-commutative groups), <fr:tex>\operatorname {H} ^1(T,F)</fr:tex> is the quotient of the subgroup <fr:tex>Z^1(T/S,F)</fr:tex> of <fr:tex>C^1(T/S,F) = F(T \times _S T)</fr:tex> consisting of the <fr:tex>g</fr:tex> such that
+  <fr:tex
+display="block">     F(p_{31})(g)     = F(p_{32})(g) F(p_{21})(g)   </fr:tex>
+  by the group with operators <fr:tex>F(T)</fr:tex> acting on <fr:tex>C^1(T/S,F)</fr:tex>, and thus, in particular, on the subset <fr:tex>Z^1(T/S,F)</fr:tex>, by
+  <fr:tex
+display="block">      \rho (g') \cdot  g     = F(p_2)(g') g F(p_1)(g')^{-1}.   </fr:tex></fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>474</fr:anchor><fr:addr>fga3.i-a.4.b</fr:addr><fr:route>fga3.i-a.4.b.xml</fr:route><fr:number>A.4.b</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  For example, let <fr:tex>\mathcal {F}</fr:tex> be a fibred category with base <fr:tex>\mathcal {C}</fr:tex>.
+  Let <fr:tex>\xi , \eta \in \mathcal {F}_S</fr:tex>, and, for all <fr:tex>S'</fr:tex> over <fr:tex>S</fr:tex>, let
+  <fr:tex
+display="block">     F_{ \xi , \eta }(S')     =  \operatorname {Hom} ( \xi \times _S S',  \eta \times _S S').   </fr:tex>
+  Then <fr:tex>F_{ \xi , \eta }</fr:tex> is a contravariant functor from <fr:tex>\mathcal {C}_S</fr:tex> to the category of sets.
+  With this setup, <fr:em>saying that the augmentation morphism</fr:em>
+  <fr:tex
+display="block">     F_{ \xi , \eta }(S)  \to   \operatorname {H} ^0(S'/S,F_{ \xi , \eta })   </fr:tex>
+  <fr:em>is an isomorphism for every pair of elements <fr:tex>\xi , \eta \in \mathcal {F}_S</fr:tex> implies that <fr:tex>\alpha \colon  S' \to  S</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism</fr:em> (<fr:ref
+addr="fga3.i-a.1-definition-1.7"
+href="fga3.i-a.1-definition-1.7.xml"
+taxon="Definition"
+number="1.7"></fr:ref>).
+</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>476</fr:anchor><fr:addr>fga3.i-a.4.c</fr:addr><fr:route>fga3.i-a.4.c.xml</fr:route><fr:number>A.4.c</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Similarly, for <fr:tex>\xi \in \mathcal {F}_S</fr:tex> and any object <fr:tex>S'</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> over
+  <fr:tex
+display="block">     G_ \xi (S')     =  \operatorname {Aut} ( \xi \times _S S'),   </fr:tex>
+  we thus define a contravariant functor <fr:tex>G_ \xi</fr:tex> from <fr:tex>\mathcal {C}_S</fr:tex> to the category of groups.
+  
+  With this setup, we claim that <fr:em><fr:tex>Z^1(S'/S,G)</fr:tex> is canonically identified with the set of descent data on <fr:tex>\xi '= \xi \times _S S'</fr:tex> with respect to <fr:tex>S' \to  S</fr:tex></fr:em> (<fr:ref
+addr="fga3.i-a.1-definition-1.6"
+href="fga3.i-a.1-definition-1.6.xml"
+taxon="Definition"
+number="1.6"></fr:ref>), and that <fr:em><fr:tex>\operatorname {H} ^1(S'/S,G)</fr:tex> can be identified with the set of isomorphism classes of objects of <fr:tex>\mathcal {F}_{S'}</fr:tex> endowed with a descent data relative to <fr:tex>\alpha \colon  S' \to  S</fr:tex> that are isomorphic, as objects of <fr:tex>\mathcal {F}_{S'}</fr:tex>, to <fr:tex>\xi '= \xi \times _S S'</fr:tex></fr:em>.
+  Then, _if <fr:tex>\alpha \colon  S' \to  S</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism_ (cf. <fr:ref
+addr="fga3.i-a.4.b"
+href="fga3.i-a.4.b.xml"
+number="A.4.b"></fr:ref>), _then <fr:tex>\operatorname {H} ^1(S'/S,G)</fr:tex> contains as a subset the set of isomorphism classes of objects <fr:tex>\eta</fr:tex> of <fr:tex>\mathcal {F}_S</fr:tex> such that <fr:tex>\eta \times _S S'</fr:tex> is isomorphic (in <fr:tex>\mathcal {F}_{S'}</fr:tex>) to <fr:tex>\xi \times _S S'</fr:tex>_;
+  further, <fr:em>this inclusion is the identity if and only if every descent data on <fr:tex>\xi '= \xi \times _S S'</fr:tex> with respect to <fr:tex>\alpha \colon  S' \to  S</fr:tex> is effective</fr:em>.
+  (This will be the case, in particular, if <fr:tex>\alpha \colon  S' \to  S</fr:tex> is a strict <fr:tex>S</fr:tex>-descent morphism).
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>475</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.4.c-remark</fr:addr><fr:route>fga3.i-a.4.c-remark.xml</fr:route><fr:parent>fga3.i-a.4.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The cochain complexes of the form <fr:tex>C^ \bullet (T/S,F)</fr:tex> contain, as particular cases, the majority of standard known complexes (that of Čech cohomology, of group cohomology, etc.), and play an important role in algebraic geometry (notably in the "Weil cohomology" of preschemes).
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>478</fr:anchor><fr:addr>fga3.i-a.4.d</fr:addr><fr:route>fga3.i-a.4.d.xml</fr:route><fr:number>A.4.d</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>477</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.4-example-1</fr:addr><fr:route>fga3.i-a.4-example-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.i-a.4.d</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>S'</fr:tex> be an object over <fr:tex>S \in \mathcal {C}</fr:tex>, and let <fr:tex>\Gamma</fr:tex> be a group of automorphisms of <fr:tex>S'</fr:tex> such that <fr:tex>S'</fr:tex> is "formally <fr:tex>\Gamma</fr:tex>-principal over <fr:tex>S</fr:tex>", i.e. such that the natural morphism
+    <fr:tex
+display="block">        \Gamma \times  S'  \to  S' \times _S S'     </fr:tex>
+    (where <fr:tex>\Gamma \times  S'</fr:tex> denotes the direct sum of <fr:tex>\Gamma</fr:tex> copies of <fr:tex>S'</fr:tex>) is an isomorphism.
+    (We suppose that all the necessary direct sums exist in <fr:tex>\mathcal {C}</fr:tex>).
+    Let <fr:tex>F</fr:tex> be a contravariant functor from <fr:tex>\mathcal {C}</fr:tex> to the category of abelian groups.
+    Then <fr:em><fr:tex>C^ \bullet (S'/S,F)</fr:tex> is canonically isomorphic to the simplicial group <fr:tex>C^ \bullet ( \Gamma ,F(S'))</fr:tex> of standard homogeneous cochains, and so <fr:tex>\operatorname {H} ^ \bullet (S'/S,F)</fr:tex> is canonically isomorphic to <fr:tex>\operatorname {H} ^ \bullet ( \Gamma ,F(S'))</fr:tex></fr:em>.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>481</fr:anchor><fr:addr>fga3.i-a.4.e</fr:addr><fr:route>fga3.i-a.4.e.xml</fr:route><fr:number>A.4.e</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>479</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.4-example-2</fr:addr><fr:route>fga3.i-a.4-example-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga3.i-a.4.e</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathcal {C}</fr:tex> be the category of preschemes.
+    We denote by <fr:tex>\operatorname {G_a}</fr:tex> (for "additive group") the contravariant functor from <fr:tex>\mathcal {C}</fr:tex> to the category of abelian groups, defined by
+    <fr:tex
+display="block">        \operatorname {G_a} (X)       =  \operatorname {H} ^0(X, \mathscr { O } _X).     </fr:tex>
+    We similarly define the functor <fr:tex>\operatorname {G_m}</fr:tex> (for "multiplicative group") by
+    <fr:tex
+display="block">        \operatorname {G_m} (X)       =  \operatorname {H} ^0(X, \mathscr { O } _X)^ \times      </fr:tex>
+    
+    (i.e. the group of invertible elements of the ring <fr:tex>\operatorname {H} ^0(X, \mathscr { O } _X)</fr:tex>), and, more generally, the functor <fr:tex>\operatorname {GL} (n)</fr:tex> (for "linear group of order <fr:tex>n</fr:tex>") by
+    <fr:tex
+display="block">        \operatorname {GL} (n)(X)       =  \operatorname {GL} (n, \operatorname {H} ^0(X, \mathscr { O } _X)),     </fr:tex>
+    which is a functor from <fr:tex>\mathcal {C}</fr:tex> to the category of (not-necessary-commutative, if <fr:tex>n&gt;1</fr:tex>) groups;
+    for <fr:tex>n=1</fr:tex> we recover <fr:tex>\operatorname {G_m}</fr:tex>.
+    We can also think of <fr:tex>\operatorname {GL} (n)</fr:tex> as an automorphism functor (cf. <fr:ref
+addr="fga3.i-a.4.c"
+href="fga3.i-a.4.c.xml"
+number="A.4.c"></fr:ref>) by considering the fibred category <fr:tex>\mathcal {F}</fr:tex> with base <fr:tex>\mathcal {C}</fr:tex> such that <fr:tex>\mathcal {F}_X</fr:tex> is the category of locally free sheaves on <fr:tex>X</fr:tex>, for <fr:tex>X \in \mathcal {C}</fr:tex>, since then <fr:tex>\operatorname {GL} (n)(X)= \operatorname {Aut} _{ \mathcal {F}_X}( \mathscr { O } _X^n)</fr:tex>.
+    By <fr:ref
+addr="fga3.i-a.4.b"
+href="fga3.i-a.4.b.xml"
+number="A.4.b"></fr:ref>, it follows that, if <fr:tex>\alpha \colon  S' \to  S</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism (cf. <fr:ref
+addr="fga3.i-a.2.c"
+href="fga3.i-a.2.c.xml"
+number="A.2.c"></fr:ref>), then <fr:tex>\operatorname {H} ^1(S'/S, \operatorname {GL} (n))</fr:tex> contains the set of isomorphism classes of locally free sheaves on <fr:tex>S</fr:tex> whose inverse image on <fr:tex>S'</fr:tex> is isomorphic to <fr:tex>\mathscr { O } _{S'}^n</fr:tex>, and this inclusion is an equality if and only if every descent data on <fr:tex>\mathscr { O } _{S'}^n</fr:tex> (with respect to <fr:tex>\alpha \colon  S' \to  S</fr:tex>) is effective.
+    If <fr:tex>S</fr:tex> is the spectrum of a local ring, then this implies that <fr:tex>\operatorname {H} ^1(S'/S, \operatorname {GL} (n))=(e)</fr:tex>, since every locally free sheaf on <fr:tex>S</fr:tex> is then trivial.
+  </fr:p><fr:p>
+    We note that the following conditions concerning a morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> are equivalent:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+    <fr:ol><fr:li>
+        The augmentation homomorphism <fr:tex>\operatorname {H} ^0(S, \mathscr { O } _S) =  \operatorname {G_a} (S) \to \operatorname {H} ^0(S'/S, \operatorname {G_a} )</fr:tex> is an isomorphism.
+      </fr:li>
+      <fr:li><fr:tex>\alpha \colon  S' \to  S</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism (where <fr:tex>\mathcal {F}</fr:tex> is the fibred category over <fr:tex>\mathcal {C}</fr:tex> described above).
+      </fr:li>
+      <fr:li><fr:tex>\alpha \colon  S' \to  S</fr:tex> is a strict epimorphism (cf. <fr:ref
+addr="fga3.i-a.2.c"
+href="fga3.i-a.2.c.xml"
+number="A.2.c"></fr:ref>).
+      </fr:li></fr:ol></fr:p><fr:p>
+    Now suppose that <fr:tex>S= \operatorname {Spec} (A)</fr:tex> and <fr:tex>S'= \operatorname {Spec} (A')</fr:tex>;
+    then
+    <fr:tex
+display="block">       C^n(S'/S, \operatorname {G_a} )       = C^n(A'/A, \operatorname {G_a} )       =  \underbrace {A' \otimes _A A' \otimes _A \ldots \otimes _A A'}_{n+1 \text { copies of }A'}     </fr:tex>
+    with the coboundary operator <fr:tex>C^n(A'/A, \operatorname {G_a} ) \to  C^{n+1}(A'/A, \operatorname {G_a} )</fr:tex> being the alternating sum of the face operators
+    <fr:tex
+display="block">        \partial _i(x_0 \otimes  x_1 \otimes \ldots \otimes  x_n)       = x_0 \otimes \ldots \otimes  x_{i-1} \otimes1 _{A'} \otimes  x_i \otimes \ldots \otimes  x_n.     </fr:tex>
+    Similarly, <fr:tex>C^n(S'/S, \operatorname {G_m} )=C^n(A'/A, \operatorname {G_m} )</fr:tex> can be identified with <fr:tex>( \bigotimes _A^{n+1}A')^ \times</fr:tex>, with the simplicial operations for <fr:tex>C^ \bullet (A'/A, \operatorname {G_m} )</fr:tex> being induced by those in <fr:tex>C^ \bullet (S'/S, \operatorname {G_a} )</fr:tex>.
+    We can write down the simplicial operations for <fr:tex>C^ \bullet (A'/A, \operatorname {GL} (n))</fr:tex> in the same explicit manner.
+    <fr:em>In all the cases known to the speaker, <fr:tex>\operatorname {H} ^i(A'/A, \operatorname {G_a} )=0</fr:tex> for <fr:tex>i&gt;0</fr:tex>, and, if <fr:tex>A</fr:tex> is local, then <fr:tex>\operatorname {H} ^1(A'/A, \operatorname {G_m} )=0</fr:tex>, and, more generally, <fr:tex>\operatorname {H} ^1(A'/A, \operatorname {GL} (n))=(e)</fr:tex></fr:em> (if <fr:tex>S' \to  S</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphisms, i.e. if the diagram <fr:tex>A \to  A' \rightrightarrows  A' \otimes _A A'</fr:tex> is exact, then compare this with <fr:ref
+addr="fga3.i-a.2.c"
+href="fga3.i-a.2.c.xml"
+number="A.2.c"></fr:ref>).
+    
+    We note that <fr:em>Hilbert's "Theorem 90" is exactly the fact that <fr:tex>\operatorname {H} ^1(S'/S, \operatorname {G_m} )=0</fr:tex> if <fr:tex>A</fr:tex> is a field and <fr:tex>A'</fr:tex> is a finite Galois extension of <fr:tex>A</fr:tex></fr:em> (cf. <fr:ref
+addr="fga3.i-a.4-example-1"
+href="fga3.i-a.4-example-1.xml"
+taxon="Example"
+number="1"></fr:ref>), <fr:em>and we can also express it by saying that, in the case in question, <fr:tex>S' \to  S</fr:tex> is a strict descent morphisms for the fibred category of locally free sheaves of rank <fr:tex>1</fr:tex></fr:em>.
+    This latter statement is the one that is most suitable to generalise Hilbert's theorem, by varying the hypotheses both on the morphism <fr:tex>S' \to  S</fr:tex> and on the quasi-coherent sheaves in question.
+  </fr:p><fr:p>
+    Finally, we note that, for a local <fr:em>Artinian</fr:em> <fr:tex>A</fr:tex> with maximal ideal <fr:tex>\mathfrak {m}</fr:tex>, and an <fr:tex>A</fr:tex>-algebra <fr:tex>A'</fr:tex> (where we denote, for any integer <fr:tex>k&gt;0</fr:tex>, the ring <fr:tex>A/ \mathfrak {m}^{k+1}</fr:tex> (resp. <fr:tex>A'/ \mathfrak {m}^{k+1}A'</fr:tex>) by <fr:tex>A_k</fr:tex> (resp. <fr:tex>A'_k</fr:tex>)), the following properties are equivalent:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>\operatorname {H} ^1(A'_k/A_k, \operatorname {G_a} )=0</fr:tex> for all <fr:tex>k</fr:tex>.
+      </fr:li>
+      <fr:li><fr:tex>\operatorname {H} ^1(A'_k/A_k, \operatorname {G_m} )=0</fr:tex> for all <fr:tex>k</fr:tex>.
+      </fr:li>
+      <fr:li><fr:tex>\operatorname {H} ^1(A'_k/A_k, \operatorname {GL} (n))=(e)</fr:tex> for all <fr:tex>k</fr:tex> and all <fr:tex>n</fr:tex>.
+      </fr:li></fr:ol>
+
+    If <fr:tex>S' \to  S</fr:tex> is a strict epimorphism, then the above conditions imply that it is a <fr:em>strict</fr:em> descent morphism for free modules (not necessarily of finite type) over <fr:tex>A'</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>480</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.4.e-remark</fr:addr><fr:route>fga3.i-a.4.e-remark.xml</fr:route><fr:parent>fga3.i-a.4.e</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The definition of the groups <fr:tex>\operatorname {H} ^i(S'/S, \operatorname {G_m} )</fr:tex> in the case where <fr:tex>S</fr:tex> (resp. <fr:tex>S'</fr:tex>) is a scheme over the field <fr:tex>A</fr:tex> (resp. <fr:tex>A'</fr:tex>) is due to Amitsur.
+    The group <fr:tex>\operatorname {H} ^2(S'/S, \operatorname {G_m} )</fr:tex> is particularly interesting as a "global" variant of the Brauer group, for which we can refer to [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, VII].
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

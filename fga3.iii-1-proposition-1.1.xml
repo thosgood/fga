@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1638</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iii-1-proposition-1.1</fr:addr><fr:route>fga3.iii-1-proposition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.iii-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    There is a bijective correspondence, respecting the natural orders, between the set of effective equivalence relations <fr:tex>R</fr:tex> on <fr:tex>X</fr:tex> and the set of effective quotients <fr:tex>Y</fr:tex> of <fr:tex>X</fr:tex>, with such an <fr:tex>R</fr:tex> corresponding to the effective quotient <fr:tex>X/R</fr:tex>, and such a <fr:tex>Y</fr:tex> corresponding to the effective equivalence relation defined by the canonical projection <fr:tex>X \to  Y</fr:tex> (which is defined by the fibre product <fr:tex>X \times _Y X</fr:tex> endowed with its two projections).
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1637</fr:anchor><fr:addr>fga3.iii-1</fr:addr><fr:route>fga3.iii-1.xml</fr:route><fr:title><fr:link
+href="fga3.iii.xml"
+type="local"
+addr="fga3.iii">Quotient preschemes</fr:link> › Equivalence relations, effective equivalence relations</fr:title><fr:number>1</fr:number><fr:parent>fga3.iii</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal {C}</fr:tex> be a category, and <fr:tex>X</fr:tex> an object of <fr:tex>\mathcal {C}</fr:tex>.
+  
+  A pair of morphisms
+  <fr:tex
+display="block">     p_1,p_2 \colon  R \rightrightarrows  X,   </fr:tex>
+  is said to be an "<fr:em>equivalence pair</fr:em>" in <fr:tex>\mathcal {C}</fr:tex>, with <fr:em>target</fr:em> <fr:tex>X</fr:tex> and <fr:em>source</fr:em> <fr:tex>R</fr:tex>, if, for every object <fr:tex>T</fr:tex> of <fr:tex>\mathcal {C}</fr:tex>, the corresponding maps
+  <fr:tex
+display="block">     p_1(T),p_2(T) \colon  R(T) \rightrightarrows  X(T)   </fr:tex>
+  (where we set <fr:tex>Y(T)= \operatorname {Hom} (T,Y)</fr:tex> for any object <fr:tex>Y</fr:tex> of <fr:tex>\mathcal {C}</fr:tex>) define a map
+  <fr:tex
+display="block">     R(T) \to  X(T) \times  X(T)   </fr:tex>
+  that induces a bijection from <fr:tex>R(T)</fr:tex> to the graph of an equivalence relation on the set <fr:tex>X(T)</fr:tex>.
+  We introduce an evident equivalence relation on equivalence pairs with target <fr:tex>X</fr:tex>, and call an equivalence class an <fr:em>equivalence <fr:tex>\mathcal {C}</fr:tex>-relation</fr:em> on <fr:tex>X</fr:tex>, or simply an equivalence relation if no confusion may arise.
+</fr:p><fr:p>
+  If <fr:tex>X \times  X</fr:tex> exists, then the data of an equivalence relation on <fr:tex>X</fr:tex> is equivalent to the data of a sub-object <fr:tex>R</fr:tex> of <fr:tex>X \times  X</fr:tex> such that, for every object <fr:tex>T</fr:tex> of <fr:tex>\mathcal {C}</fr:tex>, the subset of <fr:tex>(X \times  X)(T)=X(T) \times  X(T)</fr:tex> that corresponds to <fr:tex>R(T)</fr:tex> is the graph of an equivalence relation on <fr:tex>X(T)</fr:tex>.
+  Denoting the morphisms from <fr:tex>R</fr:tex> to <fr:tex>X</fr:tex> induced by the projections <fr:tex>\mathrm {pr} _1</fr:tex> and <fr:tex>\mathrm {pr} _2</fr:tex> by <fr:tex>p_1</fr:tex> and <fr:tex>p_2</fr:tex> (respectively), the above condition says that <fr:tex>(p_1,p_2)</fr:tex> is an equivalence pair.
+  We can also express the axioms of a set-theoretical equivalence relation for the <fr:tex>R(T)</fr:tex> in the <fr:tex>X(T)</fr:tex> diagrammatically in <fr:tex>\mathcal {C}</fr:tex> (under the assumption that both <fr:tex>X \times  X</fr:tex> and the fibre product <fr:tex>(R,p_2) \times _X(R,p_1)</fr:tex> exist), following the general principle of <fr:link
+href="fga3.ii-a.1.xml"
+type="local"
+addr="fga3.ii-a.1">FGA 3.II, §A.1</fr:link>.
+  We will not need this.
+</fr:p><fr:p>
+  Every time that we have a pair of morphisms <fr:tex>(p_1,p_2)</fr:tex> with the same source <fr:tex>R</fr:tex> and the same target <fr:tex>X</fr:tex>, we can define the <fr:em>cokernel</fr:em> of the pair as an object <fr:tex>Y</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> that represents the contravariant (in <fr:tex>Z</fr:tex>) functor
+  <fr:tex
+display="block">      \operatorname {Hom} _{p_1,p_2}(X,Z)   </fr:tex>
+  which denotes the set of morphisms <fr:tex>u</fr:tex> from <fr:tex>X</fr:tex> to <fr:tex>Z</fr:tex> such that <fr:tex>up_1=up_2</fr:tex>.
+  If <fr:tex>Y</fr:tex> exists, then it is determined up to unique isomorphism.
+  
+  We will denote it by <fr:tex>Y/(p_1,p_2)</fr:tex>, or, by an abuse of notation, <fr:tex>Y/R</fr:tex>, with the latter mostly being used when <fr:tex>(p_1,p_2)</fr:tex> is an equivalence pair: it is then common to identify, in notation, the equivalence relation defined by the pair with the one defined by <fr:tex>R</fr:tex>.
+  Note that, if we consider <fr:tex>Y</fr:tex> as a quotient of <fr:tex>X</fr:tex>, then it depends only on the equivalence relation defined by the pair <fr:tex>(p_1,p_2)</fr:tex></fr:p><fr:p>
+  We now start with a morphism
+  <fr:tex
+display="block">     f \colon  X \to  Y   </fr:tex>
+  which allows us to consider <fr:tex>X</fr:tex> as an "object over <fr:tex>Y</fr:tex>", and we suppose that the fibre product
+  <fr:tex
+display="block">      \mathcal {R}(f)     = X \times _Y X   </fr:tex>
+  exists.
+  Let <fr:tex>p_1</fr:tex> and <fr:tex>p_2</fr:tex> be its projections.
+  Then <fr:tex>(p_1,p_2)</fr:tex> is an equivalence pair, and is said to be <fr:em>associated</fr:em> with the morphism <fr:tex>f</fr:tex>.
+  It thus defines an equivalence relation, which is said to be <fr:em>associated</fr:em> with the morphism <fr:tex>f</fr:tex>.
+</fr:p><fr:p>
+  We say that a pair of morphisms <fr:tex>(p_1,p_2)</fr:tex> with target <fr:tex>X</fr:tex>, and source <fr:tex>R</fr:tex>, is an <fr:em>effective equivalence pair</fr:em> if
+  <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+  <fr:ol><fr:li>
+      the cokernel <fr:tex>Y=X/(p_1,p_2)</fr:tex> exists ;
+    </fr:li>
+    <fr:li>
+      the fibre product <fr:tex>X \times _Y X</fr:tex> exists ; and
+    </fr:li>
+    <fr:li>
+      the morphism <fr:tex>R \to  X \times _Y X</fr:tex> with components <fr:tex>p_1</fr:tex> and <fr:tex>p_2</fr:tex> is an isomorphism.
+    </fr:li></fr:ol>
+
+  Then the pair <fr:tex>(p_1,p_2)</fr:tex> is indeed an equivalence pair.
+  We also say that the equivalence relation that it defines is an <fr:em>effective equivalence relation</fr:em>.
+</fr:p><fr:p>
+  We say that a morphism <fr:tex>f \colon  X \to  Y</fr:tex> is an <fr:em>effective epimorphism</fr:em> if
+  <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+  <fr:ol><fr:li>
+      the fibre product <fr:tex>R=X \times _Y X</fr:tex> exists ;
+    </fr:li>
+    <fr:li>
+      the quotient <fr:tex>X/(p_1,p_2)</fr:tex> exists, where <fr:tex>p_1</fr:tex> and <fr:tex>p_2</fr:tex> are the projections from <fr:tex>R</fr:tex> to <fr:tex>X</fr:tex> ; and
+    </fr:li>
+    <fr:li>
+      the morphism <fr:tex>X/(p_1,p_2) \to  Y</fr:tex> induced by <fr:tex>f</fr:tex> is an isomorphism.
+    </fr:li></fr:ol>
+
+  Then <fr:tex>f</fr:tex> is indeed an epimorphism, and even a strict epimorphism (cf.<fr:link
+href="fga3.i-a.2.c.xml"
+type="local"
+addr="fga3.i-a.2.c">FGA 3.I, §A.2.c</fr:link>), with the converse being true if the fibre product <fr:tex>X \times _Y X</fr:tex> exists.
+  We also say that the quotient object of <fr:tex>X</fr:tex> defined by the epimorphism <fr:tex>f</fr:tex> is an <fr:em>effective quotient</fr:em> of <fr:tex>X</fr:tex>.
+</fr:p><fr:p>
+  The above definitions imply the following "<fr:em>Galois correspondence</fr:em>":
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1399</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iii-1-proposition-1.1</fr:addr><fr:route>fga3.iii-1-proposition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.iii-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    There is a bijective correspondence, respecting the natural orders, between the set of effective equivalence relations <fr:tex>R</fr:tex> on <fr:tex>X</fr:tex> and the set of effective quotients <fr:tex>Y</fr:tex> of <fr:tex>X</fr:tex>, with such an <fr:tex>R</fr:tex> corresponding to the effective quotient <fr:tex>X/R</fr:tex>, and such a <fr:tex>Y</fr:tex> corresponding to the effective equivalence relation defined by the canonical projection <fr:tex>X \to  Y</fr:tex> (which is defined by the fibre product <fr:tex>X \times _Y X</fr:tex> endowed with its two projections).
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In very nice categories (sets, sheaves of sets, etc.), every quotient is effective, and every equivalence relation is effective.
+  This is no longer true in categories such as the category of preschemes over a given prescheme <fr:tex>S</fr:tex>, not even if <fr:tex>S</fr:tex> is the spectrum of field, nor even if we restrict to finite schemes over <fr:tex>S</fr:tex>.
+  The question of effectiveness, and even (in the case of non-finite preschemes over <fr:tex>S</fr:tex>) the question of existence of quotients, more often than not turn out to be delicate.
+</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

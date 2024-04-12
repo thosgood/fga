@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1250</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-5-corollary-1</fr:addr><fr:route>fga2-theorem-5-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For a point <fr:tex>x</fr:tex> of <fr:tex>X</fr:tex> to be isolated in its fibre <fr:tex>f^{-1}(y)</fr:tex>, it is necessary and sufficient that the fibre <fr:tex>(f')^{-1}(y')</fr:tex> (where <fr:tex>y'=f'(x)</fr:tex>) consist of a single point <fr:tex>x</fr:tex>, or that <fr:tex>f'</fr:tex> induce an isomorphism from a neighbourhood of <fr:tex>x</fr:tex> to a neighbourhood of <fr:tex>y'</fr:tex>.
+    The set of these points is an open subset <fr:tex>U</fr:tex>, and <fr:tex>f'</fr:tex> induces an isomorphism from <fr:tex>U</fr:tex> to an open subset of <fr:tex>Y'</fr:tex>.
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1249</fr:anchor><fr:addr>fga2-4</fr:addr><fr:route>fga2-4.xml</fr:route><fr:title><fr:link
+href="fga2.xml"
+type="local"
+addr="fga2">Formal geometry and algebraic geometry</fr:link> › Applications to Zariski’s connection theorem and "main theorem"</fr:title><fr:number>4</fr:number><fr:parent>fga2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism of schemes.
+  Then, by the finiteness theorem (<fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>), <fr:tex>f_*( \mathcal {O} _X)= \underline {A}</fr:tex> is a coherent sheaf on <fr:tex>Y</fr:tex>, and is also a sheaf of commutative algebras, and thus corresponds to a <fr:tex>Y</fr:tex>-scheme <fr:tex>g \colon  Y' \to  Y</fr:tex> that is finite over <fr:tex>Y</fr:tex> (defined by the condition of being affine over <fr:tex>Y</fr:tex>, i.e. the inverse image of an affine open is affine, and <fr:tex>g_*( \mathcal {O} _{Y'})= \underline {A}</fr:tex>).
+  It is immediate that <fr:tex>f</fr:tex> then canonically factors as <fr:tex>f=gf'</fr:tex>, where <fr:tex>f' \colon  X \to  Y'</fr:tex> is a morphism from <fr:tex>X</fr:tex> to <fr:tex>Y</fr:tex> that is now such that <fr:tex>f'_*( \mathcal {O} _X)= \mathcal {O} _{Y'}</fr:tex>.
+  This factorisation of <fr:tex>f</fr:tex> is called the <fr:em>Stein factorisation</fr:em> of <fr:tex>f</fr:tex>.
+  Applying the first comparison theorem (<fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref>) and its <fr:link
+href="fga2-theorem-2-corollary-1.xml"
+type="local"
+addr="fga2-theorem-2-corollary-1">Corollary 1</fr:link> to <fr:tex>f'</fr:tex> and the subset <fr:tex>Y'</fr:tex> consisting of a single point <fr:tex>y'</fr:tex>, we see that <fr:tex>(f')^{-1}(y')=X'</fr:tex> is connected (or, in other words, the formal sections of <fr:tex>X</fr:tex> along <fr:tex>X'</fr:tex> do not form a local ring, but the completion <fr:tex>f'_*( \mathcal {O} _X)_{y'}= \mathcal {O} _{y'}</fr:tex> is local!)
+  We have proven:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-5</fr:addr><fr:route>fga2-theorem-5.xml</fr:route><fr:title>Zariski's "connection theorem"</fr:title><fr:number>5</fr:number><fr:parent>fga2-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism.
+    Then <fr:tex>f</fr:tex> factors uniquely (up to isomorphism) as <fr:tex>f=gf'</fr:tex>, where <fr:tex>g \colon  Y' \to  Y</fr:tex> is finite, and <fr:tex>f' \colon  X \to  Y'</fr:tex> is such that <fr:tex>f'_*( \mathcal {O} _X)= \mathcal {O} _{Y'}</fr:tex> (whence <fr:tex>g_*( \mathcal {O} _{Y'})=f_*( \mathcal {O} _X)</fr:tex>).
+    Also, the fibres of <fr:tex>f'</fr:tex> are connected, i.e. the set of connected components of a fibre <fr:tex>f^{-1}(y)</fr:tex> of <fr:tex>f</fr:tex> is in bijective correspondence with the set of points of <fr:tex>Y'</fr:tex> over <fr:tex>y</fr:tex>, i.e. the set of maximal ideals in <fr:tex>f_*( \mathcal {O} _X)_y</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  From this, we immediately deduce the usual variants of the connection theorem.
+  We state here only the following:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>321</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-5-corollary-1</fr:addr><fr:route>fga2-theorem-5-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For a point <fr:tex>x</fr:tex> of <fr:tex>X</fr:tex> to be isolated in its fibre <fr:tex>f^{-1}(y)</fr:tex>, it is necessary and sufficient that the fibre <fr:tex>(f')^{-1}(y')</fr:tex> (where <fr:tex>y'=f'(x)</fr:tex>) consist of a single point <fr:tex>x</fr:tex>, or that <fr:tex>f'</fr:tex> induce an isomorphism from a neighbourhood of <fr:tex>x</fr:tex> to a neighbourhood of <fr:tex>y'</fr:tex>.
+    The set of these points is an open subset <fr:tex>U</fr:tex>, and <fr:tex>f'</fr:tex> induces an isomorphism from <fr:tex>U</fr:tex> to an open subset of <fr:tex>Y'</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  To show that <fr:tex>f'</fr:tex> is a local isomorphism at <fr:tex>x</fr:tex>, we note that <fr:tex>f'</fr:tex> induces an <fr:em>isomorphism</fr:em> <fr:tex>\mathcal {O} _{y'} \to \mathcal {O} _x</fr:tex>, as we see thanks to <fr:tex>f'( \mathcal {O} _X)= \mathcal {O} _{Y'}</fr:tex>;
+  we also note that the <fr:tex>(f')^{-1}(V)</fr:tex> give a fundamental system of neighbourhoods of <fr:tex>x</fr:tex> when <fr:tex>V</fr:tex> runs over a fundamental system of neighbourhoods of <fr:tex>y'</fr:tex> (since <fr:tex>f'</fr:tex> is a closed map whose fibre at <fr:tex>y'</fr:tex> consists of the single point <fr:tex>x</fr:tex>).
+  We thus immediately deduce the following result, due to Chevalley in the "geometric" case:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>322</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-5-corollary-2</fr:addr><fr:route>fga2-theorem-5-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For <fr:tex>f</fr:tex> to be a finite morphism, it is necessary and sufficient that it be proper with finite fibres.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  If the hypotheses of <fr:ref
+addr="fga2-theorem-5-corollary-2"
+href="fga2-theorem-5-corollary-2.xml"
+taxon="Corollary"
+number="2"></fr:ref> hold, then <fr:tex>f'</fr:tex> is effectively an isomorphism, by the above.
+</fr:p><fr:p>
+  Let <fr:tex>f \colon  X \to  Y</fr:tex> be a morphism that is not necessarily proper, but suppose that <fr:tex>X</fr:tex> is contained in some proper <fr:tex>Y</fr:tex>-scheme <fr:tex>\overline {f} \colon \overline {X} \to  Y</fr:tex> as an open subset (which is the case if, in particular, <fr:tex>\overline {f}</fr:tex> is quasi-projective).
+  Applying <fr:link
+href="fga2-theorem-5-corollary-1.xml"
+type="local"
+addr="fga2-theorem-5-corollary-1">Corollary 1</fr:link>, we see that <fr:tex>\overline {f'}</fr:tex> induces an isomorphism from the set <fr:tex>U</fr:tex> of points of <fr:tex>X</fr:tex> that are isolated in their fibre to an open subset of <fr:tex>Y'</fr:tex> (and that <fr:tex>U</fr:tex> is indeed an open subset).
+  We thus deduce the following global version of Zariski's "main theorem":
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-6</fr:addr><fr:route>fga2-theorem-6.xml</fr:route><fr:number>6</fr:number><fr:parent>fga2-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a morphism of finite type.
+    Then the set <fr:tex>U</fr:tex> of points of <fr:tex>X</fr:tex> that are isolated in their fibre is open, and, if <fr:tex>f</fr:tex> is quasi-projective,
+    (<fr:em>[Comp.]</fr:em> This hypothesis can be replaced by the weaker hypothesis "if <fr:tex>f</fr:tex> is separated", by means of the following result (see [<fr:link
+href="Gro1960b.xml"
+type="local"
+addr="Gro1960b">Gro1960b</fr:link>, VIII, 6.2]): every morphism <fr:tex>f \colon  X \to  Y</fr:tex> which is quasi-finite and separated is also projective.)
+    then <fr:tex>U</fr:tex> is <fr:tex>Y</fr:tex>-isomorphic to an open subset of some scheme <fr:tex>Y'</fr:tex> that is finite over <fr:tex>Y</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Since a morphism of finite type is locally affine, and <fr:em>a fortiori</fr:em> locally quasi-projective, we immediately deduce from <fr:ref
+addr="fga2-theorem-6"
+href="fga2-theorem-6.xml"
+taxon="Theorem"
+number="6"></fr:ref> the usual local variants of the main theorem.
+</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1248</fr:anchor><fr:addr>fga2-4</fr:addr><fr:route>fga2-4.xml</fr:route><fr:title><fr:link
+href="fga2.xml"
+type="local"
+addr="fga2">Formal geometry and algebraic geometry</fr:link> › Applications to Zariski’s connection theorem and "main theorem"</fr:title><fr:number>4</fr:number><fr:parent>fga2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism of schemes.
+  Then, by the finiteness theorem (<fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>), <fr:tex>f_*( \mathcal {O} _X)= \underline {A}</fr:tex> is a coherent sheaf on <fr:tex>Y</fr:tex>, and is also a sheaf of commutative algebras, and thus corresponds to a <fr:tex>Y</fr:tex>-scheme <fr:tex>g \colon  Y' \to  Y</fr:tex> that is finite over <fr:tex>Y</fr:tex> (defined by the condition of being affine over <fr:tex>Y</fr:tex>, i.e. the inverse image of an affine open is affine, and <fr:tex>g_*( \mathcal {O} _{Y'})= \underline {A}</fr:tex>).
+  It is immediate that <fr:tex>f</fr:tex> then canonically factors as <fr:tex>f=gf'</fr:tex>, where <fr:tex>f' \colon  X \to  Y'</fr:tex> is a morphism from <fr:tex>X</fr:tex> to <fr:tex>Y</fr:tex> that is now such that <fr:tex>f'_*( \mathcal {O} _X)= \mathcal {O} _{Y'}</fr:tex>.
+  This factorisation of <fr:tex>f</fr:tex> is called the <fr:em>Stein factorisation</fr:em> of <fr:tex>f</fr:tex>.
+  Applying the first comparison theorem (<fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref>) and its <fr:link
+href="fga2-theorem-2-corollary-1.xml"
+type="local"
+addr="fga2-theorem-2-corollary-1">Corollary 1</fr:link> to <fr:tex>f'</fr:tex> and the subset <fr:tex>Y'</fr:tex> consisting of a single point <fr:tex>y'</fr:tex>, we see that <fr:tex>(f')^{-1}(y')=X'</fr:tex> is connected (or, in other words, the formal sections of <fr:tex>X</fr:tex> along <fr:tex>X'</fr:tex> do not form a local ring, but the completion <fr:tex>f'_*( \mathcal {O} _X)_{y'}= \mathcal {O} _{y'}</fr:tex> is local!)
+  We have proven:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-5</fr:addr><fr:route>fga2-theorem-5.xml</fr:route><fr:title>Zariski's "connection theorem"</fr:title><fr:number>5</fr:number><fr:parent>fga2-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism.
+    Then <fr:tex>f</fr:tex> factors uniquely (up to isomorphism) as <fr:tex>f=gf'</fr:tex>, where <fr:tex>g \colon  Y' \to  Y</fr:tex> is finite, and <fr:tex>f' \colon  X \to  Y'</fr:tex> is such that <fr:tex>f'_*( \mathcal {O} _X)= \mathcal {O} _{Y'}</fr:tex> (whence <fr:tex>g_*( \mathcal {O} _{Y'})=f_*( \mathcal {O} _X)</fr:tex>).
+    Also, the fibres of <fr:tex>f'</fr:tex> are connected, i.e. the set of connected components of a fibre <fr:tex>f^{-1}(y)</fr:tex> of <fr:tex>f</fr:tex> is in bijective correspondence with the set of points of <fr:tex>Y'</fr:tex> over <fr:tex>y</fr:tex>, i.e. the set of maximal ideals in <fr:tex>f_*( \mathcal {O} _X)_y</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  From this, we immediately deduce the usual variants of the connection theorem.
+  We state here only the following:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>321</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-5-corollary-1</fr:addr><fr:route>fga2-theorem-5-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For a point <fr:tex>x</fr:tex> of <fr:tex>X</fr:tex> to be isolated in its fibre <fr:tex>f^{-1}(y)</fr:tex>, it is necessary and sufficient that the fibre <fr:tex>(f')^{-1}(y')</fr:tex> (where <fr:tex>y'=f'(x)</fr:tex>) consist of a single point <fr:tex>x</fr:tex>, or that <fr:tex>f'</fr:tex> induce an isomorphism from a neighbourhood of <fr:tex>x</fr:tex> to a neighbourhood of <fr:tex>y'</fr:tex>.
+    The set of these points is an open subset <fr:tex>U</fr:tex>, and <fr:tex>f'</fr:tex> induces an isomorphism from <fr:tex>U</fr:tex> to an open subset of <fr:tex>Y'</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  To show that <fr:tex>f'</fr:tex> is a local isomorphism at <fr:tex>x</fr:tex>, we note that <fr:tex>f'</fr:tex> induces an <fr:em>isomorphism</fr:em> <fr:tex>\mathcal {O} _{y'} \to \mathcal {O} _x</fr:tex>, as we see thanks to <fr:tex>f'( \mathcal {O} _X)= \mathcal {O} _{Y'}</fr:tex>;
+  we also note that the <fr:tex>(f')^{-1}(V)</fr:tex> give a fundamental system of neighbourhoods of <fr:tex>x</fr:tex> when <fr:tex>V</fr:tex> runs over a fundamental system of neighbourhoods of <fr:tex>y'</fr:tex> (since <fr:tex>f'</fr:tex> is a closed map whose fibre at <fr:tex>y'</fr:tex> consists of the single point <fr:tex>x</fr:tex>).
+  We thus immediately deduce the following result, due to Chevalley in the "geometric" case:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>322</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-5-corollary-2</fr:addr><fr:route>fga2-theorem-5-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For <fr:tex>f</fr:tex> to be a finite morphism, it is necessary and sufficient that it be proper with finite fibres.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  If the hypotheses of <fr:ref
+addr="fga2-theorem-5-corollary-2"
+href="fga2-theorem-5-corollary-2.xml"
+taxon="Corollary"
+number="2"></fr:ref> hold, then <fr:tex>f'</fr:tex> is effectively an isomorphism, by the above.
+</fr:p><fr:p>
+  Let <fr:tex>f \colon  X \to  Y</fr:tex> be a morphism that is not necessarily proper, but suppose that <fr:tex>X</fr:tex> is contained in some proper <fr:tex>Y</fr:tex>-scheme <fr:tex>\overline {f} \colon \overline {X} \to  Y</fr:tex> as an open subset (which is the case if, in particular, <fr:tex>\overline {f}</fr:tex> is quasi-projective).
+  Applying <fr:link
+href="fga2-theorem-5-corollary-1.xml"
+type="local"
+addr="fga2-theorem-5-corollary-1">Corollary 1</fr:link>, we see that <fr:tex>\overline {f'}</fr:tex> induces an isomorphism from the set <fr:tex>U</fr:tex> of points of <fr:tex>X</fr:tex> that are isolated in their fibre to an open subset of <fr:tex>Y'</fr:tex> (and that <fr:tex>U</fr:tex> is indeed an open subset).
+  We thus deduce the following global version of Zariski's "main theorem":
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-6</fr:addr><fr:route>fga2-theorem-6.xml</fr:route><fr:number>6</fr:number><fr:parent>fga2-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a morphism of finite type.
+    Then the set <fr:tex>U</fr:tex> of points of <fr:tex>X</fr:tex> that are isolated in their fibre is open, and, if <fr:tex>f</fr:tex> is quasi-projective,
+    (<fr:em>[Comp.]</fr:em> This hypothesis can be replaced by the weaker hypothesis "if <fr:tex>f</fr:tex> is separated", by means of the following result (see [<fr:link
+href="Gro1960b.xml"
+type="local"
+addr="Gro1960b">Gro1960b</fr:link>, VIII, 6.2]): every morphism <fr:tex>f \colon  X \to  Y</fr:tex> which is quasi-finite and separated is also projective.)
+    then <fr:tex>U</fr:tex> is <fr:tex>Y</fr:tex>-isomorphic to an open subset of some scheme <fr:tex>Y'</fr:tex> that is finite over <fr:tex>Y</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Since a morphism of finite type is locally affine, and <fr:em>a fortiori</fr:em> locally quasi-projective, we immediately deduce from <fr:ref
+addr="fga2-theorem-6"
+href="fga2-theorem-6.xml"
+taxon="Theorem"
+number="6"></fr:ref> the usual local variants of the main theorem.
+</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

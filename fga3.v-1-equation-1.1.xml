@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1861</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.1</fr:addr><fr:route>fga3.v-1-equation-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Pic} (X)  \xrightarrow { \sim }   \operatorname {H} ^1(X, \mathcal {O} _X^ \times )     \tag{1.1}     </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1860</fr:anchor><fr:addr>fga3.v-1</fr:addr><fr:route>fga3.v-1.xml</fr:route><fr:title><fr:link
+href="fga3.v.xml"
+type="local"
+addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Relative Picard groups and functors</fr:title><fr:number>1</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  For every prescheme (more generally, every ringed space) <fr:tex>X</fr:tex>, we define the (<fr:em>absolute</fr:em>) <fr:em>Picard group</fr:em> of <fr:tex>X</fr:tex>, denoted by <fr:tex>\operatorname {Pic} (X)</fr:tex>, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to <fr:tex>\mathcal {O} _X</fr:tex>) modules on <fr:tex>X</fr:tex>.
+  We thus have a canonical isomorphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>527</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.1</fr:addr><fr:route>fga3.v-1-equation-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Pic} (X)  \xrightarrow { \sim }   \operatorname {H} ^1(X, \mathcal {O} _X^ \times )     \tag{1.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  where <fr:tex>\mathcal {O} _X^ \times</fr:tex> denotes the sheaf of units of <fr:tex>\mathcal {O} _X</fr:tex> (which can be identified with the sheaf of automorphisms of the invertible module <fr:tex>\mathcal {O} _X</fr:tex>).
+  Note that <fr:tex>X \mapsto \operatorname {Pic} (X)</fr:tex> is a contravariant functor in <fr:tex>X</fr:tex> in the evident way, and that the isomorphism <fr:ref
+addr="fga3.v-1-equation-1.1"
+href="fga3.v-1-equation-1.1.xml"
+taxon="Equation"
+number="1.1"></fr:ref> is functorial.
+</fr:p><fr:p>
+  If <fr:tex>X</fr:tex> is a prescheme over a prescheme <fr:tex>S</fr:tex>, then, for variable <fr:tex>S'</fr:tex> in the category <fr:tex>\mathtt {Sch} _{/S}</fr:tex> of preschemes over <fr:tex>S</fr:tex>, we have a contravariant functor <fr:tex>S' \mapsto \operatorname {Pic} (X \times _S S')</fr:tex> thanks to the above.
+  This functor has no chance of being "representable" (<fr:link
+href="fga3.ii-a.1.xml"
+type="local"
+addr="fga3.ii-a.1">FGA 3.II, §A</fr:link>) since, as a consequence of the existence of <fr:em>non-trivial automorphisms</fr:em> of invertible modules that we propose to classify, this functor is not of a "<fr:em>local nature</fr:em>" ([<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, IV, 5.4]).
+  There is thus an opportunity to "make it local", by introducing, for every relative prescheme <fr:tex>X/S</fr:tex>, a group of a relative nature
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>528</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.2</fr:addr><fr:route>fga3.v-1-equation-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Pic} '(X/S)       =  \operatorname {H} ^0(S, \operatorname {R} ^1f_*( \mathcal {O} _X^ \times ))     \tag{1.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  (where <fr:tex>f \colon  X \to  S</fr:tex> is the structure morphism) (cf. <fr:link
+href="fga3.ii-c.3.xml"
+type="local"
+addr="fga3.ii-c.3">FGA 3.II, §C.3</fr:link>).
+  In <fr:em>loc. cit.</fr:em> this group is called the relative Picard group, but it will be preferable to call it here the <fr:em>restricted relative Picard group</fr:em> of <fr:tex>X/S</fr:tex>, for reasons that will be made clear.
+  As <fr:tex>S'</fr:tex> varies over <fr:tex>\mathtt {Sch} _{/S}</fr:tex>, <fr:tex>S' \mapsto \operatorname {Pic} '(X \times _S S'/S')</fr:tex> is a contravariant functor in <fr:tex>S'</fr:tex>, denote also by <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}</fr:tex>, thus given essentially by the formula
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>529</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.3</fr:addr><fr:route>fga3.v-1-equation-1.3.xml</fr:route><fr:number>1.3</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}(S')       =  \operatorname {Pic} (X \times _S S'/S').     \tag{1.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  
+  This functor is now "of local nature", given that did what was necessary to make this happen.
+  Intuitively, the right-hand side of <fr:ref
+addr="fga3.v-1-equation-1.3"
+href="fga3.v-1-equation-1.3.xml"
+taxon="Equation"
+number="1.3"></fr:ref> can be understood as the set of "algebraic families" of classes of invertible sheaves on (the fibres of) <fr:tex>X/S</fr:tex>, indexed by the parameter prescheme <fr:tex>S'/S</fr:tex>.
+  When the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '</fr:tex> is representable, the prescheme over <fr:tex>S</fr:tex> that represents it is denoted by <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, and is called the <fr:em>Picard prescheme</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and so we then have
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>530</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.4</fr:addr><fr:route>fga3.v-1-equation-1.4.xml</fr:route><fr:number>1.4</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Hom} _S(S', \underline { \operatorname {Pic} } _{X/S})        \cong   \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}(S')       =  \operatorname {Pic} '(X \times _S S'/S').     \tag{1.4}     </fr:tex></fr:mainmatter></fr:tree>
+
+  There are, however, important cases where <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}</fr:tex> is not representable (example: the "Brauer–Severi" variety over a field <fr:tex>k</fr:tex>, without a rational point over <fr:tex>k</fr:tex>), but where there nevertheless exists a natural definition of a relative Picard prescheme.
+  This is due to the fact that, in the definition of the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '</fr:tex> from the absolute Picard groups <fr:tex>\operatorname {Pic} (X \times _S S'/S')</fr:tex>, we have not localised enough;
+  more precisely, <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '</fr:tex> is not in general "compatible with faithfully flat descent".
+  We now explain the details.
+</fr:p><fr:p>
+  Let <fr:tex>( \mathscr { M } )</fr:tex> be the set of morphisms of preschemes that are <fr:em>faithfully flat and quasi-compact</fr:em>;
+  this set is stable under base change and composition.
+  Let <fr:tex>P</fr:tex> be a contravariant functor from <fr:tex>\mathtt {Sch} _{/S}</fr:tex> to the category of sets, and, for every <fr:tex>S</fr:tex>-morphism <fr:tex>u \colon  T' \to  T</fr:tex> with <fr:tex>u \in ( \mathscr { M } )</fr:tex>, consider the diagram
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>531</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.5</fr:addr><fr:route>fga3.v-1-equation-1.5.xml</fr:route><fr:number>1.5</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       P(T)        \to  P(T')        \rightrightarrows  P(T' \times _T T')     \tag{1.5}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which is given by <fr:tex>P</fr:tex> applied to the diagram
+  <fr:tex
+display="block">     T      \leftarrow  T'      \underset { \mathrm {pr} _2}{ \overset { \mathrm {pr} _1}{ \leftleftarrows }} T' \times _T T'.   </fr:tex>
+  If <fr:tex>P</fr:tex> is representable, it follows from the theory of descent (<fr:link
+href="fga3.i-b.1-theorem-2.xml"
+type="local"
+addr="fga3.i-b.1-theorem-2">FGA 3.I, §B, Theorem 2</fr:link>) that the diagram <fr:ref
+addr="fga3.v-1-equation-1.5"
+href="fga3.v-1-equation-1.5.xml"
+taxon="Equation"
+number="1.5"></fr:ref> is exact for all <fr:tex>u \in ( \mathscr { M } )</fr:tex>.
+  We express this fact by saying that <fr:tex>P</fr:tex> is compatible with <fr:tex>( \mathscr { M } )</fr:tex>, in the event that <fr:tex>P</fr:tex> is "compatible with faithfully flat descent", or that the <fr:em>"presheaf"</fr:em> <fr:tex>P</fr:tex> on <fr:tex>\mathtt {Sch} _{/S}</fr:tex> is a <fr:em>"sheaf"</fr:em> for the notion of localisation given by the set <fr:tex>( \mathscr { M } )</fr:tex>.
+  If <fr:tex>P</fr:tex> is arbitrary, then a standard procedure, well known in the case of usual topological localisation, allows us to associate to it a "sheaf" <fr:tex>\mathscr { P }</fr:tex> and a homomorphism of functors <fr:tex>P \to \mathscr { P }</fr:tex> that is universal in an obvious sense.
+  The construction of <fr:tex>\mathscr { P }</fr:tex> can be made explicit in the following way: to define <fr:tex>\mathscr { P } (T)</fr:tex>, we denote, for all <fr:tex>T'</fr:tex> over <fr:tex>T</fr:tex> such that the morphism <fr:tex>u \colon  T' \to  T</fr:tex> is in <fr:tex>( \mathscr { M } )</fr:tex>, by <fr:tex>\overline { \operatorname {H} }^0(T'/T,P)</fr:tex> the subset of <fr:tex>P(T')</fr:tex> consisting of the elements <fr:tex>\xi</fr:tex> such that their images <fr:tex>\xi _1,x_2</fr:tex> in <fr:tex>P(T' \times _T T')</fr:tex> are such that there exists a morphism <fr:tex>v \colon  T'' \to  T' \times _T T'</fr:tex> in <fr:tex>( \mathscr { M } )</fr:tex> such that <fr:tex>\xi _1</fr:tex> and <fr:tex>\xi _2</fr:tex> have the same image in <fr:tex>P(T'')</fr:tex>.
+</fr:p><fr:p>
+  (N.B. The set <fr:tex>\overline { \operatorname {H} }^0</fr:tex> thus defined is larger than the set <fr:tex>\operatorname {H} ^0(T'/T,P)</fr:tex> introduced in <fr:link
+href="fga3.i-a.4.a.xml"
+type="local"
+addr="fga3.i-a.4.a">FGA 3.I, §A.4.a</fr:link>).
+  As <fr:tex>T'</fr:tex> varies over fixed <fr:tex>T</fr:tex> (always with <fr:tex>u \in ( \mathscr { M } )</fr:tex>), the <fr:tex>\overline { \operatorname {H} }^0(T'/T,P)</fr:tex> form an inductive system (when the set of the <fr:tex>T'</fr:tex> is endowed with a preorder defined by domination), and we set
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>532</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.6</fr:addr><fr:route>fga3.v-1-equation-1.6.xml</fr:route><fr:number>1.6</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr { P } (T)       =  \varinjlim _{T'}  \overline { \operatorname {H} }^0(T'/T,P).     \tag{1.6}     </fr:tex></fr:mainmatter></fr:tree>
+
+  The functoriality in <fr:tex>T</fr:tex> of this expression is evident.
+</fr:p><fr:p>
+  When
+  <fr:tex
+display="block">     P(T)     =  \operatorname {Pic} (X \times _S T)   </fr:tex>
+  the contravariant functor on <fr:tex>\mathtt {Sch} _{/S}</fr:tex> defined by <fr:ref
+addr="fga3.v-1-equation-1.6"
+href="fga3.v-1-equation-1.6.xml"
+taxon="Equation"
+number="1.6"></fr:ref> is called the <fr:em>relative Picard functor</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and denoted by <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex>, and we define the <fr:em>relative Picard group</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, denoted by <fr:tex>\operatorname {Pic} (X/S)</fr:tex>, the group <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}(S)</fr:tex>.
+  We then have an evident bijection
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>533</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.7</fr:addr><fr:route>fga3.v-1-equation-1.7.xml</fr:route><fr:number>1.7</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}(T)        \xrightarrow { \sim }   \operatorname {Pic} (X \times _S T/T).     \tag{1.7}     </fr:tex></fr:mainmatter></fr:tree>
+
+  An element of <fr:tex>\operatorname {Pic} (X/S)</fr:tex> is thus defined by means of an element <fr:tex>\xi '</fr:tex> of a group <fr:tex>\operatorname {Pic} (X \times _S S')</fr:tex> (where <fr:tex>S' \to  S</fr:tex> is faithfully flat and quasi-compact) such that we can find a faithfully flat quasi-compact morphism <fr:tex>S'' \to  S' \times _S S'</fr:tex> such that the two inverse images of <fr:tex>\xi '</fr:tex> in <fr:tex>\operatorname {Pic} (X \times _S S'')</fr:tex> are the same.
+  An element <fr:tex>\xi '</fr:tex> of <fr:tex>\operatorname {Pic} (X \times _S S')</fr:tex> and an element <fr:tex>\xi _1</fr:tex> of <fr:tex>\operatorname {Pic} (X \times _S S_1)</fr:tex> (satisfying the conditions that we have just stated) define the same element of <fr:tex>\operatorname {Pic} (X/S)</fr:tex> if and only if there exists a faithfully flat quasi-compact morphism <fr:tex>S'_1 \to  S' \times _S S_1</fr:tex> such that the images of the two elements in question in <fr:tex>\operatorname {Pic} (X \times _S S'_1)</fr:tex> are equal.
+  It is often convenient to work instead with the functor <fr:tex>P'= \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}</fr:tex> introduced above, and we immediately note that the canonical morphism <fr:tex>P \to  P'</fr:tex> defines an <fr:em>isomorphism</fr:em>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>534</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.8</fr:addr><fr:route>fga3.v-1-equation-1.8.xml</fr:route><fr:number>1.8</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr { P }         \xrightarrow { \sim }   \mathscr { P } '     \tag{1.8}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which gives a description of <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> in terms of <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}=P'</fr:tex> that is usually more convenient.
+  By <fr:ref
+addr="fga3.v-2-corollary-2.3"
+href="fga3.v-2-corollary-2.3.xml"
+taxon="Corollary"
+number="2.3"></fr:ref> below, if we replace <fr:tex>P</fr:tex> by <fr:tex>P'</fr:tex> in the description of <fr:tex>\operatorname {Pic} (X/S)</fr:tex> that we have just given then we can take <fr:tex>S''=S' \times _S S'</fr:tex> and <fr:tex>S'_1=S' \times _S S_1</fr:tex>, at least under the conditions given in <fr:em>loc. cit.</fr:em>.
+</fr:p><fr:p>
+  If the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> is representable, we say that <fr:tex>X/S</fr:tex> admits a Picard prescheme, and the prescheme over <fr:tex>S</fr:tex> that represents the functor is called the <fr:em>Picard prescheme</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and denoted by <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>.
+  For this, it evidently suffices that <fr:tex>P'= \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> be representable, since then <fr:tex>P'</fr:tex> is already a "sheaf", and equation <fr:ref
+addr="fga3.v-1-equation-1.8"
+href="fga3.v-1-equation-1.8.xml"
+taxon="Equation"
+number="1.8"></fr:ref> proves that the morphism <fr:tex>P' \to \mathscr { P } '</fr:tex> can be identified with the canonical morphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>535</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.9</fr:addr><fr:route>fga3.v-1-equation-1.9.xml</fr:route><fr:number>1.9</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}        \to   \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}     \tag{1.9}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which is then an isomorphism.
+  This means that our terminology is compatible with that introduced above with <fr:ref
+addr="fga3.v-1-equation-1.4"
+href="fga3.v-1-equation-1.4.xml"
+taxon="Equation"
+number="1.4"></fr:ref>.
+  In general, when <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists it is defined by the functorial isomorphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>536</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.10</fr:addr><fr:route>fga3.v-1-equation-1.10.xml</fr:route><fr:number>1.10</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Hom} _S(S', \underline { \operatorname {Pic} } _{X/S})        \xrightarrow { \sim }   \operatorname {Pic} (X \times _S S'/S').     \tag{1.10}     </fr:tex></fr:mainmatter></fr:tree></fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1859</fr:anchor><fr:addr>fga3.v-1</fr:addr><fr:route>fga3.v-1.xml</fr:route><fr:title><fr:link
+href="fga3.v.xml"
+type="local"
+addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Relative Picard groups and functors</fr:title><fr:number>1</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  For every prescheme (more generally, every ringed space) <fr:tex>X</fr:tex>, we define the (<fr:em>absolute</fr:em>) <fr:em>Picard group</fr:em> of <fr:tex>X</fr:tex>, denoted by <fr:tex>\operatorname {Pic} (X)</fr:tex>, to be the group of isomorphism classes of invertible (i.e. locally isomorphic to <fr:tex>\mathcal {O} _X</fr:tex>) modules on <fr:tex>X</fr:tex>.
+  We thus have a canonical isomorphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>527</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.1</fr:addr><fr:route>fga3.v-1-equation-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Pic} (X)  \xrightarrow { \sim }   \operatorname {H} ^1(X, \mathcal {O} _X^ \times )     \tag{1.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  where <fr:tex>\mathcal {O} _X^ \times</fr:tex> denotes the sheaf of units of <fr:tex>\mathcal {O} _X</fr:tex> (which can be identified with the sheaf of automorphisms of the invertible module <fr:tex>\mathcal {O} _X</fr:tex>).
+  Note that <fr:tex>X \mapsto \operatorname {Pic} (X)</fr:tex> is a contravariant functor in <fr:tex>X</fr:tex> in the evident way, and that the isomorphism <fr:ref
+addr="fga3.v-1-equation-1.1"
+href="fga3.v-1-equation-1.1.xml"
+taxon="Equation"
+number="1.1"></fr:ref> is functorial.
+</fr:p><fr:p>
+  If <fr:tex>X</fr:tex> is a prescheme over a prescheme <fr:tex>S</fr:tex>, then, for variable <fr:tex>S'</fr:tex> in the category <fr:tex>\mathtt {Sch} _{/S}</fr:tex> of preschemes over <fr:tex>S</fr:tex>, we have a contravariant functor <fr:tex>S' \mapsto \operatorname {Pic} (X \times _S S')</fr:tex> thanks to the above.
+  This functor has no chance of being "representable" (<fr:link
+href="fga3.ii-a.1.xml"
+type="local"
+addr="fga3.ii-a.1">FGA 3.II, §A</fr:link>) since, as a consequence of the existence of <fr:em>non-trivial automorphisms</fr:em> of invertible modules that we propose to classify, this functor is not of a "<fr:em>local nature</fr:em>" ([<fr:link
+href="Gro1960a.xml"
+type="local"
+addr="Gro1960a">Gro1960a</fr:link>, IV, 5.4]).
+  There is thus an opportunity to "make it local", by introducing, for every relative prescheme <fr:tex>X/S</fr:tex>, a group of a relative nature
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>528</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.2</fr:addr><fr:route>fga3.v-1-equation-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Pic} '(X/S)       =  \operatorname {H} ^0(S, \operatorname {R} ^1f_*( \mathcal {O} _X^ \times ))     \tag{1.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  (where <fr:tex>f \colon  X \to  S</fr:tex> is the structure morphism) (cf. <fr:link
+href="fga3.ii-c.3.xml"
+type="local"
+addr="fga3.ii-c.3">FGA 3.II, §C.3</fr:link>).
+  In <fr:em>loc. cit.</fr:em> this group is called the relative Picard group, but it will be preferable to call it here the <fr:em>restricted relative Picard group</fr:em> of <fr:tex>X/S</fr:tex>, for reasons that will be made clear.
+  As <fr:tex>S'</fr:tex> varies over <fr:tex>\mathtt {Sch} _{/S}</fr:tex>, <fr:tex>S' \mapsto \operatorname {Pic} '(X \times _S S'/S')</fr:tex> is a contravariant functor in <fr:tex>S'</fr:tex>, denote also by <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}</fr:tex>, thus given essentially by the formula
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>529</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.3</fr:addr><fr:route>fga3.v-1-equation-1.3.xml</fr:route><fr:number>1.3</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}(S')       =  \operatorname {Pic} (X \times _S S'/S').     \tag{1.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  
+  This functor is now "of local nature", given that did what was necessary to make this happen.
+  Intuitively, the right-hand side of <fr:ref
+addr="fga3.v-1-equation-1.3"
+href="fga3.v-1-equation-1.3.xml"
+taxon="Equation"
+number="1.3"></fr:ref> can be understood as the set of "algebraic families" of classes of invertible sheaves on (the fibres of) <fr:tex>X/S</fr:tex>, indexed by the parameter prescheme <fr:tex>S'/S</fr:tex>.
+  When the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '</fr:tex> is representable, the prescheme over <fr:tex>S</fr:tex> that represents it is denoted by <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, and is called the <fr:em>Picard prescheme</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and so we then have
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>530</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.4</fr:addr><fr:route>fga3.v-1-equation-1.4.xml</fr:route><fr:number>1.4</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Hom} _S(S', \underline { \operatorname {Pic} } _{X/S})        \cong   \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}(S')       =  \operatorname {Pic} '(X \times _S S'/S').     \tag{1.4}     </fr:tex></fr:mainmatter></fr:tree>
+
+  There are, however, important cases where <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}</fr:tex> is not representable (example: the "Brauer–Severi" variety over a field <fr:tex>k</fr:tex>, without a rational point over <fr:tex>k</fr:tex>), but where there nevertheless exists a natural definition of a relative Picard prescheme.
+  This is due to the fact that, in the definition of the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '</fr:tex> from the absolute Picard groups <fr:tex>\operatorname {Pic} (X \times _S S'/S')</fr:tex>, we have not localised enough;
+  more precisely, <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '</fr:tex> is not in general "compatible with faithfully flat descent".
+  We now explain the details.
+</fr:p><fr:p>
+  Let <fr:tex>( \mathscr { M } )</fr:tex> be the set of morphisms of preschemes that are <fr:em>faithfully flat and quasi-compact</fr:em>;
+  this set is stable under base change and composition.
+  Let <fr:tex>P</fr:tex> be a contravariant functor from <fr:tex>\mathtt {Sch} _{/S}</fr:tex> to the category of sets, and, for every <fr:tex>S</fr:tex>-morphism <fr:tex>u \colon  T' \to  T</fr:tex> with <fr:tex>u \in ( \mathscr { M } )</fr:tex>, consider the diagram
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>531</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.5</fr:addr><fr:route>fga3.v-1-equation-1.5.xml</fr:route><fr:number>1.5</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       P(T)        \to  P(T')        \rightrightarrows  P(T' \times _T T')     \tag{1.5}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which is given by <fr:tex>P</fr:tex> applied to the diagram
+  <fr:tex
+display="block">     T      \leftarrow  T'      \underset { \mathrm {pr} _2}{ \overset { \mathrm {pr} _1}{ \leftleftarrows }} T' \times _T T'.   </fr:tex>
+  If <fr:tex>P</fr:tex> is representable, it follows from the theory of descent (<fr:link
+href="fga3.i-b.1-theorem-2.xml"
+type="local"
+addr="fga3.i-b.1-theorem-2">FGA 3.I, §B, Theorem 2</fr:link>) that the diagram <fr:ref
+addr="fga3.v-1-equation-1.5"
+href="fga3.v-1-equation-1.5.xml"
+taxon="Equation"
+number="1.5"></fr:ref> is exact for all <fr:tex>u \in ( \mathscr { M } )</fr:tex>.
+  We express this fact by saying that <fr:tex>P</fr:tex> is compatible with <fr:tex>( \mathscr { M } )</fr:tex>, in the event that <fr:tex>P</fr:tex> is "compatible with faithfully flat descent", or that the <fr:em>"presheaf"</fr:em> <fr:tex>P</fr:tex> on <fr:tex>\mathtt {Sch} _{/S}</fr:tex> is a <fr:em>"sheaf"</fr:em> for the notion of localisation given by the set <fr:tex>( \mathscr { M } )</fr:tex>.
+  If <fr:tex>P</fr:tex> is arbitrary, then a standard procedure, well known in the case of usual topological localisation, allows us to associate to it a "sheaf" <fr:tex>\mathscr { P }</fr:tex> and a homomorphism of functors <fr:tex>P \to \mathscr { P }</fr:tex> that is universal in an obvious sense.
+  The construction of <fr:tex>\mathscr { P }</fr:tex> can be made explicit in the following way: to define <fr:tex>\mathscr { P } (T)</fr:tex>, we denote, for all <fr:tex>T'</fr:tex> over <fr:tex>T</fr:tex> such that the morphism <fr:tex>u \colon  T' \to  T</fr:tex> is in <fr:tex>( \mathscr { M } )</fr:tex>, by <fr:tex>\overline { \operatorname {H} }^0(T'/T,P)</fr:tex> the subset of <fr:tex>P(T')</fr:tex> consisting of the elements <fr:tex>\xi</fr:tex> such that their images <fr:tex>\xi _1,x_2</fr:tex> in <fr:tex>P(T' \times _T T')</fr:tex> are such that there exists a morphism <fr:tex>v \colon  T'' \to  T' \times _T T'</fr:tex> in <fr:tex>( \mathscr { M } )</fr:tex> such that <fr:tex>\xi _1</fr:tex> and <fr:tex>\xi _2</fr:tex> have the same image in <fr:tex>P(T'')</fr:tex>.
+</fr:p><fr:p>
+  (N.B. The set <fr:tex>\overline { \operatorname {H} }^0</fr:tex> thus defined is larger than the set <fr:tex>\operatorname {H} ^0(T'/T,P)</fr:tex> introduced in <fr:link
+href="fga3.i-a.4.a.xml"
+type="local"
+addr="fga3.i-a.4.a">FGA 3.I, §A.4.a</fr:link>).
+  As <fr:tex>T'</fr:tex> varies over fixed <fr:tex>T</fr:tex> (always with <fr:tex>u \in ( \mathscr { M } )</fr:tex>), the <fr:tex>\overline { \operatorname {H} }^0(T'/T,P)</fr:tex> form an inductive system (when the set of the <fr:tex>T'</fr:tex> is endowed with a preorder defined by domination), and we set
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>532</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.6</fr:addr><fr:route>fga3.v-1-equation-1.6.xml</fr:route><fr:number>1.6</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr { P } (T)       =  \varinjlim _{T'}  \overline { \operatorname {H} }^0(T'/T,P).     \tag{1.6}     </fr:tex></fr:mainmatter></fr:tree>
+
+  The functoriality in <fr:tex>T</fr:tex> of this expression is evident.
+</fr:p><fr:p>
+  When
+  <fr:tex
+display="block">     P(T)     =  \operatorname {Pic} (X \times _S T)   </fr:tex>
+  the contravariant functor on <fr:tex>\mathtt {Sch} _{/S}</fr:tex> defined by <fr:ref
+addr="fga3.v-1-equation-1.6"
+href="fga3.v-1-equation-1.6.xml"
+taxon="Equation"
+number="1.6"></fr:ref> is called the <fr:em>relative Picard functor</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and denoted by <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex>, and we define the <fr:em>relative Picard group</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, denoted by <fr:tex>\operatorname {Pic} (X/S)</fr:tex>, the group <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}(S)</fr:tex>.
+  We then have an evident bijection
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>533</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.7</fr:addr><fr:route>fga3.v-1-equation-1.7.xml</fr:route><fr:number>1.7</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}(T)        \xrightarrow { \sim }   \operatorname {Pic} (X \times _S T/T).     \tag{1.7}     </fr:tex></fr:mainmatter></fr:tree>
+
+  An element of <fr:tex>\operatorname {Pic} (X/S)</fr:tex> is thus defined by means of an element <fr:tex>\xi '</fr:tex> of a group <fr:tex>\operatorname {Pic} (X \times _S S')</fr:tex> (where <fr:tex>S' \to  S</fr:tex> is faithfully flat and quasi-compact) such that we can find a faithfully flat quasi-compact morphism <fr:tex>S'' \to  S' \times _S S'</fr:tex> such that the two inverse images of <fr:tex>\xi '</fr:tex> in <fr:tex>\operatorname {Pic} (X \times _S S'')</fr:tex> are the same.
+  An element <fr:tex>\xi '</fr:tex> of <fr:tex>\operatorname {Pic} (X \times _S S')</fr:tex> and an element <fr:tex>\xi _1</fr:tex> of <fr:tex>\operatorname {Pic} (X \times _S S_1)</fr:tex> (satisfying the conditions that we have just stated) define the same element of <fr:tex>\operatorname {Pic} (X/S)</fr:tex> if and only if there exists a faithfully flat quasi-compact morphism <fr:tex>S'_1 \to  S' \times _S S_1</fr:tex> such that the images of the two elements in question in <fr:tex>\operatorname {Pic} (X \times _S S'_1)</fr:tex> are equal.
+  It is often convenient to work instead with the functor <fr:tex>P'= \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}</fr:tex> introduced above, and we immediately note that the canonical morphism <fr:tex>P \to  P'</fr:tex> defines an <fr:em>isomorphism</fr:em>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>534</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.8</fr:addr><fr:route>fga3.v-1-equation-1.8.xml</fr:route><fr:number>1.8</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr { P }         \xrightarrow { \sim }   \mathscr { P } '     \tag{1.8}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which gives a description of <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> in terms of <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}=P'</fr:tex> that is usually more convenient.
+  By <fr:ref
+addr="fga3.v-2-corollary-2.3"
+href="fga3.v-2-corollary-2.3.xml"
+taxon="Corollary"
+number="2.3"></fr:ref> below, if we replace <fr:tex>P</fr:tex> by <fr:tex>P'</fr:tex> in the description of <fr:tex>\operatorname {Pic} (X/S)</fr:tex> that we have just given then we can take <fr:tex>S''=S' \times _S S'</fr:tex> and <fr:tex>S'_1=S' \times _S S_1</fr:tex>, at least under the conditions given in <fr:em>loc. cit.</fr:em>.
+</fr:p><fr:p>
+  If the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> is representable, we say that <fr:tex>X/S</fr:tex> admits a Picard prescheme, and the prescheme over <fr:tex>S</fr:tex> that represents the functor is called the <fr:em>Picard prescheme</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and denoted by <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>.
+  For this, it evidently suffices that <fr:tex>P'= \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> be representable, since then <fr:tex>P'</fr:tex> is already a "sheaf", and equation <fr:ref
+addr="fga3.v-1-equation-1.8"
+href="fga3.v-1-equation-1.8.xml"
+taxon="Equation"
+number="1.8"></fr:ref> proves that the morphism <fr:tex>P' \to \mathscr { P } '</fr:tex> can be identified with the canonical morphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>535</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.9</fr:addr><fr:route>fga3.v-1-equation-1.9.xml</fr:route><fr:number>1.9</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {P} \kern  -1pt \mathit {ic} '_{X/S}        \to   \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}     \tag{1.9}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which is then an isomorphism.
+  This means that our terminology is compatible with that introduced above with <fr:ref
+addr="fga3.v-1-equation-1.4"
+href="fga3.v-1-equation-1.4.xml"
+taxon="Equation"
+number="1.4"></fr:ref>.
+  In general, when <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists it is defined by the functorial isomorphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>536</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-1-equation-1.10</fr:addr><fr:route>fga3.v-1-equation-1.10.xml</fr:route><fr:number>1.10</fr:number><fr:parent>fga3.v-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Hom} _S(S', \underline { \operatorname {Pic} } _{X/S})        \xrightarrow { \sim }   \operatorname {Pic} (X \times _S S'/S').     \tag{1.10}     </fr:tex></fr:mainmatter></fr:tree></fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1726</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.iii-8-remark-i</fr:addr><fr:route>fga3.iii-8-remark-i.xml</fr:route><fr:parent>fga3.iii-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+    It now appears that the conjectures in this section are false, even for non-singular varieties over a field of characteristic <fr:tex>0</fr:tex>, both for the existence and the quasi-projectivity of the quotient, and even when <fr:tex>G</fr:tex> acts with a closed graph.
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1725</fr:anchor><fr:addr>fga3.iii-8</fr:addr><fr:route>fga3.iii-8.xml</fr:route><fr:title><fr:link
+href="fga3.iii.xml"
+type="local"
+addr="fga3.iii">Quotient preschemes</fr:link> › A conjecture</fr:title><fr:number>8</fr:number><fr:parent>fga3.iii</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1719</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.iii-8-remark-i</fr:addr><fr:route>fga3.iii-8-remark-i.xml</fr:route><fr:parent>fga3.iii-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+    It now appears that the conjectures in this section are false, even for non-singular varieties over a field of characteristic <fr:tex>0</fr:tex>, both for the existence and the quasi-projectivity of the quotient, and even when <fr:tex>G</fr:tex> acts with a closed graph.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  The conjecture in question concerns the need of knowing how to pass to the quotient by the projective group acting on certain subschemes of "Hilbert schemes" (with these "Hilbert schemes" replacing, in the theory of schemes, Chow varieties).
+</fr:p><fr:p>
+  Let <fr:tex>S</fr:tex> be a prescheme, and <fr:tex>n</fr:tex> an integer.
+  To every prescheme <fr:tex>S'</fr:tex> over <fr:tex>S</fr:tex>, we associate the group <fr:tex>\operatorname {GL} (n, \Gamma (S', \mathcal {O}_{S'}))</fr:tex> of invertible <fr:tex>(n \times  n)</fr:tex> matrices with values in the ring of sections of <fr:tex>\mathcal {O}_{S'}</fr:tex>.
+  We thus obtain a contravariant functor in <fr:tex>S'</fr:tex>, which can can easily show to be representable, and so the functor corresponds to a group scheme over <fr:tex>S</fr:tex> (which is further affine over <fr:tex>S</fr:tex>) which we denote by <fr:tex>\operatorname {GL} (n)_s</fr:tex>.
+  Its construction is compatible with change of base, so that, in reality, everything comes from a group scheme over <fr:tex>\mathbb {Z}</fr:tex>, denoted by <fr:tex>\operatorname {GL} (n)</fr:tex>.
+  The group <fr:tex>\operatorname {GL} (1)</fr:tex>, called the <fr:em>multiplicative group</fr:em>, and often denoted by <fr:tex>\operatorname {G_m}</fr:tex>, corresponds to the functor <fr:tex>S \mapsto \Gamma (S, \mathcal {O}_S)^*</fr:tex>, with the latter being the group of "units" over <fr:tex>S</fr:tex>.
+  We have an evident homomorphism <fr:tex>\operatorname {GL} (1) \to \operatorname {GL} (n)</fr:tex>, and we can easily construct the quotient group, denoted by <fr:tex>\operatorname {GP} (n-1)</fr:tex>, and called the <fr:em>projective group of degree <fr:tex>(n-1)</fr:tex> over <fr:tex>\mathbb {Z}</fr:tex></fr:em>.
+  It represents the functor that sends <fr:tex>S</fr:tex> to the group of sections of the sheaf <fr:tex>\operatorname { \mathscr {G} \kern  -2pt \mathscr {L}} (n)_S/ \operatorname { \mathscr {G} \kern  -2pt \mathscr {L}} (1)_S</fr:tex>, where <fr:tex>\operatorname { \mathscr {G} \kern  -2pt \mathscr {L}} (n)_S</fr:tex> denotes the sheaf of germs of sections of <fr:tex>\operatorname {GL} (n)_S</fr:tex> over <fr:tex>S</fr:tex>.
+  (Note that sections of <fr:tex>\operatorname {GP} (n-1)_S</fr:tex> over <fr:tex>S</fr:tex> do not, in general, come from sections of <fr:tex>\operatorname {GL} (n)_S</fr:tex> over <fr:tex>S</fr:tex>!)
+  Note that we can prove that <fr:tex>\operatorname {GL} (n-1)</fr:tex> equally represents the functor <fr:tex>S \mapsto \operatorname {Aut} _S( \mathbb {P}_S^{n-1})</fr:tex> (where <fr:tex>\mathbb {P}_S^{n-1}</fr:tex> is the projective-type scheme of relative dimension <fr:tex>(n-1)</fr:tex> over <fr:tex>S</fr:tex>), at least when <fr:tex>S</fr:tex> is Noetherian.
+  It is in this way that it appears in the theory of modules.
+</fr:p><fr:p>
+  Let <fr:tex>S</fr:tex> be a Noetherian scheme, which we can, if we want, suppose to be affine, and let <fr:tex>X</fr:tex> be a quasi-projective <fr:tex>S</fr:tex>-prescheme endowed with an invertible sheaf <fr:tex>\mathscr { L }</fr:tex> that is very ample with respect to <fr:tex>S</fr:tex>.
+  
+  Suppose that the group <fr:tex>G= \operatorname {GP} (n)_S</fr:tex> acts on <fr:tex>X</fr:tex> and <fr:tex>\mathscr { L }</fr:tex> simultaneously (in a way that is compatible with its action on <fr:tex>X</fr:tex>), and that it acts _freely_ on <fr:tex>S</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1720</fr:anchor><fr:taxon>Conjecture</fr:taxon><fr:addr>fga3.iii-8-conjecture-8.1</fr:addr><fr:route>fga3.iii-8-conjecture-8.1.xml</fr:route><fr:number>8.1</fr:number><fr:parent>fga3.iii-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the above conditions:
+
+    <fr:ol><fr:li>
+        The equivalence relation defined by <fr:tex>G</fr:tex> is effective, the quotient <fr:tex>Y=X/G</fr:tex> is of finite type over <fr:tex>S</fr:tex>, and the canonical morphism <fr:tex>f \colon  X \to  Y</fr:tex> is flat and surjective (and thus <fr:tex>X</fr:tex> becomes a homogeneous principal bundle on <fr:tex>Y</fr:tex>, with group <fr:tex>G \times _S Y= \operatorname {GP} (n)_Y</fr:tex>).
+      </fr:li>
+
+      <fr:li>
+        Let <fr:tex>\mathscr { L } '</fr:tex> be the invertible sheaf on <fr:tex>Y</fr:tex> induced from <fr:tex>\mathscr { L }</fr:tex> by "faithfully flat descent" under <fr:tex>f</fr:tex> (cf. <fr:link
+href="fga3.i-b.1-theorem-1.xml"
+type="local"
+addr="fga3.i-b.1-theorem-1">FGA 3.I, §B, Theorem 1</fr:link>).
+        Then <fr:tex>\mathscr { L } '</fr:tex> is "pre-ample" on <fr:tex>Y</fr:tex> with respect to <fr:tex>S</fr:tex>, i.e. there exists an integer <fr:tex>m</fr:tex> and a quasi-finite morphism from <fr:tex>Y</fr:tex> to some suitable projective-type scheme <fr:tex>\mathbb {P}_S^N</fr:tex> such that <fr:tex>( \mathscr { L } ')^{ \otimes  m}</fr:tex> is isomorphic to the inverse image of <fr:tex>\mathcal {O}_{ \mathbb {P}_S^N}(1)</fr:tex>.
+      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
+  We note that, even if <fr:tex>X</fr:tex> is separated over <fr:tex>S</fr:tex>, then it can be the case that <fr:tex>Y</fr:tex> is not separated over <fr:tex>S</fr:tex> (a situation that arises in not-at-all-pathological "module problems").
+  If (1) is satisfied, then <fr:tex>Y</fr:tex> is separated if and only if the equivalence relation defined by <fr:tex>G</fr:tex> has a closed graph, i.e. if <fr:tex>G \times  X \to  X \times  X</fr:tex> has a closed image (and is thus a closed immersion).
+  If <fr:tex>Y</fr:tex> is separated, then <fr:tex>\mathscr { L } '</fr:tex> is pre-ample on <fr:tex>Y</fr:tex> with respect to <fr:tex>S</fr:tex> if and only if it is ample, i.e. if a suitable tensor power defines a projective immersion.
+  In the module problems mentioned in the introduction, we can show that the equivalence relation to which we arrive does indeed have a closed graph.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1721</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.iii-8-remarks-8.2</fr:addr><fr:route>fga3.iii-8-remarks-8.2.xml</fr:route><fr:number>8.2</fr:number><fr:parent>fga3.iii-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    We have assumed that <fr:tex>G= \operatorname {GP} (n)_S</fr:tex> to give a concrete example, and because it is currently the most important case in practice.
+    The reasonable hypothesis to make on <fr:tex>G</fr:tex> seems rather to be that <fr:tex>G</fr:tex> be one of the "forms" on <fr:tex>S</fr:tex> of a Tohokû group (whose construction over the integers has also been made by Chevalley).
+    The only positive fact that is known to me concerning the above conjecture is the following:
+    <fr:em>Let <fr:tex>X</fr:tex> be an affine scheme over a field <fr:tex>k</fr:tex> of characteristic <fr:tex>0</fr:tex>, on which the group <fr:tex>\operatorname {GL} (n)_k</fr:tex> or <fr:tex>\operatorname {GP} (n-1)_k</fr:tex> acts freely. Then the equivalence relation defined by <fr:tex>G</fr:tex> is effective, the quotient <fr:tex>X/G</fr:tex> is affine, and the morphism <fr:tex>X \to  X/G</fr:tex> is flat and surjective.</fr:em>
+    The proof uses the following fact (that, for now, has only been proven in characteristic <fr:tex>0</fr:tex>):
+    if we let <fr:tex>G</fr:tex> act on the affine ring <fr:tex>A</fr:tex> of <fr:tex>G</fr:tex>, considered as a vector space over <fr:tex>k</fr:tex>, then the trivial representation of <fr:tex>G</fr:tex> only appears once (in a composition series of a vector subspace of finite dimension over <fr:tex>k</fr:tex> that is stable under <fr:tex>G</fr:tex>).
+    
+    It seems possible that a systematic use of the theory of linear representations of <fr:tex>G</fr:tex> would give a proof of the conjecture, or at least when we work over a base field.
+    When we are no longer working over a base field, the author knows nothing.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1722</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.iii-8-remark-ii</fr:addr><fr:route>fga3.iii-8-remark-ii.xml</fr:route><fr:parent>fga3.iii-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+    As we note at the end of the next talk, the above conjecture is decidedly false.
+    The "positive fact" mentioned in the above remark seems to have been proven simultaneously by various authors (Nagata, Rosenlicht, Grothendieck, ...).
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

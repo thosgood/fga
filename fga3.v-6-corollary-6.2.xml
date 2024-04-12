@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2045</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-6-corollary-6.2</fr:addr><fr:route>fga3.v-6-corollary-6.2.xml</fr:route><fr:number>6.2</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a projective flat morphism with locally integral geometric fibres (for example, a projective and normal morphism).
+    Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-6-corollary-6.2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      In this case, <fr:tex>S'</fr:tex> is an étale covering of <fr:tex>S</fr:tex> (which is true once <fr:tex>f</fr:tex> is separable, i.e. flat with reduced geometric fibres), and we see that the structure theorem stated in <fr:ref
+addr="fga3.v-3"
+href="fga3.v-3.xml"
+number="3"></fr:ref> for <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> still holds, thanks to the analogous structure of <fr:tex>\underline { \operatorname {Pic} } _{X/S'}</fr:tex>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2044</fr:anchor><fr:addr>fga3.v-6</fr:addr><fr:route>fga3.v-6.xml</fr:route><fr:title><fr:link
+href="fga3.v.xml"
+type="local"
+addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Relative existence theorems</fr:title><fr:number>6</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  We will sketch here some useful cases where the existence of certain Picard schemes implies the existence of certain others, which allows us to deduce from the principal existence theorem <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref> various other existence theorems.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>253</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-6-proposition-6.1</fr:addr><fr:route>fga3.v-6-proposition-6.1.xml</fr:route><fr:number>6.1</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a flat projective morphism such that, in the Stein factorisation <fr:tex>f=f''f'</fr:tex>, the morphism <fr:tex>f' \colon  X \to  S'</fr:tex> is <fr:em>flat</fr:em> and has integral geometric fibres (and thus satisfies the hypotheses of <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>), and such that the finite morphism <fr:tex>f'' \colon  S' \to</fr:tex> is flat.
+    Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists and (with the notation introduced in <fr:link
+href="fga3.ii-c.2.xml"
+type="local"
+addr="fga3.ii-c.2">FGA 3.II, §C.2</fr:link>) we have a canonical isomorphism
+    <fr:tex
+display="block">        \underline { \operatorname {Pic} } _{X/S}        \xrightarrow { \sim }   \prod _{S'/S}  \underline { \operatorname {Pic} } _{X/S'}.     </fr:tex></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-6-proposition-6.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      To prove this, we first establish an isomorphism of functors
+      <fr:tex
+display="block">          \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}          \xrightarrow { \sim }   \prod _{S'/S}  \mathscr {P} \kern  -1pt \mathit {ic} _{X/S'}       </fr:tex>
+      and then use <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>, which implies that <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S'}</fr:tex> is representable;
+      we use the structure explained in <fr:ref
+addr="fga3.v-3"
+href="fga3.v-3.xml"
+number="3"></fr:ref> of <fr:tex>\underline { \operatorname {Pic} } _{X/S'}</fr:tex> (which implies that every finite subset of a fibre of <fr:tex>\underline { \operatorname {Pic} } _{X/S'}</fr:tex> over <fr:tex>S</fr:tex> is contained in an affine open) for the existence of <fr:tex>\prod _{S'/S} \underline { \operatorname {Pic} } _{X/S'}</fr:tex>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  For example, if <fr:tex>X</fr:tex> is a scheme given by a <fr:em>sum</fr:em> of schemes <fr:tex>X_i</fr:tex> over <fr:tex>S</fr:tex> that satisfy the conditions of <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>, then the statement of <fr:ref
+addr="fga3.v-6-proposition-6.1"
+href="fga3.v-6-proposition-6.1.xml"
+taxon="Proposition"
+number="6.1"></fr:ref> reduces to the trivial statement
+  <fr:tex
+display="block">      \underline { \operatorname {Pic} } _{X/S}      \xrightarrow { \sim }   \prod _i  \underline { \operatorname {Pic} } _{X_i/S}.   </fr:tex></fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-6-corollary-6.2</fr:addr><fr:route>fga3.v-6-corollary-6.2.xml</fr:route><fr:number>6.2</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a projective flat morphism with locally integral geometric fibres (for example, a projective and normal morphism).
+    Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-6-corollary-6.2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      In this case, <fr:tex>S'</fr:tex> is an étale covering of <fr:tex>S</fr:tex> (which is true once <fr:tex>f</fr:tex> is separable, i.e. flat with reduced geometric fibres), and we see that the structure theorem stated in <fr:ref
+addr="fga3.v-3"
+href="fga3.v-3.xml"
+number="3"></fr:ref> for <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> still holds, thanks to the analogous structure of <fr:tex>\underline { \operatorname {Pic} } _{X/S'}</fr:tex>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in <fr:link
+href="fga3.i-a.2.c.xml"
+type="local"
+addr="fga3.i-a.2.c">FGA 3.I, §A.2.c</fr:link>, and of which we content ourselves here to explain only a particular case:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>257</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-6-proposition-6.3</fr:addr><fr:route>fga3.v-6-proposition-6.3.xml</fr:route><fr:number>6.3</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a proper morphism, and let <fr:tex>X_1</fr:tex> and <fr:tex>X_2</fr:tex> be subpreschemes of <fr:tex>X</fr:tex> that are flat over <fr:tex>S</fr:tex>, defined by coherent ideals <fr:tex>\mathscr { J } _1</fr:tex> and <fr:tex>\mathscr { J } _2</fr:tex> (respectively) such that <fr:tex>\mathscr { J } _1 \cap \mathscr { J } _2=(0)</fr:tex> and such that <fr:tex>\mathcal {O} _X/( \mathscr { J } _1+ \mathscr { J } _2)</fr:tex> is flat over <fr:tex>S</fr:tex> (i.e. the subprescheme of <fr:tex>X</fr:tex> that is the sup of <fr:tex>X_1</fr:tex> and <fr:tex>X_2</fr:tex> is <fr:tex>X</fr:tex> itself, whereas their inf <fr:tex>Z</fr:tex> is flat over <fr:tex>X</fr:tex>).
+    Suppose further that, for all <fr:tex>s \in  S</fr:tex>, the homomorphisms <fr:tex>k(s) \to \operatorname {H} ^0(X_{i_s}, \mathcal {O} _{X_{i_s}})</fr:tex> are bijective for <fr:tex>i=1,2</fr:tex>.
+    Then the natural homomorphism of functors
+    <fr:tex
+display="block">        \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}        \to   \mathscr {P} \kern  -1pt \mathit {ic} _{X_1/S}  \times   \mathscr {P} \kern  -1pt \mathit {ic} _{X_2/S}     </fr:tex>
+    is representable by affine morphisms, so if <fr:tex>\underline { \operatorname {Pic} } _{X_1/S}</fr:tex> and <fr:tex>\underline { \operatorname {Pic} } _{X_2/s}</fr:tex> exist, then so too does <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, and the canonical morphism
+    <fr:tex
+display="block">        \underline { \operatorname {Pic} } _{X/S}        \to   \underline { \operatorname {Pic} } _{X_1/S}  \times   \underline { \operatorname {Pic} } _{X_2/S}     </fr:tex>
+    is affine.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-6-proposition-6.3</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      By faithfully flat descent, we can reduce to the case where <fr:tex>Z</fr:tex> admits a section over <fr:tex>S</fr:tex>, thus defining sections of <fr:tex>X</fr:tex>, <fr:tex>X_1</fr:tex>, and <fr:tex>X_2</fr:tex> over <fr:tex>S</fr:tex>, and allowing us to eliminate the automorphisms in the structures in question, as explained in <fr:ref
+addr="fga3.v-2-remark-2.5"
+href="fga3.v-2-remark-2.5.xml"
+taxon="Remark"
+number="2.5"></fr:ref>.
+      
+      The proof then consists of noting that the data of a "rigidified" invertible module <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X</fr:tex> is equivalent to the data of a triple <fr:tex>( \mathscr { L } _1, \mathscr { L } _2,u)</fr:tex>, where <fr:tex>\mathscr { L } _i</fr:tex> is a "rigidified" module on <fr:tex>X_i</fr:tex>, and <fr:tex>u</fr:tex> is an isomorphism from <fr:tex>\mathscr { L } _1|Z</fr:tex> to <fr:tex>\mathscr { L } _2|Z</fr:tex> that is compatible with the rigidifications.
+      It remains only to verify that, for <fr:tex>\mathscr { L } _1</fr:tex> and <fr:tex>\mathscr { L } _2</fr:tex> fixed, the data of <fr:tex>u</fr:tex> can be expressed as a section of a suitable scheme over <fr:tex>S</fr:tex> that is affine over <fr:tex>S</fr:tex>, which is easy.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  From <fr:ref
+addr="fga3.v-6-proposition-6.3"
+href="fga3.v-6-proposition-6.3.xml"
+taxon="Proposition"
+number="6.3"></fr:ref> we easily conclude:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-6-corollary-6.4</fr:addr><fr:route>fga3.v-6-corollary-6.4.xml</fr:route><fr:number>6.4</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a proper and separable scheme over a field <fr:tex>k</fr:tex>, and let <fr:tex>X_i</fr:tex> be the irreducible components of <fr:tex>X</fr:tex>.
+    If the <fr:tex>\underline { \operatorname {Pic} } _{X_i/k}</fr:tex> exist, then so too does <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, and the canonical morphism
+    <fr:tex
+display="block">        \underline { \operatorname {Pic} } _{X/k}        \to   \prod _i  \underline { \operatorname {Pic} } _{X_i/k}     </fr:tex>
+    is affine.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Combined with <fr:ref
+addr="fga3.v-6-corollary-6.2"
+href="fga3.v-6-corollary-6.2.xml"
+taxon="Corollary"
+number="6.2"></fr:ref>, this shows, for example, the existence of <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> whenever <fr:tex>X</fr:tex> is a projective scheme that is separable over a field <fr:tex>k</fr:tex>.
+  If <fr:tex>X</fr:tex> is no longer separable over <fr:tex>k</fr:tex>, then we equally have a reduction result, using the argument of Oort <fr:link
+href="Oor1962.xml"
+type="local"
+addr="Oor1962">[Oor1962]</fr:link>.
+  The method equally applies for a scheme with arbitrary base (a useful case, for example, in proving in the following talk the finiteness result stated in <fr:ref
+addr="fga3.v-3-remark-3.3"
+href="fga3.v-3-remark-3.3.xml"
+taxon="Remark"
+number="3.3"></fr:ref>).
+  To avoid an overly technical statement, we restrict ourselves to the case where we are over a base field:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>259</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-6-proposition-6.5</fr:addr><fr:route>fga3.v-6-proposition-6.5.xml</fr:route><fr:number>6.5</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a proper scheme over a field <fr:tex>k</fr:tex>, and <fr:tex>X_0</fr:tex> a subscheme that has the same underlying set (thus defined by a nilpotent ideal on <fr:tex>X</fr:tex>).
+    Then the functorial morphism <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/k} \to \mathscr {P} \kern  -1pt \mathit {ic} _{X_0/k}</fr:tex> is representable by affine morphisms.
+    In particular, if <fr:tex>\underline { \operatorname {Pic} } _{X_0/k}</fr:tex> exists, then so too does <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, and the morphism <fr:tex>\underline { \operatorname {Pic} } _{X/k} \to \underline { \operatorname {Pic} } _{X_0/k}</fr:tex> is affine.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Combining this with <fr:ref
+addr="fga3.v-6-corollary-6.4"
+href="fga3.v-6-corollary-6.4.xml"
+taxon="Corollary"
+number="6.4"></fr:ref>, we easily conclude:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-6-corollary-6.6</fr:addr><fr:route>fga3.v-6-corollary-6.6.xml</fr:route><fr:number>6.6</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a projective prescheme over a field <fr:tex>k</fr:tex>&gt;
+    Then <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> exists.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-6-remark-6.6</fr:addr><fr:route>fga3.v-6-remark-6.6.xml</fr:route><fr:number>6.6</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    It is extremely plausible that, for every <fr:em>proper</fr:em> scheme <fr:tex>X</fr:tex> over a field <fr:tex>k</fr:tex>, <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> exists.
+    The results above allow us to reduce, for this question, to the case where <fr:tex>k</fr:tex> is algebraically closed, and where <fr:tex>X</fr:tex> is integral.
+    We then know that there exists an integral scheme <fr:tex>X'</fr:tex> that is <fr:em>projective</fr:em> over <fr:tex>k</fr:tex>, and a dominant morphism <fr:tex>g \colon  X' \to  X</fr:tex> (Chow's lemma).
+    
+    It would thus suffice to show that the corresponding functorial morphism <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/k} \to \mathscr {P} \kern  -1pt \mathit {ic} _{X'/k}</fr:tex> is representable (and, probably, representable by affine morphisms), since we already know that <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X'/k}</fr:tex> is representable.
+    This raises questions about non-flat descent that are not answerable as of now.
+    Note that, if we restrict to considering the restriction of the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/k}</fr:tex> to reduced preschemes (with <fr:tex>X</fr:tex> proper and integral over an algebraically closed field <fr:tex>k</fr:tex>), then we do indeed obtain a representable functor, as shown by Chevalley <fr:link
+href="Che1960.xml"
+type="local"
+addr="Che1960">[Che1960]</fr:link> in the case where <fr:tex>X</fr:tex> is normal, and by Seshadri <fr:link
+href="Ses1962.xml"
+type="local"
+addr="Ses1962">[Ses1962]</fr:link> by a descent method in the general case.
+    But with our notation, the scheme constructed by these authors is not <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, but instead <fr:tex>( \underline { \operatorname {Pic} } _{X/k})_ \mathrm {red}</fr:tex>, i.e. the reduced scheme corresponding to <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>.
+  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    As we point out at the start of <fr:link
+href="fga3.vi.xml"
+type="local"
+addr="fga3.vi">the next talk</fr:link>, the question raised here has just been answered in the affirmative by Murre.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-6-remark-6.7</fr:addr><fr:route>fga3.v-6-remark-6.7.xml</fr:route><fr:number>6.7</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    More generally, let <fr:tex>f \colon  X' \to  X</fr:tex> be a surjective morphism of proper preschemes over <fr:tex>k</fr:tex>.
+    Then considering non-flat descent leads us to conjecture that <fr:tex>\underline { \operatorname {Pic} } _{X/k} \to \underline { \operatorname {Pic} } _{X'/k}</fr:tex> is an <fr:em>affine</fr:em> morphism, which would in particular imply (by dividing into the connected components of the identity elements) that the corresponding homomorphism on the Néron–Severi groups is injective modulo torsion.
+    We can verify this by the theory of intersections when <fr:tex>X</fr:tex> and <fr:tex>X'</fr:tex> are non-singular.
+    The answer does not seem to be known in any other case.
+  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    The question raised here has been answered in the affirmative (cf. the last paragraph of the comments in the next talk).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>263</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-6-remark-6.8</fr:addr><fr:route>fga3.v-6-remark-6.8.xml</fr:route><fr:number>6.8</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Contrary to what we might think, the consideration of Picard schemes of algebraic schemes with nilpotent elements is useful, and even indispensable, for various questions.
+    If <fr:tex>X</fr:tex> is a projective scheme, simple over <fr:tex>k</fr:tex>, say, and <fr:tex>Y</fr:tex> a hyperplane section, then we can consider the "infinitesimal neighbourhoods" <fr:tex>X_n</fr:tex> of <fr:tex>Y</fr:tex> of all orders, as well as the Picard schemes <fr:tex>\underline { \operatorname {Pic} } _{X_n/k}</fr:tex>;
+    when <fr:tex>X</fr:tex> is irreducible of dimension <fr:tex>\geqslant4</fr:tex> (resp. <fr:tex>\geqslant3</fr:tex>), the canonical morphism
+    <fr:tex
+display="block">        \underline { \operatorname {Pic} } _{X/k}        \to \underline { \operatorname {Pic} } _{X_n/k}        \qquad \text {for large }n     </fr:tex>
+    is an isomorphism (resp. induces an isomorphism between the inverse images of the torsion subgroups of the Néron–Severi groups), and this result will be useful in the qualitative study of Picard schemes in the following talk.
+    Similarly, the consideration of Picard schemes of certain curves with nilpotent elements and the fundamental theorems of formal geometry <fr:link
+href="Gro1958a"
+type="external">[Gro1958a]</fr:link> allow us to prove, in the case of equal characteristic, a conjecture of Mumford, namely that for every complete normal Noetherian local ring <fr:tex>A</fr:tex> of dimension <fr:tex>2</fr:tex>, the group of classes of divisors of <fr:tex>A</fr:tex> can be considered as the set of rational points over <fr:tex>k</fr:tex> of an algebraic group <fr:tex>G</fr:tex> over the residue field <fr:tex>k</fr:tex> (with <fr:tex>G</fr:tex> being canonically determined once we have a field of representatives in <fr:tex>A</fr:tex>).
+    
+    In the case where <fr:tex>A</fr:tex> is of arbitrary dimension, it is plausible that there exists an algebraic pro-group over <fr:tex>k</fr:tex> that plays the same role as <fr:tex>G</fr:tex> above, which is constructed, in the case where we can "desingularise" <fr:tex>\operatorname {Spec} (A)</fr:tex>, as a projective limit of Picard schemes of suitable projective schemes (with nilpotent elements) over <fr:tex>k</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2043</fr:anchor><fr:addr>fga3.v-3</fr:addr><fr:route>fga3.v-3.xml</fr:route><fr:title><fr:link
+href="fga3.v.xml"
+type="local"
+addr="fga3.v">Picard schemes: Existence theorems</fr:link> › The principal existence theorem: statement</fr:title><fr:number>3</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  We do not have, not even conjecturally, an existence statement for Picard preschemes that encompasses all known cases.
+  A "practically necessary" condition, if we can say that, is that <fr:tex>f \colon  X \to  S</fr:tex> be <fr:em>proper</fr:em> (ensuring essential finiteness properties) and <fr:em>flat</fr:em>.
+  These conditions are not sufficient, even if <fr:tex>S</fr:tex> is the spectrum of the algebra of dual numbers <fr:tex>k[t]/(t^2)</fr:tex> over a field <fr:tex>k</fr:tex> (say, the field <fr:tex>\mathbb {C}</fr:tex> of complex numbers), and <fr:tex>X</fr:tex> is of dimension <fr:tex>1</fr:tex>.
+  At the moment of writing this present talk, the most important existence theorems for the Picard prescheme follow from the following theorem:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1742</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.v-3-theorem-3.1</fr:addr><fr:route>fga3.v-3-theorem-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a morphism of locally Noetherian preschemes.
+    
+    Suppose that
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>f</fr:tex> is projective
+      </fr:li>
+      <fr:li><fr:tex>f</fr:tex> is flat
+      </fr:li>
+      <fr:li>
+        the geometric fibres of <fr:tex>f</fr:tex> are integral.
+      </fr:li></fr:ol>
+
+    Under these conditions, <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  The proof, which will be sketched in the following two sections, will at the same time show the following:
+  Let <fr:tex>\xi</fr:tex> be the section of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> that corresponds to a very ample sheaf <fr:tex>\mathcal {O} _X(1)</fr:tex> over <fr:tex>X/S</fr:tex> (i.e. induced by a projective embedding <fr:tex>X \to \mathbb {P}( \mathscr { E } )</fr:tex>);
+  then there exists an open subset <fr:tex>U</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, disjoint union of quasi-projective open subsets of <fr:tex>S</fr:tex>, such that <fr:tex>U</fr:tex> is stable under translation by <fr:tex>\xi</fr:tex>, and such that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is the increasing union of opens <fr:tex>U \setminus  n \xi</fr:tex> (each isomorphic to <fr:tex>U</fr:tex>).
+  It thus follows, in particular, that, under the conditions of <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>, that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is <fr:em>separated</fr:em> over <fr:tex>S</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1743</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-3-remark-3.2</fr:addr><fr:route>fga3.v-3-remark-3.2.xml</fr:route><fr:number>3.2</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    We see from examples (with <fr:tex>S</fr:tex> the spectrum of a discrete valuation ring, and <fr:tex>X</fr:tex> of relative dimension <fr:tex>1</fr:tex> over <fr:tex>S</fr:tex>, for example), that if we omit hypothesis (iii) in <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref> and replace it with the weaker hypothesis that, for all <fr:tex>s \in  S</fr:tex>, the homomorphism <fr:tex>k(s) \to \operatorname {H} ^0(X_s, \mathcal {O} _{X_s})</fr:tex> be an isomorphism, then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is not necessarily separated over <fr:tex>S</fr:tex>;
+    both in the case where the geometric fibres of <fr:tex>f</fr:tex> are reduced, but where a generic integral geometric fibre "blows up" by specialisation into two irreducible components, and in the case where the geometric fibres of <fr:tex>f</fr:tex> are irreducible, but where a generic integral geometric fibre specialises to a "multiple fibre".
+    The first case happens, for example, with a conic that degenerates into two concurrent lines; an example of the second was shown to me by D. Mumford, with an elliptic curve that degenerates to a double elliptic curve.
+    These examples work in any characteristic.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1744</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-3-remark-3.3</fr:addr><fr:route>fga3.v-3-remark-3.3.xml</fr:route><fr:number>3.3</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the conditions of <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>, I do not know if <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is a disjoint union of opens that are of finite type, thus quasi-projective, over <fr:tex>S</fr:tex>.
+    We note that the study of the Hilbert polynomials <fr:tex>Q \in \mathbb {Q}[t]</fr:tex> allows us, as in the case of Hilbert schemes (<fr:ref
+addr="fga3.iv"
+href="fga3.iv.xml"
+taxon="FGA"
+number="3.IV"></fr:ref>), to give a decomposition of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> as a disjoint sum of opens <fr:tex>\underline { \operatorname {Pic} } _{X/S}^Q</fr:tex>, and it seems plausible that these opens are quasi-projective over <fr:tex>S</fr:tex>;
+    this is what we will see at least in the next talk when <fr:tex>f</fr:tex> is a simple morphism.
+    We draw attention to the fact that if we replace hypothesis (i) by the hypothesis "<fr:tex>X</fr:tex> is <fr:em>locally</fr:em> projective over <fr:tex>S</fr:tex>" (which is sufficient to prove <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>, since the question of existence of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is clearly local on <fr:tex>S</fr:tex>) however, then it is easy to give examples where <fr:em><fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> contains connected components that are not of finite type over <fr:tex>S</fr:tex></fr:em>.
+    
+    For example, let <fr:tex>X_0</fr:tex> be a non-singular projective algebraic variety over an algebraically closed field <fr:tex>k</fr:tex>, endowed with an automorphism <fr:tex>u</fr:tex> and an element <fr:tex>\xi</fr:tex> of the Néron–Severi group of <fr:tex>X_0</fr:tex> such that the <fr:tex>u^n( \xi )</fr:tex> are pairwise distinct.
+    We can, for example, take <fr:tex>X_0</fr:tex> to be the product of an elliptic curve <fr:tex>E</fr:tex> with itself, and <fr:tex>u</fr:tex> to be the automorphism <fr:tex>(x,y) \mapsto (x,y+x)</fr:tex> of <fr:tex>E \times  E</fr:tex>.
+    Let <fr:tex>S</fr:tex> be the union of two non-singular irreducible curves that meet at two points <fr:tex>a</fr:tex> and <fr:tex>b</fr:tex>.
+    There is a connected principal covering <fr:tex>P</fr:tex> on <fr:tex>S</fr:tex> of the group <fr:tex>\mathbb {Z}</fr:tex>, and using the action of <fr:tex>\mathbb {Z}</fr:tex> on <fr:tex>X_0</fr:tex> defined by <fr:tex>u</fr:tex> we thus obtain an associated bundle on <fr:tex>S</fr:tex>, with fibre <fr:tex>X_0</fr:tex> (trivial on <fr:tex>S \setminus \{ a \}</fr:tex> and <fr:tex>S \setminus \{ b \}</fr:tex>), which is in fact an <fr:em>abelian</fr:em> scheme over <fr:tex>S</fr:tex> in the particular case in question.
+    We easily see that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, which is also the bundle associated to <fr:tex>P</fr:tex> and to the action of <fr:tex>\mathbb {Z}</fr:tex> on <fr:tex>\underline { \operatorname {Pic} } _{X_0/k}</fr:tex> via <fr:tex>u</fr:tex>, contains a connected component that is isomorphic to <fr:tex>P \times \underline { \operatorname {Pic} } _{X_0/k}^0</fr:tex> (where <fr:tex>\underline { \operatorname {Pic} } ^0</fr:tex> denotes the connected component of the identity element in <fr:tex>\underline { \operatorname {Pic} }</fr:tex>), which is not of finite type over <fr:tex>S</fr:tex>.
+    (One can equally produce analogous phenomena in various cases of non-separated Picard preschemes over <fr:tex>S</fr:tex>, as described in <fr:ref
+addr="fga3.v-3-remark-3.3"
+href="fga3.v-3-remark-3.3.xml"
+taxon="Remark"
+number="3.3"></fr:ref>).
+
+    <fr:em>[Comp.]</fr:em>
+    The question raised here has been answered in the positive by Mumford (see <fr:ref
+addr="fga3.vi"
+href="fga3.vi.xml"
+taxon="FGA"
+number="3.VI"></fr:ref>).
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2042</fr:anchor><fr:addr>fga3.v-6</fr:addr><fr:route>fga3.v-6.xml</fr:route><fr:title><fr:link
+href="fga3.v.xml"
+type="local"
+addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Relative existence theorems</fr:title><fr:number>6</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  We will sketch here some useful cases where the existence of certain Picard schemes implies the existence of certain others, which allows us to deduce from the principal existence theorem <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref> various other existence theorems.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>253</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-6-proposition-6.1</fr:addr><fr:route>fga3.v-6-proposition-6.1.xml</fr:route><fr:number>6.1</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a flat projective morphism such that, in the Stein factorisation <fr:tex>f=f''f'</fr:tex>, the morphism <fr:tex>f' \colon  X \to  S'</fr:tex> is <fr:em>flat</fr:em> and has integral geometric fibres (and thus satisfies the hypotheses of <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>), and such that the finite morphism <fr:tex>f'' \colon  S' \to</fr:tex> is flat.
+    Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists and (with the notation introduced in <fr:link
+href="fga3.ii-c.2.xml"
+type="local"
+addr="fga3.ii-c.2">FGA 3.II, §C.2</fr:link>) we have a canonical isomorphism
+    <fr:tex
+display="block">        \underline { \operatorname {Pic} } _{X/S}        \xrightarrow { \sim }   \prod _{S'/S}  \underline { \operatorname {Pic} } _{X/S'}.     </fr:tex></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-6-proposition-6.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      To prove this, we first establish an isomorphism of functors
+      <fr:tex
+display="block">          \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}          \xrightarrow { \sim }   \prod _{S'/S}  \mathscr {P} \kern  -1pt \mathit {ic} _{X/S'}       </fr:tex>
+      and then use <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>, which implies that <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/S'}</fr:tex> is representable;
+      we use the structure explained in <fr:ref
+addr="fga3.v-3"
+href="fga3.v-3.xml"
+number="3"></fr:ref> of <fr:tex>\underline { \operatorname {Pic} } _{X/S'}</fr:tex> (which implies that every finite subset of a fibre of <fr:tex>\underline { \operatorname {Pic} } _{X/S'}</fr:tex> over <fr:tex>S</fr:tex> is contained in an affine open) for the existence of <fr:tex>\prod _{S'/S} \underline { \operatorname {Pic} } _{X/S'}</fr:tex>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  For example, if <fr:tex>X</fr:tex> is a scheme given by a <fr:em>sum</fr:em> of schemes <fr:tex>X_i</fr:tex> over <fr:tex>S</fr:tex> that satisfy the conditions of <fr:ref
+addr="fga3.v-3-theorem-3.1"
+href="fga3.v-3-theorem-3.1.xml"
+taxon="Theorem"
+number="3.1"></fr:ref>, then the statement of <fr:ref
+addr="fga3.v-6-proposition-6.1"
+href="fga3.v-6-proposition-6.1.xml"
+taxon="Proposition"
+number="6.1"></fr:ref> reduces to the trivial statement
+  <fr:tex
+display="block">      \underline { \operatorname {Pic} } _{X/S}      \xrightarrow { \sim }   \prod _i  \underline { \operatorname {Pic} } _{X_i/S}.   </fr:tex></fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-6-corollary-6.2</fr:addr><fr:route>fga3.v-6-corollary-6.2.xml</fr:route><fr:number>6.2</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a projective flat morphism with locally integral geometric fibres (for example, a projective and normal morphism).
+    Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-6-corollary-6.2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      In this case, <fr:tex>S'</fr:tex> is an étale covering of <fr:tex>S</fr:tex> (which is true once <fr:tex>f</fr:tex> is separable, i.e. flat with reduced geometric fibres), and we see that the structure theorem stated in <fr:ref
+addr="fga3.v-3"
+href="fga3.v-3.xml"
+number="3"></fr:ref> for <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> still holds, thanks to the analogous structure of <fr:tex>\underline { \operatorname {Pic} } _{X/S'}</fr:tex>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  Applying a descent procedure gives a relative existence theorem, whose scope depends on the solution to questions about non-flat descent that were raised in <fr:link
+href="fga3.i-a.2.c.xml"
+type="local"
+addr="fga3.i-a.2.c">FGA 3.I, §A.2.c</fr:link>, and of which we content ourselves here to explain only a particular case:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>257</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-6-proposition-6.3</fr:addr><fr:route>fga3.v-6-proposition-6.3.xml</fr:route><fr:number>6.3</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a proper morphism, and let <fr:tex>X_1</fr:tex> and <fr:tex>X_2</fr:tex> be subpreschemes of <fr:tex>X</fr:tex> that are flat over <fr:tex>S</fr:tex>, defined by coherent ideals <fr:tex>\mathscr { J } _1</fr:tex> and <fr:tex>\mathscr { J } _2</fr:tex> (respectively) such that <fr:tex>\mathscr { J } _1 \cap \mathscr { J } _2=(0)</fr:tex> and such that <fr:tex>\mathcal {O} _X/( \mathscr { J } _1+ \mathscr { J } _2)</fr:tex> is flat over <fr:tex>S</fr:tex> (i.e. the subprescheme of <fr:tex>X</fr:tex> that is the sup of <fr:tex>X_1</fr:tex> and <fr:tex>X_2</fr:tex> is <fr:tex>X</fr:tex> itself, whereas their inf <fr:tex>Z</fr:tex> is flat over <fr:tex>X</fr:tex>).
+    Suppose further that, for all <fr:tex>s \in  S</fr:tex>, the homomorphisms <fr:tex>k(s) \to \operatorname {H} ^0(X_{i_s}, \mathcal {O} _{X_{i_s}})</fr:tex> are bijective for <fr:tex>i=1,2</fr:tex>.
+    Then the natural homomorphism of functors
+    <fr:tex
+display="block">        \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}        \to   \mathscr {P} \kern  -1pt \mathit {ic} _{X_1/S}  \times   \mathscr {P} \kern  -1pt \mathit {ic} _{X_2/S}     </fr:tex>
+    is representable by affine morphisms, so if <fr:tex>\underline { \operatorname {Pic} } _{X_1/S}</fr:tex> and <fr:tex>\underline { \operatorname {Pic} } _{X_2/s}</fr:tex> exist, then so too does <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, and the canonical morphism
+    <fr:tex
+display="block">        \underline { \operatorname {Pic} } _{X/S}        \to   \underline { \operatorname {Pic} } _{X_1/S}  \times   \underline { \operatorname {Pic} } _{X_2/S}     </fr:tex>
+    is affine.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-6-proposition-6.3</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      By faithfully flat descent, we can reduce to the case where <fr:tex>Z</fr:tex> admits a section over <fr:tex>S</fr:tex>, thus defining sections of <fr:tex>X</fr:tex>, <fr:tex>X_1</fr:tex>, and <fr:tex>X_2</fr:tex> over <fr:tex>S</fr:tex>, and allowing us to eliminate the automorphisms in the structures in question, as explained in <fr:ref
+addr="fga3.v-2-remark-2.5"
+href="fga3.v-2-remark-2.5.xml"
+taxon="Remark"
+number="2.5"></fr:ref>.
+      
+      The proof then consists of noting that the data of a "rigidified" invertible module <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X</fr:tex> is equivalent to the data of a triple <fr:tex>( \mathscr { L } _1, \mathscr { L } _2,u)</fr:tex>, where <fr:tex>\mathscr { L } _i</fr:tex> is a "rigidified" module on <fr:tex>X_i</fr:tex>, and <fr:tex>u</fr:tex> is an isomorphism from <fr:tex>\mathscr { L } _1|Z</fr:tex> to <fr:tex>\mathscr { L } _2|Z</fr:tex> that is compatible with the rigidifications.
+      It remains only to verify that, for <fr:tex>\mathscr { L } _1</fr:tex> and <fr:tex>\mathscr { L } _2</fr:tex> fixed, the data of <fr:tex>u</fr:tex> can be expressed as a section of a suitable scheme over <fr:tex>S</fr:tex> that is affine over <fr:tex>S</fr:tex>, which is easy.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  From <fr:ref
+addr="fga3.v-6-proposition-6.3"
+href="fga3.v-6-proposition-6.3.xml"
+taxon="Proposition"
+number="6.3"></fr:ref> we easily conclude:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-6-corollary-6.4</fr:addr><fr:route>fga3.v-6-corollary-6.4.xml</fr:route><fr:number>6.4</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a proper and separable scheme over a field <fr:tex>k</fr:tex>, and let <fr:tex>X_i</fr:tex> be the irreducible components of <fr:tex>X</fr:tex>.
+    If the <fr:tex>\underline { \operatorname {Pic} } _{X_i/k}</fr:tex> exist, then so too does <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, and the canonical morphism
+    <fr:tex
+display="block">        \underline { \operatorname {Pic} } _{X/k}        \to   \prod _i  \underline { \operatorname {Pic} } _{X_i/k}     </fr:tex>
+    is affine.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Combined with <fr:ref
+addr="fga3.v-6-corollary-6.2"
+href="fga3.v-6-corollary-6.2.xml"
+taxon="Corollary"
+number="6.2"></fr:ref>, this shows, for example, the existence of <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> whenever <fr:tex>X</fr:tex> is a projective scheme that is separable over a field <fr:tex>k</fr:tex>.
+  If <fr:tex>X</fr:tex> is no longer separable over <fr:tex>k</fr:tex>, then we equally have a reduction result, using the argument of Oort <fr:link
+href="Oor1962.xml"
+type="local"
+addr="Oor1962">[Oor1962]</fr:link>.
+  The method equally applies for a scheme with arbitrary base (a useful case, for example, in proving in the following talk the finiteness result stated in <fr:ref
+addr="fga3.v-3-remark-3.3"
+href="fga3.v-3-remark-3.3.xml"
+taxon="Remark"
+number="3.3"></fr:ref>).
+  To avoid an overly technical statement, we restrict ourselves to the case where we are over a base field:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>259</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-6-proposition-6.5</fr:addr><fr:route>fga3.v-6-proposition-6.5.xml</fr:route><fr:number>6.5</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a proper scheme over a field <fr:tex>k</fr:tex>, and <fr:tex>X_0</fr:tex> a subscheme that has the same underlying set (thus defined by a nilpotent ideal on <fr:tex>X</fr:tex>).
+    Then the functorial morphism <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/k} \to \mathscr {P} \kern  -1pt \mathit {ic} _{X_0/k}</fr:tex> is representable by affine morphisms.
+    In particular, if <fr:tex>\underline { \operatorname {Pic} } _{X_0/k}</fr:tex> exists, then so too does <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, and the morphism <fr:tex>\underline { \operatorname {Pic} } _{X/k} \to \underline { \operatorname {Pic} } _{X_0/k}</fr:tex> is affine.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Combining this with <fr:ref
+addr="fga3.v-6-corollary-6.4"
+href="fga3.v-6-corollary-6.4.xml"
+taxon="Corollary"
+number="6.4"></fr:ref>, we easily conclude:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-6-corollary-6.6</fr:addr><fr:route>fga3.v-6-corollary-6.6.xml</fr:route><fr:number>6.6</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a projective prescheme over a field <fr:tex>k</fr:tex>&gt;
+    Then <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> exists.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-6-remark-6.6</fr:addr><fr:route>fga3.v-6-remark-6.6.xml</fr:route><fr:number>6.6</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    It is extremely plausible that, for every <fr:em>proper</fr:em> scheme <fr:tex>X</fr:tex> over a field <fr:tex>k</fr:tex>, <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> exists.
+    The results above allow us to reduce, for this question, to the case where <fr:tex>k</fr:tex> is algebraically closed, and where <fr:tex>X</fr:tex> is integral.
+    We then know that there exists an integral scheme <fr:tex>X'</fr:tex> that is <fr:em>projective</fr:em> over <fr:tex>k</fr:tex>, and a dominant morphism <fr:tex>g \colon  X' \to  X</fr:tex> (Chow's lemma).
+    
+    It would thus suffice to show that the corresponding functorial morphism <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/k} \to \mathscr {P} \kern  -1pt \mathit {ic} _{X'/k}</fr:tex> is representable (and, probably, representable by affine morphisms), since we already know that <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X'/k}</fr:tex> is representable.
+    This raises questions about non-flat descent that are not answerable as of now.
+    Note that, if we restrict to considering the restriction of the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/k}</fr:tex> to reduced preschemes (with <fr:tex>X</fr:tex> proper and integral over an algebraically closed field <fr:tex>k</fr:tex>), then we do indeed obtain a representable functor, as shown by Chevalley <fr:link
+href="Che1960.xml"
+type="local"
+addr="Che1960">[Che1960]</fr:link> in the case where <fr:tex>X</fr:tex> is normal, and by Seshadri <fr:link
+href="Ses1962.xml"
+type="local"
+addr="Ses1962">[Ses1962]</fr:link> by a descent method in the general case.
+    But with our notation, the scheme constructed by these authors is not <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, but instead <fr:tex>( \underline { \operatorname {Pic} } _{X/k})_ \mathrm {red}</fr:tex>, i.e. the reduced scheme corresponding to <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>.
+  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    As we point out at the start of <fr:link
+href="fga3.vi.xml"
+type="local"
+addr="fga3.vi">the next talk</fr:link>, the question raised here has just been answered in the affirmative by Murre.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-6-remark-6.7</fr:addr><fr:route>fga3.v-6-remark-6.7.xml</fr:route><fr:number>6.7</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    More generally, let <fr:tex>f \colon  X' \to  X</fr:tex> be a surjective morphism of proper preschemes over <fr:tex>k</fr:tex>.
+    Then considering non-flat descent leads us to conjecture that <fr:tex>\underline { \operatorname {Pic} } _{X/k} \to \underline { \operatorname {Pic} } _{X'/k}</fr:tex> is an <fr:em>affine</fr:em> morphism, which would in particular imply (by dividing into the connected components of the identity elements) that the corresponding homomorphism on the Néron–Severi groups is injective modulo torsion.
+    We can verify this by the theory of intersections when <fr:tex>X</fr:tex> and <fr:tex>X'</fr:tex> are non-singular.
+    The answer does not seem to be known in any other case.
+  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    The question raised here has been answered in the affirmative (cf. the last paragraph of the comments in the next talk).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>263</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-6-remark-6.8</fr:addr><fr:route>fga3.v-6-remark-6.8.xml</fr:route><fr:number>6.8</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Contrary to what we might think, the consideration of Picard schemes of algebraic schemes with nilpotent elements is useful, and even indispensable, for various questions.
+    If <fr:tex>X</fr:tex> is a projective scheme, simple over <fr:tex>k</fr:tex>, say, and <fr:tex>Y</fr:tex> a hyperplane section, then we can consider the "infinitesimal neighbourhoods" <fr:tex>X_n</fr:tex> of <fr:tex>Y</fr:tex> of all orders, as well as the Picard schemes <fr:tex>\underline { \operatorname {Pic} } _{X_n/k}</fr:tex>;
+    when <fr:tex>X</fr:tex> is irreducible of dimension <fr:tex>\geqslant4</fr:tex> (resp. <fr:tex>\geqslant3</fr:tex>), the canonical morphism
+    <fr:tex
+display="block">        \underline { \operatorname {Pic} } _{X/k}        \to \underline { \operatorname {Pic} } _{X_n/k}        \qquad \text {for large }n     </fr:tex>
+    is an isomorphism (resp. induces an isomorphism between the inverse images of the torsion subgroups of the Néron–Severi groups), and this result will be useful in the qualitative study of Picard schemes in the following talk.
+    Similarly, the consideration of Picard schemes of certain curves with nilpotent elements and the fundamental theorems of formal geometry <fr:link
+href="Gro1958a"
+type="external">[Gro1958a]</fr:link> allow us to prove, in the case of equal characteristic, a conjecture of Mumford, namely that for every complete normal Noetherian local ring <fr:tex>A</fr:tex> of dimension <fr:tex>2</fr:tex>, the group of classes of divisors of <fr:tex>A</fr:tex> can be considered as the set of rational points over <fr:tex>k</fr:tex> of an algebraic group <fr:tex>G</fr:tex> over the residue field <fr:tex>k</fr:tex> (with <fr:tex>G</fr:tex> being canonically determined once we have a field of representatives in <fr:tex>A</fr:tex>).
+    
+    In the case where <fr:tex>A</fr:tex> is of arbitrary dimension, it is plausible that there exists an algebraic pro-group over <fr:tex>k</fr:tex> that plays the same role as <fr:tex>G</fr:tex> above, which is constructed, in the case where we can "desingularise" <fr:tex>\operatorname {Spec} (A)</fr:tex>, as a projective limit of Picard schemes of suitable projective schemes (with nilpotent elements) over <fr:tex>k</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

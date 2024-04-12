@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2111</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.vi-1-proposition-1.11</fr:addr><fr:route>fga3.vi-1-proposition-1.11.xml</fr:route><fr:number>1.11</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    There exists an open subset <fr:tex>U</fr:tex> of <fr:tex>S</fr:tex> such that the set <fr:tex>G'</fr:tex> of points of <fr:tex>G</fr:tex> at which <fr:tex>G</fr:tex> is simple (resp. flat) over <fr:tex>S</fr:tex> is the underlying set of an open group subscheme induced by <fr:tex>G|U</fr:tex>.
+    Furthermore, every section of <fr:tex>G</fr:tex> over <fr:tex>U</fr:tex> is a section of <fr:tex>G'</fr:tex> over <fr:tex>U</fr:tex>.
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2110</fr:anchor><fr:addr>fga3.vi-1</fr:addr><fr:route>fga3.vi-1.xml</fr:route><fr:title><fr:link
+href="fga3.vi.xml"
+type="local"
+addr="fga3.vi">Picard schemes: General properties</fr:link> › Topological properties of preschemes of commutative groups</fr:title><fr:number>1</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>k</fr:tex> be a field, and <fr:tex>G</fr:tex> be a prescheme of groups over <fr:tex>k</fr:tex>.
+  Since the identity element <fr:tex>e</fr:tex>, being rational over <fr:tex>k</fr:tex>, is necessarily closed, it immediately follows that the diagonal of <fr:tex>G \times _k G</fr:tex> is closed, and so <fr:tex>G</fr:tex> is <fr:em>separated</fr:em>: <fr:em>every prescheme of groups over a field is separated</fr:em>.
+  We denote by <fr:tex>G^0</fr:tex> the connected component of the identity element <fr:tex>e</fr:tex>.
+  Since <fr:tex>e</fr:tex> is rational over <fr:tex>k</fr:tex>, <fr:tex>G^0</fr:tex> is in fact <fr:em>geometrically connected</fr:em>, i.e. <fr:tex>G \mapsto  G^0</fr:tex> is compatible with base change to another field.
+  It also follows that <fr:tex>G^0</fr:tex> is stable under multiplication (set-theoretically), and if <fr:tex>G</fr:tex> is locally Noetherian then <fr:tex>G^0</fr:tex> is open, and we can consider <fr:tex>G^0</fr:tex> as an <fr:em>open subgroup</fr:em> of <fr:tex>G</fr:tex>.
+  In what follows, we suppose <fr:tex>G</fr:tex> to be locally of finite type over <fr:tex>k</fr:tex>;
+  then <fr:tex>G^0</fr:tex> is <fr:em>geometrically irreducible and of finite type over <fr:tex>k</fr:tex></fr:em>.
+  Indeed, we can suppose that <fr:tex>k</fr:tex> is algebraically closed, and thus that <fr:tex>G</fr:tex> is reduced (since <fr:tex>G_ \mathrm {red}</fr:tex> is then a subgroup of <fr:tex>G</fr:tex>, taking into account the fact that <fr:tex>G_ \mathrm {red} \times _k G_ \mathrm {red}</fr:tex> is also then reduced), and thus simple over <fr:tex>k</fr:tex> over a non-empty open, and thus everywhere, by translating this open subset.
+  But then <fr:tex>G</fr:tex> is locally irreducible, and so its irreducible components are identical to its connected components, and so <fr:tex>G^0</fr:tex> is irreducible.
+  So let <fr:tex>U</fr:tex> be an affine neighbourhood of <fr:tex>e</fr:tex> in <fr:tex>G^0</fr:tex>;
+  using the fact that <fr:tex>G^0</fr:tex> is irreducible, we immediately see that <fr:tex>U \cdot  U=D^0</fr:tex>, which proves that <fr:tex>G^0</fr:tex> is quasi-compact, and thus of finite type over <fr:tex>k</fr:tex>.
+</fr:p><fr:p>
+  Suppose, for simplicity, that <fr:tex>G</fr:tex> is commutative.
+  For every integer <fr:tex>n&gt;0</fr:tex>, let <fr:tex>G^{(n)}</fr:tex> be the inverse image of <fr:tex>G^0</fr:tex> under the <fr:tex>n</fr:tex>-th power homomorphism <fr:tex>\varphi _n</fr:tex> to <fr:tex>G</fr:tex>, so <fr:tex>G^{(n)}</fr:tex> is an open subgroup of <fr:tex>G</fr:tex>.
+  We set
+  <fr:tex
+display="block">      \begin {aligned}       G^ \tau        &amp;=  \bigcup _{n&gt;0} G^{(n)}      \\ G^ \sigma        &amp;=  \bigcup _{(n,p)=1} G^{(n)}      \\ G^ \rho        &amp;=  \bigcup _{h&gt;0} G^{(p^h)}      \end {aligned}   </fr:tex>
+  where <fr:tex>p</fr:tex> is the characteristic order of the field <fr:tex>k</fr:tex>.
+  
+  These are open subgroups of <fr:tex>G</fr:tex> that satisfy
+  <fr:tex
+display="block">      \begin {aligned}       G^ \sigma   \cap  G^ \rho        &amp;= G^0      \\ G^ \sigma   \cdot  G^ \rho        &amp;= G^ \tau .      \end {aligned}   </fr:tex></fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1927</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-1-remark</fr:addr><fr:route>fga3.vi-1-remark.xml</fr:route><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    We can construct the quotient group scheme <fr:tex>G/G^0=N</fr:tex> (cf. <fr:ref
+addr="fga3.iv"
+href="fga3.iv.xml"
+taxon="FGA"
+number="3.IV"></fr:ref>) and then define <fr:tex>G^ \tau</fr:tex>, <fr:tex>G^ \sigma</fr:tex>, and <fr:tex>G^ \rho</fr:tex> as the inverse images in <fr:tex>G</fr:tex> of the torsion subgroup of <fr:tex>N</fr:tex> (resp. of its <fr:tex>p</fr:tex>-primary component, resp. of the natural complement of its <fr:tex>p</fr:tex>-primary component, given by the sum of the <fr:tex>q</fr:tex>-primary components for <fr:tex>q</fr:tex> prime with <fr:tex>q \neq  p</fr:tex>).
+    Note that <fr:tex>N</fr:tex> is a discrete group scheme that is separable over <fr:tex>k</fr:tex>, thus (once we have chosen an algebraic closure <fr:tex>\overline {k}</fr:tex> of <fr:tex>k</fr:tex>, giving rise to a Galois group <fr:tex>\pi</fr:tex>) can be identified with an ordinary discrete group on which <fr:tex>\pi</fr:tex> acts by automorphisms.
+    It is in this way that we can interpret, in an evident way, the construction of the torsion subgroup and the decomposition of this into its <fr:tex>q</fr:tex>-primary components.
+    If <fr:tex>G</fr:tex> is the Picard scheme of a proper scheme <fr:tex>X</fr:tex> over <fr:tex>k</fr:tex>, then <fr:tex>N</fr:tex> could be called the (reduced) <fr:em>Néron–Severi scheme</fr:em> of <fr:tex>X</fr:tex> over <fr:tex>k</fr:tex>.
+    If <fr:tex>G_ \mathrm {red} ^0</fr:tex> is a group subscheme of <fr:tex>G^0</fr:tex>, which is the case whenever, in particular, <fr:tex>k</fr:tex> is parfait, or <fr:tex>G^0</fr:tex> is proper over <fr:tex>k</fr:tex> (for example if <fr:tex>X</fr:tex> is geometrically normal), then we can equally introduce the quotient <fr:tex>N'=G/G_ \mathrm {red} ^0</fr:tex>, which has the tendency to behave better than <fr:tex>N</fr:tex> from the specialisation point of view, i.e. as <fr:tex>X</fr:tex> varies over a family of algebraic schemes.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Now let <fr:tex>S</fr:tex> be a locally Noetherian prescheme, and <fr:tex>G</fr:tex> a group prescheme over <fr:tex>S</fr:tex> that is locally of finite type over <fr:tex>S</fr:tex>.
+  We do not assume <fr:tex>G</fr:tex> to be of finite type over <fr:tex>S</fr:tex>, nor separated over <fr:tex>S</fr:tex>.
+  We then set
+  <fr:tex
+display="block">     G^0     =  \bigcup _{s \in  S} (G_s)^0   </fr:tex>
+  and, if <fr:tex>G</fr:tex> is commutative,
+  <fr:tex
+display="block">      \begin {aligned}       G^ \tau        &amp;=  \bigcup _{s \in  S} (G_s)^ \tau       \\ G^ \sigma        &amp;=  \bigcup _{s \in  S} (G_s)^ \sigma       \\ G^ \rho        &amp;=  \bigcup _{s \in  S} (G_s)^ \rho .      \end {aligned}   </fr:tex>
+  
+  These are subsets of <fr:tex>G</fr:tex>, stable under the multiplication of <fr:tex>G</fr:tex>, which does not obviously imply that they can be defined by means of sub-group preschemes of <fr:tex>G</fr:tex>.
+  Notably, it seems that <fr:em>there does not exist in a general sub-group prescheme of <fr:tex>G</fr:tex> whose underlying set is <fr:tex>G^0</fr:tex></fr:em>.
+  Of course, if one of these sets is open, then, endowed with the induced structure, it is an open sub-group prescheme of <fr:tex>G</fr:tex>.
+  We will see that this is always the case for <fr:tex>G^ \tau</fr:tex>;
+  in this way, from the point of view of representable functors, in particular <fr:em>from the "specialisation" point of view, numerical equivalence behaves in a more satisfying manner than algebraic equivalence</fr:em>.
+  Here are the principle general properties of the sets that we have just defined:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1928</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-1-theorem-1.1</fr:addr><fr:route>fga3.vi-1-theorem-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:tex>G^0</fr:tex>, <fr:tex>G^ \tau</fr:tex>, <fr:tex>G^ \sigma</fr:tex>, and <fr:tex>G^ \rho</fr:tex> are <fr:em>locally constructible</fr:em>.
+    Furthermore:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>G^0</fr:tex> is quasi-compact over <fr:tex>S</fr:tex>.
+        If the <fr:tex>G_s^0</fr:tex> are proper, and <fr:tex>G</fr:tex> is separated over <fr:tex>S</fr:tex>, then <fr:tex>G^0</fr:tex> is proper over <fr:tex>S</fr:tex> and thus closed in <fr:tex>G</fr:tex>.
+      </fr:li>
+      <fr:li><fr:tex>G^ \tau</fr:tex> is open.
+        If <fr:tex>G^0</fr:tex> is closed, then so too is <fr:tex>G^ \tau</fr:tex>.
+      </fr:li>
+      <fr:li>
+        If <fr:tex>G^0</fr:tex> is closed, then so too is <fr:tex>G^ \sigma</fr:tex>, provided that we are in equal characteristic, i.e. that all the residue fields of <fr:tex>S</fr:tex> have the same characteristic.
+        If <fr:tex>G^0</fr:tex> is closed and <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>G^ \sigma</fr:tex> (cf. <fr:ref
+addr="fga3.vi-1-corollary-1.5"
+href="fga3.vi-1-corollary-1.5.xml"
+taxon="Corollary"
+number="1.5"></fr:ref> below), then <fr:tex>G^ \sigma \to  S</fr:tex> is universally open.
+      </fr:li>
+      <fr:li>
+        If <fr:tex>G^0</fr:tex> is closed, then so too is <fr:tex>G^ \rho</fr:tex>.
+        If we are in equal characteristic, and if, for every integer <fr:tex>n&gt;0</fr:tex> such that <fr:tex>(n,p)=1</fr:tex>, the <fr:tex>n</fr:tex>-th power homomorphism to <fr:tex>G</fr:tex> is open, then <fr:tex>G^ \rho</fr:tex> is open.
+      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
+  We now give some hints towards the proof.
+  The fact that <fr:tex>G^0</fr:tex> is locally constructible, and quasi-compact over <fr:tex>S</fr:tex>, is contained in the following lemma:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1930</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.2</fr:addr><fr:route>fga3.vi-1-lemma-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>S \neq \varnothing</fr:tex> then there exists a non-empty open <fr:tex>U</fr:tex> in <fr:tex>S</fr:tex>, a group scheme <fr:tex>H</fr:tex> of finite type over <fr:tex>U</fr:tex> with connected fibres, and a homomorphism of group schemes <fr:tex>H \to  G|U</fr:tex> that is an open immersion with image <fr:tex>G^0|U</fr:tex>.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1929</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-lemma-1.2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      To prove this lemma, we can suppose that <fr:tex>S</fr:tex> is irreducible;
+      let <fr:tex>\eta</fr:tex> be its generic point.
+      If we make the base change <fr:tex>S'= \operatorname {Spec} ( \mathcal {O} _{S, \eta }) \to  S</fr:tex> then we find a group scheme <fr:tex>G'</fr:tex> over a local Artinian ring <fr:tex>\mathcal {O} _{S,s}=A</fr:tex> inside which we have an <fr:em>open</fr:em> group subscheme <fr:tex>{G'}^0</fr:tex> <fr:em>of finite type over <fr:tex>A</fr:tex></fr:em>, as we said above.
+      This thus comes from a group scheme <fr:tex>H</fr:tex> of finite type over an open neighbourhood <fr:tex>U</fr:tex> of <fr:tex>\eta</fr:tex>, and the canonical immersion <fr:tex>{G'}^0 \to  G'</fr:tex> comes from an open immersion <fr:tex>H \to  G|U</fr:tex>, which will be a homomorphism of group schemes for <fr:tex>U</fr:tex> small enough.
+      
+      Since the fibres of <fr:tex>H</fr:tex> are connected if we take <fr:tex>U</fr:tex> small enough, and since they are all of the same dimension, namely that of the fibres of <fr:tex>G</fr:tex>, for <fr:tex>U</fr:tex> small enough, it follows that, for all <fr:tex>s \in  U</fr:tex>, the image of <fr:tex>H_s</fr:tex> in <fr:tex>G_s</fr:tex> is exactly <fr:tex>G_s^0</fr:tex> (for <fr:tex>U</fr:tex> small enough), which proves the lemma.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  The second claim in (i) of <fr:ref
+addr="fga3.vi-1-theorem-1.1"
+href="fga3.vi-1-theorem-1.1.xml"
+taxon="Theorem"
+number="1.1"></fr:ref> is contained in the following lemma (which we apply to an quasi-compact open neighbourhood of <fr:tex>G^0</fr:tex> in <fr:tex>G</fr:tex>):
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1931</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.3</fr:addr><fr:route>fga3.vi-1-lemma-1.3.xml</fr:route><fr:number>1.3</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a separated prescheme of finite type over <fr:tex>S</fr:tex>, with <fr:tex>S</fr:tex> locally Noetherian, and let <fr:tex>g</fr:tex> be a section of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and <fr:tex>X^0</fr:tex> the union of the connected components of the <fr:tex>g(s)</fr:tex> in the <fr:tex>X_s</fr:tex>.
+    Let <fr:tex>s \in  S</fr:tex> be such that <fr:tex>X_s^0</fr:tex> is proper over <fr:tex>k(s)</fr:tex>.
+    Then there exists an open neighbourhood <fr:tex>U</fr:tex> of <fr:tex>s</fr:tex> such that <fr:tex>X^0|U</fr:tex> is proper over <fr:tex>U</fr:tex>, and a fortiori closed in <fr:tex>X|U</fr:tex>.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>287</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-lemma-1.3</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      By faithfully flat descent of the base, we can reduce to the case where <fr:tex>S</fr:tex> is the spectrum of a complete local ring, and <fr:tex>s</fr:tex> is its closed point.
+      Applying [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, III, §5.5.1], we see that <fr:tex>X</fr:tex> decomposes into a sum of two disjoint opens <fr:tex>X'</fr:tex> and <fr:tex>X''</fr:tex>, with <fr:tex>X'</fr:tex> proper over <fr:tex>S</fr:tex>, and such that <fr:tex>X'_s=S_s^0</fr:tex>.
+      This allows us to reduce to the case where <fr:tex>X=X'</fr:tex>, i.e. where <fr:tex>X</fr:tex> is proper over <fr:tex>S</fr:tex>.
+      In this case, we can apply a standard proof, using the valuative criterion of properness of a subset (forgotten in [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, II]).
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  We now prove that <fr:tex>G^ \tau</fr:tex> is open, or, equivalently, taking into account the fact that the formation of <fr:tex>G^ \tau</fr:tex> (as that of <fr:tex>G^0</fr:tex>, <fr:tex>G^ \sigma</fr:tex>, and <fr:tex>G^ \rho</fr:tex>) commutes with base extension: for every sections <fr:tex>g</fr:tex> of <fr:tex>G</fr:tex> over <fr:tex>S</fr:tex>, <fr:tex>g^{-1}(G^ \tau )</fr:tex> is open.
+  This implies two things:
+  <fr:strong><fr:em>TO-DO: the following list should be a, b</fr:em></fr:strong>
+
+  <fr:ol><fr:li>
+      Let <fr:tex>y \in  S</fr:tex> be such that <fr:tex>g(y) \in  G^ \tau</fr:tex>.
+      Then, for all neighbours <fr:tex>y' \in \overline {y}</fr:tex> of <fr:tex>y</fr:tex>, we have <fr:tex>g(y') \in  G^ \tau</fr:tex>.
+    </fr:li>
+    <fr:li>
+      Let <fr:tex>y' \in  S</fr:tex> be such that <fr:tex>g(y') \in  G^ \tau</fr:tex>.
+      Then, for every generalisation <fr:tex>y</fr:tex> of <fr:tex>y'</fr:tex>, we have <fr:tex>g(y) \in  G^ \tau</fr:tex>.
+    </fr:li></fr:ol>
+
+  For (a), note that there exists an integer <fr:tex>n&gt;0</fr:tex> such that <fr:tex>g^n(y) \in  G^0</fr:tex>; since <fr:tex>G^0</fr:tex> is constructible, <fr:tex>(g^n)^{-1}G^0</fr:tex> is constructible;
+  it follows that we have <fr:tex>g^n(y') \in  G^0</fr:tex> for all neighbours <fr:tex>y' \in \overline {y}</fr:tex> of <fr:tex>y</fr:tex>.
+  For (b), note that the <fr:tex>g(y')^n=g^n(y')</fr:tex> remain in a quasi-compact open of <fr:tex>G_{y'}</fr:tex> (since they are contained in a finite number of classes modulo <fr:tex>G_{y'}^0</fr:tex>), and so there exists a quasi-compact open <fr:tex>U</fr:tex> in <fr:tex>G</fr:tex> that contains the <fr:tex>g^n(y')</fr:tex>, and thus also their generalisations <fr:tex>g^n(y)</fr:tex>, and so the powers of <fr:tex>g(y)</fr:tex> remain in a quasi-compact open of <fr:tex>G_y</fr:tex>, which easily implies that <fr:tex>g(y) \in  G_y^ \tau</fr:tex>.
+</fr:p><fr:p>
+  Suppose that <fr:tex>G^0</fr:tex> is closed;
+  we will show that so too is <fr:tex>G^ \tau</fr:tex>.
+  As we already know that <fr:tex>G^ \tau</fr:tex> is open, thus locally constructible, it remains only to show that it is stable under specialisation, which comes from the fact that it is a union of closed subsets, namely inverse images under the <fr:tex>n</fr:tex>-th power homomorphisms <fr:tex>\varphi _n</fr:tex> of the closed subset <fr:tex>G^0</fr:tex>.
+</fr:p><fr:p>
+  The same argument shows that <fr:tex>G \sigma</fr:tex> and <fr:tex>G^ \rho</fr:tex> are closed if <fr:tex>G^0</fr:tex> is (under the additional hypothesis of equal characteristic in the case of the former), once we have shown that <fr:tex>G^ \sigma</fr:tex> and <fr:tex>G^ \rho</fr:tex> are locally constructible.
+  But, for <fr:tex>x \in  G^ \tau</fr:tex>, let <fr:tex>\nu (x)</fr:tex> be the smallest integer <fr:tex>n&gt;0</fr:tex> such that the <fr:tex>n</fr:tex>-th power homomorphism <fr:tex>\varphi _n</fr:tex> sends <fr:tex>x</fr:tex> to <fr:tex>G</fr:tex>.
+  Then <fr:tex>G^ \sigma</fr:tex> (resp. <fr:tex>G^ \rho</fr:tex>) consists of the <fr:tex>x \in  X</fr:tex> such that <fr:tex>\nu (x)</fr:tex> is coprime to <fr:tex>p</fr:tex> (resp. to a power of <fr:tex>p</fr:tex>), and our claim of constructibility then follows from the following, more precise lemma:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1933</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.4</fr:addr><fr:route>fga3.vi-1-lemma-1.4.xml</fr:route><fr:number>1.4</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The function <fr:tex>\nu</fr:tex> on <fr:tex>G^ \tau</fr:tex> is locally constructible.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1932</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-lemma-1.4</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      This means that, for every integer <fr:tex>n&gt;0</fr:tex>, the set of <fr:tex>x \in  G^ \tau</fr:tex> such that <fr:tex>\nu (x)=n</fr:tex> is locally constructible;
+      but this is the difference between <fr:tex>\varphi _n^{-1}(G^0)</fr:tex> and the union of the <fr:tex>\varphi _d^{-1}(G^0)</fr:tex> where <fr:tex>d</fr:tex> runs over the proper divisors of <fr:tex>n</fr:tex>;
+      since <fr:tex>G^0</fr:tex> is locally constructible, so too are all the <fr:tex>\varphi _i^{-1}(G^0)</fr:tex>, and thus also the aforementioned difference.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  Suppose that <fr:tex>G^0</fr:tex> is closed and that <fr:tex>G \to  S</fr:tex> is universally open at the point of <fr:tex>G^ \sigma</fr:tex>;
+  we will show that <fr:tex>G^ \sigma \to  S</fr:tex> is open, i.e. sends a neighbourhood in <fr:tex>G^ \sigma</fr:tex> of any <fr:tex>x \in  G^ \sigma</fr:tex> to a neighbourhood of <fr:tex>y=f(x)</fr:tex>.
+  Since <fr:tex>G^ \sigma</fr:tex> is locally constructible, it suffices to show that, for every generalisation <fr:tex>y'</fr:tex> of <fr:tex>y</fr:tex>, there exists a generalisation of <fr:tex>x</fr:tex>' of <fr:tex>x</fr:tex> in <fr:tex>G</fr:tex> in <fr:tex>y'</fr:tex>.
+  By base change, this allows us to reduce to the case where <fr:tex>S</fr:tex> is the spectrum of a discrete valuation ring, and where <fr:tex>y</fr:tex> and <fr:tex>y'</fr:tex> are the closed point and the generic point (respectively).
+  Using the fact that <fr:tex>G \to  S</fr:tex> is open at <fr:tex>x</fr:tex> (and thus there exists a generalisation <fr:tex>x_1</fr:tex> of <fr:tex>x</fr:tex> in <fr:tex>G</fr:tex> over <fr:tex>y'</fr:tex>), we can further suppose that there exists a section <fr:tex>g</fr:tex> of <fr:tex>G</fr:tex> over <fr:tex>S</fr:tex> such that <fr:tex>x=g(y)</fr:tex> (after performing another base change).
+  If <fr:tex>k(y')</fr:tex> is of characteristic <fr:tex>0</fr:tex>, then it suffices to take any generalisation <fr:tex>x'</fr:tex> of <fr:tex>x</fr:tex> in <fr:tex>G</fr:tex> over <fr:tex>y'</fr:tex>;
+  it is in <fr:tex>G^ \tau</fr:tex> since <fr:tex>G^ \tau</fr:tex> is open, and thus in <fr:tex>G^ \sigma</fr:tex> since <fr:tex>G_{y'}^ \sigma =G_{y'}^ \tau</fr:tex>.
+  If the characteristic of <fr:tex>k(y')</fr:tex> is <fr:tex>p&gt;0</fr:tex>, then let
+  <fr:tex
+display="block">      \nu (g(y'))     = p^hm      \qquad \text {where }(m,p)=1   </fr:tex>
+  
+  and let <fr:tex>a</fr:tex> and <fr:tex>b</fr:tex> be integers such that <fr:tex>ap^h+bm=1</fr:tex>, and set
+  <fr:tex
+display="block">      \begin {aligned}       g_1       &amp;= g^{ap^h}      \\ g_2       &amp;= g^{bm}      \end {aligned}   </fr:tex>
+  so that <fr:tex>g=g_1g_2</fr:tex>.
+  By construction, we then have <fr:tex>g_1(y') \in  G^ \sigma</fr:tex> and <fr:tex>g_2(y') \in  G^ \rho</fr:tex>.
+  Since <fr:tex>G^0</fr:tex> is closed, it follows that <fr:tex>g_1(y) \in  G^ \sigma</fr:tex> and <fr:tex>g_2(y) \in  G^ \rho</fr:tex>, whence, since
+  <fr:tex
+display="block">     g(y)     = g_1(y)g_2(y)  \in  G^ \sigma    </fr:tex>
+  we also have that <fr:tex>g_2(y) \in  G^ \sigma</fr:tex>, and so
+  <fr:tex
+display="block">     g_2(y) \in  G_y^ \sigma \cap  G_y^ \rho      = G_y^0.   </fr:tex>
+  But from the hypothesis, and the fact that <fr:tex>S</fr:tex> is the spectrum of a discrete valuation ring, it follows that <fr:tex>G \setminus (G_y \setminus  G_y^0)</fr:tex> is an open of <fr:tex>G</fr:tex> over which <fr:tex>G \to  S</fr:tex> induces an open morphism, and thus, at every point of <fr:tex>G_y^0</fr:tex>, gives a "quasi-section";
+  then, after possibly another extension of the base <fr:tex>S</fr:tex>, we can suppose that there exists a section <fr:tex>g'_2</fr:tex> of <fr:tex>G^0</fr:tex> over <fr:tex>S</fr:tex> such that <fr:tex>g'_2(y)=g_2(y)</fr:tex>.
+  Set <fr:tex>g'=g_1g'_2</fr:tex>;
+  then, by construction, <fr:tex>g'(y)=g(y)=x</fr:tex>, and <fr:tex>g'(y')=g_1(y')g'_2(y') \in  G^ \sigma</fr:tex>, and so <fr:tex>g(y')=x'</fr:tex> is a generalisation of <fr:tex>x</fr:tex> in <fr:tex>G^ \sigma</fr:tex> over <fr:tex>y'</fr:tex>, which proves (iii).
+</fr:p><fr:p>
+  Finally we prove the last claim (iv).
+  It suffices to prove that, if <fr:tex>x \in  G^ \rho</fr:tex>, then every generalisation <fr:tex>x'</fr:tex> of <fr:tex>x</fr:tex> is in <fr:tex>G^ \rho</fr:tex>.
+  We can suppose (after taking the images under <fr:tex>\varphi _{n^h}</fr:tex> for suitable <fr:tex>h</fr:tex>) that we even have <fr:tex>x \in  G^0</fr:tex>.
+  Then, for every integer <fr:tex>n&gt;0</fr:tex> coprime to the characteristic, <fr:tex>x</fr:tex> is in the image of <fr:tex>\varphi _n</fr:tex> (since the <fr:tex>n</fr:tex>-th power in a connected group of finite type over a field of characteristic coprime to <fr:tex>n</fr:tex> is surjective).
+  Since <fr:tex>\varphi _n</fr:tex> is open, it follows that <fr:tex>x'</fr:tex> is also in the image of <fr:tex>\varphi _n</fr:tex>.
+  More precisely, let <fr:tex>U</fr:tex> be a quasi-compact open of <fr:tex>G^ \tau</fr:tex> that contains <fr:tex>G_y^0</fr:tex>, and then <fr:tex>x' \in \varphi _n(U)</fr:tex> for all <fr:tex>n</fr:tex> coprime to <fr:tex>p</fr:tex>.
+  Taking <fr:tex>n</fr:tex> to be a common multiple of the factors of the <fr:tex>\nu (z)</fr:tex> that are coprime to <fr:tex>p</fr:tex>, for <fr:tex>z \in  U</fr:tex>, we see that <fr:tex>x' \in  G^ \rho</fr:tex>.
+</fr:p><fr:p>
+  Claim (iii) of <fr:ref
+addr="fga3.vi-1-theorem-1.1"
+href="fga3.vi-1-theorem-1.1.xml"
+taxon="Theorem"
+number="1.1"></fr:ref> is finished off as follows:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1935</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.5</fr:addr><fr:route>fga3.vi-1-corollary-1.5.xml</fr:route><fr:number>1.5</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>n&gt;1</fr:tex> be an integer such that the <fr:tex>n</fr:tex>-th power homomorphism <fr:tex>\varphi _n \colon  G \to  G</fr:tex> is universally open (for example, étale).
+    Let <fr:tex>G^{(n)}= \varphi _n^{-1}(G^0)</fr:tex>, and suppose that the connected fibres <fr:tex>G_s^0</fr:tex> "do not contain the additive component" (i.e. the group induced by field extension from <fr:tex>k(s)</fr:tex> to the algebraic closure does not contain a subgroup isomorphic to <fr:tex>\operatorname {G_a}</fr:tex>).
+    
+    Then <fr:tex>G \to  S</fr:tex> is universally open at the point of <fr:tex>G^{(n^h)}</fr:tex>.
+    In particular, if the <fr:tex>G_s^0</fr:tex> do not contain the additive component, and if, for every integer <fr:tex>n&gt;1</fr:tex>, the homomorphism <fr:tex>\varphi _n</fr:tex> is universally open at the points of residual characteristic coprime to <fr:tex>p</fr:tex>, then <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>G^ \sigma</fr:tex>, and thus ((iii) of <fr:ref
+addr="fga3.vi-1-theorem-1.1"
+href="fga3.vi-1-theorem-1.1.xml"
+taxon="Theorem"
+number="1.1"></fr:ref>) if <fr:tex>G^0</fr:tex> is closed then <fr:tex>G^ \sigma \to  S</fr:tex> is universally open.
+    In this case, <fr:tex>s \mapsto \dim  G_s</fr:tex> is a locally constant function on <fr:tex>S</fr:tex>.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1934</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-corollary-1.5</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      It follows from the hypotheses that the kernel <fr:tex>{}_nG</fr:tex> of <fr:tex>\varphi _n</fr:tex> is universally open over <fr:tex>S</fr:tex>, and so <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>{}_nG</fr:tex>, and thus also (replacing <fr:tex>n</fr:tex> with <fr:tex>n^h</fr:tex>) at the points of <fr:tex>{}_{(n^h)}G</fr:tex>.
+      But the hypothesis on the fibres <fr:tex>G_s^0</fr:tex> tells us exactly that the points of order some power of <fr:tex>n</fr:tex> in <fr:tex>G_s</fr:tex> are dense in the union of the <fr:tex>G^{(n^h)}</fr:tex>, whence it easily follows that <fr:tex>G \to  S</fr:tex> is universally open at all points of this union, in particular along the identity section, whence it easily follows that <fr:tex>s \mapsto \dim  G_s</fr:tex> is a locally constant function.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1936</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-1-remark-1.6</fr:addr><fr:route>fga3.vi-1-remark-1.6.xml</fr:route><fr:number>1.6</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Recall that a morphism <fr:tex>X \to  S</fr:tex> is said to be universally open if it sends every open to an open, and retains this nice property after any base change <fr:tex>S' \to  S</fr:tex>.
+    This also implies (if <fr:tex>S</fr:tex> is locally Noetherian and <fr:tex>X \to  S</fr:tex> is locally of finite type) that every irreducible component of <fr:tex>X</fr:tex> dominates <fr:tex>S</fr:tex>, and that this property is retained after any base change <fr:tex>S' \to  S</fr:tex>.
+    In these two claims, it suffices (thanks to the finiteness hypotheses above) to verify only for the base changes <fr:tex>S' \to  S</fr:tex> where <fr:tex>S'</fr:tex> is the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one wants...).
+    The definition extends in an evident way to the case of a subset <fr:tex>Z</fr:tex> of <fr:tex>X</fr:tex> (such as the subset <fr:tex>G^ \sigma</fr:tex> of <fr:tex>G</fr:tex>).
+    It is a perfectly normal phenomenon, even if we start with a simple projective morphism <fr:tex>X \to  S</fr:tex> with connected geometric fibres (for example, the fibre square of the modular family of elliptic curves over <fr:tex>S= \operatorname {Spec} \mathbb {C}[j]</fr:tex>), that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is not universally open over <fr:tex>S</fr:tex>, i.e. that there can be irreducible components of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>that live entirely over a single point of <fr:tex>S</fr:tex>;
+    this is linked to the fact that the rank of the Néron–Severi group of the fibres of <fr:tex>X/S</fr:tex> can jump up ("complex multiplication" phenomena).
+    However, <fr:link
+href="#fga3.vi-1-corollary-1.5"
+type="external">(1.5)</fr:link> assures us that, in good cases, <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \sigma</fr:tex> (and usually, it seems, even <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex>) is universally open over <fr:tex>S</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Finally, here is a useful case where, exceptionally, <fr:tex>G^0</fr:tex> agrees to be open:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1937</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.7</fr:addr><fr:route>fga3.vi-1-corollary-1.7.xml</fr:route><fr:number>1.7</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose that <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>G^0</fr:tex> (cf. <fr:ref
+addr="fga3.vi-1-corollary-1.5"
+href="fga3.vi-1-corollary-1.5.xml"
+taxon="Corollary"
+number="1.5"></fr:ref>) and that the fibres <fr:tex>G_s</fr:tex> are separable, thus simple over <fr:tex>k(s)</fr:tex> (this latter condition being automatically satisfied in residual characteristic zero, by a result of Cartier).
+    Then <fr:tex>G^0</fr:tex> is open in <fr:tex>G</fr:tex>.
+    If, further, <fr:tex>S</fr:tex> is reduced, then <fr:tex>G^0</fr:tex> is simple (and in particular, flat) over <fr:tex>S</fr:tex>.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>285</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-corollary-1.7</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      The first claim can be made more precise by noting that if, for some given <fr:tex>s \in  S</fr:tex>, we have that <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>G_s^0</fr:tex>, and if <fr:tex>G_s^0</fr:tex> is separable over <fr:tex>k(s)</fr:tex>, then <fr:tex>G^0</fr:tex> is a neighbourhood of <fr:tex>G_s^0</fr:tex> (and it so happens that the hypotheses made on <fr:tex>s</fr:tex> remain satisfied by all neighbouring points).
+      A proof of this statement, which is independent of all the structure of the group, can be found in [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, IV, §7].
+      The last claim in <fr:ref
+addr="fga3.vi-1-corollary-1.7"
+href="fga3.vi-1-corollary-1.7.xml"
+taxon="Corollary"
+number="1.7"></fr:ref>, also independent of group structure and of any question of connected components, is a particular case of a flatness criterion given in [<fr:link
+href="Gro1960b.xml"
+type="local"
+addr="Gro1960b">Gro1960b</fr:link>, §5], which implies, more generally:
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1938</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.8</fr:addr><fr:route>fga3.vi-1-corollary-1.8.xml</fr:route><fr:number>1.8</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>U</fr:tex> be an open subset of a fibre <fr:tex>G_s</fr:tex> such that <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>U</fr:tex> (cf. <fr:link
+href="#fga3.vi-1-corollary-1.5"
+type="external">(1.5)</fr:link>).
+    If <fr:tex>G_s</fr:tex> is separable over <fr:tex>k(s)</fr:tex> and <fr:tex>S</fr:tex> is reduced at <fr:tex>s</fr:tex>, then <fr:tex>G</fr:tex> is flat over <fr:tex>S</fr:tex> at the points of <fr:tex>U</fr:tex> (and then also simple over <fr:tex>S</fr:tex> at the points of <fr:tex>U</fr:tex>).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1939</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.vi-1-remarks-1.9</fr:addr><fr:route>fga3.vi-1-remarks-1.9.xml</fr:route><fr:number>1.9</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    I do not know, if <fr:tex>G</fr:tex> is separated over <fr:tex>S</fr:tex>, if <fr:tex>G^0</fr:tex> or <fr:tex>G^ \tau</fr:tex> is always closed in <fr:tex>G</fr:tex>;
+    this seems unlikely.
+    In any case, we find evident counter-examples if we drop the separation hypothesis, for example by taking the affine line with a countably infinite number of copies of the origin, thus obtaining a group scheme <fr:tex>G</fr:tex> over the affine line whose fibres are all the trivial group, apart from one, which is <fr:tex>\mathbb {Z}</fr:tex>.
+    This group scheme is an open group subscheme, the closure of the identity section, of the Picard prescheme of the <fr:tex>S</fr:tex>-scheme <fr:tex>X</fr:tex> that corresponds to a family of conics degenerating to two concurrent lines.
+  </fr:p><fr:p>
+    Even starting with a flat and finite group scheme <fr:tex>G</fr:tex> over the spectrum <fr:tex>S</fr:tex> of a discrete valuation ring <fr:tex>V</fr:tex>, if <fr:tex>G^0</fr:tex> is reduced at the identity section, and thus closed, then various conclusions become false if we drop certain hypotheses.
+    Suppose that <fr:tex>V</fr:tex> is of equal characteristic <fr:tex>p&gt;0</fr:tex>, and let <fr:tex>G</fr:tex> be the kernel of the homomorphism <fr:tex>\operatorname {G_a} \to \operatorname {G_a}</fr:tex> given by the homomorphism of functors <fr:tex>f \mapsto  f^p-tf</fr:tex>, where <fr:tex>t</fr:tex> is a uniformiser of <fr:tex>V</fr:tex>.
+    
+    (Recall that, by definition, the "additive group" <fr:tex>\operatorname {G_a}</fr:tex> over <fr:tex>S</fr:tex> represents the functor <fr:tex>S' \mapsto \Gamma (S', \mathcal {O} _{S'})</fr:tex>).
+    Then, as an <fr:tex>S</fr:tex>-scheme, <fr:tex>G= \operatorname {Spec}  V[x]/(x^p-tx)</fr:tex> is the union of <fr:tex>p</fr:tex> concurrent "lines", giving a group <fr:tex>\mathbb {Z}/p \mathbb {Z}</fr:tex> that degenerates to an infinitesimal additive-type group.
+    In this example, <fr:tex>G^0=G^ \sigma</fr:tex> (and this is one of the <fr:tex>p</fr:tex> lines), and so <fr:tex>G^0</fr:tex> is not open in <fr:tex>G</fr:tex>.
+    In the case of unequal characteristic, with residual characteristic <fr:tex>p&gt;0</fr:tex>, we start with a group scheme <fr:tex>H= \mu _p</fr:tex> given by the kernel of the <fr:tex>p</fr:tex>-th power in <fr:tex>\operatorname {G_m}</fr:tex>, so that <fr:tex>H= \operatorname {Spec}  V[x]/(x^p-1)</fr:tex>, which is again the union of <fr:tex>p</fr:tex> concurrent lines, giving a group <fr:tex>\mathbb {Z}/p \mathbb {Z}</fr:tex> (in characteristic <fr:tex>0</fr:tex>) that degenerates to an infinitesimal multiplicative-type group in characteristic <fr:tex>p</fr:tex>.
+    Let <fr:tex>H'</fr:tex> be the "constant group scheme" defined by the ordinary finite group <fr:tex>\mathbb {Z}/p \mathbb {Z}</fr:tex>, which is the disjoint sum of <fr:tex>\mathbb {Z}/p \mathbb {Z}</fr:tex> copies of <fr:tex>S</fr:tex>, or even <fr:tex>\operatorname {Spec}  V^{ \mathbb {Z}/p \mathbb {Z}}</fr:tex>.
+    Then <fr:tex>G=H \times _S H'</fr:tex> describes a group <fr:tex>( \mathbb {Z}/p \mathbb {Z})^2</fr:tex> in characteristic <fr:tex>0</fr:tex> that degenerates to an infinitesimal group times <fr:tex>\mathbb {Z}/p \mathbb {Z}</fr:tex> in characteristic <fr:tex>p</fr:tex>.
+    Here <fr:tex>G^ \rho</fr:tex> is the union of the identity section and the special fibre, and so <fr:tex>G^ \rho</fr:tex> is not open, even though <fr:tex>G^ \sigma</fr:tex> is the union of the identity section and the general fibre, and is thus not closed, contrary to what is true in the case of equal characteristic in (iii) and (iv) of <fr:ref
+addr="fga3.vi-1-theorem-1.1"
+href="fga3.vi-1-theorem-1.1.xml"
+taxon="Theorem"
+number="1.1"></fr:ref>.
+    Of course, these are phenomena linked to characteristic <fr:tex>p&gt;0</fr:tex>.
+    The above results give:
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1940</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.10</fr:addr><fr:route>fga3.vi-1-corollary-1.10.xml</fr:route><fr:number>1.10</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose that the residual characteristics of <fr:tex>S</fr:tex> are all <fr:tex>0</fr:tex>, so that <fr:tex>G^ \tau =G^ \sigma</fr:tex> and <fr:tex>G^0=G^ \rho</fr:tex>.
+    Then <fr:tex>G^ \tau =G^ \sigma</fr:tex> is open, and even open and closed if <fr:tex>G</fr:tex> is separated over <fr:tex>S</fr:tex> and the <fr:tex>G_s^0</fr:tex> are proper;
+    under these same hypotheses, <fr:tex>G^0=G^ \rho</fr:tex> is proper over <fr:tex>S</fr:tex> and thus closed in <fr:tex>G</fr:tex>.
+    Suppose finally that, for every integer <fr:tex>n&gt;1</fr:tex>, the <fr:tex>n</fr:tex>-th power homomorphism in <fr:tex>G</fr:tex> is universally open, then <fr:tex>G^0</fr:tex> is open;
+    if furthermore the <fr:tex>G_s^0</fr:tex> do not have any additive component (for example the <fr:tex>G_s^0</fr:tex> are proper, as above), then <fr:tex>G^ \tau \to  S</fr:tex> is universally open, and even simple if <fr:tex>S</fr:tex> is reduced.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Finally we note the following easy result:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1941</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.vi-1-proposition-1.11</fr:addr><fr:route>fga3.vi-1-proposition-1.11.xml</fr:route><fr:number>1.11</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    There exists an open subset <fr:tex>U</fr:tex> of <fr:tex>S</fr:tex> such that the set <fr:tex>G'</fr:tex> of points of <fr:tex>G</fr:tex> at which <fr:tex>G</fr:tex> is simple (resp. flat) over <fr:tex>S</fr:tex> is the underlying set of an open group subscheme induced by <fr:tex>G|U</fr:tex>.
+    Furthermore, every section of <fr:tex>G</fr:tex> over <fr:tex>U</fr:tex> is a section of <fr:tex>G'</fr:tex> over <fr:tex>U</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1942</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.12</fr:addr><fr:route>fga3.vi-1-corollary-1.12.xml</fr:route><fr:number>1.12</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>G</fr:tex> is simple (resp. flat) over <fr:tex>S</fr:tex> at the points of the identity section, then it is simple (resp. flat) at the points of every section of <fr:tex>G</fr:tex> over <fr:tex>S</fr:tex>, and at all points of <fr:tex>G^0</fr:tex>.
+    If, further, for every integer <fr:tex>n&gt;0</fr:tex> the <fr:tex>n</fr:tex>-th power homomorphism <fr:tex>\varphi _n \colon  G \to  G</fr:tex> is étale at the points of characteristic coprime to <fr:tex>n</fr:tex>, then <fr:tex>G</fr:tex> is simple (resp. flat) over <fr:tex>S</fr:tex> at all points of <fr:tex>G^ \sigma</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

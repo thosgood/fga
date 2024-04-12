@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1276</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-8-corollary-1</fr:addr><fr:route>fga2-theorem-8-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be a simple scheme of finite type over <fr:tex>k</fr:tex>, and suppose that
+    <fr:tex
+display="block">        \operatorname {H} ^2(X_0, \mathfrak {G}_{X_0/k})       = 0.     </fr:tex>
+    
+    Then, for every local Artinian ring <fr:tex>A</fr:tex> with residue field <fr:tex>k</fr:tex>, there exists a flat <fr:tex>A</fr:tex>-scheme <fr:tex>X</fr:tex> such that <fr:tex>X \otimes _A k=X_0</fr:tex>.
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1275</fr:anchor><fr:addr>fga2-6</fr:addr><fr:route>fga2-6.xml</fr:route><fr:title><fr:link
+href="fga2.xml"
+type="local"
+addr="fga2">Formal geometry and algebraic geometry</fr:link> › Application to existence and uniqueness theorems for sheaves and schemes over a complete <fr:tex>\mathscr {J}</fr:tex>-adic ring</fr:title><fr:number>6</fr:number><fr:parent>fga2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:ref
+addr="fga2-theorem-7"
+href="fga2-theorem-7.xml"
+taxon="Theorem"
+number="7"></fr:ref> gave a uniqueness result for locally free coherent sheaves, by using <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> and <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref>.
+  Using <fr:ref
+addr="fga2-theorem-3"
+href="fga2-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>, we now obtain <fr:em>existence</fr:em> theorems for sheaves, for morphisms of schemes, or for schemes.
+  In the following, <fr:tex>A</fr:tex> denotes a local Noetherian ring, assumed to be separated and <fr:em>complete</fr:em>.
+  The general method still consists of making <fr:em>formal</fr:em> construction, which consists essentially of doing <fr:em>algebraic geometry over an Artinian ring</fr:em>, and deducing conclusions from this that are "algebraic" in nature, by using the three fundamental theorems.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>334</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga2-proposition-3</fr:addr><fr:route>fga2-proposition-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathfrak {X}</fr:tex> be a proper formal scheme that is flat over <fr:tex>A</fr:tex>, and let <fr:tex>\mathscr { F } _0</fr:tex> be a locally free sheaf on <fr:tex>X_0</fr:tex> such that <fr:tex>\operatorname {H} ^2(X_0, \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _{X_0}}( \mathscr { F } _0, \mathscr { F } _0))=0</fr:tex>.
+    Then there exists a locally free sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>\mathfrak {X}</fr:tex> that induces, on <fr:tex>X_0</fr:tex>, a sheaf isomorphic to <fr:tex>\mathscr { F } _0</fr:tex>.
+    (This <fr:tex>\mathscr { F }</fr:tex> is also unique up to isomorphism if <fr:tex>\operatorname {H} ^1(X_0, \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _{X_0}}( \mathscr { F } _0, \mathscr { F } _0))=0</fr:tex>).
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We construct, step by step, locally free sheaves <fr:tex>\mathscr { F } _n</fr:tex> on the <fr:tex>X_n</fr:tex> that induce one another.
+  The construction of <fr:tex>\mathscr { F } _0</fr:tex> is met with an obstruction living in <fr:tex>\operatorname {H} ^2(X_0, \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _{X_0}}( \mathscr { F } _0, \mathscr { F } _0)) \otimes _{A/ \mathscr { J } }( \mathscr { J } ^n/ \mathscr { J } ^{n+1})</fr:tex>, but this is zero, by hypothesis.
+  Now, using <fr:ref
+addr="fga2-theorem-3"
+href="fga2-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>, we obtain:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>335</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-proposition-3-corollary-1</fr:addr><fr:route>fga2-proposition-3-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a proper scheme that is flat over <fr:tex>A</fr:tex>, and let <fr:tex>\mathscr { F } _0</fr:tex> be as above.
+    Then there exists a locally free sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex> that induces, on <fr:tex>X_0</fr:tex>, a sheaf that is isomorphic to <fr:tex>\mathscr { F } _0</fr:tex>.
+    This <fr:tex>\mathscr { F }</fr:tex> is also unique up to isomorphism if <fr:tex>\operatorname {H} ^1(X_0, \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _{X_0}}( \mathscr { F } _0, \mathscr { F } _0))=0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Let <fr:tex>X_0</fr:tex> be a scheme of finite type over the field <fr:tex>k</fr:tex>, and suppose that <fr:tex>X_0</fr:tex> is <fr:em>simple</fr:em> (by which we mean <fr:em>absolutely</fr:em> simple) over <fr:tex>k</fr:tex>, but not necessarily proper over <fr:tex>k</fr:tex>.
+  Let <fr:tex>A</fr:tex> be a local Artinian ring with residue field <fr:tex>k</fr:tex>.
+  We are interested in finding schemes <fr:tex>X</fr:tex> that are flat over <fr:tex>A</fr:tex>, and such that <fr:tex>X \otimes _A k=X_0</fr:tex> (this is the starting point of the "_theory of modules_", or of "structure variations" of <fr:tex>X_0</fr:tex>).
+  
+  It is equivalent to give either such an <fr:tex>X</fr:tex> or, on the topological space <fr:tex>X_0</fr:tex>, a sheaf <fr:tex>\mathcal {O} _X</fr:tex> endowed with the following structures:
+  <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>\mathcal {O} _X</fr:tex> is a sheaf of <fr:tex>A</fr:tex>-algebras;
+    </fr:li>
+    <fr:li><fr:tex>\mathcal {O} _X</fr:tex> is endowed with an augmentation homomorphism <fr:tex>\mathcal {O} _X \to \mathcal {O} _{X_0}</fr:tex> (that is compatible with the <fr:tex>A</fr:tex>-algebra structures);
+    </fr:li></fr:ol>
+
+  and with the above data being subject to the following conditions: the augmentation induces an isomorphism <fr:tex>\mathcal {O} _X \otimes _A k \xrightarrow { \sim } \mathcal {O} _{X_0}</fr:tex>;
+  <fr:tex>\mathcal {O} _X</fr:tex> is flat over <fr:tex>A</fr:tex>, i.e. the graded algebra associated to <fr:tex>\mathcal {O} _X</fr:tex> filtered by the powers of the maximal ideal <fr:tex>\mathfrak {m}</fr:tex> of <fr:tex>A</fr:tex> is isomorphic to <fr:tex>\operatorname {gr} ^0( \mathcal {O} _X) \otimes _k \operatorname {gr} (A)</fr:tex>, i.e. we have isomorphisms <fr:tex>\mathfrak {m}^n \mathcal {O} _X/ \mathfrak {m}^{n+1} \mathcal {O} _X =  \mathcal {O} _{X_0} \otimes _k( \mathfrak {m}^n/ \mathfrak {m}^{n+1})</fr:tex>.
+  The fundamental fact is the following:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>336</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-8</fr:addr><fr:route>fga2-theorem-8.xml</fr:route><fr:number>8</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be a simple scheme of finite type over the field <fr:tex>k</fr:tex>, and assume <fr:tex>X_0</fr:tex> to be affine.
+    Let <fr:tex>A</fr:tex> be a local Artinian ring of residue field <fr:tex>k</fr:tex>.
+    Then there exists an <fr:tex>A</fr:tex>-scheme <fr:tex>X</fr:tex> that is flat over <fr:tex>A</fr:tex> and such that <fr:tex>X \otimes _A k=X_0</fr:tex>.
+    Further, any two such schemes are necessarily isomorphic.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Note that the isomorphic in question is not canonical, since <fr:tex>X</fr:tex> will have, in general, non-trivial <fr:tex>A</fr:tex>-automorphisms that induce the identity on <fr:tex>X_0</fr:tex>.
+  Furthermore, there is not, in general, a "canonical" choice of <fr:tex>X</fr:tex> satisfying the given conditions, except in the case where <fr:tex>A</fr:tex> is a <fr:tex>k</fr:tex>-algebra (the case of <fr:em>equal characteristics</fr:em>), where we can take <fr:tex>X=X_0 \otimes _k A</fr:tex>, i.e. <fr:tex>\mathcal {O} _X= \mathcal {O} _{X_0} \otimes _k A</fr:tex> (whether or not <fr:tex>X_0</fr:tex> is affine, in fact).
+  In the case of unequal characteristics, I do not know in general, when <fr:tex>X_0</fr:tex> is not affine, if we can "lift" <fr:tex>X_0</fr:tex> to an <fr:tex>X</fr:tex> defined over <fr:tex>A</fr:tex>.
+  However, for any integer <fr:tex>n&gt;0</fr:tex>, let <fr:tex>A_{n-1}=A/ \mathfrak {m}^n</fr:tex>, and suppose that we have lifted <fr:tex>X_0</fr:tex> to a flat <fr:tex>A_{n-1}</fr:tex>-scheme <fr:tex>X_{n-1}</fr:tex>;
+  we intend to lift <fr:tex>X_{n-1}</fr:tex> to a flat <fr:tex>A_n</fr:tex>-scheme <fr:tex>X_n</fr:tex>.
+  We already know, by <fr:ref
+addr="fga2-theorem-8"
+href="fga2-theorem-8.xml"
+taxon="Theorem"
+number="8"></fr:ref>, that this is possible locally;
+  we can also easily verify that, if <fr:tex>U_n</fr:tex> lifts an open subset <fr:tex>U_{n-1}</fr:tex> of <fr:tex>X_{n-1}</fr:tex>, then the sheaf of groups of automorphisms of <fr:tex>U_n</fr:tex> (that induce the identity on <fr:tex>U_{n-1}</fr:tex>) is canonically isomorphic to <fr:tex>\mathfrak {G}_{X_0/k} \otimes _k \mathfrak {m}^n/ \mathfrak {m}^{n+1}</fr:tex> restricted to <fr:tex>U_{n-1}</fr:tex>, and thus, in particular, commutative (where <fr:tex>\mathfrak {G}_{X_0/k}</fr:tex> denotes the sheaf of germs of <fr:tex>k</fr:tex>-derivations on <fr:tex>X_0</fr:tex>).
+  It follows easily that we have an *obstruction of constructing <fr:tex>X_n</fr:tex> lifting <fr:tex>X_{n-1}</fr:tex>*, which lives in <fr:tex>\operatorname {H} ^2(X_0, \mathfrak {G}_{X_0/k}) \otimes \mathfrak {m}^n/ \mathfrak {m}^{n+1}</fr:tex>.
+  Then:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>337</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-8-corollary-1</fr:addr><fr:route>fga2-theorem-8-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be a simple scheme of finite type over <fr:tex>k</fr:tex>, and suppose that
+    <fr:tex
+display="block">        \operatorname {H} ^2(X_0, \mathfrak {G}_{X_0/k})       = 0.     </fr:tex>
+    
+    Then, for every local Artinian ring <fr:tex>A</fr:tex> with residue field <fr:tex>k</fr:tex>, there exists a flat <fr:tex>A</fr:tex>-scheme <fr:tex>X</fr:tex> such that <fr:tex>X \otimes _A k=X_0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Also, if we can find <fr:em>one</fr:em> <fr:tex>X</fr:tex> that is flat over <fr:tex>A</fr:tex> and that lifts <fr:tex>X_0</fr:tex>, then, by <fr:ref
+addr="fga2-theorem-8"
+href="fga2-theorem-8.xml"
+taxon="Theorem"
+number="8"></fr:ref>, the set of classes (up to isomorphism) of flat <fr:tex>A</fr:tex>-schemes that lift <fr:tex>X_0</fr:tex> can be identified with <fr:tex>\operatorname {H} ^1(X_0, \mathscr {A} \kern  -1.75pt \mathit {ut} (X))</fr:tex>, where <fr:tex>\mathscr {A} \kern  -1.75pt \mathit {ut} (X)</fr:tex> denotes the sheaf of germs of automorphisms of the sheaf <fr:tex>\mathscr { O_X }</fr:tex> of <fr:tex>A</fr:tex>-algebras <fr:em>that are compatible with the augmentation</fr:em>.
+  The filtration of <fr:tex>\mathcal {O} _X</fr:tex> defines a filtration of <fr:tex>\mathscr {A} \kern  -1.75pt \mathit {ut} (X)</fr:tex>, with the quotient of this sheaf by the <fr:tex>n</fr:tex>-th subgroup of the filtration being <fr:tex>\mathscr {A} \kern  -1.75pt \mathit {ut} (X_n)</fr:tex>;
+  the graded algebra associated to this filtration is commutative, and can be identified with <fr:tex>\mathfrak {G}_{X_0/k} \otimes _k \operatorname {gr} (A)</fr:tex>.
+  In particular, if <fr:tex>\mathfrak {m}^{n+1}</fr:tex> is the first power of <fr:tex>\mathfrak {m}</fr:tex> that is not zero, then <fr:tex>F^n( \mathscr {A} \kern  -1.75pt \mathit {ut} (X))</fr:tex> (the last stage of the filtration) is in the centre of <fr:tex>\mathscr {A} \kern  -1.75pt \mathit {ut} (X)</fr:tex>, and is isomorphic to <fr:tex>\mathfrak {G}_{X_0/k} \otimes _k \mathfrak {m}^n</fr:tex>;
+  it is also the sheaf of germs of automorphisms of <fr:tex>X</fr:tex> that induce the identity on <fr:tex>X_{n-1}=X \otimes _A A/ \mathfrak {m}^n</fr:tex>.
+  Using these results, we immediately obtain the following statements:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>338</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-8-corollary-2</fr:addr><fr:route>fga2-theorem-8-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be a simple scheme of finite type over <fr:tex>k</fr:tex>, and let <fr:tex>A</fr:tex> be a local Artinian ring with residue field <fr:tex>k</fr:tex> and maximal ideal <fr:tex>\mathfrak {m}</fr:tex>.
+    Suppose that <fr:tex>\mathfrak {m}^{n+1}=0</fr:tex>.
+    Let <fr:tex>A_{n-1}=A/ \mathfrak {m}^n</fr:tex>, and let <fr:tex>X_{n-1}</fr:tex> be a flat <fr:tex>A_{n-1}</fr:tex>-scheme such that <fr:tex>X_{n-1} \otimes _Ak=X_0</fr:tex>.
+    Then the set of classes (up to an isomorphism that induces the identity on <fr:tex>X_{n-1}</fr:tex>) of flat <fr:tex>A</fr:tex>-schemes <fr:tex>X_n</fr:tex> such that <fr:tex>X \otimes _AA_{n-1}=X_{n-1}</fr:tex> is either empty, or a homogeneous principal space under <fr:tex>\operatorname {H} ^1(X_0, \mathfrak {G}_{X_0/k}) \otimes _k \mathfrak {m}^n</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  (Note that, in general, there is no privileged choice of origin in the latter homogeneous principal space, since there is no privileged way of lifting <fr:tex>X_{n-1}</fr:tex> to <fr:tex>X_n</fr:tex>).
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>339</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-8-corollary-3</fr:addr><fr:route>fga2-theorem-8-corollary-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be a simple scheme of finite type over <fr:tex>k</fr:tex>, and suppose that <fr:tex>\operatorname {H} ^1(X_0, \mathfrak {G}_{X_0/k})=0</fr:tex>.
+    Then, for every local Artinian ring <fr:tex>A</fr:tex> with residue field <fr:tex>k</fr:tex>, <fr:em>there exists at most one flat <fr:tex>A</fr:tex>-scheme <fr:tex>X</fr:tex></fr:em> (up to isomorphism) such that <fr:tex>X \otimes _Ak=X_0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p><fr:ref
+addr="fga2-theorem-8-corollary-1"
+href="fga2-theorem-8-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref> and <fr:ref
+addr="fga2-theorem-8-corollary-3"
+href="fga2-theorem-8-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> of <fr:ref
+addr="fga2-theorem-8"
+href="fga2-theorem-8.xml"
+taxon="Theorem"
+number="8"></fr:ref> immediately imply the claims, which seem more general, obtained by supposing only that <fr:tex>A</fr:tex> is a <fr:em>complete local Noetherian ring with residue field <fr:tex>k</fr:tex></fr:em>, provided that we introduce <fr:tex>X</fr:tex> as a formal scheme over <fr:tex>A</fr:tex>:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>340</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-9</fr:addr><fr:route>fga2-theorem-9.xml</fr:route><fr:number>9</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>k</fr:tex> be a field, and <fr:tex>X_0</fr:tex> a <fr:em>simple</fr:em> scheme of finite type over <fr:tex>k</fr:tex>.
+    For every complete locally Noetherian ring <fr:tex>A</fr:tex> with residue field <fr:tex>k</fr:tex>, let <fr:tex>F(A)</fr:tex> be the set of classes (up to an isomorphism that induces the identity on <fr:tex>X_0</fr:tex>) of formal schemes <fr:tex>\mathfrak {X}</fr:tex> over <fr:tex>A</fr:tex>, of finite type, and flat over <fr:tex>A</fr:tex>, such that <fr:tex>X \otimes _Ak=X_0</fr:tex>.
+    
+    With this notation: for all <fr:tex>A</fr:tex>,
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+    <fr:ol><fr:li>
+        if <fr:tex>\operatorname {H} ^1(X_0, \mathfrak {G}_{X_0/k})=0</fr:tex> then <fr:tex>F(A)</fr:tex> has at most one element;
+      </fr:li>
+      <fr:li>
+        if <fr:tex>\operatorname {H} ^2(X_0, \mathfrak {G}_{X_0/k})=0</fr:tex> then <fr:tex>F(A)</fr:tex> has at least one element.
+      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>341</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-9-corollary-1</fr:addr><fr:route>fga2-theorem-9-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose that <fr:tex>X_0</fr:tex> is proper over <fr:tex>k</fr:tex>.
+    Under condition (i) of <fr:ref
+addr="fga2-theorem-9"
+href="fga2-theorem-9.xml"
+taxon="Theorem"
+number="9"></fr:ref>, for all <fr:tex>A</fr:tex>, there exists at most (up to an isomorphism that induces the identity on <fr:tex>X_0</fr:tex>) one scheme <fr:tex>X</fr:tex> that is proper, flat over <fr:tex>A</fr:tex>, and such that <fr:tex>X \otimes _Ak=X_0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We can use <fr:link
+href="fga2-theorem-3-corollary-2.xml"
+type="local"
+addr="fga2-theorem-3-corollary-2">Corollary 2 of Theorem 3</fr:link>.
+  For example:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>342</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-9-corollary-2</fr:addr><fr:route>fga2-theorem-9-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>X</fr:tex> is a proper flat <fr:tex>A</fr:tex>-scheme such that <fr:tex>X \otimes _A k</fr:tex> is isomorphic to the projective-type scheme <fr:tex>\mathfrak {P}_k^r</fr:tex> of dimension <fr:tex>r</fr:tex> over <fr:tex>k</fr:tex>, then <fr:tex>X</fr:tex> is isomorphic to <fr:tex>\mathfrak {P}_k^r</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  (We can also deduce this result from <fr:link
+href="fga2-proposition-3-corollary-1.xml"
+type="local"
+addr="fga2-proposition-3-corollary-1">Corollary 1 of Proposition 3</fr:link>).
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>343</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-9-corollary-3</fr:addr><fr:route>fga2-theorem-9-corollary-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be a simple projective scheme over <fr:tex>k</fr:tex>, and suppose that
+    <fr:tex
+display="block">       H^2(X_0, \mathcal {O} _{X_0})       = H^2(X_0, \mathfrak {G}_{X_0/k})       = 0.     </fr:tex>
+    Then, for all <fr:tex>A</fr:tex>, there exists a flat projective <fr:tex>A</fr:tex>-scheme such that <fr:tex>X \otimes _Ak=X_0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We can combine part (ii) of <fr:ref
+addr="fga2-theorem-9"
+href="fga2-theorem-9.xml"
+taxon="Theorem"
+number="9"></fr:ref> with <fr:ref
+addr="fga2-theorem-4"
+href="fga2-theorem-4.xml"
+taxon="Theorem"
+number="4"></fr:ref>.
+  In particular:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>344</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-9-corollary-4</fr:addr><fr:route>fga2-theorem-9-corollary-4.xml</fr:route><fr:number>4</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be the scheme of a complete simple algebraic curve over <fr:tex>k</fr:tex>.
+    Then, for every complete local Noetherian ring <fr:tex>A</fr:tex> with residue field <fr:tex>k</fr:tex>, there exists a "simple curve scheme" <fr:tex>X</fr:tex> over <fr:tex>A</fr:tex>, such that <fr:tex>X \otimes _Ak=X_0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>345</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga2-6-remarks</fr:addr><fr:route>fga2-6-remarks.xml</fr:route><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li><fr:ref
+addr="fga2-theorem-9-corollary-3"
+href="fga2-theorem-9-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> and <fr:ref
+addr="fga2-theorem-9-corollary-4"
+href="fga2-theorem-9-corollary-4.xml"
+taxon="Corollary"
+number="4"></fr:ref> are above all interesting if <fr:tex>k</fr:tex> is of characteristic <fr:tex>p \neq0</fr:tex>, taking <fr:tex>A</fr:tex> to be a discrete valuation ring <fr:em>of characteristic <fr:tex>0</fr:tex></fr:em>, with residue field <fr:tex>k</fr:tex>;
+      for example, the "smallest possible <fr:tex>A</fr:tex>", i.e. that for which <fr:tex>p</fr:tex> generates the maximal ideal.
+      (In fact, by theorems of Cohen, it suffices to have <fr:ref
+addr="fga2-theorem-9-corollary-3"
+href="fga2-theorem-9-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> and <fr:ref
+addr="fga2-theorem-9-corollary-4"
+href="fga2-theorem-9-corollary-4.xml"
+taxon="Corollary"
+number="4"></fr:ref> for such a ring <fr:tex>A</fr:tex>).
+      We note that, concerning this point, according to the specialists, we do not know if there exist schemes over a field <fr:tex>k</fr:tex> that are not reductions <fr:tex>\mod  p</fr:tex> of a flat scheme defined over such a ring <fr:tex>A</fr:tex>.
+      At the least, the results of this section give a way of systematically investigating this question.
+      We must start by seeing if the first obstruction that we have, in <fr:tex>H^2(X_0, \mathfrak {G}_{X_0/k})</fr:tex>, is necessarily zero.
+    </fr:li>
+
+    <fr:li>
+      We note that <fr:ref
+addr="fga2-theorem-3"
+href="fga2-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>, and the corresponding technique, only works for a <fr:em>complete</fr:em> (local, for simplicity) base ring.
+      In order to go from known results concerning the completion of a local ring to the corresponding results for the local ring itself, we would need a fourth "fundamental theorem", whose precise statement still needs to be found.
+    </fr:li>
+
+    <fr:li>
+      We will compare the results from this section (mainly the above <fr:ref
+addr="fga2-theorem-9-corollary-1"
+href="fga2-theorem-9-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref> and <fr:ref
+addr="fga2-theorem-9-corollary-2"
+href="fga2-theorem-9-corollary-2.xml"
+taxon="Corollary"
+number="2"></fr:ref>), as well as those from the following, with the results of Kodaira–Spencer on the variation of complex structures.
+      Using the conjectural theorem to which we have just alluded, we should be able to conclude, under the conditions of <fr:ref
+addr="fga2-theorem-9-corollary-1"
+href="fga2-theorem-9-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref>, but where <fr:tex>A</fr:tex> is no longer assumed to be complete, that there exists a ring <fr:tex>A'</fr:tex> that contains <fr:tex>A</fr:tex>, and that is finite and unramified over <fr:tex>A</fr:tex>, such that <fr:tex>X \otimes _AA'</fr:tex> and <fr:tex>X' \otimes _AA'</fr:tex> are <fr:tex>A'</fr:tex>-isomorphic (where <fr:tex>X</fr:tex> and <fr:tex>X'</fr:tex> are given, and are proper flat <fr:tex>A</fr:tex>-schemes such that <fr:tex>X \otimes _Ak=X' \otimes _Ak=X_0</fr:tex>).
+      This is what we can prove, at least, when <fr:tex>X_0= \mathfrak {P}_k^r</fr:tex>, by using <fr:link
+href="#fga2-proposition-2-corollary-1"
+type="external">Corollary 1 of Proposition 2</fr:link>.
+      In any case, if <fr:tex>H^1(X_0, \mathfrak {G}_{X_0/k})=0</fr:tex>, then we can prove that the fibres of <fr:tex>X</fr:tex> and <fr:tex>X'</fr:tex> over any point <fr:tex>y</fr:tex> of <fr:tex>Y= \operatorname {Spec} (A)</fr:tex> are isomorphic, or at least when we pass to the algebraic closure of the residue field <fr:tex>k(y)</fr:tex>.
+      (We have a local result, seemingly stronger, when we don't suppose that <fr:tex>A</fr:tex> is necessarily local).
+      As for "structure variations" of the projective space, we again point out the following question, suggested by a corresponding problem of Kodaira–Spencer.
+      Let <fr:tex>X</fr:tex> be a proper flat scheme, over a local integral ring <fr:tex>A</fr:tex> with field of fractions <fr:tex>K</fr:tex> and residue field <fr:tex>k</fr:tex>, and suppose that <fr:tex>X \otimes _AK</fr:tex> is isomorphic to <fr:tex>\mathfrak {P}_K^r</fr:tex>.
+      Is it then true that <fr:tex>X \otimes _Ak=X_0</fr:tex> is isomorphic to <fr:tex>\mathfrak {P}_k^R</fr:tex> (or at least, over the algebraic closure of <fr:tex>k</fr:tex>)?
+      In this question, we can assume that <fr:tex>A</fr:tex> is a complete discrete valuation ring.
+      There is an analogous question when <fr:tex>X_0</fr:tex> is an abelian variety.
+    </fr:li></fr:ol></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>346</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga2-6-remark-i</fr:addr><fr:route>fga2-6-remark-i.xml</fr:route><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+    <fr:em>(Concerning Remark 1 above).</fr:em>
+    We note that J.-P. Serre has constructed in <fr:link
+href="Ser1961.xml"
+type="local"
+addr="Ser1961">[Ser1961]</fr:link> a non-singular projective variety, of dimension <fr:tex>3</fr:tex>, over an algebraically closed field <fr:tex>k</fr:tex>, of characteristic <fr:tex>p&gt;0</fr:tex>, which does not come from reduction of a proper scheme over a local integral ring with residue field <fr:tex>k</fr:tex>, and having a field of fractions of characteristic <fr:tex>0</fr:tex>.
+    Mumford would have found an analogous result, with a non-singular projective <fr:em>surface</fr:em>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>347</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga2-6-remark-ii</fr:addr><fr:route>fga2-6-remark-ii.xml</fr:route><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+    <fr:em>(Concerning Remarks 2 and 3 above).</fr:em>
+    I am now less optimistic concerning the results conjectured here.
+    However, the question concerning structure variations for projective space, mentioned at the end of Remark 3 above, has been positively resolved by Hironaka, and the analogous question for abelian varieties has been resolved by Koizumi.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1274</fr:anchor><fr:addr>fga2-6</fr:addr><fr:route>fga2-6.xml</fr:route><fr:title><fr:link
+href="fga2.xml"
+type="local"
+addr="fga2">Formal geometry and algebraic geometry</fr:link> › Application to existence and uniqueness theorems for sheaves and schemes over a complete <fr:tex>\mathscr {J}</fr:tex>-adic ring</fr:title><fr:number>6</fr:number><fr:parent>fga2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:ref
+addr="fga2-theorem-7"
+href="fga2-theorem-7.xml"
+taxon="Theorem"
+number="7"></fr:ref> gave a uniqueness result for locally free coherent sheaves, by using <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> and <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref>.
+  Using <fr:ref
+addr="fga2-theorem-3"
+href="fga2-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>, we now obtain <fr:em>existence</fr:em> theorems for sheaves, for morphisms of schemes, or for schemes.
+  In the following, <fr:tex>A</fr:tex> denotes a local Noetherian ring, assumed to be separated and <fr:em>complete</fr:em>.
+  The general method still consists of making <fr:em>formal</fr:em> construction, which consists essentially of doing <fr:em>algebraic geometry over an Artinian ring</fr:em>, and deducing conclusions from this that are "algebraic" in nature, by using the three fundamental theorems.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>334</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga2-proposition-3</fr:addr><fr:route>fga2-proposition-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathfrak {X}</fr:tex> be a proper formal scheme that is flat over <fr:tex>A</fr:tex>, and let <fr:tex>\mathscr { F } _0</fr:tex> be a locally free sheaf on <fr:tex>X_0</fr:tex> such that <fr:tex>\operatorname {H} ^2(X_0, \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _{X_0}}( \mathscr { F } _0, \mathscr { F } _0))=0</fr:tex>.
+    Then there exists a locally free sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>\mathfrak {X}</fr:tex> that induces, on <fr:tex>X_0</fr:tex>, a sheaf isomorphic to <fr:tex>\mathscr { F } _0</fr:tex>.
+    (This <fr:tex>\mathscr { F }</fr:tex> is also unique up to isomorphism if <fr:tex>\operatorname {H} ^1(X_0, \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _{X_0}}( \mathscr { F } _0, \mathscr { F } _0))=0</fr:tex>).
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We construct, step by step, locally free sheaves <fr:tex>\mathscr { F } _n</fr:tex> on the <fr:tex>X_n</fr:tex> that induce one another.
+  The construction of <fr:tex>\mathscr { F } _0</fr:tex> is met with an obstruction living in <fr:tex>\operatorname {H} ^2(X_0, \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _{X_0}}( \mathscr { F } _0, \mathscr { F } _0)) \otimes _{A/ \mathscr { J } }( \mathscr { J } ^n/ \mathscr { J } ^{n+1})</fr:tex>, but this is zero, by hypothesis.
+  Now, using <fr:ref
+addr="fga2-theorem-3"
+href="fga2-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>, we obtain:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>335</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-proposition-3-corollary-1</fr:addr><fr:route>fga2-proposition-3-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a proper scheme that is flat over <fr:tex>A</fr:tex>, and let <fr:tex>\mathscr { F } _0</fr:tex> be as above.
+    Then there exists a locally free sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex> that induces, on <fr:tex>X_0</fr:tex>, a sheaf that is isomorphic to <fr:tex>\mathscr { F } _0</fr:tex>.
+    This <fr:tex>\mathscr { F }</fr:tex> is also unique up to isomorphism if <fr:tex>\operatorname {H} ^1(X_0, \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _{X_0}}( \mathscr { F } _0, \mathscr { F } _0))=0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Let <fr:tex>X_0</fr:tex> be a scheme of finite type over the field <fr:tex>k</fr:tex>, and suppose that <fr:tex>X_0</fr:tex> is <fr:em>simple</fr:em> (by which we mean <fr:em>absolutely</fr:em> simple) over <fr:tex>k</fr:tex>, but not necessarily proper over <fr:tex>k</fr:tex>.
+  Let <fr:tex>A</fr:tex> be a local Artinian ring with residue field <fr:tex>k</fr:tex>.
+  We are interested in finding schemes <fr:tex>X</fr:tex> that are flat over <fr:tex>A</fr:tex>, and such that <fr:tex>X \otimes _A k=X_0</fr:tex> (this is the starting point of the "_theory of modules_", or of "structure variations" of <fr:tex>X_0</fr:tex>).
+  
+  It is equivalent to give either such an <fr:tex>X</fr:tex> or, on the topological space <fr:tex>X_0</fr:tex>, a sheaf <fr:tex>\mathcal {O} _X</fr:tex> endowed with the following structures:
+  <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>\mathcal {O} _X</fr:tex> is a sheaf of <fr:tex>A</fr:tex>-algebras;
+    </fr:li>
+    <fr:li><fr:tex>\mathcal {O} _X</fr:tex> is endowed with an augmentation homomorphism <fr:tex>\mathcal {O} _X \to \mathcal {O} _{X_0}</fr:tex> (that is compatible with the <fr:tex>A</fr:tex>-algebra structures);
+    </fr:li></fr:ol>
+
+  and with the above data being subject to the following conditions: the augmentation induces an isomorphism <fr:tex>\mathcal {O} _X \otimes _A k \xrightarrow { \sim } \mathcal {O} _{X_0}</fr:tex>;
+  <fr:tex>\mathcal {O} _X</fr:tex> is flat over <fr:tex>A</fr:tex>, i.e. the graded algebra associated to <fr:tex>\mathcal {O} _X</fr:tex> filtered by the powers of the maximal ideal <fr:tex>\mathfrak {m}</fr:tex> of <fr:tex>A</fr:tex> is isomorphic to <fr:tex>\operatorname {gr} ^0( \mathcal {O} _X) \otimes _k \operatorname {gr} (A)</fr:tex>, i.e. we have isomorphisms <fr:tex>\mathfrak {m}^n \mathcal {O} _X/ \mathfrak {m}^{n+1} \mathcal {O} _X =  \mathcal {O} _{X_0} \otimes _k( \mathfrak {m}^n/ \mathfrak {m}^{n+1})</fr:tex>.
+  The fundamental fact is the following:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>336</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-8</fr:addr><fr:route>fga2-theorem-8.xml</fr:route><fr:number>8</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be a simple scheme of finite type over the field <fr:tex>k</fr:tex>, and assume <fr:tex>X_0</fr:tex> to be affine.
+    Let <fr:tex>A</fr:tex> be a local Artinian ring of residue field <fr:tex>k</fr:tex>.
+    Then there exists an <fr:tex>A</fr:tex>-scheme <fr:tex>X</fr:tex> that is flat over <fr:tex>A</fr:tex> and such that <fr:tex>X \otimes _A k=X_0</fr:tex>.
+    Further, any two such schemes are necessarily isomorphic.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Note that the isomorphic in question is not canonical, since <fr:tex>X</fr:tex> will have, in general, non-trivial <fr:tex>A</fr:tex>-automorphisms that induce the identity on <fr:tex>X_0</fr:tex>.
+  Furthermore, there is not, in general, a "canonical" choice of <fr:tex>X</fr:tex> satisfying the given conditions, except in the case where <fr:tex>A</fr:tex> is a <fr:tex>k</fr:tex>-algebra (the case of <fr:em>equal characteristics</fr:em>), where we can take <fr:tex>X=X_0 \otimes _k A</fr:tex>, i.e. <fr:tex>\mathcal {O} _X= \mathcal {O} _{X_0} \otimes _k A</fr:tex> (whether or not <fr:tex>X_0</fr:tex> is affine, in fact).
+  In the case of unequal characteristics, I do not know in general, when <fr:tex>X_0</fr:tex> is not affine, if we can "lift" <fr:tex>X_0</fr:tex> to an <fr:tex>X</fr:tex> defined over <fr:tex>A</fr:tex>.
+  However, for any integer <fr:tex>n&gt;0</fr:tex>, let <fr:tex>A_{n-1}=A/ \mathfrak {m}^n</fr:tex>, and suppose that we have lifted <fr:tex>X_0</fr:tex> to a flat <fr:tex>A_{n-1}</fr:tex>-scheme <fr:tex>X_{n-1}</fr:tex>;
+  we intend to lift <fr:tex>X_{n-1}</fr:tex> to a flat <fr:tex>A_n</fr:tex>-scheme <fr:tex>X_n</fr:tex>.
+  We already know, by <fr:ref
+addr="fga2-theorem-8"
+href="fga2-theorem-8.xml"
+taxon="Theorem"
+number="8"></fr:ref>, that this is possible locally;
+  we can also easily verify that, if <fr:tex>U_n</fr:tex> lifts an open subset <fr:tex>U_{n-1}</fr:tex> of <fr:tex>X_{n-1}</fr:tex>, then the sheaf of groups of automorphisms of <fr:tex>U_n</fr:tex> (that induce the identity on <fr:tex>U_{n-1}</fr:tex>) is canonically isomorphic to <fr:tex>\mathfrak {G}_{X_0/k} \otimes _k \mathfrak {m}^n/ \mathfrak {m}^{n+1}</fr:tex> restricted to <fr:tex>U_{n-1}</fr:tex>, and thus, in particular, commutative (where <fr:tex>\mathfrak {G}_{X_0/k}</fr:tex> denotes the sheaf of germs of <fr:tex>k</fr:tex>-derivations on <fr:tex>X_0</fr:tex>).
+  It follows easily that we have an *obstruction of constructing <fr:tex>X_n</fr:tex> lifting <fr:tex>X_{n-1}</fr:tex>*, which lives in <fr:tex>\operatorname {H} ^2(X_0, \mathfrak {G}_{X_0/k}) \otimes \mathfrak {m}^n/ \mathfrak {m}^{n+1}</fr:tex>.
+  Then:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>337</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-8-corollary-1</fr:addr><fr:route>fga2-theorem-8-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be a simple scheme of finite type over <fr:tex>k</fr:tex>, and suppose that
+    <fr:tex
+display="block">        \operatorname {H} ^2(X_0, \mathfrak {G}_{X_0/k})       = 0.     </fr:tex>
+    
+    Then, for every local Artinian ring <fr:tex>A</fr:tex> with residue field <fr:tex>k</fr:tex>, there exists a flat <fr:tex>A</fr:tex>-scheme <fr:tex>X</fr:tex> such that <fr:tex>X \otimes _A k=X_0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Also, if we can find <fr:em>one</fr:em> <fr:tex>X</fr:tex> that is flat over <fr:tex>A</fr:tex> and that lifts <fr:tex>X_0</fr:tex>, then, by <fr:ref
+addr="fga2-theorem-8"
+href="fga2-theorem-8.xml"
+taxon="Theorem"
+number="8"></fr:ref>, the set of classes (up to isomorphism) of flat <fr:tex>A</fr:tex>-schemes that lift <fr:tex>X_0</fr:tex> can be identified with <fr:tex>\operatorname {H} ^1(X_0, \mathscr {A} \kern  -1.75pt \mathit {ut} (X))</fr:tex>, where <fr:tex>\mathscr {A} \kern  -1.75pt \mathit {ut} (X)</fr:tex> denotes the sheaf of germs of automorphisms of the sheaf <fr:tex>\mathscr { O_X }</fr:tex> of <fr:tex>A</fr:tex>-algebras <fr:em>that are compatible with the augmentation</fr:em>.
+  The filtration of <fr:tex>\mathcal {O} _X</fr:tex> defines a filtration of <fr:tex>\mathscr {A} \kern  -1.75pt \mathit {ut} (X)</fr:tex>, with the quotient of this sheaf by the <fr:tex>n</fr:tex>-th subgroup of the filtration being <fr:tex>\mathscr {A} \kern  -1.75pt \mathit {ut} (X_n)</fr:tex>;
+  the graded algebra associated to this filtration is commutative, and can be identified with <fr:tex>\mathfrak {G}_{X_0/k} \otimes _k \operatorname {gr} (A)</fr:tex>.
+  In particular, if <fr:tex>\mathfrak {m}^{n+1}</fr:tex> is the first power of <fr:tex>\mathfrak {m}</fr:tex> that is not zero, then <fr:tex>F^n( \mathscr {A} \kern  -1.75pt \mathit {ut} (X))</fr:tex> (the last stage of the filtration) is in the centre of <fr:tex>\mathscr {A} \kern  -1.75pt \mathit {ut} (X)</fr:tex>, and is isomorphic to <fr:tex>\mathfrak {G}_{X_0/k} \otimes _k \mathfrak {m}^n</fr:tex>;
+  it is also the sheaf of germs of automorphisms of <fr:tex>X</fr:tex> that induce the identity on <fr:tex>X_{n-1}=X \otimes _A A/ \mathfrak {m}^n</fr:tex>.
+  Using these results, we immediately obtain the following statements:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>338</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-8-corollary-2</fr:addr><fr:route>fga2-theorem-8-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be a simple scheme of finite type over <fr:tex>k</fr:tex>, and let <fr:tex>A</fr:tex> be a local Artinian ring with residue field <fr:tex>k</fr:tex> and maximal ideal <fr:tex>\mathfrak {m}</fr:tex>.
+    Suppose that <fr:tex>\mathfrak {m}^{n+1}=0</fr:tex>.
+    Let <fr:tex>A_{n-1}=A/ \mathfrak {m}^n</fr:tex>, and let <fr:tex>X_{n-1}</fr:tex> be a flat <fr:tex>A_{n-1}</fr:tex>-scheme such that <fr:tex>X_{n-1} \otimes _Ak=X_0</fr:tex>.
+    Then the set of classes (up to an isomorphism that induces the identity on <fr:tex>X_{n-1}</fr:tex>) of flat <fr:tex>A</fr:tex>-schemes <fr:tex>X_n</fr:tex> such that <fr:tex>X \otimes _AA_{n-1}=X_{n-1}</fr:tex> is either empty, or a homogeneous principal space under <fr:tex>\operatorname {H} ^1(X_0, \mathfrak {G}_{X_0/k}) \otimes _k \mathfrak {m}^n</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  (Note that, in general, there is no privileged choice of origin in the latter homogeneous principal space, since there is no privileged way of lifting <fr:tex>X_{n-1}</fr:tex> to <fr:tex>X_n</fr:tex>).
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>339</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-8-corollary-3</fr:addr><fr:route>fga2-theorem-8-corollary-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be a simple scheme of finite type over <fr:tex>k</fr:tex>, and suppose that <fr:tex>\operatorname {H} ^1(X_0, \mathfrak {G}_{X_0/k})=0</fr:tex>.
+    Then, for every local Artinian ring <fr:tex>A</fr:tex> with residue field <fr:tex>k</fr:tex>, <fr:em>there exists at most one flat <fr:tex>A</fr:tex>-scheme <fr:tex>X</fr:tex></fr:em> (up to isomorphism) such that <fr:tex>X \otimes _Ak=X_0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p><fr:ref
+addr="fga2-theorem-8-corollary-1"
+href="fga2-theorem-8-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref> and <fr:ref
+addr="fga2-theorem-8-corollary-3"
+href="fga2-theorem-8-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> of <fr:ref
+addr="fga2-theorem-8"
+href="fga2-theorem-8.xml"
+taxon="Theorem"
+number="8"></fr:ref> immediately imply the claims, which seem more general, obtained by supposing only that <fr:tex>A</fr:tex> is a <fr:em>complete local Noetherian ring with residue field <fr:tex>k</fr:tex></fr:em>, provided that we introduce <fr:tex>X</fr:tex> as a formal scheme over <fr:tex>A</fr:tex>:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>340</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-9</fr:addr><fr:route>fga2-theorem-9.xml</fr:route><fr:number>9</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>k</fr:tex> be a field, and <fr:tex>X_0</fr:tex> a <fr:em>simple</fr:em> scheme of finite type over <fr:tex>k</fr:tex>.
+    For every complete locally Noetherian ring <fr:tex>A</fr:tex> with residue field <fr:tex>k</fr:tex>, let <fr:tex>F(A)</fr:tex> be the set of classes (up to an isomorphism that induces the identity on <fr:tex>X_0</fr:tex>) of formal schemes <fr:tex>\mathfrak {X}</fr:tex> over <fr:tex>A</fr:tex>, of finite type, and flat over <fr:tex>A</fr:tex>, such that <fr:tex>X \otimes _Ak=X_0</fr:tex>.
+    
+    With this notation: for all <fr:tex>A</fr:tex>,
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+    <fr:ol><fr:li>
+        if <fr:tex>\operatorname {H} ^1(X_0, \mathfrak {G}_{X_0/k})=0</fr:tex> then <fr:tex>F(A)</fr:tex> has at most one element;
+      </fr:li>
+      <fr:li>
+        if <fr:tex>\operatorname {H} ^2(X_0, \mathfrak {G}_{X_0/k})=0</fr:tex> then <fr:tex>F(A)</fr:tex> has at least one element.
+      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>341</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-9-corollary-1</fr:addr><fr:route>fga2-theorem-9-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose that <fr:tex>X_0</fr:tex> is proper over <fr:tex>k</fr:tex>.
+    Under condition (i) of <fr:ref
+addr="fga2-theorem-9"
+href="fga2-theorem-9.xml"
+taxon="Theorem"
+number="9"></fr:ref>, for all <fr:tex>A</fr:tex>, there exists at most (up to an isomorphism that induces the identity on <fr:tex>X_0</fr:tex>) one scheme <fr:tex>X</fr:tex> that is proper, flat over <fr:tex>A</fr:tex>, and such that <fr:tex>X \otimes _Ak=X_0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We can use <fr:link
+href="fga2-theorem-3-corollary-2.xml"
+type="local"
+addr="fga2-theorem-3-corollary-2">Corollary 2 of Theorem 3</fr:link>.
+  For example:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>342</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-9-corollary-2</fr:addr><fr:route>fga2-theorem-9-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>X</fr:tex> is a proper flat <fr:tex>A</fr:tex>-scheme such that <fr:tex>X \otimes _A k</fr:tex> is isomorphic to the projective-type scheme <fr:tex>\mathfrak {P}_k^r</fr:tex> of dimension <fr:tex>r</fr:tex> over <fr:tex>k</fr:tex>, then <fr:tex>X</fr:tex> is isomorphic to <fr:tex>\mathfrak {P}_k^r</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  (We can also deduce this result from <fr:link
+href="fga2-proposition-3-corollary-1.xml"
+type="local"
+addr="fga2-proposition-3-corollary-1">Corollary 1 of Proposition 3</fr:link>).
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>343</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-9-corollary-3</fr:addr><fr:route>fga2-theorem-9-corollary-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be a simple projective scheme over <fr:tex>k</fr:tex>, and suppose that
+    <fr:tex
+display="block">       H^2(X_0, \mathcal {O} _{X_0})       = H^2(X_0, \mathfrak {G}_{X_0/k})       = 0.     </fr:tex>
+    Then, for all <fr:tex>A</fr:tex>, there exists a flat projective <fr:tex>A</fr:tex>-scheme such that <fr:tex>X \otimes _Ak=X_0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We can combine part (ii) of <fr:ref
+addr="fga2-theorem-9"
+href="fga2-theorem-9.xml"
+taxon="Theorem"
+number="9"></fr:ref> with <fr:ref
+addr="fga2-theorem-4"
+href="fga2-theorem-4.xml"
+taxon="Theorem"
+number="4"></fr:ref>.
+  In particular:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>344</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-9-corollary-4</fr:addr><fr:route>fga2-theorem-9-corollary-4.xml</fr:route><fr:number>4</fr:number><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be the scheme of a complete simple algebraic curve over <fr:tex>k</fr:tex>.
+    Then, for every complete local Noetherian ring <fr:tex>A</fr:tex> with residue field <fr:tex>k</fr:tex>, there exists a "simple curve scheme" <fr:tex>X</fr:tex> over <fr:tex>A</fr:tex>, such that <fr:tex>X \otimes _Ak=X_0</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>345</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga2-6-remarks</fr:addr><fr:route>fga2-6-remarks.xml</fr:route><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li><fr:ref
+addr="fga2-theorem-9-corollary-3"
+href="fga2-theorem-9-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> and <fr:ref
+addr="fga2-theorem-9-corollary-4"
+href="fga2-theorem-9-corollary-4.xml"
+taxon="Corollary"
+number="4"></fr:ref> are above all interesting if <fr:tex>k</fr:tex> is of characteristic <fr:tex>p \neq0</fr:tex>, taking <fr:tex>A</fr:tex> to be a discrete valuation ring <fr:em>of characteristic <fr:tex>0</fr:tex></fr:em>, with residue field <fr:tex>k</fr:tex>;
+      for example, the "smallest possible <fr:tex>A</fr:tex>", i.e. that for which <fr:tex>p</fr:tex> generates the maximal ideal.
+      (In fact, by theorems of Cohen, it suffices to have <fr:ref
+addr="fga2-theorem-9-corollary-3"
+href="fga2-theorem-9-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> and <fr:ref
+addr="fga2-theorem-9-corollary-4"
+href="fga2-theorem-9-corollary-4.xml"
+taxon="Corollary"
+number="4"></fr:ref> for such a ring <fr:tex>A</fr:tex>).
+      We note that, concerning this point, according to the specialists, we do not know if there exist schemes over a field <fr:tex>k</fr:tex> that are not reductions <fr:tex>\mod  p</fr:tex> of a flat scheme defined over such a ring <fr:tex>A</fr:tex>.
+      At the least, the results of this section give a way of systematically investigating this question.
+      We must start by seeing if the first obstruction that we have, in <fr:tex>H^2(X_0, \mathfrak {G}_{X_0/k})</fr:tex>, is necessarily zero.
+    </fr:li>
+
+    <fr:li>
+      We note that <fr:ref
+addr="fga2-theorem-3"
+href="fga2-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>, and the corresponding technique, only works for a <fr:em>complete</fr:em> (local, for simplicity) base ring.
+      In order to go from known results concerning the completion of a local ring to the corresponding results for the local ring itself, we would need a fourth "fundamental theorem", whose precise statement still needs to be found.
+    </fr:li>
+
+    <fr:li>
+      We will compare the results from this section (mainly the above <fr:ref
+addr="fga2-theorem-9-corollary-1"
+href="fga2-theorem-9-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref> and <fr:ref
+addr="fga2-theorem-9-corollary-2"
+href="fga2-theorem-9-corollary-2.xml"
+taxon="Corollary"
+number="2"></fr:ref>), as well as those from the following, with the results of Kodaira–Spencer on the variation of complex structures.
+      Using the conjectural theorem to which we have just alluded, we should be able to conclude, under the conditions of <fr:ref
+addr="fga2-theorem-9-corollary-1"
+href="fga2-theorem-9-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref>, but where <fr:tex>A</fr:tex> is no longer assumed to be complete, that there exists a ring <fr:tex>A'</fr:tex> that contains <fr:tex>A</fr:tex>, and that is finite and unramified over <fr:tex>A</fr:tex>, such that <fr:tex>X \otimes _AA'</fr:tex> and <fr:tex>X' \otimes _AA'</fr:tex> are <fr:tex>A'</fr:tex>-isomorphic (where <fr:tex>X</fr:tex> and <fr:tex>X'</fr:tex> are given, and are proper flat <fr:tex>A</fr:tex>-schemes such that <fr:tex>X \otimes _Ak=X' \otimes _Ak=X_0</fr:tex>).
+      This is what we can prove, at least, when <fr:tex>X_0= \mathfrak {P}_k^r</fr:tex>, by using <fr:link
+href="#fga2-proposition-2-corollary-1"
+type="external">Corollary 1 of Proposition 2</fr:link>.
+      In any case, if <fr:tex>H^1(X_0, \mathfrak {G}_{X_0/k})=0</fr:tex>, then we can prove that the fibres of <fr:tex>X</fr:tex> and <fr:tex>X'</fr:tex> over any point <fr:tex>y</fr:tex> of <fr:tex>Y= \operatorname {Spec} (A)</fr:tex> are isomorphic, or at least when we pass to the algebraic closure of the residue field <fr:tex>k(y)</fr:tex>.
+      (We have a local result, seemingly stronger, when we don't suppose that <fr:tex>A</fr:tex> is necessarily local).
+      As for "structure variations" of the projective space, we again point out the following question, suggested by a corresponding problem of Kodaira–Spencer.
+      Let <fr:tex>X</fr:tex> be a proper flat scheme, over a local integral ring <fr:tex>A</fr:tex> with field of fractions <fr:tex>K</fr:tex> and residue field <fr:tex>k</fr:tex>, and suppose that <fr:tex>X \otimes _AK</fr:tex> is isomorphic to <fr:tex>\mathfrak {P}_K^r</fr:tex>.
+      Is it then true that <fr:tex>X \otimes _Ak=X_0</fr:tex> is isomorphic to <fr:tex>\mathfrak {P}_k^R</fr:tex> (or at least, over the algebraic closure of <fr:tex>k</fr:tex>)?
+      In this question, we can assume that <fr:tex>A</fr:tex> is a complete discrete valuation ring.
+      There is an analogous question when <fr:tex>X_0</fr:tex> is an abelian variety.
+    </fr:li></fr:ol></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>346</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga2-6-remark-i</fr:addr><fr:route>fga2-6-remark-i.xml</fr:route><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+    <fr:em>(Concerning Remark 1 above).</fr:em>
+    We note that J.-P. Serre has constructed in <fr:link
+href="Ser1961.xml"
+type="local"
+addr="Ser1961">[Ser1961]</fr:link> a non-singular projective variety, of dimension <fr:tex>3</fr:tex>, over an algebraically closed field <fr:tex>k</fr:tex>, of characteristic <fr:tex>p&gt;0</fr:tex>, which does not come from reduction of a proper scheme over a local integral ring with residue field <fr:tex>k</fr:tex>, and having a field of fractions of characteristic <fr:tex>0</fr:tex>.
+    Mumford would have found an analogous result, with a non-singular projective <fr:em>surface</fr:em>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>347</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga2-6-remark-ii</fr:addr><fr:route>fga2-6-remark-ii.xml</fr:route><fr:parent>fga2-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+    <fr:em>(Concerning Remarks 2 and 3 above).</fr:em>
+    I am now less optimistic concerning the results conjectured here.
+    However, the question concerning structure variations for projective space, mentioned at the end of Remark 3 above, has been positively resolved by Hironaka, and the analogous question for abelian varieties has been resolved by Koizumi.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

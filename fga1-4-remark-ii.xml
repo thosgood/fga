@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>741</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga1-4-remark-ii</fr:addr><fr:route>fga1-4-remark-ii.xml</fr:route><fr:parent>fga1-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+    As I pointed out in my conference at the international Congress of Mathematicians in 1958 (Grothendieck, A. "The cohomology theory of abstract algebraic varieties", in <fr:em>Proceedings of the international Congress of Mathematicians [1958, Edinburgh]</fr:em>, Cambridge University Press (1960), 103–118.), the questions raised here are now completely resolved.
+  </fr:p><fr:p>
+    The reader will find more information on the duality of coherent sheaves in <fr:em>loc. cit.</fr:em>, pp.112–115, as well as in [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, III.2], and in <fr:link
+href="Gro1960b.xml"
+type="local"
+addr="Gro1960b">[Gro1960b]</fr:link>.
+    A more systematic treatment can be found in a later chapter of <fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">[GD1960]</fr:link> (chapter IX in the provisional plan).
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>740</fr:anchor><fr:addr>fga1-4</fr:addr><fr:route>fga1-4.xml</fr:route><fr:title><fr:link
+href="fga1.xml"
+type="local"
+addr="fga1">Duality theorems for coherent algebraic sheaves</fr:link> › Cohomology class associated to a subvariety</fr:title><fr:number>4</fr:number><fr:parent>fga1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  In all that follows, <fr:tex>X</fr:tex> denotes an algebraic set of dimension <fr:tex>n</fr:tex>, defined over a field <fr:tex>k</fr:tex> which we assume, for simplicity, to be algebraically closed.
+  Except for in <fr:ref
+addr="fga1-6"
+href="fga1-6.xml"
+number="6"></fr:ref>, we assume that <fr:tex>X</fr:tex> is non-singular.
+  We denote by <fr:tex>\mathcal {O} _X</fr:tex> the structure sheaf of <fr:tex>X</fr:tex>, and by <fr:tex>\Omega _X^ \bullet = \bigcup _p \Omega _X^p</fr:tex> the sheaf of germs of differential forms on <fr:tex>X</fr:tex>.
+  If <fr:tex>Y</fr:tex> is a closed subset of <fr:tex>X</fr:tex>, then we identify coherent algebraic sheaves on <fr:tex>Y</fr:tex> with coherent algebraic sheaves on <fr:tex>X</fr:tex> that are zero outside of <fr:tex>Y</fr:tex>;
+  we do this, in particular, with <fr:tex>\mathcal {O} _Y</fr:tex> and <fr:tex>\Omega _Y</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>612</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga1-lemma-1</fr:addr><fr:route>fga1-lemma-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga1-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathscr { F }</fr:tex> be a coherent algebraic sheaf on <fr:tex>X</fr:tex> whose support is of dimension <fr:tex>\leqslant  n-p</fr:tex>, and let <fr:tex>\mathscr { L }</fr:tex> be a coherent algebraic sheaf on <fr:tex>X</fr:tex> that is locally free.
+    Then <fr:tex>\mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^i(X; \mathscr { F } , \mathscr { L } )</fr:tex> is zero for <fr:tex>i&lt;p</fr:tex>, and there is a canonical isomorphism
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>609</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-4.1</fr:addr><fr:route>fga1-equation-4.1.xml</fr:route><fr:number>4.1</fr:number><fr:parent>fga1-lemma-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">          \operatorname {Ext} _ \mathcal {O} ^p(X; \mathscr { F } , \mathscr { L } )         =  \operatorname {H} ^0(X, \mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ^p( \mathscr { F } , \mathscr { L } )).       \tag{4.1}       </fr:tex></fr:mainmatter></fr:tree>
+
+    If <fr:tex>\mathscr { F }</fr:tex> is a coherent algebraic sheaf on a closed subset <fr:tex>W</fr:tex> of <fr:tex>X</fr:tex> of dimension <fr:tex>\leqslant  n-p</fr:tex>, then we have a canonical isomorphism
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>610</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-4.1bis</fr:addr><fr:route>fga1-equation-4.1bis.xml</fr:route><fr:number>4.1 bis</fr:number><fr:parent>fga1-lemma-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">          \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^p( \mathscr { F } , \mathscr { L } )         =  \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { F } \otimes \mathscr { L } ' \otimes \Omega _X^n, \omega _Y^{n-p})       \tag{4.1 bis}       </fr:tex></fr:mainmatter></fr:tree>
+
+    where <fr:tex>\omega _Y^{n-p}</fr:tex> is the sheaf on <fr:tex>Y</fr:tex> defined in <fr:link
+href="fga1-proposition-5-corollary.xml"
+type="local"
+addr="fga1-proposition-5-corollary">the corollary to Proposition 5</fr:link> (which can be identified with <fr:tex>\Omega _Y^{n-p}</fr:tex> if <fr:tex>Y</fr:tex> is non-singular).
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>611</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-lemma-1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      The formula in <fr:ref
+addr="fga1-equation-4.1"
+href="fga1-equation-4.1.xml"
+taxon="Equation"
+number="4.1"></fr:ref> is an immediate consequence of the spectral sequence from <fr:ref
+addr="fga1-proposition-1"
+href="fga1-proposition-1.xml"
+taxon="Proposition"
+number="1"></fr:ref>, as well as <fr:ref
+addr="fga1-proposition-5"
+href="fga1-proposition-5.xml"
+taxon="Proposition"
+number="5"></fr:ref>;
+      by the formula in <fr:ref
+addr="fga1-equation-3.8"
+href="fga1-equation-3.8.xml"
+taxon="Equation"
+number="3.8"></fr:ref>, we can write
+      <fr:tex
+display="block">          \begin {gathered}            \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^p( \mathscr { F } , \mathscr { L } )           =  \mathscr { L } \otimes ( \Omega _X^n)' \otimes \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}( \mathscr { F } , \Omega _X^n)          \\ =  \mathscr { L } \otimes ( \Omega _X^n)' \otimes \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { F } , \omega _Y^q)          \\ =  \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { F } \otimes \mathscr { L } ' \otimes \Omega _X^n, \omega _Y^q)          \end {gathered}       </fr:tex>
+      where <fr:tex>q=n-p</fr:tex>, whence the formula in <fr:ref
+addr="fga1-equation-4.1bis"
+href="fga1-equation-4.1bis.xml"
+taxon="Equation"
+number="4.1 bis"></fr:ref>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  Setting, in particular, <fr:tex>\mathscr { F } = \mathcal {O} _Y</fr:tex> and <fr:tex>\mathscr { L } = \Omega _X^p</fr:tex>, we obtain (taking into account the fact that <fr:tex>\Omega _X^n \otimes ( \Omega _X^p)'= \Omega _X^{n-p}</fr:tex>) a canonical isomorphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>613</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-4.2</fr:addr><fr:route>fga1-equation-4.2.xml</fr:route><fr:number>4.2</fr:number><fr:parent>fga1-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Ext} _{ \mathcal {O} _X}^p(X; \mathcal {O} _Y, \Omega _X^p)       =  \operatorname {Hom} _{ \mathcal {O} _X}(X; \Omega _X^{n-p}, \omega _Y^{n-p}).     \tag{4.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  Now suppose, for simplicity, that <fr:tex>Y</fr:tex> is <fr:em>non-singular</fr:em>, so that <fr:tex>\omega _Y^{n-p}= \Omega _Y^{n-p}</fr:tex>.
+  There is a natural homomorphism from <fr:tex>\Omega _X^{n-p}</fr:tex> to <fr:tex>\Omega _Y^{n-p}</fr:tex>, whence a canonical section <fr:tex>s_Y</fr:tex> of the sheaf <fr:tex>\mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^p( \mathcal {O} _Y, \Omega _X^p)</fr:tex>, that we call, if all the components of <fr:tex>Y</fr:tex> are of dimension <fr:tex>n-p</fr:tex>, the <fr:em>fundamental section</fr:em> of the sheaf <fr:tex>\mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^p( \mathcal {O} _Y, \Omega _X^p)</fr:tex>.
+  By <fr:ref
+addr="fga1-equation-4.1"
+href="fga1-equation-4.1.xml"
+taxon="Equation"
+number="4.1"></fr:ref>, this section defines an element of <fr:tex>\operatorname {Ext} _{ \mathcal {O} _X}^p(X; \mathcal {O} _Y, \Omega _X^p)</fr:tex>.
+  But the natural homomorphism <fr:tex>\mathcal {O} _X \to \mathcal {O} _Y</fr:tex> defines a homomorphism
+  <fr:tex
+display="block">      \operatorname {Ext} _{ \mathcal {O} _X}^p(X; \mathcal {O} _Y, \Omega _X^p)      \to   \operatorname {Ext} _{ \mathcal {O} _X}^p(X; \mathcal {O} _X, \Omega _X^p)     =  \operatorname {H} ^p(X, \Omega _X^p).   </fr:tex>
+  We thus obtain an element of <fr:tex>\operatorname {H} ^p(X, \Omega _X^p)</fr:tex>, denoted by <fr:tex>P_X(Y)</fr:tex>, that we call the <fr:em>cohomology class of <fr:tex>Y</fr:tex> in <fr:tex>X</fr:tex></fr:em>;
+  it is induced by the section <fr:tex>s_Y</fr:tex> of <fr:tex>\mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^p( \mathcal {O} _Y, \Omega _X^p)</fr:tex> by the following diagram of homomorphisms:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>614</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-4.3</fr:addr><fr:route>fga1-equation-4.3.xml</fr:route><fr:number>4.3</fr:number><fr:parent>fga1-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {CD}          \operatorname {Ext} _{ \mathcal {O} _X}^p(X; \mathcal {O} _Y, \Omega _X^p) @&gt; \sim &gt;&gt;  \operatorname {H} ^0(X, \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^p( \mathcal {O} _Y, \Omega _X^p))        \\ @VVV        \\ \begin {gathered}            \operatorname {Ext} _{ \mathcal {O} _X}^p(X; \mathcal {O} _X, \Omega _X^y)            \\ = \operatorname {H} ^p(X, \Omega _X^p)          \end {gathered}        \end {CD}     \tag{4.3}     </fr:tex></fr:mainmatter></fr:tree></fr:p><fr:p>
+  We define a <fr:em>non-singular cycle</fr:em> of dimension <fr:tex>n-p</fr:tex> to be any element of the free abelian group generated by the non-singular irreducible subvarieties of dimension <fr:tex>n-p</fr:tex> in <fr:tex>X</fr:tex>.
+  Then the function <fr:tex>Y \mapsto  P(Y)</fr:tex> can be extended to a homomorphism from the group of non-singular cycles of dimension <fr:tex>n-p</fr:tex> on <fr:tex>X</fr:tex> to the group <fr:tex>\operatorname {H} ^p(X, \Omega _X^p)</fr:tex>.
+</fr:p><fr:p>
+  Let <fr:tex>Z^{n-p}</fr:tex> and <fr:tex>Z'^{n-p'}</fr:tex> be non-singular cycles of dimension <fr:tex>n-p</fr:tex> and <fr:tex>n-p'</fr:tex> (respectively);
+  we say that they <fr:em>intersect transversally</fr:em> if every component of <fr:tex>Z</fr:tex> intersects transversally with every component of <fr:tex>Z'</fr:tex>.
+  Then the cycle <fr:tex>Z \cdot  Z'</fr:tex> is defined, and is a non-singular cycle of dimension <fr:tex>n-p-p'</fr:tex>.
+  With this, we have:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>621</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga1-theorem-1</fr:addr><fr:route>fga1-theorem-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga1-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>Z^{n-p}</fr:tex> and <fr:tex>Z'^{n-p'}</fr:tex> are non-singular cycles that intersect transversally, then
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>615</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-4.4</fr:addr><fr:route>fga1-equation-4.4.xml</fr:route><fr:number>4.4</fr:number><fr:parent>fga1-theorem-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">         P_X(Z \cdot  Z') = P_X(Z) \cdot  P_X(Z')       \tag{4.4}       </fr:tex></fr:mainmatter></fr:tree>
+
+    where the product on the right-hand side is the cup product:
+    <fr:tex
+display="block">        \operatorname {H} ^p(X, \Omega _X^p) \times \operatorname {H} ^{p'}(X, \Omega _X^{p'})        \to   \operatorname {H} ^{p+p'}(X, \Omega _X^{p+p'}).     </fr:tex>
+    (We assume that <fr:tex>X</fr:tex> is isomorphic to a locally closed subset of a projective space).
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>620</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-theorem-1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      To prove <fr:ref
+addr="fga1-theorem-1"
+href="fga1-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>, we can assume that <fr:tex>Z</fr:tex> and <fr:tex>Z'</fr:tex> are irreducible non-singular subvarieties <fr:tex>Y</fr:tex> and <fr:tex>Y'</fr:tex> that intersect transversally.
+      Let <fr:tex>\mathscr { L } _ \bullet</fr:tex> be a left resolution of <fr:tex>\mathcal {O} _Y</fr:tex> by locally-free sheaves;
+      then, by <fr:ref
+addr="fga1-proposition-3"
+href="fga1-proposition-3.xml"
+taxon="Proposition"
+number="3"></fr:ref>, the diagram of homomorphisms in <fr:ref
+addr="fga1-equation-4.3"
+href="fga1-equation-4.3.xml"
+taxon="Equation"
+number="4.3"></fr:ref> can be identified with the diagram
+      <fr:tex
+display="block">          \begin {CD}           ( \underline { \operatorname {R} }^p \Gamma ) \big ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { L } _ \bullet , \Omega _X^p) \big ) @&gt; \beta &gt;&gt;  \Gamma \big ( \operatorname {H} ^p \big ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { L } _ \bullet , \Omega _X^p) \big ) \big )          \\ @V \alpha  VV .          \\ ( \operatorname {R} ^p \Gamma )( \Omega _X^p)          \end {CD}       </fr:tex>
+      where <fr:tex>\beta</fr:tex> is an isomorphism, and where <fr:tex>\Gamma</fr:tex> is the "group of sections" functor on the category of abelian sheaves on <fr:tex>X</fr:tex>, <fr:tex>\underline { \operatorname {R} }^p \Gamma</fr:tex> is its hypercohomology in dimension <fr:tex>p</fr:tex>, and <fr:tex>\operatorname {R} ^p \Gamma</fr:tex> is its <fr:tex>p</fr:tex>-th derived functor.
+      For simplicity, we assume that <fr:tex>\mathscr { L } _0= \mathcal {O} _X</fr:tex>, and that the augmentation <fr:tex>\mathscr { L } _0 \to \mathcal {O} _Y</fr:tex> is the natural homomorphism (which we can indeed safely assume);
+      then <fr:tex>\alpha</fr:tex> is induced by the homomorphism of complexes <fr:tex>\mathcal {O} _X \to \mathscr { L }</fr:tex> (with <fr:tex>\mathcal {O} _X</fr:tex> being thought of as a complex concentrated in degree <fr:tex>0</fr:tex>), taking into account the fact that <fr:tex>\underline { \operatorname {R} }^p \Gamma ( \mathscr { K } )= \operatorname {R} ^p \Gamma ( \mathscr { K } _0)</fr:tex> if <fr:tex>\mathscr { K }</fr:tex> is a complex of sheaves concentrated in degree <fr:tex>0</fr:tex>.
+      The homomorphism <fr:tex>\beta</fr:tex> is a well-known "boundary map".
+      Consider an analogous diagram, relative to a locally-free resolution <fr:tex>\mathscr { L } '_ \bullet</fr:tex> of <fr:tex>\mathcal {O} _Y</fr:tex>, and consider the commutative diagram of pairings:
+
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>616</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-4.5</fr:addr><fr:route>fga1-equation-4.5.xml</fr:route><fr:number>4.5</fr:number><fr:parent>fga1-theorem-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">            \scriptsize             \begin {CD}              \operatorname {R} ^p \Gamma ( \Omega _X^p)             @&lt;&lt;&lt;              \underline { \operatorname {R} }^p \Gamma \big ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { L } _ \bullet , \Omega _X^p) \big )             @&gt; \sim &gt;&gt;              \Gamma \big ( \operatorname {H} ^p \big ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { L } _ \bullet , \Omega _X^p) \big ) \big )            \\ @. @. @.            \\ \times  @.  \times  @.  \times             \\ @. @. @.            \\ \operatorname {R} ^{p'} \Gamma ( \Omega _X^{p'})             @&lt;&lt;&lt;              \underline { \operatorname {R} }^{p'} \Gamma \big ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { L } '_ \bullet , \Omega _X^{p'}) \big )             @&gt; \sim &gt;&gt;              \Gamma \big ( \operatorname {H} ^{p'} \big ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { L } '_ \bullet , \Omega _X^{p'}) \big ) \big )            \\ @VVV @VVV @VVV            \\ \operatorname {R} ^{p+p'} \Gamma ( \Omega _X^{p+p'})             @&lt;&lt;&lt;              \underline { \operatorname {R} }^{p+p'} \Gamma \big ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { L } _ \bullet \otimes \mathscr { L } '_ \bullet , \Omega _X^{p+p'}) \big )             @&gt; \sim &gt;&gt;              \Gamma \big ( \operatorname {H} ^{p+p'} \big ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { L } _ \bullet \otimes \mathscr { L } '_ \bullet , \Omega _X^{p+p'}) \big ) \big )            \end {CD}         \tag{4.5}         </fr:tex></fr:mainmatter></fr:tree>
+
+      
+      The pairings in the two columns on the right are induced by the pairing of complexes of sheaves
+      <fr:tex
+display="block">          \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { L } _ \bullet , \Omega _X^p)  \times   \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { L } '_ \bullet , \Omega _X^{p'})          \to   \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { L } _ \bullet \otimes \mathscr { L } ', \Omega _X^{p+p'})       </fr:tex>
+      that we define by using the exterior product <fr:tex>\Omega _X^p \times \Omega _X^{p'} \to \Omega _X^{p+p'}</fr:tex>;
+      the pairing in the first column is the cup product (relative to the exterior product).
+      I claim that the last line of <fr:ref
+addr="fga1-equation-4.5"
+href="fga1-equation-4.5.xml"
+taxon="Equation"
+number="4.5"></fr:ref>can be identified with the diagram of isomorphisms analogous to <fr:ref
+addr="fga1-equation-4.3"
+href="fga1-equation-4.3.xml"
+taxon="Equation"
+number="4.3"></fr:ref>, where <fr:tex>Y</fr:tex> is replaced by <fr:tex>Y \cap  Y'</fr:tex> and <fr:tex>p</fr:tex> by <fr:tex>p+p'</fr:tex>.
+      For this, it suffices to show that <fr:tex>\mathscr { L } \otimes \mathscr { L } '</fr:tex> is a resolution (evidently locally-free) of <fr:tex>\mathcal {O} _{Y \cap  Y'}</fr:tex>.
+      But then
+      <fr:tex
+display="block">          \operatorname {H} _0( \mathscr { L } \otimes \mathscr { L } ')         =  \mathcal {O} _Y \otimes \mathcal {O} _{Y'}         =  \mathcal {O} _{Y \cap  Y'}       </fr:tex>
+      and
+      <fr:tex
+display="block">          \operatorname {H} _i( \mathscr { L } \otimes \mathscr { L } ')         =  \operatorname {Tor} _i^{ \mathcal {O} _X}( \mathcal {O} _Y, \mathcal {O} _{Y'})         = 0       </fr:tex>
+      for <fr:tex>i&gt;0</fr:tex>, from the fact that <fr:tex>Y</fr:tex> and <fr:tex>Y'</fr:tex> intersect transversally.
+      Then <fr:ref
+addr="fga1-theorem-1"
+href="fga1-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> follows from the formula:
+
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>617</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-4.6</fr:addr><fr:route>fga1-equation-4.6.xml</fr:route><fr:number>4.6</fr:number><fr:parent>fga1-theorem-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">           s_Y \cdot  s_{Y'} = s_{Y \cdot  Y'}         \tag{4.6}         </fr:tex></fr:mainmatter></fr:tree>
+
+      (where the product on the left-hand side is that from the last column of <fr:ref
+addr="fga1-equation-4.5"
+href="fga1-equation-4.5.xml"
+taxon="Equation"
+number="4.5"></fr:ref>).
+      This formula in <fr:ref
+addr="fga1-equation-4.6"
+href="fga1-equation-4.6.xml"
+taxon="Equation"
+number="4.6"></fr:ref>, which is of a purely local nature, can easily be proven by taking <fr:tex>\mathscr { L } _ \bullet</fr:tex> and <fr:tex>\mathscr { L } '_ \bullet</fr:tex> to be the resolutions described in <fr:ref
+addr="fga1-proposition-4"
+href="fga1-proposition-4.xml"
+taxon="Proposition"
+number="4"></fr:ref>.
+      We can similarly prove (even more easily) that <fr:tex>Z \mapsto  P_X(Z)</fr:tex> is compatible with the cartesian product:
+
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>618</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-4.7</fr:addr><fr:route>fga1-equation-4.7.xml</fr:route><fr:number>4.7</fr:number><fr:parent>fga1-theorem-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">           P_{X \times  X'}(Z \times  Z')           = P_X(Z) \otimes  P_{X'}(Z')         \tag{4.7}         </fr:tex></fr:mainmatter></fr:tree>
+
+      (a formula which holds true if <fr:tex>Z</fr:tex> (resp. <fr:tex>Z'</fr:tex>) is a non-singular cycle on the non-singular variety <fr:tex>X</fr:tex> (resp. <fr:tex>X'</fr:tex>), with <fr:tex>Z \times  Z'</fr:tex> being thought of as a non-singular cycle on <fr:tex>X \times  X'</fr:tex>).
+      From <fr:ref
+addr="fga1-equation-4.4"
+href="fga1-equation-4.4.xml"
+taxon="Equation"
+number="4.4"></fr:ref> and <fr:ref
+addr="fga1-equation-4.7"
+href="fga1-equation-4.7.xml"
+taxon="Equation"
+number="4.7"></fr:ref>, it follows that <fr:tex>P_X(Z)</fr:tex> is also compatible with the operation given by taking the "inverse image" under a morphism <fr:tex>f \colon  X \to  X'</fr:tex> of non-singular varieties:
+
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>619</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-4.8</fr:addr><fr:route>fga1-equation-4.8.xml</fr:route><fr:number>4.8</fr:number><fr:parent>fga1-theorem-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">           P_X(f^{-1}(Z')) = f^*(P_{X'}(Z))         \tag{4.8}         </fr:tex></fr:mainmatter></fr:tree>
+
+      a formula which holds true if <fr:tex>Z</fr:tex> is a non-singular cycle on <fr:tex>X'</fr:tex> such that <fr:tex>f</fr:tex> is "transversal" to <fr:tex>Z</fr:tex>, i.e. such that the graph of <fr:tex>f</fr:tex> is transversal to the cycle <fr:tex>X \times  Z'</fr:tex> in <fr:tex>X \times  X'</fr:tex>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  The last hypothesis in <fr:ref
+addr="fga1-theorem-1"
+href="fga1-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> is used only to be able to conclude that every coherent algebraic sheaf on <fr:tex>X</fr:tex> is a quotient of a locally-free coherent algebraic sheaf (Serre) and thus admits a left resolution by locally-free sheaves.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>623</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga1-theorem-1-corollary-1</fr:addr><fr:route>fga1-theorem-1-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga1-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> and <fr:tex>X'</fr:tex> be non-singular varieties that are locally-closed in a projective space, and suppose that <fr:tex>X'</fr:tex> is complete.
+    Let <fr:tex>U</fr:tex> be a non-singular cycle on <fr:tex>X \times  X'</fr:tex>, and let <fr:tex>a</fr:tex> and <fr:tex>b</fr:tex> be points of <fr:tex>X'</fr:tex> such that <fr:tex>U</fr:tex> intersects transversally with the cycles <fr:tex>X \times (a)</fr:tex> and <fr:tex>X \times (b)</fr:tex>.
+    Let <fr:tex>Z</fr:tex> and <fr:tex>Z'</fr:tex> be non-singular cycles on <fr:tex>X</fr:tex> such that <fr:tex>Z \times (a)=(X \times (a)) \cdot  U</fr:tex> and <fr:tex>Z \times (b)=(X \times (b)) \cdot  U</fr:tex>.
+    Then
+    <fr:tex
+display="block">       P_X(Z) = P_X(Z').     </fr:tex></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>622</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-theorem-1-corollary-1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      Let <fr:tex>f_a \colon  X \to  X \times  X'</fr:tex> be defined by <fr:tex>f_a(x)=(x,a)</fr:tex>.
+      Then, by <fr:ref
+addr="fga1-equation-4.8"
+href="fga1-equation-4.8.xml"
+taxon="Equation"
+number="4.8"></fr:ref>, we have <fr:tex>P(Z)=f_a^*(P(U))</fr:tex>;
+      similarly, <fr:tex>P(Z')=f_b^*(P(U))</fr:tex>.
+      But then, using the Künneth formula
+      <fr:tex
+display="block">          \operatorname {H} ^ \bullet (X \times  X', \Omega _{X \times  X'}^ \bullet )         =  \operatorname {H} ^ \bullet (X, \Omega _X^ \bullet ) \otimes \operatorname {H} ^ \bullet (X', \Omega _{X'}^ \bullet )       </fr:tex>
+      and the fact that <fr:tex>\operatorname {H} ^0(X', \Omega _{X'})</fr:tex> is simply the scalars, we easily see that <fr:tex>f_a^*=f_b^*</fr:tex>, whence the result.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  For all <fr:tex>x \in  X</fr:tex>, <fr:tex>(x)</fr:tex> is a non-singular subvariety of <fr:tex>X</fr:tex> of codimension <fr:tex>n</fr:tex>, and thus defines an element <fr:tex>\varepsilon _x</fr:tex> of <fr:tex>\operatorname {H} ^n(X, \Omega _X^n)</fr:tex>.
+  If <fr:tex>X</fr:tex> is a non-singular projective variety, then it follows from <fr:ref
+addr="fga1-theorem-1-corollary-1"
+href="fga1-theorem-1-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref> that <fr:tex>\varepsilon _x</fr:tex> does not depend on the chosen point <fr:tex>x</fr:tex>, and we thus denote it by <fr:tex>\varepsilon _X</fr:tex> and call it the <fr:em>fundamental class</fr:em> of <fr:tex>\operatorname {H} ^n(X, \Omega _X^n)</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>624</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga1-4-remark-i</fr:addr><fr:route>fga1-4-remark-i.xml</fr:route><fr:parent>fga1-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    To have a satisfying theory, we must define <fr:tex>P_X(Z)</fr:tex> for arbitrary cycles <fr:tex>Z</fr:tex>, and prove <fr:ref
+addr="fga1-theorem-1"
+href="fga1-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> for proper intersections of cycles.
+    (At the time of writing this talk, this has still not been done in full generality).
+    Assuming that we have done this, <fr:ref
+addr="fga1-theorem-1-corollary-1"
+href="fga1-theorem-1-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref> becomes the following:
+    <fr:em>if <fr:tex>Z</fr:tex> and <fr:tex>Z'</fr:tex> are two algebraically-equivalent cycles, then <fr:tex>P_X(Z)=P_X(Z')</fr:tex></fr:em>
+    (a claim which does not seem to follow from the above, even if <fr:tex>Z</fr:tex> and <fr:tex>Z'</fr:tex> are non-singular).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>625</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga1-4-remark-ii</fr:addr><fr:route>fga1-4-remark-ii.xml</fr:route><fr:parent>fga1-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+    As I pointed out in my conference at the international Congress of Mathematicians in 1958 (Grothendieck, A. "The cohomology theory of abstract algebraic varieties", in <fr:em>Proceedings of the international Congress of Mathematicians [1958, Edinburgh]</fr:em>, Cambridge University Press (1960), 103–118.), the questions raised here are now completely resolved.
+  </fr:p><fr:p>
+    The reader will find more information on the duality of coherent sheaves in <fr:em>loc. cit.</fr:em>, pp.112–115, as well as in [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, III.2], and in <fr:link
+href="Gro1960b.xml"
+type="local"
+addr="Gro1960b">[Gro1960b]</fr:link>.
+    A more systematic treatment can be found in a later chapter of <fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">[GD1960]</fr:link> (chapter IX in the provisional plan).
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>735</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>GD1960</fr:addr><fr:route>GD1960.xml</fr:route><fr:title>Eléments de Géométrie Algébrique</fr:title><fr:date><fr:year>1960</fr:year></fr:date><fr:authors><fr:author>A. Grothendieck</fr:author><fr:author>J. Dieudonné</fr:author></fr:authors><fr:meta
+name="venue"><fr:em>Pub. math. de l'IHÉS</fr:em> <fr:strong>4, 8, 11, 17, 29, 24, 28, 32</fr:strong></fr:meta><fr:meta
+name="bibtex">@article{GD1960,
+  title = {{{El\'{e}ments de G\'{e}om\'{e}trie Alg\'{e}brique}}},
+  author = {Grothendieck, A. and Dieudonn\'{e}, J.},
+  year = {1960/67},
+  journal = {Pub. math. de l'IH\'{E}S},
+  volume = {4, 8, 11, 17, 20, 24, 28, 32},
+}</fr:meta></fr:frontmatter><fr:mainmatter></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>738</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>Gro1960b</fr:addr><fr:route>Gro1960b.xml</fr:route><fr:title>Séminaire de Géométrie Algèbrique</fr:title><fr:date><fr:year>1960</fr:year></fr:date><fr:authors><fr:author>A. Grothendieck</fr:author></fr:authors><fr:meta
+name="venue">Paris, Institut des Hautes Études Scientifiques</fr:meta><fr:meta
+name="bibtex">@book{Gro1960b,
+  title = {{{S\'{e}minaire de G\'{e}om\'{e}trie Alg\'{e}brique}}},
+  author = {Grothendieck, A.},
+  year = {1960/61},
+  publisher = {{Paris, Institut des Hautes \'{E}tudes Scientifiques}}
+}</fr:meta></fr:frontmatter><fr:mainmatter></fr:mainmatter></fr:tree></fr:references></fr:backmatter></fr:tree>

@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1114</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga2-lemma-2</fr:addr><fr:route>fga2-lemma-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be an algebraic scheme over the field <fr:tex>k</fr:tex>, and let <fr:tex>k'</fr:tex> be a radicial extension of <fr:tex>k</fr:tex>.
+    Then every unramified covering of <fr:tex>X \otimes _kk'</fr:tex> is given by the inverse image (i.e. extension of scalars) of an unramified covering of <fr:tex>X</fr:tex>, determined up to isomorphism.
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1113</fr:anchor><fr:addr>fga2-8</fr:addr><fr:route>fga2-8.xml</fr:route><fr:title><fr:link
+href="fga2.xml"
+type="local"
+addr="fga2">Formal geometry and algebraic geometry</fr:link> › Application to the fundamental group</fr:title><fr:number>8</fr:number><fr:parent>fga2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  The techniques described allows us to tackle the system study of the fundamental group, using the example of topological theory.
+  The first two theorems stated in this section are generalisations of results in a recent work by Lang–Serre.
+</fr:p><fr:p>
+  Let <fr:tex>X</fr:tex> be a scheme.
+  
+  Then an <fr:tex>X</fr:tex>-scheme <fr:tex>X'</fr:tex> is said to be an <fr:em>unramified covering of <fr:tex>X</fr:tex></fr:em> if
+
+  <fr:strong><fr:em>TO-DO: this list should be i, ii, etc</fr:em></fr:strong>
+  <fr:ol><fr:li><fr:tex>X'</fr:tex> is finite over <fr:tex>X</fr:tex>, i.e. it is defined by a coherent sheaf of algebras <fr:tex>\mathscr { A } = \mathscr { A } (X')</fr:tex> on <fr:tex>X</fr:tex>;
+    </fr:li>
+    <fr:li><fr:tex>\mathscr { A }</fr:tex> is a locally free sheaf on <fr:tex>X</fr:tex>;
+    </fr:li>
+    <fr:li>
+      for all <fr:tex>x \in  X</fr:tex>, the quotient <fr:tex>\mathscr { A } _x/ \mathfrak {m}_x \mathscr { A } _x =  \mathscr { A } _x \otimes _{ \mathcal {O} _X} \pi (x)</fr:tex> is a separable algebra over <fr:tex>k(x)</fr:tex>.
+    </fr:li></fr:ol>
+
+  This notion of unramified covering (due to Serre and the speaker) posses all the elementary properties for which we can reasonably hope, and which we will not list.
+  We restrict ourselves to saying that it gives rise to a <fr:em>Galois theory</fr:em> modelled on classical Galois theory (and containing it; the proofs being overall simpler than the proofs generally seen for the latter) and the Galois theory of topological coverings.
+  More precisely, we define a <fr:em>geometric point</fr:em> of a scheme <fr:tex>X</fr:tex> to be a morphism <fr:tex>a</fr:tex> from the spectrum <fr:tex>\xi</fr:tex> of an algebraically closed field <fr:tex>\Omega</fr:tex> to <fr:tex>X</fr:tex>, i.e. the data of an algebraically closed extension of the residue field <fr:tex>k(x)</fr:tex> of a point <fr:tex>x=|a|</fr:tex> of <fr:tex>X</fr:tex> (called the <fr:em>locality</fr:em> of the geometric point <fr:tex>a</fr:tex>).
+  If <fr:tex>X'</fr:tex> is an unramified covering of <fr:tex>X</fr:tex>, then we can associate to it the set <fr:tex>E_a(X')</fr:tex> of "geometric points of <fr:tex>X'</fr:tex> over <fr:tex>a</fr:tex>", i.e. the set of pairs consisting of an <fr:tex>x' \in  X'</fr:tex> over <fr:tex>x</fr:tex> and a <fr:tex>k(x)</fr:tex>-homomorphism to <fr:tex>\Omega</fr:tex>.
+  We thus obtain (for fixed <fr:tex>(X,a)</fr:tex>) a functor <fr:tex>F(X,a)</fr:tex> from the category <fr:tex>R(X)</fr:tex> of unramified coverings <fr:tex>X'</fr:tex> of <fr:tex>X</fr:tex> to the category of finite sets.
+  If <fr:tex>X</fr:tex> is connected, then the pair given by <fr:tex>R(X)</fr:tex> and <fr:tex>F(X,a)</fr:tex> has all the formal properties necessary in order to be isomorphic to the analogous pair defined by a suitable totally disconnected compact topological group <fr:tex>\pi</fr:tex> (i.e. a projective limit of finite groups): we take the category <fr:tex>\mathcal {C}( \pi )</fr:tex> of finite sets on which <fr:tex>\pi</fr:tex> acts continuously, and the identity functor <fr:tex>F( \pi )(E)=E</fr:tex> from this category to the category of finite sets.
+  The group <fr:tex>\pi</fr:tex> is also determined up to canonical isomorphic by the condition that <fr:tex>( \mathcal {C}( \pi ),F( \pi ))</fr:tex> is isomorphic to a given pair.
+  To be precise, <fr:tex>\pi</fr:tex> is called the <fr:em>fundamental group of the connected scheme <fr:tex>X</fr:tex> at the geometric point <fr:tex>a</fr:tex></fr:em>, and we denote it by <fr:tex>\pi _1(X,a)</fr:tex>.
+  If <fr:tex>X</fr:tex> is not connected, then we can replace it by the connected component containing <fr:tex>x=|a|</fr:tex>.
+  If, however, <fr:tex>X</fr:tex> is connected, then the groups <fr:tex>\pi _1(X,a')</fr:tex> and <fr:tex>\pi _1(X,a')</fr:tex> are isomorphic for any two geometric points <fr:tex>a'</fr:tex> and <fr:tex>a''</fr:tex> of <fr:tex>X</fr:tex> (with the isomorphism being determined up to inner automorphism), and thus we can, as per usual, choose the most suitable <fr:tex>a</fr:tex> for our purposes, such as the generic point of <fr:tex>X</fr:tex> that is assumed to be irreducible.
+  
+  Of course, <fr:tex>\pi _1(X,a)</fr:tex> is a <fr:em>covariant functor in the pointed scheme <fr:tex>(X,a)</fr:tex></fr:em>.
+  Every statement concerning the classification of inseparable coverings can then be translated into the language of group theory, following the well-known dictionary (except that we must take into account the fact that here we have <fr:em>topological groups</fr:em>).
+</fr:p><fr:p>
+  Our goal is to develop an analogue of the homotopy exact sequence of fibre bundles, relative to a proper morphism <fr:tex>f \colon  X \to  Y</fr:tex>.
+  Clearly, since we don't know what the higher homotopy groups are, we will only have necessarily incomplete results.
+  In order to be able to apply the fundamental theorems from <fr:ref
+addr="fga2-3"
+href="fga2-3.xml"
+number="3"></fr:ref>, we must first explain certain elementary lemmas concerning schemes over Artinian rings or fields (following the general procedure!).
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>352</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga2-lemma-1</fr:addr><fr:route>fga2-lemma-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>(X',a')</fr:tex> be a pointed unramified covering associated to a pointed representation of <fr:tex>\pi _1(X,a)</fr:tex> in a finite set <fr:tex>E</fr:tex> (endowed with a marked point <fr:tex>e</fr:tex>),
+    Then the canonical morphism <fr:tex>\pi _1(X',a') \to \pi _1(X,a)</fr:tex> identifies the domain with the stabiliser of <fr:tex>e</fr:tex> in <fr:tex>\pi _1(X,a)</fr:tex> (and is thus injective).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>353</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga2-lemma-2</fr:addr><fr:route>fga2-lemma-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be an algebraic scheme over the field <fr:tex>k</fr:tex>, and let <fr:tex>k'</fr:tex> be a radicial extension of <fr:tex>k</fr:tex>.
+    Then every unramified covering of <fr:tex>X \otimes _kk'</fr:tex> is given by the inverse image (i.e. extension of scalars) of an unramified covering of <fr:tex>X</fr:tex>, determined up to isomorphism.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  It follows, in particular, from these two lemmas that, for <fr:em>every</fr:em> algebraic extension <fr:tex>K</fr:tex> of <fr:tex>k</fr:tex>, and every geometric point <fr:tex>a'</fr:tex> of <fr:tex>X'=X \otimes _kK</fr:tex> that projects to the geometric point <fr:tex>a</fr:tex> of <fr:tex>X</fr:tex>, that the functorial homomorphism <fr:tex>\pi _1(X',a') \to \pi _1(X,a)</fr:tex> is injective.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>354</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga2-lemma-3</fr:addr><fr:route>fga2-lemma-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a complete scheme over a local Artinian ring <fr:tex>A</fr:tex>, such that <fr:tex>H^0(X, \mathcal {O} _X)=A</fr:tex>.
+    Let <fr:tex>X'</fr:tex> be an unramified covering of <fr:tex>X</fr:tex>, and let <fr:tex>A'=H^0(X', \mathcal {O} _{X'})</fr:tex>, which is thus a ring that is finite over <fr:tex>A</fr:tex> (and which may a priori be ramified over <fr:tex>A</fr:tex>).
+    Let <fr:tex>X_0</fr:tex> and <fr:tex>X'_0</fr:tex> be the reduced subschemes associated to <fr:tex>X</fr:tex> and <fr:tex>X'</fr:tex>, respectively (obtained by splitting by the sheaves of nilpotent elements in <fr:tex>\mathcal {O} _X</fr:tex> and <fr:tex>\mathcal {O} _{X'}</fr:tex>, respectively).
+    Let <fr:tex>k</fr:tex> be a subfield of <fr:tex>A/ \mathfrak {r}(A)</fr:tex> over which <fr:tex>A/ \mathfrak {r}(A)</fr:tex> is finite (so <fr:tex>X_0</fr:tex> is a complete algebraic scheme over <fr:tex>k</fr:tex>, and <fr:tex>X'_0</fr:tex> is an unramified covering).
+    Finally, let <fr:tex>\Omega</fr:tex> be an algebraically closed extension of <fr:tex>k</fr:tex>, and consider the unramified covering <fr:tex>X'_0 \otimes _k \Omega</fr:tex> of <fr:tex>X_0 \otimes _k \Omega</fr:tex>.
+    
+    Then the following two conditions are equivalent:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>X'_0 \otimes _k \Omega</fr:tex> is completely decomposed over <fr:tex>X_0 \otimes _k \Omega</fr:tex>;
+      </fr:li>
+      <fr:li>
+        the natural morphism <fr:tex>X' \to  X \otimes _AA'</fr:tex> is an isomorphism.
+      </fr:li></fr:ol>
+
+    Under these conditions, <fr:tex>A'</fr:tex> is an <fr:em>unramified</fr:em> extension of <fr:tex>A</fr:tex>.
+    Finally, if <fr:tex>X'</fr:tex> is connected, then condition (i) is equivalent to the following, seemingly weaker, condition:
+    <fr:strong><fr:em>TO-DO: the following list should be i bis</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>X'_0 \otimes _k \Omega</fr:tex> admits a regular section over <fr:tex>X_0 \otimes _k \Omega</fr:tex>.
+      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
+  When condition (ii) of <fr:ref
+addr="fga2-lemma-3"
+href="fga2-lemma-3.xml"
+taxon="Lemma"
+number="3"></fr:ref> is satisfied, we say that the unramified covering <fr:tex>X'</fr:tex> of <fr:tex>X</fr:tex> is <fr:em>geometrically trivial</fr:em>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>355</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga2-lemma-4</fr:addr><fr:route>fga2-lemma-4.xml</fr:route><fr:number>4</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism such that <fr:tex>f_*( \mathcal {O} _X)= \mathcal {O} _Y</fr:tex>.
+    Let <fr:tex>a</fr:tex> be a geometric point of <fr:tex>X</fr:tex>, and <fr:tex>b</fr:tex> its projection over <fr:tex>Y</fr:tex>.
+    Then <fr:tex>\pi _1(X,a) \to \pi _1(Y,b)</fr:tex> is <fr:em>surjective</fr:em>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  What we need to show is effectively the following: if an unramified covering <fr:tex>Y'</fr:tex> of <fr:tex>Y</fr:tex> (corresponding to a locally free sheaf of algebras <fr:tex>\mathscr { A }</fr:tex>) is such that <fr:tex>X \otimes _YY'</fr:tex> is disconnected, then <fr:tex>Y'</fr:tex> is also disconnected.
+  In fact, <fr:tex>\mathscr { A }</fr:tex> is then the direct sum of two non-zero sheaves of rings, and thus so too is its direct image, which is exactly <fr:tex>\mathscr { A } \otimes  f_*( \mathcal {O} _X)= \mathscr { A }</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>357</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga2-lemma-5</fr:addr><fr:route>fga2-lemma-5.xml</fr:route><fr:number>5</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a complete scheme over a field <fr:tex>k</fr:tex>, and suppose that <fr:tex>H^0(X, \mathcal {O} _X)</fr:tex> is a local ring <fr:tex>A</fr:tex>, and that <fr:tex>A/ \mathfrak {r}(A)</fr:tex> is radicial over <fr:tex>k</fr:tex>.
+    Let <fr:tex>\Omega</fr:tex> be an algebraic closure of <fr:tex>k</fr:tex>, and let <fr:tex>\overline {X}=X \otimes _k \Omega</fr:tex> (which is connected).
+    Pick a geometric point <fr:tex>\overline {a}</fr:tex> of <fr:tex>\overline {X}</fr:tex> that projects to the geometric point <fr:tex>a</fr:tex> of <fr:tex>X</fr:tex>.
+    Then we have an exact sequence
+    <fr:tex
+display="block">       e        \to   \pi _1( \overline {X}, \overline {e})        \to   \pi _1(X,a)        \to   \pi _1(k,b)        \to  e     </fr:tex>
+    (where <fr:tex>\pi _1(k,b)</fr:tex> is the Galois group of <fr:tex>\Omega</fr:tex> over <fr:tex>k</fr:tex>).
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>356</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga2-lemma-5</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      The fact that the first homomorphism is injective has already been shown with <fr:ref
+addr="fga2-lemma-1"
+href="fga2-lemma-1.xml"
+taxon="Lemma"
+number="1"></fr:ref> and <fr:ref
+addr="fga2-lemma-2"
+href="fga2-lemma-2.xml"
+taxon="Lemma"
+number="2"></fr:ref>;
+      the exactness in the middle follows from <fr:ref
+addr="fga2-lemma-3"
+href="fga2-lemma-3.xml"
+taxon="Lemma"
+number="3"></fr:ref>;
+      finally, the surjectivity of the last homomorphism (which is the only thing to rely on the fact that <fr:tex>A/ \mathfrak {r}(A)</fr:tex> is radicial) follows from <fr:ref
+addr="fga2-lemma-4"
+href="fga2-lemma-4.xml"
+taxon="Lemma"
+number="4"></fr:ref>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>359</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga2-proposition-4</fr:addr><fr:route>fga2-proposition-4.xml</fr:route><fr:number>4</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper flat morphism such that, for all <fr:tex>y \in  Y</fr:tex>, the algebra <fr:tex>H^0(f^{-1}(y), \mathcal {O} _{f^{-1}(y)})</fr:tex> is separable over the residue field <fr:tex>k(y)</fr:tex> (which is the case, for example, if <fr:tex>f^{-1}(y)</fr:tex> is a <fr:em>separable scheme</fr:em> over <fr:tex>k(y)</fr:tex>, i.e. reduced and such that the fields corresponding to its irreducible components are separable extensions of <fr:tex>k(y)</fr:tex>).
+    
+    Then the covering <fr:tex>Y'</fr:tex> of <fr:tex>Y</fr:tex> associated to <fr:tex>f_*( \mathcal {O} _X)</fr:tex> is unramified.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>358</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga2-proposition-4</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      The proof is easy, thanks to <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p><fr:ref
+addr="fga2-proposition-4"
+href="fga2-proposition-4.xml"
+taxon="Proposition"
+number="4"></fr:ref>, combined with <fr:ref
+addr="fga2-lemma-1"
+href="fga2-lemma-1.xml"
+taxon="Lemma"
+number="1"></fr:ref>, practically reduces the homotopical study of proper and flat morphisms (with separable fibres) to the case where <fr:tex>f_*( \mathcal {O} _X)= \mathcal {O} _Y</fr:tex> (since, using Stein factorisation, we can replace <fr:tex>Y</fr:tex> by <fr:tex>Y'</fr:tex>).
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>360</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga2-8-remark</fr:addr><fr:route>fga2-8-remark.xml</fr:route><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    A flat morphism of finite type whose fibres are separable (resp. simple) schemes is said to be <fr:em>separable</fr:em> (resp. <fr:em>simple</fr:em>).
+    We show that, if <fr:tex>f</fr:tex> is flat and if <fr:tex>f^{-1}(y)</fr:tex> is separable (resp. simple) then there exists a neighbourhood of <fr:tex>f^{-1}(y)</fr:tex> on which <fr:tex>f</fr:tex> is separable (resp. simple).
+    The same result holds true for "absolutely normal" (this is <fr:em>Bertini's theorem</fr:em>).
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism such that
+  <fr:strong><fr:em>TO-DO: the following list should be i</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>f_*( \mathcal {O} _X) =  \mathcal {O} _Y</fr:tex></fr:li></fr:ol>
+  and let <fr:tex>X'</fr:tex> be a finite scheme over <fr:tex>X</fr:tex>.
+  Let <fr:tex>Y'</fr:tex> be the covering of <fr:tex>Y</fr:tex> corresponding to the Stein factorisation of <fr:tex>X' \to  Y</fr:tex> (cf. <fr:ref
+addr="fga2-theorem-5"
+href="fga2-theorem-5.xml"
+taxon="Theorem"
+number="5"></fr:ref>).
+  Let <fr:tex>y \in  Y</fr:tex>, so that the set of connected components of the fibre <fr:tex>F'</fr:tex> of <fr:tex>X'</fr:tex> over <fr:tex>y</fr:tex> can be identified with the set of points <fr:tex>y' \in  Y'</fr:tex> over <fr:tex>y</fr:tex> (<fr:ref
+addr="fga2-theorem-5"
+href="fga2-theorem-5.xml"
+taxon="Theorem"
+number="5"></fr:ref>).
+  Consider the evident morphism
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>361</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga2-equation-star</fr:addr><fr:route>fga2-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       X' \to  X \times _Y Y'     \tag{*}     </fr:tex></fr:mainmatter></fr:tree>
+  induced by the natural morphisms <fr:tex>X' \to  X</fr:tex> and <fr:tex>X \to  Y'</fr:tex>;
+  this will be an isomorphism whenever <fr:tex>X'</fr:tex> is of the form <fr:tex>X \times _Y Y''</fr:tex>, where <fr:tex>Y''</fr:tex> is an unramified covering of <fr:tex>Y</fr:tex>, and then <fr:tex>Y'</fr:tex> will be exactly <fr:tex>Y''</fr:tex>, and <fr:ref
+addr="fga2-equation-star"
+href="fga2-equation-star.xml"
+taxon="Equation"
+number="*"></fr:ref> will be the identity.
+  We wish to precisely give the conditions for which <fr:tex>X'</fr:tex> is of the form that we have just indicated, i.e. such that <fr:tex>Y'</fr:tex> is unramified and <fr:ref
+addr="fga2-equation-star"
+href="fga2-equation-star.xml"
+taxon="Equation"
+number="*"></fr:ref> is an isomorphism.
+  For this, we introduce the fibre <fr:tex>F</fr:tex> of <fr:tex>X</fr:tex> at <fr:tex>y</fr:tex>, which is a proper scheme over <fr:tex>k(y)</fr:tex>, for which <fr:tex>F'</fr:tex> is a cover (an unramified one if <fr:tex>X</fr:tex> is).
+  Let <fr:tex>F'_1</fr:tex> be a connected component of <fr:tex>F'</fr:tex> corresponding to a point <fr:tex>y'_1</fr:tex> of <fr:tex>Y'</fr:tex> over <fr:tex>y</fr:tex>.
+  Suppose further that
+  <fr:strong><fr:em>TO-DO: the following list should be ii, iii</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>X'</fr:tex> is unramified over <fr:tex>X</fr:tex> at the points of <fr:tex>F'_1</fr:tex> (and thus <fr:tex>F'_1</fr:tex> is an unramified cover of <fr:tex>F</fr:tex>), and
+    </fr:li>
+    <fr:li><fr:tex>F'_1</fr:tex> is a geometrically trivial covering of <fr:tex>F</fr:tex> (cf. <fr:ref
+addr="fga2-lemma-3"
+href="fga2-lemma-3.xml"
+taxon="Lemma"
+number="3"></fr:ref>).
+    </fr:li></fr:ol></fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>363</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-11</fr:addr><fr:route>fga2-theorem-11.xml</fr:route><fr:number>11</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the above conditions, there exists an open neighbourhood <fr:tex>U'</fr:tex> of <fr:tex>y'_1</fr:tex> in <fr:tex>Y'</fr:tex> such that <fr:ref
+addr="fga2-equation-star"
+href="fga2-equation-star.xml"
+taxon="Equation"
+number="*"></fr:ref> is an isomorphism over <fr:tex>U'</fr:tex>.
+    
+    Furthermore, <fr:tex>Y'</fr:tex> is unramified at <fr:tex>y'_1</fr:tex> over <fr:tex>Y</fr:tex> (but can be ramified at other points <fr:tex>y'</fr:tex> of <fr:tex>Y'</fr:tex> over <fr:tex>y</fr:tex>).
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga2-theorem-11</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      Of course, conditions (ii) and (iii) are also necessary for the conclusion of the theorem.
+      The proof of the theorem is easy, thanks to <fr:ref
+addr="fga2-lemma-3"
+href="fga2-lemma-3.xml"
+taxon="Lemma"
+number="3"></fr:ref> and <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>365</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-11-corollary-1</fr:addr><fr:route>fga2-theorem-11-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose that (i) above is satisfied.
+    For an unramified covering over <fr:tex>X</fr:tex> to be isomorphic to the inverse image of an unramified covering <fr:tex>Y'</fr:tex> of <fr:tex>Y</fr:tex>, it is necessary and sufficient that <fr:tex>X'</fr:tex> induce, on each fibre <fr:tex>f^{-1}(y)</fr:tex>, a geometrically trivial covering.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>364</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga2-theorem-11-corollary-1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      By <fr:ref
+addr="fga2-theorem-11"
+href="fga2-theorem-11.xml"
+taxon="Theorem"
+number="11"></fr:ref>, the set of points of <fr:tex>Y</fr:tex> for which this condition is satisfied is open, and so it suffices to verify it at the points <fr:tex>y</fr:tex> which are closed...
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  Note that the following statement is equivalent to <fr:ref
+addr="fga2-theorem-11-corollary-1"
+href="fga2-theorem-11-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref>:
+</fr:p><fr:p><fr:em>The kernel of the homomorphism <fr:tex>\pi _1(X) \to \pi _1(Y)</fr:tex> (which is surjective, by <fr:ref
+addr="fga2-lemma-4"
+href="fga2-lemma-4.xml"
+taxon="Lemma"
+number="4"></fr:ref>) is the closed invariant subgroup generated by the images in <fr:tex>\pi _1(X)</fr:tex> of <fr:tex>\pi _1(f^{-1}(y))</fr:tex>, where <fr:tex>f^{-1}(y)</fr:tex> denotes the scheme <fr:tex>f^{-1}(y) \otimes _{k(y)} \overline {k(y)}</fr:tex> (where <fr:tex>\overline {k(y)}</fr:tex> denotes an algebraic closure of <fr:tex>k(y)</fr:tex>).</fr:em></fr:p><fr:p>
+  We note that, since we cannot <fr:em>choose</fr:em> the same base point for all the fibres, the homomorphisms <fr:tex>\pi _1(f^{-1}(y)) \to \pi _1(X)</fr:tex> are determined (after having picked a base point for <fr:tex>X</fr:tex>, and then for <fr:tex>Y</fr:tex>) only up to composition with an inner automorphism of <fr:tex>\pi _1(X)</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>367</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-11-corollary-2</fr:addr><fr:route>fga2-theorem-11-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the general conditions of <fr:ref
+addr="fga2-theorem-11"
+href="fga2-theorem-11.xml"
+taxon="Theorem"
+number="11"></fr:ref>, suppose further that <fr:tex>Y</fr:tex>, <fr:tex>X</fr:tex>, and <fr:tex>X'</fr:tex> are integral, and let <fr:tex>K</fr:tex>, <fr:tex>L</fr:tex>, and <fr:tex>L'</fr:tex> be their fields (respectively).
+    Then there exists a separable sub-extension <fr:tex>K'</fr:tex> of <fr:tex>K</fr:tex> in <fr:tex>L'</fr:tex>, linearly disjoint from <fr:tex>L</fr:tex>, such that <fr:tex>L'=LK'</fr:tex> (whence <fr:tex>L'=L \otimes _KK'</fr:tex>).
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>366</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga2-theorem-11-corollary-2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      (We apply the last part of <fr:ref
+addr="fga2-lemma-3"
+href="fga2-lemma-3.xml"
+taxon="Lemma"
+number="3"></fr:ref> to the generic fibre of <fr:tex>X</fr:tex>).
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  The most interesting case in which we can apply <fr:ref
+addr="fga2-theorem-11"
+href="fga2-theorem-11.xml"
+taxon="Theorem"
+number="11"></fr:ref> is when <fr:tex>f</fr:tex> is a <fr:em>separable</fr:em> morphism.
+  Then <fr:tex>X'</fr:tex> is also separable over <fr:tex>Y</fr:tex>, and so, by <fr:ref
+addr="fga2-proposition-4"
+href="fga2-proposition-4.xml"
+taxon="Proposition"
+number="4"></fr:ref>, <fr:tex>Y'</fr:tex> is unramified over <fr:tex>Y</fr:tex>, and so the right-hand side <fr:tex>X \times _YY'</fr:tex> in <fr:ref
+addr="fga2-equation-star"
+href="fga2-equation-star.xml"
+taxon="Equation"
+number="*"></fr:ref> is unramified over <fr:tex>X</fr:tex>.
+  From this, we easily conclude:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>368</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-11-corollary-3</fr:addr><fr:route>fga2-theorem-11-corollary-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose, in addition to (i), that <fr:tex>f</fr:tex> is separable.
+    Let <fr:tex>X'</fr:tex> be a connected unramified covering of <fr:tex>X</fr:tex>.
+    For <fr:tex>X</fr:tex> to be the inverse image of an unramified covering <fr:tex>Y'</fr:tex> of <fr:tex>Y</fr:tex>, it is necessary and sufficient that the induced covering <fr:tex>\overline {F}'</fr:tex> of a geometric fibre <fr:tex>\overline {F}= \overline {f^{-1}(y)}</fr:tex> admit a regular section.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Note that it was not necessary to suppose that <fr:tex>\overline {F}'</fr:tex> be <fr:em>geometrically</fr:em> trivial over <fr:tex>\overline {F}</fr:tex> (which will be true <fr:em>a posteriori</fr:em>, even though <fr:em>a priori</fr:em> this condition is a lot stronger).
+  
+  <fr:ref
+addr="fga2-theorem-11-corollary-3"
+href="fga2-theorem-11-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> is equivalent to the following statement:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>369</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-11-corollary-4</fr:addr><fr:route>fga2-theorem-11-corollary-4.xml</fr:route><fr:number>4</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper and separable morphism such that <fr:tex>f_*( \mathcal {O} _X)= \mathcal {O} _Y</fr:tex>.
+    Let <fr:tex>\overline {F}</fr:tex> be the geometric fibre of a point <fr:tex>y \in  Y</fr:tex>, and pick a geometric point in <fr:tex>\overline {F}</fr:tex>, which, by the morphisms <fr:tex>\overline {F} \to  X \to  Y</fr:tex>, gives geometric points in <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex>; we take these three points as base points for the fundamental groups of <fr:tex>\overline {F}</fr:tex>, <fr:tex>X</fr:tex>, and <fr:tex>Y</fr:tex>, respectively.
+    Under these conditions, we have the exact sequence
+    <fr:tex
+display="block">        \boxed { \pi _1( \overline {F})  \to   \pi _1(X)  \to   \pi _1(Y)  \to  0.}     </fr:tex></fr:p></fr:mainmatter></fr:tree><fr:p>
+  From this, we easily deduce the two following statements of Serre–Lang, with all normality hypotheses removed:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>370</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-11-corollary-5</fr:addr><fr:route>fga2-theorem-11-corollary-5.xml</fr:route><fr:number>5</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> be connected schemes over a field <fr:tex>k</fr:tex>, with <fr:tex>X</fr:tex> or <fr:tex>Y</fr:tex> proper over <fr:tex>k</fr:tex>, and suppose that the reduced scheme <fr:tex>X_ \mathrm {red}</fr:tex> is separable over <fr:tex>k</fr:tex> (which is automatically true if <fr:tex>k</fr:tex> is perfect) and complete.
+    Pick a geometric point <fr:tex>a</fr:tex> (resp. <fr:tex>b</fr:tex>) in <fr:tex>X</fr:tex> (resp. <fr:tex>Y</fr:tex>); this gives a geometric point <fr:tex>c=(a,b)</fr:tex> in <fr:tex>X \times _kY</fr:tex>, and a natural morphism
+    <fr:tex
+display="block">        \pi _1(X \times _kY,c)  \to   \pi _1(X,a) \times \pi _1(Y,b)     </fr:tex>
+    (induced by the functorial morphisms from <fr:tex>\pi _1(X \times  Y,c)</fr:tex> to <fr:tex>\pi _1(X,a)</fr:tex> and <fr:tex>\pi _1(Y,b)</fr:tex>).
+    This morphism is injective, and further bijective if <fr:tex>k</fr:tex> is algebraically closed.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  (The surjectivity in <fr:ref
+addr="fga2-theorem-11-corollary-5"
+href="fga2-theorem-11-corollary-5.xml"
+taxon="Corollary"
+number="5"></fr:ref> is almost trivial).
+  We thus deduce, with Serre–Lang:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>371</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-11-corollary-6</fr:addr><fr:route>fga2-theorem-11-corollary-6.xml</fr:route><fr:number>6</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a connected algebraic scheme over an algebraically closed field <fr:tex>k</fr:tex>, and let <fr:tex>K</fr:tex> be an algebraically closed extension of <fr:tex>k</fr:tex>.
+    Then the fundamental groups of <fr:tex>X</fr:tex> and <fr:tex>X \times _kK</fr:tex> are the same, i.e. every unramified covering of the latter scheme is given by extension of scalars of an unramified covering (which is unique up to isomorphism) of <fr:tex>X</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>372</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga2-8-remarks-i</fr:addr><fr:route>fga2-8-remarks-i.xml</fr:route><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>
+      Using <fr:ref
+addr="fga2-proposition-4"
+href="fga2-proposition-4.xml"
+taxon="Proposition"
+number="4"></fr:ref>, we see that the hypothesis that <fr:tex>f_*( \mathcal {O} _X)= \mathcal {O} _Y</fr:tex> in <fr:ref
+addr="fga2-theorem-11-corollary-4"
+href="fga2-theorem-11-corollary-4.xml"
+taxon="Corollary"
+number="4"></fr:ref> is not essential.
+      In the general case, instead of putting the trivial group <fr:tex>e</fr:tex> after <fr:tex>\pi _1(Y)</fr:tex>, one must continue by <fr:tex>\pi _0( \overline {F}) \to \pi _0(X) \to \pi _0(Y) \to  e</fr:tex>,
+      as in algebraic topology.
+    </fr:li>
+
+    <fr:li>
+      In general, we cannot say anything at the moment about the kernel of <fr:tex>\pi _1( \overline {F}) \to \pi _1(X)</fr:tex>, although it should involve a <fr:tex>\pi _2(Y)</fr:tex>.
+      It seems, however, that we should be able to prove that <fr:tex>\pi _1( \overline {F}) \to \pi _1(X)</fr:tex> is <fr:em>injective</fr:em> if <fr:tex>Y</fr:tex> is the spectrum of a local ring <fr:tex>A</fr:tex>, by appealing to <fr:ref
+addr="fga2-theorem-12"
+href="fga2-theorem-12.xml"
+taxon="Lemma"
+number="12"></fr:ref> below (which shows that this is the case if <fr:tex>A</fr:tex> is <fr:em>complete</fr:em>).
+    </fr:li></fr:ol></fr:mainmatter></fr:tree><fr:p><fr:ref
+addr="fga2-theorem-11"
+href="fga2-theorem-11.xml"
+taxon="Theorem"
+number="11"></fr:ref> used only <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> and <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref>;
+  we will now use <fr:ref
+addr="fga2-theorem-3"
+href="fga2-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>, along with the following elementary lemma:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>373</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga2-lemma-6</fr:addr><fr:route>fga2-lemma-6.xml</fr:route><fr:number>6</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a scheme, and <fr:tex>X_0</fr:tex> the corresponding reduced scheme (i.e. where we have killed all the nilpotent elements).
+    Then every unramified covering <fr:tex>X'_0</fr:tex> of <fr:tex>X_0</fr:tex> is induced by an unramified covering <fr:tex>X'</fr:tex> of <fr:tex>X</fr:tex>, determined up to isomorphism.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  This lemma, which is of a purely local nature, plays a role analogous to that of <fr:ref
+addr="fga2-theorem-8"
+href="fga2-theorem-8.xml"
+taxon="Theorem"
+number="8"></fr:ref> here, in the theory of modules.
+  Combining it with the existence theorem (<fr:ref
+addr="fga2-theorem-3"
+href="fga2-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>), we obtain:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>374</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga2-theorem-12</fr:addr><fr:route>fga2-theorem-12.xml</fr:route><fr:number>12</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>A</fr:tex> be a complete local Noetherian ring with residue field <fr:tex>k</fr:tex>.
+    Let <fr:tex>X</fr:tex> be a proper scheme over <fr:tex>A</fr:tex>.
+    Then every unramified covering <fr:tex>X'_0</fr:tex> of <fr:tex>X_0=X \otimes _Ak</fr:tex> is induced by an unramified covering <fr:tex>X'</fr:tex> of <fr:tex>X</fr:tex>, unique up to isomorphism.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In other words:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>375</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-12-corollary-1</fr:addr><fr:route>fga2-theorem-12-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Pick a geometric point in <fr:tex>X_0</fr:tex> as the base point for the fundamental groups of <fr:tex>X_0</fr:tex> and <fr:tex>X</fr:tex>.
+    Then the canonical homomorphism <fr:tex>\pi _1(X_0) \to \pi _1(X)</fr:tex> is an <fr:em>isomorphism</fr:em>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Applying <fr:ref
+addr="fga2-lemma-5"
+href="fga2-lemma-5.xml"
+taxon="Lemma"
+number="5"></fr:ref> to <fr:tex>X_0</fr:tex> (supposing that <fr:tex>H^0(X_0, \mathcal {O} _{X_0})=k</fr:tex>, for simplicity), and noting that, since <fr:tex>A</fr:tex> is complete, the unramified extensions of <fr:tex>A</fr:tex> correspond to unramified extensions of its residue field, i.e. <fr:tex>\pi _1(Y)= \pi _1(k)</fr:tex> (where <fr:tex>Y= \operatorname {Spec} (A)</fr:tex>).
+  We obtain the exact sequence:
+  <fr:tex
+display="block">     e  \to   \pi _1( \overline {X_0})  \to   \pi _1(X)  \to   \pi _1(Y)  \to  e.   </fr:tex></fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>376</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-12-corollary-2</fr:addr><fr:route>fga2-theorem-12-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper flat morphism, and let <fr:tex>y_1</fr:tex> be a point of <fr:tex>Y</fr:tex>, and <fr:tex>y_0</fr:tex> a specialisation of <fr:tex>y_1</fr:tex>.
+    Consider the corresponding "geometric" fibres <fr:tex>\overline {X_1}</fr:tex> and <fr:tex>\overline {X_0}</fr:tex>, and suppose that <fr:tex>\overline {X_0}</fr:tex> is separable and connected (which implies that <fr:tex>\overline {X_1}</fr:tex> satisfies the same conditions).
+    Then we can find a group homomorphism <fr:tex>\pi _1(X_1) \to \pi _1(X_0)</fr:tex>, defined up to inner automorphism.
+    Further, this homomorphism is <fr:em>surjective</fr:em>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We might hope that the homomorphism in <fr:ref
+addr="fga2-theorem-12-corollary-2"
+href="fga2-theorem-12-corollary-2.xml"
+taxon="Corollary"
+number="2"></fr:ref> is always <fr:em>bijective</fr:em>.
+  Unfortunately, this is not the case in general if <fr:tex>k(y_0)</fr:tex> is of characteristic <fr:tex>&gt;0</fr:tex>.
+  We will, however, obtain below a group containing the kernel of this homomorphism (at least in the case where <fr:tex>\overline {X_0}</fr:tex> is simple), implying that, if <fr:tex>k(y_0)</fr:tex> is of characteristic <fr:tex>0</fr:tex>, then the above homomorphism is bijective (which is a result that we can also prove by transcendentality).
+  At the very least, we already have, in any case, a group containing <fr:tex>\pi _1</fr:tex>, given by a special fibre, using the one given by a generic fibre.
+  Using, for example, the fact that an algebraic curve in characteristic <fr:tex>p</fr:tex> lifts to a curve in characteristic <fr:tex>0</fr:tex> (<fr:link
+href="fga2-theorem-9-corollary-4.xml"
+type="local"
+addr="fga2-theorem-9-corollary-4">Corollary 4 of Theorem 9</fr:link>), we obtain, by transcendentality:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>377</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-12-corollary-3</fr:addr><fr:route>fga2-theorem-12-corollary-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be the scheme of complete simple curve over an algebraically closed field of arbitrary characteristic, and let <fr:tex>g</fr:tex> be the genus of <fr:tex>X_0</fr:tex>.
+    Then <fr:tex>\pi _1(X_0)</fr:tex> admits <fr:tex>2g</fr:tex> topological generators, related by the well-known relation.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We thus deduce, by a well-known technique using hyperplane sections:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-12-corollary-4</fr:addr><fr:route>fga2-theorem-12-corollary-4.xml</fr:route><fr:number>4</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a simple projective scheme over an algebraically closed field of arbitrary characteristic.
+    Then <fr:tex>\pi _1(X)</fr:tex> admits a finite number of topological generators.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We wish to describe the kernel of the homomorphism <fr:tex>\pi _1( \overline {X_1}) \to \pi _1( \overline {X_0})</fr:tex>.
+  For this, we can suppose that <fr:tex>Y</fr:tex> is the spectrum of a discrete complete valuation ring <fr:tex>V= \mathcal {O} _y</fr:tex> (where <fr:tex>y=y_0</fr:tex>).
+  The question is the equivalent to the following:
+  given an unramified covering <fr:tex>\overline {X'_1}</fr:tex> of <fr:tex>\overline {X_1}</fr:tex> (which as can suppose to be Galois, if we wish), under which conditions must it come from an unramified covering of <fr:tex>X_0</fr:tex>?
+  A priori, the given covering comes, by extension of scalars, from an unramified covering <fr:tex>X'_1</fr:tex> of <fr:tex>X_1 \otimes _KK'</fr:tex>, where <fr:tex>K'</fr:tex> is a finite extension of the algebraic closure <fr:tex>\overline {K}</fr:tex> of the field of fractions <fr:tex>K</fr:tex> of <fr:tex>V</fr:tex>;
+  if <fr:tex>X'_1</fr:tex> were Galois, of group <fr:tex>G</fr:tex>, then we could choose <fr:tex>X'_1</fr:tex> to also be Galois of group <fr:tex>G</fr:tex>.
+  Thus: <fr:em>for <fr:tex>X'_1 \otimes _{K'} \overline {K}= \overline {X'_1}</fr:tex> to come from an unramified covering of <fr:tex>X_0</fr:tex>, it is necessary and sufficient that there exist a finite extension <fr:tex>K''</fr:tex> of <fr:tex>K'</fr:tex> in <fr:tex>\overline {K}</fr:tex> such that <fr:tex>X''_1=X'_1 \otimes _{K'}K''</fr:tex> is of the form <fr:tex>X'' \otimes _{V''}K''</fr:tex>, where <fr:tex>V''</fr:tex> is the normal closure of <fr:tex>V</fr:tex> in <fr:tex>K''</fr:tex>, and where <fr:tex>X''</fr:tex> is an unramified covering of <fr:tex>X \otimes _V V''</fr:tex></fr:em>.
+  Suppose, for example, that <fr:tex>X_0</fr:tex> is absolutely normal, whence <fr:tex>X \otimes _V V''</fr:tex> is normal (since it is flat over <fr:tex>V''</fr:tex> and has normal special fibre), and its field of functions is identical to <fr:tex>K''(X_1)</fr:tex>, which is the field of functions of
+  <fr:tex
+display="block">     X_1 \otimes _K K''     = (X \otimes _VK) \otimes _KK''     = X \otimes _VK''     = (X \otimes _VV'') \otimes _{V''}K''.   </fr:tex>
+  
+  Let <fr:tex>L''=K''(X'_1)</fr:tex> be the field of functions of <fr:tex>X'_1 \otimes _{K'}K''</fr:tex>, which is a separable finite extension of <fr:tex>K''(X_1)</fr:tex>, and the above condition also implies that <fr:em><fr:tex>L''</fr:tex> is an unramified extension of the field of functions of <fr:tex>X \otimes _VV''</fr:tex></fr:em> (i.e. the normalisation of <fr:tex>X \otimes _V V''</fr:tex> in <fr:tex>L''</fr:tex> is unramified over <fr:tex>X \otimes _VV''</fr:tex>).
+  It suffices to show that <fr:tex>L''</fr:tex> is unramified at the points of the special fibre of <fr:tex>X \otimes _VV''</fr:tex> (since it is unramified over the generic fibre <fr:tex>X_1 \otimes _KK''</fr:tex>).
+  If <fr:tex>X_0</fr:tex> is now <fr:em>simple</fr:em>, then it follows from the "<fr:em>purity theorem</fr:em>" of Nagata–Zariski that it even suffices to show that <fr:tex>L''</fr:tex> is unramified over the local ring <fr:tex>\mathcal {O} ''</fr:tex> of the generic point of the normalisation of <fr:tex>X \otimes _VV''</fr:tex>, which is a discrete valuation ring, equal to the normalisation in <fr:tex>K''(X_1)</fr:tex> of the local ring <fr:tex>\mathcal {O} \subset  K(X_1)</fr:tex> of the generic point of the special fibre of <fr:tex>X</fr:tex>.
+  We thus obtain:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>379</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-12-corollary-5</fr:addr><fr:route>fga2-theorem-12-corollary-5.xml</fr:route><fr:number>5</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the above conditions, and with the above notation, for the unramified covering <fr:tex>X'_1 \otimes _{K'} \overline {K}</fr:tex> of <fr:tex>\overline {X_1}=X_1 \otimes _K \overline {K}</fr:tex> to come from an unramified covering of <fr:tex>\overline {X_0}</fr:tex>, it is necessary and sufficient that there exist a finite sub-extension <fr:tex>K''</fr:tex> of <fr:tex>\overline {K}/K'</fr:tex> such that <fr:tex>K''(X'_1)</fr:tex> is unramified over the discrete valuation ring <fr:tex>\mathcal {O} '' \subset  K''(X_1)</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Now note that <fr:tex>\mathcal {O} ''</fr:tex> is the normalisation in <fr:tex>K''(X_1)</fr:tex> of the discrete valuation ring <fr:tex>\mathcal {O} ' \subset  K'(X_1)</fr:tex> (which is the normalisation of <fr:tex>\mathcal {O}</fr:tex> in <fr:tex>K'(X_1)</fr:tex>), and that <fr:tex>\mathcal {O} '</fr:tex> contains the normalisation <fr:tex>V'</fr:tex> of <fr:tex>V</fr:tex> in <fr:tex>K'</fr:tex>, with a uniformiser <fr:tex>u</fr:tex> of <fr:tex>V'</fr:tex> being also a uniformiser of <fr:tex>\mathcal {O} '</fr:tex>.
+  Suppose now that <fr:tex>X'_1</fr:tex> is Galois, with Galois group <fr:tex>G</fr:tex> <fr:em>of order <fr:tex>n</fr:tex>, coprime to the characteristic <fr:tex>p</fr:tex> of <fr:tex>k(y_0)</fr:tex></fr:em> (which is also the characteristic of the residue field of <fr:tex>\mathcal {O} '</fr:tex>).
+  Then <fr:tex>K'(X_1')</fr:tex> is "tamely ramified" over <fr:tex>\mathcal {O} '</fr:tex>, from which it easily follows (via "<fr:em>Abhyankar's lemma</fr:em>") that, if we adjoin an <fr:tex>n</fr:tex>-th root <fr:tex>v</fr:tex> of a uniformiser of <fr:tex>\mathcal {O} '</fr:tex>, then it becomes unramified over the normalisation of <fr:tex>\mathcal {O} '</fr:tex> in <fr:tex>K'(X_1)(v)</fr:tex>.
+  But we can take <fr:tex>v</fr:tex> to be an <fr:tex>n</fr:tex>-th root of a uniformiser of <fr:tex>V'</fr:tex>, which shows that the condition of <fr:ref
+addr="fga2-theorem-12-corollary-5"
+href="fga2-theorem-12-corollary-5.xml"
+taxon="Corollary"
+number="5"></fr:ref> is satisfied.
+  (This idea of using Abhyankar's lemma and the purity theorem was given to me by Serre).
+  To express the result we thus obtain, we introduce, for every totally disconnected compact group <fr:tex>\pi</fr:tex>, the quotient <fr:tex>\overline { \pi }</fr:tex> of <fr:tex>\pi</fr:tex> by the closed subgroup generated by its Sylow <fr:tex>p</fr:tex>-sub-groups, i.e. the projective limit of the discrete quotient groups of <fr:tex>\pi</fr:tex> that are of order coprime to <fr:tex>p</fr:tex>.
+  With this notation, we obtain:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-13</fr:addr><fr:route>fga2-theorem-13.xml</fr:route><fr:number>13</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper flat morphism, <fr:tex>y_1</fr:tex> a point of <fr:tex>Y</fr:tex>, and <fr:tex>y_0</fr:tex> a specialisation of <fr:tex>y_1</fr:tex>.
+    Suppose that <fr:tex>\overline {X_0}</fr:tex> is connected and simple.
+    
+    Then the homomorphism <fr:tex>\overline { \pi _1}( \overline {X_1}) \to \overline { \pi _1}( \overline {X_0})</fr:tex> induced by the
+    surjective homomorphism from <fr:link
+href="fga2-theorem-12-corollary-2.xml"
+type="local"
+addr="fga2-theorem-12-corollary-2">Corollary 2 of Theorem 12</fr:link> is an <fr:em>isomorphism</fr:em>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In other words:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>381</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-13-corollary-1</fr:addr><fr:route>fga2-theorem-13-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The classification of unramified Galois coverings, of Galois group of order coprime to the characteristic <fr:tex>p</fr:tex> of <fr:tex>k(y_0)</fr:tex>, is the same for <fr:tex>\overline {X_0}</fr:tex> and for <fr:tex>\overline {X_1}</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In particular, if <fr:tex>k(y_0)</fr:tex> is of characteristic <fr:tex>0</fr:tex>, then we see, algebraically, that <fr:tex>\pi _1( \overline {X_1}) \to \pi _1( \overline {X_0})</fr:tex> is bijective.
+</fr:p><fr:p>
+  We finally point out that the techniques utilised also give the following result, which is more general than <fr:ref
+addr="fga2-theorem-13"
+href="fga2-theorem-13.xml"
+taxon="Theorem"
+number="13"></fr:ref>:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>382</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-14</fr:addr><fr:route>fga2-theorem-14.xml</fr:route><fr:number>14</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper simple morphism, and let <fr:tex>D</fr:tex> be a closed subscheme of <fr:tex>X</fr:tex> that is simple over <fr:tex>Y</fr:tex>, and of codimension <fr:tex>1</fr:tex> at all points.
+    Given a fibre <fr:tex>Z=f^{-1}(z)</fr:tex> of <fr:tex>f</fr:tex>, let <fr:tex>Z'=Z \setminus  Z \cap  D</fr:tex>, and let <fr:tex>\pi _1^ \mathrm {t}( \overline {Z'})</fr:tex> be the quotient of the fundamental group <fr:tex>\pi _1(Z')</fr:tex> that classifies the unramified coverings of <fr:tex>\overline {Z'}</fr:tex> that are "tamely ramified" over <fr:tex>\overline {Z \cap  D}</fr:tex>.
+    Let <fr:tex>y_0</fr:tex> and <fr:tex>y_1</fr:tex> be as in <fr:ref
+addr="fga2-theorem-13"
+href="fga2-theorem-13.xml"
+taxon="Theorem"
+number="13"></fr:ref>.
+    Then there exists a <fr:em>surjective</fr:em> homomorphism (defined up to inner automorphism) <fr:tex>\pi _1^ \mathrm {t}( \overline {X'_1}) \to \pi _1^ \mathrm {t}( \overline {X'_0})</fr:tex>, and the corresponding homomorphism <fr:tex>\overline { \pi _1^ \mathrm {t}}( \overline {X'_1}) \to \overline { \pi _1^ \mathrm {t}}( \overline {X'_0})</fr:tex> is an isomorphism.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  From this we obtain corresponding variants of the corollaries of <fr:ref
+addr="fga2-theorem-13"
+href="fga2-theorem-13.xml"
+taxon="Theorem"
+number="13"></fr:ref>, and of <fr:link
+href="fga2-theorem-12-corollary-4.xml"
+type="local"
+addr="fga2-theorem-12-corollary-4">Corollary 4 of Theorem 12</fr:link>.
+  Similarly, using <fr:link
+href="fga2-theorem-9-corollary-3.xml"
+type="local"
+addr="fga2-theorem-9-corollary-3">Corollary 3 of Theorem 9</fr:link>, we obtain, transcendentally:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>383</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-14-corollary-1</fr:addr><fr:route>fga2-theorem-14-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X_0</fr:tex> be the scheme of a complete simple curve over an algebraically closed field of arbitrary characteristic, and let <fr:tex>S=(s_i)_{1 \leqslant  i \leqslant  n}</fr:tex> be a finite subset of <fr:tex>X_0</fr:tex> with <fr:tex>n</fr:tex> elements.
+    Then <fr:tex>\pi _1^ \mathrm {t}(X_0 \setminus  S)</fr:tex> admits <fr:tex>2g+n</fr:tex> topological generators, <fr:tex>x_i,y_i, \sigma _j</fr:tex> (for <fr:tex>1 \leqslant  i \leqslant  g</fr:tex> and <fr:tex>1 \leqslant  j \leqslant  n</fr:tex>), satisfying the relation
+    <fr:tex
+display="block">        \left ( \prod _i x_iy_ix_i^{-1}y_i^{-1} \right ) \sigma _1 \ldots \sigma _n = 1,     </fr:tex>
+    where the <fr:tex>\sigma _j</fr:tex> are generators of the inertia groups corresponding to the <fr:tex>s_j</fr:tex>.
+    For every finite group <fr:tex>G</fr:tex> <fr:em>of order coprime to the characteristic</fr:em> that is generated by elements <fr:tex>\overline {x_i}, \overline {y_i}, \overline { \sigma _j}</fr:tex> satisfying the above relation, there exists an unramified Galois covering of <fr:tex>X_0 \setminus  S</fr:tex>, of group <fr:tex>G</fr:tex>, with inertia groups at the points <fr:tex>s_j</fr:tex> generated by the <fr:tex>\overline { \sigma _j}</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  If <fr:tex>X_0</fr:tex> is of genus <fr:tex>0</fr:tex>, and <fr:tex>n=3</fr:tex>, then we have a solution to the "<fr:em>three point problem</fr:em>", at least for Galois coverings of order coprime to the characteristic.
+  
+  (Here, <fr:ref
+addr="fga2-theorem-9"
+href="fga2-theorem-9.xml"
+taxon="Theorem"
+number="9"></fr:ref> is actually useless, and it seems that we can deduce the above corollary from the particular case in question in the three point problem).
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>384</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga2-8-remarks-ii</fr:addr><fr:route>fga2-8-remarks-ii.xml</fr:route><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>
+      A more complete study, probably involving generalised Galois coverings of <fr:tex>X</fr:tex>, <fr:tex>X_0</fr:tex>, and <fr:tex>X_1</fr:tex> (of eventually infinitesimal Galois group), should allow one to recover the kernel in <fr:link
+href="fga2-theorem-12-corollary-2.xml"
+type="local"
+addr="fga2-theorem-12-corollary-2">Corollary 2 of Theorem 12</fr:link>.
+      However, a study of coverings admitting ramifications that are not "tame" seems much more difficult.
+    </fr:li>
+
+    <fr:li><fr:ref
+addr="fga2-lemma-6"
+href="fga2-lemma-6.xml"
+taxon="Lemma"
+number="6"></fr:ref>, combined with a result of Grauert concerning the formal completion of a non-singular projective scheme along a hyperplane section (or with the theorem, as yet unproven, mentioned in Remark 2 after <fr:ref
+addr="fga2-theorem-11"
+href="fga2-theorem-11.xml"
+taxon="Theorem"
+number="11"></fr:ref>), would also allow us to prove, in "abstract" algebraic geometry, the classical <fr:em>Lefschetz theorem</fr:em> on the fundamental group.
+    </fr:li></fr:ol></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1112</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga2-lemma-5</fr:addr><fr:route>fga2-lemma-5.xml</fr:route><fr:number>5</fr:number><fr:parent>fga2-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> be a complete scheme over a field <fr:tex>k</fr:tex>, and suppose that <fr:tex>H^0(X, \mathcal {O} _X)</fr:tex> is a local ring <fr:tex>A</fr:tex>, and that <fr:tex>A/ \mathfrak {r}(A)</fr:tex> is radicial over <fr:tex>k</fr:tex>.
+    Let <fr:tex>\Omega</fr:tex> be an algebraic closure of <fr:tex>k</fr:tex>, and let <fr:tex>\overline {X}=X \otimes _k \Omega</fr:tex> (which is connected).
+    Pick a geometric point <fr:tex>\overline {a}</fr:tex> of <fr:tex>\overline {X}</fr:tex> that projects to the geometric point <fr:tex>a</fr:tex> of <fr:tex>X</fr:tex>.
+    Then we have an exact sequence
+    <fr:tex
+display="block">       e        \to   \pi _1( \overline {X}, \overline {e})        \to   \pi _1(X,a)        \to   \pi _1(k,b)        \to  e     </fr:tex>
+    (where <fr:tex>\pi _1(k,b)</fr:tex> is the Galois group of <fr:tex>\Omega</fr:tex> over <fr:tex>k</fr:tex>).
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>356</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga2-lemma-5</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      The fact that the first homomorphism is injective has already been shown with <fr:ref
+addr="fga2-lemma-1"
+href="fga2-lemma-1.xml"
+taxon="Lemma"
+number="1"></fr:ref> and <fr:ref
+addr="fga2-lemma-2"
+href="fga2-lemma-2.xml"
+taxon="Lemma"
+number="2"></fr:ref>;
+      the exactness in the middle follows from <fr:ref
+addr="fga2-lemma-3"
+href="fga2-lemma-3.xml"
+taxon="Lemma"
+number="3"></fr:ref>;
+      finally, the surjectivity of the last homomorphism (which is the only thing to rely on the fact that <fr:tex>A/ \mathfrak {r}(A)</fr:tex> is radicial) follows from <fr:ref
+addr="fga2-lemma-4"
+href="fga2-lemma-4.xml"
+taxon="Lemma"
+number="4"></fr:ref>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

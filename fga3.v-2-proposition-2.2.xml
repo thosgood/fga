@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1908</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-2-proposition-2.2</fr:addr><fr:route>fga3.v-2-proposition-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a quasi-compact separated morphism such that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, and let <fr:tex>S' \to  S</fr:tex> be a faithfully flat quasi-compact morphism.
+    Then
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>\operatorname {Pic} '(X/S) \to \operatorname {Pic} '(X \times _S S'/S')</fr:tex> is injective;
+      </fr:li>
+      <fr:li>
+        If <fr:tex>X</fr:tex> locally admits a section over <fr:tex>S</fr:tex> (i.e. every <fr:tex>s \in  S</fr:tex> has an open neighbourhood <fr:tex>U</fr:tex> such that <fr:tex>X|U</fr:tex> has a section over <fr:tex>U</fr:tex>), then the diagram
+        <fr:tex
+display="block">            \operatorname {Pic} '(X/S)            \to   \operatorname {Pic} '(X \times _S S'/S')            \rightrightarrows   \operatorname {Pic} '(X \times _S S''/S'')         </fr:tex>
+        (where <fr:tex>S''=S' \times _S S'</fr:tex>) is exact.
+      </fr:li></fr:ol></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1735</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-2-proposition-2.2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      The first claim follows, thanks to the elementary properties of faithfully flat descent, from the following general remark.
+      
+      If <fr:tex>f \colon  X \to  S</fr:tex> is a morphism such that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, then the functor <fr:tex>\mathscr { F } \mapsto  f^*( \mathscr { F } )</fr:tex>, from the category of locally free modules of finite type on <fr:tex>S</fr:tex> to the category of locally free modules of finite type on <fr:tex>X</fr:tex>, is fully faithful, and its essential image is given by the modules <fr:tex>\mathscr { G }</fr:tex> on <fr:tex>X</fr:tex> such that <fr:tex>f_*( \mathscr { G } )</fr:tex> is locally free and such that the canonical homomorphism
+      <fr:tex
+display="block">         f^*f_*( \mathscr { G } )          \to   \mathscr { G }        </fr:tex>
+      is an isomorphism.
+      The second statement was proven by the theory of descent in <fr:link
+href="fga3.i-b.4.xml"
+type="local"
+addr="fga3.i-b.4">FGA 3.I, §B.4</fr:link>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1907</fr:anchor><fr:addr>fga3.v-2</fr:addr><fr:route>fga3.v-2.xml</fr:route><fr:title><fr:link
+href="fga3.v.xml"
+type="local"
+addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Relations between the various relative and absolute Picard groups</fr:title><fr:number>2</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1734</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-2-proposition-2.1</fr:addr><fr:route>fga3.v-2-proposition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a morphism such that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>.
+    Then we have an exact sequence
+    <fr:tex
+display="block">       0        \to   \operatorname {Pic} (S)        \to   \operatorname {Pic} (X)        \to   \operatorname {Pic} '(X/S).     </fr:tex>
+    If <fr:tex>X</fr:tex> admits a section over <fr:tex>S</fr:tex>, then the last morphism is surjective, i.e. we have an isomorphism
+    <fr:tex
+display="block">        \operatorname {Pic} '(X/S)        \xrightarrow { \sim }   \operatorname {Pic} (X)/ \operatorname {Pic} (S).     </fr:tex></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1733</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-2-proposition-2.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      The exact sequence can be considered as the low degrees of the exact sequence that corresponds to the Leray spectral sequence for <fr:tex>f</fr:tex> and <fr:tex>\mathcal {O} _X</fr:tex>.
+      The second claim is equally formal.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1736</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-2-proposition-2.2</fr:addr><fr:route>fga3.v-2-proposition-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a quasi-compact separated morphism such that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, and let <fr:tex>S' \to  S</fr:tex> be a faithfully flat quasi-compact morphism.
+    Then
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>\operatorname {Pic} '(X/S) \to \operatorname {Pic} '(X \times _S S'/S')</fr:tex> is injective;
+      </fr:li>
+      <fr:li>
+        If <fr:tex>X</fr:tex> locally admits a section over <fr:tex>S</fr:tex> (i.e. every <fr:tex>s \in  S</fr:tex> has an open neighbourhood <fr:tex>U</fr:tex> such that <fr:tex>X|U</fr:tex> has a section over <fr:tex>U</fr:tex>), then the diagram
+        <fr:tex
+display="block">            \operatorname {Pic} '(X/S)            \to   \operatorname {Pic} '(X \times _S S'/S')            \rightrightarrows   \operatorname {Pic} '(X \times _S S''/S'')         </fr:tex>
+        (where <fr:tex>S''=S' \times _S S'</fr:tex>) is exact.
+      </fr:li></fr:ol></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1735</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-2-proposition-2.2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      The first claim follows, thanks to the elementary properties of faithfully flat descent, from the following general remark.
+      
+      If <fr:tex>f \colon  X \to  S</fr:tex> is a morphism such that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, then the functor <fr:tex>\mathscr { F } \mapsto  f^*( \mathscr { F } )</fr:tex>, from the category of locally free modules of finite type on <fr:tex>S</fr:tex> to the category of locally free modules of finite type on <fr:tex>X</fr:tex>, is fully faithful, and its essential image is given by the modules <fr:tex>\mathscr { G }</fr:tex> on <fr:tex>X</fr:tex> such that <fr:tex>f_*( \mathscr { G } )</fr:tex> is locally free and such that the canonical homomorphism
+      <fr:tex
+display="block">         f^*f_*( \mathscr { G } )          \to   \mathscr { G }        </fr:tex>
+      is an isomorphism.
+      The second statement was proven by the theory of descent in <fr:link
+href="fga3.i-b.4.xml"
+type="local"
+addr="fga3.i-b.4">FGA 3.I, §B.4</fr:link>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  The results of <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref> can also be stated as follows:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1737</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-2-corollary-2.3</fr:addr><fr:route>fga3.v-2-corollary-2.3.xml</fr:route><fr:number>2.3</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the conditions of <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>, the canonical homomorphism <fr:ref
+addr="fga3.v-1-equation-1.9"
+href="fga3.v-1-equation-1.9.xml"
+taxon="Equation"
+number="1.9"></fr:ref> <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S} \to \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> is injective, and even bijective if <fr:tex>X</fr:tex> locally admits a section over <fr:tex>S</fr:tex>.
+    (In the latter case, the relative Picard group <fr:tex>\operatorname {Pic} (X/S)</fr:tex> is identified with the restricted relative Picard group <fr:tex>\operatorname {Pic} '(X/S)</fr:tex>.)
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Combining this with <fr:ref
+addr="fga3.v-2-proposition-2.1"
+href="fga3.v-2-proposition-2.1.xml"
+taxon="Proposition"
+number="2.1"></fr:ref>, we thus obtain:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1738</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-2-corollary-2.4</fr:addr><fr:route>fga3.v-2-corollary-2.4.xml</fr:route><fr:number>2.4</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the conditions of <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>, we have an exact sequence
+    <fr:tex
+display="block">       0        \to   \operatorname {Pic} (S)        \to   \operatorname {Pic} (X)        \to   \operatorname {Pic} (X/S).     </fr:tex>
+    If <fr:tex>X</fr:tex> admits a section over <fr:tex>S</fr:tex>, then the last homomorphism is surjective, i.e. we have an isomorphism
+    <fr:tex
+display="block">        \operatorname {Pic} (X/S)        \xrightarrow { \sim }   \operatorname {Pic} (X)/ \operatorname {Pic} (S).     </fr:tex></fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1739</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-2-remark-2.5</fr:addr><fr:route>fga3.v-2-remark-2.5.xml</fr:route><fr:number>2.5</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a morphism such that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, and let <fr:tex>g</fr:tex> be a section of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>.
+    Let <fr:tex>\mathscr { L }</fr:tex> be an invertible module on <fr:tex>X</fr:tex>.
+    We define the <fr:em><fr:tex>g</fr:tex>-rigidification</fr:em> of <fr:tex>\mathscr { L }</fr:tex> to be an isomorphism <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  g^*( \mathscr { L } )</fr:tex>, and a <fr:em><fr:tex>g</fr:tex>-rigidified invertible module</fr:em> to be an invertible module <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X</fr:tex> endowed with a <fr:tex>g</fr:tex>-rigidification.
+    Every automorphism of such a structure is trivial, and <fr:tex>\operatorname {Pic} '(X/S)</fr:tex> can be identified with the set of isomorphism classes of <fr:tex>g</fr:tex>-rigidified invertible modules on <fr:tex>S</fr:tex>.
+    (It is this fact that allows us to use the theory of descent to prove (ii) of <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>.)
+    This gives a new interpretation of <fr:tex>\operatorname {Pic} (X/S)</fr:tex>, at least when <fr:tex>f</fr:tex> is further quasi-compact and separated, so that <fr:tex>\operatorname {Pic} (X/S) \xrightarrow { \sim } \operatorname {Pic} '(X/S)</fr:tex> by <fr:ref
+addr="fga3.v-2-corollary-2.3"
+href="fga3.v-2-corollary-2.3.xml"
+taxon="Corollary"
+number="2.3"></fr:ref>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1740</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-2-remark-2.6</fr:addr><fr:route>fga3.v-2-remark-2.6.xml</fr:route><fr:number>2.6</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a morphism as in <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>, and let <fr:tex>S' \to  S</fr:tex> be a faithfully flat quasi-compact morphism such that there exists an <fr:tex>S</fr:tex>-morphism <fr:tex>S' \to  X</fr:tex>, i.e. such that there exists a section of <fr:tex>X'=X \times _S S'</fr:tex> over <fr:tex>S'</fr:tex>.
+    
+    Let <fr:tex>S''=S' \times _S S'</fr:tex>, and <fr:tex>X''=X \times _S S''</fr:tex>, and consider the exact sequence
+    <fr:tex
+display="block">        \operatorname {Pic} (X/S)        \to   \operatorname {Pic} (X'/S')        \rightrightarrows   \operatorname {Pic} (X''/S'').     </fr:tex>
+    Applying <fr:ref
+addr="fga3.v-2-corollary-2.4"
+href="fga3.v-2-corollary-2.4.xml"
+taxon="Corollary"
+number="2.4"></fr:ref>, we obtain the exact sequence
+    <fr:tex
+display="block">        \operatorname {Pic} (X/S)        \to   \operatorname {Pic} (X')/ \operatorname {Pic} (S')        \rightrightarrows   \operatorname {Pic} (X'')/ \operatorname {Pic} (S'').     </fr:tex>
+    In particular, every element of the relative Picard group already "comes from" an element of <fr:tex>\operatorname {Pic} (X')</fr:tex>.
+    This gives a substantial simplification of the description of the relative Picard group given in the previous section, and even of the Picard functor of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, since, for all <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, we can apply the above to <fr:tex>X \times _S T/T</fr:tex> and to the morphism <fr:tex>T'=S' \times _S T \to  T</fr:tex>.
+    If, for example, <fr:tex>f</fr:tex> itself is faithfully flat, then we can take <fr:tex>S'=X</fr:tex>, which allows us, whenever <fr:tex>f</fr:tex> is further of finite type (resp. simple, etc.), to restrict, in the description of the relative Picard functor <fr:tex>T \mapsto \operatorname {Pic} (X \times _S T/T)</fr:tex>, to the base changes <fr:tex>T' \to  T</fr:tex> that are of finite type (resp. simple, etc.).
+    If <fr:tex>f</fr:tex> is projective and flat, and <fr:tex>S</fr:tex> locally Noetherian, then we can prove that we can take in the above a <fr:tex>S' \to  S</fr:tex> such that <fr:tex>S'</fr:tex> is the direct sum of <fr:em>flat covers</fr:em> <fr:tex>S'_i</fr:tex> of opens <fr:tex>S_i</fr:tex> of <fr:tex>S</fr:tex> that cover <fr:tex>S</fr:tex>;
+    if <fr:tex>f</fr:tex> is further separable, then we can take <fr:tex>S'_i</fr:tex> to be étale over <fr:tex>S_i</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1906</fr:anchor><fr:addr>fga3.i-b.4</fr:addr><fr:route>fga3.i-b.4.xml</fr:route><fr:title><fr:link
+href="fga3.i-b.xml"
+type="local"
+addr="fga3.i-b"><fr:link
+href="fga3.i.xml"
+type="local"
+addr="fga3.i">Generalities, and descent by faithfully flat morphisms</fr:link> › Descent by faithfully flat morphisms</fr:link> › Application to rationality criteria</fr:title><fr:number>B.4</fr:number><fr:parent>fga3.i-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>X</fr:tex> be an <fr:tex>S</fr:tex>-prescheme such that the direct image of <fr:tex>\mathscr { O } _X</fr:tex> on <fr:tex>S</fr:tex> is <fr:tex>\mathscr { O } _S</fr:tex>;
+  this property remains true for any flat base extension <fr:tex>S' \to  S</fr:tex>.
+  If <fr:tex>\mathcal {F}</fr:tex> is an <fr:em>invertible sheaf</fr:em> (i.e. locally free of rank <fr:tex>1</fr:tex>) on <fr:tex>X</fr:tex>, then there is a bijective correspondence between automorphisms of <fr:tex>\mathcal {F}</fr:tex> (identified with the invertible sections of <fr:tex>\mathscr { O } _X</fr:tex>) and invertible sections of <fr:tex>\mathscr { O } _S</fr:tex>.
+  So let <fr:tex>s</fr:tex> be a section of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>;
+  we define a <fr:em>section of <fr:tex>\mathcal {F}</fr:tex> over <fr:tex>s</fr:tex></fr:em> to be a section of the invertible sheaf <fr:tex>s^*( \mathcal {F})</fr:tex> on <fr:tex>S</fr:tex>.
+  It follows from the above that, if <fr:tex>\mathcal {F}_i</fr:tex> (for <fr:tex>i=1,2</fr:tex>) are invertible sheaves on <fr:tex>X</fr:tex>, each endowed with a section over <fr:tex>s</fr:tex>, and <fr:em>if <fr:tex>\mathcal {F}_1</fr:tex> and <fr:tex>\mathcal {F}_2</fr:tex> are isomorphic, then there exists exactly one isomorphism from <fr:tex>\mathcal {F}_1</fr:tex> to <fr:tex>\mathcal {F}_2</fr:tex> that is compatible with the sections in question</fr:em> (i.e. sending the first to the second).
+  We also, independently of the section <fr:tex>s</fr:tex>, regard two invertible sheaves <fr:tex>\mathcal {F}_1</fr:tex> and <fr:tex>\mathcal {F}_2</fr:tex> on <fr:tex>X</fr:tex> as <fr:em>equivalent</fr:em> if every point of <fr:tex>S</fr:tex> has an open neighbourhood <fr:tex>U</fr:tex> such that the restrictions of <fr:tex>\mathcal {F}_1</fr:tex> and <fr:tex>\mathcal {F}_2</fr:tex> to <fr:tex>X|U</fr:tex> are isomorphic.
+  Then <fr:em>every invertible sheaf <fr:tex>\mathcal {F}</fr:tex> on <fr:tex>X</fr:tex> is equivalent to an invertible sheaf <fr:tex>\mathcal {F}_1</fr:tex> endowed with a marked section over <fr:tex>s</fr:tex></fr:em> (we take <fr:tex>\mathcal {F}_1=Fs^*( \mathcal {F})^{-1}</fr:tex>), <fr:em>and <fr:tex>\mathcal {F}_1</fr:tex> is determined up to isomorphism</fr:em>.
+  In other words, the classification <fr:em>up to equivalence</fr:em> of invertible sheaves on <fr:tex>X</fr:tex> is the same as the classification <fr:em>up to isomorphism</fr:em> of invertible sheaves endowed with a marked section.
+</fr:p><fr:p>
+  Since these properties remain true under flat extensions <fr:tex>\alpha \colon  S' \to  S</fr:tex> of the base (by replacing the section <fr:tex>s</fr:tex> with its inverse image <fr:tex>s'</fr:tex> under <fr:tex>\alpha</fr:tex>), we thus conclude, taking <fr:ref
+addr="fga3.i-b.1-theorem-1"
+href="fga3.i-b.1-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> into account:
+</fr:p><fr:p><fr:em>
+    With the prescheme <fr:tex>X/S</fr:tex> being as above, and admitting a section <fr:tex>s</fr:tex>, let <fr:tex>\alpha \colon  S' \to  S</fr:tex> be a faithfully flat and quasi-compact morphism; let <fr:tex>\mathcal {F}'</fr:tex> be an invertible sheaf on <fr:tex>X'=X \times _S S'</fr:tex>.
+    For <fr:tex>\mathcal {F}'</fr:tex> to be equivalent to the inverse image on <fr:tex>X'</fr:tex> of an invertible sheaf <fr:tex>\mathcal {F}'</fr:tex> on <fr:tex>X</fr:tex>, it is necessary and sufficient that its inverse images <fr:tex>p_1^*( \mathcal {F}')</fr:tex> and <fr:tex>p_2^*( \mathcal {F}')</fr:tex> on <fr:tex>X' \times _X X'=X \times _S(S' \times _S S')</fr:tex> be equivalent.
+    If this is the case, then <fr:tex>\mathcal {F}</fr:tex> is determined up to equivalence.
+  </fr:em>
+  (We then say that <fr:tex>\mathcal {F}'</fr:tex> is <fr:em>rational</fr:em> on <fr:tex>S</fr:tex>).
+</fr:p><fr:p>
+  Considering this principle in the case where <fr:tex>\alpha \colon  S' \to  S</fr:tex> is as in <fr:ref
+addr="fga3.i-b.3-example-1"
+href="fga3.i-b.3-example-1.xml"
+taxon="Example"
+number="1"></fr:ref> and <fr:ref
+addr="fga3.i-b.3-example-2"
+href="fga3.i-b.3-example-2.xml"
+taxon="Example"
+number="2"></fr:ref> in the previous section, we recover the <fr:em>rationality criteria of Weil and of Cartier</fr:em>.
+  
+  (We note that the authors restrict to the case where <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> are spectra of fields;
+  a fortiori, <fr:tex>S</fr:tex> is then the spectrum of a local ring, and the equivalence relation introduced above is exactly the relation of being isomorphic).
+  The the first case, <fr:tex>\mathcal {F}'</fr:tex> is rational on <fr:tex>S</fr:tex> if and only if its images under <fr:tex>\Gamma</fr:tex> are all equivalent to <fr:tex>\mathcal {F}'</fr:tex>.
+  To express the rationality criterion in the second case, we consider, more generally, the diagonal morphism <fr:tex>X' \to  X''=X' \times _X X'</fr:tex> of <fr:tex>X'/X</fr:tex>, with the corresponding sheaf of ideals <fr:tex>\mathscr { I }</fr:tex> on <fr:tex>X' \times _X X'</fr:tex>, and the sheaf <fr:tex>\mathscr { I } / \mathscr { I } ^2</fr:tex>, which can be identified with its inverse image <fr:tex>\Omega _{X'/X}^1</fr:tex> on <fr:tex>X</fr:tex> (the <fr:em>sheaf of <fr:tex>1</fr:tex>-differentials of <fr:tex>X'</fr:tex> with respect to <fr:tex>X</fr:tex></fr:em>).
+  Since the restrictions of the <fr:tex>\mathcal {F}''_i=p_i( \mathcal {F}')</fr:tex> (for <fr:tex>i=1,2</fr:tex>) to the diagonal are isomorphic (since they are both isomorphic to <fr:tex>\mathcal {F}'</fr:tex>), i.e. <fr:tex>\mathcal {F}''_1( \mathcal {F}''_2)^{-1}= \mathcal {F}''</fr:tex> has a restriction to the diagonal which is trivial, it follows that the restriction of <fr:tex>\mathcal {F}''</fr:tex> to <fr:tex>(X'', \mathscr { O } _{X''}/ \mathscr { I } ^2)</fr:tex> is given, up to isomorphism, by a well-defined element <fr:tex>\xi</fr:tex> of
+  <fr:tex
+display="block">      \operatorname {H} ^1(X'', \mathscr { I } / \mathscr { I } ^2)     =  \operatorname {H} ^1(X', \Omega _{X'/X}^1).   </fr:tex>
+  Also, being precise, we have <fr:tex>\Omega _{X'/X}^1= \Omega _{S'/S}^1 \otimes _{ \mathscr { O } _S} \mathscr { O } _X</fr:tex>, and thus, <fr:em>if <fr:tex>\Omega _{S'/S}^1</fr:tex> is locally free on <fr:tex>S</fr:tex></fr:em> (as in the Cartier case), <fr:em>then <fr:tex>\xi</fr:tex> defines a section of <fr:tex>\operatorname {R} ^1f'( \mathscr { O } _{X'}) \otimes \Omega _{S'/S}^1</fr:tex> on <fr:tex>S'</fr:tex></fr:em> (called the <fr:em>Atiyah–Cartier class of the invertible sheaf <fr:tex>\mathcal {F}</fr:tex> on <fr:tex>X'/S</fr:tex></fr:em>) <fr:em>whose vanishing is necessary and sufficient for the inverse images of <fr:tex>\mathcal {F}'</fr:tex> under the two projections of</fr:em>
+  <fr:tex
+display="block">     (X'', \mathscr { O } _{X''}/ \mathscr { I } ^2)     = X \times _S(S'', \mathscr { O } _{S''}/ \mathscr { J } ^2)   </fr:tex>
+  <fr:em>to <fr:tex>X'</fr:tex> to be equivalent</fr:em> (where <fr:tex>\mathscr { J }</fr:tex> is the sheaf of ideals on <fr:tex>S''=S' \times _S S'</fr:tex> defined by the diagonal morphism <fr:tex>S' \to  S' \times _S S'</fr:tex>).
+  This vanishing is thus trivially <fr:em>necessary</fr:em> for the inverse images of <fr:tex>\mathcal {F}'</fr:tex> on <fr:tex>X''=X \times _S S''</fr:tex> itself to be equivalent, and thus also for <fr:tex>\mathcal {F}</fr:tex> to be equivalent to the inverse image of an invertible sheaf <fr:tex>\mathcal {F}</fr:tex> on <fr:tex>X</fr:tex>.
+  The Atiyah–Cartier class can also be understood as the obstruction to the existence, locally over <fr:tex>S'</fr:tex>, of a <fr:em>connection</fr:em> of <fr:tex>\mathcal {F}'</fr:tex> relative to the derivations of <fr:tex>X'/X</fr:tex>, with such a connection further being determined when we know the derivations of <fr:tex>\mathcal {F}'</fr:tex> corresponding to the natural extensions of derivations of <fr:tex>S'/S</fr:tex> to <fr:tex>X'</fr:tex>.
+  From this, and the results of the previous section, we easily conclude that, in the case of the aforementioned <fr:ref
+addr="fga3.i-b.3-example-2"
+href="fga3.i-b.3-example-2.xml"
+taxon="Example"
+number="2"></fr:ref>, and when <fr:tex>X/S</fr:tex> admits a section, the vanishing of the Atiyah–Cartier class is also sufficient for <fr:tex>\mathcal {F}'</fr:tex> to be rational on <fr:tex>S</fr:tex>.
+</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1901</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-2-corollary-2.3</fr:addr><fr:route>fga3.v-2-corollary-2.3.xml</fr:route><fr:number>2.3</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the conditions of <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>, the canonical homomorphism <fr:ref
+addr="fga3.v-1-equation-1.9"
+href="fga3.v-1-equation-1.9.xml"
+taxon="Equation"
+number="1.9"></fr:ref> <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S} \to \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> is injective, and even bijective if <fr:tex>X</fr:tex> locally admits a section over <fr:tex>S</fr:tex>.
+    (In the latter case, the relative Picard group <fr:tex>\operatorname {Pic} (X/S)</fr:tex> is identified with the restricted relative Picard group <fr:tex>\operatorname {Pic} '(X/S)</fr:tex>.)
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1902</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-2-corollary-2.4</fr:addr><fr:route>fga3.v-2-corollary-2.4.xml</fr:route><fr:number>2.4</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the conditions of <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>, we have an exact sequence
+    <fr:tex
+display="block">       0        \to   \operatorname {Pic} (S)        \to   \operatorname {Pic} (X)        \to   \operatorname {Pic} (X/S).     </fr:tex>
+    If <fr:tex>X</fr:tex> admits a section over <fr:tex>S</fr:tex>, then the last homomorphism is surjective, i.e. we have an isomorphism
+    <fr:tex
+display="block">        \operatorname {Pic} (X/S)        \xrightarrow { \sim }   \operatorname {Pic} (X)/ \operatorname {Pic} (S).     </fr:tex></fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1903</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-2-remark-2.5</fr:addr><fr:route>fga3.v-2-remark-2.5.xml</fr:route><fr:number>2.5</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a morphism such that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, and let <fr:tex>g</fr:tex> be a section of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>.
+    Let <fr:tex>\mathscr { L }</fr:tex> be an invertible module on <fr:tex>X</fr:tex>.
+    We define the <fr:em><fr:tex>g</fr:tex>-rigidification</fr:em> of <fr:tex>\mathscr { L }</fr:tex> to be an isomorphism <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  g^*( \mathscr { L } )</fr:tex>, and a <fr:em><fr:tex>g</fr:tex>-rigidified invertible module</fr:em> to be an invertible module <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X</fr:tex> endowed with a <fr:tex>g</fr:tex>-rigidification.
+    Every automorphism of such a structure is trivial, and <fr:tex>\operatorname {Pic} '(X/S)</fr:tex> can be identified with the set of isomorphism classes of <fr:tex>g</fr:tex>-rigidified invertible modules on <fr:tex>S</fr:tex>.
+    (It is this fact that allows us to use the theory of descent to prove (ii) of <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>.)
+    This gives a new interpretation of <fr:tex>\operatorname {Pic} (X/S)</fr:tex>, at least when <fr:tex>f</fr:tex> is further quasi-compact and separated, so that <fr:tex>\operatorname {Pic} (X/S) \xrightarrow { \sim } \operatorname {Pic} '(X/S)</fr:tex> by <fr:ref
+addr="fga3.v-2-corollary-2.3"
+href="fga3.v-2-corollary-2.3.xml"
+taxon="Corollary"
+number="2.3"></fr:ref>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1904</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-2-remark-2.6</fr:addr><fr:route>fga3.v-2-remark-2.6.xml</fr:route><fr:number>2.6</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a morphism as in <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>, and let <fr:tex>S' \to  S</fr:tex> be a faithfully flat quasi-compact morphism such that there exists an <fr:tex>S</fr:tex>-morphism <fr:tex>S' \to  X</fr:tex>, i.e. such that there exists a section of <fr:tex>X'=X \times _S S'</fr:tex> over <fr:tex>S'</fr:tex>.
+    
+    Let <fr:tex>S''=S' \times _S S'</fr:tex>, and <fr:tex>X''=X \times _S S''</fr:tex>, and consider the exact sequence
+    <fr:tex
+display="block">        \operatorname {Pic} (X/S)        \to   \operatorname {Pic} (X'/S')        \rightrightarrows   \operatorname {Pic} (X''/S'').     </fr:tex>
+    Applying <fr:ref
+addr="fga3.v-2-corollary-2.4"
+href="fga3.v-2-corollary-2.4.xml"
+taxon="Corollary"
+number="2.4"></fr:ref>, we obtain the exact sequence
+    <fr:tex
+display="block">        \operatorname {Pic} (X/S)        \to   \operatorname {Pic} (X')/ \operatorname {Pic} (S')        \rightrightarrows   \operatorname {Pic} (X'')/ \operatorname {Pic} (S'').     </fr:tex>
+    In particular, every element of the relative Picard group already "comes from" an element of <fr:tex>\operatorname {Pic} (X')</fr:tex>.
+    This gives a substantial simplification of the description of the relative Picard group given in the previous section, and even of the Picard functor of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, since, for all <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, we can apply the above to <fr:tex>X \times _S T/T</fr:tex> and to the morphism <fr:tex>T'=S' \times _S T \to  T</fr:tex>.
+    If, for example, <fr:tex>f</fr:tex> itself is faithfully flat, then we can take <fr:tex>S'=X</fr:tex>, which allows us, whenever <fr:tex>f</fr:tex> is further of finite type (resp. simple, etc.), to restrict, in the description of the relative Picard functor <fr:tex>T \mapsto \operatorname {Pic} (X \times _S T/T)</fr:tex>, to the base changes <fr:tex>T' \to  T</fr:tex> that are of finite type (resp. simple, etc.).
+    If <fr:tex>f</fr:tex> is projective and flat, and <fr:tex>S</fr:tex> locally Noetherian, then we can prove that we can take in the above a <fr:tex>S' \to  S</fr:tex> such that <fr:tex>S'</fr:tex> is the direct sum of <fr:em>flat covers</fr:em> <fr:tex>S'_i</fr:tex> of opens <fr:tex>S_i</fr:tex> of <fr:tex>S</fr:tex> that cover <fr:tex>S</fr:tex>;
+    if <fr:tex>f</fr:tex> is further separable, then we can take <fr:tex>S'_i</fr:tex> to be étale over <fr:tex>S_i</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1905</fr:anchor><fr:addr>fga3.v-2</fr:addr><fr:route>fga3.v-2.xml</fr:route><fr:title><fr:link
+href="fga3.v.xml"
+type="local"
+addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Relations between the various relative and absolute Picard groups</fr:title><fr:number>2</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1734</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-2-proposition-2.1</fr:addr><fr:route>fga3.v-2-proposition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a morphism such that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>.
+    Then we have an exact sequence
+    <fr:tex
+display="block">       0        \to   \operatorname {Pic} (S)        \to   \operatorname {Pic} (X)        \to   \operatorname {Pic} '(X/S).     </fr:tex>
+    If <fr:tex>X</fr:tex> admits a section over <fr:tex>S</fr:tex>, then the last morphism is surjective, i.e. we have an isomorphism
+    <fr:tex
+display="block">        \operatorname {Pic} '(X/S)        \xrightarrow { \sim }   \operatorname {Pic} (X)/ \operatorname {Pic} (S).     </fr:tex></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1733</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-2-proposition-2.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      The exact sequence can be considered as the low degrees of the exact sequence that corresponds to the Leray spectral sequence for <fr:tex>f</fr:tex> and <fr:tex>\mathcal {O} _X</fr:tex>.
+      The second claim is equally formal.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1736</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.v-2-proposition-2.2</fr:addr><fr:route>fga3.v-2-proposition-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a quasi-compact separated morphism such that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, and let <fr:tex>S' \to  S</fr:tex> be a faithfully flat quasi-compact morphism.
+    Then
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>\operatorname {Pic} '(X/S) \to \operatorname {Pic} '(X \times _S S'/S')</fr:tex> is injective;
+      </fr:li>
+      <fr:li>
+        If <fr:tex>X</fr:tex> locally admits a section over <fr:tex>S</fr:tex> (i.e. every <fr:tex>s \in  S</fr:tex> has an open neighbourhood <fr:tex>U</fr:tex> such that <fr:tex>X|U</fr:tex> has a section over <fr:tex>U</fr:tex>), then the diagram
+        <fr:tex
+display="block">            \operatorname {Pic} '(X/S)            \to   \operatorname {Pic} '(X \times _S S'/S')            \rightrightarrows   \operatorname {Pic} '(X \times _S S''/S'')         </fr:tex>
+        (where <fr:tex>S''=S' \times _S S'</fr:tex>) is exact.
+      </fr:li></fr:ol></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1735</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.v-2-proposition-2.2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      The first claim follows, thanks to the elementary properties of faithfully flat descent, from the following general remark.
+      
+      If <fr:tex>f \colon  X \to  S</fr:tex> is a morphism such that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, then the functor <fr:tex>\mathscr { F } \mapsto  f^*( \mathscr { F } )</fr:tex>, from the category of locally free modules of finite type on <fr:tex>S</fr:tex> to the category of locally free modules of finite type on <fr:tex>X</fr:tex>, is fully faithful, and its essential image is given by the modules <fr:tex>\mathscr { G }</fr:tex> on <fr:tex>X</fr:tex> such that <fr:tex>f_*( \mathscr { G } )</fr:tex> is locally free and such that the canonical homomorphism
+      <fr:tex
+display="block">         f^*f_*( \mathscr { G } )          \to   \mathscr { G }        </fr:tex>
+      is an isomorphism.
+      The second statement was proven by the theory of descent in <fr:link
+href="fga3.i-b.4.xml"
+type="local"
+addr="fga3.i-b.4">FGA 3.I, §B.4</fr:link>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  The results of <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref> can also be stated as follows:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1737</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-2-corollary-2.3</fr:addr><fr:route>fga3.v-2-corollary-2.3.xml</fr:route><fr:number>2.3</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the conditions of <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>, the canonical homomorphism <fr:ref
+addr="fga3.v-1-equation-1.9"
+href="fga3.v-1-equation-1.9.xml"
+taxon="Equation"
+number="1.9"></fr:ref> <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} '_{X/S} \to \mathscr {P} \kern  -1pt \mathit {ic} _{X/S}</fr:tex> is injective, and even bijective if <fr:tex>X</fr:tex> locally admits a section over <fr:tex>S</fr:tex>.
+    (In the latter case, the relative Picard group <fr:tex>\operatorname {Pic} (X/S)</fr:tex> is identified with the restricted relative Picard group <fr:tex>\operatorname {Pic} '(X/S)</fr:tex>.)
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Combining this with <fr:ref
+addr="fga3.v-2-proposition-2.1"
+href="fga3.v-2-proposition-2.1.xml"
+taxon="Proposition"
+number="2.1"></fr:ref>, we thus obtain:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1738</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.v-2-corollary-2.4</fr:addr><fr:route>fga3.v-2-corollary-2.4.xml</fr:route><fr:number>2.4</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Under the conditions of <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>, we have an exact sequence
+    <fr:tex
+display="block">       0        \to   \operatorname {Pic} (S)        \to   \operatorname {Pic} (X)        \to   \operatorname {Pic} (X/S).     </fr:tex>
+    If <fr:tex>X</fr:tex> admits a section over <fr:tex>S</fr:tex>, then the last homomorphism is surjective, i.e. we have an isomorphism
+    <fr:tex
+display="block">        \operatorname {Pic} (X/S)        \xrightarrow { \sim }   \operatorname {Pic} (X)/ \operatorname {Pic} (S).     </fr:tex></fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1739</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-2-remark-2.5</fr:addr><fr:route>fga3.v-2-remark-2.5.xml</fr:route><fr:number>2.5</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a morphism such that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, and let <fr:tex>g</fr:tex> be a section of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>.
+    Let <fr:tex>\mathscr { L }</fr:tex> be an invertible module on <fr:tex>X</fr:tex>.
+    We define the <fr:em><fr:tex>g</fr:tex>-rigidification</fr:em> of <fr:tex>\mathscr { L }</fr:tex> to be an isomorphism <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  g^*( \mathscr { L } )</fr:tex>, and a <fr:em><fr:tex>g</fr:tex>-rigidified invertible module</fr:em> to be an invertible module <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X</fr:tex> endowed with a <fr:tex>g</fr:tex>-rigidification.
+    Every automorphism of such a structure is trivial, and <fr:tex>\operatorname {Pic} '(X/S)</fr:tex> can be identified with the set of isomorphism classes of <fr:tex>g</fr:tex>-rigidified invertible modules on <fr:tex>S</fr:tex>.
+    (It is this fact that allows us to use the theory of descent to prove (ii) of <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>.)
+    This gives a new interpretation of <fr:tex>\operatorname {Pic} (X/S)</fr:tex>, at least when <fr:tex>f</fr:tex> is further quasi-compact and separated, so that <fr:tex>\operatorname {Pic} (X/S) \xrightarrow { \sim } \operatorname {Pic} '(X/S)</fr:tex> by <fr:ref
+addr="fga3.v-2-corollary-2.3"
+href="fga3.v-2-corollary-2.3.xml"
+taxon="Corollary"
+number="2.3"></fr:ref>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1740</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-2-remark-2.6</fr:addr><fr:route>fga3.v-2-remark-2.6.xml</fr:route><fr:number>2.6</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f \colon  X \to  S</fr:tex> be a morphism as in <fr:ref
+addr="fga3.v-2-proposition-2.2"
+href="fga3.v-2-proposition-2.2.xml"
+taxon="Proposition"
+number="2.2"></fr:ref>, and let <fr:tex>S' \to  S</fr:tex> be a faithfully flat quasi-compact morphism such that there exists an <fr:tex>S</fr:tex>-morphism <fr:tex>S' \to  X</fr:tex>, i.e. such that there exists a section of <fr:tex>X'=X \times _S S'</fr:tex> over <fr:tex>S'</fr:tex>.
+    
+    Let <fr:tex>S''=S' \times _S S'</fr:tex>, and <fr:tex>X''=X \times _S S''</fr:tex>, and consider the exact sequence
+    <fr:tex
+display="block">        \operatorname {Pic} (X/S)        \to   \operatorname {Pic} (X'/S')        \rightrightarrows   \operatorname {Pic} (X''/S'').     </fr:tex>
+    Applying <fr:ref
+addr="fga3.v-2-corollary-2.4"
+href="fga3.v-2-corollary-2.4.xml"
+taxon="Corollary"
+number="2.4"></fr:ref>, we obtain the exact sequence
+    <fr:tex
+display="block">        \operatorname {Pic} (X/S)        \to   \operatorname {Pic} (X')/ \operatorname {Pic} (S')        \rightrightarrows   \operatorname {Pic} (X'')/ \operatorname {Pic} (S'').     </fr:tex>
+    In particular, every element of the relative Picard group already "comes from" an element of <fr:tex>\operatorname {Pic} (X')</fr:tex>.
+    This gives a substantial simplification of the description of the relative Picard group given in the previous section, and even of the Picard functor of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, since, for all <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, we can apply the above to <fr:tex>X \times _S T/T</fr:tex> and to the morphism <fr:tex>T'=S' \times _S T \to  T</fr:tex>.
+    If, for example, <fr:tex>f</fr:tex> itself is faithfully flat, then we can take <fr:tex>S'=X</fr:tex>, which allows us, whenever <fr:tex>f</fr:tex> is further of finite type (resp. simple, etc.), to restrict, in the description of the relative Picard functor <fr:tex>T \mapsto \operatorname {Pic} (X \times _S T/T)</fr:tex>, to the base changes <fr:tex>T' \to  T</fr:tex> that are of finite type (resp. simple, etc.).
+    If <fr:tex>f</fr:tex> is projective and flat, and <fr:tex>S</fr:tex> locally Noetherian, then we can prove that we can take in the above a <fr:tex>S' \to  S</fr:tex> such that <fr:tex>S'</fr:tex> is the direct sum of <fr:em>flat covers</fr:em> <fr:tex>S'_i</fr:tex> of opens <fr:tex>S_i</fr:tex> of <fr:tex>S</fr:tex> that cover <fr:tex>S</fr:tex>;
+    if <fr:tex>f</fr:tex> is further separable, then we can take <fr:tex>S'_i</fr:tex> to be étale over <fr:tex>S_i</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

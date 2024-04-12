@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1645</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.iii-4-corollary-4.2</fr:addr><fr:route>fga3.iii-4-corollary-4.2.xml</fr:route><fr:number>4.2</fr:number><fr:parent>fga3.iii-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The above claim remains true when we replace categories, groupoids, and simplicial sets with <fr:tex>\mathcal {C}</fr:tex>-categories, <fr:tex>\mathcal {C}</fr:tex>-groupoids, and <fr:tex>\mathcal {C}</fr:tex>-simplicial objects (respectively), <fr:em>provided that</fr:em> fibre products exist in <fr:tex>\mathcal {C}</fr:tex>.
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1644</fr:anchor><fr:addr>fga3.iii-4</fr:addr><fr:route>fga3.iii-4.xml</fr:route><fr:title><fr:link
+href="fga3.iii.xml"
+type="local"
+addr="fga3.iii">Quotient preschemes</fr:link> › Equivalence pre-relations</fr:title><fr:number>4</fr:number><fr:parent>fga3.iii</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Recall that a <fr:em>groupoid</fr:em> is defined to be a category where all the morphisms are isomorphisms.
+  
+  A category should be defined as consisting of two base sets, <fr:tex>X</fr:tex> and <fr:tex>R</fr:tex>, with the former being the set of <fr:em>objects</fr:em> and the latter the set of <fr:em>arrows</fr:em>, endowed with the following structures:
+  <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+  <fr:ol><fr:li>
+      a pair of maps
+      <fr:tex
+display="block">         p_1,p_2 \colon  R \rightrightarrows  X       </fr:tex>
+      called the <fr:em>source map</fr:em> and the <fr:em>target map</fr:em> ;
+    </fr:li>
+    <fr:li>
+      a map
+      <fr:tex
+display="block">          \pi \colon (R,p_2) \times _X(R,p_1)  \to  R       </fr:tex>
+      called the <fr:em>composition map</fr:em>.
+    </fr:li></fr:ol>
+
+  These data should satisfy well-known axioms, which we will not repeat here, and which can be expressed in terms of the commutativity of certain diagrams along with the existence of a (necessarily unique) map <fr:tex>D \colon  X \to  R</fr:tex> that makes two other diagrams commute, where <fr:tex>D</fr:tex> corresponds to passing from an object to the corresponding identity map, and satisfies
+  <fr:tex
+display="block">     p_1 \circ  D = p_2 \circ  D =  \operatorname {id} _X.   </fr:tex>
+  To say that a category is a groupoid then, implies the existence of a (necessarily unique) map
+  <fr:tex
+display="block">     s \colon  R \to  R   </fr:tex>
+  called the <fr:em>symmetry</fr:em> of <fr:tex>R</fr:tex>, that sends every arrow to an inverse arrow, which can be expressed in terms of the commutativity of four other diagrams, built from <fr:tex>s</fr:tex>, <fr:tex>\Delta</fr:tex>, and the above data, and of which the first two can be written as
+  <fr:tex
+display="block">      \begin {aligned}       p_1 \circ  s &amp;= p_2      \\ p_2 \circ  s &amp;= p_1.      \end {aligned}   </fr:tex></fr:p><fr:p>
+  Having recalled these notions, the general definitions in <fr:link
+href="fga3.ii-a.1.xml"
+type="local"
+addr="fga3.ii-a.1">FGA 3.II, §A.1</fr:link> show, in particular, what we should mean by "the structure of a <fr:em><fr:tex>\mathcal {C}</fr:tex>-category</fr:em>" (resp. <fr:em><fr:tex>\mathcal {C}</fr:tex>-groupoid</fr:em>) on a pair of objects <fr:tex>(X,R)</fr:tex> of an arbitrary category <fr:tex>\mathcal {C}</fr:tex>:
+  it is, by definition, the data, for every object <fr:tex>T</fr:tex> in <fr:tex>\mathcal {C}</fr:tex>, of the structure of a category (resp. groupoid) in the set-theoretic sense, whose set of objects is <fr:tex>X(T)</fr:tex>, and set of arrows is <fr:tex>R(T)</fr:tex>, with these structures "varying functorially" in <fr:tex>T</fr:tex>.
+  This thus implies the definition of two morphisms
+  <fr:tex
+display="block">     p_1,p_2 \colon  R \rightrightarrows  X   </fr:tex>
+  
+  called the <fr:em>source morphism</fr:em> and the <fr:em>target morphism</fr:em>, and, if the fibre product in question exists, a morphism
+  <fr:tex
+display="block">      \pi \colon  (R,p_2) \times _X(R,p_1)  \to  R   </fr:tex>
+  called the <fr:em>composition morphism</fr:em>;
+  these three morphisms then suffice to determine the structure of a category (resp. groupoid) on <fr:tex>(X,R)</fr:tex>, with the condition to place on them being the following: for every <fr:tex>T</fr:tex>, the three corresponding morphisms for <fr:tex>X(T)</fr:tex> and <fr:tex>R(T)</fr:tex> define the structure of a category (resp. groupoid) on the pair of sets <fr:tex>(X(T),R(T))</fr:tex>.
+  If necessary, this can be expressed in terms of the commutativity of certain diagrams, implying a well-determined morphism
+  <fr:tex
+display="block">     D \colon  X \to  R   </fr:tex>
+  and, in the case of groupoids, a well-determined morphism
+  <fr:tex
+display="block">     s \colon  R \to  R   </fr:tex>
+  where the diagrams are as in the "set-theoretic" case.
+  This tedious interpretation of the axioms is thankfully useless in practice, with the only theoretical interest in the possibility of being able to express the data and the axioms using morphisms and equalities of morphisms between certain fibre products being the following: if we have a left-exact functor <fr:tex>F \colon \mathcal {C} \to \mathcal {C}'</fr:tex> (i.e. a functor that commutes with finite products and fibre products), then it sends <fr:tex>\mathcal {C}</fr:tex>-categories (resp. <fr:tex>\mathcal {C}</fr:tex>-groupoids) to a <fr:tex>\mathcal {C}'</fr:tex>-categories (resp. <fr:tex>\mathcal {C}'</fr:tex>-groupoids) (under the condition that finite products and fibre products exist in <fr:tex>\mathcal {C}</fr:tex>).
+</fr:p><fr:p>
+  It is important, in practice, to know how to understand the morphisms <fr:tex>p_1</fr:tex>, <fr:tex>p_2</fr:tex>, <fr:tex>\pi</fr:tex>, <fr:tex>D</fr:tex>, and <fr:tex>s</fr:tex> as <fr:em>simplicial operations</fr:em> in a suitable semi-simplicial or simplicial objects of <fr:tex>\mathcal {C}</fr:tex> (or, at least when fibre products exist in <fr:tex>\mathcal {C}</fr:tex>).
+  To fix terminology, we introduce the category <fr:tex>\mathcal {S}</fr:tex> of <fr:em>simplex types</fr:em> as the category whose objects are finite sets of the form
+  <fr:tex
+display="block">      \Delta _n     = [0,n]   </fr:tex>
+  for <fr:tex>n \in \mathbb {Z}</fr:tex>, where <fr:tex>[0,n]</fr:tex> denotes the interval of integers from <fr:tex>0</fr:tex> to <fr:tex>n</fr:tex> (inclusive), and whose morphisms are <fr:em>arbitrary maps</fr:em> between these finite sets.
+  We note that the category <fr:tex>\mathcal {S}</fr:tex> is equivalent to the category of <fr:em>non-empty</fr:em> finite sets, where we take the morphisms to be maps between finite sets.
+  In <fr:tex>\mathcal {S}</fr:tex>, the sum of a <fr:em>non-empty</fr:em> finite family of objects clearly exists, as does the amalgamated sum of two objects over a third (the dual operation to the fibre product).
+  We denote by <fr:tex>\mathcal {S}'</fr:tex> the subcategory of <fr:tex>\mathcal {S}</fr:tex> that has the same objects, but where the morphisms are <fr:em>increasing maps</fr:em> between the <fr:tex>\Delta _n</fr:tex>.
+  This category is equivalent to the category of non-empty finite totally ordered sets.
+  
+  In this category, the sum of two objects never exists, and the amalgamated sum of two objects <fr:tex>A</fr:tex> and <fr:tex>B</fr:tex> over a third <fr:tex>C</fr:tex> does not exist in general (take, for example, <fr:tex>C= \Delta _0</fr:tex>, and <fr:tex>A=B= \Delta _1</fr:tex>, with the two structure maps <fr:tex>u \colon  C \to  A</fr:tex> and <fr:tex>v \colon  C \to  B</fr:tex> being the equal).
+  However, in certain cases, the amalgamated sum <fr:em>does</fr:em> exist;
+  consider
+  <fr:tex
+display="block">      \begin {gathered}       A =  \Delta _m        \qquad  B =  \Delta _n        \qquad  C =  \Delta _0      \\ u(0) = m        \qquad  v(0) = 0      \end {gathered}   </fr:tex>
+  which is such that
+  <fr:tex
+display="block">     A \coprod _C B     =  \Delta _{m+n}.   </fr:tex></fr:p><fr:p>
+  A <fr:em>simplicial object</fr:em> (resp. <fr:em>semi-simplicial object</fr:em>) in a category <fr:tex>\mathcal {C}</fr:tex> is defined to be a contravariant functor <fr:tex>K</fr:tex> from <fr:tex>\mathcal {S}</fr:tex> (resp. <fr:tex>\mathcal {S}'</fr:tex>) to <fr:tex>\mathcal {C}</fr:tex>.
+  A simplicial object thus defines a semi-simplicial object by restriction, but the former differs from the latter essentially by the presence of <fr:em>symmetry operations</fr:em> in the <fr:tex>K_n=K( \Delta _n)</fr:tex>, which correspond to the images under the functor <fr:tex>K</fr:tex> of the elements of the symmetric group on <fr:tex>n+1</fr:tex> elements (considered as the automorphism group of <fr:tex>\Delta _n</fr:tex> in <fr:tex>\mathcal {S}</fr:tex>).
+</fr:p><fr:p>
+  With the above, for all <fr:tex>n</fr:tex>, let <fr:tex>\Delta '_n</fr:tex> (resp. <fr:tex>\Delta ''_n</fr:tex>) be the finite category whose set of objects is <fr:tex>\Delta _n</fr:tex>, and whose set of arrows is defined by the "chaotic order" relation (resp. the natural total order relation) on <fr:tex>\Delta _n</fr:tex> (i.e. the set of arrows is the graph of the order relation).
+  It is clear that <fr:tex>\Delta '_n</fr:tex> (resp. <fr:tex>\Delta ''_n</fr:tex>) depends functorially on the object <fr:tex>\Delta _n</fr:tex> of <fr:tex>\mathcal {S}</fr:tex> (resp. <fr:tex>\mathcal {S}'</fr:tex>).
+  So if <fr:tex>Z</fr:tex> is a category, then <fr:tex>\operatorname {Hom} ( \Delta '_n,Z)</fr:tex> (resp. <fr:tex>\operatorname {Hom} ( \Delta ''_n,Z)</fr:tex>) is, for varying <fr:tex>\Delta _n</fr:tex>, a functor from the category <fr:tex>\mathcal {S}</fr:tex> (resp. <fr:tex>\mathcal {S}'</fr:tex>) to the category of sets, i.e. a <fr:em>simplicial set</fr:em> (resp. <fr:em>semi-simplicial set</fr:em>), which is said to be <fr:em>associated to the category <fr:tex>Z</fr:tex></fr:em>, and denoted by <fr:tex>Z'</fr:tex> (resp. <fr:tex>Z''</fr:tex>).
+  We also have an obvious natural homomorphism from the semi-simplicial set associated to <fr:tex>Z'</fr:tex> to <fr:tex>Z''</fr:tex>, and this is an isomorphism if and only if <fr:tex>Z</fr:tex> is a groupoid.
+  Then:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1641</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iii-4-proposition-4.1</fr:addr><fr:route>fga3.iii-4-proposition-4.1.xml</fr:route><fr:number>4.1</fr:number><fr:parent>fga3.iii-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The functor <fr:tex>Z \mapsto  Z''</fr:tex> from the category of categories to the category of semi-simplicial sets is fully faithful, and defines an equivalence between the category of <fr:em>categories</fr:em> and the category of semi-simplicial sets, i.e. contravariant functors <fr:tex>K</fr:tex> from <fr:tex>\mathcal {S}'</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> <fr:em>that send amalgamated sums <fr:tex>A \coprod _C B</fr:tex> (of the type described above) to fibre products of sets</fr:em>.
+  </fr:p><fr:p>
+    Similarly, the functor <fr:tex>Z \mapsto  Z'</fr:tex> from the category of groupoids to the category of simplicial sets is fully faithful, and defines an equivalence between the category of <fr:em>groupoids</fr:em> and the category of simplicial sets, i.e. contravariant functors <fr:tex>K</fr:tex> from <fr:tex>\mathcal {S}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> <fr:em>that send amalgamated sums to fibre products</fr:em>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  We can thus consider categories as specific examples of semi-simplicial sets, and groupoids as specific examples of simplicial sets, with, of course, the condition that we argue "up to isomorphism", as is rigorous when we interpret certain structures in terms of others.
+  The usual procedure of reduction to the set-theoretic case then implies:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1642</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.iii-4-corollary-4.2</fr:addr><fr:route>fga3.iii-4-corollary-4.2.xml</fr:route><fr:number>4.2</fr:number><fr:parent>fga3.iii-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The above claim remains true when we replace categories, groupoids, and simplicial sets with <fr:tex>\mathcal {C}</fr:tex>-categories, <fr:tex>\mathcal {C}</fr:tex>-groupoids, and <fr:tex>\mathcal {C}</fr:tex>-simplicial objects (respectively), <fr:em>provided that</fr:em> fibre products exist in <fr:tex>\mathcal {C}</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  The semi-simplicial object <fr:tex>K</fr:tex> in <fr:tex>\mathcal {C}</fr:tex> associated to a category <fr:tex>(X,R, \ldots )</fr:tex> in <fr:tex>\mathcal {C}</fr:tex> can be made explicit by considering the component <fr:tex>K_n=K( \Delta _n)</fr:tex> of <fr:tex>K</fr:tex> as being the <fr:tex>(n+1)</fr:tex>-th fibre product of <fr:tex>(R,p_1)</fr:tex> over <fr:tex>X</fr:tex>, or, even better, by the inductive formula
+  <fr:tex
+display="block">      \begin {aligned}       K_0 &amp;= R      \\ K_n &amp;= (K_{n-1},p_n^{(n-1)}) \times _X(R,p_1)      \end {aligned}   </fr:tex>
+  where the <fr:tex>p_i^{(n-1)}</fr:tex> (for <fr:tex>0&lt;i&lt;n-1</fr:tex>) are the natural projections from <fr:tex>K_{n-1}</fr:tex> to <fr:tex>X</fr:tex> (which can also be defined inductively).
+  In this way, <fr:tex>p_1</fr:tex>, <fr:tex>p_2</fr:tex>, <fr:tex>\pi</fr:tex>, <fr:tex>D</fr:tex>, and <fr:tex>s</fr:tex> can be understood as simplicial operations that correspond to morphisms in <fr:tex>\mathcal {S}</fr:tex>, namely: the <fr:tex>0</fr:tex> face of <fr:tex>\Delta _1</fr:tex>, the <fr:tex>1</fr:tex> face of <fr:tex>\Delta _1</fr:tex>, the <fr:tex>(0,2)</fr:tex> face of <fr:tex>\Delta _2</fr:tex>, the degeneracy <fr:tex>\Delta _1 \to \Delta _0</fr:tex>, and the symmetry of <fr:tex>\Delta _1</fr:tex> (respectively).
+  Every other semi-simplicial (resp. simplicial) operation can be formally obtained from the four (resp. five) aforementioned operations by composition and fibre products.
+</fr:p><fr:p>
+  We now define an <fr:em>equivalence pre-relation</fr:em> on an object <fr:tex>X</fr:tex> of a category to be the data of a groupoid whose object of objects is <fr:tex>X</fr:tex>.
+  Such a data gives, amongst other things, an object <fr:tex>R</fr:tex> along with two morphisms
+  <fr:tex
+display="block">     p_1,p_2 \colon  R \rightrightarrows  X.   </fr:tex>
+  But we note that only these data alone do not determine the structure in question, contrary to what happens for equivalence pairs.
+  In this talk, we are interested in this notion with the aim of obtaining criteria for the possibility of passing to the quotient, i.e. for being able to form the cokernel of the pair <fr:tex>(p_1,p_2)</fr:tex>.
+  The statement of this problem thus makes no reference to the additional data inherent to a groupoid.
+  
+  In the proof of the results that will follow, we will, however, make use of this additional data, and, in particular, of the simplicial operations (including the symmetry operations) up to dimension <fr:tex>3</fr:tex> (the fourth fibre power of <fr:tex>R</fr:tex> over <fr:tex>X</fr:tex> will appear).
+</fr:p><fr:p>
+  An equivalence relation on an object <fr:tex>X</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> defines an equivalence pre-relation: it suffices to show this in the set-theoretic case, and we then associate, to an equivalence relation on a set <fr:tex>X</fr:tex>, the groupoid whose set of objects is <fr:tex>X</fr:tex>, and whose set of arrows is the graph set of the equivalence relation.
+</fr:p><fr:p>
+  A <fr:tex>\mathcal {C}</fr:tex>-monoid <fr:tex>G</fr:tex> acting on an object <fr:tex>X</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> defines a <fr:tex>\mathcal {C}</fr:tex>-category whose basic objects are <fr:tex>R=G \times  X</fr:tex> and <fr:tex>X</fr:tex> (under the condition that <fr:tex>G \times  X</fr:tex> exists), and that is a <fr:tex>\mathcal {C}</fr:tex>-groupoid if and only if <fr:tex>G</fr:tex> is a group.
+  It again suffices to prove this in the set-theoretic case.
+  We then define the composition of arrows <fr:tex>(g,a)</fr:tex> and <fr:tex>(g',g \cdot  a)</fr:tex> as being
+  <fr:tex
+display="block">     (g',g \cdot  a)  \circ  (g,a)     = (g'g,a)   </fr:tex>
+  i.e. if <fr:tex>a,b \in  X</fr:tex> then <fr:tex>\operatorname {Hom} (a,b)</fr:tex> is, by definition, the transporter of <fr:tex>a</fr:tex> to <fr:tex>b</fr:tex>, and morphisms compose thanks to the composition of elements of <fr:tex>G</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1643</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.iii-4-remark</fr:addr><fr:route>fga3.iii-4-remark.xml</fr:route><fr:parent>fga3.iii-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    We can avoid the logical difficulties that arise in a statement such as <fr:ref
+addr="fga3.iii-4-proposition-4.1"
+href="fga3.iii-4-proposition-4.1.xml"
+taxon="Proposition"
+number="4.1"></fr:ref> by implicitly assuming that all the objects in question can be found in a fixed "universe" (that is itself a set).
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

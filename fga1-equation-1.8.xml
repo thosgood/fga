@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>775</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-1.8</fr:addr><fr:route>fga1-equation-1.8.xml</fr:route><fr:number>1.8</fr:number><fr:parent>fga1-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ^p( \mathscr { A } , \mathscr { B } )_x        \to   \operatorname {Ext} _{ \mathcal {O} _x}^p( \mathscr { A } _x, \mathscr { B } _x).     \tag{1.8}     </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>774</fr:anchor><fr:addr>fga1-1</fr:addr><fr:route>fga1-1.xml</fr:route><fr:title><fr:link
+href="fga1.xml"
+type="local"
+addr="fga1">Duality theorems for coherent algebraic sheaves</fr:link> › <fr:tex>\operatorname {Ext}</fr:tex> of sheaves of modules</fr:title><fr:number>1</fr:number><fr:parent>fga1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>(cf. [<fr:link
+href="Gro1957.xml"
+type="local"
+addr="Gro1957">Gro1957</fr:link>, Chapters 3 and 4])</fr:em></fr:p><fr:p>
+  Let <fr:tex>X</fr:tex> be a topological space endowed with a sheaf <fr:tex>\mathcal {O}</fr:tex> of unital (but not necessarily commutative) rings.
+  We consider the abelian category <fr:tex>\mathcal {C}^ \mathcal {O}</fr:tex> of sheaves of <fr:tex>\mathcal {O}</fr:tex>-modules, which are also referred to as <fr:tex>\mathcal {O}</fr:tex>-modules.
+  We know that every object of this category admits an injective resolution, which allows us to define the <fr:tex>\operatorname {Ext}</fr:tex> functors that have the well-known formal properties.
+  More precisely, to avoid confusion, we denote by <fr:tex>\operatorname {Hom} _ \mathcal {O} (X; \mathscr { A } , \mathscr { B } )</fr:tex>, or simply <fr:tex>\operatorname {Hom} (X; \mathscr { A } , \mathscr { B } )</fr:tex>, the abelian <fr:em>groups</fr:em> of <fr:tex>\mathcal {O}</fr:tex>-homomorphisms from <fr:tex>\mathscr { A }</fr:tex> to <fr:tex>\mathscr { B }</fr:tex>, whereas <fr:tex>\mathscr {H} \kern  -2.5pt \mathit {om} _ \mathcal {O} ( \mathscr { A } , \mathscr { B } )</fr:tex> denotes the <fr:em>sheaf</fr:em> of germs of homomorphisms from <fr:tex>\mathscr { A }</fr:tex> to <fr:tex>\mathscr { B }</fr:tex> (where <fr:tex>\mathscr { A } , \mathscr { B } \in \mathcal {C}^ \mathcal {O}</fr:tex>).
+  We define, for fixed <fr:tex>\mathscr { A } \in \mathcal {C}^ \mathcal {O}</fr:tex>, functors <fr:tex>h_ \mathscr { A }</fr:tex> and <fr:tex>\underline {h}_ \mathscr { A }</fr:tex>, with values in the category <fr:tex>\mathcal {C}</fr:tex> of abelian groups and the category <fr:tex>\mathcal {C}^Z</fr:tex> of abelian sheaves on <fr:tex>X</fr:tex> (respectively), by the formulas:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>575</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-1.1</fr:addr><fr:route>fga1-equation-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga1-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {aligned}         h_ \mathscr { A } ( \mathscr { B } )         &amp;=  \operatorname {Hom} _ \mathcal {O} (X; \mathscr { A } , \mathscr { B } )        \\ \underline {h}_ \mathscr { A } ( \mathscr { B } )         &amp;=  \mathscr {H} \kern  -2.5pt \mathit {om} _ \mathcal {O} ( \mathscr { A } , \mathscr { B } ).        \end {aligned}     \tag{1.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  The functors <fr:tex>h_ \mathscr { A }</fr:tex> and <fr:tex>\underline {h}_ \mathscr { A }</fr:tex> are left exact and covariant, and so we consider their right-derived functors, denoted by <fr:tex>\operatorname {Ext} _ \mathcal {O} ^p(X; \mathscr { A } , \mathscr { B } )</fr:tex> and <fr:tex>\mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ^p( \mathscr { A } , \mathscr { B } )</fr:tex> (respectively).
+  We then have, by definition,
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>576</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-1.2</fr:addr><fr:route>fga1-equation-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga1-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {gathered}          \operatorname {Ext} _ \mathcal {O} ^p(X; \mathscr { A } , \mathscr { B } )         = ( \operatorname {R} ^p h_ \mathscr { A } )( \mathscr { B } )         =  \operatorname {H} ^p( \operatorname {Hom} _ \mathcal {O} (X; \mathscr { A } ,C( \mathscr { B } )))        \\ \mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ^p( \mathscr { A } , \mathscr { B } )         = ( \operatorname {R} ^p  \underline {h}_ \mathscr { A } )( \mathscr { B } )         =  \operatorname {H} ^p( \mathscr {H} \kern  -2.5pt \mathit {om} _ \mathcal {O} ( \mathscr { A } ,C( \mathscr { B } )))        \end {gathered}     \tag{1.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  where <fr:tex>\operatorname {R} ^p</fr:tex> denotes the passage to right-derived functors, and where <fr:tex>C( \mathscr { B } )</fr:tex> denotes an arbitrary injective resolution of <fr:tex>\mathscr { B }</fr:tex> in <fr:tex>\mathcal {C}^ \mathcal {O}</fr:tex>.
+  We denote by <fr:tex>\Gamma \colon \mathcal {C}^Z \to \mathcal {C}</fr:tex> the "sections" functor;
+  recall that its right-derived functors are denoted by <fr:tex>B \mapsto \operatorname {H} ^p(X, \mathscr { B } )</fr:tex>:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>577</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-1.3</fr:addr><fr:route>fga1-equation-1.3.xml</fr:route><fr:number>1.3</fr:number><fr:parent>fga1-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {H} ^p(X, \mathscr { B } )       = ( \operatorname {R} ^p \Gamma )( \mathscr { B } )       =  \operatorname {H} ^p( \Gamma (C( \mathscr { B } ))).     \tag{1.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  
+  We evidently have <fr:tex>h_ \mathscr { A } = \Gamma \underline {h}_ \mathscr { A }</fr:tex>;
+  we can also show that <fr:tex>\underline {h}_ \mathscr { A }</fr:tex> sends injective objects to <fr:tex>\Gamma</fr:tex>-acyclic objects.
+  From this, it is a well-known result that:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>579</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga1-proposition-1</fr:addr><fr:route>fga1-proposition-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga1-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For every <fr:tex>\mathcal {O}</fr:tex>-module <fr:tex>\mathscr { A }</fr:tex>, there exists a cohomological spectral functor on <fr:tex>\mathcal {C}^ \mathcal {O}</fr:tex> that abuts to the graded functor <fr:tex>( \operatorname {Ext} _ \mathcal {O} ^ \bullet (X; \mathscr { A } , \mathscr { B } ))</fr:tex>, and whose initial page is
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>578</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-1.4</fr:addr><fr:route>fga1-equation-1.4.xml</fr:route><fr:number>1.4</fr:number><fr:parent>fga1-proposition-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">         E_2^{p,q}( \mathscr { A } , \mathscr { B } )         =  \operatorname {H} ^p(X, \mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ^q( \mathscr { A } , \mathscr { B } )).       \tag{1.4}       </fr:tex></fr:mainmatter></fr:tree></fr:p></fr:mainmatter></fr:tree><fr:p>
+  From this, we obtain "<fr:em>boundary homomorphisms</fr:em>", as well as a short exact sequence, which we will not write.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>582</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga1-proposition-1-corollary-1</fr:addr><fr:route>fga1-proposition-1-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga1-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>\mathscr { A }</fr:tex> is locally isomorphic to <fr:tex>\mathcal {O} ^n</fr:tex>, then we have canonical isomorphisms
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>580</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-1.5</fr:addr><fr:route>fga1-equation-1.5.xml</fr:route><fr:number>1.5</fr:number><fr:parent>fga1-proposition-1-corollary-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">          \operatorname {Ext} _ \mathcal {O} ^p(X; \mathscr { A } , \mathscr { B } )          \xleftarrow { \sim }  \operatorname {H} ^p(x, \mathscr {H} \kern  -2.5pt \mathit {om} _ \mathcal {O} ( \mathscr { A } , \mathscr { B } ))       \tag{1.5}       </fr:tex></fr:mainmatter></fr:tree>
+
+    (given by the boundary homomorphisms of the spectral sequence).
+    In particular, we have a canonical isomorphism
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>581</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-1.6</fr:addr><fr:route>fga1-equation-1.6.xml</fr:route><fr:number>1.6</fr:number><fr:parent>fga1-proposition-1-corollary-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">          \operatorname {Ext} _ \mathcal {O} ^p(X; \mathcal {O} , \mathscr { B } )         =  \operatorname {H} ^p(X, \mathscr { B } ).       \tag{1.6}       </fr:tex></fr:mainmatter></fr:tree></fr:p></fr:mainmatter></fr:tree><fr:p>
+  To use these results, we need to know how to explicitly describe the <fr:tex>\operatorname {Ext} _ \mathcal {O} ^p( \mathscr { A } , \mathscr { B } )</fr:tex>.
+  They are functors that we calculate locally, i.e. if <fr:tex>U</fr:tex> is an open subset of <fr:tex>X</fr:tex>, then
+  <fr:tex
+display="block">      \mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ^p( \mathscr { A } , \mathscr { B } )|U     =  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} |U}^p( \mathscr { A } |U, \mathscr { B } |U)   </fr:tex>
+  as follows from the fact that the restriction to <fr:tex>U</fr:tex> of an injective <fr:tex>\mathcal {O}</fr:tex>-module is an injective <fr:tex>( \mathcal {O} |U)</fr:tex>-module.
+  Furthermore, for fixed <fr:tex>x \in  X</fr:tex>, we have functorial homomorphisms
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>583</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-1.7</fr:addr><fr:route>fga1-equation-1.7.xml</fr:route><fr:number>1.7</fr:number><fr:parent>fga1-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {H} \kern  -2.5pt \mathit {om} _ \mathcal {O} ( \mathscr { A } , \mathscr { B } )_x        \to   \operatorname {Hom} _{ \mathcal {O} _x}( \mathscr { A } _x, \mathscr { B } _x)     \tag{1.7}     </fr:tex></fr:mainmatter></fr:tree>
+
+  that uniquely extend to homomorphisms of cohomological functors (in <fr:tex>\mathscr { B }</fr:tex>):
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>584</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-1.8</fr:addr><fr:route>fga1-equation-1.8.xml</fr:route><fr:number>1.8</fr:number><fr:parent>fga1-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ^p( \mathscr { A } , \mathscr { B } )_x        \to   \operatorname {Ext} _{ \mathcal {O} _x}^p( \mathscr { A } _x, \mathscr { B } _x).     \tag{1.8}     </fr:tex></fr:mainmatter></fr:tree></fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>585</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga1-proposition-2</fr:addr><fr:route>fga1-proposition-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga1-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>\mathscr { A }</fr:tex> is isomorphic, in a neighbourhood of <fr:tex>x</fr:tex>, to the cokernel of some homomorphism <fr:tex>\mathcal {O} ^m \to \mathcal {O} ^n</fr:tex>, then <fr:ref
+addr="fga1-equation-1.7"
+href="fga1-equation-1.7.xml"
+taxon="Equation"
+number="1.7"></fr:ref> is an isomorphism for all <fr:tex>p</fr:tex>.
+    This is the case, in particular, if <fr:tex>\mathscr { A }</fr:tex> is a coherent <fr:tex>\mathcal {O}</fr:tex>-module <fr:link
+href="Ser1955.xml"
+type="local"
+addr="Ser1955">[Ser1955]</fr:link>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>587</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga1-proposition-3</fr:addr><fr:route>fga1-proposition-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga1-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathscr { L } _ \bullet =( \mathscr { L } _i)</fr:tex> be a left resolution of the <fr:tex>\mathcal {O}</fr:tex>-module <fr:tex>\mathscr { A }</fr:tex> by <fr:tex>\mathcal {O}</fr:tex>-modules that are all locally isomorphic to some <fr:tex>\mathcal {O} ^n</fr:tex>.
+    Then <fr:tex>\mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ( \mathscr { A } , \mathscr { B } )</fr:tex> can be identified with <fr:tex>\operatorname {H} ^ \bullet ( \mathscr {H} \kern  -2.5pt \mathit {om} _ \mathcal {O} ( \mathscr { L } _ \bullet , \mathscr { B } ))</fr:tex>, and <fr:tex>\operatorname {Ext} _ \mathcal {O} (X; \mathscr { A } , \mathscr { B } )</fr:tex> can be identified with the hypercohomology of <fr:tex>X</fr:tex> with respect to the complex <fr:tex>\mathscr {H} \kern  -2.5pt \mathit {om} _ \mathcal {O} ( \mathscr { L } _ \bullet , \mathscr { B } )</fr:tex>.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>586</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-proposition-3</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      The proof is standard: we consider the bicomplex <fr:tex>\mathscr {H} \kern  -2.5pt \mathit {om} _ \mathcal {O} ( \mathscr { L } _ \bullet ,C( \mathscr { B } ))</fr:tex>, where <fr:tex>C( \mathscr { B } )</fr:tex> is an injective resolution of <fr:tex>\mathscr { B }</fr:tex>, as well as the natural homomorphisms into this bicomplex from <fr:tex>\mathscr {H} \kern  -2.5pt \mathit {om} _ \mathcal {O} ( \mathscr { L } _ \bullet , \mathscr { B } )</fr:tex> and <fr:tex>\mathscr {H} \kern  -2.5pt \mathit {om} _ \mathcal {O} ( \mathscr { A } ,C( \mathscr { B } ))</fr:tex>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p>
+  To finish, we note that the two <fr:tex>\operatorname {Ext}</fr:tex> functors introduced in <fr:ref
+addr="fga1-equation-1.2"
+href="fga1-equation-1.2.xml"
+taxon="Equation"
+number="1.2"></fr:ref> are not only cohomological functors in <fr:tex>\mathscr { B }</fr:tex>, but in fact <fr:em>cohomological bifunctors</fr:em>, covariant in <fr:tex>\mathscr { B }</fr:tex>, and contravariant in <fr:tex>\mathscr { A }</fr:tex>.
+</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>773</fr:anchor><fr:addr>fga1-2</fr:addr><fr:route>fga1-2.xml</fr:route><fr:title><fr:link
+href="fga1.xml"
+type="local"
+addr="fga1">Duality theorems for coherent algebraic sheaves</fr:link> › The composition law in <fr:tex>\operatorname {Ext}</fr:tex></fr:title><fr:number>2</fr:number><fr:parent>fga1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  The results of this section are due, independently, to Cartier and Yoneda;
+  see a talk by Cartier <fr:link
+href="Car1957.xml"
+type="local"
+addr="Car1957">[Car1957]</fr:link> for more details.
+  Let <fr:tex>\mathcal {C}</fr:tex> be an abelian category, and let <fr:tex>K</fr:tex> and <fr:tex>L</fr:tex> be two graded objects of <fr:tex>\mathcal {C}</fr:tex>.
+  We denote by <fr:tex>\operatorname {Hom} (K,L)</fr:tex> the graded abelian group whose degree-<fr:tex>n</fr:tex> component consists of homogeneous homomorphisms of degree <fr:tex>n</fr:tex> from <fr:tex>K</fr:tex> to <fr:tex>L</fr:tex> (i.e. systems <fr:tex>(u_i)</fr:tex> of homomorphisms <fr:tex>K^i \to  L^{i+n}</fr:tex>).
+  If <fr:tex>K</fr:tex> and <fr:tex>L</fr:tex> are complexes (with differentials of degree <fr:tex>+1</fr:tex>, to fix conventions), then we endow <fr:tex>\operatorname {Hom} (K,L)</fr:tex> with the differential operator given by
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>565</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-2.1</fr:addr><fr:route>fga1-equation-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga1-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \delta (u) =  \mathrm {d}u + (-1)^{n+1}u \mathrm {d}        \quad \text {where }n= \deg (u)     \tag{2.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which makes it a complex with a differential of degree <fr:tex>+1</fr:tex>.
+  The cycles of degree <fr:tex>n</fr:tex> are the maps of degree <fr:tex>n</fr:tex> that anticommute with <fr:tex>u</fr:tex> (as homogeneous maps).
+  We can then consider <fr:tex>\operatorname {H} ^ \bullet ( \operatorname {Hom} (K,L))</fr:tex>, which is an invariant of the homotopy types of <fr:tex>K</fr:tex> and <fr:tex>L</fr:tex>, and which we sometimes denote by <fr:tex>\operatorname {H} ^ \bullet (K,L)</fr:tex>.
+  If we have a third complex <fr:tex>M</fr:tex>, then the composition of homomorphisms defines a pairing <fr:tex>\operatorname {Hom} (K,L) \times \operatorname {Hom} (L,M) \to \operatorname {Hom} (K,M)</fr:tex> which is compatible with the differential maps, whence, by passing to the cohomology of pairings,
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>566</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-2.2</fr:addr><fr:route>fga1-equation-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga1-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {H} ^ \bullet (K,L) \times \operatorname {H} ^ \bullet (L,M)  \to   \operatorname {H} ^ \bullet (K,M)     \tag{2.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which we write as <fr:tex>(u,v) \mapsto  vu</fr:tex>.
+  These pairings satisfy an evident associativity property;
+  in particular, <fr:tex>\operatorname {H} ^ \bullet (K,K)</fr:tex> is an associative graded unital ring, and <fr:tex>\operatorname {H} ^ \bullet (K,L)</fr:tex> (resp. <fr:tex>\operatorname {H} ^ \bullet (L,K)</fr:tex>) is a graded right (resp. left) module over this ring, etc.
+  In dimension <fr:tex>0</fr:tex>, <fr:ref
+addr="fga1-equation-2.2"
+href="fga1-equation-2.2.xml"
+taxon="Equation"
+number="2.2"></fr:ref> reduces to the composition of permissible homomorphisms of complexes.
+  Finally, an exact sequence of complexes <fr:tex>0 \to  K' \to  K \to  K'' \to0</fr:tex> such that, for all <fr:tex>i</fr:tex>, <fr:tex>K'^i</fr:tex> can be identified with a direct factor of <fr:tex>K^i</fr:tex>, gives rise to an exact sequence of complexes of groups <fr:tex>\operatorname {Hom} (K'',L)</fr:tex>, etc., whence a coboundary map <fr:tex>\operatorname {H} ^i(K',L) \to \operatorname {H} ^{i+1}(K'',L)</fr:tex>.
+  We similarly define the boundary maps relative to an exact sequence in <fr:tex>L</fr:tex>.
+  The pairings in <fr:ref
+addr="fga1-equation-2.2"
+href="fga1-equation-2.2.xml"
+taxon="Equation"
+number="2.2"></fr:ref> are compatible, in the usual sense, with these coboundary maps.
+</fr:p><fr:p>
+  Now suppose that <fr:tex>\mathcal {C}</fr:tex> is a category such that every element <fr:tex>A</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> admits an injective resolution <fr:tex>C(A)</fr:tex>.
+  We then note that, using one of the many variants of the theorem of bicomplexes,
+  <fr:tex
+display="block">      \operatorname {H} ^ \bullet (C(A),C(B)) =  \operatorname {H} ^ \bullet ( \operatorname {Hom} (C(A),C(B)))   </fr:tex>
+  is canonically isomorphic to
+  <fr:tex
+display="block">      \operatorname {H} ^ \bullet ( \operatorname {Hom} (A,C(B))) =  \operatorname {Ext} ^ \bullet (A,B).   </fr:tex>
+  The coboundary maps described above give coboundary maps of the <fr:tex>\operatorname {Ext}</fr:tex>.
+  Furthermore, the pairings in <fr:ref
+addr="fga1-equation-2.2"
+href="fga1-equation-2.2.xml"
+taxon="Equation"
+number="2.2"></fr:ref> give associative pairings here:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>567</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-2.3</fr:addr><fr:route>fga1-equation-2.3.xml</fr:route><fr:number>2.3</fr:number><fr:parent>fga1-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Ext} ^ \bullet (A,B) \times \operatorname {Ext} ^ \bullet (B,C)  \to   \operatorname {Ext} ^ \bullet (A,C)     \tag{2.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  and these are compatible with the coboundary maps.
+  In particular, <fr:tex>\operatorname {Ext} ^ \bullet (A,A)</fr:tex> is an associative graded unital ring, etc.
+  (We can show in an analogous manner that the <fr:tex>\operatorname {Ext}</fr:tex> functors behave like derived functors of an arbitrary functor;
+  we do not make use of this fact here).
+</fr:p><fr:p>
+  In the case where the category in question is the category <fr:tex>\mathcal {C}^ \mathcal {O}</fr:tex> of <fr:tex>\mathcal {O}</fr:tex>-modules on <fr:tex>X</fr:tex>, we then obtain pairings
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>568</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-2.4</fr:addr><fr:route>fga1-equation-2.4.xml</fr:route><fr:number>2.4</fr:number><fr:parent>fga1-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Ext} _ \mathcal {O} ^p(X; \mathscr { A } , \mathscr { B } ) \times \operatorname {Ext} _ \mathcal {O} ^q(X; \mathscr { B } , \mathscr { C } )  \to   \operatorname {Ext} _ \mathcal {O} ^{p+q}(X; \mathscr { A } , \mathscr { C } )     \tag{2.4}     </fr:tex></fr:mainmatter></fr:tree>
+
+  that can be calculated as already described.
+  The same method, but replacing the category of abelian groups with the category of abelian sheaves on <fr:tex>X</fr:tex>, and the <fr:tex>\operatorname {Hom}</fr:tex> functors by the <fr:tex>\mathscr {H} \kern  -2.5pt \mathit {om}</fr:tex> functors, again defines pairings, having the same formal properties, and of a "local nature" this time:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>569</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-2.5</fr:addr><fr:route>fga1-equation-2.5.xml</fr:route><fr:number>2.5</fr:number><fr:parent>fga1-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ^p( \mathscr { A } , \mathscr { B } ) \times \mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ^q( \mathscr { B } , \mathscr { C } )  \to   \mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ^{p+q}( \mathscr { A } , \mathscr { C } ).     \tag{2.5}     </fr:tex></fr:mainmatter></fr:tree>
+
+  These can be understood by noting that the homomorphisms in <fr:ref
+addr="fga1-equation-1.8"
+href="fga1-equation-1.8.xml"
+taxon="Equation"
+number="1.8"></fr:ref> are compatible with the pairings between the <fr:tex>\operatorname {Ext}</fr:tex>.
+</fr:p><fr:p>
+  Finally, recall that we also have a multiplicative structure between functors <fr:tex>\operatorname {H} ^p(X,A)</fr:tex>, namely the cup product.
+  We note then that the spectral sequences of <fr:ref
+addr="fga1-proposition-1"
+href="fga1-proposition-1.xml"
+taxon="Proposition"
+number="1"></fr:ref> are compatible with the multiplicative structures;
+  more precisely, we have a pairing from the spectral sequence <fr:tex>E(A,B)</fr:tex> with the spectral sequence <fr:tex>E(B,C)</fr:tex> to the spectral sequence <fr:tex>E(A,C)</fr:tex> that abuts to the pairing between the global <fr:tex>\operatorname {Ext}</fr:tex>, and whose initial page comes from the cup product and the local <fr:tex>\operatorname {Ext}</fr:tex> pairings in the right-hand side of <fr:ref
+addr="fga1-equation-1.4"
+href="fga1-equation-1.4.xml"
+taxon="Equation"
+number="1.4"></fr:ref>.
+  It then follows, in particular, that the "boundary homomorphisms"
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>570</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-2.6</fr:addr><fr:route>fga1-equation-2.6.xml</fr:route><fr:number>2.6</fr:number><fr:parent>fga1-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Ext} _ \mathcal {O} ^n(X; \mathscr { A } , \mathscr { B } )  \to   \operatorname {H} ^0(X; \mathscr {E} \kern  -1.5pt \mathit {xt} _ \mathcal {O} ^n( \mathscr { A } , \mathscr { B } ))     \tag{2.6}     </fr:tex></fr:mainmatter></fr:tree>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>571</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-2.7</fr:addr><fr:route>fga1-equation-2.7.xml</fr:route><fr:number>2.7</fr:number><fr:parent>fga1-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {H} ^n(X, \mathscr {H} \kern  -2.5pt \mathit {om} _ \mathcal {O} ( \mathscr { A } , \mathscr { B } ))  \to   \operatorname {Ext} _ \mathcal {O} ^n(X; \mathscr { A } , \mathscr { B } )     \tag{2.7}     </fr:tex></fr:mainmatter></fr:tree>
+
+  are compatible with the multiplicative structures.
+  So, if we restrict to sheaves that are locally isomorphic to some <fr:tex>\mathcal {O} ^m</fr:tex>, then this completely explains the composition of the global <fr:tex>\operatorname {Ext}</fr:tex> by means of the cup product, taking into account the isomorphisms of <fr:ref
+addr="fga1-equation-1.5"
+href="fga1-equation-1.5.xml"
+taxon="Equation"
+number="1.5"></fr:ref>.
+</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

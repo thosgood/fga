@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1556</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.ii-a.3-proposition-3.1-corollary</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1-corollary.xml</fr:route><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathcal {C}</fr:tex> be a category whose objects are all Artinian and in which all finite projective limits exist.
+    Then the pro-representable functors from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> are exactly the left exact functors, and they are in fact strictly pro-representable.
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1555</fr:anchor><fr:addr>fga3.ii-a.3</fr:addr><fr:route>fga3.ii-a.3.xml</fr:route><fr:title><fr:link
+href="fga3.ii-a.xml"
+type="local"
+addr="fga3.ii-a"><fr:link
+href="fga3.ii.xml"
+type="local"
+addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Representable and pro-representable functors</fr:link> › Characterisation of pro-representable functors</fr:title><fr:number>A.3</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal {C}</fr:tex> and <fr:tex>\mathcal {C}'</fr:tex> be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, preordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" <fr:tex>e</fr:tex> such that <fr:tex>\operatorname {Hom} (X,e)</fr:tex> consists of only on element for all <fr:tex>X</fr:tex>).
+  Let <fr:tex>F</fr:tex> be a covariant functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathcal {C}'</fr:tex>.
+  Then the following conditions are equivalent:
+  <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>F</fr:tex> commutes with finite projective limits;
+    </fr:li>
+
+    <fr:li><fr:tex>F</fr:tex> commutes with finite products and with finite fibred products;
+    </fr:li>
+
+    <fr:li><fr:tex>F</fr:tex> commutes with finite products, and, for every exact diagram
+      <fr:tex
+display="block">         X \to  X' \rightrightarrows  X''       </fr:tex>
+      in <fr:tex>\mathcal {C}</fr:tex> (cf. <fr:link
+href="fga3.i-a.2-definition-2.1.xml"
+type="local"
+addr="fga3.i-a.2-definition-2.1">FGA 3.I, A, Definition 2.1</fr:link>), the image of the diagram under <fr:tex>F</fr:tex>
+      <fr:tex
+display="block">         F(X) \to  F(X') \rightrightarrows  F(X'')       </fr:tex>
+      is exact.
+    </fr:li></fr:ol>
+
+  We then say that <fr:tex>F</fr:tex> is <fr:em>left exact</fr:em>.
+</fr:p><fr:p>
+  In what follows, we assume that finite projective limits always exist in <fr:tex>\mathcal {C}</fr:tex>.
+  It is then immediate from the definitions that a representable functor is left exact, and, by taking the limit, that <fr:em>a pro-representable functor is left exact</fr:em>.
+</fr:p><fr:p>
+  To obtain a converse, let
+  <fr:tex
+display="block">     F \colon   \mathcal {C}  \to   \mathtt {Set}    </fr:tex>
+  be a covariant functor, and let <fr:tex>X \in \mathcal {C}</fr:tex> and <fr:tex>\xi \in  F(X)</fr:tex>.
+  
+  We say that <fr:tex>\xi</fr:tex> (or the pair <fr:tex>(X, \xi )</fr:tex>) is <fr:em>minimal</fr:em> if, for all <fr:tex>X' \in \mathcal {C}</fr:tex> and all <fr:tex>\xi ' \in  F(X')</fr:tex>, and for every strict monomorphism (cf. <fr:link
+href="fga3.i-a.2.xml"
+type="local"
+addr="fga3.i-a.2">FGA 3.I, §A.2</fr:link>) <fr:tex>u \colon  X' \to  X</fr:tex> such that <fr:tex>\xi =F(u)( \xi ')</fr:tex>, <fr:tex>u</fr:tex> is an isomorphism.
+  We also say that a pair <fr:tex>(X, \xi )</fr:tex> <fr:em>dominates</fr:em> <fr:tex>(X'', \xi '')</fr:tex> (where <fr:tex>\xi \in  F(X)</fr:tex> and <fr:tex>\xi '' \in  F(X'')</fr:tex>) if there exists a morphism <fr:tex>v \colon  X \to  X''</fr:tex> such that <fr:tex>\xi ''=F(v)( \xi )</fr:tex>;
+  <fr:em>if <fr:tex>\xi</fr:tex> is minimal, and if <fr:tex>F</fr:tex> is left exact, then this morphism <fr:tex>v</fr:tex> is unique</fr:em>;
+  <fr:em>if <fr:tex>\xi ''</fr:tex> is minimal, then <fr:tex>v</fr:tex> is surjective</fr:em>.
+  From this we easily deduce the following proposition:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1368</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.3-proposition-3.1</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For <fr:tex>F</fr:tex> to be strictly pro-representable, it is necessary and sufficient that it satisfy the following two conditions:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>F</fr:tex> is left exact; and
+      </fr:li>
+      <fr:li>
+        every pair <fr:tex>(X, \xi )</fr:tex>, with <fr:tex>\xi \in  F(X)</fr:tex>, is dominated by some <fr:em>minimal</fr:em> pair.
+      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
+  This second condition is trivial if every object of <fr:tex>\mathcal {C}</fr:tex> is Artinian (by taking a sub-object <fr:tex>X'</fr:tex> of <fr:tex>X</fr:tex> that is minimal amongst those for which there exists some <fr:tex>\xi ' \in  F(X')</fr:tex> such that <fr:tex>\xi</fr:tex> is the image of <fr:tex>\xi '</fr:tex>).
+  Whence:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1369</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.ii-a.3-proposition-3.1-corollary</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1-corollary.xml</fr:route><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathcal {C}</fr:tex> be a category whose objects are all Artinian and in which all finite projective limits exist.
+    Then the pro-representable functors from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> are exactly the left exact functors, and they are in fact strictly pro-representable.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  This last fact also implies that <fr:em>every pro-object of <fr:tex>\mathcal {C}</fr:tex> is then strict</fr:em>.
+</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

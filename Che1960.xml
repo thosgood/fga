@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>418</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>Che1960</fr:addr><fr:route>Che1960.xml</fr:route><fr:title>Sur la théorie de Picard</fr:title><fr:date><fr:year>1960</fr:year></fr:date><fr:authors><fr:author>C. Chevalley</fr:author></fr:authors><fr:meta
+name="venue"><fr:em>Amer. J. of Math.</fr:em> <fr:strong>82</fr:strong> pp. 435–490</fr:meta><fr:meta
+name="bibtex">@article{Che1960,
+  title = {Sur la th\'{e}orie de Picard},
+  author = {Chevalley, C.},
+  year = {1960},
+  journal = {Amer. J. of Math.},
+  volume = {82},
+  pages = {435--490},
+}</fr:meta></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>415</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-5-remark-5.3</fr:addr><fr:route>fga3.v-5-remark-5.3.xml</fr:route><fr:number>5.3</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang <fr:link
+href="Lan1959.xml"
+type="local"
+addr="Lan1959">[Lan1959]</fr:link> or the article by Chevalley <fr:link
+href="Che1960.xml"
+type="local"
+addr="Che1960">[Che1960]</fr:link>, which follow the path sketched by Weil.
+    Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in <fr:ref
+addr="fga3.v-1"
+href="fga3.v-1.xml"
+number="1"></fr:ref> (essentially those of Chevalley, but taking into account the "variety of parameters" with nilpotent elements).
+    The fact that the construction of Picard schemes should precede, not follow, the theory of abelian varieties is clear a priori, by the fact that, in general, Picard schemes are not, nor do they reduce to, abelian schemes, as we already see in the case of singular curves over an algebraically closed field, where we find the "generalised Jacobians" of Rosenlicht, which are not abelian varieties.
+    Furthermore, the theory of abelian varieties, and more generally of abelian schemes, becomes much simpler once we have a theory of Picard schemes in general.
+    In particular, the theory of duality for abelian schemes, and notably the results of Cartier type, then become slightly more formal (cf. for example [Mumford–Tate seminar, 1962]).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>416</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-6-remark-6.6</fr:addr><fr:route>fga3.v-6-remark-6.6.xml</fr:route><fr:number>6.6</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    It is extremely plausible that, for every <fr:em>proper</fr:em> scheme <fr:tex>X</fr:tex> over a field <fr:tex>k</fr:tex>, <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> exists.
+    The results above allow us to reduce, for this question, to the case where <fr:tex>k</fr:tex> is algebraically closed, and where <fr:tex>X</fr:tex> is integral.
+    We then know that there exists an integral scheme <fr:tex>X'</fr:tex> that is <fr:em>projective</fr:em> over <fr:tex>k</fr:tex>, and a dominant morphism <fr:tex>g \colon  X' \to  X</fr:tex> (Chow's lemma).
+    
+    It would thus suffice to show that the corresponding functorial morphism <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/k} \to \mathscr {P} \kern  -1pt \mathit {ic} _{X'/k}</fr:tex> is representable (and, probably, representable by affine morphisms), since we already know that <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X'/k}</fr:tex> is representable.
+    This raises questions about non-flat descent that are not answerable as of now.
+    Note that, if we restrict to considering the restriction of the functor <fr:tex>\mathscr {P} \kern  -1pt \mathit {ic} _{X/k}</fr:tex> to reduced preschemes (with <fr:tex>X</fr:tex> proper and integral over an algebraically closed field <fr:tex>k</fr:tex>), then we do indeed obtain a representable functor, as shown by Chevalley <fr:link
+href="Che1960.xml"
+type="local"
+addr="Che1960">[Che1960]</fr:link> in the case where <fr:tex>X</fr:tex> is normal, and by Seshadri <fr:link
+href="Ses1962.xml"
+type="local"
+addr="Ses1962">[Ses1962]</fr:link> by a descent method in the general case.
+    But with our notation, the scheme constructed by these authors is not <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, but instead <fr:tex>( \underline { \operatorname {Pic} } _{X/k})_ \mathrm {red}</fr:tex>, i.e. the reduced scheme corresponding to <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>.
+  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    As we point out at the start of <fr:link
+href="fga3.vi.xml"
+type="local"
+addr="fga3.vi">the next talk</fr:link>, the question raised here has just been answered in the affirmative by Murre.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>417</fr:anchor><fr:addr>fga3.vi-0</fr:addr><fr:route>fga3.vi-0.xml</fr:route><fr:title><fr:link
+href="fga3.vi.xml"
+type="local"
+addr="fga3.vi">Picard schemes: General properties</fr:link> › Supplements to the previous talk (FGA 3.V)</fr:title><fr:number>0</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  There has been some progress concerning the questions of existence of Picard preschemes raised in <fr:ref
+addr="fga3.v"
+href="fga3.v.xml"
+taxon="FGA"
+number="3.V"></fr:ref>:
+  <fr:strong><fr:em>TO-DO: the following list should be a, b</fr:em></fr:strong>
+  <fr:ol><fr:li>
+      (Mumford).
+      It is not true in general that, if <fr:tex>f \colon  X \to  S</fr:tex> is a projective and separable (i.e. flat with separable fibres) morphism, then the Picard prescheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists, even if the fibres of <fr:tex>f</fr:tex> are of dimension <fr:tex>1</fr:tex> and <fr:tex>S</fr:tex> is the spectrum of a complete discrete valuation ring.
+      A counterexample is given by taking <fr:tex>S= \operatorname {Spec} \mathbb {R}[{[t]}]</fr:tex>, and taking <fr:tex>X</fr:tex> to be the subscheme of <fr:tex>\mathbb {P}_S^2</fr:tex> (with homogeneous variables <fr:tex>x,y,z</fr:tex>) defined by the equation <fr:tex>x^2+y^2=tz^2</fr:tex>, which represents a conic degenerating to two geometrically concurrent lines, but the special fibre over the field <fr:tex>\mathbb {R}</fr:tex> is nevertheless irreducible (it is given by the equation <fr:tex>x^2+y^2=0</fr:tex> in <fr:tex>\mathbb {R}</fr:tex>).
+      We easily see that, after the étale extension <fr:tex>S' \to  S</fr:tex>, with <fr:tex>S'= \operatorname {Spec} \mathbb {C}[{[t]}]</fr:tex>, the Picard prescheme of <fr:tex>X'/S'</fr:tex> exists, and we thus obtain an explicit description of it as a sum of copies of <fr:tex>\widetilde {S}</fr:tex>, where <fr:tex>\widetilde {S}</fr:tex> is induced by <fr:tex>S</fr:tex> by copying the origin an infinite number of times.
+      We easily observe that the descent data on <fr:tex>\underline { \operatorname {Pic} } _{X'/S'}</fr:tex> for <fr:tex>S' \to  S</fr:tex> (given here by the actions of the Galois group <fr:tex>\mathbb {Z}/2 \mathbb {Z}</fr:tex> of <fr:tex>S'</fr:tex> over <fr:tex>S</fr:tex>) is not effective, since the group permutes certain doubled points (so that there are orbits that are not contained in an affine open).
+      However, Mumford has shown that, if <fr:tex>f \colon  X \to  S</fr:tex> is a separable projective morphism such that, for all <fr:tex>s \in  S</fr:tex>, the irreducible components of <fr:tex>X_s</fr:tex> are geometrically irreducible with respect to <fr:tex>k(s)</fr:tex>, then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists;
+      the proof relies on a refinement of his theorem of passage to the quotient, cf. [Mumford–Tate seminar, 1962].
+      Note also that it is still possible that, without any hypotheses on the irreducible components of the fibres <fr:tex>X_s</fr:tex>, the scheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> (which will be introduced below) still exists.
+    </fr:li>
+
+    <fr:li>
+      (Murre).
+      
+      If <fr:tex>X</fr:tex> is a proper scheme over a field, then <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> exists.
+      The proof partially uses the proof of Chevalley <fr:link
+href="Che1960.xml"
+type="local"
+addr="Che1960">[Che1960]</fr:link>, and is fundamentally based on the group structure of the Picard functor.
+    </fr:li></fr:ol>
+
+  For certain additional comments concerning the theory of Picard schemes, most notably in relation to abelian schemes, we recommend consulting [Mumford–Tate seminar, 1962].
+  Finally, a notable shortcoming of the present talk is the absence of "equivalence criteria" that would allow us to compare the Picard scheme of a projective scheme and of its hyperplane sections;
+  the key theorems for developing such criteria can be found in <fr:link
+href="Gro1960b.xml"
+type="local"
+addr="Gro1960b">[Gro1960b]</fr:link>, with which one must combine the existence theorems for Picard schemes.
+</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

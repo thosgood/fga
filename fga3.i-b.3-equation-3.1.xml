@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1513</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.1</fr:addr><fr:route>fga3.i-b.3-equation-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {aligned}         T_{f \xi }(x)         &amp;= fT_ \xi (x),        \\ T_{ \xi  f}(x)         &amp;= T_ \xi (fx),        \end {aligned}     \tag{3.1}     </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1512</fr:anchor><fr:addr>fga3.i-b.3</fr:addr><fr:route>fga3.i-b.3.xml</fr:route><fr:title><fr:link
+href="fga3.i-b.xml"
+type="local"
+addr="fga3.i-b"><fr:link
+href="fga3.i.xml"
+type="local"
+addr="fga3.i">Generalities, and descent by faithfully flat morphisms</fr:link> › Descent by faithfully flat morphisms</fr:link> › Decent by finite faithfully flat morphisms</fr:title><fr:number>B.3</fr:number><fr:parent>fga3.i-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\alpha \colon  S' \to  S</fr:tex> be a <fr:em>finite</fr:em> morphism, corresponding to a sheaf of algebras <fr:tex>\mathscr { A } '</fr:tex> on <fr:tex>S</fr:tex> that is <fr:em>locally free</fr:em> and of finite type as a sheaf of modules, and everywhere non-zero.
+  Then <fr:tex>\alpha</fr:tex> is a faithfully flat and quasi-compact morphism, to which we can thus apply the above results.
+  The data of a quasi-coherent sheaf <fr:tex>\mathcal {F}'</fr:tex> on <fr:tex>S'</fr:tex> is equivalent to the data of the quasi-coherent sheaf <fr:tex>\alpha _*( \mathcal {F}')</fr:tex> on <fr:tex>S</fr:tex> endowed with its <fr:tex>\mathscr { A } '</fr:tex>-modules structure (noting that <fr:tex>\mathscr { A } '= \alpha _*( \mathscr { O } _{S'})</fr:tex>).
+  For simplicity, we also denote this sheaf on <fr:tex>S</fr:tex> by <fr:tex>\mathcal {F}'</fr:tex>.
+  The two inverse images <fr:tex>p_i^*( \mathcal {F}')</fr:tex> of <fr:tex>\mathcal {F}'</fr:tex> on <fr:tex>S' \times _S S'</fr:tex> similarly correspond to the quasi-coherent sheaves of <fr:tex>( \mathscr { A } ' \otimes _{ \mathscr { O } _S} \mathscr { A } ')</fr:tex>-modules <fr:tex>\mathcal {F}' \otimes _{ \mathscr { O } _S} \mathscr { A } '</fr:tex> and <fr:tex>\mathscr { A } ' \otimes _{ \mathscr { O } _S} \mathcal {F}'</fr:tex>.
+  The data of an <fr:tex>(S' \times _S S')</fr:tex>-homomorphism from the former to the latter is equivalent to the data of a homomorphism of <fr:tex>( \mathscr { A } ' \otimes \mathscr { A } ')</fr:tex>-modules, and, taking into account the fact that <fr:tex>\mathscr { A } '</fr:tex> is locally free, this is equivalent to the data of a homomorphism of <fr:tex>( \mathscr { A } ' \otimes \mathscr { A } ')</fr:tex>-modules:
+  <fr:tex
+display="block">      \mathscr { U }      =  \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathscr { A } ', \mathscr { A } ')     =  \mathscr { A } ' \otimes \check { \mathscr { A } }'      \to   \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathcal {F}', \mathcal {F}')   </fr:tex>
+  i.e. to the data, for every section <fr:tex>\xi</fr:tex> of <fr:tex>\mathscr { U }</fr:tex> over an open subset <fr:tex>V</fr:tex>, of a homomorphism of <fr:tex>\mathscr { O } _S</fr:tex>-modules <fr:tex>T_ \xi \colon \mathcal {F}'|V \to \mathcal {F}'|V</fr:tex> that satisfies the conditions
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>498</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.1</fr:addr><fr:route>fga3.i-b.3-equation-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {aligned}         T_{f \xi }(x)         &amp;= fT_ \xi (x),        \\ T_{ \xi  f}(x)         &amp;= T_ \xi (fx),        \end {aligned}     \tag{3.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  where <fr:tex>f</fr:tex> and <fr:tex>x</fr:tex> are (respectively) sections of <fr:tex>\mathscr { A } '</fr:tex> and <fr:tex>\mathcal {F}'</fr:tex> over an open subset of <fr:tex>S</fr:tex> that is contained inside <fr:tex>V</fr:tex>.
+  Conditions (i) and (ii) of a descent data (cf. <fr:ref
+addr="fga3.i-a.1.c"
+href="fga3.i-a.1.c.xml"
+number="A.1.c"></fr:ref>) can then be written (respectively) as
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>499</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.2</fr:addr><fr:route>fga3.i-b.3-equation-3.2.xml</fr:route><fr:number>3.2</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       T_{1_U}(x)       = x        \qquad \text {i.e. }T_{1_U}= \operatorname {id} _{ \mathcal {F}'}     \tag{3.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>500</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.3</fr:addr><fr:route>fga3.i-b.3-equation-3.3.xml</fr:route><fr:number>3.3</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       T_{ \xi \eta }       = T_ \xi  T_ \eta .     \tag{3.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  In other words, <fr:em>a descent data on <fr:tex>\mathcal {F}'</fr:tex> is equivalent to a representation of the sheaf <fr:tex>\mathscr { U } = \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathscr { A } ', \mathscr { A } ')</fr:tex> of <fr:tex>\mathscr { O } _S</fr:tex>-algebras in the sheaf <fr:tex>\mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathcal {F}', \mathcal {F}')</fr:tex> of <fr:tex>\mathscr { O } _S</fr:tex>-algebras that satisfies the two linearity conditions (<fr:ref
+addr="fga3.i-b.3-equation-3.1"
+href="fga3.i-b.3-equation-3.1.xml"
+taxon="Equation"
+number="3.1"></fr:ref>)</fr:em>.
+  If we have a pairing of quasi-coherent sheaves on <fr:tex>S'</fr:tex>:
+  <fr:tex
+display="block">      \mathcal {F}'_1 \times \mathcal {F}'_2  \to   \mathcal {F}'_3   </fr:tex>
+  
+  (that we can think of as a pairing of sheaves of <fr:tex>\mathscr { A } '</fr:tex>-modules on <fr:tex>S</fr:tex>), and gluing data on the <fr:tex>\mathcal {F}'_i</fr:tex> defined by homomorphisms <fr:tex>T_i \colon \mathscr { U } \to \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathcal {F}'_i, \mathcal {F}'_i)</fr:tex> (for <fr:tex>i=1,2,3</fr:tex>), then these data are <fr:em>equivalent to the given pairing</fr:em>, in the evident meaning of the phrase, if and only if the following condition is satisfied:
+</fr:p><fr:p>
+  For every section <fr:tex>\xi</fr:tex> of <fr:tex>\mathscr { U }</fr:tex> over an open subset, and denoting by <fr:tex>\Delta \xi = \sum \xi '_i \otimes _{ \mathscr { A } '} \xi ''_i</fr:tex> the section of <fr:tex>\mathscr { U } \otimes _{ \mathscr { A } '} \mathscr { U }</fr:tex> (where <fr:tex>\mathscr { U }</fr:tex> is considered as an <fr:tex>\mathscr { A } '</fr:tex>-module with its left structure) defined by the formula
+  <fr:tex
+display="block">      \xi \cdot (fg)     =  \sum _i \xi '_i(f) \xi ''_i(g)   </fr:tex>
+  (where <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex> are sections of <fr:tex>\mathscr { A } '</fr:tex> over a smaller open subset), we have the formula
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>501</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.4</fr:addr><fr:route>fga3.i-b.3-equation-3.4.xml</fr:route><fr:number>3.4</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       T_ \xi ^{(3)}(x \cdot  y)       =  \sum _i T_{ \xi '_i}^{(1)}x \cdot  T_{ \xi ''_i}^{(2)}y     \tag{3.4}     </fr:tex></fr:mainmatter></fr:tree>
+
+  for every pair <fr:tex>(x,y)</fr:tex> of sections of <fr:tex>\mathscr { A } '</fr:tex> over a smaller subset.
+  (We can express this property by saying that the homomorphisms <fr:tex>T^{(i)}</fr:tex> are <fr:em>compatible with the diagonal map of <fr:tex>\mathscr { U }</fr:tex></fr:em>, with respect to the given pair).
+  In particular, <fr:ref
+addr="fga3.i-b.3-equation-3.1"
+href="fga3.i-b.3-equation-3.1.xml"
+taxon="Equation"
+number="3.1"></fr:ref>, <fr:ref
+addr="fga3.i-b.3-equation-3.2"
+href="fga3.i-b.3-equation-3.2.xml"
+taxon="Equation"
+number="3.2"></fr:ref>, <fr:ref
+addr="fga3.i-b.3-equation-3.3"
+href="fga3.i-b.3-equation-3.3.xml"
+taxon="Equation"
+number="3.3"></fr:ref>, and <fr:ref
+addr="fga3.i-b.3-equation-3.4"
+href="fga3.i-b.3-equation-3.4.xml"
+taxon="Equation"
+number="3.4"></fr:ref> allow us to understand, in terms of representations of algebras via diagonal maps, the descent data on a quasi-coherent sheaf of <fr:em>algebras</fr:em> on <fr:tex>S'</fr:tex>, and thus also (by restricting to commutative algebras) the descent data on an affine <fr:tex>S'</fr:tex>-scheme.
+</fr:p><fr:p>
+  From here, we obtain an analogous interpretation of descent data on an arbitrary <fr:tex>S'</fr:tex>-prescheme <fr:tex>X'</fr:tex>:
+  the data of such an <fr:tex>X'</fr:tex> is equivalent to the data of a prescheme <fr:tex>X'</fr:tex> <fr:em>over <fr:tex>S</fr:tex></fr:em> endowed with a homomorphism of <fr:tex>\mathscr { O } _S</fr:tex>-algebras
+  <fr:tex
+display="block">      \mathscr { A } ' \to \mathscr { O } _{X'},   </fr:tex>
+  and a descent data on <fr:tex>X'</fr:tex> is equivalent to the data of a sheaf homomorphism
+  <fr:tex
+display="block">      \mathscr { U }       \to   \mathscr {H} \kern  -2.5pt \mathit {om} _{h^{-1}( \mathscr { O } _S)}( \mathscr { O } _{X'}, \mathscr { O } _{X'})   </fr:tex>
+  that is compatible with the morphism <fr:tex>h \colon  X' \to  S'</fr:tex> and that satisfies the conditions analogous to <fr:ref
+addr="fga3.i-b.3-equation-3.1"
+href="fga3.i-b.3-equation-3.1.xml"
+taxon="Equation"
+number="3.1"></fr:ref>, <fr:ref
+addr="fga3.i-b.3-equation-3.2"
+href="fga3.i-b.3-equation-3.2.xml"
+taxon="Equation"
+number="3.2"></fr:ref>, <fr:ref
+addr="fga3.i-b.3-equation-3.3"
+href="fga3.i-b.3-equation-3.3.xml"
+taxon="Equation"
+number="3.3"></fr:ref>, and <fr:ref
+addr="fga3.i-b.3-equation-3.4"
+href="fga3.i-b.3-equation-3.4.xml"
+taxon="Equation"
+number="3.4"></fr:ref> above.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>502</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-b.3-example-1</fr:addr><fr:route>fga3.i-b.3-example-1.xml</fr:route><fr:title>Weil's example</fr:title><fr:number>1</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose that <fr:tex>S'/S</fr:tex> is a <fr:em>Galois étale covering</fr:em> with Galois group <fr:tex>\Gamma</fr:tex> (cf. <fr:ref
+addr="fga3.i-a.3"
+href="fga3.i-a.3.xml"
+number="A.3"></fr:ref> and <fr:ref
+addr="fga3.i-a.4"
+href="fga3.i-a.4.xml"
+number="A.4"></fr:ref>).
+    Then a descent data on a quasi-coherent sheaf <fr:tex>\mathcal {F}'</fr:tex> on <fr:tex>S'</fr:tex> (resp. on an <fr:tex>S'</fr:tex>-prescheme <fr:tex>X'</fr:tex>) is equivalent to the data of a representation of <fr:tex>\Gamma</fr:tex> by automorphisms of <fr:tex>(S', \mathcal {F}')</fr:tex> (resp. of <fr:tex>(S',X')</fr:tex>) that is compatible with the action of <fr:tex>\Gamma</fr:tex> on <fr:tex>S'</fr:tex>.
+    
+    This result is "formal", i.e. it can be proven in terms of categories, but, from the point of view of this section, we also obtain the explicit structure of <fr:tex>\mathscr { U }</fr:tex> (endowed with its ring structure, the ring homomorphism <fr:tex>\mathscr { A } ' \to \mathscr { U }</fr:tex>, and the diagonal map), which is completely known thanks to the following result:
+    <fr:em><fr:tex>\mathscr { U }</fr:tex> admits, as a left <fr:tex>A'</fr:tex>-module, a basis given by the sections of <fr:tex>\mathscr { U }</fr:tex> that correspond to elements of <fr:tex>\Gamma</fr:tex></fr:em>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>504</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-b.3-example-2</fr:addr><fr:route>fga3.i-b.3-example-2.xml</fr:route><fr:title>Cartier's example</fr:title><fr:number>2</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>p</fr:tex> be a prime number, and suppose that <fr:tex>p \mathscr { O } _S=0</fr:tex> (i.e. that <fr:tex>\mathscr { O } _S</fr:tex> is of <fr:em>characteristic <fr:tex>p</fr:tex></fr:em>), that <fr:tex>( \mathscr { A } ')^p \subset \mathscr { O } _S= \mathscr { A }</fr:tex> (i.e. that <fr:tex>S'/S</fr:tex> is <fr:em>radicial of height <fr:tex>1</fr:tex></fr:em>), and that the sheaf of algebras <fr:tex>\mathscr { A } '</fr:tex> over <fr:tex>\mathscr { A }</fr:tex> <fr:em>locally admits a <fr:tex>p</fr:tex>-basis</fr:em> (i.e. a family <fr:tex>(x_i)</fr:tex> of sections such that <fr:tex>\mathscr { A } '</fr:tex> is generated as an algebra by the <fr:tex>x_i</fr:tex> under the sole condition that <fr:tex>x_i^p=0</fr:tex>).
+    We suppose that the set of the <fr:tex>i</fr:tex> is finite, of cardinality <fr:tex>n</fr:tex>.
+    Let <fr:tex>\mathfrak {C}</fr:tex> be the sheaf of <fr:tex>A</fr:tex>-derivations of <fr:tex>A'</fr:tex>, which is a locally free sheaf of rank <fr:tex>n</fr:tex> of <fr:tex>A'</fr:tex>-modules, and, furthermore, a sheaf of Lie <fr:tex>p</fr:tex>-algebras over <fr:tex>\mathscr { A }</fr:tex> (but not over <fr:tex>\mathscr { A } '</fr:tex>) that satisfies the following condition:
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>503</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.5</fr:addr><fr:route>fga3.i-b.3-equation-3.5.xml</fr:route><fr:number>3.5</fr:number><fr:parent>fga3.i-b.3-example-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">         [X,fY] = X(f)Y + f[X,Y].       \tag{3.5}       </fr:tex></fr:mainmatter></fr:tree></fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>506</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.i-b.3-lemma</fr:addr><fr:route>fga3.i-b.3-lemma.xml</fr:route><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:tex>\mathscr { U } = \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathscr { A } ', \mathscr { A } ')</fr:tex> is generated, as an <fr:tex>\mathscr { O } _S</fr:tex>-algebra endowed with an algebra homomorphism <fr:tex>\mathscr { A } ' \to \mathscr { U }</fr:tex>, by the sub-left-<fr:tex>A'</fr:tex>-module <fr:tex>\mathfrak {C}</fr:tex>, with the following additional relations:
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>505</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.6</fr:addr><fr:route>fga3.i-b.3-equation-3.6.xml</fr:route><fr:number>3.6</fr:number><fr:parent>fga3.i-b.3-lemma</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">          \begin {cases}           Xf-fX &amp;= X(f)          \\ XY-YX &amp;= [X,Y]          \\ X^p &amp;= X^{(p)}.          \end {cases}       \tag{3.6}       </fr:tex></fr:mainmatter></fr:tree></fr:p></fr:mainmatter></fr:tree><fr:p>
+  It follows from the above lemma that a descent data on the quasi-coherent sheaf <fr:tex>\mathcal {F}'</fr:tex> on <fr:tex>S'</fr:tex> is equivalent to the data, for all <fr:tex>X \in \mathfrak {C}</fr:tex>, of an <fr:tex>\mathscr { O } _S</fr:tex>-endomorphism <fr:tex>\overline {X}</fr:tex> of <fr:tex>\mathcal {F}'</fr:tex> that satisfies the following conditions:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>507</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.7</fr:addr><fr:route>fga3.i-b.3-equation-3.7.xml</fr:route><fr:number>3.7</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \overline {fX} = f \overline {X}     \tag{3.7}     </fr:tex></fr:mainmatter></fr:tree>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>508</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.8</fr:addr><fr:route>fga3.i-b.3-equation-3.8.xml</fr:route><fr:number>3.8</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \overline {X}(fx) = X(f)x + f \overline {X}(x)     \tag{3.8}     </fr:tex></fr:mainmatter></fr:tree>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>509</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.9</fr:addr><fr:route>fga3.i-b.3-equation-3.9.xml</fr:route><fr:number>3.9</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \overline {[X,Y]} = [ \overline {X}, \overline {Y}]     \tag{3.9}     </fr:tex></fr:mainmatter></fr:tree>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>510</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.10</fr:addr><fr:route>fga3.i-b.3-equation-3.10.xml</fr:route><fr:number>3.10</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \overline {X^{(p)}} =  \overline {X}^p.     \tag{3.10}     </fr:tex></fr:mainmatter></fr:tree>
+
+  (This is what we may call a <fr:em>linear connection on <fr:tex>\mathcal {F}</fr:tex></fr:em>, which is further <fr:em>flat</fr:em> and <fr:em>compatible</fr:em> with the <fr:tex>p</fr:tex>-th powers_).
+  We can similarly write down the notion of a descent data on an <fr:tex>S'</fr:tex>-prescheme <fr:tex>X'</fr:tex>, with <fr:ref
+addr="fga3.i-b.3-equation-3.4"
+href="fga3.i-b.3-equation-3.4.xml"
+taxon="Equation"
+number="3.4"></fr:ref> being replaced by the condition that the <fr:tex>\overline {X}</fr:tex> are <fr:em>derivations</fr:em> of <fr:tex>\mathscr { O } _{X'}</fr:tex>.
+  
+  Since the morphism <fr:tex>S' \to  S</fr:tex> is radicial, <fr:ref
+addr="fga3.i-b.1-theorem-3"
+href="fga3.i-b.1-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref> ensures that every such descent data is effective, and thus defines an <fr:tex>S</fr:tex>-prescheme <fr:tex>X</fr:tex>.
+</fr:p><fr:p>
+  Note that we have not needed to impose any flatness, non-singular, or finiteness hypotheses on <fr:tex>\mathcal {F}'</fr:tex> or <fr:tex>X'</fr:tex>.
+</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1511</fr:anchor><fr:addr>fga3.i-b.3</fr:addr><fr:route>fga3.i-b.3.xml</fr:route><fr:title><fr:link
+href="fga3.i-b.xml"
+type="local"
+addr="fga3.i-b"><fr:link
+href="fga3.i.xml"
+type="local"
+addr="fga3.i">Generalities, and descent by faithfully flat morphisms</fr:link> › Descent by faithfully flat morphisms</fr:link> › Decent by finite faithfully flat morphisms</fr:title><fr:number>B.3</fr:number><fr:parent>fga3.i-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\alpha \colon  S' \to  S</fr:tex> be a <fr:em>finite</fr:em> morphism, corresponding to a sheaf of algebras <fr:tex>\mathscr { A } '</fr:tex> on <fr:tex>S</fr:tex> that is <fr:em>locally free</fr:em> and of finite type as a sheaf of modules, and everywhere non-zero.
+  Then <fr:tex>\alpha</fr:tex> is a faithfully flat and quasi-compact morphism, to which we can thus apply the above results.
+  The data of a quasi-coherent sheaf <fr:tex>\mathcal {F}'</fr:tex> on <fr:tex>S'</fr:tex> is equivalent to the data of the quasi-coherent sheaf <fr:tex>\alpha _*( \mathcal {F}')</fr:tex> on <fr:tex>S</fr:tex> endowed with its <fr:tex>\mathscr { A } '</fr:tex>-modules structure (noting that <fr:tex>\mathscr { A } '= \alpha _*( \mathscr { O } _{S'})</fr:tex>).
+  For simplicity, we also denote this sheaf on <fr:tex>S</fr:tex> by <fr:tex>\mathcal {F}'</fr:tex>.
+  The two inverse images <fr:tex>p_i^*( \mathcal {F}')</fr:tex> of <fr:tex>\mathcal {F}'</fr:tex> on <fr:tex>S' \times _S S'</fr:tex> similarly correspond to the quasi-coherent sheaves of <fr:tex>( \mathscr { A } ' \otimes _{ \mathscr { O } _S} \mathscr { A } ')</fr:tex>-modules <fr:tex>\mathcal {F}' \otimes _{ \mathscr { O } _S} \mathscr { A } '</fr:tex> and <fr:tex>\mathscr { A } ' \otimes _{ \mathscr { O } _S} \mathcal {F}'</fr:tex>.
+  The data of an <fr:tex>(S' \times _S S')</fr:tex>-homomorphism from the former to the latter is equivalent to the data of a homomorphism of <fr:tex>( \mathscr { A } ' \otimes \mathscr { A } ')</fr:tex>-modules, and, taking into account the fact that <fr:tex>\mathscr { A } '</fr:tex> is locally free, this is equivalent to the data of a homomorphism of <fr:tex>( \mathscr { A } ' \otimes \mathscr { A } ')</fr:tex>-modules:
+  <fr:tex
+display="block">      \mathscr { U }      =  \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathscr { A } ', \mathscr { A } ')     =  \mathscr { A } ' \otimes \check { \mathscr { A } }'      \to   \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathcal {F}', \mathcal {F}')   </fr:tex>
+  i.e. to the data, for every section <fr:tex>\xi</fr:tex> of <fr:tex>\mathscr { U }</fr:tex> over an open subset <fr:tex>V</fr:tex>, of a homomorphism of <fr:tex>\mathscr { O } _S</fr:tex>-modules <fr:tex>T_ \xi \colon \mathcal {F}'|V \to \mathcal {F}'|V</fr:tex> that satisfies the conditions
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>498</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.1</fr:addr><fr:route>fga3.i-b.3-equation-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {aligned}         T_{f \xi }(x)         &amp;= fT_ \xi (x),        \\ T_{ \xi  f}(x)         &amp;= T_ \xi (fx),        \end {aligned}     \tag{3.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  where <fr:tex>f</fr:tex> and <fr:tex>x</fr:tex> are (respectively) sections of <fr:tex>\mathscr { A } '</fr:tex> and <fr:tex>\mathcal {F}'</fr:tex> over an open subset of <fr:tex>S</fr:tex> that is contained inside <fr:tex>V</fr:tex>.
+  Conditions (i) and (ii) of a descent data (cf. <fr:ref
+addr="fga3.i-a.1.c"
+href="fga3.i-a.1.c.xml"
+number="A.1.c"></fr:ref>) can then be written (respectively) as
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>499</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.2</fr:addr><fr:route>fga3.i-b.3-equation-3.2.xml</fr:route><fr:number>3.2</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       T_{1_U}(x)       = x        \qquad \text {i.e. }T_{1_U}= \operatorname {id} _{ \mathcal {F}'}     \tag{3.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>500</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.3</fr:addr><fr:route>fga3.i-b.3-equation-3.3.xml</fr:route><fr:number>3.3</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       T_{ \xi \eta }       = T_ \xi  T_ \eta .     \tag{3.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  In other words, <fr:em>a descent data on <fr:tex>\mathcal {F}'</fr:tex> is equivalent to a representation of the sheaf <fr:tex>\mathscr { U } = \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathscr { A } ', \mathscr { A } ')</fr:tex> of <fr:tex>\mathscr { O } _S</fr:tex>-algebras in the sheaf <fr:tex>\mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathcal {F}', \mathcal {F}')</fr:tex> of <fr:tex>\mathscr { O } _S</fr:tex>-algebras that satisfies the two linearity conditions (<fr:ref
+addr="fga3.i-b.3-equation-3.1"
+href="fga3.i-b.3-equation-3.1.xml"
+taxon="Equation"
+number="3.1"></fr:ref>)</fr:em>.
+  If we have a pairing of quasi-coherent sheaves on <fr:tex>S'</fr:tex>:
+  <fr:tex
+display="block">      \mathcal {F}'_1 \times \mathcal {F}'_2  \to   \mathcal {F}'_3   </fr:tex>
+  
+  (that we can think of as a pairing of sheaves of <fr:tex>\mathscr { A } '</fr:tex>-modules on <fr:tex>S</fr:tex>), and gluing data on the <fr:tex>\mathcal {F}'_i</fr:tex> defined by homomorphisms <fr:tex>T_i \colon \mathscr { U } \to \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathcal {F}'_i, \mathcal {F}'_i)</fr:tex> (for <fr:tex>i=1,2,3</fr:tex>), then these data are <fr:em>equivalent to the given pairing</fr:em>, in the evident meaning of the phrase, if and only if the following condition is satisfied:
+</fr:p><fr:p>
+  For every section <fr:tex>\xi</fr:tex> of <fr:tex>\mathscr { U }</fr:tex> over an open subset, and denoting by <fr:tex>\Delta \xi = \sum \xi '_i \otimes _{ \mathscr { A } '} \xi ''_i</fr:tex> the section of <fr:tex>\mathscr { U } \otimes _{ \mathscr { A } '} \mathscr { U }</fr:tex> (where <fr:tex>\mathscr { U }</fr:tex> is considered as an <fr:tex>\mathscr { A } '</fr:tex>-module with its left structure) defined by the formula
+  <fr:tex
+display="block">      \xi \cdot (fg)     =  \sum _i \xi '_i(f) \xi ''_i(g)   </fr:tex>
+  (where <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex> are sections of <fr:tex>\mathscr { A } '</fr:tex> over a smaller open subset), we have the formula
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>501</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.4</fr:addr><fr:route>fga3.i-b.3-equation-3.4.xml</fr:route><fr:number>3.4</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       T_ \xi ^{(3)}(x \cdot  y)       =  \sum _i T_{ \xi '_i}^{(1)}x \cdot  T_{ \xi ''_i}^{(2)}y     \tag{3.4}     </fr:tex></fr:mainmatter></fr:tree>
+
+  for every pair <fr:tex>(x,y)</fr:tex> of sections of <fr:tex>\mathscr { A } '</fr:tex> over a smaller subset.
+  (We can express this property by saying that the homomorphisms <fr:tex>T^{(i)}</fr:tex> are <fr:em>compatible with the diagonal map of <fr:tex>\mathscr { U }</fr:tex></fr:em>, with respect to the given pair).
+  In particular, <fr:ref
+addr="fga3.i-b.3-equation-3.1"
+href="fga3.i-b.3-equation-3.1.xml"
+taxon="Equation"
+number="3.1"></fr:ref>, <fr:ref
+addr="fga3.i-b.3-equation-3.2"
+href="fga3.i-b.3-equation-3.2.xml"
+taxon="Equation"
+number="3.2"></fr:ref>, <fr:ref
+addr="fga3.i-b.3-equation-3.3"
+href="fga3.i-b.3-equation-3.3.xml"
+taxon="Equation"
+number="3.3"></fr:ref>, and <fr:ref
+addr="fga3.i-b.3-equation-3.4"
+href="fga3.i-b.3-equation-3.4.xml"
+taxon="Equation"
+number="3.4"></fr:ref> allow us to understand, in terms of representations of algebras via diagonal maps, the descent data on a quasi-coherent sheaf of <fr:em>algebras</fr:em> on <fr:tex>S'</fr:tex>, and thus also (by restricting to commutative algebras) the descent data on an affine <fr:tex>S'</fr:tex>-scheme.
+</fr:p><fr:p>
+  From here, we obtain an analogous interpretation of descent data on an arbitrary <fr:tex>S'</fr:tex>-prescheme <fr:tex>X'</fr:tex>:
+  the data of such an <fr:tex>X'</fr:tex> is equivalent to the data of a prescheme <fr:tex>X'</fr:tex> <fr:em>over <fr:tex>S</fr:tex></fr:em> endowed with a homomorphism of <fr:tex>\mathscr { O } _S</fr:tex>-algebras
+  <fr:tex
+display="block">      \mathscr { A } ' \to \mathscr { O } _{X'},   </fr:tex>
+  and a descent data on <fr:tex>X'</fr:tex> is equivalent to the data of a sheaf homomorphism
+  <fr:tex
+display="block">      \mathscr { U }       \to   \mathscr {H} \kern  -2.5pt \mathit {om} _{h^{-1}( \mathscr { O } _S)}( \mathscr { O } _{X'}, \mathscr { O } _{X'})   </fr:tex>
+  that is compatible with the morphism <fr:tex>h \colon  X' \to  S'</fr:tex> and that satisfies the conditions analogous to <fr:ref
+addr="fga3.i-b.3-equation-3.1"
+href="fga3.i-b.3-equation-3.1.xml"
+taxon="Equation"
+number="3.1"></fr:ref>, <fr:ref
+addr="fga3.i-b.3-equation-3.2"
+href="fga3.i-b.3-equation-3.2.xml"
+taxon="Equation"
+number="3.2"></fr:ref>, <fr:ref
+addr="fga3.i-b.3-equation-3.3"
+href="fga3.i-b.3-equation-3.3.xml"
+taxon="Equation"
+number="3.3"></fr:ref>, and <fr:ref
+addr="fga3.i-b.3-equation-3.4"
+href="fga3.i-b.3-equation-3.4.xml"
+taxon="Equation"
+number="3.4"></fr:ref> above.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>502</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-b.3-example-1</fr:addr><fr:route>fga3.i-b.3-example-1.xml</fr:route><fr:title>Weil's example</fr:title><fr:number>1</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose that <fr:tex>S'/S</fr:tex> is a <fr:em>Galois étale covering</fr:em> with Galois group <fr:tex>\Gamma</fr:tex> (cf. <fr:ref
+addr="fga3.i-a.3"
+href="fga3.i-a.3.xml"
+number="A.3"></fr:ref> and <fr:ref
+addr="fga3.i-a.4"
+href="fga3.i-a.4.xml"
+number="A.4"></fr:ref>).
+    Then a descent data on a quasi-coherent sheaf <fr:tex>\mathcal {F}'</fr:tex> on <fr:tex>S'</fr:tex> (resp. on an <fr:tex>S'</fr:tex>-prescheme <fr:tex>X'</fr:tex>) is equivalent to the data of a representation of <fr:tex>\Gamma</fr:tex> by automorphisms of <fr:tex>(S', \mathcal {F}')</fr:tex> (resp. of <fr:tex>(S',X')</fr:tex>) that is compatible with the action of <fr:tex>\Gamma</fr:tex> on <fr:tex>S'</fr:tex>.
+    
+    This result is "formal", i.e. it can be proven in terms of categories, but, from the point of view of this section, we also obtain the explicit structure of <fr:tex>\mathscr { U }</fr:tex> (endowed with its ring structure, the ring homomorphism <fr:tex>\mathscr { A } ' \to \mathscr { U }</fr:tex>, and the diagonal map), which is completely known thanks to the following result:
+    <fr:em><fr:tex>\mathscr { U }</fr:tex> admits, as a left <fr:tex>A'</fr:tex>-module, a basis given by the sections of <fr:tex>\mathscr { U }</fr:tex> that correspond to elements of <fr:tex>\Gamma</fr:tex></fr:em>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>504</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-b.3-example-2</fr:addr><fr:route>fga3.i-b.3-example-2.xml</fr:route><fr:title>Cartier's example</fr:title><fr:number>2</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>p</fr:tex> be a prime number, and suppose that <fr:tex>p \mathscr { O } _S=0</fr:tex> (i.e. that <fr:tex>\mathscr { O } _S</fr:tex> is of <fr:em>characteristic <fr:tex>p</fr:tex></fr:em>), that <fr:tex>( \mathscr { A } ')^p \subset \mathscr { O } _S= \mathscr { A }</fr:tex> (i.e. that <fr:tex>S'/S</fr:tex> is <fr:em>radicial of height <fr:tex>1</fr:tex></fr:em>), and that the sheaf of algebras <fr:tex>\mathscr { A } '</fr:tex> over <fr:tex>\mathscr { A }</fr:tex> <fr:em>locally admits a <fr:tex>p</fr:tex>-basis</fr:em> (i.e. a family <fr:tex>(x_i)</fr:tex> of sections such that <fr:tex>\mathscr { A } '</fr:tex> is generated as an algebra by the <fr:tex>x_i</fr:tex> under the sole condition that <fr:tex>x_i^p=0</fr:tex>).
+    We suppose that the set of the <fr:tex>i</fr:tex> is finite, of cardinality <fr:tex>n</fr:tex>.
+    Let <fr:tex>\mathfrak {C}</fr:tex> be the sheaf of <fr:tex>A</fr:tex>-derivations of <fr:tex>A'</fr:tex>, which is a locally free sheaf of rank <fr:tex>n</fr:tex> of <fr:tex>A'</fr:tex>-modules, and, furthermore, a sheaf of Lie <fr:tex>p</fr:tex>-algebras over <fr:tex>\mathscr { A }</fr:tex> (but not over <fr:tex>\mathscr { A } '</fr:tex>) that satisfies the following condition:
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>503</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.5</fr:addr><fr:route>fga3.i-b.3-equation-3.5.xml</fr:route><fr:number>3.5</fr:number><fr:parent>fga3.i-b.3-example-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">         [X,fY] = X(f)Y + f[X,Y].       \tag{3.5}       </fr:tex></fr:mainmatter></fr:tree></fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>506</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.i-b.3-lemma</fr:addr><fr:route>fga3.i-b.3-lemma.xml</fr:route><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:tex>\mathscr { U } = \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathscr { O } _S}( \mathscr { A } ', \mathscr { A } ')</fr:tex> is generated, as an <fr:tex>\mathscr { O } _S</fr:tex>-algebra endowed with an algebra homomorphism <fr:tex>\mathscr { A } ' \to \mathscr { U }</fr:tex>, by the sub-left-<fr:tex>A'</fr:tex>-module <fr:tex>\mathfrak {C}</fr:tex>, with the following additional relations:
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>505</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.6</fr:addr><fr:route>fga3.i-b.3-equation-3.6.xml</fr:route><fr:number>3.6</fr:number><fr:parent>fga3.i-b.3-lemma</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">          \begin {cases}           Xf-fX &amp;= X(f)          \\ XY-YX &amp;= [X,Y]          \\ X^p &amp;= X^{(p)}.          \end {cases}       \tag{3.6}       </fr:tex></fr:mainmatter></fr:tree></fr:p></fr:mainmatter></fr:tree><fr:p>
+  It follows from the above lemma that a descent data on the quasi-coherent sheaf <fr:tex>\mathcal {F}'</fr:tex> on <fr:tex>S'</fr:tex> is equivalent to the data, for all <fr:tex>X \in \mathfrak {C}</fr:tex>, of an <fr:tex>\mathscr { O } _S</fr:tex>-endomorphism <fr:tex>\overline {X}</fr:tex> of <fr:tex>\mathcal {F}'</fr:tex> that satisfies the following conditions:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>507</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.7</fr:addr><fr:route>fga3.i-b.3-equation-3.7.xml</fr:route><fr:number>3.7</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \overline {fX} = f \overline {X}     \tag{3.7}     </fr:tex></fr:mainmatter></fr:tree>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>508</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.8</fr:addr><fr:route>fga3.i-b.3-equation-3.8.xml</fr:route><fr:number>3.8</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \overline {X}(fx) = X(f)x + f \overline {X}(x)     \tag{3.8}     </fr:tex></fr:mainmatter></fr:tree>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>509</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.9</fr:addr><fr:route>fga3.i-b.3-equation-3.9.xml</fr:route><fr:number>3.9</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \overline {[X,Y]} = [ \overline {X}, \overline {Y}]     \tag{3.9}     </fr:tex></fr:mainmatter></fr:tree>
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>510</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-b.3-equation-3.10</fr:addr><fr:route>fga3.i-b.3-equation-3.10.xml</fr:route><fr:number>3.10</fr:number><fr:parent>fga3.i-b.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \overline {X^{(p)}} =  \overline {X}^p.     \tag{3.10}     </fr:tex></fr:mainmatter></fr:tree>
+
+  (This is what we may call a <fr:em>linear connection on <fr:tex>\mathcal {F}</fr:tex></fr:em>, which is further <fr:em>flat</fr:em> and <fr:em>compatible</fr:em> with the <fr:tex>p</fr:tex>-th powers_).
+  We can similarly write down the notion of a descent data on an <fr:tex>S'</fr:tex>-prescheme <fr:tex>X'</fr:tex>, with <fr:ref
+addr="fga3.i-b.3-equation-3.4"
+href="fga3.i-b.3-equation-3.4.xml"
+taxon="Equation"
+number="3.4"></fr:ref> being replaced by the condition that the <fr:tex>\overline {X}</fr:tex> are <fr:em>derivations</fr:em> of <fr:tex>\mathscr { O } _{X'}</fr:tex>.
+  
+  Since the morphism <fr:tex>S' \to  S</fr:tex> is radicial, <fr:ref
+addr="fga3.i-b.1-theorem-3"
+href="fga3.i-b.1-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref> ensures that every such descent data is effective, and thus defines an <fr:tex>S</fr:tex>-prescheme <fr:tex>X</fr:tex>.
+</fr:p><fr:p>
+  Note that we have not needed to impose any flatness, non-singular, or finiteness hypotheses on <fr:tex>\mathcal {F}'</fr:tex> or <fr:tex>X'</fr:tex>.
+</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

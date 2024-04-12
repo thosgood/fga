@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2454</fr:anchor><fr:addr>fga3.ii-a.3</fr:addr><fr:route>fga3.ii-a.3.xml</fr:route><fr:title><fr:link
+href="fga3.ii-a.xml"
+type="local"
+addr="fga3.ii-a"><fr:link
+href="fga3.ii.xml"
+type="local"
+addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Representable and pro-representable functors</fr:link> › Characterisation of pro-representable functors</fr:title><fr:number>A.3</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal {C}</fr:tex> and <fr:tex>\mathcal {C}'</fr:tex> be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, preordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" <fr:tex>e</fr:tex> such that <fr:tex>\operatorname {Hom} (X,e)</fr:tex> consists of only on element for all <fr:tex>X</fr:tex>).
+  Let <fr:tex>F</fr:tex> be a covariant functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathcal {C}'</fr:tex>.
+  Then the following conditions are equivalent:
+  <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>F</fr:tex> commutes with finite projective limits;
+    </fr:li>
+
+    <fr:li><fr:tex>F</fr:tex> commutes with finite products and with finite fibred products;
+    </fr:li>
+
+    <fr:li><fr:tex>F</fr:tex> commutes with finite products, and, for every exact diagram
+      <fr:tex
+display="block">         X \to  X' \rightrightarrows  X''       </fr:tex>
+      in <fr:tex>\mathcal {C}</fr:tex> (cf. <fr:link
+href="fga3.i-a.2-definition-2.1.xml"
+type="local"
+addr="fga3.i-a.2-definition-2.1">FGA 3.I, A, Definition 2.1</fr:link>), the image of the diagram under <fr:tex>F</fr:tex>
+      <fr:tex
+display="block">         F(X) \to  F(X') \rightrightarrows  F(X'')       </fr:tex>
+      is exact.
+    </fr:li></fr:ol>
+
+  We then say that <fr:tex>F</fr:tex> is <fr:em>left exact</fr:em>.
+</fr:p><fr:p>
+  In what follows, we assume that finite projective limits always exist in <fr:tex>\mathcal {C}</fr:tex>.
+  It is then immediate from the definitions that a representable functor is left exact, and, by taking the limit, that <fr:em>a pro-representable functor is left exact</fr:em>.
+</fr:p><fr:p>
+  To obtain a converse, let
+  <fr:tex
+display="block">     F \colon   \mathcal {C}  \to   \mathtt {Set}    </fr:tex>
+  be a covariant functor, and let <fr:tex>X \in \mathcal {C}</fr:tex> and <fr:tex>\xi \in  F(X)</fr:tex>.
+  
+  We say that <fr:tex>\xi</fr:tex> (or the pair <fr:tex>(X, \xi )</fr:tex>) is <fr:em>minimal</fr:em> if, for all <fr:tex>X' \in \mathcal {C}</fr:tex> and all <fr:tex>\xi ' \in  F(X')</fr:tex>, and for every strict monomorphism (cf. <fr:link
+href="fga3.i-a.2.xml"
+type="local"
+addr="fga3.i-a.2">FGA 3.I, §A.2</fr:link>) <fr:tex>u \colon  X' \to  X</fr:tex> such that <fr:tex>\xi =F(u)( \xi ')</fr:tex>, <fr:tex>u</fr:tex> is an isomorphism.
+  We also say that a pair <fr:tex>(X, \xi )</fr:tex> <fr:em>dominates</fr:em> <fr:tex>(X'', \xi '')</fr:tex> (where <fr:tex>\xi \in  F(X)</fr:tex> and <fr:tex>\xi '' \in  F(X'')</fr:tex>) if there exists a morphism <fr:tex>v \colon  X \to  X''</fr:tex> such that <fr:tex>\xi ''=F(v)( \xi )</fr:tex>;
+  <fr:em>if <fr:tex>\xi</fr:tex> is minimal, and if <fr:tex>F</fr:tex> is left exact, then this morphism <fr:tex>v</fr:tex> is unique</fr:em>;
+  <fr:em>if <fr:tex>\xi ''</fr:tex> is minimal, then <fr:tex>v</fr:tex> is surjective</fr:em>.
+  From this we easily deduce the following proposition:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1368</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.3-proposition-3.1</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For <fr:tex>F</fr:tex> to be strictly pro-representable, it is necessary and sufficient that it satisfy the following two conditions:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>F</fr:tex> is left exact; and
+      </fr:li>
+      <fr:li>
+        every pair <fr:tex>(X, \xi )</fr:tex>, with <fr:tex>\xi \in  F(X)</fr:tex>, is dominated by some <fr:em>minimal</fr:em> pair.
+      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
+  This second condition is trivial if every object of <fr:tex>\mathcal {C}</fr:tex> is Artinian (by taking a sub-object <fr:tex>X'</fr:tex> of <fr:tex>X</fr:tex> that is minimal amongst those for which there exists some <fr:tex>\xi ' \in  F(X')</fr:tex> such that <fr:tex>\xi</fr:tex> is the image of <fr:tex>\xi '</fr:tex>).
+  Whence:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1369</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.ii-a.3-proposition-3.1-corollary</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1-corollary.xml</fr:route><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathcal {C}</fr:tex> be a category whose objects are all Artinian and in which all finite projective limits exist.
+    Then the pro-representable functors from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> are exactly the left exact functors, and they are in fact strictly pro-representable.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  This last fact also implies that <fr:em>every pro-object of <fr:tex>\mathcal {C}</fr:tex> is then strict</fr:em>.
+</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2453</fr:anchor><fr:addr>fga3.ii-a</fr:addr><fr:route>fga3.ii-a.xml</fr:route><fr:title><fr:link
+href="fga3.ii.xml"
+type="local"
+addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Representable and pro-representable functors</fr:title><fr:number>A</fr:number><fr:parent>fga3.ii</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>2255</fr:anchor><fr:addr>fga3.ii-a.1</fr:addr><fr:route>fga3.ii-a.1.xml</fr:route><fr:title>Representable functors</fr:title><fr:number>A.1</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal {C}</fr:tex> be a category.
+  
+  For all <fr:tex>X \in \mathcal {C}</fr:tex>, let <fr:tex>h_X</fr:tex> be the contravariant functor from <fr:tex>\mathcal {C}</fr:tex> to the category <fr:tex>\mathtt {Set}</fr:tex> of sets given by
+  <fr:tex
+display="block">      \begin {aligned}       h_X \colon   \mathcal {C} &amp; \to   \mathtt {Set}       \\ Y&amp; \mapsto   \operatorname {Hom} (Y,X).      \end {aligned}   </fr:tex>
+  If we have a morphism <fr:tex>X \to  X'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex>, then this evidently induces a morphism <fr:tex>h_X \to  h_{X'}</fr:tex> of functors;
+  <fr:tex>h_X</fr:tex> is a covariant functor in <fr:tex>X</fr:tex>, i.e. we have defined a <fr:em>canonical covariant functor</fr:em>
+  <fr:tex
+display="block">     h \colon   \mathcal {C}  \to   \operatorname {Hom} ( \mathcal {C}^ \circ , \mathtt {Set} )   </fr:tex>
+  from <fr:tex>\mathcal {C}</fr:tex> to the category of covariant functors from the dual <fr:tex>\mathcal {C}^ \circ</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> to the category of sets.
+  We then recall:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>688</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.1-proposition-1.1</fr:addr><fr:route>fga3.ii-a.1-proposition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.ii-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    This functor <fr:tex>h</fr:tex> is <fr:em>fully faithful</fr:em>;
+    in other words, for every pair <fr:tex>X,X'</fr:tex> of objects of <fr:tex>\mathcal {C}</fr:tex>, the natural map
+    <fr:tex
+display="block">        \operatorname {Hom} (X,X')  \to   \operatorname {Hom} (h_X,h_{X'})     </fr:tex>
+    is <fr:em>bijective</fr:em>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In particular, if a functor <fr:tex>F \in \operatorname {Hom} ( \mathcal {C}^ \circ , \mathtt {Set} )</fr:tex> is isomorphic to a functor of the form <fr:tex>h_X</fr:tex>, then <fr:em><fr:tex>X</fr:tex> is determined up to unique isomorphism</fr:em>.
+  We then say that the functor <fr:tex>F</fr:tex> is <fr:em>representable</fr:em>.
+  The above proposition then implies that the canonical functor <fr:tex>h</fr:tex> defines an <fr:em>equivalence</fr:em> between the category <fr:tex>\mathcal {C}</fr:tex> and the full subcategory of <fr:tex>\operatorname {Hom} ( \mathcal {C}^ \circ , \mathtt {Set} )</fr:tex> consisting of representable functors.
+  This fact is the basis of <fr:em>the idea of a "solution of a universal problem"</fr:em>, with such a problem always consisting of examining if a given (contravariant, as here, or covariant, in the dual case) functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> is representable.
+  
+  Note further that, just by the definition of products in a category <fr:link
+href="Gro1957.xml"
+type="local"
+addr="Gro1957">[Gro1957]</fr:link>, the functor <fr:tex>h \colon  X \mapsto  h_X</fr:tex> commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking "kernels" [<fr:ref
+addr="fga2"
+href="fga2.xml"
+taxon="FGA"
+number="2"></fr:ref>], etc., whenever such things exist): we have an isomorphism of functors
+  <fr:tex
+display="block">     h_{X \times  X'}  \xrightarrow { \sim }  h_X \times  h_{X'}   </fr:tex>
+  whenever <fr:tex>X \times  X'</fr:tex> exists, i.e. we have functorial (in <fr:tex>Y</fr:tex>) bijections
+  <fr:tex
+display="block">     h_{X \times  X'}  \xrightarrow { \sim }  h_X(Y) \times  h_{X'}(Y).   </fr:tex>
+  In particular, the data of a morphism
+  <fr:tex
+display="block">     X \times  X'  \to  X''   </fr:tex>
+  in <fr:tex>\mathcal {C}</fr:tex> (i.e. of a "<fr:em>composition law</fr:em>" in <fr:tex>\mathcal {C}</fr:tex> between <fr:tex>X</fr:tex>, <fr:tex>X'</fr:tex>, and <fr:tex>X''</fr:tex>) is equivalent to the data of a morphism <fr:tex>h_{X \times  X'}=h_X \times  h_{X'} \to  h_{X''}</fr:tex>, i.e. to the data, for all <fr:tex>Y \in \mathcal {C}</fr:tex>, of a composition law of <fr:em>sets</fr:em>
+  <fr:tex
+display="block">     h_X(Y) \times  h_{X'}(Y)  \to  h_{X''}(Y)   </fr:tex>
+  such that, for every morphism <fr:tex>Y \to  Y'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex>, the system of set maps
+  <fr:tex
+display="block">     h_{X^{(i)}}(Y)  \to  h_{X^{(i)}}(Y')      \qquad \text {for }i=0,1,2   </fr:tex>
+  is a morphism for the two composition laws, with respect to <fr:tex>Y</fr:tex> and <fr:tex>Y'</fr:tex>.
+  In this way, we see that the idea of a "<fr:tex>\mathcal {C}</fr:tex>-group" structure, or a "<fr:tex>\mathcal {C}</fr:tex>-ring" structure, etc. on an object <fr:tex>X</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> can be expressed in the most manageable way (in theory as much as in practice) by saying that, for every <fr:tex>Y \in \mathcal {C}</fr:tex>, we have a group law (resp. ring law, etc.) in the usual sense on the set <fr:tex>h_X(Y)</fr:tex>, with the maps <fr:tex>h_X(Y) \to  h_X(Y')</fr:tex> corresponding to morphisms <fr:tex>Y \to  Y'</fr:tex> that should be group homomorphisms (resp. ring homomorphisms, etc.).
+  This is the most intuitive and manageable way of defining, for example, the various classical groups <fr:tex>\operatorname {G_a}</fr:tex>, <fr:tex>\operatorname {G_m}</fr:tex>, <fr:tex>\operatorname {GL} (n)</fr:tex>, etc. on a prescheme <fr:tex>S</fr:tex> over an arbitrary base, and of writing the classical relations between these groups, or of placing a "vector bundle" structure on the affine scheme <fr:tex>V( \mathscr { F } )</fr:tex> over <fr:tex>S</fr:tex> defined by a quasi-coherent sheaf <fr:tex>\mathscr { F }</fr:tex>, and of defining and studying the many associated flag varieties (Grassmannians, projective bundles), etc.;
+  <fr:em>the general yoga is purely and simply identifying, using the canonical functor <fr:tex>h</fr:tex>, the objects of <fr:tex>\mathcal {C}</fr:tex> with particular contravariant functors (namely, representable functors) from <fr:tex>\mathcal {C}</fr:tex> to the category of sets</fr:em>.
+</fr:p><fr:p>
+  The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce <fr:em>covariant representable functors <fr:tex>\mathcal {C} \to \mathtt {Set}</fr:tex></fr:em>, i.e. those of the form <fr:tex>Y \mapsto \operatorname {Hom} (X,Y)=h'_X(Y)</fr:tex>.
+</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>2256</fr:anchor><fr:addr>fga3.ii-a.2</fr:addr><fr:route>fga3.ii-a.2.xml</fr:route><fr:title>Pro-representable functors, pro-objects</fr:title><fr:number>A.2</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> be a projective system of objects of <fr:tex>\mathcal {C}</fr:tex>;
+  there is a corresponding covariant functor
+  <fr:tex
+display="block">     h'_{ \mathcal {X}}     =  \varinjlim _i h'_{X_i}   </fr:tex>
+  which can be written more explicitly as
+  <fr:tex
+display="block">     h'_{ \mathcal {X}}(Y)     =  \varinjlim _i h'_{X_i}(Y)     =  \varinjlim _i \operatorname {Hom} (X_i,Y)   </fr:tex>
+  which is a functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex>.
+  A functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> that is isomorphic to a functor of this type <fr:em>with <fr:tex>I</fr:tex> filtered</fr:em> is said to be <fr:em>pro-representable</fr:em>.
+  By the previous section, these are exactly the functors that are isomorphic to <fr:em>filtered inductive limits of representable functors</fr:em>.
+  Let <fr:tex>\mathcal {X}'=(X_j)_{j \in  J}</fr:tex> be another filtered projective system in <fr:tex>\mathcal {C}</fr:tex> (indexed by another filtered preordered set of indices <fr:tex>J</fr:tex>).
+  Then we can easily show that we have a canonical bijection
+  <fr:tex
+display="block">      \operatorname {Hom} (h_{ \mathcal {X}'},h_{ \mathcal {X}})     =  \varprojlim _j \varinjlim _i \operatorname {Hom} (X_i,X'_j)   </fr:tex>
+  (generalising <fr:ref
+addr="fga3.ii-a.1-proposition-1.1"
+href="fga3.ii-a.1-proposition-1.1.xml"
+taxon="Proposition"
+number="1.1"></fr:ref>).
+  This leads to introducing the <fr:em>category <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> of pro-objects of <fr:tex>\mathcal {C}</fr:tex></fr:em>, whose objects are projective systems of objects of <fr:tex>\mathcal {C}</fr:tex> (indexed by arbitrary filtered preordered sets of indices), and whose morphisms between objects <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> and <fr:tex>\mathcal {X}'=(X_j)_{j \in  J}</fr:tex> are given by
+  <fr:tex
+display="block">      \operatorname {Pro} \operatorname {Hom} ( \mathcal {X}, \mathcal {X}')     =  \varprojlim _j \varinjlim _i \operatorname {Hom} (X_i,X'_j),   </fr:tex>
+  with the composition of pro-homomorphisms being evident.
+  By the very construction itself, <fr:tex>\mathcal {X} \mapsto  h'_{ \mathcal {X}}</fr:tex> can be considered as a contravariant functor in <fr:tex>\mathcal {X}</fr:tex>, establishing an <fr:em>equivalence between the dual category of the category <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> of pro-objects of <fr:tex>\mathcal {C}</fr:tex> and the category of pro-representable covariant functors from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex></fr:em>.
+  
+  Of course, an object <fr:tex>X</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> canonically defines a pro-object, denoted again by <fr:tex>X</fr:tex>, so that <fr:em><fr:tex>\mathcal {C}</fr:tex> is equivalent to a full subcategory of <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex></fr:em>.
+  Then, if <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> is an arbitrary pro-object of <fr:tex>\mathcal {C}</fr:tex>, then (with the above identification) we have that
+  <fr:tex
+display="block">      \mathcal {X}     =  \varprojlim _i X_i   </fr:tex>
+  with the projective limit being <fr:em>taken in <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex></fr:em> (since <fr:tex>h_{ \mathcal {X}}= \varinjlim _i h_{X_i}</fr:tex>).
+</fr:p><fr:p>
+  We draw attention to the fact that, even if the projective limit of the <fr:tex>X_i</fr:tex> <fr:em>exists in <fr:tex>\mathcal {C}</fr:tex></fr:em>, it will generally <fr:em>not</fr:em> be isomorphic to the projective limit <fr:tex>\mathcal {X}</fr:tex> in <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex>, as is already evident in the case where <fr:tex>\mathcal {C}</fr:tex> is the category of sets.
+  We note that, by the definition itself, <fr:tex>\varprojlim {}_{ \mathcal {C}}X_i=L</fr:tex> is defined by the condition that the functor
+  <fr:tex
+display="block">      \varprojlim _i \operatorname {Hom} _{ \mathcal {C}}(Y,X_i)     =  \operatorname {Hom} _{ \operatorname {Pro} ( \mathcal {C})}(Y, \mathcal {X})   </fr:tex>
+  in <fr:tex>Y \in \mathcal {C}</fr:tex> and with values in <fr:tex>\mathtt {Set}</fr:tex> be representable via <fr:tex>\mathcal {L}</fr:tex>, i.e. that it be isomorphic to <fr:tex>\operatorname {Hom} _{ \mathcal {C}}(Y, \mathcal {L})</fr:tex>;
+  then <fr:em><fr:tex>\lim {}_{ \mathcal {C}}X_i</fr:tex> is already defined in terms of the <fr:em>pro-object</fr:em> <fr:tex>\mathcal {X}</fr:tex></fr:em>, and, in a precise way, depends functorially on the pro-object <fr:tex>\mathcal {X}</fr:tex> whenever it is defined;
+  there is therefore no problem with denoting it by <fr:tex>\lim {}_{ \mathcal {C}}( \mathcal {X})</fr:tex>.
+  If projective limits in <fr:tex>\mathcal {C}</fr:tex> always exist, then <fr:tex>\lim {}_{ \mathcal {C}}( \mathcal {X})</fr:tex> is a functor from <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> to <fr:tex>\mathcal {C}</fr:tex>, and there is a canonical homomorphism of functors <fr:tex>\lim _ \mathcal {C}( \mathcal {X}) \to \mathcal {X}</fr:tex>.
+  Since every (covariant, say, for simplicity) functor
+  <fr:tex
+display="block">     F \colon   \mathcal {C}  \to   \mathcal {C}'   </fr:tex>
+  can be extended in an obvious way to a functor
+  <fr:tex
+display="block">      \operatorname {Pro} (F) \colon   \operatorname {Pro} ( \mathcal {C})  \to   \operatorname {Pro} ( \mathcal {C}'),   </fr:tex>
+  it follows that, if projective limits always exist in <fr:tex>\mathcal {C}'</fr:tex>, then <fr:tex>F</fr:tex> also canonically defines a composite functor
+  <fr:tex
+display="block">      \overline {F}     =  \varprojlim {}_{ \mathcal {C}'} \colon   \operatorname {Pro} ( \mathcal {C})  \to   \mathcal {C}'   </fr:tex>
+  sending <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> to <fr:tex>\varprojlim {}_{ \mathcal {C}'}F(X_i)</fr:tex>.
+</fr:p><fr:p>
+  A pro-object <fr:tex>\mathcal {X}</fr:tex> is said to be a <fr:em>strict pro-object</fr:em> if it is isomorphic to a pro-object <fr:tex>(X_i)_{i \in  I}</fr:tex>, where the transition morphisms <fr:tex>X_i \to  X_j</fr:tex> are <fr:em>epimorphisms</fr:em>;
+  a functor defined by such an object is said to be <fr:em>strictly pro-representable</fr:em>.
+  We can thus further demand that <fr:tex>I</fr:tex> be a filtered <fr:em>ordered</fr:em> set, and that every epimorphism <fr:tex>X_i \to  X'</fr:tex> be equivalent to an epimorphism <fr:tex>X_i \to  X_j</fr:tex> for some suitable <fr:tex>j \in  I</fr:tex> (uniquely determined by this condition).
+  
+  Under these conditions, the projective system <fr:tex>(X_i)_{i \in  I}</fr:tex> is determined <fr:em>up to unique isomorphism</fr:em> (in the usual sense of isomorphisms of projective systems).
+  It thus follows that <fr:em>the projective limit of a projective system <fr:tex>\mathcal {X}^{( \alpha )}</fr:tex> of strict pro-objects always exists in <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex></fr:em>, and that, with the above notation of <fr:tex>F</fr:tex> and <fr:tex>\overline {F}</fr:tex>, we have that
+  <fr:tex
+display="block">      \overline {F} \varprojlim _ \alpha \mathcal {X}^{( \alpha )}     =  \varprojlim _ \alpha {}_{ \mathcal {C}'}F(X^{( \alpha )}).   </fr:tex>
+  In particular, if every pro-object of <fr:tex>\mathcal {C}</fr:tex> is strict (cf. the previous section), then the extended functor <fr:tex>\overline {F}</fr:tex> commutes with projective limits.
+</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>2257</fr:anchor><fr:addr>fga3.ii-a.3</fr:addr><fr:route>fga3.ii-a.3.xml</fr:route><fr:title>Characterisation of pro-representable functors</fr:title><fr:number>A.3</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal {C}</fr:tex> and <fr:tex>\mathcal {C}'</fr:tex> be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, preordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" <fr:tex>e</fr:tex> such that <fr:tex>\operatorname {Hom} (X,e)</fr:tex> consists of only on element for all <fr:tex>X</fr:tex>).
+  Let <fr:tex>F</fr:tex> be a covariant functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathcal {C}'</fr:tex>.
+  Then the following conditions are equivalent:
+  <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>F</fr:tex> commutes with finite projective limits;
+    </fr:li>
+
+    <fr:li><fr:tex>F</fr:tex> commutes with finite products and with finite fibred products;
+    </fr:li>
+
+    <fr:li><fr:tex>F</fr:tex> commutes with finite products, and, for every exact diagram
+      <fr:tex
+display="block">         X \to  X' \rightrightarrows  X''       </fr:tex>
+      in <fr:tex>\mathcal {C}</fr:tex> (cf. <fr:link
+href="fga3.i-a.2-definition-2.1.xml"
+type="local"
+addr="fga3.i-a.2-definition-2.1">FGA 3.I, A, Definition 2.1</fr:link>), the image of the diagram under <fr:tex>F</fr:tex>
+      <fr:tex
+display="block">         F(X) \to  F(X') \rightrightarrows  F(X'')       </fr:tex>
+      is exact.
+    </fr:li></fr:ol>
+
+  We then say that <fr:tex>F</fr:tex> is <fr:em>left exact</fr:em>.
+</fr:p><fr:p>
+  In what follows, we assume that finite projective limits always exist in <fr:tex>\mathcal {C}</fr:tex>.
+  It is then immediate from the definitions that a representable functor is left exact, and, by taking the limit, that <fr:em>a pro-representable functor is left exact</fr:em>.
+</fr:p><fr:p>
+  To obtain a converse, let
+  <fr:tex
+display="block">     F \colon   \mathcal {C}  \to   \mathtt {Set}    </fr:tex>
+  be a covariant functor, and let <fr:tex>X \in \mathcal {C}</fr:tex> and <fr:tex>\xi \in  F(X)</fr:tex>.
+  
+  We say that <fr:tex>\xi</fr:tex> (or the pair <fr:tex>(X, \xi )</fr:tex>) is <fr:em>minimal</fr:em> if, for all <fr:tex>X' \in \mathcal {C}</fr:tex> and all <fr:tex>\xi ' \in  F(X')</fr:tex>, and for every strict monomorphism (cf. <fr:link
+href="fga3.i-a.2.xml"
+type="local"
+addr="fga3.i-a.2">FGA 3.I, §A.2</fr:link>) <fr:tex>u \colon  X' \to  X</fr:tex> such that <fr:tex>\xi =F(u)( \xi ')</fr:tex>, <fr:tex>u</fr:tex> is an isomorphism.
+  We also say that a pair <fr:tex>(X, \xi )</fr:tex> <fr:em>dominates</fr:em> <fr:tex>(X'', \xi '')</fr:tex> (where <fr:tex>\xi \in  F(X)</fr:tex> and <fr:tex>\xi '' \in  F(X'')</fr:tex>) if there exists a morphism <fr:tex>v \colon  X \to  X''</fr:tex> such that <fr:tex>\xi ''=F(v)( \xi )</fr:tex>;
+  <fr:em>if <fr:tex>\xi</fr:tex> is minimal, and if <fr:tex>F</fr:tex> is left exact, then this morphism <fr:tex>v</fr:tex> is unique</fr:em>;
+  <fr:em>if <fr:tex>\xi ''</fr:tex> is minimal, then <fr:tex>v</fr:tex> is surjective</fr:em>.
+  From this we easily deduce the following proposition:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1368</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.3-proposition-3.1</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For <fr:tex>F</fr:tex> to be strictly pro-representable, it is necessary and sufficient that it satisfy the following two conditions:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>F</fr:tex> is left exact; and
+      </fr:li>
+      <fr:li>
+        every pair <fr:tex>(X, \xi )</fr:tex>, with <fr:tex>\xi \in  F(X)</fr:tex>, is dominated by some <fr:em>minimal</fr:em> pair.
+      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
+  This second condition is trivial if every object of <fr:tex>\mathcal {C}</fr:tex> is Artinian (by taking a sub-object <fr:tex>X'</fr:tex> of <fr:tex>X</fr:tex> that is minimal amongst those for which there exists some <fr:tex>\xi ' \in  F(X')</fr:tex> such that <fr:tex>\xi</fr:tex> is the image of <fr:tex>\xi '</fr:tex>).
+  Whence:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1369</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.ii-a.3-proposition-3.1-corollary</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1-corollary.xml</fr:route><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathcal {C}</fr:tex> be a category whose objects are all Artinian and in which all finite projective limits exist.
+    Then the pro-representable functors from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> are exactly the left exact functors, and they are in fact strictly pro-representable.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  This last fact also implies that <fr:em>every pro-object of <fr:tex>\mathcal {C}</fr:tex> is then strict</fr:em>.
+</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>2258</fr:anchor><fr:addr>fga3.ii-a.4</fr:addr><fr:route>fga3.ii-a.4.xml</fr:route><fr:title>Example: groups of Galois type, pro-algebraic groups</fr:title><fr:number>A.4</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  If <fr:tex>\mathcal {C}</fr:tex> is the category of ordinary finite groups, then <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> is equivalent to the category of totally disconnected compact topological groups.
+   (<fr:em>[Trans.] Here the word "Hausdorff" is implicit.</fr:em>)
+  It is groups of this type, and their generalisations, obtained by replacing ordinary finite groups with schemes of finite groups over a given base prescheme (for example, finite algebraic groups over a field <fr:tex>k</fr:tex>), that serve as fundamental groups, homotopy groups, and absolute and relative homology groups for preschemes.
+  In all these examples, the corollary to <fr:ref
+addr="fga3.ii-a.3-proposition-3.1"
+href="fga3.ii-a.3-proposition-3.1.xml"
+taxon="Proposition"
+number="3.1"></fr:ref> applies, and it is indeed by the associated functor that the <fr:tex>\pi _1</fr:tex> should be defined [<fr:ref
+addr="fga2"
+href="fga2.xml"
+taxon="FGA"
+number="2"></fr:ref>].
+  It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the "<fr:em>pro-algebraic groups</fr:em>" of Serre <fr:link
+href="Ser1958.xml"
+type="local"
+addr="Ser1958">[Ser1958]</fr:link>.
+</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>2259</fr:anchor><fr:addr>fga3.ii-a.5</fr:addr><fr:route>fga3.ii-a.5.xml</fr:route><fr:title>Example: "formal varieties"</fr:title><fr:number>A.5</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\Lambda</fr:tex> be a Noetherian ring, <fr:tex>\mathcal {C}</fr:tex> the category of <fr:tex>\Lambda</fr:tex>-algebras that are Artinian modules of finite type over <fr:tex>\Lambda</fr:tex> (or, more concisely, <fr:em>Artinian <fr:tex>\Lambda</fr:tex>-algebras</fr:em>).
+  
+  The conditions of the corollary to
+  <fr:ref
+addr="fga3.ii-a.3-proposition-3.1"
+href="fga3.ii-a.3-proposition-3.1.xml"
+taxon="Proposition"
+number="3.1"></fr:ref> are then satisfied.
+  Here, the category <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> is equivalent to the category of <fr:em>topological algebras</fr:em> <fr:tex>O</fr:tex> over <fr:tex>\Lambda</fr:tex> that are isomorphic to topological projective limits
+  <fr:tex
+display="block">     O     =  \varprojlim  O_i   </fr:tex>
+  of algebras <fr:tex>O_i \in \mathcal {C}</fr:tex>, i.e. those whose topology is <fr:em>linear</fr:em>, <fr:em>separated</fr:em>, and <fr:em>complete</fr:em>, and such that, for every open ideal <fr:tex>\mathfrak {J}_i</fr:tex> of <fr:tex>O</fr:tex>, the algebra <fr:tex>O/ \mathfrak {J}_i</fr:tex> is an <fr:em>Artinian</fr:em> algebra over <fr:tex>\Lambda</fr:tex>.
+  The functor <fr:tex>\mathcal {C} \to \mathtt {Set}</fr:tex> associated to such an algebra is exactly
+  <fr:tex
+display="block">      \begin {aligned}       F(A)       &amp;= h'_{O}(A)      \\ &amp;=  \{ \text {continuous homomorphisms of topological } \Lambda \text {-algebras }O \to  A \}       \\ &amp;=  \varinjlim _i  \operatorname {Hom} _{ \Lambda \text {-algebras}}(O_i,A).      \end {aligned}   </fr:tex>
+  Note also that the category <fr:tex>\mathcal {C}</fr:tex> is essentially the product of analogous categories, corresponding to the local rings that are the completions of the <fr:tex>\Lambda _{ \mathfrak {m}}</fr:tex> for the maximal ideals <fr:tex>\mathfrak {m}</fr:tex> of <fr:tex>\Lambda</fr:tex>;
+  we can thus, if so desired, restrict to the case where <fr:tex>A</fr:tex> is such a complete local ring.
+  In any case, <fr:tex>O</fr:tex> decomposes canonically as the topological product of its <fr:em>local components</fr:em>, which correspond to the "points" of the <fr:em>formal scheme</fr:em> [<fr:ref
+addr="fga2"
+href="fga2.xml"
+taxon="FGA"
+number="2"></fr:ref>] defined by <fr:tex>O</fr:tex>.
+  Such a point is defined by an object <fr:tex>\xi</fr:tex> of some <fr:tex>F(K)</fr:tex>, where <fr:tex>K \in \mathcal {C}</fr:tex> is a <fr:em>field</fr:em> (for example, the residue field of the local component in question), and where two pairs <fr:tex>( \xi ,K)</fr:tex> and <fr:tex>( \xi ',K')</fr:tex> define the same point if and only if they are both dominated by the same <fr:tex>( \xi '',K'')</fr:tex>, or if they both dominate the same <fr:tex>( \xi ''',K''')</fr:tex>.
+  (If the <fr:tex>{ \Lambda }/ \mathfrak {m}</fr:tex> are algebraically closed, then it suffices to take the set given by the sum of the <fr:tex>F({ \Lambda }/ \mathfrak {m})</fr:tex>).
+</fr:p><fr:p>
+  It is important to give conditions that ensure that the local component <fr:tex>O_ \xi</fr:tex> of <fr:tex>O</fr:tex> corresponding to some <fr:tex>\xi \in  F(K)</fr:tex> be a <fr:em>Noetherian</fr:em> ring.
+  If <fr:tex>\Lambda</fr:tex> is a complete local ring (Noetherian, we recall), then it is equivalent to say that <fr:tex>O_ \xi</fr:tex> is isomorphic to a <fr:em>quotient ring of a formal series ring <fr:tex>\Lambda [{[t_1, \ldots ,t_n]}]</fr:tex></fr:em>.
+  To give such a criterion, we introduce (for every ring <fr:tex>A</fr:tex>) the <fr:tex>A</fr:tex>-algebra <fr:tex>I_A</fr:tex> of "dual numbers" of <fr:tex>A</fr:tex>, defined by
+  <fr:tex
+display="block">     I_A     = A[t]/t^2A[t].   </fr:tex>
+  Let <fr:tex>\varepsilon \colon  I_A \to  A</fr:tex> be the augmentation homomorphism, which defines (if <fr:tex>A \in \mathcal {C}</fr:tex>) a map
+  <fr:tex
+display="block">     F( \varepsilon ) \colon  F(I_A)  \to  F(A).   </fr:tex>
+  
+  Using the fact that <fr:tex>F</fr:tex> is left exact, we intrinsically define the structure of an <fr:tex>A</fr:tex>-module on the subset
+  <fr:tex
+display="block">     F(I_A, \xi )     = F( \xi )^{-1}( \xi )  \subset  F(I_A)   </fr:tex>
+  consisting of the <fr:tex>\xi ' \in  F(I_A)</fr:tex> that are "reducible along <fr:tex>\xi</fr:tex>";
+  using the explicit form of <fr:tex>F</fr:tex> in terms of <fr:tex>O</fr:tex>, we find that this <fr:tex>K</fr:tex>-module can be identified with <fr:tex>\operatorname {Hom} _ \Lambda ( \mathfrak {m}_{ \xi }/ \mathfrak {m}_ \xi ^2,A)</fr:tex>, where <fr:tex>m_ \xi</fr:tex> is the kernel of the homomorphism <fr:tex>\xi \colon  O \to  A</fr:tex>, i.e. if <fr:tex>A</fr:tex> is a field, then the maximal ideal of the local component <fr:tex>O_ \xi</fr:tex> of <fr:tex>O</fr:tex>.
+  From this, we immediately deduce the following proposition:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>441</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.5-proposition-5.1</fr:addr><fr:route>fga3.ii-a.5-proposition-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.ii-a.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\xi \in  F(K)</fr:tex>, where <fr:tex>K \in \mathcal {C}</fr:tex> is a field.
+    For the corresponding local component <fr:tex>O_ \xi</fr:tex> of <fr:tex>O</fr:tex> to be a <fr:em>Noetherian</fr:em> ring, it is necessary and sufficient that the set <fr:tex>F(I_K, \xi )</fr:tex> of elements of <fr:tex>F(I_K)</fr:tex> that are reducible along <fr:tex>\xi</fr:tex> be a vector space of <fr:em>finite dimension</fr:em> over <fr:tex>K</fr:tex>.
+    Under these conditions, we have a canonical isomorphism
+    <fr:tex
+display="block">       F(I_K, \xi )       =  \operatorname {Hom} ( \mathfrak {m}_{ \xi }/ \mathfrak {m}_ \xi ^2+ \mathfrak {n}_ \xi \mathscr { O } _ \xi , K)     </fr:tex>
+    (where <fr:tex>\mathfrak {n}_ \xi</fr:tex> is the maximal ideal of <fr:tex>\Lambda</fr:tex> given by the kernel of the homomorphism <fr:tex>\Lambda \to  K</fr:tex>), and so, in particular, the dimension of the <fr:tex>K</fr:tex>-vector space <fr:tex>F(I_K, \xi )</fr:tex> is equal to the dimension of the vector space <fr:tex>\mathfrak {m}_{ \xi }/ \mathfrak {m}_ \xi ^2</fr:tex> over the field <fr:tex>O_{ \xi }/ \mathfrak {m}_ \xi =K( \xi )</fr:tex>.
+  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    The formula given above is only correct when <fr:tex>\Lambda</fr:tex> is a field; in the general case, we must replace <fr:tex>\mathfrak {m}_{ \xi }/ \mathfrak {m}_ \xi ^2</fr:tex> with the quotient of this space by the image of <fr:tex>\mathfrak {n}_{ \xi }/ \mathfrak {n}_ \xi ^2</fr:tex>, where <fr:tex>\mathfrak {n}</fr:tex> is the maximal ideal of <fr:tex>\Lambda</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Suppose that <fr:tex>O_ \xi</fr:tex> is Noetherian, and suppose, for notational simplicity, that <fr:tex>\Lambda</fr:tex> is complete and local, and that <fr:tex>O=O_ \xi</fr:tex>.
+  (<fr:em>[Comp.]</fr:em> The following definition is correct only when the residue extension <fr:tex>k'/k</fr:tex> is <fr:em>separable</fr:em>; for the general case, see [<fr:link
+href="Gro1960b.xml"
+type="local"
+addr="Gro1960b">Gro1960b</fr:link>, III, 1.1].)
+  We say that <fr:em><fr:tex>O</fr:tex> is simple over <fr:tex>\Lambda</fr:tex></fr:em> if <fr:tex>O</fr:tex> is a finite and étale algebra over the completion algebra of the localisation of <fr:tex>\Lambda [t_1, \ldots ,t_n]</fr:tex> at one of its maximal ideals that induces the maximal ideal of <fr:tex>\Lambda</fr:tex>;
+  if the residue extension of <fr:tex>O</fr:tex> over <fr:tex>\Lambda</fr:tex> is trivial (for example, if the residue field of <fr:tex>\Lambda</fr:tex> is algebraically closed), then this is equivalent to saying that <fr:tex>O</fr:tex> itself is isomorphic to such a formal series algebra.
+  Finally, if we no longer necessarily suppose that <fr:tex>O</fr:tex> is Noetherian, then we again say that <fr:em><fr:tex>O</fr:tex> is simple over <fr:tex>\Lambda</fr:tex></fr:em> if <fr:tex>O</fr:tex> is isomorphic to a topological projective limit of quotient <fr:tex>\Lambda</fr:tex>-algebras that are Noetherian and <fr:tex>\Lambda</fr:tex>-simple in the above sense.
+  We can immediately generalise to the case where <fr:tex>\Lambda</fr:tex> and <fr:tex>O</fr:tex> are no longer assumed to be local.
+  With this, we have the following proposition:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>442</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.5-proposition-5.2</fr:addr><fr:route>fga3.ii-a.5-proposition-5.2.xml</fr:route><fr:number>5.2</fr:number><fr:parent>fga3.ii-a.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For <fr:tex>O</fr:tex> to be simple over <fr:tex>\Lambda</fr:tex>, it is necessary and sufficient that the associated functor <fr:tex>F</fr:tex> send epimorphisms to epimorphisms.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  If this is the case, then this implies that, for every <fr:em>surjective</fr:em> homomorphism <fr:tex>A \to  A'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex>, the morphism <fr:tex>F(A) \to  F(A')</fr:tex> is also <fr:em>surjective</fr:em>.
+  Of course, it suffices to verify this condition in the case where <fr:tex>A</fr:tex> is <fr:em>local</fr:em>, and (proceeding step-by-step) where the ideal of <fr:tex>A</fr:tex> given by the kernel of <fr:tex>A \to  A'</fr:tex> is annihilated by the maximal ideal of <fr:tex>A</fr:tex>.
+  This leads, in practice, to verifying that a certain obstruction, linked to <fr:em>infinitesimal</fr:em> invariants of the situation that give us a functor <fr:tex>F</fr:tex>, is null;
+  this is a problem of a <fr:em>cohomological</fr:em> nature.
+</fr:p><fr:p>
+  To finish, we say some words, in the above context, about <fr:em>rings of definition</fr:em>.
+  Let <fr:tex>F</fr:tex> still be a functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex>, assumed to be pro-representable via a topological <fr:tex>\Lambda</fr:tex>-algebra <fr:tex>O</fr:tex>.
+  Then, for every <fr:tex>A \in \mathcal {C}</fr:tex> and every <fr:tex>\xi \in  F(A)</fr:tex>, there exists a <fr:em>smallest</fr:em> subring <fr:tex>A'</fr:tex> of <fr:tex>A</fr:tex> such that <fr:tex>\xi</fr:tex> is the image of an element <fr:tex>\xi '</fr:tex> of <fr:tex>F(A')</fr:tex> (which is then uniquely determined):
+  indeed, it suffices to think of <fr:tex>\xi</fr:tex> as a homomorphism from <fr:tex>O</fr:tex> to <fr:tex>A</fr:tex>, and to take <fr:tex>A'</fr:tex> to be the image of <fr:tex>O</fr:tex> under this <fr:tex>\xi</fr:tex>.
+  We then say that <fr:tex>A'</fr:tex> is the <fr:em>ring of definition of the object <fr:tex>\xi \in  F(A)</fr:tex></fr:em>.
+  If <fr:tex>u \colon  A \to  B</fr:tex> is an algebra homomorphism, and if <fr:tex>\eta =F(u)( \xi )</fr:tex>, then the ring of definition of <fr:tex>\eta</fr:tex> is the image under <fr:tex>u</fr:tex> of the ring of definition of <fr:tex>\xi</fr:tex>.
+  If we start with a functor <fr:tex>F</fr:tex> from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex>, then the existence of rings of definition, along with their properties that we have just discussed, is more or less <fr:em>equivalent</fr:em> to the condition that <fr:tex>F</fr:tex> be pro-representable;
+  that is, they are usually far from being trivial.
+</fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2450</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.1</fr:addr><fr:route>fga3.i-a.2-definition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathcal {C}</fr:tex> be a category.
+    A diagram of morphisms
+    <fr:tex
+display="block">       T  \xrightarrow { \alpha }       T'  \overset { \beta _1 }{ \underset { \beta _2 }{ \rightrightarrows }}        T''     </fr:tex>
+    is said to be <fr:em>exact</fr:em> if, for all <fr:tex>Z \in \mathcal {C}</fr:tex>, the corresponding diagram of sets
+    <fr:tex
+display="block">        \operatorname {Hom} (Z,T)  \to         \operatorname {Hom} (Z,T')  \rightrightarrows         \operatorname {Hom} (Z,T'')     </fr:tex>
+    is exact (<fr:ref
+addr="fga3.i-a.1-definition-1.2"
+href="fga3.i-a.1-definition-1.2.xml"
+taxon="Definition"
+number="1.2"></fr:ref>).
+    We then say that <fr:tex>(T, \alpha )</fr:tex> (or, by an abuse of language, <fr:tex>T</fr:tex>) is a <fr:em>kernel</fr:em> of the pair <fr:tex>( \beta _1, \beta _2)</fr:tex> of morphisms.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2451</fr:anchor><fr:addr>fga3.i-a.2</fr:addr><fr:route>fga3.i-a.2.xml</fr:route><fr:title><fr:link
+href="fga3.i-a.xml"
+type="local"
+addr="fga3.i-a"><fr:link
+href="fga3.i.xml"
+type="local"
+addr="fga3.i">Generalities, and descent by faithfully flat morphisms</fr:link> › Preliminaries on categories</fr:link> › Exact diagrams and strict epimorphisms, descent morphisms, and examples</fr:title><fr:number>A.2</fr:number><fr:parent>fga3.i-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>465</fr:anchor><fr:addr>fga3.i-a.2.a</fr:addr><fr:route>fga3.i-a.2.a.xml</fr:route><fr:number>A.2.a</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>460</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.1</fr:addr><fr:route>fga3.i-a.2-definition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathcal {C}</fr:tex> be a category.
+    A diagram of morphisms
+    <fr:tex
+display="block">       T  \xrightarrow { \alpha }       T'  \overset { \beta _1 }{ \underset { \beta _2 }{ \rightrightarrows }}        T''     </fr:tex>
+    is said to be <fr:em>exact</fr:em> if, for all <fr:tex>Z \in \mathcal {C}</fr:tex>, the corresponding diagram of sets
+    <fr:tex
+display="block">        \operatorname {Hom} (Z,T)  \to         \operatorname {Hom} (Z,T')  \rightrightarrows         \operatorname {Hom} (Z,T'')     </fr:tex>
+    is exact (<fr:ref
+addr="fga3.i-a.1-definition-1.2"
+href="fga3.i-a.1-definition-1.2.xml"
+taxon="Definition"
+number="1.2"></fr:ref>).
+    We then say that <fr:tex>(T, \alpha )</fr:tex> (or, by an abuse of language, <fr:tex>T</fr:tex>) is a <fr:em>kernel</fr:em> of the pair <fr:tex>( \beta _1, \beta _2)</fr:tex> of morphisms.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  This kernel is evidently determined up to unique isomorphism.
+  If <fr:tex>\mathcal {C}</fr:tex> is the category of sets, then the above definition is compatible with <fr:ref
+addr="fga3.i-a.1-definition-1.2"
+href="fga3.i-a.1-definition-1.2.xml"
+taxon="Definition"
+number="1.2"></fr:ref>.
+  Dually, we define the exactness of a diagram of morphisms in <fr:tex>\mathcal {C}</fr:tex>
+  <fr:tex
+display="block">     S  \xleftarrow { \alpha }     S'  \overset { \beta _1 }{ \underset { \beta _2 }{ \leftleftarrows }}      S''   </fr:tex>
+  and then say that <fr:tex>(S, \alpha )</fr:tex> is a <fr:em>cokernel</fr:em> of the pair <fr:tex>( \beta _1, \beta _2)</fr:tex> of morphisms.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>461</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.2</fr:addr><fr:route>fga3.i-a.2-definition-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be a <fr:em>strict epimorphism</fr:em> if it is an epimorphism and, for every morphism <fr:tex>u \colon  S' \to  Z</fr:tex>, the following necessary condition is also sufficient for <fr:tex>u</fr:tex> to factor as <fr:tex>S' \to  S \to  Z</fr:tex>:
+    for every <fr:tex>S'' \in \mathcal {C}</fr:tex> and every pair <fr:tex>\beta _1, \beta _2 \colon  S'' \to  S</fr:tex> of morphisms such that <fr:tex>\alpha \beta _1= \alpha \beta _2</fr:tex>, we also have that <fr:tex>u \beta _1=u \beta _2</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  If the fibre product <fr:tex>S' \times _S S'</fr:tex> exists, then it is equivalent to say that the diagram
+  <fr:tex
+display="block">     S  \xleftarrow { \alpha }     S'  \overset { p_1 }{ \underset { p_2 }{ \leftleftarrows }}      S' \times _S S'   </fr:tex>
+  
+  is exact, i.e. that <fr:tex>S</fr:tex> is a cokernel of the pair <fr:tex>(p_1,p_2)</fr:tex>.
+  In any case, a cokernel morphism is a strict epimorphism.
+  Note also that, if a strict epimorphism is also a monomorphism, then it is an isomorphism.
+  We leave to the reader the task of developing the dual notion of a <fr:em>strict monomorphism</fr:em>.
+</fr:p><fr:p>
+  To make the relation between the ideas of <fr:tex>\mathcal {F}</fr:tex>-descent morphisms and strict epimorphisms more precise, we introduce the following definitions:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>462</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.3</fr:addr><fr:route>fga3.i-a.2-definition-2.3.xml</fr:route><fr:number>2.3</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be a <fr:em>universal epimorphism</fr:em> (resp. a <fr:em>strict universal epimorphism</fr:em>) if, for every <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, the fibre product <fr:tex>T'=S' \times _S T</fr:tex> exists, and the projection <fr:tex>T' \to  T</fr:tex> is an epimorphism (resp. a strict epimorphism).
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In very nice categories (such as the category of sets, the category of sets over a topological space, abelian categories, etc.), the four notions of "epijectivity" introduced above all coincide;
+  they are, however, all distinct in a category such as the category of preschemes, or the category of preschemes over a given non-empty prescheme <fr:tex>S</fr:tex>, even if we restrict to <fr:tex>S</fr:tex>-schemes that are finite over <fr:tex>S</fr:tex>.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>463</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.4</fr:addr><fr:route>fga3.i-a.2-definition-2.4.xml</fr:route><fr:number>2.4</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be a <fr:em>descent morphism</fr:em> (resp. a <fr:em>strict descent morphism</fr:em>) if it is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism (resp. a strict <fr:tex>\mathcal {F}</fr:tex>-descent morphism) (cf. <fr:ref
+addr="fga3.i-a.1-definition-1.7"
+href="fga3.i-a.1-definition-1.7.xml"
+taxon="Definition"
+number="1.7"></fr:ref>), where <fr:tex>\mathcal {F}</fr:tex> denotes the fibred category over <fr:tex>\mathcal {C}</fr:tex> of objects of <fr:tex>\mathcal {C}</fr:tex> over objects of <fr:tex>\mathcal {C}</fr:tex> (cf. <fr:ref
+addr="fga3.i-a.1-example-1"
+href="fga3.i-a.1-example-1.xml"
+taxon="Example"
+number="1"></fr:ref>).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>464</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.i-a.2-proposition-2.1</fr:addr><fr:route>fga3.i-a.2-proposition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>\mathcal {C}</fr:tex> has all finite products and (finite) fibre products, then there is an identity between descent morphisms in <fr:tex>\mathcal {C}</fr:tex> and strict universal epimorphisms in <fr:tex>\mathcal {C}</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>468</fr:anchor><fr:addr>fga3.i-a.2.b</fr:addr><fr:route>fga3.i-a.2.b.xml</fr:route><fr:number>A.2.b</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>467</fr:anchor><fr:taxon>Example</fr:taxon><fr:parent>fga3.i-a.2.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathcal {C}</fr:tex> be the category of preschemes.
+    Let <fr:tex>S \in \mathcal {C}</fr:tex>, and let <fr:tex>S'</fr:tex> and <fr:tex>S''</fr:tex> be preschemes that are <fr:em>finite</fr:em> over <fr:tex>S</fr:tex>, i.e. that correspond to sheaves of algebras <fr:tex>\mathscr { A } '</fr:tex> and <fr:tex>\mathscr { A } ''</fr:tex> over <fr:tex>S</fr:tex> that are quasi-coherent (as sheaves of modules) and of finite type (i.e. coherent, if <fr:tex>S</fr:tex> is locally Noetherian).
+    Let <fr:tex>\alpha \colon  S' \to  S</fr:tex> be the structure morphism of <fr:tex>S'</fr:tex>, and let <fr:tex>\beta _1</fr:tex> and <fr:tex>\beta _2</fr:tex> be <fr:tex>S</fr:tex>-morphisms from <fr:tex>S''</fr:tex> to <fr:tex>S'</fr:tex>, defined by algebra homomorphisms <fr:tex>\mathscr { A } ' \to \mathscr { A } ''</fr:tex>, which we also denote by <fr:tex>\beta _1</fr:tex> and <fr:tex>\beta _2</fr:tex>.
+    Using the fact that a finite morphism is closed (the first Cohen–Seidenberg theorem), we can easily prove that the diagram in <fr:tex>\mathcal {C}</fr:tex>
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>466</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-a.2.b-equation</fr:addr><fr:route>fga3.i-a.2.b-equation.xml</fr:route><fr:number>+</fr:number></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">         S  \xleftarrow { \alpha }         S'  \overset { \beta _1 }{ \underset { \beta _2 }{ \leftleftarrows }}          S''       \tag{+}       </fr:tex></fr:mainmatter></fr:tree>
+
+    
+    is exact if and only if the diagram of sheaves on <fr:tex>S</fr:tex>
+    <fr:tex
+display="block">        \mathscr { O } _S =  \mathscr { A }   \xrightarrow { \alpha }        \mathscr { A } '  \overset { \beta _1 }{ \underset { \beta _2 }{ \rightrightarrows }}         \mathscr { A } ''     </fr:tex>
+    is exact.
+    In particular, if <fr:tex>\alpha \colon  S' \to  S</fr:tex> is a finite morphism corresponding to a sheaf <fr:tex>\mathscr { A } '</fr:tex> of algebras on <fr:tex>S</fr:tex>, then <fr:tex>\alpha</fr:tex> is a strict epimorphism if and only if the diagram of sheaves
+    <fr:tex
+display="block">        \mathscr { O } _S =  \mathscr { A }   \to         \mathscr { A } '  \overset { p_1 }{ \underset { p_2 }{ \rightrightarrows }}         \mathscr { A } ' \otimes _{ \mathscr { A } } \mathscr { A } '     </fr:tex>
+    is exact (it is an epimorphism if and only if <fr:tex>\mathscr { A } \to \mathscr { A } '</fr:tex> is injective).
+    If <fr:tex>S</fr:tex> is affine of ring <fr:tex>A</fr:tex>, then <fr:tex>S'</fr:tex> is affine of ring <fr:tex>A'</fr:tex>, with <fr:tex>A'</fr:tex> finite over <fr:tex>A</fr:tex>, and so <fr:tex>S' \to  S</fr:tex> is a strict epimorphism if and only if <fr:tex>A \to  A'</fr:tex> is an isomorphism from <fr:tex>A</fr:tex> to the subring of <fr:tex>A'</fr:tex> consisting of the <fr:tex>x' \in  A'</fr:tex> such that
+    <fr:tex
+display="block">       1_{A'} \otimes _A x' - x' \otimes _A 1_{A'}       = 0     </fr:tex>
+    (it is an epimorphism if and only if <fr:tex>A \to  A'</fr:tex> is injective).
+    As we have already mentioned, even if <fr:tex>S</fr:tex> is the scheme of a local Artinian ring, then a finite morphism <fr:tex>S' \to  S</fr:tex> that is an epimorphism is not necessarily a strict epimorphism.
+    However, we can prove that, <fr:em>if <fr:tex>S</fr:tex> is a Noetherian prescheme, then every finite morphism <fr:tex>S' \to  S</fr:tex> that is an epimorphism is the composition of a finite sequence of strict epimorphisms</fr:em> (also finite).
+    This also shows that the composition of two strict epimorphisms is not necessarily a strict epimorphism.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>470</fr:anchor><fr:addr>fga3.i-a.2.c</fr:addr><fr:route>fga3.i-a.2.c.xml</fr:route><fr:number>A.2.c</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  If <fr:ref
+addr="fga3.i-a.2.b-equation"
+href="fga3.i-a.2.b-equation.xml"
+taxon="Equation"
+number="+"></fr:ref> is an exact diagram of finite morphisms, then, for every <fr:em>flat</fr:em> morphism <fr:tex>T \to  S</fr:tex> of prescheme, the diagram induced from <fr:ref
+addr="fga3.i-a.2.b-equation"
+href="fga3.i-a.2.b-equation.xml"
+taxon="Equation"
+number="+"></fr:ref> by a change of base <fr:tex>T \to  S</fr:tex> is again exact.
+  It thus follows that, if <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> are <fr:tex>S</fr:tex>-preschemes, with <fr:tex>X</fr:tex> <fr:em>flat</fr:em> over <fr:tex>S</fr:tex>, then the following diagram of maps (where <fr:tex>X'</fr:tex> and <fr:tex>Y'</fr:tex> are the inverse images of <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> over <fr:tex>S'</fr:tex>, and <fr:tex>X''</fr:tex> and <fr:tex>Y''</fr:tex> are their inverse images over <fr:tex>S''</fr:tex>) is exact:
+  <fr:tex
+display="block">      \operatorname {Hom} _S(X,Y)  \to       \operatorname {Hom} _{S'}(X',Y')  \rightrightarrows       \operatorname {Hom} _{S''}(X'',Y'').   </fr:tex>
+  In particular, if <fr:tex>\mathcal {F}</fr:tex> denotes the fibred category (over the category <fr:tex>\mathcal {C}</fr:tex> of preschemes) such that, for <fr:tex>X \in \mathcal {C}</fr:tex>, <fr:tex>\mathcal {F}_X</fr:tex> is the category of <fr:em>flat</fr:em> <fr:tex>X</fr:tex>-preschemes, then the diagram <fr:ref
+addr="fga3.i-a.2.b-equation"
+href="fga3.i-a.2.b-equation.xml"
+taxon="Equation"
+number="+"></fr:ref> is <fr:tex>\mathcal {F}</fr:tex>-exact.
+  (This result becomes false if we do not impose the flatness hypothesis; in particular, a finite strict epimorphism is not necessarily a descent morphism).
+  We similarly see that <fr:ref
+addr="fga3.i-a.2.b-equation"
+href="fga3.i-a.2.b-equation.xml"
+taxon="Equation"
+number="+"></fr:ref> is <fr:tex>\mathcal {F}</fr:tex>-exact if <fr:tex>\mathcal {F}</fr:tex> denotes the fibred category for which <fr:tex>\mathcal {F}_X</fr:tex> is the category of <fr:em>flat</fr:em> quasi-coherent sheaves on the prescheme <fr:tex>X</fr:tex> (here, again, the flatness hypothesis is essential).
+  
+  In either case, the question of <fr:em>effectiveness</fr:em> of a gluing data (and, more specifically, of a descent data, when <fr:tex>S''=S' \times _S S'</fr:tex>) on a flat object over <fr:tex>S'</fr:tex> is delicate (and its answer in many particular cases in one of the principal objects of these current articles).
+  The speaker does not know if, for every finite strict epimorphism <fr:tex>S' \to  S</fr:tex>, every descent data on a flat quasi-coherent sheaf on <fr:tex>S'</fr:tex> is effective (even if we suppose that <fr:tex>S</fr:tex> is the spectrum of a local Artinian ring, and we restrict to locally free sheaves of rank <fr:tex>1</fr:tex>).
+  More generally, let <fr:tex>A</fr:tex> be a ring, and <fr:tex>A'</fr:tex> an <fr:tex>A</fr:tex>-algebra (where everything is commutative) such that the diagram
+  <fr:tex
+display="block">     A  \to      A'  \rightrightarrows      A' \otimes _A A'   </fr:tex>
+  is exact, which is equivalent to saying that the corresponding morphism <fr:tex>S' \to  S</fr:tex> between the spectra of <fr:tex>A'</fr:tex> and <fr:tex>A</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism, where <fr:tex>\mathcal {F}</fr:tex> is the fibred category of flat quasi-coherent sheaves.
+  Let <fr:tex>M'</fr:tex> be a flat <fr:tex>A'</fr:tex>-module endowed with a descent data to <fr:tex>A</fr:tex>, i.e. with an isomorphism
+  <fr:tex
+display="block">      \varphi \colon  M' \otimes _A A'      \xrightarrow { \sim } A' \otimes _A M'   </fr:tex>
+  of <fr:tex>(A' \otimes _A A')</fr:tex>-modules that satisfies conditions (i) and (ii) of <fr:ref
+addr="fga3.i-a.1.c"
+href="fga3.i-a.1.c.xml"
+number="A.1.c"></fr:ref> (which we leave to the reader to write out in terms of modules).
+  Is this data effective (relative to the fibred category of flat quasi-coherent sheaves)?
+  Let <fr:tex>M</fr:tex> be the subset of <fr:tex>M'</fr:tex> consisting of the <fr:tex>x' \in  M'</fr:tex> such that
+  <fr:tex
+display="block">      \varphi (x' \otimes _A 1_{A'})     = 1_{A'} \otimes _A x',   </fr:tex>
+  which is a sub-<fr:tex>A</fr:tex>-module of <fr:tex>M'</fr:tex>.
+  The canonical injection <fr:tex>M \to  M'</fr:tex> defines a homomorphism of <fr:tex>A'</fr:tex>-modules <fr:tex>M \otimes _A A' \to  M'</fr:tex>.
+  <fr:em>The effectiveness of <fr:tex>\varphi</fr:tex> then implies the following: <fr:tex>M</fr:tex> is a flat <fr:tex>A</fr:tex>-module, and the above homomorphism is an isomorphism.</fr:em></fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>469</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.2.c-remark</fr:addr><fr:route>fga3.i-a.2.c-remark.xml</fr:route><fr:parent>fga3.i-a.2.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    In the above, we have imposed no flatness hypotheses on the morphisms of the diagram <fr:ref
+addr="fga3.i-a.2.b-equation"
+href="fga3.i-a.2.b-equation.xml"
+taxon="Equation"
+number="+"></fr:ref>, and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that we consider.
+    In <fr:ref
+addr="fga3.i-b.2"
+href="fga3.i-b.2.xml"
+number="B.2"></fr:ref>, we will impose a flatness hypothesis on <fr:tex>\alpha \colon  S' \to  S</fr:tex>, which will allow us to have a technique of descent for objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that are no longer under any flatness hypotheses.
+    In any case, there is a flatness hypothesis involved somewhere.
+    This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base <fr:em>fields</fr:em>, over which everything, in fact, is flat!).
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2452</fr:anchor><fr:addr>fga3.ii-a</fr:addr><fr:route>fga3.ii-a.xml</fr:route><fr:title><fr:link
+href="fga3.ii.xml"
+type="local"
+addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Representable and pro-representable functors</fr:title><fr:number>A</fr:number><fr:parent>fga3.ii</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>2255</fr:anchor><fr:addr>fga3.ii-a.1</fr:addr><fr:route>fga3.ii-a.1.xml</fr:route><fr:title>Representable functors</fr:title><fr:number>A.1</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal {C}</fr:tex> be a category.
+  
+  For all <fr:tex>X \in \mathcal {C}</fr:tex>, let <fr:tex>h_X</fr:tex> be the contravariant functor from <fr:tex>\mathcal {C}</fr:tex> to the category <fr:tex>\mathtt {Set}</fr:tex> of sets given by
+  <fr:tex
+display="block">      \begin {aligned}       h_X \colon   \mathcal {C} &amp; \to   \mathtt {Set}       \\ Y&amp; \mapsto   \operatorname {Hom} (Y,X).      \end {aligned}   </fr:tex>
+  If we have a morphism <fr:tex>X \to  X'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex>, then this evidently induces a morphism <fr:tex>h_X \to  h_{X'}</fr:tex> of functors;
+  <fr:tex>h_X</fr:tex> is a covariant functor in <fr:tex>X</fr:tex>, i.e. we have defined a <fr:em>canonical covariant functor</fr:em>
+  <fr:tex
+display="block">     h \colon   \mathcal {C}  \to   \operatorname {Hom} ( \mathcal {C}^ \circ , \mathtt {Set} )   </fr:tex>
+  from <fr:tex>\mathcal {C}</fr:tex> to the category of covariant functors from the dual <fr:tex>\mathcal {C}^ \circ</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> to the category of sets.
+  We then recall:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>688</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.1-proposition-1.1</fr:addr><fr:route>fga3.ii-a.1-proposition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.ii-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    This functor <fr:tex>h</fr:tex> is <fr:em>fully faithful</fr:em>;
+    in other words, for every pair <fr:tex>X,X'</fr:tex> of objects of <fr:tex>\mathcal {C}</fr:tex>, the natural map
+    <fr:tex
+display="block">        \operatorname {Hom} (X,X')  \to   \operatorname {Hom} (h_X,h_{X'})     </fr:tex>
+    is <fr:em>bijective</fr:em>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In particular, if a functor <fr:tex>F \in \operatorname {Hom} ( \mathcal {C}^ \circ , \mathtt {Set} )</fr:tex> is isomorphic to a functor of the form <fr:tex>h_X</fr:tex>, then <fr:em><fr:tex>X</fr:tex> is determined up to unique isomorphism</fr:em>.
+  We then say that the functor <fr:tex>F</fr:tex> is <fr:em>representable</fr:em>.
+  The above proposition then implies that the canonical functor <fr:tex>h</fr:tex> defines an <fr:em>equivalence</fr:em> between the category <fr:tex>\mathcal {C}</fr:tex> and the full subcategory of <fr:tex>\operatorname {Hom} ( \mathcal {C}^ \circ , \mathtt {Set} )</fr:tex> consisting of representable functors.
+  This fact is the basis of <fr:em>the idea of a "solution of a universal problem"</fr:em>, with such a problem always consisting of examining if a given (contravariant, as here, or covariant, in the dual case) functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> is representable.
+  
+  Note further that, just by the definition of products in a category <fr:link
+href="Gro1957.xml"
+type="local"
+addr="Gro1957">[Gro1957]</fr:link>, the functor <fr:tex>h \colon  X \mapsto  h_X</fr:tex> commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking "kernels" [<fr:ref
+addr="fga2"
+href="fga2.xml"
+taxon="FGA"
+number="2"></fr:ref>], etc., whenever such things exist): we have an isomorphism of functors
+  <fr:tex
+display="block">     h_{X \times  X'}  \xrightarrow { \sim }  h_X \times  h_{X'}   </fr:tex>
+  whenever <fr:tex>X \times  X'</fr:tex> exists, i.e. we have functorial (in <fr:tex>Y</fr:tex>) bijections
+  <fr:tex
+display="block">     h_{X \times  X'}  \xrightarrow { \sim }  h_X(Y) \times  h_{X'}(Y).   </fr:tex>
+  In particular, the data of a morphism
+  <fr:tex
+display="block">     X \times  X'  \to  X''   </fr:tex>
+  in <fr:tex>\mathcal {C}</fr:tex> (i.e. of a "<fr:em>composition law</fr:em>" in <fr:tex>\mathcal {C}</fr:tex> between <fr:tex>X</fr:tex>, <fr:tex>X'</fr:tex>, and <fr:tex>X''</fr:tex>) is equivalent to the data of a morphism <fr:tex>h_{X \times  X'}=h_X \times  h_{X'} \to  h_{X''}</fr:tex>, i.e. to the data, for all <fr:tex>Y \in \mathcal {C}</fr:tex>, of a composition law of <fr:em>sets</fr:em>
+  <fr:tex
+display="block">     h_X(Y) \times  h_{X'}(Y)  \to  h_{X''}(Y)   </fr:tex>
+  such that, for every morphism <fr:tex>Y \to  Y'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex>, the system of set maps
+  <fr:tex
+display="block">     h_{X^{(i)}}(Y)  \to  h_{X^{(i)}}(Y')      \qquad \text {for }i=0,1,2   </fr:tex>
+  is a morphism for the two composition laws, with respect to <fr:tex>Y</fr:tex> and <fr:tex>Y'</fr:tex>.
+  In this way, we see that the idea of a "<fr:tex>\mathcal {C}</fr:tex>-group" structure, or a "<fr:tex>\mathcal {C}</fr:tex>-ring" structure, etc. on an object <fr:tex>X</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> can be expressed in the most manageable way (in theory as much as in practice) by saying that, for every <fr:tex>Y \in \mathcal {C}</fr:tex>, we have a group law (resp. ring law, etc.) in the usual sense on the set <fr:tex>h_X(Y)</fr:tex>, with the maps <fr:tex>h_X(Y) \to  h_X(Y')</fr:tex> corresponding to morphisms <fr:tex>Y \to  Y'</fr:tex> that should be group homomorphisms (resp. ring homomorphisms, etc.).
+  This is the most intuitive and manageable way of defining, for example, the various classical groups <fr:tex>\operatorname {G_a}</fr:tex>, <fr:tex>\operatorname {G_m}</fr:tex>, <fr:tex>\operatorname {GL} (n)</fr:tex>, etc. on a prescheme <fr:tex>S</fr:tex> over an arbitrary base, and of writing the classical relations between these groups, or of placing a "vector bundle" structure on the affine scheme <fr:tex>V( \mathscr { F } )</fr:tex> over <fr:tex>S</fr:tex> defined by a quasi-coherent sheaf <fr:tex>\mathscr { F }</fr:tex>, and of defining and studying the many associated flag varieties (Grassmannians, projective bundles), etc.;
+  <fr:em>the general yoga is purely and simply identifying, using the canonical functor <fr:tex>h</fr:tex>, the objects of <fr:tex>\mathcal {C}</fr:tex> with particular contravariant functors (namely, representable functors) from <fr:tex>\mathcal {C}</fr:tex> to the category of sets</fr:em>.
+</fr:p><fr:p>
+  The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce <fr:em>covariant representable functors <fr:tex>\mathcal {C} \to \mathtt {Set}</fr:tex></fr:em>, i.e. those of the form <fr:tex>Y \mapsto \operatorname {Hom} (X,Y)=h'_X(Y)</fr:tex>.
+</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>2256</fr:anchor><fr:addr>fga3.ii-a.2</fr:addr><fr:route>fga3.ii-a.2.xml</fr:route><fr:title>Pro-representable functors, pro-objects</fr:title><fr:number>A.2</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> be a projective system of objects of <fr:tex>\mathcal {C}</fr:tex>;
+  there is a corresponding covariant functor
+  <fr:tex
+display="block">     h'_{ \mathcal {X}}     =  \varinjlim _i h'_{X_i}   </fr:tex>
+  which can be written more explicitly as
+  <fr:tex
+display="block">     h'_{ \mathcal {X}}(Y)     =  \varinjlim _i h'_{X_i}(Y)     =  \varinjlim _i \operatorname {Hom} (X_i,Y)   </fr:tex>
+  which is a functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex>.
+  A functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> that is isomorphic to a functor of this type <fr:em>with <fr:tex>I</fr:tex> filtered</fr:em> is said to be <fr:em>pro-representable</fr:em>.
+  By the previous section, these are exactly the functors that are isomorphic to <fr:em>filtered inductive limits of representable functors</fr:em>.
+  Let <fr:tex>\mathcal {X}'=(X_j)_{j \in  J}</fr:tex> be another filtered projective system in <fr:tex>\mathcal {C}</fr:tex> (indexed by another filtered preordered set of indices <fr:tex>J</fr:tex>).
+  Then we can easily show that we have a canonical bijection
+  <fr:tex
+display="block">      \operatorname {Hom} (h_{ \mathcal {X}'},h_{ \mathcal {X}})     =  \varprojlim _j \varinjlim _i \operatorname {Hom} (X_i,X'_j)   </fr:tex>
+  (generalising <fr:ref
+addr="fga3.ii-a.1-proposition-1.1"
+href="fga3.ii-a.1-proposition-1.1.xml"
+taxon="Proposition"
+number="1.1"></fr:ref>).
+  This leads to introducing the <fr:em>category <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> of pro-objects of <fr:tex>\mathcal {C}</fr:tex></fr:em>, whose objects are projective systems of objects of <fr:tex>\mathcal {C}</fr:tex> (indexed by arbitrary filtered preordered sets of indices), and whose morphisms between objects <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> and <fr:tex>\mathcal {X}'=(X_j)_{j \in  J}</fr:tex> are given by
+  <fr:tex
+display="block">      \operatorname {Pro} \operatorname {Hom} ( \mathcal {X}, \mathcal {X}')     =  \varprojlim _j \varinjlim _i \operatorname {Hom} (X_i,X'_j),   </fr:tex>
+  with the composition of pro-homomorphisms being evident.
+  By the very construction itself, <fr:tex>\mathcal {X} \mapsto  h'_{ \mathcal {X}}</fr:tex> can be considered as a contravariant functor in <fr:tex>\mathcal {X}</fr:tex>, establishing an <fr:em>equivalence between the dual category of the category <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> of pro-objects of <fr:tex>\mathcal {C}</fr:tex> and the category of pro-representable covariant functors from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex></fr:em>.
+  
+  Of course, an object <fr:tex>X</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> canonically defines a pro-object, denoted again by <fr:tex>X</fr:tex>, so that <fr:em><fr:tex>\mathcal {C}</fr:tex> is equivalent to a full subcategory of <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex></fr:em>.
+  Then, if <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> is an arbitrary pro-object of <fr:tex>\mathcal {C}</fr:tex>, then (with the above identification) we have that
+  <fr:tex
+display="block">      \mathcal {X}     =  \varprojlim _i X_i   </fr:tex>
+  with the projective limit being <fr:em>taken in <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex></fr:em> (since <fr:tex>h_{ \mathcal {X}}= \varinjlim _i h_{X_i}</fr:tex>).
+</fr:p><fr:p>
+  We draw attention to the fact that, even if the projective limit of the <fr:tex>X_i</fr:tex> <fr:em>exists in <fr:tex>\mathcal {C}</fr:tex></fr:em>, it will generally <fr:em>not</fr:em> be isomorphic to the projective limit <fr:tex>\mathcal {X}</fr:tex> in <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex>, as is already evident in the case where <fr:tex>\mathcal {C}</fr:tex> is the category of sets.
+  We note that, by the definition itself, <fr:tex>\varprojlim {}_{ \mathcal {C}}X_i=L</fr:tex> is defined by the condition that the functor
+  <fr:tex
+display="block">      \varprojlim _i \operatorname {Hom} _{ \mathcal {C}}(Y,X_i)     =  \operatorname {Hom} _{ \operatorname {Pro} ( \mathcal {C})}(Y, \mathcal {X})   </fr:tex>
+  in <fr:tex>Y \in \mathcal {C}</fr:tex> and with values in <fr:tex>\mathtt {Set}</fr:tex> be representable via <fr:tex>\mathcal {L}</fr:tex>, i.e. that it be isomorphic to <fr:tex>\operatorname {Hom} _{ \mathcal {C}}(Y, \mathcal {L})</fr:tex>;
+  then <fr:em><fr:tex>\lim {}_{ \mathcal {C}}X_i</fr:tex> is already defined in terms of the <fr:em>pro-object</fr:em> <fr:tex>\mathcal {X}</fr:tex></fr:em>, and, in a precise way, depends functorially on the pro-object <fr:tex>\mathcal {X}</fr:tex> whenever it is defined;
+  there is therefore no problem with denoting it by <fr:tex>\lim {}_{ \mathcal {C}}( \mathcal {X})</fr:tex>.
+  If projective limits in <fr:tex>\mathcal {C}</fr:tex> always exist, then <fr:tex>\lim {}_{ \mathcal {C}}( \mathcal {X})</fr:tex> is a functor from <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> to <fr:tex>\mathcal {C}</fr:tex>, and there is a canonical homomorphism of functors <fr:tex>\lim _ \mathcal {C}( \mathcal {X}) \to \mathcal {X}</fr:tex>.
+  Since every (covariant, say, for simplicity) functor
+  <fr:tex
+display="block">     F \colon   \mathcal {C}  \to   \mathcal {C}'   </fr:tex>
+  can be extended in an obvious way to a functor
+  <fr:tex
+display="block">      \operatorname {Pro} (F) \colon   \operatorname {Pro} ( \mathcal {C})  \to   \operatorname {Pro} ( \mathcal {C}'),   </fr:tex>
+  it follows that, if projective limits always exist in <fr:tex>\mathcal {C}'</fr:tex>, then <fr:tex>F</fr:tex> also canonically defines a composite functor
+  <fr:tex
+display="block">      \overline {F}     =  \varprojlim {}_{ \mathcal {C}'} \colon   \operatorname {Pro} ( \mathcal {C})  \to   \mathcal {C}'   </fr:tex>
+  sending <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> to <fr:tex>\varprojlim {}_{ \mathcal {C}'}F(X_i)</fr:tex>.
+</fr:p><fr:p>
+  A pro-object <fr:tex>\mathcal {X}</fr:tex> is said to be a <fr:em>strict pro-object</fr:em> if it is isomorphic to a pro-object <fr:tex>(X_i)_{i \in  I}</fr:tex>, where the transition morphisms <fr:tex>X_i \to  X_j</fr:tex> are <fr:em>epimorphisms</fr:em>;
+  a functor defined by such an object is said to be <fr:em>strictly pro-representable</fr:em>.
+  We can thus further demand that <fr:tex>I</fr:tex> be a filtered <fr:em>ordered</fr:em> set, and that every epimorphism <fr:tex>X_i \to  X'</fr:tex> be equivalent to an epimorphism <fr:tex>X_i \to  X_j</fr:tex> for some suitable <fr:tex>j \in  I</fr:tex> (uniquely determined by this condition).
+  
+  Under these conditions, the projective system <fr:tex>(X_i)_{i \in  I}</fr:tex> is determined <fr:em>up to unique isomorphism</fr:em> (in the usual sense of isomorphisms of projective systems).
+  It thus follows that <fr:em>the projective limit of a projective system <fr:tex>\mathcal {X}^{( \alpha )}</fr:tex> of strict pro-objects always exists in <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex></fr:em>, and that, with the above notation of <fr:tex>F</fr:tex> and <fr:tex>\overline {F}</fr:tex>, we have that
+  <fr:tex
+display="block">      \overline {F} \varprojlim _ \alpha \mathcal {X}^{( \alpha )}     =  \varprojlim _ \alpha {}_{ \mathcal {C}'}F(X^{( \alpha )}).   </fr:tex>
+  In particular, if every pro-object of <fr:tex>\mathcal {C}</fr:tex> is strict (cf. the previous section), then the extended functor <fr:tex>\overline {F}</fr:tex> commutes with projective limits.
+</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>2257</fr:anchor><fr:addr>fga3.ii-a.3</fr:addr><fr:route>fga3.ii-a.3.xml</fr:route><fr:title>Characterisation of pro-representable functors</fr:title><fr:number>A.3</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal {C}</fr:tex> and <fr:tex>\mathcal {C}'</fr:tex> be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, preordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" <fr:tex>e</fr:tex> such that <fr:tex>\operatorname {Hom} (X,e)</fr:tex> consists of only on element for all <fr:tex>X</fr:tex>).
+  Let <fr:tex>F</fr:tex> be a covariant functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathcal {C}'</fr:tex>.
+  Then the following conditions are equivalent:
+  <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
+
+  <fr:ol><fr:li><fr:tex>F</fr:tex> commutes with finite projective limits;
+    </fr:li>
+
+    <fr:li><fr:tex>F</fr:tex> commutes with finite products and with finite fibred products;
+    </fr:li>
+
+    <fr:li><fr:tex>F</fr:tex> commutes with finite products, and, for every exact diagram
+      <fr:tex
+display="block">         X \to  X' \rightrightarrows  X''       </fr:tex>
+      in <fr:tex>\mathcal {C}</fr:tex> (cf. <fr:link
+href="fga3.i-a.2-definition-2.1.xml"
+type="local"
+addr="fga3.i-a.2-definition-2.1">FGA 3.I, A, Definition 2.1</fr:link>), the image of the diagram under <fr:tex>F</fr:tex>
+      <fr:tex
+display="block">         F(X) \to  F(X') \rightrightarrows  F(X'')       </fr:tex>
+      is exact.
+    </fr:li></fr:ol>
+
+  We then say that <fr:tex>F</fr:tex> is <fr:em>left exact</fr:em>.
+</fr:p><fr:p>
+  In what follows, we assume that finite projective limits always exist in <fr:tex>\mathcal {C}</fr:tex>.
+  It is then immediate from the definitions that a representable functor is left exact, and, by taking the limit, that <fr:em>a pro-representable functor is left exact</fr:em>.
+</fr:p><fr:p>
+  To obtain a converse, let
+  <fr:tex
+display="block">     F \colon   \mathcal {C}  \to   \mathtt {Set}    </fr:tex>
+  be a covariant functor, and let <fr:tex>X \in \mathcal {C}</fr:tex> and <fr:tex>\xi \in  F(X)</fr:tex>.
+  
+  We say that <fr:tex>\xi</fr:tex> (or the pair <fr:tex>(X, \xi )</fr:tex>) is <fr:em>minimal</fr:em> if, for all <fr:tex>X' \in \mathcal {C}</fr:tex> and all <fr:tex>\xi ' \in  F(X')</fr:tex>, and for every strict monomorphism (cf. <fr:link
+href="fga3.i-a.2.xml"
+type="local"
+addr="fga3.i-a.2">FGA 3.I, §A.2</fr:link>) <fr:tex>u \colon  X' \to  X</fr:tex> such that <fr:tex>\xi =F(u)( \xi ')</fr:tex>, <fr:tex>u</fr:tex> is an isomorphism.
+  We also say that a pair <fr:tex>(X, \xi )</fr:tex> <fr:em>dominates</fr:em> <fr:tex>(X'', \xi '')</fr:tex> (where <fr:tex>\xi \in  F(X)</fr:tex> and <fr:tex>\xi '' \in  F(X'')</fr:tex>) if there exists a morphism <fr:tex>v \colon  X \to  X''</fr:tex> such that <fr:tex>\xi ''=F(v)( \xi )</fr:tex>;
+  <fr:em>if <fr:tex>\xi</fr:tex> is minimal, and if <fr:tex>F</fr:tex> is left exact, then this morphism <fr:tex>v</fr:tex> is unique</fr:em>;
+  <fr:em>if <fr:tex>\xi ''</fr:tex> is minimal, then <fr:tex>v</fr:tex> is surjective</fr:em>.
+  From this we easily deduce the following proposition:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1368</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.3-proposition-3.1</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For <fr:tex>F</fr:tex> to be strictly pro-representable, it is necessary and sufficient that it satisfy the following two conditions:
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
+
+    <fr:ol><fr:li><fr:tex>F</fr:tex> is left exact; and
+      </fr:li>
+      <fr:li>
+        every pair <fr:tex>(X, \xi )</fr:tex>, with <fr:tex>\xi \in  F(X)</fr:tex>, is dominated by some <fr:em>minimal</fr:em> pair.
+      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
+  This second condition is trivial if every object of <fr:tex>\mathcal {C}</fr:tex> is Artinian (by taking a sub-object <fr:tex>X'</fr:tex> of <fr:tex>X</fr:tex> that is minimal amongst those for which there exists some <fr:tex>\xi ' \in  F(X')</fr:tex> such that <fr:tex>\xi</fr:tex> is the image of <fr:tex>\xi '</fr:tex>).
+  Whence:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1369</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.ii-a.3-proposition-3.1-corollary</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1-corollary.xml</fr:route><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathcal {C}</fr:tex> be a category whose objects are all Artinian and in which all finite projective limits exist.
+    Then the pro-representable functors from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> are exactly the left exact functors, and they are in fact strictly pro-representable.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  This last fact also implies that <fr:em>every pro-object of <fr:tex>\mathcal {C}</fr:tex> is then strict</fr:em>.
+</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>2258</fr:anchor><fr:addr>fga3.ii-a.4</fr:addr><fr:route>fga3.ii-a.4.xml</fr:route><fr:title>Example: groups of Galois type, pro-algebraic groups</fr:title><fr:number>A.4</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  If <fr:tex>\mathcal {C}</fr:tex> is the category of ordinary finite groups, then <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> is equivalent to the category of totally disconnected compact topological groups.
+   (<fr:em>[Trans.] Here the word "Hausdorff" is implicit.</fr:em>)
+  It is groups of this type, and their generalisations, obtained by replacing ordinary finite groups with schemes of finite groups over a given base prescheme (for example, finite algebraic groups over a field <fr:tex>k</fr:tex>), that serve as fundamental groups, homotopy groups, and absolute and relative homology groups for preschemes.
+  In all these examples, the corollary to <fr:ref
+addr="fga3.ii-a.3-proposition-3.1"
+href="fga3.ii-a.3-proposition-3.1.xml"
+taxon="Proposition"
+number="3.1"></fr:ref> applies, and it is indeed by the associated functor that the <fr:tex>\pi _1</fr:tex> should be defined [<fr:ref
+addr="fga2"
+href="fga2.xml"
+taxon="FGA"
+number="2"></fr:ref>].
+  It is the same if we start with the category of algebraic or quasi-algebraic groups over a field (or, more generally, over a Noetherian prescheme): we recover the "<fr:em>pro-algebraic groups</fr:em>" of Serre <fr:link
+href="Ser1958.xml"
+type="local"
+addr="Ser1958">[Ser1958]</fr:link>.
+</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>2259</fr:anchor><fr:addr>fga3.ii-a.5</fr:addr><fr:route>fga3.ii-a.5.xml</fr:route><fr:title>Example: "formal varieties"</fr:title><fr:number>A.5</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\Lambda</fr:tex> be a Noetherian ring, <fr:tex>\mathcal {C}</fr:tex> the category of <fr:tex>\Lambda</fr:tex>-algebras that are Artinian modules of finite type over <fr:tex>\Lambda</fr:tex> (or, more concisely, <fr:em>Artinian <fr:tex>\Lambda</fr:tex>-algebras</fr:em>).
+  
+  The conditions of the corollary to
+  <fr:ref
+addr="fga3.ii-a.3-proposition-3.1"
+href="fga3.ii-a.3-proposition-3.1.xml"
+taxon="Proposition"
+number="3.1"></fr:ref> are then satisfied.
+  Here, the category <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> is equivalent to the category of <fr:em>topological algebras</fr:em> <fr:tex>O</fr:tex> over <fr:tex>\Lambda</fr:tex> that are isomorphic to topological projective limits
+  <fr:tex
+display="block">     O     =  \varprojlim  O_i   </fr:tex>
+  of algebras <fr:tex>O_i \in \mathcal {C}</fr:tex>, i.e. those whose topology is <fr:em>linear</fr:em>, <fr:em>separated</fr:em>, and <fr:em>complete</fr:em>, and such that, for every open ideal <fr:tex>\mathfrak {J}_i</fr:tex> of <fr:tex>O</fr:tex>, the algebra <fr:tex>O/ \mathfrak {J}_i</fr:tex> is an <fr:em>Artinian</fr:em> algebra over <fr:tex>\Lambda</fr:tex>.
+  The functor <fr:tex>\mathcal {C} \to \mathtt {Set}</fr:tex> associated to such an algebra is exactly
+  <fr:tex
+display="block">      \begin {aligned}       F(A)       &amp;= h'_{O}(A)      \\ &amp;=  \{ \text {continuous homomorphisms of topological } \Lambda \text {-algebras }O \to  A \}       \\ &amp;=  \varinjlim _i  \operatorname {Hom} _{ \Lambda \text {-algebras}}(O_i,A).      \end {aligned}   </fr:tex>
+  Note also that the category <fr:tex>\mathcal {C}</fr:tex> is essentially the product of analogous categories, corresponding to the local rings that are the completions of the <fr:tex>\Lambda _{ \mathfrak {m}}</fr:tex> for the maximal ideals <fr:tex>\mathfrak {m}</fr:tex> of <fr:tex>\Lambda</fr:tex>;
+  we can thus, if so desired, restrict to the case where <fr:tex>A</fr:tex> is such a complete local ring.
+  In any case, <fr:tex>O</fr:tex> decomposes canonically as the topological product of its <fr:em>local components</fr:em>, which correspond to the "points" of the <fr:em>formal scheme</fr:em> [<fr:ref
+addr="fga2"
+href="fga2.xml"
+taxon="FGA"
+number="2"></fr:ref>] defined by <fr:tex>O</fr:tex>.
+  Such a point is defined by an object <fr:tex>\xi</fr:tex> of some <fr:tex>F(K)</fr:tex>, where <fr:tex>K \in \mathcal {C}</fr:tex> is a <fr:em>field</fr:em> (for example, the residue field of the local component in question), and where two pairs <fr:tex>( \xi ,K)</fr:tex> and <fr:tex>( \xi ',K')</fr:tex> define the same point if and only if they are both dominated by the same <fr:tex>( \xi '',K'')</fr:tex>, or if they both dominate the same <fr:tex>( \xi ''',K''')</fr:tex>.
+  (If the <fr:tex>{ \Lambda }/ \mathfrak {m}</fr:tex> are algebraically closed, then it suffices to take the set given by the sum of the <fr:tex>F({ \Lambda }/ \mathfrak {m})</fr:tex>).
+</fr:p><fr:p>
+  It is important to give conditions that ensure that the local component <fr:tex>O_ \xi</fr:tex> of <fr:tex>O</fr:tex> corresponding to some <fr:tex>\xi \in  F(K)</fr:tex> be a <fr:em>Noetherian</fr:em> ring.
+  If <fr:tex>\Lambda</fr:tex> is a complete local ring (Noetherian, we recall), then it is equivalent to say that <fr:tex>O_ \xi</fr:tex> is isomorphic to a <fr:em>quotient ring of a formal series ring <fr:tex>\Lambda [{[t_1, \ldots ,t_n]}]</fr:tex></fr:em>.
+  To give such a criterion, we introduce (for every ring <fr:tex>A</fr:tex>) the <fr:tex>A</fr:tex>-algebra <fr:tex>I_A</fr:tex> of "dual numbers" of <fr:tex>A</fr:tex>, defined by
+  <fr:tex
+display="block">     I_A     = A[t]/t^2A[t].   </fr:tex>
+  Let <fr:tex>\varepsilon \colon  I_A \to  A</fr:tex> be the augmentation homomorphism, which defines (if <fr:tex>A \in \mathcal {C}</fr:tex>) a map
+  <fr:tex
+display="block">     F( \varepsilon ) \colon  F(I_A)  \to  F(A).   </fr:tex>
+  
+  Using the fact that <fr:tex>F</fr:tex> is left exact, we intrinsically define the structure of an <fr:tex>A</fr:tex>-module on the subset
+  <fr:tex
+display="block">     F(I_A, \xi )     = F( \xi )^{-1}( \xi )  \subset  F(I_A)   </fr:tex>
+  consisting of the <fr:tex>\xi ' \in  F(I_A)</fr:tex> that are "reducible along <fr:tex>\xi</fr:tex>";
+  using the explicit form of <fr:tex>F</fr:tex> in terms of <fr:tex>O</fr:tex>, we find that this <fr:tex>K</fr:tex>-module can be identified with <fr:tex>\operatorname {Hom} _ \Lambda ( \mathfrak {m}_{ \xi }/ \mathfrak {m}_ \xi ^2,A)</fr:tex>, where <fr:tex>m_ \xi</fr:tex> is the kernel of the homomorphism <fr:tex>\xi \colon  O \to  A</fr:tex>, i.e. if <fr:tex>A</fr:tex> is a field, then the maximal ideal of the local component <fr:tex>O_ \xi</fr:tex> of <fr:tex>O</fr:tex>.
+  From this, we immediately deduce the following proposition:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>441</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.5-proposition-5.1</fr:addr><fr:route>fga3.ii-a.5-proposition-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.ii-a.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\xi \in  F(K)</fr:tex>, where <fr:tex>K \in \mathcal {C}</fr:tex> is a field.
+    For the corresponding local component <fr:tex>O_ \xi</fr:tex> of <fr:tex>O</fr:tex> to be a <fr:em>Noetherian</fr:em> ring, it is necessary and sufficient that the set <fr:tex>F(I_K, \xi )</fr:tex> of elements of <fr:tex>F(I_K)</fr:tex> that are reducible along <fr:tex>\xi</fr:tex> be a vector space of <fr:em>finite dimension</fr:em> over <fr:tex>K</fr:tex>.
+    Under these conditions, we have a canonical isomorphism
+    <fr:tex
+display="block">       F(I_K, \xi )       =  \operatorname {Hom} ( \mathfrak {m}_{ \xi }/ \mathfrak {m}_ \xi ^2+ \mathfrak {n}_ \xi \mathscr { O } _ \xi , K)     </fr:tex>
+    (where <fr:tex>\mathfrak {n}_ \xi</fr:tex> is the maximal ideal of <fr:tex>\Lambda</fr:tex> given by the kernel of the homomorphism <fr:tex>\Lambda \to  K</fr:tex>), and so, in particular, the dimension of the <fr:tex>K</fr:tex>-vector space <fr:tex>F(I_K, \xi )</fr:tex> is equal to the dimension of the vector space <fr:tex>\mathfrak {m}_{ \xi }/ \mathfrak {m}_ \xi ^2</fr:tex> over the field <fr:tex>O_{ \xi }/ \mathfrak {m}_ \xi =K( \xi )</fr:tex>.
+  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    The formula given above is only correct when <fr:tex>\Lambda</fr:tex> is a field; in the general case, we must replace <fr:tex>\mathfrak {m}_{ \xi }/ \mathfrak {m}_ \xi ^2</fr:tex> with the quotient of this space by the image of <fr:tex>\mathfrak {n}_{ \xi }/ \mathfrak {n}_ \xi ^2</fr:tex>, where <fr:tex>\mathfrak {n}</fr:tex> is the maximal ideal of <fr:tex>\Lambda</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Suppose that <fr:tex>O_ \xi</fr:tex> is Noetherian, and suppose, for notational simplicity, that <fr:tex>\Lambda</fr:tex> is complete and local, and that <fr:tex>O=O_ \xi</fr:tex>.
+  (<fr:em>[Comp.]</fr:em> The following definition is correct only when the residue extension <fr:tex>k'/k</fr:tex> is <fr:em>separable</fr:em>; for the general case, see [<fr:link
+href="Gro1960b.xml"
+type="local"
+addr="Gro1960b">Gro1960b</fr:link>, III, 1.1].)
+  We say that <fr:em><fr:tex>O</fr:tex> is simple over <fr:tex>\Lambda</fr:tex></fr:em> if <fr:tex>O</fr:tex> is a finite and étale algebra over the completion algebra of the localisation of <fr:tex>\Lambda [t_1, \ldots ,t_n]</fr:tex> at one of its maximal ideals that induces the maximal ideal of <fr:tex>\Lambda</fr:tex>;
+  if the residue extension of <fr:tex>O</fr:tex> over <fr:tex>\Lambda</fr:tex> is trivial (for example, if the residue field of <fr:tex>\Lambda</fr:tex> is algebraically closed), then this is equivalent to saying that <fr:tex>O</fr:tex> itself is isomorphic to such a formal series algebra.
+  Finally, if we no longer necessarily suppose that <fr:tex>O</fr:tex> is Noetherian, then we again say that <fr:em><fr:tex>O</fr:tex> is simple over <fr:tex>\Lambda</fr:tex></fr:em> if <fr:tex>O</fr:tex> is isomorphic to a topological projective limit of quotient <fr:tex>\Lambda</fr:tex>-algebras that are Noetherian and <fr:tex>\Lambda</fr:tex>-simple in the above sense.
+  We can immediately generalise to the case where <fr:tex>\Lambda</fr:tex> and <fr:tex>O</fr:tex> are no longer assumed to be local.
+  With this, we have the following proposition:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>442</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.5-proposition-5.2</fr:addr><fr:route>fga3.ii-a.5-proposition-5.2.xml</fr:route><fr:number>5.2</fr:number><fr:parent>fga3.ii-a.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For <fr:tex>O</fr:tex> to be simple over <fr:tex>\Lambda</fr:tex>, it is necessary and sufficient that the associated functor <fr:tex>F</fr:tex> send epimorphisms to epimorphisms.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  If this is the case, then this implies that, for every <fr:em>surjective</fr:em> homomorphism <fr:tex>A \to  A'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex>, the morphism <fr:tex>F(A) \to  F(A')</fr:tex> is also <fr:em>surjective</fr:em>.
+  Of course, it suffices to verify this condition in the case where <fr:tex>A</fr:tex> is <fr:em>local</fr:em>, and (proceeding step-by-step) where the ideal of <fr:tex>A</fr:tex> given by the kernel of <fr:tex>A \to  A'</fr:tex> is annihilated by the maximal ideal of <fr:tex>A</fr:tex>.
+  This leads, in practice, to verifying that a certain obstruction, linked to <fr:em>infinitesimal</fr:em> invariants of the situation that give us a functor <fr:tex>F</fr:tex>, is null;
+  this is a problem of a <fr:em>cohomological</fr:em> nature.
+</fr:p><fr:p>
+  To finish, we say some words, in the above context, about <fr:em>rings of definition</fr:em>.
+  Let <fr:tex>F</fr:tex> still be a functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex>, assumed to be pro-representable via a topological <fr:tex>\Lambda</fr:tex>-algebra <fr:tex>O</fr:tex>.
+  Then, for every <fr:tex>A \in \mathcal {C}</fr:tex> and every <fr:tex>\xi \in  F(A)</fr:tex>, there exists a <fr:em>smallest</fr:em> subring <fr:tex>A'</fr:tex> of <fr:tex>A</fr:tex> such that <fr:tex>\xi</fr:tex> is the image of an element <fr:tex>\xi '</fr:tex> of <fr:tex>F(A')</fr:tex> (which is then uniquely determined):
+  indeed, it suffices to think of <fr:tex>\xi</fr:tex> as a homomorphism from <fr:tex>O</fr:tex> to <fr:tex>A</fr:tex>, and to take <fr:tex>A'</fr:tex> to be the image of <fr:tex>O</fr:tex> under this <fr:tex>\xi</fr:tex>.
+  We then say that <fr:tex>A'</fr:tex> is the <fr:em>ring of definition of the object <fr:tex>\xi \in  F(A)</fr:tex></fr:em>.
+  If <fr:tex>u \colon  A \to  B</fr:tex> is an algebra homomorphism, and if <fr:tex>\eta =F(u)( \xi )</fr:tex>, then the ring of definition of <fr:tex>\eta</fr:tex> is the image under <fr:tex>u</fr:tex> of the ring of definition of <fr:tex>\xi</fr:tex>.
+  If we start with a functor <fr:tex>F</fr:tex> from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex>, then the existence of rings of definition, along with their properties that we have just discussed, is more or less <fr:em>equivalent</fr:em> to the condition that <fr:tex>F</fr:tex> be pro-representable;
+  that is, they are usually far from being trivial.
+</fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

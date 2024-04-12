@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>886</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.5</fr:addr><fr:route>fga1-equation-6.5.xml</fr:route><fr:number>6.5</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Ext} _{ \mathcal {O} _X}^{n-p}(X; \mathscr { F } , \omega _X^n)        \to   \operatorname {H} ^p(X, \mathscr { F } )'     \tag{6.5}     </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>885</fr:anchor><fr:addr>fga1-6</fr:addr><fr:route>fga1-6.xml</fr:route><fr:title><fr:link
+href="fga1.xml"
+type="local"
+addr="fga1">Duality theorems for coherent algebraic sheaves</fr:link> › The duality theorem for singular varieties</fr:title><fr:number>6</fr:number><fr:parent>fga1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>X</fr:tex> be a closed subset of dimension <fr:tex>n</fr:tex> of the projective space <fr:tex>\mathbf {P}</fr:tex> of dimension <fr:tex>r</fr:tex>.
+  <fr:ref
+addr="fga1-equation-5.6"
+href="fga1-equation-5.6.xml"
+taxon="Equation"
+number="5.6"></fr:ref> can then be written as
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>651</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.1</fr:addr><fr:route>fga1-equation-6.1.xml</fr:route><fr:number>6.1</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {H} ^n(X, \mathscr { F } )'        \simeq   \operatorname {Hom} _{ \mathcal {O} _X}(X; \mathscr { F } , \omega _X^n)       =  \operatorname {Ext} _{ \mathcal {O} _X}^0(X; \mathscr { F } , \omega _X^n)     \tag{6.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  where we set
+   (<fr:em>[Trans.] This equation is labelled (6.2) in the original, but this seems to be a typo, since a later equation shares the same number, and any references to (6.2) seem to indeed point to the later equation instead of this one.</fr:em>)
+  <fr:tex
+display="block">      \omega _X^n     = E^0( \mathcal {O} _X)     =  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _ \mathbf {P}}^{r-n}( \mathcal {O} _X, \Omega _ \mathbf {P}^r).   </fr:tex>
+  As mentioned in <fr:ref
+addr="fga1-proposition-5"
+href="fga1-proposition-5.xml"
+taxon="Proposition"
+number="5"></fr:ref>, the sheaf thus defined does not depend on the chosen immersion of <fr:tex>X</fr:tex> into the non-singular variety <fr:tex>\mathbf {P}</fr:tex>.
+  Taking <fr:tex>\mathscr { F } = \omega _X^n</fr:tex> in <fr:ref
+addr="fga1-equation-6.1"
+href="fga1-equation-6.1.xml"
+taxon="Equation"
+number="6.1"></fr:ref>, we find that
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>652</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.2</fr:addr><fr:route>fga1-equation-6.2.xml</fr:route><fr:number>6.2</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {H} ^n(X, \omega _X^n)'        \simeq   \operatorname {Hom} _{ \mathcal {O} _X}(X; \omega _X^n, \omega _X^n)     \tag{6.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  whence the existence of a distinguished element in <fr:tex>\operatorname {H} ^n(X, \omega _X^n)</fr:tex>, corresponding to the identity morphism from <fr:tex>\omega _X^n</fr:tex> to itself:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>653</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.3</fr:addr><fr:route>fga1-equation-6.3.xml</fr:route><fr:number>6.3</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \eta \colon   \operatorname {H} ^n(X, \Omega _X^n)  \to  k.     \tag{6.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  
+  Then consider the pairings defined by the composition of the <fr:tex>\operatorname {Ext}</fr:tex>:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>654</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.4</fr:addr><fr:route>fga1-equation-6.4.xml</fr:route><fr:number>6.4</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {H} ^p(X, \mathscr { F } )  \times   \operatorname {Ext} _{ \mathcal {O} _X}^{n-p}(X; \mathscr { F } , \omega _X^n)        \to   \operatorname {H} ^n(X, \omega _X^n)     \tag{6.4}     </fr:tex></fr:mainmatter></fr:tree>
+
+  and compose them with the homomorphism <fr:tex>\eta</fr:tex> in <fr:ref
+addr="fga1-equation-6.3"
+href="fga1-equation-6.3.xml"
+taxon="Equation"
+number="6.3"></fr:ref>; we thus obtain functorial homomorphisms
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>655</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.5</fr:addr><fr:route>fga1-equation-6.5.xml</fr:route><fr:number>6.5</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Ext} _{ \mathcal {O} _X}^{n-p}(X; \mathscr { F } , \omega _X^n)        \to   \operatorname {H} ^p(X, \mathscr { F } )'     \tag{6.5}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which are compatible with the boundary maps (generalising <fr:ref
+addr="fga1-equation-5.2"
+href="fga1-equation-5.2.xml"
+taxon="Equation"
+number="5.2"></fr:ref>).
+  We can prove that, for <fr:tex>p=n</fr:tex>, we thus obtain the isomorphism in <fr:ref
+addr="fga1-equation-6.1"
+href="fga1-equation-6.1.xml"
+taxon="Equation"
+number="6.1"></fr:ref>.
+  With this, we have:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>657</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga1-theorem-3bis</fr:addr><fr:route>fga1-theorem-3bis.xml</fr:route><fr:number>3 bis</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For any given integer <fr:tex>k \geqslant0</fr:tex>, the four following conditions on <fr:tex>X</fr:tex> are equivalent:
+
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
+
+    <fr:ol><fr:li>
+        The functorial homomorphism in <fr:ref
+addr="fga1-equation-6.5"
+href="fga1-equation-6.5.xml"
+taxon="Equation"
+number="6.5"></fr:ref> is an isomorphism for <fr:tex>n-k \leqslant  p \leqslant  n</fr:tex>.
+      </fr:li>
+
+      <fr:li><fr:tex>\operatorname {H} ^p(X, \mathcal {O} _X(-m)) = 0</fr:tex> for <fr:tex>n-k \leqslant  p&lt;n</fr:tex> and large enough <fr:tex>m</fr:tex>.
+      </fr:li>
+
+      <fr:li>
+        The functor <fr:tex>\operatorname {H} ^p(X, \mathscr { F } )</fr:tex> on the category of coherent algebraic sheaves on <fr:tex>X</fr:tex> is coeffaceable for <fr:tex>n-k \leqslant  p&lt;n</fr:tex>.
+      </fr:li>
+
+      <fr:li><fr:tex>E^i( \mathcal {O} _X) =  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _ \mathbf {P}}^{r-n+i}( \mathcal {O} _X, \omega _ \mathbf {P}^r) = 0</fr:tex> for <fr:tex>0&lt;i \leqslant  k</fr:tex>.
+      </fr:li></fr:ol></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>656</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-theorem-3bis</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      (i)<fr:tex>\implies</fr:tex>(ii) by <fr:ref
+addr="fga1-lemma-4"
+href="fga1-lemma-4.xml"
+taxon="Lemma"
+number="4"></fr:ref>;
+      (ii)<fr:tex>\implies</fr:tex>(iii) by <fr:ref
+addr="fga1-lemma-3"
+href="fga1-lemma-3.xml"
+taxon="Lemma"
+number="3"></fr:ref>;
+      (iii)<fr:tex>\implies</fr:tex>(i) by a well-known standard argument, taking into account the fact that the two sides of <fr:ref
+addr="fga1-equation-6.5"
+href="fga1-equation-6.5.xml"
+taxon="Equation"
+number="6.5"></fr:ref> are then coeffaceable functors for <fr:tex>n-k \leqslant  p&lt;n</fr:tex> (the first being so by <fr:ref
+addr="fga1-lemma-4"
+href="fga1-lemma-4.xml"
+taxon="Lemma"
+number="4"></fr:ref>);
+      finally, (ii)<fr:tex>\iff</fr:tex>(iv) follows from <fr:link
+href="fga1-proposition-6-corollary.xml"
+type="local"
+addr="fga1-proposition-6-corollary">the corollary to Proposition 6</fr:link>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>661</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga1-proposition-6</fr:addr><fr:route>fga1-proposition-6.xml</fr:route><fr:number>6</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathscr { F }</fr:tex> be a coherent algebraic sheaf on <fr:tex>X</fr:tex>, and let <fr:tex>i</fr:tex> be an integer.
+    Then, for large enough <fr:tex>m</fr:tex>, we have an isomorphism
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>658</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.6</fr:addr><fr:route>fga1-equation-6.6.xml</fr:route><fr:number>6.6</fr:number><fr:parent>fga1-proposition-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">          \operatorname {H} ^i(X, \mathscr { F } (-m))'  \simeq   \operatorname {H} ^0(X,E^{n-i}( \mathscr { F } )(m))       \tag{6.6}       </fr:tex></fr:mainmatter></fr:tree>
+
+    where we set
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>659</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.7</fr:addr><fr:route>fga1-equation-6.7.xml</fr:route><fr:number>6.7</fr:number><fr:parent>fga1-proposition-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">         E^j( \mathscr { F } ) =  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _ \mathbf {P}}^{r-n+j}( \mathscr { F } , \Omega _ \mathbf {P}^r)       \tag{6.7}       </fr:tex></fr:mainmatter></fr:tree>
+
+    (compare with <fr:ref
+addr="fga1-proposition-5"
+href="fga1-proposition-5.xml"
+taxon="Proposition"
+number="5"></fr:ref> in <fr:ref
+addr="fga1-3"
+href="fga1-3.xml"
+number="3"></fr:ref>).
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>660</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-proposition-6</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      Indeed, by the duality theorem for <fr:tex>\mathbf {P}</fr:tex>, the left-hand side of <fr:ref
+addr="fga1-equation-6.6"
+href="fga1-equation-6.6.xml"
+taxon="Equation"
+number="6.6"></fr:ref> is isomorphic to <fr:tex>\operatorname {Ext} _{ \mathcal {O} _ \mathbf {P}}^{r-i}( \mathbf {P}; \mathscr { F } (-m), \Omega _ \mathbf {P}^r)</fr:tex>, and so <fr:ref
+addr="fga1-equation-6.6"
+href="fga1-equation-6.6.xml"
+taxon="Equation"
+number="6.6"></fr:ref> follows from <fr:ref
+addr="fga1-lemma-5"
+href="fga1-lemma-5.xml"
+taxon="Lemma"
+number="5"></fr:ref>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>662</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga1-proposition-6-corollary</fr:addr><fr:route>fga1-proposition-6-corollary.xml</fr:route><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For <fr:tex>\operatorname {H} ^i(X, \mathscr { F } (-m))</fr:tex> to be zero for large enough <fr:tex>m</fr:tex>, it is necessary and sufficient that <fr:tex>E^{n-i}( \mathscr { F } )</fr:tex> be zero.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Recall that the <fr:tex>E^j( \mathscr { F } )</fr:tex> do not depend on the projective immersion in question.
+  The condition of the corollary is purely local, and so, if it is satisfied for <fr:tex>\mathscr { F }</fr:tex>, then it is also satisfied for every sheaf that is locally isomorphic to some <fr:tex>\mathscr { F } ^n</fr:tex>.
+  In particular, if this condition is satisfied for <fr:tex>\mathcal {O} _X</fr:tex>, then it is satisfied for every locally-free coherent algebraic sheaf.
+  This is the case, for example, for all <fr:tex>i&lt;n</fr:tex> if <fr:tex>X</fr:tex> is non-singular;
+  and for <fr:tex>i=0</fr:tex> if no component of <fr:tex>X</fr:tex> consists of a single point;
+  and for <fr:tex>i=0,1</fr:tex> if <fr:tex>S</fr:tex> is normal and all its components are of dimension <fr:tex>&gt;1</fr:tex> (see <fr:link
+href="Ser1955.xml"
+type="local"
+addr="Ser1955">[Ser1955]</fr:link>).
+  For it to be satisfied for <fr:tex>i&lt;k</fr:tex>, it is necessary and sufficient, by definition, that the local rings <fr:tex>\mathcal {O} _x</fr:tex> (for <fr:tex>x \in  X</fr:tex>) be of "homological codimension <fr:tex>\geqslant  k</fr:tex>" (see <fr:link
+href="Ser1956a.xml"
+type="local"
+addr="Ser1956a">[Ser1956a]</fr:link> for details on this notion).
+  If <fr:tex>k=n</fr:tex>, then this implies, by <fr:link
+href="#fga1-theorem-3bis"
+type="external">Theorem 3 bis</fr:link>, that the duality theorem is true for <fr:tex>X</fr:tex>, i.e. that <fr:ref
+addr="fga1-equation-6.5"
+href="fga1-equation-6.5.xml"
+taxon="Equation"
+number="6.5"></fr:ref> is an isomorphism for all <fr:tex>p</fr:tex> and for all <fr:tex>\mathscr { F }</fr:tex>.
+  We can give many equivalent conditions on the local rings <fr:tex>\mathcal {O} _x</fr:tex> for this to be the case (Nagata);
+  for example, those that satisfy the Cohen-Macaulay equidimensionality theorem.
+  It is also the case, for example, if <fr:tex>X</fr:tex> is locally a "complete intersection" in a non-singular ambient variety.
+</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>883</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga1-theorem-3bis</fr:addr><fr:route>fga1-theorem-3bis.xml</fr:route><fr:number>3 bis</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For any given integer <fr:tex>k \geqslant0</fr:tex>, the four following conditions on <fr:tex>X</fr:tex> are equivalent:
+
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
+
+    <fr:ol><fr:li>
+        The functorial homomorphism in <fr:ref
+addr="fga1-equation-6.5"
+href="fga1-equation-6.5.xml"
+taxon="Equation"
+number="6.5"></fr:ref> is an isomorphism for <fr:tex>n-k \leqslant  p \leqslant  n</fr:tex>.
+      </fr:li>
+
+      <fr:li><fr:tex>\operatorname {H} ^p(X, \mathcal {O} _X(-m)) = 0</fr:tex> for <fr:tex>n-k \leqslant  p&lt;n</fr:tex> and large enough <fr:tex>m</fr:tex>.
+      </fr:li>
+
+      <fr:li>
+        The functor <fr:tex>\operatorname {H} ^p(X, \mathscr { F } )</fr:tex> on the category of coherent algebraic sheaves on <fr:tex>X</fr:tex> is coeffaceable for <fr:tex>n-k \leqslant  p&lt;n</fr:tex>.
+      </fr:li>
+
+      <fr:li><fr:tex>E^i( \mathcal {O} _X) =  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _ \mathbf {P}}^{r-n+i}( \mathcal {O} _X, \omega _ \mathbf {P}^r) = 0</fr:tex> for <fr:tex>0&lt;i \leqslant  k</fr:tex>.
+      </fr:li></fr:ol></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>656</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-theorem-3bis</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      (i)<fr:tex>\implies</fr:tex>(ii) by <fr:ref
+addr="fga1-lemma-4"
+href="fga1-lemma-4.xml"
+taxon="Lemma"
+number="4"></fr:ref>;
+      (ii)<fr:tex>\implies</fr:tex>(iii) by <fr:ref
+addr="fga1-lemma-3"
+href="fga1-lemma-3.xml"
+taxon="Lemma"
+number="3"></fr:ref>;
+      (iii)<fr:tex>\implies</fr:tex>(i) by a well-known standard argument, taking into account the fact that the two sides of <fr:ref
+addr="fga1-equation-6.5"
+href="fga1-equation-6.5.xml"
+taxon="Equation"
+number="6.5"></fr:ref> are then coeffaceable functors for <fr:tex>n-k \leqslant  p&lt;n</fr:tex> (the first being so by <fr:ref
+addr="fga1-lemma-4"
+href="fga1-lemma-4.xml"
+taxon="Lemma"
+number="4"></fr:ref>);
+      finally, (ii)<fr:tex>\iff</fr:tex>(iv) follows from <fr:link
+href="fga1-proposition-6-corollary.xml"
+type="local"
+addr="fga1-proposition-6-corollary">the corollary to Proposition 6</fr:link>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>884</fr:anchor><fr:addr>fga1-6</fr:addr><fr:route>fga1-6.xml</fr:route><fr:title><fr:link
+href="fga1.xml"
+type="local"
+addr="fga1">Duality theorems for coherent algebraic sheaves</fr:link> › The duality theorem for singular varieties</fr:title><fr:number>6</fr:number><fr:parent>fga1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>X</fr:tex> be a closed subset of dimension <fr:tex>n</fr:tex> of the projective space <fr:tex>\mathbf {P}</fr:tex> of dimension <fr:tex>r</fr:tex>.
+  <fr:ref
+addr="fga1-equation-5.6"
+href="fga1-equation-5.6.xml"
+taxon="Equation"
+number="5.6"></fr:ref> can then be written as
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>651</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.1</fr:addr><fr:route>fga1-equation-6.1.xml</fr:route><fr:number>6.1</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {H} ^n(X, \mathscr { F } )'        \simeq   \operatorname {Hom} _{ \mathcal {O} _X}(X; \mathscr { F } , \omega _X^n)       =  \operatorname {Ext} _{ \mathcal {O} _X}^0(X; \mathscr { F } , \omega _X^n)     \tag{6.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  where we set
+   (<fr:em>[Trans.] This equation is labelled (6.2) in the original, but this seems to be a typo, since a later equation shares the same number, and any references to (6.2) seem to indeed point to the later equation instead of this one.</fr:em>)
+  <fr:tex
+display="block">      \omega _X^n     = E^0( \mathcal {O} _X)     =  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _ \mathbf {P}}^{r-n}( \mathcal {O} _X, \Omega _ \mathbf {P}^r).   </fr:tex>
+  As mentioned in <fr:ref
+addr="fga1-proposition-5"
+href="fga1-proposition-5.xml"
+taxon="Proposition"
+number="5"></fr:ref>, the sheaf thus defined does not depend on the chosen immersion of <fr:tex>X</fr:tex> into the non-singular variety <fr:tex>\mathbf {P}</fr:tex>.
+  Taking <fr:tex>\mathscr { F } = \omega _X^n</fr:tex> in <fr:ref
+addr="fga1-equation-6.1"
+href="fga1-equation-6.1.xml"
+taxon="Equation"
+number="6.1"></fr:ref>, we find that
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>652</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.2</fr:addr><fr:route>fga1-equation-6.2.xml</fr:route><fr:number>6.2</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {H} ^n(X, \omega _X^n)'        \simeq   \operatorname {Hom} _{ \mathcal {O} _X}(X; \omega _X^n, \omega _X^n)     \tag{6.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  whence the existence of a distinguished element in <fr:tex>\operatorname {H} ^n(X, \omega _X^n)</fr:tex>, corresponding to the identity morphism from <fr:tex>\omega _X^n</fr:tex> to itself:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>653</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.3</fr:addr><fr:route>fga1-equation-6.3.xml</fr:route><fr:number>6.3</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \eta \colon   \operatorname {H} ^n(X, \Omega _X^n)  \to  k.     \tag{6.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  
+  Then consider the pairings defined by the composition of the <fr:tex>\operatorname {Ext}</fr:tex>:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>654</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.4</fr:addr><fr:route>fga1-equation-6.4.xml</fr:route><fr:number>6.4</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {H} ^p(X, \mathscr { F } )  \times   \operatorname {Ext} _{ \mathcal {O} _X}^{n-p}(X; \mathscr { F } , \omega _X^n)        \to   \operatorname {H} ^n(X, \omega _X^n)     \tag{6.4}     </fr:tex></fr:mainmatter></fr:tree>
+
+  and compose them with the homomorphism <fr:tex>\eta</fr:tex> in <fr:ref
+addr="fga1-equation-6.3"
+href="fga1-equation-6.3.xml"
+taxon="Equation"
+number="6.3"></fr:ref>; we thus obtain functorial homomorphisms
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>655</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.5</fr:addr><fr:route>fga1-equation-6.5.xml</fr:route><fr:number>6.5</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {Ext} _{ \mathcal {O} _X}^{n-p}(X; \mathscr { F } , \omega _X^n)        \to   \operatorname {H} ^p(X, \mathscr { F } )'     \tag{6.5}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which are compatible with the boundary maps (generalising <fr:ref
+addr="fga1-equation-5.2"
+href="fga1-equation-5.2.xml"
+taxon="Equation"
+number="5.2"></fr:ref>).
+  We can prove that, for <fr:tex>p=n</fr:tex>, we thus obtain the isomorphism in <fr:ref
+addr="fga1-equation-6.1"
+href="fga1-equation-6.1.xml"
+taxon="Equation"
+number="6.1"></fr:ref>.
+  With this, we have:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>657</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga1-theorem-3bis</fr:addr><fr:route>fga1-theorem-3bis.xml</fr:route><fr:number>3 bis</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For any given integer <fr:tex>k \geqslant0</fr:tex>, the four following conditions on <fr:tex>X</fr:tex> are equivalent:
+
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
+
+    <fr:ol><fr:li>
+        The functorial homomorphism in <fr:ref
+addr="fga1-equation-6.5"
+href="fga1-equation-6.5.xml"
+taxon="Equation"
+number="6.5"></fr:ref> is an isomorphism for <fr:tex>n-k \leqslant  p \leqslant  n</fr:tex>.
+      </fr:li>
+
+      <fr:li><fr:tex>\operatorname {H} ^p(X, \mathcal {O} _X(-m)) = 0</fr:tex> for <fr:tex>n-k \leqslant  p&lt;n</fr:tex> and large enough <fr:tex>m</fr:tex>.
+      </fr:li>
+
+      <fr:li>
+        The functor <fr:tex>\operatorname {H} ^p(X, \mathscr { F } )</fr:tex> on the category of coherent algebraic sheaves on <fr:tex>X</fr:tex> is coeffaceable for <fr:tex>n-k \leqslant  p&lt;n</fr:tex>.
+      </fr:li>
+
+      <fr:li><fr:tex>E^i( \mathcal {O} _X) =  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _ \mathbf {P}}^{r-n+i}( \mathcal {O} _X, \omega _ \mathbf {P}^r) = 0</fr:tex> for <fr:tex>0&lt;i \leqslant  k</fr:tex>.
+      </fr:li></fr:ol></fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>656</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-theorem-3bis</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      (i)<fr:tex>\implies</fr:tex>(ii) by <fr:ref
+addr="fga1-lemma-4"
+href="fga1-lemma-4.xml"
+taxon="Lemma"
+number="4"></fr:ref>;
+      (ii)<fr:tex>\implies</fr:tex>(iii) by <fr:ref
+addr="fga1-lemma-3"
+href="fga1-lemma-3.xml"
+taxon="Lemma"
+number="3"></fr:ref>;
+      (iii)<fr:tex>\implies</fr:tex>(i) by a well-known standard argument, taking into account the fact that the two sides of <fr:ref
+addr="fga1-equation-6.5"
+href="fga1-equation-6.5.xml"
+taxon="Equation"
+number="6.5"></fr:ref> are then coeffaceable functors for <fr:tex>n-k \leqslant  p&lt;n</fr:tex> (the first being so by <fr:ref
+addr="fga1-lemma-4"
+href="fga1-lemma-4.xml"
+taxon="Lemma"
+number="4"></fr:ref>);
+      finally, (ii)<fr:tex>\iff</fr:tex>(iv) follows from <fr:link
+href="fga1-proposition-6-corollary.xml"
+type="local"
+addr="fga1-proposition-6-corollary">the corollary to Proposition 6</fr:link>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>661</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga1-proposition-6</fr:addr><fr:route>fga1-proposition-6.xml</fr:route><fr:number>6</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathscr { F }</fr:tex> be a coherent algebraic sheaf on <fr:tex>X</fr:tex>, and let <fr:tex>i</fr:tex> be an integer.
+    Then, for large enough <fr:tex>m</fr:tex>, we have an isomorphism
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>658</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.6</fr:addr><fr:route>fga1-equation-6.6.xml</fr:route><fr:number>6.6</fr:number><fr:parent>fga1-proposition-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">          \operatorname {H} ^i(X, \mathscr { F } (-m))'  \simeq   \operatorname {H} ^0(X,E^{n-i}( \mathscr { F } )(m))       \tag{6.6}       </fr:tex></fr:mainmatter></fr:tree>
+
+    where we set
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>659</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-6.7</fr:addr><fr:route>fga1-equation-6.7.xml</fr:route><fr:number>6.7</fr:number><fr:parent>fga1-proposition-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">         E^j( \mathscr { F } ) =  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _ \mathbf {P}}^{r-n+j}( \mathscr { F } , \Omega _ \mathbf {P}^r)       \tag{6.7}       </fr:tex></fr:mainmatter></fr:tree>
+
+    (compare with <fr:ref
+addr="fga1-proposition-5"
+href="fga1-proposition-5.xml"
+taxon="Proposition"
+number="5"></fr:ref> in <fr:ref
+addr="fga1-3"
+href="fga1-3.xml"
+number="3"></fr:ref>).
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>660</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-proposition-6</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      Indeed, by the duality theorem for <fr:tex>\mathbf {P}</fr:tex>, the left-hand side of <fr:ref
+addr="fga1-equation-6.6"
+href="fga1-equation-6.6.xml"
+taxon="Equation"
+number="6.6"></fr:ref> is isomorphic to <fr:tex>\operatorname {Ext} _{ \mathcal {O} _ \mathbf {P}}^{r-i}( \mathbf {P}; \mathscr { F } (-m), \Omega _ \mathbf {P}^r)</fr:tex>, and so <fr:ref
+addr="fga1-equation-6.6"
+href="fga1-equation-6.6.xml"
+taxon="Equation"
+number="6.6"></fr:ref> follows from <fr:ref
+addr="fga1-lemma-5"
+href="fga1-lemma-5.xml"
+taxon="Lemma"
+number="5"></fr:ref>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>662</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga1-proposition-6-corollary</fr:addr><fr:route>fga1-proposition-6-corollary.xml</fr:route><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For <fr:tex>\operatorname {H} ^i(X, \mathscr { F } (-m))</fr:tex> to be zero for large enough <fr:tex>m</fr:tex>, it is necessary and sufficient that <fr:tex>E^{n-i}( \mathscr { F } )</fr:tex> be zero.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Recall that the <fr:tex>E^j( \mathscr { F } )</fr:tex> do not depend on the projective immersion in question.
+  The condition of the corollary is purely local, and so, if it is satisfied for <fr:tex>\mathscr { F }</fr:tex>, then it is also satisfied for every sheaf that is locally isomorphic to some <fr:tex>\mathscr { F } ^n</fr:tex>.
+  In particular, if this condition is satisfied for <fr:tex>\mathcal {O} _X</fr:tex>, then it is satisfied for every locally-free coherent algebraic sheaf.
+  This is the case, for example, for all <fr:tex>i&lt;n</fr:tex> if <fr:tex>X</fr:tex> is non-singular;
+  and for <fr:tex>i=0</fr:tex> if no component of <fr:tex>X</fr:tex> consists of a single point;
+  and for <fr:tex>i=0,1</fr:tex> if <fr:tex>S</fr:tex> is normal and all its components are of dimension <fr:tex>&gt;1</fr:tex> (see <fr:link
+href="Ser1955.xml"
+type="local"
+addr="Ser1955">[Ser1955]</fr:link>).
+  For it to be satisfied for <fr:tex>i&lt;k</fr:tex>, it is necessary and sufficient, by definition, that the local rings <fr:tex>\mathcal {O} _x</fr:tex> (for <fr:tex>x \in  X</fr:tex>) be of "homological codimension <fr:tex>\geqslant  k</fr:tex>" (see <fr:link
+href="Ser1956a.xml"
+type="local"
+addr="Ser1956a">[Ser1956a]</fr:link> for details on this notion).
+  If <fr:tex>k=n</fr:tex>, then this implies, by <fr:link
+href="#fga1-theorem-3bis"
+type="external">Theorem 3 bis</fr:link>, that the duality theorem is true for <fr:tex>X</fr:tex>, i.e. that <fr:ref
+addr="fga1-equation-6.5"
+href="fga1-equation-6.5.xml"
+taxon="Equation"
+number="6.5"></fr:ref> is an isomorphism for all <fr:tex>p</fr:tex> and for all <fr:tex>\mathscr { F }</fr:tex>.
+  We can give many equivalent conditions on the local rings <fr:tex>\mathcal {O} _x</fr:tex> for this to be the case (Nagata);
+  for example, those that satisfy the Cohen-Macaulay equidimensionality theorem.
+  It is also the case, for example, if <fr:tex>X</fr:tex> is locally a "complete intersection" in a non-singular ambient variety.
+</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

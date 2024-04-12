@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>918</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.3</fr:addr><fr:route>fga1-equation-8.3.xml</fr:route><fr:number>8.3</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {gathered}         T_r^{s \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s)          \times  T_{r'}^{s' \bullet }( \mathscr { A } '_1, \ldots , \mathscr { A } '_{r'}; \mathscr { B } '_1, \ldots , \mathscr { B } '_{s'})        \\ \to  T_{r+r'}^{(s+s') \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r, \mathscr { A } '_1, \ldots , \mathscr { A } '_{r'}; \mathscr { B } _1, \ldots , \mathscr { B } _s, \mathscr { B } '_1, \ldots , \mathscr { B } '_{s'})        \end {gathered}     \tag{8.3}     </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>917</fr:anchor><fr:addr>fga1-8</fr:addr><fr:route>fga1-8.xml</fr:route><fr:title><fr:link
+href="fga1.xml"
+type="local"
+addr="fga1">Duality theorems for coherent algebraic sheaves</fr:link> › Generalisation of the duality theorem</fr:title><fr:number>8</fr:number><fr:parent>fga1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>X</fr:tex> be a non-singular algebraic variety such that every coherent algebraic sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex> is isomorphic to a locally-free coherent algebraic sheaf (which is the case if <fr:tex>X</fr:tex> is locally closed in some projective space).
+  Then every coherent algebraic sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex> admits a finite resolution <fr:tex>\mathscr { L }</fr:tex> by locally-free sheaves, and, for any two such resolutions, we can always find a third, along with homomorphisms, from it to the first two, that are compatible with the augmentations.
+  Similarly, if <fr:tex>\mathscr { L }</fr:tex> is a finite locally-free resolution of <fr:tex>\mathscr { F }</fr:tex>, and if we have a homomorphism <fr:tex>\mathscr { F } ' \to \mathscr { F }</fr:tex>, then there exists a finite locally-free resolution <fr:tex>\mathscr { L } '</fr:tex> of <fr:tex>\mathscr { F } '</fr:tex> along with a homomorphism <fr:tex>\mathscr { L } ' \to \mathscr { L }</fr:tex> that is compatible with <fr:tex>\mathscr { F } ' \to \mathscr { F }</fr:tex>, that we can even assume to be surjective if <fr:tex>\mathscr { F } ' \to \mathscr { F }</fr:tex> is surjective.
+  This allows us to define, given integers <fr:tex>r,s \geqslant0</fr:tex>, two cohomological multifunctors, with arguments <fr:tex>\mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s</fr:tex> in the category of coherent algebraic sheaves on <fr:tex>X</fr:tex>;
+  one takes values in the category of coherent algebraic sheaves on <fr:tex>X</fr:tex>, and the other in the category of modules over <fr:tex>\operatorname {H} ^0(X, \mathcal {O} _X)</fr:tex>.
+  
+  We define them by the formulas
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>675</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.1</fr:addr><fr:route>fga1-equation-8.1.xml</fr:route><fr:number>8.1</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {aligned}         &amp; \underline {T}_r^{s \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s)        \\ &amp;=  \operatorname {H} ^ \bullet ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \underline {L}( \mathscr { A } _1) \otimes \ldots \otimes \underline {L}( \mathscr { A } _r),  \underline {L}( \mathscr { B } _1) \otimes \ldots \otimes \underline {L}( \mathscr { B } _s))),        \\ &amp;T_r^{s \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s)        \\ &amp;=  \underline { \operatorname {R} }^ \bullet \Gamma ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \underline {L}( \mathscr { A } _1) \otimes \ldots \otimes \underline {L}( \mathscr { A } _r),  \underline {L}( \mathscr { B } _1) \otimes \ldots \otimes \underline {L}( \mathscr { B } _s)))        \end {aligned}     \tag{8.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  where <fr:tex>\underline {L}( \mathscr { F } )</fr:tex> denotes a finite locally-free resolution of the coherent algebraic sheaf <fr:tex>\mathscr { F }</fr:tex>, and <fr:tex>\underline { \operatorname {R} }^ \bullet \Gamma ( \mathscr { K } )</fr:tex> denotes the hypercohomology of the space <fr:tex>X</fr:tex> with respect to the complex of sheaves <fr:tex>\mathscr { K }</fr:tex>.
+  If <fr:tex>r</fr:tex> (resp. <fr:tex>s</fr:tex>) is zero, then we replace the tensor product of the <fr:tex>\underline {L}( \mathscr { A } _i)</fr:tex> (resp. of the <fr:tex>\underline {L}( \mathscr { B } _j)</fr:tex>) by <fr:tex>\mathcal {O} _X</fr:tex>.
+  In particular, <fr:tex>\underline {T}_0^0</fr:tex> and <fr:tex>T_0^0</fr:tex> are graded functors with no arguments:
+  <fr:tex>\underline {T}_0^0</fr:tex> is concentrated in degree <fr:tex>0</fr:tex>, where it is the sheaf <fr:tex>\mathcal {O} _X</fr:tex>;
+  and <fr:tex>T_0^0</fr:tex> is equal to <fr:tex>\operatorname {H} ^ \bullet (X, \mathcal {O} _X)</fr:tex>.
+  The fact that the right-hand sides of <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref> do not depend on the chosen resolutions is evident for <fr:tex>\underline {T}</fr:tex> (since the question is then local), and for <fr:tex>T</fr:tex> it follows from preceding general remarks, taking into account the spectral sequence for the hypercohomology of the complex of sheaves <fr:tex>\mathscr { K } = \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \underline {L}( \mathscr { A } _1) \otimes \ldots , \underline {L}( \mathscr { B } _1) \otimes \ldots )</fr:tex> that abuts to the hypercohomology of <fr:tex>X</fr:tex> with respect to <fr:tex>\mathscr { K }</fr:tex>, and whose initial page is <fr:tex>\operatorname {H} ^p(X, \operatorname {H} ^q( \mathscr { K } ))</fr:tex>, i.e.
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>676</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.2</fr:addr><fr:route>fga1-equation-8.2.xml</fr:route><fr:number>8.2</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       E_2^{p,q}       =  \operatorname {H} ^p(X,( \underline {T}_r^s)^{(q)}( \mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s)).     \tag{8.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  We then see that this spectral sequence itself does not depend on the chosen resolutions, and its abutment is the left-hand side of <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref>.
+  We can easily define the coboundary maps relative to miscellaneous arguments <fr:tex>\mathscr { A } _i, \mathscr { B } _j</fr:tex> by noting that every exact sequence <fr:tex>0 \to \mathscr { F } ' \to \mathscr { F } \to \mathscr { F } '' \to0</fr:tex> can be resolved by an exact sequence of finite locally-free complexes.
+</fr:p><fr:p>
+  We define, on the system of functors <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> (resp. <fr:tex>T_r^{s \bullet }</fr:tex>), operations that are analogous to those of tensor calculus, and whose definitions are immediate from the defining formulas in <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref>.
+  We thus have a <fr:em>composition</fr:em> (generalising that described in <fr:ref
+addr="fga1-2"
+href="fga1-2.xml"
+number="2"></fr:ref>):
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>677</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.3</fr:addr><fr:route>fga1-equation-8.3.xml</fr:route><fr:number>8.3</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {gathered}         T_r^{s \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s)          \times  T_{r'}^{s' \bullet }( \mathscr { A } '_1, \ldots , \mathscr { A } '_{r'}; \mathscr { B } '_1, \ldots , \mathscr { B } '_{s'})        \\ \to  T_{r+r'}^{(s+s') \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r, \mathscr { A } '_1, \ldots , \mathscr { A } '_{r'}; \mathscr { B } _1, \ldots , \mathscr { B } _s, \mathscr { B } '_1, \ldots , \mathscr { B } '_{s'})        \end {gathered}     \tag{8.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  that satisfies the evident properties of associativity, compatibility with the functorial homomorphisms and the coboundary homomorphisms, and spectral sequences.
+  Similarly, we have symmetry operations, whose explicit descriptions we leave to the reader.
+  
+  We further have a <fr:em>contraction</fr:em> operation every time one of the arguments <fr:tex>\mathscr { A } _i</fr:tex> is equal to one of the arguments <fr:tex>\mathscr { B } _j</fr:tex>:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>678</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.4</fr:addr><fr:route>fga1-equation-8.4.xml</fr:route><fr:number>8.4</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {gathered}         T_r^{s \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _{i-1}, \mathscr { C } , \mathscr { A } _{i+1}, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _{j-1}, \mathscr { C } , \mathscr { B } _{j+1}, \ldots , \mathscr { B } _s)        \\ \to  -T_{r-1}^{(s-1) \bullet }( \mathscr { A } _1, \ldots , \widehat { \mathscr { A } _i}, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \widehat { \mathscr { B } _j}, \ldots , \mathscr { B } _s).        \end {gathered}     \tag{8.4}     </fr:tex></fr:mainmatter></fr:tree>
+
+  Furthermore, if some argument <fr:tex>\mathscr { A } _i</fr:tex> is a locally-free sheaf, then we can suppress it by replacing one of the <fr:tex>\mathscr { A } _j</fr:tex> (for <fr:tex>j \neq  i</fr:tex>) by <fr:tex>\mathscr { A } _j \otimes \mathscr { A } _i</fr:tex>, or one of the <fr:tex>\mathscr { B } _k</fr:tex> by <fr:tex>\mathscr { B } _k \otimes \mathscr { A } '_i</fr:tex> (where <fr:tex>\mathscr { A } '_i= \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { A } _i, \mathcal {O} _X)</fr:tex>);
+  we have an analogous rule for the case where one of the arguments <fr:tex>\mathscr { B } _j</fr:tex> is locally free.
+  In particular, we can always suppress any argument that is equal to <fr:tex>\mathcal {O} _X</fr:tex>.
+  If all the arguments are locally free, except for at most one of the arguments <fr:tex>\mathscr { B } _i</fr:tex>, then the rule that we have just stated gives a functorial isomorphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>679</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.5</fr:addr><fr:route>fga1-equation-8.5.xml</fr:route><fr:number>8.5</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       T_r^{s \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s)       =  \operatorname {H} ^ \bullet (X, \mathscr { A } '_1 \otimes \ldots \otimes \mathscr { A } '_{r} \otimes \mathscr { B } _1 \otimes \mathscr { B } _s)     \tag{8.5}     </fr:tex></fr:mainmatter></fr:tree>
+
+  (since we can restrict to the case where <fr:tex>r=0</fr:tex> and <fr:tex>s=1</fr:tex>, and there it is immediate;
+  we can also directly use the spectral sequence whose initial term is <fr:ref
+addr="fga1-equation-8.2"
+href="fga1-equation-8.2.xml"
+taxon="Equation"
+number="8.2"></fr:ref>).
+  The corresponding operations of all the above can also be defined for the <fr:tex>\underline {T}_r^s</fr:tex>.
+  The relations between the various operations thus introduced are the same as for the analogous relations in tensor calculus.
+</fr:p><fr:p>
+  Now let <fr:tex>n</fr:tex> be the dimension of <fr:tex>X</fr:tex>.
+  By successively applying a tensor composition <fr:ref
+addr="fga1-equation-8.3"
+href="fga1-equation-8.3.xml"
+taxon="Equation"
+number="8.3"></fr:ref> and contractions <fr:ref
+addr="fga1-equation-8.4"
+href="fga1-equation-8.4.xml"
+taxon="Equation"
+number="8.4"></fr:ref> on repeated arguments, we obtain a pairing
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>680</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.6</fr:addr><fr:route>fga1-equation-8.6.xml</fr:route><fr:number>8.6</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {gathered}         (T_r^s)^p( \mathscr { A } _1, \ldots ; \mathscr { B } _1, \ldots )          \times  (T_r^s)^{n-p}( \mathscr { B } _1, \ldots ; \mathscr { A } _1, \ldots , \mathscr { A } _r \otimes \Omega _X^n)        \\ \to \operatorname {H} ^n(X, \Omega _X^n).        \end {gathered}     \tag{8.6}     </fr:tex></fr:mainmatter></fr:tree></fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>683</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga1-theorem-6</fr:addr><fr:route>fga1-theorem-6.xml</fr:route><fr:number>6</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>X</fr:tex> is a non-singular projective variety, then the pairings in <fr:ref
+addr="fga1-equation-8.6"
+href="fga1-equation-8.6.xml"
+taxon="Equation"
+number="8.6"></fr:ref> are dualities.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>682</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-theorem-6</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      This follows in a purely formal way from the <fr:link
+href="fga1-theorem-3-corollary.xml"
+type="local"
+addr="fga1-theorem-3-corollary">corollary of Theorem 3</fr:link>.
+      In fact, it easily follows from this corollary that, if <fr:tex>\mathscr { K }</fr:tex> is a complex of <fr:em>locally-free</fr:em> coherent algebraic sheaves, then the hypercohomology of <fr:tex>X</fr:tex> with respect to <fr:tex>\mathscr { K }</fr:tex> is in duality with the hypercohomology of <fr:tex>X</fr:tex> with respect to <fr:tex>\mathscr { K } ' \otimes \Omega _X^n</fr:tex> via the natural pairings
+
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>681</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.7</fr:addr><fr:route>fga1-equation-8.7.xml</fr:route><fr:number>8.7</fr:number><fr:parent>fga1-theorem-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">            \underline { \operatorname {R} }^p \Gamma ( \mathscr { K } )            \times   \underline { \operatorname {R} }^{n-p} \Gamma ( \mathscr { K } ' \otimes \Omega _X^n)            \to   \underline { \operatorname {R} }^n \Gamma ( \Omega _X^n)           =  \operatorname {H} ^n(X, \Omega _X^n).         \tag{8.7}         </fr:tex></fr:mainmatter></fr:tree>
+      
+      We can see this by using the spectral sequence with initial page <fr:tex>\operatorname {H} ^p( \operatorname {H} ^q(X, \mathscr { K } ))</fr:tex> and the analogous spectral sequence for <fr:tex>\mathscr { K } ' \otimes \Omega _X^n</fr:tex>.
+      From the above result, <fr:ref
+addr="fga1-theorem-6"
+href="fga1-theorem-6.xml"
+taxon="Theorem"
+number="6"></fr:ref> can be deduced from the definition <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>685</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga1-8-remarks</fr:addr><fr:route>fga1-8-remarks.xml</fr:route><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>
+      For the definitions preceding <fr:ref
+addr="fga1-theorem-6"
+href="fga1-theorem-6.xml"
+taxon="Theorem"
+number="6"></fr:ref>, it was not necessary for <fr:tex>X</fr:tex> to be non-singular, since it was not necessary to work with only <fr:em>finite</fr:em> resolutions.
+      But, if <fr:tex>X</fr:tex> is singular, then we can no long be sure, a priori, that the <fr:tex>( \underline {T}_r^s)^p( \mathscr { A } _1, \ldots ; \mathscr { B } _1, \ldots )</fr:tex> are <fr:em>coherent</fr:em> sheaves, since, in the complex of sheaves
+      <fr:tex
+display="block">          \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \underline {L}( \mathscr { A } _1) \otimes \ldots , \underline {L}( \mathscr { B } _1) \otimes \ldots )       </fr:tex>
+      there will be an infinite number of components of any given total degree.
+    </fr:li>
+
+    <fr:li>
+      We can easily verify that, in the formulas in <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref>, we can replace <fr:em>one</fr:em> of the <fr:tex>\underline {L}( \mathscr { B } _i)</fr:tex> with <fr:tex>\mathscr { B } _i</fr:tex>.
+      Taking <fr:ref
+addr="fga1-proposition-3"
+href="fga1-proposition-3.xml"
+taxon="Proposition"
+number="3"></fr:ref> into account, this shows that we have
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>684</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.8</fr:addr><fr:route>fga1-equation-8.8.xml</fr:route><fr:number>8.8</fr:number><fr:parent>fga1-8-remarks</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">            \begin {aligned}              \underline {T}_1^{1 \bullet }( \mathscr { A } ; \mathscr { B } )             &amp;=  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^ \bullet ( \mathscr { A } , \mathscr { B } )            \\ T_1^{1 \bullet }( \mathscr { A } ; \mathscr { B } )             &amp;=  \operatorname {Ext} _{ \mathcal {O} _X}^ \bullet (X; \mathscr { A } , \mathscr { B } ).            \end {aligned}         \tag{8.8}         </fr:tex></fr:mainmatter></fr:tree>
+
+      In particular, taking <fr:tex>r=s=1</fr:tex> and <fr:tex>\mathscr { A } _1= \mathcal {O} _X</fr:tex> in <fr:ref
+addr="fga1-equation-8.6"
+href="fga1-equation-8.6.xml"
+taxon="Equation"
+number="8.6"></fr:ref>, we recover <fr:ref
+addr="fga1-theorem-3"
+href="fga1-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>.
+      <fr:ref
+addr="fga1-equation-8.8"
+href="fga1-equation-8.8.xml"
+taxon="Equation"
+number="8.8"></fr:ref> also implies that <fr:tex>T_0^{1 \bullet }( \mathscr { B } )= \operatorname {H} ^ \bullet (X, \mathscr { B } )</fr:tex>, and that <fr:tex>T_1^{0 \bullet }( \mathscr { A } )= \operatorname {Ext} _{ \mathcal {O} _X}^ \bullet (X; \mathscr { A } , \mathcal {O} _X)</fr:tex>.
+    </fr:li>
+
+    <fr:li>
+      We see, in <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref>, that the functors <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> and <fr:tex>T_r^{s \bullet }</fr:tex> have, in general, components in positive <fr:em>and</fr:em> negative degrees.
+      Using the above remark, we see that, if the dimension of <fr:tex>X</fr:tex> is <fr:tex>n</fr:tex>, then the non-zero components of <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> are concentrated between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>rn</fr:tex> if <fr:tex>s&gt;0</fr:tex>, and between degrees <fr:tex>0</fr:tex> and <fr:tex>rn</fr:tex> if <fr:tex>s=0</fr:tex>; the non-zero components of <fr:tex>T_r^{s \bullet }</fr:tex> are concentrated between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>(r+1)n</fr:tex> if <fr:tex>s&gt;0</fr:tex>, and between degrees <fr:tex>0</fr:tex> and <fr:tex>(r+1)n</fr:tex> if <fr:tex>s=0</fr:tex> (and, unless I am mistaken, if <fr:tex>r&gt;0</fr:tex>, between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>rn</fr:tex>, resp. <fr:tex>0</fr:tex> and <fr:tex>rn</fr:tex>).
+    </fr:li></fr:ol></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>916</fr:anchor><fr:addr>fga1-8</fr:addr><fr:route>fga1-8.xml</fr:route><fr:title><fr:link
+href="fga1.xml"
+type="local"
+addr="fga1">Duality theorems for coherent algebraic sheaves</fr:link> › Generalisation of the duality theorem</fr:title><fr:number>8</fr:number><fr:parent>fga1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>X</fr:tex> be a non-singular algebraic variety such that every coherent algebraic sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex> is isomorphic to a locally-free coherent algebraic sheaf (which is the case if <fr:tex>X</fr:tex> is locally closed in some projective space).
+  Then every coherent algebraic sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex> admits a finite resolution <fr:tex>\mathscr { L }</fr:tex> by locally-free sheaves, and, for any two such resolutions, we can always find a third, along with homomorphisms, from it to the first two, that are compatible with the augmentations.
+  Similarly, if <fr:tex>\mathscr { L }</fr:tex> is a finite locally-free resolution of <fr:tex>\mathscr { F }</fr:tex>, and if we have a homomorphism <fr:tex>\mathscr { F } ' \to \mathscr { F }</fr:tex>, then there exists a finite locally-free resolution <fr:tex>\mathscr { L } '</fr:tex> of <fr:tex>\mathscr { F } '</fr:tex> along with a homomorphism <fr:tex>\mathscr { L } ' \to \mathscr { L }</fr:tex> that is compatible with <fr:tex>\mathscr { F } ' \to \mathscr { F }</fr:tex>, that we can even assume to be surjective if <fr:tex>\mathscr { F } ' \to \mathscr { F }</fr:tex> is surjective.
+  This allows us to define, given integers <fr:tex>r,s \geqslant0</fr:tex>, two cohomological multifunctors, with arguments <fr:tex>\mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s</fr:tex> in the category of coherent algebraic sheaves on <fr:tex>X</fr:tex>;
+  one takes values in the category of coherent algebraic sheaves on <fr:tex>X</fr:tex>, and the other in the category of modules over <fr:tex>\operatorname {H} ^0(X, \mathcal {O} _X)</fr:tex>.
+  
+  We define them by the formulas
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>675</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.1</fr:addr><fr:route>fga1-equation-8.1.xml</fr:route><fr:number>8.1</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {aligned}         &amp; \underline {T}_r^{s \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s)        \\ &amp;=  \operatorname {H} ^ \bullet ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \underline {L}( \mathscr { A } _1) \otimes \ldots \otimes \underline {L}( \mathscr { A } _r),  \underline {L}( \mathscr { B } _1) \otimes \ldots \otimes \underline {L}( \mathscr { B } _s))),        \\ &amp;T_r^{s \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s)        \\ &amp;=  \underline { \operatorname {R} }^ \bullet \Gamma ( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \underline {L}( \mathscr { A } _1) \otimes \ldots \otimes \underline {L}( \mathscr { A } _r),  \underline {L}( \mathscr { B } _1) \otimes \ldots \otimes \underline {L}( \mathscr { B } _s)))        \end {aligned}     \tag{8.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  where <fr:tex>\underline {L}( \mathscr { F } )</fr:tex> denotes a finite locally-free resolution of the coherent algebraic sheaf <fr:tex>\mathscr { F }</fr:tex>, and <fr:tex>\underline { \operatorname {R} }^ \bullet \Gamma ( \mathscr { K } )</fr:tex> denotes the hypercohomology of the space <fr:tex>X</fr:tex> with respect to the complex of sheaves <fr:tex>\mathscr { K }</fr:tex>.
+  If <fr:tex>r</fr:tex> (resp. <fr:tex>s</fr:tex>) is zero, then we replace the tensor product of the <fr:tex>\underline {L}( \mathscr { A } _i)</fr:tex> (resp. of the <fr:tex>\underline {L}( \mathscr { B } _j)</fr:tex>) by <fr:tex>\mathcal {O} _X</fr:tex>.
+  In particular, <fr:tex>\underline {T}_0^0</fr:tex> and <fr:tex>T_0^0</fr:tex> are graded functors with no arguments:
+  <fr:tex>\underline {T}_0^0</fr:tex> is concentrated in degree <fr:tex>0</fr:tex>, where it is the sheaf <fr:tex>\mathcal {O} _X</fr:tex>;
+  and <fr:tex>T_0^0</fr:tex> is equal to <fr:tex>\operatorname {H} ^ \bullet (X, \mathcal {O} _X)</fr:tex>.
+  The fact that the right-hand sides of <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref> do not depend on the chosen resolutions is evident for <fr:tex>\underline {T}</fr:tex> (since the question is then local), and for <fr:tex>T</fr:tex> it follows from preceding general remarks, taking into account the spectral sequence for the hypercohomology of the complex of sheaves <fr:tex>\mathscr { K } = \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \underline {L}( \mathscr { A } _1) \otimes \ldots , \underline {L}( \mathscr { B } _1) \otimes \ldots )</fr:tex> that abuts to the hypercohomology of <fr:tex>X</fr:tex> with respect to <fr:tex>\mathscr { K }</fr:tex>, and whose initial page is <fr:tex>\operatorname {H} ^p(X, \operatorname {H} ^q( \mathscr { K } ))</fr:tex>, i.e.
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>676</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.2</fr:addr><fr:route>fga1-equation-8.2.xml</fr:route><fr:number>8.2</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       E_2^{p,q}       =  \operatorname {H} ^p(X,( \underline {T}_r^s)^{(q)}( \mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s)).     \tag{8.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  We then see that this spectral sequence itself does not depend on the chosen resolutions, and its abutment is the left-hand side of <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref>.
+  We can easily define the coboundary maps relative to miscellaneous arguments <fr:tex>\mathscr { A } _i, \mathscr { B } _j</fr:tex> by noting that every exact sequence <fr:tex>0 \to \mathscr { F } ' \to \mathscr { F } \to \mathscr { F } '' \to0</fr:tex> can be resolved by an exact sequence of finite locally-free complexes.
+</fr:p><fr:p>
+  We define, on the system of functors <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> (resp. <fr:tex>T_r^{s \bullet }</fr:tex>), operations that are analogous to those of tensor calculus, and whose definitions are immediate from the defining formulas in <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref>.
+  We thus have a <fr:em>composition</fr:em> (generalising that described in <fr:ref
+addr="fga1-2"
+href="fga1-2.xml"
+number="2"></fr:ref>):
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>677</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.3</fr:addr><fr:route>fga1-equation-8.3.xml</fr:route><fr:number>8.3</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {gathered}         T_r^{s \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s)          \times  T_{r'}^{s' \bullet }( \mathscr { A } '_1, \ldots , \mathscr { A } '_{r'}; \mathscr { B } '_1, \ldots , \mathscr { B } '_{s'})        \\ \to  T_{r+r'}^{(s+s') \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r, \mathscr { A } '_1, \ldots , \mathscr { A } '_{r'}; \mathscr { B } _1, \ldots , \mathscr { B } _s, \mathscr { B } '_1, \ldots , \mathscr { B } '_{s'})        \end {gathered}     \tag{8.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  that satisfies the evident properties of associativity, compatibility with the functorial homomorphisms and the coboundary homomorphisms, and spectral sequences.
+  Similarly, we have symmetry operations, whose explicit descriptions we leave to the reader.
+  
+  We further have a <fr:em>contraction</fr:em> operation every time one of the arguments <fr:tex>\mathscr { A } _i</fr:tex> is equal to one of the arguments <fr:tex>\mathscr { B } _j</fr:tex>:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>678</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.4</fr:addr><fr:route>fga1-equation-8.4.xml</fr:route><fr:number>8.4</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {gathered}         T_r^{s \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _{i-1}, \mathscr { C } , \mathscr { A } _{i+1}, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _{j-1}, \mathscr { C } , \mathscr { B } _{j+1}, \ldots , \mathscr { B } _s)        \\ \to  -T_{r-1}^{(s-1) \bullet }( \mathscr { A } _1, \ldots , \widehat { \mathscr { A } _i}, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \widehat { \mathscr { B } _j}, \ldots , \mathscr { B } _s).        \end {gathered}     \tag{8.4}     </fr:tex></fr:mainmatter></fr:tree>
+
+  Furthermore, if some argument <fr:tex>\mathscr { A } _i</fr:tex> is a locally-free sheaf, then we can suppress it by replacing one of the <fr:tex>\mathscr { A } _j</fr:tex> (for <fr:tex>j \neq  i</fr:tex>) by <fr:tex>\mathscr { A } _j \otimes \mathscr { A } _i</fr:tex>, or one of the <fr:tex>\mathscr { B } _k</fr:tex> by <fr:tex>\mathscr { B } _k \otimes \mathscr { A } '_i</fr:tex> (where <fr:tex>\mathscr { A } '_i= \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { A } _i, \mathcal {O} _X)</fr:tex>);
+  we have an analogous rule for the case where one of the arguments <fr:tex>\mathscr { B } _j</fr:tex> is locally free.
+  In particular, we can always suppress any argument that is equal to <fr:tex>\mathcal {O} _X</fr:tex>.
+  If all the arguments are locally free, except for at most one of the arguments <fr:tex>\mathscr { B } _i</fr:tex>, then the rule that we have just stated gives a functorial isomorphism
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>679</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.5</fr:addr><fr:route>fga1-equation-8.5.xml</fr:route><fr:number>8.5</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       T_r^{s \bullet }( \mathscr { A } _1, \ldots , \mathscr { A } _r; \mathscr { B } _1, \ldots , \mathscr { B } _s)       =  \operatorname {H} ^ \bullet (X, \mathscr { A } '_1 \otimes \ldots \otimes \mathscr { A } '_{r} \otimes \mathscr { B } _1 \otimes \mathscr { B } _s)     \tag{8.5}     </fr:tex></fr:mainmatter></fr:tree>
+
+  (since we can restrict to the case where <fr:tex>r=0</fr:tex> and <fr:tex>s=1</fr:tex>, and there it is immediate;
+  we can also directly use the spectral sequence whose initial term is <fr:ref
+addr="fga1-equation-8.2"
+href="fga1-equation-8.2.xml"
+taxon="Equation"
+number="8.2"></fr:ref>).
+  The corresponding operations of all the above can also be defined for the <fr:tex>\underline {T}_r^s</fr:tex>.
+  The relations between the various operations thus introduced are the same as for the analogous relations in tensor calculus.
+</fr:p><fr:p>
+  Now let <fr:tex>n</fr:tex> be the dimension of <fr:tex>X</fr:tex>.
+  By successively applying a tensor composition <fr:ref
+addr="fga1-equation-8.3"
+href="fga1-equation-8.3.xml"
+taxon="Equation"
+number="8.3"></fr:ref> and contractions <fr:ref
+addr="fga1-equation-8.4"
+href="fga1-equation-8.4.xml"
+taxon="Equation"
+number="8.4"></fr:ref> on repeated arguments, we obtain a pairing
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>680</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.6</fr:addr><fr:route>fga1-equation-8.6.xml</fr:route><fr:number>8.6</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \begin {gathered}         (T_r^s)^p( \mathscr { A } _1, \ldots ; \mathscr { B } _1, \ldots )          \times  (T_r^s)^{n-p}( \mathscr { B } _1, \ldots ; \mathscr { A } _1, \ldots , \mathscr { A } _r \otimes \Omega _X^n)        \\ \to \operatorname {H} ^n(X, \Omega _X^n).        \end {gathered}     \tag{8.6}     </fr:tex></fr:mainmatter></fr:tree></fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>683</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga1-theorem-6</fr:addr><fr:route>fga1-theorem-6.xml</fr:route><fr:number>6</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>X</fr:tex> is a non-singular projective variety, then the pairings in <fr:ref
+addr="fga1-equation-8.6"
+href="fga1-equation-8.6.xml"
+taxon="Equation"
+number="8.6"></fr:ref> are dualities.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>682</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-theorem-6</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      This follows in a purely formal way from the <fr:link
+href="fga1-theorem-3-corollary.xml"
+type="local"
+addr="fga1-theorem-3-corollary">corollary of Theorem 3</fr:link>.
+      In fact, it easily follows from this corollary that, if <fr:tex>\mathscr { K }</fr:tex> is a complex of <fr:em>locally-free</fr:em> coherent algebraic sheaves, then the hypercohomology of <fr:tex>X</fr:tex> with respect to <fr:tex>\mathscr { K }</fr:tex> is in duality with the hypercohomology of <fr:tex>X</fr:tex> with respect to <fr:tex>\mathscr { K } ' \otimes \Omega _X^n</fr:tex> via the natural pairings
+
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>681</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.7</fr:addr><fr:route>fga1-equation-8.7.xml</fr:route><fr:number>8.7</fr:number><fr:parent>fga1-theorem-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">            \underline { \operatorname {R} }^p \Gamma ( \mathscr { K } )            \times   \underline { \operatorname {R} }^{n-p} \Gamma ( \mathscr { K } ' \otimes \Omega _X^n)            \to   \underline { \operatorname {R} }^n \Gamma ( \Omega _X^n)           =  \operatorname {H} ^n(X, \Omega _X^n).         \tag{8.7}         </fr:tex></fr:mainmatter></fr:tree>
+      
+      We can see this by using the spectral sequence with initial page <fr:tex>\operatorname {H} ^p( \operatorname {H} ^q(X, \mathscr { K } ))</fr:tex> and the analogous spectral sequence for <fr:tex>\mathscr { K } ' \otimes \Omega _X^n</fr:tex>.
+      From the above result, <fr:ref
+addr="fga1-theorem-6"
+href="fga1-theorem-6.xml"
+taxon="Theorem"
+number="6"></fr:ref> can be deduced from the definition <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>685</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga1-8-remarks</fr:addr><fr:route>fga1-8-remarks.xml</fr:route><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>
+      For the definitions preceding <fr:ref
+addr="fga1-theorem-6"
+href="fga1-theorem-6.xml"
+taxon="Theorem"
+number="6"></fr:ref>, it was not necessary for <fr:tex>X</fr:tex> to be non-singular, since it was not necessary to work with only <fr:em>finite</fr:em> resolutions.
+      But, if <fr:tex>X</fr:tex> is singular, then we can no long be sure, a priori, that the <fr:tex>( \underline {T}_r^s)^p( \mathscr { A } _1, \ldots ; \mathscr { B } _1, \ldots )</fr:tex> are <fr:em>coherent</fr:em> sheaves, since, in the complex of sheaves
+      <fr:tex
+display="block">          \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \underline {L}( \mathscr { A } _1) \otimes \ldots , \underline {L}( \mathscr { B } _1) \otimes \ldots )       </fr:tex>
+      there will be an infinite number of components of any given total degree.
+    </fr:li>
+
+    <fr:li>
+      We can easily verify that, in the formulas in <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref>, we can replace <fr:em>one</fr:em> of the <fr:tex>\underline {L}( \mathscr { B } _i)</fr:tex> with <fr:tex>\mathscr { B } _i</fr:tex>.
+      Taking <fr:ref
+addr="fga1-proposition-3"
+href="fga1-proposition-3.xml"
+taxon="Proposition"
+number="3"></fr:ref> into account, this shows that we have
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>684</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.8</fr:addr><fr:route>fga1-equation-8.8.xml</fr:route><fr:number>8.8</fr:number><fr:parent>fga1-8-remarks</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">            \begin {aligned}              \underline {T}_1^{1 \bullet }( \mathscr { A } ; \mathscr { B } )             &amp;=  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^ \bullet ( \mathscr { A } , \mathscr { B } )            \\ T_1^{1 \bullet }( \mathscr { A } ; \mathscr { B } )             &amp;=  \operatorname {Ext} _{ \mathcal {O} _X}^ \bullet (X; \mathscr { A } , \mathscr { B } ).            \end {aligned}         \tag{8.8}         </fr:tex></fr:mainmatter></fr:tree>
+
+      In particular, taking <fr:tex>r=s=1</fr:tex> and <fr:tex>\mathscr { A } _1= \mathcal {O} _X</fr:tex> in <fr:ref
+addr="fga1-equation-8.6"
+href="fga1-equation-8.6.xml"
+taxon="Equation"
+number="8.6"></fr:ref>, we recover <fr:ref
+addr="fga1-theorem-3"
+href="fga1-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>.
+      <fr:ref
+addr="fga1-equation-8.8"
+href="fga1-equation-8.8.xml"
+taxon="Equation"
+number="8.8"></fr:ref> also implies that <fr:tex>T_0^{1 \bullet }( \mathscr { B } )= \operatorname {H} ^ \bullet (X, \mathscr { B } )</fr:tex>, and that <fr:tex>T_1^{0 \bullet }( \mathscr { A } )= \operatorname {Ext} _{ \mathcal {O} _X}^ \bullet (X; \mathscr { A } , \mathcal {O} _X)</fr:tex>.
+    </fr:li>
+
+    <fr:li>
+      We see, in <fr:ref
+addr="fga1-equation-8.1"
+href="fga1-equation-8.1.xml"
+taxon="Equation"
+number="8.1"></fr:ref>, that the functors <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> and <fr:tex>T_r^{s \bullet }</fr:tex> have, in general, components in positive <fr:em>and</fr:em> negative degrees.
+      Using the above remark, we see that, if the dimension of <fr:tex>X</fr:tex> is <fr:tex>n</fr:tex>, then the non-zero components of <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> are concentrated between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>rn</fr:tex> if <fr:tex>s&gt;0</fr:tex>, and between degrees <fr:tex>0</fr:tex> and <fr:tex>rn</fr:tex> if <fr:tex>s=0</fr:tex>; the non-zero components of <fr:tex>T_r^{s \bullet }</fr:tex> are concentrated between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>(r+1)n</fr:tex> if <fr:tex>s&gt;0</fr:tex>, and between degrees <fr:tex>0</fr:tex> and <fr:tex>(r+1)n</fr:tex> if <fr:tex>s=0</fr:tex> (and, unless I am mistaken, if <fr:tex>r&gt;0</fr:tex>, between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>rn</fr:tex>, resp. <fr:tex>0</fr:tex> and <fr:tex>rn</fr:tex>).
+    </fr:li></fr:ol></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

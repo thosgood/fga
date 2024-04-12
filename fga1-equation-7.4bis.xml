@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>903</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-7.4bis</fr:addr><fr:route>fga1-equation-7.4bis.xml</fr:route><fr:number>7.4 bis</fr:number><fr:parent>fga1-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \langle   \xi ^{m,m}, P_X(Y)  \rangle   \varepsilon _Y       = f_*( \xi ^{m,m})        \quad \text {where } \xi ^{m,m} \in \operatorname {H} ^m(X, \Omega _X^m)     \tag{7.4 bis}     </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>902</fr:anchor><fr:addr>fga1-7</fr:addr><fr:route>fga1-7.xml</fr:route><fr:title><fr:link
+href="fga1.xml"
+type="local"
+addr="fga1">Duality theorems for coherent algebraic sheaves</fr:link> › Poincaré duality</fr:title><fr:number>7</fr:number><fr:parent>fga1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>X</fr:tex> be a non-singular projective variety of dimension <fr:tex>n</fr:tex>.
+  Then <fr:tex>\operatorname {H} ^ \bullet (X)= \operatorname {H} ^ \bullet (X, \Omega _X^ \bullet )</fr:tex> is a finite-dimensional bigraded anticommutative algebra, that we grade by the total degree, so that <fr:tex>\operatorname {H} ^{p,q}(X)= \operatorname {H} ^p(X, \Omega _X^q)</fr:tex> is of degree <fr:tex>p+q</fr:tex>;
+  the degrees of <fr:tex>\operatorname {H} ^ \bullet (X)</fr:tex> are concentrated between <fr:tex>0</fr:tex> and <fr:tex>2n</fr:tex>.
+  By <fr:ref
+addr="fga1-theorem-2"
+href="fga1-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref> and <fr:link
+href="fga1-theorem-3-corollary.xml"
+type="local"
+addr="fga1-theorem-3-corollary">the corollary to Theorem 3</fr:link>, <fr:tex>\operatorname {H} ^ \bullet (X)</fr:tex> is a "Poincaré algebra" of dimension <fr:tex>2n</fr:tex>, i.e. <fr:tex>\operatorname {H} ^{2n}(X)</fr:tex> is endowed with an isomorphism to the base field <fr:tex>k</fr:tex>, and the product <fr:tex>\operatorname {H} ^m(X) \times \operatorname {H} ^{2n-m}(X) \to \operatorname {H} ^{2n}(X)=k</fr:tex> is a duality between <fr:tex>\operatorname {H} ^m(X)</fr:tex> and <fr:tex>\operatorname {H} ^{2n-m}(X)</fr:tex>.
+  Furthermore, if <fr:tex>Y</fr:tex> is another non-singular projective variety, then the Künneth formula for coherent algebraic sheaves gives
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>664</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-7.1</fr:addr><fr:route>fga1-equation-7.1.xml</fr:route><fr:number>7.1</fr:number><fr:parent>fga1-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \operatorname {H} ^ \bullet (X \times  Y) =  \operatorname {H} ^ \bullet (X) \otimes \operatorname {H} ^ \bullet (Y)     \tag{7.1}     </fr:tex></fr:mainmatter></fr:tree>
+
+  which is an isomorphism that is compatible with the Poincaré algebra structures.
+  Furthermore, <fr:tex>\operatorname {H} ^ \bullet (X)</fr:tex> is, as a commutative algebra, a covariant functor in <fr:tex>X</fr:tex>, since a morphism <fr:tex>f \colon  Y \to  X</fr:tex> defines, in an evident way, a homomorphism of graded algebras
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>665</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-7.2</fr:addr><fr:route>fga1-equation-7.2.xml</fr:route><fr:number>7.2</fr:number><fr:parent>fga1-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       f^* \colon   \operatorname {H} ^ \bullet (X) \to \operatorname {H} ^ \bullet (Y).     \tag{7.2}     </fr:tex></fr:mainmatter></fr:tree>
+
+  
+  Since we are working with Poincaré algebras, we obtain, by transposition, a homomorphism of vector spaces
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>666</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-7.3</fr:addr><fr:route>fga1-equation-7.3.xml</fr:route><fr:number>7.3</fr:number><fr:parent>fga1-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">       f_* \colon   \operatorname {H} ^ \bullet (Y) \to \operatorname {H} ^ \bullet (X).     \tag{7.3}     </fr:tex></fr:mainmatter></fr:tree>
+
+  We have seen in <fr:ref
+addr="fga1-4"
+href="fga1-4.xml"
+number="4"></fr:ref> that the effect of <fr:tex>f^*</fr:tex> on cohomology classes that correspond to non-singular cycles can be interpreted geometrically by taking the cohomology classes that correspond to their inverse images.
+  It is important, in our current study, to show that <fr:ref
+addr="fga1-equation-7.3"
+href="fga1-equation-7.3.xml"
+taxon="Equation"
+number="7.3"></fr:ref> corresponds similarly to the "direct image" operation on cycles.
+  This follows (under suitable non-singularity conditions, at least) from the following particular case:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>670</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga1-theorem-4</fr:addr><fr:route>fga1-theorem-4.xml</fr:route><fr:number>4</fr:number><fr:parent>fga1-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    If <fr:tex>f</fr:tex> is the identity map from a non-singular subvariety <fr:tex>Y^m</fr:tex> of <fr:tex>X^n</fr:tex> to <fr:tex>X^n</fr:tex>, then, denoting by <fr:tex>1_Y</fr:tex> the unit element of <fr:tex>\operatorname {H} (Y)</fr:tex>, we have
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>667</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-7.4</fr:addr><fr:route>fga1-equation-7.4.xml</fr:route><fr:number>7.4</fr:number><fr:parent>fga1-theorem-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">         f_*(1_Y) = P_X(Y)       \tag{7.4}       </fr:tex></fr:mainmatter></fr:tree>
+    
+    where the right-hand side is the cohomology class in <fr:tex>X</fr:tex> associated to <fr:tex>Y</fr:tex>.
+  </fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>669</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-theorem-4</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>
+      We consider, by <fr:ref
+addr="fga1-theorem-3"
+href="fga1-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>, the transpose of the homomorphism
+      <fr:tex
+display="block">          \operatorname {H} ^m(X, \Omega _X^m)          \to   \operatorname {H} ^m(Y, \Omega _Y^m)         =  \operatorname {H} ^m(X, \Omega _Y^m)       </fr:tex>
+      as the homomorphism
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>668</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-7.5</fr:addr><fr:route>fga1-equation-7.5.xml</fr:route><fr:number>7.5</fr:number><fr:parent>fga1-theorem-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">            \begin {CD}             @.              \operatorname {Ext} _{ \mathcal {O} _X}^{n-m}(X; \Omega _Y^m, \Omega _X^n)             @&gt; \sim &gt;&gt;              \operatorname {Hom} _{ \mathcal {O} _X}(X; \Omega _Y^m, \Omega _Y^m)            \\ @. @VVV @.            \\ \operatorname {H} ^{n-m}(X, \Omega _X^{n-m})             @&gt; \sim &gt;&gt;              \operatorname {Ext} _{ \mathcal {O} _X}^{n-m}(X; \Omega _X^m, \Omega _X^n)            \end {CD}         \tag{7.5}         </fr:tex></fr:mainmatter></fr:tree>
+
+      We can verify that the element <fr:tex>1_Y</fr:tex> of the dual of <fr:tex>\operatorname {H} ^m(Y, \Omega _Y^m)</fr:tex> is identified with the element of the right-hand side corresponding to the identity endomorphism of <fr:tex>\Omega _Y^m</fr:tex>, and also that the image of this element in <fr:tex>\operatorname {H} ^{n-m}(X, \Omega _X^{n-m})</fr:tex> is indeed <fr:tex>P_X(Y)</fr:tex>.
+    </fr:p>
+  </fr:mainmatter></fr:tree>
+  
+</fr:mainmatter></fr:tree><fr:p><fr:ref
+addr="fga1-equation-7.4"
+href="fga1-equation-7.4.xml"
+taxon="Equation"
+number="7.4"></fr:ref> in <fr:ref
+addr="fga1-theorem-4"
+href="fga1-theorem-4.xml"
+taxon="Theorem"
+number="4"></fr:ref> is equivalent to
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>671</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-7.4bis</fr:addr><fr:route>fga1-equation-7.4bis.xml</fr:route><fr:number>7.4 bis</fr:number><fr:parent>fga1-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \langle   \xi ^{m,m}, P_X(Y)  \rangle   \varepsilon _Y       = f_*( \xi ^{m,m})        \quad \text {where } \xi ^{m,m} \in \operatorname {H} ^m(X, \Omega _X^m)     \tag{7.4 bis}     </fr:tex></fr:mainmatter></fr:tree>
+  
+  where <fr:tex>\varepsilon _Y</fr:tex> is the fundamental element of <fr:tex>\operatorname {H} ^m(Y, \Omega _Y^m)</fr:tex>, and this, in the case of non-singular projective varieties, gives a new definition of the cohomology class associated to <fr:tex>Y</fr:tex>.
+</fr:p><fr:p>
+  These relations (which could have been given in <fr:ref
+addr="fga1-4"
+href="fga1-4.xml"
+number="4"></fr:ref>) can be stated, and are indeed true, for arbitrary non-singular varieties, with the second, for example, following from the commutativity of the following diagram of canonical endomorphisms:
+
+  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>672</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-7.6</fr:addr><fr:route>fga1-equation-7.6.xml</fr:route><fr:number>7.6</fr:number><fr:parent>fga1-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">        \footnotesize         \begin {CD}          \operatorname {Ext} _{ \mathcal {O} _X}^{n-m}(X; \Omega _X^m, \Omega _X^n)         @&lt;&lt;&lt;          \operatorname {Ext} _{ \mathcal {O} _X}^{n-m}(X; \Omega _Y^m, \Omega _X^n)         @&gt; \sim &gt;&gt;          \operatorname {Hom} _{ \mathcal {O} _X}(X; \Omega _Y^m, \Omega _Y^m)        \\ @VVV @. @VVV        \\ \operatorname {Ext} _{ \mathcal {O} _X}^{n-m}(X; \mathcal {O} _X, \Omega _X^{n-m})         @&lt;&lt;&lt;          \operatorname {Ext} _{ \mathcal {O} _X}^{n-m}(X; \mathcal {O} _Y, \Omega _X^{n-m})         @&gt; \sim &gt;&gt;          \operatorname {Hom} _{ \mathcal {O} _X}(X; \Omega _X^m, \Omega _Y^m)        \end {CD}     \tag{7.6}     </fr:tex></fr:mainmatter></fr:tree>
+
+  We thus obtain an exact equivalent of the formalism of Poincaré duality for compact oriented varieties.
+  In particular, <fr:ref
+addr="fga1-theorem-4"
+href="fga1-theorem-4.xml"
+taxon="Theorem"
+number="4"></fr:ref> allows us to determine the cohomology class associated to the diagonal of <fr:tex>X \times  X</fr:tex>.
+  By a well-known argument, we thus deduce, for example, a <fr:em>Lefschetz formula</fr:em>:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>673</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga1-theorem-5</fr:addr><fr:route>fga1-theorem-5.xml</fr:route><fr:number>5</fr:number><fr:parent>fga1-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>f</fr:tex> be an endomorphism of a non-singular projective variety <fr:tex>X</fr:tex> such that the fixed points of <fr:tex>f</fr:tex> are of multiplicity <fr:tex>1</fr:tex>.
+    Then the number of these fixed points is congruent, modulo the characteristic of <fr:tex>k</fr:tex>, to the alternating sum of the traces of the endomorphisms of the <fr:tex>\operatorname {H} ^i(X)</fr:tex> defined by <fr:tex>f</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  The restriction on <fr:tex>f</fr:tex> that we have to make is related to the difficulties mentioned in the remark in <fr:ref
+addr="fga1-4"
+href="fga1-4.xml"
+number="4"></fr:ref>.
+  We note, however, that the Lefschetz formula still holds true if <fr:tex>f</fr:tex> is "homotopic" to an endomorphism whose fixed points are all of multiplicity <fr:tex>1</fr:tex>.
+</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1239</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-3-corollary-1</fr:addr><fr:route>fga2-theorem-3-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The closed subschemes of <fr:tex>X</fr:tex> are in bijective correspondence with the closed formal subschemes of <fr:tex>\overline {X}</fr:tex>.
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1238</fr:anchor><fr:addr>fga2-3</fr:addr><fr:route>fga2-3.xml</fr:route><fr:title><fr:link
+href="fga2.xml"
+type="local"
+addr="fga2">Formal geometry and algebraic geometry</fr:link> › The three fundamental theorems</fr:title><fr:number>3</fr:number><fr:parent>fga2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism of schemes (Noetherian, as always), and let <fr:tex>Y'</fr:tex> be a closed subset of <fr:tex>Y'</fr:tex>, with <fr:tex>X'</fr:tex> its inverse image in <fr:tex>X</fr:tex>, and consider the corresponding formal completions <fr:tex>\overline {Y}</fr:tex> and <fr:tex>\overline {X}</fr:tex>.
+  Then <fr:tex>f</fr:tex> induces a morphism <fr:tex>\overline {f} \colon \overline {X} \to \overline {Y}</fr:tex> of formal schemes, which is also proper.
+  Let <fr:tex>\mathscr { F }</fr:tex> be a coherent sheaf on <fr:tex>X</fr:tex>, then <fr:tex>\overline { \mathscr { F } }</fr:tex> is a coherent sheaf on <fr:tex>\overline {X}</fr:tex>.
+  In <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>, we forget <fr:tex>X</fr:tex>, <fr:tex>Y</fr:tex>, and <fr:tex>\mathscr { F }</fr:tex>, and consider only the proper morphism <fr:tex>\overline {f}</fr:tex> of formal schemes, along with the coherent sheaf <fr:tex>\overline { \mathscr { F } }</fr:tex> on <fr:tex>\overline {X}</fr:tex>.
+  (However, the speaker has only written the complete proof in the case where we start with some <fr:tex>X</fr:tex>, <fr:tex>Y</fr:tex>, <fr:tex>f</fr:tex>, and <fr:tex>F</fr:tex>).
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>310</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-1</fr:addr><fr:route>fga2-theorem-1.xml</fr:route><fr:title>Finiteness theorem</fr:title><fr:number>1</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong></fr:p><fr:ol><fr:li>
+      The <fr:tex>\operatorname {R} ^q \overline {f}_*( \overline { \mathscr { F } })</fr:tex> are coherent sheaves on <fr:tex>\overline {Y}</fr:tex>.
+    </fr:li>
+
+    <fr:li>
+      The natural homomorphisms
+      <fr:tex
+display="block">          \operatorname {R} ^q \overline {f}_*( \overline { \mathscr { F } })          \to   \varprojlim _n \operatorname {R} ^q (f_n)_*( \mathscr { F } _n)       </fr:tex>
+      are isomorphisms.
+    </fr:li></fr:ol></fr:mainmatter></fr:tree><fr:p>
+  In the statement of <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>, we suppose that we already have some coherent subsheaf <fr:tex>\mathscr { J }</fr:tex> of <fr:tex>\mathcal {O} _Y</fr:tex> that defines <fr:tex>Y'</fr:tex>, whence, by taking the inverse image, a coherent subsheaf of <fr:tex>\mathcal {O} _X</fr:tex> that defines <fr:tex>X'</fr:tex>, whence, by definition, <fr:tex>\mathscr { F } _n</fr:tex>, <fr:tex>X_n</fr:tex>, <fr:tex>Y_n</fr:tex>, and <fr:tex>f_n \colon  X_n \to  Y_n</fr:tex> as in <fr:ref
+addr="fga2-2"
+href="fga2-2.xml"
+number="2"></fr:ref>.
+  The minor changes that need to be made to the notation in the explanation if we started with an arbitrary proper morphism between two formal schemes are evident.
+</fr:p><fr:p><fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> deals only with "formal cohomology";
+  the following theorem relates it with "algebraic cohomology", and resembles a well-known theorem of Serre <fr:link
+href="Ser1956.xml"
+type="local"
+addr="Ser1956">[Ser1956]</fr:link> on the comparison between algebraic cohomology and analytic cohomology.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>311</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-2</fr:addr><fr:route>fga2-theorem-2.xml</fr:route><fr:title>First comparison theorem</fr:title><fr:number>2</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The <fr:tex>\operatorname {R} ^q f_*( \mathscr { F } )</fr:tex> are coherent sheaves on <fr:tex>Y</fr:tex> (which is a particular case of <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>), and the natural homomorphisms
+    <fr:tex
+display="block">        \overline { \operatorname {R} ^q f_*( \mathscr { F } )}        \to   \varprojlim _n  \operatorname {R} ^q (f_n)_*( \mathscr { F } _n)     </fr:tex>
+    are isomorphisms.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>312</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-2-corollary-1</fr:addr><fr:route>fga2-theorem-2-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    There are canonical isomorphisms <fr:tex>\overline { \operatorname {R} ^q f_*( \mathscr { F } )} =  \operatorname {R} ^q \overline {f}_*( \overline { \mathscr { F } })</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  This corollary is, for <fr:tex>q=0</fr:tex>, a generalisation of Zariski's "fundamental theorem of holomorphic functions", from which we will deduce a generalisation of Zariski's "connection theorem".
+  We also note that, while (ii) in <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> is trivial for <fr:tex>q=0</fr:tex>, this is not at all the case for <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref> nor for its equivalent formulation (<fr:ref
+addr="fga2-theorem-2-corollary-1"
+href="fga2-theorem-2-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref>).
+  In fact, the proof proceeds by decreasing induction on <fr:tex>q</fr:tex> (being trivial for large <fr:tex>q</fr:tex>, since then both sides of the equation are zero), and the case <fr:tex>q=0</fr:tex> thus appears as the last induction step, and so could be called the "most difficult" case.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-2-corollary-2</fr:addr><fr:route>fga2-theorem-2-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>Y= \operatorname {Spec} (A)</fr:tex>, and let <fr:tex>Y'</fr:tex> be defined by an ideal <fr:tex>\mathscr { J }</fr:tex> of <fr:tex>A</fr:tex>.
+    Then, for every coherent sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex>, the <fr:tex>\operatorname {H} ^q(X, \mathscr { F } )</fr:tex> are <fr:tex>A</fr:tex>-modules of finite type, whose <fr:tex>\mathscr { J }</fr:tex>-adic completions are the <fr:tex>\operatorname {H} ^q( \overline {X}, \overline { \mathscr { F } })</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Finally, applying this corollary to <fr:tex>H= \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { F } , \mathscr { G } )</fr:tex>, we obtain:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>314</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-2-corollary-3</fr:addr><fr:route>fga2-theorem-2-corollary-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>Y= \operatorname {Spec} (A)</fr:tex>, and let <fr:tex>Y'</fr:tex> be defined by an ideal <fr:tex>\mathscr { J }</fr:tex> of <fr:tex>A</fr:tex>.
+    Let <fr:tex>\mathscr { F }</fr:tex> and <fr:tex>\mathscr { G }</fr:tex> be coherent sheaves on <fr:tex>X</fr:tex>.
+    Then <fr:tex>\operatorname {Hom} ( \mathscr { F } , \mathscr { G } )</fr:tex> is an <fr:tex>A</fr:tex>-module of finite type, whose <fr:tex>\mathscr { J }</fr:tex>-adic completion can be identified with <fr:tex>\operatorname {Hom} ( \overline { \mathscr { F } }, \overline { \mathscr { G } })</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Of course, the natural map <fr:tex>\operatorname {Hom} ( \mathscr { F } , \mathscr { G } ) \to \operatorname {Hom} ( \overline { \mathscr { F } }, \overline { \mathscr { G } })</fr:tex> is that which sends a homomorphism <fr:tex>u \colon \mathscr { F } \to \mathscr { G }</fr:tex> to its extension "by continuity" <fr:tex>\overline {u} \colon \overline { \mathscr { F } } \to \overline { \mathscr { G } }</fr:tex> (so that <fr:tex>\overline { \mathscr { F } }</fr:tex> becomes a functor in <fr:tex>\mathscr { F }</fr:tex>).
+</fr:p><fr:p>
+  Now suppose that <fr:tex>A</fr:tex> is separated and complete for its <fr:tex>\mathscr { J }</fr:tex>-adic topology.
+  Then <fr:ref
+addr="fga2-theorem-2-corollary-2"
+href="fga2-theorem-2-corollary-2.xml"
+taxon="Corollary"
+number="2"></fr:ref> and <fr:ref
+addr="fga2-theorem-2-corollary-3"
+href="fga2-theorem-2-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> above give:
+  <fr:tex
+display="block">      \begin {aligned}        \operatorname {H} ^q(X, \mathscr { F } ) &amp;=  \operatorname {H} ^q( \overline {X}, \overline { \mathscr { F } }),      \\ \operatorname {Hom} ( \mathscr { F } , \mathscr { G } ) &amp;=  \operatorname {Hom} ( \overline { \mathscr { F } }, \overline { \mathscr { G } }).      \end {aligned}   </fr:tex>
+  
+  The latter identity shows that the category of coherent sheaves on <fr:tex>X</fr:tex> can be identified with a <fr:em>subcategory</fr:em> (with morphisms being the induced morphisms) of the category of coherent sheaves on <fr:tex>\overline {X}</fr:tex>.
+  In fact, we even have:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>315</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-3</fr:addr><fr:route>fga2-theorem-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For a sheaf of modules on <fr:tex>\overline {X}</fr:tex> to be coherent, it is necessary and sufficient that it be isomorphic to a sheaf of the form <fr:tex>\overline { \mathscr { F } }</fr:tex>, where <fr:tex>\mathscr { F }</fr:tex> is a coherent sheaf on <fr:tex>X</fr:tex> (determined up to canonical isomorphism, by <fr:ref
+addr="fga2-theorem-2-corollary-3"
+href="fga2-theorem-2-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> above).
+    (We recall that now <fr:tex>Y= \operatorname {Spec} (A)</fr:tex>, with <fr:tex>A</fr:tex> being a complete and separated <fr:tex>\mathscr { J }</fr:tex>-adic Noetherian topological ring).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>316</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-3-corollary-1</fr:addr><fr:route>fga2-theorem-3-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The closed subschemes of <fr:tex>X</fr:tex> are in bijective correspondence with the closed formal subschemes of <fr:tex>\overline {X}</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Indeed, they correspond to coherent subsheaves of <fr:tex>\mathcal {O} _X</fr:tex> (resp. of <fr:tex>\mathcal {O} _{ \overline {X}}</fr:tex>).
+  Considering the graphs of morphisms as closed subschemes, <fr:ref
+addr="fga2-theorem-3-corollary-1"
+href="fga2-theorem-3-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref> above implies:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-3-corollary-2</fr:addr><fr:route>fga2-theorem-3-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> and <fr:tex>Z</fr:tex> be proper schemes over <fr:tex>A</fr:tex> (which is a separated complete <fr:tex>\mathscr { J }</fr:tex>-adic Noetherian ring).
+    Then the map <fr:tex>g \mapsto \overline {g}</fr:tex> defines a bijective correspondence between <fr:tex>Y</fr:tex>-morphism from <fr:tex>X</fr:tex> to <fr:tex>Z</fr:tex> and <fr:tex>\overline {Y}</fr:tex>-morphisms from <fr:tex>\overline {X}</fr:tex> to <fr:tex>\overline {Z}</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In other words, proper algebraic schemes over <fr:tex>A</fr:tex> give a subcategory (with the morphisms being the induced morphisms) of the category of proper formal schemes over <fr:tex>\overline {Y}</fr:tex>.
+  We note, however, that <fr:em>there exist proper formal schemes over <fr:tex>\overline {Y}</fr:tex> that are not "algebraisable"</fr:em>, i.e. isomorphic to some <fr:tex>\overline {X}</fr:tex>, where <fr:tex>X</fr:tex> is proper over <fr:tex>A</fr:tex> (just as there exist compact complex-analytic varieties that do not come from algebraic varieties defined over the field of complex numbers).
+  Such formal schemes naturally appear in "module theory".
+  We note, however, an interesting case where a formal scheme is algebraisable:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>318</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-4</fr:addr><fr:route>fga2-theorem-4.xml</fr:route><fr:number>4</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>A</fr:tex> be a complete local Noetherian ring, with residue field <fr:tex>k</fr:tex>, and let <fr:tex>\mathfrak {X}</fr:tex> be a proper formal scheme over <fr:tex>A</fr:tex> (endowed with its <fr:tex>\mathfrak {r}(A)</fr:tex>-adic topology).
+    We suppose that
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
+
+    <fr:ol><fr:li>
+        the local rings of <fr:tex>\mathcal {O} _{ \mathfrak {X}}</fr:tex> are <fr:em>flat</fr:em> <fr:tex>A</fr:tex>-modules, or, equivalently, that, if we endow <fr:tex>\mathcal {O} _{ \mathfrak {X}}</fr:tex> and <fr:tex>A</fr:tex> with the filtration given by powers of the maximal ideal of <fr:tex>A</fr:tex>, then the associated graded algebras satisfy
+        <fr:tex
+display="block">            \operatorname {gr} ( \mathcal {O} _{ \mathfrak {X}})            \simeq   \operatorname {gr} ^0( \mathcal {O} _{ \mathfrak {X}}) \otimes _k \operatorname {gr} (A);         </fr:tex></fr:li>
+
+      <fr:li><fr:tex>\operatorname {H} ^2( \mathfrak {X}_0, \mathcal {O} _{ \mathfrak {X}_0})=0</fr:tex>, where we consider <fr:tex>\mathfrak {X}_0= \mathfrak {X} \otimes _Ak</fr:tex> as an algebraic scheme over <fr:tex>k</fr:tex>;
+      </fr:li>
+
+      <fr:li><fr:tex>\mathfrak {X}_0</fr:tex> is projective.
+      </fr:li></fr:ol>
+
+    
+    Then, under these conditions, <fr:tex>\mathfrak {X}</fr:tex> is algebraisable, and, more precisely, is isomorphic to <fr:tex>\overline {X}</fr:tex>, where <fr:tex>X</fr:tex> is some projective <fr:tex>A</fr:tex>-scheme.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Conditions (ii) and (iii) in <fr:ref
+addr="fga2-theorem-4"
+href="fga2-theorem-4.xml"
+taxon="Theorem"
+number="4"></fr:ref> will be satisfied if, in particular, <fr:tex>\mathfrak {X}_0</fr:tex> is a <fr:em>simple curve</fr:em> over <fr:tex>k</fr:tex>, and <fr:ref
+addr="fga2-theorem-4"
+href="fga2-theorem-4.xml"
+taxon="Theorem"
+number="4"></fr:ref> can be applied, in particular, in the "module theory" of curves of a given genus...
+  We will give here a hint on how to prove <fr:ref
+addr="fga2-theorem-4"
+href="fga2-theorem-4.xml"
+taxon="Theorem"
+number="4"></fr:ref>:
+  we can show (cf. <fr:ref
+addr="fga2-proposition-3"
+href="fga2-proposition-3.xml"
+taxon="Proposition"
+number="3"></fr:ref> below) that (i) and (ii) imply that every coherent sheaf on <fr:tex>\mathfrak {X}_0</fr:tex> that is locally isomorphic to a fundamental sheaf can be obtained by reduction starting from a sheaf of the same nature on <fr:tex>\mathfrak {X}</fr:tex>.
+  So, starting with an "ample" sheaf on <fr:tex>\mathfrak {X}_0</fr:tex> (which, by (iii), exists), we lift it to obtain an invertible sheaf on <fr:tex>\mathfrak {X}</fr:tex>, and, using <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>, we prove that a multiple of this invertible sheaf defined an immersion of <fr:tex>X</fr:tex> into the formal completion of a scheme <fr:tex>\mathbb {P} _A^r</fr:tex> ("projective type" of dimension <fr:tex>r</fr:tex> over <fr:tex>A</fr:tex>).
+</fr:p><fr:p>
+  For the proof of <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>, <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref>, and <fr:ref
+addr="fga2-theorem-3"
+href="fga2-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>, we refer the reader to [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, I].
+</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1237</fr:anchor><fr:addr>fga2-3</fr:addr><fr:route>fga2-3.xml</fr:route><fr:title><fr:link
+href="fga2.xml"
+type="local"
+addr="fga2">Formal geometry and algebraic geometry</fr:link> › The three fundamental theorems</fr:title><fr:number>3</fr:number><fr:parent>fga2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper morphism of schemes (Noetherian, as always), and let <fr:tex>Y'</fr:tex> be a closed subset of <fr:tex>Y'</fr:tex>, with <fr:tex>X'</fr:tex> its inverse image in <fr:tex>X</fr:tex>, and consider the corresponding formal completions <fr:tex>\overline {Y}</fr:tex> and <fr:tex>\overline {X}</fr:tex>.
+  Then <fr:tex>f</fr:tex> induces a morphism <fr:tex>\overline {f} \colon \overline {X} \to \overline {Y}</fr:tex> of formal schemes, which is also proper.
+  Let <fr:tex>\mathscr { F }</fr:tex> be a coherent sheaf on <fr:tex>X</fr:tex>, then <fr:tex>\overline { \mathscr { F } }</fr:tex> is a coherent sheaf on <fr:tex>\overline {X}</fr:tex>.
+  In <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>, we forget <fr:tex>X</fr:tex>, <fr:tex>Y</fr:tex>, and <fr:tex>\mathscr { F }</fr:tex>, and consider only the proper morphism <fr:tex>\overline {f}</fr:tex> of formal schemes, along with the coherent sheaf <fr:tex>\overline { \mathscr { F } }</fr:tex> on <fr:tex>\overline {X}</fr:tex>.
+  (However, the speaker has only written the complete proof in the case where we start with some <fr:tex>X</fr:tex>, <fr:tex>Y</fr:tex>, <fr:tex>f</fr:tex>, and <fr:tex>F</fr:tex>).
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>310</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-1</fr:addr><fr:route>fga2-theorem-1.xml</fr:route><fr:title>Finiteness theorem</fr:title><fr:number>1</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong></fr:p><fr:ol><fr:li>
+      The <fr:tex>\operatorname {R} ^q \overline {f}_*( \overline { \mathscr { F } })</fr:tex> are coherent sheaves on <fr:tex>\overline {Y}</fr:tex>.
+    </fr:li>
+
+    <fr:li>
+      The natural homomorphisms
+      <fr:tex
+display="block">          \operatorname {R} ^q \overline {f}_*( \overline { \mathscr { F } })          \to   \varprojlim _n \operatorname {R} ^q (f_n)_*( \mathscr { F } _n)       </fr:tex>
+      are isomorphisms.
+    </fr:li></fr:ol></fr:mainmatter></fr:tree><fr:p>
+  In the statement of <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>, we suppose that we already have some coherent subsheaf <fr:tex>\mathscr { J }</fr:tex> of <fr:tex>\mathcal {O} _Y</fr:tex> that defines <fr:tex>Y'</fr:tex>, whence, by taking the inverse image, a coherent subsheaf of <fr:tex>\mathcal {O} _X</fr:tex> that defines <fr:tex>X'</fr:tex>, whence, by definition, <fr:tex>\mathscr { F } _n</fr:tex>, <fr:tex>X_n</fr:tex>, <fr:tex>Y_n</fr:tex>, and <fr:tex>f_n \colon  X_n \to  Y_n</fr:tex> as in <fr:ref
+addr="fga2-2"
+href="fga2-2.xml"
+number="2"></fr:ref>.
+  The minor changes that need to be made to the notation in the explanation if we started with an arbitrary proper morphism between two formal schemes are evident.
+</fr:p><fr:p><fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> deals only with "formal cohomology";
+  the following theorem relates it with "algebraic cohomology", and resembles a well-known theorem of Serre <fr:link
+href="Ser1956.xml"
+type="local"
+addr="Ser1956">[Ser1956]</fr:link> on the comparison between algebraic cohomology and analytic cohomology.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>311</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-2</fr:addr><fr:route>fga2-theorem-2.xml</fr:route><fr:title>First comparison theorem</fr:title><fr:number>2</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The <fr:tex>\operatorname {R} ^q f_*( \mathscr { F } )</fr:tex> are coherent sheaves on <fr:tex>Y</fr:tex> (which is a particular case of <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>), and the natural homomorphisms
+    <fr:tex
+display="block">        \overline { \operatorname {R} ^q f_*( \mathscr { F } )}        \to   \varprojlim _n  \operatorname {R} ^q (f_n)_*( \mathscr { F } _n)     </fr:tex>
+    are isomorphisms.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>312</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-2-corollary-1</fr:addr><fr:route>fga2-theorem-2-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    There are canonical isomorphisms <fr:tex>\overline { \operatorname {R} ^q f_*( \mathscr { F } )} =  \operatorname {R} ^q \overline {f}_*( \overline { \mathscr { F } })</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  This corollary is, for <fr:tex>q=0</fr:tex>, a generalisation of Zariski's "fundamental theorem of holomorphic functions", from which we will deduce a generalisation of Zariski's "connection theorem".
+  We also note that, while (ii) in <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> is trivial for <fr:tex>q=0</fr:tex>, this is not at all the case for <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref> nor for its equivalent formulation (<fr:ref
+addr="fga2-theorem-2-corollary-1"
+href="fga2-theorem-2-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref>).
+  In fact, the proof proceeds by decreasing induction on <fr:tex>q</fr:tex> (being trivial for large <fr:tex>q</fr:tex>, since then both sides of the equation are zero), and the case <fr:tex>q=0</fr:tex> thus appears as the last induction step, and so could be called the "most difficult" case.
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-2-corollary-2</fr:addr><fr:route>fga2-theorem-2-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>Y= \operatorname {Spec} (A)</fr:tex>, and let <fr:tex>Y'</fr:tex> be defined by an ideal <fr:tex>\mathscr { J }</fr:tex> of <fr:tex>A</fr:tex>.
+    Then, for every coherent sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex>, the <fr:tex>\operatorname {H} ^q(X, \mathscr { F } )</fr:tex> are <fr:tex>A</fr:tex>-modules of finite type, whose <fr:tex>\mathscr { J }</fr:tex>-adic completions are the <fr:tex>\operatorname {H} ^q( \overline {X}, \overline { \mathscr { F } })</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Finally, applying this corollary to <fr:tex>H= \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \mathscr { F } , \mathscr { G } )</fr:tex>, we obtain:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>314</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-2-corollary-3</fr:addr><fr:route>fga2-theorem-2-corollary-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>Y= \operatorname {Spec} (A)</fr:tex>, and let <fr:tex>Y'</fr:tex> be defined by an ideal <fr:tex>\mathscr { J }</fr:tex> of <fr:tex>A</fr:tex>.
+    Let <fr:tex>\mathscr { F }</fr:tex> and <fr:tex>\mathscr { G }</fr:tex> be coherent sheaves on <fr:tex>X</fr:tex>.
+    Then <fr:tex>\operatorname {Hom} ( \mathscr { F } , \mathscr { G } )</fr:tex> is an <fr:tex>A</fr:tex>-module of finite type, whose <fr:tex>\mathscr { J }</fr:tex>-adic completion can be identified with <fr:tex>\operatorname {Hom} ( \overline { \mathscr { F } }, \overline { \mathscr { G } })</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Of course, the natural map <fr:tex>\operatorname {Hom} ( \mathscr { F } , \mathscr { G } ) \to \operatorname {Hom} ( \overline { \mathscr { F } }, \overline { \mathscr { G } })</fr:tex> is that which sends a homomorphism <fr:tex>u \colon \mathscr { F } \to \mathscr { G }</fr:tex> to its extension "by continuity" <fr:tex>\overline {u} \colon \overline { \mathscr { F } } \to \overline { \mathscr { G } }</fr:tex> (so that <fr:tex>\overline { \mathscr { F } }</fr:tex> becomes a functor in <fr:tex>\mathscr { F }</fr:tex>).
+</fr:p><fr:p>
+  Now suppose that <fr:tex>A</fr:tex> is separated and complete for its <fr:tex>\mathscr { J }</fr:tex>-adic topology.
+  Then <fr:ref
+addr="fga2-theorem-2-corollary-2"
+href="fga2-theorem-2-corollary-2.xml"
+taxon="Corollary"
+number="2"></fr:ref> and <fr:ref
+addr="fga2-theorem-2-corollary-3"
+href="fga2-theorem-2-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> above give:
+  <fr:tex
+display="block">      \begin {aligned}        \operatorname {H} ^q(X, \mathscr { F } ) &amp;=  \operatorname {H} ^q( \overline {X}, \overline { \mathscr { F } }),      \\ \operatorname {Hom} ( \mathscr { F } , \mathscr { G } ) &amp;=  \operatorname {Hom} ( \overline { \mathscr { F } }, \overline { \mathscr { G } }).      \end {aligned}   </fr:tex>
+  
+  The latter identity shows that the category of coherent sheaves on <fr:tex>X</fr:tex> can be identified with a <fr:em>subcategory</fr:em> (with morphisms being the induced morphisms) of the category of coherent sheaves on <fr:tex>\overline {X}</fr:tex>.
+  In fact, we even have:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>315</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-3</fr:addr><fr:route>fga2-theorem-3.xml</fr:route><fr:number>3</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    For a sheaf of modules on <fr:tex>\overline {X}</fr:tex> to be coherent, it is necessary and sufficient that it be isomorphic to a sheaf of the form <fr:tex>\overline { \mathscr { F } }</fr:tex>, where <fr:tex>\mathscr { F }</fr:tex> is a coherent sheaf on <fr:tex>X</fr:tex> (determined up to canonical isomorphism, by <fr:ref
+addr="fga2-theorem-2-corollary-3"
+href="fga2-theorem-2-corollary-3.xml"
+taxon="Corollary"
+number="3"></fr:ref> above).
+    (We recall that now <fr:tex>Y= \operatorname {Spec} (A)</fr:tex>, with <fr:tex>A</fr:tex> being a complete and separated <fr:tex>\mathscr { J }</fr:tex>-adic Noetherian topological ring).
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>316</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-3-corollary-1</fr:addr><fr:route>fga2-theorem-3-corollary-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The closed subschemes of <fr:tex>X</fr:tex> are in bijective correspondence with the closed formal subschemes of <fr:tex>\overline {X}</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Indeed, they correspond to coherent subsheaves of <fr:tex>\mathcal {O} _X</fr:tex> (resp. of <fr:tex>\mathcal {O} _{ \overline {X}}</fr:tex>).
+  Considering the graphs of morphisms as closed subschemes, <fr:ref
+addr="fga2-theorem-3-corollary-1"
+href="fga2-theorem-3-corollary-1.xml"
+taxon="Corollary"
+number="1"></fr:ref> above implies:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga2-theorem-3-corollary-2</fr:addr><fr:route>fga2-theorem-3-corollary-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>X</fr:tex> and <fr:tex>Z</fr:tex> be proper schemes over <fr:tex>A</fr:tex> (which is a separated complete <fr:tex>\mathscr { J }</fr:tex>-adic Noetherian ring).
+    Then the map <fr:tex>g \mapsto \overline {g}</fr:tex> defines a bijective correspondence between <fr:tex>Y</fr:tex>-morphism from <fr:tex>X</fr:tex> to <fr:tex>Z</fr:tex> and <fr:tex>\overline {Y}</fr:tex>-morphisms from <fr:tex>\overline {X}</fr:tex> to <fr:tex>\overline {Z}</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  In other words, proper algebraic schemes over <fr:tex>A</fr:tex> give a subcategory (with the morphisms being the induced morphisms) of the category of proper formal schemes over <fr:tex>\overline {Y}</fr:tex>.
+  We note, however, that <fr:em>there exist proper formal schemes over <fr:tex>\overline {Y}</fr:tex> that are not "algebraisable"</fr:em>, i.e. isomorphic to some <fr:tex>\overline {X}</fr:tex>, where <fr:tex>X</fr:tex> is proper over <fr:tex>A</fr:tex> (just as there exist compact complex-analytic varieties that do not come from algebraic varieties defined over the field of complex numbers).
+  Such formal schemes naturally appear in "module theory".
+  We note, however, an interesting case where a formal scheme is algebraisable:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>318</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga2-theorem-4</fr:addr><fr:route>fga2-theorem-4.xml</fr:route><fr:number>4</fr:number><fr:parent>fga2-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>A</fr:tex> be a complete local Noetherian ring, with residue field <fr:tex>k</fr:tex>, and let <fr:tex>\mathfrak {X}</fr:tex> be a proper formal scheme over <fr:tex>A</fr:tex> (endowed with its <fr:tex>\mathfrak {r}(A)</fr:tex>-adic topology).
+    We suppose that
+    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
+
+    <fr:ol><fr:li>
+        the local rings of <fr:tex>\mathcal {O} _{ \mathfrak {X}}</fr:tex> are <fr:em>flat</fr:em> <fr:tex>A</fr:tex>-modules, or, equivalently, that, if we endow <fr:tex>\mathcal {O} _{ \mathfrak {X}}</fr:tex> and <fr:tex>A</fr:tex> with the filtration given by powers of the maximal ideal of <fr:tex>A</fr:tex>, then the associated graded algebras satisfy
+        <fr:tex
+display="block">            \operatorname {gr} ( \mathcal {O} _{ \mathfrak {X}})            \simeq   \operatorname {gr} ^0( \mathcal {O} _{ \mathfrak {X}}) \otimes _k \operatorname {gr} (A);         </fr:tex></fr:li>
+
+      <fr:li><fr:tex>\operatorname {H} ^2( \mathfrak {X}_0, \mathcal {O} _{ \mathfrak {X}_0})=0</fr:tex>, where we consider <fr:tex>\mathfrak {X}_0= \mathfrak {X} \otimes _Ak</fr:tex> as an algebraic scheme over <fr:tex>k</fr:tex>;
+      </fr:li>
+
+      <fr:li><fr:tex>\mathfrak {X}_0</fr:tex> is projective.
+      </fr:li></fr:ol>
+
+    
+    Then, under these conditions, <fr:tex>\mathfrak {X}</fr:tex> is algebraisable, and, more precisely, is isomorphic to <fr:tex>\overline {X}</fr:tex>, where <fr:tex>X</fr:tex> is some projective <fr:tex>A</fr:tex>-scheme.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Conditions (ii) and (iii) in <fr:ref
+addr="fga2-theorem-4"
+href="fga2-theorem-4.xml"
+taxon="Theorem"
+number="4"></fr:ref> will be satisfied if, in particular, <fr:tex>\mathfrak {X}_0</fr:tex> is a <fr:em>simple curve</fr:em> over <fr:tex>k</fr:tex>, and <fr:ref
+addr="fga2-theorem-4"
+href="fga2-theorem-4.xml"
+taxon="Theorem"
+number="4"></fr:ref> can be applied, in particular, in the "module theory" of curves of a given genus...
+  We will give here a hint on how to prove <fr:ref
+addr="fga2-theorem-4"
+href="fga2-theorem-4.xml"
+taxon="Theorem"
+number="4"></fr:ref>:
+  we can show (cf. <fr:ref
+addr="fga2-proposition-3"
+href="fga2-proposition-3.xml"
+taxon="Proposition"
+number="3"></fr:ref> below) that (i) and (ii) imply that every coherent sheaf on <fr:tex>\mathfrak {X}_0</fr:tex> that is locally isomorphic to a fundamental sheaf can be obtained by reduction starting from a sheaf of the same nature on <fr:tex>\mathfrak {X}</fr:tex>.
+  So, starting with an "ample" sheaf on <fr:tex>\mathfrak {X}_0</fr:tex> (which, by (iii), exists), we lift it to obtain an invertible sheaf on <fr:tex>\mathfrak {X}</fr:tex>, and, using <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>, we prove that a multiple of this invertible sheaf defined an immersion of <fr:tex>X</fr:tex> into the formal completion of a scheme <fr:tex>\mathbb {P} _A^r</fr:tex> ("projective type" of dimension <fr:tex>r</fr:tex> over <fr:tex>A</fr:tex>).
+</fr:p><fr:p>
+  For the proof of <fr:ref
+addr="fga2-theorem-1"
+href="fga2-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref>, <fr:ref
+addr="fga2-theorem-2"
+href="fga2-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref>, and <fr:ref
+addr="fga2-theorem-3"
+href="fga2-theorem-3.xml"
+taxon="Theorem"
+number="3"></fr:ref>, we refer the reader to [<fr:link
+href="GD1960.xml"
+type="local"
+addr="GD1960">GD1960</fr:link>, I].
+</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

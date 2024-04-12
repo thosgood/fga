@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1396</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-a.2.b-equation</fr:addr><fr:route>fga3.i-a.2.b-equation.xml</fr:route><fr:number>+</fr:number></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">         S  \xleftarrow { \alpha }         S'  \overset { \beta _1 }{ \underset { \beta _2 }{ \leftleftarrows }}          S''       \tag{+}       </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1395</fr:anchor><fr:addr>fga3.i-a.2.b</fr:addr><fr:route>fga3.i-a.2.b.xml</fr:route><fr:number>A.2.b</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>467</fr:anchor><fr:taxon>Example</fr:taxon><fr:parent>fga3.i-a.2.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\mathcal {C}</fr:tex> be the category of preschemes.
+    Let <fr:tex>S \in \mathcal {C}</fr:tex>, and let <fr:tex>S'</fr:tex> and <fr:tex>S''</fr:tex> be preschemes that are <fr:em>finite</fr:em> over <fr:tex>S</fr:tex>, i.e. that correspond to sheaves of algebras <fr:tex>\mathscr { A } '</fr:tex> and <fr:tex>\mathscr { A } ''</fr:tex> over <fr:tex>S</fr:tex> that are quasi-coherent (as sheaves of modules) and of finite type (i.e. coherent, if <fr:tex>S</fr:tex> is locally Noetherian).
+    Let <fr:tex>\alpha \colon  S' \to  S</fr:tex> be the structure morphism of <fr:tex>S'</fr:tex>, and let <fr:tex>\beta _1</fr:tex> and <fr:tex>\beta _2</fr:tex> be <fr:tex>S</fr:tex>-morphisms from <fr:tex>S''</fr:tex> to <fr:tex>S'</fr:tex>, defined by algebra homomorphisms <fr:tex>\mathscr { A } ' \to \mathscr { A } ''</fr:tex>, which we also denote by <fr:tex>\beta _1</fr:tex> and <fr:tex>\beta _2</fr:tex>.
+    Using the fact that a finite morphism is closed (the first Cohen–Seidenberg theorem), we can easily prove that the diagram in <fr:tex>\mathcal {C}</fr:tex>
+
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>466</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-a.2.b-equation</fr:addr><fr:route>fga3.i-a.2.b-equation.xml</fr:route><fr:number>+</fr:number></fr:frontmatter><fr:mainmatter><fr:tex
+display="block">         S  \xleftarrow { \alpha }         S'  \overset { \beta _1 }{ \underset { \beta _2 }{ \leftleftarrows }}          S''       \tag{+}       </fr:tex></fr:mainmatter></fr:tree>
+
+    
+    is exact if and only if the diagram of sheaves on <fr:tex>S</fr:tex>
+    <fr:tex
+display="block">        \mathscr { O } _S =  \mathscr { A }   \xrightarrow { \alpha }        \mathscr { A } '  \overset { \beta _1 }{ \underset { \beta _2 }{ \rightrightarrows }}         \mathscr { A } ''     </fr:tex>
+    is exact.
+    In particular, if <fr:tex>\alpha \colon  S' \to  S</fr:tex> is a finite morphism corresponding to a sheaf <fr:tex>\mathscr { A } '</fr:tex> of algebras on <fr:tex>S</fr:tex>, then <fr:tex>\alpha</fr:tex> is a strict epimorphism if and only if the diagram of sheaves
+    <fr:tex
+display="block">        \mathscr { O } _S =  \mathscr { A }   \to         \mathscr { A } '  \overset { p_1 }{ \underset { p_2 }{ \rightrightarrows }}         \mathscr { A } ' \otimes _{ \mathscr { A } } \mathscr { A } '     </fr:tex>
+    is exact (it is an epimorphism if and only if <fr:tex>\mathscr { A } \to \mathscr { A } '</fr:tex> is injective).
+    If <fr:tex>S</fr:tex> is affine of ring <fr:tex>A</fr:tex>, then <fr:tex>S'</fr:tex> is affine of ring <fr:tex>A'</fr:tex>, with <fr:tex>A'</fr:tex> finite over <fr:tex>A</fr:tex>, and so <fr:tex>S' \to  S</fr:tex> is a strict epimorphism if and only if <fr:tex>A \to  A'</fr:tex> is an isomorphism from <fr:tex>A</fr:tex> to the subring of <fr:tex>A'</fr:tex> consisting of the <fr:tex>x' \in  A'</fr:tex> such that
+    <fr:tex
+display="block">       1_{A'} \otimes _A x' - x' \otimes _A 1_{A'}       = 0     </fr:tex>
+    (it is an epimorphism if and only if <fr:tex>A \to  A'</fr:tex> is injective).
+    As we have already mentioned, even if <fr:tex>S</fr:tex> is the scheme of a local Artinian ring, then a finite morphism <fr:tex>S' \to  S</fr:tex> that is an epimorphism is not necessarily a strict epimorphism.
+    However, we can prove that, <fr:em>if <fr:tex>S</fr:tex> is a Noetherian prescheme, then every finite morphism <fr:tex>S' \to  S</fr:tex> that is an epimorphism is the composition of a finite sequence of strict epimorphisms</fr:em> (also finite).
+    This also shows that the composition of two strict epimorphisms is not necessarily a strict epimorphism.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1393</fr:anchor><fr:addr>fga3.i-a.2.c</fr:addr><fr:route>fga3.i-a.2.c.xml</fr:route><fr:number>A.2.c</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  If <fr:ref
+addr="fga3.i-a.2.b-equation"
+href="fga3.i-a.2.b-equation.xml"
+taxon="Equation"
+number="+"></fr:ref> is an exact diagram of finite morphisms, then, for every <fr:em>flat</fr:em> morphism <fr:tex>T \to  S</fr:tex> of prescheme, the diagram induced from <fr:ref
+addr="fga3.i-a.2.b-equation"
+href="fga3.i-a.2.b-equation.xml"
+taxon="Equation"
+number="+"></fr:ref> by a change of base <fr:tex>T \to  S</fr:tex> is again exact.
+  It thus follows that, if <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> are <fr:tex>S</fr:tex>-preschemes, with <fr:tex>X</fr:tex> <fr:em>flat</fr:em> over <fr:tex>S</fr:tex>, then the following diagram of maps (where <fr:tex>X'</fr:tex> and <fr:tex>Y'</fr:tex> are the inverse images of <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> over <fr:tex>S'</fr:tex>, and <fr:tex>X''</fr:tex> and <fr:tex>Y''</fr:tex> are their inverse images over <fr:tex>S''</fr:tex>) is exact:
+  <fr:tex
+display="block">      \operatorname {Hom} _S(X,Y)  \to       \operatorname {Hom} _{S'}(X',Y')  \rightrightarrows       \operatorname {Hom} _{S''}(X'',Y'').   </fr:tex>
+  In particular, if <fr:tex>\mathcal {F}</fr:tex> denotes the fibred category (over the category <fr:tex>\mathcal {C}</fr:tex> of preschemes) such that, for <fr:tex>X \in \mathcal {C}</fr:tex>, <fr:tex>\mathcal {F}_X</fr:tex> is the category of <fr:em>flat</fr:em> <fr:tex>X</fr:tex>-preschemes, then the diagram <fr:ref
+addr="fga3.i-a.2.b-equation"
+href="fga3.i-a.2.b-equation.xml"
+taxon="Equation"
+number="+"></fr:ref> is <fr:tex>\mathcal {F}</fr:tex>-exact.
+  (This result becomes false if we do not impose the flatness hypothesis; in particular, a finite strict epimorphism is not necessarily a descent morphism).
+  We similarly see that <fr:ref
+addr="fga3.i-a.2.b-equation"
+href="fga3.i-a.2.b-equation.xml"
+taxon="Equation"
+number="+"></fr:ref> is <fr:tex>\mathcal {F}</fr:tex>-exact if <fr:tex>\mathcal {F}</fr:tex> denotes the fibred category for which <fr:tex>\mathcal {F}_X</fr:tex> is the category of <fr:em>flat</fr:em> quasi-coherent sheaves on the prescheme <fr:tex>X</fr:tex> (here, again, the flatness hypothesis is essential).
+  
+  In either case, the question of <fr:em>effectiveness</fr:em> of a gluing data (and, more specifically, of a descent data, when <fr:tex>S''=S' \times _S S'</fr:tex>) on a flat object over <fr:tex>S'</fr:tex> is delicate (and its answer in many particular cases in one of the principal objects of these current articles).
+  The speaker does not know if, for every finite strict epimorphism <fr:tex>S' \to  S</fr:tex>, every descent data on a flat quasi-coherent sheaf on <fr:tex>S'</fr:tex> is effective (even if we suppose that <fr:tex>S</fr:tex> is the spectrum of a local Artinian ring, and we restrict to locally free sheaves of rank <fr:tex>1</fr:tex>).
+  More generally, let <fr:tex>A</fr:tex> be a ring, and <fr:tex>A'</fr:tex> an <fr:tex>A</fr:tex>-algebra (where everything is commutative) such that the diagram
+  <fr:tex
+display="block">     A  \to      A'  \rightrightarrows      A' \otimes _A A'   </fr:tex>
+  is exact, which is equivalent to saying that the corresponding morphism <fr:tex>S' \to  S</fr:tex> between the spectra of <fr:tex>A'</fr:tex> and <fr:tex>A</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism, where <fr:tex>\mathcal {F}</fr:tex> is the fibred category of flat quasi-coherent sheaves.
+  Let <fr:tex>M'</fr:tex> be a flat <fr:tex>A'</fr:tex>-module endowed with a descent data to <fr:tex>A</fr:tex>, i.e. with an isomorphism
+  <fr:tex
+display="block">      \varphi \colon  M' \otimes _A A'      \xrightarrow { \sim } A' \otimes _A M'   </fr:tex>
+  of <fr:tex>(A' \otimes _A A')</fr:tex>-modules that satisfies conditions (i) and (ii) of <fr:ref
+addr="fga3.i-a.1.c"
+href="fga3.i-a.1.c.xml"
+number="A.1.c"></fr:ref> (which we leave to the reader to write out in terms of modules).
+  Is this data effective (relative to the fibred category of flat quasi-coherent sheaves)?
+  Let <fr:tex>M</fr:tex> be the subset of <fr:tex>M'</fr:tex> consisting of the <fr:tex>x' \in  M'</fr:tex> such that
+  <fr:tex
+display="block">      \varphi (x' \otimes _A 1_{A'})     = 1_{A'} \otimes _A x',   </fr:tex>
+  which is a sub-<fr:tex>A</fr:tex>-module of <fr:tex>M'</fr:tex>.
+  The canonical injection <fr:tex>M \to  M'</fr:tex> defines a homomorphism of <fr:tex>A'</fr:tex>-modules <fr:tex>M \otimes _A A' \to  M'</fr:tex>.
+  <fr:em>The effectiveness of <fr:tex>\varphi</fr:tex> then implies the following: <fr:tex>M</fr:tex> is a flat <fr:tex>A</fr:tex>-module, and the above homomorphism is an isomorphism.</fr:em></fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>469</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.2.c-remark</fr:addr><fr:route>fga3.i-a.2.c-remark.xml</fr:route><fr:parent>fga3.i-a.2.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    In the above, we have imposed no flatness hypotheses on the morphisms of the diagram <fr:ref
+addr="fga3.i-a.2.b-equation"
+href="fga3.i-a.2.b-equation.xml"
+taxon="Equation"
+number="+"></fr:ref>, and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that we consider.
+    In <fr:ref
+addr="fga3.i-b.2"
+href="fga3.i-b.2.xml"
+number="B.2"></fr:ref>, we will impose a flatness hypothesis on <fr:tex>\alpha \colon  S' \to  S</fr:tex>, which will allow us to have a technique of descent for objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that are no longer under any flatness hypotheses.
+    In any case, there is a flatness hypothesis involved somewhere.
+    This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base <fr:em>fields</fr:em>, over which everything, in fact, is flat!).
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1394</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.2.c-remark</fr:addr><fr:route>fga3.i-a.2.c-remark.xml</fr:route><fr:parent>fga3.i-a.2.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    In the above, we have imposed no flatness hypotheses on the morphisms of the diagram <fr:ref
+addr="fga3.i-a.2.b-equation"
+href="fga3.i-a.2.b-equation.xml"
+taxon="Equation"
+number="+"></fr:ref>, and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that we consider.
+    In <fr:ref
+addr="fga3.i-b.2"
+href="fga3.i-b.2.xml"
+number="B.2"></fr:ref>, we will impose a flatness hypothesis on <fr:tex>\alpha \colon  S' \to  S</fr:tex>, which will allow us to have a technique of descent for objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that are no longer under any flatness hypotheses.
+    In any case, there is a flatness hypothesis involved somewhere.
+    This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base <fr:em>fields</fr:em>, over which everything, in fact, is flat!).
+  </fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

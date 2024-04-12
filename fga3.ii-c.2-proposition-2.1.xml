@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1588</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.2-proposition-2.1</fr:addr><fr:route>fga3.ii-c.2-proposition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\Lambda</fr:tex> be a Noetherian ring, and <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> arbitrary preschemes over <fr:tex>\Lambda</fr:tex>.
+    Consider the functor
+    <fr:tex
+display="block">       F(A)       =  \operatorname {Hom} _A(X_A,Y_A)     </fr:tex>
+    on the category <fr:tex>\mathcal {C}_0</fr:tex> of Artinian <fr:tex>\Lambda</fr:tex>-algebras.
+    If <fr:tex>X</fr:tex> is flat over <fr:tex>\Lambda</fr:tex>, then this functor is pro-representable.
+  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>1587</fr:anchor><fr:addr>fga3.ii-c.2</fr:addr><fr:route>fga3.ii-c.2.xml</fr:route><fr:title><fr:link
+href="fga3.ii-c.xml"
+type="local"
+addr="fga3.ii-c"><fr:link
+href="fga3.ii.xml"
+type="local"
+addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Applications to some particular cases</fr:link> › The schemes <fr:tex>\underline { \operatorname {Hom}}_S(X,Y)</fr:tex>, <fr:tex>\prod _{X/S}Z</fr:tex>, <fr:tex>\underline { \operatorname {Aut}}(X)</fr:tex>, etc.</fr:title><fr:number>C.2</fr:number><fr:parent>fga3.ii-c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> be preschemes over <fr:tex>S</fr:tex>;
+  
+  for every prescheme <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, let <fr:tex>X_T=X \times _S T</fr:tex> and <fr:tex>Y_T=Y \times _S T</fr:tex>, and consider the set
+  <fr:tex
+display="block">     F(T)     =  \operatorname {Hom} _T(X_T,Y_T)     =  \operatorname {Hom} _S(X_T,Y)     =  \operatorname {Hom} _S(X \times _S T,Y)   </fr:tex>
+  as a contravariant functor in <fr:tex>T</fr:tex>.
+  If it is representable, then we denote by <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex> the prescheme over <fr:tex>S</fr:tex> that represents it, and we then have a functorial isomorphism
+  <fr:tex
+display="block">      \operatorname {Hom} _S(T, \underline { \operatorname {Hom} } _S(X,Y))  \xrightarrow { \sim }   \operatorname {Hom} _S(T \times _S X,Y).   </fr:tex>
+  There are variants of this universal problem, the solutions to which can be summarised as follows: a prescheme of <fr:em><fr:tex>S</fr:tex>-automorphisms of</fr:em> an <fr:tex>S</fr:tex>-prescheme <fr:tex>X</fr:tex> (which will be a prescheme in <fr:em>groups</fr:em>), a prescheme of <fr:em><fr:tex>S</fr:tex>-homomorphisms</fr:em> from an <fr:tex>S</fr:tex>-prescheme in <fr:em>groups</fr:em> to another (which will be a prescheme in commutative groups if the latter scheme in groups is commutative), etc.
+  We can also generalise the definition of <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex> by considering a prescheme <fr:tex>Z</fr:tex> over the prescheme <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and the functor
+  <fr:tex
+display="block">     F(T)     =  \operatorname {Hom} _{X_T}(X_T,Z_T)   </fr:tex>
+  (the set of "sections" of <fr:tex>Z_T</fr:tex> over <fr:tex>X_T</fr:tex>);
+  if this functor is representable, then the <fr:tex>S</fr:tex>-prescheme that represents it will be denoted by <fr:tex>\Pi _{X/S}Z</fr:tex>, and we will thus have, by definition, a functorial isomorphism
+  <fr:tex
+display="block">      \operatorname {Hom} _S(T, \Pi _{X/S}Z)     =  \operatorname {Hom} _{X_T}(X_T,Z_T).   </fr:tex>
+  Setting <fr:tex>Z=Y \times _S X</fr:tex>, we recover <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex>.
+  From these definitions follows a formula for the new preschemes thus introduced that is as trivial as it is useful, that we will not give here (given that it holds in every category where products and fibred products exist).
+  More serious is the question of <fr:em>existence</fr:em> of schemes of the type <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex>.
+  We note first of all that, for fixed <fr:tex>X</fr:tex>, <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex> (resp. <fr:tex>\Pi _{X/S}Z</fr:tex>) can only exist for all <fr:tex>Y</fr:tex> over <fr:tex>S</fr:tex> (resp. for all <fr:tex>Z</fr:tex> over <fr:tex>X</fr:tex>) if <fr:tex>X</fr:tex> is <fr:em>flat</fr:em> over <fr:tex>S</fr:tex>.
+  Furthermore, we can convince ourselves that it is not reasonable to expect the existence of a solution, for general enough <fr:tex>Y</fr:tex>, except in the case where <fr:tex>X</fr:tex> is further <fr:em>proper</fr:em> over <fr:tex>S</fr:tex>.
+  It seems, however, that these conditions are sufficient for the existence of <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex> and <fr:tex>\Pi _{X/S}Z</fr:tex>, with the condition that, if necessary, we make some sort of "quasi-projective" hypothesis on <fr:tex>Y/S</fr:tex> (resp. <fr:tex>Z/X</fr:tex>);
+  this is what we can verify anyway in numerous cases (for example, when <fr:tex>Y</fr:tex> is <fr:em>affine</fr:em> over <fr:tex>S</fr:tex>, or, by direct elementary constructions, when <fr:tex>X</fr:tex> is <fr:em>finite</fr:em> over <fr:tex>S</fr:tex>).
+  Then <fr:ref
+addr="fga3.ii-b-theorem-1"
+href="fga3.ii-b-theorem-1.xml"
+taxon="Theorem"
+number="1"></fr:ref> and <fr:ref
+addr="fga3.ii-b-theorem-2"
+href="fga3.ii-b-theorem-2.xml"
+taxon="Theorem"
+number="2"></fr:ref> give:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1557</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.2-proposition-2.1</fr:addr><fr:route>fga3.ii-c.2-proposition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Let <fr:tex>\Lambda</fr:tex> be a Noetherian ring, and <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> arbitrary preschemes over <fr:tex>\Lambda</fr:tex>.
+    Consider the functor
+    <fr:tex
+display="block">       F(A)       =  \operatorname {Hom} _A(X_A,Y_A)     </fr:tex>
+    on the category <fr:tex>\mathcal {C}_0</fr:tex> of Artinian <fr:tex>\Lambda</fr:tex>-algebras.
+    If <fr:tex>X</fr:tex> is flat over <fr:tex>\Lambda</fr:tex>, then this functor is pro-representable.
+  </fr:p></fr:mainmatter></fr:tree><fr:p>
+  Furthermore, we can show that, for all <fr:tex>A \in \mathcal {C}_0</fr:tex> and all <fr:tex>\xi \in  F(A)</fr:tex>, we have a canonical isomorphism
+  <fr:tex
+display="block">     F(I_A, \xi )     =  \operatorname {H} ^1 \Big (X_A, \underline { \operatorname {Hom} } _{ \mathscr { O } _{X_A}} \big ( \xi ^*( \Omega _{Y_A/A}^1), \mathscr { O } _{X_A} \big ) \Big )   </fr:tex>
+  where <fr:tex>\Omega _{Y_A/A}^1</fr:tex> is the sheaf of Kähler <fr:tex>1</fr:tex>-differentials of <fr:tex>Y_A</fr:tex> with respect to <fr:tex>A</fr:tex>.
+  Taking <fr:tex>A</fr:tex> to be a field, we find, using <fr:link
+href="fga3.ii-a.5-proposition-5.1.xml"
+type="local"
+addr="fga3.ii-a.5-proposition-5.1">§A, Proposition 5.1</fr:link> and the finiteness theorem from <fr:ref
+addr="fga2"
+href="fga2.xml"
+taxon="FGA"
+number="2"></fr:ref>, the following corollary:
+</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1558</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.ii-c.2-proposition-2.1-corollary</fr:addr><fr:route>fga3.ii-c.2-proposition-2.1-corollary.xml</fr:route><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    Suppose that <fr:tex>X</fr:tex> is flat and proper over <fr:tex>S</fr:tex>, and that <fr:tex>Y</fr:tex> is of finite type over <fr:tex>S</fr:tex>.
+    Then <fr:tex>F</fr:tex> is pro-representable, and the local components of the corresponding topological <fr:tex>\Lambda</fr:tex>-algebra are <fr:em>Noetherian</fr:em> rings.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1559</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.ii-c.2-remarks</fr:addr><fr:route>fga3.ii-c.2-remarks.xml</fr:route><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+    The problems considered in this section, and many others, having been generally studied, in the framework of classical algebraic geometry, via the "Chow coordinates" of cycles in projective space, allow us to consider these cycles as points of suitable projective varieties.
+    This procedure, and, more generally, the use of Chow coordinates, seems irredeemably insufficient from the point of view of schemes, since it destroys the nilpotent elements in the parameterised varieties, and, in particular, do not lend themselves to a satisfying study of infinitesimal variations of cycles (without taking its non-intrinsic nature, linked to the projective space, into account).
+    The language of Chow coordinates has sadly been the only one used by many algebraic geometers for the study of families of varieties or families of cycles, which seems to have been a serious obstacle to the understanding of these notions, despite its certain technical interest (probably temporary).
+    If we wish to obtain the analogue of Chow varieties in the theory of schemes, we are led to the following universal problem:
+    let <fr:tex>X</fr:tex> be a prescheme over <fr:tex>S</fr:tex>, and, for every prescheme <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, consider the set <fr:tex>F(T)</fr:tex> of closed sub-preschemes of <fr:tex>X_T=X \times _S T</fr:tex> that are <fr:em>flat</fr:em> over <fr:tex>T</fr:tex>; we want to represent this functor in <fr:tex>T</fr:tex> via some prescheme over <fr:tex>S</fr:tex>.
+    
+    More generally, we can start with a quasi-coherent sheaf <fr:tex>\mathscr { G }</fr:tex> on <fr:tex>X</fr:tex>, and take <fr:tex>F(T)</fr:tex> to be the set of quotient sheaves of <fr:tex>\mathscr { G } _T</fr:tex> that are flat over <fr:tex>T</fr:tex>.
+    It seems that there exists a solution to this problem, with a scheme <fr:tex>C</fr:tex> that is locally of finite type over <fr:tex>S</fr:tex>, if <fr:tex>X</fr:tex> is proper over <fr:tex>S</fr:tex>, if <fr:tex>S</fr:tex> is locally Noetherian, and if <fr:tex>F</fr:tex> is furthermore coherent.
+    In any case, supposing only that <fr:tex>S</fr:tex> is locally Noetherian, the restriction of <fr:tex>F</fr:tex> to "Artinian <fr:tex>S</fr:tex>-algebras" is pro-representable, and, if, furthermore, <fr:tex>X</fr:tex> is proper over <fr:tex>S</fr:tex>, and <fr:tex>F</fr:tex> is coherent, then the local components of the corresponding topological ring <fr:tex>\mathscr { O }</fr:tex> are Noetherian.
+    Of course, even after having proven the existence of the "Chow scheme" of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, it remains to find a decomposition of it into disjoint open subsets <fr:tex>C_i</fr:tex> (corresponding to fixing continuous invariants, such as degree and dimension of the cycles that we vary) over <fr:tex>S</fr:tex>, as well as to make precise the relations between this scheme with the classical Chow varieties, and to make precise when a <fr:tex>C_i</fr:tex> is <fr:em>projective</fr:em> (or at least quasi-projective) over <fr:tex>S</fr:tex>.
+  </fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"><fr:frontmatter><fr:anchor>1560</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.ii-c.2-remark</fr:addr><fr:route>fga3.ii-c.2-remark.xml</fr:route><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+    The problems described here are completely resolved in the projective case by "Hilbert schemes" (cf. <fr:ref
+addr="fga3.iv"
+href="fga3.iv.xml"
+taxon="FGA"
+number="3.IV"></fr:ref>).
+    Examples by Nagata and Hironaka show, however, that the functors described are not necessarily representable if we do not make the projective hypothesis, even if we restrict to the classification of subvarieties of dimension <fr:tex>0</fr:tex> of a complete non-singular variety of dimension <fr:tex>3</fr:tex>;
+    this is linked to the fact that the symmetric square of such a variety does not necessarily exist.
+  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
