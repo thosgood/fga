@@ -6,7 +6,7 @@ toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>2069</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-6-remark-6.6</fr:addr><fr:route>fga3.v-6-remark-6.6.xml</fr:route><fr:number>6.6</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2274</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-6-remark-6.6</fr:addr><fr:route>fga3.v-6-remark-6.6.xml</fr:route><fr:number>6.6</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     It is extremely plausible that, for every <fr:em>proper</fr:em> scheme <fr:tex>X</fr:tex> over a field <fr:tex>k</fr:tex>, <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> exists.
     The results above allow us to reduce, for this question, to the case where <fr:tex>k</fr:tex> is algebraically closed, and where <fr:tex>X</fr:tex> is integral.
     We then know that there exists an integral scheme <fr:tex>X'</fr:tex> that is <fr:em>projective</fr:em> over <fr:tex>k</fr:tex>, and a dominant morphism <fr:tex>g \colon  X' \to  X</fr:tex> (Chow's lemma).
@@ -32,7 +32,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>2068</fr:anchor><fr:addr>fga3.v-6</fr:addr><fr:route>fga3.v-6.xml</fr:route><fr:title><fr:link
+expanded="true"><fr:frontmatter><fr:anchor>2273</fr:anchor><fr:addr>fga3.v-6</fr:addr><fr:route>fga3.v-6.xml</fr:route><fr:title><fr:link
 href="fga3.v.xml"
 type="local"
 addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Relative existence theorems</fr:title><fr:number>6</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
@@ -287,7 +287,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>2067</fr:anchor><fr:taxon>FGA</fr:taxon><fr:addr>fga3.vi</fr:addr><fr:route>fga3.vi.xml</fr:route><fr:title>Picard schemes: General properties</fr:title><fr:number>3.VI</fr:number></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2272</fr:anchor><fr:taxon>FGA</fr:taxon><fr:addr>fga3.vi</fr:addr><fr:route>fga3.vi.xml</fr:route><fr:title>Picard schemes: General properties</fr:title><fr:number>3.VI</fr:number></fr:frontmatter><fr:mainmatter><fr:p>
   A. Grothendieck.
   "Technique de descente et théorèmes d'existence en géométrie algébrique, VI: Les schémas de Picard: Propriétés générales".
   <fr:em>Séminaire Bourbaki</fr:em> <fr:strong>14</fr:strong> (1961–62), Talk no. 236.
@@ -300,14 +300,19 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1926</fr:anchor><fr:addr>fga3.vi-0</fr:addr><fr:route>fga3.vi-0.xml</fr:route><fr:title>Supplements to the previous talk (FGA 3.V)</fr:title><fr:number>0</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2111</fr:anchor><fr:addr>fga3.vi-0</fr:addr><fr:route>fga3.vi-0.xml</fr:route><fr:title>Supplements to the previous talk (FGA 3.V)</fr:title><fr:number>0</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
   There has been some progress concerning the questions of existence of Picard preschemes raised in <fr:ref
 addr="fga3.v"
 href="fga3.v.xml"
 taxon="FGA"
 number="3.V"></fr:ref>:
-  <fr:strong><fr:em>TO-DO: the following list should be a, b</fr:em></fr:strong>
-  <fr:ol><fr:li>
+  
+  
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot; a.  &quot;">
       (Mumford).
       It is not true in general that, if <fr:tex>f \colon  X \to  S</fr:tex> is a projective and separable (i.e. flat with separable fibres) morphism, then the Picard prescheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists, even if the fibres of <fr:tex>f</fr:tex> are of dimension <fr:tex>1</fr:tex> and <fr:tex>S</fr:tex> is the spectrum of a complete discrete valuation ring.
       A counterexample is given by taking <fr:tex>S= \operatorname {Spec} \mathbb {R}[{[t]}]</fr:tex>, and taking <fr:tex>X</fr:tex> to be the subscheme of <fr:tex>\mathbb {P}_S^2</fr:tex> (with homogeneous variables <fr:tex>x,y,z</fr:tex>) defined by the equation <fr:tex>x^2+y^2=tz^2</fr:tex>, which represents a conic degenerating to two geometrically concurrent lines, but the special fibre over the field <fr:tex>\mathbb {R}</fr:tex> is nevertheless irreducible (it is given by the equation <fr:tex>x^2+y^2=0</fr:tex> in <fr:tex>\mathbb {R}</fr:tex>).
@@ -316,9 +321,12 @@ number="3.V"></fr:ref>:
       However, Mumford has shown that, if <fr:tex>f \colon  X \to  S</fr:tex> is a separable projective morphism such that, for all <fr:tex>s \in  S</fr:tex>, the irreducible components of <fr:tex>X_s</fr:tex> are geometrically irreducible with respect to <fr:tex>k(s)</fr:tex>, then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists;
       the proof relies on a refinement of his theorem of passage to the quotient, cf. [Mumford–Tate seminar, 1962].
       Note also that it is still possible that, without any hypotheses on the irreducible components of the fibres <fr:tex>X_s</fr:tex>, the scheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> (which will be introduced below) still exists.
-    </fr:li>
+    </html:li>
 
-    <fr:li>
+
+    
+ <html:li
+style="list-style-type: &quot; b.  &quot;">
       (Murre).
       
       If <fr:tex>X</fr:tex> is a proper scheme over a field, then <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> exists.
@@ -326,7 +334,10 @@ number="3.V"></fr:ref>:
 href="Che1960.xml"
 type="local"
 addr="Che1960">[Che1960]</fr:link>, and is fundamentally based on the group structure of the Picard functor.
-    </fr:li></fr:ol>
+    </html:li>
+
+  </html:ol>
+
 
   For certain additional comments concerning the theory of Picard schemes, most notably in relation to abelian schemes, we recommend consulting [Mumford–Tate seminar, 1962].
   Finally, a notable shortcoming of the present talk is the absence of "equivalence criteria" that would allow us to compare the Picard scheme of a projective scheme and of its hyperplane sections;
@@ -340,7 +351,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1943</fr:anchor><fr:addr>fga3.vi-1</fr:addr><fr:route>fga3.vi-1.xml</fr:route><fr:title>Topological properties of preschemes of commutative groups</fr:title><fr:number>1</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2136</fr:anchor><fr:addr>fga3.vi-1</fr:addr><fr:route>fga3.vi-1.xml</fr:route><fr:title>Topological properties of preschemes of commutative groups</fr:title><fr:number>1</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>k</fr:tex> be a field, and <fr:tex>G</fr:tex> be a prescheme of groups over <fr:tex>k</fr:tex>.
   Since the identity element <fr:tex>e</fr:tex>, being rational over <fr:tex>k</fr:tex>, is necessarily closed, it immediately follows that the diagonal of <fr:tex>G \times _k G</fr:tex> is closed, and so <fr:tex>G</fr:tex> is <fr:em>separated</fr:em>: <fr:em>every prescheme of groups over a field is separated</fr:em>.
   We denote by <fr:tex>G^0</fr:tex> the connected component of the identity element <fr:tex>e</fr:tex>.
@@ -368,7 +379,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1927</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-1-remark</fr:addr><fr:route>fga3.vi-1-remark.xml</fr:route><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2112</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-1-remark</fr:addr><fr:route>fga3.vi-1-remark.xml</fr:route><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     We can construct the quotient group scheme <fr:tex>G/G^0=N</fr:tex> (cf. <fr:ref
 addr="fga3.iv"
 href="fga3.iv.xml"
@@ -400,28 +411,45 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1928</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-1-theorem-1.1</fr:addr><fr:route>fga3.vi-1-theorem-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:tex>G^0</fr:tex>, <fr:tex>G^ \tau</fr:tex>, <fr:tex>G^ \sigma</fr:tex>, and <fr:tex>G^ \rho</fr:tex> are <fr:em>locally constructible</fr:em>.
+expanded="true"><fr:frontmatter><fr:anchor>2118</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-1-theorem-1.1</fr:addr><fr:route>fga3.vi-1-theorem-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:tex>G^0</fr:tex>, <fr:tex>G^ \tau</fr:tex>, <fr:tex>G^ \sigma</fr:tex>, and <fr:tex>G^ \rho</fr:tex> are <fr:em>locally constructible</fr:em>.
     Furthermore:
-    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
 
-    <fr:ol><fr:li><fr:tex>G^0</fr:tex> is quasi-compact over <fr:tex>S</fr:tex>.
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; i.  &quot;">
+        <fr:tex>G^0</fr:tex> is quasi-compact over <fr:tex>S</fr:tex>.
         If the <fr:tex>G_s^0</fr:tex> are proper, and <fr:tex>G</fr:tex> is separated over <fr:tex>S</fr:tex>, then <fr:tex>G^0</fr:tex> is proper over <fr:tex>S</fr:tex> and thus closed in <fr:tex>G</fr:tex>.
-      </fr:li>
-      <fr:li><fr:tex>G^ \tau</fr:tex> is open.
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; ii.  &quot;">
+        <fr:tex>G^ \tau</fr:tex> is open.
         If <fr:tex>G^0</fr:tex> is closed, then so too is <fr:tex>G^ \tau</fr:tex>.
-      </fr:li>
-      <fr:li>
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; iii.  &quot;">
         If <fr:tex>G^0</fr:tex> is closed, then so too is <fr:tex>G^ \sigma</fr:tex>, provided that we are in equal characteristic, i.e. that all the residue fields of <fr:tex>S</fr:tex> have the same characteristic.
         If <fr:tex>G^0</fr:tex> is closed and <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>G^ \sigma</fr:tex> (cf. <fr:ref
 addr="fga3.vi-1-corollary-1.5"
 href="fga3.vi-1-corollary-1.5.xml"
 taxon="Corollary"
 number="1.5"></fr:ref> below), then <fr:tex>G^ \sigma \to  S</fr:tex> is universally open.
-      </fr:li>
-      <fr:li>
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; iv.  &quot;">
         If <fr:tex>G^0</fr:tex> is closed, then so too is <fr:tex>G^ \rho</fr:tex>.
         If we are in equal characteristic, and if, for every integer <fr:tex>n&gt;0</fr:tex> such that <fr:tex>(n,p)=1</fr:tex>, the <fr:tex>n</fr:tex>-th power homomorphism to <fr:tex>G</fr:tex> is open, then <fr:tex>G^ \rho</fr:tex> is open.
-      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
+      </html:li>
+
+    </html:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
   We now give some hints towards the proof.
   The fact that <fr:tex>G^0</fr:tex> is locally constructible, and quasi-compact over <fr:tex>S</fr:tex>, is contained in the following lemma:
 </fr:p><fr:tree
@@ -430,7 +458,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1930</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.2</fr:addr><fr:route>fga3.vi-1-lemma-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2120</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.2</fr:addr><fr:route>fga3.vi-1-lemma-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     If <fr:tex>S \neq \varnothing</fr:tex> then there exists a non-empty open <fr:tex>U</fr:tex> in <fr:tex>S</fr:tex>, a group scheme <fr:tex>H</fr:tex> of finite type over <fr:tex>U</fr:tex> with connected fibres, and a homomorphism of group schemes <fr:tex>H \to  G|U</fr:tex> that is an open immersion with image <fr:tex>G^0|U</fr:tex>.
   </fr:p>
   
@@ -441,7 +469,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1929</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-lemma-1.2</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2119</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-lemma-1.2</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       To prove this lemma, we can suppose that <fr:tex>S</fr:tex> is irreducible;
       let <fr:tex>\eta</fr:tex> be its generic point.
@@ -464,7 +492,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1931</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.3</fr:addr><fr:route>fga3.vi-1-lemma-1.3.xml</fr:route><fr:number>1.3</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2121</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.3</fr:addr><fr:route>fga3.vi-1-lemma-1.3.xml</fr:route><fr:number>1.3</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>X</fr:tex> be a separated prescheme of finite type over <fr:tex>S</fr:tex>, with <fr:tex>S</fr:tex> locally Noetherian, and let <fr:tex>g</fr:tex> be a section of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and <fr:tex>X^0</fr:tex> the union of the connected components of the <fr:tex>g(s)</fr:tex> in the <fr:tex>X_s</fr:tex>.
     Let <fr:tex>s \in  S</fr:tex> be such that <fr:tex>X_s^0</fr:tex> is proper over <fr:tex>k(s)</fr:tex>.
     Then there exists an open neighbourhood <fr:tex>U</fr:tex> of <fr:tex>s</fr:tex> such that <fr:tex>X^0|U</fr:tex> is proper over <fr:tex>U</fr:tex>, and a fortiori closed in <fr:tex>X|U</fr:tex>.
@@ -495,16 +523,26 @@ addr="GD1960">GD1960</fr:link>, II]).
 </fr:mainmatter></fr:tree><fr:p>
   We now prove that <fr:tex>G^ \tau</fr:tex> is open, or, equivalently, taking into account the fact that the formation of <fr:tex>G^ \tau</fr:tex> (as that of <fr:tex>G^0</fr:tex>, <fr:tex>G^ \sigma</fr:tex>, and <fr:tex>G^ \rho</fr:tex>) commutes with base extension: for every sections <fr:tex>g</fr:tex> of <fr:tex>G</fr:tex> over <fr:tex>S</fr:tex>, <fr:tex>g^{-1}(G^ \tau )</fr:tex> is open.
   This implies two things:
-  <fr:strong><fr:em>TO-DO: the following list should be a, b</fr:em></fr:strong>
-
-  <fr:ol><fr:li>
+  
+  
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot; a.  &quot;">
       Let <fr:tex>y \in  S</fr:tex> be such that <fr:tex>g(y) \in  G^ \tau</fr:tex>.
       Then, for all neighbours <fr:tex>y' \in \overline {y}</fr:tex> of <fr:tex>y</fr:tex>, we have <fr:tex>g(y') \in  G^ \tau</fr:tex>.
-    </fr:li>
-    <fr:li>
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; b.  &quot;">
       Let <fr:tex>y' \in  S</fr:tex> be such that <fr:tex>g(y') \in  G^ \tau</fr:tex>.
       Then, for every generalisation <fr:tex>y</fr:tex> of <fr:tex>y'</fr:tex>, we have <fr:tex>g(y) \in  G^ \tau</fr:tex>.
-    </fr:li></fr:ol>
+    </html:li>
+
+  </html:ol>
+
 
   For (a), note that there exists an integer <fr:tex>n&gt;0</fr:tex> such that <fr:tex>g^n(y) \in  G^0</fr:tex>; since <fr:tex>G^0</fr:tex> is constructible, <fr:tex>(g^n)^{-1}G^0</fr:tex> is constructible;
   it follows that we have <fr:tex>g^n(y') \in  G^0</fr:tex> for all neighbours <fr:tex>y' \in \overline {y}</fr:tex> of <fr:tex>y</fr:tex>.
@@ -523,7 +561,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1933</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.4</fr:addr><fr:route>fga3.vi-1-lemma-1.4.xml</fr:route><fr:number>1.4</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2126</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.4</fr:addr><fr:route>fga3.vi-1-lemma-1.4.xml</fr:route><fr:number>1.4</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     The function <fr:tex>\nu</fr:tex> on <fr:tex>G^ \tau</fr:tex> is locally constructible.
   </fr:p>
   
@@ -534,7 +572,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1932</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-lemma-1.4</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2125</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-lemma-1.4</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       This means that, for every integer <fr:tex>n&gt;0</fr:tex>, the set of <fr:tex>x \in  G^ \tau</fr:tex> such that <fr:tex>\nu (x)=n</fr:tex> is locally constructible;
       but this is the difference between <fr:tex>\varphi _n^{-1}(G^0)</fr:tex> and the union of the <fr:tex>\varphi _d^{-1}(G^0)</fr:tex> where <fr:tex>d</fr:tex> runs over the proper divisors of <fr:tex>n</fr:tex>;
@@ -589,7 +627,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1935</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.5</fr:addr><fr:route>fga3.vi-1-corollary-1.5.xml</fr:route><fr:number>1.5</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2128</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.5</fr:addr><fr:route>fga3.vi-1-corollary-1.5.xml</fr:route><fr:number>1.5</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>n&gt;1</fr:tex> be an integer such that the <fr:tex>n</fr:tex>-th power homomorphism <fr:tex>\varphi _n \colon  G \to  G</fr:tex> is universally open (for example, étale).
     Let <fr:tex>G^{(n)}= \varphi _n^{-1}(G^0)</fr:tex>, and suppose that the connected fibres <fr:tex>G_s^0</fr:tex> "do not contain the additive component" (i.e. the group induced by field extension from <fr:tex>k(s)</fr:tex> to the algebraic closure does not contain a subgroup isomorphic to <fr:tex>\operatorname {G_a}</fr:tex>).
     
@@ -609,7 +647,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1934</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-corollary-1.5</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2127</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-corollary-1.5</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       It follows from the hypotheses that the kernel <fr:tex>{}_nG</fr:tex> of <fr:tex>\varphi _n</fr:tex> is universally open over <fr:tex>S</fr:tex>, and so <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>{}_nG</fr:tex>, and thus also (replacing <fr:tex>n</fr:tex> with <fr:tex>n^h</fr:tex>) at the points of <fr:tex>{}_{(n^h)}G</fr:tex>.
       But the hypothesis on the fibres <fr:tex>G_s^0</fr:tex> tells us exactly that the points of order some power of <fr:tex>n</fr:tex> in <fr:tex>G_s</fr:tex> are dense in the union of the <fr:tex>G^{(n^h)}</fr:tex>, whence it easily follows that <fr:tex>G \to  S</fr:tex> is universally open at all points of this union, in particular along the identity section, whence it easily follows that <fr:tex>s \mapsto \dim  G_s</fr:tex> is a locally constant function.
@@ -622,7 +660,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1936</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-1-remark-1.6</fr:addr><fr:route>fga3.vi-1-remark-1.6.xml</fr:route><fr:number>1.6</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2129</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-1-remark-1.6</fr:addr><fr:route>fga3.vi-1-remark-1.6.xml</fr:route><fr:number>1.6</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Recall that a morphism <fr:tex>X \to  S</fr:tex> is said to be universally open if it sends every open to an open, and retains this nice property after any base change <fr:tex>S' \to  S</fr:tex>.
     This also implies (if <fr:tex>S</fr:tex> is locally Noetherian and <fr:tex>X \to  S</fr:tex> is locally of finite type) that every irreducible component of <fr:tex>X</fr:tex> dominates <fr:tex>S</fr:tex>, and that this property is retained after any base change <fr:tex>S' \to  S</fr:tex>.
     In these two claims, it suffices (thanks to the finiteness hypotheses above) to verify only for the base changes <fr:tex>S' \to  S</fr:tex> where <fr:tex>S'</fr:tex> is the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one wants...).
@@ -640,7 +678,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1937</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.7</fr:addr><fr:route>fga3.vi-1-corollary-1.7.xml</fr:route><fr:number>1.7</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2130</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.7</fr:addr><fr:route>fga3.vi-1-corollary-1.7.xml</fr:route><fr:number>1.7</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Suppose that <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>G^0</fr:tex> (cf. <fr:ref
 addr="fga3.vi-1-corollary-1.5"
 href="fga3.vi-1-corollary-1.5.xml"
@@ -681,7 +719,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1938</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.8</fr:addr><fr:route>fga3.vi-1-corollary-1.8.xml</fr:route><fr:number>1.8</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2131</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.8</fr:addr><fr:route>fga3.vi-1-corollary-1.8.xml</fr:route><fr:number>1.8</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>U</fr:tex> be an open subset of a fibre <fr:tex>G_s</fr:tex> such that <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>U</fr:tex> (cf. <fr:link
 href="#fga3.vi-1-corollary-1.5"
 type="external">(1.5)</fr:link>).
@@ -692,7 +730,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1939</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.vi-1-remarks-1.9</fr:addr><fr:route>fga3.vi-1-remarks-1.9.xml</fr:route><fr:number>1.9</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2132</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.vi-1-remarks-1.9</fr:addr><fr:route>fga3.vi-1-remarks-1.9.xml</fr:route><fr:number>1.9</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     I do not know, if <fr:tex>G</fr:tex> is separated over <fr:tex>S</fr:tex>, if <fr:tex>G^0</fr:tex> or <fr:tex>G^ \tau</fr:tex> is always closed in <fr:tex>G</fr:tex>;
     this seems unlikely.
     In any case, we find evident counter-examples if we drop the separation hypothesis, for example by taking the affine line with a countably infinite number of copies of the origin, thus obtaining a group scheme <fr:tex>G</fr:tex> over the affine line whose fibres are all the trivial group, apart from one, which is <fr:tex>\mathbb {Z}</fr:tex>.
@@ -720,7 +758,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1940</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.10</fr:addr><fr:route>fga3.vi-1-corollary-1.10.xml</fr:route><fr:number>1.10</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2133</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.10</fr:addr><fr:route>fga3.vi-1-corollary-1.10.xml</fr:route><fr:number>1.10</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Suppose that the residual characteristics of <fr:tex>S</fr:tex> are all <fr:tex>0</fr:tex>, so that <fr:tex>G^ \tau =G^ \sigma</fr:tex> and <fr:tex>G^0=G^ \rho</fr:tex>.
     Then <fr:tex>G^ \tau =G^ \sigma</fr:tex> is open, and even open and closed if <fr:tex>G</fr:tex> is separated over <fr:tex>S</fr:tex> and the <fr:tex>G_s^0</fr:tex> are proper;
     under these same hypotheses, <fr:tex>G^0=G^ \rho</fr:tex> is proper over <fr:tex>S</fr:tex> and thus closed in <fr:tex>G</fr:tex>.
@@ -734,7 +772,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1941</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.vi-1-proposition-1.11</fr:addr><fr:route>fga3.vi-1-proposition-1.11.xml</fr:route><fr:number>1.11</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2134</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.vi-1-proposition-1.11</fr:addr><fr:route>fga3.vi-1-proposition-1.11.xml</fr:route><fr:number>1.11</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     There exists an open subset <fr:tex>U</fr:tex> of <fr:tex>S</fr:tex> such that the set <fr:tex>G'</fr:tex> of points of <fr:tex>G</fr:tex> at which <fr:tex>G</fr:tex> is simple (resp. flat) over <fr:tex>S</fr:tex> is the underlying set of an open group subscheme induced by <fr:tex>G|U</fr:tex>.
     Furthermore, every section of <fr:tex>G</fr:tex> over <fr:tex>U</fr:tex> is a section of <fr:tex>G'</fr:tex> over <fr:tex>U</fr:tex>.
   </fr:p></fr:mainmatter></fr:tree><fr:tree
@@ -743,7 +781,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1942</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.12</fr:addr><fr:route>fga3.vi-1-corollary-1.12.xml</fr:route><fr:number>1.12</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2135</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.12</fr:addr><fr:route>fga3.vi-1-corollary-1.12.xml</fr:route><fr:number>1.12</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     If <fr:tex>G</fr:tex> is simple (resp. flat) over <fr:tex>S</fr:tex> at the points of the identity section, then it is simple (resp. flat) at the points of every section of <fr:tex>G</fr:tex> over <fr:tex>S</fr:tex>, and at all points of <fr:tex>G^0</fr:tex>.
     If, further, for every integer <fr:tex>n&gt;0</fr:tex> the <fr:tex>n</fr:tex>-th power homomorphism <fr:tex>\varphi _n \colon  G \to  G</fr:tex> is étale at the points of characteristic coprime to <fr:tex>n</fr:tex>, then <fr:tex>G</fr:tex> is simple (resp. flat) over <fr:tex>S</fr:tex> at all points of <fr:tex>G^ \sigma</fr:tex>.
   </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
@@ -752,20 +790,31 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1961</fr:anchor><fr:addr>fga3.vi-2</fr:addr><fr:route>fga3.vi-2.xml</fr:route><fr:title>Application to the local properties of Picard schemes</fr:title><fr:number>2</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+expanded="true"><fr:frontmatter><fr:anchor>2158</fr:anchor><fr:addr>fga3.vi-2</fr:addr><fr:route>fga3.vi-2.xml</fr:route><fr:title>Application to the local properties of Picard schemes</fr:title><fr:number>2</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1944</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-2-theorem-2.1</fr:addr><fr:route>fga3.vi-2-theorem-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong></fr:p><fr:ol><fr:li>
+expanded="true"><fr:frontmatter><fr:anchor>2137</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-2-theorem-2.1</fr:addr><fr:route>fga3.vi-2-theorem-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter>
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot; i.  &quot;">
       Let <fr:tex>f \colon  X \to  S</fr:tex> be a proper and simple morphism, and suppose that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists (for example, if <fr:tex>f</fr:tex> is projective).
       Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is separated over <fr:tex>S</fr:tex>, and, for every closed subset <fr:tex>Z</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> that is of finite type over <fr:tex>S</fr:tex>, we have that <fr:tex>Z</fr:tex> is proper over <fr:tex>S</fr:tex>.
-    </fr:li>
-    <fr:li>
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; ii.  &quot;">
       Let <fr:tex>X</fr:tex> be a prescheme over a field <fr:tex>k</fr:tex> that is proper and geometrically normal.
       Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}^0</fr:tex> is proper over <fr:tex>k</fr:tex>.
-    </fr:li></fr:ol>
+    </html:li>
+
+  </html:ol>
+
   
     
     <fr:tree
@@ -774,7 +823,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>289</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-theorem-2.1</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>292</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-theorem-2.1</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       For (i), with the valuative criterion of [<fr:link
 href="GD1960.xml"
@@ -802,7 +851,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1945</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-2-remark-2.2</fr:addr><fr:route>fga3.vi-2-remark-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2138</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-2-remark-2.2</fr:addr><fr:route>fga3.vi-2-remark-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     The above proof of (i) holds true even if we only suppose that <fr:tex>f</fr:tex> is flat and that its fibres <fr:tex>X_s</fr:tex> are locally complete intersections and simple over <fr:tex>k(s)</fr:tex> in codimension <fr:tex>\leqslant2</fr:tex>, taking into account the following fact which is proven in <fr:link
 href="Gro1960b.xml"
 type="local"
@@ -814,7 +863,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1947</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-2-corollary-2.3</fr:addr><fr:route>fga3.vi-2-corollary-2.3.xml</fr:route><fr:number>2.3</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2140</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-2-corollary-2.3</fr:addr><fr:route>fga3.vi-2-corollary-2.3.xml</fr:route><fr:number>2.3</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>f \colon  X \to  S</fr:tex> be a proper and normal morphism (i.e. flat with normal geometric fibres), and suppose that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists.
     Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}^0</fr:tex> is proper over <fr:tex>S</fr:tex>, thus closed in <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>;
     furthermore, <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> and <fr:tex>\underline { \operatorname {Pic} } _{X/S}^0</fr:tex> are both closed, as is <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \sigma</fr:tex> in "equal characteristic".
@@ -827,7 +876,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1946</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-corollary-2.3</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2139</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-corollary-2.3</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       We apply <fr:ref
 addr="fga3.vi-1-theorem-1.1"
@@ -847,7 +896,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1949</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-2-corollary-2.4</fr:addr><fr:route>fga3.vi-2-corollary-2.4.xml</fr:route><fr:number>2.4</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2142</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-2-corollary-2.4</fr:addr><fr:route>fga3.vi-2-corollary-2.4.xml</fr:route><fr:number>2.4</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>f \colon  X \to  S</fr:tex> be a proper and simple morphism such that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists and is the sum of the schemes <fr:tex>P^{(i)}</fr:tex> of finite type over <fr:tex>S</fr:tex> (cf. <fr:link
 href="fga3.v-4-proposition-4.1.xml"
 type="local"
@@ -862,7 +911,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1948</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-corollary-2.4</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2141</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-corollary-2.4</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       This follows from (i) of <fr:ref
 addr="fga3.vi-2-theorem-2.1"
@@ -885,7 +934,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1950</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-2-theorem-2.5</fr:addr><fr:route>fga3.vi-2-theorem-2.5.xml</fr:route><fr:number>2.5</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2143</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-2-theorem-2.5</fr:addr><fr:route>fga3.vi-2-theorem-2.5.xml</fr:route><fr:number>2.5</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>f \colon  X \to  S</fr:tex> be a proper and flat morphism such that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists, and, for each integer <fr:tex>n</fr:tex>, let <fr:tex>\varphi _n</fr:tex> be the <fr:tex>n</fr:tex>-th power homomorphism in this group prescheme.
     Then <fr:tex>\varphi _n</fr:tex> is étale at all points <fr:tex>x \in  X</fr:tex> of residual characteristic coprime to <fr:tex>n</fr:tex>.
   </fr:p></fr:mainmatter></fr:tree><fr:p>
@@ -896,7 +945,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1952</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-2-lemma-2.6</fr:addr><fr:route>fga3.vi-2-lemma-2.6.xml</fr:route><fr:number>2.6</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2145</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-2-lemma-2.6</fr:addr><fr:route>fga3.vi-2-lemma-2.6.xml</fr:route><fr:number>2.6</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Suppose that <fr:tex>S</fr:tex> is the spectrum of an Artinian local ring <fr:tex>A</fr:tex> whose maximal ideal <fr:tex>\mathfrak {m}</fr:tex> is <fr:tex>( \nu +1)</fr:tex>-th power null, and let <fr:tex>A_{ \nu-1 }=A/ \mathfrak {m}^ \nu</fr:tex> and <fr:tex>X_{ \nu-1 }=X \otimes _A A_{ \nu =1}</fr:tex>.
     Let <fr:tex>\mathscr { L }</fr:tex> be an invertible module on <fr:tex>X</fr:tex>, and <fr:tex>\mathscr { L } '_{ \nu-1 }</fr:tex> an invertible module on <fr:tex>X_{ \nu-1 }</fr:tex> whose <fr:tex>n</fr:tex>-th tensor power is isomorphic to <fr:tex>\mathscr { L } _{ \nu-1 }= \mathscr { L } \otimes _A A_{ \nu-1 }</fr:tex>.
     Then there exists an invertible module <fr:tex>\mathscr { L } '</fr:tex> on <fr:tex>X</fr:tex> whose <fr:tex>n</fr:tex>-th tensor power is isomorphic to <fr:tex>\mathscr { L }</fr:tex> (if <fr:tex>n</fr:tex> is coprime to the residual characteristic of <fr:tex>k=k( \mathscr { L } )</fr:tex>).
@@ -909,7 +958,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1951</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-lemma-2.6</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2144</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-lemma-2.6</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       Set <fr:tex>V= \mathfrak {m}^ \nu = \mathfrak {m}^{ \nu }/ \mathfrak {m}^{ \nu +1}</fr:tex>, which is a vector space over <fr:tex>k=k(A)</fr:tex>.
       We start by extending <fr:tex>\mathscr { L } '_{ \nu-1 }</fr:tex> to an arbitrary invertible module over <fr:tex>\mathscr { L } '</fr:tex> on <fr:tex>X</fr:tex>.
@@ -926,7 +975,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1954</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-2-corollary</fr:addr><fr:route>fga3.vi-2-corollary.xml</fr:route><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2147</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-2-corollary</fr:addr><fr:route>fga3.vi-2-corollary.xml</fr:route><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Under the conditions of <fr:ref
 addr="fga3.vi-2-theorem-2.5"
 href="fga3.vi-2-theorem-2.5.xml"
@@ -952,7 +1001,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1953</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-corollary</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2146</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-corollary</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       We apply <fr:ref
 addr="fga3.vi-1-corollary-1.5"
@@ -972,7 +1021,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1956</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-2-corollary-2.7</fr:addr><fr:route>fga3.vi-2-corollary-2.7.xml</fr:route><fr:number>2.7</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2149</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-2-corollary-2.7</fr:addr><fr:route>fga3.vi-2-corollary-2.7.xml</fr:route><fr:number>2.7</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>f \colon  X \to  Y</fr:tex> be a proper and flat morphism such that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists.
     Then the function <fr:tex>s \mapsto \dim \underline { \operatorname {Pic} } _{X_s/k(s)}</fr:tex> on <fr:tex>S</fr:tex> is upper semi-continuous (i.e. it can jump upwards, but not downwards), and it is even continuous (i.e. locally constant) if the <fr:tex>\underline { \operatorname {Pic} } _{X_s/k(s)}</fr:tex> do not contain any additive component.
   </fr:p>
@@ -984,7 +1033,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1955</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-corollary-2.7</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2148</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-corollary-2.7</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       The first claim is trivially true, or almost so, for every group prescheme locally of finite type over a locally Noetherian base, since it suffices to look along the identity section.
       The second claim follows from <fr:ref
@@ -1001,7 +1050,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1957</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-2-remark-2.8</fr:addr><fr:route>fga3.vi-2-remark-2.8.xml</fr:route><fr:number>2.8</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2150</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-2-remark-2.8</fr:addr><fr:route>fga3.vi-2-remark-2.8.xml</fr:route><fr:number>2.8</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>s,s' \in  S</fr:tex> be such that <fr:tex>s</fr:tex> is a specialisation of <fr:tex>s'</fr:tex>.
     Then <fr:ref
 addr="fga3.vi-2-corollary-2.7"
@@ -1023,7 +1072,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>427</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.vi-2-equation-star</fr:addr><fr:route>fga3.vi-2-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga3.vi-2-remark-2.8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+expanded="true"><fr:frontmatter><fr:anchor>487</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.vi-2-equation-star</fr:addr><fr:route>fga3.vi-2-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga3.vi-2-remark-2.8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
 display="block">          \alpha + \mu + \lambda           \geqslant   \alpha '+ \mu '+ \lambda '       \tag{*}       </fr:tex></fr:mainmatter></fr:tree>
 
     (satisfied provided that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists, and thus probably in all cases), and this inequality, for <fr:tex>\lambda = \lambda '=0</fr:tex>, reduces to an equality, satisfied under the same existence hypotheses:
@@ -1037,7 +1086,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>428</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.vi-2-equation-star-star</fr:addr><fr:route>fga3.vi-2-equation-star-star.xml</fr:route><fr:number>**</fr:number><fr:parent>fga3.vi-2-remark-2.8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+expanded="true"><fr:frontmatter><fr:anchor>488</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.vi-2-equation-star-star</fr:addr><fr:route>fga3.vi-2-equation-star-star.xml</fr:route><fr:number>**</fr:number><fr:parent>fga3.vi-2-remark-2.8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
 display="block">         2 \alpha + \mu           \leqslant  2 \alpha '+ \mu '       \tag{**}       </fr:tex></fr:mainmatter></fr:tree>
 
     
@@ -1058,7 +1107,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>429</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.vi-2-equation-star-star-star</fr:addr><fr:route>fga3.vi-2-equation-star-star-star.xml</fr:route><fr:number>***</fr:number><fr:parent>fga3.vi-2-remark-2.8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+expanded="true"><fr:frontmatter><fr:anchor>489</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.vi-2-equation-star-star-star</fr:addr><fr:route>fga3.vi-2-equation-star-star-star.xml</fr:route><fr:number>***</fr:number><fr:parent>fga3.vi-2-remark-2.8</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
 display="block">          \begin {aligned}            \alpha  &amp; \leqslant   \alpha '          \\ \lambda  &amp; \geqslant   \lambda '          \end {aligned}       \tag{***}       </fr:tex></fr:mainmatter></fr:tree>
 
     which should be satisfied whenever we have a group prescheme that is locally of finite type over locally Noetherian <fr:tex>S</fr:tex>, in which the dimension of the fibres is constant (see <fr:ref
@@ -1072,7 +1121,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1958</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-2-remark-2.9</fr:addr><fr:route>fga3.vi-2-remark-2.9.xml</fr:route><fr:number>2.9</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2151</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-2-remark-2.9</fr:addr><fr:route>fga3.vi-2-remark-2.9.xml</fr:route><fr:number>2.9</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     In all known cases, <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is universally open over <fr:tex>S</fr:tex>, but we should probably not have excessive illusions, even if <fr:tex>f \colon  X \to  S</fr:tex> is simple;
     in any case, Mumford has constructed an example (it is true with <fr:tex>S</fr:tex> non-reduced, in fact with <fr:tex>S</fr:tex> the spectrum of an Artinian ring) where <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is not flat over <fr:tex>S</fr:tex>, by infinitesimally varying the Igusa surface.
     The point envisaged by Mumford can also be found in <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \rho</fr:tex>, and it remains possible (for <fr:tex>f \colon  X \to  S</fr:tex> simple) that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is flat over <fr:tex>S</fr:tex> at the points of <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \sigma</fr:tex>;
@@ -1104,21 +1153,36 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1960</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.vi-2-proposition-2.10</fr:addr><fr:route>fga3.vi-2-proposition-2.10.xml</fr:route><fr:number>2.10</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong></fr:p><fr:ol><fr:li>
+expanded="true"><fr:frontmatter><fr:anchor>2157</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.vi-2-proposition-2.10</fr:addr><fr:route>fga3.vi-2-proposition-2.10.xml</fr:route><fr:number>2.10</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter>
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot; i.  &quot;">
       If <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is simple (resp. flat) over <fr:tex>S</fr:tex> at the points of the identity section, then it is simple (resp. flat) at all points of <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \sigma</fr:tex>, and at the points of every section of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> over <fr:tex>S</fr:tex>.
-    </fr:li>
-    <fr:li>
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; ii.  &quot;">
+      
       Let <fr:tex>s \in  S</fr:tex> be such that <fr:tex>\operatorname {H} ^2(X_s, \mathcal {O} _{X_s})=0</fr:tex>.
       Then there exists an open neighbourhood <fr:tex>U</fr:tex> of <fr:tex>s</fr:tex> such that <fr:tex>\underline { \operatorname {Pic} } _{X/S}|U</fr:tex> is simple over <fr:tex>U</fr:tex>.
-    </fr:li>
-    <fr:li>
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; iii.  &quot;">
       Let <fr:tex>X</fr:tex> be a proper scheme over a field.
       Then we have
       <fr:tex
 display="block">          \dim \underline { \operatorname {Pic} } _{X/k}          \leqslant   \dim \operatorname {H} ^1(X, \mathcal {O} _X)       </fr:tex>
       with equality if and only if <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> is simple over <fr:tex>k</fr:tex>;
       this is always the case if <fr:tex>k</fr:tex> is of characteristic <fr:tex>0</fr:tex>.
-    </fr:li></fr:ol>
+    </html:li>
+
+  </html:ol>
+
   
     
     <fr:tree
@@ -1127,7 +1191,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1959</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-proposition-2.10</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2156</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-2-proposition-2.10</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       Claim (i) follows from <fr:ref
 addr="fga3.vi-2-theorem-2.5"
@@ -1149,13 +1213,13 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1980</fr:anchor><fr:addr>fga3.vi-3</fr:addr><fr:route>fga3.vi-3.xml</fr:route><fr:title>The canonical abelian subscheme of <fr:tex>\underline { \operatorname {Pic}}_{X/S}</fr:tex>, and the Albanese scheme</fr:title><fr:number>3</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+expanded="true"><fr:frontmatter><fr:anchor>2185</fr:anchor><fr:addr>fga3.vi-3</fr:addr><fr:route>fga3.vi-3.xml</fr:route><fr:title>The canonical abelian subscheme of <fr:tex>\underline { \operatorname {Pic}}_{X/S}</fr:tex>, and the Albanese scheme</fr:title><fr:number>3</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1963</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.vi-3-proposition-3.1</fr:addr><fr:route>fga3.vi-3-proposition-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2160</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.vi-3-proposition-3.1</fr:addr><fr:route>fga3.vi-3-proposition-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>k</fr:tex> be a field, and let <fr:tex>G</fr:tex> a group scheme of finite type over <fr:tex>k</fr:tex> that is commutative and "without additive component".
     Then <fr:tex>G_ \mathrm {red} ^0</fr:tex> is separable over <fr:tex>k</fr:tex>, and thus a simple group scheme over <fr:tex>k</fr:tex>.
   </fr:p>
@@ -1167,7 +1231,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1962</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-proposition-3.1</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2159</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-proposition-3.1</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       Since the claim is trivial if <fr:tex>k</fr:tex> is perfect, and in particular for <fr:tex>G_{ \overline {k}}</fr:tex>, where <fr:tex>\overline {k}</fr:tex> is the algebraic closure of <fr:tex>k</fr:tex>, it suffices to show that <fr:tex>(G_{ \overline {k}}^0)_ \mathrm {red}</fr:tex> comes from a subscheme of <fr:tex>G</fr:tex>.
       But from the hypothesis that <fr:tex>G_{ \overline {k}}</fr:tex> contains no additive component it easily follows that there exists an integer <fr:tex>m</fr:tex> such that <fr:tex>(G_{ \overline {k}}^0)_ \mathrm {red}</fr:tex> is the "scheme-theoretic" image of the <fr:tex>m</fr:tex>-th power homomorphism in <fr:tex>G_{ \overline {k}}</fr:tex>.
@@ -1181,7 +1245,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1965</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-3-corollary-3.2</fr:addr><fr:route>fga3.vi-3-corollary-3.2.xml</fr:route><fr:number>3.2</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2162</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-3-corollary-3.2</fr:addr><fr:route>fga3.vi-3-corollary-3.2.xml</fr:route><fr:number>3.2</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>X</fr:tex> be a normal and proper scheme over <fr:tex>k</fr:tex> such that <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> exists.
     Then there exists an abelian subscheme of <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> whose underlying set is <fr:tex>\underline { \operatorname {Pic} } _{X/k}^0</fr:tex>.
   </fr:p>
@@ -1193,7 +1257,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1964</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-corollary-3.2</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2161</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-corollary-3.2</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       By (ii) of <fr:ref
 addr="fga3.vi-2-theorem-2.1"
@@ -1227,24 +1291,36 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1967</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-3-theorem-3.3</fr:addr><fr:route>fga3.vi-3-theorem-3.3.xml</fr:route><fr:number>3.3</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2168</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-3-theorem-3.3</fr:addr><fr:route>fga3.vi-3-theorem-3.3.xml</fr:route><fr:number>3.3</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Under the above conditions:
-    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
 
-    <fr:ol><fr:li>
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; i.  &quot;">
         If there exists an abelian subscheme of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> whose underlying set is <fr:tex>\underline { \operatorname {Pic} } _{X/S}^0</fr:tex>, then it is unique.
         Its formation is thus compatible with base change.
-      </fr:li>
-      <fr:li>
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; ii.  &quot;">
         For there to exist such an abelian subscheme, it is necessary and sufficient that it exist after every base change <fr:tex>S' \to  S</fr:tex>, where <fr:tex>S'</fr:tex> is local Artinian;
         if <fr:tex>S</fr:tex> is the spectrum of a local ring, it even suffices to test with the <fr:tex>S'= \operatorname {Spec} (A_n)</fr:tex> where <fr:tex>A_n=A/ \mathfrak {m}^{n+1}</fr:tex>.
         If <fr:tex>S</fr:tex> is reduced, then it equally suffices to test with the <fr:tex>S'</fr:tex> that are the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one desires).
-      </fr:li>
-      <fr:li>
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; iii.  &quot;">
         Suppose that <fr:tex>A</fr:tex> exists, and let <fr:tex>B= \operatorname {Alb} ^0(X/S)</fr:tex> be the dual abelian scheme (i.e. <fr:tex>B= \operatorname {Pic} _{A/S}^0</fr:tex> [Mumford–Tate seminar, 1962]).
         Then we can canonically construct a principal homogeneous space <fr:tex>P= \operatorname {Alb} ^1(X/S)</fr:tex> for <fr:tex>B</fr:tex>, and an <fr:tex>S</fr:tex>-morphism <fr:tex>X \to  P</fr:tex> that is universal for the <fr:tex>S</fr:tex>-morphisms from <fr:tex>X</fr:tex> to para-abelian schemes (i.e. to principal homogeneous spaces for abelian schemes).
         The formation of <fr:tex>\operatorname {Alb} ^0(X/S)</fr:tex>, <fr:tex>\operatorname {Alb} ^1(X/S)</fr:tex>, and <fr:tex>X \to \operatorname {Alb} ^1(X/S)</fr:tex> commutes with base change.
-      </fr:li></fr:ol></fr:p>
+      </html:li>
+
+    </html:ol></fr:p>
   
     
     <fr:tree
@@ -1253,7 +1329,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1966</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-theorem-3.3</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2167</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-theorem-3.3</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       We sketch the proof:
     </fr:p>
@@ -1289,7 +1365,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1969</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-3-remarks-3.4</fr:addr><fr:route>fga3.vi-3-remarks-3.4.xml</fr:route><fr:number>3.4</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2174</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-3-remarks-3.4</fr:addr><fr:route>fga3.vi-3-remarks-3.4.xml</fr:route><fr:number>3.4</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     We denote by <fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex> the canonical abelian subscheme of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, if it exists.
     This is, unfortunately, not always the case, as we can see by infinitesimally varying the Igusa surface (by first-order modular deformation).
     It is however possible that <fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex> exists at least if <fr:tex>S</fr:tex> is reduced, or, equivalently, by (ii), if <fr:tex>S</fr:tex> is the spectrum of a discrete valuation ring.
@@ -1307,26 +1383,39 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1968</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.vi-3-equation-star</fr:addr><fr:route>fga3.vi-3-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga3.vi-3-remarks-3.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+expanded="true"><fr:frontmatter><fr:anchor>2169</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.vi-3-equation-star</fr:addr><fr:route>fga3.vi-3-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga3.vi-3-remarks-3.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
 display="block">         A_0  \to   \underline { \operatorname {Pic} } _{X_0/k}^{00}       \tag{*}       </fr:tex></fr:mainmatter></fr:tree>
 
     which we can easily show to be a surjective homomorphism with kernel equal to a finite <fr:tex>p</fr:tex>-group, where <fr:tex>p</fr:tex> is the characteristic of the residue field <fr:tex>k</fr:tex> (still by using the points of finite order).
     
     With this, the following conditions on <fr:tex>X/S</fr:tex> are equivalent:
-    <fr:strong><fr:em>TO-DO: the following list should be a, b, etc.</fr:em></fr:strong>
 
-    <fr:ol><fr:li>
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; a.  &quot;">
         The above homomorphism <fr:ref
 addr="fga3.vi-3-equation-star"
 href="fga3.vi-3-equation-star.xml"
 taxon="Equation"
 number="*"></fr:ref> is an isomorphism (which Shimura expresses by saying that the formation of the "Picard variety" is "compatible with specialisations").
-      </fr:li>
-      <fr:li><fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex> exists (and is then exactly <fr:tex>A</fr:tex>).
-      </fr:li>
-      <fr:li>
-        (For memory) The <fr:tex>\underline { \operatorname {Pic} } _{X_n/S}^{00}</fr:tex> exist.
-      </fr:li></fr:ol></fr:p><fr:p>
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; b.  &quot;">
+        <fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex> exists (and is then exactly <fr:tex>A</fr:tex>).
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; c.  &quot;">
+        (As a reminder) The <fr:tex>\underline { \operatorname {Pic} } _{X_n/S}^{00}</fr:tex> exist.
+      </html:li>
+
+    </html:ol></fr:p><fr:p>
     By the remark that we made concerning the kernel of <fr:ref
 addr="fga3.vi-3-equation-star"
 href="fga3.vi-3-equation-star.xml"
@@ -1349,7 +1438,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1971</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-3-theorem-3.5</fr:addr><fr:route>fga3.vi-3-theorem-3.5.xml</fr:route><fr:number>3.5</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2176</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-3-theorem-3.5</fr:addr><fr:route>fga3.vi-3-theorem-3.5.xml</fr:route><fr:number>3.5</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Under the conditions of <fr:ref
 addr="fga3.vi-3-theorem-3.3"
 href="fga3.vi-3-theorem-3.3.xml"
@@ -1366,7 +1455,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1970</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-theorem-3.5</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2175</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-theorem-3.5</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       We describe the principle of the proof.
       The above allows us to reduce to the case where <fr:tex>S</fr:tex> is the spectrum of an Artinian local ring <fr:tex>A</fr:tex>, and we argue by induction on the infinitesimal order of <fr:tex>A</fr:tex>.
@@ -1397,7 +1486,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1973</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-3-corollary-3.6</fr:addr><fr:route>fga3.vi-3-corollary-3.6.xml</fr:route><fr:number>3.6</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2178</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-3-corollary-3.6</fr:addr><fr:route>fga3.vi-3-corollary-3.6.xml</fr:route><fr:number>3.6</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Under the conditions of <fr:ref
 addr="fga3.vi-3-theorem-3.5"
 href="fga3.vi-3-theorem-3.5.xml"
@@ -1412,7 +1501,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1972</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-corollary-3.6</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2177</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-corollary-3.6</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       This module is exactly the tangent module to <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> along the identity section.
     </fr:p>
@@ -1424,7 +1513,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1974</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-3-remark-3.7</fr:addr><fr:route>fga3.vi-3-remark-3.7.xml</fr:route><fr:number>3.7</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2179</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-3-remark-3.7</fr:addr><fr:route>fga3.vi-3-remark-3.7.xml</fr:route><fr:number>3.7</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Using the same argument as for <fr:ref
 addr="fga3.vi-3-theorem-3.5"
 href="fga3.vi-3-theorem-3.5.xml"
@@ -1443,7 +1532,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1975</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-3-remark-3.8</fr:addr><fr:route>fga3.vi-3-remark-3.8.xml</fr:route><fr:number>3.8</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2180</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-3-remark-3.8</fr:addr><fr:route>fga3.vi-3-remark-3.8.xml</fr:route><fr:number>3.8</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     In the case of a simple projective morphism <fr:tex>f \colon  X \to  S</fr:tex>, with <fr:tex>S</fr:tex> reduced and of residual characteristics zero, the result of <fr:ref
 addr="fga3.vi-3-corollary-3.6"
 href="fga3.vi-3-corollary-3.6.xml"
@@ -1462,7 +1551,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1977</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-3-corollary-3.8</fr:addr><fr:route>fga3.vi-3-corollary-3.8.xml</fr:route><fr:number>3.8</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2182</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-3-corollary-3.8</fr:addr><fr:route>fga3.vi-3-corollary-3.8.xml</fr:route><fr:number>3.8</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Under the conditions of <fr:ref
 addr="fga3.vi-3-theorem-3.5"
 href="fga3.vi-3-theorem-3.5.xml"
@@ -1477,7 +1566,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1976</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-corollary-3.8</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2181</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-3-corollary-3.8</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       We apply (i) of <fr:ref
 addr="fga3.vi-2-proposition-2.10"
@@ -1499,7 +1588,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1978</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-3-corollary-3.9</fr:addr><fr:route>fga3.vi-3-corollary-3.9.xml</fr:route><fr:number>3.9</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2183</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-3-corollary-3.9</fr:addr><fr:route>fga3.vi-3-corollary-3.9.xml</fr:route><fr:number>3.9</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Suppose that <fr:tex>S</fr:tex> is of residual characteristics zero.
     Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is simple over <fr:tex>S</fr:tex>.
   </fr:p></fr:mainmatter></fr:tree><fr:tree
@@ -1508,7 +1597,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1979</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-3-remark-3.10</fr:addr><fr:route>fga3.vi-3-remark-3.10.xml</fr:route><fr:number>3.10</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2184</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-3-remark-3.10</fr:addr><fr:route>fga3.vi-3-remark-3.10.xml</fr:route><fr:number>3.10</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     We thus deduce, for example, that if <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is also <fr:em>proper</fr:em> over <fr:tex>S</fr:tex>, then the Néron–Severi torsion group of geometric fibres of <fr:tex>f</fr:tex> is constant on every connected component of <fr:tex>S</fr:tex> (which is also evident by transcendental methods when <fr:tex>f</fr:tex> is simple and projective).
     We note that the direct use of <fr:ref
 addr="fga3.vi-2-theorem-2.5"
@@ -1534,7 +1623,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1981</fr:anchor><fr:addr>fga3.vi-4</fr:addr><fr:route>fga3.vi-4.xml</fr:route><fr:title>The finiteness theorem for the Picard scheme</fr:title><fr:number>4</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2186</fr:anchor><fr:addr>fga3.vi-4</fr:addr><fr:route>fga3.vi-4.xml</fr:route><fr:title>The finiteness theorem for the Picard scheme</fr:title><fr:number>4</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>f \colon  X \to  S</fr:tex> be a projective and flat morphism such that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists.
   Then the "Hilbert polynomials" <fr:tex>Q \in \mathbb {Q}[t]</fr:tex> allow us to decompose <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> into a sum of opens <fr:tex>\underline { \operatorname {Pic} } _{X/S}^Q</fr:tex>.
   If we do not make any further hypotheses, ensuring for example that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is separated over <fr:tex>S</fr:tex>, then it will not be true in general that these opens are of finite type over <fr:tex>S</fr:tex>;
@@ -1561,29 +1650,49 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>692</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-4-theorem-4.1</fr:addr><fr:route>fga3.vi-4-theorem-4.1.xml</fr:route><fr:number>4.1</fr:number><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>816</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-4-theorem-4.1</fr:addr><fr:route>fga3.vi-4-theorem-4.1.xml</fr:route><fr:number>4.1</fr:number><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>f \colon  X \to  S</fr:tex> be a simple projective morphism with connected geometric fibres, with <fr:tex>S</fr:tex> Noetherian.
     Let <fr:tex>\mathcal {O} _X(1)</fr:tex> be a very ample module on <fr:tex>X</fr:tex> with respect to <fr:tex>S</fr:tex>, and <fr:tex>E</fr:tex> a subset of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> corresponding to a family <fr:tex>( \mathscr { L } _i)</fr:tex> of invertible modules on the geometric fibres <fr:tex>\overline {X}_{s_i}</fr:tex> of <fr:tex>X/S</fr:tex>, with <fr:tex>D_i</fr:tex> a (not-necessarily positive) divisor on <fr:tex>\overline {X}_{s_i}</fr:tex> that defines <fr:tex>\mathscr { L } _i</fr:tex>, and let <fr:tex>a_n^{(i)}t^n+ \ldots +a_0^{(i)}</fr:tex> be the Hilbert polynomial of <fr:tex>\mathscr { L } _i</fr:tex>, and let <fr:tex>\xi = \xi _i</fr:tex> be a divisor that defines <fr:tex>\mathcal {O} _X(1)</fr:tex>, i.e. a hyperplane section.
   </fr:p><fr:p>
     Then the following conditions are equivalent:
-    <fr:strong><fr:em>TO-DO: the following list should be a, b, b', b''</fr:em></fr:strong></fr:p><fr:ol><fr:li><fr:tex>Q</fr:tex> is quasi-compact, i.e. contains an open of finite type over <fr:tex>S</fr:tex>, i.e. the family <fr:tex>( \mathscr { L } _i)</fr:tex> is limited.
-    </fr:li>
-    <fr:li><fr:tex>E</fr:tex> is contained in the union of a finite number of the sets <fr:tex>\underline { \operatorname {Pic} } _{X/S}^Q</fr:tex>, for <fr:tex>Q \in \mathbb {Q}[t]</fr:tex>, i.e. the set of Hilbert polynomials of the <fr:tex>\mathscr { L } _i</fr:tex> is finite.
-    </fr:li>
-    <fr:li>
+  </fr:p>
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot; a.  &quot;">
+      <fr:tex>Q</fr:tex> is quasi-compact, i.e. contains an open of finite type over <fr:tex>S</fr:tex>, i.e. the family <fr:tex>( \mathscr { L } _i)</fr:tex> is limited.
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; b.  &quot;">
+      <fr:tex>E</fr:tex> is contained in the union of a finite number of the sets <fr:tex>\underline { \operatorname {Pic} } _{X/S}^Q</fr:tex>, for <fr:tex>Q \in \mathbb {Q}[t]</fr:tex>, i.e. the set of Hilbert polynomials of the <fr:tex>\mathscr { L } _i</fr:tex> is finite.
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; b'.  &quot;">
       (If the fibres of <fr:tex>X/S</fr:tex> are all of the same dimension <fr:tex>n</fr:tex>).
       The coefficients <fr:tex>a_{n-1}^{(i)}</fr:tex> and <fr:tex>a_{n-2}^{(i)}</fr:tex> of the Hilbert polynomials of the <fr:tex>\mathscr { L } _i</fr:tex> are contained in a finite set.
-    </fr:li>
-    <fr:li>
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; b''.  &quot;">
+      
       (If the fibres of <fr:tex>X/S</fr:tex> are all of the same dimension <fr:tex>n</fr:tex>).
       The integers <fr:tex>\xi ^{n-1}D_i</fr:tex> and <fr:tex>\xi ^{n-2}D_i^2</fr:tex> (the projective degrees of <fr:tex>D_i</fr:tex> and of <fr:tex>D_i^2</fr:tex>) are bounded above.
-    </fr:li></fr:ol></fr:mainmatter></fr:tree><fr:tree
+    </html:li>
+
+  </html:ol>
+</fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>694</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-4-corollary-4.2</fr:addr><fr:route>fga3.vi-4-corollary-4.2.xml</fr:route><fr:number>4.2</fr:number><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>818</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-4-corollary-4.2</fr:addr><fr:route>fga3.vi-4-corollary-4.2.xml</fr:route><fr:number>4.2</fr:number><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>f \colon  X \to  S</fr:tex> be a simple projective morphism, with connected geometric fibres.
     Then the schemes <fr:tex>\underline { \operatorname {Pic} } _{X/S}^Q</fr:tex> (for <fr:tex>Q \in \mathbb {Q}[t]</fr:tex>) and <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> are projective over <fr:tex>S</fr:tex>.
   </fr:p>
@@ -1595,7 +1704,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>693</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-4-corollary-4.2</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>817</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-4-corollary-4.2</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       Since they are of finite type over <fr:tex>S</fr:tex>, by <fr:ref
 addr="fga3.vi-4-theorem-4.1"
@@ -1615,112 +1724,186 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>695</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-4-remark-comp</fr:addr><fr:route>fga3.vi-4-remark-comp.xml</fr:route><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+expanded="true"><fr:frontmatter><fr:anchor>819</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-4-remark-comp</fr:addr><fr:route>fga3.vi-4-remark-comp.xml</fr:route><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
     
     The questions of finiteness of the type highlighted in this section have been all but totally resolved since the editing of this present talk.
     We note here the principal facts now known in this direction.
     To simplify the statements, we implicitly assume that all the Picard preschemes that arise in the statements exist, even though an evident modification of these statements would allow us to get rid of any existence hypothesis.
     In what follows, <fr:tex>S</fr:tex> denotes a Noetherian scheme, and <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> are proper schemes over <fr:tex>S</fr:tex>.
-    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
 
-    <fr:ol><fr:li>
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; i.  &quot;">
         Let <fr:tex>f \colon  X \to  Y</fr:tex> be a surjective morphism.
         Then <fr:tex>f^* \colon \underline { \operatorname {Pic} } _{Y/S} \to \underline { \operatorname {Pic} } _{X/S}</fr:tex> is a morphism of finite type.
-      </fr:li>
+      </html:li>
 
-      <fr:li>
+
+      
+ <html:li
+style="list-style-type: &quot; ii.  &quot;">
+        
         Suppose that <fr:tex>Y</fr:tex> is projective over <fr:tex>S</fr:tex>, endowed with an invertible module that is ample with respect to <fr:tex>S</fr:tex>, and let <fr:tex>X</fr:tex> be the scheme of zeros of an arbitrary section of this module.
         Let <fr:tex>f \colon  X \to  Y</fr:tex> be the canonical immersion.
         Finally, suppose that the irreducible components of the fibres of <fr:tex>Y/S</fr:tex> are of dimension <fr:tex>\geqslant3</fr:tex>.
         Then <fr:tex>f^* \colon \underline { \operatorname {Pic} } _{Y/S} \to \underline { \operatorname {Pic} } _{X/S}</fr:tex> is of finite type.
-      </fr:li>
+      </html:li>
 
-      <fr:li>
+
+      
+ <html:li
+style="list-style-type: &quot; iii.  &quot;">
         Suppose that <fr:tex>X</fr:tex> is projective over <fr:tex>S</fr:tex>, and that all its geometric fibres are integral and of dimension <fr:tex>n</fr:tex>.
         Let <fr:tex>\mathcal {O} _X(1)</fr:tex> be an ample invertible module on <fr:tex>X</fr:tex>, allowing us to define Hilbert polynomials.
         Let <fr:tex>M</fr:tex> be a subset of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>.
         Then <fr:tex>M</fr:tex> is quasi-compact if and only if, in the Hilbert polynomials <fr:tex>a_0x^n+a_1x^{n-1}+a_2x^{n-2}+ \ldots +a_n</fr:tex> of the elements of <fr:tex>M</fr:tex>, the coefficients <fr:tex>a_1</fr:tex> and <fr:tex>a_2</fr:tex> are bounded.
-      </fr:li>
+      </html:li>
 
-      <fr:li>
+
+      
+ <html:li
+style="list-style-type: &quot; iv.  &quot;">
         For every integer <fr:tex>n \neq0</fr:tex>, the <fr:tex>n</fr:tex>-th power homomorphism in the group prescheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is a morphism of finite type.
-      </fr:li></fr:ol></fr:p><fr:p>
+      </html:li>
+
+    </html:ol></fr:p><fr:p>
     Note that (i) and (ii) also imply (under the hypotheses given in their respective statements) that <fr:em>a subset <fr:tex>M</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{Y/S}</fr:tex> is quasi-compact if and only if its image in <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is quasi-compact</fr:em>.
     We thus conclude that an invertible module <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>Y</fr:tex> is <fr:tex>\tau</fr:tex>-equivalent to <fr:tex>0</fr:tex> if and only if its inverse image in <fr:tex>X</fr:tex> is;
     in other words, <fr:tex>\underline { \operatorname {Pic} } _{Y/S}^ \tau</fr:tex> is the inverse image of <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex>.
     In particular, to show that the first prescheme is of finite type over <fr:tex>S</fr:tex>, it suffices to prove this for the second, since <fr:tex>\underline { \operatorname {Pic} } _{Y/S} \to \underline { \operatorname {Pic} } _{X/S}</fr:tex> is of finite type.
     Then using (i), Chow's lemma, and (iii), we find:
-    <fr:strong><fr:em>TO-DO: the following list should be v</fr:em></fr:strong>
 
-    <fr:ol><fr:li><fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is of finite type over <fr:tex>S</fr:tex>.
-      </fr:li></fr:ol></fr:p><fr:p>
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; v.  &quot;">
+        <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is of finite type over <fr:tex>S</fr:tex>.
+      </html:li>
+
+    </html:ol></fr:p><fr:p>
     Generally, the conjunction of (i) for a finite morphism and (ii) allows us to reduce, for the majority of finiteness questions, to the case where <fr:tex>X/S</fr:tex> has integral and normal geometric fibres of dimension <fr:tex>\leqslant2</fr:tex>;
     often, even, applying (i) for a surjective but not-necessarily finite morphism, along with the resolution of singularities of algebraic surfaces (due, in arbitrary characteristic, to Abhyankar), we can reduce to the case where <fr:tex>X/S</fr:tex> is even simple, and thus has non-singular geometric fibres of dimension <fr:tex>2</fr:tex>.
     This allows us, for example, taking into account (v) and the Picard–Igusa inequality bounding the rank of the Néron–Severi group of a non-singular projective surface, to prove the following generalisation of the Néron finiteness theorem:
-    <fr:strong><fr:em>TO-DO: the following list should be vi</fr:em></fr:strong>
 
-    <fr:ol><fr:li>
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; vi.  &quot;">
         Let <fr:tex>X/S</fr:tex> be proper over <fr:tex>S</fr:tex>, but otherwise arbitrary.
         
         Then the Néron–Severi groups <fr:tex>\underline { \operatorname {Pic} } _{X_i/k_i}/ \underline { \operatorname {Pic} } _{X_i/k_i}^0</fr:tex> of the geometric fibres <fr:tex>X_i/k_i</fr:tex> of <fr:tex>X/S</fr:tex> are of finite type, and their rank and the order of their torsion subgroups are bounded.
-      </fr:li></fr:ol></fr:p><fr:p>
-    The same method of reduction to the case of non-singular surfaces, and known theorems for this case (such as the Néron finiteness theorem, and the fact that the intersection form on the Néron–Severi group is non-degenerate) implies:
-    <fr:strong><fr:em>TO-DO: the following list should be vii</fr:em></fr:strong>
+      </html:li>
 
-    <fr:ol><fr:li>
+    </html:ol></fr:p><fr:p>
+    The same method of reduction to the case of non-singular surfaces, and known theorems for this case (such as the Néron finiteness theorem, and the fact that the intersection form on the Néron–Severi group is non-degenerate) implies:
+
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; vii.  &quot;">
         Let <fr:tex>X</fr:tex> be a proper scheme over an algebraically closed field.
         Then there exists a finite number of integral closed curves <fr:tex>C_i</fr:tex> (for <fr:tex>1 \leqslant  i \leqslant  r</fr:tex>) in <fr:tex>X</fr:tex>, such that the following property is satisfied:
         for every subset <fr:tex>M</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, <fr:tex>M</fr:tex> is quasi-compact if and only if the integers <fr:tex>\deg \mathscr { L } _{C'_i}</fr:tex> (for <fr:tex>\mathscr { L } \in  M</fr:tex>) are bounded (where <fr:tex>C'_i</fr:tex> denotes the normalisation of <fr:tex>C_i</fr:tex>).
-      </fr:li></fr:ol>
+      </html:li>
+
+    </html:ol>
+
 
     In the above we can take <fr:tex>r</fr:tex> to be the rank of the Néron–Severi group.
     Once we know that this group is of finite type, (vii) reduces to the fact that the linear forms on the Néron–Severi group defined by the curves <fr:tex>C</fr:tex> in <fr:tex>X</fr:tex> do not simultaneously vanish except for on the torsion elements of the Néron–Severi group.
     In the case where <fr:tex>X</fr:tex> is non-singular and projective, this result, as well as (v), was due to Matsusaka.
     Using (vii), we easily obtain the following characterisation of invertible modules that are <fr:tex>\tau</fr:tex>-equivalent to <fr:tex>0</fr:tex> on <fr:tex>X</fr:tex>:
-    <fr:strong><fr:em>TO-DO: the following list should be viii</fr:em></fr:strong>
 
-    <fr:ol><fr:li><fr:p>
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; viii.  &quot;">
+        <fr:p>
           Let <fr:tex>X/k</fr:tex> be a proper scheme over a field, and <fr:tex>\mathscr { L }</fr:tex> an invertible module on <fr:tex>X</fr:tex>.
           Then the following conditions are equivalent:
-          <fr:strong><fr:em>TO-DO: the following list should be a, b, b', c</fr:em></fr:strong>
 
-          <fr:ol><fr:li><fr:tex>\mathscr { L }</fr:tex> is <fr:tex>\tau</fr:tex>-equivalent to <fr:tex>0</fr:tex>.
-            </fr:li>
-            <fr:li>
+          
+ <html:ol>
+            
+ <html:li
+style="list-style-type: &quot; a.  &quot;">
+              <fr:tex>\mathscr { L }</fr:tex> is <fr:tex>\tau</fr:tex>-equivalent to <fr:tex>0</fr:tex>.
+            </html:li>
+
+            
+ <html:li
+style="list-style-type: &quot; b.  &quot;">
               For every coherent module <fr:tex>F</fr:tex>, we have <fr:tex>\chi (F \otimes \mathscr { L } )= \chi (F)</fr:tex>, where <fr:tex>\chi</fr:tex> denotes the Euler–Poincaré characteristic.
-            </fr:li>
-            <fr:li>
+            </html:li>
+
+            
+ <html:li
+style="list-style-type: &quot; b'.  &quot;">
               Like (b), but with <fr:tex>F= \mathcal {O} _Y</fr:tex>, where <fr:tex>Y</fr:tex> is an integral closed subscheme of dimension <fr:tex>1</fr:tex> in <fr:tex>X</fr:tex>.
-            </fr:li>
-            <fr:li>
+            </html:li>
+
+            
+ <html:li
+style="list-style-type: &quot; c.  &quot;">
               For every <fr:tex>Y</fr:tex> as above, writing <fr:tex>Y'</fr:tex> to mean the normalised curve, we have <fr:tex>\deg \mathscr { L } _{Y'}=0</fr:tex>.
-            </fr:li></fr:ol>
+            </html:li>
+
+          </html:ol>
+
 
           If <fr:tex>X/k</fr:tex> is projective and endowed with an ample invertible module <fr:tex>\mathcal {O} _X(1)</fr:tex>, then the above conditions are also equivalent to the following:
-          <fr:strong><fr:em>TO-DO: the following list should be d, e</fr:em></fr:strong>
 
-          <fr:ol><fr:li>
+          
+ <html:ol>
+            
+ <html:li
+style="list-style-type: &quot; d.  &quot;">
               For every integer <fr:tex>m</fr:tex>, <fr:tex>\mathscr { L } ^{ \otimes  m}(1)</fr:tex> is ample.
-            </fr:li>
-            <fr:li>
+            </html:li>
+
+            
+ <html:li
+style="list-style-type: &quot; e.  &quot;">
               (If <fr:tex>X</fr:tex> is integral).
               For every pair of integers <fr:tex>(m,n)</fr:tex>, we have
               <fr:tex
 display="block">                  \chi ( \mathscr { L } ^{ \otimes  m}(n))                 =  \chi ( \mathcal {O} (n))               </fr:tex>
               
               (i.e. (b) is true for <fr:tex>F= \mathscr { L } ^{ \otimes  m}(n)</fr:tex>).
-            </fr:li></fr:ol></fr:p></fr:li></fr:ol></fr:p><fr:p>
+            </html:li>
+
+          </html:ol></fr:p>
+      </html:li>
+
+    </html:ol></fr:p><fr:p>
     For the sufficiency of this last condition, note that it implies that the Hilbert polynomials of the <fr:tex>\mathscr { L } ^{ \otimes  m}</fr:tex> are all equal, and thus, by the Mumford criterion (iii), the <fr:tex>\mathscr { L } ^{ \otimes  m}</fr:tex> remain in a quasi-compact subset of <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, i.e. we have (a).
     Conditions (b), (b'), and (c) should be considered as variants (for an arbitrary proper scheme) of the notion of <fr:em>numerical equivalence</fr:em>, usually defined for non-singular projective varieties.
     For such varieties, the equivalence of (a) and (c) was evidently well known (Matsusaka).
   </fr:p><fr:p>
     Criterion (e) from the above also implies the following result:
-    <fr:strong><fr:em>TO-DO: the following list should be ix</fr:em></fr:strong>
 
-    <fr:ol><fr:li>
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; ix.  &quot;">
         Let <fr:tex>f \colon  X \to  S</fr:tex> be a flat projective morphism whose geometric fibres are integral.
         Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is open <fr:em>and closed</fr:em> in <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>.
-      </fr:li></fr:ol></fr:p><fr:p>
+      </html:li>
+
+    </html:ol></fr:p><fr:p>
     We restrict ourselves to some comments on the proofs of the key results (i), (ii), and (iii) (result (iv) is a little bit different from the others, and can be proven using only (i) for radicial surjective finite morphisms, or, more precisely, for a Frobenius morphism).
     For (i), we use, in an essential way, the ideas of non-flat descent (see <fr:link
 href="fga3.i-a.2.c.xml"
@@ -1744,7 +1927,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>2063</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>Ses1962</fr:addr><fr:route>Ses1962.xml</fr:route><fr:title>La variété de Picard d'une variété complète</fr:title><fr:date><fr:year>1962</fr:year></fr:date><fr:authors><fr:author>C.S. Seshadri</fr:author></fr:authors><fr:meta
+expanded="true"><fr:frontmatter><fr:anchor>2268</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>Ses1962</fr:addr><fr:route>Ses1962.xml</fr:route><fr:title>La variété de Picard d'une variété complète</fr:title><fr:date><fr:year>1962</fr:year></fr:date><fr:authors><fr:author>C.S. Seshadri</fr:author></fr:authors><fr:meta
 name="venue"><fr:em>Annali di mat. pura ed app.</fr:em> <fr:strong>57</fr:strong> pp. 117–142</fr:meta><fr:meta
 name="bibtex">@article{Ses1962,
   title = {La vari\'{e}t\'{e} de Picard d'une vari\'{e}t\'{e} compl\`{e}te},
@@ -1759,7 +1942,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>2065</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>Che1960</fr:addr><fr:route>Che1960.xml</fr:route><fr:title>Sur la théorie de Picard</fr:title><fr:date><fr:year>1960</fr:year></fr:date><fr:authors><fr:author>C. Chevalley</fr:author></fr:authors><fr:meta
+expanded="true"><fr:frontmatter><fr:anchor>2270</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>Che1960</fr:addr><fr:route>Che1960.xml</fr:route><fr:title>Sur la théorie de Picard</fr:title><fr:date><fr:year>1960</fr:year></fr:date><fr:authors><fr:author>C. Chevalley</fr:author></fr:authors><fr:meta
 name="venue"><fr:em>Amer. J. of Math.</fr:em> <fr:strong>82</fr:strong> pp. 435–490</fr:meta><fr:meta
 name="bibtex">@article{Che1960,
   title = {Sur la th\'{e}orie de Picard},

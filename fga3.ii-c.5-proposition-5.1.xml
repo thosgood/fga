@@ -6,7 +6,7 @@ toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1635</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.5-proposition-5.1</fr:addr><fr:route>fga3.ii-c.5-proposition-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.ii-c.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>1788</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.5-proposition-5.1</fr:addr><fr:route>fga3.ii-c.5-proposition-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.ii-c.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     The above functor is pro-representable.
   </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
@@ -14,7 +14,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1634</fr:anchor><fr:addr>fga3.ii-c.5</fr:addr><fr:route>fga3.ii-c.5.xml</fr:route><fr:title><fr:link
+expanded="true"><fr:frontmatter><fr:anchor>1787</fr:anchor><fr:addr>fga3.ii-c.5</fr:addr><fr:route>fga3.ii-c.5.xml</fr:route><fr:title><fr:link
 href="fga3.ii-c.xml"
 type="local"
 addr="fga3.ii-c"><fr:link
@@ -46,31 +46,49 @@ addr="fga3.i"
 href="fga3.i.xml"
 taxon="FGA"
 number="3.I"></fr:ref> imply, first of all, the following results:
-  <fr:strong><fr:em>TO-DO: the following list should be a, b, etc.</fr:em></fr:strong>
 
-  <fr:ol><fr:li><fr:p>
+  
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot; a.  &quot;">
+      <fr:p>
         If <fr:tex>V</fr:tex> varies amongst open subset of <fr:tex>\mathfrak {X}</fr:tex>, then the <fr:tex>G(V)</fr:tex> form a <fr:em>sheaf</fr:em> on <fr:tex>\mathfrak {X}</fr:tex>, say <fr:tex>\mathscr { G } _ \mathfrak {X}= \mathscr { G }</fr:tex>.
         The restriction of this sheaf to <fr:tex>U</fr:tex> is the <fr:em>constant</fr:em> sheaf whose fibres consist of a single element.
       </fr:p>
       <fr:p>
         More generally, describing the fibres of <fr:tex>\mathscr { G } _ \mathfrak {X}</fr:tex> is a question of complete local rings, in a precise way:
-      </fr:p></fr:li>
+      </fr:p>
+    </html:li>
+
       
-    <fr:li>
+    
+ <html:li
+style="list-style-type: &quot; b.  &quot;">
       For all <fr:tex>x \in \mathfrak {X}</fr:tex>, we have
       <fr:tex
 display="block">          \mathscr { G } _x = G( \operatorname {Spec} ( \mathscr { O } _{ \mathfrak {X},x}))  \subset  G( \operatorname {Spec} ( \widehat { \mathscr { O } }_{ \mathfrak {X},x}))       </fr:tex>
       (i.e. isomorphism classes of finite free algebras <fr:tex>B</fr:tex> over <fr:tex>\widehat { \mathscr { O } }_{ \mathfrak {X},x}</fr:tex> endowed with an isomorphism from <fr:tex>B \otimes _{ \widehat { \mathscr { O } }_{ \mathfrak {X},x}} \mathscr { O } _{X_0,x}</fr:tex> to <fr:tex>( \widehat { \mathscr { O } }'_0)_x</fr:tex>, where <fr:tex>\mathscr { O } '_0</fr:tex> is the sheaf of algebras on <fr:tex>X_0</fr:tex> that defines <fr:tex>X'_0</fr:tex>).
-    </fr:li>
+    </html:li>
 
-    <fr:li>
+
+    
+ <html:li
+style="list-style-type: &quot; c.  &quot;">
       We have a canonical isomorphism <fr:tex>\mathscr { G } _ \mathfrak {X}= \varprojlim \mathscr { G } _{ \mathfrak {X}_n}</fr:tex>; in other words, for every open subset <fr:tex>V</fr:tex> of <fr:tex>\mathfrak {X}</fr:tex>, we have <fr:tex>G(V)= \varprojlim  G(V_n)</fr:tex>.
-    </fr:li>
+    </html:li>
 
-    <fr:li>
+
+    
+ <html:li
+style="list-style-type: &quot; d.  &quot;">
       Suppose that <fr:tex>\mathfrak {X}</fr:tex> comes from an ordinary <fr:em>proper</fr:em> scheme <fr:tex>X</fr:tex> over a complete local Noetherian ring <fr:tex>\Lambda</fr:tex> that has ideal of definition <fr:tex>\mathfrak {m}</fr:tex> by taking the <fr:tex>\mathscr { J }</fr:tex>-adic completion of <fr:tex>\mathscr { O } _X</fr:tex>, where <fr:tex>\mathscr { J } = \mathfrak {m} \cdot \mathscr { O } _X</fr:tex>.
       Then <fr:tex>G( \mathfrak {X})</fr:tex> is canonically isomorphic to the set of classes of flat coverings of the <fr:em>ordinary</fr:em> scheme <fr:tex>X</fr:tex> that are "reducible along <fr:tex>X'_0</fr:tex>".
-    </fr:li></fr:ol>
+    </html:li>
+
+  </html:ol>
+
 
   Figuratively speaking, we can say that (a) and (b) establish the fundamental relations between the local and global aspects of the problem; (c) gives the relations between the "finite" and "infinitesimal" aspects; and finally (d) remembers (under precise conditions) the identity between the "formal" and "algebraic" aspects.
 </fr:p><fr:p>
@@ -102,7 +120,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1572</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.5-proposition-5.1</fr:addr><fr:route>fga3.ii-c.5-proposition-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.ii-c.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>1722</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.5-proposition-5.1</fr:addr><fr:route>fga3.ii-c.5-proposition-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.ii-c.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     The above functor is pro-representable.
   </fr:p></fr:mainmatter></fr:tree><fr:p>
   Of course, by (a), if <fr:tex>U= \mathfrak {X}</fr:tex>, then <fr:tex>G( \mathfrak {Y})</fr:tex> consists of a single element for all <fr:tex>\mathfrak {Y}</fr:tex> over <fr:tex>\mathfrak {X}</fr:tex>, and the functor <fr:tex>F</fr:tex> is then not very interesting (we will have <fr:tex>\mathscr { O } = \Lambda</fr:tex>).
@@ -136,7 +154,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1633</fr:anchor><fr:addr>fga3.ii-c.5</fr:addr><fr:route>fga3.ii-c.5.xml</fr:route><fr:title><fr:link
+expanded="true"><fr:frontmatter><fr:anchor>1786</fr:anchor><fr:addr>fga3.ii-c.5</fr:addr><fr:route>fga3.ii-c.5.xml</fr:route><fr:title><fr:link
 href="fga3.ii-c.xml"
 type="local"
 addr="fga3.ii-c"><fr:link
@@ -168,31 +186,49 @@ addr="fga3.i"
 href="fga3.i.xml"
 taxon="FGA"
 number="3.I"></fr:ref> imply, first of all, the following results:
-  <fr:strong><fr:em>TO-DO: the following list should be a, b, etc.</fr:em></fr:strong>
 
-  <fr:ol><fr:li><fr:p>
+  
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot; a.  &quot;">
+      <fr:p>
         If <fr:tex>V</fr:tex> varies amongst open subset of <fr:tex>\mathfrak {X}</fr:tex>, then the <fr:tex>G(V)</fr:tex> form a <fr:em>sheaf</fr:em> on <fr:tex>\mathfrak {X}</fr:tex>, say <fr:tex>\mathscr { G } _ \mathfrak {X}= \mathscr { G }</fr:tex>.
         The restriction of this sheaf to <fr:tex>U</fr:tex> is the <fr:em>constant</fr:em> sheaf whose fibres consist of a single element.
       </fr:p>
       <fr:p>
         More generally, describing the fibres of <fr:tex>\mathscr { G } _ \mathfrak {X}</fr:tex> is a question of complete local rings, in a precise way:
-      </fr:p></fr:li>
+      </fr:p>
+    </html:li>
+
       
-    <fr:li>
+    
+ <html:li
+style="list-style-type: &quot; b.  &quot;">
       For all <fr:tex>x \in \mathfrak {X}</fr:tex>, we have
       <fr:tex
 display="block">          \mathscr { G } _x = G( \operatorname {Spec} ( \mathscr { O } _{ \mathfrak {X},x}))  \subset  G( \operatorname {Spec} ( \widehat { \mathscr { O } }_{ \mathfrak {X},x}))       </fr:tex>
       (i.e. isomorphism classes of finite free algebras <fr:tex>B</fr:tex> over <fr:tex>\widehat { \mathscr { O } }_{ \mathfrak {X},x}</fr:tex> endowed with an isomorphism from <fr:tex>B \otimes _{ \widehat { \mathscr { O } }_{ \mathfrak {X},x}} \mathscr { O } _{X_0,x}</fr:tex> to <fr:tex>( \widehat { \mathscr { O } }'_0)_x</fr:tex>, where <fr:tex>\mathscr { O } '_0</fr:tex> is the sheaf of algebras on <fr:tex>X_0</fr:tex> that defines <fr:tex>X'_0</fr:tex>).
-    </fr:li>
+    </html:li>
 
-    <fr:li>
+
+    
+ <html:li
+style="list-style-type: &quot; c.  &quot;">
       We have a canonical isomorphism <fr:tex>\mathscr { G } _ \mathfrak {X}= \varprojlim \mathscr { G } _{ \mathfrak {X}_n}</fr:tex>; in other words, for every open subset <fr:tex>V</fr:tex> of <fr:tex>\mathfrak {X}</fr:tex>, we have <fr:tex>G(V)= \varprojlim  G(V_n)</fr:tex>.
-    </fr:li>
+    </html:li>
 
-    <fr:li>
+
+    
+ <html:li
+style="list-style-type: &quot; d.  &quot;">
       Suppose that <fr:tex>\mathfrak {X}</fr:tex> comes from an ordinary <fr:em>proper</fr:em> scheme <fr:tex>X</fr:tex> over a complete local Noetherian ring <fr:tex>\Lambda</fr:tex> that has ideal of definition <fr:tex>\mathfrak {m}</fr:tex> by taking the <fr:tex>\mathscr { J }</fr:tex>-adic completion of <fr:tex>\mathscr { O } _X</fr:tex>, where <fr:tex>\mathscr { J } = \mathfrak {m} \cdot \mathscr { O } _X</fr:tex>.
       Then <fr:tex>G( \mathfrak {X})</fr:tex> is canonically isomorphic to the set of classes of flat coverings of the <fr:em>ordinary</fr:em> scheme <fr:tex>X</fr:tex> that are "reducible along <fr:tex>X'_0</fr:tex>".
-    </fr:li></fr:ol>
+    </html:li>
+
+  </html:ol>
+
 
   Figuratively speaking, we can say that (a) and (b) establish the fundamental relations between the local and global aspects of the problem; (c) gives the relations between the "finite" and "infinitesimal" aspects; and finally (d) remembers (under precise conditions) the identity between the "formal" and "algebraic" aspects.
 </fr:p><fr:p>
@@ -224,7 +260,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1572</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.5-proposition-5.1</fr:addr><fr:route>fga3.ii-c.5-proposition-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.ii-c.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>1722</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.5-proposition-5.1</fr:addr><fr:route>fga3.ii-c.5-proposition-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.ii-c.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     The above functor is pro-representable.
   </fr:p></fr:mainmatter></fr:tree><fr:p>
   Of course, by (a), if <fr:tex>U= \mathfrak {X}</fr:tex>, then <fr:tex>G( \mathfrak {Y})</fr:tex> consists of a single element for all <fr:tex>\mathfrak {Y}</fr:tex> over <fr:tex>\mathfrak {X}</fr:tex>, and the functor <fr:tex>F</fr:tex> is then not very interesting (we will have <fr:tex>\mathscr { O } = \Lambda</fr:tex>).

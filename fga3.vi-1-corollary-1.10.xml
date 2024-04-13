@@ -6,7 +6,7 @@ toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>2076</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.10</fr:addr><fr:route>fga3.vi-1-corollary-1.10.xml</fr:route><fr:number>1.10</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2281</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.10</fr:addr><fr:route>fga3.vi-1-corollary-1.10.xml</fr:route><fr:number>1.10</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Suppose that the residual characteristics of <fr:tex>S</fr:tex> are all <fr:tex>0</fr:tex>, so that <fr:tex>G^ \tau =G^ \sigma</fr:tex> and <fr:tex>G^0=G^ \rho</fr:tex>.
     Then <fr:tex>G^ \tau =G^ \sigma</fr:tex> is open, and even open and closed if <fr:tex>G</fr:tex> is separated over <fr:tex>S</fr:tex> and the <fr:tex>G_s^0</fr:tex> are proper;
     under these same hypotheses, <fr:tex>G^0=G^ \rho</fr:tex> is proper over <fr:tex>S</fr:tex> and thus closed in <fr:tex>G</fr:tex>.
@@ -18,7 +18,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>2075</fr:anchor><fr:addr>fga3.vi-1</fr:addr><fr:route>fga3.vi-1.xml</fr:route><fr:title><fr:link
+expanded="true"><fr:frontmatter><fr:anchor>2280</fr:anchor><fr:addr>fga3.vi-1</fr:addr><fr:route>fga3.vi-1.xml</fr:route><fr:title><fr:link
 href="fga3.vi.xml"
 type="local"
 addr="fga3.vi">Picard schemes: General properties</fr:link> › Topological properties of preschemes of commutative groups</fr:title><fr:number>1</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
@@ -49,7 +49,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1927</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-1-remark</fr:addr><fr:route>fga3.vi-1-remark.xml</fr:route><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2112</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-1-remark</fr:addr><fr:route>fga3.vi-1-remark.xml</fr:route><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     We can construct the quotient group scheme <fr:tex>G/G^0=N</fr:tex> (cf. <fr:ref
 addr="fga3.iv"
 href="fga3.iv.xml"
@@ -81,28 +81,45 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1928</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-1-theorem-1.1</fr:addr><fr:route>fga3.vi-1-theorem-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:tex>G^0</fr:tex>, <fr:tex>G^ \tau</fr:tex>, <fr:tex>G^ \sigma</fr:tex>, and <fr:tex>G^ \rho</fr:tex> are <fr:em>locally constructible</fr:em>.
+expanded="true"><fr:frontmatter><fr:anchor>2118</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-1-theorem-1.1</fr:addr><fr:route>fga3.vi-1-theorem-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:tex>G^0</fr:tex>, <fr:tex>G^ \tau</fr:tex>, <fr:tex>G^ \sigma</fr:tex>, and <fr:tex>G^ \rho</fr:tex> are <fr:em>locally constructible</fr:em>.
     Furthermore:
-    <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc</fr:em></fr:strong>
 
-    <fr:ol><fr:li><fr:tex>G^0</fr:tex> is quasi-compact over <fr:tex>S</fr:tex>.
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; i.  &quot;">
+        <fr:tex>G^0</fr:tex> is quasi-compact over <fr:tex>S</fr:tex>.
         If the <fr:tex>G_s^0</fr:tex> are proper, and <fr:tex>G</fr:tex> is separated over <fr:tex>S</fr:tex>, then <fr:tex>G^0</fr:tex> is proper over <fr:tex>S</fr:tex> and thus closed in <fr:tex>G</fr:tex>.
-      </fr:li>
-      <fr:li><fr:tex>G^ \tau</fr:tex> is open.
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; ii.  &quot;">
+        <fr:tex>G^ \tau</fr:tex> is open.
         If <fr:tex>G^0</fr:tex> is closed, then so too is <fr:tex>G^ \tau</fr:tex>.
-      </fr:li>
-      <fr:li>
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; iii.  &quot;">
         If <fr:tex>G^0</fr:tex> is closed, then so too is <fr:tex>G^ \sigma</fr:tex>, provided that we are in equal characteristic, i.e. that all the residue fields of <fr:tex>S</fr:tex> have the same characteristic.
         If <fr:tex>G^0</fr:tex> is closed and <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>G^ \sigma</fr:tex> (cf. <fr:ref
 addr="fga3.vi-1-corollary-1.5"
 href="fga3.vi-1-corollary-1.5.xml"
 taxon="Corollary"
 number="1.5"></fr:ref> below), then <fr:tex>G^ \sigma \to  S</fr:tex> is universally open.
-      </fr:li>
-      <fr:li>
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; iv.  &quot;">
         If <fr:tex>G^0</fr:tex> is closed, then so too is <fr:tex>G^ \rho</fr:tex>.
         If we are in equal characteristic, and if, for every integer <fr:tex>n&gt;0</fr:tex> such that <fr:tex>(n,p)=1</fr:tex>, the <fr:tex>n</fr:tex>-th power homomorphism to <fr:tex>G</fr:tex> is open, then <fr:tex>G^ \rho</fr:tex> is open.
-      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
+      </html:li>
+
+    </html:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
   We now give some hints towards the proof.
   The fact that <fr:tex>G^0</fr:tex> is locally constructible, and quasi-compact over <fr:tex>S</fr:tex>, is contained in the following lemma:
 </fr:p><fr:tree
@@ -111,7 +128,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1930</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.2</fr:addr><fr:route>fga3.vi-1-lemma-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2120</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.2</fr:addr><fr:route>fga3.vi-1-lemma-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     If <fr:tex>S \neq \varnothing</fr:tex> then there exists a non-empty open <fr:tex>U</fr:tex> in <fr:tex>S</fr:tex>, a group scheme <fr:tex>H</fr:tex> of finite type over <fr:tex>U</fr:tex> with connected fibres, and a homomorphism of group schemes <fr:tex>H \to  G|U</fr:tex> that is an open immersion with image <fr:tex>G^0|U</fr:tex>.
   </fr:p>
   
@@ -122,7 +139,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1929</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-lemma-1.2</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2119</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-lemma-1.2</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       To prove this lemma, we can suppose that <fr:tex>S</fr:tex> is irreducible;
       let <fr:tex>\eta</fr:tex> be its generic point.
@@ -145,7 +162,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1931</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.3</fr:addr><fr:route>fga3.vi-1-lemma-1.3.xml</fr:route><fr:number>1.3</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2121</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.3</fr:addr><fr:route>fga3.vi-1-lemma-1.3.xml</fr:route><fr:number>1.3</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>X</fr:tex> be a separated prescheme of finite type over <fr:tex>S</fr:tex>, with <fr:tex>S</fr:tex> locally Noetherian, and let <fr:tex>g</fr:tex> be a section of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and <fr:tex>X^0</fr:tex> the union of the connected components of the <fr:tex>g(s)</fr:tex> in the <fr:tex>X_s</fr:tex>.
     Let <fr:tex>s \in  S</fr:tex> be such that <fr:tex>X_s^0</fr:tex> is proper over <fr:tex>k(s)</fr:tex>.
     Then there exists an open neighbourhood <fr:tex>U</fr:tex> of <fr:tex>s</fr:tex> such that <fr:tex>X^0|U</fr:tex> is proper over <fr:tex>U</fr:tex>, and a fortiori closed in <fr:tex>X|U</fr:tex>.
@@ -176,16 +193,26 @@ addr="GD1960">GD1960</fr:link>, II]).
 </fr:mainmatter></fr:tree><fr:p>
   We now prove that <fr:tex>G^ \tau</fr:tex> is open, or, equivalently, taking into account the fact that the formation of <fr:tex>G^ \tau</fr:tex> (as that of <fr:tex>G^0</fr:tex>, <fr:tex>G^ \sigma</fr:tex>, and <fr:tex>G^ \rho</fr:tex>) commutes with base extension: for every sections <fr:tex>g</fr:tex> of <fr:tex>G</fr:tex> over <fr:tex>S</fr:tex>, <fr:tex>g^{-1}(G^ \tau )</fr:tex> is open.
   This implies two things:
-  <fr:strong><fr:em>TO-DO: the following list should be a, b</fr:em></fr:strong>
-
-  <fr:ol><fr:li>
+  
+  
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot; a.  &quot;">
       Let <fr:tex>y \in  S</fr:tex> be such that <fr:tex>g(y) \in  G^ \tau</fr:tex>.
       Then, for all neighbours <fr:tex>y' \in \overline {y}</fr:tex> of <fr:tex>y</fr:tex>, we have <fr:tex>g(y') \in  G^ \tau</fr:tex>.
-    </fr:li>
-    <fr:li>
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; b.  &quot;">
       Let <fr:tex>y' \in  S</fr:tex> be such that <fr:tex>g(y') \in  G^ \tau</fr:tex>.
       Then, for every generalisation <fr:tex>y</fr:tex> of <fr:tex>y'</fr:tex>, we have <fr:tex>g(y) \in  G^ \tau</fr:tex>.
-    </fr:li></fr:ol>
+    </html:li>
+
+  </html:ol>
+
 
   For (a), note that there exists an integer <fr:tex>n&gt;0</fr:tex> such that <fr:tex>g^n(y) \in  G^0</fr:tex>; since <fr:tex>G^0</fr:tex> is constructible, <fr:tex>(g^n)^{-1}G^0</fr:tex> is constructible;
   it follows that we have <fr:tex>g^n(y') \in  G^0</fr:tex> for all neighbours <fr:tex>y' \in \overline {y}</fr:tex> of <fr:tex>y</fr:tex>.
@@ -204,7 +231,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1933</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.4</fr:addr><fr:route>fga3.vi-1-lemma-1.4.xml</fr:route><fr:number>1.4</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2126</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.vi-1-lemma-1.4</fr:addr><fr:route>fga3.vi-1-lemma-1.4.xml</fr:route><fr:number>1.4</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     The function <fr:tex>\nu</fr:tex> on <fr:tex>G^ \tau</fr:tex> is locally constructible.
   </fr:p>
   
@@ -215,7 +242,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1932</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-lemma-1.4</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2125</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-lemma-1.4</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       This means that, for every integer <fr:tex>n&gt;0</fr:tex>, the set of <fr:tex>x \in  G^ \tau</fr:tex> such that <fr:tex>\nu (x)=n</fr:tex> is locally constructible;
       but this is the difference between <fr:tex>\varphi _n^{-1}(G^0)</fr:tex> and the union of the <fr:tex>\varphi _d^{-1}(G^0)</fr:tex> where <fr:tex>d</fr:tex> runs over the proper divisors of <fr:tex>n</fr:tex>;
@@ -270,7 +297,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1935</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.5</fr:addr><fr:route>fga3.vi-1-corollary-1.5.xml</fr:route><fr:number>1.5</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2128</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.5</fr:addr><fr:route>fga3.vi-1-corollary-1.5.xml</fr:route><fr:number>1.5</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>n&gt;1</fr:tex> be an integer such that the <fr:tex>n</fr:tex>-th power homomorphism <fr:tex>\varphi _n \colon  G \to  G</fr:tex> is universally open (for example, étale).
     Let <fr:tex>G^{(n)}= \varphi _n^{-1}(G^0)</fr:tex>, and suppose that the connected fibres <fr:tex>G_s^0</fr:tex> "do not contain the additive component" (i.e. the group induced by field extension from <fr:tex>k(s)</fr:tex> to the algebraic closure does not contain a subgroup isomorphic to <fr:tex>\operatorname {G_a}</fr:tex>).
     
@@ -290,7 +317,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1934</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-corollary-1.5</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>2127</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-1-corollary-1.5</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       It follows from the hypotheses that the kernel <fr:tex>{}_nG</fr:tex> of <fr:tex>\varphi _n</fr:tex> is universally open over <fr:tex>S</fr:tex>, and so <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>{}_nG</fr:tex>, and thus also (replacing <fr:tex>n</fr:tex> with <fr:tex>n^h</fr:tex>) at the points of <fr:tex>{}_{(n^h)}G</fr:tex>.
       But the hypothesis on the fibres <fr:tex>G_s^0</fr:tex> tells us exactly that the points of order some power of <fr:tex>n</fr:tex> in <fr:tex>G_s</fr:tex> are dense in the union of the <fr:tex>G^{(n^h)}</fr:tex>, whence it easily follows that <fr:tex>G \to  S</fr:tex> is universally open at all points of this union, in particular along the identity section, whence it easily follows that <fr:tex>s \mapsto \dim  G_s</fr:tex> is a locally constant function.
@@ -303,7 +330,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1936</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-1-remark-1.6</fr:addr><fr:route>fga3.vi-1-remark-1.6.xml</fr:route><fr:number>1.6</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2129</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-1-remark-1.6</fr:addr><fr:route>fga3.vi-1-remark-1.6.xml</fr:route><fr:number>1.6</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Recall that a morphism <fr:tex>X \to  S</fr:tex> is said to be universally open if it sends every open to an open, and retains this nice property after any base change <fr:tex>S' \to  S</fr:tex>.
     This also implies (if <fr:tex>S</fr:tex> is locally Noetherian and <fr:tex>X \to  S</fr:tex> is locally of finite type) that every irreducible component of <fr:tex>X</fr:tex> dominates <fr:tex>S</fr:tex>, and that this property is retained after any base change <fr:tex>S' \to  S</fr:tex>.
     In these two claims, it suffices (thanks to the finiteness hypotheses above) to verify only for the base changes <fr:tex>S' \to  S</fr:tex> where <fr:tex>S'</fr:tex> is the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one wants...).
@@ -321,7 +348,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1937</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.7</fr:addr><fr:route>fga3.vi-1-corollary-1.7.xml</fr:route><fr:number>1.7</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2130</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.7</fr:addr><fr:route>fga3.vi-1-corollary-1.7.xml</fr:route><fr:number>1.7</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Suppose that <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>G^0</fr:tex> (cf. <fr:ref
 addr="fga3.vi-1-corollary-1.5"
 href="fga3.vi-1-corollary-1.5.xml"
@@ -362,7 +389,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1938</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.8</fr:addr><fr:route>fga3.vi-1-corollary-1.8.xml</fr:route><fr:number>1.8</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2131</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.8</fr:addr><fr:route>fga3.vi-1-corollary-1.8.xml</fr:route><fr:number>1.8</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>U</fr:tex> be an open subset of a fibre <fr:tex>G_s</fr:tex> such that <fr:tex>G \to  S</fr:tex> is universally open at the points of <fr:tex>U</fr:tex> (cf. <fr:link
 href="#fga3.vi-1-corollary-1.5"
 type="external">(1.5)</fr:link>).
@@ -373,7 +400,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1939</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.vi-1-remarks-1.9</fr:addr><fr:route>fga3.vi-1-remarks-1.9.xml</fr:route><fr:number>1.9</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2132</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.vi-1-remarks-1.9</fr:addr><fr:route>fga3.vi-1-remarks-1.9.xml</fr:route><fr:number>1.9</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     I do not know, if <fr:tex>G</fr:tex> is separated over <fr:tex>S</fr:tex>, if <fr:tex>G^0</fr:tex> or <fr:tex>G^ \tau</fr:tex> is always closed in <fr:tex>G</fr:tex>;
     this seems unlikely.
     In any case, we find evident counter-examples if we drop the separation hypothesis, for example by taking the affine line with a countably infinite number of copies of the origin, thus obtaining a group scheme <fr:tex>G</fr:tex> over the affine line whose fibres are all the trivial group, apart from one, which is <fr:tex>\mathbb {Z}</fr:tex>.
@@ -401,7 +428,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1940</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.10</fr:addr><fr:route>fga3.vi-1-corollary-1.10.xml</fr:route><fr:number>1.10</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2133</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.10</fr:addr><fr:route>fga3.vi-1-corollary-1.10.xml</fr:route><fr:number>1.10</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Suppose that the residual characteristics of <fr:tex>S</fr:tex> are all <fr:tex>0</fr:tex>, so that <fr:tex>G^ \tau =G^ \sigma</fr:tex> and <fr:tex>G^0=G^ \rho</fr:tex>.
     Then <fr:tex>G^ \tau =G^ \sigma</fr:tex> is open, and even open and closed if <fr:tex>G</fr:tex> is separated over <fr:tex>S</fr:tex> and the <fr:tex>G_s^0</fr:tex> are proper;
     under these same hypotheses, <fr:tex>G^0=G^ \rho</fr:tex> is proper over <fr:tex>S</fr:tex> and thus closed in <fr:tex>G</fr:tex>.
@@ -415,7 +442,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1941</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.vi-1-proposition-1.11</fr:addr><fr:route>fga3.vi-1-proposition-1.11.xml</fr:route><fr:number>1.11</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2134</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.vi-1-proposition-1.11</fr:addr><fr:route>fga3.vi-1-proposition-1.11.xml</fr:route><fr:number>1.11</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     There exists an open subset <fr:tex>U</fr:tex> of <fr:tex>S</fr:tex> such that the set <fr:tex>G'</fr:tex> of points of <fr:tex>G</fr:tex> at which <fr:tex>G</fr:tex> is simple (resp. flat) over <fr:tex>S</fr:tex> is the underlying set of an open group subscheme induced by <fr:tex>G|U</fr:tex>.
     Furthermore, every section of <fr:tex>G</fr:tex> over <fr:tex>U</fr:tex> is a section of <fr:tex>G'</fr:tex> over <fr:tex>U</fr:tex>.
   </fr:p></fr:mainmatter></fr:tree><fr:tree
@@ -424,7 +451,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1942</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.12</fr:addr><fr:route>fga3.vi-1-corollary-1.12.xml</fr:route><fr:number>1.12</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>2135</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-1-corollary-1.12</fr:addr><fr:route>fga3.vi-1-corollary-1.12.xml</fr:route><fr:number>1.12</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     If <fr:tex>G</fr:tex> is simple (resp. flat) over <fr:tex>S</fr:tex> at the points of the identity section, then it is simple (resp. flat) at the points of every section of <fr:tex>G</fr:tex> over <fr:tex>S</fr:tex>, and at all points of <fr:tex>G^0</fr:tex>.
     If, further, for every integer <fr:tex>n&gt;0</fr:tex> the <fr:tex>n</fr:tex>-th power homomorphism <fr:tex>\varphi _n \colon  G \to  G</fr:tex> is étale at the points of characteristic coprime to <fr:tex>n</fr:tex>, then <fr:tex>G</fr:tex> is simple (resp. flat) over <fr:tex>S</fr:tex> at all points of <fr:tex>G^ \sigma</fr:tex>.
   </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

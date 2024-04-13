@@ -6,7 +6,7 @@ toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1638</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iii-1-proposition-1.1</fr:addr><fr:route>fga3.iii-1-proposition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.iii-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>1791</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iii-1-proposition-1.1</fr:addr><fr:route>fga3.iii-1-proposition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.iii-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     There is a bijective correspondence, respecting the natural orders, between the set of effective equivalence relations <fr:tex>R</fr:tex> on <fr:tex>X</fr:tex> and the set of effective quotients <fr:tex>Y</fr:tex> of <fr:tex>X</fr:tex>, with such an <fr:tex>R</fr:tex> corresponding to the effective quotient <fr:tex>X/R</fr:tex>, and such a <fr:tex>Y</fr:tex> corresponding to the effective equivalence relation defined by the canonical projection <fr:tex>X \to  Y</fr:tex> (which is defined by the fibre product <fr:tex>X \times _Y X</fr:tex> endowed with its two projections).
   </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
@@ -14,7 +14,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1637</fr:anchor><fr:addr>fga3.iii-1</fr:addr><fr:route>fga3.iii-1.xml</fr:route><fr:title><fr:link
+expanded="true"><fr:frontmatter><fr:anchor>1790</fr:anchor><fr:addr>fga3.iii-1</fr:addr><fr:route>fga3.iii-1.xml</fr:route><fr:title><fr:link
 href="fga3.iii.xml"
 type="local"
 addr="fga3.iii">Quotient preschemes</fr:link> › Equivalence relations, effective equivalence relations</fr:title><fr:number>1</fr:number><fr:parent>fga3.iii</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
@@ -60,33 +60,59 @@ display="block">      \mathcal {R}(f)     = X \times _Y X   </fr:tex>
   It thus defines an equivalence relation, which is said to be <fr:em>associated</fr:em> with the morphism <fr:tex>f</fr:tex>.
 </fr:p><fr:p>
   We say that a pair of morphisms <fr:tex>(p_1,p_2)</fr:tex> with target <fr:tex>X</fr:tex>, and source <fr:tex>R</fr:tex>, is an <fr:em>effective equivalence pair</fr:em> if
-  <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
 
-  <fr:ol><fr:li>
+  
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot; i.  &quot;">
       the cokernel <fr:tex>Y=X/(p_1,p_2)</fr:tex> exists ;
-    </fr:li>
-    <fr:li>
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; ii.  &quot;">
       the fibre product <fr:tex>X \times _Y X</fr:tex> exists ; and
-    </fr:li>
-    <fr:li>
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; iii.  &quot;">
       the morphism <fr:tex>R \to  X \times _Y X</fr:tex> with components <fr:tex>p_1</fr:tex> and <fr:tex>p_2</fr:tex> is an isomorphism.
-    </fr:li></fr:ol>
+    </html:li>
+
+  </html:ol>
+
 
   Then the pair <fr:tex>(p_1,p_2)</fr:tex> is indeed an equivalence pair.
   We also say that the equivalence relation that it defines is an <fr:em>effective equivalence relation</fr:em>.
 </fr:p><fr:p>
   We say that a morphism <fr:tex>f \colon  X \to  Y</fr:tex> is an <fr:em>effective epimorphism</fr:em> if
-  <fr:strong><fr:em>TO-DO: the following list should be i, ii, etc.</fr:em></fr:strong>
 
-  <fr:ol><fr:li>
+  
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot; i.  &quot;">
       the fibre product <fr:tex>R=X \times _Y X</fr:tex> exists ;
-    </fr:li>
-    <fr:li>
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; ii.  &quot;">
       the quotient <fr:tex>X/(p_1,p_2)</fr:tex> exists, where <fr:tex>p_1</fr:tex> and <fr:tex>p_2</fr:tex> are the projections from <fr:tex>R</fr:tex> to <fr:tex>X</fr:tex> ; and
-    </fr:li>
-    <fr:li>
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot; iii.  &quot;">
       the morphism <fr:tex>X/(p_1,p_2) \to  Y</fr:tex> induced by <fr:tex>f</fr:tex> is an isomorphism.
-    </fr:li></fr:ol>
+    </html:li>
+
+  </html:ol>
+
 
   Then <fr:tex>f</fr:tex> is indeed an epimorphism, and even a strict epimorphism (cf.<fr:link
 href="fga3.i-a.2.c.xml"
@@ -101,7 +127,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>1399</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iii-1-proposition-1.1</fr:addr><fr:route>fga3.iii-1-proposition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.iii-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>1544</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iii-1-proposition-1.1</fr:addr><fr:route>fga3.iii-1-proposition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.iii-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     There is a bijective correspondence, respecting the natural orders, between the set of effective equivalence relations <fr:tex>R</fr:tex> on <fr:tex>X</fr:tex> and the set of effective quotients <fr:tex>Y</fr:tex> of <fr:tex>X</fr:tex>, with such an <fr:tex>R</fr:tex> corresponding to the effective quotient <fr:tex>X/R</fr:tex>, and such a <fr:tex>Y</fr:tex> corresponding to the effective equivalence relation defined by the canonical projection <fr:tex>X \to  Y</fr:tex> (which is defined by the fibre product <fr:tex>X \times _Y X</fr:tex> endowed with its two projections).
   </fr:p></fr:mainmatter></fr:tree><fr:p>
   In very nice categories (sets, sheaves of sets, etc.), every quotient is effective, and every equivalence relation is effective.

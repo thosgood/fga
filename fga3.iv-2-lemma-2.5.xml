@@ -6,7 +6,7 @@ toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1771</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-2-lemma-2.5</fr:addr><fr:route>fga3.iv-2-lemma-2.5.xml</fr:route><fr:number>2.5</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>1956</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-2-lemma-2.5</fr:addr><fr:route>fga3.iv-2-lemma-2.5.xml</fr:route><fr:number>2.5</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>\mathscr { L }</fr:tex> be a coherent sheaf on <fr:tex>X</fr:tex>, and <fr:tex>E</fr:tex> a set of classes of the quotient sheaves <fr:tex>\mathscr { F }</fr:tex> of the sheaf <fr:tex>\mathscr { L } _K</fr:tex> (where <fr:tex>K</fr:tex> is a residue extension of <fr:tex>S</fr:tex>).
     Suppose that the fibres of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex> are of dimension <fr:tex>\leqslant  r</fr:tex>, and set
     <fr:tex
@@ -22,7 +22,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>298</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-2-lemma-2.5</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>310</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-2-lemma-2.5</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       By replacing <fr:tex>S</fr:tex> by a union of subschemes of <fr:tex>S</fr:tex> that cover <fr:tex>S</fr:tex>, we can suppose that there exists a <fr:em>finite</fr:em> morphism <fr:tex>f \colon  X \to \mathbb {P} _S^r</fr:tex> such that <fr:tex>\mathcal {O} _X(1)</fr:tex> is isomorphic to the inverse image of <fr:tex>\mathcal {O} _{ \mathbb {P} _S^r}(1)</fr:tex>, and thus, for every coherent sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex>, we have that <fr:tex>P_ \mathscr { F } =P_{f_*( \mathscr { F } )}</fr:tex>.
       We can also easily show (by the technique of the previous section) that a set of sheaves <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex> is bounded if and only if the set of <fr:tex>f_*( \mathscr { F } )</fr:tex> is bounded.
@@ -86,7 +86,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1770</fr:anchor><fr:addr>fga3.iv-2</fr:addr><fr:route>fga3.iv-2.xml</fr:route><fr:title><fr:link
+expanded="true"><fr:frontmatter><fr:anchor>1955</fr:anchor><fr:addr>fga3.iv-2</fr:addr><fr:route>fga3.iv-2.xml</fr:route><fr:title><fr:link
 href="fga3.iv.xml"
 type="local"
 addr="fga3.iv">Hilbert schemes</fr:link> › Bounded families and the Hilbert polynomial</fr:title><fr:number>2</fr:number><fr:parent>fga3.iv</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
@@ -115,18 +115,27 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>294</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.iv-2-theorem-2.1</fr:addr><fr:route>fga3.iv-2-theorem-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>304</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.iv-2-theorem-2.1</fr:addr><fr:route>fga3.iv-2-theorem-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>X</fr:tex> be projective over <fr:tex>S</fr:tex>, with <fr:tex>S</fr:tex> Noetherian, and <fr:tex>\mathcal {O} _X(1)</fr:tex> very ample over <fr:tex>X</fr:tex> with respect to <fr:tex>S</fr:tex>.
     Let <fr:tex>E</fr:tex> be a set of classes of sheaves on the fibres of <fr:tex>X/S</fr:tex>.
     For <fr:tex>E</fr:tex> to be bounded, it is necessary and sufficient that it satisfy the following conditions:
-    <fr:strong><fr:em>TO-DO: the following list should be a, b</fr:em></fr:strong>
 
-    <fr:ol><fr:li>
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; a.  &quot;">
         There exists a coherent sheaf <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X</fr:tex> (which we can suppose to be of the form <fr:tex>\mathcal {O} _X(-n)^N</fr:tex>) such that <fr:tex>E</fr:tex> is contained in the family of classes of coherent sheaves given by quotients of sheaves of the form <fr:tex>\mathscr { L } _K</fr:tex>;
-      </fr:li>
-      <fr:li>
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; b.  &quot;">
         The Hilbert polynomials <fr:tex>P_ \mathscr { F }</fr:tex> of the sheaves <fr:tex>\mathscr { F }</fr:tex> whose class is in <fr:tex>E</fr:tex> are elements of a single <fr:em>finite</fr:em> set of polynomials.
-      </fr:li></fr:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
+      </html:li>
+
+    </html:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
   It remains to prove the "sufficient" part, which will be a particular case of a more precise result.
   For every coherent module <fr:tex>\mathscr { F }</fr:tex> on a prescheme of finite type over a field <fr:tex>K</fr:tex>, and for every integer <fr:tex>r</fr:tex>, let <fr:tex>N_r</fr:tex> be the submodule of <fr:tex>\mathscr { F }</fr:tex> whose sections over an open subset are the sections of <fr:tex>\mathscr { F }</fr:tex> over the same subset whose support is of dimension <fr:tex>&lt;r</fr:tex>.
   We thus have that <fr:tex>N_r= \mathscr { F }</fr:tex> for <fr:tex>r&gt; \dim \operatorname {supp} \mathscr { F }</fr:tex>, and <fr:tex>N_r=0</fr:tex> for <fr:tex>r \leqslant0</fr:tex>, and we thus obtain a finite increasing filtration of <fr:tex>\mathscr { F }</fr:tex> whose factors <fr:tex>N_r/N_{r+1}</fr:tex> are such that their associated prime cycles are exactly the associated prime cycles of <fr:tex>\mathscr { F }</fr:tex> that are of dimension <fr:tex>r</fr:tex>.
@@ -141,17 +150,24 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>295</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.iv-2-theorem-2.2</fr:addr><fr:route>fga3.iv-2-theorem-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>307</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.iv-2-theorem-2.2</fr:addr><fr:route>fga3.iv-2-theorem-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Under the conditions of <fr:ref
 addr="fga3.iv-2-theorem-2.1"
 href="fga3.iv-2-theorem-2.1.xml"
 taxon="Theorem"
 number="2.1"></fr:ref>, let <fr:tex>s</fr:tex> be an integer, and suppose that <fr:tex>E</fr:tex> satisfies condition (a), as well as the following weakened form of (b):
-    <fr:strong><fr:em>TO-DO: the following list should be b_s</fr:em></fr:strong>
 
-    <fr:ol><fr:li>
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; b s .  &quot;">
         The Poincaré polynomials <fr:tex>P_ \mathscr { F }</fr:tex> of the sheaves <fr:tex>\mathscr { F }</fr:tex> whose class is in <fr:tex>E</fr:tex> have coefficients <fr:em>in degrees <fr:tex>\leqslant  (s-1)</fr:tex></fr:em> that are bounded.
-      </fr:li></fr:ol>
+      </html:li>
+
+    </html:ol>
+
 
     Under these conditions, the sheaves <fr:tex>\mathscr { F } _{(s)}</fr:tex> (for the <fr:tex>\mathscr { F }</fr:tex> whose class is in <fr:tex>E</fr:tex>) form a bounded family.
     Furthermore, the coefficients in degree <fr:tex>(s-2)</fr:tex> of the <fr:tex>P_ \mathscr { F }</fr:tex> are bounded below.
@@ -163,7 +179,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>296</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.iv-2-corollary-2.3</fr:addr><fr:route>fga3.iv-2-corollary-2.3.xml</fr:route><fr:number>2.3</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>308</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.iv-2-corollary-2.3</fr:addr><fr:route>fga3.iv-2-corollary-2.3.xml</fr:route><fr:number>2.3</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Suppose that the sheaves <fr:tex>\mathscr { F }</fr:tex> whose class is in <fr:tex>E</fr:tex> are such that all their associated prime cycles are of dimension <fr:tex>d</fr:tex>, with <fr:tex>s \leqslant  d \leqslant  r</fr:tex>.
     Then, in condition (b) of <fr:ref
 addr="fga3.iv-2-theorem-2.1"
@@ -183,7 +199,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>297</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-2-lemma-2.4</fr:addr><fr:route>fga3.iv-2-lemma-2.4.xml</fr:route><fr:number>2.4</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>309</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-2-lemma-2.4</fr:addr><fr:route>fga3.iv-2-lemma-2.4.xml</fr:route><fr:number>2.4</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Consider the structure sheaves of the subschemes <fr:tex>Y</fr:tex> with fibre <fr:tex>X_K</fr:tex> (where <fr:tex>K</fr:tex> is an algebraically closed extension of the residue field of <fr:tex>S</fr:tex>), where <fr:tex>Y</fr:tex> is reduced, and all its components are of the same dimension <fr:tex>r</fr:tex> (and with <fr:tex>\mathcal {O} _Y</fr:tex> being thought of as a quotient sheaf of <fr:tex>\mathcal {O} _X</fr:tex>).
     If the degrees of <fr:tex>Y</fr:tex> are bounded, then the <fr:tex>Y</fr:tex> form a bounded family.
   </fr:p></fr:mainmatter></fr:tree><fr:p>
@@ -194,7 +210,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>299</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-2-lemma-2.5</fr:addr><fr:route>fga3.iv-2-lemma-2.5.xml</fr:route><fr:number>2.5</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>311</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-2-lemma-2.5</fr:addr><fr:route>fga3.iv-2-lemma-2.5.xml</fr:route><fr:number>2.5</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>\mathscr { L }</fr:tex> be a coherent sheaf on <fr:tex>X</fr:tex>, and <fr:tex>E</fr:tex> a set of classes of the quotient sheaves <fr:tex>\mathscr { F }</fr:tex> of the sheaf <fr:tex>\mathscr { L } _K</fr:tex> (where <fr:tex>K</fr:tex> is a residue extension of <fr:tex>S</fr:tex>).
     Suppose that the fibres of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex> are of dimension <fr:tex>\leqslant  r</fr:tex>, and set
     <fr:tex
@@ -210,7 +226,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>298</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-2-lemma-2.5</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>310</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-2-lemma-2.5</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       By replacing <fr:tex>S</fr:tex> by a union of subschemes of <fr:tex>S</fr:tex> that cover <fr:tex>S</fr:tex>, we can suppose that there exists a <fr:em>finite</fr:em> morphism <fr:tex>f \colon  X \to \mathbb {P} _S^r</fr:tex> such that <fr:tex>\mathcal {O} _X(1)</fr:tex> is isomorphic to the inverse image of <fr:tex>\mathcal {O} _{ \mathbb {P} _S^r}(1)</fr:tex>, and thus, for every coherent sheaf <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex>, we have that <fr:tex>P_ \mathscr { F } =P_{f_*( \mathscr { F } )}</fr:tex>.
       We can also easily show (by the technique of the previous section) that a set of sheaves <fr:tex>\mathscr { F }</fr:tex> on <fr:tex>X</fr:tex> is bounded if and only if the set of <fr:tex>f_*( \mathscr { F } )</fr:tex> is bounded.
@@ -276,7 +292,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>301</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-2-lemma-2.6</fr:addr><fr:route>fga3.iv-2-lemma-2.6.xml</fr:route><fr:number>2.6</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-2-lemma-2.6</fr:addr><fr:route>fga3.iv-2-lemma-2.6.xml</fr:route><fr:number>2.6</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Suppose, under the preliminary conditions of <fr:ref
 addr="fga3.iv-2-theorem-2.1"
 href="fga3.iv-2-theorem-2.1.xml"
@@ -296,7 +312,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>300</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-2-lemma-2.6</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>312</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-2-lemma-2.6</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       We can suppose that the base field <fr:tex>K</fr:tex> of the sheaves <fr:tex>\mathscr { F }</fr:tex> is algebraically closed.
       We endow each <fr:tex>\operatorname {supp} \mathscr { F } _{(r)}</fr:tex>(the union of the components of degree <fr:tex>r</fr:tex>) with the induced reduced structure.
@@ -369,17 +385,26 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1769</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iv-1-proposition-1.2</fr:addr><fr:route>fga3.iv-1-proposition-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.iv-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>1954</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iv-1-proposition-1.2</fr:addr><fr:route>fga3.iv-1-proposition-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.iv-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>E</fr:tex> and <fr:tex>E'</fr:tex> be bounded sets of classes of sheaves on the fibres of <fr:tex>X/S</fr:tex>, with <fr:tex>X</fr:tex> assumed to be proper over <fr:tex>S</fr:tex>.
     Then
-    <fr:strong><fr:em>TO-DO: the following list should be i, ii</fr:em></fr:strong>
 
-    <fr:ol><fr:li>
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot; i.  &quot;">
         the family of kernels, cokernels, and images of homomorphisms <fr:tex>\mathscr { F } \to \mathscr { F } '</fr:tex> (where the class of <fr:tex>\mathscr { F }</fr:tex> is in <fr:tex>E</fr:tex> and the class of <fr:tex>\mathscr { F } '</fr:tex> is in <fr:tex>E'</fr:tex>) is bounded;
-      </fr:li>
-      <fr:li>
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot; ii.  &quot;">
         the family of extensions <fr:tex>\mathscr { F } ''</fr:tex> of <fr:tex>\mathscr { F }</fr:tex> by <fr:tex>\mathscr { F } '</fr:tex> (where the class of <fr:tex>\mathscr { F }</fr:tex> is in <fr:tex>E</fr:tex> and the class of <fr:tex>\mathscr { F } '</fr:tex> is in <fr:tex>E'</fr:tex>) is bounded.
-      </fr:li></fr:ol></fr:p>
+      </html:li>
+
+    </html:ol></fr:p>
   
     
     <fr:tree
@@ -388,7 +413,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>304</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-1-proposition-1.2</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>319</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-1-proposition-1.2</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       After potentially applying a suitable base change, we can suppose that <fr:tex>E</fr:tex> and <fr:tex>E'</fr:tex> are defined by coherent sheaves <fr:tex>\mathscr { G }</fr:tex> and <fr:tex>\mathscr { G } '</fr:tex> (respectively) on some <fr:tex>X_T/T</fr:tex>, with <fr:tex>T</fr:tex> of finite type over <fr:tex>S</fr:tex>.
       Further, we can suppose that certain flatness hypotheses are satisfied, implying that constructing the sheaves <fr:tex>f_T( \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _{X_T}}( \mathscr { G } , \mathscr { G } '))</fr:tex> and <fr:tex>\mathscr {E} \kern  -1.5pt \mathit {xt} _{f_T}^1( \mathscr { G } , \mathscr { G } ')</fr:tex> commutes with base change by an arbitrary morphism <fr:tex>T' \to  T</fr:tex>.
@@ -410,7 +435,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1768</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-2-lemma-2.6</fr:addr><fr:route>fga3.iv-2-lemma-2.6.xml</fr:route><fr:number>2.6</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>1953</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>fga3.iv-2-lemma-2.6</fr:addr><fr:route>fga3.iv-2-lemma-2.6.xml</fr:route><fr:number>2.6</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Suppose, under the preliminary conditions of <fr:ref
 addr="fga3.iv-2-theorem-2.1"
 href="fga3.iv-2-theorem-2.1.xml"
@@ -430,7 +455,7 @@ toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>300</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-2-lemma-2.6</fr:parent></fr:frontmatter><fr:mainmatter>
+expanded="true"><fr:frontmatter><fr:anchor>312</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-2-lemma-2.6</fr:parent></fr:frontmatter><fr:mainmatter>
     <fr:p>
       We can suppose that the base field <fr:tex>K</fr:tex> of the sheaves <fr:tex>\mathscr { F }</fr:tex> is algebraically closed.
       We endow each <fr:tex>\operatorname {supp} \mathscr { F } _{(r)}</fr:tex>(the union of the components of degree <fr:tex>r</fr:tex>) with the induced reduced structure.

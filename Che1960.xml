@@ -6,7 +6,7 @@ toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>418</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>Che1960</fr:addr><fr:route>Che1960.xml</fr:route><fr:title>Sur la théorie de Picard</fr:title><fr:date><fr:year>1960</fr:year></fr:date><fr:authors><fr:author>C. Chevalley</fr:author></fr:authors><fr:meta
+expanded="true"><fr:frontmatter><fr:anchor>478</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>Che1960</fr:addr><fr:route>Che1960.xml</fr:route><fr:title>Sur la théorie de Picard</fr:title><fr:date><fr:year>1960</fr:year></fr:date><fr:authors><fr:author>C. Chevalley</fr:author></fr:authors><fr:meta
 name="venue"><fr:em>Amer. J. of Math.</fr:em> <fr:strong>82</fr:strong> pp. 435–490</fr:meta><fr:meta
 name="bibtex">@article{Che1960,
   title = {Sur la th\'{e}orie de Picard},
@@ -21,7 +21,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>415</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-5-remark-5.3</fr:addr><fr:route>fga3.v-5-remark-5.3.xml</fr:route><fr:number>5.3</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>472</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-5-remark-5.3</fr:addr><fr:route>fga3.v-5-remark-5.3.xml</fr:route><fr:number>5.3</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang <fr:link
 href="Lan1959.xml"
 type="local"
@@ -42,7 +42,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>416</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-6-remark-6.6</fr:addr><fr:route>fga3.v-6-remark-6.6.xml</fr:route><fr:number>6.6</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"><fr:frontmatter><fr:anchor>473</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-6-remark-6.6</fr:addr><fr:route>fga3.v-6-remark-6.6.xml</fr:route><fr:number>6.6</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     It is extremely plausible that, for every <fr:em>proper</fr:em> scheme <fr:tex>X</fr:tex> over a field <fr:tex>k</fr:tex>, <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> exists.
     The results above allow us to reduce, for this question, to the case where <fr:tex>k</fr:tex> is algebraically closed, and where <fr:tex>X</fr:tex> is integral.
     We then know that there exists an integral scheme <fr:tex>X'</fr:tex> that is <fr:em>projective</fr:em> over <fr:tex>k</fr:tex>, and a dominant morphism <fr:tex>g \colon  X' \to  X</fr:tex> (Chow's lemma).
@@ -68,7 +68,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>417</fr:anchor><fr:addr>fga3.vi-0</fr:addr><fr:route>fga3.vi-0.xml</fr:route><fr:title><fr:link
+expanded="true"><fr:frontmatter><fr:anchor>477</fr:anchor><fr:addr>fga3.vi-0</fr:addr><fr:route>fga3.vi-0.xml</fr:route><fr:title><fr:link
 href="fga3.vi.xml"
 type="local"
 addr="fga3.vi">Picard schemes: General properties</fr:link> › Supplements to the previous talk (FGA 3.V)</fr:title><fr:number>0</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
@@ -77,8 +77,13 @@ addr="fga3.v"
 href="fga3.v.xml"
 taxon="FGA"
 number="3.V"></fr:ref>:
-  <fr:strong><fr:em>TO-DO: the following list should be a, b</fr:em></fr:strong>
-  <fr:ol><fr:li>
+  
+  
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot; a.  &quot;">
       (Mumford).
       It is not true in general that, if <fr:tex>f \colon  X \to  S</fr:tex> is a projective and separable (i.e. flat with separable fibres) morphism, then the Picard prescheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists, even if the fibres of <fr:tex>f</fr:tex> are of dimension <fr:tex>1</fr:tex> and <fr:tex>S</fr:tex> is the spectrum of a complete discrete valuation ring.
       A counterexample is given by taking <fr:tex>S= \operatorname {Spec} \mathbb {R}[{[t]}]</fr:tex>, and taking <fr:tex>X</fr:tex> to be the subscheme of <fr:tex>\mathbb {P}_S^2</fr:tex> (with homogeneous variables <fr:tex>x,y,z</fr:tex>) defined by the equation <fr:tex>x^2+y^2=tz^2</fr:tex>, which represents a conic degenerating to two geometrically concurrent lines, but the special fibre over the field <fr:tex>\mathbb {R}</fr:tex> is nevertheless irreducible (it is given by the equation <fr:tex>x^2+y^2=0</fr:tex> in <fr:tex>\mathbb {R}</fr:tex>).
@@ -87,9 +92,12 @@ number="3.V"></fr:ref>:
       However, Mumford has shown that, if <fr:tex>f \colon  X \to  S</fr:tex> is a separable projective morphism such that, for all <fr:tex>s \in  S</fr:tex>, the irreducible components of <fr:tex>X_s</fr:tex> are geometrically irreducible with respect to <fr:tex>k(s)</fr:tex>, then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists;
       the proof relies on a refinement of his theorem of passage to the quotient, cf. [Mumford–Tate seminar, 1962].
       Note also that it is still possible that, without any hypotheses on the irreducible components of the fibres <fr:tex>X_s</fr:tex>, the scheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> (which will be introduced below) still exists.
-    </fr:li>
+    </html:li>
 
-    <fr:li>
+
+    
+ <html:li
+style="list-style-type: &quot; b.  &quot;">
       (Murre).
       
       If <fr:tex>X</fr:tex> is a proper scheme over a field, then <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex> exists.
@@ -97,7 +105,10 @@ number="3.V"></fr:ref>:
 href="Che1960.xml"
 type="local"
 addr="Che1960">[Che1960]</fr:link>, and is fundamentally based on the group structure of the Picard functor.
-    </fr:li></fr:ol>
+    </html:li>
+
+  </html:ol>
+
 
   For certain additional comments concerning the theory of Picard schemes, most notably in relation to abelian schemes, we recommend consulting [Mumford–Tate seminar, 1962].
   Finally, a notable shortcoming of the present talk is the absence of "equivalence criteria" that would allow us to compare the Picard scheme of a projective scheme and of its hyperplane sections;
