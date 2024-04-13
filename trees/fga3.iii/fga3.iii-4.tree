@@ -11,17 +11,16 @@
   Recall that a \em{groupoid} is defined to be a category where all the morphisms are isomorphisms.
   \oldpage{212-08}
   A category should be defined as consisting of two base sets, #{X} and #{R}, with the former being the set of \em{objects} and the latter the set of \em{arrows}, endowed with the following structures:
-  \todo{the following list should be i, ii, etc.}
 
-  \ol{
-    \li{
+  \olc{
+    \lic{i.}{
       a pair of maps
       ##{
         p_1,p_2\colon R\rightrightarrows X
       }
       called the \em{source map} and the \em{target map} ;
     }
-    \li{
+    \lic{ii.}{
       a map
       ##{
         \pi\colon(R,p_2)\times_X(R,p_1) \to R

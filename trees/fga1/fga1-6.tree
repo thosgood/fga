@@ -89,22 +89,20 @@
   \p{
     For any given integer #{k\geqslant0}, the four following conditions on #{X} are equivalent:
 
-    \todo{the following list should be i, ii, etc}
-
-    \ol{
-      \li{
+    \olc{
+      \lic{i.}{
         The functorial homomorphism in \ref{fga1-equation-6.5} is an isomorphism for #{n-k\leqslant p\leqslant n}.
       }
 
-      \li{
+      \lic{ii.}{
         #{\HH^p(X,\OO_X(-m)) = 0} for #{n-k\leqslant p<n} and large enough #{m}.
       }
 
-      \li{
+      \lic{iii.}{
         The functor #{\HH^p(X,\sh{F})} on the category of coherent algebraic sheaves on #{X} is coeffaceable for #{n-k\leqslant p<n}.
       }
 
-      \li{
+      \lic{iv.}{
         #{E^i(\OO_X) = \shExt_{\OO_\bb{P}}^{r-n+i}(\OO_X,\omega_\bb{P}^r) = 0} for #{0<i\leqslant k}.
       }
     }

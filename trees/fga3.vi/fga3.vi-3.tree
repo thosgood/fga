@@ -62,19 +62,18 @@
 
   \p{
     Under the above conditions:
-    \todo{the following list should be i, ii, etc.}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{i.}{
         If there exists an abelian subscheme of #{\repPic_{X/S}} whose underlying set is #{\repPic_{X/S}^0}, then it is unique.
         Its formation is thus compatible with base change.
       }
-      \li{
+      \lic{ii.}{
         For there to exist such an abelian subscheme, it is necessary and sufficient that it exist after every base change #{S'\to S}, where #{S'} is local Artinian;
         if #{S} is the spectrum of a local ring, it even suffices to test with the #{S'=\Spec(A_n)} where #{A_n=A/\mathfrak{m}^{n+1}}.
         If #{S} is reduced, then it equally suffices to test with the #{S'} that are the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one desires).
       }
-      \li{
+      \lic{iii.}{
         Suppose that #{A} exists, and let #{B=\Alb^0(X/S)} be the dual abelian scheme (i.e. #{B=\Pic_{A/S}^0} [Mumford–Tate seminar, 1962]).
         Then we can canonically construct a principal homogeneous space #{P=\Alb^1(X/S)} for #{B}, and an #{S}-morphism #{X\to P} that is universal for the #{S}-morphisms from #{X} to para-abelian schemes (i.e. to principal homogeneous spaces for abelian schemes).
         The formation of #{\Alb^0(X/S)}, #{\Alb^1(X/S)}, and #{X\to\Alb^1(X/S)} commutes with base change.
@@ -138,17 +137,16 @@
     which we can easily show to be a surjective homomorphism with kernel equal to a finite #{p}-group, where #{p} is the characteristic of the residue field #{k} (still by using the points of finite order).
     \oldpage{236-19}
     With this, the following conditions on #{X/S} are equivalent:
-    \todo{the following list should be a, b, etc.}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{a.}{
         The above homomorphism \ref{fga3.vi-3-equation-star} is an isomorphism (which Shimura expresses by saying that the formation of the "Picard variety" is "compatible with specialisations").
       }
-      \li{
+      \lic{b.}{
         #{\repPic_{X/S}^{00}} exists (and is then exactly #{A}).
       }
-      \li{
-        (For memory) The #{\repPic_{X_n/S}^{00}} exist.
+      \lic{c.}{
+        (As a reminder) The #{\repPic_{X_n/S}^{00}} exist.
       }
     }
   }

@@ -95,22 +95,21 @@
   \p{
     #{G^0}, #{G^\tau}, #{G^\sigma}, and #{G^\rho} are \em{locally constructible}.
     Furthermore:
-    \todo{the following list should be i, ii, etc}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{i.}{
         #{G^0} is quasi-compact over #{S}.
         If the #{G_s^0} are proper, and #{G} is separated over #{S}, then #{G^0} is proper over #{S} and thus closed in #{G}.
       }
-      \li{
+      \lic{ii.}{
         #{G^\tau} is open.
         If #{G^0} is closed, then so too is #{G^\tau}.
       }
-      \li{
+      \lic{iii.}{
         If #{G^0} is closed, then so too is #{G^\sigma}, provided that we are in equal characteristic, i.e. that all the residue fields of #{S} have the same characteristic.
         If #{G^0} is closed and #{G\to S} is universally open at the points of #{G^\sigma} (cf. \ref{fga3.vi-1-corollary-1.5} below), then #{G^\sigma\to S} is universally open.
       }
-      \li{
+      \lic{iv.}{
         If #{G^0} is closed, then so too is #{G^\rho}.
         If we are in equal characteristic, and if, for every integer #{n>0} such that #{(n,p)=1}, the #{n}-th power homomorphism to #{G} is open, then #{G^\rho} is open.
       }
@@ -170,14 +169,13 @@
 \p{
   We now prove that #{G^\tau} is open, or, equivalently, taking into account the fact that the formation of #{G^\tau} (as that of #{G^0}, #{G^\sigma}, and #{G^\rho}) commutes with base extension: for every sections #{g} of #{G} over #{S}, #{g^{-1}(G^\tau)} is open.
   This implies two things:
-  \todo{the following list should be a, b}
-
-  \ol{
-    \li{
+  
+  \olc{
+    \lic{a.}{
       Let #{y\in S} be such that #{g(y)\in G^\tau}.
       Then, for all neighbours #{y'\in\overline{y}} of #{y}, we have #{g(y')\in G^\tau}.
     }
-    \li{
+    \lic{b.}{
       Let #{y'\in S} be such that #{g(y')\in G^\tau}.
       Then, for every generalisation #{y} of #{y'}, we have #{g(y)\in G^\tau}.
     }

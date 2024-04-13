@@ -36,21 +36,20 @@
 
   \p{
     Then the following conditions are equivalent:
-    \todo{the following list should be a, b, b', b''}
   }
 
-  \ol{
-    \li{
+  \olc{
+    \lic{a.}{
       #{Q} is quasi-compact, i.e. contains an open of finite type over #{S}, i.e. the family #{(\sh{L}_i)} is limited.
     }
-    \li{
+    \lic{b.}{
       #{E} is contained in the union of a finite number of the sets #{\repPic_{X/S}^Q}, for #{Q\in\mathbb{Q}[t]}, i.e. the set of Hilbert polynomials of the #{\sh{L}_i} is finite.
     }
-    \li{
+    \lic{b'.}{
       (If the fibres of #{X/S} are all of the same dimension #{n}).
       The coefficients #{a_{n-1}^{(i)}} and #{a_{n-2}^{(i)}} of the Hilbert polynomials of the #{\sh{L}_i} are contained in a finite set.
     }
-    \li{
+    \lic{b''.}{
       \oldpage{236-23}
       (If the fibres of #{X/S} are all of the same dimension #{n}).
       The integers #{\xi^{n-1}D_i} and #{\xi^{n-2}D_i^2} (the projective degrees of #{D_i} and of #{D_i^2}) are bounded above.
@@ -84,15 +83,14 @@
     We note here the principal facts now known in this direction.
     To simplify the statements, we implicitly assume that all the Picard preschemes that arise in the statements exist, even though an evident modification of these statements would allow us to get rid of any existence hypothesis.
     In what follows, #{S} denotes a Noetherian scheme, and #{X} and #{Y} are proper schemes over #{S}.
-    \todo{the following list should be i, ii, etc}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{i.}{
         Let #{f\colon X\to Y} be a surjective morphism.
         Then #{f^*\colon\repPic_{Y/S}\to\repPic_{X/S}} is a morphism of finite type.
       }
 
-      \li{
+      \lic{ii.}{
         \oldpage{C-08}
         Suppose that #{Y} is projective over #{S}, endowed with an invertible module that is ample with respect to #{S}, and let #{X} be the scheme of zeros of an arbitrary section of this module.
         Let #{f\colon X\to Y} be the canonical immersion.
@@ -100,14 +98,14 @@
         Then #{f^*\colon\repPic_{Y/S}\to\repPic_{X/S}} is of finite type.
       }
 
-      \li{
+      \lic{iii.}{
         Suppose that #{X} is projective over #{S}, and that all its geometric fibres are integral and of dimension #{n}.
         Let #{\OO_X(1)} be an ample invertible module on #{X}, allowing us to define Hilbert polynomials.
         Let #{M} be a subset of #{\repPic_{X/S}}.
         Then #{M} is quasi-compact if and only if, in the Hilbert polynomials #{a_0x^n+a_1x^{n-1}+a_2x^{n-2}+\ldots+a_n} of the elements of #{M}, the coefficients #{a_1} and #{a_2} are bounded.
       }
 
-      \li{
+      \lic{iv.}{
         For every integer #{n\neq0}, the #{n}-th power homomorphism in the group prescheme #{\repPic_{X/S}} is a morphism of finite type.
       }
     }
@@ -119,10 +117,9 @@
     in other words, #{\repPic_{Y/S}^\tau} is the inverse image of #{\repPic_{X/S}^\tau}.
     In particular, to show that the first prescheme is of finite type over #{S}, it suffices to prove this for the second, since #{\repPic_{Y/S}\to\repPic_{X/S}} is of finite type.
     Then using (i), Chow's lemma, and (iii), we find:
-    \todo{the following list should be v}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{v.}{
         #{\repPic_{X/S}^\tau} is of finite type over #{S}.
       }
     }
@@ -132,10 +129,9 @@
     Generally, the conjunction of (i) for a finite morphism and (ii) allows us to reduce, for the majority of finiteness questions, to the case where #{X/S} has integral and normal geometric fibres of dimension #{\leqslant2};
     often, even, applying (i) for a surjective but not-necessarily finite morphism, along with the resolution of singularities of algebraic surfaces (due, in arbitrary characteristic, to Abhyankar), we can reduce to the case where #{X/S} is even simple, and thus has non-singular geometric fibres of dimension #{2}.
     This allows us, for example, taking into account (v) and the Picard–Igusa inequality bounding the rank of the Néron–Severi group of a non-singular projective surface, to prove the following generalisation of the Néron finiteness theorem:
-    \todo{the following list should be vi}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{vi.}{
         Let #{X/S} be proper over #{S}, but otherwise arbitrary.
         \oldpage{C-09}
         Then the Néron–Severi groups #{\repPic_{X_i/k_i}/\repPic_{X_i/k_i}^0} of the geometric fibres #{X_i/k_i} of #{X/S} are of finite type, and their rank and the order of their torsion subgroups are bounded.
@@ -145,10 +141,9 @@
 
   \p{
     The same method of reduction to the case of non-singular surfaces, and known theorems for this case (such as the Néron finiteness theorem, and the fact that the intersection form on the Néron–Severi group is non-degenerate) implies:
-    \todo{the following list should be vii}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{vii.}{
         Let #{X} be a proper scheme over an algebraically closed field.
         Then there exists a finite number of integral closed curves #{C_i} (for #{1\leqslant i\leqslant r}) in #{X}, such that the following property is satisfied:
         for every subset #{M} of #{\repPic_{X/k}}, #{M} is quasi-compact if and only if the integers #{\deg\sh{L}_{C'_i}} (for #{\sh{L}\in M}) are bounded (where #{C'_i} denotes the normalisation of #{C_i}).
@@ -159,38 +154,35 @@
     Once we know that this group is of finite type, (vii) reduces to the fact that the linear forms on the Néron–Severi group defined by the curves #{C} in #{X} do not simultaneously vanish except for on the torsion elements of the Néron–Severi group.
     In the case where #{X} is non-singular and projective, this result, as well as (v), was due to Matsusaka.
     Using (vii), we easily obtain the following characterisation of invertible modules that are #{\tau}-equivalent to #{0} on #{X}:
-    \todo{the following list should be viii}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{viii.}{
         \p{
           Let #{X/k} be a proper scheme over a field, and #{\sh{L}} an invertible module on #{X}.
           Then the following conditions are equivalent:
-          \todo{the following list should be a, b, b', c}
 
-          \ol{
-            \li{
+          \olc{
+            \lic{a.}{
               #{\sh{L}} is #{\tau}-equivalent to #{0}.
             }
-            \li{
+            \lic{b.}{
               For every coherent module #{F}, we have #{\chi(F\otimes\sh{L})=\chi(F)}, where #{\chi} denotes the Euler–Poincaré characteristic.
             }
-            \li{
+            \lic{b'.}{
               Like (b), but with #{F=\OO_Y}, where #{Y} is an integral closed subscheme of dimension #{1} in #{X}.
             }
-            \li{
+            \lic{c.}{
               For every #{Y} as above, writing #{Y'} to mean the normalised curve, we have #{\deg\sh{L}_{Y'}=0}.
             }
           }
 
           If #{X/k} is projective and endowed with an ample invertible module #{\OO_X(1)}, then the above conditions are also equivalent to the following:
-          \todo{the following list should be d, e}
 
-          \ol{
-            \li{
+          \olc{
+            \lic{d.}{
               For every integer #{m}, #{\sh{L}^{\otimes m}(1)} is ample.
             }
-            \li{
+            \lic{e.}{
               (If #{X} is integral).
               For every pair of integers #{(m,n)}, we have
               ##{
@@ -214,10 +206,9 @@
 
   \p{
     Criterion (e) from the above also implies the following result:
-    \todo{the following list should be ix}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{ix.}{
         Let #{f\colon X\to S} be a flat projective morphism whose geometric fibres are integral.
         Then #{\repPic_{X/S}^\tau} is open \em{and closed} in #{\repPic_{X/S}}.
       }

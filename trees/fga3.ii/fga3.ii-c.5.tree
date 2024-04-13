@@ -23,10 +23,9 @@
   We start, in particular, with a flat covering #{X'_0} of #{X_0}, unramified over #{U_0}, and let #{G(\mathfrak{X})} be the set of classes, up to isomorphism (inducing the identity on #{X'_0}), of flat coverings #{\mathfrak{X}'} of #{\mathfrak{X}} that induce #{X'_0} on #{X_0} (and that are thus necessarily unramified over #{U}).
   We similarly define #{G(V)} for every open subset #{V} of #{\mathfrak{X}}, and, more generally, #{G(\mathfrak{Y})} for every formal prescheme #{\mathfrak{Y}} over #{\mathfrak{X}}.
   With this, the results of \ref{fga2} and \ref{fga3.i} imply, first of all, the following results:
-  \todo{the following list should be a, b, etc.}
 
-  \ol{
-    \li{
+  \olc{
+    \lic{a.}{
       \p{
         If #{V} varies amongst open subset of #{\mathfrak{X}}, then the #{G(V)} form a \em{sheaf} on #{\mathfrak{X}}, say #{\sh{G}_\mathfrak{X}=\sh{G}}.
         The restriction of this sheaf to #{U} is the \em{constant} sheaf whose fibres consist of a single element.
@@ -36,7 +35,7 @@
       }
     }
       
-    \li{
+    \lic{b.}{
       For all #{x\in\mathfrak{X}}, we have
       ##{
         \sh{G}_x = G(\Spec(\sh{O}_{\mathfrak{X},x})) \subset G(\Spec(\widehat{\sh{O}}_{\mathfrak{X},x}))
@@ -44,11 +43,11 @@
       (i.e. isomorphism classes of finite free algebras #{B} over #{\widehat{\sh{O}}_{\mathfrak{X},x}} endowed with an isomorphism from #{B\otimes_{\widehat{\sh{O}}_{\mathfrak{X},x}}\sh{O}_{X_0,x}} to #{(\widehat{\sh{O}}'_0)_x}, where #{\sh{O}'_0} is the sheaf of algebras on #{X_0} that defines #{X'_0}).
     }
 
-    \li{
+    \lic{c.}{
       We have a canonical isomorphism #{\sh{G}_\mathfrak{X}=\varprojlim\sh{G}_{\mathfrak{X}_n}}; in other words, for every open subset #{V} of #{\mathfrak{X}}, we have #{G(V)=\varprojlim G(V_n)}.
     }
 
-    \li{
+    \lic{d.}{
       Suppose that #{\mathfrak{X}} comes from an ordinary \em{proper} scheme #{X} over a complete local Noetherian ring #{\Lambda} that has ideal of definition #{\mathfrak{m}} by taking the #{\sh{J}}-adic completion of #{\sh{O}_X}, where #{\sh{J}=\mathfrak{m}\cdot\sh{O}_X}.
       Then #{G(\mathfrak{X})} is canonically isomorphic to the set of classes of flat coverings of the \em{ordinary} scheme #{X} that are "reducible along #{X'_0}".
     }

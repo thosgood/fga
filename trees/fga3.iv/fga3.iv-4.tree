@@ -7,13 +7,9 @@
 
 \put\transclude/numbered{false}
 
-\p{
-  \todo{the following list should be a, b, etc.}
-}
+\olc{
 
-\ol{
-
-  \li{
+  \lic{a.}{
     \p{
       Under the conditions of \ref{fga3.iv-3-theorem-3.1}, let #{U} be open in #{X}, and denote by #{A'} the subfunctor of #{A=\shQuot_{\FXS}} such that #{A'(S')} is the set of quotient modules #{\sh{G}} of #{\sh{F}'} that are flat over #{S'} and whose support is contained inside #{U'}.
       We immediately see that #{A'} is representable by an open subset of the prescheme #{\repQuot_{\FXS}} that represents #{A}.
@@ -22,7 +18,7 @@
     }
   }
 
-  \li{
+  \lic{b.}{
     \p{
       Generally we can impose all sorts of supplementary natural conditions on the quotients #{\sh{G}} of #{\sh{F}'=\sh{F}\otimes_{\OO_S}\OO_{S'}} that are flat over #{S'} and stable under base change, thus obtaining as many subfunctors of #{\shQuot_{\FXS}} as we want to represent.
       The usual criterion allow us, in many cases, to prove that we again obtain functors that are representable by open subsets of #{\repQuot_{\FXS}}.
@@ -43,7 +39,7 @@
     }
   }
 
-  \li{
+  \lic{c.}{
     \p{
       The preschemes #{\repHom_S(X,Y)}, #{\prod_{X/S}Z/S}, and #{\repIsom_S(X,Y)}, defined in [FGA 3.II, §C.2](fga3.ii-c.2) exist thanks to suitable projective hypotheses, and can be realised as opens in suitable Hilbert preschemes.
       Since we have #{\repHom_S(X,Y)=\prod_{X/S}((X\times Y)/X)}, the case of #{\Hom_S(X,Y)} reduces to that of #{\prod_{X/S}(Z/X)}.

@@ -45,13 +45,12 @@
     Let #{X} be projective over #{S}, with #{S} Noetherian, and #{\OO_X(1)} very ample over #{X} with respect to #{S}.
     Let #{E} be a set of classes of sheaves on the fibres of #{X/S}.
     For #{E} to be bounded, it is necessary and sufficient that it satisfy the following conditions:
-    \todo{the following list should be a, b}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{a.}{
         There exists a coherent sheaf #{\sh{L}} on #{X} (which we can suppose to be of the form #{\OO_X(-n)^N}) such that #{E} is contained in the family of classes of coherent sheaves given by quotients of sheaves of the form #{\sh{L}_K};
       }
-      \li{
+      \lic{b.}{
         The Hilbert polynomials #{P_\sh{F}} of the sheaves #{\sh{F}} whose class is in #{E} are elements of a single \em{finite} set of polynomials.
       }
     }
@@ -77,10 +76,9 @@
 
   \p{
     Under the conditions of \ref{fga3.iv-2-theorem-2.1}, let #{s} be an integer, and suppose that #{E} satisfies condition (a), as well as the following weakened form of (b):
-    \todo{the following list should be b_s}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{b\sub{s}.}{
         The Poincaré polynomials #{P_\sh{F}} of the sheaves #{\sh{F}} whose class is in #{E} have coefficients \em{in degrees #{\leqslant (s-1)}} that are bounded.
       }
     }

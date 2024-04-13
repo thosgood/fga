@@ -56,17 +56,16 @@
 
 \p{
   This statement implies two things:
-  \todo{the following list should be i, ii}
 
-  \ol{
-    \li{
+  \olc{
+    \lic{i.}{
       If #{\mathcal{F}} and #{\sh{G}} are quasi-coherent sheaves on #{S}, and #{\mathcal{F}'} and #{\sh{G}'} their inverse images on #{S'}, then the natural homomorphism
       ##{
         \Hom(\mathcal{F},\sh{G}) \to \Hom(\mathcal{F}',\sh{G}')
       }
       is a bijection from the left-hand side to the subgroup of the right-hand side consisting of homomorphisms #{\mathcal{F}'\to\sh{G}'} that are compatible with the canonical descent data on these sheaves, i.e. whose inverse images under the two projections of #{S''=S'\times_S S'} to #{S'} give the same homomorphism #{\mathcal{F}''\to\sh{G}''}.
     }
-    \li{
+    \lic{ii.}{
       Every quasi-coherent sheaf #{\mathcal{F}'} on #{S'} endowed with a descent data with respect to the morphism #{\alpha\colon S'\to S} (cf. \ref{fga3.i-a.1-definition-1.6}) is isomorphic (endowed with this data) to the inverse image of a quasi-coherent sheaf #{\mathcal{F}} on #{S}.
     }
   }

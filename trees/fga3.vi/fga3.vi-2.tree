@@ -11,16 +11,12 @@
   \taxon{theorem}
   \number{2.1}
 
-  \p{
-    \todo{the following list should be i, ii}
-  }
-
-  \ol{
-    \li{
+  \olc{
+    \lic{i.}{
       Let #{f\colon X\to S} be a proper and simple morphism, and suppose that #{\repPic_{X/S}} exists (for example, if #{f} is projective).
       Then #{\repPic_{X/S}} is separated over #{S}, and, for every closed subset #{Z} of #{\repPic_{X/S}} that is of finite type over #{S}, we have that #{Z} is proper over #{S}.
     }
-    \li{
+    \lic{ii.}{
       Let #{X} be a prescheme over a field #{k} that is proper and geometrically normal.
       Then #{\repPic_{X/S}^0} is proper over #{k}.
     }
@@ -245,20 +241,16 @@
   \taxon{proposition}
   \number{2.10}
 
-  \p{
-    \todo{the following list should be i, ii, etc}
-  }
-
-  \ol{
-    \li{
+  \olc{
+    \lic{i.}{
       If #{\repPic_{X/S}} is simple (resp. flat) over #{S} at the points of the identity section, then it is simple (resp. flat) at all points of #{\repPic_{X/S}^\sigma}, and at the points of every section of #{\repPic_{X/S}} over #{S}.
     }
-    \li{
+    \lic{ii.}{
       \oldpage{236-16}
       Let #{s\in S} be such that #{\HH^2(X_s,\OO_{X_s})=0}.
       Then there exists an open neighbourhood #{U} of #{s} such that #{\repPic_{X/S}|U} is simple over #{U}.
     }
-    \li{
+    \lic{iii.}{
       Let #{X} be a proper scheme over a field.
       Then we have
       ##{

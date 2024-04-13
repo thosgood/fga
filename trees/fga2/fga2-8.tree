@@ -17,15 +17,14 @@
   \oldpage{182-18}
   Then an #{X}-scheme #{X'} is said to be an \em{unramified covering of #{X}} if
 
-  \todo{this list should be i, ii, etc}
-  \ol{
-    \li{
+  \olc{
+    \lic{i.}{
       #{X'} is finite over #{X}, i.e. it is defined by a coherent sheaf of algebras #{\sh{A}=\sh{A}(X')} on #{X};
     }
-    \li{
+    \lic{ii.}{
       #{\sh{A}} is a locally free sheaf on #{X};
     }
-    \li{
+    \lic{iii.}{
       for all #{x\in X}, the quotient #{\sh{A}_x/\mathfrak{m}_x\sh{A}_x = \sh{A}_x\otimes_{\OO_X}\pi(x)} is a separable algebra over #{k(x)}.
     }
   }
@@ -87,23 +86,21 @@
     Finally, let #{\Omega} be an algebraically closed extension of #{k}, and consider the unramified covering #{X'_0\otimes_k\Omega} of #{X_0\otimes_k\Omega}.
     \oldpage{182-20}
     Then the following two conditions are equivalent:
-    \todo{the following list should be i, ii}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{i.}{
         #{X'_0\otimes_k\Omega} is completely decomposed over #{X_0\otimes_k\Omega};
       }
-      \li{
+      \lic{ii.}{
         the natural morphism #{X'\to X\otimes_AA'} is an isomorphism.
       }
     }
 
     Under these conditions, #{A'} is an \em{unramified} extension of #{A}.
     Finally, if #{X'} is connected, then condition (i) is equivalent to the following, seemingly weaker, condition:
-    \todo{the following list should be i bis}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{i bis.}{
         #{X'_0\otimes_k\Omega} admits a regular section over #{X_0\otimes_k\Omega}.
       }
     }
@@ -191,13 +188,13 @@
 
 \p{
   Let #{f\colon X\to Y} be a proper morphism such that
-  \todo{the following list should be i}
 
-  \ol{
-    \li{
+  \olc{
+    \lic{i.}{
       #{f_*(\OO_X) = \OO_Y}
     }
   }
+  
   and let #{X'} be a finite scheme over #{X}.
   Let #{Y'} be the covering of #{Y} corresponding to the Stein factorisation of #{X'\to Y} (cf. \ref{fga2-theorem-5}).
   Let #{y\in Y}, so that the set of connected components of the fibre #{F'} of #{X'} over #{y} can be identified with the set of points #{y'\in Y'} over #{y} (\ref{fga2-theorem-5}).
@@ -216,13 +213,12 @@
   For this, we introduce the fibre #{F} of #{X} at #{y}, which is a proper scheme over #{k(y)}, for which #{F'} is a cover (an unramified one if #{X} is).
   Let #{F'_1} be a connected component of #{F'} corresponding to a point #{y'_1} of #{Y'} over #{y}.
   Suppose further that
-  \todo{the following list should be ii, iii}
 
-  \ol{
-    \li{
+  \olc{
+    \lic{ii.}{
       #{X'} is unramified over #{X} at the points of #{F'_1} (and thus #{F'_1} is an unramified cover of #{F}), and
     }
-    \li{
+    \lic{iii.}{
       #{F'_1} is a geometrically trivial covering of #{F} (cf. \ref{fga2-lemma-3}).
     }
   }

@@ -11,18 +11,17 @@
   Let #{\mathcal{C}} and #{\mathcal{C}'} be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, preordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" #{e} such that #{\Hom(X,e)} consists of only on element for all #{X}).
   Let #{F} be a covariant functor from #{\mathcal{C}} to #{\mathcal{C}'}.
   Then the following conditions are equivalent:
-  \todo{the following list should be i, ii, etc.}
 
-  \ol{
-    \li{
+  \olc{
+    \lic{i.}{
       #{F} commutes with finite projective limits;
     }
 
-    \li{
+    \lic{ii.}{
       #{F} commutes with finite products and with finite fibred products;
     }
 
-    \li{
+    \lic{iii.}{
       #{F} commutes with finite products, and, for every exact diagram
       ##{
         X\to X'\rightrightarrows X''
@@ -63,13 +62,12 @@
 
   \p{
     For #{F} to be strictly pro-representable, it is necessary and sufficient that it satisfy the following two conditions:
-    \todo{the following list should be i, ii}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{i.}{
         #{F} is left exact; and
       }
-      \li{
+      \lic{ii.}{
         every pair #{(X,\xi)}, with #{\xi\in F(X)}, is dominated by some \em{minimal} pair.
       }
     }

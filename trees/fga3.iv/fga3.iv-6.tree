@@ -47,14 +47,13 @@
   This is evidently an isomorphism for #{n=0} and #{n=1}.
   But for #{n\geqslant1}, even if #{S} is the spectrum of a field #{k}, and #{X} is simple over #{S}, it is not in general an isomorphism nor even an injective morphism, since a sub-scheme of dimension #{0} of #{X} (corresponding, for example, to a primary ideal #{\sh{I}} for the maximal ideal in a local ring #{\OO_{X,x}}, for a closed point #{x} of #{X}) is not known when we know only the cycle that it defines (to be precise, when we know the codimension over #{k} of #{\sh{I}} in #{\OO_{X,x}}).
   We can only say the following (where #{S} is once more arbitrary):
-  \todo{the following list should be a, b}
 
-  \ol{
-    \li{
+  \olc{
+    \lic{a.}{
       If #{X} is simple over #{S}, then the norm morphism defines an isomorphism from the open of #{\repHilb_{X/S}^n} that corresponds to the classification of étale covers of rank #{n} contained inside #{X} (cf. [§4.b](fga3.iv-4)) to the open of #{\Symm_S^n(X)} that corresponds to the #{n}-cycles without multiple components.
     }
 
-    \li{
+    \lic{b.}{
       If furthermore #{X} is of relative dimension #{1} over #{S}, then the norm morphism even defines an isomorphism from #{\repHilb_{X/S}^n} to #{\Symm_{X/S}^n}.
     }
   }

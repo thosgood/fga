@@ -23,13 +23,12 @@
 
   \p{
     For the functor #{F} to be pro-representable, it is necessary and sufficient that it satisfy the two following conditions:
-    \todo{the following list should be i, ii}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{i.}{
         #{F} commutes with finite products;
       }
-      \li{
+      \lic{ii.}{
         for every algebra #{A\in\mathcal{C}} and every homomorphism #{A\to A'} in #{\mathcal{C}} such that the diagram
         ##{
           A \to A' \rightrightarrows A'\otimes_A A'
@@ -44,13 +43,12 @@
 
     \oldpage{195-10}
     Furthermore, it suffices to verify condition (ii) in the case where #{A} is local, and when, further, we are in one of the two following cases:
-    \todo{the following list should be a, b}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{a.}{
         #{A} is a \em{free} module over #{A};
       }
-      \li{
+      \lic{b.}{
         the quotient module #{A'/A} is an #{A}-module \em{of length #{1}}.
       }
     }

@@ -14,33 +14,31 @@
   \p{
     \oldpage{212-15}
     Let #{S} be a \em{locally Noetherian} prescheme, #{X} a \em{quasi-projective} #{S}-scheme, and #{\mathcal{R}} an equivalence pre-relation on #{X}, such that:
-    \todo{the following list should be a, b}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{a.}{
         #{p_1\colon R_1\to X} is proper and flat; and
       }
 
-      \li{
+      \lic{b.}{
         #{R_1\to X\times_S X} is a finite morphism (or, equivalently, by (a), a morphism with finite fibres, which is a condition that is automatically satisfied if #{\mathcal{R}} comes from an equivalence relation).
       }
     }
 
     Under these conditions:
-    \todo{the following list should be i, ii, etc.}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{i.}{
         #{Y=X/\mathcal{R}} exists, and (if #{S} is Noetherian) is quasi-projective over #{S}.
         \note{\comp The fact that #{Y=X/\mathcal{R}} is quasi-projective over #{S} has only been proven, for now, in the case where #{\mathcal{R}} comes from an equivalence relation.}
       }
 
-      \li{
+      \lic{ii.}{
         The canonical morphism #{f\colon X\to Y} is surjective, proper, and open, and its fibres are the equivalence classes #{p_2(p_1^{-1}(x))} in #{X} modulo #{\mathcal{R}}, and so #{Y} can be identified with the topological quotient space of #{X} by the set-theoretic equivalence relation defined by #{\mathcal{R}}.
         Finally, #{R_1\to X\times_Y X} is surjective.
       }
 
-      \li{
+      \lic{iii.}{
         If #{\mathcal{R}} comes from an equivalence relation, then the equivalence relation in question is effective, i.e. #{R_1\to X\times_Y X} is an isomorphism, and, further, #{f\colon X\to Y} is flat (and thus faithfully flat).
       }
     }
@@ -77,31 +75,29 @@
   \p{
     Let #{S} be a Noetherian prescheme, #{X} a prescheme of finite type over #{S}, and #{\mathcal{R}} an equivalence pre-relation on the #{S}-prescheme #{X}.
     Suppose that
-    \todo{the following list should be a, b}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{a.}{
         #{p_1\colon R_1\to X} is flat and of finite type; and
       }
-      \li{
+      \lic{b.}{
         the morphism #{R_1\to X\times_S X} is quasi-finite (i.e. has finite fibres).
       }
     }
 
     Then there exists a \em{dense} open subset #{U} of #{X} that is \em{saturated} for #{\mathcal{R}}, such that:
-    \todo{the following list should be i, ii, etc.}
 
-    \ol{
-      \li{
+    \olc{
+      \lic{i.}{
         If #{\mathcal{R}_U} is the equivalence pre-relation induced by #{\mathcal{R}} on #{U}, then #{U/\mathcal{R}_U} exists, and is of finite type over #{S}.
       }
 
-      \li{
+      \lic{ii.}{
         The canonical morphism #{U\to U/\mathcal{R}_U} is surjective and open, and its fibres are the set-theoretic equivalence classes for #{\mathcal{R}_U} (and thus #{U/\mathcal{R}_U} is a topological quotient space of #{U} by the set-theoretic equivalence relation defined by #{\mathcal{R}_U}).
         Finally, the morphism #{(\mathcal{R}_U)_1\to U\times_{U/\mathcal{R}_U}U} is surjective.
       }
 
-      \li{
+      \lic{iii.}{
         If #{\mathcal{R}} comes from an equivalence relation, then we can suppose that #{U\to U/\mathcal{R}_U} is faithfully flat and that #{\mathcal{R}_U} is effective.
       }
     }

@@ -75,16 +75,15 @@
 \p{
   Let #{\nu} be an integer.
   For every #{S'} over #{S}, we denote by #{A_\nu(S')} the set of quotients #{\sh{G}=\sh{F}'/\sh{H}} of #{\sh{F}'=\sh{F}\otimes_{\OO_S}\OO_{S'}} that are coherent, flat over #{S'}, and satisfy the following conditions:
-  \todo{the following list should be a, b, etc}
 
-  \ol{
-    \li{
+  \olc{
+    \lic{a.}{
       #{\RR^i f'_*(\sh{G} (n))=0} for #{i>0} and #{n\geqslant\nu};
     }
-    \li{
+    \lic{b.}{
       #{\RR^i f'_*(\sh{H} (n))=0} for #{i>0} and #{n\geqslant\nu};
     }
-    \li{
+    \lic{c.}{
       #{f'_*(\sh{H} (\nu+k))=\mathcal{S}'_k f'_*(\sh{H} (\nu))} for #{k\geqslant0}.
     }
   }
@@ -120,19 +119,17 @@
 
 \p{
   It follows from (a) that we have
-  \todo{the following list should be a'}
 
-  \ol{
-    \li{
+  \olc{
+    \lic{a'.}{
       #{f'_*(\sh{G} (n))} is locally free of rank #{P(n)} for #{n\geqslant\nu} [[GD1960](GD1960), III, §7]
     }
   }
 
   and it follows from (b),for #{i=1}, that we have
-  \todo{the following list should be a''}
 
-  \ol{
-    \li{
+  \olc{
+    \lic{a''.}{
       #{f'_*(\sh{G} (n))} is a quotient module of #{M'_n}.
     }
   }
@@ -165,13 +162,12 @@
   \oldpage{221-14}
   Changing notation, we can suppose that #{S'=S}, i.e. we have a quotient #{N_\nu} of #{M_\nu} by a submodule #{R_\nu}.
   For it to come from an element of #{A(s)}, it is necessary and sufficient that it satisfy the following two conditions:
-  \todo{the following list should be i, ii, etc}
 
-  \ol{
-    \li{
+  \olc{
+    \lic{i.}{
       #{M_{\nu+k}/\mathcal{S}_k R_\nu} is locally free of rank #{P(\nu+k)} for #{k\geqslant0}.
     }
-    \li{
+    \lic{ii.}{
       Both the subsheaf #{\sh{H}} of #{\sh{F}} defined by the graded submodule #{R_\bullet=\sum_{k\geqslant0}\sh{S}_kR_\nu} of #{M_\bullet} (cf. [[GD1960](GD1960), II, §3]) and the quotient #{\sh{G}=\sh{F}/\sh{H}} satisfy conditions (a) and (b) above.
     }
   }
