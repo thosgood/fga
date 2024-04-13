@@ -1,3 +1,12 @@
+\xmlns:html{http://www.w3.org/1999/xhtml}
+
+\def\olc[body]{
+ \<html:ol>{\body}
+}
+\def\lic[lbl][body]{
+ \<html:li>[style]{list-style-type: "\lbl "}{\body}
+}
+
 \def\footnote[x]{(\x)}
 \def\note[x]{ \footnote{\em{[Trans.] \x}}}
 \def\comp{\em{[Comp.]}}
@@ -13,16 +22,6 @@
       \body
     }
   }
-}
-
-\xmlns:html{http://www.w3.org/1999/xhtml}
-
-\def\olc[body]{
- \<html:ol>{\body}
-}
-
-\def\lic[lbl][body]{
- \<html:li>[style]{list-style-type: "\lbl "}{\body}
 }
 
 \def\sh[x]{#{\mathscr{\x}}}
