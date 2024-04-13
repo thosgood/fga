@@ -2701,75 +2701,7 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>2579</fr:anchor><fr:addr>index</fr:addr><fr:route>index.xml</fr:route><fr:title>Foundations of Algebraic Geometry (FGA)</fr:title></fr:frontmatter><fr:mainmatter><fr:p>
-  This is an English translation of <fr:strong>Alexander Grothendieck</fr:strong>'s "Fondements de la Géometrie Algébrique".
-  Any notes by the translator are in italics and prefixed with "[Trans.]".
-  The original (French) notes have been scanned and uploaded by the Grothendieck Circle <fr:link
-href="https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/FGA.pdf"
-type="external">here</fr:link>, though you can also find the individual talks, as well as the errata, on <fr:link
-href="http://www.numdam.org/actas/SB/"
-type="external">Numdam</fr:link>.
-</fr:p><fr:p>
-  The translator (<fr:link
-href="https://thosgood.com"
-type="external">Tim Hosgood</fr:link>) takes full responsibility for any errors introduced, and claims no rights to any of the mathematical content herein.
-  You can view the entire source code of this translation (and contribute or submit corrections) in the <fr:link
-href="https://github.com/thosgood/fga"
-type="external">GitHub repository</fr:link>.
-  Corrections and comments welcome.
-</fr:p><fr:p>
-  The translator would like to sincerely thank Steve Hnizdur for catching many typos and mistakes, as well as <fr:link
-href="https://www.jonmsterling.com/index.xml"
-type="external">Jon Sterling</fr:link> for helping with the technical support in getting this translation ported to run on <fr:link
-href="https://www.jonmsterling.com/jms-005P.xml"
-type="external">Forester</fr:link>.
-</fr:p><fr:p><fr:strong>[PDF version coming soon]</fr:strong></fr:p><fr:p><fr:strong>Table of contents</fr:strong></fr:p><fr:ul><fr:li><fr:link
-href="fga-foreword.xml"
-type="local"
-addr="fga-foreword"><fr:strong>Foreword</fr:strong></fr:link></fr:li>
-  <fr:li><fr:link
-href="fga1.xml"
-type="local"
-addr="fga1"><fr:strong>FGA 1: Duality theorems for coherent algebraic sheaves</fr:strong></fr:link></fr:li>
-  <fr:li><fr:link
-href="fga2.xml"
-type="local"
-addr="fga2"><fr:strong>FGA 2: Formal geometry and algebraic geometry</fr:strong></fr:link></fr:li>
-  <fr:li><fr:strong>FGA 3: Technique of descent and existence theorems in algebraic geometry</fr:strong>
-    <fr:ul><fr:li><fr:link
-href="fga3.i.xml"
-type="local"
-addr="fga3.i"><fr:strong>FGA 3.I: Generalities, and descent by faithfully flat morphisms</fr:strong></fr:link></fr:li>
-      <fr:li><fr:link
-href="fga3.ii.xml"
-type="local"
-addr="fga3.ii"><fr:strong>FGA 3.II: The existence theorem and the formal theory of modules</fr:strong></fr:link></fr:li>
-      <fr:li><fr:link
-href="fga3.iii.xml"
-type="local"
-addr="fga3.iii"><fr:strong>FGA 3.III: Quotient preschemes</fr:strong></fr:link></fr:li>
-      <fr:li><fr:link
-href="fga3.iv.xml"
-type="local"
-addr="fga3.iv"><fr:strong>FGA 3.IV: Hilbert schemes</fr:strong></fr:link></fr:li>
-      <fr:li><fr:link
-href="fga3.v.xml"
-type="local"
-addr="fga3.v"><fr:strong>FGA 3.V: Picard schemes: Existence theorems</fr:strong></fr:link></fr:li>
-      <fr:li><fr:link
-href="fga3.vi.xml"
-type="local"
-addr="fga3.vi"><fr:strong>FGA 3.VI: Picard schemes: General properties</fr:strong></fr:link></fr:li></fr:ul></fr:li>
-  <fr:li><fr:link
-href="fga-bibliography.xml"
-type="local"
-addr="fga-bibliography"><fr:strong>Bibliography</fr:strong></fr:link></fr:li></fr:ul></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>2580</fr:anchor><fr:addr>fga1-8</fr:addr><fr:route>fga1-8.xml</fr:route><fr:title><fr:link
+expanded="true"><fr:frontmatter><fr:anchor>2579</fr:anchor><fr:addr>fga1-8</fr:addr><fr:route>fga1-8.xml</fr:route><fr:title><fr:link
 href="fga1.xml"
 type="local"
 addr="fga1">Duality theorems for coherent algebraic sheaves</fr:link> › Generalisation of the duality theorem</fr:title><fr:number>8</fr:number><fr:parent>fga1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
@@ -3005,6 +2937,74 @@ taxon="Equation"
 number="8.1"></fr:ref>, that the functors <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> and <fr:tex>T_r^{s \bullet }</fr:tex> have, in general, components in positive <fr:em>and</fr:em> negative degrees.
       Using the above remark, we see that, if the dimension of <fr:tex>X</fr:tex> is <fr:tex>n</fr:tex>, then the non-zero components of <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> are concentrated between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>rn</fr:tex> if <fr:tex>s&gt;0</fr:tex>, and between degrees <fr:tex>0</fr:tex> and <fr:tex>rn</fr:tex> if <fr:tex>s=0</fr:tex>; the non-zero components of <fr:tex>T_r^{s \bullet }</fr:tex> are concentrated between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>(r+1)n</fr:tex> if <fr:tex>s&gt;0</fr:tex>, and between degrees <fr:tex>0</fr:tex> and <fr:tex>(r+1)n</fr:tex> if <fr:tex>s=0</fr:tex> (and, unless I am mistaken, if <fr:tex>r&gt;0</fr:tex>, between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>rn</fr:tex>, resp. <fr:tex>0</fr:tex> and <fr:tex>rn</fr:tex>).
     </fr:li></fr:ol></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"><fr:frontmatter><fr:anchor>2580</fr:anchor><fr:addr>index</fr:addr><fr:route>index.xml</fr:route><fr:title>Grothendieck's "Foundations of Algebraic Geometry" (FGA)</fr:title></fr:frontmatter><fr:mainmatter><fr:p>
+  This is an English translation of <fr:strong>Alexander Grothendieck</fr:strong>'s "Fondements de la Géometrie Algébrique".
+  Any notes by the translator are in italics and prefixed with "[Trans.]".
+  The original (French) notes have been scanned and uploaded by the Grothendieck Circle <fr:link
+href="https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/FGA.pdf"
+type="external">here</fr:link>, though you can also find the individual talks, as well as the errata, on <fr:link
+href="http://www.numdam.org/actas/SB/"
+type="external">Numdam</fr:link>.
+</fr:p><fr:p>
+  The translator (<fr:link
+href="https://thosgood.com"
+type="external">Tim Hosgood</fr:link>) takes full responsibility for any errors introduced, and claims no rights to any of the mathematical content herein.
+  You can view the entire source code of this translation (and contribute or submit corrections) in the <fr:link
+href="https://github.com/thosgood/fga"
+type="external">GitHub repository</fr:link>.
+  Corrections and comments welcome.
+</fr:p><fr:p>
+  The translator would like to sincerely thank Steve Hnizdur for catching many typos and mistakes, as well as <fr:link
+href="https://www.jonmsterling.com/index.xml"
+type="external">Jon Sterling</fr:link> for helping with the technical support in getting this translation ported to run on <fr:link
+href="https://www.jonmsterling.com/jms-005P.xml"
+type="external">Forester</fr:link>.
+</fr:p><fr:p><fr:strong>[PDF version coming soon]</fr:strong></fr:p><fr:p><fr:strong>Table of contents</fr:strong></fr:p><fr:ul><fr:li><fr:link
+href="fga-foreword.xml"
+type="local"
+addr="fga-foreword"><fr:strong>Foreword</fr:strong></fr:link></fr:li>
+  <fr:li><fr:link
+href="fga1.xml"
+type="local"
+addr="fga1"><fr:strong>FGA 1: Duality theorems for coherent algebraic sheaves</fr:strong></fr:link></fr:li>
+  <fr:li><fr:link
+href="fga2.xml"
+type="local"
+addr="fga2"><fr:strong>FGA 2: Formal geometry and algebraic geometry</fr:strong></fr:link></fr:li>
+  <fr:li><fr:strong>FGA 3: Technique of descent and existence theorems in algebraic geometry</fr:strong>
+    <fr:ul><fr:li><fr:link
+href="fga3.i.xml"
+type="local"
+addr="fga3.i"><fr:strong>FGA 3.I: Generalities, and descent by faithfully flat morphisms</fr:strong></fr:link></fr:li>
+      <fr:li><fr:link
+href="fga3.ii.xml"
+type="local"
+addr="fga3.ii"><fr:strong>FGA 3.II: The existence theorem and the formal theory of modules</fr:strong></fr:link></fr:li>
+      <fr:li><fr:link
+href="fga3.iii.xml"
+type="local"
+addr="fga3.iii"><fr:strong>FGA 3.III: Quotient preschemes</fr:strong></fr:link></fr:li>
+      <fr:li><fr:link
+href="fga3.iv.xml"
+type="local"
+addr="fga3.iv"><fr:strong>FGA 3.IV: Hilbert schemes</fr:strong></fr:link></fr:li>
+      <fr:li><fr:link
+href="fga3.v.xml"
+type="local"
+addr="fga3.v"><fr:strong>FGA 3.V: Picard schemes: Existence theorems</fr:strong></fr:link></fr:li>
+      <fr:li><fr:link
+href="fga3.vi.xml"
+type="local"
+addr="fga3.vi"><fr:strong>FGA 3.VI: Picard schemes: General properties</fr:strong></fr:link></fr:li></fr:ul></fr:li>
+  <fr:li><fr:link
+href="fga-bibliography.xml"
+type="local"
+addr="fga-bibliography"><fr:strong>Bibliography</fr:strong></fr:link></fr:li></fr:ul></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
