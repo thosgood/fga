@@ -6,7 +6,8 @@ toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1476</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-2</fr:addr><fr:route>fga3.i-a.1-example-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>1476</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-2</fr:addr><fr:route>fga3.i-a.1-example-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>\mathcal {C}</fr:tex> be the category of preschemes, and, for <fr:tex>X \in \mathcal {C}</fr:tex>, let <fr:tex>\mathcal {F}_X</fr:tex> be the category of quasi-coherent sheaves of modules on <fr:tex>X</fr:tex>.
     If <fr:tex>f \colon  X \to  Y</fr:tex> is a morphism of preschemes, then <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex> is the <fr:em>inverse image of sheaves of modules</fr:em> functor.
     
@@ -17,13 +18,15 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1475</fr:anchor><fr:addr>fga3.i-a.1.a</fr:addr><fr:route>fga3.i-a.1.a.xml</fr:route><fr:number>A.1.a</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>1475</fr:anchor><fr:addr>fga3.i-a.1.a</fr:addr><fr:route>fga3.i-a.1.a.xml</fr:route><fr:number>A.1.a</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>532</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.1</fr:addr><fr:route>fga3.i-a.1-definition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>532</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.1</fr:addr><fr:route>fga3.i-a.1-definition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     A <fr:em>fibred category <fr:tex>\mathcal {F}</fr:tex> with base <fr:tex>\mathcal {C}</fr:tex></fr:em> (or <fr:em>over <fr:tex>\mathcal {C}</fr:tex></fr:em>) consists of
 
     <fr:ul><fr:li>
@@ -51,21 +54,21 @@ display="block">           c_{f,g} \colon  (gf)^*  \to  f^*g^*         </fr:tex>
 xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
-style="list-style-type: &quot; i.  &quot;">
+style="list-style-type: &quot;i. &quot;">
         <fr:tex>\operatorname {id} ^*= \operatorname {id}</fr:tex>
       </html:li>
 
 
       
  <html:li
-style="list-style-type: &quot; ii.  &quot;">
+style="list-style-type: &quot;ii. &quot;">
         <fr:tex>c_{f,g}</fr:tex> is the identity isomorphism if <fr:tex>f</fr:tex> or <fr:tex>g</fr:tex> is an identity isomorphism
       </html:li>
 
 
       
  <html:li
-style="list-style-type: &quot; iii.  &quot;">
+style="list-style-type: &quot;iii. &quot;">
         for any three composible morphisms <fr:tex>X \xrightarrow {f}Y \xrightarrow {g}Z \xrightarrow {h}T</fr:tex>, the following diagram, given by using the isomorphisms of the form <fr:tex>c_{u,v}</fr:tex>, commutes:
         <fr:tex
 display="block">            \begin {CD}             (h(gf))^* @= ((hg)f)^*            \\ @VVV @VVV            \\ (gf)^*h^* @. f^*(hg)^*            \\ @VVV @VVV            \\ (f^*g^*)h^* @= f^*(g^*h^*)            \end {CD}         </fr:tex>
@@ -77,7 +80,8 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>533</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-1</fr:addr><fr:route>fga3.i-a.1-example-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>533</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-1</fr:addr><fr:route>fga3.i-a.1-example-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>\mathcal {C}</fr:tex> be a category where all fibre products exist.
     We then define a fibred category <fr:tex>\mathcal {F}</fr:tex> with base <fr:tex>\mathcal {C}</fr:tex> by setting <fr:tex>\mathcal {F}_X</fr:tex> to be the category of objects of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>X</fr:tex>, and the functor <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex> corresponding to a morphism <fr:tex>f \colon  X \to  Y</fr:tex> being defined by the <fr:em>fibre product</fr:em> <fr:tex>Z \mapsto  Z \times _Y X</fr:tex>.
   </fr:p></fr:mainmatter></fr:tree><fr:tree
@@ -86,7 +90,8 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
-expanded="true"><fr:frontmatter><fr:anchor>534</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-2</fr:addr><fr:route>fga3.i-a.1-example-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>534</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-2</fr:addr><fr:route>fga3.i-a.1-example-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>\mathcal {C}</fr:tex> be the category of preschemes, and, for <fr:tex>X \in \mathcal {C}</fr:tex>, let <fr:tex>\mathcal {F}_X</fr:tex> be the category of quasi-coherent sheaves of modules on <fr:tex>X</fr:tex>.
     If <fr:tex>f \colon  X \to  Y</fr:tex> is a morphism of preschemes, then <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex> is the <fr:em>inverse image of sheaves of modules</fr:em> functor.
     
@@ -97,7 +102,8 @@ toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"><fr:frontmatter><fr:anchor>1474</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.i-b.1-theorem-1</fr:addr><fr:route>fga3.i-b.1-theorem-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.i-b.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>1474</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.i-b.1-theorem-1</fr:addr><fr:route>fga3.i-b.1-theorem-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.i-b.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
     Let <fr:tex>\alpha \colon  S' \to  S</fr:tex> be a morphism of preschemes that is <fr:em>faithfully flat</fr:em> and <fr:em>quasi-compact</fr:em>.
     Then <fr:tex>\alpha</fr:tex> is a <fr:em>strict descent morphism</fr:em> (cf. <fr:ref
 addr="fga3.i-a.1-definition-1.7"
