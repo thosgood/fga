@@ -1,161 +1,301 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1694</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.1-proposition-1.1</fr:addr><fr:route>fga3.ii-a.1-proposition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.ii-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    This functor <fr:tex>h</fr:tex> is <fr:em>fully faithful</fr:em>;
-    in other words, for every pair <fr:tex>X,X'</fr:tex> of objects of <fr:tex>\mathcal {C}</fr:tex>, the natural map
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1732</fr:anchor><fr:addr
+type="user">fga3.ii-a.1-proposition-1.1</fr:addr><fr:route>fga3.ii-a.1-proposition-1.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>1.1</fr:number><fr:parent>fga3.ii-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>This functor <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> is <fr:em>fully faithful</fr:em>;
+    in other words, for every pair <fr:tex
+display="inline"><![CDATA[X,X']]></fr:tex> of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the natural map
     <fr:tex
-display="block">        \operatorname {Hom} (X,X')  \to   \operatorname {Hom} (h_X,h_{X'})     </fr:tex>
-    is <fr:em>bijective</fr:em>.
-  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="block"><![CDATA[       \operatorname {Hom}(X,X') \to  \operatorname {Hom}(h_X,h_{X'})     ]]></fr:tex>
+    is <fr:em>bijective</fr:em>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1693</fr:anchor><fr:addr>fga3.ii-a.1</fr:addr><fr:route>fga3.ii-a.1.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1733</fr:anchor><fr:addr
+type="user">fga3.ii-a.1</fr:addr><fr:route>fga3.ii-a.1.xml</fr:route><fr:title
+text="The existence theorem and the formal theory of modules › Representable and pro-representable functors › Representable functors"><fr:link
+type="local"
 href="fga3.ii-a.xml"
+addr="fga3.ii-a"
+title="The existence theorem and the formal theory of modules › Representable and pro-representable functors"><fr:link
 type="local"
-addr="fga3.ii-a"><fr:link
 href="fga3.ii.xml"
-type="local"
-addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Representable and pro-representable functors</fr:link> › Representable functors</fr:title><fr:number>A.1</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal {C}</fr:tex> be a category.
+addr="fga3.ii"
+title="The existence theorem and the formal theory of modules">The existence theorem and the formal theory of modules</fr:link> › Representable and pro-representable functors</fr:link> › Representable functors</fr:title><fr:authors /><fr:number>A.1</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category.
   
-  For all <fr:tex>X \in \mathcal {C}</fr:tex>, let <fr:tex>h_X</fr:tex> be the contravariant functor from <fr:tex>\mathcal {C}</fr:tex> to the category <fr:tex>\mathtt {Set}</fr:tex> of sets given by
+  For all <fr:tex
+display="inline"><![CDATA[X\in \mathcal {C}]]></fr:tex>, let <fr:tex
+display="inline"><![CDATA[h_X]]></fr:tex> be the contravariant functor from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to the category <fr:tex
+display="inline"><![CDATA[\mathtt {Set}]]></fr:tex> of sets given by
   <fr:tex
-display="block">      \begin {aligned}       h_X \colon   \mathcal {C} &amp; \to   \mathtt {Set}       \\ Y&amp; \mapsto   \operatorname {Hom} (Y,X).      \end {aligned}   </fr:tex>
-  If we have a morphism <fr:tex>X \to  X'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex>, then this evidently induces a morphism <fr:tex>h_X \to  h_{X'}</fr:tex> of functors;
-  <fr:tex>h_X</fr:tex> is a covariant functor in <fr:tex>X</fr:tex>, i.e. we have defined a <fr:em>canonical covariant functor</fr:em>
+display="block"><![CDATA[     \begin {aligned}       h_X\colon  \mathcal {C} &\to  \mathtt {Set}     \\Y&\mapsto  \operatorname {Hom}(Y,X).     \end {aligned}   ]]></fr:tex>
+  If we have a morphism <fr:tex
+display="inline"><![CDATA[X\to  X']]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, then this evidently induces a morphism <fr:tex
+display="inline"><![CDATA[h_X\to  h_{X'}]]></fr:tex> of functors;
   <fr:tex
-display="block">     h \colon   \mathcal {C}  \to   \operatorname {Hom} ( \mathcal {C}^ \circ , \mathtt {Set} )   </fr:tex>
-  from <fr:tex>\mathcal {C}</fr:tex> to the category of covariant functors from the dual <fr:tex>\mathcal {C}^ \circ</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> to the category of sets.
-  We then recall:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="inline"><![CDATA[h_X]]></fr:tex> is a covariant functor in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, i.e. we have defined a <fr:em>canonical covariant functor</fr:em>
+  <fr:tex
+display="block"><![CDATA[     h\colon  \mathcal {C} \to  \operatorname {Hom}(\mathcal {C}^\circ ,\mathtt {Set})   ]]></fr:tex>
+  from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to the category of covariant functors from the dual <fr:tex
+display="inline"><![CDATA[\mathcal {C}^\circ ]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to the category of sets.
+  We then recall:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>807</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.1-proposition-1.1</fr:addr><fr:route>fga3.ii-a.1-proposition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.ii-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    This functor <fr:tex>h</fr:tex> is <fr:em>fully faithful</fr:em>;
-    in other words, for every pair <fr:tex>X,X'</fr:tex> of objects of <fr:tex>\mathcal {C}</fr:tex>, the natural map
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>863</fr:anchor><fr:addr
+type="user">fga3.ii-a.1-proposition-1.1</fr:addr><fr:route>fga3.ii-a.1-proposition-1.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>1.1</fr:number><fr:parent>fga3.ii-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>This functor <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> is <fr:em>fully faithful</fr:em>;
+    in other words, for every pair <fr:tex
+display="inline"><![CDATA[X,X']]></fr:tex> of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the natural map
     <fr:tex
-display="block">        \operatorname {Hom} (X,X')  \to   \operatorname {Hom} (h_X,h_{X'})     </fr:tex>
-    is <fr:em>bijective</fr:em>.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  In particular, if a functor <fr:tex>F \in \operatorname {Hom} ( \mathcal {C}^ \circ , \mathtt {Set} )</fr:tex> is isomorphic to a functor of the form <fr:tex>h_X</fr:tex>, then <fr:em><fr:tex>X</fr:tex> is determined up to unique isomorphism</fr:em>.
-  We then say that the functor <fr:tex>F</fr:tex> is <fr:em>representable</fr:em>.
-  The above proposition then implies that the canonical functor <fr:tex>h</fr:tex> defines an <fr:em>equivalence</fr:em> between the category <fr:tex>\mathcal {C}</fr:tex> and the full subcategory of <fr:tex>\operatorname {Hom} ( \mathcal {C}^ \circ , \mathtt {Set} )</fr:tex> consisting of representable functors.
-  This fact is the basis of <fr:em>the idea of a "solution of a universal problem"</fr:em>, with such a problem always consisting of examining if a given (contravariant, as here, or covariant, in the dual case) functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> is representable.
+display="block"><![CDATA[       \operatorname {Hom}(X,X') \to  \operatorname {Hom}(h_X,h_{X'})     ]]></fr:tex>
+    is <fr:em>bijective</fr:em>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>In particular, if a functor <fr:tex
+display="inline"><![CDATA[F\in \operatorname {Hom}(\mathcal {C}^\circ ,\mathtt {Set})]]></fr:tex> is isomorphic to a functor of the form <fr:tex
+display="inline"><![CDATA[h_X]]></fr:tex>, then <fr:em><fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is determined up to unique isomorphism</fr:em>.
+  We then say that the functor <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is <fr:em>representable</fr:em>.
+  The above proposition then implies that the canonical functor <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> defines an <fr:em>equivalence</fr:em> between the category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and the full subcategory of <fr:tex
+display="inline"><![CDATA[\operatorname {Hom}(\mathcal {C}^\circ ,\mathtt {Set})]]></fr:tex> consisting of representable functors.
+  This fact is the basis of <fr:em>the idea of a "solution of a universal problem"</fr:em>, with such a problem always consisting of examining if a given (contravariant, as here, or covariant, in the dual case) functor from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\mathtt {Set}]]></fr:tex> is representable.
   
   Note further that, just by the definition of products in a category <fr:link
-href="Gro1957.xml"
 type="local"
-addr="Gro1957">[Gro1957]</fr:link>, the functor <fr:tex>h \colon  X \mapsto  h_X</fr:tex> commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking "kernels" [<fr:ref
+href="Gro1957.xml"
+addr="Gro1957"
+title="Sur quelques points d'algèbre homologique">[Gro1957]</fr:link>, the functor <fr:tex
+display="inline"><![CDATA[h\colon  X\mapsto  h_X]]></fr:tex> commutes with products whenever they exist (and, more generally, with finite or infinite projective limits, and, in particular, with fibred products, taking "kernels" [<fr:ref
 addr="fga2"
 href="fga2.xml"
 taxon="FGA"
-number="2"></fr:ref>], etc., whenever such things exist): we have an isomorphism of functors
+number="2" />], etc., whenever such things exist): we have an isomorphism of functors
   <fr:tex
-display="block">     h_{X \times  X'}  \xrightarrow { \sim }  h_X \times  h_{X'}   </fr:tex>
-  whenever <fr:tex>X \times  X'</fr:tex> exists, i.e. we have functorial (in <fr:tex>Y</fr:tex>) bijections
+display="block"><![CDATA[     h_{X\times  X'} \xrightarrow {\sim } h_X\times  h_{X'}   ]]></fr:tex>
+  whenever <fr:tex
+display="inline"><![CDATA[X\times  X']]></fr:tex> exists, i.e. we have functorial (in <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>) bijections
   <fr:tex
-display="block">     h_{X \times  X'}  \xrightarrow { \sim }  h_X(Y) \times  h_{X'}(Y).   </fr:tex>
+display="block"><![CDATA[     h_{X\times  X'} \xrightarrow {\sim } h_X(Y)\times  h_{X'}(Y).   ]]></fr:tex>
   In particular, the data of a morphism
   <fr:tex
-display="block">     X \times  X'  \to  X''   </fr:tex>
-  in <fr:tex>\mathcal {C}</fr:tex> (i.e. of a "<fr:em>composition law</fr:em>" in <fr:tex>\mathcal {C}</fr:tex> between <fr:tex>X</fr:tex>, <fr:tex>X'</fr:tex>, and <fr:tex>X''</fr:tex>) is equivalent to the data of a morphism <fr:tex>h_{X \times  X'}=h_X \times  h_{X'} \to  h_{X''}</fr:tex>, i.e. to the data, for all <fr:tex>Y \in \mathcal {C}</fr:tex>, of a composition law of <fr:em>sets</fr:em>
+display="block"><![CDATA[     X\times  X' \to  X''   ]]></fr:tex>
+  in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> (i.e. of a "<fr:em>composition law</fr:em>" in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> between <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[X']]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[X'']]></fr:tex>) is equivalent to the data of a morphism <fr:tex
+display="inline"><![CDATA[h_{X\times  X'}=h_X\times  h_{X'}\to  h_{X''}]]></fr:tex>, i.e. to the data, for all <fr:tex
+display="inline"><![CDATA[Y\in \mathcal {C}]]></fr:tex>, of a composition law of <fr:em>sets</fr:em>
   <fr:tex
-display="block">     h_X(Y) \times  h_{X'}(Y)  \to  h_{X''}(Y)   </fr:tex>
-  such that, for every morphism <fr:tex>Y \to  Y'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex>, the system of set maps
+display="block"><![CDATA[     h_X(Y)\times  h_{X'}(Y) \to  h_{X''}(Y)   ]]></fr:tex>
+  such that, for every morphism <fr:tex
+display="inline"><![CDATA[Y\to  Y']]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the system of set maps
   <fr:tex
-display="block">     h_{X^{(i)}}(Y)  \to  h_{X^{(i)}}(Y')      \qquad \text {for }i=0,1,2   </fr:tex>
-  is a morphism for the two composition laws, with respect to <fr:tex>Y</fr:tex> and <fr:tex>Y'</fr:tex>.
-  In this way, we see that the idea of a "<fr:tex>\mathcal {C}</fr:tex>-group" structure, or a "<fr:tex>\mathcal {C}</fr:tex>-ring" structure, etc. on an object <fr:tex>X</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> can be expressed in the most manageable way (in theory as much as in practice) by saying that, for every <fr:tex>Y \in \mathcal {C}</fr:tex>, we have a group law (resp. ring law, etc.) in the usual sense on the set <fr:tex>h_X(Y)</fr:tex>, with the maps <fr:tex>h_X(Y) \to  h_X(Y')</fr:tex> corresponding to morphisms <fr:tex>Y \to  Y'</fr:tex> that should be group homomorphisms (resp. ring homomorphisms, etc.).
-  This is the most intuitive and manageable way of defining, for example, the various classical groups <fr:tex>\operatorname {G_a}</fr:tex>, <fr:tex>\operatorname {G_m}</fr:tex>, <fr:tex>\operatorname {GL} (n)</fr:tex>, etc. on a prescheme <fr:tex>S</fr:tex> over an arbitrary base, and of writing the classical relations between these groups, or of placing a "vector bundle" structure on the affine scheme <fr:tex>V( \mathscr { F } )</fr:tex> over <fr:tex>S</fr:tex> defined by a quasi-coherent sheaf <fr:tex>\mathscr { F }</fr:tex>, and of defining and studying the many associated flag varieties (Grassmannians, projective bundles), etc.;
-  <fr:em>the general yoga is purely and simply identifying, using the canonical functor <fr:tex>h</fr:tex>, the objects of <fr:tex>\mathcal {C}</fr:tex> with particular contravariant functors (namely, representable functors) from <fr:tex>\mathcal {C}</fr:tex> to the category of sets</fr:em>.
-</fr:p><fr:p>
-  The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce <fr:em>covariant representable functors <fr:tex>\mathcal {C} \to \mathtt {Set}</fr:tex></fr:em>, i.e. those of the form <fr:tex>Y \mapsto \operatorname {Hom} (X,Y)=h'_X(Y)</fr:tex>.
-</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="block"><![CDATA[     h_{X^{(i)}}(Y) \to  h_{X^{(i)}}(Y')     \qquad \text {for }i=0,1,2   ]]></fr:tex>
+  is a morphism for the two composition laws, with respect to <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y']]></fr:tex>.
+  In this way, we see that the idea of a "<fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>-group" structure, or a "<fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>-ring" structure, etc. on an object <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> can be expressed in the most manageable way (in theory as much as in practice) by saying that, for every <fr:tex
+display="inline"><![CDATA[Y\in \mathcal {C}]]></fr:tex>, we have a group law (resp. ring law, etc.) in the usual sense on the set <fr:tex
+display="inline"><![CDATA[h_X(Y)]]></fr:tex>, with the maps <fr:tex
+display="inline"><![CDATA[h_X(Y)\to  h_X(Y')]]></fr:tex> corresponding to morphisms <fr:tex
+display="inline"><![CDATA[Y\to  Y']]></fr:tex> that should be group homomorphisms (resp. ring homomorphisms, etc.).
+  This is the most intuitive and manageable way of defining, for example, the various classical groups <fr:tex
+display="inline"><![CDATA[\operatorname {G_a}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\operatorname {G_m}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\operatorname {GL}(n)]]></fr:tex>, etc. on a prescheme <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> over an arbitrary base, and of writing the classical relations between these groups, or of placing a "vector bundle" structure on the affine scheme <fr:tex
+display="inline"><![CDATA[V(\mathscr {F})]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> defined by a quasi-coherent sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex>, and of defining and studying the many associated flag varieties (Grassmannians, projective bundles), etc.;
+  <fr:em>the general yoga is purely and simply identifying, using the canonical functor <fr:tex
+display="inline"><![CDATA[h]]></fr:tex>, the objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> with particular contravariant functors (namely, representable functors) from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to the category of sets</fr:em>.</fr:p><fr:p>The usual procedure of reversing the arrows that is necessary, for example, in the case of affine schemes in order to pass from the geometric language to the language of commutative algebra, leads us to dualise the above considerations, and, in particular, to also introduce <fr:em>covariant representable functors <fr:tex
+display="inline"><![CDATA[\mathcal {C}\to \mathtt {Set}]]></fr:tex></fr:em>, i.e. those of the form <fr:tex
+display="inline"><![CDATA[Y\mapsto \operatorname {Hom}(X,Y)=h'_X(Y)]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1692</fr:anchor><fr:addr>fga3.ii-a.2</fr:addr><fr:route>fga3.ii-a.2.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1734</fr:anchor><fr:addr
+type="user">fga3.ii-a.2</fr:addr><fr:route>fga3.ii-a.2.xml</fr:route><fr:title
+text="The existence theorem and the formal theory of modules › Representable and pro-representable functors › Pro-representable functors, pro-objects"><fr:link
+type="local"
 href="fga3.ii-a.xml"
+addr="fga3.ii-a"
+title="The existence theorem and the formal theory of modules › Representable and pro-representable functors"><fr:link
 type="local"
-addr="fga3.ii-a"><fr:link
 href="fga3.ii.xml"
-type="local"
-addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Representable and pro-representable functors</fr:link> › Pro-representable functors, pro-objects</fr:title><fr:number>A.2</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> be a projective system of objects of <fr:tex>\mathcal {C}</fr:tex>;
+addr="fga3.ii"
+title="The existence theorem and the formal theory of modules">The existence theorem and the formal theory of modules</fr:link> › Representable and pro-representable functors</fr:link> › Pro-representable functors, pro-objects</fr:title><fr:authors /><fr:number>A.2</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {X}=(X_i)_{i\in  I}]]></fr:tex> be a projective system of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>;
   there is a corresponding covariant functor
   <fr:tex
-display="block">     h'_{ \mathcal {X}}     =  \varinjlim _i h'_{X_i}   </fr:tex>
+display="block"><![CDATA[     h'_{\mathcal {X}}     = \varinjlim _i h'_{X_i}   ]]></fr:tex>
   which can be written more explicitly as
   <fr:tex
-display="block">     h'_{ \mathcal {X}}(Y)     =  \varinjlim _i h'_{X_i}(Y)     =  \varinjlim _i \operatorname {Hom} (X_i,Y)   </fr:tex>
-  which is a functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex>.
-  A functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> that is isomorphic to a functor of this type <fr:em>with <fr:tex>I</fr:tex> filtered</fr:em> is said to be <fr:em>pro-representable</fr:em>.
+display="block"><![CDATA[     h'_{\mathcal {X}}(Y)     = \varinjlim _i h'_{X_i}(Y)     = \varinjlim _i\operatorname {Hom}(X_i,Y)   ]]></fr:tex>
+  which is a functor from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\mathtt {Set}]]></fr:tex>.
+  A functor from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\mathtt {Set}]]></fr:tex> that is isomorphic to a functor of this type <fr:em>with <fr:tex
+display="inline"><![CDATA[I]]></fr:tex> filtered</fr:em> is said to be <fr:em>pro-representable</fr:em>.
   By the previous section, these are exactly the functors that are isomorphic to <fr:em>filtered inductive limits of representable functors</fr:em>.
-  Let <fr:tex>\mathcal {X}'=(X_j)_{j \in  J}</fr:tex> be another filtered projective system in <fr:tex>\mathcal {C}</fr:tex> (indexed by another filtered preordered set of indices <fr:tex>J</fr:tex>).
+  Let <fr:tex
+display="inline"><![CDATA[\mathcal {X}'=(X_j)_{j\in  J}]]></fr:tex> be another filtered projective system in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> (indexed by another filtered preordered set of indices <fr:tex
+display="inline"><![CDATA[J]]></fr:tex>).
   Then we can easily show that we have a canonical bijection
   <fr:tex
-display="block">      \operatorname {Hom} (h_{ \mathcal {X}'},h_{ \mathcal {X}})     =  \varprojlim _j \varinjlim _i \operatorname {Hom} (X_i,X'_j)   </fr:tex>
+display="block"><![CDATA[     \operatorname {Hom}(h_{\mathcal {X}'},h_{\mathcal {X}})     = \varprojlim _j\varinjlim _i\operatorname {Hom}(X_i,X'_j)   ]]></fr:tex>
   (generalising <fr:ref
 addr="fga3.ii-a.1-proposition-1.1"
 href="fga3.ii-a.1-proposition-1.1.xml"
 taxon="Proposition"
-number="1.1"></fr:ref>).
-  This leads to introducing the <fr:em>category <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> of pro-objects of <fr:tex>\mathcal {C}</fr:tex></fr:em>, whose objects are projective systems of objects of <fr:tex>\mathcal {C}</fr:tex> (indexed by arbitrary filtered preordered sets of indices), and whose morphisms between objects <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> and <fr:tex>\mathcal {X}'=(X_j)_{j \in  J}</fr:tex> are given by
+number="1.1" />).
+  This leads to introducing the <fr:em>category <fr:tex
+display="inline"><![CDATA[\operatorname {Pro}(\mathcal {C})]]></fr:tex> of pro-objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex></fr:em>, whose objects are projective systems of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> (indexed by arbitrary filtered preordered sets of indices), and whose morphisms between objects <fr:tex
+display="inline"><![CDATA[\mathcal {X}=(X_i)_{i\in  I}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {X}'=(X_j)_{j\in  J}]]></fr:tex> are given by
   <fr:tex
-display="block">      \operatorname {Pro} \operatorname {Hom} ( \mathcal {X}, \mathcal {X}')     =  \varprojlim _j \varinjlim _i \operatorname {Hom} (X_i,X'_j),   </fr:tex>
+display="block"><![CDATA[     \operatorname {Pro}\operatorname {Hom}(\mathcal {X},\mathcal {X}')     = \varprojlim _j\varinjlim _i\operatorname {Hom}(X_i,X'_j),   ]]></fr:tex>
   with the composition of pro-homomorphisms being evident.
-  By the very construction itself, <fr:tex>\mathcal {X} \mapsto  h'_{ \mathcal {X}}</fr:tex> can be considered as a contravariant functor in <fr:tex>\mathcal {X}</fr:tex>, establishing an <fr:em>equivalence between the dual category of the category <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> of pro-objects of <fr:tex>\mathcal {C}</fr:tex> and the category of pro-representable covariant functors from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex></fr:em>.
+  By the very construction itself, <fr:tex
+display="inline"><![CDATA[\mathcal {X}\mapsto  h'_{\mathcal {X}}]]></fr:tex> can be considered as a contravariant functor in <fr:tex
+display="inline"><![CDATA[\mathcal {X}]]></fr:tex>, establishing an <fr:em>equivalence between the dual category of the category <fr:tex
+display="inline"><![CDATA[\operatorname {Pro}(\mathcal {C})]]></fr:tex> of pro-objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and the category of pro-representable covariant functors from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\mathtt {Set}]]></fr:tex></fr:em>.
   
-  Of course, an object <fr:tex>X</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> canonically defines a pro-object, denoted again by <fr:tex>X</fr:tex>, so that <fr:em><fr:tex>\mathcal {C}</fr:tex> is equivalent to a full subcategory of <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex></fr:em>.
-  Then, if <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> is an arbitrary pro-object of <fr:tex>\mathcal {C}</fr:tex>, then (with the above identification) we have that
+  Of course, an object <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> canonically defines a pro-object, denoted again by <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, so that <fr:em><fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is equivalent to a full subcategory of <fr:tex
+display="inline"><![CDATA[\operatorname {Pro}(\mathcal {C})]]></fr:tex></fr:em>.
+  Then, if <fr:tex
+display="inline"><![CDATA[\mathcal {X}=(X_i)_{i\in  I}]]></fr:tex> is an arbitrary pro-object of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, then (with the above identification) we have that
   <fr:tex
-display="block">      \mathcal {X}     =  \varprojlim _i X_i   </fr:tex>
-  with the projective limit being <fr:em>taken in <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex></fr:em> (since <fr:tex>h_{ \mathcal {X}}= \varinjlim _i h_{X_i}</fr:tex>).
-</fr:p><fr:p>
-  We draw attention to the fact that, even if the projective limit of the <fr:tex>X_i</fr:tex> <fr:em>exists in <fr:tex>\mathcal {C}</fr:tex></fr:em>, it will generally <fr:em>not</fr:em> be isomorphic to the projective limit <fr:tex>\mathcal {X}</fr:tex> in <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex>, as is already evident in the case where <fr:tex>\mathcal {C}</fr:tex> is the category of sets.
-  We note that, by the definition itself, <fr:tex>\varprojlim {}_{ \mathcal {C}}X_i=L</fr:tex> is defined by the condition that the functor
+display="block"><![CDATA[     \mathcal {X}     = \varprojlim _i X_i   ]]></fr:tex>
+  with the projective limit being <fr:em>taken in <fr:tex
+display="inline"><![CDATA[\operatorname {Pro}(\mathcal {C})]]></fr:tex></fr:em> (since <fr:tex
+display="inline"><![CDATA[h_{\mathcal {X}}=\varinjlim _i h_{X_i}]]></fr:tex>).</fr:p><fr:p>We draw attention to the fact that, even if the projective limit of the <fr:tex
+display="inline"><![CDATA[X_i]]></fr:tex> <fr:em>exists in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex></fr:em>, it will generally <fr:em>not</fr:em> be isomorphic to the projective limit <fr:tex
+display="inline"><![CDATA[\mathcal {X}]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\operatorname {Pro}(\mathcal {C})]]></fr:tex>, as is already evident in the case where <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is the category of sets.
+  We note that, by the definition itself, <fr:tex
+display="inline"><![CDATA[\varprojlim {}_{\mathcal {C}}X_i=L]]></fr:tex> is defined by the condition that the functor
   <fr:tex
-display="block">      \varprojlim _i \operatorname {Hom} _{ \mathcal {C}}(Y,X_i)     =  \operatorname {Hom} _{ \operatorname {Pro} ( \mathcal {C})}(Y, \mathcal {X})   </fr:tex>
-  in <fr:tex>Y \in \mathcal {C}</fr:tex> and with values in <fr:tex>\mathtt {Set}</fr:tex> be representable via <fr:tex>\mathcal {L}</fr:tex>, i.e. that it be isomorphic to <fr:tex>\operatorname {Hom} _{ \mathcal {C}}(Y, \mathcal {L})</fr:tex>;
-  then <fr:em><fr:tex>\lim {}_{ \mathcal {C}}X_i</fr:tex> is already defined in terms of the <fr:em>pro-object</fr:em> <fr:tex>\mathcal {X}</fr:tex></fr:em>, and, in a precise way, depends functorially on the pro-object <fr:tex>\mathcal {X}</fr:tex> whenever it is defined;
-  there is therefore no problem with denoting it by <fr:tex>\lim {}_{ \mathcal {C}}( \mathcal {X})</fr:tex>.
-  If projective limits in <fr:tex>\mathcal {C}</fr:tex> always exist, then <fr:tex>\lim {}_{ \mathcal {C}}( \mathcal {X})</fr:tex> is a functor from <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex> to <fr:tex>\mathcal {C}</fr:tex>, and there is a canonical homomorphism of functors <fr:tex>\lim _ \mathcal {C}( \mathcal {X}) \to \mathcal {X}</fr:tex>.
+display="block"><![CDATA[     \varprojlim _i\operatorname {Hom}_{\mathcal {C}}(Y,X_i)     = \operatorname {Hom}_{\operatorname {Pro}(\mathcal {C})}(Y,\mathcal {X})   ]]></fr:tex>
+  in <fr:tex
+display="inline"><![CDATA[Y\in \mathcal {C}]]></fr:tex> and with values in <fr:tex
+display="inline"><![CDATA[\mathtt {Set}]]></fr:tex> be representable via <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, i.e. that it be isomorphic to <fr:tex
+display="inline"><![CDATA[\operatorname {Hom}_{\mathcal {C}}(Y,\mathcal {L})]]></fr:tex>;
+  then <fr:em><fr:tex
+display="inline"><![CDATA[\lim {}_{\mathcal {C}}X_i]]></fr:tex> is already defined in terms of the <fr:em>pro-object</fr:em> <fr:tex
+display="inline"><![CDATA[\mathcal {X}]]></fr:tex></fr:em>, and, in a precise way, depends functorially on the pro-object <fr:tex
+display="inline"><![CDATA[\mathcal {X}]]></fr:tex> whenever it is defined;
+  there is therefore no problem with denoting it by <fr:tex
+display="inline"><![CDATA[\lim {}_{\mathcal {C}}(\mathcal {X})]]></fr:tex>.
+  If projective limits in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> always exist, then <fr:tex
+display="inline"><![CDATA[\lim {}_{\mathcal {C}}(\mathcal {X})]]></fr:tex> is a functor from <fr:tex
+display="inline"><![CDATA[\operatorname {Pro}(\mathcal {C})]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, and there is a canonical homomorphism of functors <fr:tex
+display="inline"><![CDATA[\lim _\mathcal {C}(\mathcal {X})\to \mathcal {X}]]></fr:tex>.
   Since every (covariant, say, for simplicity) functor
   <fr:tex
-display="block">     F \colon   \mathcal {C}  \to   \mathcal {C}'   </fr:tex>
+display="block"><![CDATA[     F\colon  \mathcal {C} \to  \mathcal {C}'   ]]></fr:tex>
   can be extended in an obvious way to a functor
   <fr:tex
-display="block">      \operatorname {Pro} (F) \colon   \operatorname {Pro} ( \mathcal {C})  \to   \operatorname {Pro} ( \mathcal {C}'),   </fr:tex>
-  it follows that, if projective limits always exist in <fr:tex>\mathcal {C}'</fr:tex>, then <fr:tex>F</fr:tex> also canonically defines a composite functor
+display="block"><![CDATA[     \operatorname {Pro}(F)\colon  \operatorname {Pro}(\mathcal {C}) \to  \operatorname {Pro}(\mathcal {C}'),   ]]></fr:tex>
+  it follows that, if projective limits always exist in <fr:tex
+display="inline"><![CDATA[\mathcal {C}']]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> also canonically defines a composite functor
   <fr:tex
-display="block">      \overline {F}     =  \varprojlim {}_{ \mathcal {C}'} \colon   \operatorname {Pro} ( \mathcal {C})  \to   \mathcal {C}'   </fr:tex>
-  sending <fr:tex>\mathcal {X}=(X_i)_{i \in  I}</fr:tex> to <fr:tex>\varprojlim {}_{ \mathcal {C}'}F(X_i)</fr:tex>.
-</fr:p><fr:p>
-  A pro-object <fr:tex>\mathcal {X}</fr:tex> is said to be a <fr:em>strict pro-object</fr:em> if it is isomorphic to a pro-object <fr:tex>(X_i)_{i \in  I}</fr:tex>, where the transition morphisms <fr:tex>X_i \to  X_j</fr:tex> are <fr:em>epimorphisms</fr:em>;
+display="block"><![CDATA[     \overline {F}     = \varprojlim {}_{\mathcal {C}'}\colon  \operatorname {Pro}(\mathcal {C}) \to  \mathcal {C}'   ]]></fr:tex>
+  sending <fr:tex
+display="inline"><![CDATA[\mathcal {X}=(X_i)_{i\in  I}]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\varprojlim {}_{\mathcal {C}'}F(X_i)]]></fr:tex>.</fr:p><fr:p>A pro-object <fr:tex
+display="inline"><![CDATA[\mathcal {X}]]></fr:tex> is said to be a <fr:em>strict pro-object</fr:em> if it is isomorphic to a pro-object <fr:tex
+display="inline"><![CDATA[(X_i)_{i\in  I}]]></fr:tex>, where the transition morphisms <fr:tex
+display="inline"><![CDATA[X_i\to  X_j]]></fr:tex> are <fr:em>epimorphisms</fr:em>;
   a functor defined by such an object is said to be <fr:em>strictly pro-representable</fr:em>.
-  We can thus further demand that <fr:tex>I</fr:tex> be a filtered <fr:em>ordered</fr:em> set, and that every epimorphism <fr:tex>X_i \to  X'</fr:tex> be equivalent to an epimorphism <fr:tex>X_i \to  X_j</fr:tex> for some suitable <fr:tex>j \in  I</fr:tex> (uniquely determined by this condition).
+  We can thus further demand that <fr:tex
+display="inline"><![CDATA[I]]></fr:tex> be a filtered <fr:em>ordered</fr:em> set, and that every epimorphism <fr:tex
+display="inline"><![CDATA[X_i\to  X']]></fr:tex> be equivalent to an epimorphism <fr:tex
+display="inline"><![CDATA[X_i\to  X_j]]></fr:tex> for some suitable <fr:tex
+display="inline"><![CDATA[j\in  I]]></fr:tex> (uniquely determined by this condition).
   
-  Under these conditions, the projective system <fr:tex>(X_i)_{i \in  I}</fr:tex> is determined <fr:em>up to unique isomorphism</fr:em> (in the usual sense of isomorphisms of projective systems).
-  It thus follows that <fr:em>the projective limit of a projective system <fr:tex>\mathcal {X}^{( \alpha )}</fr:tex> of strict pro-objects always exists in <fr:tex>\operatorname {Pro} ( \mathcal {C})</fr:tex></fr:em>, and that, with the above notation of <fr:tex>F</fr:tex> and <fr:tex>\overline {F}</fr:tex>, we have that
+  Under these conditions, the projective system <fr:tex
+display="inline"><![CDATA[(X_i)_{i\in  I}]]></fr:tex> is determined <fr:em>up to unique isomorphism</fr:em> (in the usual sense of isomorphisms of projective systems).
+  It thus follows that <fr:em>the projective limit of a projective system <fr:tex
+display="inline"><![CDATA[\mathcal {X}^{(\alpha )}]]></fr:tex> of strict pro-objects always exists in <fr:tex
+display="inline"><![CDATA[\operatorname {Pro}(\mathcal {C})]]></fr:tex></fr:em>, and that, with the above notation of <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\overline {F}]]></fr:tex>, we have that
   <fr:tex
-display="block">      \overline {F} \varprojlim _ \alpha \mathcal {X}^{( \alpha )}     =  \varprojlim _ \alpha {}_{ \mathcal {C}'}F(X^{( \alpha )}).   </fr:tex>
-  In particular, if every pro-object of <fr:tex>\mathcal {C}</fr:tex> is strict (cf. the previous section), then the extended functor <fr:tex>\overline {F}</fr:tex> commutes with projective limits.
-</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+display="block"><![CDATA[     \overline {F}\varprojlim _\alpha \mathcal {X}^{(\alpha )}     = \varprojlim _\alpha {}_{\mathcal {C}'}F(X^{(\alpha )}).   ]]></fr:tex>
+  In particular, if every pro-object of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is strict (cf. the previous section), then the extended functor <fr:tex
+display="inline"><![CDATA[\overline {F}]]></fr:tex> commutes with projective limits.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

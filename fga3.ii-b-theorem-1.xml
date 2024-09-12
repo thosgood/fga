@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1728</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.ii-b-theorem-1</fr:addr><fr:route>fga3.ii-b-theorem-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.ii-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    For the functor <fr:tex>F</fr:tex> to be pro-representable, it is necessary and sufficient that it satisfy the two following conditions:
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1755</fr:anchor><fr:addr
+type="user">fga3.ii-b-theorem-1</fr:addr><fr:route>fga3.ii-b-theorem-1.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>1</fr:number><fr:parent>fga3.ii-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>For the functor <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> to be pro-representable, it is necessary and sufficient that it satisfy the two following conditions:
 
     
  <html:ol
@@ -16,21 +17,25 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        <fr:tex>F</fr:tex> commutes with finite products;
+        <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> commutes with finite products;
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;ii. &quot;">
-        for every algebra <fr:tex>A \in \mathcal {C}</fr:tex> and every homomorphism <fr:tex>A \to  A'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex> such that the diagram
+        for every algebra <fr:tex
+display="inline"><![CDATA[A\in \mathcal {C}]]></fr:tex> and every homomorphism <fr:tex
+display="inline"><![CDATA[A\to  A']]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> such that the diagram
         <fr:tex
-display="block">           A  \to  A'  \rightrightarrows  A' \otimes _A A'         </fr:tex>
+display="block"><![CDATA[           A \to  A' \rightrightarrows  A'\otimes _A A'         ]]></fr:tex>
         is exact (cf. <fr:link
-href="fga3.i-a.1-definition-1.2.xml"
 type="local"
+href="fga3.i-a.1-definition-1.2.xml"
 addr="fga3.i-a.1-definition-1.2">FGA 3.I, §A, Definition 1.2</fr:link>), the diagram
         <fr:tex
-display="block">           F(A)  \to  F(A')  \rightrightarrows  F(A' \otimes _A A')         </fr:tex>
+display="block"><![CDATA[           F(A) \to  F(A') \rightrightarrows  F(A'\otimes _A A')         ]]></fr:tex>
         is also exact.
       </html:li>
 
@@ -38,7 +43,8 @@ display="block">           F(A)  \to  F(A')  \rightrightarrows  F(A' \otimes _A 
 
 
     
-    Furthermore, it suffices to verify condition (ii) in the case where <fr:tex>A</fr:tex> is local, and when, further, we are in one of the two following cases:
+    Furthermore, it suffices to verify condition (ii) in the case where <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is local, and when, further, we are in one of the two following cases:
 
     
  <html:ol
@@ -46,67 +52,85 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;a. &quot;">
-        <fr:tex>A</fr:tex> is a <fr:em>free</fr:em> module over <fr:tex>A</fr:tex>;
+        <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is a <fr:em>free</fr:em> module over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>;
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;b. &quot;">
-        the quotient module <fr:tex>A'/A</fr:tex> is an <fr:tex>A</fr:tex>-module <fr:em>of length <fr:tex>1</fr:tex></fr:em>.
+        the quotient module <fr:tex
+display="inline"><![CDATA[A'/A]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module <fr:em>of length <fr:tex
+display="inline"><![CDATA[1]]></fr:tex></fr:em>.
       </html:li>
 
     </html:ol></fr:p>
   
     
     <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1441</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.ii-b-theorem-1</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>
-      The proof of this theorem is rather delicate, and cannot be sketched here.
-      We content ourselves with pointing out that it relies essentially on a study of <fr:em>equivalence relations</fr:em> (in the sense of categories) in <fr:em>the spectrum of an Artinian algebra</fr:em> (the study of which poses even more problems, whose solutions seems essential for the further development of the theory).
-    </fr:p>
-  </fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1496</fr:anchor><fr:addr
+type="machine">#288</fr:addr><fr:route>unstable-288.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.ii-b-theorem-1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>The proof of this theorem is rather delicate, and cannot be sketched here.
+      We content ourselves with pointing out that it relies essentially on a study of <fr:em>equivalence relations</fr:em> (in the sense of categories) in <fr:em>the spectrum of an Artinian algebra</fr:em> (the study of which poses even more problems, whose solutions seems essential for the further development of the theory).</fr:p>
+  </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+</fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1727</fr:anchor><fr:addr>fga3.ii-b</fr:addr><fr:route>fga3.ii-b.xml</fr:route><fr:title><fr:link
-href="fga3.ii.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1756</fr:anchor><fr:addr
+type="user">fga3.ii-b</fr:addr><fr:route>fga3.ii-b.xml</fr:route><fr:title
+text="The existence theorem and the formal theory of modules › The two existence theorems"><fr:link
 type="local"
-addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › The two existence theorems</fr:title><fr:number>B</fr:number><fr:parent>fga3.ii</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Keeping the notation of <fr:ref
+href="fga3.ii.xml"
+addr="fga3.ii"
+title="The existence theorem and the formal theory of modules">The existence theorem and the formal theory of modules</fr:link> › The two existence theorems</fr:title><fr:authors /><fr:number>B</fr:number><fr:parent>fga3.ii</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Keeping the notation of <fr:ref
 addr="fga3.ii-a.5"
 href="fga3.ii-a.5.xml"
-number="A.5"></fr:ref>, and, given a covariant functor
+number="A.5" />, and, given a covariant functor
   <fr:tex
-display="block">     F \colon   \mathcal {C}  \to   \mathtt {Set} ,   </fr:tex>
-  we wish to find manageable criteria for <fr:tex>F</fr:tex> to be pro-representable, i.e. expressible via a <fr:tex>\Lambda</fr:tex>-algebra <fr:tex>O</fr:tex> as above.
+display="block"><![CDATA[     F\colon  \mathcal {C} \to  \mathtt {Set},   ]]></fr:tex>
+  we wish to find manageable criteria for <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> to be pro-representable, i.e. expressible via a <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>-algebra <fr:tex
+display="inline"><![CDATA[O]]></fr:tex> as above.
   By the corollary of <fr:link
+type="local"
 href="fga3.ii-a.3-proposition-3.1.xml"
-type="local"
-addr="fga3.ii-a.3-proposition-3.1">§A, Proposition 3.1</fr:link>, to ensure this, it is necessary and sufficient that <fr:tex>F</fr:tex> be <fr:em>left exact</fr:em>.
+addr="fga3.ii-a.3-proposition-3.1">§A, Proposition 3.1</fr:link>, to ensure this, it is necessary and sufficient that <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> be <fr:em>left exact</fr:em>.
   In the current state of the technique of descent (cf. the questions asked in <fr:link
-href="fga3.i-a.2.c.xml"
 type="local"
-addr="fga3.i-a.2.c">FGA 3.I, §A.2.c</fr:link>), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+href="fga3.i-a.2.c.xml"
+addr="fga3.i-a.2.c">FGA 3.I, §A.2.c</fr:link>), this criterion is not directly verifiable, in this form, in the most important cases, and we need criteria that seem less demanding.</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1549</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.ii-b-theorem-1</fr:addr><fr:route>fga3.ii-b-theorem-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.ii-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    For the functor <fr:tex>F</fr:tex> to be pro-representable, it is necessary and sufficient that it satisfy the two following conditions:
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1598</fr:anchor><fr:addr
+type="user">fga3.ii-b-theorem-1</fr:addr><fr:route>fga3.ii-b-theorem-1.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>1</fr:number><fr:parent>fga3.ii-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>For the functor <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> to be pro-representable, it is necessary and sufficient that it satisfy the two following conditions:
 
     
  <html:ol
@@ -114,21 +138,25 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        <fr:tex>F</fr:tex> commutes with finite products;
+        <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> commutes with finite products;
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;ii. &quot;">
-        for every algebra <fr:tex>A \in \mathcal {C}</fr:tex> and every homomorphism <fr:tex>A \to  A'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex> such that the diagram
+        for every algebra <fr:tex
+display="inline"><![CDATA[A\in \mathcal {C}]]></fr:tex> and every homomorphism <fr:tex
+display="inline"><![CDATA[A\to  A']]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> such that the diagram
         <fr:tex
-display="block">           A  \to  A'  \rightrightarrows  A' \otimes _A A'         </fr:tex>
+display="block"><![CDATA[           A \to  A' \rightrightarrows  A'\otimes _A A'         ]]></fr:tex>
         is exact (cf. <fr:link
-href="fga3.i-a.1-definition-1.2.xml"
 type="local"
+href="fga3.i-a.1-definition-1.2.xml"
 addr="fga3.i-a.1-definition-1.2">FGA 3.I, §A, Definition 1.2</fr:link>), the diagram
         <fr:tex
-display="block">           F(A)  \to  F(A')  \rightrightarrows  F(A' \otimes _A A')         </fr:tex>
+display="block"><![CDATA[           F(A) \to  F(A') \rightrightarrows  F(A'\otimes _A A')         ]]></fr:tex>
         is also exact.
       </html:li>
 
@@ -136,7 +164,8 @@ display="block">           F(A)  \to  F(A')  \rightrightarrows  F(A' \otimes _A 
 
 
     
-    Furthermore, it suffices to verify condition (ii) in the case where <fr:tex>A</fr:tex> is local, and when, further, we are in one of the two following cases:
+    Furthermore, it suffices to verify condition (ii) in the case where <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is local, and when, further, we are in one of the two following cases:
 
     
  <html:ol
@@ -144,201 +173,323 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;a. &quot;">
-        <fr:tex>A</fr:tex> is a <fr:em>free</fr:em> module over <fr:tex>A</fr:tex>;
+        <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is a <fr:em>free</fr:em> module over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>;
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;b. &quot;">
-        the quotient module <fr:tex>A'/A</fr:tex> is an <fr:tex>A</fr:tex>-module <fr:em>of length <fr:tex>1</fr:tex></fr:em>.
+        the quotient module <fr:tex
+display="inline"><![CDATA[A'/A]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module <fr:em>of length <fr:tex
+display="inline"><![CDATA[1]]></fr:tex></fr:em>.
       </html:li>
 
     </html:ol></fr:p>
   
     
     <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1441</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.ii-b-theorem-1</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>
-      The proof of this theorem is rather delicate, and cannot be sketched here.
-      We content ourselves with pointing out that it relies essentially on a study of <fr:em>equivalence relations</fr:em> (in the sense of categories) in <fr:em>the spectrum of an Artinian algebra</fr:em> (the study of which poses even more problems, whose solutions seems essential for the further development of the theory).
-    </fr:p>
-  </fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1496</fr:anchor><fr:addr
+type="machine">#288</fr:addr><fr:route>unstable-288.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.ii-b-theorem-1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>The proof of this theorem is rather delicate, and cannot be sketched here.
+      We content ourselves with pointing out that it relies essentially on a study of <fr:em>equivalence relations</fr:em> (in the sense of categories) in <fr:em>the spectrum of an Artinian algebra</fr:em> (the study of which poses even more problems, whose solutions seems essential for the further development of the theory).</fr:p>
+  </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter></fr:tree><fr:p>
-  In applications, the verification of condition (i) is always trivial.
-  The verification of condition (ii) splits into two cases: case (a), where <fr:tex>A'</fr:tex> is a free <fr:tex>A</fr:tex>-module, can be dealt with using the <fr:em>technique of descent by flat morphisms</fr:em> (cf. <fr:link
-href="fga-1"
-type="external">FGA 1, Theorems 1, 2, and 3</fr:link>), which offers no difficulty;
-  to deal with case (b), we will use the following result:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:p>In applications, the verification of condition (i) is always trivial.
+  The verification of condition (ii) splits into two cases: case (a), where <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> is a free <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module, can be dealt with using the <fr:em>technique of descent by flat morphisms</fr:em> (cf. <fr:link
+type="external"
+href="fga-1">FGA 1, Theorems 1, 2, and 3</fr:link>), which offers no difficulty;
+  to deal with case (b), we will use the following result:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1550</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.ii-b-theorem-2</fr:addr><fr:route>fga3.ii-b-theorem-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga3.ii-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>A</fr:tex> be a local Artinian ring with maximal ideal <fr:tex>\mathfrak {m}</fr:tex>, and let <fr:tex>A'</fr:tex> be an <fr:tex>A</fr:tex>-algebra containing <fr:tex>A</fr:tex>, and such that <fr:tex>\mathfrak {m}A' \subset  A</fr:tex>, and <fr:tex>A \to  A' \rightrightarrows  A' \otimes _A A'</fr:tex> is <fr:em>exact</fr:em> (which is the case, in particular, if <fr:tex>A'/A</fr:tex> is an <fr:tex>A</fr:tex>-module of length <fr:tex>1</fr:tex>).
-    Let <fr:tex>\mathcal {F}</fr:tex> be the fibred category (cf. <fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1599</fr:anchor><fr:addr
+type="user">fga3.ii-b-theorem-2</fr:addr><fr:route>fga3.ii-b-theorem-2.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>2</fr:number><fr:parent>fga3.ii-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be a local Artinian ring with maximal ideal <fr:tex
+display="inline"><![CDATA[\mathfrak {m}]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> be an <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-algebra containing <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, and such that <fr:tex
+display="inline"><![CDATA[\mathfrak {m}A'\subset  A]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[A\to  A'\rightrightarrows  A'\otimes _A A']]></fr:tex> is <fr:em>exact</fr:em> (which is the case, in particular, if <fr:tex
+display="inline"><![CDATA[A'/A]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module of length <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>).
+    Let <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> be the fibred category (cf. <fr:link
+type="local"
 href="fga3.i-a.1-definition-1.1.xml"
-type="local"
 addr="fga3.i-a.1-definition-1.1">FGA 3.I, §A, Definition 1.1</fr:link>) of quasi-coherent sheaves that are flat over varying preschemes.
-    Then the morphism <fr:tex>\operatorname {Spec} (A') \to \operatorname {Spec} (A)</fr:tex> is a <fr:em>strict <fr:tex>\mathcal {F}</fr:tex>-descent morphism</fr:em> (cf. <fr:link
-href="fga3.i-a.1-definition-1.7.xml"
+    Then the morphism <fr:tex
+display="inline"><![CDATA[\operatorname {Spec}(A')\to \operatorname {Spec}(A)]]></fr:tex> is a <fr:em>strict <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism</fr:em> (cf. <fr:link
 type="local"
-addr="fga3.i-a.1-definition-1.7">FGA 3.I, §A, Definition 1.7</fr:link>).
-  </fr:p>
+href="fga3.i-a.1-definition-1.7.xml"
+addr="fga3.i-a.1-definition-1.7">FGA 3.I, §A, Definition 1.7</fr:link>).</fr:p>
   
     
     <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1428</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.ii-b-theorem-2</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>
-      We prove this by first proving that
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1483</fr:anchor><fr:addr
+type="machine">#289</fr:addr><fr:route>unstable-289.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.ii-b-theorem-2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>We prove this by first proving that
       <fr:tex
-display="block">          \operatorname {H} ^i(A'/A, \operatorname {G_a} ) = 0          \qquad \text {for }i \geqslant1        </fr:tex>
+display="block"><![CDATA[         \operatorname {H}^i(A'/A,\operatorname {G_a}) = 0         \qquad \text {for }i\geqslant 1       ]]></fr:tex>
       (cf. <fr:link
-href="fga3.i-a.4.e.xml"
 type="local"
-addr="fga3.i-a.4.e">FGA 3.I, §A.4.e</fr:link>), with the hypothesis that <fr:tex>\mathfrak {m}A' \subset  A</fr:tex> allowing us to easily reduce to the case where <fr:tex>A</fr:tex> is a field (namely <fr:tex>A/ \mathfrak {m}</fr:tex>).
+href="fga3.i-a.4.e.xml"
+addr="fga3.i-a.4.e">FGA 3.I, §A.4.e</fr:link>), with the hypothesis that <fr:tex
+display="inline"><![CDATA[\mathfrak {m}A'\subset  A]]></fr:tex> allowing us to easily reduce to the case where <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is a field (namely <fr:tex
+display="inline"><![CDATA[A/\mathfrak {m}]]></fr:tex>).
       We can then apply the equivalences described in <fr:link
+type="local"
 href="fga3.i-a.4.e.xml"
-type="local"
-addr="fga3.i-a.4.e">FGA 3.I, §A.4.e</fr:link>.
-    </fr:p>
-  </fr:mainmatter></fr:tree>
+addr="fga3.i-a.4.e">FGA 3.I, §A.4.e</fr:link>.</fr:p>
+  </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter></fr:tree><fr:p>
-  In other words, the data of a flat <fr:tex>A</fr:tex>-module <fr:tex>M</fr:tex> is completely equivalent to the data of a flat <fr:tex>A'</fr:tex>-module <fr:tex>M'</fr:tex> endowed with an <fr:tex>(A' \otimes _A A')</fr:tex>-isomorphism from <fr:tex>M' \otimes _A A'</fr:tex> to <fr:tex>A' \otimes _A M'</fr:tex> satisfying the usual transitivity condition for a descent data (<fr:em>loc. cit.</fr:em>).
-</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:p>In other words, the data of a flat <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> is completely equivalent to the data of a flat <fr:tex
+display="inline"><![CDATA[A']]></fr:tex>-module <fr:tex
+display="inline"><![CDATA[M']]></fr:tex> endowed with an <fr:tex
+display="inline"><![CDATA[(A'\otimes _A A')]]></fr:tex>-isomorphism from <fr:tex
+display="inline"><![CDATA[M'\otimes _A A']]></fr:tex> to <fr:tex
+display="inline"><![CDATA[A'\otimes _A M']]></fr:tex> satisfying the usual transitivity condition for a descent data (<fr:em>loc. cit.</fr:em>).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1726</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.2</fr:addr><fr:route>fga3.i-a.1-definition-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A diagram of maps of sets
-    <fr:tex
-display="block">       E  \xrightarrow {u}       E'  \overset { v_1 }{ \underset { v_2 }{ \rightrightarrows }}        E''     </fr:tex>
-    is said to be <fr:em>exact</fr:em> if <fr:tex>u</fr:tex> is a bijection from <fr:tex>E</fr:tex> to the subset of <fr:tex>E'</fr:tex> consisting of the <fr:tex>x' \in  E'</fr:tex> such that <fr:tex>v_1(x')=v_2(x')</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1716</fr:anchor><fr:addr>fga3.iii-2</fr:addr><fr:route>fga3.iii-2.xml</fr:route><fr:title><fr:link
-href="fga3.iii.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1757</fr:anchor><fr:addr
+type="user">fga3.iii-2</fr:addr><fr:route>fga3.iii-2.xml</fr:route><fr:title
+text="Quotient preschemes › Example: finite preschemes over S"><fr:link
 type="local"
-addr="fga3.iii">Quotient preschemes</fr:link> › Example: finite preschemes over <fr:tex>S</fr:tex></fr:title><fr:number>2</fr:number><fr:parent>fga3.iii</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal {C}</fr:tex> be the category of finite preschemes over <fr:tex>S</fr:tex>, which is assumed to be locally Noetherian.
-  Then <fr:tex>\mathcal {C}</fr:tex> is equivalent to the opposite category of the category of coherent sheaves of commutative algebras on <fr:tex>S</fr:tex>, or, if <fr:tex>S</fr:tex> is affine of ring <fr:tex>A</fr:tex>, then it is equivalent to the opposite category of the category of finite <fr:tex>A</fr:tex>-algebras over <fr:tex>A</fr:tex> (i.e. those that are modules of finite type over <fr:tex>A</fr:tex>).
-  We thus immediately conclude that, in <fr:tex>\mathcal {C}</fr:tex>, finite projective limits and finite inductive limits exist.
+href="fga3.iii.xml"
+addr="fga3.iii"
+title="Quotient preschemes">Quotient preschemes</fr:link> › Example: finite preschemes over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex></fr:title><fr:authors /><fr:number>2</fr:number><fr:parent>fga3.iii</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be the category of finite preschemes over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, which is assumed to be locally Noetherian.
+  Then <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is equivalent to the opposite category of the category of coherent sheaves of commutative algebras on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, or, if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is affine of ring <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, then it is equivalent to the opposite category of the category of finite <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-algebras over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> (i.e. those that are modules of finite type over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>).
+  We thus immediately conclude that, in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, finite projective limits and finite inductive limits exist.
   This is well known (without any finiteness hypotheses) for the former;
-  the fibre product of preschemes <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> over <fr:tex>S</fr:tex> corresponds to the tensor product <fr:tex>B \otimes _A C</fr:tex> of corresponding algebras, and the kernel of two morphisms <fr:tex>X \rightrightarrows  Y</fr:tex>, defined by two <fr:tex>A</fr:tex>-algebra homomorphisms <fr:tex>u,v \colon  C \rightrightarrows  B</fr:tex>, corresponds to the quotient of <fr:tex>B</fr:tex> by the ideal generated by the <fr:tex>u(v)-v(c)</fr:tex>, etc.
-  For finite inductive limits, it suffices to consider, on one hand, finite sums, which correspond to the ordinary product of <fr:tex>A</fr:tex>-algebras, and, on the other hand, cokernels of pairs of morphisms <fr:tex>X \rightrightarrows  Y</fr:tex>, which correspond (as we can immediately see) to the sub-ring of <fr:tex>C</fr:tex> given by elements where the homomorphisms <fr:tex>u,v \colon  C \rightrightarrows  B</fr:tex> agree (with this sub-ring being finite over <fr:tex>A</fr:tex> thanks to the Noetherian hypothesis).
-  We also note that we can show, using the Noetherian hypothesis, that finite inductive limits, and, in particular, quotients, thus constructed in the category <fr:tex>\mathcal {C}</fr:tex> of finite preschemes over <fr:tex>S</fr:tex> are, in fact, quotients in the category of <fr:em>all</fr:em> preschemes.
-</fr:p><fr:p>
-  As we mentioned in <fr:ref
+  the fibre product of preschemes <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> corresponds to the tensor product <fr:tex
+display="inline"><![CDATA[B\otimes _A C]]></fr:tex> of corresponding algebras, and the kernel of two morphisms <fr:tex
+display="inline"><![CDATA[X\rightrightarrows  Y]]></fr:tex>, defined by two <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-algebra homomorphisms <fr:tex
+display="inline"><![CDATA[u,v\colon  C\rightrightarrows  B]]></fr:tex>, corresponds to the quotient of <fr:tex
+display="inline"><![CDATA[B]]></fr:tex> by the ideal generated by the <fr:tex
+display="inline"><![CDATA[u(v)-v(c)]]></fr:tex>, etc.
+  For finite inductive limits, it suffices to consider, on one hand, finite sums, which correspond to the ordinary product of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-algebras, and, on the other hand, cokernels of pairs of morphisms <fr:tex
+display="inline"><![CDATA[X\rightrightarrows  Y]]></fr:tex>, which correspond (as we can immediately see) to the sub-ring of <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> given by elements where the homomorphisms <fr:tex
+display="inline"><![CDATA[u,v\colon  C\rightrightarrows  B]]></fr:tex> agree (with this sub-ring being finite over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> thanks to the Noetherian hypothesis).
+  We also note that we can show, using the Noetherian hypothesis, that finite inductive limits, and, in particular, quotients, thus constructed in the category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> of finite preschemes over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> are, in fact, quotients in the category of <fr:em>all</fr:em> preschemes.</fr:p><fr:p>As we mentioned in <fr:ref
 addr="fga3.i"
 href="fga3.i.xml"
 taxon="FGA"
-number="3.I"></fr:ref>, <fr:em>there are non-effective epimorphisms in <fr:tex>\mathcal {C}</fr:tex></fr:em> (or even non-strict, which is the same, since fibre products exist).
+number="3.I" />, <fr:em>there are non-effective epimorphisms in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex></fr:em> (or even non-strict, which is the same, since fibre products exist).
   <fr:em>I do not know if equivalence relations are still effective</fr:em> if we have no flatness hypothesis.
   I have only obtained, in this direction, very partial, positive, results, that are vital for the proof of the fundamental theorem of the formal theory of modules (cf. <fr:link
-href="fga3.ii-b-theorem-1.xml"
 type="local"
+href="fga3.ii-b-theorem-1.xml"
 addr="fga3.ii-b-theorem-1">FGA 3.II, §B, Theorem 1</fr:link>).
-  We note that it is easy, in the given problem, to reduce to the case where <fr:tex>S</fr:tex> is the spectrum of a local Artinian ring, with an algebraically closed residue field.
-  But even if <fr:tex>A</fr:tex> is a field, the answer is not known.
-</fr:p><fr:p>
-  We can also consider the case of a prescheme <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex> that is no longer assumed to be finite over <fr:tex>S</fr:tex>, but by considering an equivalence relation <fr:tex>R</fr:tex> on <fr:tex>X</fr:tex> such that <fr:tex>p_1 \colon  R \to  X</fr:tex> is a finite morphism.
-  We then say that <fr:tex>R</fr:tex> is a <fr:em>finite equivalence relation</fr:em>.
-  Supposing, for simplicity, that <fr:tex>S</fr:tex> and <fr:tex>X</fr:tex> are affine (which implies that <fr:tex>R</fr:tex> is affine, so that the situation is reduced to one of pure commutative algebra), <fr:em>we do not know, even in this case, if there exists a quotient <fr:tex>X/R=Y</fr:tex>, and if the canonical morphism <fr:tex>X \to  Y</fr:tex> is finite</fr:em>.
-  (The most simple case is that where we suppose that <fr:tex>S</fr:tex> is the spectrum of a field <fr:tex>k</fr:tex>, and where <fr:tex>X</fr:tex> is the spectrum of <fr:tex>k[t]</fr:tex>, i.e. the affine line).
-  Of course, if the two problems above turn out to be true, then we can conclude that, in the situation described, <fr:tex>R</fr:tex> is effective.
-  Note that the problem of <fr:em>existence</fr:em> of a quotient <fr:tex>Y</fr:tex> and of the <fr:em>finiteness</fr:em> of <fr:tex>f \colon  X \to  Y</fr:tex> are stated in exactly the same terms if, instead of an equivalence graph in <fr:tex>X</fr:tex>, we only have an equivalence pregraph in <fr:tex>X</fr:tex>, in the sense of <fr:ref
+  We note that it is easy, in the given problem, to reduce to the case where <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a local Artinian ring, with an algebraically closed residue field.
+  But even if <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is a field, the answer is not known.</fr:p><fr:p>We can also consider the case of a prescheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that is no longer assumed to be finite over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, but by considering an equivalence relation <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[p_1\colon  R\to  X]]></fr:tex> is a finite morphism.
+  We then say that <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> is a <fr:em>finite equivalence relation</fr:em>.
+  Supposing, for simplicity, that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> are affine (which implies that <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> is affine, so that the situation is reduced to one of pure commutative algebra), <fr:em>we do not know, even in this case, if there exists a quotient <fr:tex
+display="inline"><![CDATA[X/R=Y]]></fr:tex>, and if the canonical morphism <fr:tex
+display="inline"><![CDATA[X\to  Y]]></fr:tex> is finite</fr:em>.
+  (The most simple case is that where we suppose that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, and where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is the spectrum of <fr:tex
+display="inline"><![CDATA[k[t]]]></fr:tex>, i.e. the affine line).
+  Of course, if the two problems above turn out to be true, then we can conclude that, in the situation described, <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> is effective.
+  Note that the problem of <fr:em>existence</fr:em> of a quotient <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> and of the <fr:em>finiteness</fr:em> of <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> are stated in exactly the same terms if, instead of an equivalence graph in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, we only have an equivalence pregraph in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, in the sense of <fr:ref
 addr="fga3.iii-4"
 href="fga3.iii-4.xml"
-number="4"></fr:ref>.
-</fr:p><fr:p>
-  The question of passing to the quotient by a more or less arbitrary finite equivalence relation arises in the construction of preschemes by "gluing" given preschemes <fr:tex>X_i</fr:tex> along certain closed sub-preschemes;
-  the gluing law is expressed precisely by a finite equivalence relation on the prescheme <fr:tex>X</fr:tex> given by the sum of the <fr:tex>X_i</fr:tex>.
+number="4" />.</fr:p><fr:p>The question of passing to the quotient by a more or less arbitrary finite equivalence relation arises in the construction of preschemes by "gluing" given preschemes <fr:tex
+display="inline"><![CDATA[X_i]]></fr:tex> along certain closed sub-preschemes;
+  the gluing law is expressed precisely by a finite equivalence relation on the prescheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> given by the sum of the <fr:tex
+display="inline"><![CDATA[X_i]]></fr:tex>.
   We also expect that the solutions of the problems stated here, as well as of their many variations, will be a preliminary condition for the clarification of a general technique for non-projective constructions, in the direction introduced in <fr:ref
 addr="fga3.ii"
 href="fga3.ii.xml"
 taxon="FGA"
-number="3.II"></fr:ref>.
-</fr:p><fr:p>
-  The only general positive fact known to the author is the following:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="3.II" />.</fr:p><fr:p>The only general positive fact known to the author is the following:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1715</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iii-2-proposition-2.1</fr:addr><fr:route>fga3.iii-2-proposition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.iii-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>S</fr:tex> be a locally Noetherian prescheme, <fr:tex>s</fr:tex> a point of <fr:tex>S</fr:tex>, and <fr:tex>\Omega</fr:tex> an algebraically closed extension of <fr:tex>k(s)</fr:tex>.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1758</fr:anchor><fr:addr
+type="user">fga3.iii-2-proposition-2.1</fr:addr><fr:route>fga3.iii-2-proposition-2.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>2.1</fr:number><fr:parent>fga3.iii-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> be a locally Noetherian prescheme, <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> a point of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[\Omega ]]></fr:tex> an algebraically closed extension of <fr:tex
+display="inline"><![CDATA[k(s)]]></fr:tex>.
     
-    Consider the corresponding "fibre functor" <fr:tex>F</fr:tex>, that associates, to any <fr:tex>S</fr:tex>-scheme <fr:tex>X</fr:tex> that is finite over <fr:tex>S</fr:tex>, the set of points of <fr:tex>X/S</fr:tex> with values in <fr:tex>\Omega</fr:tex>.
-    This functor (which is trivially left exact) is _right exact_, i.e. it commutes with finite inductive limits, and, in particular, with the cokernel of pairs of morphisms.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  By using this result for all the "geometric points" of <fr:tex>S</fr:tex>, we thus deduce that the "quotient" category <fr:tex>\mathcal {C}'</fr:tex> of <fr:tex>\mathcal {C}</fr:tex>, given by arguing "modulo surjective radicial morphisms" (i.e. by formally adjoining inverses for such morphisms), is a "geometric" category, i.e. it satisfies the same "finite nature" properties as the category of sets.
+    Consider the corresponding "fibre functor" <fr:tex
+display="inline"><![CDATA[F]]></fr:tex>, that associates, to any <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-scheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that is finite over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, the set of points of <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> with values in <fr:tex
+display="inline"><![CDATA[\Omega ]]></fr:tex>.
+    This functor (which is trivially left exact) is _right exact_, i.e. it commutes with finite inductive limits, and, in particular, with the cokernel of pairs of morphisms.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>By using this result for all the "geometric points" of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, we thus deduce that the "quotient" category <fr:tex
+display="inline"><![CDATA[\mathcal {C}']]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, given by arguing "modulo surjective radicial morphisms" (i.e. by formally adjoining inverses for such morphisms), is a "geometric" category, i.e. it satisfies the same "finite nature" properties as the category of sets.
   In particular, every equivalence relation is effective.
-  This implies that, if <fr:tex>R</fr:tex> is an equivalence relation on <fr:tex>X</fr:tex>, where <fr:tex>X</fr:tex> is finite over <fr:tex>S</fr:tex>, then the canonical morphism <fr:tex>R \to  X \times _Y X</fr:tex> (where <fr:tex>Y=X/R</fr:tex>) is <fr:em>radicial and surjective</fr:em> (and, in fact, a surjective closed immersion, since it is a monomorphism).
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  This implies that, if <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> is an equivalence relation on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is finite over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then the canonical morphism <fr:tex
+display="inline"><![CDATA[R\to  X\times _Y X]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[Y=X/R]]></fr:tex>) is <fr:em>radicial and surjective</fr:em> (and, in fact, a surjective closed immersion, since it is a monomorphism).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1723</fr:anchor><fr:addr>fga3.ii-c.5</fr:addr><fr:route>fga3.ii-c.5.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1759</fr:anchor><fr:addr
+type="user">fga3.ii-c.5</fr:addr><fr:route>fga3.ii-c.5.xml</fr:route><fr:title
+text="The existence theorem and the formal theory of modules › Applications to some particular cases › Extension of coverings"><fr:link
+type="local"
 href="fga3.ii-c.xml"
+addr="fga3.ii-c"
+title="The existence theorem and the formal theory of modules › Applications to some particular cases"><fr:link
 type="local"
-addr="fga3.ii-c"><fr:link
 href="fga3.ii.xml"
-type="local"
-addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Applications to some particular cases</fr:link> › Extension of coverings</fr:title><fr:number>C.5</fr:number><fr:parent>fga3.ii-c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathfrak {X}</fr:tex> be a <fr:em>formal</fr:em> Noetherian prescheme [<fr:ref
+addr="fga3.ii"
+title="The existence theorem and the formal theory of modules">The existence theorem and the formal theory of modules</fr:link> › Applications to some particular cases</fr:link> › Extension of coverings</fr:title><fr:authors /><fr:number>C.5</fr:number><fr:parent>fga3.ii-c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex> be a <fr:em>formal</fr:em> Noetherian prescheme [<fr:ref
 addr="fga2"
 href="fga2.xml"
 taxon="FGA"
-number="2"></fr:ref>], <fr:tex>U</fr:tex> an open subset of <fr:tex>\mathfrak {X}</fr:tex> defined locally by the "non-vanishing" of a section of <fr:tex>\mathscr { O } _ \mathfrak {X}</fr:tex> that is not a zero divisor (and thus large enough that every section of <fr:tex>\mathscr { O } _ \mathfrak {X}</fr:tex> over an open subset <fr:tex>V</fr:tex> that is zero on <fr:tex>U \cap  V</fr:tex> is zero).
-  (<fr:em>[Comp.]</fr:em> It is also necessary to assume that the section defining <fr:tex>U</fr:tex> is not a zero divisor not only on <fr:tex>\mathfrak {X}</fr:tex>, but also on every <fr:tex>X_n</fr:tex>.)
-  Let <fr:tex>\mathfrak {J}</fr:tex> be an "ideal of definition" for <fr:tex>\mathfrak {X}</fr:tex>, and let <fr:tex>X_n=( \mathfrak {X}, \mathscr { O } _ \mathfrak {X}/ \mathfrak {J}^{n+1})</fr:tex>, which is thus a ordinary Noetherian prescheme.
-  Then, if <fr:tex>\mathfrak {X}'</fr:tex> and <fr:tex>\mathfrak {X}''</fr:tex> are <fr:em>flat coverings</fr:em> of <fr:tex>\mathfrak {X}</fr:tex> (i.e. preschemes over <fr:tex>\mathfrak {X}</fr:tex> defined by sheaves of algebras that are coherent and locally free as sheaves of modules) that are <fr:em>unramified over <fr:tex>U</fr:tex></fr:em>, the evident map
+number="2" />], <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> an open subset of <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex> defined locally by the "non-vanishing" of a section of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_\mathfrak {X}]]></fr:tex> that is not a zero divisor (and thus large enough that every section of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_\mathfrak {X}]]></fr:tex> over an open subset <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> that is zero on <fr:tex
+display="inline"><![CDATA[U\cap  V]]></fr:tex> is zero).
+  (<fr:em>[Comp.]</fr:em> It is also necessary to assume that the section defining <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> is not a zero divisor not only on <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex>, but also on every <fr:tex
+display="inline"><![CDATA[X_n]]></fr:tex>.)
+  Let <fr:tex
+display="inline"><![CDATA[\mathfrak {J}]]></fr:tex> be an "ideal of definition" for <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[X_n=(\mathfrak {X},\mathscr {O}_\mathfrak {X}/\mathfrak {J}^{n+1})]]></fr:tex>, which is thus a ordinary Noetherian prescheme.
+  Then, if <fr:tex
+display="inline"><![CDATA[\mathfrak {X}']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathfrak {X}'']]></fr:tex> are <fr:em>flat coverings</fr:em> of <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex> (i.e. preschemes over <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex> defined by sheaves of algebras that are coherent and locally free as sheaves of modules) that are <fr:em>unramified over <fr:tex
+display="inline"><![CDATA[U]]></fr:tex></fr:em>, the evident map
   <fr:tex
-display="block">      \operatorname {Hom} _ \mathfrak {X}( \mathfrak {X}', \mathfrak {X}'')      \to   \operatorname {Hom} _{X_0}(X'_0,X''_0)   </fr:tex>
+display="block"><![CDATA[     \operatorname {Hom}_\mathfrak {X}(\mathfrak {X}',\mathfrak {X}'')     \to  \operatorname {Hom}_{X_0}(X'_0,X''_0)   ]]></fr:tex>
   is <fr:em>injective</fr:em>;
-  in particular, <fr:em>an automorphism of <fr:tex>\mathfrak {X}'</fr:tex> that induces the identity on <fr:tex>X'_0</fr:tex> is the identity</fr:em>.
+  in particular, <fr:em>an automorphism of <fr:tex
+display="inline"><![CDATA[\mathfrak {X}']]></fr:tex> that induces the identity on <fr:tex
+display="inline"><![CDATA[X'_0]]></fr:tex> is the identity</fr:em>.
   This allows us to apply the technique of descent to the situation.
   
-  We start, in particular, with a flat covering <fr:tex>X'_0</fr:tex> of <fr:tex>X_0</fr:tex>, unramified over <fr:tex>U_0</fr:tex>, and let <fr:tex>G( \mathfrak {X})</fr:tex> be the set of classes, up to isomorphism (inducing the identity on <fr:tex>X'_0</fr:tex>), of flat coverings <fr:tex>\mathfrak {X}'</fr:tex> of <fr:tex>\mathfrak {X}</fr:tex> that induce <fr:tex>X'_0</fr:tex> on <fr:tex>X_0</fr:tex> (and that are thus necessarily unramified over <fr:tex>U</fr:tex>).
-  We similarly define <fr:tex>G(V)</fr:tex> for every open subset <fr:tex>V</fr:tex> of <fr:tex>\mathfrak {X}</fr:tex>, and, more generally, <fr:tex>G( \mathfrak {Y})</fr:tex> for every formal prescheme <fr:tex>\mathfrak {Y}</fr:tex> over <fr:tex>\mathfrak {X}</fr:tex>.
+  We start, in particular, with a flat covering <fr:tex
+display="inline"><![CDATA[X'_0]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex>, unramified over <fr:tex
+display="inline"><![CDATA[U_0]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[G(\mathfrak {X})]]></fr:tex> be the set of classes, up to isomorphism (inducing the identity on <fr:tex
+display="inline"><![CDATA[X'_0]]></fr:tex>), of flat coverings <fr:tex
+display="inline"><![CDATA[\mathfrak {X}']]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex> that induce <fr:tex
+display="inline"><![CDATA[X'_0]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> (and that are thus necessarily unramified over <fr:tex
+display="inline"><![CDATA[U]]></fr:tex>).
+  We similarly define <fr:tex
+display="inline"><![CDATA[G(V)]]></fr:tex> for every open subset <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex>, and, more generally, <fr:tex
+display="inline"><![CDATA[G(\mathfrak {Y})]]></fr:tex> for every formal prescheme <fr:tex
+display="inline"><![CDATA[\mathfrak {Y}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex>.
   With this, the results of <fr:ref
 addr="fga2"
 href="fga2.xml"
 taxon="FGA"
-number="2"></fr:ref> and <fr:ref
+number="2" /> and <fr:ref
 addr="fga3.i"
 href="fga3.i.xml"
 taxon="FGA"
-number="3.I"></fr:ref> imply, first of all, the following results:
+number="3.I" /> imply, first of all, the following results:
 
   
  <html:ol
@@ -346,287 +497,553 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
  <html:li
 style="list-style-type: &quot;a. &quot;">
-      <fr:p>
-        If <fr:tex>V</fr:tex> varies amongst open subset of <fr:tex>\mathfrak {X}</fr:tex>, then the <fr:tex>G(V)</fr:tex> form a <fr:em>sheaf</fr:em> on <fr:tex>\mathfrak {X}</fr:tex>, say <fr:tex>\mathscr { G } _ \mathfrak {X}= \mathscr { G }</fr:tex>.
-        The restriction of this sheaf to <fr:tex>U</fr:tex> is the <fr:em>constant</fr:em> sheaf whose fibres consist of a single element.
-      </fr:p>
-      <fr:p>
-        More generally, describing the fibres of <fr:tex>\mathscr { G } _ \mathfrak {X}</fr:tex> is a question of complete local rings, in a precise way:
-      </fr:p>
+      <fr:p>If <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> varies amongst open subset of <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex>, then the <fr:tex
+display="inline"><![CDATA[G(V)]]></fr:tex> form a <fr:em>sheaf</fr:em> on <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex>, say <fr:tex
+display="inline"><![CDATA[\mathscr {G}_\mathfrak {X}=\mathscr {G}]]></fr:tex>.
+        The restriction of this sheaf to <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> is the <fr:em>constant</fr:em> sheaf whose fibres consist of a single element.</fr:p>
+      <fr:p>More generally, describing the fibres of <fr:tex
+display="inline"><![CDATA[\mathscr {G}_\mathfrak {X}]]></fr:tex> is a question of complete local rings, in a precise way:</fr:p>
     </html:li>
 
       
     
  <html:li
 style="list-style-type: &quot;b. &quot;">
-      For all <fr:tex>x \in \mathfrak {X}</fr:tex>, we have
+      For all <fr:tex
+display="inline"><![CDATA[x\in \mathfrak {X}]]></fr:tex>, we have
       <fr:tex
-display="block">          \mathscr { G } _x = G( \operatorname {Spec} ( \mathscr { O } _{ \mathfrak {X},x}))  \subset  G( \operatorname {Spec} ( \widehat { \mathscr { O } }_{ \mathfrak {X},x}))       </fr:tex>
-      (i.e. isomorphism classes of finite free algebras <fr:tex>B</fr:tex> over <fr:tex>\widehat { \mathscr { O } }_{ \mathfrak {X},x}</fr:tex> endowed with an isomorphism from <fr:tex>B \otimes _{ \widehat { \mathscr { O } }_{ \mathfrak {X},x}} \mathscr { O } _{X_0,x}</fr:tex> to <fr:tex>( \widehat { \mathscr { O } }'_0)_x</fr:tex>, where <fr:tex>\mathscr { O } '_0</fr:tex> is the sheaf of algebras on <fr:tex>X_0</fr:tex> that defines <fr:tex>X'_0</fr:tex>).
+display="block"><![CDATA[         \mathscr {G}_x = G(\operatorname {Spec}(\mathscr {O}_{\mathfrak {X},x})) \subset  G(\operatorname {Spec}(\widehat {\mathscr {O}}_{\mathfrak {X},x}))       ]]></fr:tex>
+      (i.e. isomorphism classes of finite free algebras <fr:tex
+display="inline"><![CDATA[B]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[\widehat {\mathscr {O}}_{\mathfrak {X},x}]]></fr:tex> endowed with an isomorphism from <fr:tex
+display="inline"><![CDATA[B\otimes _{\widehat {\mathscr {O}}_{\mathfrak {X},x}}\mathscr {O}_{X_0,x}]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[(\widehat {\mathscr {O}}'_0)_x]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathscr {O}'_0]]></fr:tex> is the sheaf of algebras on <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> that defines <fr:tex
+display="inline"><![CDATA[X'_0]]></fr:tex>).
     </html:li>
 
 
     
  <html:li
 style="list-style-type: &quot;c. &quot;">
-      We have a canonical isomorphism <fr:tex>\mathscr { G } _ \mathfrak {X}= \varprojlim \mathscr { G } _{ \mathfrak {X}_n}</fr:tex>; in other words, for every open subset <fr:tex>V</fr:tex> of <fr:tex>\mathfrak {X}</fr:tex>, we have <fr:tex>G(V)= \varprojlim  G(V_n)</fr:tex>.
+      We have a canonical isomorphism <fr:tex
+display="inline"><![CDATA[\mathscr {G}_\mathfrak {X}=\varprojlim \mathscr {G}_{\mathfrak {X}_n}]]></fr:tex>; in other words, for every open subset <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[G(V)=\varprojlim  G(V_n)]]></fr:tex>.
     </html:li>
 
 
     
  <html:li
 style="list-style-type: &quot;d. &quot;">
-      Suppose that <fr:tex>\mathfrak {X}</fr:tex> comes from an ordinary <fr:em>proper</fr:em> scheme <fr:tex>X</fr:tex> over a complete local Noetherian ring <fr:tex>\Lambda</fr:tex> that has ideal of definition <fr:tex>\mathfrak {m}</fr:tex> by taking the <fr:tex>\mathscr { J }</fr:tex>-adic completion of <fr:tex>\mathscr { O } _X</fr:tex>, where <fr:tex>\mathscr { J } = \mathfrak {m} \cdot \mathscr { O } _X</fr:tex>.
-      Then <fr:tex>G( \mathfrak {X})</fr:tex> is canonically isomorphic to the set of classes of flat coverings of the <fr:em>ordinary</fr:em> scheme <fr:tex>X</fr:tex> that are "reducible along <fr:tex>X'_0</fr:tex>".
+      Suppose that <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex> comes from an ordinary <fr:em>proper</fr:em> scheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> over a complete local Noetherian ring <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> that has ideal of definition <fr:tex
+display="inline"><![CDATA[\mathfrak {m}]]></fr:tex> by taking the <fr:tex
+display="inline"><![CDATA[\mathscr {J}]]></fr:tex>-adic completion of <fr:tex
+display="inline"><![CDATA[\mathscr {O}_X]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathscr {J}=\mathfrak {m}\cdot \mathscr {O}_X]]></fr:tex>.
+      Then <fr:tex
+display="inline"><![CDATA[G(\mathfrak {X})]]></fr:tex> is canonically isomorphic to the set of classes of flat coverings of the <fr:em>ordinary</fr:em> scheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that are "reducible along <fr:tex
+display="inline"><![CDATA[X'_0]]></fr:tex>".
     </html:li>
 
   </html:ol>
 
 
-  Figuratively speaking, we can say that (a) and (b) establish the fundamental relations between the local and global aspects of the problem; (c) gives the relations between the "finite" and "infinitesimal" aspects; and finally (d) remembers (under precise conditions) the identity between the "formal" and "algebraic" aspects.
-</fr:p><fr:p>
-  Now suppose that <fr:tex>\mathfrak {X}</fr:tex> is defined by a local complete Noetherian ring <fr:tex>\Lambda</fr:tex>, with <fr:tex>\mathscr { J } = \mathfrak {m} \cdot \mathscr { O } _X</fr:tex> (and so <fr:tex>X_0</fr:tex> is a prescheme over <fr:tex>{ \Lambda }/ \mathfrak {m}</fr:tex>).
-  For every algebra <fr:tex>A</fr:tex> that is finite over <fr:tex>\Lambda</fr:tex>, we set
+  Figuratively speaking, we can say that (a) and (b) establish the fundamental relations between the local and global aspects of the problem; (c) gives the relations between the "finite" and "infinitesimal" aspects; and finally (d) remembers (under precise conditions) the identity between the "formal" and "algebraic" aspects.</fr:p><fr:p>Now suppose that <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex> is defined by a local complete Noetherian ring <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>, with <fr:tex
+display="inline"><![CDATA[\mathscr {J}=\mathfrak {m}\cdot \mathscr {O}_X]]></fr:tex> (and so <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is a prescheme over <fr:tex
+display="inline"><![CDATA[{\Lambda }/\mathfrak {m}]]></fr:tex>).
+  For every algebra <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> that is finite over <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>, we set
   <fr:tex
-display="block">     F(A)     = G( \mathfrak {X} \times _ \Lambda  A).   </fr:tex>
-  This is a covariant functor in <fr:tex>A</fr:tex>, with values in the category of sets, and, by (c), this functor is completely determined by how it acts on Artinian algebras <fr:tex>A</fr:tex>;
+display="block"><![CDATA[     F(A)     = G(\mathfrak {X}\times _\Lambda  A).   ]]></fr:tex>
+  This is a covariant functor in <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, with values in the category of sets, and, by (c), this functor is completely determined by how it acts on Artinian algebras <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>;
   it is equivalent to say either that this functor is pro-representable, i.e. of the form
   <fr:tex
-display="block">     F(A)     =  \operatorname {Hom} _{ \text {top. } \Lambda \text {-algebras}}( \mathscr { O } ,A)   </fr:tex>
+display="block"><![CDATA[     F(A)     = \operatorname {Hom}_{\text {top. }\Lambda \text {-algebras}}(\mathscr {O},A)   ]]></fr:tex>
   
-  where <fr:tex>\mathscr { O }</fr:tex> is a topological <fr:tex>\Lambda</fr:tex> algebra of the type described in <fr:ref
+  where <fr:tex
+display="inline"><![CDATA[\mathscr {O}]]></fr:tex> is a topological <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> algebra of the type described in <fr:ref
 addr="fga3.ii-a.5"
 href="fga3.ii-a.5.xml"
-number="A.5"></fr:ref>, or that this is true when we restrict to only Artinian algebras <fr:tex>A</fr:tex>.
+number="A.5" />, or that this is true when we restrict to only Artinian algebras <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
   The combination of <fr:ref
 addr="fga3.ii-b-theorem-1"
 href="fga3.ii-b-theorem-1.xml"
 taxon="Theorem"
-number="1"></fr:ref> and <fr:ref
+number="1" /> and <fr:ref
 addr="fga3.ii-b-theorem-2"
 href="fga3.ii-b-theorem-2.xml"
 taxon="Theorem"
-number="2"></fr:ref> then effectively implies:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="2" /> then effectively implies:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1722</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.5-proposition-5.1</fr:addr><fr:route>fga3.ii-c.5-proposition-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.ii-c.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    The above functor is pro-representable.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  Of course, by (a), if <fr:tex>U= \mathfrak {X}</fr:tex>, then <fr:tex>G( \mathfrak {Y})</fr:tex> consists of a single element for all <fr:tex>\mathfrak {Y}</fr:tex> over <fr:tex>\mathfrak {X}</fr:tex>, and the functor <fr:tex>F</fr:tex> is then not very interesting (we will have <fr:tex>\mathscr { O } = \Lambda</fr:tex>).
-  It seems that, in practically every other case, the topological local ring <fr:tex>\mathscr { O }</fr:tex> <fr:em>is not Noetherian</fr:em>.
-  Its existence, however, shows, in a striking manner, the <fr:em>"continuous" nature</fr:em> of the set <fr:tex>G( \mathfrak {X})</fr:tex> of solutions (corresponding intuitively to the fact that there is a "continuous" choice in the way in which the ramification spreads when we take an extension of <fr:tex>X'_0</fr:tex>).
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1765</fr:anchor><fr:addr
+type="user">fga3.ii-c.5-proposition-5.1</fr:addr><fr:route>fga3.ii-c.5-proposition-5.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>5.1</fr:number><fr:parent>fga3.ii-c.5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The above functor is pro-representable.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>Of course, by (a), if <fr:tex
+display="inline"><![CDATA[U=\mathfrak {X}]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[G(\mathfrak {Y})]]></fr:tex> consists of a single element for all <fr:tex
+display="inline"><![CDATA[\mathfrak {Y}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex>, and the functor <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is then not very interesting (we will have <fr:tex
+display="inline"><![CDATA[\mathscr {O}=\Lambda ]]></fr:tex>).
+  It seems that, in practically every other case, the topological local ring <fr:tex
+display="inline"><![CDATA[\mathscr {O}]]></fr:tex> <fr:em>is not Noetherian</fr:em>.
+  Its existence, however, shows, in a striking manner, the <fr:em>"continuous" nature</fr:em> of the set <fr:tex
+display="inline"><![CDATA[G(\mathfrak {X})]]></fr:tex> of solutions (corresponding intuitively to the fact that there is a "continuous" choice in the way in which the ramification spreads when we take an extension of <fr:tex
+display="inline"><![CDATA[X'_0]]></fr:tex>).
   We will compare this result with the point of view of J.-P. Serre [@Ser1958] via local class field theory, drawing attention as well to the <fr:em>continuous</fr:em> character of the topological Galois group of the maximal abelian extension of a "geometric" local field, with the dual group (in the sense of Pontrjagin) appearing as an inductive limit of algebraic (or at least quasi-algebraic) groups;
   here as well, the classification of extensions is given by infinite-dimensional "varieties".
-  We can also take, in the above, <fr:tex>\mathfrak {X}</fr:tex> to be the formal spectrum of a complete local ring (of which <fr:tex>\Lambda</fr:tex> will be, for example, a Cohen subring), and we might hope that the results of this section can be used in the study of extensions of a local complete ring of dimension <fr:tex>&gt;1</fr:tex>.
-  Just as much in the local case as in the global case, they might allow us to formulate precise relations between the phenomena of higher ramification and phenomena in characteristic <fr:tex>0</fr:tex> (approachable via a transcendental way).
+  We can also take, in the above, <fr:tex
+display="inline"><![CDATA[\mathfrak {X}]]></fr:tex> to be the formal spectrum of a complete local ring (of which <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> will be, for example, a Cohen subring), and we might hope that the results of this section can be used in the study of extensions of a local complete ring of dimension <fr:tex
+display="inline"><![CDATA[>1]]></fr:tex>.
+  Just as much in the local case as in the global case, they might allow us to formulate precise relations between the phenomena of higher ramification and phenomena in characteristic <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> (approachable via a transcendental way).
   In any case, it is the preliminary analysis of <fr:ref
 addr="fga3.ii-c.5-proposition-5.1"
 href="fga3.ii-c.5-proposition-5.1.xml"
 taxon="Proposition"
-number="5.1"></fr:ref> that allows us to extend the methods described in <fr:ref
+number="5.1" /> that allows us to extend the methods described in <fr:ref
 addr="fga2"
 href="fga2.xml"
 taxon="FGA"
-number="2"></fr:ref> for the study of the fundamental group to the "tamely ramified" case, and to resolve, by a transcendental way, the "problem of three points".
-</fr:p><fr:p>
-  To finish, we note that the situation simplifies if <fr:tex>X_0</fr:tex> is of dimension <fr:tex>1</fr:tex>;
-  then, by (a) and (b), <fr:tex>G( \mathfrak {X})</fr:tex> can be identified with <fr:tex>\prod _i G( \operatorname {Spec} ( \mathscr { O } _{ \mathfrak {X},x_i}))</fr:tex>, where the <fr:tex>x_i</fr:tex> are the points of <fr:tex>X_0 \setminus  U</fr:tex>:
+number="2" /> for the study of the fundamental group to the "tamely ramified" case, and to resolve, by a transcendental way, the "problem of three points".</fr:p><fr:p>To finish, we note that the situation simplifies if <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is of dimension <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>;
+  then, by (a) and (b), <fr:tex
+display="inline"><![CDATA[G(\mathfrak {X})]]></fr:tex> can be identified with <fr:tex
+display="inline"><![CDATA[\prod _i G(\operatorname {Spec}(\mathscr {O}_{\mathfrak {X},x_i}))]]></fr:tex>, where the <fr:tex
+display="inline"><![CDATA[x_i]]></fr:tex> are the points of <fr:tex
+display="inline"><![CDATA[X_0\setminus  U]]></fr:tex>:
   <fr:em>we can take arbitrary "local" extensions at the ramification points</fr:em>.
-  Further, if <fr:tex>X_0</fr:tex> is normal, then we note that the formal scheme of modules guaranteed by <fr:ref
+  Further, if <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is normal, then we note that the formal scheme of modules guaranteed by <fr:ref
 addr="fga3.ii-c.5-proposition-5.1"
 href="fga3.ii-c.5-proposition-5.1.xml"
 taxon="Proposition"
-number="5.1"></fr:ref> is <fr:em>simple</fr:em> over <fr:tex>\operatorname {Spec} ( \Lambda )</fr:tex>.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="5.1" /> is <fr:em>simple</fr:em> over <fr:tex
+display="inline"><![CDATA[\operatorname {Spec}(\Lambda )]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1724</fr:anchor><fr:addr>fga3.ii-c.1</fr:addr><fr:route>fga3.ii-c.1.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1766</fr:anchor><fr:addr
+type="user">fga3.ii-c.1</fr:addr><fr:route>fga3.ii-c.1.xml</fr:route><fr:title
+text="The existence theorem and the formal theory of modules › Applications to some particular cases › General remarks on functors represented by preschemes"><fr:link
+type="local"
 href="fga3.ii-c.xml"
+addr="fga3.ii-c"
+title="The existence theorem and the formal theory of modules › Applications to some particular cases"><fr:link
 type="local"
-addr="fga3.ii-c"><fr:link
 href="fga3.ii.xml"
-type="local"
-addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Applications to some particular cases</fr:link> › General remarks on functors represented by preschemes</fr:title><fr:number>C.1</fr:number><fr:parent>fga3.ii-c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>S</fr:tex> be a locally Noetherian prescheme.
+addr="fga3.ii"
+title="The existence theorem and the formal theory of modules">The existence theorem and the formal theory of modules</fr:link> › Applications to some particular cases</fr:link> › General remarks on functors represented by preschemes</fr:title><fr:authors /><fr:number>C.1</fr:number><fr:parent>fga3.ii-c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> be a locally Noetherian prescheme.
   
-  A prescheme <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex> is said to be <fr:em>locally of finite type</fr:em> over <fr:tex>S</fr:tex> if, for all <fr:tex>x \in  X</fr:tex> that project to <fr:tex>y \in  Y</fr:tex>, there exists an affine neighbourhood of <fr:tex>y</fr:tex> of ring <fr:tex>A</fr:tex>, and an affine neighbourhood of <fr:tex>x</fr:tex> (over the aforementioned affine neighbourhood of <fr:tex>y</fr:tex>) of ring <fr:tex>B</fr:tex>, such that <fr:tex>B</fr:tex> is an <fr:tex>A</fr:tex>-algebra of finite type.
-  There are many important examples of preschemes locally of finite type over <fr:tex>S</fr:tex>, that are not of finite type over <fr:tex>S</fr:tex>, given by solutions of classical universal problems;
+  A prescheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is said to be <fr:em>locally of finite type</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> if, for all <fr:tex
+display="inline"><![CDATA[x\in  X]]></fr:tex> that project to <fr:tex
+display="inline"><![CDATA[y\in  Y]]></fr:tex>, there exists an affine neighbourhood of <fr:tex
+display="inline"><![CDATA[y]]></fr:tex> of ring <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, and an affine neighbourhood of <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> (over the aforementioned affine neighbourhood of <fr:tex
+display="inline"><![CDATA[y]]></fr:tex>) of ring <fr:tex
+display="inline"><![CDATA[B]]></fr:tex>, such that <fr:tex
+display="inline"><![CDATA[B]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-algebra of finite type.
+  There are many important examples of preschemes locally of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, that are not of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, given by solutions of classical universal problems;
   thus it is important to be able to consider the Picard scheme of a curve as a union of infinitely-many connected components (that we must avoid confusing with the connected component of the identity element, i.e. the "Picard variety").
-  It is thus sometimes useful to place ourselves in the category <fr:tex>\mathcal {C}</fr:tex> of preschemes locally of finite type over <fr:tex>S</fr:tex>, in order to study the question of representability of a contravariant functor <fr:tex>F</fr:tex>.
-  <fr:em>The main goal of these articles is to develop a general technique that allows us to recognise when such a functor <fr:tex>F</fr:tex> is representable, and to study the properties of the corresponding <fr:tex>S</fr:tex>-prescheme <fr:tex>X</fr:tex> by means of the properties of <fr:tex>F</fr:tex>.</fr:em>
-  We note in passing that, in this study, we find non-pathological examples of preschemes over <fr:tex>S</fr:tex> that are not separated over <fr:tex>S</fr:tex>, notably as "Picard preschemes" of excellent <fr:tex>S</fr:tex>-schemes;
-  we must thus refrain from banishing preschemes that are not schemes from algebraic geometry.
-</fr:p><fr:p>
-  Let <fr:tex>X</fr:tex> be a prescheme locally of finite type over <fr:tex>S</fr:tex>, and let
+  It is thus sometimes useful to place ourselves in the category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> of preschemes locally of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, in order to study the question of representability of a contravariant functor <fr:tex
+display="inline"><![CDATA[F]]></fr:tex>.
+  <fr:em>The main goal of these articles is to develop a general technique that allows us to recognise when such a functor <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is representable, and to study the properties of the corresponding <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-prescheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> by means of the properties of <fr:tex
+display="inline"><![CDATA[F]]></fr:tex>.</fr:em>
+  We note in passing that, in this study, we find non-pathological examples of preschemes over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that are not separated over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, notably as "Picard preschemes" of excellent <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-schemes;
+  we must thus refrain from banishing preschemes that are not schemes from algebraic geometry.</fr:p><fr:p>Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a prescheme locally of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and let
   <fr:tex
-display="block">     F \colon  Y  \mapsto   \operatorname {Hom} _S(Y,X)   </fr:tex>
+display="block"><![CDATA[     F\colon  Y \mapsto  \operatorname {Hom}_S(Y,X)   ]]></fr:tex>
   be the associated contravariant functor.
-  We can consider the restriction <fr:tex>F_0</fr:tex> of <fr:tex>F</fr:tex> to the subcategory <fr:tex>\mathcal {C}_0</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> consisting of preschemes <fr:tex>Y</fr:tex> over <fr:tex>S</fr:tex> that are Artinian and finite over <fr:tex>S</fr:tex>:
-  if <fr:tex>S= \operatorname {Spec} ( \Lambda )</fr:tex>, then <fr:tex>\mathcal {C}_0</fr:tex> is the category dual to the category of Artinian <fr:tex>\Gamma</fr:tex>-algebras considered in <fr:ref
+  We can consider the restriction <fr:tex
+display="inline"><![CDATA[F_0]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> to the subcategory <fr:tex
+display="inline"><![CDATA[\mathcal {C}_0]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> consisting of preschemes <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that are Artinian and finite over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>:
+  if <fr:tex
+display="inline"><![CDATA[S=\operatorname {Spec}(\Lambda )]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\mathcal {C}_0]]></fr:tex> is the category dual to the category of Artinian <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex>-algebras considered in <fr:ref
 addr="fga3.ii-b"
 href="fga3.ii-b.xml"
-number="B"></fr:ref>.
-  If <fr:tex>Y= \operatorname {Spec} (A)</fr:tex>, where <fr:tex>A</fr:tex> is a <fr:em>local</fr:em> Artinian ring, then <fr:tex>Y</fr:tex> consists of a single point <fr:tex>y</fr:tex> living above a closed point <fr:tex>s</fr:tex> of <fr:tex>S</fr:tex>, and an <fr:tex>S</fr:tex>-homomorphism from <fr:tex>Y</fr:tex> to <fr:tex>X</fr:tex> (i.e. an element of <fr:tex>F(Y)</fr:tex>) is defined by the data of a point <fr:tex>x \in  X</fr:tex> over <fr:tex>s</fr:tex>, along with an <fr:tex>\mathscr { O } _s</fr:tex>-homomorphism from <fr:tex>\mathscr { O } _x</fr:tex> to <fr:tex>A</fr:tex>.
-  If there exists such a homomorphism, then <fr:tex>x</fr:tex> is necessarily a closed point of <fr:tex>X</fr:tex> (since its residue field is algebraic over the residue field of <fr:tex>s</fr:tex>).
-  This thus shows that <fr:em>the restriction <fr:tex>F_0</fr:tex> of <fr:tex>F</fr:tex> to "Artinian <fr:tex>Y</fr:tex>-algebras" is pro-representable, and is represented by the topological <fr:tex>Y</fr:tex>-algebra whose local components are the completions <fr:tex>\widehat { \mathscr { O } _x}</fr:tex> of the local rings of <fr:tex>X</fr:tex> at the points <fr:tex>x</fr:tex> of <fr:tex>X</fr:tex> that are closed and live above closed points of <fr:tex>Y</fr:tex></fr:em>.
-  This shows that only knowing <fr:tex>F_0</fr:tex> gives precise information about the structure of <fr:tex>X</fr:tex> (that is, the structure of the completions of its local rings at the aforementioned points).
+number="B" />.
+  If <fr:tex
+display="inline"><![CDATA[Y=\operatorname {Spec}(A)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is a <fr:em>local</fr:em> Artinian ring, then <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> consists of a single point <fr:tex
+display="inline"><![CDATA[y]]></fr:tex> living above a closed point <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and an <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-homomorphism from <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> (i.e. an element of <fr:tex
+display="inline"><![CDATA[F(Y)]]></fr:tex>) is defined by the data of a point <fr:tex
+display="inline"><![CDATA[x\in  X]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>, along with an <fr:tex
+display="inline"><![CDATA[\mathscr {O}_s]]></fr:tex>-homomorphism from <fr:tex
+display="inline"><![CDATA[\mathscr {O}_x]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
+  If there exists such a homomorphism, then <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is necessarily a closed point of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> (since its residue field is algebraic over the residue field of <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>).
+  This thus shows that <fr:em>the restriction <fr:tex
+display="inline"><![CDATA[F_0]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> to "Artinian <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>-algebras" is pro-representable, and is represented by the topological <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>-algebra whose local components are the completions <fr:tex
+display="inline"><![CDATA[\widehat {\mathscr {O}_x}]]></fr:tex> of the local rings of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> at the points <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that are closed and live above closed points of <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex></fr:em>.
+  This shows that only knowing <fr:tex
+display="inline"><![CDATA[F_0]]></fr:tex> gives precise information about the structure of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> (that is, the structure of the completions of its local rings at the aforementioned points).
   
-  We note that, even in the case where <fr:tex>S</fr:tex> is the spectrum of an algebraically closed field, it is only thanks to the systematic consideration of "varieties" <fr:tex>Y</fr:tex> such that <fr:tex>\mathscr { O } _Y</fr:tex> may admit nilpotent elements (and, in particular, working with the spectra of local Artinian rings) that we can arrive at the "good formulation" of classical universal problems, and understand the "infinitesimal" aspect.
-</fr:p><fr:p>
-  If we start with a given functor <fr:tex>F</fr:tex>, and we want to know whether or not it is representable, then studying the functor <fr:tex>F_0</fr:tex> (using <fr:ref
+  We note that, even in the case where <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of an algebraically closed field, it is only thanks to the systematic consideration of "varieties" <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\mathscr {O}_Y]]></fr:tex> may admit nilpotent elements (and, in particular, working with the spectra of local Artinian rings) that we can arrive at the "good formulation" of classical universal problems, and understand the "infinitesimal" aspect.</fr:p><fr:p>If we start with a given functor <fr:tex
+display="inline"><![CDATA[F]]></fr:tex>, and we want to know whether or not it is representable, then studying the functor <fr:tex
+display="inline"><![CDATA[F_0]]></fr:tex> (using <fr:ref
 addr="fga3.ii-b-theorem-1"
 href="fga3.ii-b-theorem-1.xml"
 taxon="Theorem"
-number="1"></fr:ref> and <fr:ref
+number="1" /> and <fr:ref
 addr="fga3.ii-b-theorem-2"
 href="fga3.ii-b-theorem-2.xml"
 taxon="Theorem"
-number="2"></fr:ref>) will give quasi-complete hints;
-  either, as is often the case (by simply testing, for example, the nature of the sets <fr:tex>F(I_K, \xi )</fr:tex> and their functorial behaviour, cf. <fr:ref
+number="2" />) will give quasi-complete hints;
+  either, as is often the case (by simply testing, for example, the nature of the sets <fr:tex
+display="inline"><![CDATA[F(I_K,\xi )]]></fr:tex> and their functorial behaviour, cf. <fr:ref
 addr="fga3.ii-a"
 href="fga3.ii-a.xml"
-number="A"></fr:ref>), <fr:tex>F_0</fr:tex> is already not pro-representable (which explains the failure of attempts made up until now to define varieties of modules in a reasonably natural way for the classification of vector bundles of rank <fr:tex>&gt;1</fr:tex>);
-  or we might be able to show that <fr:tex>F_0</fr:tex> is indeed representable, but that that vector spaces <fr:tex>F(I_K, \xi )</fr:tex> are not of finite dimension, in which case we must be content with the "formal" solution;
-  or it could be the case that <fr:tex>F_0</fr:tex> is indeed representable by a product of complete Noetherian local rings, which gives very strong assumptions for <fr:tex>F</fr:tex> itself to be representable, and, combined with the analogous properties (but of a more global nature) that we will later develop, will in all likelihood suffice to imply that it is indeed so.
+number="A" />), <fr:tex
+display="inline"><![CDATA[F_0]]></fr:tex> is already not pro-representable (which explains the failure of attempts made up until now to define varieties of modules in a reasonably natural way for the classification of vector bundles of rank <fr:tex
+display="inline"><![CDATA[>1]]></fr:tex>);
+  or we might be able to show that <fr:tex
+display="inline"><![CDATA[F_0]]></fr:tex> is indeed representable, but that that vector spaces <fr:tex
+display="inline"><![CDATA[F(I_K,\xi )]]></fr:tex> are not of finite dimension, in which case we must be content with the "formal" solution;
+  or it could be the case that <fr:tex
+display="inline"><![CDATA[F_0]]></fr:tex> is indeed representable by a product of complete Noetherian local rings, which gives very strong assumptions for <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> itself to be representable, and, combined with the analogous properties (but of a more global nature) that we will later develop, will in all likelihood suffice to imply that it is indeed so.
   Finally, we come across interesting geometric problems (see <fr:ref
 addr="fga3.ii-c.4"
 href="fga3.ii-c.4.xml"
-number="C.4"></fr:ref> and <fr:ref
+number="C.4" /> and <fr:ref
 addr="fga3.ii-c.5"
 href="fga3.ii-c.5.xml"
-number="C.5"></fr:ref> below) where we have only the functor <fr:tex>F_0</fr:tex> (not coming from any "global" functor <fr:tex>F</fr:tex>), and where we will consider ourselves content if we can associate to it a "formal scheme of modules".
-</fr:p><fr:p>
-  To finish these generalities, we note how the theory of schemes explains some apparent anomalies, such as the Igusa surface <fr:tex>V</fr:tex> whose "Picard variety" <fr:tex>P</fr:tex> consists of a single point, and for which, however, <fr:tex>\operatorname {H} ^1(V, \mathscr { O } _V) \neq0</fr:tex>;
-  in this case, <fr:tex>P</fr:tex> is a non-trivial "purely infinitesimal" group, i.e. defined by a local algebra <fr:tex>\mathscr { O }</fr:tex> of finite rank over the base field <fr:tex>k</fr:tex> and endowed with a diagonal map corresponding to the multiplicative structure of <fr:tex>P</fr:tex>;
-  if <fr:tex>\mathfrak {m}</fr:tex> is the maximal ideal of <fr:tex>\mathscr { O }</fr:tex>, then the dual of <fr:tex>\mathfrak {m}/ \mathfrak {m}^2</fr:tex> is canonically isomorphic to <fr:tex>\operatorname {H} ^1(V, \mathscr { O } _V)</fr:tex> (cf. <fr:ref
+number="C.5" /> below) where we have only the functor <fr:tex
+display="inline"><![CDATA[F_0]]></fr:tex> (not coming from any "global" functor <fr:tex
+display="inline"><![CDATA[F]]></fr:tex>), and where we will consider ourselves content if we can associate to it a "formal scheme of modules".</fr:p><fr:p>To finish these generalities, we note how the theory of schemes explains some apparent anomalies, such as the Igusa surface <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> whose "Picard variety" <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> consists of a single point, and for which, however, <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(V,\mathscr {O}_V)\neq 0]]></fr:tex>;
+  in this case, <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> is a non-trivial "purely infinitesimal" group, i.e. defined by a local algebra <fr:tex
+display="inline"><![CDATA[\mathscr {O}]]></fr:tex> of finite rank over the base field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> and endowed with a diagonal map corresponding to the multiplicative structure of <fr:tex
+display="inline"><![CDATA[P]]></fr:tex>;
+  if <fr:tex
+display="inline"><![CDATA[\mathfrak {m}]]></fr:tex> is the maximal ideal of <fr:tex
+display="inline"><![CDATA[\mathscr {O}]]></fr:tex>, then the dual of <fr:tex
+display="inline"><![CDATA[\mathfrak {m}/\mathfrak {m}^2]]></fr:tex> is canonically isomorphic to <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(V,\mathscr {O}_V)]]></fr:tex> (cf. <fr:ref
 addr="fga3.ii-c.3"
 href="fga3.ii-c.3.xml"
-number="C.3"></fr:ref> below).
-  It is only when the Picard group is an algebraic group in the classical sense (i.e. simple over the base field <fr:tex>k</fr:tex>) that the dimension of <fr:tex>\operatorname {H} ^1(V, \mathscr { O } _V)</fr:tex> (which is always equal to that of <fr:tex>\mathfrak {m}/ \mathfrak {m}^2</fr:tex>) is equal to that of the Picard group.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="C.3" /> below).
+  It is only when the Picard group is an algebraic group in the classical sense (i.e. simple over the base field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>) that the dimension of <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(V,\mathscr {O}_V)]]></fr:tex> (which is always equal to that of <fr:tex
+display="inline"><![CDATA[\mathfrak {m}/\mathfrak {m}^2]]></fr:tex>) is equal to that of the Picard group.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1725</fr:anchor><fr:addr>fga3.ii-c.2</fr:addr><fr:route>fga3.ii-c.2.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1767</fr:anchor><fr:addr
+type="user">fga3.ii-c.2</fr:addr><fr:route>fga3.ii-c.2.xml</fr:route><fr:title
+text="The existence theorem and the formal theory of modules › Applications to some particular cases › The schemes {{Hom}}_S(X,Y), _{X/S}Z, {{Aut}}(X), etc."><fr:link
+type="local"
 href="fga3.ii-c.xml"
+addr="fga3.ii-c"
+title="The existence theorem and the formal theory of modules › Applications to some particular cases"><fr:link
 type="local"
-addr="fga3.ii-c"><fr:link
 href="fga3.ii.xml"
-type="local"
-addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Applications to some particular cases</fr:link> › The schemes <fr:tex>\underline { \operatorname {Hom}}_S(X,Y)</fr:tex>, <fr:tex>\prod _{X/S}Z</fr:tex>, <fr:tex>\underline { \operatorname {Aut}}(X)</fr:tex>, etc.</fr:title><fr:number>C.2</fr:number><fr:parent>fga3.ii-c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> be preschemes over <fr:tex>S</fr:tex>;
+addr="fga3.ii"
+title="The existence theorem and the formal theory of modules">The existence theorem and the formal theory of modules</fr:link> › Applications to some particular cases</fr:link> › The schemes <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Hom}}_S(X,Y)]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\prod _{X/S}Z]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Aut}}(X)]]></fr:tex>, etc.</fr:title><fr:authors /><fr:number>C.2</fr:number><fr:parent>fga3.ii-c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> be preschemes over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>;
   
-  for every prescheme <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, let <fr:tex>X_T=X \times _S T</fr:tex> and <fr:tex>Y_T=Y \times _S T</fr:tex>, and consider the set
+  for every prescheme <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, let <fr:tex
+display="inline"><![CDATA[X_T=X\times _S T]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y_T=Y\times _S T]]></fr:tex>, and consider the set
   <fr:tex
-display="block">     F(T)     =  \operatorname {Hom} _T(X_T,Y_T)     =  \operatorname {Hom} _S(X_T,Y)     =  \operatorname {Hom} _S(X \times _S T,Y)   </fr:tex>
-  as a contravariant functor in <fr:tex>T</fr:tex>.
-  If it is representable, then we denote by <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex> the prescheme over <fr:tex>S</fr:tex> that represents it, and we then have a functorial isomorphism
+display="block"><![CDATA[     F(T)     = \operatorname {Hom}_T(X_T,Y_T)     = \operatorname {Hom}_S(X_T,Y)     = \operatorname {Hom}_S(X\times _S T,Y)   ]]></fr:tex>
+  as a contravariant functor in <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>.
+  If it is representable, then we denote by <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Hom}}_S(X,Y)]]></fr:tex> the prescheme over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that represents it, and we then have a functorial isomorphism
   <fr:tex
-display="block">      \operatorname {Hom} _S(T, \underline { \operatorname {Hom} } _S(X,Y))  \xrightarrow { \sim }   \operatorname {Hom} _S(T \times _S X,Y).   </fr:tex>
-  There are variants of this universal problem, the solutions to which can be summarised as follows: a prescheme of <fr:em><fr:tex>S</fr:tex>-automorphisms of</fr:em> an <fr:tex>S</fr:tex>-prescheme <fr:tex>X</fr:tex> (which will be a prescheme in <fr:em>groups</fr:em>), a prescheme of <fr:em><fr:tex>S</fr:tex>-homomorphisms</fr:em> from an <fr:tex>S</fr:tex>-prescheme in <fr:em>groups</fr:em> to another (which will be a prescheme in commutative groups if the latter scheme in groups is commutative), etc.
-  We can also generalise the definition of <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex> by considering a prescheme <fr:tex>Z</fr:tex> over the prescheme <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, and the functor
+display="block"><![CDATA[     \operatorname {Hom}_S(T,\underline {\operatorname {Hom}}_S(X,Y)) \xrightarrow {\sim } \operatorname {Hom}_S(T\times _S X,Y).   ]]></fr:tex>
+  There are variants of this universal problem, the solutions to which can be summarised as follows: a prescheme of <fr:em><fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-automorphisms of</fr:em> an <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-prescheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> (which will be a prescheme in <fr:em>groups</fr:em>), a prescheme of <fr:em><fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-homomorphisms</fr:em> from an <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-prescheme in <fr:em>groups</fr:em> to another (which will be a prescheme in commutative groups if the latter scheme in groups is commutative), etc.
+  We can also generalise the definition of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Hom}}_S(X,Y)]]></fr:tex> by considering a prescheme <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> over the prescheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and the functor
   <fr:tex
-display="block">     F(T)     =  \operatorname {Hom} _{X_T}(X_T,Z_T)   </fr:tex>
-  (the set of "sections" of <fr:tex>Z_T</fr:tex> over <fr:tex>X_T</fr:tex>);
-  if this functor is representable, then the <fr:tex>S</fr:tex>-prescheme that represents it will be denoted by <fr:tex>\Pi _{X/S}Z</fr:tex>, and we will thus have, by definition, a functorial isomorphism
+display="block"><![CDATA[     F(T)     = \operatorname {Hom}_{X_T}(X_T,Z_T)   ]]></fr:tex>
+  (the set of "sections" of <fr:tex
+display="inline"><![CDATA[Z_T]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[X_T]]></fr:tex>);
+  if this functor is representable, then the <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-prescheme that represents it will be denoted by <fr:tex
+display="inline"><![CDATA[\Pi _{X/S}Z]]></fr:tex>, and we will thus have, by definition, a functorial isomorphism
   <fr:tex
-display="block">      \operatorname {Hom} _S(T, \Pi _{X/S}Z)     =  \operatorname {Hom} _{X_T}(X_T,Z_T).   </fr:tex>
-  Setting <fr:tex>Z=Y \times _S X</fr:tex>, we recover <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex>.
+display="block"><![CDATA[     \operatorname {Hom}_S(T,\Pi _{X/S}Z)     = \operatorname {Hom}_{X_T}(X_T,Z_T).   ]]></fr:tex>
+  Setting <fr:tex
+display="inline"><![CDATA[Z=Y\times _S X]]></fr:tex>, we recover <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Hom}}_S(X,Y)]]></fr:tex>.
   From these definitions follows a formula for the new preschemes thus introduced that is as trivial as it is useful, that we will not give here (given that it holds in every category where products and fibred products exist).
-  More serious is the question of <fr:em>existence</fr:em> of schemes of the type <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex>.
-  We note first of all that, for fixed <fr:tex>X</fr:tex>, <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex> (resp. <fr:tex>\Pi _{X/S}Z</fr:tex>) can only exist for all <fr:tex>Y</fr:tex> over <fr:tex>S</fr:tex> (resp. for all <fr:tex>Z</fr:tex> over <fr:tex>X</fr:tex>) if <fr:tex>X</fr:tex> is <fr:em>flat</fr:em> over <fr:tex>S</fr:tex>.
-  Furthermore, we can convince ourselves that it is not reasonable to expect the existence of a solution, for general enough <fr:tex>Y</fr:tex>, except in the case where <fr:tex>X</fr:tex> is further <fr:em>proper</fr:em> over <fr:tex>S</fr:tex>.
-  It seems, however, that these conditions are sufficient for the existence of <fr:tex>\underline { \operatorname {Hom} } _S(X,Y)</fr:tex> and <fr:tex>\Pi _{X/S}Z</fr:tex>, with the condition that, if necessary, we make some sort of "quasi-projective" hypothesis on <fr:tex>Y/S</fr:tex> (resp. <fr:tex>Z/X</fr:tex>);
-  this is what we can verify anyway in numerous cases (for example, when <fr:tex>Y</fr:tex> is <fr:em>affine</fr:em> over <fr:tex>S</fr:tex>, or, by direct elementary constructions, when <fr:tex>X</fr:tex> is <fr:em>finite</fr:em> over <fr:tex>S</fr:tex>).
+  More serious is the question of <fr:em>existence</fr:em> of schemes of the type <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Hom}}_S(X,Y)]]></fr:tex>.
+  We note first of all that, for fixed <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Hom}}_S(X,Y)]]></fr:tex> (resp. <fr:tex
+display="inline"><![CDATA[\Pi _{X/S}Z]]></fr:tex>) can only exist for all <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> (resp. for all <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>) if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is <fr:em>flat</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+  Furthermore, we can convince ourselves that it is not reasonable to expect the existence of a solution, for general enough <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>, except in the case where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is further <fr:em>proper</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+  It seems, however, that these conditions are sufficient for the existence of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Hom}}_S(X,Y)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\Pi _{X/S}Z]]></fr:tex>, with the condition that, if necessary, we make some sort of "quasi-projective" hypothesis on <fr:tex
+display="inline"><![CDATA[Y/S]]></fr:tex> (resp. <fr:tex
+display="inline"><![CDATA[Z/X]]></fr:tex>);
+  this is what we can verify anyway in numerous cases (for example, when <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is <fr:em>affine</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, or, by direct elementary constructions, when <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is <fr:em>finite</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>).
   Then <fr:ref
 addr="fga3.ii-b-theorem-1"
 href="fga3.ii-b-theorem-1.xml"
 taxon="Theorem"
-number="1"></fr:ref> and <fr:ref
+number="1" /> and <fr:ref
 addr="fga3.ii-b-theorem-2"
 href="fga3.ii-b-theorem-2.xml"
 taxon="Theorem"
-number="2"></fr:ref> give:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="2" /> give:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1702</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.2-proposition-2.1</fr:addr><fr:route>fga3.ii-c.2-proposition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\Lambda</fr:tex> be a Noetherian ring, and <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> arbitrary preschemes over <fr:tex>\Lambda</fr:tex>.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1745</fr:anchor><fr:addr
+type="user">fga3.ii-c.2-proposition-2.1</fr:addr><fr:route>fga3.ii-c.2-proposition-2.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>2.1</fr:number><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> be a Noetherian ring, and <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> arbitrary preschemes over <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>.
     Consider the functor
     <fr:tex
-display="block">       F(A)       =  \operatorname {Hom} _A(X_A,Y_A)     </fr:tex>
-    on the category <fr:tex>\mathcal {C}_0</fr:tex> of Artinian <fr:tex>\Lambda</fr:tex>-algebras.
-    If <fr:tex>X</fr:tex> is flat over <fr:tex>\Lambda</fr:tex>, then this functor is pro-representable.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  Furthermore, we can show that, for all <fr:tex>A \in \mathcal {C}_0</fr:tex> and all <fr:tex>\xi \in  F(A)</fr:tex>, we have a canonical isomorphism
+display="block"><![CDATA[       F(A)       = \operatorname {Hom}_A(X_A,Y_A)     ]]></fr:tex>
+    on the category <fr:tex
+display="inline"><![CDATA[\mathcal {C}_0]]></fr:tex> of Artinian <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>-algebras.
+    If <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is flat over <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>, then this functor is pro-representable.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>Furthermore, we can show that, for all <fr:tex
+display="inline"><![CDATA[A\in \mathcal {C}_0]]></fr:tex> and all <fr:tex
+display="inline"><![CDATA[\xi \in  F(A)]]></fr:tex>, we have a canonical isomorphism
   <fr:tex
-display="block">     F(I_A, \xi )     =  \operatorname {H} ^1 \Big (X_A, \underline { \operatorname {Hom} } _{ \mathscr { O } _{X_A}} \big ( \xi ^*( \Omega _{Y_A/A}^1), \mathscr { O } _{X_A} \big ) \Big )   </fr:tex>
-  where <fr:tex>\Omega _{Y_A/A}^1</fr:tex> is the sheaf of Kähler <fr:tex>1</fr:tex>-differentials of <fr:tex>Y_A</fr:tex> with respect to <fr:tex>A</fr:tex>.
-  Taking <fr:tex>A</fr:tex> to be a field, we find, using <fr:link
-href="fga3.ii-a.5-proposition-5.1.xml"
+display="block"><![CDATA[     F(I_A,\xi )     = \operatorname {H}^1\Big (X_A,\underline {\operatorname {Hom}}_{\mathscr {O}_{X_A}}\big (\xi ^*(\Omega _{Y_A/A}^1),\mathscr {O}_{X_A}\big )\Big )   ]]></fr:tex>
+  where <fr:tex
+display="inline"><![CDATA[\Omega _{Y_A/A}^1]]></fr:tex> is the sheaf of Kähler <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>-differentials of <fr:tex
+display="inline"><![CDATA[Y_A]]></fr:tex> with respect to <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
+  Taking <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> to be a field, we find, using <fr:link
 type="local"
+href="fga3.ii-a.5-proposition-5.1.xml"
 addr="fga3.ii-a.5-proposition-5.1">§A, Proposition 5.1</fr:link> and the finiteness theorem from <fr:ref
 addr="fga2"
 href="fga2.xml"
 taxon="FGA"
-number="2"></fr:ref>, the following corollary:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="2" />, the following corollary:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1703</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.ii-c.2-proposition-2.1-corollary</fr:addr><fr:route>fga3.ii-c.2-proposition-2.1-corollary.xml</fr:route><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Suppose that <fr:tex>X</fr:tex> is flat and proper over <fr:tex>S</fr:tex>, and that <fr:tex>Y</fr:tex> is of finite type over <fr:tex>S</fr:tex>.
-    Then <fr:tex>F</fr:tex> is pro-representable, and the local components of the corresponding topological <fr:tex>\Lambda</fr:tex>-algebra are <fr:em>Noetherian</fr:em> rings.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1746</fr:anchor><fr:addr
+type="user">fga3.ii-c.2-proposition-2.1-corollary</fr:addr><fr:route>fga3.ii-c.2-proposition-2.1-corollary.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is flat and proper over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and that <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+    Then <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is pro-representable, and the local components of the corresponding topological <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>-algebra are <fr:em>Noetherian</fr:em> rings.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1704</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.ii-c.2-remarks</fr:addr><fr:route>fga3.ii-c.2-remarks.xml</fr:route><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    The problems considered in this section, and many others, having been generally studied, in the framework of classical algebraic geometry, via the "Chow coordinates" of cycles in projective space, allow us to consider these cycles as points of suitable projective varieties.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1747</fr:anchor><fr:addr
+type="user">fga3.ii-c.2-remarks</fr:addr><fr:route>fga3.ii-c.2-remarks.xml</fr:route><fr:taxon>Remarks</fr:taxon><fr:authors /><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The problems considered in this section, and many others, having been generally studied, in the framework of classical algebraic geometry, via the "Chow coordinates" of cycles in projective space, allow us to consider these cycles as points of suitable projective varieties.
     This procedure, and, more generally, the use of Chow coordinates, seems irredeemably insufficient from the point of view of schemes, since it destroys the nilpotent elements in the parameterised varieties, and, in particular, do not lend themselves to a satisfying study of infinitesimal variations of cycles (without taking its non-intrinsic nature, linked to the projective space, into account).
     The language of Chow coordinates has sadly been the only one used by many algebraic geometers for the study of families of varieties or families of cycles, which seems to have been a serious obstacle to the understanding of these notions, despite its certain technical interest (probably temporary).
     If we wish to obtain the analogue of Chow varieties in the theory of schemes, we are led to the following universal problem:
-    let <fr:tex>X</fr:tex> be a prescheme over <fr:tex>S</fr:tex>, and, for every prescheme <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, consider the set <fr:tex>F(T)</fr:tex> of closed sub-preschemes of <fr:tex>X_T=X \times _S T</fr:tex> that are <fr:em>flat</fr:em> over <fr:tex>T</fr:tex>; we want to represent this functor in <fr:tex>T</fr:tex> via some prescheme over <fr:tex>S</fr:tex>.
+    let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a prescheme over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and, for every prescheme <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, consider the set <fr:tex
+display="inline"><![CDATA[F(T)]]></fr:tex> of closed sub-preschemes of <fr:tex
+display="inline"><![CDATA[X_T=X\times _S T]]></fr:tex> that are <fr:em>flat</fr:em> over <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>; we want to represent this functor in <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> via some prescheme over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
     
-    More generally, we can start with a quasi-coherent sheaf <fr:tex>\mathscr { G }</fr:tex> on <fr:tex>X</fr:tex>, and take <fr:tex>F(T)</fr:tex> to be the set of quotient sheaves of <fr:tex>\mathscr { G } _T</fr:tex> that are flat over <fr:tex>T</fr:tex>.
-    It seems that there exists a solution to this problem, with a scheme <fr:tex>C</fr:tex> that is locally of finite type over <fr:tex>S</fr:tex>, if <fr:tex>X</fr:tex> is proper over <fr:tex>S</fr:tex>, if <fr:tex>S</fr:tex> is locally Noetherian, and if <fr:tex>F</fr:tex> is furthermore coherent.
-    In any case, supposing only that <fr:tex>S</fr:tex> is locally Noetherian, the restriction of <fr:tex>F</fr:tex> to "Artinian <fr:tex>S</fr:tex>-algebras" is pro-representable, and, if, furthermore, <fr:tex>X</fr:tex> is proper over <fr:tex>S</fr:tex>, and <fr:tex>F</fr:tex> is coherent, then the local components of the corresponding topological ring <fr:tex>\mathscr { O }</fr:tex> are Noetherian.
-    Of course, even after having proven the existence of the "Chow scheme" of <fr:tex>X</fr:tex> over <fr:tex>S</fr:tex>, it remains to find a decomposition of it into disjoint open subsets <fr:tex>C_i</fr:tex> (corresponding to fixing continuous invariants, such as degree and dimension of the cycles that we vary) over <fr:tex>S</fr:tex>, as well as to make precise the relations between this scheme with the classical Chow varieties, and to make precise when a <fr:tex>C_i</fr:tex> is <fr:em>projective</fr:em> (or at least quasi-projective) over <fr:tex>S</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    More generally, we can start with a quasi-coherent sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, and take <fr:tex
+display="inline"><![CDATA[F(T)]]></fr:tex> to be the set of quotient sheaves of <fr:tex
+display="inline"><![CDATA[\mathscr {G}_T]]></fr:tex> that are flat over <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>.
+    It seems that there exists a solution to this problem, with a scheme <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> that is locally of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is locally Noetherian, and if <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is furthermore coherent.
+    In any case, supposing only that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is locally Noetherian, the restriction of <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> to "Artinian <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-algebras" is pro-representable, and, if, furthermore, <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is coherent, then the local components of the corresponding topological ring <fr:tex
+display="inline"><![CDATA[\mathscr {O}]]></fr:tex> are Noetherian.
+    Of course, even after having proven the existence of the "Chow scheme" of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, it remains to find a decomposition of it into disjoint open subsets <fr:tex
+display="inline"><![CDATA[C_i]]></fr:tex> (corresponding to fixing continuous invariants, such as degree and dimension of the cycles that we vary) over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, as well as to make precise the relations between this scheme with the classical Chow varieties, and to make precise when a <fr:tex
+display="inline"><![CDATA[C_i]]></fr:tex> is <fr:em>projective</fr:em> (or at least quasi-projective) over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1705</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.ii-c.2-remark</fr:addr><fr:route>fga3.ii-c.2-remark.xml</fr:route><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1748</fr:anchor><fr:addr
+type="user">fga3.ii-c.2-remark</fr:addr><fr:route>fga3.ii-c.2-remark.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>fga3.ii-c.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
     The problems described here are completely resolved in the projective case by "Hilbert schemes" (cf. <fr:ref
 addr="fga3.iv"
 href="fga3.iv.xml"
 taxon="FGA"
-number="3.IV"></fr:ref>).
-    Examples by Nagata and Hironaka show, however, that the functors described are not necessarily representable if we do not make the projective hypothesis, even if we restrict to the classification of subvarieties of dimension <fr:tex>0</fr:tex> of a complete non-singular variety of dimension <fr:tex>3</fr:tex>;
-    this is linked to the fact that the symmetric square of such a variety does not necessarily exist.
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+number="3.IV" />).
+    Examples by Nagata and Hironaka show, however, that the functors described are not necessarily representable if we do not make the projective hypothesis, even if we restrict to the classification of subvarieties of dimension <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> of a complete non-singular variety of dimension <fr:tex
+display="inline"><![CDATA[3]]></fr:tex>;
+    this is linked to the fact that the symmetric square of such a variety does not necessarily exist.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1768</fr:anchor><fr:addr
+type="user">fga3.i-a.1-definition-1.2</fr:addr><fr:route>fga3.i-a.1-definition-1.2.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>1.2</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A diagram of maps of sets
+    <fr:tex
+display="block"><![CDATA[       E \xrightarrow {u}       E' \overset {v_1}{\underset {v_2}{\rightrightarrows }}       E''     ]]></fr:tex>
+    is said to be <fr:em>exact</fr:em> if <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> is a bijection from <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> to the subset of <fr:tex
+display="inline"><![CDATA[E']]></fr:tex> consisting of the <fr:tex
+display="inline"><![CDATA[x'\in  E']]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[v_1(x')=v_2(x')]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

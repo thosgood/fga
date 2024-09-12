@@ -1,204 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1510</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.1</fr:addr><fr:route>fga3.i-a.2-definition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {C}</fr:tex> be a category.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1545</fr:anchor><fr:addr
+type="user">fga3.i-a.2-definition-2.1</fr:addr><fr:route>fga3.i-a.2-definition-2.1.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category.
     A diagram of morphisms
     <fr:tex
-display="block">       T  \xrightarrow { \alpha }       T'  \overset { \beta _1 }{ \underset { \beta _2 }{ \rightrightarrows }}        T''     </fr:tex>
-    is said to be <fr:em>exact</fr:em> if, for all <fr:tex>Z \in \mathcal {C}</fr:tex>, the corresponding diagram of sets
+display="block"><![CDATA[       T \xrightarrow {\alpha }       T' \overset {\beta _1}{\underset {\beta _2}{\rightrightarrows }}       T''     ]]></fr:tex>
+    is said to be <fr:em>exact</fr:em> if, for all <fr:tex
+display="inline"><![CDATA[Z\in \mathcal {C}]]></fr:tex>, the corresponding diagram of sets
     <fr:tex
-display="block">        \operatorname {Hom} (Z,T)  \to         \operatorname {Hom} (Z,T')  \rightrightarrows         \operatorname {Hom} (Z,T'')     </fr:tex>
+display="block"><![CDATA[       \operatorname {Hom}(Z,T) \to        \operatorname {Hom}(Z,T') \rightrightarrows        \operatorname {Hom}(Z,T'')     ]]></fr:tex>
     is exact (<fr:ref
 addr="fga3.i-a.1-definition-1.2"
 href="fga3.i-a.1-definition-1.2.xml"
 taxon="Definition"
-number="1.2"></fr:ref>).
-    We then say that <fr:tex>(T, \alpha )</fr:tex> (or, by an abuse of language, <fr:tex>T</fr:tex>) is a <fr:em>kernel</fr:em> of the pair <fr:tex>( \beta _1, \beta _2)</fr:tex> of morphisms.
-  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="1.2" />).
+    We then say that <fr:tex
+display="inline"><![CDATA[(T,\alpha )]]></fr:tex> (or, by an abuse of language, <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>) is a <fr:em>kernel</fr:em> of the pair <fr:tex
+display="inline"><![CDATA[(\beta _1,\beta _2)]]></fr:tex> of morphisms.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1509</fr:anchor><fr:addr>fga3.i-a.2.a</fr:addr><fr:route>fga3.i-a.2.a.xml</fr:route><fr:number>A.2.a</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1546</fr:anchor><fr:addr
+type="user">fga3.i-a.2.a</fr:addr><fr:route>fga3.i-a.2.a.xml</fr:route><fr:authors /><fr:number>A.2.a</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>553</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.1</fr:addr><fr:route>fga3.i-a.2-definition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {C}</fr:tex> be a category.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>612</fr:anchor><fr:addr
+type="user">fga3.i-a.2-definition-2.1</fr:addr><fr:route>fga3.i-a.2-definition-2.1.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category.
     A diagram of morphisms
     <fr:tex
-display="block">       T  \xrightarrow { \alpha }       T'  \overset { \beta _1 }{ \underset { \beta _2 }{ \rightrightarrows }}        T''     </fr:tex>
-    is said to be <fr:em>exact</fr:em> if, for all <fr:tex>Z \in \mathcal {C}</fr:tex>, the corresponding diagram of sets
+display="block"><![CDATA[       T \xrightarrow {\alpha }       T' \overset {\beta _1}{\underset {\beta _2}{\rightrightarrows }}       T''     ]]></fr:tex>
+    is said to be <fr:em>exact</fr:em> if, for all <fr:tex
+display="inline"><![CDATA[Z\in \mathcal {C}]]></fr:tex>, the corresponding diagram of sets
     <fr:tex
-display="block">        \operatorname {Hom} (Z,T)  \to         \operatorname {Hom} (Z,T')  \rightrightarrows         \operatorname {Hom} (Z,T'')     </fr:tex>
+display="block"><![CDATA[       \operatorname {Hom}(Z,T) \to        \operatorname {Hom}(Z,T') \rightrightarrows        \operatorname {Hom}(Z,T'')     ]]></fr:tex>
     is exact (<fr:ref
 addr="fga3.i-a.1-definition-1.2"
 href="fga3.i-a.1-definition-1.2.xml"
 taxon="Definition"
-number="1.2"></fr:ref>).
-    We then say that <fr:tex>(T, \alpha )</fr:tex> (or, by an abuse of language, <fr:tex>T</fr:tex>) is a <fr:em>kernel</fr:em> of the pair <fr:tex>( \beta _1, \beta _2)</fr:tex> of morphisms.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  This kernel is evidently determined up to unique isomorphism.
-  If <fr:tex>\mathcal {C}</fr:tex> is the category of sets, then the above definition is compatible with <fr:ref
+number="1.2" />).
+    We then say that <fr:tex
+display="inline"><![CDATA[(T,\alpha )]]></fr:tex> (or, by an abuse of language, <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>) is a <fr:em>kernel</fr:em> of the pair <fr:tex
+display="inline"><![CDATA[(\beta _1,\beta _2)]]></fr:tex> of morphisms.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>This kernel is evidently determined up to unique isomorphism.
+  If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is the category of sets, then the above definition is compatible with <fr:ref
 addr="fga3.i-a.1-definition-1.2"
 href="fga3.i-a.1-definition-1.2.xml"
 taxon="Definition"
-number="1.2"></fr:ref>.
-  Dually, we define the exactness of a diagram of morphisms in <fr:tex>\mathcal {C}</fr:tex>
+number="1.2" />.
+  Dually, we define the exactness of a diagram of morphisms in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>
   <fr:tex
-display="block">     S  \xleftarrow { \alpha }     S'  \overset { \beta _1 }{ \underset { \beta _2 }{ \leftleftarrows }}      S''   </fr:tex>
-  and then say that <fr:tex>(S, \alpha )</fr:tex> is a <fr:em>cokernel</fr:em> of the pair <fr:tex>( \beta _1, \beta _2)</fr:tex> of morphisms.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="block"><![CDATA[     S \xleftarrow {\alpha }     S' \overset {\beta _1}{\underset {\beta _2}{\leftleftarrows }}     S''   ]]></fr:tex>
+  and then say that <fr:tex
+display="inline"><![CDATA[(S,\alpha )]]></fr:tex> is a <fr:em>cokernel</fr:em> of the pair <fr:tex
+display="inline"><![CDATA[(\beta _1,\beta _2)]]></fr:tex> of morphisms.</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>554</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.2</fr:addr><fr:route>fga3.i-a.2-definition-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be a <fr:em>strict epimorphism</fr:em> if it is an epimorphism and, for every morphism <fr:tex>u \colon  S' \to  Z</fr:tex>, the following necessary condition is also sufficient for <fr:tex>u</fr:tex> to factor as <fr:tex>S' \to  S \to  Z</fr:tex>:
-    for every <fr:tex>S'' \in \mathcal {C}</fr:tex> and every pair <fr:tex>\beta _1, \beta _2 \colon  S'' \to  S</fr:tex> of morphisms such that <fr:tex>\alpha \beta _1= \alpha \beta _2</fr:tex>, we also have that <fr:tex>u \beta _1=u \beta _2</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  If the fibre product <fr:tex>S' \times _S S'</fr:tex> exists, then it is equivalent to say that the diagram
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>613</fr:anchor><fr:addr
+type="user">fga3.i-a.2-definition-2.2</fr:addr><fr:route>fga3.i-a.2-definition-2.2.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>2.2</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is said to be a <fr:em>strict epimorphism</fr:em> if it is an epimorphism and, for every morphism <fr:tex
+display="inline"><![CDATA[u\colon  S'\to  Z]]></fr:tex>, the following necessary condition is also sufficient for <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> to factor as <fr:tex
+display="inline"><![CDATA[S'\to  S\to  Z]]></fr:tex>:
+    for every <fr:tex
+display="inline"><![CDATA[S''\in \mathcal {C}]]></fr:tex> and every pair <fr:tex
+display="inline"><![CDATA[\beta _1,\beta _2\colon  S''\to  S]]></fr:tex> of morphisms such that <fr:tex
+display="inline"><![CDATA[\alpha \beta _1=\alpha \beta _2]]></fr:tex>, we also have that <fr:tex
+display="inline"><![CDATA[u\beta _1=u\beta _2]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>If the fibre product <fr:tex
+display="inline"><![CDATA[S'\times _S S']]></fr:tex> exists, then it is equivalent to say that the diagram
   <fr:tex
-display="block">     S  \xleftarrow { \alpha }     S'  \overset { p_1 }{ \underset { p_2 }{ \leftleftarrows }}      S' \times _S S'   </fr:tex>
+display="block"><![CDATA[     S \xleftarrow {\alpha }     S' \overset {p_1}{\underset {p_2}{\leftleftarrows }}     S'\times _S S'   ]]></fr:tex>
   
-  is exact, i.e. that <fr:tex>S</fr:tex> is a cokernel of the pair <fr:tex>(p_1,p_2)</fr:tex>.
+  is exact, i.e. that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is a cokernel of the pair <fr:tex
+display="inline"><![CDATA[(p_1,p_2)]]></fr:tex>.
   In any case, a cokernel morphism is a strict epimorphism.
   Note also that, if a strict epimorphism is also a monomorphism, then it is an isomorphism.
-  We leave to the reader the task of developing the dual notion of a <fr:em>strict monomorphism</fr:em>.
-</fr:p><fr:p>
-  To make the relation between the ideas of <fr:tex>\mathcal {F}</fr:tex>-descent morphisms and strict epimorphisms more precise, we introduce the following definitions:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  We leave to the reader the task of developing the dual notion of a <fr:em>strict monomorphism</fr:em>.</fr:p><fr:p>To make the relation between the ideas of <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphisms and strict epimorphisms more precise, we introduce the following definitions:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>555</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.3</fr:addr><fr:route>fga3.i-a.2-definition-2.3.xml</fr:route><fr:number>2.3</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be a <fr:em>universal epimorphism</fr:em> (resp. a <fr:em>strict universal epimorphism</fr:em>) if, for every <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, the fibre product <fr:tex>T'=S' \times _S T</fr:tex> exists, and the projection <fr:tex>T' \to  T</fr:tex> is an epimorphism (resp. a strict epimorphism).
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  In very nice categories (such as the category of sets, the category of sets over a topological space, abelian categories, etc.), the four notions of "epijectivity" introduced above all coincide;
-  they are, however, all distinct in a category such as the category of preschemes, or the category of preschemes over a given non-empty prescheme <fr:tex>S</fr:tex>, even if we restrict to <fr:tex>S</fr:tex>-schemes that are finite over <fr:tex>S</fr:tex>.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>614</fr:anchor><fr:addr
+type="user">fga3.i-a.2-definition-2.3</fr:addr><fr:route>fga3.i-a.2-definition-2.3.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>2.3</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is said to be a <fr:em>universal epimorphism</fr:em> (resp. a <fr:em>strict universal epimorphism</fr:em>) if, for every <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, the fibre product <fr:tex
+display="inline"><![CDATA[T'=S'\times _S T]]></fr:tex> exists, and the projection <fr:tex
+display="inline"><![CDATA[T'\to  T]]></fr:tex> is an epimorphism (resp. a strict epimorphism).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>In very nice categories (such as the category of sets, the category of sets over a topological space, abelian categories, etc.), the four notions of "epijectivity" introduced above all coincide;
+  they are, however, all distinct in a category such as the category of preschemes, or the category of preschemes over a given non-empty prescheme <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, even if we restrict to <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-schemes that are finite over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>556</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.4</fr:addr><fr:route>fga3.i-a.2-definition-2.4.xml</fr:route><fr:number>2.4</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be a <fr:em>descent morphism</fr:em> (resp. a <fr:em>strict descent morphism</fr:em>) if it is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism (resp. a strict <fr:tex>\mathcal {F}</fr:tex>-descent morphism) (cf. <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>615</fr:anchor><fr:addr
+type="user">fga3.i-a.2-definition-2.4</fr:addr><fr:route>fga3.i-a.2-definition-2.4.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>2.4</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is said to be a <fr:em>descent morphism</fr:em> (resp. a <fr:em>strict descent morphism</fr:em>) if it is an <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism (resp. a strict <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism) (cf. <fr:ref
 addr="fga3.i-a.1-definition-1.7"
 href="fga3.i-a.1-definition-1.7.xml"
 taxon="Definition"
-number="1.7"></fr:ref>), where <fr:tex>\mathcal {F}</fr:tex> denotes the fibred category over <fr:tex>\mathcal {C}</fr:tex> of objects of <fr:tex>\mathcal {C}</fr:tex> over objects of <fr:tex>\mathcal {C}</fr:tex> (cf. <fr:ref
+number="1.7" />), where <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> denotes the fibred category over <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> over objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> (cf. <fr:ref
 addr="fga3.i-a.1-example-1"
 href="fga3.i-a.1-example-1.xml"
 taxon="Example"
-number="1"></fr:ref>).
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="1" />).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>557</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.i-a.2-proposition-2.1</fr:addr><fr:route>fga3.i-a.2-proposition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    If <fr:tex>\mathcal {C}</fr:tex> has all finite products and (finite) fibre products, then there is an identity between descent morphisms in <fr:tex>\mathcal {C}</fr:tex> and strict universal epimorphisms in <fr:tex>\mathcal {C}</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>616</fr:anchor><fr:addr
+type="user">fga3.i-a.2-proposition-2.1</fr:addr><fr:route>fga3.i-a.2-proposition-2.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has all finite products and (finite) fibre products, then there is an identity between descent morphisms in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and strict universal epimorphisms in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1508</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.2</fr:addr><fr:route>fga3.i-a.1-definition-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A diagram of maps of sets
-    <fr:tex
-display="block">       E  \xrightarrow {u}       E'  \overset { v_1 }{ \underset { v_2 }{ \rightrightarrows }}        E''     </fr:tex>
-    is said to be <fr:em>exact</fr:em> if <fr:tex>u</fr:tex> is a bijection from <fr:tex>E</fr:tex> to the subset of <fr:tex>E'</fr:tex> consisting of the <fr:tex>x' \in  E'</fr:tex> such that <fr:tex>v_1(x')=v_2(x')</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1497</fr:anchor><fr:addr>fga3.i-a.4.a</fr:addr><fr:route>fga3.i-a.4.a.xml</fr:route><fr:number>A.4.a</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal {C}</fr:tex> be a category such that the product of any two objects always exists, and let <fr:tex>T \in \mathcal {C}</fr:tex>.
-  For every finite set <fr:tex>I \neq \varnothing</fr:tex>, we can consider <fr:tex>T^I</fr:tex>, and so we obtain a covariant functor from the category of non-empty finite sets to the category <fr:tex>\mathcal {C}</fr:tex>, i.e. what we can call a <fr:em>simplicial object</fr:em> of <fr:tex>\mathcal {C}</fr:tex>, denoted by <fr:tex>K_T</fr:tex>.
-  This object depends covariantly on <fr:tex>T</fr:tex>;
-  also, <fr:em>if <fr:tex>u</fr:tex> and <fr:tex>v</fr:tex> are morphisms <fr:tex>T \to  T'</fr:tex>, then the corresponding morphisms <fr:tex>K_T \to  K_{T}</fr:tex> are homotopic</fr:em>.
-  We say that <fr:tex>T</fr:tex> <fr:em>dominates</fr:em> <fr:tex>T'</fr:tex> if <fr:tex>\operatorname {Hom} (T,T') \neq \varnothing</fr:tex>, and this gives an (upward) directed preorder on <fr:tex>\mathcal {C}</fr:tex>.
-  It follows from the above that, if <fr:tex>T</fr:tex> dominates <fr:tex>T'</fr:tex>, then there exists a canonical class (up to homotopy) of homomorphisms of simplicial objects <fr:tex>K_T \to  K_{T'}</fr:tex>;
-  in particular, if <fr:tex>K_T</fr:tex> and <fr:tex>K_{T'}</fr:tex> are such that <fr:tex>T</fr:tex> and <fr:tex>T'</fr:tex> dominate one another, then <fr:tex>K_T</fr:tex> and <fr:tex>K_{T'}</fr:tex> are homotopically equivalent.
-  Now let <fr:tex>F</fr:tex> be a (contravariant, to be clear) functor from <fr:tex>\mathcal {C}</fr:tex> to an <fr:em>abelian</fr:em> category <fr:tex>\mathcal {C}'</fr:tex>.
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1547</fr:anchor><fr:addr
+type="user">fga3.i-a.4.a</fr:addr><fr:route>fga3.i-a.4.a.xml</fr:route><fr:authors /><fr:number>A.4.a</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category such that the product of any two objects always exists, and let <fr:tex
+display="inline"><![CDATA[T\in \mathcal {C}]]></fr:tex>.
+  For every finite set <fr:tex
+display="inline"><![CDATA[I\neq \varnothing ]]></fr:tex>, we can consider <fr:tex
+display="inline"><![CDATA[T^I]]></fr:tex>, and so we obtain a covariant functor from the category of non-empty finite sets to the category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, i.e. what we can call a <fr:em>simplicial object</fr:em> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, denoted by <fr:tex
+display="inline"><![CDATA[K_T]]></fr:tex>.
+  This object depends covariantly on <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>;
+  also, <fr:em>if <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> are morphisms <fr:tex
+display="inline"><![CDATA[T\to  T']]></fr:tex>, then the corresponding morphisms <fr:tex
+display="inline"><![CDATA[K_T\to  K_{T}]]></fr:tex> are homotopic</fr:em>.
+  We say that <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> <fr:em>dominates</fr:em> <fr:tex
+display="inline"><![CDATA[T']]></fr:tex> if <fr:tex
+display="inline"><![CDATA[\operatorname {Hom}(T,T')\neq \varnothing ]]></fr:tex>, and this gives an (upward) directed preorder on <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
+  It follows from the above that, if <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> dominates <fr:tex
+display="inline"><![CDATA[T']]></fr:tex>, then there exists a canonical class (up to homotopy) of homomorphisms of simplicial objects <fr:tex
+display="inline"><![CDATA[K_T\to  K_{T'}]]></fr:tex>;
+  in particular, if <fr:tex
+display="inline"><![CDATA[K_T]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[K_{T'}]]></fr:tex> are such that <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[T']]></fr:tex> dominate one another, then <fr:tex
+display="inline"><![CDATA[K_T]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[K_{T'}]]></fr:tex> are homotopically equivalent.
+  Now let <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> be a (contravariant, to be clear) functor from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to an <fr:em>abelian</fr:em> category <fr:tex
+display="inline"><![CDATA[\mathcal {C}']]></fr:tex>.
   Then
   <fr:tex
-display="block">     C^ \bullet (T,F) = F(K_T)   </fr:tex>
-  is a cosimplicial object of <fr:tex>\mathcal {C}'</fr:tex>, and thus defines, in a well-known way, a (cochain) complex in <fr:tex>\mathcal {C}'</fr:tex>, of which we can take the cohomology:
+display="block"><![CDATA[     C^\bullet (T,F) = F(K_T)   ]]></fr:tex>
+  is a cosimplicial object of <fr:tex
+display="inline"><![CDATA[\mathcal {C}']]></fr:tex>, and thus defines, in a well-known way, a (cochain) complex in <fr:tex
+display="inline"><![CDATA[\mathcal {C}']]></fr:tex>, of which we can take the cohomology:
   <fr:tex
-display="block">      \operatorname {H} ^ \bullet (T,F)     =  \operatorname {H} ^ \bullet (C^ \bullet (T,F))     =  \operatorname {H} ^ \bullet (F(K_T))   </fr:tex>
-  (we may write a subscript "<fr:tex>\mathcal {C}</fr:tex>" on the <fr:tex>\operatorname {H} ^ \bullet</fr:tex> if there is any possibility for confusion).
-  This is a cohomological functor in <fr:tex>F</fr:tex>, of which the variance for <fr:tex>T</fr:tex> varying follows from what has already been said about the <fr:tex>K_T</fr:tex>;
-  more precisely, for fixed <fr:tex>F</fr:tex> and varying <fr:tex>T</fr:tex> in <fr:tex>\mathcal {C}</fr:tex> (preordered by the domination relation), the <fr:tex>\operatorname {H} ^ \bullet (T,F)</fr:tex> form an inductive system of graded objects of <fr:tex>\mathcal {C}'</fr:tex>;
-  in particular, if <fr:tex>T</fr:tex> and <fr:tex>T'</fr:tex> are such that each one dominates the other, then <fr:tex>\operatorname {H} ^ \bullet (T,F)</fr:tex> and <fr:tex>\operatorname {H} ^ \bullet (T',F)</fr:tex> are canonically isomorphic.
-</fr:p><fr:p>
-  Suppose that <fr:tex>\mathcal {C}</fr:tex> has all fibre products.
-  Then we can, for fixed <fr:tex>S \in \mathcal {C}</fr:tex>, apply the above to the category <fr:tex>\mathcal {C}_S</fr:tex> of objects of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>S</fr:tex>;
-  we then write <fr:tex>C^ \bullet (T/S,F)</fr:tex> and <fr:tex>\operatorname {H} ^ \bullet (T/S,F)</fr:tex> instead of <fr:tex>C^ \bullet (T,F)</fr:tex> and <fr:tex>\operatorname {H} ^ \bullet (T,F)</fr:tex> if we wish to make clear that we are working in the category <fr:tex>\mathcal {C}_S</fr:tex>;
+display="block"><![CDATA[     \operatorname {H}^\bullet (T,F)     = \operatorname {H}^\bullet (C^\bullet (T,F))     = \operatorname {H}^\bullet (F(K_T))   ]]></fr:tex>
+  (we may write a subscript "<fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>" on the <fr:tex
+display="inline"><![CDATA[\operatorname {H}^\bullet ]]></fr:tex> if there is any possibility for confusion).
+  This is a cohomological functor in <fr:tex
+display="inline"><![CDATA[F]]></fr:tex>, of which the variance for <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> varying follows from what has already been said about the <fr:tex
+display="inline"><![CDATA[K_T]]></fr:tex>;
+  more precisely, for fixed <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> and varying <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> (preordered by the domination relation), the <fr:tex
+display="inline"><![CDATA[\operatorname {H}^\bullet (T,F)]]></fr:tex> form an inductive system of graded objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}']]></fr:tex>;
+  in particular, if <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[T']]></fr:tex> are such that each one dominates the other, then <fr:tex
+display="inline"><![CDATA[\operatorname {H}^\bullet (T,F)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\operatorname {H}^\bullet (T',F)]]></fr:tex> are canonically isomorphic.</fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has all fibre products.
+  Then we can, for fixed <fr:tex
+display="inline"><![CDATA[S\in \mathcal {C}]]></fr:tex>, apply the above to the category <fr:tex
+display="inline"><![CDATA[\mathcal {C}_S]]></fr:tex> of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>;
+  we then write <fr:tex
+display="inline"><![CDATA[C^\bullet (T/S,F)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\operatorname {H}^\bullet (T/S,F)]]></fr:tex> instead of <fr:tex
+display="inline"><![CDATA[C^\bullet (T,F)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\operatorname {H}^\bullet (T,F)]]></fr:tex> if we wish to make clear that we are working in the category <fr:tex
+display="inline"><![CDATA[\mathcal {C}_S]]></fr:tex>;
   
-  then <fr:tex>C^ \bullet (T/S,F)</fr:tex> is a cochain complex in <fr:tex>\mathcal {C}'</fr:tex> that, in degree <fr:tex>n</fr:tex>, is equal to <fr:tex>F(T \times _S T \times _S \ldots \times _S T)</fr:tex> (where there are <fr:tex>n+1</fr:tex> factors <fr:tex>T</fr:tex>).
-</fr:p><fr:p>
-  Note that, as per usual, we can define <fr:tex>\operatorname {H} ^0(T/S,F)</fr:tex> without assuming the category <fr:tex>\mathcal {C}'</fr:tex> to be abelian:
+  then <fr:tex
+display="inline"><![CDATA[C^\bullet (T/S,F)]]></fr:tex> is a cochain complex in <fr:tex
+display="inline"><![CDATA[\mathcal {C}']]></fr:tex> that, in degree <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, is equal to <fr:tex
+display="inline"><![CDATA[F(T\times _S T\times _S\ldots \times _S T)]]></fr:tex> (where there are <fr:tex
+display="inline"><![CDATA[n+1]]></fr:tex> factors <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>).</fr:p><fr:p>Note that, as per usual, we can define <fr:tex
+display="inline"><![CDATA[\operatorname {H}^0(T/S,F)]]></fr:tex> without assuming the category <fr:tex
+display="inline"><![CDATA[\mathcal {C}']]></fr:tex> to be abelian:
   it is the kernel (<fr:ref
 addr="fga3.i-a.2-definition-2.1"
 href="fga3.i-a.2-definition-2.1.xml"
 taxon="Definition"
-number="2.1"></fr:ref>), if it exists, of the pair <fr:tex>(F(p_1),F(p_2))</fr:tex> of morphisms
+number="2.1" />), if it exists, of the pair <fr:tex
+display="inline"><![CDATA[(F(p_1),F(p_2))]]></fr:tex> of morphisms
   <fr:tex
-display="block">     F(T)  \to  F(T \times _S T)   </fr:tex>
-  corresponding to the two projections <fr:tex>p_1,p_2 \colon  T \times _S T \to  T</fr:tex>.
+display="block"><![CDATA[     F(T) \to  F(T\times _S T)   ]]></fr:tex>
+  corresponding to the two projections <fr:tex
+display="inline"><![CDATA[p_1,p_2\colon  T\times _S T\to  T]]></fr:tex>.
   In particular, we then have the natural morphism (called the <fr:em>augmentation</fr:em>)
   <fr:tex
-display="block">     F(S)  \to   \operatorname {H} ^0(T/S,F)   </fr:tex>
-  which is an isomorphism in nice cases (in particular, in the case where <fr:tex>T \to  S</fr:tex> is a strict epimorphism and <fr:tex>F</fr:tex> is "left exact").
-  Similarly, if <fr:tex>F</fr:tex> takes values in the category of groups in a category <fr:tex>\mathcal {C}''</fr:tex>, then we can also define <fr:tex>\operatorname {H} ^1(T/S,F)</fr:tex>;
-  in the case where <fr:tex>\mathcal {C}''</fr:tex> is the category of sets (i.e. when <fr:tex>F</fr:tex> takes values in the category of non-necessarily-commutative groups), <fr:tex>\operatorname {H} ^1(T,F)</fr:tex> is the quotient of the subgroup <fr:tex>Z^1(T/S,F)</fr:tex> of <fr:tex>C^1(T/S,F) = F(T \times _S T)</fr:tex> consisting of the <fr:tex>g</fr:tex> such that
+display="block"><![CDATA[     F(S) \to  \operatorname {H}^0(T/S,F)   ]]></fr:tex>
+  which is an isomorphism in nice cases (in particular, in the case where <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> is a strict epimorphism and <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is "left exact").
+  Similarly, if <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> takes values in the category of groups in a category <fr:tex
+display="inline"><![CDATA[\mathcal {C}'']]></fr:tex>, then we can also define <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(T/S,F)]]></fr:tex>;
+  in the case where <fr:tex
+display="inline"><![CDATA[\mathcal {C}'']]></fr:tex> is the category of sets (i.e. when <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> takes values in the category of non-necessarily-commutative groups), <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(T,F)]]></fr:tex> is the quotient of the subgroup <fr:tex
+display="inline"><![CDATA[Z^1(T/S,F)]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[C^1(T/S,F) = F(T\times _S T)]]></fr:tex> consisting of the <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> such that
   <fr:tex
-display="block">     F(p_{31})(g)     = F(p_{32})(g) F(p_{21})(g)   </fr:tex>
-  by the group with operators <fr:tex>F(T)</fr:tex> acting on <fr:tex>C^1(T/S,F)</fr:tex>, and thus, in particular, on the subset <fr:tex>Z^1(T/S,F)</fr:tex>, by
+display="block"><![CDATA[     F(p_{31})(g)     = F(p_{32})(g) F(p_{21})(g)   ]]></fr:tex>
+  by the group with operators <fr:tex
+display="inline"><![CDATA[F(T)]]></fr:tex> acting on <fr:tex
+display="inline"><![CDATA[C^1(T/S,F)]]></fr:tex>, and thus, in particular, on the subset <fr:tex
+display="inline"><![CDATA[Z^1(T/S,F)]]></fr:tex>, by
   <fr:tex
-display="block">      \rho (g') \cdot  g     = F(p_2)(g') g F(p_1)(g')^{-1}.   </fr:tex></fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="block"><![CDATA[     \rho (g')\cdot  g     = F(p_2)(g') g F(p_1)(g')^{-1}.   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1507</fr:anchor><fr:addr>fga3.ii-a.3</fr:addr><fr:route>fga3.ii-a.3.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1548</fr:anchor><fr:addr
+type="user">fga3.ii-a.3</fr:addr><fr:route>fga3.ii-a.3.xml</fr:route><fr:title
+text="The existence theorem and the formal theory of modules › Representable and pro-representable functors › Characterisation of pro-representable functors"><fr:link
+type="local"
 href="fga3.ii-a.xml"
+addr="fga3.ii-a"
+title="The existence theorem and the formal theory of modules › Representable and pro-representable functors"><fr:link
 type="local"
-addr="fga3.ii-a"><fr:link
 href="fga3.ii.xml"
-type="local"
-addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Representable and pro-representable functors</fr:link> › Characterisation of pro-representable functors</fr:title><fr:number>A.3</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal {C}</fr:tex> and <fr:tex>\mathcal {C}'</fr:tex> be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, preordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" <fr:tex>e</fr:tex> such that <fr:tex>\operatorname {Hom} (X,e)</fr:tex> consists of only on element for all <fr:tex>X</fr:tex>).
-  Let <fr:tex>F</fr:tex> be a covariant functor from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathcal {C}'</fr:tex>.
+addr="fga3.ii"
+title="The existence theorem and the formal theory of modules">The existence theorem and the formal theory of modules</fr:link> › Representable and pro-representable functors</fr:link> › Characterisation of pro-representable functors</fr:title><fr:authors /><fr:number>A.3</fr:number><fr:parent>fga3.ii-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {C}']]></fr:tex> be categories in which all finite projective limits (i.e. limits over finite, not necessarily filtered, preordered sets) exist, or, equivalently, in which finite products and finite fibred products exist (which implies, in particular, the exists of a "right-unit object" <fr:tex
+display="inline"><![CDATA[e]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\operatorname {Hom}(X,e)]]></fr:tex> consists of only on element for all <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>).
+  Let <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> be a covariant functor from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\mathcal {C}']]></fr:tex>.
   Then the following conditions are equivalent:
 
   
@@ -207,62 +327,86 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
  <html:li
 style="list-style-type: &quot;i. &quot;">
-      <fr:tex>F</fr:tex> commutes with finite projective limits;
+      <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> commutes with finite projective limits;
     </html:li>
 
 
     
  <html:li
 style="list-style-type: &quot;ii. &quot;">
-      <fr:tex>F</fr:tex> commutes with finite products and with finite fibred products;
+      <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> commutes with finite products and with finite fibred products;
     </html:li>
 
 
     
  <html:li
 style="list-style-type: &quot;iii. &quot;">
-      <fr:tex>F</fr:tex> commutes with finite products, and, for every exact diagram
       <fr:tex
-display="block">         X \to  X' \rightrightarrows  X''       </fr:tex>
-      in <fr:tex>\mathcal {C}</fr:tex> (cf. <fr:link
-href="fga3.i-a.2-definition-2.1.xml"
+display="inline"><![CDATA[F]]></fr:tex> commutes with finite products, and, for every exact diagram
+      <fr:tex
+display="block"><![CDATA[         X\to  X'\rightrightarrows  X''       ]]></fr:tex>
+      in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> (cf. <fr:link
 type="local"
-addr="fga3.i-a.2-definition-2.1">FGA 3.I, A, Definition 2.1</fr:link>), the image of the diagram under <fr:tex>F</fr:tex>
+href="fga3.i-a.2-definition-2.1.xml"
+addr="fga3.i-a.2-definition-2.1">FGA 3.I, A, Definition 2.1</fr:link>), the image of the diagram under <fr:tex
+display="inline"><![CDATA[F]]></fr:tex>
       <fr:tex
-display="block">         F(X) \to  F(X') \rightrightarrows  F(X'')       </fr:tex>
+display="block"><![CDATA[         F(X)\to  F(X')\rightrightarrows  F(X'')       ]]></fr:tex>
       is exact.
     </html:li>
 
   </html:ol>
 
 
-  We then say that <fr:tex>F</fr:tex> is <fr:em>left exact</fr:em>.
-</fr:p><fr:p>
-  In what follows, we assume that finite projective limits always exist in <fr:tex>\mathcal {C}</fr:tex>.
-  It is then immediate from the definitions that a representable functor is left exact, and, by taking the limit, that <fr:em>a pro-representable functor is left exact</fr:em>.
-</fr:p><fr:p>
-  To obtain a converse, let
+  We then say that <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is <fr:em>left exact</fr:em>.</fr:p><fr:p>In what follows, we assume that finite projective limits always exist in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
+  It is then immediate from the definitions that a representable functor is left exact, and, by taking the limit, that <fr:em>a pro-representable functor is left exact</fr:em>.</fr:p><fr:p>To obtain a converse, let
   <fr:tex
-display="block">     F \colon   \mathcal {C}  \to   \mathtt {Set}    </fr:tex>
-  be a covariant functor, and let <fr:tex>X \in \mathcal {C}</fr:tex> and <fr:tex>\xi \in  F(X)</fr:tex>.
+display="block"><![CDATA[     F\colon  \mathcal {C} \to  \mathtt {Set}   ]]></fr:tex>
+  be a covariant functor, and let <fr:tex
+display="inline"><![CDATA[X\in \mathcal {C}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\xi \in  F(X)]]></fr:tex>.
   
-  We say that <fr:tex>\xi</fr:tex> (or the pair <fr:tex>(X, \xi )</fr:tex>) is <fr:em>minimal</fr:em> if, for all <fr:tex>X' \in \mathcal {C}</fr:tex> and all <fr:tex>\xi ' \in  F(X')</fr:tex>, and for every strict monomorphism (cf. <fr:link
-href="fga3.i-a.2.xml"
+  We say that <fr:tex
+display="inline"><![CDATA[\xi ]]></fr:tex> (or the pair <fr:tex
+display="inline"><![CDATA[(X,\xi )]]></fr:tex>) is <fr:em>minimal</fr:em> if, for all <fr:tex
+display="inline"><![CDATA[X'\in \mathcal {C}]]></fr:tex> and all <fr:tex
+display="inline"><![CDATA[\xi '\in  F(X')]]></fr:tex>, and for every strict monomorphism (cf. <fr:link
 type="local"
-addr="fga3.i-a.2">FGA 3.I, §A.2</fr:link>) <fr:tex>u \colon  X' \to  X</fr:tex> such that <fr:tex>\xi =F(u)( \xi ')</fr:tex>, <fr:tex>u</fr:tex> is an isomorphism.
-  We also say that a pair <fr:tex>(X, \xi )</fr:tex> <fr:em>dominates</fr:em> <fr:tex>(X'', \xi '')</fr:tex> (where <fr:tex>\xi \in  F(X)</fr:tex> and <fr:tex>\xi '' \in  F(X'')</fr:tex>) if there exists a morphism <fr:tex>v \colon  X \to  X''</fr:tex> such that <fr:tex>\xi ''=F(v)( \xi )</fr:tex>;
-  <fr:em>if <fr:tex>\xi</fr:tex> is minimal, and if <fr:tex>F</fr:tex> is left exact, then this morphism <fr:tex>v</fr:tex> is unique</fr:em>;
-  <fr:em>if <fr:tex>\xi ''</fr:tex> is minimal, then <fr:tex>v</fr:tex> is surjective</fr:em>.
-  From this we easily deduce the following proposition:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+href="fga3.i-a.2.xml"
+addr="fga3.i-a.2"
+title="Generalities, and descent by faithfully flat morphisms › Preliminaries on categories › Exact diagrams and strict epimorphisms, descent morphisms, and examples">FGA 3.I, §A.2</fr:link>) <fr:tex
+display="inline"><![CDATA[u\colon  X'\to  X]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\xi =F(u)(\xi ')]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> is an isomorphism.
+  We also say that a pair <fr:tex
+display="inline"><![CDATA[(X,\xi )]]></fr:tex> <fr:em>dominates</fr:em> <fr:tex
+display="inline"><![CDATA[(X'',\xi '')]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[\xi \in  F(X)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\xi ''\in  F(X'')]]></fr:tex>) if there exists a morphism <fr:tex
+display="inline"><![CDATA[v\colon  X\to  X'']]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\xi ''=F(v)(\xi )]]></fr:tex>;
+  <fr:em>if <fr:tex
+display="inline"><![CDATA[\xi ]]></fr:tex> is minimal, and if <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is left exact, then this morphism <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is unique</fr:em>;
+  <fr:em>if <fr:tex
+display="inline"><![CDATA[\xi '']]></fr:tex> is minimal, then <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is surjective</fr:em>.
+  From this we easily deduce the following proposition:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1505</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-a.3-proposition-3.1</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    For <fr:tex>F</fr:tex> to be strictly pro-representable, it is necessary and sufficient that it satisfy the following two conditions:
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1553</fr:anchor><fr:addr
+type="user">fga3.ii-a.3-proposition-3.1</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>3.1</fr:number><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>For <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> to be strictly pro-representable, it is necessary and sufficient that it satisfy the following two conditions:
 
     
  <html:ol
@@ -270,28 +414,60 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        <fr:tex>F</fr:tex> is left exact; and
+        <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is left exact; and
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;ii. &quot;">
-        every pair <fr:tex>(X, \xi )</fr:tex>, with <fr:tex>\xi \in  F(X)</fr:tex>, is dominated by some <fr:em>minimal</fr:em> pair.
+        every pair <fr:tex
+display="inline"><![CDATA[(X,\xi )]]></fr:tex>, with <fr:tex
+display="inline"><![CDATA[\xi \in  F(X)]]></fr:tex>, is dominated by some <fr:em>minimal</fr:em> pair.
       </html:li>
 
-    </html:ol></fr:p></fr:mainmatter></fr:tree><fr:p>
-  This second condition is trivial if every object of <fr:tex>\mathcal {C}</fr:tex> is Artinian (by taking a sub-object <fr:tex>X'</fr:tex> of <fr:tex>X</fr:tex> that is minimal amongst those for which there exists some <fr:tex>\xi ' \in  F(X')</fr:tex> such that <fr:tex>\xi</fr:tex> is the image of <fr:tex>\xi '</fr:tex>).
-  Whence:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    </html:ol></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>This second condition is trivial if every object of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is Artinian (by taking a sub-object <fr:tex
+display="inline"><![CDATA[X']]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that is minimal amongst those for which there exists some <fr:tex
+display="inline"><![CDATA[\xi '\in  F(X')]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\xi ]]></fr:tex> is the image of <fr:tex
+display="inline"><![CDATA[\xi ']]></fr:tex>).
+  Whence:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1506</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.ii-a.3-proposition-3.1-corollary</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1-corollary.xml</fr:route><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {C}</fr:tex> be a category whose objects are all Artinian and in which all finite projective limits exist.
-    Then the pro-representable functors from <fr:tex>\mathcal {C}</fr:tex> to <fr:tex>\mathtt {Set}</fr:tex> are exactly the left exact functors, and they are in fact strictly pro-representable.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  This last fact also implies that <fr:em>every pro-object of <fr:tex>\mathcal {C}</fr:tex> is then strict</fr:em>.
-</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1557</fr:anchor><fr:addr
+type="user">fga3.ii-a.3-proposition-3.1-corollary</fr:addr><fr:route>fga3.ii-a.3-proposition-3.1-corollary.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:parent>fga3.ii-a.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category whose objects are all Artinian and in which all finite projective limits exist.
+    Then the pro-representable functors from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\mathtt {Set}]]></fr:tex> are exactly the left exact functors, and they are in fact strictly pro-representable.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>This last fact also implies that <fr:em>every pro-object of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is then strict</fr:em>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1558</fr:anchor><fr:addr
+type="user">fga3.i-a.1-definition-1.2</fr:addr><fr:route>fga3.i-a.1-definition-1.2.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>1.2</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A diagram of maps of sets
+    <fr:tex
+display="block"><![CDATA[       E \xrightarrow {u}       E' \overset {v_1}{\underset {v_2}{\rightrightarrows }}       E''     ]]></fr:tex>
+    is said to be <fr:em>exact</fr:em> if <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> is a bijection from <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> to the subset of <fr:tex
+display="inline"><![CDATA[E']]></fr:tex> consisting of the <fr:tex
+display="inline"><![CDATA[x'\in  E']]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[v_1(x')=v_2(x')]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

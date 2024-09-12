@@ -1,65 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1053</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.7</fr:addr><fr:route>fga1-equation-8.7.xml</fr:route><fr:number>8.7</fr:number><fr:parent>fga1-theorem-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">            \underline { \operatorname {R} }^p \Gamma ( \mathscr { K } )            \times   \underline { \operatorname {R} }^{n-p} \Gamma ( \mathscr { K } ' \otimes \Omega _X^n)            \to   \underline { \operatorname {R} }^n \Gamma ( \Omega _X^n)           =  \operatorname {H} ^n(X, \Omega _X^n).         \tag{8.7}         </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1052</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga1-theorem-6</fr:addr><fr:route>fga1-theorem-6.xml</fr:route><fr:number>6</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    If <fr:tex>X</fr:tex> is a non-singular projective variety, then the pairings in <fr:ref
-addr="fga1-equation-8.6"
-href="fga1-equation-8.6.xml"
-taxon="Equation"
-number="8.6"></fr:ref> are dualities.
-  </fr:p>
-  
-    
-    <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1104</fr:anchor><fr:addr
+type="user">fga1-equation-8.7</fr:addr><fr:route>fga1-equation-8.7.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>8.7</fr:number><fr:parent>fga1-theorem-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[           \underline {\operatorname {R}}^p\Gamma (\mathscr {K})           \times  \underline {\operatorname {R}}^{n-p}\Gamma (\mathscr {K}'\otimes \Omega _X^n)           \to  \underline {\operatorname {R}}^n\Gamma (\Omega _X^n)           = \operatorname {H}^n(X,\Omega _X^n).         \tag{8.7}         ]]></fr:tex></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>801</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga1-theorem-6</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>
-      This follows in a purely formal way from the <fr:link
-href="fga1-theorem-3-corollary.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1105</fr:anchor><fr:addr
+type="user">fga1-theorem-6</fr:addr><fr:route>fga1-theorem-6.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>6</fr:number><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is a non-singular projective variety, then the pairings in <fr:ref
+addr="fga1-equation-8.6"
+href="fga1-equation-8.6.xml"
+taxon="Equation"
+number="8.6" /> are dualities.</fr:p>
+  
+    
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>858</fr:anchor><fr:addr
+type="machine">#272</fr:addr><fr:route>unstable-272.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-theorem-6</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>This follows in a purely formal way from the <fr:link
 type="local"
+href="fga1-theorem-3-corollary.xml"
 addr="fga1-theorem-3-corollary">corollary of Theorem 3</fr:link>.
-      In fact, it easily follows from this corollary that, if <fr:tex>\mathscr { K }</fr:tex> is a complex of <fr:em>locally-free</fr:em> coherent algebraic sheaves, then the hypercohomology of <fr:tex>X</fr:tex> with respect to <fr:tex>\mathscr { K }</fr:tex> is in duality with the hypercohomology of <fr:tex>X</fr:tex> with respect to <fr:tex>\mathscr { K } ' \otimes \Omega _X^n</fr:tex> via the natural pairings
+      In fact, it easily follows from this corollary that, if <fr:tex
+display="inline"><![CDATA[\mathscr {K}]]></fr:tex> is a complex of <fr:em>locally-free</fr:em> coherent algebraic sheaves, then the hypercohomology of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> with respect to <fr:tex
+display="inline"><![CDATA[\mathscr {K}]]></fr:tex> is in duality with the hypercohomology of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> with respect to <fr:tex
+display="inline"><![CDATA[\mathscr {K}'\otimes \Omega _X^n]]></fr:tex> via the natural pairings
 
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>800</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.7</fr:addr><fr:route>fga1-equation-8.7.xml</fr:route><fr:number>8.7</fr:number><fr:parent>fga1-theorem-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">            \underline { \operatorname {R} }^p \Gamma ( \mathscr { K } )            \times   \underline { \operatorname {R} }^{n-p} \Gamma ( \mathscr { K } ' \otimes \Omega _X^n)            \to   \underline { \operatorname {R} }^n \Gamma ( \Omega _X^n)           =  \operatorname {H} ^n(X, \Omega _X^n).         \tag{8.7}         </fr:tex></fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>859</fr:anchor><fr:addr
+type="user">fga1-equation-8.7</fr:addr><fr:route>fga1-equation-8.7.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>8.7</fr:number><fr:parent>fga1-theorem-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[           \underline {\operatorname {R}}^p\Gamma (\mathscr {K})           \times  \underline {\operatorname {R}}^{n-p}\Gamma (\mathscr {K}'\otimes \Omega _X^n)           \to  \underline {\operatorname {R}}^n\Gamma (\Omega _X^n)           = \operatorname {H}^n(X,\Omega _X^n).         \tag{8.7}         ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
       
-      We can see this by using the spectral sequence with initial page <fr:tex>\operatorname {H} ^p( \operatorname {H} ^q(X, \mathscr { K } ))</fr:tex> and the analogous spectral sequence for <fr:tex>\mathscr { K } ' \otimes \Omega _X^n</fr:tex>.
+      We can see this by using the spectral sequence with initial page <fr:tex
+display="inline"><![CDATA[\operatorname {H}^p(\operatorname {H}^q(X,\mathscr {K}))]]></fr:tex> and the analogous spectral sequence for <fr:tex
+display="inline"><![CDATA[\mathscr {K}'\otimes \Omega _X^n]]></fr:tex>.
       From the above result, <fr:ref
 addr="fga1-theorem-6"
 href="fga1-theorem-6.xml"
 taxon="Theorem"
-number="6"></fr:ref> can be deduced from the definition <fr:ref
+number="6" /> can be deduced from the definition <fr:ref
 addr="fga1-equation-8.1"
 href="fga1-equation-8.1.xml"
 taxon="Equation"
-number="8.1"></fr:ref>.
-    </fr:p>
-  </fr:mainmatter></fr:tree>
+number="8.1" />.</fr:p>
+  </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

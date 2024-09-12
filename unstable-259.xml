@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2571</fr:anchor><fr:addr
+type="machine">#259</fr:addr><fr:route>unstable-259.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.v-6-proposition-6.3</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>By faithfully flat descent, we can reduce to the case where <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> admits a section over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, thus defining sections of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[X_1]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[X_2]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and allowing us to eliminate the automorphisms in the structures in question, as explained in <fr:ref
+addr="fga3.v-2-remark-2.5"
+href="fga3.v-2-remark-2.5.xml"
+taxon="Remark"
+number="2.5" />.
+      
+      The proof then consists of noting that the data of a "rigidified" invertible module <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is equivalent to the data of a triple <fr:tex
+display="inline"><![CDATA[(\mathscr {L}_1,\mathscr {L}_2,u)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathscr {L}_i]]></fr:tex> is a "rigidified" module on <fr:tex
+display="inline"><![CDATA[X_i]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> is an isomorphism from <fr:tex
+display="inline"><![CDATA[\mathscr {L}_1|Z]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\mathscr {L}_2|Z]]></fr:tex> that is compatible with the rigidifications.
+      It remains only to verify that, for <fr:tex
+display="inline"><![CDATA[\mathscr {L}_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathscr {L}_2]]></fr:tex> fixed, the data of <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> can be expressed as a section of a suitable scheme over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that is affine over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, which is easy.</fr:p>
+  </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2572</fr:anchor><fr:addr
+type="user">fga3.v-6-proposition-6.3</fr:addr><fr:route>fga3.v-6-proposition-6.3.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>6.3</fr:number><fr:parent>fga3.v-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be a proper morphism, and let <fr:tex
+display="inline"><![CDATA[X_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[X_2]]></fr:tex> be subpreschemes of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that are flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, defined by coherent ideals <fr:tex
+display="inline"><![CDATA[\mathscr {J}_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathscr {J}_2]]></fr:tex> (respectively) such that <fr:tex
+display="inline"><![CDATA[\mathscr {J}_1\cap \mathscr {J}_2=(0)]]></fr:tex> and such that <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X/(\mathscr {J}_1+\mathscr {J}_2)]]></fr:tex> is flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> (i.e. the subprescheme of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that is the sup of <fr:tex
+display="inline"><![CDATA[X_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[X_2]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> itself, whereas their inf <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> is flat over <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>).
+    Suppose further that, for all <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex>, the homomorphisms <fr:tex
+display="inline"><![CDATA[k(s)\to \operatorname {H}^0(X_{i_s},\mathcal {O}_{X_{i_s}})]]></fr:tex> are bijective for <fr:tex
+display="inline"><![CDATA[i=1,2]]></fr:tex>.
+    Then the natural homomorphism of functors
+    <fr:tex
+display="block"><![CDATA[       \mathscr {P}\kern  -1pt\mathit {ic}_{X/S}       \to  \mathscr {P}\kern  -1pt\mathit {ic}_{X_1/S} \times  \mathscr {P}\kern  -1pt\mathit {ic}_{X_2/S}     ]]></fr:tex>
+    is representable by affine morphisms, so if <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_1/S}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_2/s}]]></fr:tex> exist, then so too does <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, and the canonical morphism
+    <fr:tex
+display="block"><![CDATA[       \underline {\operatorname {Pic}}_{X/S}       \to  \underline {\operatorname {Pic}}_{X_1/S} \times  \underline {\operatorname {Pic}}_{X_2/S}     ]]></fr:tex>
+    is affine.</fr:p>
+  
+    
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:addr
+type="machine">#259</fr:addr><fr:route>unstable-259.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.v-6-proposition-6.3</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>By faithfully flat descent, we can reduce to the case where <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> admits a section over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, thus defining sections of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[X_1]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[X_2]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and allowing us to eliminate the automorphisms in the structures in question, as explained in <fr:ref
+addr="fga3.v-2-remark-2.5"
+href="fga3.v-2-remark-2.5.xml"
+taxon="Remark"
+number="2.5" />.
+      
+      The proof then consists of noting that the data of a "rigidified" invertible module <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is equivalent to the data of a triple <fr:tex
+display="inline"><![CDATA[(\mathscr {L}_1,\mathscr {L}_2,u)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathscr {L}_i]]></fr:tex> is a "rigidified" module on <fr:tex
+display="inline"><![CDATA[X_i]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> is an isomorphism from <fr:tex
+display="inline"><![CDATA[\mathscr {L}_1|Z]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\mathscr {L}_2|Z]]></fr:tex> that is compatible with the rigidifications.
+      It remains only to verify that, for <fr:tex
+display="inline"><![CDATA[\mathscr {L}_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathscr {L}_2]]></fr:tex> fixed, the data of <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> can be expressed as a section of a suitable scheme over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that is affine over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, which is easy.</fr:p>
+  </fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

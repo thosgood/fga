@@ -1,45 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2425</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.vi-3-equation-star</fr:addr><fr:route>fga3.vi-3-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga3.vi-3-remarks-3.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">         A_0  \to   \underline { \operatorname {Pic} } _{X_0/k}^{00}       \tag{*}       </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2463</fr:anchor><fr:addr
+type="user">fga3.vi-3-equation-star</fr:addr><fr:route>fga3.vi-3-equation-star.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>*</fr:number><fr:parent>fga3.vi-3-remarks-3.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[         A_0 \to  \underline {\operatorname {Pic}}_{X_0/k}^{00}       \tag{*}       ]]></fr:tex></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2424</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-3-remarks-3.4</fr:addr><fr:route>fga3.vi-3-remarks-3.4.xml</fr:route><fr:number>3.4</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    We denote by <fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex> the canonical abelian subscheme of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, if it exists.
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2464</fr:anchor><fr:addr
+type="user">fga3.vi-3-remarks-3.4</fr:addr><fr:route>fga3.vi-3-remarks-3.4.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:number>3.4</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We denote by <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^{00}]]></fr:tex> the canonical abelian subscheme of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, if it exists.
     This is, unfortunately, not always the case, as we can see by infinitesimally varying the Igusa surface (by first-order modular deformation).
-    It is however possible that <fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex> exists at least if <fr:tex>S</fr:tex> is reduced, or, equivalently, by (ii), if <fr:tex>S</fr:tex> is the spectrum of a discrete valuation ring.
-    So let <fr:tex>X_0</fr:tex> and <fr:tex>X_1</fr:tex> be the special and generic fibres of <fr:tex>X</fr:tex> (respectively), and let <fr:tex>A_1= \underline { \operatorname {Pic} } _{X_1/K_1}</fr:tex>, where <fr:tex>K</fr:tex> is the field of fractions of the valuation ring <fr:tex>V</fr:tex>.
-    By Koizumi, there exists an abelian scheme <fr:tex>A</fr:tex> over <fr:tex>S</fr:tex>, essentially unique, whose general fibre is <fr:tex>A_1</fr:tex>, and we easily see as in <fr:link
-href="#fga3.vi-2-theorem-2.1"
-type="external">(2.1), (i)</fr:link> (supposing from now on that <fr:tex>X</fr:tex> is simple over <fr:tex>S</fr:tex>) that the identity morphism of <fr:tex>A_1</fr:tex> extends to a morphism
+    It is however possible that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^{00}]]></fr:tex> exists at least if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is reduced, or, equivalently, by (ii), if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a discrete valuation ring.
+    So let <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[X_1]]></fr:tex> be the special and generic fibres of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> (respectively), and let <fr:tex
+display="inline"><![CDATA[A_1=\underline {\operatorname {Pic}}_{X_1/K_1}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[K]]></fr:tex> is the field of fractions of the valuation ring <fr:tex
+display="inline"><![CDATA[V]]></fr:tex>.
+    By Koizumi, there exists an abelian scheme <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, essentially unique, whose general fibre is <fr:tex
+display="inline"><![CDATA[A_1]]></fr:tex>, and we easily see as in <fr:link
+type="external"
+href="#fga3.vi-2-theorem-2.1">(2.1), (i)</fr:link> (supposing from now on that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>) that the identity morphism of <fr:tex
+display="inline"><![CDATA[A_1]]></fr:tex> extends to a morphism
     <fr:tex
-display="block">       A  \to   \underline { \operatorname {Pic} } _{X/S}.     </fr:tex>
+display="block"><![CDATA[       A \to  \underline {\operatorname {Pic}}_{X/S}.     ]]></fr:tex>
     From this, we obtain a homomorphism
 
     <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2169</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.vi-3-equation-star</fr:addr><fr:route>fga3.vi-3-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga3.vi-3-remarks-3.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">         A_0  \to   \underline { \operatorname {Pic} } _{X_0/k}^{00}       \tag{*}       </fr:tex></fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2214</fr:anchor><fr:addr
+type="user">fga3.vi-3-equation-star</fr:addr><fr:route>fga3.vi-3-equation-star.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>*</fr:number><fr:parent>fga3.vi-3-remarks-3.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[         A_0 \to  \underline {\operatorname {Pic}}_{X_0/k}^{00}       \tag{*}       ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
 
-    which we can easily show to be a surjective homomorphism with kernel equal to a finite <fr:tex>p</fr:tex>-group, where <fr:tex>p</fr:tex> is the characteristic of the residue field <fr:tex>k</fr:tex> (still by using the points of finite order).
+    which we can easily show to be a surjective homomorphism with kernel equal to a finite <fr:tex
+display="inline"><![CDATA[p]]></fr:tex>-group, where <fr:tex
+display="inline"><![CDATA[p]]></fr:tex> is the characteristic of the residue field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> (still by using the points of finite order).
     
-    With this, the following conditions on <fr:tex>X/S</fr:tex> are equivalent:
+    With this, the following conditions on <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> are equivalent:
 
     
  <html:ol
@@ -51,70 +82,105 @@ style="list-style-type: &quot;a. &quot;">
 addr="fga3.vi-3-equation-star"
 href="fga3.vi-3-equation-star.xml"
 taxon="Equation"
-number="*"></fr:ref> is an isomorphism (which Shimura expresses by saying that the formation of the "Picard variety" is "compatible with specialisations").
+number="*" /> is an isomorphism (which Shimura expresses by saying that the formation of the "Picard variety" is "compatible with specialisations").
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;b. &quot;">
-        <fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex> exists (and is then exactly <fr:tex>A</fr:tex>).
+        <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^{00}]]></fr:tex> exists (and is then exactly <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>).
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;c. &quot;">
-        (As a reminder) The <fr:tex>\underline { \operatorname {Pic} } _{X_n/S}^{00}</fr:tex> exist.
+        (As a reminder) The <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_n/S}^{00}]]></fr:tex> exist.
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    By the remark that we made concerning the kernel of <fr:ref
+    </html:ol></fr:p><fr:p>By the remark that we made concerning the kernel of <fr:ref
 addr="fga3.vi-3-equation-star"
 href="fga3.vi-3-equation-star.xml"
 taxon="Equation"
-number="*"></fr:ref>, condition (a) is satisfied if the residual characteristic is zero, but this result will be notably generalised in <fr:ref
+number="*" />, condition (a) is satisfied if the residual characteristic is zero, but this result will be notably generalised in <fr:ref
 addr="fga3.vi-3-theorem-3.5"
 href="fga3.vi-3-theorem-3.5.xml"
 taxon="Theorem"
-number="3.5"></fr:ref>.
-  </fr:p><fr:p>
-    Of course, if <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is simple over <fr:tex>S</fr:tex> at the points of <fr:tex>\underline { \operatorname {Pic} } _{X/S}^0</fr:tex>, then the latter is open in <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> (cf. <fr:ref
+number="3.5" />.</fr:p><fr:p>Of course, if <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> at the points of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^0]]></fr:tex>, then the latter is open in <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> (cf. <fr:ref
 addr="fga3.vi-1-corollary-1.7"
 href="fga3.vi-1-corollary-1.7.xml"
 taxon="Corollary"
-number="1.7"></fr:ref>) and is thus, endowed with the induced structure, an abelian subscheme of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, and thus equal to <fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex>, which exists in this case.
-    But we have much better:
-  </fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="1.7" />) and is thus, endowed with the induced structure, an abelian subscheme of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, and thus equal to <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^{00}]]></fr:tex>, which exists in this case.
+    But we have much better:</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2423</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-3-remarks-3.4</fr:addr><fr:route>fga3.vi-3-remarks-3.4.xml</fr:route><fr:number>3.4</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    We denote by <fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex> the canonical abelian subscheme of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, if it exists.
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2465</fr:anchor><fr:addr
+type="user">fga3.vi-3-remarks-3.4</fr:addr><fr:route>fga3.vi-3-remarks-3.4.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:number>3.4</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We denote by <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^{00}]]></fr:tex> the canonical abelian subscheme of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, if it exists.
     This is, unfortunately, not always the case, as we can see by infinitesimally varying the Igusa surface (by first-order modular deformation).
-    It is however possible that <fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex> exists at least if <fr:tex>S</fr:tex> is reduced, or, equivalently, by (ii), if <fr:tex>S</fr:tex> is the spectrum of a discrete valuation ring.
-    So let <fr:tex>X_0</fr:tex> and <fr:tex>X_1</fr:tex> be the special and generic fibres of <fr:tex>X</fr:tex> (respectively), and let <fr:tex>A_1= \underline { \operatorname {Pic} } _{X_1/K_1}</fr:tex>, where <fr:tex>K</fr:tex> is the field of fractions of the valuation ring <fr:tex>V</fr:tex>.
-    By Koizumi, there exists an abelian scheme <fr:tex>A</fr:tex> over <fr:tex>S</fr:tex>, essentially unique, whose general fibre is <fr:tex>A_1</fr:tex>, and we easily see as in <fr:link
-href="#fga3.vi-2-theorem-2.1"
-type="external">(2.1), (i)</fr:link> (supposing from now on that <fr:tex>X</fr:tex> is simple over <fr:tex>S</fr:tex>) that the identity morphism of <fr:tex>A_1</fr:tex> extends to a morphism
+    It is however possible that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^{00}]]></fr:tex> exists at least if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is reduced, or, equivalently, by (ii), if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a discrete valuation ring.
+    So let <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[X_1]]></fr:tex> be the special and generic fibres of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> (respectively), and let <fr:tex
+display="inline"><![CDATA[A_1=\underline {\operatorname {Pic}}_{X_1/K_1}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[K]]></fr:tex> is the field of fractions of the valuation ring <fr:tex
+display="inline"><![CDATA[V]]></fr:tex>.
+    By Koizumi, there exists an abelian scheme <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, essentially unique, whose general fibre is <fr:tex
+display="inline"><![CDATA[A_1]]></fr:tex>, and we easily see as in <fr:link
+type="external"
+href="#fga3.vi-2-theorem-2.1">(2.1), (i)</fr:link> (supposing from now on that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>) that the identity morphism of <fr:tex
+display="inline"><![CDATA[A_1]]></fr:tex> extends to a morphism
     <fr:tex
-display="block">       A  \to   \underline { \operatorname {Pic} } _{X/S}.     </fr:tex>
+display="block"><![CDATA[       A \to  \underline {\operatorname {Pic}}_{X/S}.     ]]></fr:tex>
     From this, we obtain a homomorphism
 
     <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2169</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.vi-3-equation-star</fr:addr><fr:route>fga3.vi-3-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga3.vi-3-remarks-3.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">         A_0  \to   \underline { \operatorname {Pic} } _{X_0/k}^{00}       \tag{*}       </fr:tex></fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2214</fr:anchor><fr:addr
+type="user">fga3.vi-3-equation-star</fr:addr><fr:route>fga3.vi-3-equation-star.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>*</fr:number><fr:parent>fga3.vi-3-remarks-3.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[         A_0 \to  \underline {\operatorname {Pic}}_{X_0/k}^{00}       \tag{*}       ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
 
-    which we can easily show to be a surjective homomorphism with kernel equal to a finite <fr:tex>p</fr:tex>-group, where <fr:tex>p</fr:tex> is the characteristic of the residue field <fr:tex>k</fr:tex> (still by using the points of finite order).
+    which we can easily show to be a surjective homomorphism with kernel equal to a finite <fr:tex
+display="inline"><![CDATA[p]]></fr:tex>-group, where <fr:tex
+display="inline"><![CDATA[p]]></fr:tex> is the characteristic of the residue field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> (still by using the points of finite order).
     
-    With this, the following conditions on <fr:tex>X/S</fr:tex> are equivalent:
+    With this, the following conditions on <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> are equivalent:
 
     
  <html:ol
@@ -126,36 +192,41 @@ style="list-style-type: &quot;a. &quot;">
 addr="fga3.vi-3-equation-star"
 href="fga3.vi-3-equation-star.xml"
 taxon="Equation"
-number="*"></fr:ref> is an isomorphism (which Shimura expresses by saying that the formation of the "Picard variety" is "compatible with specialisations").
+number="*" /> is an isomorphism (which Shimura expresses by saying that the formation of the "Picard variety" is "compatible with specialisations").
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;b. &quot;">
-        <fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex> exists (and is then exactly <fr:tex>A</fr:tex>).
+        <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^{00}]]></fr:tex> exists (and is then exactly <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>).
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;c. &quot;">
-        (As a reminder) The <fr:tex>\underline { \operatorname {Pic} } _{X_n/S}^{00}</fr:tex> exist.
+        (As a reminder) The <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_n/S}^{00}]]></fr:tex> exist.
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    By the remark that we made concerning the kernel of <fr:ref
+    </html:ol></fr:p><fr:p>By the remark that we made concerning the kernel of <fr:ref
 addr="fga3.vi-3-equation-star"
 href="fga3.vi-3-equation-star.xml"
 taxon="Equation"
-number="*"></fr:ref>, condition (a) is satisfied if the residual characteristic is zero, but this result will be notably generalised in <fr:ref
+number="*" />, condition (a) is satisfied if the residual characteristic is zero, but this result will be notably generalised in <fr:ref
 addr="fga3.vi-3-theorem-3.5"
 href="fga3.vi-3-theorem-3.5.xml"
 taxon="Theorem"
-number="3.5"></fr:ref>.
-  </fr:p><fr:p>
-    Of course, if <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is simple over <fr:tex>S</fr:tex> at the points of <fr:tex>\underline { \operatorname {Pic} } _{X/S}^0</fr:tex>, then the latter is open in <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> (cf. <fr:ref
+number="3.5" />.</fr:p><fr:p>Of course, if <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> at the points of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^0]]></fr:tex>, then the latter is open in <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> (cf. <fr:ref
 addr="fga3.vi-1-corollary-1.7"
 href="fga3.vi-1-corollary-1.7.xml"
 taxon="Corollary"
-number="1.7"></fr:ref>) and is thus, endowed with the induced structure, an abelian subscheme of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, and thus equal to <fr:tex>\underline { \operatorname {Pic} } _{X/S}^{00}</fr:tex>, which exists in this case.
-    But we have much better:
-  </fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+number="1.7" />) and is thus, endowed with the induced structure, an abelian subscheme of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, and thus equal to <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^{00}]]></fr:tex>, which exists in this case.
+    But we have much better:</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

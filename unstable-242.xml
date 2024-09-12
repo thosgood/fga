@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2537</fr:anchor><fr:addr
+type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-3-theorem-3.5</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>We describe the principle of the proof.
+      The above allows us to reduce to the case where <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of an Artinian local ring <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, and we argue by induction on the infinitesimal order of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
+      We can thus suppose that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_n/A_n}^0]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[A_n]]></fr:tex>, and reduce to proving that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_{n+1}/A_{n+1}}^0]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[A_{n+1}]]></fr:tex>.
+      Note that, for this, it suffices to construct an abelian scheme <fr:tex
+display="inline"><![CDATA[P_{n+1}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[A_{n+1}]]></fr:tex> that extends <fr:tex
+display="inline"><![CDATA[P_n=\underline {\operatorname {Pic}}_{X_n/A_n}^0]]></fr:tex>, along with an invertible module <fr:tex
+display="inline"><![CDATA[\mathscr {L}_{n+1}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X_{n+1}\times _{A_{n+1}}P_{n+1}]]></fr:tex> that extends the invertible module <fr:tex
+display="inline"><![CDATA[\mathscr {L}_n]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X_n\times _{A_n}P_n]]></fr:tex> that arises in the definition of the Picard scheme <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_n/A_n}]]></fr:tex> as the solution to a universal problem.
+      (N.B. We can suppose that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is endowed with a section over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>...).
+      For this construction, we must use the following key result: <fr:em>every abelian scheme defined over a quotient of an Artinian local ring can be extended</fr:em> (in other words, the absolute "formal scheme of modules" (<fr:ref
+addr="fga3.ii"
+href="fga3.ii.xml"
+taxon="FGA"
+number="3.II" />) for an abelian scheme over an algebraically closed field is simple over the ring of Witt vectors over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>);
+      
+      this result can be obtained by using the general formal properties of the obstruction to lifting, and the group operations.
+      With this result, we start by extending <fr:tex
+display="inline"><![CDATA[P_n]]></fr:tex> arbitrarily to <fr:tex
+display="inline"><![CDATA[P_{n+1}]]></fr:tex>;
+      we then find an obstruction to lifting <fr:tex
+display="inline"><![CDATA[\mathscr {L}_n]]></fr:tex>, found in <fr:tex
+display="inline"><![CDATA[\operatorname {H}^2(X_0\times  P_0,\mathcal {O}_{X_0\times  P_0})\otimes _k V]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[V=\mathfrak {m}^{n+1}/\mathfrak {m}^{n+2}]]></fr:tex>), and more precisely in the subspace <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(X_0,\mathcal {O}_{X_0})\otimes \operatorname {H}^1(P_0,\mathcal {O}_{P_0})\otimes _k V]]></fr:tex> (taking into account the fact that the restriction of <fr:tex
+display="inline"><![CDATA[\mathscr {L}_n]]></fr:tex> to the two factors <fr:tex
+display="inline"><![CDATA[X_n]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[P_n]]></fr:tex> is trivial).
+      But this latter space is exactly <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(P_0,\mathscr {G}_{P_0/k})\otimes  V]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathscr {G}_{P_0/k}]]></fr:tex> is the tangent sheaf to <fr:tex
+display="inline"><![CDATA[P_0/k]]></fr:tex>, and thus also the space that expresses the indeterminacy that there was in the lifting of <fr:tex
+display="inline"><![CDATA[P_n]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[P_{n+1}]]></fr:tex> (<fr:ref
+addr="fga3.ii"
+href="fga3.ii.xml"
+taxon="FGA"
+number="3.II" />).
+      So we can correct this lifting (in exactly one way, as should be the case) in such a way as to kill the obstruction to lifting <fr:tex
+display="inline"><![CDATA[\mathscr {L}_n]]></fr:tex>.</fr:p>
+  </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2538</fr:anchor><fr:addr
+type="user">fga3.vi-3-theorem-3.5</fr:addr><fr:route>fga3.vi-3-theorem-3.5.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>3.5</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Under the conditions of <fr:ref
+addr="fga3.vi-3-theorem-3.3"
+href="fga3.vi-3-theorem-3.3.xml"
+taxon="Theorem"
+number="3.3" />, let <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex> be such that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_s/k(s)}]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[k(s)]]></fr:tex> (or, equivalently, such that <fr:tex
+display="inline"><![CDATA[\dim \underline {\operatorname {Pic}}_{X_s/k(s)}=\dim \operatorname {H}^1(X_s,\mathcal {O}_{X_s})]]></fr:tex>).
+    Then there exists an open neighbourhood <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> at the points of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^0|U]]></fr:tex>, which is thus an open abelian subscheme in <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}|U]]></fr:tex>.
+    A fortiori, <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X|U/U}^{00}]]></fr:tex> exists.</fr:p>
+  
+    
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2220</fr:anchor><fr:addr
+type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-3-theorem-3.5</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>We describe the principle of the proof.
+      The above allows us to reduce to the case where <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of an Artinian local ring <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, and we argue by induction on the infinitesimal order of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
+      We can thus suppose that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_n/A_n}^0]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[A_n]]></fr:tex>, and reduce to proving that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_{n+1}/A_{n+1}}^0]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[A_{n+1}]]></fr:tex>.
+      Note that, for this, it suffices to construct an abelian scheme <fr:tex
+display="inline"><![CDATA[P_{n+1}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[A_{n+1}]]></fr:tex> that extends <fr:tex
+display="inline"><![CDATA[P_n=\underline {\operatorname {Pic}}_{X_n/A_n}^0]]></fr:tex>, along with an invertible module <fr:tex
+display="inline"><![CDATA[\mathscr {L}_{n+1}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X_{n+1}\times _{A_{n+1}}P_{n+1}]]></fr:tex> that extends the invertible module <fr:tex
+display="inline"><![CDATA[\mathscr {L}_n]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X_n\times _{A_n}P_n]]></fr:tex> that arises in the definition of the Picard scheme <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_n/A_n}]]></fr:tex> as the solution to a universal problem.
+      (N.B. We can suppose that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is endowed with a section over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>...).
+      For this construction, we must use the following key result: <fr:em>every abelian scheme defined over a quotient of an Artinian local ring can be extended</fr:em> (in other words, the absolute "formal scheme of modules" (<fr:ref
+addr="fga3.ii"
+href="fga3.ii.xml"
+taxon="FGA"
+number="3.II" />) for an abelian scheme over an algebraically closed field is simple over the ring of Witt vectors over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>);
+      
+      this result can be obtained by using the general formal properties of the obstruction to lifting, and the group operations.
+      With this result, we start by extending <fr:tex
+display="inline"><![CDATA[P_n]]></fr:tex> arbitrarily to <fr:tex
+display="inline"><![CDATA[P_{n+1}]]></fr:tex>;
+      we then find an obstruction to lifting <fr:tex
+display="inline"><![CDATA[\mathscr {L}_n]]></fr:tex>, found in <fr:tex
+display="inline"><![CDATA[\operatorname {H}^2(X_0\times  P_0,\mathcal {O}_{X_0\times  P_0})\otimes _k V]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[V=\mathfrak {m}^{n+1}/\mathfrak {m}^{n+2}]]></fr:tex>), and more precisely in the subspace <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(X_0,\mathcal {O}_{X_0})\otimes \operatorname {H}^1(P_0,\mathcal {O}_{P_0})\otimes _k V]]></fr:tex> (taking into account the fact that the restriction of <fr:tex
+display="inline"><![CDATA[\mathscr {L}_n]]></fr:tex> to the two factors <fr:tex
+display="inline"><![CDATA[X_n]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[P_n]]></fr:tex> is trivial).
+      But this latter space is exactly <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(P_0,\mathscr {G}_{P_0/k})\otimes  V]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathscr {G}_{P_0/k}]]></fr:tex> is the tangent sheaf to <fr:tex
+display="inline"><![CDATA[P_0/k]]></fr:tex>, and thus also the space that expresses the indeterminacy that there was in the lifting of <fr:tex
+display="inline"><![CDATA[P_n]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[P_{n+1}]]></fr:tex> (<fr:ref
+addr="fga3.ii"
+href="fga3.ii.xml"
+taxon="FGA"
+number="3.II" />).
+      So we can correct this lifting (in exactly one way, as should be the case) in such a way as to kill the obstruction to lifting <fr:tex
+display="inline"><![CDATA[\mathscr {L}_n]]></fr:tex>.</fr:p>
+  </fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

@@ -1,138 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1560</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.2.c-remark</fr:addr><fr:route>fga3.i-a.2.c-remark.xml</fr:route><fr:parent>fga3.i-a.2.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    In the above, we have imposed no flatness hypotheses on the morphisms of the diagram <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1602</fr:anchor><fr:addr
+type="user">fga3.i-a.2.c-remark</fr:addr><fr:route>fga3.i-a.2.c-remark.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>fga3.i-a.2.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>In the above, we have imposed no flatness hypotheses on the morphisms of the diagram <fr:ref
 addr="fga3.i-a.2.b-equation"
 href="fga3.i-a.2.b-equation.xml"
 taxon="Equation"
-number="+"></fr:ref>, and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that we consider.
+number="+" />, and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> that we consider.
     In <fr:ref
 addr="fga3.i-b.2"
 href="fga3.i-b.2.xml"
-number="B.2"></fr:ref>, we will impose a flatness hypothesis on <fr:tex>\alpha \colon  S' \to  S</fr:tex>, which will allow us to have a technique of descent for objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that are no longer under any flatness hypotheses.
+number="B.2" />, we will impose a flatness hypothesis on <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex>, which will allow us to have a technique of descent for objects over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> that are no longer under any flatness hypotheses.
     In any case, there is a flatness hypothesis involved somewhere.
-    This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base <fr:em>fields</fr:em>, over which everything, in fact, is flat!).
-  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base <fr:em>fields</fr:em>, over which everything, in fact, is flat!).</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1559</fr:anchor><fr:addr>fga3.i-a.2.c</fr:addr><fr:route>fga3.i-a.2.c.xml</fr:route><fr:number>A.2.c</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  If <fr:ref
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1603</fr:anchor><fr:addr
+type="user">fga3.i-a.2.c</fr:addr><fr:route>fga3.i-a.2.c.xml</fr:route><fr:authors /><fr:number>A.2.c</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:ref
 addr="fga3.i-a.2.b-equation"
 href="fga3.i-a.2.b-equation.xml"
 taxon="Equation"
-number="+"></fr:ref> is an exact diagram of finite morphisms, then, for every <fr:em>flat</fr:em> morphism <fr:tex>T \to  S</fr:tex> of prescheme, the diagram induced from <fr:ref
+number="+" /> is an exact diagram of finite morphisms, then, for every <fr:em>flat</fr:em> morphism <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> of prescheme, the diagram induced from <fr:ref
 addr="fga3.i-a.2.b-equation"
 href="fga3.i-a.2.b-equation.xml"
 taxon="Equation"
-number="+"></fr:ref> by a change of base <fr:tex>T \to  S</fr:tex> is again exact.
-  It thus follows that, if <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> are <fr:tex>S</fr:tex>-preschemes, with <fr:tex>X</fr:tex> <fr:em>flat</fr:em> over <fr:tex>S</fr:tex>, then the following diagram of maps (where <fr:tex>X'</fr:tex> and <fr:tex>Y'</fr:tex> are the inverse images of <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> over <fr:tex>S'</fr:tex>, and <fr:tex>X''</fr:tex> and <fr:tex>Y''</fr:tex> are their inverse images over <fr:tex>S''</fr:tex>) is exact:
+number="+" /> by a change of base <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> is again exact.
+  It thus follows that, if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> are <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-preschemes, with <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> <fr:em>flat</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then the following diagram of maps (where <fr:tex
+display="inline"><![CDATA[X']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y']]></fr:tex> are the inverse images of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S']]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[X'']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y'']]></fr:tex> are their inverse images over <fr:tex
+display="inline"><![CDATA[S'']]></fr:tex>) is exact:
   <fr:tex
-display="block">      \operatorname {Hom} _S(X,Y)  \to       \operatorname {Hom} _{S'}(X',Y')  \rightrightarrows       \operatorname {Hom} _{S''}(X'',Y'').   </fr:tex>
-  In particular, if <fr:tex>\mathcal {F}</fr:tex> denotes the fibred category (over the category <fr:tex>\mathcal {C}</fr:tex> of preschemes) such that, for <fr:tex>X \in \mathcal {C}</fr:tex>, <fr:tex>\mathcal {F}_X</fr:tex> is the category of <fr:em>flat</fr:em> <fr:tex>X</fr:tex>-preschemes, then the diagram <fr:ref
+display="block"><![CDATA[     \operatorname {Hom}_S(X,Y) \to      \operatorname {Hom}_{S'}(X',Y') \rightrightarrows      \operatorname {Hom}_{S''}(X'',Y'').   ]]></fr:tex>
+  In particular, if <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> denotes the fibred category (over the category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> of preschemes) such that, for <fr:tex
+display="inline"><![CDATA[X\in \mathcal {C}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\mathcal {F}_X]]></fr:tex> is the category of <fr:em>flat</fr:em> <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>-preschemes, then the diagram <fr:ref
 addr="fga3.i-a.2.b-equation"
 href="fga3.i-a.2.b-equation.xml"
 taxon="Equation"
-number="+"></fr:ref> is <fr:tex>\mathcal {F}</fr:tex>-exact.
+number="+" /> is <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-exact.
   (This result becomes false if we do not impose the flatness hypothesis; in particular, a finite strict epimorphism is not necessarily a descent morphism).
   We similarly see that <fr:ref
 addr="fga3.i-a.2.b-equation"
 href="fga3.i-a.2.b-equation.xml"
 taxon="Equation"
-number="+"></fr:ref> is <fr:tex>\mathcal {F}</fr:tex>-exact if <fr:tex>\mathcal {F}</fr:tex> denotes the fibred category for which <fr:tex>\mathcal {F}_X</fr:tex> is the category of <fr:em>flat</fr:em> quasi-coherent sheaves on the prescheme <fr:tex>X</fr:tex> (here, again, the flatness hypothesis is essential).
+number="+" /> is <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-exact if <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> denotes the fibred category for which <fr:tex
+display="inline"><![CDATA[\mathcal {F}_X]]></fr:tex> is the category of <fr:em>flat</fr:em> quasi-coherent sheaves on the prescheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> (here, again, the flatness hypothesis is essential).
   
-  In either case, the question of <fr:em>effectiveness</fr:em> of a gluing data (and, more specifically, of a descent data, when <fr:tex>S''=S' \times _S S'</fr:tex>) on a flat object over <fr:tex>S'</fr:tex> is delicate (and its answer in many particular cases in one of the principal objects of these current articles).
-  The speaker does not know if, for every finite strict epimorphism <fr:tex>S' \to  S</fr:tex>, every descent data on a flat quasi-coherent sheaf on <fr:tex>S'</fr:tex> is effective (even if we suppose that <fr:tex>S</fr:tex> is the spectrum of a local Artinian ring, and we restrict to locally free sheaves of rank <fr:tex>1</fr:tex>).
-  More generally, let <fr:tex>A</fr:tex> be a ring, and <fr:tex>A'</fr:tex> an <fr:tex>A</fr:tex>-algebra (where everything is commutative) such that the diagram
+  In either case, the question of <fr:em>effectiveness</fr:em> of a gluing data (and, more specifically, of a descent data, when <fr:tex
+display="inline"><![CDATA[S''=S'\times _S S']]></fr:tex>) on a flat object over <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> is delicate (and its answer in many particular cases in one of the principal objects of these current articles).
+  The speaker does not know if, for every finite strict epimorphism <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex>, every descent data on a flat quasi-coherent sheaf on <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> is effective (even if we suppose that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a local Artinian ring, and we restrict to locally free sheaves of rank <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>).
+  More generally, let <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be a ring, and <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> an <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-algebra (where everything is commutative) such that the diagram
   <fr:tex
-display="block">     A  \to      A'  \rightrightarrows      A' \otimes _A A'   </fr:tex>
-  is exact, which is equivalent to saying that the corresponding morphism <fr:tex>S' \to  S</fr:tex> between the spectra of <fr:tex>A'</fr:tex> and <fr:tex>A</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism, where <fr:tex>\mathcal {F}</fr:tex> is the fibred category of flat quasi-coherent sheaves.
-  Let <fr:tex>M'</fr:tex> be a flat <fr:tex>A'</fr:tex>-module endowed with a descent data to <fr:tex>A</fr:tex>, i.e. with an isomorphism
+display="block"><![CDATA[     A \to      A' \rightrightarrows      A'\otimes _A A'   ]]></fr:tex>
+  is exact, which is equivalent to saying that the corresponding morphism <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex> between the spectra of <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism, where <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> is the fibred category of flat quasi-coherent sheaves.
+  Let <fr:tex
+display="inline"><![CDATA[M']]></fr:tex> be a flat <fr:tex
+display="inline"><![CDATA[A']]></fr:tex>-module endowed with a descent data to <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, i.e. with an isomorphism
   <fr:tex
-display="block">      \varphi \colon  M' \otimes _A A'      \xrightarrow { \sim } A' \otimes _A M'   </fr:tex>
-  of <fr:tex>(A' \otimes _A A')</fr:tex>-modules that satisfies conditions (i) and (ii) of <fr:ref
+display="block"><![CDATA[     \varphi \colon  M'\otimes _A A'     \xrightarrow {\sim } A'\otimes _A M'   ]]></fr:tex>
+  of <fr:tex
+display="inline"><![CDATA[(A'\otimes _A A')]]></fr:tex>-modules that satisfies conditions (i) and (ii) of <fr:ref
 addr="fga3.i-a.1.c"
 href="fga3.i-a.1.c.xml"
-number="A.1.c"></fr:ref> (which we leave to the reader to write out in terms of modules).
+number="A.1.c" /> (which we leave to the reader to write out in terms of modules).
   Is this data effective (relative to the fibred category of flat quasi-coherent sheaves)?
-  Let <fr:tex>M</fr:tex> be the subset of <fr:tex>M'</fr:tex> consisting of the <fr:tex>x' \in  M'</fr:tex> such that
+  Let <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> be the subset of <fr:tex
+display="inline"><![CDATA[M']]></fr:tex> consisting of the <fr:tex
+display="inline"><![CDATA[x'\in  M']]></fr:tex> such that
   <fr:tex
-display="block">      \varphi (x' \otimes _A 1_{A'})     = 1_{A'} \otimes _A x',   </fr:tex>
-  which is a sub-<fr:tex>A</fr:tex>-module of <fr:tex>M'</fr:tex>.
-  The canonical injection <fr:tex>M \to  M'</fr:tex> defines a homomorphism of <fr:tex>A'</fr:tex>-modules <fr:tex>M \otimes _A A' \to  M'</fr:tex>.
-  <fr:em>The effectiveness of <fr:tex>\varphi</fr:tex> then implies the following: <fr:tex>M</fr:tex> is a flat <fr:tex>A</fr:tex>-module, and the above homomorphism is an isomorphism.</fr:em></fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="block"><![CDATA[     \varphi (x'\otimes _A 1_{A'})     = 1_{A'}\otimes _A x',   ]]></fr:tex>
+  which is a sub-<fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module of <fr:tex
+display="inline"><![CDATA[M']]></fr:tex>.
+  The canonical injection <fr:tex
+display="inline"><![CDATA[M\to  M']]></fr:tex> defines a homomorphism of <fr:tex
+display="inline"><![CDATA[A']]></fr:tex>-modules <fr:tex
+display="inline"><![CDATA[M\otimes _A A'\to  M']]></fr:tex>.
+  <fr:em>The effectiveness of <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> then implies the following: <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> is a flat <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module, and the above homomorphism is an isomorphism.</fr:em></fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>562</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.2.c-remark</fr:addr><fr:route>fga3.i-a.2.c-remark.xml</fr:route><fr:parent>fga3.i-a.2.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    In the above, we have imposed no flatness hypotheses on the morphisms of the diagram <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>621</fr:anchor><fr:addr
+type="user">fga3.i-a.2.c-remark</fr:addr><fr:route>fga3.i-a.2.c-remark.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>fga3.i-a.2.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>In the above, we have imposed no flatness hypotheses on the morphisms of the diagram <fr:ref
 addr="fga3.i-a.2.b-equation"
 href="fga3.i-a.2.b-equation.xml"
 taxon="Equation"
-number="+"></fr:ref>, and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that we consider.
+number="+" />, and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> that we consider.
     In <fr:ref
 addr="fga3.i-b.2"
 href="fga3.i-b.2.xml"
-number="B.2"></fr:ref>, we will impose a flatness hypothesis on <fr:tex>\alpha \colon  S' \to  S</fr:tex>, which will allow us to have a technique of descent for objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that are no longer under any flatness hypotheses.
+number="B.2" />, we will impose a flatness hypothesis on <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex>, which will allow us to have a technique of descent for objects over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> that are no longer under any flatness hypotheses.
     In any case, there is a flatness hypothesis involved somewhere.
-    This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base <fr:em>fields</fr:em>, over which everything, in fact, is flat!).
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base <fr:em>fields</fr:em>, over which everything, in fact, is flat!).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1557</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-a.2.b-equation</fr:addr><fr:route>fga3.i-a.2.b-equation.xml</fr:route><fr:number>+</fr:number></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">         S  \xleftarrow { \alpha }         S'  \overset { \beta _1 }{ \underset { \beta _2 }{ \leftleftarrows }}          S''       \tag{+}       </fr:tex></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1604</fr:anchor><fr:addr
+type="user">fga3.i-a.2.b-equation</fr:addr><fr:route>fga3.i-a.2.b-equation.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>+</fr:number><fr:parent>#265</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[         S \xleftarrow {\alpha }         S' \overset {\beta _1}{\underset {\beta _2}{\leftleftarrows }}         S''       \tag{+}       ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1558</fr:anchor><fr:addr>fga3.i-b.2</fr:addr><fr:route>fga3.i-b.2.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1605</fr:anchor><fr:addr
+type="user">fga3.i-b.2</fr:addr><fr:route>fga3.i-b.2.xml</fr:route><fr:title
+text="Generalities, and descent by faithfully flat morphisms › Descent by faithfully flat morphisms › Application to the descent of certain properties of morphisms"><fr:link
+type="local"
 href="fga3.i-b.xml"
+addr="fga3.i-b"
+title="Generalities, and descent by faithfully flat morphisms › Descent by faithfully flat morphisms"><fr:link
 type="local"
-addr="fga3.i-b"><fr:link
 href="fga3.i.xml"
-type="local"
-addr="fga3.i">Generalities, and descent by faithfully flat morphisms</fr:link> › Descent by faithfully flat morphisms</fr:link> › Application to the descent of certain properties of morphisms</fr:title><fr:number>B.2</fr:number><fr:parent>fga3.i-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>P</fr:tex> be a class of morphisms of preschemes.
-  Let <fr:tex>\alpha \colon  S \to  S'</fr:tex> be a morphism of preschemes, and let <fr:tex>f \colon  X \to  Y</fr:tex> be a morphism of <fr:tex>S</fr:tex>-preschemes, with <fr:tex>f' \colon  X' \to  Y'</fr:tex> the inverse image of <fr:tex>f</fr:tex> under <fr:tex>\alpha</fr:tex>.
-  We can then ask if the relation "<fr:tex>f' \in  P</fr:tex>" implies that "<fr:tex>f \in  P</fr:tex>".
-  It appears that the answer is affirmative in many important cases, if we suppose that <fr:tex>\alpha</fr:tex> is <fr:em>faithfully flat</fr:em> and <fr:em>quasi-compact</fr:em> (this latter hypothesis sometimes being overly strong).
-  We can see this directly without difficulty if <fr:tex>P</fr:tex> is the class of surjective (resp. radicial) morphisms (with these two cases following from the surjectivity of <fr:tex>\alpha</fr:tex>), or flat (resp. faithfully flat, resp. simple) morphisms (with these three cases following from the faithful flatness of <fr:tex>\alpha</fr:tex>), or morphisms of finite type.
+addr="fga3.i"
+title="Generalities, and descent by faithfully flat morphisms">Generalities, and descent by faithfully flat morphisms</fr:link> › Descent by faithfully flat morphisms</fr:link> › Application to the descent of certain properties of morphisms</fr:title><fr:authors /><fr:number>B.2</fr:number><fr:parent>fga3.i-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> be a class of morphisms of preschemes.
+  Let <fr:tex
+display="inline"><![CDATA[\alpha \colon  S\to  S']]></fr:tex> be a morphism of preschemes, and let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> be a morphism of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-preschemes, with <fr:tex
+display="inline"><![CDATA[f'\colon  X'\to  Y']]></fr:tex> the inverse image of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> under <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex>.
+  We can then ask if the relation "<fr:tex
+display="inline"><![CDATA[f'\in  P]]></fr:tex>" implies that "<fr:tex
+display="inline"><![CDATA[f\in  P]]></fr:tex>".
+  It appears that the answer is affirmative in many important cases, if we suppose that <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is <fr:em>faithfully flat</fr:em> and <fr:em>quasi-compact</fr:em> (this latter hypothesis sometimes being overly strong).
+  We can see this directly without difficulty if <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> is the class of surjective (resp. radicial) morphisms (with these two cases following from the surjectivity of <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex>), or flat (resp. faithfully flat, resp. simple) morphisms (with these three cases following from the faithful flatness of <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex>), or morphisms of finite type.
   Using <fr:ref
 addr="fga3.i-b.1-theorem-1"
 href="fga3.i-b.1-theorem-1.xml"
 taxon="Theorem"
-number="1"></fr:ref>, <fr:ref
+number="1" />, <fr:ref
 addr="fga3.i-b.1-theorem-2"
 href="fga3.i-b.1-theorem-2.xml"
 taxon="Theorem"
-number="2"></fr:ref>, and <fr:ref
+number="2" />, and <fr:ref
 addr="fga3.i-b.1-lemma-1.2"
 href="fga3.i-b.1-lemma-1.2.xml"
 taxon="Lemma"
-number="1.2"></fr:ref>, we see that it is also true if <fr:tex>P</fr:tex> is one of the following classes:
-  isomorphisms, open immersions, closed immersions, immersions (if <fr:tex>f</fr:tex> is of finite type, and <fr:tex>Y</fr:tex> is locally Noetherian), affine morphisms, finite morphisms, quasi-finite morphisms, open morphisms, closed morphisms, homeomorphisms, separated morphisms, or proper morphisms.
+number="1.2" />, we see that it is also true if <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> is one of the following classes:
+  isomorphisms, open immersions, closed immersions, immersions (if <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is of finite type, and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is locally Noetherian), affine morphisms, finite morphisms, quasi-finite morphisms, open morphisms, closed morphisms, homeomorphisms, separated morphisms, or proper morphisms.
   
   The only important case not covered here is that of projective or quasi-projective morphisms, which has already been discussed in the remark in <fr:ref
 addr="fga3.i-b.1"
 href="fga3.i-b.1.xml"
-number="B.1"></fr:ref>.
-</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+number="B.1" />.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2484</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-4-remark-comp</fr:addr><fr:route>fga3.vi-4-remark-comp.xml</fr:route><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2520</fr:anchor><fr:addr
+type="user">fga3.vi-4-remark-comp</fr:addr><fr:route>fga3.vi-4-remark-comp.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
     
     The questions of finiteness of the type highlighted in this section have been all but totally resolved since the editing of this present talk.
     We note here the principal facts now known in this direction.
     To simplify the statements, we implicitly assume that all the Picard preschemes that arise in the statements exist, even though an evident modification of these statements would allow us to get rid of any existence hypothesis.
-    In what follows, <fr:tex>S</fr:tex> denotes a Noetherian scheme, and <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> are proper schemes over <fr:tex>S</fr:tex>.
+    In what follows, <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> denotes a Noetherian scheme, and <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> are proper schemes over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
 
     
  <html:ol
@@ -20,8 +25,10 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        Let <fr:tex>f \colon  X \to  Y</fr:tex> be a surjective morphism.
-        Then <fr:tex>f^* \colon \underline { \operatorname {Pic} } _{Y/S} \to \underline { \operatorname {Pic} } _{X/S}</fr:tex> is a morphism of finite type.
+        Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> be a surjective morphism.
+        Then <fr:tex
+display="inline"><![CDATA[f^*\colon \underline {\operatorname {Pic}}_{Y/S}\to \underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is a morphism of finite type.
       </html:li>
 
 
@@ -29,34 +36,68 @@ style="list-style-type: &quot;i. &quot;">
  <html:li
 style="list-style-type: &quot;ii. &quot;">
         
-        Suppose that <fr:tex>Y</fr:tex> is projective over <fr:tex>S</fr:tex>, endowed with an invertible module that is ample with respect to <fr:tex>S</fr:tex>, and let <fr:tex>X</fr:tex> be the scheme of zeros of an arbitrary section of this module.
-        Let <fr:tex>f \colon  X \to  Y</fr:tex> be the canonical immersion.
-        Finally, suppose that the irreducible components of the fibres of <fr:tex>Y/S</fr:tex> are of dimension <fr:tex>\geqslant3</fr:tex>.
-        Then <fr:tex>f^* \colon \underline { \operatorname {Pic} } _{Y/S} \to \underline { \operatorname {Pic} } _{X/S}</fr:tex> is of finite type.
+        Suppose that <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is projective over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, endowed with an invertible module that is ample with respect to <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be the scheme of zeros of an arbitrary section of this module.
+        Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> be the canonical immersion.
+        Finally, suppose that the irreducible components of the fibres of <fr:tex
+display="inline"><![CDATA[Y/S]]></fr:tex> are of dimension <fr:tex
+display="inline"><![CDATA[\geqslant 3]]></fr:tex>.
+        Then <fr:tex
+display="inline"><![CDATA[f^*\colon \underline {\operatorname {Pic}}_{Y/S}\to \underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is of finite type.
       </html:li>
 
 
       
  <html:li
 style="list-style-type: &quot;iii. &quot;">
-        Suppose that <fr:tex>X</fr:tex> is projective over <fr:tex>S</fr:tex>, and that all its geometric fibres are integral and of dimension <fr:tex>n</fr:tex>.
-        Let <fr:tex>\mathcal {O} _X(1)</fr:tex> be an ample invertible module on <fr:tex>X</fr:tex>, allowing us to define Hilbert polynomials.
-        Let <fr:tex>M</fr:tex> be a subset of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>.
-        Then <fr:tex>M</fr:tex> is quasi-compact if and only if, in the Hilbert polynomials <fr:tex>a_0x^n+a_1x^{n-1}+a_2x^{n-2}+ \ldots +a_n</fr:tex> of the elements of <fr:tex>M</fr:tex>, the coefficients <fr:tex>a_1</fr:tex> and <fr:tex>a_2</fr:tex> are bounded.
+        Suppose that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is projective over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and that all its geometric fibres are integral and of dimension <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>.
+        Let <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex> be an ample invertible module on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, allowing us to define Hilbert polynomials.
+        Let <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> be a subset of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>.
+        Then <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> is quasi-compact if and only if, in the Hilbert polynomials <fr:tex
+display="inline"><![CDATA[a_0x^n+a_1x^{n-1}+a_2x^{n-2}+\ldots +a_n]]></fr:tex> of the elements of <fr:tex
+display="inline"><![CDATA[M]]></fr:tex>, the coefficients <fr:tex
+display="inline"><![CDATA[a_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[a_2]]></fr:tex> are bounded.
       </html:li>
 
 
       
  <html:li
 style="list-style-type: &quot;iv. &quot;">
-        For every integer <fr:tex>n \neq0</fr:tex>, the <fr:tex>n</fr:tex>-th power homomorphism in the group prescheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is a morphism of finite type.
+        For every integer <fr:tex
+display="inline"><![CDATA[n\neq 0]]></fr:tex>, the <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-th power homomorphism in the group prescheme <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is a morphism of finite type.
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    Note that (i) and (ii) also imply (under the hypotheses given in their respective statements) that <fr:em>a subset <fr:tex>M</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{Y/S}</fr:tex> is quasi-compact if and only if its image in <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is quasi-compact</fr:em>.
-    We thus conclude that an invertible module <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>Y</fr:tex> is <fr:tex>\tau</fr:tex>-equivalent to <fr:tex>0</fr:tex> if and only if its inverse image in <fr:tex>X</fr:tex> is;
-    in other words, <fr:tex>\underline { \operatorname {Pic} } _{Y/S}^ \tau</fr:tex> is the inverse image of <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex>.
-    In particular, to show that the first prescheme is of finite type over <fr:tex>S</fr:tex>, it suffices to prove this for the second, since <fr:tex>\underline { \operatorname {Pic} } _{Y/S} \to \underline { \operatorname {Pic} } _{X/S}</fr:tex> is of finite type.
+    </html:ol></fr:p><fr:p>Note that (i) and (ii) also imply (under the hypotheses given in their respective statements) that <fr:em>a subset <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{Y/S}]]></fr:tex> is quasi-compact if and only if its image in <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is quasi-compact</fr:em>.
+    We thus conclude that an invertible module <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\tau ]]></fr:tex>-equivalent to <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> if and only if its inverse image in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is;
+    in other words, <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{Y/S}^\tau ]]></fr:tex> is the inverse image of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^\tau ]]></fr:tex>.
+    In particular, to show that the first prescheme is of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, it suffices to prove this for the second, since <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{Y/S}\to \underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is of finite type.
     Then using (i), Chow's lemma, and (iii), we find:
 
     
@@ -65,12 +106,17 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;v. &quot;">
-        <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is of finite type over <fr:tex>S</fr:tex>.
+        <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^\tau ]]></fr:tex> is of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    Generally, the conjunction of (i) for a finite morphism and (ii) allows us to reduce, for the majority of finiteness questions, to the case where <fr:tex>X/S</fr:tex> has integral and normal geometric fibres of dimension <fr:tex>\leqslant2</fr:tex>;
-    often, even, applying (i) for a surjective but not-necessarily finite morphism, along with the resolution of singularities of algebraic surfaces (due, in arbitrary characteristic, to Abhyankar), we can reduce to the case where <fr:tex>X/S</fr:tex> is even simple, and thus has non-singular geometric fibres of dimension <fr:tex>2</fr:tex>.
+    </html:ol></fr:p><fr:p>Generally, the conjunction of (i) for a finite morphism and (ii) allows us to reduce, for the majority of finiteness questions, to the case where <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> has integral and normal geometric fibres of dimension <fr:tex
+display="inline"><![CDATA[\leqslant 2]]></fr:tex>;
+    often, even, applying (i) for a surjective but not-necessarily finite morphism, along with the resolution of singularities of algebraic surfaces (due, in arbitrary characteristic, to Abhyankar), we can reduce to the case where <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> is even simple, and thus has non-singular geometric fibres of dimension <fr:tex
+display="inline"><![CDATA[2]]></fr:tex>.
     This allows us, for example, taking into account (v) and the Picard–Igusa inequality bounding the rank of the Néron–Severi group of a non-singular projective surface, to prove the following generalisation of the Néron finiteness theorem:
 
     
@@ -79,13 +125,17 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;vi. &quot;">
-        Let <fr:tex>X/S</fr:tex> be proper over <fr:tex>S</fr:tex>, but otherwise arbitrary.
+        Let <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> be proper over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, but otherwise arbitrary.
         
-        Then the Néron–Severi groups <fr:tex>\underline { \operatorname {Pic} } _{X_i/k_i}/ \underline { \operatorname {Pic} } _{X_i/k_i}^0</fr:tex> of the geometric fibres <fr:tex>X_i/k_i</fr:tex> of <fr:tex>X/S</fr:tex> are of finite type, and their rank and the order of their torsion subgroups are bounded.
+        Then the Néron–Severi groups <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_i/k_i}/\underline {\operatorname {Pic}}_{X_i/k_i}^0]]></fr:tex> of the geometric fibres <fr:tex
+display="inline"><![CDATA[X_i/k_i]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> are of finite type, and their rank and the order of their torsion subgroups are bounded.
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    The same method of reduction to the case of non-singular surfaces, and known theorems for this case (such as the Néron finiteness theorem, and the fact that the intersection form on the Néron–Severi group is non-degenerate) implies:
+    </html:ol></fr:p><fr:p>The same method of reduction to the case of non-singular surfaces, and known theorems for this case (such as the Néron finiteness theorem, and the fact that the intersection form on the Néron–Severi group is non-degenerate) implies:
 
     
  <html:ol
@@ -93,18 +143,36 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;vii. &quot;">
-        Let <fr:tex>X</fr:tex> be a proper scheme over an algebraically closed field.
-        Then there exists a finite number of integral closed curves <fr:tex>C_i</fr:tex> (for <fr:tex>1 \leqslant  i \leqslant  r</fr:tex>) in <fr:tex>X</fr:tex>, such that the following property is satisfied:
-        for every subset <fr:tex>M</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, <fr:tex>M</fr:tex> is quasi-compact if and only if the integers <fr:tex>\deg \mathscr { L } _{C'_i}</fr:tex> (for <fr:tex>\mathscr { L } \in  M</fr:tex>) are bounded (where <fr:tex>C'_i</fr:tex> denotes the normalisation of <fr:tex>C_i</fr:tex>).
+        Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a proper scheme over an algebraically closed field.
+        Then there exists a finite number of integral closed curves <fr:tex
+display="inline"><![CDATA[C_i]]></fr:tex> (for <fr:tex
+display="inline"><![CDATA[1\leqslant  i\leqslant  r]]></fr:tex>) in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, such that the following property is satisfied:
+        for every subset <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/k}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> is quasi-compact if and only if the integers <fr:tex
+display="inline"><![CDATA[\deg \mathscr {L}_{C'_i}]]></fr:tex> (for <fr:tex
+display="inline"><![CDATA[\mathscr {L}\in  M]]></fr:tex>) are bounded (where <fr:tex
+display="inline"><![CDATA[C'_i]]></fr:tex> denotes the normalisation of <fr:tex
+display="inline"><![CDATA[C_i]]></fr:tex>).
       </html:li>
 
     </html:ol>
 
 
-    In the above we can take <fr:tex>r</fr:tex> to be the rank of the Néron–Severi group.
-    Once we know that this group is of finite type, (vii) reduces to the fact that the linear forms on the Néron–Severi group defined by the curves <fr:tex>C</fr:tex> in <fr:tex>X</fr:tex> do not simultaneously vanish except for on the torsion elements of the Néron–Severi group.
-    In the case where <fr:tex>X</fr:tex> is non-singular and projective, this result, as well as (v), was due to Matsusaka.
-    Using (vii), we easily obtain the following characterisation of invertible modules that are <fr:tex>\tau</fr:tex>-equivalent to <fr:tex>0</fr:tex> on <fr:tex>X</fr:tex>:
+    In the above we can take <fr:tex
+display="inline"><![CDATA[r]]></fr:tex> to be the rank of the Néron–Severi group.
+    Once we know that this group is of finite type, (vii) reduces to the fact that the linear forms on the Néron–Severi group defined by the curves <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> do not simultaneously vanish except for on the torsion elements of the Néron–Severi group.
+    In the case where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is non-singular and projective, this result, as well as (v), was due to Matsusaka.
+    Using (vii), we easily obtain the following characterisation of invertible modules that are <fr:tex
+display="inline"><![CDATA[\tau ]]></fr:tex>-equivalent to <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>:
 
     
  <html:ol
@@ -112,8 +180,10 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;viii. &quot;">
-        <fr:p>
-          Let <fr:tex>X/k</fr:tex> be a proper scheme over a field, and <fr:tex>\mathscr { L }</fr:tex> an invertible module on <fr:tex>X</fr:tex>.
+        <fr:p>Let <fr:tex
+display="inline"><![CDATA[X/k]]></fr:tex> be a proper scheme over a field, and <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> an invertible module on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>.
           Then the following conditions are equivalent:
 
           
@@ -121,60 +191,80 @@ style="list-style-type: &quot;viii. &quot;">
             
  <html:li
 style="list-style-type: &quot;a. &quot;">
-              <fr:tex>\mathscr { L }</fr:tex> is <fr:tex>\tau</fr:tex>-equivalent to <fr:tex>0</fr:tex>.
+              <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\tau ]]></fr:tex>-equivalent to <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>.
             </html:li>
 
             
  <html:li
 style="list-style-type: &quot;b. &quot;">
-              For every coherent module <fr:tex>F</fr:tex>, we have <fr:tex>\chi (F \otimes \mathscr { L } )= \chi (F)</fr:tex>, where <fr:tex>\chi</fr:tex> denotes the Euler–Poincaré characteristic.
+              For every coherent module <fr:tex
+display="inline"><![CDATA[F]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[\chi (F\otimes \mathscr {L})=\chi (F)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\chi ]]></fr:tex> denotes the Euler–Poincaré characteristic.
             </html:li>
 
             
  <html:li
 style="list-style-type: &quot;b'. &quot;">
-              Like (b), but with <fr:tex>F= \mathcal {O} _Y</fr:tex>, where <fr:tex>Y</fr:tex> is an integral closed subscheme of dimension <fr:tex>1</fr:tex> in <fr:tex>X</fr:tex>.
+              Like (b), but with <fr:tex
+display="inline"><![CDATA[F=\mathcal {O}_Y]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is an integral closed subscheme of dimension <fr:tex
+display="inline"><![CDATA[1]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>.
             </html:li>
 
             
  <html:li
 style="list-style-type: &quot;c. &quot;">
-              For every <fr:tex>Y</fr:tex> as above, writing <fr:tex>Y'</fr:tex> to mean the normalised curve, we have <fr:tex>\deg \mathscr { L } _{Y'}=0</fr:tex>.
+              For every <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> as above, writing <fr:tex
+display="inline"><![CDATA[Y']]></fr:tex> to mean the normalised curve, we have <fr:tex
+display="inline"><![CDATA[\deg \mathscr {L}_{Y'}=0]]></fr:tex>.
             </html:li>
 
           </html:ol>
 
 
-          If <fr:tex>X/k</fr:tex> is projective and endowed with an ample invertible module <fr:tex>\mathcal {O} _X(1)</fr:tex>, then the above conditions are also equivalent to the following:
+          If <fr:tex
+display="inline"><![CDATA[X/k]]></fr:tex> is projective and endowed with an ample invertible module <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex>, then the above conditions are also equivalent to the following:
 
           
  <html:ol>
             
  <html:li
 style="list-style-type: &quot;d. &quot;">
-              For every integer <fr:tex>m</fr:tex>, <fr:tex>\mathscr { L } ^{ \otimes  m}(1)</fr:tex> is ample.
+              For every integer <fr:tex
+display="inline"><![CDATA[m]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\mathscr {L}^{\otimes  m}(1)]]></fr:tex> is ample.
             </html:li>
 
             
  <html:li
 style="list-style-type: &quot;e. &quot;">
-              (If <fr:tex>X</fr:tex> is integral).
-              For every pair of integers <fr:tex>(m,n)</fr:tex>, we have
+              (If <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is integral).
+              For every pair of integers <fr:tex
+display="inline"><![CDATA[(m,n)]]></fr:tex>, we have
               <fr:tex
-display="block">                  \chi ( \mathscr { L } ^{ \otimes  m}(n))                 =  \chi ( \mathcal {O} (n))               </fr:tex>
+display="block"><![CDATA[                 \chi (\mathscr {L}^{\otimes  m}(n))                 = \chi (\mathcal {O}(n))               ]]></fr:tex>
               
-              (i.e. (b) is true for <fr:tex>F= \mathscr { L } ^{ \otimes  m}(n)</fr:tex>).
+              (i.e. (b) is true for <fr:tex
+display="inline"><![CDATA[F=\mathscr {L}^{\otimes  m}(n)]]></fr:tex>).
             </html:li>
 
           </html:ol></fr:p>
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    For the sufficiency of this last condition, note that it implies that the Hilbert polynomials of the <fr:tex>\mathscr { L } ^{ \otimes  m}</fr:tex> are all equal, and thus, by the Mumford criterion (iii), the <fr:tex>\mathscr { L } ^{ \otimes  m}</fr:tex> remain in a quasi-compact subset of <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, i.e. we have (a).
+    </html:ol></fr:p><fr:p>For the sufficiency of this last condition, note that it implies that the Hilbert polynomials of the <fr:tex
+display="inline"><![CDATA[\mathscr {L}^{\otimes  m}]]></fr:tex> are all equal, and thus, by the Mumford criterion (iii), the <fr:tex
+display="inline"><![CDATA[\mathscr {L}^{\otimes  m}]]></fr:tex> remain in a quasi-compact subset of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/k}]]></fr:tex>, i.e. we have (a).
     Conditions (b), (b'), and (c) should be considered as variants (for an arbitrary proper scheme) of the notion of <fr:em>numerical equivalence</fr:em>, usually defined for non-singular projective varieties.
-    For such varieties, the equivalence of (a) and (c) was evidently well known (Matsusaka).
-  </fr:p><fr:p>
-    Criterion (e) from the above also implies the following result:
+    For such varieties, the equivalence of (a) and (c) was evidently well known (Matsusaka).</fr:p><fr:p>Criterion (e) from the above also implies the following result:
 
     
  <html:ol
@@ -182,149 +272,265 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;ix. &quot;">
-        Let <fr:tex>f \colon  X \to  S</fr:tex> be a flat projective morphism whose geometric fibres are integral.
-        Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is open <fr:em>and closed</fr:em> in <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>.
+        Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be a flat projective morphism whose geometric fibres are integral.
+        Then <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^\tau ]]></fr:tex> is open <fr:em>and closed</fr:em> in <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>.
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    We restrict ourselves to some comments on the proofs of the key results (i), (ii), and (iii) (result (iv) is a little bit different from the others, and can be proven using only (i) for radicial surjective finite morphisms, or, more precisely, for a Frobenius morphism).
+    </html:ol></fr:p><fr:p>We restrict ourselves to some comments on the proofs of the key results (i), (ii), and (iii) (result (iv) is a little bit different from the others, and can be proven using only (i) for radicial surjective finite morphisms, or, more precisely, for a Frobenius morphism).
     For (i), we use, in an essential way, the ideas of non-flat descent (see <fr:link
-href="fga3.i-a.2.c.xml"
 type="local"
+href="fga3.i-a.2.c.xml"
 addr="fga3.i-a.2.c">FGA 3.I, §A.2.c</fr:link>).
     One finds that (thinking only of finiteness results) the lack of effectivity criteria for descent data is inoffensive.
     Mumford has recently proven a slightly weaker form of (iii), where the criterion makes use of <fr:em>all</fr:em> the coefficients of the Hilbert polynomial.
     His argument is extremely simple, and is inspired by the proof of an amplitude criterion by Nakai (stated by the latter for non-singular surfaces, and generalised by Mumford to arbitrary projective morphisms).
-    It seems to me that this argument only works under a gentle additional restriction on the fibres of <fr:tex>X/S</fr:tex> (Serre's (<fr:tex>\text {S}_2</fr:tex>) property), which is satisfied if the geometric fibres are normal.
-    We then use this restricted criterion in the proof of (ii): criterion (i) allows us to reduce to the case where <fr:tex>Y/S</fr:tex> is flat with integral and normal geometric fibres, and applying the Mumford criterion we easily reduce to the case where <fr:tex>X/S</fr:tex> satisfies the same conditions.
-    From the dimension hypothesis it then follows that the geometric fibres of <fr:tex>Y</fr:tex> and of <fr:tex>X</fr:tex> are of depth <fr:tex>\geqslant2</fr:tex> at their closed points, which allows us to apply the "equivalence criteria" under the form that is given in [<fr:link
-href="Gro1960b.xml"
+    It seems to me that this argument only works under a gentle additional restriction on the fibres of <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> (Serre's (<fr:tex
+display="inline"><![CDATA[\text {S}_2]]></fr:tex>) property), which is satisfied if the geometric fibres are normal.
+    We then use this restricted criterion in the proof of (ii): criterion (i) allows us to reduce to the case where <fr:tex
+display="inline"><![CDATA[Y/S]]></fr:tex> is flat with integral and normal geometric fibres, and applying the Mumford criterion we easily reduce to the case where <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> satisfies the same conditions.
+    From the dimension hypothesis it then follows that the geometric fibres of <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> and of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> are of depth <fr:tex
+display="inline"><![CDATA[\geqslant 2]]></fr:tex> at their closed points, which allows us to apply the "equivalence criteria" under the form that is given in [<fr:link
 type="local"
-addr="Gro1960b">Gro1960b</fr:link>, XII], and finishes the proof of (ii).
+href="Gro1960b.xml"
+addr="Gro1960b"
+title="Séminaire de Géométrie Algèbrique">Gro1960b</fr:link>, XII], and finishes the proof of (ii).
     Once we have (i) and (ii), it is not difficult in the Mumford criterion to discard the hypothesis that the fibres be normal, and to prove it under the stronger form given in (iii).
     
-    We note finally that the proof of (i) and (ii) also shows that, in the case where <fr:tex>S</fr:tex> is the spectrum of a field <fr:tex>k</fr:tex>, the morphism <fr:tex>\underline { \operatorname {Pic} } _{Y/k} \to \underline { \operatorname {Pic} } _{X/k}</fr:tex> is <fr:em>affine</fr:em> (and not only of finite type).
-  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    We note finally that the proof of (i) and (ii) also shows that, in the case where <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, the morphism <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{Y/k}\to \underline {\operatorname {Pic}}_{X/k}]]></fr:tex> is <fr:em>affine</fr:em> (and not only of finite type).</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="References">References</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2521</fr:anchor><fr:addr
+type="user">Gro1960b</fr:addr><fr:route>Gro1960b.xml</fr:route><fr:title
+text="Séminaire de Géométrie Algèbrique">Séminaire de Géométrie Algèbrique</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>1960</fr:year></fr:date><fr:authors><fr:author>A. Grothendieck</fr:author></fr:authors><fr:meta
+name="venue">Paris, Institut des Hautes Études Scientifiques</fr:meta><fr:meta
+name="bibtex"><![CDATA[@book{Gro1960b,
+  title = {{{S\'{e}minaire de G\'{e}om\'{e}trie Alg\'{e}brique}}},
+  author = {Grothendieck, A.},
+  year = {1960/61},
+  publisher = {{Paris, Institut des Hautes \'{E}tudes Scientifiques}}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2483</fr:anchor><fr:addr>fga3.vi-4</fr:addr><fr:route>fga3.vi-4.xml</fr:route><fr:title><fr:link
-href="fga3.vi.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2523</fr:anchor><fr:addr
+type="user">fga3.vi-4</fr:addr><fr:route>fga3.vi-4.xml</fr:route><fr:title
+text="Picard schemes: General properties › The finiteness theorem for the Picard scheme"><fr:link
 type="local"
-addr="fga3.vi">Picard schemes: General properties</fr:link> › The finiteness theorem for the Picard scheme</fr:title><fr:number>4</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>f \colon  X \to  S</fr:tex> be a projective and flat morphism such that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists.
-  Then the "Hilbert polynomials" <fr:tex>Q \in \mathbb {Q}[t]</fr:tex> allow us to decompose <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> into a sum of opens <fr:tex>\underline { \operatorname {Pic} } _{X/S}^Q</fr:tex>.
-  If we do not make any further hypotheses, ensuring for example that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is separated over <fr:tex>S</fr:tex>, then it will not be true in general that these opens are of finite type over <fr:tex>S</fr:tex>;
-  we obtain a counterexample when <fr:tex>X</fr:tex> is "a conic degenerating to two lines".
+href="fga3.vi.xml"
+addr="fga3.vi"
+title="Picard schemes: General properties">Picard schemes: General properties</fr:link> › The finiteness theorem for the Picard scheme</fr:title><fr:authors /><fr:number>4</fr:number><fr:parent>fga3.vi</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be a projective and flat morphism such that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> exists.
+  Then the "Hilbert polynomials" <fr:tex
+display="inline"><![CDATA[Q\in \mathbb {Q}[t]]]></fr:tex> allow us to decompose <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> into a sum of opens <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^Q]]></fr:tex>.
+  If we do not make any further hypotheses, ensuring for example that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is separated over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then it will not be true in general that these opens are of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>;
+  we obtain a counterexample when <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is "a conic degenerating to two lines".
   
-  It is possible, however, that this is the case if <fr:tex>f</fr:tex> is <fr:em>separable</fr:em> and has <fr:em>irreducible geometric fibres</fr:em>.
-  The question is linked to knowing if <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is of finite type over <fr:tex>S</fr:tex>, which can be true without any hypotheses on the fibres of <fr:tex>X/S</fr:tex>.
-  When <fr:tex>f \colon  X \to  S</fr:tex> is simple, we note that <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is contained in one of the <fr:tex>\underline { \operatorname {Pic} } _{X/S}^Q</fr:tex> (thanks to the fact that, on a non-singular projective variety, "torsion" equivalence is finer than (in fact, "identical to", thanks to Matsusaka) numerical equivalence for divisors), and is thus of finite type over <fr:tex>S</fr:tex> if the <fr:tex>\underline { \operatorname {Pic} } _{X/S}^Q</fr:tex> are.
-  Note that these finiteness questions that we have just highlighted still make sense even without supposing the existence of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, since they can be expressed by saying that certain families of invertible modules are "limited", in the sense of <fr:ref
+  It is possible, however, that this is the case if <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is <fr:em>separable</fr:em> and has <fr:em>irreducible geometric fibres</fr:em>.
+  The question is linked to knowing if <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^\tau ]]></fr:tex> is of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, which can be true without any hypotheses on the fibres of <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex>.
+  When <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> is simple, we note that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^\tau ]]></fr:tex> is contained in one of the <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^Q]]></fr:tex> (thanks to the fact that, on a non-singular projective variety, "torsion" equivalence is finer than (in fact, "identical to", thanks to Matsusaka) numerical equivalence for divisors), and is thus of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> if the <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^Q]]></fr:tex> are.
+  Note that these finiteness questions that we have just highlighted still make sense even without supposing the existence of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, since they can be expressed by saying that certain families of invertible modules are "limited", in the sense of <fr:ref
 addr="fga3.iv"
 href="fga3.iv.xml"
 taxon="FGA"
-number="3.IV"></fr:ref>:
-  Consider, for every algebraically closed field <fr:tex>k</fr:tex>, the integral subschemes of <fr:tex>\mathbb {P}_k^r</fr:tex> of dimension <fr:tex>n</fr:tex> and degree <fr:tex>d</fr:tex>, and the invertible modules on these preschemes that have a Hilbert polynomial <fr:tex>Q</fr:tex> (where <fr:tex>r</fr:tex>, <fr:tex>n</fr:tex>, <fr:tex>d</fr:tex>, and <fr:tex>Q</fr:tex> are given), and show that the family of these modules (considered as coherent modules on the <fr:tex>\mathbb {P}_k^r</fr:tex>) is <fr:em>limited</fr:em>, i.e. can be parametrised by a scheme of finite type over <fr:tex>\mathbb {Z}</fr:tex>.
-</fr:p><fr:p>
-  Using the method of Matsusaka <fr:link
-href="Mat1957.xml"
+number="3.IV" />:
+  Consider, for every algebraically closed field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, the integral subschemes of <fr:tex
+display="inline"><![CDATA[\mathbb {P}_k^r]]></fr:tex> of dimension <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> and degree <fr:tex
+display="inline"><![CDATA[d]]></fr:tex>, and the invertible modules on these preschemes that have a Hilbert polynomial <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[r]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[d]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex> are given), and show that the family of these modules (considered as coherent modules on the <fr:tex
+display="inline"><![CDATA[\mathbb {P}_k^r]]></fr:tex>) is <fr:em>limited</fr:em>, i.e. can be parametrised by a scheme of finite type over <fr:tex
+display="inline"><![CDATA[\mathbb {Z}]]></fr:tex>.</fr:p><fr:p>Using the method of Matsusaka <fr:link
 type="local"
-addr="Mat1957">[Mat1957]</fr:link>, a rather technical proof (using the "equivalence criteria" in a suitable form) allow us to answer in the affirmative when we restrict to the non-singular subvarieties of <fr:tex>\mathbb {P}_k^r</fr:tex>.
-  More precisely, we obtain the following result:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+href="Mat1957.xml"
+addr="Mat1957"
+title="The criteria for algebraic equivalence and the torsion group">[Mat1957]</fr:link>, a rather technical proof (using the "equivalence criteria" in a suitable form) allow us to answer in the affirmative when we restrict to the non-singular subvarieties of <fr:tex
+display="inline"><![CDATA[\mathbb {P}_k^r]]></fr:tex>.
+  More precisely, we obtain the following result:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>816</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.vi-4-theorem-4.1</fr:addr><fr:route>fga3.vi-4-theorem-4.1.xml</fr:route><fr:number>4.1</fr:number><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>f \colon  X \to  S</fr:tex> be a simple projective morphism with connected geometric fibres, with <fr:tex>S</fr:tex> Noetherian.
-    Let <fr:tex>\mathcal {O} _X(1)</fr:tex> be a very ample module on <fr:tex>X</fr:tex> with respect to <fr:tex>S</fr:tex>, and <fr:tex>E</fr:tex> a subset of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> corresponding to a family <fr:tex>( \mathscr { L } _i)</fr:tex> of invertible modules on the geometric fibres <fr:tex>\overline {X}_{s_i}</fr:tex> of <fr:tex>X/S</fr:tex>, with <fr:tex>D_i</fr:tex> a (not-necessarily positive) divisor on <fr:tex>\overline {X}_{s_i}</fr:tex> that defines <fr:tex>\mathscr { L } _i</fr:tex>, and let <fr:tex>a_n^{(i)}t^n+ \ldots +a_0^{(i)}</fr:tex> be the Hilbert polynomial of <fr:tex>\mathscr { L } _i</fr:tex>, and let <fr:tex>\xi = \xi _i</fr:tex> be a divisor that defines <fr:tex>\mathcal {O} _X(1)</fr:tex>, i.e. a hyperplane section.
-  </fr:p><fr:p>
-    Then the following conditions are equivalent:
-  </fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>867</fr:anchor><fr:addr
+type="user">fga3.vi-4-theorem-4.1</fr:addr><fr:route>fga3.vi-4-theorem-4.1.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>4.1</fr:number><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be a simple projective morphism with connected geometric fibres, with <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> Noetherian.
+    Let <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex> be a very ample module on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> with respect to <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> a subset of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> corresponding to a family <fr:tex
+display="inline"><![CDATA[(\mathscr {L}_i)]]></fr:tex> of invertible modules on the geometric fibres <fr:tex
+display="inline"><![CDATA[\overline {X}_{s_i}]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex>, with <fr:tex
+display="inline"><![CDATA[D_i]]></fr:tex> a (not-necessarily positive) divisor on <fr:tex
+display="inline"><![CDATA[\overline {X}_{s_i}]]></fr:tex> that defines <fr:tex
+display="inline"><![CDATA[\mathscr {L}_i]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[a_n^{(i)}t^n+\ldots +a_0^{(i)}]]></fr:tex> be the Hilbert polynomial of <fr:tex
+display="inline"><![CDATA[\mathscr {L}_i]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[\xi =\xi _i]]></fr:tex> be a divisor that defines <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex>, i.e. a hyperplane section.</fr:p><fr:p>Then the following conditions are equivalent:</fr:p>
  <html:ol
 xmlns:html="http://www.w3.org/1999/xhtml">
     
  <html:li
 style="list-style-type: &quot;a. &quot;">
-      <fr:tex>Q</fr:tex> is quasi-compact, i.e. contains an open of finite type over <fr:tex>S</fr:tex>, i.e. the family <fr:tex>( \mathscr { L } _i)</fr:tex> is limited.
+      <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex> is quasi-compact, i.e. contains an open of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, i.e. the family <fr:tex
+display="inline"><![CDATA[(\mathscr {L}_i)]]></fr:tex> is limited.
     </html:li>
 
     
  <html:li
 style="list-style-type: &quot;b. &quot;">
-      <fr:tex>E</fr:tex> is contained in the union of a finite number of the sets <fr:tex>\underline { \operatorname {Pic} } _{X/S}^Q</fr:tex>, for <fr:tex>Q \in \mathbb {Q}[t]</fr:tex>, i.e. the set of Hilbert polynomials of the <fr:tex>\mathscr { L } _i</fr:tex> is finite.
+      <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> is contained in the union of a finite number of the sets <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^Q]]></fr:tex>, for <fr:tex
+display="inline"><![CDATA[Q\in \mathbb {Q}[t]]]></fr:tex>, i.e. the set of Hilbert polynomials of the <fr:tex
+display="inline"><![CDATA[\mathscr {L}_i]]></fr:tex> is finite.
     </html:li>
 
     
  <html:li
 style="list-style-type: &quot;b'. &quot;">
-      (If the fibres of <fr:tex>X/S</fr:tex> are all of the same dimension <fr:tex>n</fr:tex>).
-      The coefficients <fr:tex>a_{n-1}^{(i)}</fr:tex> and <fr:tex>a_{n-2}^{(i)}</fr:tex> of the Hilbert polynomials of the <fr:tex>\mathscr { L } _i</fr:tex> are contained in a finite set.
+      (If the fibres of <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> are all of the same dimension <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>).
+      The coefficients <fr:tex
+display="inline"><![CDATA[a_{n-1}^{(i)}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[a_{n-2}^{(i)}]]></fr:tex> of the Hilbert polynomials of the <fr:tex
+display="inline"><![CDATA[\mathscr {L}_i]]></fr:tex> are contained in a finite set.
     </html:li>
 
     
  <html:li
 style="list-style-type: &quot;b''. &quot;">
       
-      (If the fibres of <fr:tex>X/S</fr:tex> are all of the same dimension <fr:tex>n</fr:tex>).
-      The integers <fr:tex>\xi ^{n-1}D_i</fr:tex> and <fr:tex>\xi ^{n-2}D_i^2</fr:tex> (the projective degrees of <fr:tex>D_i</fr:tex> and of <fr:tex>D_i^2</fr:tex>) are bounded above.
+      (If the fibres of <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> are all of the same dimension <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>).
+      The integers <fr:tex
+display="inline"><![CDATA[\xi ^{n-1}D_i]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\xi ^{n-2}D_i^2]]></fr:tex> (the projective degrees of <fr:tex
+display="inline"><![CDATA[D_i]]></fr:tex> and of <fr:tex
+display="inline"><![CDATA[D_i^2]]></fr:tex>) are bounded above.
     </html:li>
 
   </html:ol>
-</fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>818</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.vi-4-corollary-4.2</fr:addr><fr:route>fga3.vi-4-corollary-4.2.xml</fr:route><fr:number>4.2</fr:number><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>f \colon  X \to  S</fr:tex> be a simple projective morphism, with connected geometric fibres.
-    Then the schemes <fr:tex>\underline { \operatorname {Pic} } _{X/S}^Q</fr:tex> (for <fr:tex>Q \in \mathbb {Q}[t]</fr:tex>) and <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> are projective over <fr:tex>S</fr:tex>.
-  </fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>873</fr:anchor><fr:addr
+type="user">fga3.vi-4-corollary-4.2</fr:addr><fr:route>fga3.vi-4-corollary-4.2.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:number>4.2</fr:number><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be a simple projective morphism, with connected geometric fibres.
+    Then the schemes <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^Q]]></fr:tex> (for <fr:tex
+display="inline"><![CDATA[Q\in \mathbb {Q}[t]]]></fr:tex>) and <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^\tau ]]></fr:tex> are projective over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.</fr:p>
   
     
     <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>817</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.vi-4-corollary-4.2</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>
-      Since they are of finite type over <fr:tex>S</fr:tex>, by <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>874</fr:anchor><fr:addr
+type="machine">#238</fr:addr><fr:route>unstable-238.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-4-corollary-4.2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>Since they are of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, by <fr:ref
 addr="fga3.vi-4-theorem-4.1"
 href="fga3.vi-4-theorem-4.1.xml"
 taxon="Theorem"
-number="4.1"></fr:ref>, we can apply <fr:ref
+number="4.1" />, we can apply <fr:ref
 addr="fga3.vi-2-corollary-2.4"
 href="fga3.vi-2-corollary-2.4.xml"
 taxon="Corollary"
-number="2.4"></fr:ref>.
-    </fr:p>
-  </fr:mainmatter></fr:tree>
+number="2.4" />.</fr:p>
+  </fr:mainmatter><fr:backmatter /></fr:tree>
   
-</fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>819</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.vi-4-remark-comp</fr:addr><fr:route>fga3.vi-4-remark-comp.xml</fr:route><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>875</fr:anchor><fr:addr
+type="user">fga3.vi-4-remark-comp</fr:addr><fr:route>fga3.vi-4-remark-comp.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>fga3.vi-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:em>[Comp.]</fr:em>
     
     The questions of finiteness of the type highlighted in this section have been all but totally resolved since the editing of this present talk.
     We note here the principal facts now known in this direction.
     To simplify the statements, we implicitly assume that all the Picard preschemes that arise in the statements exist, even though an evident modification of these statements would allow us to get rid of any existence hypothesis.
-    In what follows, <fr:tex>S</fr:tex> denotes a Noetherian scheme, and <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> are proper schemes over <fr:tex>S</fr:tex>.
+    In what follows, <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> denotes a Noetherian scheme, and <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> are proper schemes over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
 
     
  <html:ol
@@ -332,8 +538,10 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        Let <fr:tex>f \colon  X \to  Y</fr:tex> be a surjective morphism.
-        Then <fr:tex>f^* \colon \underline { \operatorname {Pic} } _{Y/S} \to \underline { \operatorname {Pic} } _{X/S}</fr:tex> is a morphism of finite type.
+        Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> be a surjective morphism.
+        Then <fr:tex
+display="inline"><![CDATA[f^*\colon \underline {\operatorname {Pic}}_{Y/S}\to \underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is a morphism of finite type.
       </html:li>
 
 
@@ -341,34 +549,68 @@ style="list-style-type: &quot;i. &quot;">
  <html:li
 style="list-style-type: &quot;ii. &quot;">
         
-        Suppose that <fr:tex>Y</fr:tex> is projective over <fr:tex>S</fr:tex>, endowed with an invertible module that is ample with respect to <fr:tex>S</fr:tex>, and let <fr:tex>X</fr:tex> be the scheme of zeros of an arbitrary section of this module.
-        Let <fr:tex>f \colon  X \to  Y</fr:tex> be the canonical immersion.
-        Finally, suppose that the irreducible components of the fibres of <fr:tex>Y/S</fr:tex> are of dimension <fr:tex>\geqslant3</fr:tex>.
-        Then <fr:tex>f^* \colon \underline { \operatorname {Pic} } _{Y/S} \to \underline { \operatorname {Pic} } _{X/S}</fr:tex> is of finite type.
+        Suppose that <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is projective over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, endowed with an invertible module that is ample with respect to <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be the scheme of zeros of an arbitrary section of this module.
+        Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> be the canonical immersion.
+        Finally, suppose that the irreducible components of the fibres of <fr:tex
+display="inline"><![CDATA[Y/S]]></fr:tex> are of dimension <fr:tex
+display="inline"><![CDATA[\geqslant 3]]></fr:tex>.
+        Then <fr:tex
+display="inline"><![CDATA[f^*\colon \underline {\operatorname {Pic}}_{Y/S}\to \underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is of finite type.
       </html:li>
 
 
       
  <html:li
 style="list-style-type: &quot;iii. &quot;">
-        Suppose that <fr:tex>X</fr:tex> is projective over <fr:tex>S</fr:tex>, and that all its geometric fibres are integral and of dimension <fr:tex>n</fr:tex>.
-        Let <fr:tex>\mathcal {O} _X(1)</fr:tex> be an ample invertible module on <fr:tex>X</fr:tex>, allowing us to define Hilbert polynomials.
-        Let <fr:tex>M</fr:tex> be a subset of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>.
-        Then <fr:tex>M</fr:tex> is quasi-compact if and only if, in the Hilbert polynomials <fr:tex>a_0x^n+a_1x^{n-1}+a_2x^{n-2}+ \ldots +a_n</fr:tex> of the elements of <fr:tex>M</fr:tex>, the coefficients <fr:tex>a_1</fr:tex> and <fr:tex>a_2</fr:tex> are bounded.
+        Suppose that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is projective over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and that all its geometric fibres are integral and of dimension <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>.
+        Let <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex> be an ample invertible module on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, allowing us to define Hilbert polynomials.
+        Let <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> be a subset of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>.
+        Then <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> is quasi-compact if and only if, in the Hilbert polynomials <fr:tex
+display="inline"><![CDATA[a_0x^n+a_1x^{n-1}+a_2x^{n-2}+\ldots +a_n]]></fr:tex> of the elements of <fr:tex
+display="inline"><![CDATA[M]]></fr:tex>, the coefficients <fr:tex
+display="inline"><![CDATA[a_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[a_2]]></fr:tex> are bounded.
       </html:li>
 
 
       
  <html:li
 style="list-style-type: &quot;iv. &quot;">
-        For every integer <fr:tex>n \neq0</fr:tex>, the <fr:tex>n</fr:tex>-th power homomorphism in the group prescheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is a morphism of finite type.
+        For every integer <fr:tex
+display="inline"><![CDATA[n\neq 0]]></fr:tex>, the <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-th power homomorphism in the group prescheme <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is a morphism of finite type.
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    Note that (i) and (ii) also imply (under the hypotheses given in their respective statements) that <fr:em>a subset <fr:tex>M</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{Y/S}</fr:tex> is quasi-compact if and only if its image in <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is quasi-compact</fr:em>.
-    We thus conclude that an invertible module <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>Y</fr:tex> is <fr:tex>\tau</fr:tex>-equivalent to <fr:tex>0</fr:tex> if and only if its inverse image in <fr:tex>X</fr:tex> is;
-    in other words, <fr:tex>\underline { \operatorname {Pic} } _{Y/S}^ \tau</fr:tex> is the inverse image of <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex>.
-    In particular, to show that the first prescheme is of finite type over <fr:tex>S</fr:tex>, it suffices to prove this for the second, since <fr:tex>\underline { \operatorname {Pic} } _{Y/S} \to \underline { \operatorname {Pic} } _{X/S}</fr:tex> is of finite type.
+    </html:ol></fr:p><fr:p>Note that (i) and (ii) also imply (under the hypotheses given in their respective statements) that <fr:em>a subset <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{Y/S}]]></fr:tex> is quasi-compact if and only if its image in <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is quasi-compact</fr:em>.
+    We thus conclude that an invertible module <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\tau ]]></fr:tex>-equivalent to <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> if and only if its inverse image in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is;
+    in other words, <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{Y/S}^\tau ]]></fr:tex> is the inverse image of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^\tau ]]></fr:tex>.
+    In particular, to show that the first prescheme is of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, it suffices to prove this for the second, since <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{Y/S}\to \underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is of finite type.
     Then using (i), Chow's lemma, and (iii), we find:
 
     
@@ -377,12 +619,17 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;v. &quot;">
-        <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is of finite type over <fr:tex>S</fr:tex>.
+        <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^\tau ]]></fr:tex> is of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    Generally, the conjunction of (i) for a finite morphism and (ii) allows us to reduce, for the majority of finiteness questions, to the case where <fr:tex>X/S</fr:tex> has integral and normal geometric fibres of dimension <fr:tex>\leqslant2</fr:tex>;
-    often, even, applying (i) for a surjective but not-necessarily finite morphism, along with the resolution of singularities of algebraic surfaces (due, in arbitrary characteristic, to Abhyankar), we can reduce to the case where <fr:tex>X/S</fr:tex> is even simple, and thus has non-singular geometric fibres of dimension <fr:tex>2</fr:tex>.
+    </html:ol></fr:p><fr:p>Generally, the conjunction of (i) for a finite morphism and (ii) allows us to reduce, for the majority of finiteness questions, to the case where <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> has integral and normal geometric fibres of dimension <fr:tex
+display="inline"><![CDATA[\leqslant 2]]></fr:tex>;
+    often, even, applying (i) for a surjective but not-necessarily finite morphism, along with the resolution of singularities of algebraic surfaces (due, in arbitrary characteristic, to Abhyankar), we can reduce to the case where <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> is even simple, and thus has non-singular geometric fibres of dimension <fr:tex
+display="inline"><![CDATA[2]]></fr:tex>.
     This allows us, for example, taking into account (v) and the Picard–Igusa inequality bounding the rank of the Néron–Severi group of a non-singular projective surface, to prove the following generalisation of the Néron finiteness theorem:
 
     
@@ -391,13 +638,17 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;vi. &quot;">
-        Let <fr:tex>X/S</fr:tex> be proper over <fr:tex>S</fr:tex>, but otherwise arbitrary.
+        Let <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> be proper over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, but otherwise arbitrary.
         
-        Then the Néron–Severi groups <fr:tex>\underline { \operatorname {Pic} } _{X_i/k_i}/ \underline { \operatorname {Pic} } _{X_i/k_i}^0</fr:tex> of the geometric fibres <fr:tex>X_i/k_i</fr:tex> of <fr:tex>X/S</fr:tex> are of finite type, and their rank and the order of their torsion subgroups are bounded.
+        Then the Néron–Severi groups <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_i/k_i}/\underline {\operatorname {Pic}}_{X_i/k_i}^0]]></fr:tex> of the geometric fibres <fr:tex
+display="inline"><![CDATA[X_i/k_i]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> are of finite type, and their rank and the order of their torsion subgroups are bounded.
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    The same method of reduction to the case of non-singular surfaces, and known theorems for this case (such as the Néron finiteness theorem, and the fact that the intersection form on the Néron–Severi group is non-degenerate) implies:
+    </html:ol></fr:p><fr:p>The same method of reduction to the case of non-singular surfaces, and known theorems for this case (such as the Néron finiteness theorem, and the fact that the intersection form on the Néron–Severi group is non-degenerate) implies:
 
     
  <html:ol
@@ -405,18 +656,36 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;vii. &quot;">
-        Let <fr:tex>X</fr:tex> be a proper scheme over an algebraically closed field.
-        Then there exists a finite number of integral closed curves <fr:tex>C_i</fr:tex> (for <fr:tex>1 \leqslant  i \leqslant  r</fr:tex>) in <fr:tex>X</fr:tex>, such that the following property is satisfied:
-        for every subset <fr:tex>M</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, <fr:tex>M</fr:tex> is quasi-compact if and only if the integers <fr:tex>\deg \mathscr { L } _{C'_i}</fr:tex> (for <fr:tex>\mathscr { L } \in  M</fr:tex>) are bounded (where <fr:tex>C'_i</fr:tex> denotes the normalisation of <fr:tex>C_i</fr:tex>).
+        Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a proper scheme over an algebraically closed field.
+        Then there exists a finite number of integral closed curves <fr:tex
+display="inline"><![CDATA[C_i]]></fr:tex> (for <fr:tex
+display="inline"><![CDATA[1\leqslant  i\leqslant  r]]></fr:tex>) in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, such that the following property is satisfied:
+        for every subset <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/k}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> is quasi-compact if and only if the integers <fr:tex
+display="inline"><![CDATA[\deg \mathscr {L}_{C'_i}]]></fr:tex> (for <fr:tex
+display="inline"><![CDATA[\mathscr {L}\in  M]]></fr:tex>) are bounded (where <fr:tex
+display="inline"><![CDATA[C'_i]]></fr:tex> denotes the normalisation of <fr:tex
+display="inline"><![CDATA[C_i]]></fr:tex>).
       </html:li>
 
     </html:ol>
 
 
-    In the above we can take <fr:tex>r</fr:tex> to be the rank of the Néron–Severi group.
-    Once we know that this group is of finite type, (vii) reduces to the fact that the linear forms on the Néron–Severi group defined by the curves <fr:tex>C</fr:tex> in <fr:tex>X</fr:tex> do not simultaneously vanish except for on the torsion elements of the Néron–Severi group.
-    In the case where <fr:tex>X</fr:tex> is non-singular and projective, this result, as well as (v), was due to Matsusaka.
-    Using (vii), we easily obtain the following characterisation of invertible modules that are <fr:tex>\tau</fr:tex>-equivalent to <fr:tex>0</fr:tex> on <fr:tex>X</fr:tex>:
+    In the above we can take <fr:tex
+display="inline"><![CDATA[r]]></fr:tex> to be the rank of the Néron–Severi group.
+    Once we know that this group is of finite type, (vii) reduces to the fact that the linear forms on the Néron–Severi group defined by the curves <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> do not simultaneously vanish except for on the torsion elements of the Néron–Severi group.
+    In the case where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is non-singular and projective, this result, as well as (v), was due to Matsusaka.
+    Using (vii), we easily obtain the following characterisation of invertible modules that are <fr:tex
+display="inline"><![CDATA[\tau ]]></fr:tex>-equivalent to <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>:
 
     
  <html:ol
@@ -424,8 +693,10 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;viii. &quot;">
-        <fr:p>
-          Let <fr:tex>X/k</fr:tex> be a proper scheme over a field, and <fr:tex>\mathscr { L }</fr:tex> an invertible module on <fr:tex>X</fr:tex>.
+        <fr:p>Let <fr:tex
+display="inline"><![CDATA[X/k]]></fr:tex> be a proper scheme over a field, and <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> an invertible module on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>.
           Then the following conditions are equivalent:
 
           
@@ -433,60 +704,80 @@ style="list-style-type: &quot;viii. &quot;">
             
  <html:li
 style="list-style-type: &quot;a. &quot;">
-              <fr:tex>\mathscr { L }</fr:tex> is <fr:tex>\tau</fr:tex>-equivalent to <fr:tex>0</fr:tex>.
+              <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\tau ]]></fr:tex>-equivalent to <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>.
             </html:li>
 
             
  <html:li
 style="list-style-type: &quot;b. &quot;">
-              For every coherent module <fr:tex>F</fr:tex>, we have <fr:tex>\chi (F \otimes \mathscr { L } )= \chi (F)</fr:tex>, where <fr:tex>\chi</fr:tex> denotes the Euler–Poincaré characteristic.
+              For every coherent module <fr:tex
+display="inline"><![CDATA[F]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[\chi (F\otimes \mathscr {L})=\chi (F)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\chi ]]></fr:tex> denotes the Euler–Poincaré characteristic.
             </html:li>
 
             
  <html:li
 style="list-style-type: &quot;b'. &quot;">
-              Like (b), but with <fr:tex>F= \mathcal {O} _Y</fr:tex>, where <fr:tex>Y</fr:tex> is an integral closed subscheme of dimension <fr:tex>1</fr:tex> in <fr:tex>X</fr:tex>.
+              Like (b), but with <fr:tex
+display="inline"><![CDATA[F=\mathcal {O}_Y]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is an integral closed subscheme of dimension <fr:tex
+display="inline"><![CDATA[1]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>.
             </html:li>
 
             
  <html:li
 style="list-style-type: &quot;c. &quot;">
-              For every <fr:tex>Y</fr:tex> as above, writing <fr:tex>Y'</fr:tex> to mean the normalised curve, we have <fr:tex>\deg \mathscr { L } _{Y'}=0</fr:tex>.
+              For every <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> as above, writing <fr:tex
+display="inline"><![CDATA[Y']]></fr:tex> to mean the normalised curve, we have <fr:tex
+display="inline"><![CDATA[\deg \mathscr {L}_{Y'}=0]]></fr:tex>.
             </html:li>
 
           </html:ol>
 
 
-          If <fr:tex>X/k</fr:tex> is projective and endowed with an ample invertible module <fr:tex>\mathcal {O} _X(1)</fr:tex>, then the above conditions are also equivalent to the following:
+          If <fr:tex
+display="inline"><![CDATA[X/k]]></fr:tex> is projective and endowed with an ample invertible module <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex>, then the above conditions are also equivalent to the following:
 
           
  <html:ol>
             
  <html:li
 style="list-style-type: &quot;d. &quot;">
-              For every integer <fr:tex>m</fr:tex>, <fr:tex>\mathscr { L } ^{ \otimes  m}(1)</fr:tex> is ample.
+              For every integer <fr:tex
+display="inline"><![CDATA[m]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\mathscr {L}^{\otimes  m}(1)]]></fr:tex> is ample.
             </html:li>
 
             
  <html:li
 style="list-style-type: &quot;e. &quot;">
-              (If <fr:tex>X</fr:tex> is integral).
-              For every pair of integers <fr:tex>(m,n)</fr:tex>, we have
+              (If <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is integral).
+              For every pair of integers <fr:tex
+display="inline"><![CDATA[(m,n)]]></fr:tex>, we have
               <fr:tex
-display="block">                  \chi ( \mathscr { L } ^{ \otimes  m}(n))                 =  \chi ( \mathcal {O} (n))               </fr:tex>
+display="block"><![CDATA[                 \chi (\mathscr {L}^{\otimes  m}(n))                 = \chi (\mathcal {O}(n))               ]]></fr:tex>
               
-              (i.e. (b) is true for <fr:tex>F= \mathscr { L } ^{ \otimes  m}(n)</fr:tex>).
+              (i.e. (b) is true for <fr:tex
+display="inline"><![CDATA[F=\mathscr {L}^{\otimes  m}(n)]]></fr:tex>).
             </html:li>
 
           </html:ol></fr:p>
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    For the sufficiency of this last condition, note that it implies that the Hilbert polynomials of the <fr:tex>\mathscr { L } ^{ \otimes  m}</fr:tex> are all equal, and thus, by the Mumford criterion (iii), the <fr:tex>\mathscr { L } ^{ \otimes  m}</fr:tex> remain in a quasi-compact subset of <fr:tex>\underline { \operatorname {Pic} } _{X/k}</fr:tex>, i.e. we have (a).
+    </html:ol></fr:p><fr:p>For the sufficiency of this last condition, note that it implies that the Hilbert polynomials of the <fr:tex
+display="inline"><![CDATA[\mathscr {L}^{\otimes  m}]]></fr:tex> are all equal, and thus, by the Mumford criterion (iii), the <fr:tex
+display="inline"><![CDATA[\mathscr {L}^{\otimes  m}]]></fr:tex> remain in a quasi-compact subset of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/k}]]></fr:tex>, i.e. we have (a).
     Conditions (b), (b'), and (c) should be considered as variants (for an arbitrary proper scheme) of the notion of <fr:em>numerical equivalence</fr:em>, usually defined for non-singular projective varieties.
-    For such varieties, the equivalence of (a) and (c) was evidently well known (Matsusaka).
-  </fr:p><fr:p>
-    Criterion (e) from the above also implies the following result:
+    For such varieties, the equivalence of (a) and (c) was evidently well known (Matsusaka).</fr:p><fr:p>Criterion (e) from the above also implies the following result:
 
     
  <html:ol
@@ -494,110 +785,174 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;ix. &quot;">
-        Let <fr:tex>f \colon  X \to  S</fr:tex> be a flat projective morphism whose geometric fibres are integral.
-        Then <fr:tex>\underline { \operatorname {Pic} } _{X/S}^ \tau</fr:tex> is open <fr:em>and closed</fr:em> in <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>.
+        Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be a flat projective morphism whose geometric fibres are integral.
+        Then <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^\tau ]]></fr:tex> is open <fr:em>and closed</fr:em> in <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>.
       </html:li>
 
-    </html:ol></fr:p><fr:p>
-    We restrict ourselves to some comments on the proofs of the key results (i), (ii), and (iii) (result (iv) is a little bit different from the others, and can be proven using only (i) for radicial surjective finite morphisms, or, more precisely, for a Frobenius morphism).
+    </html:ol></fr:p><fr:p>We restrict ourselves to some comments on the proofs of the key results (i), (ii), and (iii) (result (iv) is a little bit different from the others, and can be proven using only (i) for radicial surjective finite morphisms, or, more precisely, for a Frobenius morphism).
     For (i), we use, in an essential way, the ideas of non-flat descent (see <fr:link
-href="fga3.i-a.2.c.xml"
 type="local"
+href="fga3.i-a.2.c.xml"
 addr="fga3.i-a.2.c">FGA 3.I, §A.2.c</fr:link>).
     One finds that (thinking only of finiteness results) the lack of effectivity criteria for descent data is inoffensive.
     Mumford has recently proven a slightly weaker form of (iii), where the criterion makes use of <fr:em>all</fr:em> the coefficients of the Hilbert polynomial.
     His argument is extremely simple, and is inspired by the proof of an amplitude criterion by Nakai (stated by the latter for non-singular surfaces, and generalised by Mumford to arbitrary projective morphisms).
-    It seems to me that this argument only works under a gentle additional restriction on the fibres of <fr:tex>X/S</fr:tex> (Serre's (<fr:tex>\text {S}_2</fr:tex>) property), which is satisfied if the geometric fibres are normal.
-    We then use this restricted criterion in the proof of (ii): criterion (i) allows us to reduce to the case where <fr:tex>Y/S</fr:tex> is flat with integral and normal geometric fibres, and applying the Mumford criterion we easily reduce to the case where <fr:tex>X/S</fr:tex> satisfies the same conditions.
-    From the dimension hypothesis it then follows that the geometric fibres of <fr:tex>Y</fr:tex> and of <fr:tex>X</fr:tex> are of depth <fr:tex>\geqslant2</fr:tex> at their closed points, which allows us to apply the "equivalence criteria" under the form that is given in [<fr:link
-href="Gro1960b.xml"
+    It seems to me that this argument only works under a gentle additional restriction on the fibres of <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> (Serre's (<fr:tex
+display="inline"><![CDATA[\text {S}_2]]></fr:tex>) property), which is satisfied if the geometric fibres are normal.
+    We then use this restricted criterion in the proof of (ii): criterion (i) allows us to reduce to the case where <fr:tex
+display="inline"><![CDATA[Y/S]]></fr:tex> is flat with integral and normal geometric fibres, and applying the Mumford criterion we easily reduce to the case where <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> satisfies the same conditions.
+    From the dimension hypothesis it then follows that the geometric fibres of <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> and of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> are of depth <fr:tex
+display="inline"><![CDATA[\geqslant 2]]></fr:tex> at their closed points, which allows us to apply the "equivalence criteria" under the form that is given in [<fr:link
 type="local"
-addr="Gro1960b">Gro1960b</fr:link>, XII], and finishes the proof of (ii).
+href="Gro1960b.xml"
+addr="Gro1960b"
+title="Séminaire de Géométrie Algèbrique">Gro1960b</fr:link>, XII], and finishes the proof of (ii).
     Once we have (i) and (ii), it is not difficult in the Mumford criterion to discard the hypothesis that the fibres be normal, and to prove it under the stronger form given in (iii).
     
-    We note finally that the proof of (i) and (ii) also shows that, in the case where <fr:tex>S</fr:tex> is the spectrum of a field <fr:tex>k</fr:tex>, the morphism <fr:tex>\underline { \operatorname {Pic} } _{Y/k} \to \underline { \operatorname {Pic} } _{X/k}</fr:tex> is <fr:em>affine</fr:em> (and not only of finite type).
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    We note finally that the proof of (i) and (ii) also shows that, in the case where <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, the morphism <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{Y/k}\to \underline {\operatorname {Pic}}_{X/k}]]></fr:tex> is <fr:em>affine</fr:em> (and not only of finite type).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2482</fr:anchor><fr:addr>fga3.i-a.2.c</fr:addr><fr:route>fga3.i-a.2.c.xml</fr:route><fr:number>A.2.c</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  If <fr:ref
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2524</fr:anchor><fr:addr
+type="user">fga3.i-a.2.c</fr:addr><fr:route>fga3.i-a.2.c.xml</fr:route><fr:authors /><fr:number>A.2.c</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:ref
 addr="fga3.i-a.2.b-equation"
 href="fga3.i-a.2.b-equation.xml"
 taxon="Equation"
-number="+"></fr:ref> is an exact diagram of finite morphisms, then, for every <fr:em>flat</fr:em> morphism <fr:tex>T \to  S</fr:tex> of prescheme, the diagram induced from <fr:ref
+number="+" /> is an exact diagram of finite morphisms, then, for every <fr:em>flat</fr:em> morphism <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> of prescheme, the diagram induced from <fr:ref
 addr="fga3.i-a.2.b-equation"
 href="fga3.i-a.2.b-equation.xml"
 taxon="Equation"
-number="+"></fr:ref> by a change of base <fr:tex>T \to  S</fr:tex> is again exact.
-  It thus follows that, if <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> are <fr:tex>S</fr:tex>-preschemes, with <fr:tex>X</fr:tex> <fr:em>flat</fr:em> over <fr:tex>S</fr:tex>, then the following diagram of maps (where <fr:tex>X'</fr:tex> and <fr:tex>Y'</fr:tex> are the inverse images of <fr:tex>X</fr:tex> and <fr:tex>Y</fr:tex> over <fr:tex>S'</fr:tex>, and <fr:tex>X''</fr:tex> and <fr:tex>Y''</fr:tex> are their inverse images over <fr:tex>S''</fr:tex>) is exact:
+number="+" /> by a change of base <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> is again exact.
+  It thus follows that, if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> are <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-preschemes, with <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> <fr:em>flat</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then the following diagram of maps (where <fr:tex
+display="inline"><![CDATA[X']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y']]></fr:tex> are the inverse images of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S']]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[X'']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y'']]></fr:tex> are their inverse images over <fr:tex
+display="inline"><![CDATA[S'']]></fr:tex>) is exact:
   <fr:tex
-display="block">      \operatorname {Hom} _S(X,Y)  \to       \operatorname {Hom} _{S'}(X',Y')  \rightrightarrows       \operatorname {Hom} _{S''}(X'',Y'').   </fr:tex>
-  In particular, if <fr:tex>\mathcal {F}</fr:tex> denotes the fibred category (over the category <fr:tex>\mathcal {C}</fr:tex> of preschemes) such that, for <fr:tex>X \in \mathcal {C}</fr:tex>, <fr:tex>\mathcal {F}_X</fr:tex> is the category of <fr:em>flat</fr:em> <fr:tex>X</fr:tex>-preschemes, then the diagram <fr:ref
+display="block"><![CDATA[     \operatorname {Hom}_S(X,Y) \to      \operatorname {Hom}_{S'}(X',Y') \rightrightarrows      \operatorname {Hom}_{S''}(X'',Y'').   ]]></fr:tex>
+  In particular, if <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> denotes the fibred category (over the category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> of preschemes) such that, for <fr:tex
+display="inline"><![CDATA[X\in \mathcal {C}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\mathcal {F}_X]]></fr:tex> is the category of <fr:em>flat</fr:em> <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>-preschemes, then the diagram <fr:ref
 addr="fga3.i-a.2.b-equation"
 href="fga3.i-a.2.b-equation.xml"
 taxon="Equation"
-number="+"></fr:ref> is <fr:tex>\mathcal {F}</fr:tex>-exact.
+number="+" /> is <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-exact.
   (This result becomes false if we do not impose the flatness hypothesis; in particular, a finite strict epimorphism is not necessarily a descent morphism).
   We similarly see that <fr:ref
 addr="fga3.i-a.2.b-equation"
 href="fga3.i-a.2.b-equation.xml"
 taxon="Equation"
-number="+"></fr:ref> is <fr:tex>\mathcal {F}</fr:tex>-exact if <fr:tex>\mathcal {F}</fr:tex> denotes the fibred category for which <fr:tex>\mathcal {F}_X</fr:tex> is the category of <fr:em>flat</fr:em> quasi-coherent sheaves on the prescheme <fr:tex>X</fr:tex> (here, again, the flatness hypothesis is essential).
+number="+" /> is <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-exact if <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> denotes the fibred category for which <fr:tex
+display="inline"><![CDATA[\mathcal {F}_X]]></fr:tex> is the category of <fr:em>flat</fr:em> quasi-coherent sheaves on the prescheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> (here, again, the flatness hypothesis is essential).
   
-  In either case, the question of <fr:em>effectiveness</fr:em> of a gluing data (and, more specifically, of a descent data, when <fr:tex>S''=S' \times _S S'</fr:tex>) on a flat object over <fr:tex>S'</fr:tex> is delicate (and its answer in many particular cases in one of the principal objects of these current articles).
-  The speaker does not know if, for every finite strict epimorphism <fr:tex>S' \to  S</fr:tex>, every descent data on a flat quasi-coherent sheaf on <fr:tex>S'</fr:tex> is effective (even if we suppose that <fr:tex>S</fr:tex> is the spectrum of a local Artinian ring, and we restrict to locally free sheaves of rank <fr:tex>1</fr:tex>).
-  More generally, let <fr:tex>A</fr:tex> be a ring, and <fr:tex>A'</fr:tex> an <fr:tex>A</fr:tex>-algebra (where everything is commutative) such that the diagram
+  In either case, the question of <fr:em>effectiveness</fr:em> of a gluing data (and, more specifically, of a descent data, when <fr:tex
+display="inline"><![CDATA[S''=S'\times _S S']]></fr:tex>) on a flat object over <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> is delicate (and its answer in many particular cases in one of the principal objects of these current articles).
+  The speaker does not know if, for every finite strict epimorphism <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex>, every descent data on a flat quasi-coherent sheaf on <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> is effective (even if we suppose that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a local Artinian ring, and we restrict to locally free sheaves of rank <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>).
+  More generally, let <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be a ring, and <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> an <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-algebra (where everything is commutative) such that the diagram
   <fr:tex
-display="block">     A  \to      A'  \rightrightarrows      A' \otimes _A A'   </fr:tex>
-  is exact, which is equivalent to saying that the corresponding morphism <fr:tex>S' \to  S</fr:tex> between the spectra of <fr:tex>A'</fr:tex> and <fr:tex>A</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism, where <fr:tex>\mathcal {F}</fr:tex> is the fibred category of flat quasi-coherent sheaves.
-  Let <fr:tex>M'</fr:tex> be a flat <fr:tex>A'</fr:tex>-module endowed with a descent data to <fr:tex>A</fr:tex>, i.e. with an isomorphism
+display="block"><![CDATA[     A \to      A' \rightrightarrows      A'\otimes _A A'   ]]></fr:tex>
+  is exact, which is equivalent to saying that the corresponding morphism <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex> between the spectra of <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism, where <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> is the fibred category of flat quasi-coherent sheaves.
+  Let <fr:tex
+display="inline"><![CDATA[M']]></fr:tex> be a flat <fr:tex
+display="inline"><![CDATA[A']]></fr:tex>-module endowed with a descent data to <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, i.e. with an isomorphism
   <fr:tex
-display="block">      \varphi \colon  M' \otimes _A A'      \xrightarrow { \sim } A' \otimes _A M'   </fr:tex>
-  of <fr:tex>(A' \otimes _A A')</fr:tex>-modules that satisfies conditions (i) and (ii) of <fr:ref
+display="block"><![CDATA[     \varphi \colon  M'\otimes _A A'     \xrightarrow {\sim } A'\otimes _A M'   ]]></fr:tex>
+  of <fr:tex
+display="inline"><![CDATA[(A'\otimes _A A')]]></fr:tex>-modules that satisfies conditions (i) and (ii) of <fr:ref
 addr="fga3.i-a.1.c"
 href="fga3.i-a.1.c.xml"
-number="A.1.c"></fr:ref> (which we leave to the reader to write out in terms of modules).
+number="A.1.c" /> (which we leave to the reader to write out in terms of modules).
   Is this data effective (relative to the fibred category of flat quasi-coherent sheaves)?
-  Let <fr:tex>M</fr:tex> be the subset of <fr:tex>M'</fr:tex> consisting of the <fr:tex>x' \in  M'</fr:tex> such that
+  Let <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> be the subset of <fr:tex
+display="inline"><![CDATA[M']]></fr:tex> consisting of the <fr:tex
+display="inline"><![CDATA[x'\in  M']]></fr:tex> such that
   <fr:tex
-display="block">      \varphi (x' \otimes _A 1_{A'})     = 1_{A'} \otimes _A x',   </fr:tex>
-  which is a sub-<fr:tex>A</fr:tex>-module of <fr:tex>M'</fr:tex>.
-  The canonical injection <fr:tex>M \to  M'</fr:tex> defines a homomorphism of <fr:tex>A'</fr:tex>-modules <fr:tex>M \otimes _A A' \to  M'</fr:tex>.
-  <fr:em>The effectiveness of <fr:tex>\varphi</fr:tex> then implies the following: <fr:tex>M</fr:tex> is a flat <fr:tex>A</fr:tex>-module, and the above homomorphism is an isomorphism.</fr:em></fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="block"><![CDATA[     \varphi (x'\otimes _A 1_{A'})     = 1_{A'}\otimes _A x',   ]]></fr:tex>
+  which is a sub-<fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module of <fr:tex
+display="inline"><![CDATA[M']]></fr:tex>.
+  The canonical injection <fr:tex
+display="inline"><![CDATA[M\to  M']]></fr:tex> defines a homomorphism of <fr:tex
+display="inline"><![CDATA[A']]></fr:tex>-modules <fr:tex
+display="inline"><![CDATA[M\otimes _A A'\to  M']]></fr:tex>.
+  <fr:em>The effectiveness of <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> then implies the following: <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> is a flat <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module, and the above homomorphism is an isomorphism.</fr:em></fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>562</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.2.c-remark</fr:addr><fr:route>fga3.i-a.2.c-remark.xml</fr:route><fr:parent>fga3.i-a.2.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    In the above, we have imposed no flatness hypotheses on the morphisms of the diagram <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>621</fr:anchor><fr:addr
+type="user">fga3.i-a.2.c-remark</fr:addr><fr:route>fga3.i-a.2.c-remark.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>fga3.i-a.2.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>In the above, we have imposed no flatness hypotheses on the morphisms of the diagram <fr:ref
 addr="fga3.i-a.2.b-equation"
 href="fga3.i-a.2.b-equation.xml"
 taxon="Equation"
-number="+"></fr:ref>, and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that we consider.
+number="+" />, and this obliges us, in order to have a technique of descent, to impose flatness hypotheses on the objects over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> that we consider.
     In <fr:ref
 addr="fga3.i-b.2"
 href="fga3.i-b.2.xml"
-number="B.2"></fr:ref>, we will impose a flatness hypothesis on <fr:tex>\alpha \colon  S' \to  S</fr:tex>, which will allow us to have a technique of descent for objects over <fr:tex>S</fr:tex> and <fr:tex>S'</fr:tex> that are no longer under any flatness hypotheses.
+number="B.2" />, we will impose a flatness hypothesis on <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex>, which will allow us to have a technique of descent for objects over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> that are no longer under any flatness hypotheses.
     In any case, there is a flatness hypothesis involved somewhere.
-    This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base <fr:em>fields</fr:em>, over which everything, in fact, is flat!).
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2480</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>Gro1960b</fr:addr><fr:route>Gro1960b.xml</fr:route><fr:title>Séminaire de Géométrie Algèbrique</fr:title><fr:date><fr:year>1960</fr:year></fr:date><fr:authors><fr:author>A. Grothendieck</fr:author></fr:authors><fr:meta
-name="venue">Paris, Institut des Hautes Études Scientifiques</fr:meta><fr:meta
-name="bibtex">@book{Gro1960b,
-  title = {{{S\'{e}minaire de G\'{e}om\'{e}trie Alg\'{e}brique}}},
-  author = {Grothendieck, A.},
-  year = {1960/61},
-  publisher = {{Paris, Institut des Hautes \'{E}tudes Scientifiques}}
-}</fr:meta></fr:frontmatter><fr:mainmatter></fr:mainmatter></fr:tree></fr:references></fr:backmatter></fr:tree>
+    This is one of the main reasons for the importance of the notion of flatness in algebraic geometry (whose role could not be visible when we restricted to base <fr:em>fields</fr:em>, over which everything, in fact, is flat!).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

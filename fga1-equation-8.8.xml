@@ -1,139 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1056</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.8</fr:addr><fr:route>fga1-equation-8.8.xml</fr:route><fr:number>8.8</fr:number><fr:parent>fga1-8-remarks</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">            \begin {aligned}              \underline {T}_1^{1 \bullet }( \mathscr { A } ; \mathscr { B } )             &amp;=  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^ \bullet ( \mathscr { A } , \mathscr { B } )            \\ T_1^{1 \bullet }( \mathscr { A } ; \mathscr { B } )             &amp;=  \operatorname {Ext} _{ \mathcal {O} _X}^ \bullet (X; \mathscr { A } , \mathscr { B } ).            \end {aligned}         \tag{8.8}         </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1106</fr:anchor><fr:addr
+type="user">fga1-equation-8.8</fr:addr><fr:route>fga1-equation-8.8.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>8.8</fr:number><fr:parent>fga1-8-remarks</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[           \begin {aligned}             \underline {T}_1^{1\bullet }(\mathscr {A};\mathscr {B})             &= \mathscr {E}\kern  -1.5pt\mathit {xt}_{\mathcal {O}_X}^\bullet (\mathscr {A},\mathscr {B})           \\T_1^{1\bullet }(\mathscr {A};\mathscr {B})             &= \operatorname {Ext}_{\mathcal {O}_X}^\bullet (X;\mathscr {A},\mathscr {B}).           \end {aligned}         \tag{8.8}         ]]></fr:tex></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1055</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga1-8-remarks</fr:addr><fr:route>fga1-8-remarks.xml</fr:route><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>
-      For the definitions preceding <fr:ref
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1107</fr:anchor><fr:addr
+type="user">fga1-8-remarks</fr:addr><fr:route>fga1-8-remarks.xml</fr:route><fr:taxon>Remarks</fr:taxon><fr:authors /><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>For the definitions preceding <fr:ref
 addr="fga1-theorem-6"
 href="fga1-theorem-6.xml"
 taxon="Theorem"
-number="6"></fr:ref>, it was not necessary for <fr:tex>X</fr:tex> to be non-singular, since it was not necessary to work with only <fr:em>finite</fr:em> resolutions.
-      But, if <fr:tex>X</fr:tex> is singular, then we can no long be sure, a priori, that the <fr:tex>( \underline {T}_r^s)^p( \mathscr { A } _1, \ldots ; \mathscr { B } _1, \ldots )</fr:tex> are <fr:em>coherent</fr:em> sheaves, since, in the complex of sheaves
+number="6" />, it was not necessary for <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> to be non-singular, since it was not necessary to work with only <fr:em>finite</fr:em> resolutions.
+      But, if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is singular, then we can no long be sure, a priori, that the <fr:tex
+display="inline"><![CDATA[(\underline {T}_r^s)^p(\mathscr {A}_1,\ldots ;\mathscr {B}_1,\ldots )]]></fr:tex> are <fr:em>coherent</fr:em> sheaves, since, in the complex of sheaves
       <fr:tex
-display="block">          \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \underline {L}( \mathscr { A } _1) \otimes \ldots , \underline {L}( \mathscr { B } _1) \otimes \ldots )       </fr:tex>
-      there will be an infinite number of components of any given total degree.
-    </fr:li>
+display="block"><![CDATA[         \mathscr {H}\kern  -2.5pt\mathit {om}_{\mathcal {O}_X}(\underline {L}(\mathscr {A}_1)\otimes \ldots ,\underline {L}(\mathscr {B}_1)\otimes \ldots )       ]]></fr:tex>
+      there will be an infinite number of components of any given total degree.</fr:li>
 
-    <fr:li>
-      We can easily verify that, in the formulas in <fr:ref
+    <fr:li>We can easily verify that, in the formulas in <fr:ref
 addr="fga1-equation-8.1"
 href="fga1-equation-8.1.xml"
 taxon="Equation"
-number="8.1"></fr:ref>, we can replace <fr:em>one</fr:em> of the <fr:tex>\underline {L}( \mathscr { B } _i)</fr:tex> with <fr:tex>\mathscr { B } _i</fr:tex>.
+number="8.1" />, we can replace <fr:em>one</fr:em> of the <fr:tex
+display="inline"><![CDATA[\underline {L}(\mathscr {B}_i)]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[\mathscr {B}_i]]></fr:tex>.
       Taking <fr:ref
 addr="fga1-proposition-3"
 href="fga1-proposition-3.xml"
 taxon="Proposition"
-number="3"></fr:ref> into account, this shows that we have
+number="3" /> into account, this shows that we have
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>803</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.8</fr:addr><fr:route>fga1-equation-8.8.xml</fr:route><fr:number>8.8</fr:number><fr:parent>fga1-8-remarks</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">            \begin {aligned}              \underline {T}_1^{1 \bullet }( \mathscr { A } ; \mathscr { B } )             &amp;=  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^ \bullet ( \mathscr { A } , \mathscr { B } )            \\ T_1^{1 \bullet }( \mathscr { A } ; \mathscr { B } )             &amp;=  \operatorname {Ext} _{ \mathcal {O} _X}^ \bullet (X; \mathscr { A } , \mathscr { B } ).            \end {aligned}         \tag{8.8}         </fr:tex></fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>861</fr:anchor><fr:addr
+type="user">fga1-equation-8.8</fr:addr><fr:route>fga1-equation-8.8.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>8.8</fr:number><fr:parent>fga1-8-remarks</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[           \begin {aligned}             \underline {T}_1^{1\bullet }(\mathscr {A};\mathscr {B})             &= \mathscr {E}\kern  -1.5pt\mathit {xt}_{\mathcal {O}_X}^\bullet (\mathscr {A},\mathscr {B})           \\T_1^{1\bullet }(\mathscr {A};\mathscr {B})             &= \operatorname {Ext}_{\mathcal {O}_X}^\bullet (X;\mathscr {A},\mathscr {B}).           \end {aligned}         \tag{8.8}         ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
 
-      In particular, taking <fr:tex>r=s=1</fr:tex> and <fr:tex>\mathscr { A } _1= \mathcal {O} _X</fr:tex> in <fr:ref
+      In particular, taking <fr:tex
+display="inline"><![CDATA[r=s=1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathscr {A}_1=\mathcal {O}_X]]></fr:tex> in <fr:ref
 addr="fga1-equation-8.6"
 href="fga1-equation-8.6.xml"
 taxon="Equation"
-number="8.6"></fr:ref>, we recover <fr:ref
+number="8.6" />, we recover <fr:ref
 addr="fga1-theorem-3"
 href="fga1-theorem-3.xml"
 taxon="Theorem"
-number="3"></fr:ref>.
+number="3" />.
       <fr:ref
 addr="fga1-equation-8.8"
 href="fga1-equation-8.8.xml"
 taxon="Equation"
-number="8.8"></fr:ref> also implies that <fr:tex>T_0^{1 \bullet }( \mathscr { B } )= \operatorname {H} ^ \bullet (X, \mathscr { B } )</fr:tex>, and that <fr:tex>T_1^{0 \bullet }( \mathscr { A } )= \operatorname {Ext} _{ \mathcal {O} _X}^ \bullet (X; \mathscr { A } , \mathcal {O} _X)</fr:tex>.
-    </fr:li>
+number="8.8" /> also implies that <fr:tex
+display="inline"><![CDATA[T_0^{1\bullet }(\mathscr {B})=\operatorname {H}^\bullet (X,\mathscr {B})]]></fr:tex>, and that <fr:tex
+display="inline"><![CDATA[T_1^{0\bullet }(\mathscr {A})=\operatorname {Ext}_{\mathcal {O}_X}^\bullet (X;\mathscr {A},\mathcal {O}_X)]]></fr:tex>.</fr:li>
 
-    <fr:li>
-      We see, in <fr:ref
+    <fr:li>We see, in <fr:ref
 addr="fga1-equation-8.1"
 href="fga1-equation-8.1.xml"
 taxon="Equation"
-number="8.1"></fr:ref>, that the functors <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> and <fr:tex>T_r^{s \bullet }</fr:tex> have, in general, components in positive <fr:em>and</fr:em> negative degrees.
-      Using the above remark, we see that, if the dimension of <fr:tex>X</fr:tex> is <fr:tex>n</fr:tex>, then the non-zero components of <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> are concentrated between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>rn</fr:tex> if <fr:tex>s&gt;0</fr:tex>, and between degrees <fr:tex>0</fr:tex> and <fr:tex>rn</fr:tex> if <fr:tex>s=0</fr:tex>; the non-zero components of <fr:tex>T_r^{s \bullet }</fr:tex> are concentrated between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>(r+1)n</fr:tex> if <fr:tex>s&gt;0</fr:tex>, and between degrees <fr:tex>0</fr:tex> and <fr:tex>(r+1)n</fr:tex> if <fr:tex>s=0</fr:tex> (and, unless I am mistaken, if <fr:tex>r&gt;0</fr:tex>, between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>rn</fr:tex>, resp. <fr:tex>0</fr:tex> and <fr:tex>rn</fr:tex>).
-    </fr:li></fr:ol></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="8.1" />, that the functors <fr:tex
+display="inline"><![CDATA[\underline {T}_r^{s\bullet }]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[T_r^{s\bullet }]]></fr:tex> have, in general, components in positive <fr:em>and</fr:em> negative degrees.
+      Using the above remark, we see that, if the dimension of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, then the non-zero components of <fr:tex
+display="inline"><![CDATA[\underline {T}_r^{s\bullet }]]></fr:tex> are concentrated between degrees <fr:tex
+display="inline"><![CDATA[-(s-1)n]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[rn]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[s>0]]></fr:tex>, and between degrees <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[rn]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[s=0]]></fr:tex>; the non-zero components of <fr:tex
+display="inline"><![CDATA[T_r^{s\bullet }]]></fr:tex> are concentrated between degrees <fr:tex
+display="inline"><![CDATA[-(s-1)n]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[(r+1)n]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[s>0]]></fr:tex>, and between degrees <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[(r+1)n]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[s=0]]></fr:tex> (and, unless I am mistaken, if <fr:tex
+display="inline"><![CDATA[r>0]]></fr:tex>, between degrees <fr:tex
+display="inline"><![CDATA[-(s-1)n]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[rn]]></fr:tex>, resp. <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[rn]]></fr:tex>).</fr:li></fr:ol></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1054</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga1-8-remarks</fr:addr><fr:route>fga1-8-remarks.xml</fr:route><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>
-      For the definitions preceding <fr:ref
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1108</fr:anchor><fr:addr
+type="user">fga1-8-remarks</fr:addr><fr:route>fga1-8-remarks.xml</fr:route><fr:taxon>Remarks</fr:taxon><fr:authors /><fr:parent>fga1-8</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>For the definitions preceding <fr:ref
 addr="fga1-theorem-6"
 href="fga1-theorem-6.xml"
 taxon="Theorem"
-number="6"></fr:ref>, it was not necessary for <fr:tex>X</fr:tex> to be non-singular, since it was not necessary to work with only <fr:em>finite</fr:em> resolutions.
-      But, if <fr:tex>X</fr:tex> is singular, then we can no long be sure, a priori, that the <fr:tex>( \underline {T}_r^s)^p( \mathscr { A } _1, \ldots ; \mathscr { B } _1, \ldots )</fr:tex> are <fr:em>coherent</fr:em> sheaves, since, in the complex of sheaves
+number="6" />, it was not necessary for <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> to be non-singular, since it was not necessary to work with only <fr:em>finite</fr:em> resolutions.
+      But, if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is singular, then we can no long be sure, a priori, that the <fr:tex
+display="inline"><![CDATA[(\underline {T}_r^s)^p(\mathscr {A}_1,\ldots ;\mathscr {B}_1,\ldots )]]></fr:tex> are <fr:em>coherent</fr:em> sheaves, since, in the complex of sheaves
       <fr:tex
-display="block">          \mathscr {H} \kern  -2.5pt \mathit {om} _{ \mathcal {O} _X}( \underline {L}( \mathscr { A } _1) \otimes \ldots , \underline {L}( \mathscr { B } _1) \otimes \ldots )       </fr:tex>
-      there will be an infinite number of components of any given total degree.
-    </fr:li>
+display="block"><![CDATA[         \mathscr {H}\kern  -2.5pt\mathit {om}_{\mathcal {O}_X}(\underline {L}(\mathscr {A}_1)\otimes \ldots ,\underline {L}(\mathscr {B}_1)\otimes \ldots )       ]]></fr:tex>
+      there will be an infinite number of components of any given total degree.</fr:li>
 
-    <fr:li>
-      We can easily verify that, in the formulas in <fr:ref
+    <fr:li>We can easily verify that, in the formulas in <fr:ref
 addr="fga1-equation-8.1"
 href="fga1-equation-8.1.xml"
 taxon="Equation"
-number="8.1"></fr:ref>, we can replace <fr:em>one</fr:em> of the <fr:tex>\underline {L}( \mathscr { B } _i)</fr:tex> with <fr:tex>\mathscr { B } _i</fr:tex>.
+number="8.1" />, we can replace <fr:em>one</fr:em> of the <fr:tex
+display="inline"><![CDATA[\underline {L}(\mathscr {B}_i)]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[\mathscr {B}_i]]></fr:tex>.
       Taking <fr:ref
 addr="fga1-proposition-3"
 href="fga1-proposition-3.xml"
 taxon="Proposition"
-number="3"></fr:ref> into account, this shows that we have
+number="3" /> into account, this shows that we have
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>803</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga1-equation-8.8</fr:addr><fr:route>fga1-equation-8.8.xml</fr:route><fr:number>8.8</fr:number><fr:parent>fga1-8-remarks</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">            \begin {aligned}              \underline {T}_1^{1 \bullet }( \mathscr { A } ; \mathscr { B } )             &amp;=  \mathscr {E} \kern  -1.5pt \mathit {xt} _{ \mathcal {O} _X}^ \bullet ( \mathscr { A } , \mathscr { B } )            \\ T_1^{1 \bullet }( \mathscr { A } ; \mathscr { B } )             &amp;=  \operatorname {Ext} _{ \mathcal {O} _X}^ \bullet (X; \mathscr { A } , \mathscr { B } ).            \end {aligned}         \tag{8.8}         </fr:tex></fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>861</fr:anchor><fr:addr
+type="user">fga1-equation-8.8</fr:addr><fr:route>fga1-equation-8.8.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>8.8</fr:number><fr:parent>fga1-8-remarks</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[           \begin {aligned}             \underline {T}_1^{1\bullet }(\mathscr {A};\mathscr {B})             &= \mathscr {E}\kern  -1.5pt\mathit {xt}_{\mathcal {O}_X}^\bullet (\mathscr {A},\mathscr {B})           \\T_1^{1\bullet }(\mathscr {A};\mathscr {B})             &= \operatorname {Ext}_{\mathcal {O}_X}^\bullet (X;\mathscr {A},\mathscr {B}).           \end {aligned}         \tag{8.8}         ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
 
-      In particular, taking <fr:tex>r=s=1</fr:tex> and <fr:tex>\mathscr { A } _1= \mathcal {O} _X</fr:tex> in <fr:ref
+      In particular, taking <fr:tex
+display="inline"><![CDATA[r=s=1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathscr {A}_1=\mathcal {O}_X]]></fr:tex> in <fr:ref
 addr="fga1-equation-8.6"
 href="fga1-equation-8.6.xml"
 taxon="Equation"
-number="8.6"></fr:ref>, we recover <fr:ref
+number="8.6" />, we recover <fr:ref
 addr="fga1-theorem-3"
 href="fga1-theorem-3.xml"
 taxon="Theorem"
-number="3"></fr:ref>.
+number="3" />.
       <fr:ref
 addr="fga1-equation-8.8"
 href="fga1-equation-8.8.xml"
 taxon="Equation"
-number="8.8"></fr:ref> also implies that <fr:tex>T_0^{1 \bullet }( \mathscr { B } )= \operatorname {H} ^ \bullet (X, \mathscr { B } )</fr:tex>, and that <fr:tex>T_1^{0 \bullet }( \mathscr { A } )= \operatorname {Ext} _{ \mathcal {O} _X}^ \bullet (X; \mathscr { A } , \mathcal {O} _X)</fr:tex>.
-    </fr:li>
+number="8.8" /> also implies that <fr:tex
+display="inline"><![CDATA[T_0^{1\bullet }(\mathscr {B})=\operatorname {H}^\bullet (X,\mathscr {B})]]></fr:tex>, and that <fr:tex
+display="inline"><![CDATA[T_1^{0\bullet }(\mathscr {A})=\operatorname {Ext}_{\mathcal {O}_X}^\bullet (X;\mathscr {A},\mathcal {O}_X)]]></fr:tex>.</fr:li>
 
-    <fr:li>
-      We see, in <fr:ref
+    <fr:li>We see, in <fr:ref
 addr="fga1-equation-8.1"
 href="fga1-equation-8.1.xml"
 taxon="Equation"
-number="8.1"></fr:ref>, that the functors <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> and <fr:tex>T_r^{s \bullet }</fr:tex> have, in general, components in positive <fr:em>and</fr:em> negative degrees.
-      Using the above remark, we see that, if the dimension of <fr:tex>X</fr:tex> is <fr:tex>n</fr:tex>, then the non-zero components of <fr:tex>\underline {T}_r^{s \bullet }</fr:tex> are concentrated between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>rn</fr:tex> if <fr:tex>s&gt;0</fr:tex>, and between degrees <fr:tex>0</fr:tex> and <fr:tex>rn</fr:tex> if <fr:tex>s=0</fr:tex>; the non-zero components of <fr:tex>T_r^{s \bullet }</fr:tex> are concentrated between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>(r+1)n</fr:tex> if <fr:tex>s&gt;0</fr:tex>, and between degrees <fr:tex>0</fr:tex> and <fr:tex>(r+1)n</fr:tex> if <fr:tex>s=0</fr:tex> (and, unless I am mistaken, if <fr:tex>r&gt;0</fr:tex>, between degrees <fr:tex>-(s-1)n</fr:tex> and <fr:tex>rn</fr:tex>, resp. <fr:tex>0</fr:tex> and <fr:tex>rn</fr:tex>).
-    </fr:li></fr:ol></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+number="8.1" />, that the functors <fr:tex
+display="inline"><![CDATA[\underline {T}_r^{s\bullet }]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[T_r^{s\bullet }]]></fr:tex> have, in general, components in positive <fr:em>and</fr:em> negative degrees.
+      Using the above remark, we see that, if the dimension of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, then the non-zero components of <fr:tex
+display="inline"><![CDATA[\underline {T}_r^{s\bullet }]]></fr:tex> are concentrated between degrees <fr:tex
+display="inline"><![CDATA[-(s-1)n]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[rn]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[s>0]]></fr:tex>, and between degrees <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[rn]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[s=0]]></fr:tex>; the non-zero components of <fr:tex
+display="inline"><![CDATA[T_r^{s\bullet }]]></fr:tex> are concentrated between degrees <fr:tex
+display="inline"><![CDATA[-(s-1)n]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[(r+1)n]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[s>0]]></fr:tex>, and between degrees <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[(r+1)n]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[s=0]]></fr:tex> (and, unless I am mistaken, if <fr:tex
+display="inline"><![CDATA[r>0]]></fr:tex>, between degrees <fr:tex
+display="inline"><![CDATA[-(s-1)n]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[rn]]></fr:tex>, resp. <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[rn]]></fr:tex>).</fr:li></fr:ol></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

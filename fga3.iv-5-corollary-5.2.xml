@@ -1,233 +1,468 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2019</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.iv-5-corollary-5.2</fr:addr><fr:route>fga3.iv-5-corollary-5.2.xml</fr:route><fr:number>5.2</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Suppose that there exists locally on <fr:tex>X</fr:tex> an extension <fr:tex>\mathscr { G }</fr:tex> of <fr:tex>\mathscr { G } _0</fr:tex> to a quotient of <fr:tex>\mathscr { F }</fr:tex> that is flat over <fr:tex>S</fr:tex> (i.e. that the fibres of the sheaf <fr:tex>\mathscr { E }</fr:tex> are non-empty).
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2058</fr:anchor><fr:addr
+type="user">fga3.iv-5-corollary-5.2</fr:addr><fr:route>fga3.iv-5-corollary-5.2.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:number>5.2</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that there exists locally on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> an extension <fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {G}_0]]></fr:tex> to a quotient of <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> that is flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> (i.e. that the fibres of the sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {E}]]></fr:tex> are non-empty).
     Then there exists a canonical obstruction class
     <fr:tex
-display="block">       c( \mathscr { G } _0)  \in   \operatorname {H} ^1(X, \mathscr { A } )     </fr:tex>
-    whose vanishing is necessary and sufficient for the existence of a global extension <fr:tex>\mathscr { G }</fr:tex> of <fr:tex>\mathscr { G } _0</fr:tex> to a quotient of <fr:tex>\mathscr { F }</fr:tex> that is flat over <fr:tex>S</fr:tex>.
-    If this class is zero, then the set <fr:tex>\mathscr { E } (X)</fr:tex> of all possible extensions is a principal homogenous set for <fr:tex>\mathscr { A } (X)= \operatorname {Hom} _{ \mathcal {O} _X}( \mathscr { H } _0, \mathscr { G } _0 \otimes _{ \mathcal {O} _{S_0}} \mathscr { I } )</fr:tex>.
-  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2018</fr:anchor><fr:addr>fga3.iv-5</fr:addr><fr:route>fga3.iv-5.xml</fr:route><fr:title><fr:link
-href="fga3.iv.xml"
-type="local"
-addr="fga3.iv">Hilbert schemes</fr:link> › Differential study of Hilbert schemes</fr:title><fr:number>5</fr:number><fr:parent>fga3.iv</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  We have the following result:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>516</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iv-5-proposition-5.1</fr:addr><fr:route>fga3.iv-5-proposition-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>S</fr:tex> be a prescheme, <fr:tex>S_0</fr:tex> a subprescheme defined by a square-zero quasi-coherent ideal <fr:tex>\mathscr { I }</fr:tex>, <fr:tex>X</fr:tex> an <fr:tex>S</fr:tex>-prescheme, and <fr:tex>\mathscr { F }</fr:tex> a quasi-coherent module on <fr:tex>X</fr:tex>.
-    Let <fr:tex>X_0= \mathscr { F } \times _S S_0</fr:tex> and <fr:tex>\mathscr { F } _0= \mathscr { F } \otimes _{ \mathcal {O} _S} \mathcal {O} _{S_0}</fr:tex>.
-    Finally, let <fr:tex>\mathscr { G } _0= \mathscr { F } _0/ \mathscr { H } _0</fr:tex> be a quasi-coherent quotient module of <fr:tex>\mathscr { F } _0</fr:tex> that is flat over <fr:tex>S_0</fr:tex>.
-    For every open <fr:tex>U</fr:tex> of <fr:tex>X</fr:tex>, let <fr:tex>\mathscr { E } (U)</fr:tex> be the set of quasi-coherent quotient modules <fr:tex>\mathscr { G }</fr:tex> of <fr:tex>\mathscr { F } |U</fr:tex> that are flat over <fr:tex>S</fr:tex> and are such that <fr:tex>\mathscr { G } \otimes _{ \mathcal {O} _S} \mathcal {O} _{S_0}= \mathscr { G } _0</fr:tex>;
-    as <fr:tex>U</fr:tex> varies, the <fr:tex>\mathscr { E } (U)</fr:tex> are the sections of a sheaf <fr:tex>\mathscr { E }</fr:tex> on <fr:tex>U</fr:tex>.
-    With this, the sheaf of groups
-    <fr:tex
-display="block">        \mathscr { A }        =  \underline { \operatorname {Hom} } _{ \mathcal {O} _{X_0}}( \mathscr { H } _0, \mathscr { G } _0 \otimes _{ \mathcal {O} _{S_0}} \mathscr { I } )     </fr:tex>
-    acts naturally on <fr:tex>\mathscr { E }</fr:tex>, which thus becomes a "formally <fr:tex>\mathscr {A}</fr:tex>-principal homogeneous" sheaf (i.e. for every open <fr:tex>U</fr:tex> in <fr:tex>X</fr:tex>, <fr:tex>\mathscr { E } (U)</fr:tex> is either empty or an <fr:tex>\mathscr { A } (U)</fr:tex>-principal homogeneous set).
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  We thus conclude:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>517</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.iv-5-corollary-5.2</fr:addr><fr:route>fga3.iv-5-corollary-5.2.xml</fr:route><fr:number>5.2</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Suppose that there exists locally on <fr:tex>X</fr:tex> an extension <fr:tex>\mathscr { G }</fr:tex> of <fr:tex>\mathscr { G } _0</fr:tex> to a quotient of <fr:tex>\mathscr { F }</fr:tex> that is flat over <fr:tex>S</fr:tex> (i.e. that the fibres of the sheaf <fr:tex>\mathscr { E }</fr:tex> are non-empty).
-    Then there exists a canonical obstruction class
-    <fr:tex
-display="block">       c( \mathscr { G } _0)  \in   \operatorname {H} ^1(X, \mathscr { A } )     </fr:tex>
-    whose vanishing is necessary and sufficient for the existence of a global extension <fr:tex>\mathscr { G }</fr:tex> of <fr:tex>\mathscr { G } _0</fr:tex> to a quotient of <fr:tex>\mathscr { F }</fr:tex> that is flat over <fr:tex>S</fr:tex>.
-    If this class is zero, then the set <fr:tex>\mathscr { E } (X)</fr:tex> of all possible extensions is a principal homogenous set for <fr:tex>\mathscr { A } (X)= \operatorname {Hom} _{ \mathcal {O} _X}( \mathscr { H } _0, \mathscr { G } _0 \otimes _{ \mathcal {O} _{S_0}} \mathscr { I } )</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  The existence of a global extension is thus guaranteed, in particular, if <fr:tex>\operatorname {H} ^1(X, \mathscr { A } )=0</fr:tex>.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>518</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.iv-5-corollary-5.3</fr:addr><fr:route>fga3.iv-5-corollary-5.3.xml</fr:route><fr:number>5.3</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Suppose that <fr:tex>Q= \underline { \operatorname {Quot} } _ { \mathscr { F } /X/S}</fr:tex> exists (cf. <fr:link
-href="#fga3.iv-4"
-type="external">§4.a</fr:link>) --- for example, suppose that <fr:tex>X</fr:tex> is quasi-projective over some locally Noetherian <fr:tex>S</fr:tex>, and <fr:tex>\mathscr { F }</fr:tex> is coherent.
-    Let <fr:tex>x \in  Q</fr:tex>, corresponding to a residue extension <fr:tex>K=k(x)</fr:tex> of some <fr:tex>k(s)</fr:tex> (where <fr:tex>s \in  S</fr:tex>).
-    
-    Then <fr:tex>x</fr:tex> is defined by a coherent quotient module <fr:tex>\mathscr { G } _0= \mathscr { F } _0/ \mathscr { H } _0</fr:tex> of the module <fr:tex>\mathscr { F } _0=F_K</fr:tex> on the <fr:tex>K</fr:tex>-prescheme <fr:tex>X_K</fr:tex>.
-    Let <fr:tex>\mathscr { A }</fr:tex> be the coherent sheaf on <fr:tex>X_K</fr:tex> defined by
-    <fr:tex
-display="block">        \mathscr { A }  =  \underline { \operatorname {Hom} } _{ \mathcal {O} _{X_0}}( \mathscr { H } _0, \mathscr { G } _0).     </fr:tex>
-
-    Then the Zariski tangent space of the fibre <fr:tex>Q_s</fr:tex> at the point <fr:tex>x</fr:tex> (given by the dual over <fr:tex>K</fr:tex> of <fr:tex>\mathfrak {m}/ \mathfrak {m}^2</fr:tex>, where <fr:tex>\mathfrak {m}</fr:tex> is the maximal ideal of <fr:tex>\mathcal {O} _{Q_k,x}</fr:tex>) is canonically isomorphic to <fr:tex>\operatorname {H} ^0(X_k, \mathscr { A } )</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  The result giving the Zariski tangent space can be generalised, and gives a characterisation, for a given <fr:tex>S</fr:tex>-morphism <fr:tex>g \colon  S' \to  Q</fr:tex>, i.e. a section <fr:tex>g'</fr:tex> of <fr:tex>Q'=Q \times _S S'</fr:tex> over <fr:tex>S'</fr:tex>, of the module
-  <fr:tex
-display="block">      \Omega      = g^*( \Omega _{Q/S}^1)     = {g'}^*( \mathscr { J } / \mathscr { J } ^2)   </fr:tex>
-  (where <fr:tex>\mathscr { J }</fr:tex> is the ideal on <fr:tex>Q'</fr:tex> defined by the section <fr:tex>g'</fr:tex> of <fr:tex>Q'</fr:tex> over <fr:tex>S'</fr:tex>) by the formula
-  <fr:tex
-display="block">      \operatorname {Hom} _{ \mathcal {O} _{S'}}( \Omega , \mathscr { M } )      \simeq   \operatorname {H} ^0(X', \mathscr { A } )   </fr:tex>
-  which is functorial in the coherent module <fr:tex>\mathscr { M }</fr:tex> over <fr:tex>S'</fr:tex>, and where <fr:tex>\mathscr { A }</fr:tex> is again the module on <fr:tex>X'=X \times _S S'</fr:tex> defined by
-  <fr:tex
-display="block">      \mathscr { A }  =  \underline { \operatorname {Hom} } _{ \mathcal {O} _{X'}}( \mathscr { H } , \mathscr { G } \otimes _{ \mathcal {O} _S} \mathscr { M } )   </fr:tex>
-  (<fr:tex>\mathscr { G } = \mathscr { F } '/ \mathscr { H }</fr:tex> being the quotient module of <fr:tex>\mathscr { F } '= \mathscr { F } \otimes _{ \mathcal {O} _S} \mathcal {O} _{S'}</fr:tex> that corresponds to <fr:tex>g</fr:tex>).
-  It suffices to apply <fr:ref
-addr="fga3.iv-5-proposition-5.1"
-href="fga3.iv-5-proposition-5.1.xml"
-taxon="Proposition"
-number="5.1"></fr:ref> by replacing <fr:tex>S_0</fr:tex> with <fr:tex>S'</fr:tex>, and <fr:tex>S</fr:tex> with the prescheme <fr:tex>D( \mathscr { M } )=(S', \mathcal {O} _{S'}+ \mathscr { M } )</fr:tex>, where <fr:tex>\mathscr { M }</fr:tex> is considered as a square-zero ideal.
-</fr:p><fr:p>
-  If, in <fr:ref
-addr="fga3.iv-5-proposition-5.1"
-href="fga3.iv-5-proposition-5.1.xml"
-taxon="Proposition"
-number="5.1"></fr:ref>, we have <fr:tex>\mathscr { F } = \mathcal {O} _X</fr:tex>, then the data of <fr:tex>\mathscr { G } _0</fr:tex> corresponds to the data of a closed subprescheme <fr:tex>Y_0</fr:tex> of <fr:tex>X_0</fr:tex> that is flat over <fr:tex>S_0</fr:tex>, defined by the ideal <fr:tex>\mathscr { J } _0= \mathscr { M } _0</fr:tex>, and then <fr:ref
-addr="fga3.iv-3-equation-star"
-href="fga3.iv-3-equation-star.xml"
-taxon="Equation"
-number="*"></fr:ref> gives
-  <fr:tex
-display="block">      \mathscr { A }      =  \underline { \operatorname {Hom} } _{ \mathcal {O} _{X_0}}( \mathscr { J } _0/ \mathscr { J } _0^2, \mathcal {O} _{Y_0} \otimes _{ \mathcal {O} _{S_0}} \mathscr { J } )   </fr:tex>
-  where <fr:tex>\mathscr { J } / \mathscr { J } ^2</fr:tex> is thought of as the <fr:em>conormal sheaf</fr:em> of <fr:tex>Y_0</fr:tex> in <fr:tex>X_0</fr:tex>, which we also denote by <fr:tex>\mathscr { N } _{Y_0/X_0}</fr:tex>;
-  
-  it is then interesting to consider <fr:tex>\mathscr { A }</fr:tex> as a module over <fr:tex>Y_0</fr:tex>, and to calculate <fr:tex>\operatorname {H} ^0</fr:tex> and <fr:tex>\operatorname {H} ^1</fr:tex> on <fr:tex>Y</fr:tex>.
-  If <fr:tex>Y_0</fr:tex> is locally a complete intersection in <fr:tex>X_0</fr:tex>, with <fr:tex>X</fr:tex> flat over <fr:tex>S</fr:tex>, then, in <fr:ref
-addr="fga3.iv-5-proposition-5.1"
-href="fga3.iv-5-proposition-5.1.xml"
-taxon="Proposition"
-number="5.1"></fr:ref>, the possibility of a local extension is guaranteed, and <fr:tex>\mathscr { J } / \mathscr { J } ^2</fr:tex> is locally free over <fr:tex>Y_0</fr:tex> and we can write
-  <fr:tex
-display="block">      \mathscr { A }      =  \check { \mathscr { N } }_{X_0/Y_0} \otimes _{ \mathcal {O} _{S_0}} \mathscr { J }    </fr:tex>
-  where the first factor on the right-hand side is the normal cone of <fr:tex>Y_0</fr:tex> inside <fr:tex>X_0</fr:tex>.
-  Using the fundamental criterion of simplicity [<fr:link
-href="Gro1960b.xml"
-type="local"
-addr="Gro1960b">Gro1960b</fr:link>, III, 3.1], we find, for example:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>519</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>fga3.iv-5-corollary-5.4</fr:addr><fr:route>fga3.iv-5-corollary-5.4.xml</fr:route><fr:number>5.4</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Under the conditions of <fr:ref
-addr="fga3.iv-5-corollary-5.3"
-href="fga3.iv-5-corollary-5.3.xml"
-taxon="Corollary"
-number="5.3"></fr:ref>, suppose that <fr:tex>\mathscr { F } = \mathcal {O} _X</fr:tex>, with <fr:tex>X</fr:tex> flat over <fr:tex>S</fr:tex>, and that the closed subprescheme <fr:tex>Y_0</fr:tex> of <fr:tex>X_0</fr:tex> that corresponds to <fr:tex>\mathscr { G } _0</fr:tex> is locally a complete intersection.
-    Then the Zariski tangent space of <fr:tex>Q_s</fr:tex> at <fr:tex>x</fr:tex> is canonically isomorphic to <fr:tex>\operatorname {H} ^0(Y_0, \check { \mathscr { N } }_{X_0/Y_0})</fr:tex>.
-    If <fr:tex>\operatorname {H} ^1(Y_0, \check { \mathscr { N } _{X_0/Y_0}})=0</fr:tex>, then the Hilbert prescheme <fr:tex>X</fr:tex> is simple over <fr:tex>S</fr:tex> at the point <fr:tex>x</fr:tex> (where <fr:tex>\check { \mathscr { N } }_{X_0/Y_0}</fr:tex> is the normal sheaf of <fr:tex>Y_0</fr:tex> inside <fr:tex>X_0</fr:tex>).
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>520</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.iv-5-remark-5.5</fr:addr><fr:route>fga3.iv-5-remark-5.5.xml</fr:route><fr:number>5.5</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    This statement applies in particular when <fr:tex>Y_0</fr:tex> is a complete intersection in <fr:tex>X_0</fr:tex> defined by <fr:em>one</fr:em> single equation, i.e. is a positive "Cartier divisor".
-    Then <fr:tex>\check { \mathscr { N } }_{X_0/Y_0}</fr:tex> is isomorphic to the sheaf on <fr:tex>Y_0</fr:tex> induced by the invertible sheaf <fr:tex>\mathscr { J } ^{-1}</fr:tex> on <fr:tex>X_0</fr:tex> defined by the divisor <fr:tex>Y_0</fr:tex>.
-    This is the situation that we find in particular in the study of families of positive divisors on a non-singular projective variety <fr:tex>X_0</fr:tex>.
-    The isomorphism between the Zariski tangent space at the point <fr:tex>x</fr:tex> of <fr:tex>Q</fr:tex> (or, if one prefers, of the open <fr:tex>D</fr:tex> of <fr:tex>Q</fr:tex> that corresponds to the divisors) and <fr:tex>\mathscr { H } ^0(Y_0, \check { \mathscr { N } }_{X_0/Y_0})</fr:tex> was known in classical algebraic geometry under the name of "*characteristic homomorphism*" (from the former to the latter).
-    It was not defined when <fr:tex>x</fr:tex> was a simple point of the variety of parameters <fr:tex>T</fr:tex> of a "complete continuous family" of divisors, i.e. from our point of view, of an irreducible component of the scheme <fr:tex>D</fr:tex>, endowed with the induced <fr:em>reduced</fr:em> structure.
-    The tangent space of <fr:tex>T</fr:tex> at <fr:tex>x</fr:tex> is then a <fr:em>subspace</fr:em> of the tangent space of <fr:tex>D</fr:tex> at <fr:tex>x</fr:tex>, and so the characteristic homomorphic of yore is indeed injective, but it is not surjective except for under supplementary conditions, for example if <fr:tex>D</fr:tex> is integral at <fr:tex>x</fr:tex>.
-    
-    In fact, Zappa <fr:link
-href="Zap1945.xml"
-type="local"
-addr="Zap1945">[Zap1945]</fr:link> constructed an example (with <fr:tex>X</fr:tex> a non-singular projective surface over the <fr:em>field of complex numbers</fr:em>) where even at the generic point of <fr:tex>T</fr:tex> the characteristic homomorphism is not surjective.
-    <fr:em>This thus implies that <fr:tex>D</fr:tex> is not integral even at the generic point of the irreducible component in question.</fr:em>
-    This shows in a particularly striking manner how varieties with nilpotent elements are necessary for understanding the most classical phenomena of the theory of surfaces.
-  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
-    Concerning the example of Zappa, we note that Mumford has even constructed an irreducible component of the Hilbert scheme for <fr:tex>\mathbb {P} _ \mathbb {C}^3</fr:tex> (whose general points represent non-singular curves of degree <fr:tex>14</fr:tex> and genus <fr:tex>24</fr:tex>), which is non-reduced at its generic points.
-    Blowing up the curves obtained, he also obtains a regular projective scheme of dimension <fr:tex>3</fr:tex> over <fr:tex>\mathbb {C}</fr:tex>, whose formal scheme of modules is non-reduced at its generic point, or, equivalently, such that its local variety of modules, in the sense of analytic geometry, over <fr:tex>\mathbb {C}</fr:tex> (see <fr:em>Séminaire Cartan</fr:em> <fr:strong>13</fr:strong>, 1960/61) is non-reduced at all its points.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>521</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.iv-5-remark-5.6</fr:addr><fr:route>fga3.iv-5-remark-5.6.xml</fr:route><fr:number>5.6</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    We have given, in <fr:ref
-addr="fga3.iv-5-remark-5.5"
-href="fga3.iv-5-remark-5.5.xml"
-taxon="Remark"
-number="5.5"></fr:ref>, a criterion for simplicity, which applies in particular to schemes of divisors.
-    Kodaira gave a different criterion in <fr:link
-href="Kod1956.xml"
-type="local"
-addr="Kod1956">[Kod1956]</fr:link>, given by the vanishing of <fr:tex>\operatorname {H} ^1(X_0, \mathscr { L } )</fr:tex>, where <fr:tex>\mathscr { L } = \mathscr { J } _0^{-1}</fr:tex> is the invertible sheaf on <fr:tex>X_0</fr:tex> defined by the divisor <fr:tex>Y_0</fr:tex>;
-    this criterion holds whenever <fr:tex>S</fr:tex> is the spectrum of a field of characteristic <fr:tex>0</fr:tex>, and is proved in <fr:link
-href="Kod1956.xml"
-type="local"
-addr="Kod1956">[Kod1956]</fr:link> by transcendental methods in the case where the base field is <fr:tex>\mathbb {C}</fr:tex>.
-    We note here that, in general, <fr:tex>S</fr:tex> now arbitrary, Kodaira's condition is a sufficient condition for the canonical morphism <fr:tex>D \to \underline { \operatorname {Pic} } _{X/S}</fr:tex> from the prescheme of divisors to the Picard prescheme of <fr:tex>X/S</fr:tex> to be simple at the point <fr:tex>x</fr:tex> in question (as we easily verify by the usual criterion for simplicity, once we have the existence of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>).
-    Then if, further, <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is simple over <fr:tex>S</fr:tex> at the point given by the image of <fr:tex>x</fr:tex> (for example if <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is simple over <fr:tex>S</fr:tex>), then <fr:tex>D</fr:tex> is simple over <fr:tex>S</fr:tex> at <fr:tex>x</fr:tex>.
-    On the other hand, Cartier has shown that every group prescheme locally of finite type over <fr:em>a field <fr:tex>k</fr:tex> of characteristic <fr:tex>0</fr:tex></fr:em> is simple over <fr:tex>k</fr:tex>.
-    By combining these two results, we recover the result of Kodaira.
-    Note that it follows from these remarks that, over a field <fr:tex>K</fr:tex> of characteristic <fr:tex>p&gt;0</fr:tex>, if <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is not simple over <fr:tex>k</fr:tex> (which is the case whenever <fr:tex>X</fr:tex> is the Igusa surface), then the condition <fr:tex>\operatorname {H} ^1(X_0, \mathscr { L } )=0</fr:tex> implies to the contrary that <fr:tex>D</fr:tex> is not simple at <fr:tex>x</fr:tex>, and even not reduced at <fr:tex>x</fr:tex> if <fr:tex>K</fr:tex> is algebraically closed.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  To finish, we give the following result, which plays an important role in the differential study of fibred spaces:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>522</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.iv-5-proposition-5.7</fr:addr><fr:route>fga3.iv-5-proposition-5.7.xml</fr:route><fr:number>5.7</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>X</fr:tex> be a finite prescheme that is flat over <fr:tex>S</fr:tex> and locally Noetherian, and let <fr:tex>Z</fr:tex> be a prescheme over <fr:tex>S</fr:tex> such that <fr:tex>\prod _{X/S}(Z/X)</fr:tex> exists (which is the case if <fr:tex>Z</fr:tex> is quasi-projective over <fr:tex>X</fr:tex>).
-    If <fr:tex>Z</fr:tex> is simple over <fr:tex>X</fr:tex>, then <fr:tex>\prod _{X/S}(Z/X)</fr:tex> is simple over <fr:tex>S</fr:tex>.
-  </fr:p>
-  
-    
-    <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="block"><![CDATA[       c(\mathscr {G}_0) \in  \operatorname {H}^1(X,\mathscr {A})     ]]></fr:tex>
+    whose vanishing is necessary and sufficient for the existence of a global extension <fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {G}_0]]></fr:tex> to a quotient of <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> that is flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+    If this class is zero, then the set <fr:tex
+display="inline"><![CDATA[\mathscr {E}(X)]]></fr:tex> of all possible extensions is a principal homogenous set for <fr:tex
+display="inline"><![CDATA[\mathscr {A}(X)=\operatorname {Hom}_{\mathcal {O}_X}(\mathscr {H}_0,\mathscr {G}_0\otimes _{\mathcal {O}_{S_0}}\mathscr {I})]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>483</fr:anchor><fr:taxon>Proof</fr:taxon><fr:parent>fga3.iv-5-proposition-5.7</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>
-      This is an immediate consequence of the definition, and of the usual criterion of simplicity [<fr:link
-href="Gro1960b.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2059</fr:anchor><fr:addr
+type="user">fga3.iv-5</fr:addr><fr:route>fga3.iv-5.xml</fr:route><fr:title
+text="Hilbert schemes › Differential study of Hilbert schemes"><fr:link
 type="local"
-addr="Gro1960b">Gro1960b</fr:link>, III, §3.1].
-    </fr:p>
-  </fr:mainmatter></fr:tree>
-  
-</fr:mainmatter></fr:tree><fr:p>
-  Note that if <fr:tex>X</fr:tex> is finite and flat over <fr:tex>S</fr:tex>, then the question of the existence of <fr:tex>\prod _{X/S}(Z/X)</fr:tex> can be dealt with in a very elementary manner, without using the theory of Hilbert schemes.
-  
-  We find, for example, that if <fr:tex>X</fr:tex> is radicial over <fr:tex>S</fr:tex>, then <fr:tex>\prod _{X/S}(Z/X)</fr:tex> exists without any restrictions on <fr:tex>Z</fr:tex>.
-  For example, let <fr:tex>T</fr:tex> be an <fr:tex>S</fr:tex>-prescheme, and let <fr:tex>T_n</fr:tex> be "the infinitesimal neighbourhood of order <fr:tex>n</fr:tex>" of the diagonal of <fr:tex>T \times _S T</fr:tex> in <fr:tex>T \times _S T</fr:tex>, endowed with the morphisms <fr:tex>p_1,p_2 \colon  T_n \to  T</fr:tex> induced by the two projections.
-  We can consider <fr:tex>T_n</fr:tex> as a finite prescheme over <fr:tex>T</fr:tex> thanks to <fr:tex>p_1</fr:tex>, and we suppose further that <fr:tex>T_n</fr:tex> is flat over <fr:tex>T</fr:tex> (which is the case if <fr:tex>T</fr:tex> is simple over <fr:tex>S</fr:tex>).
-  For every prescheme <fr:tex>X</fr:tex> over <fr:tex>T</fr:tex>, set
+href="fga3.iv.xml"
+addr="fga3.iv"
+title="Hilbert schemes">Hilbert schemes</fr:link> › Differential study of Hilbert schemes</fr:title><fr:authors /><fr:number>5</fr:number><fr:parent>fga3.iv</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We have the following result:</fr:p><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>572</fr:anchor><fr:addr
+type="user">fga3.iv-5-proposition-5.1</fr:addr><fr:route>fga3.iv-5-proposition-5.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>5.1</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> be a prescheme, <fr:tex
+display="inline"><![CDATA[S_0]]></fr:tex> a subprescheme defined by a square-zero quasi-coherent ideal <fr:tex
+display="inline"><![CDATA[\mathscr {I}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> an <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-prescheme, and <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> a quasi-coherent module on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>.
+    Let <fr:tex
+display="inline"><![CDATA[X_0=\mathscr {F}\times _S S_0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathscr {F}_0=\mathscr {F}\otimes _{\mathcal {O}_S}\mathcal {O}_{S_0}]]></fr:tex>.
+    Finally, let <fr:tex
+display="inline"><![CDATA[\mathscr {G}_0=\mathscr {F}_0/\mathscr {H}_0]]></fr:tex> be a quasi-coherent quotient module of <fr:tex
+display="inline"><![CDATA[\mathscr {F}_0]]></fr:tex> that is flat over <fr:tex
+display="inline"><![CDATA[S_0]]></fr:tex>.
+    For every open <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, let <fr:tex
+display="inline"><![CDATA[\mathscr {E}(U)]]></fr:tex> be the set of quasi-coherent quotient modules <fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {F}|U]]></fr:tex> that are flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> and are such that <fr:tex
+display="inline"><![CDATA[\mathscr {G}\otimes _{\mathcal {O}_S}\mathcal {O}_{S_0}=\mathscr {G}_0]]></fr:tex>;
+    as <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> varies, the <fr:tex
+display="inline"><![CDATA[\mathscr {E}(U)]]></fr:tex> are the sections of a sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {E}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[U]]></fr:tex>.
+    With this, the sheaf of groups
+    <fr:tex
+display="block"><![CDATA[       \mathscr {A}       = \underline {\operatorname {Hom}}_{\mathcal {O}_{X_0}}(\mathscr {H}_0,\mathscr {G}_0\otimes _{\mathcal {O}_{S_0}}\mathscr {I})     ]]></fr:tex>
+    acts naturally on <fr:tex
+display="inline"><![CDATA[\mathscr {E}]]></fr:tex>, which thus becomes a "formally <fr:tex
+display="inline"><![CDATA[\mathscr {A}]]></fr:tex>-principal homogeneous" sheaf (i.e. for every open <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\mathscr {E}(U)]]></fr:tex> is either empty or an <fr:tex
+display="inline"><![CDATA[\mathscr {A}(U)]]></fr:tex>-principal homogeneous set).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>We thus conclude:</fr:p><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>573</fr:anchor><fr:addr
+type="user">fga3.iv-5-corollary-5.2</fr:addr><fr:route>fga3.iv-5-corollary-5.2.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:number>5.2</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that there exists locally on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> an extension <fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {G}_0]]></fr:tex> to a quotient of <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> that is flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> (i.e. that the fibres of the sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {E}]]></fr:tex> are non-empty).
+    Then there exists a canonical obstruction class
+    <fr:tex
+display="block"><![CDATA[       c(\mathscr {G}_0) \in  \operatorname {H}^1(X,\mathscr {A})     ]]></fr:tex>
+    whose vanishing is necessary and sufficient for the existence of a global extension <fr:tex
+display="inline"><![CDATA[\mathscr {G}]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {G}_0]]></fr:tex> to a quotient of <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> that is flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+    If this class is zero, then the set <fr:tex
+display="inline"><![CDATA[\mathscr {E}(X)]]></fr:tex> of all possible extensions is a principal homogenous set for <fr:tex
+display="inline"><![CDATA[\mathscr {A}(X)=\operatorname {Hom}_{\mathcal {O}_X}(\mathscr {H}_0,\mathscr {G}_0\otimes _{\mathcal {O}_{S_0}}\mathscr {I})]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>The existence of a global extension is thus guaranteed, in particular, if <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(X,\mathscr {A})=0]]></fr:tex>.</fr:p><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>574</fr:anchor><fr:addr
+type="user">fga3.iv-5-corollary-5.3</fr:addr><fr:route>fga3.iv-5-corollary-5.3.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:number>5.3</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[Q=\underline {\operatorname {Quot}}_{\mathscr {F}/X/S}]]></fr:tex> exists (cf. <fr:link
+type="external"
+href="#fga3.iv-4">§4.a</fr:link>) --- for example, suppose that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is quasi-projective over some locally Noetherian <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is coherent.
+    Let <fr:tex
+display="inline"><![CDATA[x\in  Q]]></fr:tex>, corresponding to a residue extension <fr:tex
+display="inline"><![CDATA[K=k(x)]]></fr:tex> of some <fr:tex
+display="inline"><![CDATA[k(s)]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex>).
+    
+    Then <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is defined by a coherent quotient module <fr:tex
+display="inline"><![CDATA[\mathscr {G}_0=\mathscr {F}_0/\mathscr {H}_0]]></fr:tex> of the module <fr:tex
+display="inline"><![CDATA[\mathscr {F}_0=F_K]]></fr:tex> on the <fr:tex
+display="inline"><![CDATA[K]]></fr:tex>-prescheme <fr:tex
+display="inline"><![CDATA[X_K]]></fr:tex>.
+    Let <fr:tex
+display="inline"><![CDATA[\mathscr {A}]]></fr:tex> be the coherent sheaf on <fr:tex
+display="inline"><![CDATA[X_K]]></fr:tex> defined by
+    <fr:tex
+display="block"><![CDATA[       \mathscr {A} = \underline {\operatorname {Hom}}_{\mathcal {O}_{X_0}}(\mathscr {H}_0,\mathscr {G}_0).     ]]></fr:tex>
+
+    Then the Zariski tangent space of the fibre <fr:tex
+display="inline"><![CDATA[Q_s]]></fr:tex> at the point <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> (given by the dual over <fr:tex
+display="inline"><![CDATA[K]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathfrak {m}/\mathfrak {m}^2]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathfrak {m}]]></fr:tex> is the maximal ideal of <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{Q_k,x}]]></fr:tex>) is canonically isomorphic to <fr:tex
+display="inline"><![CDATA[\operatorname {H}^0(X_k,\mathscr {A})]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>The result giving the Zariski tangent space can be generalised, and gives a characterisation, for a given <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-morphism <fr:tex
+display="inline"><![CDATA[g\colon  S'\to  Q]]></fr:tex>, i.e. a section <fr:tex
+display="inline"><![CDATA[g']]></fr:tex> of <fr:tex
+display="inline"><![CDATA[Q'=Q\times _S S']]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S']]></fr:tex>, of the module
   <fr:tex
-display="block">     (X/T/S)^{(n)}     =  \prod _{T_n/S}(p_2^*(X/T)/T_n)   </fr:tex>
-  which is a prescheme over <fr:tex>T</fr:tex> called the <fr:em>bundle of germs of sections of order <fr:tex>n</fr:tex> of <fr:tex>X</fr:tex> over <fr:tex>T</fr:tex></fr:em> (with respect to <fr:tex>S</fr:tex>).
-  This depends functorially on <fr:tex>X</fr:tex>, and is simple over <fr:tex>T</fr:tex> if <fr:tex>X</fr:tex> is.
-</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+display="block"><![CDATA[     \Omega      = g^*(\Omega _{Q/S}^1)     = {g'}^*(\mathscr {J}/\mathscr {J}^2)   ]]></fr:tex>
+  (where <fr:tex
+display="inline"><![CDATA[\mathscr {J}]]></fr:tex> is the ideal on <fr:tex
+display="inline"><![CDATA[Q']]></fr:tex> defined by the section <fr:tex
+display="inline"><![CDATA[g']]></fr:tex> of <fr:tex
+display="inline"><![CDATA[Q']]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S']]></fr:tex>) by the formula
+  <fr:tex
+display="block"><![CDATA[     \operatorname {Hom}_{\mathcal {O}_{S'}}(\Omega ,\mathscr {M})     \simeq  \operatorname {H}^0(X',\mathscr {A})   ]]></fr:tex>
+  which is functorial in the coherent module <fr:tex
+display="inline"><![CDATA[\mathscr {M}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S']]></fr:tex>, and where <fr:tex
+display="inline"><![CDATA[\mathscr {A}]]></fr:tex> is again the module on <fr:tex
+display="inline"><![CDATA[X'=X\times _S S']]></fr:tex> defined by
+  <fr:tex
+display="block"><![CDATA[     \mathscr {A} = \underline {\operatorname {Hom}}_{\mathcal {O}_{X'}}(\mathscr {H},\mathscr {G}\otimes _{\mathcal {O}_S}\mathscr {M})   ]]></fr:tex>
+  (<fr:tex
+display="inline"><![CDATA[\mathscr {G}=\mathscr {F}'/\mathscr {H}]]></fr:tex> being the quotient module of <fr:tex
+display="inline"><![CDATA[\mathscr {F}'=\mathscr {F}\otimes _{\mathcal {O}_S}\mathcal {O}_{S'}]]></fr:tex> that corresponds to <fr:tex
+display="inline"><![CDATA[g]]></fr:tex>).
+  It suffices to apply <fr:ref
+addr="fga3.iv-5-proposition-5.1"
+href="fga3.iv-5-proposition-5.1.xml"
+taxon="Proposition"
+number="5.1" /> by replacing <fr:tex
+display="inline"><![CDATA[S_0]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[S']]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> with the prescheme <fr:tex
+display="inline"><![CDATA[D(\mathscr {M})=(S',\mathcal {O}_{S'}+\mathscr {M})]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathscr {M}]]></fr:tex> is considered as a square-zero ideal.</fr:p><fr:p>If, in <fr:ref
+addr="fga3.iv-5-proposition-5.1"
+href="fga3.iv-5-proposition-5.1.xml"
+taxon="Proposition"
+number="5.1" />, we have <fr:tex
+display="inline"><![CDATA[\mathscr {F}=\mathcal {O}_X]]></fr:tex>, then the data of <fr:tex
+display="inline"><![CDATA[\mathscr {G}_0]]></fr:tex> corresponds to the data of a closed subprescheme <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> that is flat over <fr:tex
+display="inline"><![CDATA[S_0]]></fr:tex>, defined by the ideal <fr:tex
+display="inline"><![CDATA[\mathscr {J}_0=\mathscr {M}_0]]></fr:tex>, and then <fr:ref
+addr="fga3.iv-3-equation-star"
+href="fga3.iv-3-equation-star.xml"
+taxon="Equation"
+number="*" /> gives
+  <fr:tex
+display="block"><![CDATA[     \mathscr {A}     = \underline {\operatorname {Hom}}_{\mathcal {O}_{X_0}}(\mathscr {J}_0/\mathscr {J}_0^2,\mathcal {O}_{Y_0}\otimes _{\mathcal {O}_{S_0}}\mathscr {J})   ]]></fr:tex>
+  where <fr:tex
+display="inline"><![CDATA[\mathscr {J}/\mathscr {J}^2]]></fr:tex> is thought of as the <fr:em>conormal sheaf</fr:em> of <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex>, which we also denote by <fr:tex
+display="inline"><![CDATA[\mathscr {N}_{Y_0/X_0}]]></fr:tex>;
+  
+  it is then interesting to consider <fr:tex
+display="inline"><![CDATA[\mathscr {A}]]></fr:tex> as a module over <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex>, and to calculate <fr:tex
+display="inline"><![CDATA[\operatorname {H}^0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>.
+  If <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex> is locally a complete intersection in <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex>, with <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then, in <fr:ref
+addr="fga3.iv-5-proposition-5.1"
+href="fga3.iv-5-proposition-5.1.xml"
+taxon="Proposition"
+number="5.1" />, the possibility of a local extension is guaranteed, and <fr:tex
+display="inline"><![CDATA[\mathscr {J}/\mathscr {J}^2]]></fr:tex> is locally free over <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex> and we can write
+  <fr:tex
+display="block"><![CDATA[     \mathscr {A}     = \check {\mathscr {N}}_{X_0/Y_0}\otimes _{\mathcal {O}_{S_0}}\mathscr {J}   ]]></fr:tex>
+  where the first factor on the right-hand side is the normal cone of <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex> inside <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex>.
+  Using the fundamental criterion of simplicity [<fr:link
+type="local"
+href="Gro1960b.xml"
+addr="Gro1960b"
+title="Séminaire de Géométrie Algèbrique">Gro1960b</fr:link>, III, 3.1], we find, for example:</fr:p><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>575</fr:anchor><fr:addr
+type="user">fga3.iv-5-corollary-5.4</fr:addr><fr:route>fga3.iv-5-corollary-5.4.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:number>5.4</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Under the conditions of <fr:ref
+addr="fga3.iv-5-corollary-5.3"
+href="fga3.iv-5-corollary-5.3.xml"
+taxon="Corollary"
+number="5.3" />, suppose that <fr:tex
+display="inline"><![CDATA[\mathscr {F}=\mathcal {O}_X]]></fr:tex>, with <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and that the closed subprescheme <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> that corresponds to <fr:tex
+display="inline"><![CDATA[\mathscr {G}_0]]></fr:tex> is locally a complete intersection.
+    Then the Zariski tangent space of <fr:tex
+display="inline"><![CDATA[Q_s]]></fr:tex> at <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is canonically isomorphic to <fr:tex
+display="inline"><![CDATA[\operatorname {H}^0(Y_0,\check {\mathscr {N}}_{X_0/Y_0})]]></fr:tex>.
+    If <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(Y_0,\check {\mathscr {N}_{X_0/Y_0}})=0]]></fr:tex>, then the Hilbert prescheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> at the point <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[\check {\mathscr {N}}_{X_0/Y_0}]]></fr:tex> is the normal sheaf of <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex> inside <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex>).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>576</fr:anchor><fr:addr
+type="user">fga3.iv-5-remark-5.5</fr:addr><fr:route>fga3.iv-5-remark-5.5.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:number>5.5</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>This statement applies in particular when <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex> is a complete intersection in <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> defined by <fr:em>one</fr:em> single equation, i.e. is a positive "Cartier divisor".
+    Then <fr:tex
+display="inline"><![CDATA[\check {\mathscr {N}}_{X_0/Y_0}]]></fr:tex> is isomorphic to the sheaf on <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex> induced by the invertible sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {J}^{-1}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> defined by the divisor <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex>.
+    This is the situation that we find in particular in the study of families of positive divisors on a non-singular projective variety <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex>.
+    The isomorphism between the Zariski tangent space at the point <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex> (or, if one prefers, of the open <fr:tex
+display="inline"><![CDATA[D]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex> that corresponds to the divisors) and <fr:tex
+display="inline"><![CDATA[\mathscr {H}^0(Y_0,\check {\mathscr {N}}_{X_0/Y_0})]]></fr:tex> was known in classical algebraic geometry under the name of "*characteristic homomorphism*" (from the former to the latter).
+    It was not defined when <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> was a simple point of the variety of parameters <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> of a "complete continuous family" of divisors, i.e. from our point of view, of an irreducible component of the scheme <fr:tex
+display="inline"><![CDATA[D]]></fr:tex>, endowed with the induced <fr:em>reduced</fr:em> structure.
+    The tangent space of <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> at <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is then a <fr:em>subspace</fr:em> of the tangent space of <fr:tex
+display="inline"><![CDATA[D]]></fr:tex> at <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, and so the characteristic homomorphic of yore is indeed injective, but it is not surjective except for under supplementary conditions, for example if <fr:tex
+display="inline"><![CDATA[D]]></fr:tex> is integral at <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>.
+    
+    In fact, Zappa <fr:link
+type="local"
+href="Zap1945.xml"
+addr="Zap1945"
+title="Sull'esistenza, sopra la superficie algebriche, di sistemi continui completi infiniti, la cui curva e a serie caratteristica incompleta">[Zap1945]</fr:link> constructed an example (with <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> a non-singular projective surface over the <fr:em>field of complex numbers</fr:em>) where even at the generic point of <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> the characteristic homomorphism is not surjective.
+    <fr:em>This thus implies that <fr:tex
+display="inline"><![CDATA[D]]></fr:tex> is not integral even at the generic point of the irreducible component in question.</fr:em>
+    This shows in a particularly striking manner how varieties with nilpotent elements are necessary for understanding the most classical phenomena of the theory of surfaces.</fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    Concerning the example of Zappa, we note that Mumford has even constructed an irreducible component of the Hilbert scheme for <fr:tex
+display="inline"><![CDATA[\mathbb {P}_\mathbb {C}^3]]></fr:tex> (whose general points represent non-singular curves of degree <fr:tex
+display="inline"><![CDATA[14]]></fr:tex> and genus <fr:tex
+display="inline"><![CDATA[24]]></fr:tex>), which is non-reduced at its generic points.
+    Blowing up the curves obtained, he also obtains a regular projective scheme of dimension <fr:tex
+display="inline"><![CDATA[3]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[\mathbb {C}]]></fr:tex>, whose formal scheme of modules is non-reduced at its generic point, or, equivalently, such that its local variety of modules, in the sense of analytic geometry, over <fr:tex
+display="inline"><![CDATA[\mathbb {C}]]></fr:tex> (see <fr:em>Séminaire Cartan</fr:em> <fr:strong>13</fr:strong>, 1960/61) is non-reduced at all its points.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>577</fr:anchor><fr:addr
+type="user">fga3.iv-5-remark-5.6</fr:addr><fr:route>fga3.iv-5-remark-5.6.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:number>5.6</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We have given, in <fr:ref
+addr="fga3.iv-5-remark-5.5"
+href="fga3.iv-5-remark-5.5.xml"
+taxon="Remark"
+number="5.5" />, a criterion for simplicity, which applies in particular to schemes of divisors.
+    Kodaira gave a different criterion in <fr:link
+type="local"
+href="Kod1956.xml"
+addr="Kod1956"
+title="Characteristic linear systems of complete continuous systems">[Kod1956]</fr:link>, given by the vanishing of <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(X_0,\mathscr {L})]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathscr {L}=\mathscr {J}_0^{-1}]]></fr:tex> is the invertible sheaf on <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> defined by the divisor <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex>;
+    this criterion holds whenever <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a field of characteristic <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>, and is proved in <fr:link
+type="local"
+href="Kod1956.xml"
+addr="Kod1956"
+title="Characteristic linear systems of complete continuous systems">[Kod1956]</fr:link> by transcendental methods in the case where the base field is <fr:tex
+display="inline"><![CDATA[\mathbb {C}]]></fr:tex>.
+    We note here that, in general, <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> now arbitrary, Kodaira's condition is a sufficient condition for the canonical morphism <fr:tex
+display="inline"><![CDATA[D\to \underline {\operatorname {Pic}}_{X/S}]]></fr:tex> from the prescheme of divisors to the Picard prescheme of <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> to be simple at the point <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> in question (as we easily verify by the usual criterion for simplicity, once we have the existence of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>).
+    Then if, further, <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> at the point given by the image of <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> (for example if <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>), then <fr:tex
+display="inline"><![CDATA[D]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> at <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>.
+    On the other hand, Cartier has shown that every group prescheme locally of finite type over <fr:em>a field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> of characteristic <fr:tex
+display="inline"><![CDATA[0]]></fr:tex></fr:em> is simple over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>.
+    By combining these two results, we recover the result of Kodaira.
+    Note that it follows from these remarks that, over a field <fr:tex
+display="inline"><![CDATA[K]]></fr:tex> of characteristic <fr:tex
+display="inline"><![CDATA[p>0]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is not simple over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> (which is the case whenever <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is the Igusa surface), then the condition <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(X_0,\mathscr {L})=0]]></fr:tex> implies to the contrary that <fr:tex
+display="inline"><![CDATA[D]]></fr:tex> is not simple at <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, and even not reduced at <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[K]]></fr:tex> is algebraically closed.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>To finish, we give the following result, which plays an important role in the differential study of fibred spaces:</fr:p><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>578</fr:anchor><fr:addr
+type="user">fga3.iv-5-proposition-5.7</fr:addr><fr:route>fga3.iv-5-proposition-5.7.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>5.7</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a finite prescheme that is flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> and locally Noetherian, and let <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> be a prescheme over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\prod _{X/S}(Z/X)]]></fr:tex> exists (which is the case if <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> is quasi-projective over <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>).
+    If <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\prod _{X/S}(Z/X)]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.</fr:p>
+  
+    
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>539</fr:anchor><fr:addr
+type="machine">#290</fr:addr><fr:route>unstable-290.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.iv-5-proposition-5.7</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>This is an immediate consequence of the definition, and of the usual criterion of simplicity [<fr:link
+type="local"
+href="Gro1960b.xml"
+addr="Gro1960b"
+title="Séminaire de Géométrie Algèbrique">Gro1960b</fr:link>, III, §3.1].</fr:p>
+  </fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:p>Note that if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is finite and flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then the question of the existence of <fr:tex
+display="inline"><![CDATA[\prod _{X/S}(Z/X)]]></fr:tex> can be dealt with in a very elementary manner, without using the theory of Hilbert schemes.
+  
+  We find, for example, that if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is radicial over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\prod _{X/S}(Z/X)]]></fr:tex> exists without any restrictions on <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex>.
+  For example, let <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> be an <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-prescheme, and let <fr:tex
+display="inline"><![CDATA[T_n]]></fr:tex> be "the infinitesimal neighbourhood of order <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>" of the diagonal of <fr:tex
+display="inline"><![CDATA[T\times _S T]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[T\times _S T]]></fr:tex>, endowed with the morphisms <fr:tex
+display="inline"><![CDATA[p_1,p_2\colon  T_n\to  T]]></fr:tex> induced by the two projections.
+  We can consider <fr:tex
+display="inline"><![CDATA[T_n]]></fr:tex> as a finite prescheme over <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> thanks to <fr:tex
+display="inline"><![CDATA[p_1]]></fr:tex>, and we suppose further that <fr:tex
+display="inline"><![CDATA[T_n]]></fr:tex> is flat over <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> (which is the case if <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>).
+  For every prescheme <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>, set
+  <fr:tex
+display="block"><![CDATA[     (X/T/S)^{(n)}     = \prod _{T_n/S}(p_2^*(X/T)/T_n)   ]]></fr:tex>
+  which is a prescheme over <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> called the <fr:em>bundle of germs of sections of order <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[T]]></fr:tex></fr:em> (with respect to <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>).
+  This depends functorially on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, and is simple over <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

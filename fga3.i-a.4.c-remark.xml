@@ -1,45 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1589</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.4.c-remark</fr:addr><fr:route>fga3.i-a.4.c-remark.xml</fr:route><fr:parent>fga3.i-a.4.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    The cochain complexes of the form <fr:tex>C^ \bullet (T/S,F)</fr:tex> contain, as particular cases, the majority of standard known complexes (that of Čech cohomology, of group cohomology, etc.), and play an important role in algebraic geometry (notably in the "Weil cohomology" of preschemes).
-  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1630</fr:anchor><fr:addr
+type="user">fga3.i-a.4.c-remark</fr:addr><fr:route>fga3.i-a.4.c-remark.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>fga3.i-a.4.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The cochain complexes of the form <fr:tex
+display="inline"><![CDATA[C^\bullet (T/S,F)]]></fr:tex> contain, as particular cases, the majority of standard known complexes (that of Čech cohomology, of group cohomology, etc.), and play an important role in algebraic geometry (notably in the "Weil cohomology" of preschemes).</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1588</fr:anchor><fr:addr>fga3.i-a.4.c</fr:addr><fr:route>fga3.i-a.4.c.xml</fr:route><fr:number>A.4.c</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Similarly, for <fr:tex>\xi \in \mathcal {F}_S</fr:tex> and any object <fr:tex>S'</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> over
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1631</fr:anchor><fr:addr
+type="user">fga3.i-a.4.c</fr:addr><fr:route>fga3.i-a.4.c.xml</fr:route><fr:authors /><fr:number>A.4.c</fr:number><fr:parent>fga3.i-a.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Similarly, for <fr:tex
+display="inline"><![CDATA[\xi \in \mathcal {F}_S]]></fr:tex> and any object <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> over
   <fr:tex
-display="block">     G_ \xi (S')     =  \operatorname {Aut} ( \xi \times _S S'),   </fr:tex>
-  we thus define a contravariant functor <fr:tex>G_ \xi</fr:tex> from <fr:tex>\mathcal {C}_S</fr:tex> to the category of groups.
+display="block"><![CDATA[     G_\xi (S')     = \operatorname {Aut}(\xi \times _S S'),   ]]></fr:tex>
+  we thus define a contravariant functor <fr:tex
+display="inline"><![CDATA[G_\xi ]]></fr:tex> from <fr:tex
+display="inline"><![CDATA[\mathcal {C}_S]]></fr:tex> to the category of groups.
   
-  With this setup, we claim that <fr:em><fr:tex>Z^1(S'/S,G)</fr:tex> is canonically identified with the set of descent data on <fr:tex>\xi '= \xi \times _S S'</fr:tex> with respect to <fr:tex>S' \to  S</fr:tex></fr:em> (<fr:ref
+  With this setup, we claim that <fr:em><fr:tex
+display="inline"><![CDATA[Z^1(S'/S,G)]]></fr:tex> is canonically identified with the set of descent data on <fr:tex
+display="inline"><![CDATA[\xi '=\xi \times _S S']]></fr:tex> with respect to <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex></fr:em> (<fr:ref
 addr="fga3.i-a.1-definition-1.6"
 href="fga3.i-a.1-definition-1.6.xml"
 taxon="Definition"
-number="1.6"></fr:ref>), and that <fr:em><fr:tex>\operatorname {H} ^1(S'/S,G)</fr:tex> can be identified with the set of isomorphism classes of objects of <fr:tex>\mathcal {F}_{S'}</fr:tex> endowed with a descent data relative to <fr:tex>\alpha \colon  S' \to  S</fr:tex> that are isomorphic, as objects of <fr:tex>\mathcal {F}_{S'}</fr:tex>, to <fr:tex>\xi '= \xi \times _S S'</fr:tex></fr:em>.
-  Then, _if <fr:tex>\alpha \colon  S' \to  S</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism_ (cf. <fr:ref
+number="1.6" />), and that <fr:em><fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(S'/S,G)]]></fr:tex> can be identified with the set of isomorphism classes of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex> endowed with a descent data relative to <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> that are isomorphic, as objects of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex>, to <fr:tex
+display="inline"><![CDATA[\xi '=\xi \times _S S']]></fr:tex></fr:em>.
+  Then, _if <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism_ (cf. <fr:ref
 addr="fga3.i-a.4.b"
 href="fga3.i-a.4.b.xml"
-number="A.4.b"></fr:ref>), _then <fr:tex>\operatorname {H} ^1(S'/S,G)</fr:tex> contains as a subset the set of isomorphism classes of objects <fr:tex>\eta</fr:tex> of <fr:tex>\mathcal {F}_S</fr:tex> such that <fr:tex>\eta \times _S S'</fr:tex> is isomorphic (in <fr:tex>\mathcal {F}_{S'}</fr:tex>) to <fr:tex>\xi \times _S S'</fr:tex>_;
-  further, <fr:em>this inclusion is the identity if and only if every descent data on <fr:tex>\xi '= \xi \times _S S'</fr:tex> with respect to <fr:tex>\alpha \colon  S' \to  S</fr:tex> is effective</fr:em>.
-  (This will be the case, in particular, if <fr:tex>\alpha \colon  S' \to  S</fr:tex> is a strict <fr:tex>S</fr:tex>-descent morphism).
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="A.4.b" />), _then <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(S'/S,G)]]></fr:tex> contains as a subset the set of isomorphism classes of objects <fr:tex
+display="inline"><![CDATA[\eta ]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_S]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\eta \times _S S']]></fr:tex> is isomorphic (in <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex>) to <fr:tex
+display="inline"><![CDATA[\xi \times _S S']]></fr:tex>_;
+  further, <fr:em>this inclusion is the identity if and only if every descent data on <fr:tex
+display="inline"><![CDATA[\xi '=\xi \times _S S']]></fr:tex> with respect to <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is effective</fr:em>.
+  (This will be the case, in particular, if <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is a strict <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-descent morphism).</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>571</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-a.4.c-remark</fr:addr><fr:route>fga3.i-a.4.c-remark.xml</fr:route><fr:parent>fga3.i-a.4.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    The cochain complexes of the form <fr:tex>C^ \bullet (T/S,F)</fr:tex> contain, as particular cases, the majority of standard known complexes (that of Čech cohomology, of group cohomology, etc.), and play an important role in algebraic geometry (notably in the "Weil cohomology" of preschemes).
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>630</fr:anchor><fr:addr
+type="user">fga3.i-a.4.c-remark</fr:addr><fr:route>fga3.i-a.4.c-remark.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>fga3.i-a.4.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The cochain complexes of the form <fr:tex
+display="inline"><![CDATA[C^\bullet (T/S,F)]]></fr:tex> contain, as particular cases, the majority of standard known complexes (that of Čech cohomology, of group cohomology, etc.), and play an important role in algebraic geometry (notably in the "Weil cohomology" of preschemes).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

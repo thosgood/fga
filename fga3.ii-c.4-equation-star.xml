@@ -1,253 +1,492 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1777</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.ii-c.4-equation-star</fr:addr><fr:route>fga3.ii-c.4-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">       X \otimes _A k(A)  \xleftarrow { \sim }  X_0 \otimes _k k(A)     \tag{*}     </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1815</fr:anchor><fr:addr
+type="user">fga3.ii-c.4-equation-star</fr:addr><fr:route>fga3.ii-c.4-equation-star.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>*</fr:number><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[       X\otimes _A k(A) \xleftarrow {\sim } X_0\otimes _k k(A)     \tag{*}     ]]></fr:tex></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1776</fr:anchor><fr:addr>fga3.ii-c.4</fr:addr><fr:route>fga3.ii-c.4.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1816</fr:anchor><fr:addr
+type="user">fga3.ii-c.4</fr:addr><fr:route>fga3.ii-c.4.xml</fr:route><fr:title
+text="The existence theorem and the formal theory of modules › Applications to some particular cases › Formal modules of a variety"><fr:link
+type="local"
 href="fga3.ii-c.xml"
+addr="fga3.ii-c"
+title="The existence theorem and the formal theory of modules › Applications to some particular cases"><fr:link
 type="local"
-addr="fga3.ii-c"><fr:link
 href="fga3.ii.xml"
-type="local"
-addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Applications to some particular cases</fr:link> › Formal modules of a variety</fr:title><fr:number>C.4</fr:number><fr:parent>fga3.ii-c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\Lambda</fr:tex> be a <fr:em>local</fr:em> Noetherian ring of residue field <fr:tex>k</fr:tex> (more often than not, <fr:tex>\Lambda</fr:tex> will be equal to <fr:tex>k</fr:tex>, or to a Cohen <fr:tex>p</fr:tex>-ring), and let <fr:tex>X_0</fr:tex> be a prescheme over <fr:tex>k</fr:tex>.
-  For every local Artinian <fr:tex>\Lambda</fr:tex>-algebra <fr:tex>A</fr:tex>, consider the set <fr:tex>F(A)</fr:tex> of isomorphism classes of <fr:tex>A</fr:tex>-preschemes <fr:tex>X</fr:tex> that are <fr:em>flat</fr:em> over <fr:tex>A</fr:tex>, endowed with an isomorphism
+addr="fga3.ii"
+title="The existence theorem and the formal theory of modules">The existence theorem and the formal theory of modules</fr:link> › Applications to some particular cases</fr:link> › Formal modules of a variety</fr:title><fr:authors /><fr:number>C.4</fr:number><fr:parent>fga3.ii-c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> be a <fr:em>local</fr:em> Noetherian ring of residue field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> (more often than not, <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> will be equal to <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, or to a Cohen <fr:tex
+display="inline"><![CDATA[p]]></fr:tex>-ring), and let <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> be a prescheme over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>.
+  For every local Artinian <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>-algebra <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, consider the set <fr:tex
+display="inline"><![CDATA[F(A)]]></fr:tex> of isomorphism classes of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-preschemes <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that are <fr:em>flat</fr:em> over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, endowed with an isomorphism
 
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1709</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.ii-c.4-equation-star</fr:addr><fr:route>fga3.ii-c.4-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">       X \otimes _A k(A)  \xleftarrow { \sim }  X_0 \otimes _k k(A)     \tag{*}     </fr:tex></fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1752</fr:anchor><fr:addr
+type="user">fga3.ii-c.4-equation-star</fr:addr><fr:route>fga3.ii-c.4-equation-star.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>*</fr:number><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[       X\otimes _A k(A) \xleftarrow {\sim } X_0\otimes _k k(A)     \tag{*}     ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
 
-  where <fr:tex>k(A)</fr:tex> is the residue field of <fr:tex>A</fr:tex>;
-  of course, the isomorphisms between such flat <fr:tex>A</fr:tex>-preschemes should respect the above isomorphism given in the structure.
-  If <fr:tex>A</fr:tex> is a (not necessary local) Artinian <fr:tex>\Lambda</fr:tex>-algebra, with local components <fr:tex>A_i</fr:tex>, then we take <fr:tex>F(A)</fr:tex> to be the product of the <fr:tex>F(A_i)</fr:tex>.
-  Then <fr:tex>F</fr:tex> becomes a multiplicative functor in <fr:tex>A</fr:tex>, and we call it the <fr:em>functor of modules</fr:em> for <fr:tex>X_0</fr:tex> (and <fr:tex>\Lambda</fr:tex>).
-  If this functor is representable, then it has a corresponding local topological <fr:tex>\Lambda</fr:tex>-algebra <fr:tex>O</fr:tex>, of residue field <fr:tex>k</fr:tex>, and the formal spectrum of <fr:tex>O</fr:tex> is called the <fr:em>formal scheme of modules</fr:em> for <fr:tex>X_0</fr:tex> (and <fr:tex>\Lambda</fr:tex>) (cf. <fr:ref
+  where <fr:tex
+display="inline"><![CDATA[k(A)]]></fr:tex> is the residue field of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>;
+  of course, the isomorphisms between such flat <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-preschemes should respect the above isomorphism given in the structure.
+  If <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is a (not necessary local) Artinian <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>-algebra, with local components <fr:tex
+display="inline"><![CDATA[A_i]]></fr:tex>, then we take <fr:tex
+display="inline"><![CDATA[F(A)]]></fr:tex> to be the product of the <fr:tex
+display="inline"><![CDATA[F(A_i)]]></fr:tex>.
+  Then <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> becomes a multiplicative functor in <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, and we call it the <fr:em>functor of modules</fr:em> for <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> (and <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>).
+  If this functor is representable, then it has a corresponding local topological <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>-algebra <fr:tex
+display="inline"><![CDATA[O]]></fr:tex>, of residue field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, and the formal spectrum of <fr:tex
+display="inline"><![CDATA[O]]></fr:tex> is called the <fr:em>formal scheme of modules</fr:em> for <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> (and <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>) (cf. <fr:ref
 addr="fga2"
 href="fga2.xml"
 taxon="FGA"
-number="2"></fr:ref> for some details on this).
-</fr:p><fr:p>
-  Here, if we wish to apply the technique of descent, the "finite" automorphisms of <fr:tex>X_0</fr:tex> are inoffensive, since they have no influence on the existence of automorphisms (in the precise sense above) of <fr:tex>A</fr:tex>-preschemes <fr:tex>X</fr:tex>;
-  the necessary and sufficient condition, if <fr:tex>A</fr:tex> is not simply a field, for <fr:tex>X</fr:tex> to not have any non-trivial <fr:tex>A</fr:tex>-automorphisms is that
+number="2" /> for some details on this).</fr:p><fr:p>Here, if we wish to apply the technique of descent, the "finite" automorphisms of <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> are inoffensive, since they have no influence on the existence of automorphisms (in the precise sense above) of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-preschemes <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>;
+  the necessary and sufficient condition, if <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is not simply a field, for <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> to not have any non-trivial <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-automorphisms is that
   <fr:tex
-display="block">      \operatorname {H} ^0(X_0, \mathfrak {G}_{X_0/k})     = 0   </fr:tex>
-  where <fr:tex>\mathfrak {G}_{X_0/k}</fr:tex> denotes the sheaf of <fr:tex>k</fr:tex>-derivations (i.e. the tangent sheaf) of <fr:tex>X_0</fr:tex>.
-  We can easily show (at least, if <fr:tex>X_0</fr:tex> is simple over <fr:tex>k</fr:tex>) that
+display="block"><![CDATA[     \operatorname {H}^0(X_0,\mathfrak {G}_{X_0/k})     = 0   ]]></fr:tex>
+  where <fr:tex
+display="inline"><![CDATA[\mathfrak {G}_{X_0/k}]]></fr:tex> denotes the sheaf of <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>-derivations (i.e. the tangent sheaf) of <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex>.
+  We can easily show (at least, if <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>) that
   <fr:tex
-display="block">     F(I_A, \xi )     =  \operatorname {H} ^1(X_A, \mathfrak {G}_{X_A/A}).   </fr:tex>
-  We thus conclude, as per usual:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="block"><![CDATA[     F(I_A,\xi )     = \operatorname {H}^1(X_A,\mathfrak {G}_{X_A/A}).   ]]></fr:tex>
+  We thus conclude, as per usual:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1710</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.4-proposition-4.1</fr:addr><fr:route>fga3.ii-c.4-proposition-4.1.xml</fr:route><fr:number>4.1</fr:number><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Suppose that <fr:tex>\operatorname {H} ^0(X_0, \mathfrak {G}_{X_0/k})=0</fr:tex>.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1753</fr:anchor><fr:addr
+type="user">fga3.ii-c.4-proposition-4.1</fr:addr><fr:route>fga3.ii-c.4-proposition-4.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>4.1</fr:number><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\operatorname {H}^0(X_0,\mathfrak {G}_{X_0/k})=0]]></fr:tex>.
     
-    Then the formal scheme of modules for <fr:tex>X_0</fr:tex> exists.
-    If, furthermore, <fr:tex>X_0</fr:tex> is proper over <fr:tex>k</fr:tex>, then the formal scheme of modules is Noetherian.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    Then the formal scheme of modules for <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> exists.
+    If, furthermore, <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, then the formal scheme of modules is Noetherian.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1711</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.ii-c.4-remarks</fr:addr><fr:route>fga3.ii-c.4-remarks.xml</fr:route><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>
-      If <fr:tex>X_0</fr:tex> is not assumed to be simple over <fr:tex>k</fr:tex>, then <fr:tex>F(I_A, \xi )</fr:tex> can be identified with a sub-<fr:tex>A</fr:tex>-module of
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1754</fr:anchor><fr:addr
+type="user">fga3.ii-c.4-remarks</fr:addr><fr:route>fga3.ii-c.4-remarks.xml</fr:route><fr:taxon>Remarks</fr:taxon><fr:authors /><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>If <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is not assumed to be simple over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[F(I_A,\xi )]]></fr:tex> can be identified with a sub-<fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module of
       <fr:tex
-display="block">          \operatorname {Ext} _{ \mathscr { O } _{P_A}}^1(P_A; \mathscr { I } _{X_A}, \mathscr { O } _{X_A})       </fr:tex>
-      where we set <fr:tex>P_A=X_A \times _A X_A</fr:tex>, where <fr:tex>\mathscr { O } _{X_A}</fr:tex> is considered as a coherent sheaf on <fr:tex>P_A</fr:tex> via the diagonal morphism <fr:tex>X_A \to  P_A</fr:tex>, and where <fr:tex>\mathscr { I } _{X_A}</fr:tex> denotes the coherent sheaf of ideals on <fr:tex>P_A</fr:tex> defined by the diagonal morphism.
-      More precisely, an easy globalisation of Hochschild theory shows that the <fr:tex>\operatorname {Ext} ^1</fr:tex> above can be identified with the set of classes, up to isomorphism, of sheaves of <fr:tex>I_A</fr:tex>-algebras <fr:tex>\mathscr { O }</fr:tex> that are flat over <fr:tex>X_A</fr:tex>, and endowed with an augmentation isomorphism <fr:tex>\mathscr { O } \otimes _{I_A}A \to \mathscr { O } _{X_A}</fr:tex> (recall that we set <fr:tex>I_A=At/(t^2)</fr:tex>).
-      The submodule <fr:tex>F(I_A, \xi )</fr:tex> is that which corresponds to the sheaves of <fr:em>commutative</fr:em> algebras.
+display="block"><![CDATA[         \operatorname {Ext}_{\mathscr {O}_{P_A}}^1(P_A;\mathscr {I}_{X_A},\mathscr {O}_{X_A})       ]]></fr:tex>
+      where we set <fr:tex
+display="inline"><![CDATA[P_A=X_A\times _A X_A]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathscr {O}_{X_A}]]></fr:tex> is considered as a coherent sheaf on <fr:tex
+display="inline"><![CDATA[P_A]]></fr:tex> via the diagonal morphism <fr:tex
+display="inline"><![CDATA[X_A\to  P_A]]></fr:tex>, and where <fr:tex
+display="inline"><![CDATA[\mathscr {I}_{X_A}]]></fr:tex> denotes the coherent sheaf of ideals on <fr:tex
+display="inline"><![CDATA[P_A]]></fr:tex> defined by the diagonal morphism.
+      More precisely, an easy globalisation of Hochschild theory shows that the <fr:tex
+display="inline"><![CDATA[\operatorname {Ext}^1]]></fr:tex> above can be identified with the set of classes, up to isomorphism, of sheaves of <fr:tex
+display="inline"><![CDATA[I_A]]></fr:tex>-algebras <fr:tex
+display="inline"><![CDATA[\mathscr {O}]]></fr:tex> that are flat over <fr:tex
+display="inline"><![CDATA[X_A]]></fr:tex>, and endowed with an augmentation isomorphism <fr:tex
+display="inline"><![CDATA[\mathscr {O}\otimes _{I_A}A\to \mathscr {O}_{X_A}]]></fr:tex> (recall that we set <fr:tex
+display="inline"><![CDATA[I_A=At/(t^2)]]></fr:tex>).
+      The submodule <fr:tex
+display="inline"><![CDATA[F(I_A,\xi )]]></fr:tex> is that which corresponds to the sheaves of <fr:em>commutative</fr:em> algebras.
       The simplicity hypotheses are thus not essential in the theory of modules, as <fr:ref
 addr="fga2"
 href="fga2.xml"
 taxon="FGA"
-number="2"></fr:ref> implies.
-    </fr:li>
+number="2" /> implies.</fr:li>
 
-    <fr:li>
-      Recall (<fr:em>loc. cit.</fr:em>) that, in particular, every <fr:em>simple</fr:em> and <fr:em>proper algebraic curve</fr:em> <fr:tex>X_0</fr:tex> over <fr:tex>k</fr:tex> admits a formal scheme of modules that is simple over <fr:tex>\Lambda</fr:tex>, and of relative dimension equal to <fr:tex>3g-3</fr:tex> if the genus <fr:tex>g</fr:tex> is <fr:tex>\geqslant2</fr:tex>, and to <fr:tex>g</fr:tex> if <fr:tex>g=0,1</fr:tex>.
+    <fr:li>Recall (<fr:em>loc. cit.</fr:em>) that, in particular, every <fr:em>simple</fr:em> and <fr:em>proper algebraic curve</fr:em> <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> admits a formal scheme of modules that is simple over <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>, and of relative dimension equal to <fr:tex
+display="inline"><![CDATA[3g-3]]></fr:tex> if the genus <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\geqslant 2]]></fr:tex>, and to <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[g=0,1]]></fr:tex>.
       These two latter cases no longer figure directly in <fr:ref
 addr="fga3.ii-c.4-proposition-4.1"
 href="fga3.ii-c.4-proposition-4.1.xml"
 taxon="Proposition"
-number="4.1"></fr:ref>.
-      We can, however, recover them in the case of elliptic curves (<fr:tex>g=1</fr:tex>) thanks to the remarks that will follow.
-    </fr:li></fr:ol></fr:mainmatter></fr:tree><fr:p>
-  We can, of course, vary <fr:ref
+number="4.1" />.
+      We can, however, recover them in the case of elliptic curves (<fr:tex
+display="inline"><![CDATA[g=1]]></fr:tex>) thanks to the remarks that will follow.</fr:li></fr:ol></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>We can, of course, vary <fr:ref
 addr="fga3.ii-c.4-proposition-4.1"
 href="fga3.ii-c.4-proposition-4.1.xml"
 taxon="Proposition"
-number="4.1"></fr:ref> <fr:em>ad libitum</fr:em> by considering systems of schemes over <fr:tex>k</fr:tex> endowed with various structures.
-  Suppose, for example, that <fr:tex>X_0</fr:tex> is an <fr:em>abelian scheme</fr:em> over <fr:tex>k</fr:tex>, with a marked origin (i.e. <fr:tex>X_0</fr:tex> is considered as a scheme in <fr:em>groups</fr:em> over <fr:tex>k</fr:tex>), and let <fr:tex>F(A)</fr:tex> be the set of isomorphism classes of <fr:em>abelian</fr:em> schemes over <fr:tex>A</fr:tex> (i.e. of schemes in groups that are proper and simple over <fr:tex>A</fr:tex>) endowed with an isomorphism as in <fr:ref
+number="4.1" /> <fr:em>ad libitum</fr:em> by considering systems of schemes over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> endowed with various structures.
+  Suppose, for example, that <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is an <fr:em>abelian scheme</fr:em> over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, with a marked origin (i.e. <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is considered as a scheme in <fr:em>groups</fr:em> over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>), and let <fr:tex
+display="inline"><![CDATA[F(A)]]></fr:tex> be the set of isomorphism classes of <fr:em>abelian</fr:em> schemes over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> (i.e. of schemes in groups that are proper and simple over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>) endowed with an isomorphism as in <fr:ref
 addr="fga3.ii-c.4-equation-star"
 href="fga3.ii-c.4-equation-star.xml"
 taxon="Equation"
-number="*"></fr:ref> of abelian schemes.
-  We can show that imposing a multiplicative structure (or even only a "unit section") eliminates the infinitesimal automorphisms, and that there thus exists a formal scheme of modules that corresponds to a complete local Noetherian ring <fr:tex>O</fr:tex>.
-  We can also show that, if <fr:tex>X</fr:tex> is a proper and simple scheme with "absolutely connected" fibres over a locally Noetherian prescheme <fr:tex>S</fr:tex>, then every multiplicative structure on <fr:tex>X</fr:tex> that admits a unit section is necessarily associative and commutative (provided that it is associative and commutative on <fr:em>one</fr:em> fibre, and provided that <fr:tex>S</fr:tex> is connected), and is furthermore uniquely determined by the knowledge of the unit section.
+number="*" /> of abelian schemes.
+  We can show that imposing a multiplicative structure (or even only a "unit section") eliminates the infinitesimal automorphisms, and that there thus exists a formal scheme of modules that corresponds to a complete local Noetherian ring <fr:tex
+display="inline"><![CDATA[O]]></fr:tex>.
+  We can also show that, if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is a proper and simple scheme with "absolutely connected" fibres over a locally Noetherian prescheme <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then every multiplicative structure on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that admits a unit section is necessarily associative and commutative (provided that it is associative and commutative on <fr:em>one</fr:em> fibre, and provided that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is connected), and is furthermore uniquely determined by the knowledge of the unit section.
   
-  Further, supposing that <fr:tex>S</fr:tex> is the spectrum of a local Artinian ring <fr:tex>A</fr:tex> of residue field <fr:tex>k</fr:tex>, that <fr:tex>X</fr:tex> is proper over <fr:tex>A</fr:tex> and endowed with a section <fr:tex>s</fr:tex>, and finally that <fr:tex>X \otimes _A k</fr:tex> is endowed with the structure of an abelian scheme over <fr:tex>k</fr:tex>, admitting the point of <fr:tex>X \otimes _A k</fr:tex> corresponding to <fr:tex>s</fr:tex> as the zero element, an easy calculation of obstructions, combined with an argument due to Serre, allows us to prove that there exists on <fr:tex>X</fr:tex> a multiplicative structure admitting the section <fr:tex>s</fr:tex> as the unit section.
+  Further, supposing that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a local Artinian ring <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> of residue field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> and endowed with a section <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>, and finally that <fr:tex
+display="inline"><![CDATA[X\otimes _A k]]></fr:tex> is endowed with the structure of an abelian scheme over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, admitting the point of <fr:tex
+display="inline"><![CDATA[X\otimes _A k]]></fr:tex> corresponding to <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> as the zero element, an easy calculation of obstructions, combined with an argument due to Serre, allows us to prove that there exists on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> a multiplicative structure admitting the section <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> as the unit section.
   (From here, using the "existence theorem" of <fr:ref
 addr="fga2"
 href="fga2.xml"
 taxon="FGA"
-number="2"></fr:ref> to pass to the case where <fr:tex>A</fr:tex> is complete local Noetherian, and then the technique of descent from <fr:ref
+number="2" /> to pass to the case where <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is complete local Noetherian, and then the technique of descent from <fr:ref
 addr="fga3.i"
 href="fga3.i.xml"
 taxon="FGA"
-number="3.I"></fr:ref> for the general case, we can prove the analogous claim for all locally Noetherian connected <fr:tex>S</fr:tex>).
-  This proves that the functor <fr:tex>F(A)</fr:tex> considered here is isomorphic to the analogous functor defined at the start of this section by abstracting the multiplicative structure on <fr:tex>X_0</fr:tex>.
-  It then follows that, in particular, if <fr:tex>\mathfrak {m}</fr:tex> is the maximal ideal of <fr:tex>O</fr:tex>, then <fr:tex>\mathfrak {m}/ \mathfrak {m}^2</fr:tex> is canonically isomorphic to the dual of <fr:tex>\operatorname {H} ^1(X_0, \mathfrak {G}_{X_0/k})</fr:tex>, and is thus of dimension <fr:tex>n^2</fr:tex>, where <fr:tex>n= \dim  X_0</fr:tex>.
-  It would be very interesting to determine if <fr:tex>O</fr:tex> is indeed <fr:em>simple</fr:em> over <fr:tex>\Lambda</fr:tex>, i.e. isomorphic to an algebra of formal series in <fr:tex>n^2</fr:tex> variables over <fr:tex>\Lambda</fr:tex>.
+number="3.I" /> for the general case, we can prove the analogous claim for all locally Noetherian connected <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>).
+  This proves that the functor <fr:tex
+display="inline"><![CDATA[F(A)]]></fr:tex> considered here is isomorphic to the analogous functor defined at the start of this section by abstracting the multiplicative structure on <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex>.
+  It then follows that, in particular, if <fr:tex
+display="inline"><![CDATA[\mathfrak {m}]]></fr:tex> is the maximal ideal of <fr:tex
+display="inline"><![CDATA[O]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\mathfrak {m}/\mathfrak {m}^2]]></fr:tex> is canonically isomorphic to the dual of <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(X_0,\mathfrak {G}_{X_0/k})]]></fr:tex>, and is thus of dimension <fr:tex
+display="inline"><![CDATA[n^2]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[n=\dim  X_0]]></fr:tex>.
+  It would be very interesting to determine if <fr:tex
+display="inline"><![CDATA[O]]></fr:tex> is indeed <fr:em>simple</fr:em> over <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>, i.e. isomorphic to an algebra of formal series in <fr:tex
+display="inline"><![CDATA[n^2]]></fr:tex> variables over <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>.
   Now <fr:link
-href="fga3.ii-a.5-proposition-5.2.xml"
 type="local"
+href="fga3.ii-a.5-proposition-5.2.xml"
 addr="fga3.ii-a.5-proposition-5.2">§A, Proposition 5.2</fr:link> allows us to give an equivalent formulation of this problem as an <fr:em>existence problem of abelian schemes that are reducible along a given abelian scheme</fr:em>.
-  In any case, we see, by a transcendental way, that the answer is affirmative if <fr:tex>k</fr:tex> is of characteristic <fr:tex>0</fr:tex>.
-  In characteristic <fr:tex>p \neq0</fr:tex>, it evidently suffices to restrict to the case where <fr:tex>\Lambda</fr:tex> is the ring of Witt vectors constructed over an algebraically closed field <fr:tex>k</fr:tex>.
-  This could be the moment for the "<fr:em>Greenberg functor</fr:em>" to prove its worth...
-</fr:p></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  In any case, we see, by a transcendental way, that the answer is affirmative if <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> is of characteristic <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>.
+  In characteristic <fr:tex
+display="inline"><![CDATA[p\neq 0]]></fr:tex>, it evidently suffices to restrict to the case where <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> is the ring of Witt vectors constructed over an algebraically closed field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>.
+  This could be the moment for the "<fr:em>Greenberg functor</fr:em>" to prove its worth...</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1775</fr:anchor><fr:addr>fga3.ii-c.4</fr:addr><fr:route>fga3.ii-c.4.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1817</fr:anchor><fr:addr
+type="user">fga3.ii-c.4</fr:addr><fr:route>fga3.ii-c.4.xml</fr:route><fr:title
+text="The existence theorem and the formal theory of modules › Applications to some particular cases › Formal modules of a variety"><fr:link
+type="local"
 href="fga3.ii-c.xml"
+addr="fga3.ii-c"
+title="The existence theorem and the formal theory of modules › Applications to some particular cases"><fr:link
 type="local"
-addr="fga3.ii-c"><fr:link
 href="fga3.ii.xml"
-type="local"
-addr="fga3.ii">The existence theorem and the formal theory of modules</fr:link> › Applications to some particular cases</fr:link> › Formal modules of a variety</fr:title><fr:number>C.4</fr:number><fr:parent>fga3.ii-c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\Lambda</fr:tex> be a <fr:em>local</fr:em> Noetherian ring of residue field <fr:tex>k</fr:tex> (more often than not, <fr:tex>\Lambda</fr:tex> will be equal to <fr:tex>k</fr:tex>, or to a Cohen <fr:tex>p</fr:tex>-ring), and let <fr:tex>X_0</fr:tex> be a prescheme over <fr:tex>k</fr:tex>.
-  For every local Artinian <fr:tex>\Lambda</fr:tex>-algebra <fr:tex>A</fr:tex>, consider the set <fr:tex>F(A)</fr:tex> of isomorphism classes of <fr:tex>A</fr:tex>-preschemes <fr:tex>X</fr:tex> that are <fr:em>flat</fr:em> over <fr:tex>A</fr:tex>, endowed with an isomorphism
+addr="fga3.ii"
+title="The existence theorem and the formal theory of modules">The existence theorem and the formal theory of modules</fr:link> › Applications to some particular cases</fr:link> › Formal modules of a variety</fr:title><fr:authors /><fr:number>C.4</fr:number><fr:parent>fga3.ii-c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> be a <fr:em>local</fr:em> Noetherian ring of residue field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> (more often than not, <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> will be equal to <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, or to a Cohen <fr:tex
+display="inline"><![CDATA[p]]></fr:tex>-ring), and let <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> be a prescheme over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>.
+  For every local Artinian <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>-algebra <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, consider the set <fr:tex
+display="inline"><![CDATA[F(A)]]></fr:tex> of isomorphism classes of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-preschemes <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that are <fr:em>flat</fr:em> over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, endowed with an isomorphism
 
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1709</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.ii-c.4-equation-star</fr:addr><fr:route>fga3.ii-c.4-equation-star.xml</fr:route><fr:number>*</fr:number><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">       X \otimes _A k(A)  \xleftarrow { \sim }  X_0 \otimes _k k(A)     \tag{*}     </fr:tex></fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1752</fr:anchor><fr:addr
+type="user">fga3.ii-c.4-equation-star</fr:addr><fr:route>fga3.ii-c.4-equation-star.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>*</fr:number><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[       X\otimes _A k(A) \xleftarrow {\sim } X_0\otimes _k k(A)     \tag{*}     ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
 
-  where <fr:tex>k(A)</fr:tex> is the residue field of <fr:tex>A</fr:tex>;
-  of course, the isomorphisms between such flat <fr:tex>A</fr:tex>-preschemes should respect the above isomorphism given in the structure.
-  If <fr:tex>A</fr:tex> is a (not necessary local) Artinian <fr:tex>\Lambda</fr:tex>-algebra, with local components <fr:tex>A_i</fr:tex>, then we take <fr:tex>F(A)</fr:tex> to be the product of the <fr:tex>F(A_i)</fr:tex>.
-  Then <fr:tex>F</fr:tex> becomes a multiplicative functor in <fr:tex>A</fr:tex>, and we call it the <fr:em>functor of modules</fr:em> for <fr:tex>X_0</fr:tex> (and <fr:tex>\Lambda</fr:tex>).
-  If this functor is representable, then it has a corresponding local topological <fr:tex>\Lambda</fr:tex>-algebra <fr:tex>O</fr:tex>, of residue field <fr:tex>k</fr:tex>, and the formal spectrum of <fr:tex>O</fr:tex> is called the <fr:em>formal scheme of modules</fr:em> for <fr:tex>X_0</fr:tex> (and <fr:tex>\Lambda</fr:tex>) (cf. <fr:ref
+  where <fr:tex
+display="inline"><![CDATA[k(A)]]></fr:tex> is the residue field of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>;
+  of course, the isomorphisms between such flat <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-preschemes should respect the above isomorphism given in the structure.
+  If <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is a (not necessary local) Artinian <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>-algebra, with local components <fr:tex
+display="inline"><![CDATA[A_i]]></fr:tex>, then we take <fr:tex
+display="inline"><![CDATA[F(A)]]></fr:tex> to be the product of the <fr:tex
+display="inline"><![CDATA[F(A_i)]]></fr:tex>.
+  Then <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> becomes a multiplicative functor in <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, and we call it the <fr:em>functor of modules</fr:em> for <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> (and <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>).
+  If this functor is representable, then it has a corresponding local topological <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>-algebra <fr:tex
+display="inline"><![CDATA[O]]></fr:tex>, of residue field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, and the formal spectrum of <fr:tex
+display="inline"><![CDATA[O]]></fr:tex> is called the <fr:em>formal scheme of modules</fr:em> for <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> (and <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>) (cf. <fr:ref
 addr="fga2"
 href="fga2.xml"
 taxon="FGA"
-number="2"></fr:ref> for some details on this).
-</fr:p><fr:p>
-  Here, if we wish to apply the technique of descent, the "finite" automorphisms of <fr:tex>X_0</fr:tex> are inoffensive, since they have no influence on the existence of automorphisms (in the precise sense above) of <fr:tex>A</fr:tex>-preschemes <fr:tex>X</fr:tex>;
-  the necessary and sufficient condition, if <fr:tex>A</fr:tex> is not simply a field, for <fr:tex>X</fr:tex> to not have any non-trivial <fr:tex>A</fr:tex>-automorphisms is that
+number="2" /> for some details on this).</fr:p><fr:p>Here, if we wish to apply the technique of descent, the "finite" automorphisms of <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> are inoffensive, since they have no influence on the existence of automorphisms (in the precise sense above) of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-preschemes <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>;
+  the necessary and sufficient condition, if <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is not simply a field, for <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> to not have any non-trivial <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-automorphisms is that
   <fr:tex
-display="block">      \operatorname {H} ^0(X_0, \mathfrak {G}_{X_0/k})     = 0   </fr:tex>
-  where <fr:tex>\mathfrak {G}_{X_0/k}</fr:tex> denotes the sheaf of <fr:tex>k</fr:tex>-derivations (i.e. the tangent sheaf) of <fr:tex>X_0</fr:tex>.
-  We can easily show (at least, if <fr:tex>X_0</fr:tex> is simple over <fr:tex>k</fr:tex>) that
+display="block"><![CDATA[     \operatorname {H}^0(X_0,\mathfrak {G}_{X_0/k})     = 0   ]]></fr:tex>
+  where <fr:tex
+display="inline"><![CDATA[\mathfrak {G}_{X_0/k}]]></fr:tex> denotes the sheaf of <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>-derivations (i.e. the tangent sheaf) of <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex>.
+  We can easily show (at least, if <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>) that
   <fr:tex
-display="block">     F(I_A, \xi )     =  \operatorname {H} ^1(X_A, \mathfrak {G}_{X_A/A}).   </fr:tex>
-  We thus conclude, as per usual:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="block"><![CDATA[     F(I_A,\xi )     = \operatorname {H}^1(X_A,\mathfrak {G}_{X_A/A}).   ]]></fr:tex>
+  We thus conclude, as per usual:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1710</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.ii-c.4-proposition-4.1</fr:addr><fr:route>fga3.ii-c.4-proposition-4.1.xml</fr:route><fr:number>4.1</fr:number><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Suppose that <fr:tex>\operatorname {H} ^0(X_0, \mathfrak {G}_{X_0/k})=0</fr:tex>.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1753</fr:anchor><fr:addr
+type="user">fga3.ii-c.4-proposition-4.1</fr:addr><fr:route>fga3.ii-c.4-proposition-4.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>4.1</fr:number><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\operatorname {H}^0(X_0,\mathfrak {G}_{X_0/k})=0]]></fr:tex>.
     
-    Then the formal scheme of modules for <fr:tex>X_0</fr:tex> exists.
-    If, furthermore, <fr:tex>X_0</fr:tex> is proper over <fr:tex>k</fr:tex>, then the formal scheme of modules is Noetherian.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    Then the formal scheme of modules for <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> exists.
+    If, furthermore, <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, then the formal scheme of modules is Noetherian.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1711</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.ii-c.4-remarks</fr:addr><fr:route>fga3.ii-c.4-remarks.xml</fr:route><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>
-      If <fr:tex>X_0</fr:tex> is not assumed to be simple over <fr:tex>k</fr:tex>, then <fr:tex>F(I_A, \xi )</fr:tex> can be identified with a sub-<fr:tex>A</fr:tex>-module of
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1754</fr:anchor><fr:addr
+type="user">fga3.ii-c.4-remarks</fr:addr><fr:route>fga3.ii-c.4-remarks.xml</fr:route><fr:taxon>Remarks</fr:taxon><fr:authors /><fr:parent>fga3.ii-c.4</fr:parent></fr:frontmatter><fr:mainmatter><fr:ol><fr:li>If <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is not assumed to be simple over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[F(I_A,\xi )]]></fr:tex> can be identified with a sub-<fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module of
       <fr:tex
-display="block">          \operatorname {Ext} _{ \mathscr { O } _{P_A}}^1(P_A; \mathscr { I } _{X_A}, \mathscr { O } _{X_A})       </fr:tex>
-      where we set <fr:tex>P_A=X_A \times _A X_A</fr:tex>, where <fr:tex>\mathscr { O } _{X_A}</fr:tex> is considered as a coherent sheaf on <fr:tex>P_A</fr:tex> via the diagonal morphism <fr:tex>X_A \to  P_A</fr:tex>, and where <fr:tex>\mathscr { I } _{X_A}</fr:tex> denotes the coherent sheaf of ideals on <fr:tex>P_A</fr:tex> defined by the diagonal morphism.
-      More precisely, an easy globalisation of Hochschild theory shows that the <fr:tex>\operatorname {Ext} ^1</fr:tex> above can be identified with the set of classes, up to isomorphism, of sheaves of <fr:tex>I_A</fr:tex>-algebras <fr:tex>\mathscr { O }</fr:tex> that are flat over <fr:tex>X_A</fr:tex>, and endowed with an augmentation isomorphism <fr:tex>\mathscr { O } \otimes _{I_A}A \to \mathscr { O } _{X_A}</fr:tex> (recall that we set <fr:tex>I_A=At/(t^2)</fr:tex>).
-      The submodule <fr:tex>F(I_A, \xi )</fr:tex> is that which corresponds to the sheaves of <fr:em>commutative</fr:em> algebras.
+display="block"><![CDATA[         \operatorname {Ext}_{\mathscr {O}_{P_A}}^1(P_A;\mathscr {I}_{X_A},\mathscr {O}_{X_A})       ]]></fr:tex>
+      where we set <fr:tex
+display="inline"><![CDATA[P_A=X_A\times _A X_A]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathscr {O}_{X_A}]]></fr:tex> is considered as a coherent sheaf on <fr:tex
+display="inline"><![CDATA[P_A]]></fr:tex> via the diagonal morphism <fr:tex
+display="inline"><![CDATA[X_A\to  P_A]]></fr:tex>, and where <fr:tex
+display="inline"><![CDATA[\mathscr {I}_{X_A}]]></fr:tex> denotes the coherent sheaf of ideals on <fr:tex
+display="inline"><![CDATA[P_A]]></fr:tex> defined by the diagonal morphism.
+      More precisely, an easy globalisation of Hochschild theory shows that the <fr:tex
+display="inline"><![CDATA[\operatorname {Ext}^1]]></fr:tex> above can be identified with the set of classes, up to isomorphism, of sheaves of <fr:tex
+display="inline"><![CDATA[I_A]]></fr:tex>-algebras <fr:tex
+display="inline"><![CDATA[\mathscr {O}]]></fr:tex> that are flat over <fr:tex
+display="inline"><![CDATA[X_A]]></fr:tex>, and endowed with an augmentation isomorphism <fr:tex
+display="inline"><![CDATA[\mathscr {O}\otimes _{I_A}A\to \mathscr {O}_{X_A}]]></fr:tex> (recall that we set <fr:tex
+display="inline"><![CDATA[I_A=At/(t^2)]]></fr:tex>).
+      The submodule <fr:tex
+display="inline"><![CDATA[F(I_A,\xi )]]></fr:tex> is that which corresponds to the sheaves of <fr:em>commutative</fr:em> algebras.
       The simplicity hypotheses are thus not essential in the theory of modules, as <fr:ref
 addr="fga2"
 href="fga2.xml"
 taxon="FGA"
-number="2"></fr:ref> implies.
-    </fr:li>
+number="2" /> implies.</fr:li>
 
-    <fr:li>
-      Recall (<fr:em>loc. cit.</fr:em>) that, in particular, every <fr:em>simple</fr:em> and <fr:em>proper algebraic curve</fr:em> <fr:tex>X_0</fr:tex> over <fr:tex>k</fr:tex> admits a formal scheme of modules that is simple over <fr:tex>\Lambda</fr:tex>, and of relative dimension equal to <fr:tex>3g-3</fr:tex> if the genus <fr:tex>g</fr:tex> is <fr:tex>\geqslant2</fr:tex>, and to <fr:tex>g</fr:tex> if <fr:tex>g=0,1</fr:tex>.
+    <fr:li>Recall (<fr:em>loc. cit.</fr:em>) that, in particular, every <fr:em>simple</fr:em> and <fr:em>proper algebraic curve</fr:em> <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> admits a formal scheme of modules that is simple over <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>, and of relative dimension equal to <fr:tex
+display="inline"><![CDATA[3g-3]]></fr:tex> if the genus <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\geqslant 2]]></fr:tex>, and to <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[g=0,1]]></fr:tex>.
       These two latter cases no longer figure directly in <fr:ref
 addr="fga3.ii-c.4-proposition-4.1"
 href="fga3.ii-c.4-proposition-4.1.xml"
 taxon="Proposition"
-number="4.1"></fr:ref>.
-      We can, however, recover them in the case of elliptic curves (<fr:tex>g=1</fr:tex>) thanks to the remarks that will follow.
-    </fr:li></fr:ol></fr:mainmatter></fr:tree><fr:p>
-  We can, of course, vary <fr:ref
+number="4.1" />.
+      We can, however, recover them in the case of elliptic curves (<fr:tex
+display="inline"><![CDATA[g=1]]></fr:tex>) thanks to the remarks that will follow.</fr:li></fr:ol></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>We can, of course, vary <fr:ref
 addr="fga3.ii-c.4-proposition-4.1"
 href="fga3.ii-c.4-proposition-4.1.xml"
 taxon="Proposition"
-number="4.1"></fr:ref> <fr:em>ad libitum</fr:em> by considering systems of schemes over <fr:tex>k</fr:tex> endowed with various structures.
-  Suppose, for example, that <fr:tex>X_0</fr:tex> is an <fr:em>abelian scheme</fr:em> over <fr:tex>k</fr:tex>, with a marked origin (i.e. <fr:tex>X_0</fr:tex> is considered as a scheme in <fr:em>groups</fr:em> over <fr:tex>k</fr:tex>), and let <fr:tex>F(A)</fr:tex> be the set of isomorphism classes of <fr:em>abelian</fr:em> schemes over <fr:tex>A</fr:tex> (i.e. of schemes in groups that are proper and simple over <fr:tex>A</fr:tex>) endowed with an isomorphism as in <fr:ref
+number="4.1" /> <fr:em>ad libitum</fr:em> by considering systems of schemes over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> endowed with various structures.
+  Suppose, for example, that <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is an <fr:em>abelian scheme</fr:em> over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, with a marked origin (i.e. <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> is considered as a scheme in <fr:em>groups</fr:em> over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>), and let <fr:tex
+display="inline"><![CDATA[F(A)]]></fr:tex> be the set of isomorphism classes of <fr:em>abelian</fr:em> schemes over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> (i.e. of schemes in groups that are proper and simple over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>) endowed with an isomorphism as in <fr:ref
 addr="fga3.ii-c.4-equation-star"
 href="fga3.ii-c.4-equation-star.xml"
 taxon="Equation"
-number="*"></fr:ref> of abelian schemes.
-  We can show that imposing a multiplicative structure (or even only a "unit section") eliminates the infinitesimal automorphisms, and that there thus exists a formal scheme of modules that corresponds to a complete local Noetherian ring <fr:tex>O</fr:tex>.
-  We can also show that, if <fr:tex>X</fr:tex> is a proper and simple scheme with "absolutely connected" fibres over a locally Noetherian prescheme <fr:tex>S</fr:tex>, then every multiplicative structure on <fr:tex>X</fr:tex> that admits a unit section is necessarily associative and commutative (provided that it is associative and commutative on <fr:em>one</fr:em> fibre, and provided that <fr:tex>S</fr:tex> is connected), and is furthermore uniquely determined by the knowledge of the unit section.
+number="*" /> of abelian schemes.
+  We can show that imposing a multiplicative structure (or even only a "unit section") eliminates the infinitesimal automorphisms, and that there thus exists a formal scheme of modules that corresponds to a complete local Noetherian ring <fr:tex
+display="inline"><![CDATA[O]]></fr:tex>.
+  We can also show that, if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is a proper and simple scheme with "absolutely connected" fibres over a locally Noetherian prescheme <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then every multiplicative structure on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that admits a unit section is necessarily associative and commutative (provided that it is associative and commutative on <fr:em>one</fr:em> fibre, and provided that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is connected), and is furthermore uniquely determined by the knowledge of the unit section.
   
-  Further, supposing that <fr:tex>S</fr:tex> is the spectrum of a local Artinian ring <fr:tex>A</fr:tex> of residue field <fr:tex>k</fr:tex>, that <fr:tex>X</fr:tex> is proper over <fr:tex>A</fr:tex> and endowed with a section <fr:tex>s</fr:tex>, and finally that <fr:tex>X \otimes _A k</fr:tex> is endowed with the structure of an abelian scheme over <fr:tex>k</fr:tex>, admitting the point of <fr:tex>X \otimes _A k</fr:tex> corresponding to <fr:tex>s</fr:tex> as the zero element, an easy calculation of obstructions, combined with an argument due to Serre, allows us to prove that there exists on <fr:tex>X</fr:tex> a multiplicative structure admitting the section <fr:tex>s</fr:tex> as the unit section.
+  Further, supposing that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a local Artinian ring <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> of residue field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> and endowed with a section <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>, and finally that <fr:tex
+display="inline"><![CDATA[X\otimes _A k]]></fr:tex> is endowed with the structure of an abelian scheme over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, admitting the point of <fr:tex
+display="inline"><![CDATA[X\otimes _A k]]></fr:tex> corresponding to <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> as the zero element, an easy calculation of obstructions, combined with an argument due to Serre, allows us to prove that there exists on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> a multiplicative structure admitting the section <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> as the unit section.
   (From here, using the "existence theorem" of <fr:ref
 addr="fga2"
 href="fga2.xml"
 taxon="FGA"
-number="2"></fr:ref> to pass to the case where <fr:tex>A</fr:tex> is complete local Noetherian, and then the technique of descent from <fr:ref
+number="2" /> to pass to the case where <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is complete local Noetherian, and then the technique of descent from <fr:ref
 addr="fga3.i"
 href="fga3.i.xml"
 taxon="FGA"
-number="3.I"></fr:ref> for the general case, we can prove the analogous claim for all locally Noetherian connected <fr:tex>S</fr:tex>).
-  This proves that the functor <fr:tex>F(A)</fr:tex> considered here is isomorphic to the analogous functor defined at the start of this section by abstracting the multiplicative structure on <fr:tex>X_0</fr:tex>.
-  It then follows that, in particular, if <fr:tex>\mathfrak {m}</fr:tex> is the maximal ideal of <fr:tex>O</fr:tex>, then <fr:tex>\mathfrak {m}/ \mathfrak {m}^2</fr:tex> is canonically isomorphic to the dual of <fr:tex>\operatorname {H} ^1(X_0, \mathfrak {G}_{X_0/k})</fr:tex>, and is thus of dimension <fr:tex>n^2</fr:tex>, where <fr:tex>n= \dim  X_0</fr:tex>.
-  It would be very interesting to determine if <fr:tex>O</fr:tex> is indeed <fr:em>simple</fr:em> over <fr:tex>\Lambda</fr:tex>, i.e. isomorphic to an algebra of formal series in <fr:tex>n^2</fr:tex> variables over <fr:tex>\Lambda</fr:tex>.
+number="3.I" /> for the general case, we can prove the analogous claim for all locally Noetherian connected <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>).
+  This proves that the functor <fr:tex
+display="inline"><![CDATA[F(A)]]></fr:tex> considered here is isomorphic to the analogous functor defined at the start of this section by abstracting the multiplicative structure on <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex>.
+  It then follows that, in particular, if <fr:tex
+display="inline"><![CDATA[\mathfrak {m}]]></fr:tex> is the maximal ideal of <fr:tex
+display="inline"><![CDATA[O]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\mathfrak {m}/\mathfrak {m}^2]]></fr:tex> is canonically isomorphic to the dual of <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(X_0,\mathfrak {G}_{X_0/k})]]></fr:tex>, and is thus of dimension <fr:tex
+display="inline"><![CDATA[n^2]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[n=\dim  X_0]]></fr:tex>.
+  It would be very interesting to determine if <fr:tex
+display="inline"><![CDATA[O]]></fr:tex> is indeed <fr:em>simple</fr:em> over <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>, i.e. isomorphic to an algebra of formal series in <fr:tex
+display="inline"><![CDATA[n^2]]></fr:tex> variables over <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex>.
   Now <fr:link
-href="fga3.ii-a.5-proposition-5.2.xml"
 type="local"
+href="fga3.ii-a.5-proposition-5.2.xml"
 addr="fga3.ii-a.5-proposition-5.2">§A, Proposition 5.2</fr:link> allows us to give an equivalent formulation of this problem as an <fr:em>existence problem of abelian schemes that are reducible along a given abelian scheme</fr:em>.
-  In any case, we see, by a transcendental way, that the answer is affirmative if <fr:tex>k</fr:tex> is of characteristic <fr:tex>0</fr:tex>.
-  In characteristic <fr:tex>p \neq0</fr:tex>, it evidently suffices to restrict to the case where <fr:tex>\Lambda</fr:tex> is the ring of Witt vectors constructed over an algebraically closed field <fr:tex>k</fr:tex>.
-  This could be the moment for the "<fr:em>Greenberg functor</fr:em>" to prove its worth...
-</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  In any case, we see, by a transcendental way, that the answer is affirmative if <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> is of characteristic <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>.
+  In characteristic <fr:tex
+display="inline"><![CDATA[p\neq 0]]></fr:tex>, it evidently suffices to restrict to the case where <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> is the ring of Witt vectors constructed over an algebraically closed field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>.
+  This could be the moment for the "<fr:em>Greenberg functor</fr:em>" to prove its worth...</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

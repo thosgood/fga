@@ -1,111 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1512</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.2</fr:addr><fr:route>fga3.i-a.2-definition-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be a <fr:em>strict epimorphism</fr:em> if it is an epimorphism and, for every morphism <fr:tex>u \colon  S' \to  Z</fr:tex>, the following necessary condition is also sufficient for <fr:tex>u</fr:tex> to factor as <fr:tex>S' \to  S \to  Z</fr:tex>:
-    for every <fr:tex>S'' \in \mathcal {C}</fr:tex> and every pair <fr:tex>\beta _1, \beta _2 \colon  S'' \to  S</fr:tex> of morphisms such that <fr:tex>\alpha \beta _1= \alpha \beta _2</fr:tex>, we also have that <fr:tex>u \beta _1=u \beta _2</fr:tex>.
-  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1559</fr:anchor><fr:addr
+type="user">fga3.i-a.2-definition-2.2</fr:addr><fr:route>fga3.i-a.2-definition-2.2.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>2.2</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is said to be a <fr:em>strict epimorphism</fr:em> if it is an epimorphism and, for every morphism <fr:tex
+display="inline"><![CDATA[u\colon  S'\to  Z]]></fr:tex>, the following necessary condition is also sufficient for <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> to factor as <fr:tex
+display="inline"><![CDATA[S'\to  S\to  Z]]></fr:tex>:
+    for every <fr:tex
+display="inline"><![CDATA[S''\in \mathcal {C}]]></fr:tex> and every pair <fr:tex
+display="inline"><![CDATA[\beta _1,\beta _2\colon  S''\to  S]]></fr:tex> of morphisms such that <fr:tex
+display="inline"><![CDATA[\alpha \beta _1=\alpha \beta _2]]></fr:tex>, we also have that <fr:tex
+display="inline"><![CDATA[u\beta _1=u\beta _2]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1511</fr:anchor><fr:addr>fga3.i-a.2.a</fr:addr><fr:route>fga3.i-a.2.a.xml</fr:route><fr:number>A.2.a</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1560</fr:anchor><fr:addr
+type="user">fga3.i-a.2.a</fr:addr><fr:route>fga3.i-a.2.a.xml</fr:route><fr:authors /><fr:number>A.2.a</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>553</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.1</fr:addr><fr:route>fga3.i-a.2-definition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {C}</fr:tex> be a category.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>612</fr:anchor><fr:addr
+type="user">fga3.i-a.2-definition-2.1</fr:addr><fr:route>fga3.i-a.2-definition-2.1.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category.
     A diagram of morphisms
     <fr:tex
-display="block">       T  \xrightarrow { \alpha }       T'  \overset { \beta _1 }{ \underset { \beta _2 }{ \rightrightarrows }}        T''     </fr:tex>
-    is said to be <fr:em>exact</fr:em> if, for all <fr:tex>Z \in \mathcal {C}</fr:tex>, the corresponding diagram of sets
+display="block"><![CDATA[       T \xrightarrow {\alpha }       T' \overset {\beta _1}{\underset {\beta _2}{\rightrightarrows }}       T''     ]]></fr:tex>
+    is said to be <fr:em>exact</fr:em> if, for all <fr:tex
+display="inline"><![CDATA[Z\in \mathcal {C}]]></fr:tex>, the corresponding diagram of sets
     <fr:tex
-display="block">        \operatorname {Hom} (Z,T)  \to         \operatorname {Hom} (Z,T')  \rightrightarrows         \operatorname {Hom} (Z,T'')     </fr:tex>
+display="block"><![CDATA[       \operatorname {Hom}(Z,T) \to        \operatorname {Hom}(Z,T') \rightrightarrows        \operatorname {Hom}(Z,T'')     ]]></fr:tex>
     is exact (<fr:ref
 addr="fga3.i-a.1-definition-1.2"
 href="fga3.i-a.1-definition-1.2.xml"
 taxon="Definition"
-number="1.2"></fr:ref>).
-    We then say that <fr:tex>(T, \alpha )</fr:tex> (or, by an abuse of language, <fr:tex>T</fr:tex>) is a <fr:em>kernel</fr:em> of the pair <fr:tex>( \beta _1, \beta _2)</fr:tex> of morphisms.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  This kernel is evidently determined up to unique isomorphism.
-  If <fr:tex>\mathcal {C}</fr:tex> is the category of sets, then the above definition is compatible with <fr:ref
+number="1.2" />).
+    We then say that <fr:tex
+display="inline"><![CDATA[(T,\alpha )]]></fr:tex> (or, by an abuse of language, <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>) is a <fr:em>kernel</fr:em> of the pair <fr:tex
+display="inline"><![CDATA[(\beta _1,\beta _2)]]></fr:tex> of morphisms.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>This kernel is evidently determined up to unique isomorphism.
+  If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is the category of sets, then the above definition is compatible with <fr:ref
 addr="fga3.i-a.1-definition-1.2"
 href="fga3.i-a.1-definition-1.2.xml"
 taxon="Definition"
-number="1.2"></fr:ref>.
-  Dually, we define the exactness of a diagram of morphisms in <fr:tex>\mathcal {C}</fr:tex>
+number="1.2" />.
+  Dually, we define the exactness of a diagram of morphisms in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>
   <fr:tex
-display="block">     S  \xleftarrow { \alpha }     S'  \overset { \beta _1 }{ \underset { \beta _2 }{ \leftleftarrows }}      S''   </fr:tex>
-  and then say that <fr:tex>(S, \alpha )</fr:tex> is a <fr:em>cokernel</fr:em> of the pair <fr:tex>( \beta _1, \beta _2)</fr:tex> of morphisms.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="block"><![CDATA[     S \xleftarrow {\alpha }     S' \overset {\beta _1}{\underset {\beta _2}{\leftleftarrows }}     S''   ]]></fr:tex>
+  and then say that <fr:tex
+display="inline"><![CDATA[(S,\alpha )]]></fr:tex> is a <fr:em>cokernel</fr:em> of the pair <fr:tex
+display="inline"><![CDATA[(\beta _1,\beta _2)]]></fr:tex> of morphisms.</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>554</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.2</fr:addr><fr:route>fga3.i-a.2-definition-2.2.xml</fr:route><fr:number>2.2</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be a <fr:em>strict epimorphism</fr:em> if it is an epimorphism and, for every morphism <fr:tex>u \colon  S' \to  Z</fr:tex>, the following necessary condition is also sufficient for <fr:tex>u</fr:tex> to factor as <fr:tex>S' \to  S \to  Z</fr:tex>:
-    for every <fr:tex>S'' \in \mathcal {C}</fr:tex> and every pair <fr:tex>\beta _1, \beta _2 \colon  S'' \to  S</fr:tex> of morphisms such that <fr:tex>\alpha \beta _1= \alpha \beta _2</fr:tex>, we also have that <fr:tex>u \beta _1=u \beta _2</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  If the fibre product <fr:tex>S' \times _S S'</fr:tex> exists, then it is equivalent to say that the diagram
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>613</fr:anchor><fr:addr
+type="user">fga3.i-a.2-definition-2.2</fr:addr><fr:route>fga3.i-a.2-definition-2.2.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>2.2</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is said to be a <fr:em>strict epimorphism</fr:em> if it is an epimorphism and, for every morphism <fr:tex
+display="inline"><![CDATA[u\colon  S'\to  Z]]></fr:tex>, the following necessary condition is also sufficient for <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> to factor as <fr:tex
+display="inline"><![CDATA[S'\to  S\to  Z]]></fr:tex>:
+    for every <fr:tex
+display="inline"><![CDATA[S''\in \mathcal {C}]]></fr:tex> and every pair <fr:tex
+display="inline"><![CDATA[\beta _1,\beta _2\colon  S''\to  S]]></fr:tex> of morphisms such that <fr:tex
+display="inline"><![CDATA[\alpha \beta _1=\alpha \beta _2]]></fr:tex>, we also have that <fr:tex
+display="inline"><![CDATA[u\beta _1=u\beta _2]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>If the fibre product <fr:tex
+display="inline"><![CDATA[S'\times _S S']]></fr:tex> exists, then it is equivalent to say that the diagram
   <fr:tex
-display="block">     S  \xleftarrow { \alpha }     S'  \overset { p_1 }{ \underset { p_2 }{ \leftleftarrows }}      S' \times _S S'   </fr:tex>
+display="block"><![CDATA[     S \xleftarrow {\alpha }     S' \overset {p_1}{\underset {p_2}{\leftleftarrows }}     S'\times _S S'   ]]></fr:tex>
   
-  is exact, i.e. that <fr:tex>S</fr:tex> is a cokernel of the pair <fr:tex>(p_1,p_2)</fr:tex>.
+  is exact, i.e. that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is a cokernel of the pair <fr:tex
+display="inline"><![CDATA[(p_1,p_2)]]></fr:tex>.
   In any case, a cokernel morphism is a strict epimorphism.
   Note also that, if a strict epimorphism is also a monomorphism, then it is an isomorphism.
-  We leave to the reader the task of developing the dual notion of a <fr:em>strict monomorphism</fr:em>.
-</fr:p><fr:p>
-  To make the relation between the ideas of <fr:tex>\mathcal {F}</fr:tex>-descent morphisms and strict epimorphisms more precise, we introduce the following definitions:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  We leave to the reader the task of developing the dual notion of a <fr:em>strict monomorphism</fr:em>.</fr:p><fr:p>To make the relation between the ideas of <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphisms and strict epimorphisms more precise, we introduce the following definitions:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>555</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.3</fr:addr><fr:route>fga3.i-a.2-definition-2.3.xml</fr:route><fr:number>2.3</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be a <fr:em>universal epimorphism</fr:em> (resp. a <fr:em>strict universal epimorphism</fr:em>) if, for every <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, the fibre product <fr:tex>T'=S' \times _S T</fr:tex> exists, and the projection <fr:tex>T' \to  T</fr:tex> is an epimorphism (resp. a strict epimorphism).
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  In very nice categories (such as the category of sets, the category of sets over a topological space, abelian categories, etc.), the four notions of "epijectivity" introduced above all coincide;
-  they are, however, all distinct in a category such as the category of preschemes, or the category of preschemes over a given non-empty prescheme <fr:tex>S</fr:tex>, even if we restrict to <fr:tex>S</fr:tex>-schemes that are finite over <fr:tex>S</fr:tex>.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>614</fr:anchor><fr:addr
+type="user">fga3.i-a.2-definition-2.3</fr:addr><fr:route>fga3.i-a.2-definition-2.3.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>2.3</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is said to be a <fr:em>universal epimorphism</fr:em> (resp. a <fr:em>strict universal epimorphism</fr:em>) if, for every <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, the fibre product <fr:tex
+display="inline"><![CDATA[T'=S'\times _S T]]></fr:tex> exists, and the projection <fr:tex
+display="inline"><![CDATA[T'\to  T]]></fr:tex> is an epimorphism (resp. a strict epimorphism).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>In very nice categories (such as the category of sets, the category of sets over a topological space, abelian categories, etc.), the four notions of "epijectivity" introduced above all coincide;
+  they are, however, all distinct in a category such as the category of preschemes, or the category of preschemes over a given non-empty prescheme <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, even if we restrict to <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-schemes that are finite over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>556</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.2-definition-2.4</fr:addr><fr:route>fga3.i-a.2-definition-2.4.xml</fr:route><fr:number>2.4</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be a <fr:em>descent morphism</fr:em> (resp. a <fr:em>strict descent morphism</fr:em>) if it is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism (resp. a strict <fr:tex>\mathcal {F}</fr:tex>-descent morphism) (cf. <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>615</fr:anchor><fr:addr
+type="user">fga3.i-a.2-definition-2.4</fr:addr><fr:route>fga3.i-a.2-definition-2.4.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>2.4</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is said to be a <fr:em>descent morphism</fr:em> (resp. a <fr:em>strict descent morphism</fr:em>) if it is an <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism (resp. a strict <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism) (cf. <fr:ref
 addr="fga3.i-a.1-definition-1.7"
 href="fga3.i-a.1-definition-1.7.xml"
 taxon="Definition"
-number="1.7"></fr:ref>), where <fr:tex>\mathcal {F}</fr:tex> denotes the fibred category over <fr:tex>\mathcal {C}</fr:tex> of objects of <fr:tex>\mathcal {C}</fr:tex> over objects of <fr:tex>\mathcal {C}</fr:tex> (cf. <fr:ref
+number="1.7" />), where <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> denotes the fibred category over <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> over objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> (cf. <fr:ref
 addr="fga3.i-a.1-example-1"
 href="fga3.i-a.1-example-1.xml"
 taxon="Example"
-number="1"></fr:ref>).
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="1" />).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>557</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.i-a.2-proposition-2.1</fr:addr><fr:route>fga3.i-a.2-proposition-2.1.xml</fr:route><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    If <fr:tex>\mathcal {C}</fr:tex> has all finite products and (finite) fibre products, then there is an identity between descent morphisms in <fr:tex>\mathcal {C}</fr:tex> and strict universal epimorphisms in <fr:tex>\mathcal {C}</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>616</fr:anchor><fr:addr
+type="user">fga3.i-a.2-proposition-2.1</fr:addr><fr:route>fga3.i-a.2-proposition-2.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>2.1</fr:number><fr:parent>fga3.i-a.2.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has all finite products and (finite) fibre products, then there is an identity between descent morphisms in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and strict universal epimorphisms in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

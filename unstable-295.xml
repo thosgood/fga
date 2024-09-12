@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2643</fr:anchor><fr:addr
+type="machine">#295</fr:addr><fr:route>unstable-295.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.iv-2-lemma-2.5</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>By replacing <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> by a union of subschemes of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that cover <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, we can suppose that there exists a <fr:em>finite</fr:em> morphism <fr:tex
+display="inline"><![CDATA[f\colon  X\to \mathbb {P}_S^r]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex> is isomorphic to the inverse image of <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_S^r}(1)]]></fr:tex>, and thus, for every coherent sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, we have that <fr:tex
+display="inline"><![CDATA[P_\mathscr {F}=P_{f_*(\mathscr {F})}]]></fr:tex>.
+      We can also easily show (by the technique of the previous section) that a set of sheaves <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is bounded if and only if the set of <fr:tex
+display="inline"><![CDATA[f_*(\mathscr {F})]]></fr:tex> is bounded.
+      Finally, we have that
+      <fr:tex
+display="block"><![CDATA[         f_*(\mathscr {F})_{(r)}         = f_*(\mathscr {F}_{(r)}).       ]]></fr:tex>
+      
+      This thus allows us to reduce to the case where <fr:tex
+display="inline"><![CDATA[X=\mathbb {P}_S^r]]></fr:tex>.
+      Furthermore, we can suppose that <fr:tex
+display="inline"><![CDATA[\mathscr {L}=\mathcal {O}_{\mathbb {P}_S^r}(k)^s]]></fr:tex>, for some suitable <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.
+      The coefficient <fr:tex
+display="inline"><![CDATA[a_\mathscr {F}]]></fr:tex> satisfies
+      <fr:tex
+display="block"><![CDATA[         0\leqslant  a_\mathscr {F} \leqslant  s       ]]></fr:tex>
+      and is thus bounded.
+      With this in mind, saying that the <fr:tex
+display="inline"><![CDATA[n^{r-1}]]></fr:tex> coefficient <fr:tex
+display="inline"><![CDATA[P_\mathscr {F}(n)]]></fr:tex> is bounded below (resp. bounded) is equivalent to saying the same thing for the <fr:tex
+display="inline"><![CDATA[P_\mathscr {F}(n-k)=P_{\mathscr {F}(-k)}(n)]]></fr:tex>.
+      This leads us to the case where
+      <fr:tex
+display="block"><![CDATA[         \mathscr {L}         = \mathcal {O}_{\mathbb {P}_S^r}^s.       ]]></fr:tex></fr:p>
+
+    <fr:p>Consider the exact sequence
+      <fr:tex
+display="block"><![CDATA[         0 \to  N_r \to  \mathscr {F} \to  \mathscr {F}_{(r)} \to  0       ]]></fr:tex>
+      whence
+      <fr:tex
+display="block"><![CDATA[         P_\mathscr {F}         = P_{\mathscr {F}_{(r)}} + P_{N_r}       ]]></fr:tex>
+      and, since the <fr:tex
+display="inline"><![CDATA[n^{r-1}]]></fr:tex> coefficient of <fr:tex
+display="inline"><![CDATA[P_{N_r}]]></fr:tex> is positive (since <fr:tex
+display="inline"><![CDATA[\dim \operatorname {supp} N_r\leqslant  r-1]]></fr:tex>), we have that
+      <fr:tex
+display="block"><![CDATA[         b_{\mathscr {F}_{(r)}} \leqslant  b_\mathscr {F}.       ]]></fr:tex>
+      This allows us, in proving the lemma, to replace <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[\mathscr {F}_{(r)}]]></fr:tex>, i.e. to suppose that the quotients <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> in question are torsion free.</fr:p>
+
+    <fr:p>Since <fr:tex
+display="inline"><![CDATA[\mathbb {P}_K^r]]></fr:tex> is normal, it follows that <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is locally free of rank <fr:tex
+display="inline"><![CDATA[a=a_\mathscr {F}]]></fr:tex> on an open <fr:tex
+display="inline"><![CDATA[U=\mathbb {P}_K^r\setminus  Y]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is of codimension <fr:tex
+display="inline"><![CDATA[\geqslant 2]]></fr:tex>.
+      Thus <fr:tex
+display="inline"><![CDATA[\bigwedge ^a\mathscr {F}]]></fr:tex> is a sheaf on <fr:tex
+display="inline"><![CDATA[\mathbb {P}_K^r]]></fr:tex> whose restriction to <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> is invertible, and thus (since <fr:tex
+display="inline"><![CDATA[\mathbb {P}_K^r]]></fr:tex> is regular, and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is of codimension <fr:tex
+display="inline"><![CDATA[\geqslant 2]]></fr:tex>) isomorphism to the restriction of an invertible sheaf on <fr:tex
+display="inline"><![CDATA[\mathbb {P}_K^r]]></fr:tex>, defined up to isomorphism.
+      This latter sheaf is of the form <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex> for some well defined integer <fr:tex
+display="inline"><![CDATA[d]]></fr:tex>.
+      Since <fr:tex
+display="inline"><![CDATA[\bigwedge ^a\mathscr {F}]]></fr:tex> is a quotient of <fr:tex
+display="inline"><![CDATA[\bigwedge ^a\mathcal {O}_{\mathbb {P}_K^r}^n\simeq \mathcal {O}_{\mathbb {P}_K^r}^N]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[N=\binom {n}{a}]]></fr:tex>, it admits <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> canonical sections, which thus define sections of <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[U]]></fr:tex>, which are restrictions of sections <fr:tex
+display="inline"><![CDATA[s_i]]></fr:tex> (for <fr:tex
+display="inline"><![CDATA[1\leqslant  i\leqslant  N]]></fr:tex>) of <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex> (since <fr:tex
+display="inline"><![CDATA[\mathbb {P}_K^r]]></fr:tex> is normal, and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is of codimension <fr:tex
+display="inline"><![CDATA[\geqslant 2]]></fr:tex>).
+      
+      These <fr:tex
+display="inline"><![CDATA[s_i]]></fr:tex> generate <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex> at the points of <fr:tex
+display="inline"><![CDATA[U]]></fr:tex>, and are thus not all zero, which implies that <fr:tex
+display="inline"><![CDATA[d\geqslant 0]]></fr:tex>.
+      An easy calculation also shows that
+      <fr:tex
+display="block"><![CDATA[         b_\mathscr {F}         = a_\mathscr {F}(r+1)/2 + d.       ]]></fr:tex>
+      This shows, in particular, that <fr:tex
+display="inline"><![CDATA[b_\mathscr {F}\geqslant 0]]></fr:tex>, and so <fr:tex
+display="inline"><![CDATA[b_\mathscr {F}]]></fr:tex> is bounded below.
+      It is bounded if and only if <fr:tex
+display="inline"><![CDATA[d]]></fr:tex> is bounded;
+      we will show that <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> then remains in a bounded family.
+      We can fix <fr:tex
+display="inline"><![CDATA[a_\mathscr {F}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b_\mathscr {F}]]></fr:tex>, as well as <fr:tex
+display="inline"><![CDATA[a]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b]]></fr:tex> (and thus <fr:tex
+display="inline"><![CDATA[d]]></fr:tex>).
+      The data of the <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> sections <fr:tex
+display="inline"><![CDATA[s_i]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex>, i.e. of a homomorphism <fr:tex
+display="inline"><![CDATA[s\colon \bigwedge ^a\mathscr {L}_K\to \mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex>, allows us to recover <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> as the co-image of the corresponding composite homomorphism:
+      <fr:tex
+display="block"><![CDATA[         \mathscr {L}_K         \to  \mathscr {H}\kern  -2.5pt\mathit {om}\left ( \bigwedge ^{a-1}\mathscr {L}_{K'}, \bigwedge ^a\mathscr {L}_K \right )         \to  \mathscr {H}\kern  -2.5pt\mathit {om}\left ( \bigwedge ^{a-1}\mathscr {L}_{K'}, \mathcal {O}_{\mathbb {P}_K^r}(d) \right )       ]]></fr:tex>
+      where the first arrow is the canonical homomorphism coming from the exterior product, and the second comes from <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.
+      We then conclude by part (i) of <fr:ref
+addr="fga3.iv-1-proposition-1.2"
+href="fga3.iv-1-proposition-1.2.xml"
+taxon="Proposition"
+number="1.2" />.</fr:p>
+  </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2644</fr:anchor><fr:addr
+type="user">fga3.iv-2-lemma-2.5</fr:addr><fr:route>fga3.iv-2-lemma-2.5.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:number>2.5</fr:number><fr:parent>fga3.iv-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> be a coherent sheaf on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> a set of classes of the quotient sheaves <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> of the sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {L}_K]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[K]]></fr:tex> is a residue extension of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>).
+    Suppose that the fibres of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> are of dimension <fr:tex
+display="inline"><![CDATA[\leqslant  r]]></fr:tex>, and set
+    <fr:tex
+display="block"><![CDATA[       P_\mathscr {F}(n)       = a_\mathscr {F}n^r/r! + b_\mathscr {F}n^{r-1}/(r-1)! + \text {terms of degree }<r-1.     ]]></fr:tex>
+    Then the coefficient <fr:tex
+display="inline"><![CDATA[a_\mathscr {F}]]></fr:tex> is bounded (above), and <fr:tex
+display="inline"><![CDATA[b_\mathscr {F}]]></fr:tex> is bounded below.
+    If <fr:tex
+display="inline"><![CDATA[b_\mathscr {F}]]></fr:tex> is bounded, then the family <fr:tex
+display="inline"><![CDATA[\mathscr {F}_{(r)}]]></fr:tex> is bounded.</fr:p>
+  
+    
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>376</fr:anchor><fr:addr
+type="machine">#295</fr:addr><fr:route>unstable-295.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.iv-2-lemma-2.5</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>By replacing <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> by a union of subschemes of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that cover <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, we can suppose that there exists a <fr:em>finite</fr:em> morphism <fr:tex
+display="inline"><![CDATA[f\colon  X\to \mathbb {P}_S^r]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex> is isomorphic to the inverse image of <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_S^r}(1)]]></fr:tex>, and thus, for every coherent sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, we have that <fr:tex
+display="inline"><![CDATA[P_\mathscr {F}=P_{f_*(\mathscr {F})}]]></fr:tex>.
+      We can also easily show (by the technique of the previous section) that a set of sheaves <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is bounded if and only if the set of <fr:tex
+display="inline"><![CDATA[f_*(\mathscr {F})]]></fr:tex> is bounded.
+      Finally, we have that
+      <fr:tex
+display="block"><![CDATA[         f_*(\mathscr {F})_{(r)}         = f_*(\mathscr {F}_{(r)}).       ]]></fr:tex>
+      
+      This thus allows us to reduce to the case where <fr:tex
+display="inline"><![CDATA[X=\mathbb {P}_S^r]]></fr:tex>.
+      Furthermore, we can suppose that <fr:tex
+display="inline"><![CDATA[\mathscr {L}=\mathcal {O}_{\mathbb {P}_S^r}(k)^s]]></fr:tex>, for some suitable <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.
+      The coefficient <fr:tex
+display="inline"><![CDATA[a_\mathscr {F}]]></fr:tex> satisfies
+      <fr:tex
+display="block"><![CDATA[         0\leqslant  a_\mathscr {F} \leqslant  s       ]]></fr:tex>
+      and is thus bounded.
+      With this in mind, saying that the <fr:tex
+display="inline"><![CDATA[n^{r-1}]]></fr:tex> coefficient <fr:tex
+display="inline"><![CDATA[P_\mathscr {F}(n)]]></fr:tex> is bounded below (resp. bounded) is equivalent to saying the same thing for the <fr:tex
+display="inline"><![CDATA[P_\mathscr {F}(n-k)=P_{\mathscr {F}(-k)}(n)]]></fr:tex>.
+      This leads us to the case where
+      <fr:tex
+display="block"><![CDATA[         \mathscr {L}         = \mathcal {O}_{\mathbb {P}_S^r}^s.       ]]></fr:tex></fr:p>
+
+    <fr:p>Consider the exact sequence
+      <fr:tex
+display="block"><![CDATA[         0 \to  N_r \to  \mathscr {F} \to  \mathscr {F}_{(r)} \to  0       ]]></fr:tex>
+      whence
+      <fr:tex
+display="block"><![CDATA[         P_\mathscr {F}         = P_{\mathscr {F}_{(r)}} + P_{N_r}       ]]></fr:tex>
+      and, since the <fr:tex
+display="inline"><![CDATA[n^{r-1}]]></fr:tex> coefficient of <fr:tex
+display="inline"><![CDATA[P_{N_r}]]></fr:tex> is positive (since <fr:tex
+display="inline"><![CDATA[\dim \operatorname {supp} N_r\leqslant  r-1]]></fr:tex>), we have that
+      <fr:tex
+display="block"><![CDATA[         b_{\mathscr {F}_{(r)}} \leqslant  b_\mathscr {F}.       ]]></fr:tex>
+      This allows us, in proving the lemma, to replace <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[\mathscr {F}_{(r)}]]></fr:tex>, i.e. to suppose that the quotients <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> in question are torsion free.</fr:p>
+
+    <fr:p>Since <fr:tex
+display="inline"><![CDATA[\mathbb {P}_K^r]]></fr:tex> is normal, it follows that <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is locally free of rank <fr:tex
+display="inline"><![CDATA[a=a_\mathscr {F}]]></fr:tex> on an open <fr:tex
+display="inline"><![CDATA[U=\mathbb {P}_K^r\setminus  Y]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is of codimension <fr:tex
+display="inline"><![CDATA[\geqslant 2]]></fr:tex>.
+      Thus <fr:tex
+display="inline"><![CDATA[\bigwedge ^a\mathscr {F}]]></fr:tex> is a sheaf on <fr:tex
+display="inline"><![CDATA[\mathbb {P}_K^r]]></fr:tex> whose restriction to <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> is invertible, and thus (since <fr:tex
+display="inline"><![CDATA[\mathbb {P}_K^r]]></fr:tex> is regular, and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is of codimension <fr:tex
+display="inline"><![CDATA[\geqslant 2]]></fr:tex>) isomorphism to the restriction of an invertible sheaf on <fr:tex
+display="inline"><![CDATA[\mathbb {P}_K^r]]></fr:tex>, defined up to isomorphism.
+      This latter sheaf is of the form <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex> for some well defined integer <fr:tex
+display="inline"><![CDATA[d]]></fr:tex>.
+      Since <fr:tex
+display="inline"><![CDATA[\bigwedge ^a\mathscr {F}]]></fr:tex> is a quotient of <fr:tex
+display="inline"><![CDATA[\bigwedge ^a\mathcal {O}_{\mathbb {P}_K^r}^n\simeq \mathcal {O}_{\mathbb {P}_K^r}^N]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[N=\binom {n}{a}]]></fr:tex>, it admits <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> canonical sections, which thus define sections of <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[U]]></fr:tex>, which are restrictions of sections <fr:tex
+display="inline"><![CDATA[s_i]]></fr:tex> (for <fr:tex
+display="inline"><![CDATA[1\leqslant  i\leqslant  N]]></fr:tex>) of <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex> (since <fr:tex
+display="inline"><![CDATA[\mathbb {P}_K^r]]></fr:tex> is normal, and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is of codimension <fr:tex
+display="inline"><![CDATA[\geqslant 2]]></fr:tex>).
+      
+      These <fr:tex
+display="inline"><![CDATA[s_i]]></fr:tex> generate <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex> at the points of <fr:tex
+display="inline"><![CDATA[U]]></fr:tex>, and are thus not all zero, which implies that <fr:tex
+display="inline"><![CDATA[d\geqslant 0]]></fr:tex>.
+      An easy calculation also shows that
+      <fr:tex
+display="block"><![CDATA[         b_\mathscr {F}         = a_\mathscr {F}(r+1)/2 + d.       ]]></fr:tex>
+      This shows, in particular, that <fr:tex
+display="inline"><![CDATA[b_\mathscr {F}\geqslant 0]]></fr:tex>, and so <fr:tex
+display="inline"><![CDATA[b_\mathscr {F}]]></fr:tex> is bounded below.
+      It is bounded if and only if <fr:tex
+display="inline"><![CDATA[d]]></fr:tex> is bounded;
+      we will show that <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> then remains in a bounded family.
+      We can fix <fr:tex
+display="inline"><![CDATA[a_\mathscr {F}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b_\mathscr {F}]]></fr:tex>, as well as <fr:tex
+display="inline"><![CDATA[a]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b]]></fr:tex> (and thus <fr:tex
+display="inline"><![CDATA[d]]></fr:tex>).
+      The data of the <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> sections <fr:tex
+display="inline"><![CDATA[s_i]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex>, i.e. of a homomorphism <fr:tex
+display="inline"><![CDATA[s\colon \bigwedge ^a\mathscr {L}_K\to \mathcal {O}_{\mathbb {P}_K^r}(d)]]></fr:tex>, allows us to recover <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> as the co-image of the corresponding composite homomorphism:
+      <fr:tex
+display="block"><![CDATA[         \mathscr {L}_K         \to  \mathscr {H}\kern  -2.5pt\mathit {om}\left ( \bigwedge ^{a-1}\mathscr {L}_{K'}, \bigwedge ^a\mathscr {L}_K \right )         \to  \mathscr {H}\kern  -2.5pt\mathit {om}\left ( \bigwedge ^{a-1}\mathscr {L}_{K'}, \mathcal {O}_{\mathbb {P}_K^r}(d) \right )       ]]></fr:tex>
+      where the first arrow is the canonical homomorphism coming from the exterior product, and the second comes from <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.
+      We then conclude by part (i) of <fr:ref
+addr="fga3.iv-1-proposition-1.2"
+href="fga3.iv-1-proposition-1.2.xml"
+taxon="Proposition"
+number="1.2" />.</fr:p>
+  </fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

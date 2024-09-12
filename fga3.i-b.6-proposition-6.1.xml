@@ -1,68 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1688</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.i-b.6-proposition-6.1</fr:addr><fr:route>fga3.i-b.6-proposition-6.1.xml</fr:route><fr:number>6.1</fr:number><fr:parent>fga3.i-b.6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Every principal homogeneous bundle for the group <fr:tex>\operatorname {GL} (n)_S</fr:tex> is locally trivial.
-  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1727</fr:anchor><fr:addr
+type="user">fga3.i-b.6-proposition-6.1</fr:addr><fr:route>fga3.i-b.6-proposition-6.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>6.1</fr:number><fr:parent>fga3.i-b.6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Every principal homogeneous bundle for the group <fr:tex
+display="inline"><![CDATA[\operatorname {GL}(n)_S]]></fr:tex> is locally trivial.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1687</fr:anchor><fr:addr>fga3.i-b.6</fr:addr><fr:route>fga3.i-b.6.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1728</fr:anchor><fr:addr
+type="user">fga3.i-b.6</fr:addr><fr:route>fga3.i-b.6.xml</fr:route><fr:title
+text="Generalities, and descent by faithfully flat morphisms › Descent by faithfully flat morphisms › Application to local triviality and isotriviality criteria"><fr:link
+type="local"
 href="fga3.i-b.xml"
+addr="fga3.i-b"
+title="Generalities, and descent by faithfully flat morphisms › Descent by faithfully flat morphisms"><fr:link
 type="local"
-addr="fga3.i-b"><fr:link
 href="fga3.i.xml"
-type="local"
-addr="fga3.i">Generalities, and descent by faithfully flat morphisms</fr:link> › Descent by faithfully flat morphisms</fr:link> › Application to local triviality and isotriviality criteria</fr:title><fr:number>B.6</fr:number><fr:parent>fga3.i-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>S</fr:tex> be a prescheme, <fr:tex>G</fr:tex> a "<fr:em>prescheme of groups</fr:em>" over <fr:tex>S</fr:tex>, <fr:tex>P</fr:tex> a prescheme over <fr:tex>S</fr:tex> on which "<fr:em><fr:tex>G</fr:tex> acts</fr:em>" (on the right).
-  We say that <fr:tex>P</fr:tex> is <fr:em>formally principal homogeneous</fr:em> for <fr:tex>G</fr:tex> if the well-known morphism
+addr="fga3.i"
+title="Generalities, and descent by faithfully flat morphisms">Generalities, and descent by faithfully flat morphisms</fr:link> › Descent by faithfully flat morphisms</fr:link> › Application to local triviality and isotriviality criteria</fr:title><fr:authors /><fr:number>B.6</fr:number><fr:parent>fga3.i-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> be a prescheme, <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> a "<fr:em>prescheme of groups</fr:em>" over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> a prescheme over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> on which "<fr:em><fr:tex
+display="inline"><![CDATA[G]]></fr:tex> acts</fr:em>" (on the right).
+  We say that <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> is <fr:em>formally principal homogeneous</fr:em> for <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> if the well-known morphism
   <fr:tex
-display="block">     G \times _S P  \to  P \times _S P   </fr:tex>
+display="block"><![CDATA[     G\times _S P \to  P\times _S P   ]]></fr:tex>
   
-  (induced from the actions of <fr:tex>G</fr:tex> on <fr:tex>P</fr:tex>) is an <fr:em>isomorphism</fr:em>.
-  From now on, we assume <fr:tex>G</fr:tex> to be <fr:em>flat</fr:em> over <fr:tex>S</fr:tex> (and thus faithfully flat over <fr:tex>S</fr:tex>), and we reserve the name of <fr:em>principal homogeneous bundle</fr:em> for <fr:tex>G</fr:tex> for a formally principal homogeneous bundle <fr:tex>P</fr:tex> that is <fr:em>faithfully flat</fr:em> and <fr:em>quasi-compact</fr:em> over <fr:tex>S</fr:tex>.
-  It is immediate that this is equivalent to being able to find a <fr:em>faithfully flat</fr:em> and <fr:em>quasi-compact extension</fr:em> <fr:tex>S' \to  S</fr:tex> of the base <fr:tex>S</fr:tex> such that the formally principal homogeneous bundle <fr:tex>P'=P \times _S S'</fr:tex> for <fr:tex>G'=G \times _S S'</fr:tex> is <fr:em>trivial</fr:em>, i.e. isomorphic to <fr:tex>G'</fr:tex> (i.e. admitting a section);
-  we can take, in particular, <fr:tex>S'=P</fr:tex>.
-  Note also that, if <fr:tex>S</fr:tex> is locally Noetherian, then the faithfully-flat hypothesis on <fr:tex>P</fr:tex> is equivalent to the hypothesis that <fr:tex>\overline {P}_S=P \times _S \operatorname {Spec} ( \overline { \mathscr { O } }_s)</fr:tex> be faithfully flat over <fr:tex>\overline { \mathscr { O } }_s</fr:tex> for all <fr:tex>s \in  S</fr:tex> (where <fr:tex>\overline { \mathscr { O } }_s</fr:tex> denotes the completion of the local ring <fr:tex>\mathscr { O } _s</fr:tex>), as follows from the fact that <fr:tex>\overline { \mathscr { O } }_s</fr:tex> is faithfully flat over <fr:tex>\mathscr { O } _s</fr:tex>.
-  Also, if <fr:tex>P</fr:tex> is of finite type over <fr:tex>S</fr:tex>, and <fr:tex>S</fr:tex> is locally Noetherian, then the set of points <fr:tex>s</fr:tex> satisfying the above condition is constructible, and so, if <fr:tex>S</fr:tex> is a "Jacobson prescheme" (for example, a scheme of finite type over a field, or, more generally, over a Jacobson ring), then it suffices to verify the condition in question for the <fr:em>closed</fr:em> points of <fr:tex>S</fr:tex>.
-  This leads us to the case where the base is the spectrum of a complete local ring <fr:tex>A</fr:tex>.
-  If <fr:tex>S= \operatorname {Spec} (A)</fr:tex> (with <fr:tex>A</fr:tex> a complete Noetherian local ring), and if <fr:tex>P</fr:tex> is of finite type over <fr:tex>S</fr:tex>, then the faithful flatness of <fr:tex>P/S</fr:tex> is also equivalent to the existence of an <fr:tex>S'</fr:tex> that is <fr:em>finite and flat</fr:em> over <fr:tex>S</fr:tex> such that <fr:tex>P'</fr:tex> is trivial, and, if, further, <fr:tex>G</fr:tex> is <fr:em>simple</fr:em> over <fr:tex>S</fr:tex>, then we can suppose <fr:tex>S'</fr:tex> to be <fr:em>étale</fr:em> over <fr:tex>S</fr:tex>.
-  Then, if, further, the residue field of <fr:tex>A</fr:tex> is algebraically closed (the "<fr:em>geometric case</fr:em>"), then <fr:tex>P</fr:tex> is faithfully flat over <fr:tex>A</fr:tex> if and only if it is trivial.
-  Thus, if <fr:tex>S</fr:tex> is an algebraic prescheme over an algebraically closed field, and if <fr:tex>G</fr:tex> is simple and of finite type over <fr:tex>S</fr:tex>, then we see that the faithfully-flat condition on <fr:tex>S</fr:tex> is equivalent to the condition of being analytically trivial (SLF) of Serre [<fr:link
+  (induced from the actions of <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[P]]></fr:tex>) is an <fr:em>isomorphism</fr:em>.
+  From now on, we assume <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> to be <fr:em>flat</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> (and thus faithfully flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>), and we reserve the name of <fr:em>principal homogeneous bundle</fr:em> for <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> for a formally principal homogeneous bundle <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> that is <fr:em>faithfully flat</fr:em> and <fr:em>quasi-compact</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+  It is immediate that this is equivalent to being able to find a <fr:em>faithfully flat</fr:em> and <fr:em>quasi-compact extension</fr:em> <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex> of the base <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> such that the formally principal homogeneous bundle <fr:tex
+display="inline"><![CDATA[P'=P\times _S S']]></fr:tex> for <fr:tex
+display="inline"><![CDATA[G'=G\times _S S']]></fr:tex> is <fr:em>trivial</fr:em>, i.e. isomorphic to <fr:tex
+display="inline"><![CDATA[G']]></fr:tex> (i.e. admitting a section);
+  we can take, in particular, <fr:tex
+display="inline"><![CDATA[S'=P]]></fr:tex>.
+  Note also that, if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is locally Noetherian, then the faithfully-flat hypothesis on <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> is equivalent to the hypothesis that <fr:tex
+display="inline"><![CDATA[\overline {P}_S=P\times _S\operatorname {Spec}(\overline {\mathscr {O}}_s)]]></fr:tex> be faithfully flat over <fr:tex
+display="inline"><![CDATA[\overline {\mathscr {O}}_s]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[\overline {\mathscr {O}}_s]]></fr:tex> denotes the completion of the local ring <fr:tex
+display="inline"><![CDATA[\mathscr {O}_s]]></fr:tex>), as follows from the fact that <fr:tex
+display="inline"><![CDATA[\overline {\mathscr {O}}_s]]></fr:tex> is faithfully flat over <fr:tex
+display="inline"><![CDATA[\mathscr {O}_s]]></fr:tex>.
+  Also, if <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> is of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is locally Noetherian, then the set of points <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> satisfying the above condition is constructible, and so, if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is a "Jacobson prescheme" (for example, a scheme of finite type over a field, or, more generally, over a Jacobson ring), then it suffices to verify the condition in question for the <fr:em>closed</fr:em> points of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+  This leads us to the case where the base is the spectrum of a complete local ring <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
+  If <fr:tex
+display="inline"><![CDATA[S=\operatorname {Spec}(A)]]></fr:tex> (with <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> a complete Noetherian local ring), and if <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> is of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then the faithful flatness of <fr:tex
+display="inline"><![CDATA[P/S]]></fr:tex> is also equivalent to the existence of an <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> that is <fr:em>finite and flat</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[P']]></fr:tex> is trivial, and, if, further, <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> is <fr:em>simple</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then we can suppose <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> to be <fr:em>étale</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+  Then, if, further, the residue field of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is algebraically closed (the "<fr:em>geometric case</fr:em>"), then <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> is faithfully flat over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> if and only if it is trivial.
+  Thus, if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is an algebraic prescheme over an algebraically closed field, and if <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> is simple and of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then we see that the faithfully-flat condition on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is equivalent to the condition of being analytically trivial (SLF) of Serre [<fr:link
+type="local"
 href="Ser1958a.xml"
-type="local"
-addr="Ser1958a">Ser1958a</fr:link>, pp.1–12].
-</fr:p><fr:p>
-  We can consider other, stronger, types of conditions on <fr:tex>P</fr:tex>, that have a "local triviality" nature.
-  In particular, we say that <fr:tex>P</fr:tex> is <fr:em>isotrivial</fr:em> (resp. <fr:em>strictly isotrivial</fr:em>) if, for all <fr:tex>s \in  S</fr:tex>, there exists an open neighbourhood <fr:tex>U</fr:tex> of <fr:tex>S</fr:tex>, and a <fr:em>finite and faithfully flat</fr:em> morphism (resp. a <fr:em>surjective étale covering</fr:em>) <fr:tex>U' \to  U</fr:tex> such that <fr:tex>P'=P \times _S U'</fr:tex> is trivial.
+addr="Ser1958a"
+title="Espaces fibrés algébriques">Ser1958a</fr:link>, pp.1–12].</fr:p><fr:p>We can consider other, stronger, types of conditions on <fr:tex
+display="inline"><![CDATA[P]]></fr:tex>, that have a "local triviality" nature.
+  In particular, we say that <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> is <fr:em>isotrivial</fr:em> (resp. <fr:em>strictly isotrivial</fr:em>) if, for all <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex>, there exists an open neighbourhood <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and a <fr:em>finite and faithfully flat</fr:em> morphism (resp. a <fr:em>surjective étale covering</fr:em>) <fr:tex
+display="inline"><![CDATA[U'\to  U]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[P'=P\times _S U']]></fr:tex> is trivial.
   (We stray from the terminology of Serre <fr:link
-href="GD1960.xml"
 type="local"
-addr="GD1960">[GD1960]</fr:link>, which uses "locally isotrivial" for what we call "strictly isotrivial").
-  Strict isotriviality is mainly useful if <fr:tex>G</fr:tex> is simple over <fr:tex>S</fr:tex>, but is, however, an inadequate notion in other cases.
-</fr:p><fr:p>
-  If <fr:tex>G</fr:tex> is <fr:em>affine</fr:em> over <fr:tex>S</fr:tex>, then every principal homogeneous bundle <fr:tex>P</fr:tex> for <fr:tex>G</fr:tex> is affine, by <fr:ref
+href="GD1960.xml"
+addr="GD1960"
+title="Eléments de Géométrie Algébrique">[GD1960]</fr:link>, which uses "locally isotrivial" for what we call "strictly isotrivial").
+  Strict isotriviality is mainly useful if <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, but is, however, an inadequate notion in other cases.</fr:p><fr:p>If <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> is <fr:em>affine</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then every principal homogeneous bundle <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> for <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> is affine, by <fr:ref
 addr="fga3.i-b.2"
 href="fga3.i-b.2.xml"
-number="B.2"></fr:ref>, whence the possibility, thanks to <fr:ref
+number="B.2" />, whence the possibility, thanks to <fr:ref
 addr="fga3.i-b.1-theorem-2"
 href="fga3.i-b.1-theorem-2.xml"
 taxon="Theorem"
-number="2"></fr:ref>, to "descend" from such bundles by faithfully flat and quasi-compact morphisms.
+number="2" />, to "descend" from such bundles by faithfully flat and quasi-compact morphisms.
   
-  Taking, in particular, <fr:tex>G= \operatorname {GL} (n)_S</fr:tex>, defined by the condition that the functor <fr:tex>S' \mapsto \operatorname {Hom} (S',G)</fr:tex> of <fr:tex>S</fr:tex>-preschemes (with values in the category of groups) can be identified with the functor <fr:tex>\operatorname {GL} (n)(S')= \operatorname {GL} (n, \operatorname {H} ^0(S', \mathscr { O } _{S'}))</fr:tex> described in <fr:ref
+  Taking, in particular, <fr:tex
+display="inline"><![CDATA[G=\operatorname {GL}(n)_S]]></fr:tex>, defined by the condition that the functor <fr:tex
+display="inline"><![CDATA[S'\mapsto \operatorname {Hom}(S',G)]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-preschemes (with values in the category of groups) can be identified with the functor <fr:tex
+display="inline"><![CDATA[\operatorname {GL}(n)(S')=\operatorname {GL}(n,\operatorname {H}^0(S',\mathscr {O}_{S'}))]]></fr:tex> described in <fr:ref
 addr="fga3.i-a.4"
 href="fga3.i-a.4.xml"
-number="A.4"></fr:ref>.
+number="A.4" />.
   Using the facts
 
   
@@ -71,56 +154,83 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
  <html:li
 style="list-style-type: &quot;i. &quot;">
-      that every principal homogeneous bundle for <fr:tex>G</fr:tex> (resp. every locally free sheaf of rank <fr:tex>n</fr:tex> on <fr:tex>S</fr:tex>) becomes isomorphic to the "trivial" object <fr:tex>G</fr:tex> (resp. <fr:tex>\mathscr { O } _S^n</fr:tex>) under a suitable faithfully flat and quasi-compact extension of <fr:tex>S</fr:tex>;
+      that every principal homogeneous bundle for <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> (resp. every locally free sheaf of rank <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>) becomes isomorphic to the "trivial" object <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> (resp. <fr:tex
+display="inline"><![CDATA[\mathscr {O}_S^n]]></fr:tex>) under a suitable faithfully flat and quasi-compact extension of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>;
     </html:li>
 
 
     
  <html:li
 style="list-style-type: &quot;ii. &quot;">
-      that we can descend the type of objects in question (principal homogeneous bundles for <fr:tex>G</fr:tex>, resp. locally free sheaves of rank <fr:tex>n</fr:tex>) by such morphisms; and, finally
+      that we can descend the type of objects in question (principal homogeneous bundles for <fr:tex
+display="inline"><![CDATA[G]]></fr:tex>, resp. locally free sheaves of rank <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>) by such morphisms; and, finally
     </html:li>
 
 
     
  <html:li
 style="list-style-type: &quot;iii. &quot;">
-      that the automorphism group of the trivial bundle on any <fr:tex>S'/S</fr:tex> is functorially isomorphic to the automorphism group of the trivial locally free sheaf of rank <fr:tex>n</fr:tex> on <fr:tex>S'</fr:tex>,
+      that the automorphism group of the trivial bundle on any <fr:tex
+display="inline"><![CDATA[S'/S]]></fr:tex> is functorially isomorphic to the automorphism group of the trivial locally free sheaf of rank <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[S']]></fr:tex>,
     </html:li>
 
   </html:ol>
 
 
-  we "formally" conclude that it is "equivalent" to give, on <fr:tex>S</fr:tex> (or on some <fr:tex>S'/S</fr:tex>) a principal homogeneous bundle for the group <fr:tex>G</fr:tex>, or to give a locally free sheaf of rank <fr:tex>n</fr:tex>.
+  we "formally" conclude that it is "equivalent" to give, on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> (or on some <fr:tex
+display="inline"><![CDATA[S'/S]]></fr:tex>) a principal homogeneous bundle for the group <fr:tex
+display="inline"><![CDATA[G]]></fr:tex>, or to give a locally free sheaf of rank <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>.
   (More precisely, we have an <fr:em>equivalence of fibred categories</fr:em>).
-  We thus conclude, in particular:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  We thus conclude, in particular:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>298</fr:anchor><fr:taxon>Proposition</fr:taxon><fr:addr>fga3.i-b.6-proposition-6.1</fr:addr><fr:route>fga3.i-b.6-proposition-6.1.xml</fr:route><fr:number>6.1</fr:number><fr:parent>fga3.i-b.6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Every principal homogeneous bundle for the group <fr:tex>\operatorname {GL} (n)_S</fr:tex> is locally trivial.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  By known arguments, we thus conclude the same result for others structure groups such as <fr:tex>\operatorname {SL} (n)_S</fr:tex>, <fr:tex>\operatorname {Sp} (n)_S</fr:tex>, and products of such groups.
-  We thus also conclude that, if <fr:tex>F</fr:tex> is a closed subgroup of <fr:tex>G= \operatorname {GL} (n)_S</fr:tex> that is flat over <fr:tex>S</fr:tex>, and such that the quotient <fr:tex>G/F</fr:tex> exists, and such that <fr:tex>G</fr:tex> is an isotrivial (resp. strictly isotrivial) principal homogeneous bundle on <fr:tex>G/F</fr:tex>, of structure group <fr:tex>F \times _S(G/F)</fr:tex>, then <fr:em>every</fr:em> principal homogeneous bundle of structure group <fr:tex>F</fr:tex> is isotrivial (resp. strictly isotrivial).
-  This applies to all the "linear groups" on <fr:tex>S</fr:tex> that have been used up until now, and, in particular, to the case where <fr:tex>G=S \times _k \Gamma</fr:tex>, with <fr:tex>S</fr:tex> a prescheme over the field <fr:tex>k</fr:tex>, and <fr:tex>\Gamma</fr:tex> a linear group (in the classical sense) over <fr:tex>k</fr:tex> (and thus in particular simple).
-  This thus answers, for such groups, a question of Serre (<fr:em>loc. cit.</fr:em>).
-</fr:p><fr:p>
-  We also point out that, for most groups (linear or not) that are simple over <fr:tex>S</fr:tex> that we know of, and certainly for all those of the form <fr:tex>S \times _k \Gamma</fr:tex> as above, we can show that every isotrivial principal homogeneous bundle is strictly isotrivial, which answers, in particular, another question of Serre (<fr:em>loc. cit.</fr:em> pp.1–14), taking into account the fact that a homogeneous principal bundle obtained by a descent <fr:em>à la</fr:em> Cartier (cf. <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>355</fr:anchor><fr:addr
+type="user">fga3.i-b.6-proposition-6.1</fr:addr><fr:route>fga3.i-b.6-proposition-6.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>6.1</fr:number><fr:parent>fga3.i-b.6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Every principal homogeneous bundle for the group <fr:tex
+display="inline"><![CDATA[\operatorname {GL}(n)_S]]></fr:tex> is locally trivial.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>By known arguments, we thus conclude the same result for others structure groups such as <fr:tex
+display="inline"><![CDATA[\operatorname {SL}(n)_S]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\operatorname {Sp}(n)_S]]></fr:tex>, and products of such groups.
+  We thus also conclude that, if <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is a closed subgroup of <fr:tex
+display="inline"><![CDATA[G=\operatorname {GL}(n)_S]]></fr:tex> that is flat over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and such that the quotient <fr:tex
+display="inline"><![CDATA[G/F]]></fr:tex> exists, and such that <fr:tex
+display="inline"><![CDATA[G]]></fr:tex> is an isotrivial (resp. strictly isotrivial) principal homogeneous bundle on <fr:tex
+display="inline"><![CDATA[G/F]]></fr:tex>, of structure group <fr:tex
+display="inline"><![CDATA[F\times _S(G/F)]]></fr:tex>, then <fr:em>every</fr:em> principal homogeneous bundle of structure group <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is isotrivial (resp. strictly isotrivial).
+  This applies to all the "linear groups" on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that have been used up until now, and, in particular, to the case where <fr:tex
+display="inline"><![CDATA[G=S\times _k\Gamma ]]></fr:tex>, with <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> a prescheme over the field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> a linear group (in the classical sense) over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> (and thus in particular simple).
+  This thus answers, for such groups, a question of Serre (<fr:em>loc. cit.</fr:em>).</fr:p><fr:p>We also point out that, for most groups (linear or not) that are simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that we know of, and certainly for all those of the form <fr:tex
+display="inline"><![CDATA[S\times _k\Gamma ]]></fr:tex> as above, we can show that every isotrivial principal homogeneous bundle is strictly isotrivial, which answers, in particular, another question of Serre (<fr:em>loc. cit.</fr:em> pp.1–14), taking into account the fact that a homogeneous principal bundle obtained by a descent <fr:em>à la</fr:em> Cartier (cf. <fr:ref
 addr="fga3.i-b.3-example-2"
 href="fga3.i-b.3-example-2.xml"
 taxon="Example"
-number="2"></fr:ref>) is obviously isotrivial.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="2" />) is obviously isotrivial.</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>299</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.i-b.6-remark</fr:addr><fr:route>fga3.i-b.6-remark.xml</fr:route><fr:parent>fga3.i-b.6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    One of the essential difficulties in these questions (setting aside the question of the existence of quotient schemes) is the lack of effectiveness criteria for a descent data along a faithfully flat <fr:em>non-finite</fr:em> morphism.
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>356</fr:anchor><fr:addr
+type="user">fga3.i-b.6-remark</fr:addr><fr:route>fga3.i-b.6-remark.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:parent>fga3.i-b.6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>One of the essential difficulties in these questions (setting aside the question of the existence of quotient schemes) is the lack of effectiveness criteria for a descent data along a faithfully flat <fr:em>non-finite</fr:em> morphism.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

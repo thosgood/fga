@@ -1,45 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>824</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>Kod1956</fr:addr><fr:route>Kod1956.xml</fr:route><fr:title>Characteristic linear systems of complete continuous systems</fr:title><fr:date><fr:year>1956</fr:year></fr:date><fr:authors><fr:author>K. Kodaira</fr:author></fr:authors><fr:meta
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>876</fr:anchor><fr:addr
+type="user">Kod1956</fr:addr><fr:route>Kod1956.xml</fr:route><fr:title
+text="Characteristic linear systems of complete continuous systems">Characteristic linear systems of complete continuous systems</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>1956</fr:year></fr:date><fr:authors><fr:author>K. Kodaira</fr:author></fr:authors><fr:meta
 name="venue"><fr:em>Amer. J. of Math.</fr:em> <fr:strong>78</fr:strong> pp. 716–744</fr:meta><fr:meta
-name="bibtex">@article{Kod1956,
+name="bibtex"><![CDATA[@article{Kod1956,
   title = {Characteristic linear systems of complete continuous systems},
   author = {Kodaira, K.},
   year = {1956},
   journal = {Amer. J. of Math.},
   volume = {78},
   pages = {716--744},
-}</fr:meta></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>823</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.iv-5-remark-5.6</fr:addr><fr:route>fga3.iv-5-remark-5.6.xml</fr:route><fr:number>5.6</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    We have given, in <fr:ref
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>878</fr:anchor><fr:addr
+type="user">fga3.iv-5-remark-5.6</fr:addr><fr:route>fga3.iv-5-remark-5.6.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:number>5.6</fr:number><fr:parent>fga3.iv-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We have given, in <fr:ref
 addr="fga3.iv-5-remark-5.5"
 href="fga3.iv-5-remark-5.5.xml"
 taxon="Remark"
-number="5.5"></fr:ref>, a criterion for simplicity, which applies in particular to schemes of divisors.
+number="5.5" />, a criterion for simplicity, which applies in particular to schemes of divisors.
     Kodaira gave a different criterion in <fr:link
-href="Kod1956.xml"
 type="local"
-addr="Kod1956">[Kod1956]</fr:link>, given by the vanishing of <fr:tex>\operatorname {H} ^1(X_0, \mathscr { L } )</fr:tex>, where <fr:tex>\mathscr { L } = \mathscr { J } _0^{-1}</fr:tex> is the invertible sheaf on <fr:tex>X_0</fr:tex> defined by the divisor <fr:tex>Y_0</fr:tex>;
-    this criterion holds whenever <fr:tex>S</fr:tex> is the spectrum of a field of characteristic <fr:tex>0</fr:tex>, and is proved in <fr:link
 href="Kod1956.xml"
+addr="Kod1956"
+title="Characteristic linear systems of complete continuous systems">[Kod1956]</fr:link>, given by the vanishing of <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(X_0,\mathscr {L})]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\mathscr {L}=\mathscr {J}_0^{-1}]]></fr:tex> is the invertible sheaf on <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> defined by the divisor <fr:tex
+display="inline"><![CDATA[Y_0]]></fr:tex>;
+    this criterion holds whenever <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a field of characteristic <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>, and is proved in <fr:link
 type="local"
-addr="Kod1956">[Kod1956]</fr:link> by transcendental methods in the case where the base field is <fr:tex>\mathbb {C}</fr:tex>.
-    We note here that, in general, <fr:tex>S</fr:tex> now arbitrary, Kodaira's condition is a sufficient condition for the canonical morphism <fr:tex>D \to \underline { \operatorname {Pic} } _{X/S}</fr:tex> from the prescheme of divisors to the Picard prescheme of <fr:tex>X/S</fr:tex> to be simple at the point <fr:tex>x</fr:tex> in question (as we easily verify by the usual criterion for simplicity, once we have the existence of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>).
-    Then if, further, <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is simple over <fr:tex>S</fr:tex> at the point given by the image of <fr:tex>x</fr:tex> (for example if <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is simple over <fr:tex>S</fr:tex>), then <fr:tex>D</fr:tex> is simple over <fr:tex>S</fr:tex> at <fr:tex>x</fr:tex>.
-    On the other hand, Cartier has shown that every group prescheme locally of finite type over <fr:em>a field <fr:tex>k</fr:tex> of characteristic <fr:tex>0</fr:tex></fr:em> is simple over <fr:tex>k</fr:tex>.
+href="Kod1956.xml"
+addr="Kod1956"
+title="Characteristic linear systems of complete continuous systems">[Kod1956]</fr:link> by transcendental methods in the case where the base field is <fr:tex
+display="inline"><![CDATA[\mathbb {C}]]></fr:tex>.
+    We note here that, in general, <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> now arbitrary, Kodaira's condition is a sufficient condition for the canonical morphism <fr:tex
+display="inline"><![CDATA[D\to \underline {\operatorname {Pic}}_{X/S}]]></fr:tex> from the prescheme of divisors to the Picard prescheme of <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> to be simple at the point <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> in question (as we easily verify by the usual criterion for simplicity, once we have the existence of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>).
+    Then if, further, <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> at the point given by the image of <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> (for example if <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>), then <fr:tex
+display="inline"><![CDATA[D]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> at <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>.
+    On the other hand, Cartier has shown that every group prescheme locally of finite type over <fr:em>a field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> of characteristic <fr:tex
+display="inline"><![CDATA[0]]></fr:tex></fr:em> is simple over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>.
     By combining these two results, we recover the result of Kodaira.
-    Note that it follows from these remarks that, over a field <fr:tex>K</fr:tex> of characteristic <fr:tex>p&gt;0</fr:tex>, if <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is not simple over <fr:tex>k</fr:tex> (which is the case whenever <fr:tex>X</fr:tex> is the Igusa surface), then the condition <fr:tex>\operatorname {H} ^1(X_0, \mathscr { L } )=0</fr:tex> implies to the contrary that <fr:tex>D</fr:tex> is not simple at <fr:tex>x</fr:tex>, and even not reduced at <fr:tex>x</fr:tex> if <fr:tex>K</fr:tex> is algebraically closed.
-  </fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+    Note that it follows from these remarks that, over a field <fr:tex
+display="inline"><![CDATA[K]]></fr:tex> of characteristic <fr:tex
+display="inline"><![CDATA[p>0]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is not simple over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> (which is the case whenever <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is the Igusa surface), then the condition <fr:tex
+display="inline"><![CDATA[\operatorname {H}^1(X_0,\mathscr {L})=0]]></fr:tex> implies to the contrary that <fr:tex
+display="inline"><![CDATA[D]]></fr:tex> is not simple at <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, and even not reduced at <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[K]]></fr:tex> is algebraically closed.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

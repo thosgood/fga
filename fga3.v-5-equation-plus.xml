@@ -1,339 +1,516 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2215</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-5-equation-plus</fr:addr><fr:route>fga3.v-5-equation-plus.xml</fr:route><fr:number>+</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">        \mathscr { D } ^+        \to   \mathscr { P } ^+     \tag{+}     </fr:tex></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2253</fr:anchor><fr:addr
+type="user">fga3.v-5-equation-plus</fr:addr><fr:route>fga3.v-5-equation-plus.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>+</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[       \mathscr {D}^+       \to  \mathscr {P}^+     \tag{+}     ]]></fr:tex></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2214</fr:anchor><fr:addr>fga3.v-5</fr:addr><fr:route>fga3.v-5.xml</fr:route><fr:title><fr:link
-href="fga3.v.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2254</fr:anchor><fr:addr
+type="user">fga3.v-5</fr:addr><fr:route>fga3.v-5.xml</fr:route><fr:title
+text="Picard schemes: Existence theorems › Proof of the principal existence theorem"><fr:link
 type="local"
-addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Proof of the principal existence theorem</fr:title><fr:number>5</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Under the conditions of <fr:ref
+href="fga3.v.xml"
+addr="fga3.v"
+title="Picard schemes: Existence theorems">Picard schemes: Existence theorems</fr:link> › Proof of the principal existence theorem</fr:title><fr:authors /><fr:number>5</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Under the conditions of <fr:ref
 addr="fga3.v-3-theorem-3.1"
 href="fga3.v-3-theorem-3.1.xml"
 taxon="Theorem"
-number="3.1"></fr:ref>, choose some module <fr:tex>\mathcal {O} _X(1)</fr:tex> that is very ample over <fr:tex>X/S</fr:tex>, and let <fr:tex>\xi</fr:tex> be the corresponding element of <fr:tex>\operatorname {Pic} (X/S)</fr:tex>.
-  For brevity, let <fr:tex>\mathscr { P } (S')= \operatorname {Pic} (X \times _S S'/S')</fr:tex>, and suppose, for simplicity, that <fr:tex>X/S</fr:tex> admits a section.
-  Let <fr:tex>\mathscr { P } ^+(S')</fr:tex> be the subset of <fr:tex>\mathscr { P } (S')</fr:tex> consisting of classes of the <fr:tex>\mathscr { L }</fr:tex> that are invertible on <fr:tex>X \times _S S'</fr:tex> such that
+number="3.1" />, choose some module <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex> that is very ample over <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[\xi ]]></fr:tex> be the corresponding element of <fr:tex
+display="inline"><![CDATA[\operatorname {Pic}(X/S)]]></fr:tex>.
+  For brevity, let <fr:tex
+display="inline"><![CDATA[\mathscr {P}(S')=\operatorname {Pic}(X\times _S S'/S')]]></fr:tex>, and suppose, for simplicity, that <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> admits a section.
+  Let <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+(S')]]></fr:tex> be the subset of <fr:tex
+display="inline"><![CDATA[\mathscr {P}(S')]]></fr:tex> consisting of classes of the <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> that are invertible on <fr:tex
+display="inline"><![CDATA[X\times _S S']]></fr:tex> such that
   <fr:tex
-display="block">      \begin {aligned}        \operatorname {R} ^i f'_*( \mathscr { L } (n)) &amp;= 0        \qquad \text {for }i&gt;0 \text { and all }n \geqslant0       \\ f'_*( \mathscr { L } (n)) &amp; \neq0         \qquad \text {for all }n \geqslant0 .      \end {aligned}   </fr:tex>
-  These conditions are stable under base change, and thus define a subfunctor <fr:tex>\mathscr { P } ^+</fr:tex> of <fr:tex>\mathscr { P }</fr:tex> that is evidently stable under translation by <fr:tex>\xi</fr:tex>.
+display="block"><![CDATA[     \begin {aligned}       \operatorname {R}^i f'_*(\mathscr {L}(n)) &= 0       \qquad \text {for }i>0\text { and all }n\geqslant 0     \\f'_*(\mathscr {L}(n)) &\neq 0       \qquad \text {for all }n\geqslant 0.     \end {aligned}   ]]></fr:tex>
+  These conditions are stable under base change, and thus define a subfunctor <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {P}]]></fr:tex> that is evidently stable under translation by <fr:tex
+display="inline"><![CDATA[\xi ]]></fr:tex>.
   Using Serre's "Theorems A and B" ([<fr:link
+type="local"
 href="GD1960.xml"
+addr="GD1960"
+title="Eléments de Géométrie Algébrique">GD1960</fr:link>, III, §2]) and generalities ([<fr:link
 type="local"
-addr="GD1960">GD1960</fr:link>, III, §2]) and generalities ([<fr:link
 href="Gro1960a.xml"
-type="local"
-addr="Gro1960a">Gro1960a</fr:link>, IV, 5]), we easily see that <fr:tex>\mathscr { P }</fr:tex> is representable if and only if <fr:tex>\mathscr { P } ^+</fr:tex> is, and so <fr:tex>\mathscr { P } ^+</fr:tex> will be representable by an open <fr:tex>U</fr:tex> of the prescheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> that represents <fr:tex>\mathscr { P }</fr:tex>, and the latter will be an increasing union of opens <fr:tex>U \setminus  n \xi</fr:tex>.
-</fr:p><fr:p>
-  For brevity, let <fr:tex>\mathscr { D } = \mathscr {D} \kern  -1pt \mathit {iv} _{X/S}</fr:tex>, and let <fr:tex>\mathscr { D } ^+</fr:tex> be the inverse image of <fr:tex>\mathscr { P } ^+</fr:tex> under the canonical morphism <fr:tex>\mathscr { D } \to \mathscr { P }</fr:tex>.
+addr="Gro1960a"
+title="Techniques de construction en géométrie analytique">Gro1960a</fr:link>, IV, 5]), we easily see that <fr:tex
+display="inline"><![CDATA[\mathscr {P}]]></fr:tex> is representable if and only if <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex> is, and so <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex> will be representable by an open <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> of the prescheme <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> that represents <fr:tex
+display="inline"><![CDATA[\mathscr {P}]]></fr:tex>, and the latter will be an increasing union of opens <fr:tex
+display="inline"><![CDATA[U\setminus  n\xi ]]></fr:tex>.</fr:p><fr:p>For brevity, let <fr:tex
+display="inline"><![CDATA[\mathscr {D}=\mathscr {D}\kern  -1pt\mathit {iv}_{X/S}]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[\mathscr {D}^+]]></fr:tex> be the inverse image of <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex> under the canonical morphism <fr:tex
+display="inline"><![CDATA[\mathscr {D}\to \mathscr {P}]]></fr:tex>.
   So we have a morphism
 
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>453</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-5-equation-plus</fr:addr><fr:route>fga3.v-5-equation-plus.xml</fr:route><fr:number>+</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">        \mathscr { D } ^+        \to   \mathscr { P } ^+     \tag{+}     </fr:tex></fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>510</fr:anchor><fr:addr
+type="user">fga3.v-5-equation-plus</fr:addr><fr:route>fga3.v-5-equation-plus.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>+</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[       \mathscr {D}^+       \to  \mathscr {P}^+     \tag{+}     ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
 
-  and we already know that <fr:tex>\mathscr { D } ^+</fr:tex> is representable by an open <fr:tex>D^+</fr:tex> of the prescheme <fr:tex>D= \underline { \operatorname {Div} } _{X/S}</fr:tex> (and, more precisely, by <fr:em>projective bundles associated to locally free modules</fr:em> that are everywhere non-zero);
-  this is due to the fact that, if <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X \times _S S'</fr:tex> is, as at the start of this section, then <fr:tex>f'_*( \mathscr { L } )</fr:tex> is a <fr:em>locally free</fr:em> non-zero module, whose formation commutes with base change;
+  and we already know that <fr:tex
+display="inline"><![CDATA[\mathscr {D}^+]]></fr:tex> is representable by an open <fr:tex
+display="inline"><![CDATA[D^+]]></fr:tex> of the prescheme <fr:tex
+display="inline"><![CDATA[D=\underline {\operatorname {Div}}_{X/S}]]></fr:tex> (and, more precisely, by <fr:em>projective bundles associated to locally free modules</fr:em> that are everywhere non-zero);
+  this is due to the fact that, if <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X\times _S S']]></fr:tex> is, as at the start of this section, then <fr:tex
+display="inline"><![CDATA[f'_*(\mathscr {L})]]></fr:tex> is a <fr:em>locally free</fr:em> non-zero module, whose formation commutes with base change;
   with the notation of <fr:ref
 addr="fga3.v-4-theorem-4.3"
 href="fga3.v-4-theorem-4.3.xml"
 taxon="Theorem"
-number="4.3"></fr:ref>, <fr:tex>\mathscr { Q }</fr:tex> is then isomorphic to the dual of <fr:tex>f'_*( \mathscr { L } )</fr:tex>.
+number="4.3" />, <fr:tex
+display="inline"><![CDATA[\mathscr {Q}]]></fr:tex> is then isomorphic to the dual of <fr:tex
+display="inline"><![CDATA[f'_*(\mathscr {L})]]></fr:tex>.
   Using the general criterion ([<fr:link
+type="local"
 href="Gro1960a.xml"
+addr="Gro1960a"
+title="Techniques de construction en géométrie analytique">Gro1960a</fr:link>, IV, 4.7]), we can thus conclude that <fr:tex
+display="inline"><![CDATA[P^+]]></fr:tex> is representable.
+  In <fr:em>loc. cit.</fr:em>, we take <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex> to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by <fr:link
 type="local"
-addr="Gro1960a">Gro1960a</fr:link>, IV, 4.7]), we can thus conclude that <fr:tex>P^+</fr:tex> is representable.
-  In <fr:em>loc. cit.</fr:em>, we take <fr:tex>\mathcal {S}</fr:tex> to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by <fr:link
 href="fga3.i-b.1.xml"
-type="local"
-addr="fga3.i-b.1">FGA 3.I, §B</fr:link>).
+addr="fga3.i-b.1"
+title="Generalities, and descent by faithfully flat morphisms › Descent by faithfully flat morphisms › Statement of the descent theorems">FGA 3.I, §B</fr:link>).
   
   Condition (a) of <fr:em>loc. cit.</fr:em>, namely that <fr:ref
 addr="fga3.v-5-equation-plus"
 href="fga3.v-5-equation-plus.xml"
 taxon="Equation"
-number="+"></fr:ref> is representable by morphisms that are elements of <fr:tex>\mathcal {S}</fr:tex>, is satisfied as we have just seen;
-  condition (b) says that the functor <fr:tex>\mathscr { P } ^+</fr:tex> is is compatible with faithfully flat quasi-compact descent, which is immediate.
-  It remains only to prove condition (c) of <fr:em>loc. cit.</fr:em>, namely that the equivalence <fr:tex>R</fr:tex> in the prescheme <fr:tex>D^+</fr:tex> induced by the <fr:tex>\mathcal {S}</fr:tex>-representable morphism in <fr:ref
+number="+" /> is representable by morphisms that are elements of <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex>, is satisfied as we have just seen;
+  condition (b) says that the functor <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex> is is compatible with faithfully flat quasi-compact descent, which is immediate.
+  It remains only to prove condition (c) of <fr:em>loc. cit.</fr:em>, namely that the equivalence <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> in the prescheme <fr:tex
+display="inline"><![CDATA[D^+]]></fr:tex> induced by the <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex>-representable morphism in <fr:ref
 addr="fga3.v-5-equation-plus"
 href="fga3.v-5-equation-plus.xml"
 taxon="Equation"
-number="+"></fr:ref> is <fr:tex>\mathcal {S}</fr:tex>-effective, i.e. is effective and such that <fr:tex>D^+ \to  D^+/R</fr:tex> is in <fr:tex>\mathcal {S}</fr:tex>.
-  For this, note first of all that the opens <fr:tex>{D^+}^Q</fr:tex> of <fr:tex>D^+</fr:tex> that correspond to the virtual Hilbert polynomials <fr:tex>Q \in \mathbb {Q}[t]</fr:tex> are stable under <fr:tex>R</fr:tex> (since the fibres of <fr:tex>R</fr:tex> are connected), which reduces the problem to proving that, for all <fr:tex>Q</fr:tex>, the induced equivalence relation <fr:tex>R^Q</fr:tex> on <fr:tex>{D^+}^Q</fr:tex> is <fr:tex>\mathcal {S}</fr:tex>-effective.
-  But now <fr:tex>{D^+}^Q</fr:tex> is quasi-projective, and the equivalence relation <fr:tex>R^Q</fr:tex> is projective and flat.
+number="+" /> is <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex>-effective, i.e. is effective and such that <fr:tex
+display="inline"><![CDATA[D^+\to  D^+/R]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex>.
+  For this, note first of all that the opens <fr:tex
+display="inline"><![CDATA[{D^+}^Q]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[D^+]]></fr:tex> that correspond to the virtual Hilbert polynomials <fr:tex
+display="inline"><![CDATA[Q\in \mathbb {Q}[t]]]></fr:tex> are stable under <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> (since the fibres of <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> are connected), which reduces the problem to proving that, for all <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex>, the induced equivalence relation <fr:tex
+display="inline"><![CDATA[R^Q]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[{D^+}^Q]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex>-effective.
+  But now <fr:tex
+display="inline"><![CDATA[{D^+}^Q]]></fr:tex> is quasi-projective, and the equivalence relation <fr:tex
+display="inline"><![CDATA[R^Q]]></fr:tex> is projective and flat.
   We are thus under the hypothesis of <fr:link
-href="fga3.iii-6-theorem-6.1.xml"
 type="local"
-addr="fga3.iii-6-theorem-6.1">FGA 3.III, Theorem 6.1</fr:link>, which implies the desired result.
-</fr:p><fr:p>
-  In the general case where <fr:tex>X/S</fr:tex> does not necessarily admit a section, we can easily reduce to the above case by the technique of descent, where we can repeat the above proof with the modification that is imposed upon the definition of <fr:tex>\mathscr { P } ^+</fr:tex>.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+href="fga3.iii-6-theorem-6.1.xml"
+addr="fga3.iii-6-theorem-6.1">FGA 3.III, Theorem 6.1</fr:link>, which implies the desired result.</fr:p><fr:p>In the general case where <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> does not necessarily admit a section, we can easily reduce to the above case by the technique of descent, where we can repeat the above proof with the modification that is imposed upon the definition of <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex>.</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>454</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.v-5-remarks-5.1</fr:addr><fr:route>fga3.v-5-remarks-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    The method that we followed is essentially that of Matsusaka for the projective construction of Picard varieties.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>511</fr:anchor><fr:addr
+type="user">fga3.v-5-remarks-5.1</fr:addr><fr:route>fga3.v-5-remarks-5.1.xml</fr:route><fr:taxon>Remarks</fr:taxon><fr:authors /><fr:number>5.1</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The method that we followed is essentially that of Matsusaka for the projective construction of Picard varieties.
     The result that we invoke from <fr:ref
 addr="fga3.iii"
 href="fga3.iii.xml"
 taxon="FGA"
-number="3.III"></fr:ref> that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [Mumford–Tate seminar, 1962]).
+number="3.III" /> that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [Mumford–Tate seminar, 1962]).
     (Classically, these quotients are constructed by using Chow coordinates).
-    Note that the formation of the open <fr:tex>\underline { \operatorname {Pic} } _{X/S}^+</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> and its decomposition into opens <fr:tex>{ \underline { \operatorname {Pic} } _{X/S}^+}^Q</fr:tex> that are quasi-projcetive over <fr:tex>S</fr:tex> following the Hilbert polynomials for the <fr:em>divisors</fr:em> that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    Note that the formation of the open <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^+]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> and its decomposition into opens <fr:tex
+display="inline"><![CDATA[{\underline {\operatorname {Pic}}_{X/S}^+}^Q]]></fr:tex> that are quasi-projcetive over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> following the Hilbert polynomials for the <fr:em>divisors</fr:em> that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>455</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.v-5-remarks-5.2</fr:addr><fr:route>fga3.v-5-remarks-5.2.xml</fr:route><fr:number>5.2</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    It is not out of the question that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exist whenever <fr:tex>f \colon  X \to  S</fr:tex> is proper and flat and such that the homomorphisms <fr:tex>k(s) \to \operatorname {H} ^0(X_s, \mathcal {O} _{X_s})</fr:tex> (for <fr:tex>s \in  S</fr:tex>) are isomorphisms (this latter condition also then implying that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, and that this remain true after any base change <fr:tex>S' \to  S</fr:tex>).
-    This at least is what we can prove in the setting of analytic spaces, if <fr:tex>f</fr:tex> is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in [<fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>512</fr:anchor><fr:addr
+type="user">fga3.v-5-remarks-5.2</fr:addr><fr:route>fga3.v-5-remarks-5.2.xml</fr:route><fr:taxon>Remarks</fr:taxon><fr:authors /><fr:number>5.2</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>It is not out of the question that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> exist whenever <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> is proper and flat and such that the homomorphisms <fr:tex
+display="inline"><![CDATA[k(s)\to \operatorname {H}^0(X_s,\mathcal {O}_{X_s})]]></fr:tex> (for <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex>) are isomorphisms (this latter condition also then implying that <fr:tex
+display="inline"><![CDATA[\mathcal {O}_S\xrightarrow {\sim } f_*(\mathcal {O}_X)]]></fr:tex>, and that this remain true after any base change <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex>).
+    This at least is what we can prove in the setting of analytic spaces, if <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in [<fr:link
+type="local"
 href="Gro1960a.xml"
-type="local"
-addr="Gro1960a">Gro1960a</fr:link>, IX, 3.1].
+addr="Gro1960a"
+title="Techniques de construction en géométrie analytique">Gro1960a</fr:link>, IX, 3.1].
     
-    In this method, the passage to the quotient by a <fr:em>proper</fr:em> and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of <fr:tex>X</fr:tex> into <fr:tex>\mathbb {P}_S^r</fr:tex>.
+    In this method, the passage to the quotient by a <fr:em>proper</fr:em> and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> into <fr:tex
+display="inline"><![CDATA[\mathbb {P}_S^r]]></fr:tex>.
     This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group <fr:link
-href="Mum1961.xml"
 type="local"
-addr="Mum1961">[Mum1961]</fr:link>;
-    for now, there is no written proof, except when <fr:tex>X</fr:tex> has "lots of local sections" over <fr:tex>S</fr:tex>, for example if <fr:tex>X</fr:tex> is separable over a complete local ring with algebraically closed residue field.
+href="Mum1961.xml"
+addr="Mum1961"
+title="An elementary theorem in geometric invariant theory">[Mum1961]</fr:link>;
+    for now, there is no written proof, except when <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> has "lots of local sections" over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, for example if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is separable over a complete local ring with algebraically closed residue field.
     In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
-    (Technically, the difficulty comes from the fact that, when the geometric fibres of <fr:tex>f</fr:tex> are not integral, then the functor envisaged in <fr:ref
+    (Technically, the difficulty comes from the fact that, when the geometric fibres of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> are not integral, then the functor envisaged in <fr:ref
 addr="fga3.v-4-theorem-4.3"
 href="fga3.v-4-theorem-4.3.xml"
 taxon="Theorem"
-number="4.3"></fr:ref> is no longer representable by the projective bundle <fr:tex>\mathbb {P}( \mathscr { Q } )</fr:tex> itself, but by an <fr:em>open</fr:em> of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).
-  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
-    As I point out at the start of the next talk, the existence conjecture suggested here is false, but Mumford has proven a slightly weaker theorem using his methods.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="4.3" /> is no longer representable by the projective bundle <fr:tex
+display="inline"><![CDATA[\mathbb {P}(\mathscr {Q})]]></fr:tex> itself, but by an <fr:em>open</fr:em> of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).</fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    As I point out at the start of the next talk, the existence conjecture suggested here is false, but Mumford has proven a slightly weaker theorem using his methods.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>456</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-5-remark-5.3</fr:addr><fr:route>fga3.v-5-remark-5.3.xml</fr:route><fr:number>5.3</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang <fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>513</fr:anchor><fr:addr
+type="user">fga3.v-5-remark-5.3</fr:addr><fr:route>fga3.v-5-remark-5.3.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:number>5.3</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang <fr:link
+type="local"
 href="Lan1959.xml"
+addr="Lan1959"
+title="Abelian varieties">[Lan1959]</fr:link> or the article by Chevalley <fr:link
 type="local"
-addr="Lan1959">[Lan1959]</fr:link> or the article by Chevalley <fr:link
 href="Che1960.xml"
-type="local"
-addr="Che1960">[Che1960]</fr:link>, which follow the path sketched by Weil.
+addr="Che1960"
+title="Sur la théorie de Picard">[Che1960]</fr:link>, which follow the path sketched by Weil.
     Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in <fr:ref
 addr="fga3.v-1"
 href="fga3.v-1.xml"
-number="1"></fr:ref> (essentially those of Chevalley, but taking into account the "variety of parameters" with nilpotent elements).
+number="1" /> (essentially those of Chevalley, but taking into account the "variety of parameters" with nilpotent elements).
     The fact that the construction of Picard schemes should precede, not follow, the theory of abelian varieties is clear a priori, by the fact that, in general, Picard schemes are not, nor do they reduce to, abelian schemes, as we already see in the case of singular curves over an algebraically closed field, where we find the "generalised Jacobians" of Rosenlicht, which are not abelian varieties.
     Furthermore, the theory of abelian varieties, and more generally of abelian schemes, becomes much simpler once we have a theory of Picard schemes in general.
-    In particular, the theory of duality for abelian schemes, and notably the results of Cartier type, then become slightly more formal (cf. for example [Mumford–Tate seminar, 1962]).
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    In particular, the theory of duality for abelian schemes, and notably the results of Cartier type, then become slightly more formal (cf. for example [Mumford–Tate seminar, 1962]).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>457</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.v-5-remarks-5.4</fr:addr><fr:route>fga3.v-5-remarks-5.4.xml</fr:route><fr:number>5.4</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    The "compatibility principle" of Igusa for the Jacobian of a curve degenerating to a singular curve can only be well understood as an existence theorem of the Picard scheme of a relative scheme in curves <fr:tex>X/S</fr:tex> that are not necessarily simple over <fr:tex>S</fr:tex>.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>514</fr:anchor><fr:addr
+type="user">fga3.v-5-remarks-5.4</fr:addr><fr:route>fga3.v-5-remarks-5.4.xml</fr:route><fr:taxon>Remarks</fr:taxon><fr:authors /><fr:number>5.4</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The "compatibility principle" of Igusa for the Jacobian of a curve degenerating to a singular curve can only be well understood as an existence theorem of the Picard scheme of a relative scheme in curves <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> that are not necessarily simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
     This is thus a particular case of the principal existence theorem <fr:ref
 addr="fga3.v-3-theorem-3.1"
 href="fga3.v-3-theorem-3.1.xml"
 taxon="Theorem"
-number="3.1"></fr:ref> when the specialised curve is integral (i.e. in classical terms, irreducible of multiplicity <fr:tex>1</fr:tex>).
-    We note that, for now, the case of a reducible special curve (even when the components are of multiplicity <fr:tex>1</fr:tex>, i.e. when the special curve is separable over the residue field) is not covered by the known existence theorems, except for in the case where we are over a <fr:em>complete</fr:em> discrete valuation ring with algebraically closed residue field, cf. <fr:ref
+number="3.1" /> when the specialised curve is integral (i.e. in classical terms, irreducible of multiplicity <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>).
+    We note that, for now, the case of a reducible special curve (even when the components are of multiplicity <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>, i.e. when the special curve is separable over the residue field) is not covered by the known existence theorems, except for in the case where we are over a <fr:em>complete</fr:em> discrete valuation ring with algebraically closed residue field, cf. <fr:ref
 addr="fga3.v-5-remarks-5.2"
 href="fga3.v-5-remarks-5.2.xml"
 taxon="Remarks"
-number="5.2"></fr:ref>.
-    This question of existence certainly arises in a geometric construction, in the theory of schemes, of Baily–Satake "compactifications" of modular schemes of curves of genus <fr:tex>g</fr:tex>.
-    (This compactification is known for now only for <fr:tex>g=1</fr:tex>, thanks to work of Igusa).
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="5.2" />.
+    This question of existence certainly arises in a geometric construction, in the theory of schemes, of Baily–Satake "compactifications" of modular schemes of curves of genus <fr:tex
+display="inline"><![CDATA[g]]></fr:tex>.
+    (This compactification is known for now only for <fr:tex
+display="inline"><![CDATA[g=1]]></fr:tex>, thanks to work of Igusa).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2213</fr:anchor><fr:addr>fga3.v-5</fr:addr><fr:route>fga3.v-5.xml</fr:route><fr:title><fr:link
-href="fga3.v.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2255</fr:anchor><fr:addr
+type="user">fga3.v-5</fr:addr><fr:route>fga3.v-5.xml</fr:route><fr:title
+text="Picard schemes: Existence theorems › Proof of the principal existence theorem"><fr:link
 type="local"
-addr="fga3.v">Picard schemes: Existence theorems</fr:link> › Proof of the principal existence theorem</fr:title><fr:number>5</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  Under the conditions of <fr:ref
+href="fga3.v.xml"
+addr="fga3.v"
+title="Picard schemes: Existence theorems">Picard schemes: Existence theorems</fr:link> › Proof of the principal existence theorem</fr:title><fr:authors /><fr:number>5</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Under the conditions of <fr:ref
 addr="fga3.v-3-theorem-3.1"
 href="fga3.v-3-theorem-3.1.xml"
 taxon="Theorem"
-number="3.1"></fr:ref>, choose some module <fr:tex>\mathcal {O} _X(1)</fr:tex> that is very ample over <fr:tex>X/S</fr:tex>, and let <fr:tex>\xi</fr:tex> be the corresponding element of <fr:tex>\operatorname {Pic} (X/S)</fr:tex>.
-  For brevity, let <fr:tex>\mathscr { P } (S')= \operatorname {Pic} (X \times _S S'/S')</fr:tex>, and suppose, for simplicity, that <fr:tex>X/S</fr:tex> admits a section.
-  Let <fr:tex>\mathscr { P } ^+(S')</fr:tex> be the subset of <fr:tex>\mathscr { P } (S')</fr:tex> consisting of classes of the <fr:tex>\mathscr { L }</fr:tex> that are invertible on <fr:tex>X \times _S S'</fr:tex> such that
+number="3.1" />, choose some module <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex> that is very ample over <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[\xi ]]></fr:tex> be the corresponding element of <fr:tex
+display="inline"><![CDATA[\operatorname {Pic}(X/S)]]></fr:tex>.
+  For brevity, let <fr:tex
+display="inline"><![CDATA[\mathscr {P}(S')=\operatorname {Pic}(X\times _S S'/S')]]></fr:tex>, and suppose, for simplicity, that <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> admits a section.
+  Let <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+(S')]]></fr:tex> be the subset of <fr:tex
+display="inline"><![CDATA[\mathscr {P}(S')]]></fr:tex> consisting of classes of the <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> that are invertible on <fr:tex
+display="inline"><![CDATA[X\times _S S']]></fr:tex> such that
   <fr:tex
-display="block">      \begin {aligned}        \operatorname {R} ^i f'_*( \mathscr { L } (n)) &amp;= 0        \qquad \text {for }i&gt;0 \text { and all }n \geqslant0       \\ f'_*( \mathscr { L } (n)) &amp; \neq0         \qquad \text {for all }n \geqslant0 .      \end {aligned}   </fr:tex>
-  These conditions are stable under base change, and thus define a subfunctor <fr:tex>\mathscr { P } ^+</fr:tex> of <fr:tex>\mathscr { P }</fr:tex> that is evidently stable under translation by <fr:tex>\xi</fr:tex>.
+display="block"><![CDATA[     \begin {aligned}       \operatorname {R}^i f'_*(\mathscr {L}(n)) &= 0       \qquad \text {for }i>0\text { and all }n\geqslant 0     \\f'_*(\mathscr {L}(n)) &\neq 0       \qquad \text {for all }n\geqslant 0.     \end {aligned}   ]]></fr:tex>
+  These conditions are stable under base change, and thus define a subfunctor <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathscr {P}]]></fr:tex> that is evidently stable under translation by <fr:tex
+display="inline"><![CDATA[\xi ]]></fr:tex>.
   Using Serre's "Theorems A and B" ([<fr:link
+type="local"
 href="GD1960.xml"
+addr="GD1960"
+title="Eléments de Géométrie Algébrique">GD1960</fr:link>, III, §2]) and generalities ([<fr:link
 type="local"
-addr="GD1960">GD1960</fr:link>, III, §2]) and generalities ([<fr:link
 href="Gro1960a.xml"
-type="local"
-addr="Gro1960a">Gro1960a</fr:link>, IV, 5]), we easily see that <fr:tex>\mathscr { P }</fr:tex> is representable if and only if <fr:tex>\mathscr { P } ^+</fr:tex> is, and so <fr:tex>\mathscr { P } ^+</fr:tex> will be representable by an open <fr:tex>U</fr:tex> of the prescheme <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> that represents <fr:tex>\mathscr { P }</fr:tex>, and the latter will be an increasing union of opens <fr:tex>U \setminus  n \xi</fr:tex>.
-</fr:p><fr:p>
-  For brevity, let <fr:tex>\mathscr { D } = \mathscr {D} \kern  -1pt \mathit {iv} _{X/S}</fr:tex>, and let <fr:tex>\mathscr { D } ^+</fr:tex> be the inverse image of <fr:tex>\mathscr { P } ^+</fr:tex> under the canonical morphism <fr:tex>\mathscr { D } \to \mathscr { P }</fr:tex>.
+addr="Gro1960a"
+title="Techniques de construction en géométrie analytique">Gro1960a</fr:link>, IV, 5]), we easily see that <fr:tex
+display="inline"><![CDATA[\mathscr {P}]]></fr:tex> is representable if and only if <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex> is, and so <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex> will be representable by an open <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> of the prescheme <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> that represents <fr:tex
+display="inline"><![CDATA[\mathscr {P}]]></fr:tex>, and the latter will be an increasing union of opens <fr:tex
+display="inline"><![CDATA[U\setminus  n\xi ]]></fr:tex>.</fr:p><fr:p>For brevity, let <fr:tex
+display="inline"><![CDATA[\mathscr {D}=\mathscr {D}\kern  -1pt\mathit {iv}_{X/S}]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[\mathscr {D}^+]]></fr:tex> be the inverse image of <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex> under the canonical morphism <fr:tex
+display="inline"><![CDATA[\mathscr {D}\to \mathscr {P}]]></fr:tex>.
   So we have a morphism
 
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>453</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.v-5-equation-plus</fr:addr><fr:route>fga3.v-5-equation-plus.xml</fr:route><fr:number>+</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">        \mathscr { D } ^+        \to   \mathscr { P } ^+     \tag{+}     </fr:tex></fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>510</fr:anchor><fr:addr
+type="user">fga3.v-5-equation-plus</fr:addr><fr:route>fga3.v-5-equation-plus.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>+</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[       \mathscr {D}^+       \to  \mathscr {P}^+     \tag{+}     ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
 
-  and we already know that <fr:tex>\mathscr { D } ^+</fr:tex> is representable by an open <fr:tex>D^+</fr:tex> of the prescheme <fr:tex>D= \underline { \operatorname {Div} } _{X/S}</fr:tex> (and, more precisely, by <fr:em>projective bundles associated to locally free modules</fr:em> that are everywhere non-zero);
-  this is due to the fact that, if <fr:tex>\mathscr { L }</fr:tex> on <fr:tex>X \times _S S'</fr:tex> is, as at the start of this section, then <fr:tex>f'_*( \mathscr { L } )</fr:tex> is a <fr:em>locally free</fr:em> non-zero module, whose formation commutes with base change;
+  and we already know that <fr:tex
+display="inline"><![CDATA[\mathscr {D}^+]]></fr:tex> is representable by an open <fr:tex
+display="inline"><![CDATA[D^+]]></fr:tex> of the prescheme <fr:tex
+display="inline"><![CDATA[D=\underline {\operatorname {Div}}_{X/S}]]></fr:tex> (and, more precisely, by <fr:em>projective bundles associated to locally free modules</fr:em> that are everywhere non-zero);
+  this is due to the fact that, if <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X\times _S S']]></fr:tex> is, as at the start of this section, then <fr:tex
+display="inline"><![CDATA[f'_*(\mathscr {L})]]></fr:tex> is a <fr:em>locally free</fr:em> non-zero module, whose formation commutes with base change;
   with the notation of <fr:ref
 addr="fga3.v-4-theorem-4.3"
 href="fga3.v-4-theorem-4.3.xml"
 taxon="Theorem"
-number="4.3"></fr:ref>, <fr:tex>\mathscr { Q }</fr:tex> is then isomorphic to the dual of <fr:tex>f'_*( \mathscr { L } )</fr:tex>.
+number="4.3" />, <fr:tex
+display="inline"><![CDATA[\mathscr {Q}]]></fr:tex> is then isomorphic to the dual of <fr:tex
+display="inline"><![CDATA[f'_*(\mathscr {L})]]></fr:tex>.
   Using the general criterion ([<fr:link
+type="local"
 href="Gro1960a.xml"
+addr="Gro1960a"
+title="Techniques de construction en géométrie analytique">Gro1960a</fr:link>, IV, 4.7]), we can thus conclude that <fr:tex
+display="inline"><![CDATA[P^+]]></fr:tex> is representable.
+  In <fr:em>loc. cit.</fr:em>, we take <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex> to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by <fr:link
 type="local"
-addr="Gro1960a">Gro1960a</fr:link>, IV, 4.7]), we can thus conclude that <fr:tex>P^+</fr:tex> is representable.
-  In <fr:em>loc. cit.</fr:em>, we take <fr:tex>\mathcal {S}</fr:tex> to be the set of faithfully flat quasi-compact morphisms of preschemes (which are indeed effective epimorphisms, by <fr:link
 href="fga3.i-b.1.xml"
-type="local"
-addr="fga3.i-b.1">FGA 3.I, §B</fr:link>).
+addr="fga3.i-b.1"
+title="Generalities, and descent by faithfully flat morphisms › Descent by faithfully flat morphisms › Statement of the descent theorems">FGA 3.I, §B</fr:link>).
   
   Condition (a) of <fr:em>loc. cit.</fr:em>, namely that <fr:ref
 addr="fga3.v-5-equation-plus"
 href="fga3.v-5-equation-plus.xml"
 taxon="Equation"
-number="+"></fr:ref> is representable by morphisms that are elements of <fr:tex>\mathcal {S}</fr:tex>, is satisfied as we have just seen;
-  condition (b) says that the functor <fr:tex>\mathscr { P } ^+</fr:tex> is is compatible with faithfully flat quasi-compact descent, which is immediate.
-  It remains only to prove condition (c) of <fr:em>loc. cit.</fr:em>, namely that the equivalence <fr:tex>R</fr:tex> in the prescheme <fr:tex>D^+</fr:tex> induced by the <fr:tex>\mathcal {S}</fr:tex>-representable morphism in <fr:ref
+number="+" /> is representable by morphisms that are elements of <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex>, is satisfied as we have just seen;
+  condition (b) says that the functor <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex> is is compatible with faithfully flat quasi-compact descent, which is immediate.
+  It remains only to prove condition (c) of <fr:em>loc. cit.</fr:em>, namely that the equivalence <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> in the prescheme <fr:tex
+display="inline"><![CDATA[D^+]]></fr:tex> induced by the <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex>-representable morphism in <fr:ref
 addr="fga3.v-5-equation-plus"
 href="fga3.v-5-equation-plus.xml"
 taxon="Equation"
-number="+"></fr:ref> is <fr:tex>\mathcal {S}</fr:tex>-effective, i.e. is effective and such that <fr:tex>D^+ \to  D^+/R</fr:tex> is in <fr:tex>\mathcal {S}</fr:tex>.
-  For this, note first of all that the opens <fr:tex>{D^+}^Q</fr:tex> of <fr:tex>D^+</fr:tex> that correspond to the virtual Hilbert polynomials <fr:tex>Q \in \mathbb {Q}[t]</fr:tex> are stable under <fr:tex>R</fr:tex> (since the fibres of <fr:tex>R</fr:tex> are connected), which reduces the problem to proving that, for all <fr:tex>Q</fr:tex>, the induced equivalence relation <fr:tex>R^Q</fr:tex> on <fr:tex>{D^+}^Q</fr:tex> is <fr:tex>\mathcal {S}</fr:tex>-effective.
-  But now <fr:tex>{D^+}^Q</fr:tex> is quasi-projective, and the equivalence relation <fr:tex>R^Q</fr:tex> is projective and flat.
+number="+" /> is <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex>-effective, i.e. is effective and such that <fr:tex
+display="inline"><![CDATA[D^+\to  D^+/R]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex>.
+  For this, note first of all that the opens <fr:tex
+display="inline"><![CDATA[{D^+}^Q]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[D^+]]></fr:tex> that correspond to the virtual Hilbert polynomials <fr:tex
+display="inline"><![CDATA[Q\in \mathbb {Q}[t]]]></fr:tex> are stable under <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> (since the fibres of <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> are connected), which reduces the problem to proving that, for all <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex>, the induced equivalence relation <fr:tex
+display="inline"><![CDATA[R^Q]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[{D^+}^Q]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\mathcal {S}]]></fr:tex>-effective.
+  But now <fr:tex
+display="inline"><![CDATA[{D^+}^Q]]></fr:tex> is quasi-projective, and the equivalence relation <fr:tex
+display="inline"><![CDATA[R^Q]]></fr:tex> is projective and flat.
   We are thus under the hypothesis of <fr:link
-href="fga3.iii-6-theorem-6.1.xml"
 type="local"
-addr="fga3.iii-6-theorem-6.1">FGA 3.III, Theorem 6.1</fr:link>, which implies the desired result.
-</fr:p><fr:p>
-  In the general case where <fr:tex>X/S</fr:tex> does not necessarily admit a section, we can easily reduce to the above case by the technique of descent, where we can repeat the above proof with the modification that is imposed upon the definition of <fr:tex>\mathscr { P } ^+</fr:tex>.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+href="fga3.iii-6-theorem-6.1.xml"
+addr="fga3.iii-6-theorem-6.1">FGA 3.III, Theorem 6.1</fr:link>, which implies the desired result.</fr:p><fr:p>In the general case where <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> does not necessarily admit a section, we can easily reduce to the above case by the technique of descent, where we can repeat the above proof with the modification that is imposed upon the definition of <fr:tex
+display="inline"><![CDATA[\mathscr {P}^+]]></fr:tex>.</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>454</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.v-5-remarks-5.1</fr:addr><fr:route>fga3.v-5-remarks-5.1.xml</fr:route><fr:number>5.1</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    The method that we followed is essentially that of Matsusaka for the projective construction of Picard varieties.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>511</fr:anchor><fr:addr
+type="user">fga3.v-5-remarks-5.1</fr:addr><fr:route>fga3.v-5-remarks-5.1.xml</fr:route><fr:taxon>Remarks</fr:taxon><fr:authors /><fr:number>5.1</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The method that we followed is essentially that of Matsusaka for the projective construction of Picard varieties.
     The result that we invoke from <fr:ref
 addr="fga3.iii"
 href="fga3.iii.xml"
 taxon="FGA"
-number="3.III"></fr:ref> that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [Mumford–Tate seminar, 1962]).
+number="3.III" /> that allows us to pass to the effective quotient can also easily be deduced from the existence theorem for Hilbert schemes (cf. for example [Mumford–Tate seminar, 1962]).
     (Classically, these quotients are constructed by using Chow coordinates).
-    Note that the formation of the open <fr:tex>\underline { \operatorname {Pic} } _{X/S}^+</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> and its decomposition into opens <fr:tex>{ \underline { \operatorname {Pic} } _{X/S}^+}^Q</fr:tex> that are quasi-projcetive over <fr:tex>S</fr:tex> following the Hilbert polynomials for the <fr:em>divisors</fr:em> that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    Note that the formation of the open <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^+]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> and its decomposition into opens <fr:tex
+display="inline"><![CDATA[{\underline {\operatorname {Pic}}_{X/S}^+}^Q]]></fr:tex> that are quasi-projcetive over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> following the Hilbert polynomials for the <fr:em>divisors</fr:em> that define the invertible modules in question, is compatible with base change (which allows us to apply the technique of descent).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>455</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.v-5-remarks-5.2</fr:addr><fr:route>fga3.v-5-remarks-5.2.xml</fr:route><fr:number>5.2</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    It is not out of the question that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exist whenever <fr:tex>f \colon  X \to  S</fr:tex> is proper and flat and such that the homomorphisms <fr:tex>k(s) \to \operatorname {H} ^0(X_s, \mathcal {O} _{X_s})</fr:tex> (for <fr:tex>s \in  S</fr:tex>) are isomorphisms (this latter condition also then implying that <fr:tex>\mathcal {O} _S \xrightarrow { \sim }  f_*( \mathcal {O} _X)</fr:tex>, and that this remain true after any base change <fr:tex>S' \to  S</fr:tex>).
-    This at least is what we can prove in the setting of analytic spaces, if <fr:tex>f</fr:tex> is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in [<fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>512</fr:anchor><fr:addr
+type="user">fga3.v-5-remarks-5.2</fr:addr><fr:route>fga3.v-5-remarks-5.2.xml</fr:route><fr:taxon>Remarks</fr:taxon><fr:authors /><fr:number>5.2</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>It is not out of the question that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> exist whenever <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> is proper and flat and such that the homomorphisms <fr:tex
+display="inline"><![CDATA[k(s)\to \operatorname {H}^0(X_s,\mathcal {O}_{X_s})]]></fr:tex> (for <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex>) are isomorphisms (this latter condition also then implying that <fr:tex
+display="inline"><![CDATA[\mathcal {O}_S\xrightarrow {\sim } f_*(\mathcal {O}_X)]]></fr:tex>, and that this remain true after any base change <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex>).
+    This at least is what we can prove in the setting of analytic spaces, if <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is further assumed to be projective, by a differential method (that of Chow, if I am not mistaken) explained in [<fr:link
+type="local"
 href="Gro1960a.xml"
-type="local"
-addr="Gro1960a">Gro1960a</fr:link>, IX, 3.1].
+addr="Gro1960a"
+title="Techniques de construction en géométrie analytique">Gro1960a</fr:link>, IX, 3.1].
     
-    In this method, the passage to the quotient by a <fr:em>proper</fr:em> and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of <fr:tex>X</fr:tex> into <fr:tex>\mathbb {P}_S^r</fr:tex>.
+    In this method, the passage to the quotient by a <fr:em>proper</fr:em> and flat equivalence relation in an open of the scheme of divisors is replaced by the passage to the quotient by the projective group in the scheme of immersions of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> into <fr:tex
+display="inline"><![CDATA[\mathbb {P}_S^r]]></fr:tex>.
     This method can probably be adapted to the case of schemes, using the results of Mumford on the passage to the quotient by the projective group <fr:link
-href="Mum1961.xml"
 type="local"
-addr="Mum1961">[Mum1961]</fr:link>;
-    for now, there is no written proof, except when <fr:tex>X</fr:tex> has "lots of local sections" over <fr:tex>S</fr:tex>, for example if <fr:tex>X</fr:tex> is separable over a complete local ring with algebraically closed residue field.
+href="Mum1961.xml"
+addr="Mum1961"
+title="An elementary theorem in geometric invariant theory">[Mum1961]</fr:link>;
+    for now, there is no written proof, except when <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> has "lots of local sections" over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, for example if <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is separable over a complete local ring with algebraically closed residue field.
     In principle, the method in question is of more general scope, since it also gives the existence of Picard preschemes in the case where these are not separated, and where the first method thus necessarily fails.
-    (Technically, the difficulty comes from the fact that, when the geometric fibres of <fr:tex>f</fr:tex> are not integral, then the functor envisaged in <fr:ref
+    (Technically, the difficulty comes from the fact that, when the geometric fibres of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> are not integral, then the functor envisaged in <fr:ref
 addr="fga3.v-4-theorem-4.3"
 href="fga3.v-4-theorem-4.3.xml"
 taxon="Theorem"
-number="4.3"></fr:ref> is no longer representable by the projective bundle <fr:tex>\mathbb {P}( \mathscr { Q } )</fr:tex> itself, but by an <fr:em>open</fr:em> of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).
-  </fr:p><fr:p><fr:em>[Comp.]</fr:em>
-    As I point out at the start of the next talk, the existence conjecture suggested here is false, but Mumford has proven a slightly weaker theorem using his methods.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="4.3" /> is no longer representable by the projective bundle <fr:tex
+display="inline"><![CDATA[\mathbb {P}(\mathscr {Q})]]></fr:tex> itself, but by an <fr:em>open</fr:em> of this, which leads to the delicate question of the passage to the quotient by an equivalence relation that is flat but not proper).</fr:p><fr:p><fr:em>[Comp.]</fr:em>
+    As I point out at the start of the next talk, the existence conjecture suggested here is false, but Mumford has proven a slightly weaker theorem using his methods.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>456</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-5-remark-5.3</fr:addr><fr:route>fga3.v-5-remark-5.3.xml</fr:route><fr:number>5.3</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang <fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>513</fr:anchor><fr:addr
+type="user">fga3.v-5-remark-5.3</fr:addr><fr:route>fga3.v-5-remark-5.3.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:number>5.3</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Note that the proof given here uses neither the preliminary construction of Jacobians of curves or families of curves nor the theory of abelian varieties or abelian schemes, and in this way it essentially distinguishes itself from traditional treatments, such as those in the book by Lang <fr:link
+type="local"
 href="Lan1959.xml"
+addr="Lan1959"
+title="Abelian varieties">[Lan1959]</fr:link> or the article by Chevalley <fr:link
 type="local"
-addr="Lan1959">[Lan1959]</fr:link> or the article by Chevalley <fr:link
 href="Che1960.xml"
-type="local"
-addr="Che1960">[Che1960]</fr:link>, which follow the path sketched by Weil.
+addr="Che1960"
+title="Sur la théorie de Picard">[Che1960]</fr:link>, which follow the path sketched by Weil.
     Even in the case of Jacobians of non-singular curves over an algebraically closed field (the complex numbers, say), the construction given here for the Jacobian is the only one known that comes with the very strong properties that we took as definition in <fr:ref
 addr="fga3.v-1"
 href="fga3.v-1.xml"
-number="1"></fr:ref> (essentially those of Chevalley, but taking into account the "variety of parameters" with nilpotent elements).
+number="1" /> (essentially those of Chevalley, but taking into account the "variety of parameters" with nilpotent elements).
     The fact that the construction of Picard schemes should precede, not follow, the theory of abelian varieties is clear a priori, by the fact that, in general, Picard schemes are not, nor do they reduce to, abelian schemes, as we already see in the case of singular curves over an algebraically closed field, where we find the "generalised Jacobians" of Rosenlicht, which are not abelian varieties.
     Furthermore, the theory of abelian varieties, and more generally of abelian schemes, becomes much simpler once we have a theory of Picard schemes in general.
-    In particular, the theory of duality for abelian schemes, and notably the results of Cartier type, then become slightly more formal (cf. for example [Mumford–Tate seminar, 1962]).
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    In particular, the theory of duality for abelian schemes, and notably the results of Cartier type, then become slightly more formal (cf. for example [Mumford–Tate seminar, 1962]).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>457</fr:anchor><fr:taxon>Remarks</fr:taxon><fr:addr>fga3.v-5-remarks-5.4</fr:addr><fr:route>fga3.v-5-remarks-5.4.xml</fr:route><fr:number>5.4</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    The "compatibility principle" of Igusa for the Jacobian of a curve degenerating to a singular curve can only be well understood as an existence theorem of the Picard scheme of a relative scheme in curves <fr:tex>X/S</fr:tex> that are not necessarily simple over <fr:tex>S</fr:tex>.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>514</fr:anchor><fr:addr
+type="user">fga3.v-5-remarks-5.4</fr:addr><fr:route>fga3.v-5-remarks-5.4.xml</fr:route><fr:taxon>Remarks</fr:taxon><fr:authors /><fr:number>5.4</fr:number><fr:parent>fga3.v-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The "compatibility principle" of Igusa for the Jacobian of a curve degenerating to a singular curve can only be well understood as an existence theorem of the Picard scheme of a relative scheme in curves <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> that are not necessarily simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
     This is thus a particular case of the principal existence theorem <fr:ref
 addr="fga3.v-3-theorem-3.1"
 href="fga3.v-3-theorem-3.1.xml"
 taxon="Theorem"
-number="3.1"></fr:ref> when the specialised curve is integral (i.e. in classical terms, irreducible of multiplicity <fr:tex>1</fr:tex>).
-    We note that, for now, the case of a reducible special curve (even when the components are of multiplicity <fr:tex>1</fr:tex>, i.e. when the special curve is separable over the residue field) is not covered by the known existence theorems, except for in the case where we are over a <fr:em>complete</fr:em> discrete valuation ring with algebraically closed residue field, cf. <fr:ref
+number="3.1" /> when the specialised curve is integral (i.e. in classical terms, irreducible of multiplicity <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>).
+    We note that, for now, the case of a reducible special curve (even when the components are of multiplicity <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>, i.e. when the special curve is separable over the residue field) is not covered by the known existence theorems, except for in the case where we are over a <fr:em>complete</fr:em> discrete valuation ring with algebraically closed residue field, cf. <fr:ref
 addr="fga3.v-5-remarks-5.2"
 href="fga3.v-5-remarks-5.2.xml"
 taxon="Remarks"
-number="5.2"></fr:ref>.
-    This question of existence certainly arises in a geometric construction, in the theory of schemes, of Baily–Satake "compactifications" of modular schemes of curves of genus <fr:tex>g</fr:tex>.
-    (This compactification is known for now only for <fr:tex>g=1</fr:tex>, thanks to work of Igusa).
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+number="5.2" />.
+    This question of existence certainly arises in a geometric construction, in the theory of schemes, of Baily–Satake "compactifications" of modular schemes of curves of genus <fr:tex
+display="inline"><![CDATA[g]]></fr:tex>.
+    (This compactification is known for now only for <fr:tex
+display="inline"><![CDATA[g=1]]></fr:tex>, thanks to work of Igusa).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

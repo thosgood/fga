@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2583</fr:anchor><fr:addr
+type="machine">#265</fr:addr><fr:route>unstable-265.xml</fr:route><fr:taxon>Example</fr:taxon><fr:authors /><fr:parent>fga3.i-a.2.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be the category of preschemes.
+    Let <fr:tex
+display="inline"><![CDATA[S\in \mathcal {C}]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[S'']]></fr:tex> be preschemes that are <fr:em>finite</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, i.e. that correspond to sheaves of algebras <fr:tex
+display="inline"><![CDATA[\mathscr {A}']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathscr {A}'']]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that are quasi-coherent (as sheaves of modules) and of finite type (i.e. coherent, if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is locally Noetherian).
+    Let <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> be the structure morphism of <fr:tex
+display="inline"><![CDATA[S']]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[\beta _1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\beta _2]]></fr:tex> be <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-morphisms from <fr:tex
+display="inline"><![CDATA[S'']]></fr:tex> to <fr:tex
+display="inline"><![CDATA[S']]></fr:tex>, defined by algebra homomorphisms <fr:tex
+display="inline"><![CDATA[\mathscr {A}'\to \mathscr {A}'']]></fr:tex>, which we also denote by <fr:tex
+display="inline"><![CDATA[\beta _1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\beta _2]]></fr:tex>.
+    Using the fact that a finite morphism is closed (the first Cohen–Seidenberg theorem), we can easily prove that the diagram in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>
+
+    <fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>619</fr:anchor><fr:addr
+type="user">fga3.i-a.2.b-equation</fr:addr><fr:route>fga3.i-a.2.b-equation.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>+</fr:number><fr:parent>#265</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[         S \xleftarrow {\alpha }         S' \overset {\beta _1}{\underset {\beta _2}{\leftleftarrows }}         S''       \tag{+}       ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
+
+    
+    is exact if and only if the diagram of sheaves on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>
+    <fr:tex
+display="block"><![CDATA[       \mathscr {O}_S = \mathscr {A} \xrightarrow {\alpha }       \mathscr {A}' \overset {\beta _1}{\underset {\beta _2}{\rightrightarrows }}       \mathscr {A}''     ]]></fr:tex>
+    is exact.
+    In particular, if <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is a finite morphism corresponding to a sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {A}']]></fr:tex> of algebras on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is a strict epimorphism if and only if the diagram of sheaves
+    <fr:tex
+display="block"><![CDATA[       \mathscr {O}_S = \mathscr {A} \to        \mathscr {A}' \overset {p_1}{\underset {p_2}{\rightrightarrows }}       \mathscr {A}'\otimes _{\mathscr {A}}\mathscr {A}'     ]]></fr:tex>
+    is exact (it is an epimorphism if and only if <fr:tex
+display="inline"><![CDATA[\mathscr {A}\to \mathscr {A}']]></fr:tex> is injective).
+    If <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is affine of ring <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> is affine of ring <fr:tex
+display="inline"><![CDATA[A']]></fr:tex>, with <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> finite over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, and so <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex> is a strict epimorphism if and only if <fr:tex
+display="inline"><![CDATA[A\to  A']]></fr:tex> is an isomorphism from <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> to the subring of <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> consisting of the <fr:tex
+display="inline"><![CDATA[x'\in  A']]></fr:tex> such that
+    <fr:tex
+display="block"><![CDATA[       1_{A'}\otimes _A x' - x'\otimes _A 1_{A'}       = 0     ]]></fr:tex>
+    (it is an epimorphism if and only if <fr:tex
+display="inline"><![CDATA[A\to  A']]></fr:tex> is injective).
+    As we have already mentioned, even if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the scheme of a local Artinian ring, then a finite morphism <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex> that is an epimorphism is not necessarily a strict epimorphism.
+    However, we can prove that, <fr:em>if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is a Noetherian prescheme, then every finite morphism <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex> that is an epimorphism is the composition of a finite sequence of strict epimorphisms</fr:em> (also finite).
+    This also shows that the composition of two strict epimorphisms is not necessarily a strict epimorphism.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2584</fr:anchor><fr:addr
+type="user">fga3.i-a.2.b</fr:addr><fr:route>fga3.i-a.2.b.xml</fr:route><fr:authors /><fr:number>A.2.b</fr:number><fr:parent>fga3.i-a.2</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>618</fr:anchor><fr:addr
+type="machine">#265</fr:addr><fr:route>unstable-265.xml</fr:route><fr:taxon>Example</fr:taxon><fr:authors /><fr:parent>fga3.i-a.2.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be the category of preschemes.
+    Let <fr:tex
+display="inline"><![CDATA[S\in \mathcal {C}]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[S'']]></fr:tex> be preschemes that are <fr:em>finite</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, i.e. that correspond to sheaves of algebras <fr:tex
+display="inline"><![CDATA[\mathscr {A}']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathscr {A}'']]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> that are quasi-coherent (as sheaves of modules) and of finite type (i.e. coherent, if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is locally Noetherian).
+    Let <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> be the structure morphism of <fr:tex
+display="inline"><![CDATA[S']]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[\beta _1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\beta _2]]></fr:tex> be <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-morphisms from <fr:tex
+display="inline"><![CDATA[S'']]></fr:tex> to <fr:tex
+display="inline"><![CDATA[S']]></fr:tex>, defined by algebra homomorphisms <fr:tex
+display="inline"><![CDATA[\mathscr {A}'\to \mathscr {A}'']]></fr:tex>, which we also denote by <fr:tex
+display="inline"><![CDATA[\beta _1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\beta _2]]></fr:tex>.
+    Using the fact that a finite morphism is closed (the first Cohen–Seidenberg theorem), we can easily prove that the diagram in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>
+
+    <fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>619</fr:anchor><fr:addr
+type="user">fga3.i-a.2.b-equation</fr:addr><fr:route>fga3.i-a.2.b-equation.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>+</fr:number><fr:parent>#265</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[         S \xleftarrow {\alpha }         S' \overset {\beta _1}{\underset {\beta _2}{\leftleftarrows }}         S''       \tag{+}       ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
+
+    
+    is exact if and only if the diagram of sheaves on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>
+    <fr:tex
+display="block"><![CDATA[       \mathscr {O}_S = \mathscr {A} \xrightarrow {\alpha }       \mathscr {A}' \overset {\beta _1}{\underset {\beta _2}{\rightrightarrows }}       \mathscr {A}''     ]]></fr:tex>
+    is exact.
+    In particular, if <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is a finite morphism corresponding to a sheaf <fr:tex
+display="inline"><![CDATA[\mathscr {A}']]></fr:tex> of algebras on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is a strict epimorphism if and only if the diagram of sheaves
+    <fr:tex
+display="block"><![CDATA[       \mathscr {O}_S = \mathscr {A} \to        \mathscr {A}' \overset {p_1}{\underset {p_2}{\rightrightarrows }}       \mathscr {A}'\otimes _{\mathscr {A}}\mathscr {A}'     ]]></fr:tex>
+    is exact (it is an epimorphism if and only if <fr:tex
+display="inline"><![CDATA[\mathscr {A}\to \mathscr {A}']]></fr:tex> is injective).
+    If <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is affine of ring <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> is affine of ring <fr:tex
+display="inline"><![CDATA[A']]></fr:tex>, with <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> finite over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, and so <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex> is a strict epimorphism if and only if <fr:tex
+display="inline"><![CDATA[A\to  A']]></fr:tex> is an isomorphism from <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> to the subring of <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> consisting of the <fr:tex
+display="inline"><![CDATA[x'\in  A']]></fr:tex> such that
+    <fr:tex
+display="block"><![CDATA[       1_{A'}\otimes _A x' - x'\otimes _A 1_{A'}       = 0     ]]></fr:tex>
+    (it is an epimorphism if and only if <fr:tex
+display="inline"><![CDATA[A\to  A']]></fr:tex> is injective).
+    As we have already mentioned, even if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the scheme of a local Artinian ring, then a finite morphism <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex> that is an epimorphism is not necessarily a strict epimorphism.
+    However, we can prove that, <fr:em>if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is a Noetherian prescheme, then every finite morphism <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex> that is an epimorphism is the composition of a finite sequence of strict epimorphisms</fr:em> (also finite).
+    This also shows that the composition of two strict epimorphisms is not necessarily a strict epimorphism.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

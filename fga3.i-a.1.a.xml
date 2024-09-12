@@ -1,39 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1479</fr:anchor><fr:addr>fga3.i-a.1.a</fr:addr><fr:route>fga3.i-a.1.a.xml</fr:route><fr:number>A.1.a</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1529</fr:anchor><fr:addr
+type="user">fga3.i-a.1.a</fr:addr><fr:route>fga3.i-a.1.a.xml</fr:route><fr:authors /><fr:number>A.1.a</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>532</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.1</fr:addr><fr:route>fga3.i-a.1-definition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A <fr:em>fibred category <fr:tex>\mathcal {F}</fr:tex> with base <fr:tex>\mathcal {C}</fr:tex></fr:em> (or <fr:em>over <fr:tex>\mathcal {C}</fr:tex></fr:em>) consists of
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>587</fr:anchor><fr:addr
+type="user">fga3.i-a.1-definition-1.1</fr:addr><fr:route>fga3.i-a.1-definition-1.1.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>1.1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em>fibred category <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> with base <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex></fr:em> (or <fr:em>over <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex></fr:em>) consists of
 
-    <fr:ul><fr:li>
-        a category <fr:tex>\mathcal {C}</fr:tex></fr:li>
+    <fr:ul><fr:li>a category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex></fr:li>
 
-      <fr:li>
-        for every <fr:tex>X \in \mathcal {C}</fr:tex>, a category <fr:tex>\mathcal {F}_X</fr:tex></fr:li>
+      <fr:li>for every <fr:tex
+display="inline"><![CDATA[X\in \mathcal {C}]]></fr:tex>, a category <fr:tex
+display="inline"><![CDATA[\mathcal {F}_X]]></fr:tex></fr:li>
 
-      <fr:li>
-        for every <fr:tex>\mathcal {C}</fr:tex>-morphism <fr:tex>f \colon  X \to  Y</fr:tex>, a functor <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex>, which we also write as
+      <fr:li>for every <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>-morphism <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex>, a functor <fr:tex
+display="inline"><![CDATA[f^*\colon \mathcal {F}_Y\to \mathcal {F}_X]]></fr:tex>, which we also write as
         <fr:tex
-display="block">           f^*( \xi ) =  \xi   \times _Y X         </fr:tex>
-        for <fr:tex>\xi \in \mathcal {F}_Y</fr:tex> (with <fr:tex>X</fr:tex> being thought of as an "object of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>Y</fr:tex>", i.e. as being endowed with the morphism <fr:tex>f</fr:tex>)
-      </fr:li>
+display="block"><![CDATA[           f^*(\xi ) = \xi  \times _Y X         ]]></fr:tex>
+        for <fr:tex
+display="inline"><![CDATA[\xi \in \mathcal {F}_Y]]></fr:tex> (with <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> being thought of as an "object of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>", i.e. as being endowed with the morphism <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>)</fr:li>
 
-      <fr:li>
-        for any two composible morphisms <fr:tex>X \xrightarrow {f}Y \xrightarrow {g}Z</fr:tex>, an isomorphism of functors
+      <fr:li>for any two composible morphisms <fr:tex
+display="inline"><![CDATA[X\xrightarrow {f}Y\xrightarrow {g}Z]]></fr:tex>, an isomorphism of functors
         <fr:tex
-display="block">           c_{f,g} \colon  (gf)^*  \to  f^*g^*         </fr:tex></fr:li></fr:ul>
+display="block"><![CDATA[           c_{f,g}\colon  (gf)^* \to  f^*g^*         ]]></fr:tex></fr:li></fr:ul>
 
     with the above data being subject to the conditions that
 
@@ -43,94 +54,138 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        <fr:tex>\operatorname {id} ^*= \operatorname {id}</fr:tex>
+        <fr:tex
+display="inline"><![CDATA[\operatorname {id}^*=\operatorname {id}]]></fr:tex>
       </html:li>
 
 
       
  <html:li
 style="list-style-type: &quot;ii. &quot;">
-        <fr:tex>c_{f,g}</fr:tex> is the identity isomorphism if <fr:tex>f</fr:tex> or <fr:tex>g</fr:tex> is an identity isomorphism
+        <fr:tex
+display="inline"><![CDATA[c_{f,g}]]></fr:tex> is the identity isomorphism if <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> is an identity isomorphism
       </html:li>
 
 
       
  <html:li
 style="list-style-type: &quot;iii. &quot;">
-        for any three composible morphisms <fr:tex>X \xrightarrow {f}Y \xrightarrow {g}Z \xrightarrow {h}T</fr:tex>, the following diagram, given by using the isomorphisms of the form <fr:tex>c_{u,v}</fr:tex>, commutes:
+        for any three composible morphisms <fr:tex
+display="inline"><![CDATA[X\xrightarrow {f}Y\xrightarrow {g}Z\xrightarrow {h}T]]></fr:tex>, the following diagram, given by using the isomorphisms of the form <fr:tex
+display="inline"><![CDATA[c_{u,v}]]></fr:tex>, commutes:
         <fr:tex
-display="block">            \begin {CD}             (h(gf))^* @= ((hg)f)^*            \\ @VVV @VVV            \\ (gf)^*h^* @. f^*(hg)^*            \\ @VVV @VVV            \\ (f^*g^*)h^* @= f^*(g^*h^*)            \end {CD}         </fr:tex>
+display="block"><![CDATA[           \begin {CD}             (h(gf))^* @= ((hg)f)^*           \\@VVV @VVV           \\(gf)^*h^* @. f^*(hg)^*           \\@VVV @VVV           \\(f^*g^*)h^* @= f^*(g^*h^*)           \end {CD}         ]]></fr:tex>
       </html:li>
 
-    </html:ol></fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    </html:ol></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>533</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-1</fr:addr><fr:route>fga3.i-a.1-example-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {C}</fr:tex> be a category where all fibre products exist.
-    We then define a fibred category <fr:tex>\mathcal {F}</fr:tex> with base <fr:tex>\mathcal {C}</fr:tex> by setting <fr:tex>\mathcal {F}_X</fr:tex> to be the category of objects of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>X</fr:tex>, and the functor <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex> corresponding to a morphism <fr:tex>f \colon  X \to  Y</fr:tex> being defined by the <fr:em>fibre product</fr:em> <fr:tex>Z \mapsto  Z \times _Y X</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>592</fr:anchor><fr:addr
+type="user">fga3.i-a.1-example-1</fr:addr><fr:route>fga3.i-a.1-example-1.xml</fr:route><fr:taxon>Example</fr:taxon><fr:authors /><fr:number>1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category where all fibre products exist.
+    We then define a fibred category <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> with base <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> by setting <fr:tex
+display="inline"><![CDATA[\mathcal {F}_X]]></fr:tex> to be the category of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, and the functor <fr:tex
+display="inline"><![CDATA[f^*\colon \mathcal {F}_Y\to \mathcal {F}_X]]></fr:tex> corresponding to a morphism <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> being defined by the <fr:em>fibre product</fr:em> <fr:tex
+display="inline"><![CDATA[Z\mapsto  Z\times _Y X]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>534</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-2</fr:addr><fr:route>fga3.i-a.1-example-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {C}</fr:tex> be the category of preschemes, and, for <fr:tex>X \in \mathcal {C}</fr:tex>, let <fr:tex>\mathcal {F}_X</fr:tex> be the category of quasi-coherent sheaves of modules on <fr:tex>X</fr:tex>.
-    If <fr:tex>f \colon  X \to  Y</fr:tex> is a morphism of preschemes, then <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex> is the <fr:em>inverse image of sheaves of modules</fr:em> functor.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>593</fr:anchor><fr:addr
+type="user">fga3.i-a.1-example-2</fr:addr><fr:route>fga3.i-a.1-example-2.xml</fr:route><fr:taxon>Example</fr:taxon><fr:authors /><fr:number>2</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be the category of preschemes, and, for <fr:tex
+display="inline"><![CDATA[X\in \mathcal {C}]]></fr:tex>, let <fr:tex
+display="inline"><![CDATA[\mathcal {F}_X]]></fr:tex> be the category of quasi-coherent sheaves of modules on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>.
+    If <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> is a morphism of preschemes, then <fr:tex
+display="inline"><![CDATA[f^*\colon \mathcal {F}_Y\to \mathcal {F}_X]]></fr:tex> is the <fr:em>inverse image of sheaves of modules</fr:em> functor.
     
-    We thus obtain a category fibred over <fr:tex>\mathcal {C}</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    We thus obtain a category fibred over <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1478</fr:anchor><fr:addr>fga3.i-a.1</fr:addr><fr:route>fga3.i-a.1.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1530</fr:anchor><fr:addr
+type="user">fga3.i-a.1</fr:addr><fr:route>fga3.i-a.1.xml</fr:route><fr:title
+text="Generalities, and descent by faithfully flat morphisms › Preliminaries on categories › Fibred categories, descent data, {F}-descent morphisms"><fr:link
+type="local"
 href="fga3.i-a.xml"
+addr="fga3.i-a"
+title="Generalities, and descent by faithfully flat morphisms › Preliminaries on categories"><fr:link
 type="local"
-addr="fga3.i-a"><fr:link
 href="fga3.i.xml"
-type="local"
-addr="fga3.i">Generalities, and descent by faithfully flat morphisms</fr:link> › Preliminaries on categories</fr:link> › Fibred categories, descent data, <fr:tex>\mathcal {F}</fr:tex>-descent morphisms</fr:title><fr:number>A.1</fr:number><fr:parent>fga3.i-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+addr="fga3.i"
+title="Generalities, and descent by faithfully flat morphisms">Generalities, and descent by faithfully flat morphisms</fr:link> › Preliminaries on categories</fr:link> › Fibred categories, descent data, <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphisms</fr:title><fr:authors /><fr:number>A.1</fr:number><fr:parent>fga3.i-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>535</fr:anchor><fr:addr>fga3.i-a.1.a</fr:addr><fr:route>fga3.i-a.1.a.xml</fr:route><fr:number>A.1.a</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>586</fr:anchor><fr:addr
+type="user">fga3.i-a.1.a</fr:addr><fr:route>fga3.i-a.1.a.xml</fr:route><fr:authors /><fr:number>A.1.a</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>532</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.1</fr:addr><fr:route>fga3.i-a.1-definition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A <fr:em>fibred category <fr:tex>\mathcal {F}</fr:tex> with base <fr:tex>\mathcal {C}</fr:tex></fr:em> (or <fr:em>over <fr:tex>\mathcal {C}</fr:tex></fr:em>) consists of
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>587</fr:anchor><fr:addr
+type="user">fga3.i-a.1-definition-1.1</fr:addr><fr:route>fga3.i-a.1-definition-1.1.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>1.1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em>fibred category <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> with base <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex></fr:em> (or <fr:em>over <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex></fr:em>) consists of
 
-    <fr:ul><fr:li>
-        a category <fr:tex>\mathcal {C}</fr:tex></fr:li>
+    <fr:ul><fr:li>a category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex></fr:li>
 
-      <fr:li>
-        for every <fr:tex>X \in \mathcal {C}</fr:tex>, a category <fr:tex>\mathcal {F}_X</fr:tex></fr:li>
+      <fr:li>for every <fr:tex
+display="inline"><![CDATA[X\in \mathcal {C}]]></fr:tex>, a category <fr:tex
+display="inline"><![CDATA[\mathcal {F}_X]]></fr:tex></fr:li>
 
-      <fr:li>
-        for every <fr:tex>\mathcal {C}</fr:tex>-morphism <fr:tex>f \colon  X \to  Y</fr:tex>, a functor <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex>, which we also write as
+      <fr:li>for every <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>-morphism <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex>, a functor <fr:tex
+display="inline"><![CDATA[f^*\colon \mathcal {F}_Y\to \mathcal {F}_X]]></fr:tex>, which we also write as
         <fr:tex
-display="block">           f^*( \xi ) =  \xi   \times _Y X         </fr:tex>
-        for <fr:tex>\xi \in \mathcal {F}_Y</fr:tex> (with <fr:tex>X</fr:tex> being thought of as an "object of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>Y</fr:tex>", i.e. as being endowed with the morphism <fr:tex>f</fr:tex>)
-      </fr:li>
+display="block"><![CDATA[           f^*(\xi ) = \xi  \times _Y X         ]]></fr:tex>
+        for <fr:tex
+display="inline"><![CDATA[\xi \in \mathcal {F}_Y]]></fr:tex> (with <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> being thought of as an "object of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>", i.e. as being endowed with the morphism <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>)</fr:li>
 
-      <fr:li>
-        for any two composible morphisms <fr:tex>X \xrightarrow {f}Y \xrightarrow {g}Z</fr:tex>, an isomorphism of functors
+      <fr:li>for any two composible morphisms <fr:tex
+display="inline"><![CDATA[X\xrightarrow {f}Y\xrightarrow {g}Z]]></fr:tex>, an isomorphism of functors
         <fr:tex
-display="block">           c_{f,g} \colon  (gf)^*  \to  f^*g^*         </fr:tex></fr:li></fr:ul>
+display="block"><![CDATA[           c_{f,g}\colon  (gf)^* \to  f^*g^*         ]]></fr:tex></fr:li></fr:ul>
 
     with the above data being subject to the conditions that
 
@@ -140,159 +195,235 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        <fr:tex>\operatorname {id} ^*= \operatorname {id}</fr:tex>
+        <fr:tex
+display="inline"><![CDATA[\operatorname {id}^*=\operatorname {id}]]></fr:tex>
       </html:li>
 
 
       
  <html:li
 style="list-style-type: &quot;ii. &quot;">
-        <fr:tex>c_{f,g}</fr:tex> is the identity isomorphism if <fr:tex>f</fr:tex> or <fr:tex>g</fr:tex> is an identity isomorphism
+        <fr:tex
+display="inline"><![CDATA[c_{f,g}]]></fr:tex> is the identity isomorphism if <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> is an identity isomorphism
       </html:li>
 
 
       
  <html:li
 style="list-style-type: &quot;iii. &quot;">
-        for any three composible morphisms <fr:tex>X \xrightarrow {f}Y \xrightarrow {g}Z \xrightarrow {h}T</fr:tex>, the following diagram, given by using the isomorphisms of the form <fr:tex>c_{u,v}</fr:tex>, commutes:
+        for any three composible morphisms <fr:tex
+display="inline"><![CDATA[X\xrightarrow {f}Y\xrightarrow {g}Z\xrightarrow {h}T]]></fr:tex>, the following diagram, given by using the isomorphisms of the form <fr:tex
+display="inline"><![CDATA[c_{u,v}]]></fr:tex>, commutes:
         <fr:tex
-display="block">            \begin {CD}             (h(gf))^* @= ((hg)f)^*            \\ @VVV @VVV            \\ (gf)^*h^* @. f^*(hg)^*            \\ @VVV @VVV            \\ (f^*g^*)h^* @= f^*(g^*h^*)            \end {CD}         </fr:tex>
+display="block"><![CDATA[           \begin {CD}             (h(gf))^* @= ((hg)f)^*           \\@VVV @VVV           \\(gf)^*h^* @. f^*(hg)^*           \\@VVV @VVV           \\(f^*g^*)h^* @= f^*(g^*h^*)           \end {CD}         ]]></fr:tex>
       </html:li>
 
-    </html:ol></fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    </html:ol></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>533</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-1</fr:addr><fr:route>fga3.i-a.1-example-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {C}</fr:tex> be a category where all fibre products exist.
-    We then define a fibred category <fr:tex>\mathcal {F}</fr:tex> with base <fr:tex>\mathcal {C}</fr:tex> by setting <fr:tex>\mathcal {F}_X</fr:tex> to be the category of objects of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>X</fr:tex>, and the functor <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex> corresponding to a morphism <fr:tex>f \colon  X \to  Y</fr:tex> being defined by the <fr:em>fibre product</fr:em> <fr:tex>Z \mapsto  Z \times _Y X</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>592</fr:anchor><fr:addr
+type="user">fga3.i-a.1-example-1</fr:addr><fr:route>fga3.i-a.1-example-1.xml</fr:route><fr:taxon>Example</fr:taxon><fr:authors /><fr:number>1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category where all fibre products exist.
+    We then define a fibred category <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> with base <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> by setting <fr:tex
+display="inline"><![CDATA[\mathcal {F}_X]]></fr:tex> to be the category of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, and the functor <fr:tex
+display="inline"><![CDATA[f^*\colon \mathcal {F}_Y\to \mathcal {F}_X]]></fr:tex> corresponding to a morphism <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> being defined by the <fr:em>fibre product</fr:em> <fr:tex
+display="inline"><![CDATA[Z\mapsto  Z\times _Y X]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>534</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-2</fr:addr><fr:route>fga3.i-a.1-example-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {C}</fr:tex> be the category of preschemes, and, for <fr:tex>X \in \mathcal {C}</fr:tex>, let <fr:tex>\mathcal {F}_X</fr:tex> be the category of quasi-coherent sheaves of modules on <fr:tex>X</fr:tex>.
-    If <fr:tex>f \colon  X \to  Y</fr:tex> is a morphism of preschemes, then <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex> is the <fr:em>inverse image of sheaves of modules</fr:em> functor.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>593</fr:anchor><fr:addr
+type="user">fga3.i-a.1-example-2</fr:addr><fr:route>fga3.i-a.1-example-2.xml</fr:route><fr:taxon>Example</fr:taxon><fr:authors /><fr:number>2</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be the category of preschemes, and, for <fr:tex
+display="inline"><![CDATA[X\in \mathcal {C}]]></fr:tex>, let <fr:tex
+display="inline"><![CDATA[\mathcal {F}_X]]></fr:tex> be the category of quasi-coherent sheaves of modules on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>.
+    If <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> is a morphism of preschemes, then <fr:tex
+display="inline"><![CDATA[f^*\colon \mathcal {F}_Y\to \mathcal {F}_X]]></fr:tex> is the <fr:em>inverse image of sheaves of modules</fr:em> functor.
     
-    We thus obtain a category fibred over <fr:tex>\mathcal {C}</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    We thus obtain a category fibred over <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>541</fr:anchor><fr:addr>fga3.i-a.1.b</fr:addr><fr:route>fga3.i-a.1.b.xml</fr:route><fr:number>A.1.b</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>594</fr:anchor><fr:addr
+type="user">fga3.i-a.1.b</fr:addr><fr:route>fga3.i-a.1.b.xml</fr:route><fr:authors /><fr:number>A.1.b</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>536</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.2</fr:addr><fr:route>fga3.i-a.1-definition-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A diagram of maps of sets
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>595</fr:anchor><fr:addr
+type="user">fga3.i-a.1-definition-1.2</fr:addr><fr:route>fga3.i-a.1-definition-1.2.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>1.2</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A diagram of maps of sets
     <fr:tex
-display="block">       E  \xrightarrow {u}       E'  \overset { v_1 }{ \underset { v_2 }{ \rightrightarrows }}        E''     </fr:tex>
-    is said to be <fr:em>exact</fr:em> if <fr:tex>u</fr:tex> is a bijection from <fr:tex>E</fr:tex> to the subset of <fr:tex>E'</fr:tex> consisting of the <fr:tex>x' \in  E'</fr:tex> such that <fr:tex>v_1(x')=v_2(x')</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+display="block"><![CDATA[       E \xrightarrow {u}       E' \overset {v_1}{\underset {v_2}{\rightrightarrows }}       E''     ]]></fr:tex>
+    is said to be <fr:em>exact</fr:em> if <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> is a bijection from <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> to the subset of <fr:tex
+display="inline"><![CDATA[E']]></fr:tex> consisting of the <fr:tex
+display="inline"><![CDATA[x'\in  E']]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[v_1(x')=v_2(x')]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>538</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.3</fr:addr><fr:route>fga3.i-a.1-definition-1.3.xml</fr:route><fr:number>1.3</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {F}</fr:tex> be a fibred category with base <fr:tex>\mathcal {C}</fr:tex>, and consider a diagram of morphisms in <fr:tex>\mathcal {C}</fr:tex>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>596</fr:anchor><fr:addr
+type="user">fga3.i-a.1-definition-1.3</fr:addr><fr:route>fga3.i-a.1-definition-1.3.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>1.3</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> be a fibred category with base <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, and consider a diagram of morphisms in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>
     <fr:tex
-display="block">       S  \xleftarrow { \alpha }       S'  \overset { \beta _1 }{ \underset { \beta _2 }{ \leftleftarrows }}        S''     </fr:tex>
-    such that <fr:tex>\alpha \beta _1= \alpha \beta _2</fr:tex>;
-    this diagram is said to be <fr:em><fr:tex>\mathcal {F}</fr:tex>-exact</fr:em> if, for every pair <fr:tex>( \xi , \eta )</fr:tex> of elements of <fr:tex>\mathcal {F}_S</fr:tex>, the diagram of sets
+display="block"><![CDATA[       S \xleftarrow {\alpha }       S' \overset {\beta _1}{\underset {\beta _2}{\leftleftarrows }}       S''     ]]></fr:tex>
+    such that <fr:tex
+display="inline"><![CDATA[\alpha \beta _1=\alpha \beta _2]]></fr:tex>;
+    this diagram is said to be <fr:em><fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-exact</fr:em> if, for every pair <fr:tex
+display="inline"><![CDATA[(\xi ,\eta )]]></fr:tex> of elements of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_S]]></fr:tex>, the diagram of sets
 
     <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>537</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-a.1-definition-1.3-equation</fr:addr><fr:route>fga3.i-a.1-definition-1.3-equation.xml</fr:route><fr:number>+</fr:number><fr:parent>fga3.i-a.1-definition-1.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">          \operatorname {Hom} ( \xi , \eta )  \xrightarrow { \alpha ^*}          \operatorname {Hom} ( \alpha ^*( \xi ), \alpha ^*( \eta ))  \overset { \beta _1^* }{ \underset { \beta _2^* }{ \rightrightarrows }}           \operatorname {Hom} ( \gamma ^*( \xi ), \gamma ^*( \eta ))       \tag{+}       </fr:tex></fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>597</fr:anchor><fr:addr
+type="user">fga3.i-a.1-definition-1.3-equation</fr:addr><fr:route>fga3.i-a.1-definition-1.3-equation.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>+</fr:number><fr:parent>fga3.i-a.1-definition-1.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[         \operatorname {Hom}(\xi ,\eta ) \xrightarrow {\alpha ^*}         \operatorname {Hom}(\alpha ^*(\xi ),\alpha ^*(\eta )) \overset {\beta _1^*}{\underset {\beta _2^*}{\rightrightarrows }}         \operatorname {Hom}(\gamma ^*(\xi ),\gamma ^*(\eta ))       \tag{+}       ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
 
-    (where <fr:tex>\gamma = \alpha \beta _1= \alpha \beta _2</fr:tex>) is exact.
-  </fr:p><fr:p>
-    In this diagram above, for simplicity, we have identified <fr:tex>\beta _i^* \alpha ^*</fr:tex> with <fr:tex>( \alpha \beta _i)^*= \gamma ^*</fr:tex>, using <fr:tex>c_{ \beta _i, \alpha }</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    (where <fr:tex
+display="inline"><![CDATA[\gamma =\alpha \beta _1=\alpha \beta _2]]></fr:tex>) is exact.</fr:p><fr:p>In this diagram above, for simplicity, we have identified <fr:tex
+display="inline"><![CDATA[\beta _i^*\alpha ^*]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[(\alpha \beta _i)^*=\gamma ^*]]></fr:tex>, using <fr:tex
+display="inline"><![CDATA[c_{\beta _i,\alpha }]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>539</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.4</fr:addr><fr:route>fga3.i-a.1-definition-1.4.xml</fr:route><fr:number>1.4</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {F}</fr:tex> be a fibred category with base <fr:tex>\mathcal {C}</fr:tex>, and consider morphisms <fr:tex>\beta _1, \beta _2 \colon  S'' \to  S'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex>.
-    Let <fr:tex>\xi ' \in \mathcal {F}_{S'}</fr:tex>.
-    We define a <fr:em>gluing data</fr:em> on <fr:tex>\xi '</fr:tex> (with respect to the pair <fr:tex>( \beta _1, \beta _2)</fr:tex>) to be an isomorphism from <fr:tex>\beta _1^*( \xi ')</fr:tex> to <fr:tex>\beta _2^*( \xi ')</fr:tex>.
-    If <fr:tex>\xi ', \eta ' \in \mathcal {F}_{S'}</fr:tex> are both endowed with gluing data, then a morphism <fr:tex>u \colon \xi ' \to \eta '</fr:tex> in <fr:tex>\mathcal {F}_{S'}</fr:tex> is said to be <fr:em>compatible with the gluing data</fr:em> if the following diagram commutes:
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>598</fr:anchor><fr:addr
+type="user">fga3.i-a.1-definition-1.4</fr:addr><fr:route>fga3.i-a.1-definition-1.4.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>1.4</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> be a fibred category with base <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, and consider morphisms <fr:tex
+display="inline"><![CDATA[\beta _1,\beta _2\colon  S''\to  S']]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
+    Let <fr:tex
+display="inline"><![CDATA[\xi '\in \mathcal {F}_{S'}]]></fr:tex>.
+    We define a <fr:em>gluing data</fr:em> on <fr:tex
+display="inline"><![CDATA[\xi ']]></fr:tex> (with respect to the pair <fr:tex
+display="inline"><![CDATA[(\beta _1,\beta _2)]]></fr:tex>) to be an isomorphism from <fr:tex
+display="inline"><![CDATA[\beta _1^*(\xi ')]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\beta _2^*(\xi ')]]></fr:tex>.
+    If <fr:tex
+display="inline"><![CDATA[\xi ',\eta '\in \mathcal {F}_{S'}]]></fr:tex> are both endowed with gluing data, then a morphism <fr:tex
+display="inline"><![CDATA[u\colon \xi '\to \eta ']]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex> is said to be <fr:em>compatible with the gluing data</fr:em> if the following diagram commutes:
     <fr:tex
-display="block">        \begin {CD}          \beta _1^*( \xi ') @&gt;&gt;&gt;  \beta _2^*( \xi ')        \\ @VVV @VVV        \\ \beta _1^*( \eta ') @&gt;&gt;&gt;  \beta _2^*( \eta ').        \end {CD}     </fr:tex></fr:p></fr:mainmatter></fr:tree><fr:p>
-  With this definition, the objects of <fr:tex>\mathcal {F}_{S'}</fr:tex> that are endowed with gluing data (with respect to <fr:tex>\beta _1</fr:tex> and <fr:tex>\beta _2</fr:tex>) then form a <fr:em>category</fr:em>.
+display="block"><![CDATA[       \begin {CD}         \beta _1^*(\xi ') @>>> \beta _2^*(\xi ')       \\@VVV @VVV       \\\beta _1^*(\eta ') @>>> \beta _2^*(\eta ').       \end {CD}     ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>With this definition, the objects of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex> that are endowed with gluing data (with respect to <fr:tex
+display="inline"><![CDATA[\beta _1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\beta _2]]></fr:tex>) then form a <fr:em>category</fr:em>.
   
-  If <fr:tex>\alpha \colon  S' \to  S</fr:tex> is a morphism such that <fr:tex>\alpha \beta _1= \alpha \beta _2</fr:tex>, then, for every <fr:tex>\xi \in \mathcal {F}_{S'}</fr:tex>, the object <fr:tex>\xi '= \alpha ^*( \xi )</fr:tex> of <fr:tex>\mathcal {F}_{S'}</fr:tex> is endowed with a canonical gluing data, since
+  If <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is a morphism such that <fr:tex
+display="inline"><![CDATA[\alpha \beta _1=\alpha \beta _2]]></fr:tex>, then, for every <fr:tex
+display="inline"><![CDATA[\xi \in \mathcal {F}_{S'}]]></fr:tex>, the object <fr:tex
+display="inline"><![CDATA[\xi '=\alpha ^*(\xi )]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex> is endowed with a canonical gluing data, since
   <fr:tex
-display="block">      \beta _i^* \alpha ^*( \xi )      \simeq  ( \alpha \beta _i)^*( \xi )     =  \gamma ^*( \xi ),   </fr:tex>
-  where we again set <fr:tex>\gamma = \alpha \beta _1= \alpha \beta _2</fr:tex>;
-  furthermore, if <fr:tex>u \colon \xi \to \eta</fr:tex> is a morphism in <fr:tex>\mathcal {F}_s</fr:tex>, then
+display="block"><![CDATA[     \beta _i^*\alpha ^*(\xi )     \simeq  (\alpha \beta _i)^*(\xi )     = \gamma ^*(\xi ),   ]]></fr:tex>
+  where we again set <fr:tex
+display="inline"><![CDATA[\gamma =\alpha \beta _1=\alpha \beta _2]]></fr:tex>;
+  furthermore, if <fr:tex
+display="inline"><![CDATA[u\colon \xi \to \eta ]]></fr:tex> is a morphism in <fr:tex
+display="inline"><![CDATA[\mathcal {F}_s]]></fr:tex>, then
   <fr:tex
-display="block">      \alpha ^*(u) \colon   \alpha ^*( \xi )  \to   \alpha ^*( \eta )   </fr:tex>
-  is a morphism in <fr:tex>\mathcal {F}_{S'}</fr:tex> that is compatible with the canonical gluing data.
-  We thus obtain a <fr:em>canonical functor</fr:em> from the category <fr:tex>\mathcal {F}_S</fr:tex> to the category of objects of <fr:tex>\mathcal {F}_{S'}</fr:tex> endowed with gluing data with respect to the pair <fr:tex>( \beta _1, \beta _2)</fr:tex>.
+display="block"><![CDATA[     \alpha ^*(u)\colon  \alpha ^*(\xi ) \to  \alpha ^*(\eta )   ]]></fr:tex>
+  is a morphism in <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex> that is compatible with the canonical gluing data.
+  We thus obtain a <fr:em>canonical functor</fr:em> from the category <fr:tex
+display="inline"><![CDATA[\mathcal {F}_S]]></fr:tex> to the category of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex> endowed with gluing data with respect to the pair <fr:tex
+display="inline"><![CDATA[(\beta _1,\beta _2)]]></fr:tex>.
   With this, we can also rephrase <fr:ref
 addr="fga3.i-a.1-definition-1.3"
 href="fga3.i-a.1-definition-1.3.xml"
 taxon="Definition"
-number="1.3"></fr:ref> by saying that <fr:ref
+number="1.3" /> by saying that <fr:ref
 addr="fga3.i-a.1-definition-1.3-equation"
 href="fga3.i-a.1-definition-1.3-equation.xml"
 taxon="Equation"
-number="+"></fr:ref> is <fr:em><fr:tex>\mathcal {F}</fr:tex>-exact</fr:em> if the above functor is <fr:em>fully faithful</fr:em>, i.e. if the above functor defines an equivalence between the category <fr:tex>\mathcal {F}_S</fr:tex> and a subcategory of the category of objects of <fr:tex>\mathcal {F}_{S'}</fr:tex> endowed with gluing data with respect to <fr:tex>( \beta _1, \beta _2)</fr:tex>.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="+" /> is <fr:em><fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-exact</fr:em> if the above functor is <fr:em>fully faithful</fr:em>, i.e. if the above functor defines an equivalence between the category <fr:tex
+display="inline"><![CDATA[\mathcal {F}_S]]></fr:tex> and a subcategory of the category of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex> endowed with gluing data with respect to <fr:tex
+display="inline"><![CDATA[(\beta _1,\beta _2)]]></fr:tex>.</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>540</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.5</fr:addr><fr:route>fga3.i-a.1-definition-1.5.xml</fr:route><fr:number>1.5</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    We say that a gluing data on <fr:tex>\xi ' \in \mathcal {F}_{S'}</fr:tex> is <fr:em>effective</fr:em> (with respect to <fr:tex>\alpha</fr:tex>) if <fr:tex>\xi '</fr:tex>, endowed with this data, is isomorphic to <fr:tex>\alpha ^*( \xi )</fr:tex> for some <fr:tex>\xi \in \mathcal {F}_S</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  In the case where <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>599</fr:anchor><fr:addr
+type="user">fga3.i-a.1-definition-1.5</fr:addr><fr:route>fga3.i-a.1-definition-1.5.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>1.5</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We say that a gluing data on <fr:tex
+display="inline"><![CDATA[\xi '\in \mathcal {F}_{S'}]]></fr:tex> is <fr:em>effective</fr:em> (with respect to <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex>) if <fr:tex
+display="inline"><![CDATA[\xi ']]></fr:tex>, endowed with this data, is isomorphic to <fr:tex
+display="inline"><![CDATA[\alpha ^*(\xi )]]></fr:tex> for some <fr:tex
+display="inline"><![CDATA[\xi \in \mathcal {F}_S]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>In the case where <fr:ref
 addr="fga3.i-a.1-definition-1.3-equation"
 href="fga3.i-a.1-definition-1.3-equation.xml"
 taxon="Equation"
-number="+"></fr:ref> is <fr:tex>\mathcal {F}</fr:tex>-exact, the object <fr:tex>\xi</fr:tex> in <fr:ref
+number="+" /> is <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-exact, the object <fr:tex
+display="inline"><![CDATA[\xi ]]></fr:tex> in <fr:ref
 addr="fga3.i-a.1-definition-1.5"
 href="fga3.i-a.1-definition-1.5.xml"
 taxon="Definition"
-number="1.5"></fr:ref> is then determined up to unique isomorphism, and <fr:em>the category <fr:tex>\mathcal {F}_S</fr:tex> is equivalent to the category of objects of <fr:tex>\mathcal {F}_{S'}</fr:tex> endowed with effective gluing data</fr:em>.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="1.5" /> is then determined up to unique isomorphism, and <fr:em>the category <fr:tex
+display="inline"><![CDATA[\mathcal {F}_S]]></fr:tex> is equivalent to the category of objects of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex> endowed with effective gluing data</fr:em>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>547</fr:anchor><fr:addr>fga3.i-a.1.c</fr:addr><fr:route>fga3.i-a.1.c.xml</fr:route><fr:number>A.1.c</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  The most important case is that where
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>600</fr:anchor><fr:addr
+type="user">fga3.i-a.1.c</fr:addr><fr:route>fga3.i-a.1.c.xml</fr:route><fr:authors /><fr:number>A.1.c</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The most important case is that where
   <fr:tex
-display="block">     S'' = S'  \times _S S',   </fr:tex>
-  with the <fr:tex>\beta _i</fr:tex> being the two projections <fr:tex>p_1</fr:tex> and <fr:tex>p_2</fr:tex> from <fr:tex>S' \times _S S'</fr:tex> to its two factors (where we now suppose that <fr:tex>\mathcal {C}</fr:tex> has all fibre products).
-  We then have two immediate necessary conditions for a gluing data <fr:tex>\varphi \colon  p_1^*( \xi ') \to  p_2^*( \xi ')</fr:tex> on some <fr:tex>\xi ' \in \mathcal {F}_S</fr:tex> to be effective:
+display="block"><![CDATA[     S'' = S' \times _S S',   ]]></fr:tex>
+  with the <fr:tex
+display="inline"><![CDATA[\beta _i]]></fr:tex> being the two projections <fr:tex
+display="inline"><![CDATA[p_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[p_2]]></fr:tex> from <fr:tex
+display="inline"><![CDATA[S'\times _S S']]></fr:tex> to its two factors (where we now suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has all fibre products).
+  We then have two immediate necessary conditions for a gluing data <fr:tex
+display="inline"><![CDATA[\varphi \colon  p_1^*(\xi ')\to  p_2^*(\xi ')]]></fr:tex> on some <fr:tex
+display="inline"><![CDATA[\xi '\in \mathcal {F}_S]]></fr:tex> to be effective:
 
   
  <html:ol
@@ -300,75 +431,120 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
  <html:li
 style="list-style-type: &quot;i. &quot;">
-      <fr:tex>\Delta ^*( \varphi ) =  \operatorname {id} _ \xi</fr:tex>, where <fr:tex>\Delta \colon  S' \to  S' \times _S S'</fr:tex> denotes the diagonal morphism, and where we identify <fr:tex>\Delta ^* p_i^*( \xi ')</fr:tex> with <fr:tex>(p_i \Delta )^*( \xi ')= \xi '</fr:tex>.
+      <fr:tex
+display="inline"><![CDATA[\Delta ^*(\varphi ) = \operatorname {id}_\xi ]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\Delta \colon  S'\to  S'\times _S S']]></fr:tex> denotes the diagonal morphism, and where we identify <fr:tex
+display="inline"><![CDATA[\Delta ^* p_i^*(\xi ')]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[(p_i\Delta )^*(\xi ')=\xi ']]></fr:tex>.
     </html:li>
 
 
     
  <html:li
 style="list-style-type: &quot;ii. &quot;">
-      <fr:tex>p_{31}^*( \varphi ) = p_{32}^*( \varphi )p_{21}^*( \varphi )</fr:tex>, where <fr:tex>p_{ij}</fr:tex> denotes the canonical projection from <fr:tex>S' \times _S S' \times _S S'</fr:tex> to the partial product of its <fr:tex>i</fr:tex>th and <fr:tex>j</fr:tex>th factors.
+      <fr:tex
+display="inline"><![CDATA[p_{31}^*(\varphi ) = p_{32}^*(\varphi )p_{21}^*(\varphi )]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[p_{ij}]]></fr:tex> denotes the canonical projection from <fr:tex
+display="inline"><![CDATA[S'\times _S S'\times _S S']]></fr:tex> to the partial product of its <fr:tex
+display="inline"><![CDATA[i]]></fr:tex>th and <fr:tex
+display="inline"><![CDATA[j]]></fr:tex>th factors.
     </html:li>
 
   </html:ol></fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>545</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.6</fr:addr><fr:route>fga3.i-a.1-definition-1.6.xml</fr:route><fr:number>1.6</fr:number><fr:parent>fga3.i-a.1.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    We define <fr:em>descent data</fr:em> on <fr:tex>\xi ' \in \mathcal {F}_{S'}</fr:tex>, with respect to the morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex>, to be a gluing data on <fr:tex>\xi '</fr:tex> with respect to the pair <fr:tex>(p_1,p_2)</fr:tex> of canonical projections <fr:tex>S' \times _S S' \to  S'</fr:tex> that satisfies conditions (i) and (ii) above.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>604</fr:anchor><fr:addr
+type="user">fga3.i-a.1-definition-1.6</fr:addr><fr:route>fga3.i-a.1-definition-1.6.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>1.6</fr:number><fr:parent>fga3.i-a.1.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We define <fr:em>descent data</fr:em> on <fr:tex
+display="inline"><![CDATA[\xi '\in \mathcal {F}_{S'}]]></fr:tex>, with respect to the morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex>, to be a gluing data on <fr:tex
+display="inline"><![CDATA[\xi ']]></fr:tex> with respect to the pair <fr:tex
+display="inline"><![CDATA[(p_1,p_2)]]></fr:tex> of canonical projections <fr:tex
+display="inline"><![CDATA[S'\times _S S'\to  S']]></fr:tex> that satisfies conditions (i) and (ii) above.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>546</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.7</fr:addr><fr:route>fga3.i-a.1-definition-1.7.xml</fr:route><fr:number>1.7</fr:number><fr:parent>fga3.i-a.1.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be an <fr:em><fr:tex>\mathcal {F}</fr:tex>-descent morphism</fr:em> if the diagram of morphisms
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>605</fr:anchor><fr:addr
+type="user">fga3.i-a.1-definition-1.7</fr:addr><fr:route>fga3.i-a.1-definition-1.7.xml</fr:route><fr:taxon>Definition</fr:taxon><fr:authors /><fr:number>1.7</fr:number><fr:parent>fga3.i-a.1.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>A morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> is said to be an <fr:em><fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism</fr:em> if the diagram of morphisms
     <fr:tex
-display="block">       S  \xleftarrow { \alpha }       S'  \overset { p_1 }{ \underset { p_2 }{ \leftleftarrows }}        S' \times _S S'     </fr:tex>
-    is <fr:tex>\mathcal {F}</fr:tex>-exact (<fr:ref
+display="block"><![CDATA[       S \xleftarrow {\alpha }       S' \overset {p_1}{\underset {p_2}{\leftleftarrows }}       S'\times _S S'     ]]></fr:tex>
+    is <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-exact (<fr:ref
 addr="fga3.i-a.1-definition-1.3"
 href="fga3.i-a.1-definition-1.3.xml"
 taxon="Definition"
-number="1.3"></fr:ref>);
-    we say that <fr:tex>\alpha</fr:tex> is a <fr:em>strict <fr:tex>\mathcal {F}</fr:tex>-descent morphism</fr:em> if, further, every descent data (<fr:ref
+number="1.3" />);
+    we say that <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is a <fr:em>strict <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism</fr:em> if, further, every descent data (<fr:ref
 addr="fga3.i-a.1-definition-1.6"
 href="fga3.i-a.1-definition-1.6.xml"
 taxon="Definition"
-number="1.6"></fr:ref>) on any object of <fr:tex>\mathcal {F}_{S'}</fr:tex> is effective.
+number="1.6" />) on any object of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex> is effective.
 
     This latter condition (of strictness) can also be stated in a more evocative way:
-    "giving an object of <fr:tex>\mathcal {F}_S</fr:tex> is equivalent to giving an object of <fr:tex>\mathcal {F}_{S'}</fr:tex> endowed with a descent data".
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  Note that, if an <fr:tex>\mathcal {F}</fr:tex>-descent morphism
-  (<fr:em>[Comp.]</fr:em> It is useless to assume here that <fr:tex>\alpha</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism.)
-  <fr:tex>\alpha \colon  S' \to  S</fr:tex> admits a <fr:em>section</fr:em> <fr:tex>s \colon  S \to  S'</fr:tex> (i.e. a morphism <fr:tex>s</fr:tex> such that <fr:tex>\alpha  s= \operatorname {id} _S</fr:tex>), then it is a strict <fr:tex>\mathcal {F}</fr:tex>-descent morphism:
-  if <fr:tex>\xi ' \in \mathcal {F}_{S'}</fr:tex> is endowed with descent data with respect to <fr:tex>\alpha</fr:tex>, then "it comes from" <fr:tex>\xi =s^*( \xi ')</fr:tex>.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    "giving an object of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_S]]></fr:tex> is equivalent to giving an object of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_{S'}]]></fr:tex> endowed with a descent data".</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>Note that, if an <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism
+  (<fr:em>[Comp.]</fr:em> It is useless to assume here that <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism.)
+  <fr:tex
+display="inline"><![CDATA[\alpha \colon  S'\to  S]]></fr:tex> admits a <fr:em>section</fr:em> <fr:tex
+display="inline"><![CDATA[s\colon  S\to  S']]></fr:tex> (i.e. a morphism <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\alpha  s=\operatorname {id}_S]]></fr:tex>), then it is a strict <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism:
+  if <fr:tex
+display="inline"><![CDATA[\xi '\in \mathcal {F}_{S'}]]></fr:tex> is endowed with descent data with respect to <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex>, then "it comes from" <fr:tex
+display="inline"><![CDATA[\xi =s^*(\xi ')]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>551</fr:anchor><fr:addr>fga3.i-a.1.d</fr:addr><fr:route>fga3.i-a.1.d.xml</fr:route><fr:number>A.1.d</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  We can present the above notions in a more intuitive manner, by introducing, for an object <fr:tex>T</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>S</fr:tex>, the set
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>606</fr:anchor><fr:addr
+type="user">fga3.i-a.1.d</fr:addr><fr:route>fga3.i-a.1.d.xml</fr:route><fr:authors /><fr:number>A.1.d</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We can present the above notions in a more intuitive manner, by introducing, for an object <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, the set
   <fr:tex
-display="block">      \operatorname {Hom} _S(T,S') = S'(T),   </fr:tex>
-  where elements will be denoted by <fr:tex>t</fr:tex>, <fr:tex>t'</fr:tex>, etc.
-  Given an object <fr:tex>\xi ' \in \mathcal {F}_{S'}</fr:tex>, there then corresponds, to every <fr:tex>t \in  S'(T)</fr:tex>, an object <fr:tex>t^*( \xi ')</fr:tex> of <fr:tex>\mathcal {F}_T</fr:tex>, which will also be denoted by <fr:tex>\xi '_t</fr:tex>.
-  A gluing data on <fr:tex>\xi '</fr:tex> (with respect to <fr:tex>(p_1,p_2)</fr:tex>) is then defined by the data, for every <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, and every pair of points <fr:tex>t,t' \in  S'(T)</fr:tex>, of an isomorphism
+display="block"><![CDATA[     \operatorname {Hom}_S(T,S') = S'(T),   ]]></fr:tex>
+  where elements will be denoted by <fr:tex
+display="inline"><![CDATA[t]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[t']]></fr:tex>, etc.
+  Given an object <fr:tex
+display="inline"><![CDATA[\xi '\in \mathcal {F}_{S'}]]></fr:tex>, there then corresponds, to every <fr:tex
+display="inline"><![CDATA[t\in  S'(T)]]></fr:tex>, an object <fr:tex
+display="inline"><![CDATA[t^*(\xi ')]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {F}_T]]></fr:tex>, which will also be denoted by <fr:tex
+display="inline"><![CDATA[\xi '_t]]></fr:tex>.
+  A gluing data on <fr:tex
+display="inline"><![CDATA[\xi ']]></fr:tex> (with respect to <fr:tex
+display="inline"><![CDATA[(p_1,p_2)]]></fr:tex>) is then defined by the data, for every <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and every pair of points <fr:tex
+display="inline"><![CDATA[t,t'\in  S'(T)]]></fr:tex>, of an isomorphism
   <fr:tex
-display="block">      \varphi _{t',t} \colon   \xi '_t  \to   \xi '_{t'}   </fr:tex>
-  (satisfying the evident conditions of functoriality in <fr:tex>T</fr:tex>).
+display="block"><![CDATA[     \varphi _{t',t}\colon  \xi '_t \to  \xi '_{t'}   ]]></fr:tex>
+  (satisfying the evident conditions of functoriality in <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>).
   Conditions (i) and (ii) of <fr:ref
 addr="fga3.i-a.1.c"
 href="fga3.i-a.1.c.xml"
-number="A.1.c"></fr:ref> can then be written as
+number="A.1.c" /> can then be written as
   
   
  <html:ol
@@ -377,329 +553,32 @@ xmlns:html="http://www.w3.org/1999/xhtml">
  <html:li
 style="list-style-type: &quot;i bis. &quot;">
       
-      <fr:tex>\varphi _{t,t}= \operatorname {id} _{ \xi '_t}</fr:tex>, for all <fr:tex>T</fr:tex> and all <fr:tex>t \in  S'(T)</fr:tex>.
+      <fr:tex
+display="inline"><![CDATA[\varphi _{t,t}=\operatorname {id}_{\xi '_t}]]></fr:tex>, for all <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> and all <fr:tex
+display="inline"><![CDATA[t\in  S'(T)]]></fr:tex>.
     </html:li>
 
 
     
  <html:li
 style="list-style-type: &quot;ii bis. &quot;">
-      <fr:tex>\varphi _{t,t''}= \varphi _{t,t'} \varphi _{t',t''}</fr:tex>, for all <fr:tex>T</fr:tex> and all <fr:tex>t,t',t'' \in  S'(T)</fr:tex>.
+      <fr:tex
+display="inline"><![CDATA[\varphi _{t,t''}=\varphi _{t,t'}\varphi _{t',t''}]]></fr:tex>, for all <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> and all <fr:tex
+display="inline"><![CDATA[t,t',t''\in  S'(T)]]></fr:tex>.
     </html:li>
 
   </html:ol>
 
 
-  We can show that (ii bis) implies that <fr:tex>\varphi _{t,t}^2= \varphi _{t,t}</fr:tex>, by taking <fr:tex>t=t'=t''</fr:tex>, and thus, since <fr:tex>\varphi _{t,t}</fr:tex> is an isomorphism by hypothesis, implies (i bis), which is thus a consequence of (ii bis) (and so (i) is also a consequence of (ii)).
-  But if we no longer suppose a priori that the <fr:tex>\varphi _{t,t}</fr:tex> are isomorphisms (i.e. that <fr:tex>\varphi \colon  p_1^*( \xi ') \to  p_2^*( \xi ')</fr:tex> is an isomorphism), then (ii bis) no longer necessarily implies (i bis);
-  the combination of (ii bis) and (i bis), however, does imply that the <fr:tex>\varphi _{t,t'}</fr:tex> are isomorphisms (since we then have <fr:tex>\varphi _{t,t'} \varphi _{t',t}= \varphi _{t,t}= \operatorname {id} _{ \xi '_t}</fr:tex>).
-</fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1477</fr:anchor><fr:addr>fga3.i-a.1</fr:addr><fr:route>fga3.i-a.1.xml</fr:route><fr:title><fr:link
-href="fga3.i-a.xml"
-type="local"
-addr="fga3.i-a"><fr:link
-href="fga3.i.xml"
-type="local"
-addr="fga3.i">Generalities, and descent by faithfully flat morphisms</fr:link> › Preliminaries on categories</fr:link> › Fibred categories, descent data, <fr:tex>\mathcal {F}</fr:tex>-descent morphisms</fr:title><fr:number>A.1</fr:number><fr:parent>fga3.i-a</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>535</fr:anchor><fr:addr>fga3.i-a.1.a</fr:addr><fr:route>fga3.i-a.1.a.xml</fr:route><fr:number>A.1.a</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>532</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.1</fr:addr><fr:route>fga3.i-a.1-definition-1.1.xml</fr:route><fr:number>1.1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A <fr:em>fibred category <fr:tex>\mathcal {F}</fr:tex> with base <fr:tex>\mathcal {C}</fr:tex></fr:em> (or <fr:em>over <fr:tex>\mathcal {C}</fr:tex></fr:em>) consists of
-
-    <fr:ul><fr:li>
-        a category <fr:tex>\mathcal {C}</fr:tex></fr:li>
-
-      <fr:li>
-        for every <fr:tex>X \in \mathcal {C}</fr:tex>, a category <fr:tex>\mathcal {F}_X</fr:tex></fr:li>
-
-      <fr:li>
-        for every <fr:tex>\mathcal {C}</fr:tex>-morphism <fr:tex>f \colon  X \to  Y</fr:tex>, a functor <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex>, which we also write as
-        <fr:tex
-display="block">           f^*( \xi ) =  \xi   \times _Y X         </fr:tex>
-        for <fr:tex>\xi \in \mathcal {F}_Y</fr:tex> (with <fr:tex>X</fr:tex> being thought of as an "object of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>Y</fr:tex>", i.e. as being endowed with the morphism <fr:tex>f</fr:tex>)
-      </fr:li>
-
-      <fr:li>
-        for any two composible morphisms <fr:tex>X \xrightarrow {f}Y \xrightarrow {g}Z</fr:tex>, an isomorphism of functors
-        <fr:tex
-display="block">           c_{f,g} \colon  (gf)^*  \to  f^*g^*         </fr:tex></fr:li></fr:ul>
-
-    with the above data being subject to the conditions that
-
-    
- <html:ol
-xmlns:html="http://www.w3.org/1999/xhtml">
-      
- <html:li
-style="list-style-type: &quot;i. &quot;">
-        <fr:tex>\operatorname {id} ^*= \operatorname {id}</fr:tex>
-      </html:li>
-
-
-      
- <html:li
-style="list-style-type: &quot;ii. &quot;">
-        <fr:tex>c_{f,g}</fr:tex> is the identity isomorphism if <fr:tex>f</fr:tex> or <fr:tex>g</fr:tex> is an identity isomorphism
-      </html:li>
-
-
-      
- <html:li
-style="list-style-type: &quot;iii. &quot;">
-        for any three composible morphisms <fr:tex>X \xrightarrow {f}Y \xrightarrow {g}Z \xrightarrow {h}T</fr:tex>, the following diagram, given by using the isomorphisms of the form <fr:tex>c_{u,v}</fr:tex>, commutes:
-        <fr:tex
-display="block">            \begin {CD}             (h(gf))^* @= ((hg)f)^*            \\ @VVV @VVV            \\ (gf)^*h^* @. f^*(hg)^*            \\ @VVV @VVV            \\ (f^*g^*)h^* @= f^*(g^*h^*)            \end {CD}         </fr:tex>
-      </html:li>
-
-    </html:ol></fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>533</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-1</fr:addr><fr:route>fga3.i-a.1-example-1.xml</fr:route><fr:number>1</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {C}</fr:tex> be a category where all fibre products exist.
-    We then define a fibred category <fr:tex>\mathcal {F}</fr:tex> with base <fr:tex>\mathcal {C}</fr:tex> by setting <fr:tex>\mathcal {F}_X</fr:tex> to be the category of objects of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>X</fr:tex>, and the functor <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex> corresponding to a morphism <fr:tex>f \colon  X \to  Y</fr:tex> being defined by the <fr:em>fibre product</fr:em> <fr:tex>Z \mapsto  Z \times _Y X</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>534</fr:anchor><fr:taxon>Example</fr:taxon><fr:addr>fga3.i-a.1-example-2</fr:addr><fr:route>fga3.i-a.1-example-2.xml</fr:route><fr:number>2</fr:number><fr:parent>fga3.i-a.1.a</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {C}</fr:tex> be the category of preschemes, and, for <fr:tex>X \in \mathcal {C}</fr:tex>, let <fr:tex>\mathcal {F}_X</fr:tex> be the category of quasi-coherent sheaves of modules on <fr:tex>X</fr:tex>.
-    If <fr:tex>f \colon  X \to  Y</fr:tex> is a morphism of preschemes, then <fr:tex>f^* \colon \mathcal {F}_Y \to \mathcal {F}_X</fr:tex> is the <fr:em>inverse image of sheaves of modules</fr:em> functor.
-    
-    We thus obtain a category fibred over <fr:tex>\mathcal {C}</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>541</fr:anchor><fr:addr>fga3.i-a.1.b</fr:addr><fr:route>fga3.i-a.1.b.xml</fr:route><fr:number>A.1.b</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>536</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.2</fr:addr><fr:route>fga3.i-a.1-definition-1.2.xml</fr:route><fr:number>1.2</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A diagram of maps of sets
-    <fr:tex
-display="block">       E  \xrightarrow {u}       E'  \overset { v_1 }{ \underset { v_2 }{ \rightrightarrows }}        E''     </fr:tex>
-    is said to be <fr:em>exact</fr:em> if <fr:tex>u</fr:tex> is a bijection from <fr:tex>E</fr:tex> to the subset of <fr:tex>E'</fr:tex> consisting of the <fr:tex>x' \in  E'</fr:tex> such that <fr:tex>v_1(x')=v_2(x')</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>538</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.3</fr:addr><fr:route>fga3.i-a.1-definition-1.3.xml</fr:route><fr:number>1.3</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {F}</fr:tex> be a fibred category with base <fr:tex>\mathcal {C}</fr:tex>, and consider a diagram of morphisms in <fr:tex>\mathcal {C}</fr:tex>
-    <fr:tex
-display="block">       S  \xleftarrow { \alpha }       S'  \overset { \beta _1 }{ \underset { \beta _2 }{ \leftleftarrows }}        S''     </fr:tex>
-    such that <fr:tex>\alpha \beta _1= \alpha \beta _2</fr:tex>;
-    this diagram is said to be <fr:em><fr:tex>\mathcal {F}</fr:tex>-exact</fr:em> if, for every pair <fr:tex>( \xi , \eta )</fr:tex> of elements of <fr:tex>\mathcal {F}_S</fr:tex>, the diagram of sets
-
-    <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>537</fr:anchor><fr:taxon>Equation</fr:taxon><fr:addr>fga3.i-a.1-definition-1.3-equation</fr:addr><fr:route>fga3.i-a.1-definition-1.3-equation.xml</fr:route><fr:number>+</fr:number><fr:parent>fga3.i-a.1-definition-1.3</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block">          \operatorname {Hom} ( \xi , \eta )  \xrightarrow { \alpha ^*}          \operatorname {Hom} ( \alpha ^*( \xi ), \alpha ^*( \eta ))  \overset { \beta _1^* }{ \underset { \beta _2^* }{ \rightrightarrows }}           \operatorname {Hom} ( \gamma ^*( \xi ), \gamma ^*( \eta ))       \tag{+}       </fr:tex></fr:mainmatter></fr:tree>
-
-    (where <fr:tex>\gamma = \alpha \beta _1= \alpha \beta _2</fr:tex>) is exact.
-  </fr:p><fr:p>
-    In this diagram above, for simplicity, we have identified <fr:tex>\beta _i^* \alpha ^*</fr:tex> with <fr:tex>( \alpha \beta _i)^*= \gamma ^*</fr:tex>, using <fr:tex>c_{ \beta _i, \alpha }</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>539</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.4</fr:addr><fr:route>fga3.i-a.1-definition-1.4.xml</fr:route><fr:number>1.4</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>\mathcal {F}</fr:tex> be a fibred category with base <fr:tex>\mathcal {C}</fr:tex>, and consider morphisms <fr:tex>\beta _1, \beta _2 \colon  S'' \to  S'</fr:tex> in <fr:tex>\mathcal {C}</fr:tex>.
-    Let <fr:tex>\xi ' \in \mathcal {F}_{S'}</fr:tex>.
-    We define a <fr:em>gluing data</fr:em> on <fr:tex>\xi '</fr:tex> (with respect to the pair <fr:tex>( \beta _1, \beta _2)</fr:tex>) to be an isomorphism from <fr:tex>\beta _1^*( \xi ')</fr:tex> to <fr:tex>\beta _2^*( \xi ')</fr:tex>.
-    If <fr:tex>\xi ', \eta ' \in \mathcal {F}_{S'}</fr:tex> are both endowed with gluing data, then a morphism <fr:tex>u \colon \xi ' \to \eta '</fr:tex> in <fr:tex>\mathcal {F}_{S'}</fr:tex> is said to be <fr:em>compatible with the gluing data</fr:em> if the following diagram commutes:
-    <fr:tex
-display="block">        \begin {CD}          \beta _1^*( \xi ') @&gt;&gt;&gt;  \beta _2^*( \xi ')        \\ @VVV @VVV        \\ \beta _1^*( \eta ') @&gt;&gt;&gt;  \beta _2^*( \eta ').        \end {CD}     </fr:tex></fr:p></fr:mainmatter></fr:tree><fr:p>
-  With this definition, the objects of <fr:tex>\mathcal {F}_{S'}</fr:tex> that are endowed with gluing data (with respect to <fr:tex>\beta _1</fr:tex> and <fr:tex>\beta _2</fr:tex>) then form a <fr:em>category</fr:em>.
-  
-  If <fr:tex>\alpha \colon  S' \to  S</fr:tex> is a morphism such that <fr:tex>\alpha \beta _1= \alpha \beta _2</fr:tex>, then, for every <fr:tex>\xi \in \mathcal {F}_{S'}</fr:tex>, the object <fr:tex>\xi '= \alpha ^*( \xi )</fr:tex> of <fr:tex>\mathcal {F}_{S'}</fr:tex> is endowed with a canonical gluing data, since
-  <fr:tex
-display="block">      \beta _i^* \alpha ^*( \xi )      \simeq  ( \alpha \beta _i)^*( \xi )     =  \gamma ^*( \xi ),   </fr:tex>
-  where we again set <fr:tex>\gamma = \alpha \beta _1= \alpha \beta _2</fr:tex>;
-  furthermore, if <fr:tex>u \colon \xi \to \eta</fr:tex> is a morphism in <fr:tex>\mathcal {F}_s</fr:tex>, then
-  <fr:tex
-display="block">      \alpha ^*(u) \colon   \alpha ^*( \xi )  \to   \alpha ^*( \eta )   </fr:tex>
-  is a morphism in <fr:tex>\mathcal {F}_{S'}</fr:tex> that is compatible with the canonical gluing data.
-  We thus obtain a <fr:em>canonical functor</fr:em> from the category <fr:tex>\mathcal {F}_S</fr:tex> to the category of objects of <fr:tex>\mathcal {F}_{S'}</fr:tex> endowed with gluing data with respect to the pair <fr:tex>( \beta _1, \beta _2)</fr:tex>.
-  With this, we can also rephrase <fr:ref
-addr="fga3.i-a.1-definition-1.3"
-href="fga3.i-a.1-definition-1.3.xml"
-taxon="Definition"
-number="1.3"></fr:ref> by saying that <fr:ref
-addr="fga3.i-a.1-definition-1.3-equation"
-href="fga3.i-a.1-definition-1.3-equation.xml"
-taxon="Equation"
-number="+"></fr:ref> is <fr:em><fr:tex>\mathcal {F}</fr:tex>-exact</fr:em> if the above functor is <fr:em>fully faithful</fr:em>, i.e. if the above functor defines an equivalence between the category <fr:tex>\mathcal {F}_S</fr:tex> and a subcategory of the category of objects of <fr:tex>\mathcal {F}_{S'}</fr:tex> endowed with gluing data with respect to <fr:tex>( \beta _1, \beta _2)</fr:tex>.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>540</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.5</fr:addr><fr:route>fga3.i-a.1-definition-1.5.xml</fr:route><fr:number>1.5</fr:number><fr:parent>fga3.i-a.1.b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    We say that a gluing data on <fr:tex>\xi ' \in \mathcal {F}_{S'}</fr:tex> is <fr:em>effective</fr:em> (with respect to <fr:tex>\alpha</fr:tex>) if <fr:tex>\xi '</fr:tex>, endowed with this data, is isomorphic to <fr:tex>\alpha ^*( \xi )</fr:tex> for some <fr:tex>\xi \in \mathcal {F}_S</fr:tex>.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  In the case where <fr:ref
-addr="fga3.i-a.1-definition-1.3-equation"
-href="fga3.i-a.1-definition-1.3-equation.xml"
-taxon="Equation"
-number="+"></fr:ref> is <fr:tex>\mathcal {F}</fr:tex>-exact, the object <fr:tex>\xi</fr:tex> in <fr:ref
-addr="fga3.i-a.1-definition-1.5"
-href="fga3.i-a.1-definition-1.5.xml"
-taxon="Definition"
-number="1.5"></fr:ref> is then determined up to unique isomorphism, and <fr:em>the category <fr:tex>\mathcal {F}_S</fr:tex> is equivalent to the category of objects of <fr:tex>\mathcal {F}_{S'}</fr:tex> endowed with effective gluing data</fr:em>.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>547</fr:anchor><fr:addr>fga3.i-a.1.c</fr:addr><fr:route>fga3.i-a.1.c.xml</fr:route><fr:number>A.1.c</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  The most important case is that where
-  <fr:tex
-display="block">     S'' = S'  \times _S S',   </fr:tex>
-  with the <fr:tex>\beta _i</fr:tex> being the two projections <fr:tex>p_1</fr:tex> and <fr:tex>p_2</fr:tex> from <fr:tex>S' \times _S S'</fr:tex> to its two factors (where we now suppose that <fr:tex>\mathcal {C}</fr:tex> has all fibre products).
-  We then have two immediate necessary conditions for a gluing data <fr:tex>\varphi \colon  p_1^*( \xi ') \to  p_2^*( \xi ')</fr:tex> on some <fr:tex>\xi ' \in \mathcal {F}_S</fr:tex> to be effective:
-
-  
- <html:ol
-xmlns:html="http://www.w3.org/1999/xhtml">
-    
- <html:li
-style="list-style-type: &quot;i. &quot;">
-      <fr:tex>\Delta ^*( \varphi ) =  \operatorname {id} _ \xi</fr:tex>, where <fr:tex>\Delta \colon  S' \to  S' \times _S S'</fr:tex> denotes the diagonal morphism, and where we identify <fr:tex>\Delta ^* p_i^*( \xi ')</fr:tex> with <fr:tex>(p_i \Delta )^*( \xi ')= \xi '</fr:tex>.
-    </html:li>
-
-
-    
- <html:li
-style="list-style-type: &quot;ii. &quot;">
-      <fr:tex>p_{31}^*( \varphi ) = p_{32}^*( \varphi )p_{21}^*( \varphi )</fr:tex>, where <fr:tex>p_{ij}</fr:tex> denotes the canonical projection from <fr:tex>S' \times _S S' \times _S S'</fr:tex> to the partial product of its <fr:tex>i</fr:tex>th and <fr:tex>j</fr:tex>th factors.
-    </html:li>
-
-  </html:ol></fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>545</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.6</fr:addr><fr:route>fga3.i-a.1-definition-1.6.xml</fr:route><fr:number>1.6</fr:number><fr:parent>fga3.i-a.1.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    We define <fr:em>descent data</fr:em> on <fr:tex>\xi ' \in \mathcal {F}_{S'}</fr:tex>, with respect to the morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex>, to be a gluing data on <fr:tex>\xi '</fr:tex> with respect to the pair <fr:tex>(p_1,p_2)</fr:tex> of canonical projections <fr:tex>S' \times _S S' \to  S'</fr:tex> that satisfies conditions (i) and (ii) above.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>546</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fga3.i-a.1-definition-1.7</fr:addr><fr:route>fga3.i-a.1-definition-1.7.xml</fr:route><fr:number>1.7</fr:number><fr:parent>fga3.i-a.1.c</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    A morphism <fr:tex>\alpha \colon  S' \to  S</fr:tex> is said to be an <fr:em><fr:tex>\mathcal {F}</fr:tex>-descent morphism</fr:em> if the diagram of morphisms
-    <fr:tex
-display="block">       S  \xleftarrow { \alpha }       S'  \overset { p_1 }{ \underset { p_2 }{ \leftleftarrows }}        S' \times _S S'     </fr:tex>
-    is <fr:tex>\mathcal {F}</fr:tex>-exact (<fr:ref
-addr="fga3.i-a.1-definition-1.3"
-href="fga3.i-a.1-definition-1.3.xml"
-taxon="Definition"
-number="1.3"></fr:ref>);
-    we say that <fr:tex>\alpha</fr:tex> is a <fr:em>strict <fr:tex>\mathcal {F}</fr:tex>-descent morphism</fr:em> if, further, every descent data (<fr:ref
-addr="fga3.i-a.1-definition-1.6"
-href="fga3.i-a.1-definition-1.6.xml"
-taxon="Definition"
-number="1.6"></fr:ref>) on any object of <fr:tex>\mathcal {F}_{S'}</fr:tex> is effective.
-
-    This latter condition (of strictness) can also be stated in a more evocative way:
-    "giving an object of <fr:tex>\mathcal {F}_S</fr:tex> is equivalent to giving an object of <fr:tex>\mathcal {F}_{S'}</fr:tex> endowed with a descent data".
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  Note that, if an <fr:tex>\mathcal {F}</fr:tex>-descent morphism
-  (<fr:em>[Comp.]</fr:em> It is useless to assume here that <fr:tex>\alpha</fr:tex> is an <fr:tex>\mathcal {F}</fr:tex>-descent morphism.)
-  <fr:tex>\alpha \colon  S' \to  S</fr:tex> admits a <fr:em>section</fr:em> <fr:tex>s \colon  S \to  S'</fr:tex> (i.e. a morphism <fr:tex>s</fr:tex> such that <fr:tex>\alpha  s= \operatorname {id} _S</fr:tex>), then it is a strict <fr:tex>\mathcal {F}</fr:tex>-descent morphism:
-  if <fr:tex>\xi ' \in \mathcal {F}_{S'}</fr:tex> is endowed with descent data with respect to <fr:tex>\alpha</fr:tex>, then "it comes from" <fr:tex>\xi =s^*( \xi ')</fr:tex>.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>551</fr:anchor><fr:addr>fga3.i-a.1.d</fr:addr><fr:route>fga3.i-a.1.d.xml</fr:route><fr:number>A.1.d</fr:number><fr:parent>fga3.i-a.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  We can present the above notions in a more intuitive manner, by introducing, for an object <fr:tex>T</fr:tex> of <fr:tex>\mathcal {C}</fr:tex> over <fr:tex>S</fr:tex>, the set
-  <fr:tex
-display="block">      \operatorname {Hom} _S(T,S') = S'(T),   </fr:tex>
-  where elements will be denoted by <fr:tex>t</fr:tex>, <fr:tex>t'</fr:tex>, etc.
-  Given an object <fr:tex>\xi ' \in \mathcal {F}_{S'}</fr:tex>, there then corresponds, to every <fr:tex>t \in  S'(T)</fr:tex>, an object <fr:tex>t^*( \xi ')</fr:tex> of <fr:tex>\mathcal {F}_T</fr:tex>, which will also be denoted by <fr:tex>\xi '_t</fr:tex>.
-  A gluing data on <fr:tex>\xi '</fr:tex> (with respect to <fr:tex>(p_1,p_2)</fr:tex>) is then defined by the data, for every <fr:tex>T</fr:tex> over <fr:tex>S</fr:tex>, and every pair of points <fr:tex>t,t' \in  S'(T)</fr:tex>, of an isomorphism
-  <fr:tex
-display="block">      \varphi _{t',t} \colon   \xi '_t  \to   \xi '_{t'}   </fr:tex>
-  (satisfying the evident conditions of functoriality in <fr:tex>T</fr:tex>).
-  Conditions (i) and (ii) of <fr:ref
-addr="fga3.i-a.1.c"
-href="fga3.i-a.1.c.xml"
-number="A.1.c"></fr:ref> can then be written as
-  
-  
- <html:ol
-xmlns:html="http://www.w3.org/1999/xhtml">
-    
- <html:li
-style="list-style-type: &quot;i bis. &quot;">
-      
-      <fr:tex>\varphi _{t,t}= \operatorname {id} _{ \xi '_t}</fr:tex>, for all <fr:tex>T</fr:tex> and all <fr:tex>t \in  S'(T)</fr:tex>.
-    </html:li>
-
-
-    
- <html:li
-style="list-style-type: &quot;ii bis. &quot;">
-      <fr:tex>\varphi _{t,t''}= \varphi _{t,t'} \varphi _{t',t''}</fr:tex>, for all <fr:tex>T</fr:tex> and all <fr:tex>t,t',t'' \in  S'(T)</fr:tex>.
-    </html:li>
-
-  </html:ol>
-
-
-  We can show that (ii bis) implies that <fr:tex>\varphi _{t,t}^2= \varphi _{t,t}</fr:tex>, by taking <fr:tex>t=t'=t''</fr:tex>, and thus, since <fr:tex>\varphi _{t,t}</fr:tex> is an isomorphism by hypothesis, implies (i bis), which is thus a consequence of (ii bis) (and so (i) is also a consequence of (ii)).
-  But if we no longer suppose a priori that the <fr:tex>\varphi _{t,t}</fr:tex> are isomorphisms (i.e. that <fr:tex>\varphi \colon  p_1^*( \xi ') \to  p_2^*( \xi ')</fr:tex> is an isomorphism), then (ii bis) no longer necessarily implies (i bis);
-  the combination of (ii bis) and (i bis), however, does imply that the <fr:tex>\varphi _{t,t'}</fr:tex> are isomorphisms (since we then have <fr:tex>\varphi _{t,t'} \varphi _{t',t}= \varphi _{t,t}= \operatorname {id} _{ \xi '_t}</fr:tex>).
-</fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  We can show that (ii bis) implies that <fr:tex
+display="inline"><![CDATA[\varphi _{t,t}^2=\varphi _{t,t}]]></fr:tex>, by taking <fr:tex
+display="inline"><![CDATA[t=t'=t'']]></fr:tex>, and thus, since <fr:tex
+display="inline"><![CDATA[\varphi _{t,t}]]></fr:tex> is an isomorphism by hypothesis, implies (i bis), which is thus a consequence of (ii bis) (and so (i) is also a consequence of (ii)).
+  But if we no longer suppose a priori that the <fr:tex
+display="inline"><![CDATA[\varphi _{t,t}]]></fr:tex> are isomorphisms (i.e. that <fr:tex
+display="inline"><![CDATA[\varphi \colon  p_1^*(\xi ')\to  p_2^*(\xi ')]]></fr:tex> is an isomorphism), then (ii bis) no longer necessarily implies (i bis);
+  the combination of (ii bis) and (i bis), however, does imply that the <fr:tex
+display="inline"><![CDATA[\varphi _{t,t'}]]></fr:tex> are isomorphisms (since we then have <fr:tex
+display="inline"><![CDATA[\varphi _{t,t'}\varphi _{t',t}=\varphi _{t,t}=\operatorname {id}_{\xi '_t}]]></fr:tex>).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

@@ -1,45 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2105</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-3-remark-3.2</fr:addr><fr:route>fga3.v-3-remark-3.2.xml</fr:route><fr:number>3.2</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    We see from examples (with <fr:tex>S</fr:tex> the spectrum of a discrete valuation ring, and <fr:tex>X</fr:tex> of relative dimension <fr:tex>1</fr:tex> over <fr:tex>S</fr:tex>, for example), that if we omit hypothesis (iii) in <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2143</fr:anchor><fr:addr
+type="user">fga3.v-3-remark-3.2</fr:addr><fr:route>fga3.v-3-remark-3.2.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:number>3.2</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We see from examples (with <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> the spectrum of a discrete valuation ring, and <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> of relative dimension <fr:tex
+display="inline"><![CDATA[1]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, for example), that if we omit hypothesis (iii) in <fr:ref
 addr="fga3.v-3-theorem-3.1"
 href="fga3.v-3-theorem-3.1.xml"
 taxon="Theorem"
-number="3.1"></fr:ref> and replace it with the weaker hypothesis that, for all <fr:tex>s \in  S</fr:tex>, the homomorphism <fr:tex>k(s) \to \operatorname {H} ^0(X_s, \mathcal {O} _{X_s})</fr:tex> be an isomorphism, then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is not necessarily separated over <fr:tex>S</fr:tex>;
-    both in the case where the geometric fibres of <fr:tex>f</fr:tex> are reduced, but where a generic integral geometric fibre "blows up" by specialisation into two irreducible components, and in the case where the geometric fibres of <fr:tex>f</fr:tex> are irreducible, but where a generic integral geometric fibre specialises to a "multiple fibre".
+number="3.1" /> and replace it with the weaker hypothesis that, for all <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex>, the homomorphism <fr:tex
+display="inline"><![CDATA[k(s)\to \operatorname {H}^0(X_s,\mathcal {O}_{X_s})]]></fr:tex> be an isomorphism, then <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is not necessarily separated over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>;
+    both in the case where the geometric fibres of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> are reduced, but where a generic integral geometric fibre "blows up" by specialisation into two irreducible components, and in the case where the geometric fibres of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> are irreducible, but where a generic integral geometric fibre specialises to a "multiple fibre".
     The first case happens, for example, with a conic that degenerates into two concurrent lines; an example of the second was shown to me by D. Mumford, with an elliptic curve that degenerates to a double elliptic curve.
-    These examples work in any characteristic.
-  </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    These examples work in any characteristic.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2104</fr:anchor><fr:addr>fga3.v-3</fr:addr><fr:route>fga3.v-3.xml</fr:route><fr:title><fr:link
-href="fga3.v.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2144</fr:anchor><fr:addr
+type="user">fga3.v-3</fr:addr><fr:route>fga3.v-3.xml</fr:route><fr:title
+text="Picard schemes: Existence theorems › The principal existence theorem: statement"><fr:link
 type="local"
-addr="fga3.v">Picard schemes: Existence theorems</fr:link> › The principal existence theorem: statement</fr:title><fr:number>3</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-  We do not have, not even conjecturally, an existence statement for Picard preschemes that encompasses all known cases.
-  A "practically necessary" condition, if we can say that, is that <fr:tex>f \colon  X \to  S</fr:tex> be <fr:em>proper</fr:em> (ensuring essential finiteness properties) and <fr:em>flat</fr:em>.
-  These conditions are not sufficient, even if <fr:tex>S</fr:tex> is the spectrum of the algebra of dual numbers <fr:tex>k[t]/(t^2)</fr:tex> over a field <fr:tex>k</fr:tex> (say, the field <fr:tex>\mathbb {C}</fr:tex> of complex numbers), and <fr:tex>X</fr:tex> is of dimension <fr:tex>1</fr:tex>.
-  At the moment of writing this present talk, the most important existence theorems for the Picard prescheme follow from the following theorem:
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+href="fga3.v.xml"
+addr="fga3.v"
+title="Picard schemes: Existence theorems">Picard schemes: Existence theorems</fr:link> › The principal existence theorem: statement</fr:title><fr:authors /><fr:number>3</fr:number><fr:parent>fga3.v</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We do not have, not even conjecturally, an existence statement for Picard preschemes that encompasses all known cases.
+  A "practically necessary" condition, if we can say that, is that <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be <fr:em>proper</fr:em> (ensuring essential finiteness properties) and <fr:em>flat</fr:em>.
+  These conditions are not sufficient, even if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of the algebra of dual numbers <fr:tex
+display="inline"><![CDATA[k[t]/(t^2)]]></fr:tex> over a field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> (say, the field <fr:tex
+display="inline"><![CDATA[\mathbb {C}]]></fr:tex> of complex numbers), and <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is of dimension <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>.
+  At the moment of writing this present talk, the most important existence theorems for the Picard prescheme follow from the following theorem:</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1927</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.v-3-theorem-3.1</fr:addr><fr:route>fga3.v-3-theorem-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>f \colon  X \to  S</fr:tex> be a morphism of locally Noetherian preschemes.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1967</fr:anchor><fr:addr
+type="user">fga3.v-3-theorem-3.1</fr:addr><fr:route>fga3.v-3-theorem-3.1.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>3.1</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be a morphism of locally Noetherian preschemes.
     
     Suppose that
 
@@ -49,101 +75,182 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        <fr:tex>f</fr:tex> is projective
+        <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is projective
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        <fr:tex>f</fr:tex> is flat
+        <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is flat
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        the geometric fibres of <fr:tex>f</fr:tex> are integral.
+        the geometric fibres of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> are integral.
       </html:li>
 
     </html:ol>
 
 
-    Under these conditions, <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists.
-  </fr:p></fr:mainmatter></fr:tree><fr:p>
-  The proof, which will be sketched in the following two sections, will at the same time show the following:
-  Let <fr:tex>\xi</fr:tex> be the section of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> that corresponds to a very ample sheaf <fr:tex>\mathcal {O} _X(1)</fr:tex> over <fr:tex>X/S</fr:tex> (i.e. induced by a projective embedding <fr:tex>X \to \mathbb {P}( \mathscr { E } )</fr:tex>);
-  then there exists an open subset <fr:tex>U</fr:tex> of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, disjoint union of quasi-projective open subsets of <fr:tex>S</fr:tex>, such that <fr:tex>U</fr:tex> is stable under translation by <fr:tex>\xi</fr:tex>, and such that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is the increasing union of opens <fr:tex>U \setminus  n \xi</fr:tex> (each isomorphic to <fr:tex>U</fr:tex>).
+    Under these conditions, <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> exists.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>The proof, which will be sketched in the following two sections, will at the same time show the following:
+  Let <fr:tex
+display="inline"><![CDATA[\xi ]]></fr:tex> be the section of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> that corresponds to a very ample sheaf <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[X/S]]></fr:tex> (i.e. induced by a projective embedding <fr:tex
+display="inline"><![CDATA[X\to \mathbb {P}(\mathscr {E})]]></fr:tex>);
+  then there exists an open subset <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, disjoint union of quasi-projective open subsets of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, such that <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> is stable under translation by <fr:tex
+display="inline"><![CDATA[\xi ]]></fr:tex>, and such that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is the increasing union of opens <fr:tex
+display="inline"><![CDATA[U\setminus  n\xi ]]></fr:tex> (each isomorphic to <fr:tex
+display="inline"><![CDATA[U]]></fr:tex>).
   It thus follows, in particular, that, under the conditions of <fr:ref
 addr="fga3.v-3-theorem-3.1"
 href="fga3.v-3-theorem-3.1.xml"
 taxon="Theorem"
-number="3.1"></fr:ref>, that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is <fr:em>separated</fr:em> over <fr:tex>S</fr:tex>.
-</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="3.1" />, that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is <fr:em>separated</fr:em> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.</fr:p><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1928</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-3-remark-3.2</fr:addr><fr:route>fga3.v-3-remark-3.2.xml</fr:route><fr:number>3.2</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    We see from examples (with <fr:tex>S</fr:tex> the spectrum of a discrete valuation ring, and <fr:tex>X</fr:tex> of relative dimension <fr:tex>1</fr:tex> over <fr:tex>S</fr:tex>, for example), that if we omit hypothesis (iii) in <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1972</fr:anchor><fr:addr
+type="user">fga3.v-3-remark-3.2</fr:addr><fr:route>fga3.v-3-remark-3.2.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:number>3.2</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>We see from examples (with <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> the spectrum of a discrete valuation ring, and <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> of relative dimension <fr:tex
+display="inline"><![CDATA[1]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, for example), that if we omit hypothesis (iii) in <fr:ref
 addr="fga3.v-3-theorem-3.1"
 href="fga3.v-3-theorem-3.1.xml"
 taxon="Theorem"
-number="3.1"></fr:ref> and replace it with the weaker hypothesis that, for all <fr:tex>s \in  S</fr:tex>, the homomorphism <fr:tex>k(s) \to \operatorname {H} ^0(X_s, \mathcal {O} _{X_s})</fr:tex> be an isomorphism, then <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is not necessarily separated over <fr:tex>S</fr:tex>;
-    both in the case where the geometric fibres of <fr:tex>f</fr:tex> are reduced, but where a generic integral geometric fibre "blows up" by specialisation into two irreducible components, and in the case where the geometric fibres of <fr:tex>f</fr:tex> are irreducible, but where a generic integral geometric fibre specialises to a "multiple fibre".
+number="3.1" /> and replace it with the weaker hypothesis that, for all <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex>, the homomorphism <fr:tex
+display="inline"><![CDATA[k(s)\to \operatorname {H}^0(X_s,\mathcal {O}_{X_s})]]></fr:tex> be an isomorphism, then <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is not necessarily separated over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>;
+    both in the case where the geometric fibres of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> are reduced, but where a generic integral geometric fibre "blows up" by specialisation into two irreducible components, and in the case where the geometric fibres of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> are irreducible, but where a generic integral geometric fibre specialises to a "multiple fibre".
     The first case happens, for example, with a conic that degenerates into two concurrent lines; an example of the second was shown to me by D. Mumford, with an elliptic curve that degenerates to a double elliptic curve.
-    These examples work in any characteristic.
-  </fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    These examples work in any characteristic.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1929</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>fga3.v-3-remark-3.3</fr:addr><fr:route>fga3.v-3-remark-3.3.xml</fr:route><fr:number>3.3</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Under the conditions of <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1973</fr:anchor><fr:addr
+type="user">fga3.v-3-remark-3.3</fr:addr><fr:route>fga3.v-3-remark-3.3.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:authors /><fr:number>3.3</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Under the conditions of <fr:ref
 addr="fga3.v-3-theorem-3.1"
 href="fga3.v-3-theorem-3.1.xml"
 taxon="Theorem"
-number="3.1"></fr:ref>, I do not know if <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is a disjoint union of opens that are of finite type, thus quasi-projective, over <fr:tex>S</fr:tex>.
-    We note that the study of the Hilbert polynomials <fr:tex>Q \in \mathbb {Q}[t]</fr:tex> allows us, as in the case of Hilbert schemes (<fr:ref
+number="3.1" />, I do not know if <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is a disjoint union of opens that are of finite type, thus quasi-projective, over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+    We note that the study of the Hilbert polynomials <fr:tex
+display="inline"><![CDATA[Q\in \mathbb {Q}[t]]]></fr:tex> allows us, as in the case of Hilbert schemes (<fr:ref
 addr="fga3.iv"
 href="fga3.iv.xml"
 taxon="FGA"
-number="3.IV"></fr:ref>), to give a decomposition of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> as a disjoint sum of opens <fr:tex>\underline { \operatorname {Pic} } _{X/S}^Q</fr:tex>, and it seems plausible that these opens are quasi-projective over <fr:tex>S</fr:tex>;
-    this is what we will see at least in the next talk when <fr:tex>f</fr:tex> is a simple morphism.
-    We draw attention to the fact that if we replace hypothesis (i) by the hypothesis "<fr:tex>X</fr:tex> is <fr:em>locally</fr:em> projective over <fr:tex>S</fr:tex>" (which is sufficient to prove <fr:ref
+number="3.IV" />), to give a decomposition of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> as a disjoint sum of opens <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^Q]]></fr:tex>, and it seems plausible that these opens are quasi-projective over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>;
+    this is what we will see at least in the next talk when <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a simple morphism.
+    We draw attention to the fact that if we replace hypothesis (i) by the hypothesis "<fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is <fr:em>locally</fr:em> projective over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>" (which is sufficient to prove <fr:ref
 addr="fga3.v-3-theorem-3.1"
 href="fga3.v-3-theorem-3.1.xml"
 taxon="Theorem"
-number="3.1"></fr:ref>, since the question of existence of <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> is clearly local on <fr:tex>S</fr:tex>) however, then it is easy to give examples where <fr:em><fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> contains connected components that are not of finite type over <fr:tex>S</fr:tex></fr:em>.
+number="3.1" />, since the question of existence of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is clearly local on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>) however, then it is easy to give examples where <fr:em><fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> contains connected components that are not of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex></fr:em>.
     
-    For example, let <fr:tex>X_0</fr:tex> be a non-singular projective algebraic variety over an algebraically closed field <fr:tex>k</fr:tex>, endowed with an automorphism <fr:tex>u</fr:tex> and an element <fr:tex>\xi</fr:tex> of the Néron–Severi group of <fr:tex>X_0</fr:tex> such that the <fr:tex>u^n( \xi )</fr:tex> are pairwise distinct.
-    We can, for example, take <fr:tex>X_0</fr:tex> to be the product of an elliptic curve <fr:tex>E</fr:tex> with itself, and <fr:tex>u</fr:tex> to be the automorphism <fr:tex>(x,y) \mapsto (x,y+x)</fr:tex> of <fr:tex>E \times  E</fr:tex>.
-    Let <fr:tex>S</fr:tex> be the union of two non-singular irreducible curves that meet at two points <fr:tex>a</fr:tex> and <fr:tex>b</fr:tex>.
-    There is a connected principal covering <fr:tex>P</fr:tex> on <fr:tex>S</fr:tex> of the group <fr:tex>\mathbb {Z}</fr:tex>, and using the action of <fr:tex>\mathbb {Z}</fr:tex> on <fr:tex>X_0</fr:tex> defined by <fr:tex>u</fr:tex> we thus obtain an associated bundle on <fr:tex>S</fr:tex>, with fibre <fr:tex>X_0</fr:tex> (trivial on <fr:tex>S \setminus \{ a \}</fr:tex> and <fr:tex>S \setminus \{ b \}</fr:tex>), which is in fact an <fr:em>abelian</fr:em> scheme over <fr:tex>S</fr:tex> in the particular case in question.
-    We easily see that <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex>, which is also the bundle associated to <fr:tex>P</fr:tex> and to the action of <fr:tex>\mathbb {Z}</fr:tex> on <fr:tex>\underline { \operatorname {Pic} } _{X_0/k}</fr:tex> via <fr:tex>u</fr:tex>, contains a connected component that is isomorphic to <fr:tex>P \times \underline { \operatorname {Pic} } _{X_0/k}^0</fr:tex> (where <fr:tex>\underline { \operatorname {Pic} } ^0</fr:tex> denotes the connected component of the identity element in <fr:tex>\underline { \operatorname {Pic} }</fr:tex>), which is not of finite type over <fr:tex>S</fr:tex>.
-    (One can equally produce analogous phenomena in various cases of non-separated Picard preschemes over <fr:tex>S</fr:tex>, as described in <fr:ref
+    For example, let <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> be a non-singular projective algebraic variety over an algebraically closed field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, endowed with an automorphism <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> and an element <fr:tex
+display="inline"><![CDATA[\xi ]]></fr:tex> of the Néron–Severi group of <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> such that the <fr:tex
+display="inline"><![CDATA[u^n(\xi )]]></fr:tex> are pairwise distinct.
+    We can, for example, take <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> to be the product of an elliptic curve <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> with itself, and <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> to be the automorphism <fr:tex
+display="inline"><![CDATA[(x,y)\mapsto (x,y+x)]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[E\times  E]]></fr:tex>.
+    Let <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> be the union of two non-singular irreducible curves that meet at two points <fr:tex
+display="inline"><![CDATA[a]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b]]></fr:tex>.
+    There is a connected principal covering <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> of the group <fr:tex
+display="inline"><![CDATA[\mathbb {Z}]]></fr:tex>, and using the action of <fr:tex
+display="inline"><![CDATA[\mathbb {Z}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> defined by <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> we thus obtain an associated bundle on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, with fibre <fr:tex
+display="inline"><![CDATA[X_0]]></fr:tex> (trivial on <fr:tex
+display="inline"><![CDATA[S\setminus \{a\}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[S\setminus \{b\}]]></fr:tex>), which is in fact an <fr:em>abelian</fr:em> scheme over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> in the particular case in question.
+    We easily see that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, which is also the bundle associated to <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> and to the action of <fr:tex
+display="inline"><![CDATA[\mathbb {Z}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_0/k}]]></fr:tex> via <fr:tex
+display="inline"><![CDATA[u]]></fr:tex>, contains a connected component that is isomorphic to <fr:tex
+display="inline"><![CDATA[P\times \underline {\operatorname {Pic}}_{X_0/k}^0]]></fr:tex> (where <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}^0]]></fr:tex> denotes the connected component of the identity element in <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}]]></fr:tex>), which is not of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+    (One can equally produce analogous phenomena in various cases of non-separated Picard preschemes over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, as described in <fr:ref
 addr="fga3.v-3-remark-3.3"
 href="fga3.v-3-remark-3.3.xml"
 taxon="Remark"
-number="3.3"></fr:ref>).
+number="3.3" />).
 
     <fr:em>[Comp.]</fr:em>
     The question raised here has been answered in the positive by Mumford (see <fr:ref
 addr="fga3.vi"
 href="fga3.vi.xml"
 taxon="FGA"
-number="3.VI"></fr:ref>).
-  </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+number="3.VI" />).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>2103</fr:anchor><fr:taxon>Theorem</fr:taxon><fr:addr>fga3.v-3-theorem-3.1</fr:addr><fr:route>fga3.v-3-theorem-3.1.xml</fr:route><fr:number>3.1</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-    Let <fr:tex>f \colon  X \to  S</fr:tex> be a morphism of locally Noetherian preschemes.
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2145</fr:anchor><fr:addr
+type="user">fga3.v-3-theorem-3.1</fr:addr><fr:route>fga3.v-3-theorem-3.1.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>3.1</fr:number><fr:parent>fga3.v-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be a morphism of locally Noetherian preschemes.
     
     Suppose that
 
@@ -153,23 +260,26 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        <fr:tex>f</fr:tex> is projective
+        <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is projective
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        <fr:tex>f</fr:tex> is flat
+        <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is flat
       </html:li>
 
       
  <html:li
 style="list-style-type: &quot;i. &quot;">
-        the geometric fibres of <fr:tex>f</fr:tex> are integral.
+        the geometric fibres of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> are integral.
       </html:li>
 
     </html:ol>
 
 
-    Under these conditions, <fr:tex>\underline { \operatorname {Pic} } _{X/S}</fr:tex> exists.
-  </fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+    Under these conditions, <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> exists.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
