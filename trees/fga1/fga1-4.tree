@@ -53,12 +53,12 @@
       The formula in \ref{fga1-equation-4.1} is an immediate consequence of the spectral sequence from \ref{fga1-proposition-1}, as well as \ref{fga1-proposition-5};
       by the formula in \ref{fga1-equation-3.8}, we can write
       ##{
-        \begin{gathered}
+        \begin{aligned}
           \shExt_{\OO_X}^p(\sh{F},\sh{L})
-          = \sh{L}\otimes(\Omega_X^n)'\otimes\shExt_{\OO_X}(\sh{F},\Omega_X^n)
-        \\= \sh{L}\otimes(\Omega_X^n)'\otimes\shHom_{\OO_X}(\sh{F},\omega_Y^q)
-        \\= \shHom_{\OO_X}(\sh{F}\otimes\sh{L}'\otimes\Omega_X^n,\omega_Y^q)
-        \end{gathered}
+          &= \sh{L}\otimes(\Omega_X^n)'\otimes\shExt_{\OO_X}(\sh{F},\Omega_X^n)
+        \\&= \sh{L}\otimes(\Omega_X^n)'\otimes\shHom_{\OO_X}(\sh{F},\omega_Y^q)
+        \\&= \shHom_{\OO_X}(\sh{F}\otimes\sh{L}'\otimes\Omega_X^n,\omega_Y^q)
+        \end{aligned}
       }
       where #{q=n-p}, whence the formula in \ref{fga1-equation-4.1bis}.
     }
@@ -319,6 +319,6 @@
 
   \p{
     The reader will find more information on the duality of coherent sheaves in \em{loc. cit.}, pp.112–115, as well as in [[GD1960](GD1960), III.2], and in [[Gro1960b]](Gro1960b).
-    A more systematic treatment can be found in a later chapter of [[GD1960]](GD1960) (chapter IX in the provisional plan).
+    A more systematic treatment can be found in a later chapter of [[GD1960]](GD1960) (Chapter IX in the provisional plan).
   }
 }
