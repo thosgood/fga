@@ -1,4 +1,4 @@
-name: 🌲 Forester
+name: 🌲📄 Forester and PDF
 
 on:
   workflow_dispatch:
@@ -39,6 +39,7 @@ jobs:
 
       - name: Install additional LaTeX packages
         run: |
+          tlmgr update --self
           tlmgr install ifthen fontenc microtype mathtools amscd etoolbox mathalfa csquotes fancyhdr biblatex titlesec Baskervaldx
 
       - name: Build PDF
