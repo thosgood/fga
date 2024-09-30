@@ -1,0 +1,173 @@
+%!TEX root = main.tex
+\usepackage[T1]{fontenc}
+\usepackage[final]{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm,mathtools}
+\usepackage{amscd}
+\usepackage{etoolbox}
+\usepackage[cal=esstix,scr=rsfs]{mathalfa}
+
+
+
+% DOUBLE QUOTES
+\usepackage[autostyle=false,style=english]{csquotes}
+\MakeOuterQuote{"}
+
+
+
+% HEADERS AND FOOTERS
+\usepackage{fancyhdr}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter. #1}{}}
+\renewcommand{\sectionmark}[1]{\markboth{\thesection. #1}{}}
+\fancyhf{}
+\ifthenelse{\equal{\mode}{WebMode}}{%
+  \fancyhead[C]{\small FGA~\thepart\\\leftmark}%
+  \renewcommand{\headrulewidth}{0.5pt}%
+}{%
+  \fancyhead[LO]{FGA~\thepart}%
+  \fancyhead[RE]{\leftmark}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+\fancyfoot[C]{\thepage}
+
+
+
+% BIBLIOGRAPHY
+\usepackage[backend=bibtex]{biblatex}
+\renewbibmacro{in:}{%
+  \ifboolexpr{%
+     test {\ifentrytype{article}}%
+  }{}{\printtext{\bibstring{in}\intitlepunct}}%
+}
+
+
+
+% LINKS
+\ifthenelse{\equal{\mode}{WebMode}}{%
+  \usepackage{xcolor}%
+  \usepackage[colorlinks=true,linkcolor={blue!60!black},citecolor={blue!60!black},urlcolor={purple!60!black}]{hyperref}%
+}{%
+  \usepackage[colorlinks=false,hidelinks]{hyperref}
+}
+
+\usepackage[nameinlink,capitalize]{cleveref}
+\crefname{section}{§}{§§}
+\crefname{subsection}{§}{§§}
+\labelformat{subsection}{\thesection.#1}
+
+
+
+% HEADINGS
+\usepackage{titlesec}
+
+\titleformat{\part}[display]{}{\huge FGA~\thepart}{8pt}{\huge}
+\titleclass{\part}{top}
+\titlespacing{\part}{0pt}{0pt}{*6}
+
+\titleformat{\chapter}[hang]{}{\Large\thechapter.}{8pt}{\Large}
+\ifthenelse{\equal{\mode}{WebMode}}{%
+  \titleclass{\chapter}{straight}%
+  \titlespacing{\chapter}{0pt}{*8}{*4}%
+}{%
+  \titlespacing{\chapter}{0pt}{0pt}{*4}%
+}
+
+\titleformat{\section}[hang]{}{\large\thesection.}{8pt}{\large}
+\titlespacing{\section}{0pt}{*8}{*2}
+
+
+\titleformat{\subsection}[hang]{}{\large\thesection.\thesubsection.}{8pt}{\large}
+\titlespacing{\subsection}{0pt}{*8}{*2}
+
+
+
+
+% ENVIRONMENTS
+\makeatletter
+\def\skipsinglepar{%
+  \@ifnextchar\par
+    {\expandafter\skipsinglepar\@gobble}%
+    {}%
+}
+\makeatother
+
+
+%% Abstract
+\newenvironment{abstract}{\par\vspace{\topsep}\noindent\textbf{Note from the translator.}~}{\par\vspace{\topsep}}
+
+
+%% Numbering for \ref
+\makeatletter
+\newcommand{\setnumber}[1]{\def\@currentlabel{#1}}
+\makeatother
+
+
+%% Numbered equations
+\newenvironment{eqn}[1]{\vspace{-1em}}{}
+
+
+%% Original citations
+\newenvironment{original}{\par\vspace{\topsep}\hrule\vspace{\topsep}\noindent}{\vspace{\topsep}\hrule\par\vspace{\topsep}}
+
+
+%% Custom inner environment
+\newenvironment{inenv}[4][]{%
+  % first argument (optional) is the title
+  % second argument (mandatory) is the number
+  % third argument (mandatory) is the taxon
+  % fourth argument (mandatory) is empty for non-italic
+  \par\vspace{\topsep}\noindent%
+  \ifstrempty{#2}{%if no number
+    \ifstrempty{#1}{%if no title
+      \textbf{#3.}%
+    }{%if title
+      \textbf{#3} (#1).%
+    }%
+  }{%if number
+    \ifstrempty{#1}{%
+      \textbf{#3~#2.}%
+    }{%
+      \textbf{#3~#2} (#1).%
+    }%
+  }%
+  \ifstrempty{#4}{}{\itshape}~}%non-italic
+  {\par\vspace{\topsep}}
+
+
+%% Italicised environments
+\newenvironment{theorem}[2][]%
+  {\begin{inenv}[#1]{#2}{Theorem}{italic}}%
+  {\end{inenv}}
+\newenvironment{lemma}[2][]%
+  {\begin{inenv}[#1]{#2}{Lemma}{italic}}%
+  {\end{inenv}}
+\newenvironment{proposition}[2][]%
+  {\begin{inenv}[#1]{#2}{Proposition}{italic}}%
+  {\end{inenv}}
+\newenvironment{corollary}[2][]%
+  {\begin{inenv}[#1]{#2}{Corollary}{italic}}%
+  {\end{inenv}}
+\newenvironment{statement}[2][]%
+  {\begin{inenv}[#1]{#2}{Statement}{italic}}%
+  {\end{inenv}}
+\newenvironment{conjecture}[2][]%
+  {\begin{inenv}[#1]{#2}{Conjecture}{italic}}%
+  {\end{inenv}}
+
+
+%% Upright environments
+\newenvironment{definition}[2][]%
+  {\begin{inenv}[#1]{#2}{Definition}{}}%
+  {\end{inenv}}
+\newenvironment{remark}[2][]%
+  {\begin{inenv}[#1]{#2}{Remark}{}}%
+  {\end{inenv}}
+\newenvironment{remarks}[2][]%
+  {\begin{inenv}[#1]{#2}{Remarks}{}}%
+  {\end{inenv}}
+\newenvironment{example}[2][]%
+  {\begin{inenv}[#1]{#2}{Example}{}}%
+  {\end{inenv}}
+\newenvironment{scholium}[2][]%
+  {\begin{inenv}[#1]{#2}{Scholium}{}}%
+  {\end{inenv}}
