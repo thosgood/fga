@@ -39,8 +39,18 @@ jobs:
 
       - name: Install additional LaTeX packages
         run: |
-          tlmgr update --self
-          tlmgr install ifthen fontenc microtype mathtools amscd etoolbox mathalfa csquotes fancyhdr biblatex titlesec Baskervaldx
+          tlmgr install ifthen
+          tlmgr install fontenc
+          tlmgr install microtype
+          tlmgr install mathtools
+          tlmgr install amscd
+          tlmgr install etoolbox
+          tlmgr install mathalfa
+          tlmgr install csquotes
+          tlmgr install fancyhdr
+          tlmgr install biblatex
+          tlmgr install titlesec
+          tlmgr install Baskervaldx
 
       - name: Build PDF
         run:
