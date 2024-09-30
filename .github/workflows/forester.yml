@@ -34,6 +34,7 @@ jobs:
 
       - name: Generate LaTeX files
         run: |
+          sudo apt install xsltproc
           cd latex
           ./buildtex.sh
           cd ..
