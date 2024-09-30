@@ -31,31 +31,16 @@ jobs:
 
       - name: Build forest
         run: opam exec -- forester build forest.toml
-    
-      - name: Install TinyTeX
-        uses: r-lib/actions/setup-tinytex@v2
-        env:
-          TINYTEX_INSTALLER: TinyTeX
 
-      - name: Install additional LaTeX packages
-        run: |
-          tlmgr install ifthen
-          tlmgr install fontenc
-          tlmgr install microtype
-          tlmgr install mathtools
-          tlmgr install amscd
-          tlmgr install etoolbox
-          tlmgr install mathalfa
-          tlmgr install csquotes
-          tlmgr install fancyhdr
-          tlmgr install biblatex
-          tlmgr install titlesec
-          tlmgr install Baskervaldx
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: latex
 
-      - name: Build PDF
+      - name: Move PDF
         run:
-          cd latex/main.tex
-          mv main.pdf ../output/fga.pdf
+          mv latex/main.pdf output/fga.pdf
 
       - name: Deploy to build branch
         uses: JamesIves/github-pages-deploy-action@3.6.2
