@@ -1,12 +1,12 @@
 % Choose between print and web versions
-\def\mode{PrintMode}
+\def\mode{WebMode}
 \def\WebMode{%
   \documentclass[a4paper,oneside,fleqn]{book}
   \usepackage{geometry}
 }
 \def\PrintMode{%
   \documentclass[twoside,fleqn]{book}
-  \usepackage[paperwidth=15.6cm, paperheight=23.4cm]{geometry}
+  \usepackage[paperwidth=15.6cm,paperheight=23.4cm]{geometry}
 }
 \csname\mode\endcsname
 
