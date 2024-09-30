@@ -32,6 +32,12 @@ jobs:
       - name: Build forest
         run: opam exec -- forester build forest.toml
 
+      - name: Generate LaTeX files
+        run: |
+          cd latex
+          ./buildtex.sh
+          cd ..
+
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
