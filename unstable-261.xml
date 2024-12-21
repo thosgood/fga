@@ -7,27 +7,15 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2599</fr:anchor><fr:addr
-type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.v-2-proposition-2.2</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>The first claim follows, thanks to the elementary properties of faithfully flat descent, from the following general remark.
-      
-      If <fr:tex
-display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> is a morphism such that <fr:tex
-display="inline"><![CDATA[\mathcal {O}_S\xrightarrow {\sim } f_*(\mathcal {O}_X)]]></fr:tex>, then the functor <fr:tex
-display="inline"><![CDATA[\mathscr {F}\mapsto  f^*(\mathscr {F})]]></fr:tex>, from the category of locally free modules of finite type on <fr:tex
-display="inline"><![CDATA[S]]></fr:tex> to the category of locally free modules of finite type on <fr:tex
-display="inline"><![CDATA[X]]></fr:tex>, is fully faithful, and its essential image is given by the modules <fr:tex
-display="inline"><![CDATA[\mathscr {G}]]></fr:tex> on <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[f_*(\mathscr {G})]]></fr:tex> is locally free and such that the canonical homomorphism
-      <fr:tex
-display="block"><![CDATA[         f^*f_*(\mathscr {G})         \to  \mathscr {G}       ]]></fr:tex>
-      is an isomorphism.
-      The second statement was proven by the theory of descent in <fr:link
-type="local"
-href="fga3.i-b.4.xml"
-addr="fga3.i-b.4"
-title="Generalities, and descent by faithfully flat morphisms › Descent by faithfully flat morphisms › Application to rationality criteria">FGA 3.I, §B.4</fr:link>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2601</fr:anchor><fr:addr
+type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.iii-6-theorem-6.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>For the proof, we can reduce to <fr:ref
+addr="fga3.iii-5-theorem-5.1"
+href="fga3.iii-5-theorem-5.1.xml"
+taxon="Theorem"
+number="5.1" /> by considering suitable quasi-sections of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> for <fr:tex
+display="inline"><![CDATA[\mathcal {R}]]></fr:tex>, with the proof being analogous to the construction of algebraic quotient groups in the <fr:em>Séminaire Chevalley</fr:em>.</fr:p>
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -43,12 +31,37 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2600</fr:anchor><fr:addr
-type="user">fga3.v-2-proposition-2.2</fr:addr><fr:route>fga3.v-2-proposition-2.2.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>2.2</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be a quasi-compact separated morphism such that <fr:tex
-display="inline"><![CDATA[\mathcal {O}_S\xrightarrow {\sim } f_*(\mathcal {O}_X)]]></fr:tex>, and let <fr:tex
-display="inline"><![CDATA[S'\to  S]]></fr:tex> be a faithfully flat quasi-compact morphism.
-    Then
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2602</fr:anchor><fr:addr
+type="user">fga3.iii-6-theorem-6.1</fr:addr><fr:route>fga3.iii-6-theorem-6.1.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>6.1</fr:number><fr:parent>fga3.iii-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> be a <fr:em>locally Noetherian</fr:em> prescheme, <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> a <fr:em>quasi-projective</fr:em> <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-scheme, and <fr:tex
+display="inline"><![CDATA[\mathcal {R}]]></fr:tex> an equivalence pre-relation on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, such that:
+
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot;a. &quot;">
+        <fr:tex
+display="inline"><![CDATA[p_1\colon  R_1\to  X]]></fr:tex> is proper and flat; and
+      </html:li>
+
+
+      
+ <html:li
+style="list-style-type: &quot;b. &quot;">
+        <fr:tex
+display="inline"><![CDATA[R_1\to  X\times _S X]]></fr:tex> is a finite morphism (or, equivalently, by (a), a morphism with finite fibres, which is a condition that is automatically satisfied if <fr:tex
+display="inline"><![CDATA[\mathcal {R}]]></fr:tex> comes from an equivalence relation).
+      </html:li>
+
+    </html:ol>
+
+
+    Under these conditions:
 
     
  <html:ol
@@ -57,23 +70,39 @@ xmlns:html="http://www.w3.org/1999/xhtml">
  <html:li
 style="list-style-type: &quot;i. &quot;">
         <fr:tex
-display="inline"><![CDATA[\operatorname {Pic}'(X/S)\to \operatorname {Pic}'(X\times _S S'/S')]]></fr:tex> is injective;
+display="inline"><![CDATA[Y=X/\mathcal {R}]]></fr:tex> exists, and (if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is Noetherian) is quasi-projective over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+         (<fr:em>[Trans.] <fr:em>[Comp.]</fr:em> The fact that <fr:tex
+display="inline"><![CDATA[Y=X/\mathcal {R}]]></fr:tex> is quasi-projective over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> has only been proven, for now, in the case where <fr:tex
+display="inline"><![CDATA[\mathcal {R}]]></fr:tex> comes from an equivalence relation.</fr:em>)
       </html:li>
+
 
       
  <html:li
 style="list-style-type: &quot;ii. &quot;">
+        The canonical morphism <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> is surjective, proper, and open, and its fibres are the equivalence classes <fr:tex
+display="inline"><![CDATA[p_2(p_1^{-1}(x))]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> modulo <fr:tex
+display="inline"><![CDATA[\mathcal {R}]]></fr:tex>, and so <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> can be identified with the topological quotient space of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> by the set-theoretic equivalence relation defined by <fr:tex
+display="inline"><![CDATA[\mathcal {R}]]></fr:tex>.
+        Finally, <fr:tex
+display="inline"><![CDATA[R_1\to  X\times _Y X]]></fr:tex> is surjective.
+      </html:li>
+
+
+      
+ <html:li
+style="list-style-type: &quot;iii. &quot;">
         If <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> locally admits a section over <fr:tex
-display="inline"><![CDATA[S]]></fr:tex> (i.e. every <fr:tex
-display="inline"><![CDATA[s\in  S]]></fr:tex> has an open neighbourhood <fr:tex
-display="inline"><![CDATA[U]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[X|U]]></fr:tex> has a section over <fr:tex
-display="inline"><![CDATA[U]]></fr:tex>), then the diagram
-        <fr:tex
-display="block"><![CDATA[           \operatorname {Pic}'(X/S)           \to  \operatorname {Pic}'(X\times _S S'/S')           \rightrightarrows  \operatorname {Pic}'(X\times _S S''/S'')         ]]></fr:tex>
-        (where <fr:tex
-display="inline"><![CDATA[S''=S'\times _S S']]></fr:tex>) is exact.
+display="inline"><![CDATA[\mathcal {R}]]></fr:tex> comes from an equivalence relation, then the equivalence relation in question is effective, i.e. <fr:tex
+display="inline"><![CDATA[R_1\to  X\times _Y X]]></fr:tex> is an isomorphism, and, further, <fr:tex
+display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> is flat (and thus faithfully flat).
       </html:li>
 
     </html:ol></fr:p>
@@ -86,27 +115,15 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1988</fr:anchor><fr:addr
-type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.v-2-proposition-2.2</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>The first claim follows, thanks to the elementary properties of faithfully flat descent, from the following general remark.
-      
-      If <fr:tex
-display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> is a morphism such that <fr:tex
-display="inline"><![CDATA[\mathcal {O}_S\xrightarrow {\sim } f_*(\mathcal {O}_X)]]></fr:tex>, then the functor <fr:tex
-display="inline"><![CDATA[\mathscr {F}\mapsto  f^*(\mathscr {F})]]></fr:tex>, from the category of locally free modules of finite type on <fr:tex
-display="inline"><![CDATA[S]]></fr:tex> to the category of locally free modules of finite type on <fr:tex
-display="inline"><![CDATA[X]]></fr:tex>, is fully faithful, and its essential image is given by the modules <fr:tex
-display="inline"><![CDATA[\mathscr {G}]]></fr:tex> on <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[f_*(\mathscr {G})]]></fr:tex> is locally free and such that the canonical homomorphism
-      <fr:tex
-display="block"><![CDATA[         f^*f_*(\mathscr {G})         \to  \mathscr {G}       ]]></fr:tex>
-      is an isomorphism.
-      The second statement was proven by the theory of descent in <fr:link
-type="local"
-href="fga3.i-b.4.xml"
-addr="fga3.i-b.4"
-title="Generalities, and descent by faithfully flat morphisms › Descent by faithfully flat morphisms › Application to rationality criteria">FGA 3.I, §B.4</fr:link>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1908</fr:anchor><fr:addr
+type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.iii-6-theorem-6.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>For the proof, we can reduce to <fr:ref
+addr="fga3.iii-5-theorem-5.1"
+href="fga3.iii-5-theorem-5.1.xml"
+taxon="Theorem"
+number="5.1" /> by considering suitable quasi-sections of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> for <fr:tex
+display="inline"><![CDATA[\mathcal {R}]]></fr:tex>, with the proof being analogous to the construction of algebraic quotient groups in the <fr:em>Séminaire Chevalley</fr:em>.</fr:p>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

@@ -7,10 +7,66 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2563</fr:anchor><fr:addr
-type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-3-corollary-3.6</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>This module is exactly the tangent module to <fr:tex
-display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> along the identity section.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2565</fr:anchor><fr:addr
+type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-2-theorem-2.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>For (i), with the valuative criterion of [<fr:link
+type="local"
+href="GD1960.xml"
+addr="GD1960"
+title="Eléments de Géométrie Algébrique">GD1960</fr:link>, II, §7] it suffices to prove the following: if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a complete discrete valuation ring, and <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> the open consisting of the generic point of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then every rational section of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, i.e. every section over <fr:tex
+display="inline"><![CDATA[U]]></fr:tex>, extends uniquely to a section over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+      Taking into account the definition of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, this is equivalent to the following statement: for every invertible module <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[V=f^{-1}(U)]]></fr:tex>, there exists an invertible module on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that extends <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex>, unique up to isomorphism.
+      But this follows easily from the description of invertible modules on <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> (resp. on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>) in terms of the classes of "Cartier" divisors, taking into account the fact that the local rings of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> are regular (since <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, which is regular), and thus factorial, by Auslander, which implies that every divisor on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is a Cartier divisor.
+      Indeed, every divisor on <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> can be extended to a divisor on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> by taking its "closure".</fr:p>
+
+    <fr:p>For (ii), using Chow's lemma we can reduce to the case where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is projective, and thus embedded into some <fr:tex
+display="inline"><![CDATA[\mathbb {P}_k^n]]></fr:tex>;
+      we can also assume that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is connected.
+      If <fr:tex
+display="inline"><![CDATA[\dim  X=1]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, and we can apply (i).
+      If <fr:tex
+display="inline"><![CDATA[\dim  X\geqslant 2]]></fr:tex>, then we can use a variant of the known "equivalence criteria", which implies that there exists a finite number of curves <fr:tex
+display="inline"><![CDATA[Y_i]]></fr:tex>, simple over <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> (obtained as intersections of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> with suitable linear subspaces of <fr:tex
+display="inline"><![CDATA[\mathbb {P}_k^n]]></fr:tex>), such that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/k}^\tau \to \prod _i\underline {\operatorname {Pic}}_{Y_i/k}^\tau ]]></fr:tex> is a monomorphism, and induces a fortiori a monomorphism for the connected components.
+      Since the codomain is proper over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> by the above, and since we are talking about a homomorphism of group schemes, which is necessarily a closed immersion, it follows that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/k}^0]]></fr:tex> is also proper over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>.
+      We can avoid recourse to delicate equivalence criteria by using the structure of commutative algebraic groups over an algebraically closed field (thanks to Chevalley–Borel);
+      we are then reduced to proving that every morphism from the affine line with the origin removed into <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^\tau ]]></fr:tex> is constant, which is equivalent to saying that every invertible module on <fr:tex
+display="inline"><![CDATA[X[t,t^{-1}]]]></fr:tex> comes from an invertible module on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, which is a result that is well known and elementary and does not even use the fact that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> (the hypothesis that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is normal allowing us to immediately reduce to the case where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is regular).</fr:p>
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -26,15 +82,40 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2564</fr:anchor><fr:addr
-type="user">fga3.vi-3-corollary-3.6</fr:addr><fr:route>fga3.vi-3-corollary-3.6.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:number>3.6</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Under the conditions of <fr:ref
-addr="fga3.vi-3-theorem-3.5"
-href="fga3.vi-3-theorem-3.5.xml"
-taxon="Theorem"
-number="3.5" />, <fr:tex
-display="inline"><![CDATA[\operatorname {R}^1 f_*(\mathcal {O}_X)]]></fr:tex> is a locally free module on <fr:tex
-display="inline"><![CDATA[S]]></fr:tex> in a neighbourhood of <fr:tex
-display="inline"><![CDATA[s]]></fr:tex>, and its formation commutes with base change.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2566</fr:anchor><fr:addr
+type="user">fga3.vi-2-theorem-2.1</fr:addr><fr:route>fga3.vi-2-theorem-2.1.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>2.1</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter>
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+    
+ <html:li
+style="list-style-type: &quot;i. &quot;">
+      Let <fr:tex
+display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be a proper and simple morphism, and suppose that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> exists (for example, if <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is projective).
+      Then <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> is separated over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, and, for every closed subset <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> that is of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, we have that <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+    </html:li>
+
+    
+ <html:li
+style="list-style-type: &quot;ii. &quot;">
+      Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a prescheme over a field <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> that is proper and geometrically normal.
+      Then <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^0]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>.
+    </html:li>
+
+  </html:ol>
+
   
     
     <fr:tree
@@ -44,10 +125,66 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2264</fr:anchor><fr:addr
-type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-3-corollary-3.6</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>This module is exactly the tangent module to <fr:tex
-display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> along the identity section.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>347</fr:anchor><fr:addr
+type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-2-theorem-2.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>For (i), with the valuative criterion of [<fr:link
+type="local"
+href="GD1960.xml"
+addr="GD1960"
+title="Eléments de Géométrie Algébrique">GD1960</fr:link>, II, §7] it suffices to prove the following: if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a complete discrete valuation ring, and <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> the open consisting of the generic point of <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, then every rational section of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, i.e. every section over <fr:tex
+display="inline"><![CDATA[U]]></fr:tex>, extends uniquely to a section over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+      Taking into account the definition of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, this is equivalent to the following statement: for every invertible module <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[V=f^{-1}(U)]]></fr:tex>, there exists an invertible module on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that extends <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex>, unique up to isomorphism.
+      But this follows easily from the description of invertible modules on <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> (resp. on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>) in terms of the classes of "Cartier" divisors, taking into account the fact that the local rings of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> are regular (since <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, which is regular), and thus factorial, by Auslander, which implies that every divisor on <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is a Cartier divisor.
+      Indeed, every divisor on <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> can be extended to a divisor on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> by taking its "closure".</fr:p>
+
+    <fr:p>For (ii), using Chow's lemma we can reduce to the case where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is projective, and thus embedded into some <fr:tex
+display="inline"><![CDATA[\mathbb {P}_k^n]]></fr:tex>;
+      we can also assume that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is connected.
+      If <fr:tex
+display="inline"><![CDATA[\dim  X=1]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is simple over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>, and we can apply (i).
+      If <fr:tex
+display="inline"><![CDATA[\dim  X\geqslant 2]]></fr:tex>, then we can use a variant of the known "equivalence criteria", which implies that there exists a finite number of curves <fr:tex
+display="inline"><![CDATA[Y_i]]></fr:tex>, simple over <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> (obtained as intersections of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> with suitable linear subspaces of <fr:tex
+display="inline"><![CDATA[\mathbb {P}_k^n]]></fr:tex>), such that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/k}^\tau \to \prod _i\underline {\operatorname {Pic}}_{Y_i/k}^\tau ]]></fr:tex> is a monomorphism, and induces a fortiori a monomorphism for the connected components.
+      Since the codomain is proper over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> by the above, and since we are talking about a homomorphism of group schemes, which is necessarily a closed immersion, it follows that <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/k}^0]]></fr:tex> is also proper over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex>.
+      We can avoid recourse to delicate equivalence criteria by using the structure of commutative algebraic groups over an algebraically closed field (thanks to Chevalley–Borel);
+      we are then reduced to proving that every morphism from the affine line with the origin removed into <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^\tau ]]></fr:tex> is constant, which is equivalent to saying that every invertible module on <fr:tex
+display="inline"><![CDATA[X[t,t^{-1}]]]></fr:tex> comes from an invertible module on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, which is a result that is well known and elementary and does not even use the fact that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> (the hypothesis that <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is normal allowing us to immediately reduce to the case where <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is regular).</fr:p>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

@@ -7,14 +7,24 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2651</fr:anchor><fr:addr
-type="machine">#287</fr:addr><fr:route>unstable-287.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-proposition-3</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>The proof is standard: we consider the bicomplex <fr:tex
-display="inline"><![CDATA[\mathscr {H}\kern  -2.5pt\mathit {om}_\mathcal {O}(\mathscr {L}_\bullet ,C(\mathscr {B}))]]></fr:tex>, where <fr:tex
-display="inline"><![CDATA[C(\mathscr {B})]]></fr:tex> is an injective resolution of <fr:tex
-display="inline"><![CDATA[\mathscr {B}]]></fr:tex>, as well as the natural homomorphisms into this bicomplex from <fr:tex
-display="inline"><![CDATA[\mathscr {H}\kern  -2.5pt\mathit {om}_\mathcal {O}(\mathscr {L}_\bullet ,\mathscr {B})]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[\mathscr {H}\kern  -2.5pt\mathit {om}_\mathcal {O}(\mathscr {A},C(\mathscr {B}))]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2653</fr:anchor><fr:addr
+type="machine">#287</fr:addr><fr:route>unstable-287.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.ii-b-theorem-2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>We prove this by first proving that
+      <fr:tex
+display="block"><![CDATA[         \operatorname {H}^i(A'/A,\operatorname {G_a}) = 0         \qquad \text {for }i\geqslant 1       ]]></fr:tex>
+      (cf. <fr:link
+type="local"
+href="fga3.i-a.4.e.xml"
+addr="fga3.i-a.4.e"
+title="Generalities, and descent by faithfully flat morphisms › Preliminaries on categories › Relations to 1-cohomology › ">FGA 3.I, §A.4.e</fr:link>), with the hypothesis that <fr:tex
+display="inline"><![CDATA[\mathfrak {m}A'\subset  A]]></fr:tex> allowing us to easily reduce to the case where <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is a field (namely <fr:tex
+display="inline"><![CDATA[A/\mathfrak {m}]]></fr:tex>).
+      We can then apply the equivalences described in <fr:link
+type="local"
+href="fga3.i-a.4.e.xml"
+addr="fga3.i-a.4.e"
+title="Generalities, and descent by faithfully flat morphisms › Preliminaries on categories › Relations to 1-cohomology › ">FGA 3.I, §A.4.e</fr:link>.</fr:p>
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -30,19 +40,29 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2652</fr:anchor><fr:addr
-type="user">fga1-proposition-3</fr:addr><fr:route>fga1-proposition-3.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>3</fr:number><fr:parent>fga1-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[\mathscr {L}_\bullet =(\mathscr {L}_i)]]></fr:tex> be a left resolution of the <fr:tex
-display="inline"><![CDATA[\mathcal {O}]]></fr:tex>-module <fr:tex
-display="inline"><![CDATA[\mathscr {A}]]></fr:tex> by <fr:tex
-display="inline"><![CDATA[\mathcal {O}]]></fr:tex>-modules that are all locally isomorphic to some <fr:tex
-display="inline"><![CDATA[\mathcal {O}^n]]></fr:tex>.
-    Then <fr:tex
-display="inline"><![CDATA[\mathscr {E}\kern  -1.5pt\mathit {xt}_\mathcal {O}(\mathscr {A},\mathscr {B})]]></fr:tex> can be identified with <fr:tex
-display="inline"><![CDATA[\operatorname {H}^\bullet (\mathscr {H}\kern  -2.5pt\mathit {om}_\mathcal {O}(\mathscr {L}_\bullet ,\mathscr {B}))]]></fr:tex>, and <fr:tex
-display="inline"><![CDATA[\operatorname {Ext}_\mathcal {O}(X;\mathscr {A},\mathscr {B})]]></fr:tex> can be identified with the hypercohomology of <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> with respect to the complex <fr:tex
-display="inline"><![CDATA[\mathscr {H}\kern  -2.5pt\mathit {om}_\mathcal {O}(\mathscr {L}_\bullet ,\mathscr {B})]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2654</fr:anchor><fr:addr
+type="user">fga3.ii-b-theorem-2</fr:addr><fr:route>fga3.ii-b-theorem-2.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>2</fr:number><fr:parent>fga3.ii-b</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be a local Artinian ring with maximal ideal <fr:tex
+display="inline"><![CDATA[\mathfrak {m}]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> be an <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-algebra containing <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, and such that <fr:tex
+display="inline"><![CDATA[\mathfrak {m}A'\subset  A]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[A\to  A'\rightrightarrows  A'\otimes _A A']]></fr:tex> is <fr:em>exact</fr:em> (which is the case, in particular, if <fr:tex
+display="inline"><![CDATA[A'/A]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module of length <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>).
+    Let <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> be the fibred category (cf. <fr:link
+type="local"
+href="fga3.i-a.1-definition-1.1.xml"
+addr="fga3.i-a.1-definition-1.1">FGA 3.I, §A, Definition 1.1</fr:link>) of quasi-coherent sheaves that are flat over varying preschemes.
+    Then the morphism <fr:tex
+display="inline"><![CDATA[\operatorname {Spec}(A')\to \operatorname {Spec}(A)]]></fr:tex> is a <fr:em>strict <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex>-descent morphism</fr:em> (cf. <fr:link
+type="local"
+href="fga3.i-a.1-definition-1.7.xml"
+addr="fga3.i-a.1-definition-1.7">FGA 3.I, §A, Definition 1.7</fr:link>).</fr:p>
   
     
     <fr:tree
@@ -52,14 +72,24 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>756</fr:anchor><fr:addr
-type="machine">#287</fr:addr><fr:route>unstable-287.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-proposition-3</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>The proof is standard: we consider the bicomplex <fr:tex
-display="inline"><![CDATA[\mathscr {H}\kern  -2.5pt\mathit {om}_\mathcal {O}(\mathscr {L}_\bullet ,C(\mathscr {B}))]]></fr:tex>, where <fr:tex
-display="inline"><![CDATA[C(\mathscr {B})]]></fr:tex> is an injective resolution of <fr:tex
-display="inline"><![CDATA[\mathscr {B}]]></fr:tex>, as well as the natural homomorphisms into this bicomplex from <fr:tex
-display="inline"><![CDATA[\mathscr {H}\kern  -2.5pt\mathit {om}_\mathcal {O}(\mathscr {L}_\bullet ,\mathscr {B})]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[\mathscr {H}\kern  -2.5pt\mathit {om}_\mathcal {O}(\mathscr {A},C(\mathscr {B}))]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1488</fr:anchor><fr:addr
+type="machine">#287</fr:addr><fr:route>unstable-287.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.ii-b-theorem-2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>We prove this by first proving that
+      <fr:tex
+display="block"><![CDATA[         \operatorname {H}^i(A'/A,\operatorname {G_a}) = 0         \qquad \text {for }i\geqslant 1       ]]></fr:tex>
+      (cf. <fr:link
+type="local"
+href="fga3.i-a.4.e.xml"
+addr="fga3.i-a.4.e"
+title="Generalities, and descent by faithfully flat morphisms › Preliminaries on categories › Relations to 1-cohomology › ">FGA 3.I, §A.4.e</fr:link>), with the hypothesis that <fr:tex
+display="inline"><![CDATA[\mathfrak {m}A'\subset  A]]></fr:tex> allowing us to easily reduce to the case where <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is a field (namely <fr:tex
+display="inline"><![CDATA[A/\mathfrak {m}]]></fr:tex>).
+      We can then apply the equivalences described in <fr:link
+type="local"
+href="fga3.i-a.4.e.xml"
+addr="fga3.i-a.4.e"
+title="Generalities, and descent by faithfully flat morphisms › Preliminaries on categories › Relations to 1-cohomology › ">FGA 3.I, §A.4.e</fr:link>.</fr:p>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

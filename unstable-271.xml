@@ -7,16 +7,34 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2619</fr:anchor><fr:addr
-type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga2-proposition-2</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p><fr:ref
-addr="fga2-theorem-7-corollary-3"
-href="fga2-theorem-7-corollary-3.xml"
-taxon="Corollary"
-number="3" /> above proves that <fr:tex
-display="inline"><![CDATA[\mathscr {L}]]></fr:tex> is isomorphic to an <fr:tex
-display="inline"><![CDATA[\mathcal {O}_X(n)]]></fr:tex>-module on a neighbourhood of each fibre.
-      The rest is more or less formal.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2621</fr:anchor><fr:addr
+type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-theorem-4</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>We consider, by <fr:ref
+addr="fga1-theorem-3"
+href="fga1-theorem-3.xml"
+taxon="Theorem"
+number="3" />, the transpose of the homomorphism
+      <fr:tex
+display="block"><![CDATA[         \operatorname {H}^m(X,\Omega _X^m)         \to  \operatorname {H}^m(Y,\Omega _Y^m)         = \operatorname {H}^m(X,\Omega _Y^m)       ]]></fr:tex>
+      as the homomorphism
+      
+      <fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>847</fr:anchor><fr:addr
+type="user">fga1-equation-7.5</fr:addr><fr:route>fga1-equation-7.5.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>7.5</fr:number><fr:parent>fga1-theorem-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[           \begin {CD}             @.             \operatorname {Ext}_{\mathcal {O}_X}^{n-m}(X;\Omega _Y^m,\Omega _X^n)             @>\sim >>             \operatorname {Hom}_{\mathcal {O}_X}(X;\Omega _Y^m,\Omega _Y^m)           \\@. @VVV @.           \\\operatorname {H}^{n-m}(X,\Omega _X^{n-m})             @>\sim >>             \operatorname {Ext}_{\mathcal {O}_X}^{n-m}(X;\Omega _X^m,\Omega _X^n)           \end {CD}         \tag{7.5}         ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
+
+      We can verify that the element <fr:tex
+display="inline"><![CDATA[1_Y]]></fr:tex> of the dual of <fr:tex
+display="inline"><![CDATA[\operatorname {H}^m(Y,\Omega _Y^m)]]></fr:tex> is identified with the element of the right-hand side corresponding to the identity endomorphism of <fr:tex
+display="inline"><![CDATA[\Omega _Y^m]]></fr:tex>, and also that the image of this element in <fr:tex
+display="inline"><![CDATA[\operatorname {H}^{n-m}(X,\Omega _X^{n-m})]]></fr:tex> is indeed <fr:tex
+display="inline"><![CDATA[P_X(Y)]]></fr:tex>.</fr:p>
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -32,25 +50,29 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2620</fr:anchor><fr:addr
-type="user">fga2-proposition-2</fr:addr><fr:route>fga2-proposition-2.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>2</fr:number><fr:parent>fga2-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[Y]]></fr:tex> be a connected scheme, and <fr:tex
-display="inline"><![CDATA[E]]></fr:tex> a locally free coherent sheaf on <fr:tex
-display="inline"><![CDATA[Y]]></fr:tex>.
-    Consider the bundle of projective spaces <fr:tex
-display="inline"><![CDATA[X=\mathbb {P}(E)]]></fr:tex> associated to <fr:tex
-display="inline"><![CDATA[E]]></fr:tex>, endowed with its well-known invertible sheaf <fr:tex
-display="inline"><![CDATA[\mathcal {O}_X(1)]]></fr:tex>.
-    Then every invertible sheaf <fr:tex
-display="inline"><![CDATA[\mathscr {L}]]></fr:tex> on <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> is isomorphic to a sheaf of the form <fr:tex
-display="inline"><![CDATA[f^*(\mathscr {L}')\otimes \mathcal {O}_X(n)]]></fr:tex>, where <fr:tex
-display="inline"><![CDATA[\mathscr {L}']]></fr:tex> is an invertible sheaf on <fr:tex
-display="inline"><![CDATA[Y]]></fr:tex>, and <fr:tex
-display="inline"><![CDATA[n]]></fr:tex> is an integer.
-    Furthermore, <fr:tex
-display="inline"><![CDATA[n]]></fr:tex> is uniquely determined, and <fr:tex
-display="inline"><![CDATA[\mathscr {L}']]></fr:tex> is determined up to isomorphism.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2622</fr:anchor><fr:addr
+type="user">fga1-theorem-4</fr:addr><fr:route>fga1-theorem-4.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>4</fr:number><fr:parent>fga1-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is the identity map from a non-singular subvariety <fr:tex
+display="inline"><![CDATA[Y^m]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X^n]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[X^n]]></fr:tex>, then, denoting by <fr:tex
+display="inline"><![CDATA[1_Y]]></fr:tex> the unit element of <fr:tex
+display="inline"><![CDATA[\operatorname {H}(Y)]]></fr:tex>, we have
+
+    <fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>845</fr:anchor><fr:addr
+type="user">fga1-equation-7.4</fr:addr><fr:route>fga1-equation-7.4.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>7.4</fr:number><fr:parent>fga1-theorem-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[         f_*(1_Y) = P_X(Y)       \tag{7.4}       ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
+    
+    where the right-hand side is the cohomology class in <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> associated to <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>.</fr:p>
   
     
     <fr:tree
@@ -60,16 +82,34 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>412</fr:anchor><fr:addr
-type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga2-proposition-2</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p><fr:ref
-addr="fga2-theorem-7-corollary-3"
-href="fga2-theorem-7-corollary-3.xml"
-taxon="Corollary"
-number="3" /> above proves that <fr:tex
-display="inline"><![CDATA[\mathscr {L}]]></fr:tex> is isomorphic to an <fr:tex
-display="inline"><![CDATA[\mathcal {O}_X(n)]]></fr:tex>-module on a neighbourhood of each fibre.
-      The rest is more or less formal.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>846</fr:anchor><fr:addr
+type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-theorem-4</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>We consider, by <fr:ref
+addr="fga1-theorem-3"
+href="fga1-theorem-3.xml"
+taxon="Theorem"
+number="3" />, the transpose of the homomorphism
+      <fr:tex
+display="block"><![CDATA[         \operatorname {H}^m(X,\Omega _X^m)         \to  \operatorname {H}^m(Y,\Omega _Y^m)         = \operatorname {H}^m(X,\Omega _Y^m)       ]]></fr:tex>
+      as the homomorphism
+      
+      <fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>847</fr:anchor><fr:addr
+type="user">fga1-equation-7.5</fr:addr><fr:route>fga1-equation-7.5.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>7.5</fr:number><fr:parent>fga1-theorem-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[           \begin {CD}             @.             \operatorname {Ext}_{\mathcal {O}_X}^{n-m}(X;\Omega _Y^m,\Omega _X^n)             @>\sim >>             \operatorname {Hom}_{\mathcal {O}_X}(X;\Omega _Y^m,\Omega _Y^m)           \\@. @VVV @.           \\\operatorname {H}^{n-m}(X,\Omega _X^{n-m})             @>\sim >>             \operatorname {Ext}_{\mathcal {O}_X}^{n-m}(X;\Omega _X^m,\Omega _X^n)           \end {CD}         \tag{7.5}         ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
+
+      We can verify that the element <fr:tex
+display="inline"><![CDATA[1_Y]]></fr:tex> of the dual of <fr:tex
+display="inline"><![CDATA[\operatorname {H}^m(Y,\Omega _Y^m)]]></fr:tex> is identified with the element of the right-hand side corresponding to the identity endomorphism of <fr:tex
+display="inline"><![CDATA[\Omega _Y^m]]></fr:tex>, and also that the image of this element in <fr:tex
+display="inline"><![CDATA[\operatorname {H}^{n-m}(X,\Omega _X^{n-m})]]></fr:tex> is indeed <fr:tex
+display="inline"><![CDATA[P_X(Y)]]></fr:tex>.</fr:p>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

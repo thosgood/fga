@@ -7,20 +7,34 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2637</fr:anchor><fr:addr
-type="machine">#280</fr:addr><fr:route>unstable-280.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-lemma-4</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>The first claim follows from the explicit calculations mentioned above;
-      for the second, we note that we have an isomorphism
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2639</fr:anchor><fr:addr
+type="machine">#280</fr:addr><fr:route>unstable-280.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-lemma-1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>The formula in <fr:ref
+addr="fga1-equation-4.1"
+href="fga1-equation-4.1.xml"
+taxon="Equation"
+number="4.1" /> is an immediate consequence of the spectral sequence from <fr:ref
+addr="fga1-proposition-1"
+href="fga1-proposition-1.xml"
+taxon="Proposition"
+number="1" />, as well as <fr:ref
+addr="fga1-proposition-5"
+href="fga1-proposition-5.xml"
+taxon="Proposition"
+number="5" />;
+      by the formula in <fr:ref
+addr="fga1-equation-3.8"
+href="fga1-equation-3.8.xml"
+taxon="Equation"
+number="3.8" />, we can write
       <fr:tex
-display="block"><![CDATA[         \operatorname {Ext}_{\mathcal {O}_X}^i(X;\mathcal {O}_X(-m),\mathscr {B})         = \operatorname {H}^i(X,\mathscr {B}\otimes \mathcal {O}(m))       ]]></fr:tex>
-      (by <fr:link
-type="local"
-href="fga1-proposition-1-corollary-1.xml"
-addr="fga1-proposition-1-corollary-1">Corollary 1 of Proposition 1</fr:link>), whence the conclusion, by a well-known result of <fr:link
-type="local"
-href="Ser1955.xml"
-addr="Ser1955"
-title="Faisceaux algébriques cohérents">[Ser1955]</fr:link>.</fr:p>
+display="block"><![CDATA[         \begin {aligned}           \mathscr {E}\kern  -1.5pt\mathit {xt}_{\mathcal {O}_X}^p(\mathscr {F},\mathscr {L})           &= \mathscr {L}\otimes (\Omega _X^n)'\otimes \mathscr {E}\kern  -1.5pt\mathit {xt}_{\mathcal {O}_X}(\mathscr {F},\Omega _X^n)         \\&= \mathscr {L}\otimes (\Omega _X^n)'\otimes \mathscr {H}\kern  -2.5pt\mathit {om}_{\mathcal {O}_X}(\mathscr {F},\omega _Y^q)         \\&= \mathscr {H}\kern  -2.5pt\mathit {om}_{\mathcal {O}_X}(\mathscr {F}\otimes \mathscr {L}'\otimes \Omega _X^n,\omega _Y^q)         \end {aligned}       ]]></fr:tex>
+      where <fr:tex
+display="inline"><![CDATA[q=n-p]]></fr:tex>, whence the formula in <fr:ref
+addr="fga1-equation-4.1bis"
+href="fga1-equation-4.1bis.xml"
+taxon="Equation"
+number="4.1 bis" />.</fr:p>
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -36,17 +50,53 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2638</fr:anchor><fr:addr
-type="user">fga1-lemma-4</fr:addr><fr:route>fga1-lemma-4.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:number>4</fr:number><fr:parent>fga1-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[i>0]]></fr:tex>.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2640</fr:anchor><fr:addr
+type="user">fga1-lemma-1</fr:addr><fr:route>fga1-lemma-1.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:number>1</fr:number><fr:parent>fga1-4</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> be a coherent algebraic sheaf on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> whose support is of dimension <fr:tex
+display="inline"><![CDATA[\leqslant  n-p]]></fr:tex>, and let <fr:tex
+display="inline"><![CDATA[\mathscr {L}]]></fr:tex> be a coherent algebraic sheaf on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> that is locally free.
     Then <fr:tex
-display="inline"><![CDATA[\operatorname {H}^{r-i}(\mathbf {P},\mathcal {O}_\mathbf {P}(-m))=0]]></fr:tex> for large enough <fr:tex
-display="inline"><![CDATA[m]]></fr:tex>;
-    and, for every coherent algebra sheaf <fr:tex
-display="inline"><![CDATA[\mathscr {B}]]></fr:tex> on <fr:tex
-display="inline"><![CDATA[X]]></fr:tex>, we have that <fr:tex
-display="inline"><![CDATA[\operatorname {Ext}_{\mathcal {O}_X}^i(X;\mathcal {O}_X(-m),\mathscr {B})=0]]></fr:tex> for large enough <fr:tex
-display="inline"><![CDATA[m]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[\mathscr {E}\kern  -1.5pt\mathit {xt}_{\mathcal {O}_X}^i(X;\mathscr {F},\mathscr {L})]]></fr:tex> is zero for <fr:tex
+display="inline"><![CDATA[i<p]]></fr:tex>, and there is a canonical isomorphism
+
+    <fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>782</fr:anchor><fr:addr
+type="user">fga1-equation-4.1</fr:addr><fr:route>fga1-equation-4.1.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>4.1</fr:number><fr:parent>fga1-lemma-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[         \operatorname {Ext}_\mathcal {O}^p(X;\mathscr {F},\mathscr {L})         = \operatorname {H}^0(X,\mathscr {E}\kern  -1.5pt\mathit {xt}_\mathcal {O}^p(\mathscr {F},\mathscr {L})).       \tag{4.1}       ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
+
+    If <fr:tex
+display="inline"><![CDATA[\mathscr {F}]]></fr:tex> is a coherent algebraic sheaf on a closed subset <fr:tex
+display="inline"><![CDATA[W]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> of dimension <fr:tex
+display="inline"><![CDATA[\leqslant  n-p]]></fr:tex>, then we have a canonical isomorphism
+
+    <fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>783</fr:anchor><fr:addr
+type="user">fga1-equation-4.1bis</fr:addr><fr:route>fga1-equation-4.1bis.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>4.1 bis</fr:number><fr:parent>fga1-lemma-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
+display="block"><![CDATA[         \mathscr {E}\kern  -1.5pt\mathit {xt}_{\mathcal {O}_X}^p(\mathscr {F},\mathscr {L})         = \mathscr {H}\kern  -2.5pt\mathit {om}_{\mathcal {O}_X}(\mathscr {F}\otimes \mathscr {L}'\otimes \Omega _X^n,\omega _Y^{n-p})       \tag{4.1 bis}       ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
+
+    where <fr:tex
+display="inline"><![CDATA[\omega _Y^{n-p}]]></fr:tex> is the sheaf on <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> defined in <fr:link
+type="local"
+href="fga1-proposition-5-corollary.xml"
+addr="fga1-proposition-5-corollary">the corollary to Proposition 5</fr:link> (which can be identified with <fr:tex
+display="inline"><![CDATA[\Omega _Y^{n-p}]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is non-singular).</fr:p>
   
     
     <fr:tree
@@ -56,20 +106,34 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>818</fr:anchor><fr:addr
-type="machine">#280</fr:addr><fr:route>unstable-280.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-lemma-4</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>The first claim follows from the explicit calculations mentioned above;
-      for the second, we note that we have an isomorphism
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>784</fr:anchor><fr:addr
+type="machine">#280</fr:addr><fr:route>unstable-280.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-lemma-1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>The formula in <fr:ref
+addr="fga1-equation-4.1"
+href="fga1-equation-4.1.xml"
+taxon="Equation"
+number="4.1" /> is an immediate consequence of the spectral sequence from <fr:ref
+addr="fga1-proposition-1"
+href="fga1-proposition-1.xml"
+taxon="Proposition"
+number="1" />, as well as <fr:ref
+addr="fga1-proposition-5"
+href="fga1-proposition-5.xml"
+taxon="Proposition"
+number="5" />;
+      by the formula in <fr:ref
+addr="fga1-equation-3.8"
+href="fga1-equation-3.8.xml"
+taxon="Equation"
+number="3.8" />, we can write
       <fr:tex
-display="block"><![CDATA[         \operatorname {Ext}_{\mathcal {O}_X}^i(X;\mathcal {O}_X(-m),\mathscr {B})         = \operatorname {H}^i(X,\mathscr {B}\otimes \mathcal {O}(m))       ]]></fr:tex>
-      (by <fr:link
-type="local"
-href="fga1-proposition-1-corollary-1.xml"
-addr="fga1-proposition-1-corollary-1">Corollary 1 of Proposition 1</fr:link>), whence the conclusion, by a well-known result of <fr:link
-type="local"
-href="Ser1955.xml"
-addr="Ser1955"
-title="Faisceaux algébriques cohérents">[Ser1955]</fr:link>.</fr:p>
+display="block"><![CDATA[         \begin {aligned}           \mathscr {E}\kern  -1.5pt\mathit {xt}_{\mathcal {O}_X}^p(\mathscr {F},\mathscr {L})           &= \mathscr {L}\otimes (\Omega _X^n)'\otimes \mathscr {E}\kern  -1.5pt\mathit {xt}_{\mathcal {O}_X}(\mathscr {F},\Omega _X^n)         \\&= \mathscr {L}\otimes (\Omega _X^n)'\otimes \mathscr {H}\kern  -2.5pt\mathit {om}_{\mathcal {O}_X}(\mathscr {F},\omega _Y^q)         \\&= \mathscr {H}\kern  -2.5pt\mathit {om}_{\mathcal {O}_X}(\mathscr {F}\otimes \mathscr {L}'\otimes \Omega _X^n,\omega _Y^q)         \end {aligned}       ]]></fr:tex>
+      where <fr:tex
+display="inline"><![CDATA[q=n-p]]></fr:tex>, whence the formula in <fr:ref
+addr="fga1-equation-4.1bis"
+href="fga1-equation-4.1bis.xml"
+taxon="Equation"
+number="4.1 bis" />.</fr:p>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

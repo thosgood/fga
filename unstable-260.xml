@@ -7,12 +7,42 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2597</fr:anchor><fr:addr
-type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.v-2-proposition-2.1</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>The exact sequence can be considered as the low degrees of the exact sequence that corresponds to the Leray spectral sequence for <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[\mathcal {O}_X]]></fr:tex>.
-      The second claim is equally formal.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2599</fr:anchor><fr:addr
+type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.iii-7-proposition-7.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>We can suppose that <fr:tex
+display="inline"><![CDATA[B']]></fr:tex> is the quotient of <fr:tex
+display="inline"><![CDATA[A_K]]></fr:tex> by a subscheme in groups <fr:tex
+display="inline"><![CDATA[C']]></fr:tex>.
+      (N.B. <fr:tex
+display="inline"><![CDATA[C']]></fr:tex> will not, in general, be "reduced", i.e. its local rings will have nilpotent elements).
+      Consider the closed subscheme <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> given by "the closure" of <fr:tex
+display="inline"><![CDATA[C']]></fr:tex>, i.e. the smallest closed subscheme of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[C_K]]></fr:tex> contains <fr:tex
+display="inline"><![CDATA[C']]></fr:tex>.
+      Then <fr:tex
+display="inline"><![CDATA[C_K=C']]></fr:tex>, and, since <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> is a discrete valuation ring, we easily deduce that <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> is a subscheme in groups of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[V]]></fr:tex>.
+      Since <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[\operatorname {Spec}(V)=S]]></fr:tex>, so too is <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>.
+      Further, <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is projective over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+      
+      We can thus apply <fr:ref
+addr="fga3.iii-6-theorem-6.1"
+href="fga3.iii-6-theorem-6.1.xml"
+taxon="Theorem"
+number="6.1" /> in order to construct <fr:tex
+display="inline"><![CDATA[A/C=B]]></fr:tex>, which is the desired <fr:tex
+display="inline"><![CDATA[B]]></fr:tex>.</fr:p>
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -28,18 +58,19 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2598</fr:anchor><fr:addr
-type="user">fga3.v-2-proposition-2.1</fr:addr><fr:route>fga3.v-2-proposition-2.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>2.1</fr:number><fr:parent>fga3.v-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[f\colon  X\to  S]]></fr:tex> be a morphism such that <fr:tex
-display="inline"><![CDATA[\mathcal {O}_S\xrightarrow {\sim } f_*(\mathcal {O}_X)]]></fr:tex>.
-    Then we have an exact sequence
-    <fr:tex
-display="block"><![CDATA[       0       \to  \operatorname {Pic}(S)       \to  \operatorname {Pic}(X)       \to  \operatorname {Pic}'(X/S).     ]]></fr:tex>
-    If <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> admits a section over <fr:tex
-display="inline"><![CDATA[S]]></fr:tex>, then the last morphism is surjective, i.e. we have an isomorphism
-    <fr:tex
-display="block"><![CDATA[       \operatorname {Pic}'(X/S)       \xrightarrow {\sim } \operatorname {Pic}(X)/\operatorname {Pic}(S).     ]]></fr:tex></fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2600</fr:anchor><fr:addr
+type="user">fga3.iii-7-proposition-7.1</fr:addr><fr:route>fga3.iii-7-proposition-7.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>7.1</fr:number><fr:parent>fga3.iii-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be an abelian scheme defined over a discrete valuation ring <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> with field of fractions <fr:tex
+display="inline"><![CDATA[K]]></fr:tex>.
+    Then every abelian scheme <fr:tex
+display="inline"><![CDATA[B']]></fr:tex> over <fr:tex
+display="inline"><![CDATA[K]]></fr:tex> that is isogenous to a quotient of <fr:tex
+display="inline"><![CDATA[A\otimes _V K]]></fr:tex> "simplifies well for <fr:tex
+display="inline"><![CDATA[V]]></fr:tex>", i.e. is isomorphic to some <fr:tex
+display="inline"><![CDATA[B\otimes _V A]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[B]]></fr:tex> is an abelian scheme over <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> (essentially unique, we recall).</fr:p>
   
     
     <fr:tree
@@ -49,12 +80,42 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1983</fr:anchor><fr:addr
-type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.v-2-proposition-2.1</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>The exact sequence can be considered as the low degrees of the exact sequence that corresponds to the Leray spectral sequence for <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[\mathcal {O}_X]]></fr:tex>.
-      The second claim is equally formal.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1934</fr:anchor><fr:addr
+type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.iii-7-proposition-7.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>We can suppose that <fr:tex
+display="inline"><![CDATA[B']]></fr:tex> is the quotient of <fr:tex
+display="inline"><![CDATA[A_K]]></fr:tex> by a subscheme in groups <fr:tex
+display="inline"><![CDATA[C']]></fr:tex>.
+      (N.B. <fr:tex
+display="inline"><![CDATA[C']]></fr:tex> will not, in general, be "reduced", i.e. its local rings will have nilpotent elements).
+      Consider the closed subscheme <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> given by "the closure" of <fr:tex
+display="inline"><![CDATA[C']]></fr:tex>, i.e. the smallest closed subscheme of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[C_K]]></fr:tex> contains <fr:tex
+display="inline"><![CDATA[C']]></fr:tex>.
+      Then <fr:tex
+display="inline"><![CDATA[C_K=C']]></fr:tex>, and, since <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> is a discrete valuation ring, we easily deduce that <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> is a subscheme in groups of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[V]]></fr:tex>.
+      Since <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is proper over <fr:tex
+display="inline"><![CDATA[\operatorname {Spec}(V)=S]]></fr:tex>, so too is <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>.
+      Further, <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is projective over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+      
+      We can thus apply <fr:ref
+addr="fga3.iii-6-theorem-6.1"
+href="fga3.iii-6-theorem-6.1.xml"
+taxon="Theorem"
+number="6.1" /> in order to construct <fr:tex
+display="inline"><![CDATA[A/C=B]]></fr:tex>, which is the desired <fr:tex
+display="inline"><![CDATA[B]]></fr:tex>.</fr:p>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

@@ -7,23 +7,16 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2627</fr:anchor><fr:addr
-type="machine">#275</fr:addr><fr:route>unstable-275.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-proposition-6</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>Indeed, by the duality theorem for <fr:tex
-display="inline"><![CDATA[\mathbf {P}]]></fr:tex>, the left-hand side of <fr:ref
-addr="fga1-equation-6.6"
-href="fga1-equation-6.6.xml"
-taxon="Equation"
-number="6.6" /> is isomorphic to <fr:tex
-display="inline"><![CDATA[\operatorname {Ext}_{\mathcal {O}_\mathbf {P}}^{r-i}(\mathbf {P};\mathscr {F}(-m),\Omega _\mathbf {P}^r)]]></fr:tex>, and so <fr:ref
-addr="fga1-equation-6.6"
-href="fga1-equation-6.6.xml"
-taxon="Equation"
-number="6.6" /> follows from <fr:ref
-addr="fga1-lemma-5"
-href="fga1-lemma-5.xml"
-taxon="Lemma"
-number="5" />.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2629</fr:anchor><fr:addr
+type="machine">#275</fr:addr><fr:route>unstable-275.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-theorem-3-corollary</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>It suffices to apply <fr:ref
+addr="fga1-theorem-3"
+href="fga1-theorem-3.xml"
+taxon="Theorem"
+number="3" /> and <fr:link
+type="local"
+href="fga1-proposition-1-corollary-1.xml"
+addr="fga1-proposition-1-corollary-1">Corollary 1 of Proposition 1</fr:link>.</fr:p>
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -39,46 +32,16 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2628</fr:anchor><fr:addr
-type="user">fga1-proposition-6</fr:addr><fr:route>fga1-proposition-6.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>6</fr:number><fr:parent>fga1-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[\mathscr {F}]]></fr:tex> be a coherent algebraic sheaf on <fr:tex
-display="inline"><![CDATA[X]]></fr:tex>, and let <fr:tex
-display="inline"><![CDATA[i]]></fr:tex> be an integer.
-    Then, for large enough <fr:tex
-display="inline"><![CDATA[m]]></fr:tex>, we have an isomorphism
-
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>838</fr:anchor><fr:addr
-type="user">fga1-equation-6.6</fr:addr><fr:route>fga1-equation-6.6.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>6.6</fr:number><fr:parent>fga1-proposition-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block"><![CDATA[         \operatorname {H}^i(X,\mathscr {F}(-m))' \simeq  \operatorname {H}^0(X,E^{n-i}(\mathscr {F})(m))       \tag{6.6}       ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
-
-    where we set
-
-    <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>839</fr:anchor><fr:addr
-type="user">fga1-equation-6.7</fr:addr><fr:route>fga1-equation-6.7.xml</fr:route><fr:taxon>Equation</fr:taxon><fr:authors /><fr:number>6.7</fr:number><fr:parent>fga1-proposition-6</fr:parent></fr:frontmatter><fr:mainmatter><fr:tex
-display="block"><![CDATA[         E^j(\mathscr {F}) = \mathscr {E}\kern  -1.5pt\mathit {xt}_{\mathcal {O}_\mathbf {P}}^{r-n+j}(\mathscr {F},\Omega _\mathbf {P}^r)       \tag{6.7}       ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
-
-    (compare with <fr:ref
-addr="fga1-proposition-5"
-href="fga1-proposition-5.xml"
-taxon="Proposition"
-number="5" /> in <fr:ref
-addr="fga1-3"
-href="fga1-3.xml"
-number="3" />).</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2630</fr:anchor><fr:addr
+type="user">fga1-theorem-3-corollary</fr:addr><fr:route>fga1-theorem-3-corollary.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:parent>fga1-5</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> be an algebraic vector bundle on <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[\mathcal {O}_X(E)]]></fr:tex> the sheaf of germs of regular sections of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>.
+    Then we have canonical isomorphisms
+     (<fr:em>[Trans.] This equation is labelled (5.3) in the original copy of the notes, but this seems to be a typo, since a later equation shares the same number, and any references to (5.3) seem to indeed point to the later equation instead of this one.</fr:em>)
+    <fr:tex
+display="block"><![CDATA[       (\operatorname {H}^p(X,\mathcal {O}_X(E)))'       = \operatorname {H}^{n-p}(X,\Omega _X^n\otimes \mathcal {O}_X(E')).     ]]></fr:tex></fr:p>
   
     
     <fr:tree
@@ -88,23 +51,16 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>840</fr:anchor><fr:addr
-type="machine">#275</fr:addr><fr:route>unstable-275.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-proposition-6</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>Indeed, by the duality theorem for <fr:tex
-display="inline"><![CDATA[\mathbf {P}]]></fr:tex>, the left-hand side of <fr:ref
-addr="fga1-equation-6.6"
-href="fga1-equation-6.6.xml"
-taxon="Equation"
-number="6.6" /> is isomorphic to <fr:tex
-display="inline"><![CDATA[\operatorname {Ext}_{\mathcal {O}_\mathbf {P}}^{r-i}(\mathbf {P};\mathscr {F}(-m),\Omega _\mathbf {P}^r)]]></fr:tex>, and so <fr:ref
-addr="fga1-equation-6.6"
-href="fga1-equation-6.6.xml"
-taxon="Equation"
-number="6.6" /> follows from <fr:ref
-addr="fga1-lemma-5"
-href="fga1-lemma-5.xml"
-taxon="Lemma"
-number="5" />.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>805</fr:anchor><fr:addr
+type="machine">#275</fr:addr><fr:route>unstable-275.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga1-theorem-3-corollary</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>It suffices to apply <fr:ref
+addr="fga1-theorem-3"
+href="fga1-theorem-3.xml"
+taxon="Theorem"
+number="3" /> and <fr:link
+type="local"
+href="fga1-proposition-1-corollary-1.xml"
+addr="fga1-proposition-1-corollary-1">Corollary 1 of Proposition 1</fr:link>.</fr:p>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

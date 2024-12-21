@@ -7,14 +7,36 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2577</fr:anchor><fr:addr
-type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-2-corollary-2.7</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>The first claim is trivially true, or almost so, for every group prescheme locally of finite type over a locally Noetherian base, since it suffices to look along the identity section.
-      The second claim follows from <fr:ref
-addr="fga3.vi-2-theorem-2.5"
-href="fga3.vi-2-theorem-2.5.xml"
-taxon="Theorem"
-number="2.5" />.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2579</fr:anchor><fr:addr
+type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-1-lemma-1.2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>To prove this lemma, we can suppose that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is irreducible;
+      let <fr:tex
+display="inline"><![CDATA[\eta ]]></fr:tex> be its generic point.
+      If we make the base change <fr:tex
+display="inline"><![CDATA[S'=\operatorname {Spec}(\mathcal {O}_{S,\eta })\to  S]]></fr:tex> then we find a group scheme <fr:tex
+display="inline"><![CDATA[G']]></fr:tex> over a local Artinian ring <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{S,s}=A]]></fr:tex> inside which we have an <fr:em>open</fr:em> group subscheme <fr:tex
+display="inline"><![CDATA[{G'}^0]]></fr:tex> <fr:em>of finite type over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex></fr:em>, as we said above.
+      This thus comes from a group scheme <fr:tex
+display="inline"><![CDATA[H]]></fr:tex> of finite type over an open neighbourhood <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\eta ]]></fr:tex>, and the canonical immersion <fr:tex
+display="inline"><![CDATA[{G'}^0\to  G']]></fr:tex> comes from an open immersion <fr:tex
+display="inline"><![CDATA[H\to  G|U]]></fr:tex>, which will be a homomorphism of group schemes for <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> small enough.
+      
+      Since the fibres of <fr:tex
+display="inline"><![CDATA[H]]></fr:tex> are connected if we take <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> small enough, and since they are all of the same dimension, namely that of the fibres of <fr:tex
+display="inline"><![CDATA[G]]></fr:tex>, for <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> small enough, it follows that, for all <fr:tex
+display="inline"><![CDATA[s\in  U]]></fr:tex>, the image of <fr:tex
+display="inline"><![CDATA[H_s]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[G_s]]></fr:tex> is exactly <fr:tex
+display="inline"><![CDATA[G_s^0]]></fr:tex> (for <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> small enough), which proves the lemma.</fr:p>
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -30,14 +52,15 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2578</fr:anchor><fr:addr
-type="user">fga3.vi-2-corollary-2.7</fr:addr><fr:route>fga3.vi-2-corollary-2.7.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:number>2.7</fr:number><fr:parent>fga3.vi-2</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[f\colon  X\to  Y]]></fr:tex> be a proper and flat morphism such that <fr:tex
-display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> exists.
-    Then the function <fr:tex
-display="inline"><![CDATA[s\mapsto \dim \underline {\operatorname {Pic}}_{X_s/k(s)}]]></fr:tex> on <fr:tex
-display="inline"><![CDATA[S]]></fr:tex> is upper semi-continuous (i.e. it can jump upwards, but not downwards), and it is even continuous (i.e. locally constant) if the <fr:tex
-display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X_s/k(s)}]]></fr:tex> do not contain any additive component.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2580</fr:anchor><fr:addr
+type="user">fga3.vi-1-lemma-1.2</fr:addr><fr:route>fga3.vi-1-lemma-1.2.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:number>1.2</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[S\neq \varnothing ]]></fr:tex> then there exists a non-empty open <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, a group scheme <fr:tex
+display="inline"><![CDATA[H]]></fr:tex> of finite type over <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> with connected fibres, and a homomorphism of group schemes <fr:tex
+display="inline"><![CDATA[H\to  G|U]]></fr:tex> that is an open immersion with image <fr:tex
+display="inline"><![CDATA[G^0|U]]></fr:tex>.</fr:p>
   
     
     <fr:tree
@@ -47,14 +70,36 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2235</fr:anchor><fr:addr
-type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-2-corollary-2.7</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>The first claim is trivially true, or almost so, for every group prescheme locally of finite type over a locally Noetherian base, since it suffices to look along the identity section.
-      The second claim follows from <fr:ref
-addr="fga3.vi-2-theorem-2.5"
-href="fga3.vi-2-theorem-2.5.xml"
-taxon="Theorem"
-number="2.5" />.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2204</fr:anchor><fr:addr
+type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-1-lemma-1.2</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>To prove this lemma, we can suppose that <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is irreducible;
+      let <fr:tex
+display="inline"><![CDATA[\eta ]]></fr:tex> be its generic point.
+      If we make the base change <fr:tex
+display="inline"><![CDATA[S'=\operatorname {Spec}(\mathcal {O}_{S,\eta })\to  S]]></fr:tex> then we find a group scheme <fr:tex
+display="inline"><![CDATA[G']]></fr:tex> over a local Artinian ring <fr:tex
+display="inline"><![CDATA[\mathcal {O}_{S,s}=A]]></fr:tex> inside which we have an <fr:em>open</fr:em> group subscheme <fr:tex
+display="inline"><![CDATA[{G'}^0]]></fr:tex> <fr:em>of finite type over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex></fr:em>, as we said above.
+      This thus comes from a group scheme <fr:tex
+display="inline"><![CDATA[H]]></fr:tex> of finite type over an open neighbourhood <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\eta ]]></fr:tex>, and the canonical immersion <fr:tex
+display="inline"><![CDATA[{G'}^0\to  G']]></fr:tex> comes from an open immersion <fr:tex
+display="inline"><![CDATA[H\to  G|U]]></fr:tex>, which will be a homomorphism of group schemes for <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> small enough.
+      
+      Since the fibres of <fr:tex
+display="inline"><![CDATA[H]]></fr:tex> are connected if we take <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> small enough, and since they are all of the same dimension, namely that of the fibres of <fr:tex
+display="inline"><![CDATA[G]]></fr:tex>, for <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> small enough, it follows that, for all <fr:tex
+display="inline"><![CDATA[s\in  U]]></fr:tex>, the image of <fr:tex
+display="inline"><![CDATA[H_s]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[G_s]]></fr:tex> is exactly <fr:tex
+display="inline"><![CDATA[G_s^0]]></fr:tex> (for <fr:tex
+display="inline"><![CDATA[U]]></fr:tex> small enough), which proves the lemma.</fr:p>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

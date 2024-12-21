@@ -7,20 +7,31 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2585</fr:anchor><fr:addr
-type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-1-lemma-1.4</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>This means that, for every integer <fr:tex
-display="inline"><![CDATA[n>0]]></fr:tex>, the set of <fr:tex
-display="inline"><![CDATA[x\in  G^\tau ]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\nu (x)=n]]></fr:tex> is locally constructible;
-      but this is the difference between <fr:tex
-display="inline"><![CDATA[\varphi _n^{-1}(G^0)]]></fr:tex> and the union of the <fr:tex
-display="inline"><![CDATA[\varphi _d^{-1}(G^0)]]></fr:tex> where <fr:tex
-display="inline"><![CDATA[d]]></fr:tex> runs over the proper divisors of <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>;
-      since <fr:tex
-display="inline"><![CDATA[G^0]]></fr:tex> is locally constructible, so too are all the <fr:tex
-display="inline"><![CDATA[\varphi _i^{-1}(G^0)]]></fr:tex>, and thus also the aforementioned difference.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2587</fr:anchor><fr:addr
+type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-1-corollary-1.7</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>The first claim can be made more precise by noting that if, for some given <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex>, we have that <fr:tex
+display="inline"><![CDATA[G\to  S]]></fr:tex> is universally open at the points of <fr:tex
+display="inline"><![CDATA[G_s^0]]></fr:tex>, and if <fr:tex
+display="inline"><![CDATA[G_s^0]]></fr:tex> is separable over <fr:tex
+display="inline"><![CDATA[k(s)]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[G^0]]></fr:tex> is a neighbourhood of <fr:tex
+display="inline"><![CDATA[G_s^0]]></fr:tex> (and it so happens that the hypotheses made on <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> remain satisfied by all neighbouring points).
+      A proof of this statement, which is independent of all the structure of the group, can be found in [<fr:link
+type="local"
+href="GD1960.xml"
+addr="GD1960"
+title="Eléments de Géométrie Algébrique">GD1960</fr:link>, IV, §7].
+      The last claim in <fr:ref
+addr="fga3.vi-1-corollary-1.7"
+href="fga3.vi-1-corollary-1.7.xml"
+taxon="Corollary"
+number="1.7" />, also independent of group structure and of any question of connected components, is a particular case of a flatness criterion given in [<fr:link
+type="local"
+href="Gro1960b.xml"
+addr="Gro1960b"
+title="Séminaire de Géométrie Algèbrique">Gro1960b</fr:link>, §5], which implies, more generally:</fr:p>
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -36,10 +47,23 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2586</fr:anchor><fr:addr
-type="user">fga3.vi-1-lemma-1.4</fr:addr><fr:route>fga3.vi-1-lemma-1.4.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:number>1.4</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>The function <fr:tex
-display="inline"><![CDATA[\nu ]]></fr:tex> on <fr:tex
-display="inline"><![CDATA[G^\tau ]]></fr:tex> is locally constructible.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2588</fr:anchor><fr:addr
+type="user">fga3.vi-1-corollary-1.7</fr:addr><fr:route>fga3.vi-1-corollary-1.7.xml</fr:route><fr:taxon>Corollary</fr:taxon><fr:authors /><fr:number>1.7</fr:number><fr:parent>fga3.vi-1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[G\to  S]]></fr:tex> is universally open at the points of <fr:tex
+display="inline"><![CDATA[G^0]]></fr:tex> (cf. <fr:ref
+addr="fga3.vi-1-corollary-1.5"
+href="fga3.vi-1-corollary-1.5.xml"
+taxon="Corollary"
+number="1.5" />) and that the fibres <fr:tex
+display="inline"><![CDATA[G_s]]></fr:tex> are separable, thus simple over <fr:tex
+display="inline"><![CDATA[k(s)]]></fr:tex> (this latter condition being automatically satisfied in residual characteristic zero, by a result of Cartier).
+    Then <fr:tex
+display="inline"><![CDATA[G^0]]></fr:tex> is open in <fr:tex
+display="inline"><![CDATA[G]]></fr:tex>.
+    If, further, <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is reduced, then <fr:tex
+display="inline"><![CDATA[G^0]]></fr:tex> is simple (and in particular, flat) over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.</fr:p>
   
     
     <fr:tree
@@ -49,20 +73,31 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2212</fr:anchor><fr:addr
-type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-1-lemma-1.4</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>This means that, for every integer <fr:tex
-display="inline"><![CDATA[n>0]]></fr:tex>, the set of <fr:tex
-display="inline"><![CDATA[x\in  G^\tau ]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\nu (x)=n]]></fr:tex> is locally constructible;
-      but this is the difference between <fr:tex
-display="inline"><![CDATA[\varphi _n^{-1}(G^0)]]></fr:tex> and the union of the <fr:tex
-display="inline"><![CDATA[\varphi _d^{-1}(G^0)]]></fr:tex> where <fr:tex
-display="inline"><![CDATA[d]]></fr:tex> runs over the proper divisors of <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>;
-      since <fr:tex
-display="inline"><![CDATA[G^0]]></fr:tex> is locally constructible, so too are all the <fr:tex
-display="inline"><![CDATA[\varphi _i^{-1}(G^0)]]></fr:tex>, and thus also the aforementioned difference.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>340</fr:anchor><fr:addr
+type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-1-corollary-1.7</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>The first claim can be made more precise by noting that if, for some given <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex>, we have that <fr:tex
+display="inline"><![CDATA[G\to  S]]></fr:tex> is universally open at the points of <fr:tex
+display="inline"><![CDATA[G_s^0]]></fr:tex>, and if <fr:tex
+display="inline"><![CDATA[G_s^0]]></fr:tex> is separable over <fr:tex
+display="inline"><![CDATA[k(s)]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[G^0]]></fr:tex> is a neighbourhood of <fr:tex
+display="inline"><![CDATA[G_s^0]]></fr:tex> (and it so happens that the hypotheses made on <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> remain satisfied by all neighbouring points).
+      A proof of this statement, which is independent of all the structure of the group, can be found in [<fr:link
+type="local"
+href="GD1960.xml"
+addr="GD1960"
+title="Eléments de Géométrie Algébrique">GD1960</fr:link>, IV, §7].
+      The last claim in <fr:ref
+addr="fga3.vi-1-corollary-1.7"
+href="fga3.vi-1-corollary-1.7.xml"
+taxon="Corollary"
+number="1.7" />, also independent of group structure and of any question of connected components, is a particular case of a flatness criterion given in [<fr:link
+type="local"
+href="Gro1960b.xml"
+addr="Gro1960b"
+title="Séminaire de Géométrie Algèbrique">Gro1960b</fr:link>, §5], which implies, more generally:</fr:p>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

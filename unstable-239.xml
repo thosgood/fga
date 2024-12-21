@@ -7,23 +7,54 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2555</fr:anchor><fr:addr
-type="machine">#239</fr:addr><fr:route>unstable-239.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-3-proposition-3.1</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>Since the claim is trivial if <fr:tex
-display="inline"><![CDATA[k]]></fr:tex> is perfect, and in particular for <fr:tex
-display="inline"><![CDATA[G_{\overline {k}}]]></fr:tex>, where <fr:tex
-display="inline"><![CDATA[\overline {k}]]></fr:tex> is the algebraic closure of <fr:tex
-display="inline"><![CDATA[k]]></fr:tex>, it suffices to show that <fr:tex
-display="inline"><![CDATA[(G_{\overline {k}}^0)_\mathrm {red}]]></fr:tex> comes from a subscheme of <fr:tex
-display="inline"><![CDATA[G]]></fr:tex>.
-      But from the hypothesis that <fr:tex
-display="inline"><![CDATA[G_{\overline {k}}]]></fr:tex> contains no additive component it easily follows that there exists an integer <fr:tex
-display="inline"><![CDATA[m]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[(G_{\overline {k}}^0)_\mathrm {red}]]></fr:tex> is the "scheme-theoretic" image of the <fr:tex
-display="inline"><![CDATA[m]]></fr:tex>-th power homomorphism in <fr:tex
-display="inline"><![CDATA[G_{\overline {k}}]]></fr:tex>.
-      Since the latter homomorphism comes from the analogous homomorphism for <fr:tex
-display="inline"><![CDATA[G]]></fr:tex>, the scheme-theoretic image of this provides the desired object.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2557</fr:anchor><fr:addr
+type="machine">#239</fr:addr><fr:route>unstable-239.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-3-theorem-3.3</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>We sketch the proof:</fr:p>
+
+    <fr:ol><fr:li>This is a general property of rigidity for abelian subschemes of commutative group schemes: if two such subschemes agree set-theoretically at a point <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex>, then they agree over the entire connected component of <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> ([Mumford–Tate seminar, 1962]).
+        
+        (This result generalises a classical theorem of Chow).</fr:li>
+
+      <fr:li>Using Hilbert schemes, we see that the functor that, to every <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> associates the set (consisting of either one or zero elements) of canonical abelian subschemes of <fr:tex
+display="inline"><![CDATA[(\underline {\operatorname {Pic}}_{X/S})\times _S S']]></fr:tex> is representable by a scheme <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+        By (i), <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> is a monomorphism, and by <fr:ref
+addr="fga3.vi-3-corollary-3.2"
+href="fga3.vi-3-corollary-3.2.xml"
+taxon="Corollary"
+number="3.2" />, it is surjective.
+        To say that there exists a canonical abelian subscheme of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> implies that <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> is a section over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, or that <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> is an isomorphism.
+        This is equivalent to saying that <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> is étale, or, in the case where <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is reduced, that <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> is proper.
+        Whence immediately (ii).</fr:li>
+
+      <fr:li>Simply using the definition of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, we note that, for every abelian scheme <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, the data of an <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-morphism from <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> to a principal homogeneous space for <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> is equivalent to the data of a group homomorphism <fr:tex
+display="inline"><![CDATA[C'\to \underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[C']]></fr:tex> is the dual abelian scheme of <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>.
+        But if the canonical abelian subscheme <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> exists, then these homomorphisms necessarily factor through <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> (and we can see by again using the points of finite order).
+        Whence immediately (iii).</fr:li></fr:ol>
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -39,15 +70,57 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2556</fr:anchor><fr:addr
-type="user">fga3.vi-3-proposition-3.1</fr:addr><fr:route>fga3.vi-3-proposition-3.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>3.1</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[k]]></fr:tex> be a field, and let <fr:tex
-display="inline"><![CDATA[G]]></fr:tex> a group scheme of finite type over <fr:tex
-display="inline"><![CDATA[k]]></fr:tex> that is commutative and "without additive component".
-    Then <fr:tex
-display="inline"><![CDATA[G_\mathrm {red}^0]]></fr:tex> is separable over <fr:tex
-display="inline"><![CDATA[k]]></fr:tex>, and thus a simple group scheme over <fr:tex
-display="inline"><![CDATA[k]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2558</fr:anchor><fr:addr
+type="user">fga3.vi-3-theorem-3.3</fr:addr><fr:route>fga3.vi-3-theorem-3.3.xml</fr:route><fr:taxon>Theorem</fr:taxon><fr:authors /><fr:number>3.3</fr:number><fr:parent>fga3.vi-3</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Under the above conditions:
+
+    
+ <html:ol
+xmlns:html="http://www.w3.org/1999/xhtml">
+      
+ <html:li
+style="list-style-type: &quot;i. &quot;">
+        If there exists an abelian subscheme of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> whose underlying set is <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}^0]]></fr:tex>, then it is unique.
+        Its formation is thus compatible with base change.
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot;ii. &quot;">
+        For there to exist such an abelian subscheme, it is necessary and sufficient that it exist after every base change <fr:tex
+display="inline"><![CDATA[S'\to  S]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> is local Artinian;
+        if <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is the spectrum of a local ring, it even suffices to test with the <fr:tex
+display="inline"><![CDATA[S'=\operatorname {Spec}(A_n)]]></fr:tex> where <fr:tex
+display="inline"><![CDATA[A_n=A/\mathfrak {m}^{n+1}]]></fr:tex>.
+        If <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is reduced, then it equally suffices to test with the <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> that are the spectrum of a discrete valuation ring (complete, with algebraically closed residue field, if one desires).
+      </html:li>
+
+      
+ <html:li
+style="list-style-type: &quot;iii. &quot;">
+        Suppose that <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> exists, and let <fr:tex
+display="inline"><![CDATA[B=\operatorname {Alb}^0(X/S)]]></fr:tex> be the dual abelian scheme (i.e. <fr:tex
+display="inline"><![CDATA[B=\operatorname {Pic}_{A/S}^0]]></fr:tex> [Mumford–Tate seminar, 1962]).
+        Then we can canonically construct a principal homogeneous space <fr:tex
+display="inline"><![CDATA[P=\operatorname {Alb}^1(X/S)]]></fr:tex> for <fr:tex
+display="inline"><![CDATA[B]]></fr:tex>, and an <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-morphism <fr:tex
+display="inline"><![CDATA[X\to  P]]></fr:tex> that is universal for the <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-morphisms from <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> to para-abelian schemes (i.e. to principal homogeneous spaces for abelian schemes).
+        The formation of <fr:tex
+display="inline"><![CDATA[\operatorname {Alb}^0(X/S)]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\operatorname {Alb}^1(X/S)]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[X\to \operatorname {Alb}^1(X/S)]]></fr:tex> commutes with base change.
+      </html:li>
+
+    </html:ol></fr:p>
   
     
     <fr:tree
@@ -57,23 +130,54 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2246</fr:anchor><fr:addr
-type="machine">#239</fr:addr><fr:route>unstable-239.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-3-proposition-3.1</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>Since the claim is trivial if <fr:tex
-display="inline"><![CDATA[k]]></fr:tex> is perfect, and in particular for <fr:tex
-display="inline"><![CDATA[G_{\overline {k}}]]></fr:tex>, where <fr:tex
-display="inline"><![CDATA[\overline {k}]]></fr:tex> is the algebraic closure of <fr:tex
-display="inline"><![CDATA[k]]></fr:tex>, it suffices to show that <fr:tex
-display="inline"><![CDATA[(G_{\overline {k}}^0)_\mathrm {red}]]></fr:tex> comes from a subscheme of <fr:tex
-display="inline"><![CDATA[G]]></fr:tex>.
-      But from the hypothesis that <fr:tex
-display="inline"><![CDATA[G_{\overline {k}}]]></fr:tex> contains no additive component it easily follows that there exists an integer <fr:tex
-display="inline"><![CDATA[m]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[(G_{\overline {k}}^0)_\mathrm {red}]]></fr:tex> is the "scheme-theoretic" image of the <fr:tex
-display="inline"><![CDATA[m]]></fr:tex>-th power homomorphism in <fr:tex
-display="inline"><![CDATA[G_{\overline {k}}]]></fr:tex>.
-      Since the latter homomorphism comes from the analogous homomorphism for <fr:tex
-display="inline"><![CDATA[G]]></fr:tex>, the scheme-theoretic image of this provides the desired object.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2252</fr:anchor><fr:addr
+type="machine">#239</fr:addr><fr:route>unstable-239.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.vi-3-theorem-3.3</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>We sketch the proof:</fr:p>
+
+    <fr:ol><fr:li>This is a general property of rigidity for abelian subschemes of commutative group schemes: if two such subschemes agree set-theoretically at a point <fr:tex
+display="inline"><![CDATA[s\in  S]]></fr:tex>, then they agree over the entire connected component of <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> ([Mumford–Tate seminar, 1962]).
+        
+        (This result generalises a classical theorem of Chow).</fr:li>
+
+      <fr:li>Using Hilbert schemes, we see that the functor that, to every <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> associates the set (consisting of either one or zero elements) of canonical abelian subschemes of <fr:tex
+display="inline"><![CDATA[(\underline {\operatorname {Pic}}_{X/S})\times _S S']]></fr:tex> is representable by a scheme <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> of finite type over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>.
+        By (i), <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> is a monomorphism, and by <fr:ref
+addr="fga3.vi-3-corollary-3.2"
+href="fga3.vi-3-corollary-3.2.xml"
+taxon="Corollary"
+number="3.2" />, it is surjective.
+        To say that there exists a canonical abelian subscheme of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> implies that <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> is a section over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, or that <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> is an isomorphism.
+        This is equivalent to saying that <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> is étale, or, in the case where <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is reduced, that <fr:tex
+display="inline"><![CDATA[T\to  S]]></fr:tex> is proper.
+        Whence immediately (ii).</fr:li>
+
+      <fr:li>Simply using the definition of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, we note that, for every abelian scheme <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, the data of an <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>-morphism from <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> to a principal homogeneous space for <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> is equivalent to the data of a group homomorphism <fr:tex
+display="inline"><![CDATA[C'\to \underline {\operatorname {Pic}}_{X/S}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[C']]></fr:tex> is the dual abelian scheme of <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>.
+        But if the canonical abelian subscheme <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\underline {\operatorname {Pic}}_{X/S}]]></fr:tex> exists, then these homomorphisms necessarily factor through <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> (and we can see by again using the points of finite order).
+        Whence immediately (iii).</fr:li></fr:ol>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

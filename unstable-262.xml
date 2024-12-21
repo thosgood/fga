@@ -7,42 +7,24 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2601</fr:anchor><fr:addr
-type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.iii-7-proposition-7.1</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>We can suppose that <fr:tex
-display="inline"><![CDATA[B']]></fr:tex> is the quotient of <fr:tex
-display="inline"><![CDATA[A_K]]></fr:tex> by a subscheme in groups <fr:tex
-display="inline"><![CDATA[C']]></fr:tex>.
-      (N.B. <fr:tex
-display="inline"><![CDATA[C']]></fr:tex> will not, in general, be "reduced", i.e. its local rings will have nilpotent elements).
-      Consider the closed subscheme <fr:tex
-display="inline"><![CDATA[C]]></fr:tex> of <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> given by "the closure" of <fr:tex
-display="inline"><![CDATA[C']]></fr:tex>, i.e. the smallest closed subscheme of <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[C_K]]></fr:tex> contains <fr:tex
-display="inline"><![CDATA[C']]></fr:tex>.
-      Then <fr:tex
-display="inline"><![CDATA[C_K=C']]></fr:tex>, and, since <fr:tex
-display="inline"><![CDATA[V]]></fr:tex> is a discrete valuation ring, we easily deduce that <fr:tex
-display="inline"><![CDATA[C]]></fr:tex> is a subscheme in groups of <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> over <fr:tex
-display="inline"><![CDATA[V]]></fr:tex>.
-      Since <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> is proper over <fr:tex
-display="inline"><![CDATA[\operatorname {Spec}(V)=S]]></fr:tex>, so too is <fr:tex
-display="inline"><![CDATA[C]]></fr:tex>.
-      Further, <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> is projective over <fr:tex
-display="inline"><![CDATA[S]]></fr:tex>.
-      
-      We can thus apply <fr:ref
-addr="fga3.iii-6-theorem-6.1"
-href="fga3.iii-6-theorem-6.1.xml"
-taxon="Theorem"
-number="6.1" /> in order to construct <fr:tex
-display="inline"><![CDATA[A/C=B]]></fr:tex>, which is the desired <fr:tex
-display="inline"><![CDATA[B]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2603</fr:anchor><fr:addr
+type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.i-b.1-lemma-1.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>It suffices to prove that the augmented complex induced from the above by extension of the base <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> satisfies the same conclusions.
+      This leads to proving the statement when we replace <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[A']]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> by <fr:tex
+display="inline"><![CDATA[A'\otimes _A A']]></fr:tex>, and so we can restrict to the case where there exists an <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-algebra homomorphism <fr:tex
+display="inline"><![CDATA[A'\to  A]]></fr:tex> (or, in geometric terms, the case where <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> admits a section).
+      In this case, the claim follows from the generalities of <fr:ref
+addr="fga3.i-a.4.a"
+href="fga3.i-a.4.a.xml"
+number="A.4.a" />.</fr:p>
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -58,19 +40,19 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2602</fr:anchor><fr:addr
-type="user">fga3.iii-7-proposition-7.1</fr:addr><fr:route>fga3.iii-7-proposition-7.1.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:authors /><fr:number>7.1</fr:number><fr:parent>fga3.iii-7</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> be an abelian scheme defined over a discrete valuation ring <fr:tex
-display="inline"><![CDATA[V]]></fr:tex> with field of fractions <fr:tex
-display="inline"><![CDATA[K]]></fr:tex>.
-    Then every abelian scheme <fr:tex
-display="inline"><![CDATA[B']]></fr:tex> over <fr:tex
-display="inline"><![CDATA[K]]></fr:tex> that is isogenous to a quotient of <fr:tex
-display="inline"><![CDATA[A\otimes _V K]]></fr:tex> "simplifies well for <fr:tex
-display="inline"><![CDATA[V]]></fr:tex>", i.e. is isomorphic to some <fr:tex
-display="inline"><![CDATA[B\otimes _V A]]></fr:tex>, where <fr:tex
-display="inline"><![CDATA[B]]></fr:tex> is an abelian scheme over <fr:tex
-display="inline"><![CDATA[V]]></fr:tex> (essentially unique, we recall).</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2604</fr:anchor><fr:addr
+type="user">fga3.i-b.1-lemma-1.1</fr:addr><fr:route>fga3.i-b.1-lemma-1.1.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:authors /><fr:number>1.1</fr:number><fr:parent>fga3.i-b.1</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> be a faithfully flat <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-algebra.
+    Then, for every <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-module <fr:tex
+display="inline"><![CDATA[M]]></fr:tex>, the <fr:tex
+display="inline"><![CDATA[M]]></fr:tex>-augmented complex <fr:tex
+display="inline"><![CDATA[C^\bullet (A'/A,\operatorname {G_a})\otimes _A M]]></fr:tex> (cf. <fr:ref
+addr="fga3.i-a.4.e"
+href="fga3.i-a.4.e.xml"
+number="A.4.e" />) is a <fr:em>resolution</fr:em> of <fr:tex
+display="inline"><![CDATA[M]]></fr:tex>.</fr:p>
   
     
     <fr:tree
@@ -80,42 +62,24 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1936</fr:anchor><fr:addr
-type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.iii-7-proposition-7.1</fr:parent></fr:frontmatter><fr:mainmatter>
-    <fr:p>We can suppose that <fr:tex
-display="inline"><![CDATA[B']]></fr:tex> is the quotient of <fr:tex
-display="inline"><![CDATA[A_K]]></fr:tex> by a subscheme in groups <fr:tex
-display="inline"><![CDATA[C']]></fr:tex>.
-      (N.B. <fr:tex
-display="inline"><![CDATA[C']]></fr:tex> will not, in general, be "reduced", i.e. its local rings will have nilpotent elements).
-      Consider the closed subscheme <fr:tex
-display="inline"><![CDATA[C]]></fr:tex> of <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> given by "the closure" of <fr:tex
-display="inline"><![CDATA[C']]></fr:tex>, i.e. the smallest closed subscheme of <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[C_K]]></fr:tex> contains <fr:tex
-display="inline"><![CDATA[C']]></fr:tex>.
-      Then <fr:tex
-display="inline"><![CDATA[C_K=C']]></fr:tex>, and, since <fr:tex
-display="inline"><![CDATA[V]]></fr:tex> is a discrete valuation ring, we easily deduce that <fr:tex
-display="inline"><![CDATA[C]]></fr:tex> is a subscheme in groups of <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> over <fr:tex
-display="inline"><![CDATA[V]]></fr:tex>.
-      Since <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> is proper over <fr:tex
-display="inline"><![CDATA[\operatorname {Spec}(V)=S]]></fr:tex>, so too is <fr:tex
-display="inline"><![CDATA[C]]></fr:tex>.
-      Further, <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> is projective over <fr:tex
-display="inline"><![CDATA[S]]></fr:tex>.
-      
-      We can thus apply <fr:ref
-addr="fga3.iii-6-theorem-6.1"
-href="fga3.iii-6-theorem-6.1.xml"
-taxon="Theorem"
-number="6.1" /> in order to construct <fr:tex
-display="inline"><![CDATA[A/C=B]]></fr:tex>, which is the desired <fr:tex
-display="inline"><![CDATA[B]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>655</fr:anchor><fr:addr
+type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:authors /><fr:parent>fga3.i-b.1-lemma-1.1</fr:parent></fr:frontmatter><fr:mainmatter>
+    <fr:p>It suffices to prove that the augmented complex induced from the above by extension of the base <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> satisfies the same conclusions.
+      This leads to proving the statement when we replace <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[A']]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> by <fr:tex
+display="inline"><![CDATA[A'\otimes _A A']]></fr:tex>, and so we can restrict to the case where there exists an <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>-algebra homomorphism <fr:tex
+display="inline"><![CDATA[A'\to  A]]></fr:tex> (or, in geometric terms, the case where <fr:tex
+display="inline"><![CDATA[S']]></fr:tex> over <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> admits a section).
+      In this case, the claim follows from the generalities of <fr:ref
+addr="fga3.i-a.4.a"
+href="fga3.i-a.4.a.xml"
+number="A.4.a" />.</fr:p>
   </fr:mainmatter><fr:backmatter /></fr:tree>
   
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
